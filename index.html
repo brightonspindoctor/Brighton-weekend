@@ -39,12 +39,7 @@ header{position:sticky;top:0;z-index:5;background:#122238;border-bottom:1px soli
 </style>
 </head>
 <body>
-<div id="ticketCelebration" aria-hidden="true">
-  <div class="celebrate-card">
-    <div class="celebrate-icon">🎟️</div>
-    <div class="celebrate-title">Ticket bought!</div>
-    <div class="celebrate-text">Nice. You're going to this one.</div>
-  </div>
+
 </div>
 
 <section id="welcome">
@@ -103,22 +98,7 @@ async function api(method,path,body){
 }
 async function loadAttendance(){try{attendance=await api('GET','event_interest?select=event_id,user_name,status,user_id')}catch(e){console.warn('Social layer unavailable',e)}}
 
-function celebrateTicket(){
-  const layer=document.getElementById('ticketCelebration');
-  if(!layer)return;
-  layer.classList.add('show');
-  layer.setAttribute('aria-hidden','false');
-  for(let i=0;i<18;i++){
-    const c=document.createElement('span'); c.className='confetti';
-    const angle=(Math.PI*2*i/18)+(Math.random()-.5)*.5, dist=90+Math.random()*190;
-    c.style.setProperty('--dx',`${Math.cos(angle)*dist}px`);
-    c.style.setProperty('--dy',`${Math.sin(angle)*dist-90}px`);
-    c.style.setProperty('--delay',`${Math.random()*120}ms`);
-    c.style.background=['#d86b42','#d8a04a','#8aa76d','#6f91a8','#efe0b9'][i%5];
-    layer.appendChild(c);
-  }
-  setTimeout(()=>{layer.classList.remove('show');layer.setAttribute('aria-hidden','true');layer.querySelectorAll('.confetti').forEach(x=>x.remove())},1200);
-}
+
 window.act=async(id,status)=>{
  if(!name()){showWelcome();return}
  const mine=attendance.find(x=>x.event_id===id&&x.user_id===uid());
@@ -127,7 +107,7 @@ window.act=async(id,status)=>{
   else if(mine) await api('PATCH','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()),{event_id:id,user_id:uid(),user_name:name(),status});
   else await api('POST','event_interest',{event_id:id,user_id:uid(),user_name:name(),status});
   await loadAttendance();render();renderPeople();
-if(status==='ticket_bought' && (!mine || mine.status!=='ticket_bought')) celebrateTicket();
+
  }catch(e){alert('Could not save that yet. '+e.message)}
 };
 function render(){
@@ -145,10 +125,10 @@ function render(){
    return `<article class="card"><div class="top"><div><div class="title">${esc(e.title)}</div><div class="meta">${esc(e.venue)}${e.time?' · '+esc(e.time):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
    ${e.price?`<div class="price">${esc(e.price)}</div>`:''}
    <div class="people"><span>☆ ${a.length} interested</span><span>🎟 ${t.length} ticket bought</span>${names}</div>
-   <div class="commitment"><span class="scale-label">YOUR COMMITMENT</span>
-     <button class="scale ${mine?.status==='not_interested'?'selected no':''}" onclick="act('${e.id}','not_interested')">NOT INTERESTED</button>
-     <button class="scale ${mine?.status==='interested'?'selected yes':''}" onclick="act('${e.id}','interested')">INTERESTED</button>
-     <button class="scale ${mine?.status==='ticket_bought'?'selected bought':''}" onclick="act('${e.id}','ticket_bought')">TICKET BOUGHT</button>
+   <div class="commitment">
+     <button class="scale ${mine?.status==='not_interested'?'selected no':''}" onclick="act('${e.id}','not_interested')">Not interested</button>
+     <button class="scale ${mine?.status==='interested'?'selected yes':''}" onclick="act('${e.id}','interested')">Interested</button>
+     <button class="scale ${mine?.status==='ticket_bought'?'selected bought':''}" onclick="act('${e.id}','ticket_bought')">Ticket bought</button>
    </div>
    <div class="actions"><a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a></div></article>`;
   }).join(''):'<div class="empty">No events found for your selected venues.</div>';
@@ -160,7 +140,7 @@ async function clearStatus(id){
  try{
   await api('DELETE','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()));
   await loadAttendance();render();renderPeople();
-if(status==='ticket_bought' && (!mine || mine.status!=='ticket_bought')) celebrateTicket();renderPeople();
+renderPeople();
  }catch(e){alert('Could not clear your response. '+e.message)}
 }
 function renderPeople(){
@@ -176,10 +156,10 @@ function renderPeople(){
      <div class="people">${a.length?`<span>☆ ${a.length} interested</span>`:''}${t.length?`<span>🎟 ${t.length} ticket bought</span>`:''}</div>
      ${a.length?`<div class="day" style="margin-top:13px">INTERESTED</div><div class="people">${namesI}</div>`:''}
      ${t.length?`<div class="day" style="margin-top:13px">TICKET BOUGHT</div><div class="people">${namesT}</div>`:''}
-     <div class="commitment"><span class="scale-label" style="display:none">YOUR COMMITMENT</span>
-       <button class="scale no ${mine?.status==='not_interested'?'selected':''}" onclick="act('${e.id}','not_interested')">NOT INTERESTED</button>
-       <button class="scale yes ${mine?.status==='interested'?'selected':''}" onclick="act('${e.id}','interested')">INTERESTED</button>
-       <button class="scale bought ${mine?.status==='ticket_bought'?'selected':''}" onclick="act('${e.id}','ticket_bought')">TICKET BOUGHT</button>
+     <div class="commitment">
+       <button class="scale no ${mine?.status==='not_interested'?'selected':''}" onclick="act('${e.id}','not_interested')">Not interested</button>
+       <button class="scale yes ${mine?.status==='interested'?'selected':''}" onclick="act('${e.id}','interested')">Interested</button>
+       <button class="scale bought ${mine?.status==='ticket_bought'?'selected':''}" onclick="act('${e.id}','ticket_bought')">Ticket bought</button>
      </div>
      <div class="actions"><a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a></div>
    </div>`;
