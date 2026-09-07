@@ -4,10 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#122338">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <title>Brighton Weekend</title>
 <style>
 :root{--ink:#172335;--cream:#f3e4c9;--orange:#b94f2d;--gold:#d6a54c;--lime:#c8d989}
-*{box-sizing:border-box} body{margin:0;font-family:Georgia,"Times New Roman",serif;background:#102033;color:var(--cream)}
+*{box-sizing:border-box} body{margin:0;font-family:var(--font-ui);background:#102033;color:var(--cream)}
 button,input{font:inherit} .hidden{display:none!important}
 
 /* Welcome screen */
@@ -16,26 +19,90 @@ linear-gradient(rgba(7,17,29,.18),rgba(7,17,29,.3)),url("welcome-background.png"
 display:grid;place-items:center;padding:20px}
 .welcome-card{width:min(540px,92vw);background:rgba(247,232,204,.96);color:var(--ink);
 border:4px solid #192a38;border-radius:24px;padding:28px 26px;box-shadow:0 15px 0 rgba(0,0,0,.25),0 20px 60px rgba(0,0,0,.45);text-align:center}
-.welcome-card h2{font-size:2.5rem;margin:0 0 10px;letter-spacing:-1px}.welcome-card p{font-family:system-ui,sans-serif;font-size:1.05rem;line-height:1.45;margin:0 0 20px}
-.welcome-card input{width:100%;padding:16px 18px;border:2px solid #776d61;border-radius:14px;background:#fffaf0;color:#182638;font-family:system-ui,sans-serif;font-size:1.1rem}
+.welcome-card h2{font-size:2.5rem;margin:0 0 10px;letter-spacing:-1px}.welcome-card p{font-family:var(--font-ui);font-size:1.05rem;line-height:1.45;margin:0 0 20px}
+.welcome-card input{width:100%;padding:16px 18px;border:2px solid #776d61;border-radius:14px;background:#fffaf0;color:#182638;font-family:var(--font-ui);font-size:1.1rem}
 .welcome-card button{width:100%;margin-top:14px;padding:16px;border:3px solid #17222c;border-radius:40px;background:linear-gradient(#cc6841,#a84329);color:#fff7e8;font-size:1.5rem;font-weight:bold;cursor:pointer;box-shadow:0 5px 0 #71301f}
 .welcome-card button:active{transform:translateY(3px);box-shadow:0 2px 0 #71301f}
 
 /* App */
 header{position:sticky;top:0;z-index:5;background:#122238;border-bottom:1px solid rgba(242,225,194,.25);padding:15px}
 .wrap{max-width:820px;margin:auto;padding:0 15px}.brand{font-size:1.8rem;font-weight:bold;letter-spacing:-1px;color:var(--cream)}.brand span{color:#d66a40}
-.sub{font-family:system-ui,sans-serif;color:#b8c6a0;font-size:.8rem;margin-top:2px}
+.sub{font-family:var(--font-ui);color:#b8c6a0;font-size:.8rem;margin-top:2px}
 .controls{display:flex;gap:7px;margin-top:12px}.controls button{background:#20364b;color:var(--cream);border:1px solid #52667a;border-radius:10px;padding:10px;cursor:pointer}.week{flex:1}.today{color:#d8e59e!important}
 .day{margin:22px 0 8px;color:#d8e59e;font:bold .78rem system-ui,sans-serif;letter-spacing:1px}
 .card{background:#1b3041;border:1px solid #42576a;border-radius:16px;padding:15px;margin:9px 0;box-shadow:0 5px 18px rgba(0,0,0,.12)}
 .top{display:flex;justify-content:space-between;gap:10px}.title{font-size:1.18rem;font-weight:bold}.meta{font: .85rem system-ui,sans-serif;color:#b9c4cb;margin-top:5px}
 .badge{font:.65rem system-ui,sans-serif;font-weight:bold;padding:5px 7px;border-radius:20px;height:max-content}.sold{background:#713545;color:#ffd3d8}
-.people{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}.people span{font:.72rem system-ui,sans-serif;background:#263d50;padding:5px 8px;border-radius:20px;color:#d9e0d5}
+.people{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}.people span{font:.72rem var(--font-ui);background:#263d50;padding:5px 8px;border-radius:20px;color:#d9e0d5}
 .actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.actions button,.ticket{border-radius:10px;padding:9px 11px;font:bold .75rem system-ui,sans-serif;cursor:pointer;text-decoration:none}
 .interest,.going{background:#213849;border:1px solid #607587;color:#f3e4c9}.interest.active{border-color:#d8e59e;color:#d8e59e}.going.active{background:#d8e59e;color:#172335;border-color:#d8e59e}.ticket{background:#f3e4c9;color:#172335}
 .nav{position:fixed;bottom:0;left:0;right:0;background:#14273a;border-top:1px solid #405568;display:flex;justify-content:space-around;padding:12px max(12px,env(safe-area-inset-left)) calc(12px + env(safe-area-inset-bottom));z-index:10}.nav button{border:0;background:none;color:#9cabb2;font:bold .75rem system-ui,sans-serif}.nav button.active{color:#d8e59e}
-.venue-row{display:flex;justify-content:space-between;padding:15px 2px;border-bottom:1px solid #405568;font-family:system-ui,sans-serif}.venue-row input{accent-color:#b9c76d;width:20px}
-.empty{font-family:system-ui,sans-serif;color:#91a0a8;padding:10px 0}
+.venue-row{display:flex;justify-content:space-between;padding:15px 2px;border-bottom:1px solid #405568;font-family:var(--font-ui)}.venue-row input{accent-color:#b9c76d;width:20px}
+.empty{font-family:var(--font-ui);color:#91a0a8;padding:10px 0}
+</style>
+
+<style id="jakarta-design-system">
+:root{
+  --font-ui:"Plus Jakarta Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --ink:#172335; --cream:#f3e4c9; --navy:#122238; --card:#1b3041;
+  --line:#42576a; --sage:#d8e59e; --orange:#b85a38; --muted:#aeb9bf;
+}
+html,body,button,input,a{font-family:var(--font-ui)!important}
+body{letter-spacing:-.01em}
+h1,h2,h3,p,.brand,.sub,.title,.meta,.price,.empty,.note,.day,
+.statusline,.venue-row,.nav button,.ticket,.actions button,.scale,
+.people,.badge,.week,.today{font-family:var(--font-ui)!important}
+
+.brand{font-weight:800;letter-spacing:-.045em}
+.brand span{font-weight:800}
+h2{font-size:1.45rem;line-height:1.15;letter-spacing:-.035em;margin:24px 0 8px}
+.title{font-size:1.05rem;line-height:1.25;font-weight:700;letter-spacing:-.025em}
+.meta{font-size:.78rem;line-height:1.4;font-weight:500}
+.price{font-size:.78rem;line-height:1.3;font-weight:700}
+.day{font-size:.7rem;line-height:1.2;font-weight:800;letter-spacing:.06em}
+.sub,.statusline,.note,.empty{font-size:.72rem;line-height:1.45;font-weight:500}
+.controls{align-items:stretch}
+.controls button{display:flex;align-items:center;justify-content:center;min-height:42px}
+.week{font-weight:700;letter-spacing:-.01em}
+.today{font-weight:700}
+.card{padding:15px 15px 14px;margin:9px 0;border-radius:16px}
+.actions{align-items:center}
+.actions button,.ticket{font-weight:700;letter-spacing:-.01em}
+.people{align-items:center}
+.people span{font-weight:500}
+.commitment{align-items:stretch}
+.scale{font-family:var(--font-ui)!important;font-weight:600;letter-spacing:-.005em}
+.venue-row{font-weight:600}
+.nav{gap:4px}
+.nav button{flex:1;max-width:180px}
+.nav{justify-content:center}
+.nav button{letter-spacing:-.005em}
+.ticket{display:inline-flex;align-items:center;justify-content:center}
+.people-card{padding-bottom:15px}
+.people-card h3{font-family:var(--font-ui)!important;font-weight:700;letter-spacing:-.025em}
+.plusone{font-family:var(--font-ui)!important}
+.plusbtn{font-family:var(--font-ui)!important}
+.modalbox h2{font-family:var(--font-ui)!important;font-weight:800}
+.modalbox p{font-family:var(--font-ui)!important}
+.modal input,.modal button{font-family:var(--font-ui)!important}
+@media (max-width:430px){
+  .controls{gap:5px}
+  .controls button{min-height:40px;padding:9px 8px}
+  .week{font-size:.77rem}
+  .commitment{gap:5px}
+  .scale{font-size:9px;min-height:40px;padding:8px 6px}
+  .nav button{font-size:11px}
+}
+</style>
+
+<style id="alignment-system">
+.wrap{width:100%;max-width:780px;margin-left:auto;margin-right:auto}
+.app-main{padding-top:4px}
+header .wrap{padding-left:15px;padding-right:15px}
+.controls>*{min-width:0}
+.card .actions .ticket{min-height:38px}
+.card .actions button{min-height:38px}
+.people-card{margin-left:0;margin-right:0}
 </style>
 </head>
 <body>
@@ -62,13 +129,13 @@ header{position:sticky;top:0;z-index:5;background:#122238;border-bottom:1px soli
   </div>
 </div></header>
 
-<main id="discover" class="wrap"></main>
-<main id="peopleTab" class="wrap hidden">
+<main id="discover" class="wrap app-main"></main>
+<main id="peopleTab" class="wrap app-main hidden">
 <h2>Happenings</h2>
 <p class="note">See what people are interested in and where they have bought tickets.</p>
 <div id="peopleList"></div>
 </main>
-<main id="venuesTab" class="wrap hidden"><h2>Venues</h2><div id="venueList"></div><br><button id="changeName">Change my name</button></main>
+<main id="venuesTab" class="wrap app-main hidden"><h2>Venues</h2><div id="venueList"></div><br><button id="changeName">Change my name</button></main>
 <div class="nav"><button class="active" data-tab="discover">♫ DISCOVER</button><button data-tab="peopleTab">✦ HAPPENINGS</button><button data-tab="venuesTab">⚙ VENUES</button></div>
 
 <script>
@@ -125,6 +192,7 @@ function render(){
    return `<article class="card"><div class="top"><div><div class="title">${esc(e.title)}</div><div class="meta">${esc(e.venue)}${e.time?' · '+esc(e.time):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
    ${e.price?`<div class="price">${esc(e.price)}</div>`:''}
    <div class="people"><span>☆ ${a.length} interested</span><span>🎟 ${t.length} ticket bought</span>${names}</div>
+   ${mine?.status==='ticket_bought'?`<div class="plusone"><span>Bringing +1: <b>${myPlusOne}</b></span><button class="plusbtn" onclick="changePlusOne('${e.id}',-1)">−</button><button class="plusbtn" onclick="changePlusOne('${e.id}',1)">+</button></div>`:''}
    <div class="commitment">
      <button class="scale ${mine?.status==='not_interested'?'selected no':''}" onclick="act('${e.id}','not_interested')">Not interested</button>
      <button class="scale ${mine?.status==='interested'?'selected yes':''}" onclick="act('${e.id}','interested')">Interested</button>
@@ -134,6 +202,17 @@ function render(){
   }).join(''):'<div class="empty">No events found for your selected venues.</div>';
  });
  $('discover').innerHTML=h;
+}
+async function changePlusOne(id,delta){
+  if(!name()){showWelcome();return}
+  const mine=attendance.find(a=>a.event_id===id&&a.user_id===uid());
+  if(!mine || mine.status!=='ticket_bought'){alert('Mark this event as Ticket bought first.');return}
+  const current=Number(mine.plus_one||0), next=Math.max(0,Math.min(1,current+delta));
+  if(next===current)return;
+  try{
+    await api('PATCH','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()),{plus_one:next});
+    await loadAttendance();render();renderPeople();
+  }catch(e){alert('Could not update your +1. '+e.message)}
 }
 async function clearStatus(id){
  if(!uname()){showWelcome();return}
@@ -150,12 +229,13 @@ function renderPeople(){
  $('peopleList').innerHTML=active.map(e=>{
    const a=people(e.id,'interested'), t=people(e.id,'ticket_bought'), mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
    const namesI=a.map(x=>`<span>☆ ${esc(x.user_name)}</span>`).join('');
-   const namesT=t.map(x=>`<span>🎟 ${esc(x.user_name)}</span>`).join('');
+   const namesT=t.map(x=>`<span>🎟 ${esc(x.user_name)}${Number(x.plus_one||0)?` +${Number(x.plus_one||0)}`:''}</span>`).join('');
+   const myPlusOne=Number(mine?.plus_one||0);
    return `<div class="people-card card">
      <div class="top"><div><h3 style="margin:0">${esc(e.title)}</h3><div class="meta">${esc(e.venue)} · ${esc(e.date)}${e.time?' · '+esc(e.time):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
-     <div class="people">${a.length?`<span>☆ ${a.length} interested</span>`:''}${t.length?`<span>🎟 ${t.length} ticket bought</span>`:''}</div>
-     ${a.length?`<div class="day" style="margin-top:13px">INTERESTED</div><div class="people">${namesI}</div>`:''}
-     ${t.length?`<div class="day" style="margin-top:13px">TICKET BOUGHT</div><div class="people">${namesT}</div>`:''}
+     ${a.length?`<div class="day" style="margin-top:13px">INTERESTED · ${a.length}</div><div class="people">${namesI}</div>`:''}
+     ${t.length?`<div class="day" style="margin-top:13px">TICKET BOUGHT · ${t.length}</div><div class="people">${namesT}</div>`:''}
+     ${mine?.status==='ticket_bought'?`<div class="plusone"><span>My +1: <b>${myPlusOne}</b></span><button class="plusbtn" onclick="changePlusOne('${e.id}',-1)">−</button><button class="plusbtn" onclick="changePlusOne('${e.id}',1)">+</button></div>`:''}
      <div class="commitment">
        <button class="scale no ${mine?.status==='not_interested'?'selected':''}" onclick="act('${e.id}','not_interested')">Not interested</button>
        <button class="scale yes ${mine?.status==='interested'?'selected':''}" onclick="act('${e.id}','interested')">Interested</button>
