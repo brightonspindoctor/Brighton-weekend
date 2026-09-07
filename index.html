@@ -69,12 +69,12 @@ header{position:sticky;top:0;z-index:5;background:#122238;border-bottom:1px soli
 
 <main id="discover" class="wrap"></main>
 <main id="peopleTab" class="wrap hidden">
-<h2>People</h2>
-<p class="note">See which events people have marked as <b>interested</b> or <b>ticket bought</b>.</p>
+<h2>Happenings</h2>
+<p class="note">See what people are interested in and where they have bought tickets.</p>
 <div id="peopleList"></div>
 </main>
 <main id="venuesTab" class="wrap hidden"><h2>Venues</h2><div id="venueList"></div><br><button id="changeName">Change my name</button></main>
-<div class="nav"><button class="active" data-tab="discover">♫ DISCOVER</button><button data-tab="peopleTab">👥 PEOPLE</button><button data-tab="venuesTab">⚙ VENUES</button></div>
+<div class="nav"><button class="active" data-tab="discover">♫ DISCOVER</button><button data-tab="peopleTab">✦ HAPPENINGS</button><button data-tab="venuesTab">⚙ VENUES</button></div>
 
 <script>
 (() => {
@@ -168,10 +168,20 @@ function renderPeople(){
    .sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
  if(!active.length){$('peopleList').innerHTML='<div class="empty">Nobody has responded to an event yet.</div>';return}
  $('peopleList').innerHTML=active.map(e=>{
-   const a=people(e.id,'interested'), t=people(e.id,'ticket_bought');
-   return `<div class="people-card"><h3>${esc(e.title)}</h3><div class="meta">${esc(e.venue)} · ${esc(e.date)}${e.time?' · '+esc(e.time):''}</div>
-   ${t.length?`<div class="day" style="margin-top:14px">🎟 TICKET BOUGHT · ${t.length}</div><div class="names">${t.map(x=>`<span>${esc(x.user_name)}</span>`).join('')}</div>`:''}
-   ${a.length?`<div class="day" style="margin-top:14px">☆ INTERESTED · ${a.length}</div><div class="names">${a.map(x=>`<span>${esc(x.user_name)}</span>`).join('')}</div>`:''}
+   const a=people(e.id,'interested'), t=people(e.id,'ticket_bought'), mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
+   const namesI=a.map(x=>`<span>☆ ${esc(x.user_name)}</span>`).join('');
+   const namesT=t.map(x=>`<span>🎟 ${esc(x.user_name)}</span>`).join('');
+   return `<div class="people-card card">
+     <div class="top"><div><h3 style="margin:0">${esc(e.title)}</h3><div class="meta">${esc(e.venue)} · ${esc(e.date)}${e.time?' · '+esc(e.time):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
+     <div class="people">${a.length?`<span>☆ ${a.length} interested</span>`:''}${t.length?`<span>🎟 ${t.length} ticket bought</span>`:''}</div>
+     ${a.length?`<div class="day" style="margin-top:13px">INTERESTED</div><div class="people">${namesI}</div>`:''}
+     ${t.length?`<div class="day" style="margin-top:13px">TICKET BOUGHT</div><div class="people">${namesT}</div>`:''}
+     <div class="commitment"><span class="scale-label" style="display:none">YOUR COMMITMENT</span>
+       <button class="scale no ${mine?.status==='not_interested'?'selected':''}" onclick="act('${e.id}','not_interested')">NOT INTERESTED</button>
+       <button class="scale yes ${mine?.status==='interested'?'selected':''}" onclick="act('${e.id}','interested')">INTERESTED</button>
+       <button class="scale bought ${mine?.status==='ticket_bought'?'selected':''}" onclick="act('${e.id}','ticket_bought')">TICKET BOUGHT</button>
+     </div>
+     <div class="actions"><a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a></div>
    </div>`;
  }).join('');
 }
