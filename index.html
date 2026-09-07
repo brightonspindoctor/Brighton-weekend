@@ -104,6 +104,44 @@ header .wrap{padding-left:15px;padding-right:15px}
 .card .actions button{min-height:38px}
 .people-card{margin-left:0;margin-right:0}
 </style>
+
+<style id="v11-commitment">
+.commitment{display:flex;align-items:center;justify-content:flex-start;gap:8px;margin-top:13px;flex-wrap:wrap}
+.commit-btn{
+  appearance:none;border:0;background:transparent;color:#bfc7c9;
+  display:inline-flex;align-items:center;gap:6px;padding:6px 3px;
+  font:600 12px/1 var(--font-ui);letter-spacing:-.02em;
+  cursor:pointer;border-radius:999px;transition:color .16s ease,transform .12s ease,background .16s ease
+}
+.commit-btn:hover{background:rgba(255,255,255,.035)}
+.commit-btn:active{transform:scale(.97)}
+.commit-icon{
+  width:28px;height:28px;border:1px solid #566874;border-radius:50%;
+  display:inline-grid;place-items:center;font:500 17px/1 var(--font-ui);
+  background:#20384a;color:#d9d5ca;flex:0 0 28px
+}
+.commit-btn.no .commit-icon{color:#d5b1b6;border-color:#75585f}
+.commit-btn.yes .commit-icon{color:#d7e3a4;border-color:#687451;font-size:19px}
+.commit-btn.bought .commit-icon{color:#e1c09b;border-color:#725f4c;font-size:14px}
+.commit-btn.selected.no{color:#f0d6d9}
+.commit-btn.selected.no .commit-icon{background:#3b2d31;border-color:#a06a72;color:#f0d6d9;box-shadow:0 0 0 2px rgba(160,106,114,.12)}
+.commit-btn.selected.yes{color:#e0eab8}
+.commit-btn.selected.yes .commit-icon{background:#304039;border-color:#9cac70;color:#e0eab8;box-shadow:0 0 0 2px rgba(156,172,112,.12)}
+.commit-btn.selected.bought{color:#efcca1}
+.commit-btn.selected.bought .commit-icon{background:#47382a;border-color:#b88d5e;color:#efcca1;box-shadow:0 0 0 2px rgba(184,141,94,.12)}
+.plusone{
+  display:flex;align-items:center;gap:7px;margin-top:9px;
+  font:600 12px/1.2 var(--font-ui);color:#c8c1b5
+}
+.plusone span{margin-right:2px}
+.plusbtn{
+  width:28px;height:28px;border-radius:50%;border:1px solid #566874;
+  background:#20384a;color:#e4ddd0;font:600 17px/1 var(--font-ui);cursor:pointer;
+  display:inline-grid;place-items:center
+}
+.plusbtn:hover{background:#294456}
+.people-card .commitment{margin-top:12px}
+</style>
 </head>
 <body>
 
@@ -206,13 +244,14 @@ function render(){
 async function changePlusOne(id,delta){
   if(!name()){showWelcome();return}
   const mine=attendance.find(a=>a.event_id===id&&a.user_id===uid());
-  if(!mine || mine.status!=='ticket_bought'){alert('Mark this event as Ticket bought first.');return}
+  if(!mine || mine.status!=='ticket_bought'){alert('Choose “Bought” first, then add your +1.');return}
   const current=Number(mine.plus_one||0), next=Math.max(0,Math.min(1,current+delta));
   if(next===current)return;
   try{
     await api('PATCH','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()),{plus_one:next});
-    await loadAttendance();render();renderPeople();
-  }catch(e){alert('Could not update your +1. '+e.message)}
+    mine.plus_one=next;
+    render();renderPeople();
+  }catch(e){alert('The +1 field is not available yet. Run the v11 Supabase migration, then try again.')}
 }
 async function clearStatus(id){
  if(!uname()){showWelcome();return}
@@ -234,12 +273,12 @@ function renderPeople(){
    return `<div class="people-card card">
      <div class="top"><div><h3 style="margin:0">${esc(e.title)}</h3><div class="meta">${esc(e.venue)} · ${esc(e.date)}${e.time?' · '+esc(e.time):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
      ${a.length?`<div class="day" style="margin-top:13px">INTERESTED · ${a.length}</div><div class="people">${namesI}</div>`:''}
-     ${t.length?`<div class="day" style="margin-top:13px">TICKET BOUGHT · ${t.length}</div><div class="people">${namesT}</div>`:''}
-     ${mine?.status==='ticket_bought'?`<div class="plusone"><span>My +1: <b>${myPlusOne}</b></span><button class="plusbtn" onclick="changePlusOne('${e.id}',-1)">−</button><button class="plusbtn" onclick="changePlusOne('${e.id}',1)">+</button></div>`:''}
+     ${t.length?`<div class="day" style="margin-top:13px">Ticket bought · ${t.length}</div><div class="people">${namesT}</div>`:''}
+     ${mine?.status==='ticket_bought'?`<div class="plusone"><span>My +1: <b>${myPlusOne}</b></span><button class="plusbtn" onclick="changePlusOne('${e.id}',-1)" aria-label="Remove plus one">−</button><button class="plusbtn" onclick="changePlusOne('${e.id}',1)" aria-label="Add plus one">+</button></div>`:''}
      <div class="commitment">
-       <button class="scale no ${mine?.status==='not_interested'?'selected':''}" onclick="act('${e.id}','not_interested')">Not interested</button>
-       <button class="scale yes ${mine?.status==='interested'?'selected':''}" onclick="act('${e.id}','interested')">Interested</button>
-       <button class="scale bought ${mine?.status==='ticket_bought'?'selected':''}" onclick="act('${e.id}','ticket_bought')">Ticket bought</button>
+       <button class="commit-btn no ${mine?.status==='not_interested'?'selected':''}" onclick="act('${e.id}','not_interested')"><span class="commit-icon">×</span><span>Not for me</span></button>
+       <button class="commit-btn yes ${mine?.status==='interested'?'selected':''}" onclick="act('${e.id}','interested')"><span class="commit-icon">♡</span><span>Interested</span></button>
+       <button class="commit-btn bought ${mine?.status==='ticket_bought'?'selected':''}" onclick="act('${e.id}','ticket_bought')"><span class="commit-icon">🎟</span><span>Bought</span></button>
      </div>
      <div class="actions"><a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a></div>
    </div>`;
