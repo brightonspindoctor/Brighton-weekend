@@ -19,8 +19,22 @@ async function act(id,status){if(!uname()){showName();return}let mine=attendance
 function render(){let end=new Date(friday);end.setDate(end.getDate()+2);week.textContent=friday.toLocaleDateString('en-GB',{day:'numeric',month:'short'})+' – '+end.toLocaleDateString('en-GB',{day:'numeric',month:'short'});let h='';for(let i=0;i<3;i++){let d=new Date(friday);d.setDate(d.getDate()+i);let list=events.filter(e=>e.date===k(d)&&enabled.includes(e.venue));h+=`<div class="day">${['FRIDAY','SATURDAY','SUNDAY'][i]} · ${d.toLocaleDateString('en-GB',{day:'numeric',month:'long'})}</div>`;h+=list.length?list.map(e=>{let a=ep(e.id,'interested'),g=ep(e.id,'going'),m=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());return `<article class=card><div class=top><div><div class=title>${e.title}</div><div class=meta>${e.venue}${e.time?' · '+e.time:''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div><div class=people><span>☆ ${a.length} interested</span><span>✓ ${g.length} going</span>${[...a.map(x=>'☆ '+x.user_name),...g.map(x=>'✓ '+x.user_name)].map(x=>'<span>'+x+'</span>').join('')}</div><div class=actions><button class="interest ${m?.status==='interested'?'active':''}" onclick="act('${e.id}','interested')">☆ I'M INTERESTED</button><button class="going ${m?.status==='going'?'active':''}" onclick="act('${e.id}','going')">✓ I'M GOING</button><a class=ticket target=_blank href="${e.ticket_url}">TICKETS ↗</a></div></article>`}).join(''):'<div class=empty>No events found.</div>'}$('discover').innerHTML=h}}
 function rv(){venueList.innerHTML=VENUES.map(v=>`<label class=venue-row>${v}<input type=checkbox data-v="${v}" ${enabled.includes(v)?'checked':''}></label>`).join('');document.querySelectorAll('[data-v]').forEach(x=>x.onchange=()=>{enabled=x.checked?[...new Set([...enabled,x.dataset.v])]:enabled.filter(v=>v!==x.dataset.v);localStorage.bwV=JSON.stringify(enabled);render()})}
 async function refresh(){statusline.textContent='Refreshing…';try{let j=await (await fetch('events.json?x='+Date.now(),{cache:'no-store'})).json();events=j.events||[];subtitle.textContent=`${events.length} events · updated ${j.updated||''}`;await loadAttendance();render();statusline.textContent=`✓ Updated · ${events.length} events loaded`}catch(e){statusline.textContent='Could not refresh'}}
-function showName(){nameModal.classList.remove('hidden');nameInput.value=uname()}saveName.onclick=()=>{let n=nameInput.value.trim();if(n){localStorage.bwName=n;nameModal.classList.add('hidden');render()}};changeName.onclick=showName;
-prev.onclick=()=>{friday.setDate(friday.getDate()-7);render()};next.onclick=()=>{friday.setDate(friday.getDate()+7);render()};today.onclick=()=>{friday=weekendStart();render()};refresh.onclick=refresh;
+const nameModalEl=$('nameModal'), nameInputEl=$('nameInput'), saveNameEl=$('saveName');
+function showName(){nameModalEl.classList.remove('hidden');nameInputEl.value=uname();setTimeout(()=>nameInputEl.focus(),50)}
+function saveUserName(){
+  const n=nameInputEl.value.trim();
+  if(!n){nameInputEl.focus();return}
+  localStorage.setItem('bwName',n);
+  nameModalEl.classList.add('hidden');
+  render();
+}
+saveNameEl.addEventListener('click',saveUserName);
+nameInputEl.addEventListener('keydown',e=>{if(e.key==='Enter')saveUserName()});
+$('changeName').addEventListener('click',showName);
+$('prev').addEventListener('click',()=>{friday.setDate(friday.getDate()-7);render()});
+$('next').addEventListener('click',()=>{friday.setDate(friday.getDate()+7);render()});
+$('today').addEventListener('click',()=>{friday=weekendStart();render()});
+$('refresh').addEventListener('click',refresh);
 document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');['discover','venuesTab'].forEach(x=>$(x).classList.toggle('hidden',x!==b.dataset.tab));if(b.dataset.tab==='venuesTab')rv()});
-if(!uname())showName();rv();refresh();window.act=act;
+rv(); if(!uname())showName(); refresh(); window.act=act;
 </script></body></html>
