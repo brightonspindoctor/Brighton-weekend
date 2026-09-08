@@ -1,0 +1,1 @@
+v26 fix: event Bought/Ticket Bought counts now include the current user's own commitment, while Happenings continues to show only shared-group activity from other users.
