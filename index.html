@@ -3,14 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#122338">
+<meta name="application-name" content="Brighton Weekend">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Brighton Weekend">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#000000">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <title>Brighton Weekend</title>
 <style>
 :root{--ink:#172335;--cream:#f3e4c9;--orange:#b94f2d;--gold:#d6a54c;--lime:#c8d989}
-*{box-sizing:border-box} body{margin:0;font-family:var(--font-ui);background:#102033;color:var(--cream)}
+*{box-sizing:border-box} body{margin:0;font-family:var(--font-ui,Plus Jakarta Sans,sans-serif);background:#102033;color:var(--cream);-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none}
 button,input{font:inherit} .hidden{display:none!important}
 
 /* Welcome screen */
@@ -38,7 +48,37 @@ header{position:sticky;top:0;z-index:5;background:#122238;border-bottom:1px soli
 .nav{position:fixed;bottom:0;left:0;right:0;background:#14273a;border-top:1px solid #405568;display:flex;justify-content:space-around;padding:12px max(12px,env(safe-area-inset-left)) calc(12px + env(safe-area-inset-bottom));z-index:10}.nav button{border:0;background:none;color:#9cabb2;font:bold .75rem system-ui,sans-serif}.nav button.active{color:#d8e59e}
 .venue-row{display:flex;justify-content:space-between;padding:15px 2px;border-bottom:1px solid #405568;font-family:var(--font-ui)}.venue-row input{accent-color:#b9c76d;width:20px}
 .empty{font-family:var(--font-ui);color:#91a0a8;padding:10px 0}
-</style>
+
+/* Groups */
+.group-step{display:grid;gap:12px;text-align:left}
+.group-step h3{margin:0;font-size:1.15rem}
+.group-list{display:grid;gap:8px;max-height:230px;overflow:auto}
+.group-choice{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid #3e4750;border-radius:16px;background:#101216}
+.group-choice input{width:auto;accent-color:#a9b777}
+.group-choice .lock{margin-left:auto;color:#aeb7bc}
+.group-actions{display:flex;gap:8px}
+.group-actions button{flex:1}
+.secondary{background:#17191d!important;border-color:#4b5861!important;color:#d5d7d5!important}
+.group-panel{margin-top:8px;padding-top:10px;border-top:1px solid #34404a}
+.group-form{display:grid;gap:9px;margin-top:10px}
+.group-form label{font-size:.78rem;color:#aeb7bc}
+.group-form input,.group-form select{width:100%;padding:12px 14px;border-radius:14px;border:1px solid #4b5861;background:#0e1013;color:#f3e4c9}
+.group-meta{font-size:.78rem;color:#aeb7bc;margin-top:2px}
+.group-chip{display:inline-flex;align-items:center;gap:6px;border:1px solid #4b5861;background:#182128;border-radius:999px;padding:5px 9px;font-size:.72rem;margin:3px 4px 3px 0}
+.group-heading{display:flex;align-items:center;gap:8px;margin:16px 0 7px;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:#aeb7bc}
+.group-heading:before{content:'◌';color:#b8c98b}
+.group-manager{display:grid;gap:8px;margin-top:10px}
+.group-manager-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid #29333c}
+.small-btn{padding:8px 11px!important;font-size:.78rem!important}
+.pin-display{font-weight:800;letter-spacing:.15em;color:#dce7ac}
+
+.section-head{margin-bottom:12px}.section-head h2{margin:0 0 4px;font-size:1.35rem}.comedy-venue{font-size:.72rem;color:#aeb7bc;margin-top:2px}
+
+/* New Happenings indicator */
+.nav button.has-new{font-weight:800;color:#f06b61;position:relative}
+.nav button.has-new::after{content:'';position:absolute;width:7px;height:7px;border-radius:50%;background:#f06b61;top:6px;right:8px;box-shadow:0 0 0 2px #102033}
+
+.install-area{margin:26px 0 12px;padding-top:18px;border-top:1px solid #34404a;text-align:center}.install-btn{width:100%;border-radius:999px!important;padding:14px 18px!important;font-weight:700!important}.install-btn.hidden{display:none}</style>
 
 <style id="jakarta-design-system">
 :root{
@@ -233,12 +273,43 @@ h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
 
 <section id="welcome">
   <div class="welcome-card">
-    <h2>Welcome to Brighton Weekend</h2>
-    <p>What should we call you?</p>
-    <form id="nameForm">
-      <input id="nameInput" type="text" maxlength="40" placeholder="Your name" autocomplete="name" required>
-      <button id="saveName" type="submit">Party On →</button>
-    </form>
+    <div id="nameStep">
+      <h2>Welcome to Brighton Weekend</h2>
+      <p>What should we call you?</p>
+      <form id="nameForm">
+        <input id="nameInput" type="text" maxlength="40" placeholder="Your name" autocomplete="name" required>
+        <button type="submit">Next →</button>
+      </form>
+    </div>
+    <div id="groupStep" class="hidden">
+      <h2>Your groups</h2>
+      <p>Choose your circles. Happenings only shows activity from people who share a group with you.</p>
+      <div id="onboardingGroups" class="group-list"></div>
+      <div id="groupEmpty" class="group-meta">You can join more than one group.</div>
+      <div class="group-actions">
+        <button type="button" class="secondary" id="showCreateGroup">+ Create</button>
+        <button type="button" class="secondary" id="showJoinGroup">Join</button>
+      </div>
+      <div id="createGroupPanel" class="group-panel hidden">
+        <div class="group-form">
+          <label>Group name<input id="newGroupName" maxlength="50" placeholder="e.g. Brighton Crew"></label>
+          <label>Privacy<select id="newGroupPrivacy"><option value="public">Open — anyone can join</option><option value="private">Private — 3 digit PIN</option></select></label>
+          <div id="pinNote" class="group-meta">Private groups use a 3 digit PIN to join.</div>
+          <button type="button" id="createGroupBtn">Create group</button>
+        </div>
+      </div>
+      <div id="joinGroupPanel" class="group-panel hidden">
+        <div class="group-form">
+          <label>Open groups<select id="publicGroupSelect"><option value="">Choose an open group…</option></select></label>
+          <button type="button" id="joinPublicBtn">Join selected group</button>
+          <div class="group-meta">Or join a private group:</div>
+          <label>Private group name<input id="privateGroupName" maxlength="50" placeholder="Exact group name"></label>
+          <label>3 digit PIN<input id="privateGroupPin" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" placeholder="123"></label>
+          <button type="button" id="joinPrivateBtn">Join private group</button>
+        </div>
+      </div>
+      <button type="button" id="partyOnBtn">Party On →</button>
+    </div>
   </div>
 </section>
 
@@ -252,139 +323,283 @@ h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
 </div></header>
 
 <main id="discover" class="wrap app-main"></main>
+<main id="comedyTab" class="wrap app-main hidden">
+  <div class="section-head">
+    <h2>Comedy</h2>
+    <div class="note">Stand-up, improv and comedy across Brighton · Thu–Sun</div>
+  </div>
+  <div id="comedyList"></div>
+</main>
 <main id="peopleTab" class="wrap app-main hidden">
 <h2>Happenings</h2>
 <p class="note">See what people are interested in and where they have bought tickets.</p>
 <div id="peopleList"></div>
 </main>
-<main id="venuesTab" class="wrap app-main hidden"><h2>Venues</h2><div id="venueList"></div><br><button id="changeName">Change my name</button></main>
+<main id="venuesTab" class="wrap app-main hidden">
+<h2>Venues</h2><div id="venueList"></div>
+<div class="group-panel"><h2 style="margin:12px 0 4px">Groups</h2><p class="note">Manage the groups that shape your Happenings feed.</p><div id="groupManager"></div><button id="manageGroups" class="secondary">Manage groups</button></div>
+<br><button id="changeName">Change my name</button>
+<div class="install-area"><button id="installApp" class="install-btn">↓ Add Brighton Weekend to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
+</main>
 <div class="nav"><button class="active" data-tab="discover"><span class="nav-icon">♬</span> Discover</button><button data-tab="peopleTab"><span class="nav-icon">♡</span> Happenings</button><button data-tab="venuesTab"><span class="nav-icon">◌</span> Venues</button></div>
 
-<script>
-(() => {
+<script>(() => {
 const SUPABASE_URL='https://zqvccsnfrkrtcsitfwcd.supabase.co';
 const SUPABASE_KEY='sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1';
-const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST"];
+const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton"];
 const $=id=>document.getElementById(id);
-const nameModalEl=$('welcome'),nameInputEl=$('nameInput');
-let events=[], attendance=[], enabled=JSON.parse(localStorage.getItem('bw_venues')||'null')||VENUES;
-function getFriday(){const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()+(5-d.getDay()+7)%7);return d}
-let friday=getFriday();
+let events=[], attendance=[], groupHappenings=[], groups=[];
+let enabled=JSON.parse(localStorage.getItem('bw_venues')||'null')||VENUES;
+
 function uid(){let x=localStorage.getItem('bw_uid');if(!x){x=(crypto.randomUUID?crypto.randomUUID():Date.now()+'-'+Math.random());localStorage.setItem('bw_uid',x)}return x}
 function name(){return localStorage.getItem('bw_name')||''}
 function dateKey(d){return d.toISOString().slice(0,10)}
+function getFriday(){const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()+(5-d.getDay()+7)%7);return d}
+let friday=getFriday();
+function getThursday(){const d=new Date(friday);d.setDate(d.getDate()-1);return d}
 function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
 function people(id,status){return attendance.filter(x=>x.event_id===id&&x.status===status)}
-
-$('nameForm').addEventListener('submit',e=>{
- e.preventDefault(); const n=$('nameInput').value.trim(); if(!n)return;
- localStorage.setItem('bw_name',n); $('welcome').classList.add('hidden'); render();
-});
-function showWelcome(){ $('nameInput').value=name(); $('welcome').classList.remove('hidden'); setTimeout(()=>$('nameInput').focus(),50) }
+function groupPeople(id,status){return groupHappenings.filter(x=>x.event_id===id&&x.status===status)}
+function show(el){$(el).classList.remove('hidden')}
+function hide(el){$(el).classList.add('hidden')}
 
 async function api(method,path,body,extraHeaders={}){
- const r=await fetch(SUPABASE_URL+'/rest/v1/'+path,{method,headers:{apikey:SUPABASE_KEY,Authorization:'Bearer '+SUPABASE_KEY,'Content-Type':'application/json','Prefer':'return=representation',...extraHeaders},body:body?JSON.stringify(body):undefined});
- if(!r.ok)throw new Error(await r.text()); return r.status===204?[]:r.json();
+ const r=await fetch(SUPABASE_URL+'/rest/v1/'+path,{
+  method,
+  headers:{apikey:SUPABASE_KEY,Authorization:'Bearer '+SUPABASE_KEY,'Content-Type':'application/json','Prefer':'return=representation',...extraHeaders},
+  body:body===undefined?undefined:JSON.stringify(body)
+ });
+ if(!r.ok) throw new Error(await r.text());
+ if(r.status===204) return [];
+ const t=await r.text(); return t?JSON.parse(t):[];
 }
-async function loadAttendance(){try{attendance=await api('GET','event_interest?select=event_id,user_name,status,user_id')}catch(e){console.warn('Social layer unavailable',e)}}
-function trackVisitor(){
- try {
-  const id=uid();
-  api('POST','app_visitors',{user_id:id,display_name:name()},{'Prefer':'resolution=merge-duplicates,return=representation'}).catch(()=>{});
- } catch(e) { console.warn('Visitor tracking unavailable',e); }
+async function rpc(fn,body){
+ return api('POST','rpc/'+fn,body);
 }
 
+async function loadAttendance(){
+ try{attendance=await api('GET','event_interest?select=event_id,user_name,status,user_id')}catch(e){console.warn('Social layer unavailable',e)}
+}
+async function loadGroups(){
+ if(!name()) return;
+ try{
+  groups=await rpc('bw_my_groups',{p_user_id:uid()});
+  groups=Array.isArray(groups)?groups:[];
+ }catch(e){console.warn('Groups unavailable',e);groups=[]}
+}
+function happeningsSignature(rows){
+ return rows.map(x=>[x.group_id,x.event_id,x.user_id,x.status].join(':')).sort().join('|');
+}
+function markHappeningsSeen(){
+ localStorage.setItem('bw_happenings_seen_'+uid(),happeningsSignature(groupHappenings));
+ updateHappeningsBadge();
+}
+function updateHappeningsBadge(){
+ const tab=document.querySelector('.nav button[data-tab="peopleTab"]');
+ if(!tab)return;
+ const seen=localStorage.getItem('bw_happenings_seen_'+uid())||'';
+ const current=happeningsSignature(groupHappenings);
+ const hasNew=!!current && current!==seen;
+ tab.classList.toggle('has-new',hasNew);
+}
+
+async function loadGroupHappenings(){
+ if(!groups.length){groupHappenings=[];return}
+ try{
+  groupHappenings=await rpc('bw_shared_happenings',{p_user_id:uid()});
+  groupHappenings=Array.isArray(groupHappenings)?groupHappenings:[];
+ }catch(e){console.warn('Group happenings unavailable',e);groupHappenings=[]}
+ updateHappeningsBadge();
+}
+function trackVisitor(){
+ api('POST','app_visitors',{user_id:uid(),display_name:name()},{'Prefer':'resolution=merge-duplicates,return=minimal'}).catch(()=>{});
+}
+
+function renderOnboardingGroups(){
+ const list=$('onboardingGroups');
+ list.innerHTML=groups.length?groups.map(g=>`<div class="group-choice"><span>${g.is_private?'🔒':'◌'}</span><div><strong>${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} member${(g.member_count||1)==1?'':'s'} · ${g.is_private?'Private':'Open'}</div></div></div>`).join(''):'';
+ $('groupEmpty').textContent=groups.length?'You can belong to as many groups as you like.':'You are not in any groups yet. Create one or join one.';
+}
+async function loadPublicGroups(){
+ try{
+  const data=await rpc('bw_public_groups',{p_user_id:uid()});
+  $('publicGroupSelect').innerHTML='<option value="">Choose an open group…</option>'+data.map(g=>`<option value="${esc(g.id)}">${esc(g.name)} · ${g.member_count} members</option>`).join('');
+ }catch(e){console.warn(e)}
+}
+async function openGroupStep(){
+ hide('nameStep'); show('groupStep');
+ await loadGroups(); renderOnboardingGroups(); await loadPublicGroups();
+}
+function showWelcome(mode='auto'){
+ show('welcome');
+ $('nameInput').value=name();
+ hide('createGroupPanel');hide('joinGroupPanel');
+ if(mode==='name' || !name()) {show('nameStep');hide('groupStep');setTimeout(()=>$('nameInput').focus(),50)}
+ else openGroupStep();
+}
+function finishWelcome(){
+ hide('welcome'); trackVisitor(); render(); renderComedy(); renderPeople(); renderGroupManager();
+}
+async function createGroup(){
+ const n=$('newGroupName').value.trim(), privacy=$('newGroupPrivacy').value;
+ if(!n){alert('Please give your group a name.');return}
+ try{
+  const data=await rpc('bw_create_group',{p_user_id:uid(),p_user_name:name(),p_name:n,p_is_private:privacy==='private'});
+  const g=Array.isArray(data)?data[0]:data;
+  $('newGroupName').value='';
+  if(g?.join_pin) alert(`Private group created. Share this PIN with friends: ${g.join_pin}`);
+  await loadGroups();renderOnboardingGroups();await loadPublicGroups();renderGroupManager();
+ }catch(e){alert('Could not create group. '+e.message)}
+}
+async function joinGroup(groupId,pin=null,privateName=null){
+ try{
+  const data=await rpc('bw_join_group',{p_user_id:uid(),p_user_name:name(),p_group_id:groupId||null,p_pin:pin,p_group_name:privateName||null});
+  const r=Array.isArray(data)?data[0]:data;
+  if(!r?.ok) throw new Error(r?.message||'Could not join group');
+  await loadGroups();renderOnboardingGroups();await loadPublicGroups();renderGroupManager();
+  hide('joinGroupPanel');
+ }catch(e){alert('Could not join group. '+e.message)}
+}
+function renderGroupManager(){
+ const el=$('groupManager'); if(!el)return;
+ el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} members · ${g.is_private?'Private':'Open'}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div></div>`).join(''):'<div class="group-meta">No groups yet.</div>';
+}
 
 window.act=async(id,status)=>{
- if(!name()){showWelcome();return}
+ if(!name()){showWelcome('name');return}
  const mine=attendance.find(x=>x.event_id===id&&x.user_id===uid());
  try{
   if(mine&&mine.status===status) await api('DELETE','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()));
   else if(mine) await api('PATCH','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()),{event_id:id,user_id:uid(),user_name:name(),status});
   else await api('POST','event_interest',{event_id:id,user_id:uid(),user_name:name(),status});
-  await loadAttendance();render();renderPeople();
-
+  await loadAttendance(); await loadGroupHappenings(); render(); renderComedy(); renderPeople();
  }catch(e){alert('Could not save that yet. '+e.message)}
 };
+
+function commitmentButtons(e,mine){
+ return `<div class="commitment">
+ <button class="commit-btn no ${mine?.status==='not_interested'?'selected':''}" onclick="act('${e.id}','not_interested')"><span class="commit-icon">×</span><span>Not for me</span></button>
+ <button class="commit-btn yes ${mine?.status==='interested'?'selected':''}" onclick="act('${e.id}','interested')"><span class="commit-icon">♡</span><span>Interested</span></button>
+ <button class="commit-btn bought ${mine?.status==='ticket_bought'?'selected':''}" onclick="act('${e.id}','ticket_bought')"><span class="commit-icon">🎟</span><span>Bought</span></button>
+ </div>`;
+}
 function render(){
- const end=new Date(friday);end.setDate(end.getDate()+2);
- $('week').textContent=friday.toLocaleDateString('en-GB',{day:'numeric',month:'short'})+' – '+end.toLocaleDateString('en-GB',{day:'numeric',month:'short'});
+ const start=getThursday(), end=new Date(friday);end.setDate(end.getDate()+2);
+ $('week').textContent=start.toLocaleDateString('en-GB',{day:'numeric',month:'short'})+' – '+end.toLocaleDateString('en-GB',{day:'numeric',month:'short'});
  let h='';
- ['FRIDAY','SATURDAY','SUNDAY'].forEach((label,i)=>{
-  const d=new Date(friday);d.setDate(d.getDate()+i);
+ ['THURSDAY','FRIDAY','SATURDAY','SUNDAY'].forEach((label,i)=>{
+  const d=new Date(start);d.setDate(d.getDate()+i);
   const list=events.filter(e=>e.date===dateKey(d)&&enabled.includes(e.venue));
   h+=`<div class="day">${label} · ${d.toLocaleDateString('en-GB',{day:'numeric',month:'long'})}</div>`;
   h+=list.length?list.map(e=>{
-   const ni=people(e.id,'not_interested'), a=people(e.id,'interested'), t=people(e.id,'ticket_bought');
-   const mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
-   
-   const names=[...a.map(x=>`<span class="social-chip"><i class="social-icon heart">♡</i>${esc(x.user_name)}</span>`),...t.map(x=>`<span class="social-chip"><i class="social-icon ticket">🎟</i>${esc(x.user_name)}</span>`) ].join('');
-   return `<article class="card"><div class="top"><div><div class="title">${esc(e.title)}</div><div class="meta">${esc(e.venue)}${e.time?' · '+esc(e.time):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
+   const a=groupPeople(e.id,'interested'),t=groupPeople(e.id,'ticket_bought'),mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
+   return `<article class="card"><div class="top"><div><div class="title">${esc(e.title)}</div><div class="meta">${esc(e.venue)}${e.time?' · '+esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
    ${e.price?`<div class="price">${esc(e.price)}</div>`:''}
-   <div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>${a.length} interested</span><span class="social-chip"><i class="social-icon ticket">🎟</i>${t.length} bought</span>${names}</div>
-   <div class="commitment">
-     <button class="commit-btn no ${mine?.status==='not_interested'?'selected':''}" onclick="act('${e.id}','not_interested')"><span class="commit-icon">×</span><span>Not for me</span></button>
-     <button class="commit-btn yes ${mine?.status==='interested'?'selected':''}" onclick="act('${e.id}','interested')"><span class="commit-icon">♡</span><span>Interested</span></button>
-     <button class="commit-btn bought ${mine?.status==='ticket_bought'?'selected':''}" onclick="act('${e.id}','ticket_bought')"><span class="commit-icon">🎟</span><span>Bought</span></button>
-   </div>
+   <div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>${a.length} interested</span><span class="social-chip"><i class="social-icon ticket">🎟</i>${t.length} bought</span></div>
+   ${commitmentButtons(e,mine)}
    <div class="actions"><a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a></div></article>`;
   }).join(''):'<div class="empty">No events found for your selected venues.</div>';
  });
  $('discover').innerHTML=h;
 }
-async function clearStatus(id){
- if(!name()){showWelcome();return}
- try{
-  await api('DELETE','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()));
-  await loadAttendance();render();renderPeople();
- }catch(e){alert('Could not clear your response. '+e.message)}
+
+function isComedy(e){
+ const hay=[e.category,e.type,e.genre,e.tags,e.title,e.description].filter(Boolean).join(' ').toLowerCase();
+ return /\b(comedy|comedian|stand.?up|standup|improv|improvisation|sketch|open mic comedy)\b/.test(hay);
 }
-function renderPeople(){
- const active=events.filter(e=>people(e.id,'interested').length||people(e.id,'ticket_bought').length)
-   .sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
- if(!active.length){$('peopleList').innerHTML='<div class="empty">Nobody has responded to an event yet.</div>';return}
- $('peopleList').innerHTML=active.map(e=>{
-   const a=people(e.id,'interested'), t=people(e.id,'ticket_bought'), mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
-   const namesI=a.map(x=>`<span class="social-chip"><i class="social-icon heart">♡</i>${esc(x.user_name)}</span>`).join('');
-   const namesT=t.map(x=>`<span class="social-chip"><i class="social-icon ticket">🎟</i>${esc(x.user_name)}${0?` +${0}`:''}</span>`).join('');
-   
-   return `<div class="people-card card">
-     <div class="top"><div><h3 style="margin:0">${esc(e.title)}</h3><div class="meta">${esc(e.venue)} · ${esc(e.date)}${e.time?' · '+esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
-     ${a.length?`<div class="happening-section"><span class="icon-chip heart">♡</span> Interested · ${a.length}</div><div class="people">${namesI}</div>`:''}
-     ${t.length?`<div class="happening-section"><span class="icon-chip ticket">🎟</span> Ticket bought · ${t.length}</div><div class="people">${namesT}</div>`:''}
-     <div class="commitment">
-       <button class="commit-btn no ${mine?.status==='not_interested'?'selected':''}" onclick="act('${e.id}','not_interested')"><span class="commit-icon">×</span><span>Not for me</span></button>
-       <button class="commit-btn yes ${mine?.status==='interested'?'selected':''}" onclick="act('${e.id}','interested')"><span class="commit-icon">♡</span><span>Interested</span></button>
-       <button class="commit-btn bought ${mine?.status==='ticket_bought'?'selected':''}" onclick="act('${e.id}','ticket_bought')"><span class="commit-icon">🎟</span><span>Bought</span></button>
-     </div>
-     <div class="actions"><a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a></div>
-   </div>`;
+function renderComedy(){
+ const start=getThursday(), end=new Date(friday);end.setDate(end.getDate()+3);
+ const comedy=events.filter(e=>{
+   const d=new Date(e.date+'T12:00:00');
+   return d>=start&&d<=end&&isComedy(e)&&enabled.includes(e.venue);
+ });
+ if(!comedy.length){
+   $('comedyList').innerHTML='<div class="empty">No comedy events found for your selected venues this weekend.</div>';
+   return;
+ }
+ $('comedyList').innerHTML=['THURSDAY','FRIDAY','SATURDAY','SUNDAY'].map((label,i)=>{
+   const d=new Date(start);d.setDate(d.getDate()+i);
+   const list=comedy.filter(e=>e.date===dateKey(d));
+   if(!list.length)return '';
+   return `<div class="day">${label} · ${d.toLocaleDateString('en-GB',{day:'numeric',month:'long'})}</div>`+
+   list.map(e=>{
+    const a=groupPeople(e.id,'interested'),t=groupPeople(e.id,'ticket_bought'),mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
+    return `<article class="card"><div class="top"><div><div class="title">${esc(e.title)}</div><div class="meta">${esc(e.venue)}${e.time?' · '+esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
+    ${e.price?`<div class="price">${esc(e.price)}</div>`:''}
+    <div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>${a.length} interested</span><span class="social-chip"><i class="social-icon ticket">🎟</i>${t.length} bought</span></div>
+    ${commitmentButtons(e,mine)}<div class="actions"><a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a></div></article>`;
+   }).join('');
  }).join('');
 }
+function renderPeople(){
+ const byEvent=new Map();
+ groupHappenings.forEach(x=>{if(!byEvent.has(x.event_id))byEvent.set(x.event_id,[]);byEvent.get(x.event_id).push(x)});
+ const active=events.filter(e=>byEvent.has(e.id)).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
+ if(!groups.length){$('peopleList').innerHTML='<div class="empty">Join or create a group to see what your people are planning.</div>';return}
+ if(!active.length){$('peopleList').innerHTML='<div class="empty">Nothing happening in your groups yet. Mark an event and invite your people to join a group.</div>';return}
+ $('peopleList').innerHTML=active.map(e=>{
+  const rows=byEvent.get(e.id)||[], mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
+  const byGroup=new Map(); rows.forEach(x=>{if(!byGroup.has(x.group_id))byGroup.set(x.group_id,{name:x.group_name,rows:[]});byGroup.get(x.group_id).rows.push(x)});
+  const sections=[...byGroup.values()].map(g=>{
+   const interested=g.rows.filter(x=>x.status==='interested'), bought=g.rows.filter(x=>x.status==='ticket_bought');
+   const chips=[
+    ...interested.map(x=>`<span class="social-chip"><i class="social-icon heart">♡</i>${esc(x.user_name)}</span>`),
+    ...bought.map(x=>`<span class="social-chip"><i class="social-icon ticket">🎟</i>${esc(x.user_name)}</span>`)
+   ].join('');
+   return `<div class="group-heading">${esc(g.name)}</div><div class="people">${chips}</div>`;
+  }).join('');
+  return `<div class="people-card card"><div class="top"><div><h3 style="margin:0">${esc(e.title)}</h3><div class="meta">${esc(e.venue)} · ${esc(e.date)}${e.time?' · '+esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>${sections}${commitmentButtons(e,mine)}<div class="actions"><a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a></div></div>`;
+ }).join('');
+}
+
 function renderVenues(){
  $('venueList').innerHTML=VENUES.map(v=>`<label class="venue-row">${v}<input type="checkbox" data-v="${v}" ${enabled.includes(v)?'checked':''}></label>`).join('');
  document.querySelectorAll('[data-v]').forEach(x=>x.onchange=()=>{enabled=x.checked?[...new Set([...enabled,x.dataset.v])]:enabled.filter(v=>v!==x.dataset.v);localStorage.setItem('bw_venues',JSON.stringify(enabled));render()});
 }
 async function refresh(){
- try{const j=await (await fetch('events.json?x='+Date.now(),{cache:'no-store'})).json();events=j.events||[];$('subtitle').textContent=`${events.length} events · updated ${j.updated||''}`;render()}catch(e){console.warn(e)}
+ try{const j=await (await fetch('events.json?x='+Date.now(),{cache:'no-store'})).json();events=j.events||[];$('subtitle').textContent=`${events.length} events · updated ${j.updated||''}`;render();renderComedy();renderPeople()}catch(e){console.warn(e)}
 }
+
+let deferredInstallPrompt=null;
+function setupInstallButton(){const btn=$('installApp'),hint=$('installHint');if(!btn)return;
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstallPrompt=e;});
+window.addEventListener('appinstalled',()=>{deferredInstallPrompt=null;btn.classList.add('hidden');hint.textContent='Brighton Weekend is installed on your home screen.'});
+btn.onclick=async()=>{if(deferredInstallPrompt){deferredInstallPrompt.prompt();await deferredInstallPrompt.userChoice;deferredInstallPrompt=null;return;}
+const isiOS=/iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream;
+if(isiOS)alert('To add Brighton Weekend: tap Share in Safari, then choose “Add to Home Screen”.');else alert('To add Brighton Weekend: open this site in Chrome, tap the three-dot menu, then choose “Install app” or “Add to Home screen”.');};
+if(window.matchMedia('(display-mode: standalone)').matches||navigator.standalone){btn.classList.add('hidden');hint.textContent='Brighton Weekend is already installed.';}}
+setupInstallButton();
+
+$('nameForm').addEventListener('submit',async e=>{e.preventDefault();const n=$('nameInput').value.trim();if(!n)return;localStorage.setItem('bw_name',n);await openGroupStep()});
+$('partyOnBtn').onclick=finishWelcome;
+$('showCreateGroup').onclick=()=>{hide('joinGroupPanel');$('createGroupPanel').classList.toggle('hidden')};
+$('showJoinGroup').onclick=async()=>{hide('createGroupPanel');$('joinGroupPanel').classList.toggle('hidden');if(!$('joinGroupPanel').classList.contains('hidden'))await loadPublicGroups()};
+$('newGroupPrivacy').onchange=()=>{$('pinNote').textContent=$('newGroupPrivacy').value==='private'?'A random 3 digit PIN will be created and shown to you.':'Anyone using Brighton Weekend can find and join this group.'};
+$('createGroupBtn').onclick=createGroup;
+$('joinPublicBtn').onclick=()=>{const id=$('publicGroupSelect').value;if(!id)return alert('Choose a group first.');joinGroup(id)};
+$('joinPrivateBtn').onclick=()=>{const n=$('privateGroupName').value.trim(),p=$('privateGroupPin').value.trim();if(!n||!/^\d{3}$/.test(p))return alert('Enter the exact group name and a 3 digit PIN.');joinGroup(null,p,n)};
 $('prev').onclick=()=>{friday.setDate(friday.getDate()-7);render()};
 $('next').onclick=()=>{friday.setDate(friday.getDate()+7);render()};
 $('today').onclick=()=>{friday=getFriday();render()};
-$('refresh').onclick=refresh;
-$('changeName').onclick=showWelcome;
-document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');['discover','peopleTab','venuesTab'].forEach(id=>$(id).classList.toggle('hidden',id!==b.dataset.tab));if(b.dataset.tab==='peopleTab')renderPeople();if(b.dataset.tab==='venuesTab')renderVenues()});
-document.getElementById('nameForm').addEventListener('submit',function(e){
-  e.preventDefault();
-  const input=document.getElementById('nameInput');
-  const n=input.value.trim();
-  if(!n){input.focus();return}
-  localStorage.setItem('bwName',n);
-  document.getElementById('welcome').classList.add('hidden');
-  render();
-});
-renderVenues(); render(); renderPeople(); if(name())$('welcome').classList.add('hidden'); else $('welcome').classList.remove('hidden');
-refresh(); trackVisitor(); loadAttendance().then(render);
+$('refresh').onclick=async()=>{await refresh();await loadAttendance();await loadGroups();await loadGroupHappenings();render();renderComedy();renderPeople()};
+$('changeName').onclick=()=>showWelcome('name');
+$('manageGroups').onclick=()=>showWelcome('groups');
+document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');['discover','comedyTab','peopleTab','venuesTab'].forEach(id=>$(id).classList.toggle('hidden',id!==b.dataset.tab));if(b.dataset.tab==='comedyTab')renderComedy();if(b.dataset.tab==='peopleTab'){renderPeople();markHappeningsSeen()}if(b.dataset.tab==='venuesTab'){renderVenues();renderGroupManager()}});
+(async()=>{
+ renderVenues();
+ if(name()){
+   await loadGroups();
+   if(groups.length) hide('welcome'); else showWelcome('groups');
+   trackVisitor();
+ }else showWelcome('name');
+ await Promise.all([refresh(),loadAttendance()]);
+ await loadGroupHappenings();
+ render();renderComedy();renderPeople();renderGroupManager();
 })();
+})();</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(console.warn));
+}
 </script>
 </body></html>
