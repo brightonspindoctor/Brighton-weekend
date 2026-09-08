@@ -341,7 +341,7 @@ h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
 <br><button id="changeName">Change my name</button>
 <div class="install-area"><button id="installApp" class="install-btn">↓ Add Brighton Weekend to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
 </main>
-<div class="nav"><button class="active" data-tab="discover"><span class="nav-icon">♬</span> Discover</button><button data-tab="peopleTab"><span class="nav-icon">♡</span> Happenings</button><button data-tab="venuesTab"><span class="nav-icon">◌</span> Venues</button></div>
+<div class="nav"><button class="active" data-tab="discover"><span class="nav-icon">♬</span> Discover</button><button data-tab="comedyTab"><span class="nav-icon">☻</span> Comedy</button><button data-tab="peopleTab"><span class="nav-icon">♡</span> Happenings</button><button data-tab="venuesTab"><span class="nav-icon">◌</span> Venues</button></div>
 
 <script>(() => {
 const SUPABASE_URL='https://zqvccsnfrkrtcsitfwcd.supabase.co';
@@ -472,7 +472,7 @@ window.act=async(id,status)=>{
   if(mine&&mine.status===status) await api('DELETE','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()));
   else if(mine) await api('PATCH','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()),{event_id:id,user_id:uid(),user_name:name(),status});
   else await api('POST','event_interest',{event_id:id,user_id:uid(),user_name:name(),status});
-  await loadAttendance(); await loadGroupHappenings(); render(); renderComedy(); renderPeople();
+  await loadAttendance(); await loadGroupHappenings(); updateHappeningsBadge(); render(); renderComedy(); renderPeople();
  }catch(e){alert('Could not save that yet. '+e.message)}
 };
 
