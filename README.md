@@ -16,4 +16,6 @@ Expected behaviour:
 ## Validation
 The release was statically validated for JavaScript syntax, JSON/manifest parsing, required RPC names, function signatures, and ZIP integrity. A live write against the user's Supabase project cannot be executed from this environment, so the final production write must be tested in the deployed app.
 
-Magic-link redirect fix: production GitHub Pages URL is now explicit.
+## v39 Google authentication
+
+v39 replaces email magic-link sign-in with Google OAuth. Configure the Google provider in Supabase and Google Cloud using `GOOGLE-SETUP-v39.md`. No new SQL migration is required for the authentication change.

@@ -264,6 +264,10 @@ h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
 .ticket{display:inline-flex;align-items:center;gap:6px}
 .ticket::before{content:"🎟";font-size:13px}
 
+.google-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:#202124;border:1px solid #dadce0;font-weight:700;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.google-btn::before{content:"G";font:800 18px Arial,sans-serif;color:#4285f4}
+.google-btn:disabled{opacity:.65;cursor:wait}
+
 /* Plus one */
 
 
@@ -279,11 +283,8 @@ h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
   <div class="welcome-card">
     <div id="authStep">
       <h2>Welcome to Brighton Weekend</h2>
-      <p>Sign in with your email. We'll send you a one-click sign-in link.</p>
-      <form id="emailForm">
-        <input id="emailInput" type="email" maxlength="254" placeholder="Your email address" autocomplete="email" required>
-        <button type="submit">Email me a sign-in link →</button>
-      </form>
+      <p>Sign in securely with your Google account.</p>
+      <button type="button" id="googleSignInBtn" class="google-btn">Continue with Google</button>
       <p id="authMessage" class="group-meta"></p>
     </div>
     <div id="nameStep" class="hidden">
@@ -375,7 +376,6 @@ h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
 <script>(() => {
 const SUPABASE_URL='https://zqvccsnfrkrtcsitfwcd.supabase.co';
 const SUPABASE_KEY='sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1';
-const APP_URL='https://brightonspindoctor.github.io/Brighton-weekend/';
 const supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
 let authUser=null;
 let authSession=null;
@@ -400,8 +400,12 @@ async function saveProfile(displayName){
  await api('POST','bw_profiles',{user_id:authUser.id,email:authUser.email,display_name:clean},{'Prefer':'resolution=merge-duplicates,return=representation'});
  profileName=clean;localStorage.setItem('bw_name',clean);$('accountEmail').textContent=authUser.email||'';
 }
-async function sendMagicLink(email){
- const {error}=await supabase.auth.signInWithOtp({email:email.trim().toLowerCase(),options:{emailRedirectTo:APP_URL,shouldCreateUser:true}});
+const APP_URL='https://brightonspindoctor.github.io/Brighton-weekend/';
+async function signInWithGoogle(){
+ const {error}=await supabase.auth.signInWithOAuth({
+   provider:'google',
+   options:{redirectTo:APP_URL}
+ });
  if(error)throw error;
 }
 async function initAuth(){
@@ -552,7 +556,7 @@ function showWelcome(mode='auth'){
  show('welcome');
  $('nameInput').value=name();
  hide('authStep');hide('nameStep');hide('groupStep');hide('createGroupPanel');hide('joinGroupPanel');
- if(mode==='auth' || !authUser){show('authStep');setTimeout(()=>$('emailInput').focus(),50);return}
+ if(mode==='auth' || !authUser){show('authStep');return}
  if(mode==='name' || !name()){show('nameStep');setTimeout(()=>$('nameInput').focus(),50);return}
  openGroupStep();
 }
@@ -748,7 +752,7 @@ if(isiOS)alert('To add Brighton Weekend: use Safari, tap Share, choose “Add to
 if(window.matchMedia('(display-mode: standalone)').matches||navigator.standalone){btn.classList.add('hidden');hint.textContent='Brighton Weekend is already installed.';}}
 setupInstallButton();
 
-$('emailForm').addEventListener('submit',async e=>{e.preventDefault();const email=$('emailInput').value.trim();if(!email)return;const msg=$('authMessage');try{$('emailForm').querySelector('button').disabled=true;await sendMagicLink(email);msg.textContent='Check your email for the sign-in link. You can leave this page open.';}catch(err){msg.textContent='Could not send the sign-in link. '+(err.message||err)}finally{$('emailForm').querySelector('button').disabled=false}});
+$('googleSignInBtn').addEventListener('click',async()=>{const btn=$('googleSignInBtn'),msg=$('authMessage');try{btn.disabled=true;msg.textContent='Opening Google…';await signInWithGoogle();}catch(err){msg.textContent='Could not start Google sign-in. '+(err.message||err);btn.disabled=false}});
 $('nameForm').addEventListener('submit',async e=>{e.preventDefault();const n=$('nameInput').value.trim();if(!n)return;try{await saveProfile(n);await openGroupStep()}catch(err){alert('Could not save your profile. '+(err.message||err))}});
 $('signOut').onclick=async()=>{await supabase.auth.signOut();authUser=null;authSession=null;profileName='';groups=[];attendance=[];groupHappenings=[];localStorage.removeItem('bw_name');showWelcome('auth')};
 $('partyOnBtn').onclick=finishWelcome;
