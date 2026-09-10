@@ -81,6 +81,7 @@ header{position:sticky;top:0;z-index:5;background:#122238;border-bottom:1px soli
 .nav button.has-new::after{content:'';position:absolute;width:7px;height:7px;border-radius:50%;background:#f06b61;top:6px;right:8px;box-shadow:0 0 0 2px #102033}
 
 .group-roster{margin:0 0 24px;padding:16px 0 4px;border-bottom:1px solid #34404a}.group-roster .section-head{margin-bottom:10px}.group-roster h3,.happenings-events-head h3{margin:0;font-size:1.08rem}.member-group{margin:0 0 14px}.member-group .group-heading{margin-top:8px}.member-count{font-size:.68rem;border:1px solid #4b5861;border-radius:999px;padding:2px 6px;color:#aeb9bf}.social-icon.person{font-size:10px;color:#aeb9bf;border-color:#566874}.happenings-events-head{margin:18px 0 8px}.happenings-empty{margin-top:10px}
+.custom-event-panel{margin:14px 0 22px;padding:16px;border:1px solid #34404a;border-radius:16px;background:#152738}.custom-event-launch{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0 14px;padding:12px 14px;border:1px solid #405568;border-radius:14px;background:#1a3044}.custom-event-launch button{white-space:nowrap}.custom-event-panel.collapsed .custom-event-form{display:none}.custom-event-panel.collapsed{padding-bottom:12px}.custom-event-panel h3{margin:0 0 5px}.custom-event-form{display:grid;gap:9px;margin-top:12px}.custom-event-form label{font-size:.75rem;color:#aeb7bc}.custom-event-form input,.custom-event-form select,.custom-event-form textarea{width:100%;padding:11px 13px;border-radius:12px;border:1px solid #4b5861;background:#0e1013;color:#f3e4c9}.custom-event-form textarea{min-height:70px;resize:vertical}.custom-event-row{display:grid;grid-template-columns:1fr 1fr;gap:9px}.custom-event-help{font-size:.7rem;color:#91a0a8;line-height:1.4}.custom-event-added{font-size:.7rem;color:#d8e59e;margin-top:6px}
 .install-area{margin:26px 0 12px;padding-top:18px;border-top:1px solid #34404a;text-align:center}.install-btn{width:100%;border-radius:999px!important;padding:14px 18px!important;font-weight:700!important}.install-btn.hidden{display:none}</style>
 
 <style id="jakarta-design-system">
@@ -336,6 +337,21 @@ h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
 <main id="peopleTab" class="wrap app-main hidden">
 <h2>Happenings</h2>
 <p class="note">See what people are interested in and where they have bought tickets.</p>
+<div class="custom-event-launch"><div><strong>Add something missing?</strong><div class="custom-event-help">Add an event and it will appear in the main event feed.</div></div><button id="toggleCustomEvent" type="button">＋ Add event</button></div>
+<section id="customEventPanel" class="custom-event-panel collapsed">
+  <h3>Add an event</h3>
+  <div class="custom-event-help">Add something you've found that isn't in Brighton Weekend yet. It will appear on the main event feed for everyone.</div>
+  <div class="custom-event-form">
+    <label>Event name<input id="customTitle" maxlength="120" placeholder="e.g. DJ Yoda — 80s Mixtape Live"></label>
+    <div class="custom-event-row"><label>Date<input id="customDate" type="date"></label><label>Category<select id="customCategory"><option>Music</option><option>Comedy</option><option>Club</option><option>Theatre</option><option>Other</option></select></label></div>
+    <label>Venue<select id="customVenue"><option value="">Choose a venue…</option><option>Brighton Centre</option><option>Brighton Dome</option><option>CHALK</option><option>Concorde 2</option><option>The Old Market</option><option>Green Door Store</option><option>Volks</option><option>Quarters</option><option>Patterns</option><option>DUST</option><option>Komedia</option><option>The Forge Comedy Club</option><option>Theatre Royal Brighton</option><option>Other</option></select></label>
+    <div id="customVenueDetailWrap" class="hidden"><label>Other venue<input id="customVenueDetail" maxlength="100" placeholder="Venue name"></label></div>
+    <div class="custom-event-row"><label>Start time<input id="customTime" type="time"></label><label>Finish time<input id="customFinish" type="time"></label></div>
+    <div class="custom-event-row"><label>Price<input id="customPrice" maxlength="50" placeholder="e.g. £18"></label><label>Ticket link<input id="customTicket" type="url" placeholder="https://…"></label></div>
+    <label>Description (optional)<textarea id="customDescription" maxlength="500" placeholder="Anything useful about the event"></textarea></label>
+    <button id="addCustomEventBtn" type="button">Add event</button>
+  </div>
+</section>
 <div id="peopleList"></div>
 </main>
 <main id="venuesTab" class="wrap app-main hidden">
@@ -349,9 +365,9 @@ h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
 <script>(() => {
 const SUPABASE_URL='https://zqvccsnfrkrtcsitfwcd.supabase.co';
 const SUPABASE_KEY='sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1';
-const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton"];
+const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","Other"];
 const $=id=>document.getElementById(id);
-let events=[], attendance=[], groupHappenings=[], groups=[], groupMembers=[];
+let events=[], attendance=[], groupHappenings=[], groups=[], groupMembers=[], customEvents=[];
 let enabled=JSON.parse(localStorage.getItem('bw_venues')||'null')||VENUES;
 
 function uid(){let x=localStorage.getItem('bw_uid');if(!x){x=(crypto.randomUUID?crypto.randomUUID():Date.now()+'-'+Math.random());localStorage.setItem('bw_uid',x)}return x}
@@ -365,7 +381,8 @@ function getThursday(){const d=new Date(friday);d.setDate(d.getDate()-1);return 
 function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
 function people(id,status){return attendance.filter(x=>x.event_id===id&&x.status===status)}
 function groupPeople(id,status){return groupHappenings.filter(x=>x.event_id===id&&x.status===status)}
-function uniqueGroupPeopleCount(id,status){return new Set(groupPeople(id,status).map(x=>x.user_id)).size}
+function uniqueGroupPeopleCount(id,status){return new Set(groupPeople(id,status).map(x=>x.user_id).filter(Boolean)).size}
+function venueVisible(e){return e.venue==='Other'||enabled.includes(e.venue)}
 function show(el){$(el).classList.remove('hidden')}
 function hide(el){$(el).classList.add('hidden')}
 
@@ -383,6 +400,45 @@ async function rpc(fn,body){
  return api('POST','rpc/'+fn,body);
 }
 
+async function loadCustomEvents(){
+ try{
+  const rows=await api('GET','bw_custom_events?select=id,title,date,venue,venue_detail,time,finish_time,price,status,ticket_url,category,created_by,created_by_name,created_at&order=date.asc,time.asc');
+  customEvents=Array.isArray(rows)?rows:[];
+ }catch(e){console.warn('Custom events unavailable',e);customEvents=[]}
+}
+function mergeEvents(base){
+ const seen=new Set(), merged=[];
+ [...base,...customEvents.map(e=>({...e,source:'community',is_custom:true}))].forEach(e=>{
+  if(!e||!e.id||seen.has(e.id)||!parseEventDate(e.date)||!e.title||!e.venue)return;
+  seen.add(e.id);
+  if(e.venue==='Other' && e.venue_detail)e.venue_display='Other · '+e.venue_detail; else e.venue_display=e.venue;
+  merged.push(e);
+ });
+ return merged;
+}
+async function addCustomEvent(){
+ if(!name()){showWelcome('name');return}
+ const title=$('customTitle').value.trim(), date=$('customDate').value, venue=$('customVenue').value, venueDetail=$('customVenueDetail').value.trim(), time=$('customTime').value, finish=$('customFinish').value, price=$('customPrice').value.trim(), ticket=$('customTicket').value.trim(), category=$('customCategory').value, description=$('customDescription').value.trim();
+ if(!title||!date||!venue)return alert('Please add a title, date and venue.');
+ if(venue==='Other'&&!venueDetail)return alert('Please tell us the other venue.');
+ if(!parseEventDate(date))return alert('Please choose a valid date.');
+ try{
+  const payload={title,date,venue,venue_detail:venue==='Other'?venueDetail:null,time:time||null,finish_time:finish||null,price:price||null,status:'',ticket_url:ticket||null,category:category||'Other',description:description||null,created_by:uid(),created_by_name:name()};
+  await api('POST','bw_custom_events',payload);
+  await loadCustomEvents();
+  events=mergeEvents(events.filter(e=>!e.is_custom));
+  ['customTitle','customDate','customTime','customFinish','customPrice','customTicket','customDescription','customVenueDetail'].forEach(id=>$(id).value='');
+  $('customVenue').value=''; $('customCategory').value='Other'; toggleOtherVenue();
+  $('customEventPanel').classList.add('collapsed');
+  $('toggleCustomEvent').textContent='＋ Add event';
+  renderAll();
+  alert('Added to Brighton Weekend.');
+ }catch(e){alert('Could not add that event. '+e.message)}
+}
+function toggleOtherVenue(){
+ const other=$('customVenue')?.value==='Other';
+ $('customVenueDetailWrap')?.classList.toggle('hidden',!other);
+}
 async function loadAttendance(){
  try{attendance=await api('GET','event_interest?select=event_id,user_name,status,user_id')}catch(e){console.warn('Social layer unavailable',e)}
 }
@@ -483,11 +539,16 @@ window.act=async(id,status)=>{
  if(!name()){showWelcome('name');return}
  const mine=attendance.find(x=>x.event_id===id&&x.user_id===uid());
  try{
-  if(mine&&mine.status===status) await api('DELETE','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()));
-  else if(mine) await api('PATCH','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()),{event_id:id,user_id:uid(),user_name:name(),status});
-  else await api('POST','event_interest',{event_id:id,user_id:uid(),user_name:name(),status});
-  await loadAttendance(); await loadGroupHappenings(); updateHappeningsBadge(); renderAll();
- }catch(e){alert('Could not save that yet. '+e.message)}
+  if(mine&&mine.status===status){
+    await api('DELETE','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()));
+  }else{
+    await api('POST','event_interest?on_conflict=event_id%2Cuser_id',{event_id:id,user_id:uid(),user_name:name(),status},{'Prefer':'resolution=merge-duplicates,return=representation'});
+  }
+  await loadAttendance();
+  const saved=attendance.find(x=>x.event_id===id&&x.user_id===uid());
+  if(status==='not_interested' ? saved : (!saved || saved.status!==status)) throw new Error('The change was not confirmed by Supabase.');
+  await loadGroupHappenings(); updateHappeningsBadge(); renderAll();
+ }catch(e){console.error('[Brighton Weekend] commitment save failed',e);alert('Could not save that yet. '+e.message)}
 };
 
 function commitmentButtons(e,mine){
@@ -503,16 +564,16 @@ function render(){
  let h='';
  ['THURSDAY','FRIDAY','SATURDAY','SUNDAY'].forEach((label,i)=>{
   const d=new Date(start);d.setDate(d.getDate()+i);
-  const list=events.filter(e=>e.date===dateKey(d)&&enabled.includes(e.venue));
+  const list=events.filter(e=>e.date===dateKey(d)&&venueVisible(e));
   h+=`<div class="day">${label} · ${d.toLocaleDateString('en-GB',{day:'numeric',month:'long'})}</div>`;
   h+=list.length?list.map(e=>{
    const mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
    const a=uniqueGroupPeopleCount(e.id,'interested'), t=uniqueGroupPeopleCount(e.id,'ticket_bought');
-   return `<article class="card"><div class="top"><div><div class="title">${esc(e.title)}</div><div class="meta">${esc(e.venue)}${e.time?' · '+esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
+   return `<article class="card"><div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="group-meta">· added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${esc(e.venue_display||e.venue)}${e.time?' · '+esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
    ${e.price?`<div class="price">${esc(e.price)}</div>`:''}
    <div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>${a} interested</span><span class="social-chip"><i class="social-icon ticket">🎟</i>${t} bought</span></div>
    ${commitmentButtons(e,mine)}
-   <div class="actions"><a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a></div></article>`;
+   <div class="actions">${e.ticket_url?`<a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a>`:''}</div></article>`;
   }).join(''):'<div class="empty">No events found for your selected venues.</div>';
  });
  $('discover').innerHTML=h;
@@ -526,7 +587,7 @@ function renderComedy(){
  const start=getThursday(), end=new Date(start);end.setDate(end.getDate()+3);
  const comedy=events.filter(e=>{
    const d=parseEventDate(e.date);
-   return d&&d>=start&&d<=end&&isComedy(e)&&enabled.includes(e.venue);
+   return d&&d>=start&&d<=end&&isComedy(e)&&venueVisible(e);
  });
  if(!comedy.length){
    $('comedyList').innerHTML='<div class="empty">No comedy events found for your selected venues this weekend.</div>';
@@ -540,10 +601,10 @@ function renderComedy(){
    list.map(e=>{
     const mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
    const a=uniqueGroupPeopleCount(e.id,'interested'), t=uniqueGroupPeopleCount(e.id,'ticket_bought');
-    return `<article class="card"><div class="top"><div><div class="title">${esc(e.title)}</div><div class="meta">${esc(e.venue)}${e.time?' · '+esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
+    return `<article class="card"><div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="group-meta">· added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${esc(e.venue_display||e.venue)}${e.time?' · '+esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
     ${e.price?`<div class="price">${esc(e.price)}</div>`:''}
     <div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>${a} interested</span><span class="social-chip"><i class="social-icon ticket">🎟</i>${t} bought</span></div>
-    ${commitmentButtons(e,mine)}<div class="actions"><a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a></div></article>`;
+    ${commitmentButtons(e,mine)}<div class="actions">${e.ticket_url?`<a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a>`:''}</div></article>`;
    }).join('');
  }).join('');
 }
@@ -574,7 +635,7 @@ function renderPeople(){
    ].join('');
    return `<div class="group-heading">${esc(g.name)}</div><div class="people">${chips}</div>`;
   }).join('');
-  return `<div class="people-card card"><div class="top"><div><h3 style="margin:0">${esc(e.title)}</h3><div class="meta">${esc(e.venue)} · ${esc(e.date)}${e.time?' · '+esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>${sections}${commitmentButtons(e,mine)}<div class="actions"><a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a></div></div>`;
+  return `<div class="people-card card"><div class="top"><div><h3 style="margin:0">${esc(e.title)}${e.is_custom?` <span class="group-meta">· community added</span>`:''}</h3><div class="meta">${esc(e.venue_display||e.venue)} · ${esc(e.date)}${e.time?' · '+esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>${sections}${commitmentButtons(e,mine)}<div class="actions">${e.ticket_url?`<a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a>`:''}</div></div>`;
  }).join('');
  $('peopleList').innerHTML=html;
 }
@@ -605,7 +666,7 @@ async function refresh(){
    if(!parseEventDate(e.date))continue;
    cleaned.push(e);
   }
-  events=cleaned;
+  events=mergeEvents(cleaned);
   $('subtitle').textContent=`${events.length} events · updated ${j.updated||''}`;
   debugData();
   renderAll();
@@ -645,6 +706,9 @@ $('refresh').onclick=async()=>{
 };
 $('changeName').onclick=()=>showWelcome('name');
 $('manageGroups').onclick=()=>showWelcome('groups');
+$('customVenue').onchange=toggleOtherVenue;
+$('toggleCustomEvent').onclick=()=>{const panel=$('customEventPanel');const open=panel.classList.toggle('collapsed')===false;$('toggleCustomEvent').textContent=open?'− Hide form':'＋ Add event';if(open) setTimeout(()=>$('customTitle').focus(),50)};
+$('addCustomEventBtn').onclick=addCustomEvent;
 document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');['discover','comedyTab','peopleTab','venuesTab'].forEach(id=>$(id).classList.toggle('hidden',id!==b.dataset.tab));if(b.dataset.tab==='comedyTab')renderComedy();if(b.dataset.tab==='peopleTab'){renderPeople();markHappeningsSeen()}if(b.dataset.tab==='venuesTab'){renderVenues();renderGroupManager()}});
 (async()=>{
  renderVenues();
@@ -654,8 +718,9 @@ document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.quer
    if(groups.length) hide('welcome'); else showWelcome('groups');
    trackVisitor();
  }else showWelcome('name');
- await Promise.all([refresh(),loadAttendance()]);
+ await Promise.all([refresh(),loadAttendance(),loadCustomEvents()]);
  await loadGroupHappenings();
+ events=mergeEvents(events);
  renderAll();renderGroupManager();
 })();
 })();</script>

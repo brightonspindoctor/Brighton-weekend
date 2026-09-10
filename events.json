@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08",
+  "updated": "2026-09-10",
   "range_start": "2026-09-08",
   "range_end": "2027-03-08",
   "venues": [
@@ -18,14 +18,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-09-09-brighton-dome-kevin-bridges-here-if-you-need-me",
-      "title": "Kevin Bridges: Here If You Need Me",
-      "date": "2026-09-09",
-      "venue": "Brighton Dome",
-      "category": "Comedy",
-      "ticket_url": "https://brightondome.org/whats-on/"
-    },
     {
       "id": "2026-09-09-brighton-centre-david-essex",
       "title": "David Essex",
@@ -46,12 +38,12 @@
       "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055"
     },
     {
-      "id": "2026-09-10-komedia-pat-hamilton-special-guests",
-      "title": "Pat Hamilton + Special Guests",
-      "date": "2026-09-10",
-      "venue": "Komedia",
-      "category": "Music",
-      "ticket_url": "https://www.komedia.co.uk/"
+      "id": "2026-09-09-brighton-dome-kevin-bridges-here-if-you-need-me",
+      "title": "Kevin Bridges: Here If You Need Me",
+      "date": "2026-09-09",
+      "venue": "Brighton Dome",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/"
     },
     {
       "id": "2026-09-10-the-old-market-an-evening-with-kyla-cobbler-happy-thank-you-more-please",
@@ -74,6 +66,14 @@
       "ticket_url": "https://forgecomedyclub.co.uk/brighton-comedy-shows/"
     },
     {
+      "id": "2026-09-10-komedia-pat-hamilton-special-guests",
+      "title": "Pat Hamilton + Special Guests",
+      "date": "2026-09-10",
+      "venue": "Komedia",
+      "category": "Music",
+      "ticket_url": "https://www.komedia.co.uk/"
+    },
+    {
       "id": "2026-09-10-19-00-wing-moon-idle",
       "title": "wing! + Moon Idle",
       "date": "2026-09-10",
@@ -81,14 +81,6 @@
       "time": "Volks",
       "category": "Music/Club",
       "ticket_url": "https://www.axs.com/uk/venues/134040/volks-club-brighton-tickets"
-    },
-    {
-      "id": "2026-09-11-komedia-jeff-darko-the-psychedelic-gospel-tour",
-      "title": "Jeff Darko – The Psychedelic Gospel Tour",
-      "date": "2026-09-11",
-      "venue": "Komedia",
-      "category": "Music",
-      "ticket_url": "https://www.komedia.co.uk/"
     },
     {
       "id": "2026-09-11-concorde-2-china-crisis",
@@ -128,6 +120,14 @@
       "ticket_url": "https://thegreendoorstore.co.uk/events/"
     },
     {
+      "id": "2026-09-11-komedia-jeff-darko-the-psychedelic-gospel-tour",
+      "title": "Jeff Darko – The Psychedelic Gospel Tour",
+      "date": "2026-09-11",
+      "venue": "Komedia",
+      "category": "Music",
+      "ticket_url": "https://www.komedia.co.uk/"
+    },
+    {
       "id": "2026-09-11-23-00-in-the-face-presents-off-me-nut-records",
       "title": "In The Face presents: Off Me Nut Records",
       "date": "2026-09-11",
@@ -135,14 +135,6 @@
       "time": "Volks",
       "category": "Music/Club",
       "ticket_url": "https://www.axs.com/uk/venues/134040/volks-club-brighton-tickets"
-    },
-    {
-      "id": "2026-09-12-brighton-dome-in-the-night-garden-live",
-      "title": "In the Night Garden Live",
-      "date": "2026-09-12",
-      "venue": "Brighton Dome",
-      "category": "Family",
-      "ticket_url": "https://brightondome.org/whats-on/"
     },
     {
       "id": "2026-09-12-green-door-store-karen-di",
@@ -212,13 +204,12 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
-      "id": "2026-09-12-19-00-dream-state",
-      "title": "Dream State",
+      "id": "2026-09-12-brighton-dome-in-the-night-garden-live",
+      "title": "In the Night Garden Live",
       "date": "2026-09-12",
-      "venue": "Volks",
-      "time": "Volks",
-      "category": "Music/Club",
-      "ticket_url": "https://www.axs.com/uk/venues/134040/volks-club-brighton-tickets"
+      "venue": "Brighton Dome",
+      "category": "Family",
+      "ticket_url": "https://brightondome.org/whats-on/"
     },
     {
       "id": "2026-09-12-23-00-degs-and-friends-hazard-evil-b-jfb-degs-oko",
@@ -230,20 +221,13 @@
       "ticket_url": "https://www.axs.com/uk/venues/134040/volks-club-brighton-tickets"
     },
     {
-      "id": "2026-09-13-brighton-dome-marillion-haunt-the-woods",
-      "title": "Marillion + Haunt The Woods",
-      "date": "2026-09-13",
-      "venue": "Brighton Dome",
-      "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/"
-    },
-    {
-      "id": "2026-09-13-komedia-wheels-in-motion",
-      "title": "Wheels In Motion",
-      "date": "2026-09-13",
-      "venue": "Komedia",
-      "category": "Music",
-      "ticket_url": "https://www.komedia.co.uk/"
+      "id": "2026-09-12-19-00-dream-state",
+      "title": "Dream State",
+      "date": "2026-09-12",
+      "venue": "Volks",
+      "time": "Volks",
+      "category": "Music/Club",
+      "ticket_url": "https://www.axs.com/uk/venues/134040/volks-club-brighton-tickets"
     },
     {
       "id": "2026-09-13-concorde-2-roots-garden-sound-system",
@@ -264,12 +248,20 @@
       "ticket_url": "https://www.komedia.co.uk/"
     },
     {
-      "id": "2026-09-17-brighton-dome-freya-ridings-mother-of-pearl-tour-bea",
-      "title": "Freya Ridings: Mother of Pearl Tour + Bea",
-      "date": "2026-09-17",
+      "id": "2026-09-13-brighton-dome-marillion-haunt-the-woods",
+      "title": "Marillion + Haunt The Woods",
+      "date": "2026-09-13",
       "venue": "Brighton Dome",
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/"
+    },
+    {
+      "id": "2026-09-13-komedia-wheels-in-motion",
+      "title": "Wheels In Motion",
+      "date": "2026-09-13",
+      "venue": "Komedia",
+      "category": "Music",
+      "ticket_url": "https://www.komedia.co.uk/"
     },
     {
       "id": "2026-09-17-concorde-2-allie-sherlock",
@@ -279,6 +271,14 @@
       "time": "19:30",
       "category": "Music/Club",
       "ticket_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-09-17-brighton-dome-freya-ridings-mother-of-pearl-tour-bea",
+      "title": "Freya Ridings: Mother of Pearl Tour + Bea",
+      "date": "2026-09-17",
+      "venue": "Brighton Dome",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/"
     },
     {
       "id": "2026-09-18-concorde-2-guns-n-roses-experience",
@@ -297,6 +297,15 @@
       "time": "19:00",
       "category": "Music",
       "ticket_url": "https://thegreendoorstore.co.uk/events/"
+    },
+    {
+      "id": "2026-09-18-19-00-wu-lyf",
+      "title": "WU LYF",
+      "date": "2026-09-18",
+      "venue": "Patterns",
+      "time": "19:00",
+      "category": "Music",
+      "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055"
     },
     {
       "id": "2026-09-18-komedia-komedia-comedy-club",
@@ -335,23 +344,6 @@
       "finish_time": "04:00",
       "category": "Club",
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
-    },
-    {
-      "id": "2026-09-18-19-00-wu-lyf",
-      "title": "WU LYF",
-      "date": "2026-09-18",
-      "venue": "Patterns",
-      "time": "19:00",
-      "category": "Music",
-      "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055"
-    },
-    {
-      "id": "2026-09-19-theatre-royal-brighton-austentatious-an-improvised-jane-austen-novel",
-      "title": "Austentatious: An Improvised Jane Austen Novel",
-      "date": "2026-09-19",
-      "venue": "Theatre Royal Brighton",
-      "category": "Comedy",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
       "id": "2026-09-19-concorde-2-sanctum-sanctorium-the-dark-side-of-the-80s",
@@ -429,8 +421,16 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
-      "id": "2026-09-19-19-00-vexed",
-      "title": "Vexed",
+      "id": "2026-09-19-theatre-royal-brighton-austentatious-an-improvised-jane-austen-novel",
+      "title": "Austentatious: An Improvised Jane Austen Novel",
+      "date": "2026-09-19",
+      "venue": "Theatre Royal Brighton",
+      "category": "Comedy",
+      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+    },
+    {
+      "id": "2026-09-19-23-00-sub-liminal-konichi-teej-pa",
+      "title": "Sub-liminal - Konichi, Teej, PA",
       "date": "2026-09-19",
       "venue": "Volks",
       "time": "Volks",
@@ -438,8 +438,8 @@
       "ticket_url": "https://www.axs.com/uk/venues/134040/volks-club-brighton-tickets"
     },
     {
-      "id": "2026-09-19-23-00-sub-liminal-konichi-teej-pa",
-      "title": "Sub-liminal - Konichi, Teej, PA",
+      "id": "2026-09-19-19-00-vexed",
+      "title": "Vexed",
       "date": "2026-09-19",
       "venue": "Volks",
       "time": "Volks",
@@ -454,14 +454,6 @@
       "time": "19:00",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/"
-    },
-    {
-      "id": "2026-09-24-theatre-royal-brighton-stand-or-fall-the-play",
-      "title": "Stand or Fall - The Play",
-      "date": "2026-09-24",
-      "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
       "id": "2026-09-24-quarters-v-b",
@@ -502,9 +494,9 @@
       "ticket_url": "https://forgecomedyclub.co.uk/brighton-comedy-shows/"
     },
     {
-      "id": "2026-09-25-theatre-royal-brighton-stand-or-fall-the-play",
+      "id": "2026-09-24-theatre-royal-brighton-stand-or-fall-the-play",
       "title": "Stand or Fall - The Play",
-      "date": "2026-09-25",
+      "date": "2026-09-24",
       "venue": "Theatre Royal Brighton",
       "category": "Theatre",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
@@ -517,6 +509,15 @@
       "time": "19:00",
       "category": "Music/Club",
       "ticket_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-09-25-19-00-the-surfrajettes",
+      "title": "The Surfrajettes",
+      "date": "2026-09-25",
+      "venue": "Patterns",
+      "time": "19:00",
+      "category": "Music",
+      "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055"
     },
     {
       "id": "2026-09-25-komedia-new-wave-breakers",
@@ -557,18 +558,9 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
-      "id": "2026-09-25-19-00-the-surfrajettes",
-      "title": "The Surfrajettes",
-      "date": "2026-09-25",
-      "venue": "Patterns",
-      "time": "19:00",
-      "category": "Music",
-      "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055"
-    },
-    {
-      "id": "2026-09-26-theatre-royal-brighton-stand-or-fall-the-play",
+      "id": "2026-09-25-theatre-royal-brighton-stand-or-fall-the-play",
       "title": "Stand or Fall - The Play",
-      "date": "2026-09-26",
+      "date": "2026-09-25",
       "venue": "Theatre Royal Brighton",
       "category": "Theatre",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
@@ -668,12 +660,12 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
-      "id": "2026-09-27-brighton-centre-anastacia",
-      "title": "Anastacia",
-      "date": "2026-09-27",
-      "venue": "Brighton Centre",
-      "category": "Music",
-      "ticket_url": "https://brightoncentre.co.uk/"
+      "id": "2026-09-26-theatre-royal-brighton-stand-or-fall-the-play",
+      "title": "Stand or Fall - The Play",
+      "date": "2026-09-26",
+      "venue": "Theatre Royal Brighton",
+      "category": "Theatre",
+      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
       "id": "2026-09-27-concorde-2-feng",
@@ -706,6 +698,14 @@
       "ticket_url": "https://www.theoldmarket.com/shows"
     },
     {
+      "id": "2026-09-27-brighton-centre-anastacia",
+      "title": "Anastacia",
+      "date": "2026-09-27",
+      "venue": "Brighton Centre",
+      "category": "Music",
+      "ticket_url": "https://brightoncentre.co.uk/"
+    },
+    {
       "id": "2026-09-30-brighton-centre-party101",
       "title": "Party101",
       "date": "2026-09-30",
@@ -722,14 +722,6 @@
       "time": "19:00",
       "category": "Music",
       "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055"
-    },
-    {
-      "id": "2026-10-01-theatre-royal-brighton-the-curious-incident-of-the-dog-in-the-night-time",
-      "title": "The Curious Incident of the Dog in the Night-Time",
-      "date": "2026-10-01",
-      "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
       "id": "2026-10-01-concorde-2-arkells",
@@ -770,9 +762,9 @@
       "ticket_url": "https://www.komedia.co.uk/"
     },
     {
-      "id": "2026-10-02-theatre-royal-brighton-the-curious-incident-of-the-dog-in-the-night-time",
+      "id": "2026-10-01-theatre-royal-brighton-the-curious-incident-of-the-dog-in-the-night-time",
       "title": "The Curious Incident of the Dog in the Night-Time",
-      "date": "2026-10-02",
+      "date": "2026-10-01",
       "venue": "Theatre Royal Brighton",
       "category": "Theatre",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
@@ -834,17 +826,9 @@
       "ticket_url": "https://www.concorde2.co.uk/whats-on"
     },
     {
-      "id": "2026-10-03-theatre-royal-brighton-stories-with-skip-on-the-farm",
-      "title": "Stories with Skip – On the Farm",
-      "date": "2026-10-03",
-      "venue": "Theatre Royal Brighton",
-      "category": "Family",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
-    },
-    {
-      "id": "2026-10-03-theatre-royal-brighton-the-curious-incident-of-the-dog-in-the-night-time",
+      "id": "2026-10-02-theatre-royal-brighton-the-curious-incident-of-the-dog-in-the-night-time",
       "title": "The Curious Incident of the Dog in the Night-Time",
-      "date": "2026-10-03",
+      "date": "2026-10-02",
       "venue": "Theatre Royal Brighton",
       "category": "Theatre",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
@@ -905,6 +889,22 @@
       "finish_time": "04:00",
       "category": "Club",
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
+    },
+    {
+      "id": "2026-10-03-theatre-royal-brighton-stories-with-skip-on-the-farm",
+      "title": "Stories with Skip – On the Farm",
+      "date": "2026-10-03",
+      "venue": "Theatre Royal Brighton",
+      "category": "Family",
+      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+    },
+    {
+      "id": "2026-10-03-theatre-royal-brighton-the-curious-incident-of-the-dog-in-the-night-time",
+      "title": "The Curious Incident of the Dog in the Night-Time",
+      "date": "2026-10-03",
+      "venue": "Theatre Royal Brighton",
+      "category": "Theatre",
+      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
       "id": "2026-10-08-brighton-dome-the-wonder-stuff-inspiral-carpets",
@@ -1079,14 +1079,6 @@
       "ticket_url": "https://www.concorde2.co.uk/whats-on"
     },
     {
-      "id": "2026-10-16-theatre-royal-brighton-flo-joan",
-      "title": "Flo & Joan",
-      "date": "2026-10-16",
-      "venue": "Theatre Royal Brighton",
-      "category": "Comedy",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
-    },
-    {
       "id": "2026-10-16-concorde-2-boris-pink-20th-anniversary-uk-tour",
       "title": "Boris - Pink 20th Anniversary UK Tour",
       "date": "2026-10-16",
@@ -1136,12 +1128,11 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
-      "id": "2026-10-17-theatre-royal-brighton-fin-taylor-the-pre-emptive-comeback-special",
-      "title": "Fin Taylor: The Pre-emptive Comeback Special",
-      "date": "2026-10-17",
+      "id": "2026-10-16-theatre-royal-brighton-flo-joan",
+      "title": "Flo & Joan",
+      "date": "2026-10-16",
       "venue": "Theatre Royal Brighton",
       "category": "Comedy",
-      "status": "SOLD OUT",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
@@ -1192,6 +1183,15 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
+      "id": "2026-10-17-theatre-royal-brighton-fin-taylor-the-pre-emptive-comeback-special",
+      "title": "Fin Taylor: The Pre-emptive Comeback Special",
+      "date": "2026-10-17",
+      "venue": "Theatre Royal Brighton",
+      "category": "Comedy",
+      "status": "SOLD OUT",
+      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+    },
+    {
       "id": "2026-10-17-19-00-omega-nebula",
       "title": "OMEGA NEBULA",
       "date": "2026-10-17",
@@ -1199,14 +1199,6 @@
       "time": "Volks",
       "category": "Music/Club",
       "ticket_url": "https://www.axs.com/uk/venues/134040/volks-club-brighton-tickets"
-    },
-    {
-      "id": "2026-10-18-theatre-royal-brighton-kiell-smith-bynoe-s-kool-story-bro",
-      "title": "Kiell Smith-Bynoe's - Kool Story Bro",
-      "date": "2026-10-18",
-      "venue": "Theatre Royal Brighton",
-      "category": "Comedy",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
       "id": "2026-10-18-quarters-toploader",
@@ -1219,6 +1211,14 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
+      "id": "2026-10-18-theatre-royal-brighton-kiell-smith-bynoe-s-kool-story-bro",
+      "title": "Kiell Smith-Bynoe's - Kool Story Bro",
+      "date": "2026-10-18",
+      "venue": "Theatre Royal Brighton",
+      "category": "Comedy",
+      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+    },
+    {
       "id": "2026-10-20-19-00-nectar-woode",
       "title": "NECTAR WOODE",
       "date": "2026-10-20",
@@ -1226,14 +1226,6 @@
       "time": "19:00",
       "category": "Music",
       "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055"
-    },
-    {
-      "id": "2026-10-22-theatre-royal-brighton-the-haunting-of-hill-house",
-      "title": "The Haunting of Hill House",
-      "date": "2026-10-22",
-      "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
       "id": "2026-10-22-brighton-dome-comic-boom-comedy-club",
@@ -1282,6 +1274,14 @@
       "ticket_url": "https://brightondome.org/whats-on/"
     },
     {
+      "id": "2026-10-22-theatre-royal-brighton-the-haunting-of-hill-house",
+      "title": "The Haunting of Hill House",
+      "date": "2026-10-22",
+      "venue": "Theatre Royal Brighton",
+      "category": "Theatre",
+      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+    },
+    {
       "id": "2026-10-22-19-00-every-hell",
       "title": "Every Hell",
       "date": "2026-10-22",
@@ -1289,22 +1289,6 @@
       "time": "DUST",
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust"
-    },
-    {
-      "id": "2026-10-23-green-door-store-mutations-festival-2026",
-      "title": "Mutations Festival 2026",
-      "date": "2026-10-23",
-      "venue": "Green Door Store",
-      "category": "Music",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-10-23-theatre-royal-brighton-the-haunting-of-hill-house",
-      "title": "The Haunting of Hill House",
-      "date": "2026-10-23",
-      "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
       "id": "2026-10-23-concorde-2-the-r-b-orchestra",
@@ -1345,9 +1329,17 @@
       "ticket_url": "https://www.concorde2.co.uk/whats-on"
     },
     {
-      "id": "2026-10-24-theatre-royal-brighton-the-haunting-of-hill-house",
+      "id": "2026-10-23-green-door-store-mutations-festival-2026",
+      "title": "Mutations Festival 2026",
+      "date": "2026-10-23",
+      "venue": "Green Door Store",
+      "category": "Music",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
+    },
+    {
+      "id": "2026-10-23-theatre-royal-brighton-the-haunting-of-hill-house",
       "title": "The Haunting of Hill House",
-      "date": "2026-10-24",
+      "date": "2026-10-23",
       "venue": "Theatre Royal Brighton",
       "category": "Theatre",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
@@ -1381,6 +1373,14 @@
       "ticket_url": "https://www.theoldmarket.com/shows"
     },
     {
+      "id": "2026-10-24-theatre-royal-brighton-the-haunting-of-hill-house",
+      "title": "The Haunting of Hill House",
+      "date": "2026-10-24",
+      "venue": "Theatre Royal Brighton",
+      "category": "Theatre",
+      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+    },
+    {
       "id": "2026-10-25-concorde-2-gurriers",
       "title": "Gurriers",
       "date": "2026-10-25",
@@ -1399,15 +1399,6 @@
       "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055"
     },
     {
-      "id": "2026-10-27-concorde-2-grandmaster-flash",
-      "title": "Grandmaster Flash",
-      "date": "2026-10-27",
-      "venue": "Concorde 2",
-      "time": "19:30",
-      "category": "Music/Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on"
-    },
-    {
       "id": "2026-10-27-19-00-ugly",
       "title": "UGLY",
       "date": "2026-10-27",
@@ -1415,6 +1406,15 @@
       "time": "19:00",
       "category": "Music",
       "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055"
+    },
+    {
+      "id": "2026-10-27-concorde-2-grandmaster-flash",
+      "title": "Grandmaster Flash",
+      "date": "2026-10-27",
+      "venue": "Concorde 2",
+      "time": "19:30",
+      "category": "Music/Club",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on"
     },
     {
       "id": "2026-10-28-quarters-lol-tolhurst",
@@ -1455,14 +1455,6 @@
       "ticket_url": "https://www.concorde2.co.uk/whats-on"
     },
     {
-      "id": "2026-10-31-brighton-dome-your-toys",
-      "title": "Your Toys",
-      "date": "2026-10-31",
-      "venue": "Brighton Dome",
-      "category": "Family",
-      "ticket_url": "https://brightondome.org/whats-on/"
-    },
-    {
       "id": "2026-10-31-concorde-2-drum-bass-classics-halloween-all-dayer",
       "title": "Drum & Bass Classics Halloween All Dayer",
       "date": "2026-10-31",
@@ -1501,6 +1493,55 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
+      "id": "2026-10-31-brighton-dome-your-toys",
+      "title": "Your Toys",
+      "date": "2026-10-31",
+      "venue": "Brighton Dome",
+      "category": "Family",
+      "ticket_url": "https://brightondome.org/whats-on/"
+    },
+    {
+      "id": "2026-11-01-concorde-2-the-bluetones",
+      "title": "The Bluetones",
+      "date": "2026-11-01",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-11-05-concorde-2-teenage-fanclub",
+      "title": "Teenage Fanclub",
+      "date": "2026-11-05",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-11-06-concorde-2-dj-yoda",
+      "title": "DJ Yoda",
+      "date": "2026-11-06",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:00",
+      "ticket_url": "https://www.concorde2.co.uk/event/dj-yoda",
+      "source_url": "https://www.concorde2.co.uk/event/dj-yoda",
+      "price": "£18.00 + fees"
+    },
+    {
+      "id": "2026-11-06-concorde-2-it-s-a-jungle-out-there-coco-bryce-and-j-kenzo",
+      "title": "It's A Jungle Out There - Coco Bryce & J:Kenzo",
+      "date": "2026-11-06",
+      "venue": "Concorde 2",
+      "category": "Club",
+      "time": "23:00",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
       "id": "2026-11-06-quarters-k-motionz",
       "title": "K Motionz",
       "date": "2026-11-06",
@@ -1518,14 +1559,6 @@
       "time": "DUST",
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust"
-    },
-    {
-      "id": "2026-11-07-theatre-royal-brighton-stories-with-skip-autumn-leaves",
-      "title": "Stories with Skip - Autumn Leaves",
-      "date": "2026-11-07",
-      "venue": "Theatre Royal Brighton",
-      "category": "Family",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
       "id": "2026-11-07-quarters-andy-c",
@@ -1548,6 +1581,64 @@
       "ticket_url": "https://www.theoldmarket.com/shows"
     },
     {
+      "id": "2026-11-07-theatre-royal-brighton-stories-with-skip-autumn-leaves",
+      "title": "Stories with Skip - Autumn Leaves",
+      "date": "2026-11-07",
+      "venue": "Theatre Royal Brighton",
+      "category": "Family",
+      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+    },
+    {
+      "id": "2026-11-08-concorde-2-holy-fawn-m-l",
+      "title": "Holy Fawn + MØL",
+      "date": "2026-11-08",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-11-09-concorde-2-cardinals",
+      "title": "Cardinals",
+      "date": "2026-11-09",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-11-10-concorde-2-mykki-blanco",
+      "title": "Mykki Blanco",
+      "date": "2026-11-10",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-11-12-concorde-2-the-allergies-live",
+      "title": "The Allergies (Live)",
+      "date": "2026-11-12",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-11-13-concorde-2-john-digweed",
+      "title": "John Digweed",
+      "date": "2026-11-13",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:00",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
       "id": "2026-11-13-quarters-yung-singh-riria",
       "title": "Yung Singh + Riria",
       "date": "2026-11-13",
@@ -1556,6 +1647,15 @@
       "finish_time": "04:00",
       "category": "Club",
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
+    },
+    {
+      "id": "2026-11-13-brighton-centre-peter-kay",
+      "title": "Peter Kay",
+      "date": "2026-11-13",
+      "venue": "Brighton Centre",
+      "category": "Music",
+      "ticket_url": "https://brightoncentre.co.uk/",
+      "source_url": "https://brightoncentre.co.uk/"
     },
     {
       "id": "2026-11-13-19-00-grace-cummings-special-guests",
@@ -1577,6 +1677,25 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
+      "id": "2026-11-14-concorde-2-metallica-reloaded",
+      "title": "Metallica Reloaded",
+      "date": "2026-11-14",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:00",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-11-14-brighton-centre-peter-kay",
+      "title": "Peter Kay",
+      "date": "2026-11-14",
+      "venue": "Brighton Centre",
+      "category": "Music",
+      "ticket_url": "https://brightoncentre.co.uk/",
+      "source_url": "https://brightoncentre.co.uk/"
+    },
+    {
       "id": "2026-11-14-19-00-electric-eel-shock",
       "title": "Electric Eel Shock",
       "date": "2026-11-14",
@@ -1586,6 +1705,36 @@
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust"
     },
     {
+      "id": "2026-11-15-concorde-2-mnek",
+      "title": "MNEK",
+      "date": "2026-11-15",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-11-18-concorde-2-oh-my-god-it-s-the-church",
+      "title": "Oh My God! It's The Church",
+      "date": "2026-11-18",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-11-19-concorde-2-forever-nu-25th-anniversary-of-toxicity-and-iowa",
+      "title": "Forever Nu - 25th Anniversary of Toxicity & Iowa",
+      "date": "2026-11-19",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
       "id": "2026-11-19-19-00-tokyo-tea-room-special-guests",
       "title": "TOKYO TEA ROOM + Special Guests",
       "date": "2026-11-19",
@@ -1593,6 +1742,16 @@
       "time": "DUST",
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust"
+    },
+    {
+      "id": "2026-11-20-concorde-2-uk-foo-fighters",
+      "title": "UK Foo Fighters",
+      "date": "2026-11-20",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:00",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
     },
     {
       "id": "2026-11-21-quarters-r-b-mania",
@@ -1605,6 +1764,26 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
+      "id": "2026-11-21-concorde-2-getdown-services",
+      "title": "Getdown Services",
+      "date": "2026-11-21",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "18:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-11-21-concorde-2-culture-shock",
+      "title": "Culture Shock",
+      "date": "2026-11-21",
+      "venue": "Concorde 2",
+      "category": "Club",
+      "time": "23:00",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
       "id": "2026-11-21-quarters-locklead-julian-anthony",
       "title": "Locklead + Julian Anthony",
       "date": "2026-11-21",
@@ -1613,6 +1792,16 @@
       "finish_time": "04:00",
       "category": "Club",
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
+    },
+    {
+      "id": "2026-11-23-concorde-2-the-big-moon",
+      "title": "The Big Moon",
+      "date": "2026-11-23",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
     },
     {
       "id": "2026-11-25-brighton-centre-paul-smith",
@@ -1624,12 +1813,62 @@
       "ticket_url": "https://brightoncentre.co.uk/"
     },
     {
+      "id": "2026-11-25-concorde-2-dakhabrakha",
+      "title": "DakhaBrakha",
+      "date": "2026-11-25",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-11-26-concorde-2-graham-coxon",
+      "title": "Graham Coxon",
+      "date": "2026-11-26",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
       "id": "2026-11-26-brighton-centre-bloc-party-interpol",
       "title": "Bloc Party & Interpol",
       "date": "2026-11-26",
       "venue": "Brighton Centre",
       "category": "Music",
       "ticket_url": "https://brightoncentre.co.uk/"
+    },
+    {
+      "id": "2026-11-27-concorde-2-uncle-acid-and-the-deadbeats",
+      "title": "Uncle Acid And The Deadbeats",
+      "date": "2026-11-27",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-11-27-quarters-kings-of-the-rollers",
+      "title": "Kings Of The Rollers",
+      "date": "2026-11-27",
+      "venue": "Quarters",
+      "category": "Club",
+      "time": "23:00",
+      "ticket_url": "https://www.quartersbrighton.co.uk/whatson",
+      "source_url": "https://www.quartersbrighton.co.uk/whatson"
+    },
+    {
+      "id": "2026-11-28-concorde-2-moody-disco-marsolo",
+      "title": "Moody Disco - Marsolo",
+      "date": "2026-11-28",
+      "venue": "Concorde 2",
+      "category": "Club",
+      "time": "23:00",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
     },
     {
       "id": "2026-11-28-19-00-disgusting-sisters",
@@ -1639,6 +1878,46 @@
       "time": "DUST",
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust"
+    },
+    {
+      "id": "2026-11-29-concorde-2-gotts-street-park",
+      "title": "Gotts Street Park",
+      "date": "2026-11-29",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-12-01-concorde-2-andrew-cushin",
+      "title": "Andrew Cushin",
+      "date": "2026-12-01",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-12-02-concorde-2-the-ordinary-boys",
+      "title": "The Ordinary Boys",
+      "date": "2026-12-02",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-12-03-concorde-2-the-house-of-love",
+      "title": "The House of Love",
+      "date": "2026-12-03",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
     },
     {
       "id": "2026-12-04-quarters-quantic-dj-set",
@@ -1651,12 +1930,62 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
+      "id": "2026-12-04-brighton-centre-royal-blood",
+      "title": "Royal Blood",
+      "date": "2026-12-04",
+      "venue": "Brighton Centre",
+      "category": "Music",
+      "time": "18:30",
+      "ticket_url": "https://brightoncentre.co.uk/",
+      "source_url": "https://brightoncentre.co.uk/"
+    },
+    {
+      "id": "2026-12-04-concorde-2-martin-kemp-back-to-the-80s-xmas-special",
+      "title": "Martin Kemp - Back To The 80s Xmas Special",
+      "date": "2026-12-04",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:00",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
       "id": "2026-12-05-theatre-royal-brighton-stories-with-skip-moon-and-stars",
       "title": "Stories with Skip - Moon and Stars",
       "date": "2026-12-05",
       "venue": "Theatre Royal Brighton",
       "category": "Family",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+    },
+    {
+      "id": "2026-12-06-concorde-2-electric-six",
+      "title": "Electric Six",
+      "date": "2026-12-06",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-12-07-brighton-centre-the-holiday-in-concert-film-with-live-orchestra",
+      "title": "The Holiday in Concert - Film with Live Orchestra",
+      "date": "2026-12-07",
+      "venue": "Brighton Centre",
+      "category": "Music",
+      "time": "18:30",
+      "ticket_url": "https://brightoncentre.co.uk/",
+      "source_url": "https://brightoncentre.co.uk/"
+    },
+    {
+      "id": "2026-12-09-concorde-2-young-knives",
+      "title": "Young Knives",
+      "date": "2026-12-09",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
     },
     {
       "id": "2026-12-09-brighton-centre-bill-bailey",
@@ -1667,12 +1996,14 @@
       "ticket_url": "https://brightoncentre.co.uk/"
     },
     {
-      "id": "2026-12-10-brighton-centre-bill-bailey",
-      "title": "Bill Bailey",
+      "id": "2026-12-10-concorde-2-buzzcocks",
+      "title": "Buzzcocks",
       "date": "2026-12-10",
-      "venue": "Brighton Centre",
-      "category": "Comedy",
-      "ticket_url": "https://brightoncentre.co.uk/"
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
     },
     {
       "id": "2026-12-10-19-00-the-black-queen",
@@ -1685,11 +2016,11 @@
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust"
     },
     {
-      "id": "2026-12-11-brighton-centre-ub40-ft-ali-campbell",
-      "title": "UB40 ft. Ali Campbell",
-      "date": "2026-12-11",
+      "id": "2026-12-10-brighton-centre-bill-bailey",
+      "title": "Bill Bailey",
+      "date": "2026-12-10",
       "venue": "Brighton Centre",
-      "category": "Music",
+      "category": "Comedy",
       "ticket_url": "https://brightoncentre.co.uk/"
     },
     {
@@ -1703,6 +2034,24 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
+      "id": "2026-12-11-concorde-2-elvana",
+      "title": "Elvana",
+      "date": "2026-12-11",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "18:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-12-11-brighton-centre-ub40-ft-ali-campbell",
+      "title": "UB40 ft. Ali Campbell",
+      "date": "2026-12-11",
+      "venue": "Brighton Centre",
+      "category": "Music",
+      "ticket_url": "https://brightoncentre.co.uk/"
+    },
+    {
       "id": "2026-12-12-quarters-trancecoda-presents-j00f-editions",
       "title": "Trancecoda Presents J00F Editions",
       "date": "2026-12-12",
@@ -1713,6 +2062,16 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
+      "id": "2026-12-12-concorde-2-rhythm-of-the-90s",
+      "title": "Rhythm Of The 90s",
+      "date": "2026-12-12",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:00",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
       "id": "2026-12-12-19-00-barbara",
       "title": "Barbara",
       "date": "2026-12-12",
@@ -1720,6 +2079,96 @@
       "time": "DUST",
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust"
+    },
+    {
+      "id": "2026-12-15-concorde-2-the-simpsons-ultimate-quiz",
+      "title": "The Simpsons Ultimate Quiz",
+      "date": "2026-12-15",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:00",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-12-16-concorde-2-abba-revival",
+      "title": "Abba Revival",
+      "date": "2026-12-16",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-12-18-concorde-2-80s-hifi-christmas-party",
+      "title": "80s HiFi Christmas Party",
+      "date": "2026-12-18",
+      "venue": "Concorde 2",
+      "category": "Club",
+      "time": "19:00",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-12-19-concorde-2-absolute-bowie-christmas-special",
+      "title": "Absolute Bowie Christmas Special",
+      "date": "2026-12-19",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:00",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-12-20-brighton-centre-jamie-t",
+      "title": "Jamie T",
+      "date": "2026-12-20",
+      "venue": "Brighton Centre",
+      "category": "Music",
+      "time": "18:30",
+      "ticket_url": "https://brightoncentre.co.uk/",
+      "source_url": "https://brightoncentre.co.uk/"
+    },
+    {
+      "id": "2026-12-20-concorde-2-the-smyths",
+      "title": "The Smyths",
+      "date": "2026-12-20",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-12-22-concorde-2-resident-presents-the-script",
+      "title": "Resident Presents The Script",
+      "date": "2026-12-22",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "17:00",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-12-22-brighton-centre-anton-at-christmas",
+      "title": "Anton at Christmas",
+      "date": "2026-12-22",
+      "venue": "Brighton Centre",
+      "category": "Music",
+      "time": "18:30",
+      "ticket_url": "https://brightoncentre.co.uk/",
+      "source_url": "https://brightoncentre.co.uk/"
+    },
+    {
+      "id": "2026-12-23-concorde-2-from-the-jam",
+      "title": "From The Jam",
+      "date": "2026-12-23",
+      "venue": "Concorde 2",
+      "category": "Music",
+      "time": "19:30",
+      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "source_url": "https://www.concorde2.co.uk/whats-on"
     },
     {
       "id": "2027-01-03-brighton-centre-shen-yun",
@@ -1748,6 +2197,16 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
+      "id": "2027-02-06-brighton-centre-bonobo",
+      "title": "Bonobo",
+      "date": "2027-02-06",
+      "venue": "Brighton Centre",
+      "category": "Music",
+      "time": "19:00",
+      "ticket_url": "https://brightoncentre.co.uk/",
+      "source_url": "https://brightoncentre.co.uk/"
+    },
+    {
       "id": "2027-02-06-theatre-royal-brighton-stories-with-skip-under-the-sea",
       "title": "Stories With Skip - Under The Sea",
       "date": "2027-02-06",
@@ -1765,6 +2224,15 @@
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust"
     },
     {
+      "id": "2027-02-21-brighton-centre-michael-starring-ben",
+      "title": "Michael Starring Ben",
+      "date": "2027-02-21",
+      "venue": "Brighton Centre",
+      "category": "Music",
+      "ticket_url": "https://brightoncentre.co.uk/",
+      "source_url": "https://brightoncentre.co.uk/"
+    },
+    {
       "id": "2027-02-24-theatre-royal-brighton-vanessa-williams-live-in-concert",
       "title": "Vanessa Williams: Live in Concert",
       "date": "2027-02-24",
@@ -1780,5 +2248,6 @@
       "category": "Family",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     }
-  ]
+  ],
+  "source_note": "Expanded with additional events verified against official venue listings during the v30 research pass. Community-added events are stored separately in Supabase and merged into the main feed at runtime."
 }

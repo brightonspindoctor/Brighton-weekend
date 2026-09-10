@@ -1,0 +1,26 @@
+Brighton Weekend v30 — Event coverage + community event feed
+
+EVENT DATA
+1. Expanded events.json from 192 to 239 events.
+2. Added the missing DJ Yoda — Concorde 2 — Friday 6 November 2026.
+3. Added additional Concorde 2 November/December 2026 listings from the venue's official What's On page.
+4. Added additional Quarters listings found on the venue's official What's On page.
+5. Added additional Brighton Centre listings shown on the venue's current site.
+6. Existing events were retained and new records were de-duplicated by date + venue + title.
+7. Source URLs are retained on newly researched records where available.
+
+COMMUNITY EVENTS
+8. Added an Add an event form inside Happenings.
+9. Users can choose only the 13 existing venues or Other.
+10. Other requires an additional venue name.
+11. Community events are persisted in Supabase and merged into the main event feed at runtime.
+12. Community events support date, time, category, price, ticket URL and description.
+13. Community events appear on the main Discover feed and Comedy feed when appropriate.
+
+LIMITATION
+A GitHub Pages browser cannot safely rewrite the deployed static events.json. The Supabase community-event table is therefore the writable extension to that file.
+
+VALIDATION
+- index.html JavaScript: node --check passed.
+- events.json: python -m json.tool passed.
+- manifest.webmanifest: python -m json.tool passed.

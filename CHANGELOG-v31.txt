@@ -1,0 +1,18 @@
+Brighton Weekend v31 — Happenings & commitment repair
+
+FIXES
+1. Added a prominent “＋ Add event” launcher at the top of Happenings so the custom-event feature is actually discoverable.
+2. The custom-event form opens/closes without leaving Happenings.
+3. “Other” venue community events now appear on the main Discover feed; they are no longer accidentally excluded by venue filters.
+4. Community events are reloaded from Supabase after creation so the server copy is the source of truth.
+5. Interested/Bought writes now use a single upsert path rather than separate POST/PATCH code paths, reducing failure modes.
+6. The app verifies that Supabase actually saved the requested commitment before reporting success.
+7. Added v31 SQL to restore event_interest RLS/grants and ensure the event/user unique key used by the upsert exists.
+8. Existing Happenings behaviour remains: Interested and Bought activity from all people sharing one or more groups is shown, including the current user.
+
+VALIDATION
+- JavaScript extracted from index.html and checked with node --check.
+- events.json checked with python -m json.tool.
+- manifest.webmanifest checked with python -m json.tool.
+- ZIP tested with unzip -t.
+9. Added `supabase-v31-complete.sql` so the full required database setup can be applied in one run.
