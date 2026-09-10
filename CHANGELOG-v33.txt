@@ -1,0 +1,23 @@
+Brighton Weekend v33 — Bought / Happenings reliability fix
+
+ROOT CAUSE
+v32 still wrote commitments through separate browser REST INSERT/PATCH/DELETE paths. In the deployed database state this was not reliably producing a confirmed event_interest row, so Bought could appear to do nothing and Happenings had nothing to retrieve.
+
+FIX
+- Added public.bw_set_event_interest(...) security-definer RPC as the single commitment write path.
+- RPC validates status, INSERT/UPDATEs using the event_id + user_id unique key, and deletes when toggling off.
+- App verifies the resulting event_interest row after every write before accepting the change.
+- Bought/Interested counts include the current user's saved status as a fallback.
+- Existing Happenings refresh remains in place, so the saved user appears in Happenings for groups they share.
+- No additional client-side REST PATCH/POST commitment logic remains.
+
+SUPABASE ACTION REQUIRED
+Run supabase-v33-bought-fix.sql once in Supabase SQL Editor.
+Do not use a CLI migration-repair command.
+
+TESTING
+- Inline JavaScript syntax checked with Node.
+- events.json and manifest.webmanifest parsed successfully.
+- Package integrity checked after ZIP creation.
+- Code inspection confirms all commitment actions use the new RPC and post-write verification.
+- Live Supabase mutation could not be executed from the build environment because outbound network/DNS access to the project is unavailable; this is explicitly documented in TEST-REPORT-v33.md.

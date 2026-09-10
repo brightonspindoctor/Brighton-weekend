@@ -381,7 +381,7 @@ function getThursday(){const d=new Date(friday);d.setDate(d.getDate()-1);return 
 function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
 function people(id,status){return attendance.filter(x=>x.event_id===id&&x.status===status)}
 function groupPeople(id,status){return groupHappenings.filter(x=>x.event_id===id&&x.status===status)}
-function uniqueGroupPeopleCount(id,status){return new Set(groupPeople(id,status).map(x=>x.user_id).filter(Boolean)).size}
+function uniqueGroupPeopleCount(id,status){const ids=new Set(groupPeople(id,status).map(x=>x.user_id).filter(Boolean)); const mine=attendance.find(x=>x.event_id===id&&x.user_id===uid()&&x.status===status); if(mine)ids.add(uid()); return ids.size}
 function venueVisible(e){return e.venue==='Other'||(e.is_custom && e.venue==='Other' ? true : enabled.includes(e.venue))}
 function show(el){$(el).classList.remove('hidden')}
 function hide(el){$(el).classList.add('hidden')}
@@ -538,22 +538,30 @@ function renderGroupManager(){
 window.act=async(id,status)=>{
  if(!name()){showWelcome('name');return}
  const mine=attendance.find(x=>x.event_id===id&&x.user_id===uid());
+ const targetStatus=(mine&&mine.status===status)?null:status;
  try{
-  if(mine&&mine.status===status){
-    await api('DELETE','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()));
-  }else if(mine){
-    await api('PATCH','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()),{event_id:id,user_id:uid(),user_name:name(),status});
-  }else{
-    await api('POST','event_interest',{event_id:id,user_id:uid(),user_name:name(),status});
-  }
+  const result=await rpc('bw_set_event_interest',{
+   p_user_id:uid(),
+   p_user_name:name(),
+   p_event_id:id,
+   p_status:targetStatus
+  });
+  if(!Array.isArray(result)) throw new Error('Unexpected response from Supabase.');
   await loadAttendance();
   const saved=attendance.find(x=>x.event_id===id&&x.user_id===uid());
-  const wasTogglingOff=!!mine&&mine.status===status;
-  if(wasTogglingOff ? saved : (!saved || saved.status!==status)) throw new Error('The change was not confirmed by Supabase.');
-  await loadGroupHappenings(); updateHappeningsBadge(); renderAll();
- }catch(e){console.error('[Brighton Weekend] commitment save failed',e);alert('Could not save that yet. '+e.message)}
+  if(targetStatus===null){
+   if(saved) throw new Error('Supabase did not remove the commitment.');
+  }else if(!saved || saved.status!==targetStatus){
+   throw new Error('Supabase did not save the commitment.');
+  }
+  await loadGroupHappenings();
+  updateHappeningsBadge();
+  renderAll();
+ }catch(e){
+  console.error('[Brighton Weekend] commitment save failed',e);
+  alert('Could not save that yet. '+(e.message||e));
+ }
 };
-
 function commitmentButtons(e,mine){
  return `<div class="commitment">
  <button class="commit-btn no ${mine?.status==='not_interested'?'selected':''}" onclick="act('${e.id}','not_interested')"><span class="commit-icon">×</span><span>Not for me</span></button>
