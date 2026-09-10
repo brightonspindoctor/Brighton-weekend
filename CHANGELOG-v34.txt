@@ -1,0 +1,9 @@
+Brighton Weekend v34
+
+FIX: Bought/Interested Supabase 42702 ambiguity.
+FIX: Happenings activity function output-column ambiguity.
+FIX: Commitment RPC now uses unambiguous result column names and qualified table columns.
+FIX: Upsert no longer uses ambiguous ON CONFLICT (event_id,user_id) syntax inside PL/pgSQL.
+FIX: Happenings includes current user's Interested/Bought activity when group membership exists.
+
+IMPORTANT: Run supabase-v34-bought-happenings-fix.sql once in Supabase SQL Editor before testing the app.
