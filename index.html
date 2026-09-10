@@ -277,8 +277,17 @@ h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
 
 <section id="welcome">
   <div class="welcome-card">
-    <div id="nameStep">
+    <div id="authStep">
       <h2>Welcome to Brighton Weekend</h2>
+      <p>Sign in with your email. We'll send you a one-click sign-in link.</p>
+      <form id="emailForm">
+        <input id="emailInput" type="email" maxlength="254" placeholder="Your email address" autocomplete="email" required>
+        <button type="submit">Email me a sign-in link →</button>
+      </form>
+      <p id="authMessage" class="group-meta"></p>
+    </div>
+    <div id="nameStep" class="hidden">
+      <h2>Nearly there</h2>
       <p>What should we call you?</p>
       <form id="nameForm">
         <input id="nameInput" type="text" maxlength="40" placeholder="Your name" autocomplete="name" required>
@@ -357,21 +366,59 @@ h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
 <main id="venuesTab" class="wrap app-main hidden">
 <h2>Venues</h2><div id="venueList"></div>
 <div class="group-panel"><h2 style="margin:12px 0 4px">Groups</h2><p class="note">Manage the groups that shape your Happenings feed.</p><div id="groupManager"></div><button id="manageGroups" class="secondary">Manage groups</button></div>
-<br><button id="changeName">Change my name</button>
+<br><button id="changeName">Change my name</button> <button id="signOut" class="secondary">Sign out</button><div id="accountEmail" class="group-meta"></div>
 <div class="install-area"><button id="installApp" class="install-btn">↓ Add Brighton Weekend to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
 </main>
 <div class="nav"><button class="active" data-tab="discover"><span class="nav-icon">♬</span> Discover</button><button data-tab="comedyTab"><span class="nav-icon">☻</span> Comedy</button><button data-tab="peopleTab"><span class="nav-icon">♡</span> Happenings</button><button data-tab="venuesTab"><span class="nav-icon">◌</span> Venues</button></div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>(() => {
 const SUPABASE_URL='https://zqvccsnfrkrtcsitfwcd.supabase.co';
 const SUPABASE_KEY='sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1';
+const supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+let authUser=null;
+let authSession=null;
+let profileName='';
 const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","Other"];
 const $=id=>document.getElementById(id);
 let events=[], attendance=[], groupHappenings=[], groups=[], groupMembers=[], customEvents=[];
 let enabled=JSON.parse(localStorage.getItem('bw_venues')||'null')||VENUES;
 
-function uid(){let x=localStorage.getItem('bw_uid');if(!x){x=(crypto.randomUUID?crypto.randomUUID():Date.now()+'-'+Math.random());localStorage.setItem('bw_uid',x)}return x}
-function name(){return localStorage.getItem('bw_name')||''}
+function uid(){return authUser?.id||''}
+function name(){return profileName||localStorage.getItem('bw_name')||''}
+async function loadProfile(){
+ if(!authUser){profileName='';return false}
+ try{
+  const rows=await api('GET','bw_profiles?select=display_name,email&user_id=eq.'+encodeURIComponent(authUser.id));
+  if(Array.isArray(rows)&&rows[0]){profileName=rows[0].display_name||'';localStorage.setItem('bw_name',profileName);$('accountEmail').textContent=authUser.email||rows[0].email||'';return !!profileName}
+ }catch(e){console.warn('Profile load unavailable',e)}
+ profileName=localStorage.getItem('bw_name')||''; if($('accountEmail'))$('accountEmail').textContent=authUser.email||''; return false;
+}
+async function saveProfile(displayName){
+ const clean=displayName.trim(); if(!clean||!authUser) return;
+ await api('POST','bw_profiles',{user_id:authUser.id,email:authUser.email,display_name:clean},{'Prefer':'resolution=merge-duplicates,return=representation'});
+ profileName=clean;localStorage.setItem('bw_name',clean);$('accountEmail').textContent=authUser.email||'';
+}
+async function sendMagicLink(email){
+ const {error}=await supabase.auth.signInWithOtp({email:email.trim().toLowerCase(),options:{emailRedirectTo:window.location.origin+window.location.pathname,shouldCreateUser:true}});
+ if(error)throw error;
+}
+async function initAuth(){
+ const {data,error}=await supabase.auth.getSession();
+ if(error)throw error;
+ authSession=data.session||null;
+ authUser=authSession?.user||null;
+ supabase.auth.onAuthStateChange((_event,session)=>{authSession=session||null;authUser=session?.user||null;setTimeout(()=>{if(authUser)bootstrapAuthed().catch(console.warn);else showWelcome('auth')},0)});
+ if(authUser) await bootstrapAuthed(); else showWelcome('auth');
+}
+async function bootstrapAuthed(){
+ const hasProfile=await loadProfile();
+ if($('authStep'))hide('authStep');
+ if(!hasProfile){showWelcome('name');return;}
+ await loadGroups();
+ if(groups.length) hide('welcome'); else showWelcome('groups');
+ trackVisitor();
+}
 function dateKey(d){const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`}
 function parseEventDate(value){if(!/^\d{4}-\d{2}-\d{2}$/.test(value||''))return null;const d=new Date(value+'T12:00:00');return Number.isNaN(d.getTime())?null:d}
 function renderAll(){render();renderComedy();renderPeople();}
@@ -389,7 +436,7 @@ function hide(el){$(el).classList.add('hidden')}
 async function api(method,path,body,extraHeaders={}){
  const r=await fetch(SUPABASE_URL+'/rest/v1/'+path,{
   method,
-  headers:{apikey:SUPABASE_KEY,Authorization:'Bearer '+SUPABASE_KEY,'Content-Type':'application/json','Prefer':'return=representation',...extraHeaders},
+  headers:{apikey:SUPABASE_KEY,Authorization:'Bearer '+(authSession?.access_token||SUPABASE_KEY),'Content-Type':'application/json','Prefer':'return=representation',...extraHeaders},
   body:body===undefined?undefined:JSON.stringify(body)
  });
  if(!r.ok) throw new Error(await r.text());
@@ -500,12 +547,13 @@ async function openGroupStep(){
  hide('nameStep'); show('groupStep');
  await loadGroups(); renderOnboardingGroups(); await loadPublicGroups();
 }
-function showWelcome(mode='auto'){
+function showWelcome(mode='auth'){
  show('welcome');
  $('nameInput').value=name();
- hide('createGroupPanel');hide('joinGroupPanel');
- if(mode==='name' || !name()) {show('nameStep');hide('groupStep');setTimeout(()=>$('nameInput').focus(),50)}
- else openGroupStep();
+ hide('authStep');hide('nameStep');hide('groupStep');hide('createGroupPanel');hide('joinGroupPanel');
+ if(mode==='auth' || !authUser){show('authStep');setTimeout(()=>$('emailInput').focus(),50);return}
+ if(mode==='name' || !name()){show('nameStep');setTimeout(()=>$('nameInput').focus(),50);return}
+ openGroupStep();
 }
 function finishWelcome(){
  hide('welcome'); trackVisitor(); renderAll(); renderGroupManager();
@@ -699,7 +747,9 @@ if(isiOS)alert('To add Brighton Weekend: use Safari, tap Share, choose “Add to
 if(window.matchMedia('(display-mode: standalone)').matches||navigator.standalone){btn.classList.add('hidden');hint.textContent='Brighton Weekend is already installed.';}}
 setupInstallButton();
 
-$('nameForm').addEventListener('submit',async e=>{e.preventDefault();const n=$('nameInput').value.trim();if(!n)return;localStorage.setItem('bw_name',n);await openGroupStep()});
+$('emailForm').addEventListener('submit',async e=>{e.preventDefault();const email=$('emailInput').value.trim();if(!email)return;const msg=$('authMessage');try{$('emailForm').querySelector('button').disabled=true;await sendMagicLink(email);msg.textContent='Check your email for the sign-in link. You can leave this page open.';}catch(err){msg.textContent='Could not send the sign-in link. '+(err.message||err)}finally{$('emailForm').querySelector('button').disabled=false}});
+$('nameForm').addEventListener('submit',async e=>{e.preventDefault();const n=$('nameInput').value.trim();if(!n)return;try{await saveProfile(n);await openGroupStep()}catch(err){alert('Could not save your profile. '+(err.message||err))}});
+$('signOut').onclick=async()=>{await supabase.auth.signOut();authUser=null;authSession=null;profileName='';groups=[];attendance=[];groupHappenings=[];localStorage.removeItem('bw_name');showWelcome('auth')};
 $('partyOnBtn').onclick=finishWelcome;
 $('showCreateGroup').onclick=()=>{hide('joinGroupPanel');$('createGroupPanel').classList.toggle('hidden')};
 $('showJoinGroup').onclick=async()=>{hide('createGroupPanel');$('joinGroupPanel').classList.toggle('hidden');if(!$('joinGroupPanel').classList.contains('hidden'))await loadPublicGroups()};
@@ -722,17 +772,12 @@ $('toggleCustomEvent').onclick=()=>{const panel=$('customEventPanel');const open
 $('addCustomEventBtn').onclick=addCustomEvent;
 document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');['discover','comedyTab','peopleTab','venuesTab'].forEach(id=>$(id).classList.toggle('hidden',id!==b.dataset.tab));if(b.dataset.tab==='comedyTab')renderComedy();if(b.dataset.tab==='peopleTab'){renderPeople();markHappeningsSeen()}if(b.dataset.tab==='venuesTab'){renderVenues();renderGroupManager()}});
 (async()=>{
- renderVenues();
- renderAll();
- if(name()){
-   await loadGroups();
-   if(groups.length) hide('welcome'); else showWelcome('groups');
-   trackVisitor();
- }else showWelcome('name');
- await Promise.all([refresh(),loadAttendance(),loadCustomEvents()]);
- await loadGroupHappenings();
- events=mergeEvents(events);
- renderAll();renderGroupManager();
+ renderVenues(); renderAll();
+ try{await initAuth();}catch(e){console.error('Auth init failed',e);showWelcome('auth')}
+ if(authUser){
+   await Promise.all([refresh(),loadAttendance(),loadCustomEvents()]);
+   await loadGroupHappenings(); events=mergeEvents(events); renderAll();renderGroupManager();
+ }else{await refresh();events=mergeEvents(events);renderAll();}
 })();
 })();</script>
 <script>
