@@ -382,7 +382,7 @@ function esc(s){const d=document.createElement('div');d.textContent=s||'';return
 function people(id,status){return attendance.filter(x=>x.event_id===id&&x.status===status)}
 function groupPeople(id,status){return groupHappenings.filter(x=>x.event_id===id&&x.status===status)}
 function uniqueGroupPeopleCount(id,status){return new Set(groupPeople(id,status).map(x=>x.user_id).filter(Boolean)).size}
-function venueVisible(e){return e.venue==='Other'||enabled.includes(e.venue)}
+function venueVisible(e){return e.venue==='Other'||(e.is_custom && e.venue==='Other' ? true : enabled.includes(e.venue))}
 function show(el){$(el).classList.remove('hidden')}
 function hide(el){$(el).classList.add('hidden')}
 
@@ -541,12 +541,15 @@ window.act=async(id,status)=>{
  try{
   if(mine&&mine.status===status){
     await api('DELETE','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()));
+  }else if(mine){
+    await api('PATCH','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()),{event_id:id,user_id:uid(),user_name:name(),status});
   }else{
-    await api('POST','event_interest?on_conflict=event_id%2Cuser_id',{event_id:id,user_id:uid(),user_name:name(),status},{'Prefer':'resolution=merge-duplicates,return=representation'});
+    await api('POST','event_interest',{event_id:id,user_id:uid(),user_name:name(),status});
   }
   await loadAttendance();
   const saved=attendance.find(x=>x.event_id===id&&x.user_id===uid());
-  if(status==='not_interested' ? saved : (!saved || saved.status!==status)) throw new Error('The change was not confirmed by Supabase.');
+  const wasTogglingOff=!!mine&&mine.status===status;
+  if(wasTogglingOff ? saved : (!saved || saved.status!==status)) throw new Error('The change was not confirmed by Supabase.');
   await loadGroupHappenings(); updateHappeningsBadge(); renderAll();
  }catch(e){console.error('[Brighton Weekend] commitment save failed',e);alert('Could not save that yet. '+e.message)}
 };

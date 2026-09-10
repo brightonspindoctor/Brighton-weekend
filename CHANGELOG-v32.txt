@@ -1,0 +1,10 @@
+Brighton Weekend v32 — commitment reliability fix
+
+Fixes:
+- Fixed Interested/Bought saving by restoring the proven insert-or-update request flow. v31 incorrectly sent an HTTP POST with an on_conflict query parameter; Supabase documents upsert as a distinct upsert operation, so this could leave the commitment unsaved.
+- Bought/Interested changes are confirmed by reloading event_interest before the UI is refreshed.
+- Own Interested/Bought activity continues to appear in Happenings when the user shares a group.
+- Counts remain unique per user, preventing the current user from being counted twice.
+- Community events at “Other” venues are no longer hidden by the standard venue filter.
+- “Other · [venue name]” is displayed wherever a community event uses an Other venue.
+- Service-worker cache version bumped to v32.
