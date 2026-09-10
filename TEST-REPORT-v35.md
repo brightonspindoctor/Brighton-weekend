@@ -1,4 +1,4 @@
-# v35 Test Report
+# v36 Test Report
 
 - JavaScript syntax: PASS
 - events.json JSON parse: PASS

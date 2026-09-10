@@ -1,12 +1,17 @@
-# Brighton Weekend v34
+# Brighton Weekend v36
 
-This is a complete deployment package.
+## Bought + Happenings fix
 
-## Important
-Use the Supabase SQL from the previous v31 setup (`supabase-v31-complete.sql` or `supabase-v31-repair.sql`) if it has not already been run. v34 does not require a new database migration for the commitment fix.
+v36 fixes the v35 PostgreSQL return-type regression. The existing `bw_set_event_interest` and `bw_shared_happenings` return column names/types are preserved, so the functions can be replaced without dropping them. All column references inside the functions are qualified with table aliases.
 
-## Main v34 fix
-The Bought/Interested action had regressed because v31 attempted to perform an upsert by sending a POST request with `on_conflict` in the URL. Supabase's documented JavaScript API treats upsert as a distinct operation. v34 returns to explicit INSERT/PATCH/DELETE operations against the existing unique `(event_id,user_id)` constraint.
+Run **supabase-v36-bought-happenings.sql** once in Supabase SQL Editor. Do not run the v33/v35 commitment SQL afterwards.
 
-## Community events
-Community events remain stored in `bw_custom_events`. Events using the standard venue list appear normally; events using `Other` are now also included in the main feed and display their entered venue name.
+Expected behaviour:
+- Bought increases the event's Bought count by one for the current user.
+- Interested does the same for Interested.
+- The current user's activity appears in Happenings when they are a member of a group.
+- Changing Interested/Bought updates the same commitment rather than creating a second row.
+- Clicking the selected status again removes the commitment.
+
+## Validation
+The release was statically validated for JavaScript syntax, JSON/manifest parsing, required RPC names, function signatures, and ZIP integrity. A live write against the user's Supabase project cannot be executed from this environment, so the final production write must be tested in the deployed app.
