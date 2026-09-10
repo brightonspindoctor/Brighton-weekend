@@ -1,25 +1,16 @@
-# Brighton Weekend v27
+# Brighton Weekend v29
 
-Large-scale stability/debugging release.
+Complete deployment package for the Brighton Weekend PWA.
 
-## Fixed
-- Comedy tab now re-renders when moving between weekends with Previous, Next and Today.
-- Venue filters now update Discover, Comedy and Happenings together.
-- Local date handling no longer relies on UTC conversion for event-day keys.
-- Comedy date range is explicitly Thursday–Sunday.
-- Event feed refresh validates HTTP responses, removes duplicate IDs and ignores malformed events.
-- Refresh button is protected against overlapping clicks.
-- Added browser-console diagnostics for event-feed integrity.
-- Service-worker cache bumped to v27.
+## v29 changes
+- Happenings shows everyone in your groups, even before they have marked an event.
+- Your own Interested/Bought activity appears in Happenings.
+- Interested/Bought counts are unique per person, fixing the Bought=2 issue.
+- Bottom navigation no longer covers the final event on mobile.
+- Home Screen/PWA icon handling has been strengthened, including a versioned Apple touch icon and manifest updates.
 
-## Included
-- 192-event current six-month event feed dated 8 September 2026.
-- PWA manifest and icons.
-- Admin page.
-- Supabase group SQL.
+## Supabase
+Run `supabase-happenings-v29.sql` in the Supabase SQL Editor.
 
-## Deployment
-Replace the files in the GitHub Pages repository with this package.
-
-## v28 Happenings change
-Run `supabase-happenings-v28.sql` in the Supabase SQL editor. Happenings now includes your own Interested/Bought activity as well as activity from other members of your groups.
+## Deploy
+Upload the complete contents of this package to the root of the GitHub Pages repository.

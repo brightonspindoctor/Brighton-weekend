@@ -1,5 +1,5 @@
-const CACHE = 'brighton-weekend-v28';
-const ASSETS = ['./','./index.html','./events.json','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/apple-touch-icon.png','./icons/icon-32.png'];
+const CACHE = 'brighton-weekend-v29';
+const ASSETS = ['./','./index.html','./events.json','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-192-maskable.png','./icons/icon-512-maskable.png','./icons/apple-touch-icon-v29.png','./icons/icon-32.png'];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));

@@ -1,0 +1,12 @@
+Brighton Weekend v29 — Happenings, PWA icon and mobile layout fix
+
+FIXES
+1. Happenings now shows a complete roster of everyone in every group you belong to, not just people who have an event activity.
+2. Interested/Bought activity still includes your own activity.
+3. Event Interested/Bought counts are de-duplicated by user, so someone who shares multiple groups cannot inflate the count; your Bought action no longer appears as 2.
+4. Added extra bottom safe-area/content padding so the fixed bottom navigation cannot cover the final event card.
+5. Strengthened PWA/Home Screen icon metadata with a versioned Apple touch icon, explicit sizes, manifest id, and maskable icon entries; service-worker cache bumped to v29.
+6. iOS install instructions now explicitly direct users through Safari → Share → Add to Home Screen.
+
+SUPABASE
+Run supabase-happenings-v29.sql once in the Supabase SQL Editor.
