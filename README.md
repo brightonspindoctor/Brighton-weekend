@@ -19,3 +19,6 @@ The release was statically validated for JavaScript syntax, JSON/manifest parsin
 ## v39 Google authentication
 
 v39 replaces email magic-link sign-in with Google OAuth. Configure the Google provider in Supabase and Google Cloud using `GOOGLE-SETUP-v39.md`. No new SQL migration is required for the authentication change.
+
+## v40 branding pages
+Public Google branding pages are included: `about.html`, `privacy.html`, and `terms.html`. The welcome screen now contains a public app description and links to these pages. The Brighton Weekend app icon/logo has been replaced with the supplied Brighton pier/sunset artwork.
