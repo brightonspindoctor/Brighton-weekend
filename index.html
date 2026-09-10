@@ -353,7 +353,9 @@ let enabled=JSON.parse(localStorage.getItem('bw_venues')||'null')||VENUES;
 
 function uid(){let x=localStorage.getItem('bw_uid');if(!x){x=(crypto.randomUUID?crypto.randomUUID():Date.now()+'-'+Math.random());localStorage.setItem('bw_uid',x)}return x}
 function name(){return localStorage.getItem('bw_name')||''}
-function dateKey(d){return d.toISOString().slice(0,10)}
+function dateKey(d){const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`}
+function parseEventDate(value){if(!/^\d{4}-\d{2}-\d{2}$/.test(value||''))return null;const d=new Date(value+'T12:00:00');return Number.isNaN(d.getTime())?null:d}
+function renderAll(){render();renderComedy();renderPeople();}
 function getFriday(){const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()+(5-d.getDay()+7)%7);return d}
 let friday=getFriday();
 function getThursday(){const d=new Date(friday);d.setDate(d.getDate()-1);return d}
@@ -438,7 +440,7 @@ function showWelcome(mode='auto'){
  else openGroupStep();
 }
 function finishWelcome(){
- hide('welcome'); trackVisitor(); render(); renderComedy(); renderPeople(); renderGroupManager();
+ hide('welcome'); trackVisitor(); renderAll(); renderGroupManager();
 }
 async function createGroup(){
  const n=$('newGroupName').value.trim(), privacy=$('newGroupPrivacy').value;
@@ -472,7 +474,7 @@ window.act=async(id,status)=>{
   if(mine&&mine.status===status) await api('DELETE','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()));
   else if(mine) await api('PATCH','event_interest?event_id=eq.'+encodeURIComponent(id)+'&user_id=eq.'+encodeURIComponent(uid()),{event_id:id,user_id:uid(),user_name:name(),status});
   else await api('POST','event_interest',{event_id:id,user_id:uid(),user_name:name(),status});
-  await loadAttendance(); await loadGroupHappenings(); updateHappeningsBadge(); render(); renderComedy(); renderPeople();
+  await loadAttendance(); await loadGroupHappenings(); updateHappeningsBadge(); renderAll();
  }catch(e){alert('Could not save that yet. '+e.message)}
 };
 
@@ -509,10 +511,10 @@ function isComedy(e){
  return /\b(comedy|comedian|stand.?up|standup|improv|improvisation|sketch|open mic comedy)\b/.test(hay);
 }
 function renderComedy(){
- const start=getThursday(), end=new Date(friday);end.setDate(end.getDate()+3);
+ const start=getThursday(), end=new Date(start);end.setDate(end.getDate()+3);
  const comedy=events.filter(e=>{
-   const d=new Date(e.date+'T12:00:00');
-   return d>=start&&d<=end&&isComedy(e)&&enabled.includes(e.venue);
+   const d=parseEventDate(e.date);
+   return d&&d>=start&&d<=end&&isComedy(e)&&enabled.includes(e.venue);
  });
  if(!comedy.length){
    $('comedyList').innerHTML='<div class="empty">No comedy events found for your selected venues this weekend.</div>';
@@ -556,10 +558,40 @@ function renderPeople(){
 
 function renderVenues(){
  $('venueList').innerHTML=VENUES.map(v=>`<label class="venue-row">${v}<input type="checkbox" data-v="${v}" ${enabled.includes(v)?'checked':''}></label>`).join('');
- document.querySelectorAll('[data-v]').forEach(x=>x.onchange=()=>{enabled=x.checked?[...new Set([...enabled,x.dataset.v])]:enabled.filter(v=>v!==x.dataset.v);localStorage.setItem('bw_venues',JSON.stringify(enabled));render()});
+ document.querySelectorAll('[data-v]').forEach(x=>x.onchange=()=>{enabled=x.checked?[...new Set([...enabled,x.dataset.v])]:enabled.filter(v=>v!==x.dataset.v);localStorage.setItem('bw_venues',JSON.stringify(enabled));renderAll()});
 }
+function debugData(){
+ const ids=new Set(), duplicates=[];
+ for(const e of events){if(ids.has(e.id))duplicates.push(e.id);ids.add(e.id)}
+ const bad=events.filter(e=>!e.id||!parseEventDate(e.date)||!e.venue||!e.title);
+ console.info('[Brighton Weekend] diagnostics',{events:events.length,duplicateIds:duplicates.length,invalidEvents:bad.length,venues:[...new Set(events.map(e=>e.venue))].length});
+ if(duplicates.length)console.warn('[Brighton Weekend] duplicate event IDs',duplicates);
+ if(bad.length)console.warn('[Brighton Weekend] invalid events',bad);
+}
+
 async function refresh(){
- try{const j=await (await fetch('events.json?x='+Date.now(),{cache:'no-store'})).json();events=j.events||[];$('subtitle').textContent=`${events.length} events · updated ${j.updated||''}`;render();renderComedy();renderPeople()}catch(e){console.warn(e)}
+ try{
+  const response=await fetch('events.json?refresh='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw new Error(`Events feed returned ${response.status}`);
+  const j=await response.json();
+  const incoming=Array.isArray(j.events)?j.events:[];
+  const seen=new Set(), cleaned=[];
+  for(const e of incoming){
+   if(!e||!e.id||seen.has(e.id))continue;
+   seen.add(e.id);
+   if(!parseEventDate(e.date))continue;
+   cleaned.push(e);
+  }
+  events=cleaned;
+  $('subtitle').textContent=`${events.length} events · updated ${j.updated||''}`;
+  debugData();
+  renderAll();
+  return {ok:true,count:events.length};
+ }catch(e){
+  console.warn('Events refresh failed',e);
+  $('subtitle').textContent='Could not refresh events';
+  return {ok:false,error:e};
+ }
 }
 
 let deferredInstallPrompt=null;
@@ -580,15 +612,20 @@ $('newGroupPrivacy').onchange=()=>{$('pinNote').textContent=$('newGroupPrivacy')
 $('createGroupBtn').onclick=createGroup;
 $('joinPublicBtn').onclick=()=>{const id=$('publicGroupSelect').value;if(!id)return alert('Choose a group first.');joinGroup(id)};
 $('joinPrivateBtn').onclick=()=>{const n=$('privateGroupName').value.trim(),p=$('privateGroupPin').value.trim();if(!n||!/^\d{3}$/.test(p))return alert('Enter the exact group name and a 3 digit PIN.');joinGroup(null,p,n)};
-$('prev').onclick=()=>{friday.setDate(friday.getDate()-7);render()};
-$('next').onclick=()=>{friday.setDate(friday.getDate()+7);render()};
-$('today').onclick=()=>{friday=getFriday();render()};
-$('refresh').onclick=async()=>{await refresh();await loadAttendance();await loadGroups();await loadGroupHappenings();render();renderComedy();renderPeople()};
+$('prev').onclick=()=>{friday.setDate(friday.getDate()-7);renderAll()};
+$('next').onclick=()=>{friday.setDate(friday.getDate()+7);renderAll()};
+$('today').onclick=()=>{friday=getFriday();renderAll()};
+$('refresh').onclick=async()=>{
+ const btn=$('refresh');btn.disabled=true;
+ try{await refresh();await loadAttendance();await loadGroups();await loadGroupHappenings();renderAll();}
+ finally{btn.disabled=false;}
+};
 $('changeName').onclick=()=>showWelcome('name');
 $('manageGroups').onclick=()=>showWelcome('groups');
 document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');['discover','comedyTab','peopleTab','venuesTab'].forEach(id=>$(id).classList.toggle('hidden',id!==b.dataset.tab));if(b.dataset.tab==='comedyTab')renderComedy();if(b.dataset.tab==='peopleTab'){renderPeople();markHappeningsSeen()}if(b.dataset.tab==='venuesTab'){renderVenues();renderGroupManager()}});
 (async()=>{
  renderVenues();
+ renderAll();
  if(name()){
    await loadGroups();
    if(groups.length) hide('welcome'); else showWelcome('groups');
@@ -596,7 +633,7 @@ document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.quer
  }else showWelcome('name');
  await Promise.all([refresh(),loadAttendance()]);
  await loadGroupHappenings();
- render();renderComedy();renderPeople();renderGroupManager();
+ renderAll();renderGroupManager();
 })();
 })();</script>
 <script>

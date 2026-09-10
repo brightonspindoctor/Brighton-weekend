@@ -1,0 +1,17 @@
+Brighton Weekend v28 — Happenings self-activity fix
+
+FIXED
+- Happenings now includes the current user's own Interested and Bought activity.
+- Activity from other members of the user's groups continues to appear.
+- Not for me remains excluded from Happenings.
+- The existing commitment flow already reloads attendance and Happenings after a click, so the new activity appears immediately once the Supabase migration is installed.
+- The Happenings new-activity badge updates because the activity signature now includes the user's own rows.
+
+SUPABASE MIGRATION
+- Run supabase-happenings-v28.sql in the Supabase SQL editor.
+- The migration replaces bw_shared_happenings without changing the table schema.
+
+BEHAVIOUR
+- A user must still belong to a group for activity to appear in Happenings.
+- If the user belongs to multiple groups, the same commitment may be represented under each shared group, matching the existing group-based Happenings model.
+- Only Interested and Bought are included; Not for me is excluded.

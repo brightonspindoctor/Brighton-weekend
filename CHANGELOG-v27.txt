@@ -1,0 +1,25 @@
+Brighton Weekend v27 — Stability & Debugging Release
+
+Primary bug fixed
+- Previous / Next / Today previously called only render(), so the Comedy tab retained the previous weekend until a manual refresh.
+- Venue changes also only refreshed Discover, leaving Comedy and Happenings stale.
+
+Fixes
+- Added renderAll() as the single UI refresh path for Discover, Comedy and Happenings.
+- Previous, Next and Today now call renderAll().
+- Venue filter changes now call renderAll().
+- Event-date parsing now validates YYYY-MM-DD values.
+- Date keys now use local calendar dates rather than UTC ISO conversion.
+- Comedy is explicitly constrained to Thursday–Sunday.
+- Event feed refresh checks HTTP status and validates incoming events.
+- Duplicate event IDs and malformed event rows are ignored.
+- Refresh button is temporarily disabled during refresh to avoid overlapping requests.
+- Added console diagnostics for event-feed integrity.
+- Service-worker cache bumped from v24 to v27.
+
+Regression checks performed
+- index.html JavaScript parsed successfully with Node.js.
+- events.json parsed successfully.
+- Event feed contains 192 events.
+- All 13 configured venues remain represented in the supplied six-month feed.
+- PWA manifest, service worker, icons and admin page included in the release package.
