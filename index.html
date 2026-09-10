@@ -375,6 +375,7 @@ h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
 <script>(() => {
 const SUPABASE_URL='https://zqvccsnfrkrtcsitfwcd.supabase.co';
 const SUPABASE_KEY='sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1';
+const APP_URL='https://brightonspindoctor.github.io/Brighton-weekend/';
 const supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
 let authUser=null;
 let authSession=null;
@@ -400,7 +401,7 @@ async function saveProfile(displayName){
  profileName=clean;localStorage.setItem('bw_name',clean);$('accountEmail').textContent=authUser.email||'';
 }
 async function sendMagicLink(email){
- const {error}=await supabase.auth.signInWithOtp({email:email.trim().toLowerCase(),options:{emailRedirectTo:window.location.origin+window.location.pathname,shouldCreateUser:true}});
+ const {error}=await supabase.auth.signInWithOtp({email:email.trim().toLowerCase(),options:{emailRedirectTo:APP_URL,shouldCreateUser:true}});
  if(error)throw error;
 }
 async function initAuth(){
