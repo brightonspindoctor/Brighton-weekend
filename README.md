@@ -22,3 +22,7 @@ v39 replaces email magic-link sign-in with Google OAuth. Configure the Google pr
 
 ## v40 branding pages
 Public Google branding pages are included: `about.html`, `privacy.html`, and `terms.html`. The welcome screen now contains a public app description and links to these pages. The Brighton Weekend app icon/logo has been replaced with the supplied Brighton pier/sunset artwork.
+
+
+## v47 data refresh
+A deep-dive event refresh was completed on 11 September 2026 using Ents24, official venue calendars/pages, Ticketmaster venue listings for DUST, and Eventbrite discovery. See EVENT-DATA-SOURCES-v47.md.

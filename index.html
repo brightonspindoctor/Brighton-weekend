@@ -461,7 +461,7 @@ header{background:#0B1D2F!important;color:var(--bw-cream)!important;border-botto
   <div class="custom-event-form">
     <label>Event name<input id="customTitle" maxlength="120" placeholder="e.g. DJ Yoda — 80s Mixtape Live"></label>
     <div class="custom-event-row"><label>Date<input id="customDate" type="date"></label><label>Category<select id="customCategory"><option>Music</option><option>Comedy</option><option>Club</option><option>Theatre</option><option>Other</option></select></label></div>
-    <label>Venue<select id="customVenue"><option value="">Choose a venue…</option><option>Brighton Centre</option><option>Brighton Dome</option><option>CHALK</option><option>Concorde 2</option><option>The Old Market</option><option>Green Door Store</option><option>Volks</option><option>Quarters</option><option>Patterns</option><option>DUST</option><option>Komedia</option><option>The Forge Comedy Club</option><option>Theatre Royal Brighton</option><option>Other</option></select></label>
+    <label>Venue<select id="customVenue"><option value="">Choose a venue…</option><option>Brighton Centre</option><option>Brighton Dome</option><option>CHALK</option><option>Concorde 2</option><option>The Old Market</option><option>Green Door Store</option><option>Volks</option><option>Quarters</option><option>Patterns</option><option>DUST</option><option>Komedia</option><option>The Forge Comedy Club</option><option>Theatre Royal Brighton</option><option>The Hope &amp; Ruin</option><option>The Prince Albert</option><option>A L P H A B E T</option><option>The Pipeline</option><option>Brighton Racecourse</option><option>The Gladstone</option><option>Babble</option><option>Other</option></select></label>
     <div id="customVenueDetailWrap" class="hidden"><label>Other venue<input id="customVenueDetail" maxlength="100" placeholder="Venue name"></label></div>
     <div class="custom-event-row"><label>Start time<input id="customTime" type="time"></label><label>Finish time<input id="customFinish" type="time"></label></div>
     <div class="custom-event-row"><label>Price<input id="customPrice" maxlength="50" placeholder="e.g. £18"></label><label>Ticket link<input id="customTicket" type="url" placeholder="https://…"></label></div>
@@ -490,11 +490,11 @@ const supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{per
 let authUser=null;
 let authSession=null;
 let profileName='';
-const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","Other"];
+const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","The Hope & Ruin","The Prince Albert","A L P H A B E T","The Pipeline","Brighton Racecourse","The Gladstone","Babble","Other"];
 const $=id=>document.getElementById(id);
 let events=[], attendance=[], groupHappenings=[], groups=[], groupMembers=[], customEvents=[];
-let enabled=JSON.parse(localStorage.getItem('bw_venues')||'null')||VENUES;
-
+const savedVenues=JSON.parse(localStorage.getItem('bw_venues')||'null');
+let enabled=Array.isArray(savedVenues)?Array.from(new Set([...savedVenues,...VENUES])):VENUES.slice();
 function uid(){return authUser?.id||''}
 function name(){return profileName||localStorage.getItem('bw_name')||''}
 async function loadProfile(){
