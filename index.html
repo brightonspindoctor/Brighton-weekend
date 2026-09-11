@@ -9,12 +9,13 @@
 <meta name="apple-mobile-web-app-title" content="Brighton Weekend">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#0B2D4A">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-v41.png">
-<link rel="apple-touch-icon-precomposed" sizes="180x180" href="icons/apple-touch-icon-v41.png">
-<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png">
+<link rel="manifest" href="https://brightonspindoctor.github.io/Brighton-weekend/manifest.webmanifest?v=43">
+<link rel="apple-touch-icon" sizes="180x180" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/apple-touch-icon.png?v=43">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/apple-touch-icon.png?v=43">
+<link rel="icon" type="image/png" sizes="32x32" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-32.png?v=43">
+<link rel="icon" type="image/png" sizes="192x192" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-192.png?v=43">
+<link rel="icon" type="image/png" sizes="512x512" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-512.png?v=43">
+<link rel="shortcut icon" href="https://brightonspindoctor.github.io/Brighton-weekend/favicon.ico?v=43">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -381,7 +382,7 @@ header{background:#0B1D2F!important;color:var(--bw-cream)!important;border-botto
 <section id="welcome">
   <div class="welcome-card">
     <div id="authStep">
-      <img class="auth-logo" src="icons/icon-192.png" alt="Brighton Weekend logo">
+      <img class="auth-logo" src="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-192.png?v=43" alt="Brighton Weekend logo">
       <h2>Welcome to Brighton Weekend</h2>
       <p>Sign in securely with your Google account.</p>
       <button type="button" id="googleSignInBtn" class="google-btn">Continue with Google</button>
@@ -432,7 +433,7 @@ header{background:#0B1D2F!important;color:var(--bw-cream)!important;border-botto
 </section>
 
 <header><div class="wrap">
-  <div class="app-brand"><img src="icons/icon-192.png" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
+  <div class="app-brand"><img src="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-192.png?v=43" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
   <div class="sub" id="subtitle">Friday · Saturday · Sunday · finish times shown when published</div></div></div>
   <div class="controls">
     <button id="prev">‹</button><button id="week" class="week"></button><button id="next">›</button>
@@ -891,7 +892,7 @@ document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.quer
 })();</script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=43',{updateViaCache:'none'}).catch(console.warn));
 }
 </script>
 </body></html>
