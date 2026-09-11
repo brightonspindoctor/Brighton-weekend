@@ -5,8 +5,8 @@
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#FFF7E8",
+  "theme_color": "#0B2D4A",
   "orientation": "portrait-primary",
   "icons": [
     {
@@ -40,5 +40,5 @@
       "purpose": "any"
     }
   ],
-  "id": "./brighton-weekend-v37"
+  "id": "./brighton-weekend-v41"
 }

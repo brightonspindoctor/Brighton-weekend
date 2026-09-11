@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="Brighton Weekend">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#000000">
+<meta name="theme-color" content="#0B2D4A">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-v40.png">
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="icons/apple-touch-icon-v40.png">
@@ -275,6 +275,79 @@ h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
 /* Consistent card hierarchy */
 .card{box-shadow:0 6px 18px rgba(0,0,0,.08)}
 </style>
+
+<style id="brighton-weekend-v41-design-system">
+:root{
+  --bw-navy:#0B2D4A;--bw-blue:#1976A3;--bw-teal:#4DB6AC;--bw-coral:#FF7F7F;
+  --bw-yellow:#FFD166;--bw-cream:#FFF7E8;--bw-white:#FFFFFF;--bw-muted:#647487;
+  --bw-line:#D8E1E6;--bw-card:#FFFFFF;--bw-bg:#FFF7E8;
+}
+html{background:var(--bw-bg)}
+body{background:var(--bw-bg);color:var(--bw-navy);font-family:var(--font-ui)!important}
+header{background:var(--bw-white);color:var(--bw-navy);border-bottom:1px solid var(--bw-line);padding:12px 15px;box-shadow:0 2px 12px rgba(11,45,74,.06)}
+header .wrap{max-width:860px}
+.app-brand{display:flex;align-items:center;gap:11px;min-height:48px}
+.app-brand img{width:46px;height:46px;border-radius:13px;object-fit:cover;box-shadow:0 3px 10px rgba(11,45,74,.12)}
+.brand{font-size:1.28rem!important;line-height:1;font-weight:800!important;letter-spacing:-.045em!important;color:var(--bw-navy)!important}
+.brand span{color:var(--bw-navy)!important}
+.sub{color:var(--bw-muted)!important;margin-top:4px}
+.controls{margin-top:10px}
+.controls button{background:var(--bw-white)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important;border-radius:12px!important;box-shadow:0 2px 8px rgba(11,45,74,.04)}
+.controls button:hover{border-color:#B9CCD7!important;background:#F7FBFC!important}
+.controls .today{color:var(--bw-coral)!important;border-color:#FFC1C1!important;background:#FFF8F8!important}
+.day{color:var(--bw-navy)!important}
+.card,.people-card{background:var(--bw-card)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important;border-radius:16px!important;box-shadow:0 4px 16px rgba(11,45,74,.07)!important}
+.title,.people-card h3{color:var(--bw-navy)!important}
+.meta,.note,.empty,.group-meta,.comedy-venue{color:var(--bw-muted)!important}
+.badge.sold{background:#FFE3E3!important;color:#B84B4B!important;border:1px solid #FFC2C2}
+.people span{background:#EEF7F6!important;border:1px solid #CDE7E4!important;color:var(--bw-navy)!important}
+.actions button,.ticket{border-radius:10px!important}
+.ticket{background:var(--bw-navy)!important;color:var(--bw-white)!important;border:1px solid var(--bw-navy)!important}
+.commitment{gap:7px}
+.commit-btn{border-color:var(--bw-line)!important;color:#5C6D7B!important;background:#FAFCFC!important}
+.commit-icon{background:#F1F7F8!important;border-color:#C9DADF!important;color:var(--bw-navy)!important}
+.commit-btn.selected.no{background:#FFF1F1!important;border-color:#FFB9B9!important;color:#B84B4B!important}
+.commit-btn.selected.no .commit-icon{background:#FFE3E3!important;border-color:#FFB9B9!important;color:#B84B4B!important}
+.commit-btn.selected.yes{background:#EEF9F7!important;border-color:#9FDAD4!important;color:#19756F!important}
+.commit-btn.selected.yes .commit-icon{background:#DDF2EF!important;border-color:#9FDAD4!important;color:#19756F!important}
+.commit-btn.selected.bought{background:#FFF7E5!important;border-color:#F3D48B!important;color:#936D12!important}
+.commit-btn.selected.bought .commit-icon{background:#FFF0C8!important;border-color:#F3D48B!important;color:#936D12!important}
+.nav{background:var(--bw-white)!important;border-top:1px solid var(--bw-line)!important;box-shadow:0 -4px 18px rgba(11,45,74,.08)!important;padding-top:9px!important}
+.nav button{color:#7A8A96!important}
+.nav button.active{color:var(--bw-coral)!important}
+.nav button.has-new{color:var(--bw-coral)!important}
+.nav button.has-new::after{background:var(--bw-coral)!important;box-shadow:0 0 0 2px var(--bw-white)!important}
+.venue-row{color:var(--bw-navy)!important;border-bottom:1px solid var(--bw-line)!important}
+.venue-row input{accent-color:var(--bw-teal)}
+.section-head h2,h2{color:var(--bw-navy)!important}
+.custom-event-launch,.custom-event-panel{background:#F3FAF9!important;border:1px solid #CDE7E4!important;color:var(--bw-navy)!important}
+.custom-event-launch button,.custom-event-panel button,.group-form button,#partyOnBtn{background:var(--bw-coral)!important;color:var(--bw-white)!important;border:1px solid var(--bw-coral)!important}
+.custom-event-form input,.custom-event-form select,.custom-event-form textarea,.group-form input,.group-form select{background:var(--bw-white)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important}
+.secondary{background:var(--bw-white)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important}
+.install-area{border-top:1px solid var(--bw-line)!important}
+.install-btn{background:var(--bw-navy)!important;color:var(--bw-white)!important;border:1px solid var(--bw-navy)!important}
+.group-choice{background:var(--bw-white)!important;border:1px solid var(--bw-line)!important;color:var(--bw-navy)!important}
+.group-choice input{accent-color:var(--bw-teal)}
+.group-panel,.group-roster{border-color:var(--bw-line)!important}
+.group-heading{color:var(--bw-muted)!important}
+.group-heading:before{color:var(--bw-teal)!important}
+.group-chip{background:#F3F8FA!important;border-color:var(--bw-line)!important;color:var(--bw-navy)!important}
+.social-icon{border-color:#BFD0D8!important}
+.social-icon.heart{color:#19756F!important;border-color:#9FDAD4!important}
+.social-icon.ticket{color:#936D12!important;border-color:#F3D48B!important}
+.welcome-card{background:var(--bw-white)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important;border-radius:24px!important;box-shadow:0 18px 50px rgba(11,45,74,.18)!important}
+#welcome{background:var(--bw-navy)!important}
+.welcome-card h2{color:var(--bw-navy)!important}
+.welcome-card p{color:var(--bw-muted)!important}
+.welcome-card input{background:#FAFCFC!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important}
+.welcome-card input:focus{border-color:var(--bw-teal)!important;box-shadow:0 0 0 3px rgba(77,182,172,.15)!important}
+.welcome-card button{background:var(--bw-coral)!important;color:var(--bw-white)!important;border-color:var(--bw-coral)!important}
+.welcome-info{border-color:var(--bw-line)!important}.welcome-info a{color:var(--bw-blue)!important}
+.google-btn{background:var(--bw-navy)!important;border-color:var(--bw-navy)!important}
+.auth-logo{width:88px;height:88px;border-radius:22px;display:block;margin:0 auto 16px;box-shadow:0 6px 20px rgba(11,45,74,.16)}
+.app-main{padding-bottom:calc(112px + env(safe-area-inset-bottom))}
+@media(max-width:600px){.app-brand img{width:42px;height:42px}.brand{font-size:1.14rem!important}.sub{font-size:.68rem!important}}
+</style>
 </head>
 <body>
 
@@ -283,6 +356,7 @@ h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
 <section id="welcome">
   <div class="welcome-card">
     <div id="authStep">
+      <img class="auth-logo" src="icons/icon-192.png" alt="Brighton Weekend logo">
       <h2>Welcome to Brighton Weekend</h2>
       <p>Sign in securely with your Google account.</p>
       <button type="button" id="googleSignInBtn" class="google-btn">Continue with Google</button>
@@ -333,8 +407,8 @@ h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
 </section>
 
 <header><div class="wrap">
-  <div class="brand">BRIGHTON <span>WEEKEND</span></div>
-  <div class="sub" id="subtitle">Friday · Saturday · Sunday · finish times shown when published</div>
+  <div class="app-brand"><img src="icons/icon-192.png" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
+  <div class="sub" id="subtitle">Friday · Saturday · Sunday · finish times shown when published</div></div></div>
   <div class="controls">
     <button id="prev">‹</button><button id="week" class="week"></button><button id="next">›</button>
     <button id="today" class="today">TODAY</button><button id="refresh">↻</button>

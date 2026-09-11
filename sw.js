@@ -1,4 +1,4 @@
-const CACHE = 'brighton-weekend-v40';
+const CACHE = 'brighton-weekend-v41';
 const ASSETS = ['./','./index.html','./events.json','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-192-maskable.png','./icons/icon-512-maskable.png','./icons/apple-touch-icon-v40.png','./icons/icon-32.png','./about.html','./privacy.html','./terms.html'];
 
 self.addEventListener('install', event => {
