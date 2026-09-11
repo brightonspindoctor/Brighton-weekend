@@ -22,7 +22,9 @@
     "The Pipeline",
     "The Prince Albert",
     "Theatre Royal Brighton",
-    "Volks"
+    "Volks",
+    "Amex Stadium",
+    "Shelter Hall"
   ],
   "events": [
     {
@@ -7787,7 +7789,147 @@
       "time": null,
       "ticket_url": "https://brightondome.org/whats-on/",
       "source_url": "https://brightondome.org/whats-on/"
+    },
+    {
+      "id": "2026-09-19-amex-stadium-brighton-v-arsenal",
+      "title": "Brighton v Arsenal",
+      "date": "2026-09-19",
+      "venue": "Amex Stadium",
+      "time": "15:00",
+      "finish_time": null,
+      "category": "Other",
+      "ticket_url": "https://www.brightonandhovealbion.com/tickets"
+    },
+    {
+      "id": "2026-09-20-amex-stadium-brighton-women-v-aston-villa",
+      "title": "Brighton Women v Aston Villa",
+      "date": "2026-09-20",
+      "venue": "Amex Stadium",
+      "time": "14:00",
+      "finish_time": null,
+      "category": "Other",
+      "ticket_url": "https://www.brightonandhovealbion.com/tickets"
+    },
+    {
+      "id": "2026-10-04-amex-stadium-brighton-women-v-charlton-athletic",
+      "title": "Brighton Women v Charlton Athletic",
+      "date": "2026-10-04",
+      "venue": "Amex Stadium",
+      "time": "14:00",
+      "finish_time": null,
+      "category": "Other",
+      "ticket_url": "https://www.brightonandhovealbion.com/tickets"
+    },
+    {
+      "id": "2026-10-17-amex-stadium-brighton-v-crystal-palace",
+      "title": "Brighton v Crystal Palace",
+      "date": "2026-10-17",
+      "venue": "Amex Stadium",
+      "time": null,
+      "finish_time": null,
+      "category": "Other",
+      "ticket_url": "https://www.brightonandhovealbion.com/tickets"
+    },
+    {
+      "id": "2026-10-25-amex-stadium-brighton-women-v-west-ham-united",
+      "title": "Brighton Women v West Ham United",
+      "date": "2026-10-25",
+      "venue": "Amex Stadium",
+      "time": "14:00",
+      "finish_time": null,
+      "category": "Other",
+      "ticket_url": "https://www.brightonandhovealbion.com/tickets"
+    },
+    {
+      "id": "2026-11-07-amex-stadium-brighton-v-brentford",
+      "title": "Brighton v Brentford",
+      "date": "2026-11-07",
+      "venue": "Amex Stadium",
+      "time": null,
+      "finish_time": null,
+      "category": "Other",
+      "ticket_url": "https://www.brightonandhovealbion.com/tickets"
+    },
+    {
+      "id": "2026-11-15-amex-stadium-brighton-women-v-liverpool",
+      "title": "Brighton Women v Liverpool",
+      "date": "2026-11-15",
+      "venue": "Amex Stadium",
+      "time": "14:00",
+      "finish_time": null,
+      "category": "Other",
+      "ticket_url": "https://www.brightonandhovealbion.com/tickets"
+    },
+    {
+      "id": "2026-11-28-amex-stadium-brighton-v-newcastle-united",
+      "title": "Brighton v Newcastle United",
+      "date": "2026-11-28",
+      "venue": "Amex Stadium",
+      "time": null,
+      "finish_time": null,
+      "category": "Other",
+      "ticket_url": "https://www.brightonandhovealbion.com/tickets"
+    },
+    {
+      "id": "2026-12-12-amex-stadium-brighton-v-everton",
+      "title": "Brighton v Everton",
+      "date": "2026-12-12",
+      "venue": "Amex Stadium",
+      "time": null,
+      "finish_time": null,
+      "category": "Other",
+      "ticket_url": "https://www.brightonandhovealbion.com/tickets"
+    },
+    {
+      "id": "2026-12-19-amex-stadium-brighton-v-ipswich-town",
+      "title": "Brighton v Ipswich Town",
+      "date": "2026-12-19",
+      "venue": "Amex Stadium",
+      "time": null,
+      "finish_time": null,
+      "category": "Other",
+      "ticket_url": "https://www.brightonandhovealbion.com/tickets"
+    },
+    {
+      "id": "2026-09-16-shelter-hall-comedy-mansion",
+      "title": "The Comedy Mansion at Shelter Hall",
+      "date": "2026-09-16",
+      "venue": "Shelter Hall",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://shelterhall.co.uk/whats-on/the-comedy-mansion-at-shelter-hall/"
+    },
+    {
+      "id": "2026-10-23-shelter-hall-brightons-oktoberfest",
+      "title": "Brighton’s Oktoberfest 2026",
+      "date": "2026-10-23",
+      "venue": "Shelter Hall",
+      "time": null,
+      "finish_time": null,
+      "category": "Other",
+      "ticket_url": "https://shelterhall.co.uk/whats-on/brightons-oktoberfest-2026/"
+    },
+    {
+      "id": "2026-10-24-shelter-hall-brightons-oktoberfest",
+      "title": "Brighton’s Oktoberfest 2026",
+      "date": "2026-10-24",
+      "venue": "Shelter Hall",
+      "time": null,
+      "finish_time": null,
+      "category": "Other",
+      "ticket_url": "https://shelterhall.co.uk/whats-on/brightons-oktoberfest-2026/"
+    },
+    {
+      "id": "2026-10-29-shelter-hall-drag-music-bingo-halloween",
+      "title": "Drag Music Bingo: Halloween Edition",
+      "date": "2026-10-29",
+      "venue": "Shelter Hall",
+      "time": null,
+      "finish_time": null,
+      "category": "Other",
+      "ticket_url": "https://shelterhall.co.uk/whats-on/"
     }
   ],
-  "source_note": "v47 deep-dive refresh: cross-checked the existing 20-venue dataset against current Ents24 venue listings, official venue calendars/pages where available (including Quarters and Hope & Ruin), Ticketmaster/venue listings for DUST, and Eventbrite discovery results on 11 Sep 2026. Cancelled/moved listings identified by the source were excluded where practical. Where a source did not expose a start time, time is left blank rather than guessed. The database is a curated deep-dive, not a guarantee of every Brighton listing on every platform."
+  "source_note": "v47 deep-dive refresh: cross-checked the existing 20-venue dataset against current Ents24 venue listings, official venue calendars/pages where available (including Quarters and Hope & Ruin), Ticketmaster/venue listings for DUST, and Eventbrite discovery results on 11 Sep 2026. Cancelled/moved listings identified by the source were excluded where practical. Where a source did not expose a start time, time is left blank rather than guessed. The database is a curated deep-dive, not a guarantee of every Brighton listing on every platform. Amex Stadium fixtures cross-checked against Brighton & Hove Albion official 2026/27 fixture announcements and WSL fixture information on 11 September 2026. Shelter Hall checked against its official What's On calendar on 11 September 2026; added public upcoming events and excluded private Christmas hire listings."
 }
