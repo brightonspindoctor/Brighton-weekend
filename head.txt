@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="application-name" content="Brighton Weekend">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Brighton Weekend">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0B2D4A">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-v40.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="icons/apple-touch-icon-v40.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Brighton Weekend</title>
+<style>
+:root{--ink:#172335;--cream:#f3e4c9;--orange:#b94f2d;--gold:#d6a54c;--lime:#c8d989}
+*{box-sizing:border-box} body{margin:0;font-family:var(--font-ui,Plus Jakarta Sans,sans-serif);background:#102033;color:var(--cream);-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none}
+button,input{font:inherit} .hidden{display:none!important}
+
+/* Welcome screen */
+#welcome{position:fixed;inset:0;z-index:20;min-height:100dvh;background:#000;display:grid;place-items:center;padding:20px}
+.welcome-card{width:min(420px,92vw);background:#17191d;color:var(--cream);border:1px solid #353941;border-radius:24px;padding:30px 26px;box-shadow:0 18px 50px rgba(0,0,0,.45);text-align:center}
+.welcome-card h2{font-family:var(--font-ui)!important;font-size:2rem;margin:0 0 9px;letter-spacing:-.04em}
+.welcome-card p{font-family:var(--font-ui)!important;color:#aeb7bc;font-size:.9rem;line-height:1.45;margin:0 0 20px}
+.welcome-card form{display:grid;gap:10px}
+.welcome-card input{width:100%;padding:14px 16px;border:1px solid #4b5861;border-radius:999px;background:#0e1013;color:#f3e4c9;font-family:var(--font-ui)!important;font-size:1rem;outline:none}
+.welcome-card input:focus{border-color:#9dac70;box-shadow:0 0 0 3px rgba(157,172,112,.12)}
+.welcome-card button{width:100%;padding:13px 16px;border:1px solid #8f9e69;border-radius:999px;background:#2d3933;color:#dce7ac;font-family:var(--font-ui)!important;font-size:1rem;font-weight:700;cursor:pointer}
+.welcome-card button:hover{background:#35433c}
+.welcome-info{margin-top:18px;padding-top:16px;border-top:1px solid #353941}.welcome-info p{margin:0 0 9px;font-size:.78rem;color:#aeb7bc}.welcome-info a{color:#d8e59e;text-decoration:none}.welcome-info a:hover{text-decoration:underline}
+/* App */
+header{position:sticky;top:0;z-index:5;background:#122238;border-bottom:1px solid rgba(242,225,194,.25);padding:15px}
+.wrap{max-width:820px;margin:auto;padding:0 15px}.brand{font-size:1.8rem;font-weight:bold;letter-spacing:-1px;color:var(--cream)}.brand span{color:#d66a40}
+.sub{font-family:var(--font-ui);color:#b8c6a0;font-size:.8rem;margin-top:2px}
+.controls{display:flex;gap:7px;margin-top:12px}.controls button{background:#20364b;color:var(--cream);border:1px solid #52667a;border-radius:10px;padding:10px;cursor:pointer}.week{flex:1}.today{color:#d8e59e!important}
+.day{margin:22px 0 8px;color:#d8e59e;font:bold .78rem system-ui,sans-serif;letter-spacing:1px}
+.card{background:#1b3041;border:1px solid #42576a;border-radius:16px;padding:15px;margin:9px 0;box-shadow:0 5px 18px rgba(0,0,0,.12)}
+.top{display:flex;justify-content:space-between;gap:10px}.title{font-size:1.18rem;font-weight:bold}.meta{font: .85rem system-ui,sans-serif;color:#b9c4cb;margin-top:5px}
+.badge{font:.65rem system-ui,sans-serif;font-weight:bold;padding:5px 7px;border-radius:20px;height:max-content}.sold{background:#713545;color:#ffd3d8}
+.people{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}.people span{font:.72rem var(--font-ui);background:#263d50;padding:5px 8px;border-radius:20px;color:#d9e0d5}
+.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.actions button,.ticket{border-radius:10px;padding:9px 11px;font:bold .75rem system-ui,sans-serif;cursor:pointer;text-decoration:none}
+.interest,.going{background:#213849;border:1px solid #607587;color:#f3e4c9}.interest.active{border-color:#d8e59e;color:#d8e59e}.going.active{background:#d8e59e;color:#172335;border-color:#d8e59e}.ticket{background:#f3e4c9;color:#172335}
+.nav{position:fixed;bottom:0;left:0;right:0;background:#14273a;border-top:1px solid #405568;display:flex;justify-content:space-around;padding:12px max(12px,env(safe-area-inset-left)) calc(12px + env(safe-area-inset-bottom));z-index:10}.nav button{border:0;background:none;color:#9cabb2;font:bold .75rem system-ui,sans-serif}.nav button.active{color:#d8e59e}
+.venue-row{display:flex;justify-content:space-between;padding:15px 2px;border-bottom:1px solid #405568;font-family:var(--font-ui)}.venue-row input{accent-color:#b9c76d;width:20px}
+.empty{font-family:var(--font-ui);color:#91a0a8;padding:10px 0}
+
+/* Groups */
+.group-step{display:grid;gap:12px;text-align:left}
+.group-step h3{margin:0;font-size:1.15rem}
+.group-list{display:grid;gap:8px;max-height:230px;overflow:auto}
+.group-choice{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid #3e4750;border-radius:16px;background:#101216}
+.group-choice input{width:auto;accent-color:#a9b777}
+.group-choice .lock{margin-left:auto;color:#aeb7bc}
+.group-actions{display:flex;gap:8px}
+.group-actions button{flex:1}
+.secondary{background:#17191d!important;border-color:#4b5861!important;color:#d5d7d5!important}
+.group-panel{margin-top:8px;padding-top:10px;border-top:1px solid #34404a}
+.group-form{display:grid;gap:9px;margin-top:10px}
+.group-form label{font-size:.78rem;color:#aeb7bc}
+.group-form input,.group-form select{width:100%;padding:12px 14px;border-radius:14px;border:1px solid #4b5861;background:#0e1013;color:#f3e4c9}
+.group-meta{font-size:.78rem;color:#aeb7bc;margin-top:2px}
+.group-chip{display:inline-flex;align-items:center;gap:6px;border:1px solid #4b5861;background:#182128;border-radius:999px;padding:5px 9px;font-size:.72rem;margin:3px 4px 3px 0}
+.group-heading{display:flex;align-items:center;gap:8px;margin:16px 0 7px;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:#aeb7bc}
+.group-heading:before{content:'◌';color:#b8c98b}
+.group-manager{display:grid;gap:8px;margin-top:10px}
+.group-manager-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid #29333c}
+.small-btn{padding:8px 11px!important;font-size:.78rem!important}
+.pin-display{font-weight:800;letter-spacing:.15em;color:#dce7ac}
+
+.section-head{margin-bottom:12px}.section-head h2{margin:0 0 4px;font-size:1.35rem}.comedy-venue{font-size:.72rem;color:#aeb7bc;margin-top:2px}
+
+/* New Happenings indicator */
+.nav button.has-new{font-weight:800;color:#f06b61;position:relative}
+.nav button.has-new::after{content:'';position:absolute;width:7px;height:7px;border-radius:50%;background:#f06b61;top:6px;right:8px;box-shadow:0 0 0 2px #102033}
+
+.group-roster{margin:0 0 24px;padding:16px 0 4px;border-bottom:1px solid #34404a}.group-roster .section-head{margin-bottom:10px}.group-roster h3,.happenings-events-head h3{margin:0;font-size:1.08rem}.member-group{margin:0 0 14px}.member-group .group-heading{margin-top:8px}.member-count{font-size:.68rem;border:1px solid #4b5861;border-radius:999px;padding:2px 6px;color:#aeb9bf}.social-icon.person{font-size:10px;color:#aeb9bf;border-color:#566874}.happenings-events-head{margin:18px 0 8px}.happenings-empty{margin-top:10px}
+.custom-event-panel{margin:14px 0 22px;padding:16px;border:1px solid #34404a;border-radius:16px;background:#152738}.custom-event-launch{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0 14px;padding:12px 14px;border:1px solid #405568;border-radius:14px;background:#1a3044}.custom-event-launch button{white-space:nowrap}.custom-event-panel.collapsed .custom-event-form{display:none}.custom-event-panel.collapsed{padding-bottom:12px}.custom-event-panel h3{margin:0 0 5px}.custom-event-form{display:grid;gap:9px;margin-top:12px}.custom-event-form label{font-size:.75rem;color:#aeb7bc}.custom-event-form input,.custom-event-form select,.custom-event-form textarea{width:100%;padding:11px 13px;border-radius:12px;border:1px solid #4b5861;background:#0e1013;color:#f3e4c9}.custom-event-form textarea{min-height:70px;resize:vertical}.custom-event-row{display:grid;grid-template-columns:1fr 1fr;gap:9px}.custom-event-help{font-size:.7rem;color:#91a0a8;line-height:1.4}.custom-event-added{font-size:.7rem;color:#d8e59e;margin-top:6px}
+.install-area{margin:26px 0 12px;padding-top:18px;border-top:1px solid #34404a;text-align:center}.install-btn{width:100%;border-radius:999px!important;padding:14px 18px!important;font-weight:700!important}.install-btn.hidden{display:none}</style>
+
+<style id="jakarta-design-system">
+:root{
+  --font-ui:"Plus Jakarta Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --ink:#172335; --cream:#f3e4c9; --navy:#122238; --card:#1b3041;
+  --line:#42576a; --sage:#d8e59e; --orange:#b85a38; --muted:#aeb9bf;
+}
+html,body,button,input,a{font-family:var(--font-ui)!important}
+body{letter-spacing:-.01em}
+h1,h2,h3,p,.brand,.sub,.title,.meta,.price,.empty,.note,.day,
+.statusline,.venue-row,.nav button,.ticket,.actions button,.scale,
+.people,.badge,.week,.today{font-family:var(--font-ui)!important}
+
+.brand{font-weight:800;letter-spacing:-.045em}
+.brand span{font-weight:800}
+h2{font-size:1.45rem;line-height:1.15;letter-spacing:-.035em;margin:24px 0 8px}
+.title{font-size:1.05rem;line-height:1.25;font-weight:700;letter-spacing:-.025em}
+.meta{font-size:.78rem;line-height:1.4;font-weight:500}
+.price{font-size:.78rem;line-height:1.3;font-weight:700}
+.day{font-size:.7rem;line-height:1.2;font-weight:800;letter-spacing:.06em}
+.sub,.statusline,.note,.empty{font-size:.72rem;line-height:1.45;font-weight:500}
+.controls{align-items:stretch}
+.controls button{display:flex;align-items:center;justify-content:center;min-height:42px}
+.week{font-weight:700;letter-spacing:-.01em}
+.today{font-weight:700}
+.card{padding:15px 15px 14px;margin:9px 0;border-radius:16px}
+.actions{align-items:center}
+.actions button,.ticket{font-weight:700;letter-spacing:-.01em}
+.people{align-items:center}
+.people span{font-weight:500}
+.commitment{align-items:stretch}
+.scale{font-family:var(--font-ui)!important;font-weight:600;letter-spacing:-.005em}
+.venue-row{font-weight:600}
+.nav{gap:4px}
+.nav button{flex:1;max-width:180px}
+.nav{justify-content:center}
+.nav button{letter-spacing:-.005em}
+.ticket{display:inline-flex;align-items:center;justify-content:center}
+.people-card{padding-bottom:15px}
+.people-card h3{font-family:var(--font-ui)!important;font-weight:700;letter-spacing:-.025em}
+
+.modalbox h2{font-family:var(--font-ui)!important;font-weight:800}
+.modalbox p{font-family:var(--font-ui)!important}
+.modal input,.modal button{font-family:var(--font-ui)!important}
+@media (max-width:430px){
+  .controls{gap:5px}
+  .controls button{min-height:40px;padding:9px 8px}
+  .week{font-size:.77rem}
+  .commitment{gap:5px}
+  .scale{font-size:9px;min-height:40px;padding:8px 6px}
+  .nav button{font-size:11px}
+}
+</style>
+
+<style id="alignment-system">
+.wrap{width:100%;max-width:780px;margin-left:auto;margin-right:auto}
+.app-main{padding-top:4px;padding-bottom:calc(110px + env(safe-area-inset-bottom))}
+header .wrap{padding-left:15px;padding-right:15px}
+.controls>*{min-width:0}
+.card .actions .ticket{min-height:38px}
+.card .actions button{min-height:38px}
+.people-card{margin-left:0;margin-right:0}
+</style>
+
+<style id="v11-commitment">
+.commitment{display:flex;align-items:center;justify-content:flex-start;gap:8px;margin-top:13px;flex-wrap:wrap}
+.commit-btn{
+  appearance:none;border:0;background:transparent;color:#bfc7c9;
+  display:inline-flex;align-items:center;gap:6px;padding:6px 3px;
+  font:600 12px/1 var(--font-ui);letter-spacing:-.02em;
+  cursor:pointer;border-radius:999px;transition:color .16s ease,transform .12s ease,background .16s ease
+}
+.commit-btn:hover{background:rgba(255,255,255,.035)}
+.commit-btn:active{transform:scale(.97)}
+.commit-icon{
+  width:28px;height:28px;border:1px solid #566874;border-radius:50%;
+  display:inline-grid;place-items:center;font:500 17px/1 var(--font-ui);
+  background:#20384a;color:#d9d5ca;flex:0 0 28px
+}
+.commit-btn.no .commit-icon{color:#d5b1b6;border-color:#75585f}
+.commit-btn.yes .commit-icon{color:#d7e3a4;border-color:#687451;font-size:19px}
+.commit-btn.bought .commit-icon{color:#e1c09b;border-color:#725f4c;font-size:14px}
+.commit-btn.selected.no{color:#f0d6d9}
+.commit-btn.selected.no .commit-icon{background:#3b2d31;border-color:#a06a72;color:#f0d6d9;box-shadow:0 0 0 2px rgba(160,106,114,.12)}
+.commit-btn.selected.yes{color:#e0eab8}
+.commit-btn.selected.yes .commit-icon{background:#304039;border-color:#9cac70;color:#e0eab8;box-shadow:0 0 0 2px rgba(156,172,112,.12)}
+.commit-btn.selected.bought{color:#efcca1}
+.commit-btn.selected.bought .commit-icon{background:#47382a;border-color:#b88d5e;color:#efcca1;box-shadow:0 0 0 2px rgba(184,141,94,.12)}
+
+
+.people-card .commitment{margin-top:12px}
+</style>
+
+<style id="icon-design-system">
+:root{
+  --ui-font:"Plus Jakarta Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --bg:#101114; --navy:#122238; --card:#1a2c3b; --line:#3d5565;
+  --cream:#f3e4c9; --muted:#a8b3b9; --sage:#d8e59e; --mush:#b86a48;
+}
+html,body{font-family:var(--ui-font)!important}
+body{background:var(--bg)}
+h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
+.statusline,.nav button,.week,.today,.ticket,.actions button,.venue-row,
+.commitment,.commit-btn,.people,.badge{font-family:var(--ui-font)!important}
+
+/* Shared icon language */
+.icon-chip{
+  display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;
+  border:1px solid #596f7b;background:#1d3546;color:#e2ddd1;
+  font:500 16px/1 var(--ui-font);flex:0 0 28px;
+}
+.icon-chip.heart{color:#d6e2a3;border-color:#687452}
+.icon-chip.ticket{color:#e3c49f;border-color:#725e49}
+.icon-chip.cross{color:#d5b3b7;border-color:#75585e}
+
+/* App-wide compact "icon + label" pattern */
+.ui-pill{
+  display:inline-flex;align-items:center;gap:7px;border:1px solid #455d6b;
+  border-radius:999px;padding:5px 9px 5px 5px;background:rgba(255,255,255,.018);
+  color:#d4d9d5;font:600 11px/1 var(--ui-font);letter-spacing:-.015em;
+}
+.ui-pill .icon-chip{width:24px;height:24px;flex-basis:24px;font-size:14px;background:#20394b}
+
+/* Event commitment controls */
+.commitment{display:flex;align-items:center;gap:7px;margin-top:13px;flex-wrap:wrap}
+.commit-btn{
+  appearance:none;border:1px solid #455d6b;background:transparent;color:#c8cfd0;
+  display:inline-flex;align-items:center;gap:7px;padding:5px 10px 5px 5px;
+  font:600 11px/1 var(--ui-font);letter-spacing:-.015em;cursor:pointer;border-radius:999px;
+  transition:background .15s,border-color .15s,color .15s,transform .12s
+}
+.commit-btn:hover{background:rgba(255,255,255,.035);border-color:#627986}
+.commit-btn:active{transform:scale(.985)}
+.commit-icon{width:27px;height:27px;border:1px solid #566874;border-radius:50%;display:inline-grid;place-items:center;background:#20384a;flex:0 0 27px;font:500 16px/1 var(--ui-font)}
+.commit-btn.no .commit-icon{color:#d5b3b7;border-color:#75585e}
+.commit-btn.yes .commit-icon{color:#d7e2a4;border-color:#687452;font-size:18px}
+.commit-btn.bought .commit-icon{color:#e3c49f;border-color:#725e49;font-size:13px}
+.commit-btn.selected.no{background:#33272b;color:#edcbcf;border-color:#835d64}
+.commit-btn.selected.yes{background:#293733;color:#dce7ac;border-color:#8f9e69}
+.commit-btn.selected.bought{background:#403228;color:#efd0a7;border-color:#ab8257}
+
+/* Shared social summary chips */
+.people{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:11px}
+.people span{
+  display:inline-flex;align-items:center;gap:5px;background:#213849;border:1px solid #334d5e;
+  padding:5px 8px;border-radius:999px;font:500 10px/1 var(--ui-font);color:#cfd5d3
+}
+.people .social-chip{padding:4px 7px 4px 4px}
+.social-icon{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;font-size:12px;border:1px solid #516777}
+.social-icon.heart{color:#d7e2a4;border-color:#687452}
+.social-icon.ticket{color:#e3c49f;border-color:#725e49}
+
+/* Happenings cards use exactly the same icon language */
+.people-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px;margin:10px 0}
+.people-card h3{font:700 17px/1.25 var(--ui-font)!important;letter-spacing:-.03em}
+.happening-section{display:flex;align-items:center;gap:7px;font:800 10px/1 var(--ui-font);letter-spacing:.08em;color:#aebcc0;margin:14px 0 7px}
+.happening-section .icon-chip{width:24px;height:24px;flex-basis:24px;font-size:13px}
+
+/* Navigation */
+.nav button{position:relative;display:flex;align-items:center;justify-content:center;gap:6px}
+.nav-icon{font-size:15px;line-height:1}
+.nav button.active{color:var(--sage)}
+.nav button.active .nav-icon{transform:translateY(-1px)}
+
+/* Venue toggles */
+.venue-row{display:flex;align-items:center;justify-content:space-between;padding:14px 2px;border-bottom:1px solid #303b43;font-weight:600}
+.venue-name{display:flex;align-items:center;gap:8px}
+.venue-dot{width:8px;height:8px;border-radius:50%;background:#506673;box-shadow:0 0 0 3px rgba(80,102,115,.13)}
+.venue-row input{accent-color:var(--sage);width:20px;height:20px}
+
+/* Date / weekend treatment */
+.weekend-mark{
+  display:inline-flex;align-items:center;gap:6px;margin:8px 0 2px;color:#cbd3d0;
+  font:600 11px/1 var(--ui-font)
+}
+.weekend-mark .tiny-icon{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;border:1px solid #556a72;color:#d8e59e}
+
+/* Ticket button */
+.ticket{display:inline-flex;align-items:center;gap:6px}
+.ticket::before{content:"🎟";font-size:13px}
+
+.google-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:#202124;border:1px solid #dadce0;font-weight:700;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.google-btn::before{content:"G";font:800 18px Arial,sans-serif;color:#4285f4}
+.google-btn:disabled{opacity:.65;cursor:wait}
+
+/* Plus one */
+
+
+/* Consistent card hierarchy */
+.card{box-shadow:0 6px 18px rgba(0,0,0,.08)}
+</style>
+
+<style id="brighton-weekend-v41-design-system">
+:root{
+  --bw-navy:#0B2D4A;--bw-blue:#1976A3;--bw-teal:#4DB6AC;--bw-coral:#FF7F7F;
+  --bw-yellow:#FFD166;--bw-cream:#FFF7E8;--bw-white:#FFFFFF;--bw-muted:#647487;
+  --bw-line:#D8E1E6;--bw-card:#FFFFFF;--bw-bg:#FFF7E8;
+}
+html{background:var(--bw-bg)}
+body{background:var(--bw-bg);color:var(--bw-navy);font-family:var(--font-ui)!important}
+header{background:var(--bw-white);color:var(--bw-navy);border-bottom:1px solid var(--bw-line);padding:12px 15px;box-shadow:0 2px 12px rgba(11,45,74,.06)}
+header .wrap{max-width:860px}
+.app-brand{display:flex;align-items:center;gap:11px;min-height:48px}
+.app-brand img{width:46px;height:46px;border-radius:13px;object-fit:cover;box-shadow:0 3px 10px rgba(11,45,74,.12)}
+.brand{font-size:1.28rem!important;line-height:1;font-weight:800!important;letter-spacing:-.045em!important;color:var(--bw-navy)!important}
+.brand span{color:var(--bw-navy)!important}
+.sub{color:var(--bw-muted)!important;margin-top:4px}
+.controls{margin-top:10px}
+.controls button{background:var(--bw-white)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important;border-radius:12px!important;box-shadow:0 2px 8px rgba(11,45,74,.04)}
+.controls button:hover{border-color:#B9CCD7!important;background:#F7FBFC!important}
+.controls .today{color:var(--bw-coral)!important;border-color:#FFC1C1!important;background:#FFF8F8!important}
+.day{color:var(--bw-navy)!important}
+.card,.people-card{background:var(--bw-card)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important;border-radius:16px!important;box-shadow:0 4px 16px rgba(11,45,74,.07)!important}
+.title,.people-card h3{color:var(--bw-navy)!important}
+.meta,.note,.empty,.group-meta,.comedy-venue{color:var(--bw-muted)!important}
+.badge.sold{background:#FFE3E3!important;color:#B84B4B!important;border:1px solid #FFC2C2}
+.people span{background:#EEF7F6!important;border:1px solid #CDE7E4!important;color:var(--bw-navy)!important}
+.actions button,.ticket{border-radius:10px!important}
+.ticket{background:var(--bw-navy)!important;color:var(--bw-white)!important;border:1px solid var(--bw-navy)!important}
+.commitment{gap:7px}
+.commit-btn{border-color:var(--bw-line)!important;color:#5C6D7B!important;background:#FAFCFC!important}
+.commit-icon{background:#F1F7F8!important;border-color:#C9DADF!important;color:var(--bw-navy)!important}
+.commit-btn.selected.no{background:#FFF1F1!important;border-color:#FFB9B9!important;color:#B84B4B!important}
+.commit-btn.selected.no .commit-icon{background:#FFE3E3!important;border-color:#FFB9B9!important;color:#B84B4B!important}
+.commit-btn.selected.yes{background:#EEF9F7!important;border-color:#9FDAD4!important;color:#19756F!important}
+.commit-btn.selected.yes .commit-icon{background:#DDF2EF!important;border-color:#9FDAD4!important;color:#19756F!important}
+.commit-btn.selected.bought{background:#FFF7E5!important;border-color:#F3D48B!important;color:#936D12!important}
+.commit-btn.selected.bought .commit-icon{background:#FFF0C8!important;border-color:#F3D48B!important;color:#936D12!important}
+.nav{background:var(--bw-white)!important;border-top:1px solid var(--bw-line)!important;box-shadow:0 -4px 18px rgba(11,45,74,.08)!important;padding-top:9px!important}
+.nav button{color:#7A8A96!important}
+.nav button.active{color:var(--bw-coral)!important}
+.nav button.has-new{color:var(--bw-coral)!important}
+.nav button.has-new::after{background:var(--bw-coral)!important;box-shadow:0 0 0 2px var(--bw-white)!important}
+.venue-row{color:var(--bw-navy)!important;border-bottom:1px solid var(--bw-line)!important}
+.venue-row input{accent-color:var(--bw-teal)}
+.section-head h2,h2{color:var(--bw-navy)!important}
+.custom-event-launch,.custom-event-panel{background:#F3FAF9!important;border:1px solid #CDE7E4!important;color:var(--bw-navy)!important}
+.custom-event-launch button,.custom-event-panel button,.group-form button,#partyOnBtn{background:var(--bw-coral)!important;color:var(--bw-white)!important;border:1px solid var(--bw-coral)!important}
+.custom-event-form input,.custom-event-form select,.custom-event-form textarea,.group-form input,.group-form select{background:var(--bw-white)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important}
+.secondary{background:var(--bw-white)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important}
+.install-area{border-top:1px solid var(--bw-line)!important}
+.install-btn{background:var(--bw-navy)!important;color:var(--bw-white)!important;border:1px solid var(--bw-navy)!important}
+.group-choice{background:var(--bw-white)!important;border:1px solid var(--bw-line)!important;color:var(--bw-navy)!important}
+.group-choice input{accent-color:var(--bw-teal)}
+.group-panel,.group-roster{border-color:var(--bw-line)!important}
+.group-heading{color:var(--bw-muted)!important}
+.group-heading:before{color:var(--bw-teal)!important}
+.group-chip{background:#F3F8FA!important;border-color:var(--bw-line)!important;color:var(--bw-navy)!important}
+.social-icon{border-color:#BFD0D8!important}
+.social-icon.heart{color:#19756F!important;border-color:#9FDAD4!important}
+.social-icon.ticket{color:#936D12!important;border-color:#F3D48B!important}
+.welcome-card{background:var(--bw-white)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important;border-radius:24px!important;box-shadow:0 18px 50px rgba(11,45,74,.18)!important}
+#welcome{background:var(--bw-navy)!important}
+.welcome-card h2{color:var(--bw-navy)!important}
+.welcome-card p{color:var(--bw-muted)!important}
+.welcome-card input{background:#FAFCFC!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important}
+.welcome-card input:focus{border-color:var(--bw-teal)!important;box-shadow:0 0 0 3px rgba(77,182,172,.15)!important}
+.welcome-card button{background:var(--bw-coral)!important;color:var(--bw-white)!important;border-color:var(--bw-coral)!important}
+.welcome-info{border-color:var(--bw-line)!important}.welcome-info a{color:var(--bw-blue)!important}
+.google-btn{background:var(--bw-navy)!important;border-color:var(--bw-navy)!important}
+.auth-logo{width:88px;height:88px;border-radius:22px;display:block;margin:0 auto 16px;box-shadow:0 6px 20px rgba(11,45,74,.16)}
+.app-main{padding-bottom:calc(112px + env(safe-area-inset-bottom))}
+@media(max-width:600px){.app-brand img{width:42px;height:42px}.brand{font-size:1.14rem!important}.sub{font-size:.68rem!important}}
+</style>
+</head>
+<body>
+
+</div>
+
+<section id="welcome">
+  <div class="welcome-card">
+    <div id="authStep">
+      <img class="auth-logo" src="icons/icon-192.png" alt="Brighton Weekend logo">
+      <h2>Welcome to Brighton Weekend</h2>
+      <p>Sign in securely with your Google account.</p>
+      <button type="button" id="googleSignInBtn" class="google-btn">Continue with Google</button>
+      <p id="authMessage" class="group-meta"></p>
+      <div class="welcome-info">
+        <p><strong>Brighton Weekend</strong> helps you discover gigs, comedy, theatre and nightlife in Brighton &amp; Hove, then make plans with your groups.</p>
+        <p><a href="about.html" target="_blank" rel="noopener">About</a> · <a href="privacy.html" target="_blank" rel="noopener">Privacy</a> · <a href="terms.html" target="_blank" rel="noopener">Terms</a></p>
+      </div>
+    </div>
+    <div id="nameStep" class="hidden">
+      <h2>Nearly there</h2>
+      <p>What should we call you?</p>
+      <form id="nameForm">
+        <input id="nameInput" type="text" maxlength="40" placeholder="Your name" autocomplete="name" required>
+        <button type="submit">Next →</button>
+      </form>
+    </div>
+    <div id="groupStep" class="hidden">
+      <h2>Your groups</h2>
+      <p>Choose your circles. Happenings only shows activity from people who share a group with you.</p>
+      <div id="onboardingGroups" class="group-list"></div>

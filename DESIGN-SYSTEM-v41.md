@@ -1,34 +1,10 @@
-# Brighton Weekend v41 — Design System
+# Brighton Weekend v41 — Dark Design System
 
-v41 applies the Brighton Weekend visual system across the live app UI.
+## Theme
+The app now uses a dark, seaside-inspired interface. Core colours: Deep Navy #0B1D2F, Card #102536, Ocean Blue #1976A3, Sea Teal #4DB6AC, Coral #FF7767, Sun Yellow #FFD166, Cream #F3E4C9.
 
-## Brand
-- Primary app mark: sunset/Brighton Pier Brighton Weekend icon from v40.
-- Header and welcome screen now display the mark.
-- Browser/PWA icons remain the same selected first logo.
+## Logo
+The original Brighton pier/sunset Brighton Weekend icon is used for favicon, web header, Google branding asset, PWA icons and Apple touch icon.
 
-## Colours
-- Deep Navy `#0B2D4A`
-- Ocean Blue `#1976A3`
-- Sea Teal `#4DB6AC`
-- Coral `#FF7F7F`
-- Sun Yellow `#FFD166`
-- Cream `#FFF7E8`
-- White `#FFFFFF`
-
-## Typography
-- Plus Jakarta Sans throughout.
-- Bold/800 display and brand text.
-- Semibold/600 headings and controls.
-- Regular/400 body copy.
-
-## Components
-- White cards on cream background.
-- 16px event-card radius.
-- 12px controls/buttons.
-- 4/8/12/16/24/32px spacing scale.
-- Navy primary actions, coral emphasis, teal secondary state, yellow reserved for warm ticket/bought accents.
-- Bottom navigation is white with a light border and coral active state.
-
-## Scope
-This release is a visual-system pass over the existing functional app. It does not change the Supabase data model, groups logic, event feed, Happenings logic, Google auth flow, or event dataset.
+## PWA fix
+manifest.webmanifest, sw.js and all icon assets are included at repository root/"icons/". Manifest URLs are relative to the project site, with start_url and scope set to ./ so GitHub Pages project hosting resolves them correctly.

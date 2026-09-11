@@ -1,44 +1,38 @@
 {
   "name": "Brighton Weekend",
   "short_name": "Brighton Weekend",
-  "description": "Discover what's happening in Brighton this weekend.",
+  "description": "Discover events in Brighton & Hove and make plans with your groups.",
+  "id": "./",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#FFF7E8",
-  "theme_color": "#0B2D4A",
   "orientation": "portrait-primary",
+  "theme_color": "#0B1D2F",
+  "background_color": "#0B1D2F",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "./icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "./icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-192-maskable.png",
+      "src": "./icons/icon-192-maskable.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "icons/icon-512-maskable.png",
+      "src": "./icons/icon-512-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
-    },
-    {
-      "src": "icons/apple-touch-icon-v29.png",
-      "sizes": "180x180",
-      "type": "image/png",
-      "purpose": "any"
     }
-  ],
-  "id": "./brighton-weekend-v41"
+  ]
 }
