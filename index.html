@@ -1,2 +1,981 @@
 <!doctype html>
-<!-- Temporary placeholder -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="application-name" content="Brighton Weekend">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Brighton Weekend">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0B2D4A">
+<link rel="manifest" href="https://brightonspindoctor.github.io/Brighton-weekend/manifest.webmanifest?v=48">
+<link rel="apple-touch-icon" sizes="180x180" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/apple-touch-icon.png?v=48">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/apple-touch-icon.png?v=48">
+<link rel="icon" type="image/png" sizes="32x32" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-32.png?v=48">
+<link rel="icon" type="image/png" sizes="192x192" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-192.png?v=49">
+<link rel="icon" type="image/png" sizes="512x512" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-512.png?v=48">
+<link rel="shortcut icon" href="https://brightonspindoctor.github.io/Brighton-weekend/favicon.ico?v=48">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Brighton Weekend</title>
+<style>
+:root{--ink:#172335;--cream:#f3e4c9;--orange:#b94f2d;--gold:#d6a54c;--lime:#c8d989}
+*{box-sizing:border-box} body{margin:0;font-family:var(--font-ui,Plus Jakarta Sans,sans-serif);background:#102033;color:var(--cream);-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none}
+button,input{font:inherit} .hidden{display:none!important}
+
+/* Welcome screen */
+#welcome{position:fixed;inset:0;z-index:20;min-height:100dvh;background:#000;display:grid;place-items:center;padding:20px}
+.welcome-card{width:min(420px,92vw);background:#17191d;color:var(--cream);border:1px solid #353941;border-radius:24px;padding:30px 26px;box-shadow:0 18px 50px rgba(0,0,0,.45);text-align:center}
+.welcome-card h2{font-family:var(--font-ui)!important;font-size:2rem;margin:0 0 9px;letter-spacing:-.04em}
+.welcome-card p{font-family:var(--font-ui)!important;color:#aeb7bc;font-size:.9rem;line-height:1.45;margin:0 0 20px}
+.welcome-card form{display:grid;gap:10px}
+.welcome-card input{width:100%;padding:14px 16px;border:1px solid #4b5861;border-radius:999px;background:#0e1013;color:#f3e4c9;font-family:var(--font-ui)!important;font-size:1rem;outline:none}
+.welcome-card input:focus{border-color:#9dac70;box-shadow:0 0 0 3px rgba(157,172,112,.12)}
+.welcome-card button{width:100%;padding:13px 16px;border:1px solid #8f9e69;border-radius:999px;background:#2d3933;color:#dce7ac;font-family:var(--font-ui)!important;font-size:1rem;font-weight:700;cursor:pointer}
+.welcome-card button:hover{background:#35433c}
+.welcome-info{margin-top:18px;padding-top:16px;border-top:1px solid #353941}.welcome-info p{margin:0 0 9px;font-size:.78rem;color:#aeb7bc}.welcome-info a{color:#d8e59e;text-decoration:none}.welcome-info a:hover{text-decoration:underline}
+/* App */
+header{position:sticky;top:0;z-index:5;background:#122238;border-bottom:1px solid rgba(242,225,194,.25);padding:15px}
+.wrap{max-width:820px;margin:auto;padding:0 15px}.brand{font-size:1.8rem;font-weight:bold;letter-spacing:-1px;color:var(--cream)}.brand span{color:#d66a40}
+.sub{font-family:var(--font-ui);color:#b8c6a0;font-size:.8rem;margin-top:2px}
+.controls{display:flex;gap:7px;margin-top:12px}.controls button{background:#20364b;color:var(--cream);border:1px solid #52667a;border-radius:10px;padding:10px;cursor:pointer}.week{flex:1}.today{color:#d8e59e!important}
+.day{margin:22px 0 8px;color:#d8e59e;font:bold .78rem system-ui,sans-serif;letter-spacing:1px}
+.card{background:#1b3041;border:1px solid #42576a;border-radius:16px;padding:15px;margin:9px 0;box-shadow:0 5px 18px rgba(0,0,0,.12)}
+.top{display:flex;justify-content:space-between;gap:10px}.title{font-size:1.18rem;font-weight:bold}.meta{font: .85rem system-ui,sans-serif;color:#b9c4cb;margin-top:5px}
+.badge{font:.65rem system-ui,sans-serif;font-weight:bold;padding:5px 7px;border-radius:20px;height:max-content}.sold{background:#713545;color:#ffd3d8}
+.people{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}.people span{font:.72rem var(--font-ui);background:#263d50;padding:5px 8px;border-radius:20px;color:#d9e0d5}
+.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.actions button,.ticket{border-radius:10px;padding:9px 11px;font:bold .75rem system-ui,sans-serif;cursor:pointer;text-decoration:none}
+.interest,.going{background:#213849;border:1px solid #607587;color:#f3e4c9}.interest.active{border-color:#d8e59e;color:#d8e59e}.going.active{background:#d8e59e;color:#172335;border-color:#d8e59e}.ticket{background:#f3e4c9;color:#172335}
+.nav{position:fixed;bottom:0;left:0;right:0;background:#14273a;border-top:1px solid #405568;display:flex;justify-content:space-around;padding:12px max(12px,env(safe-area-inset-left)) calc(12px + env(safe-area-inset-bottom));z-index:10}.nav button{border:0;background:none;color:#9cabb2;font:bold .75rem system-ui,sans-serif}.nav button.active{color:#d8e59e}
+.venue-row{display:flex;justify-content:space-between;padding:15px 2px;border-bottom:1px solid #405568;font-family:var(--font-ui)}.venue-row input{accent-color:#b9c76d;width:20px}
+.empty{font-family:var(--font-ui);color:#91a0a8;padding:10px 0}
+
+/* Groups */
+.group-step{display:grid;gap:12px;text-align:left}
+.group-step h3{margin:0;font-size:1.15rem}
+.group-list{display:grid;gap:8px;max-height:230px;overflow:auto}
+.group-choice{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid #3e4750;border-radius:16px;background:#101216}
+.group-choice input{width:auto;accent-color:#a9b777}
+.group-choice .lock{margin-left:auto;color:#aeb7bc}
+.group-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:12px 0 14px}
+.group-actions button{width:100%;min-width:0}
+.secondary{background:#17191d!important;border-color:#4b5861!important;color:#d5d7d5!important}
+.group-panel{margin-top:8px;padding-top:10px;border-top:1px solid #34404a}
+.group-form{display:grid;gap:14px;margin-top:10px}.group-form button{margin-top:2px}.group-form button + .group-meta{margin-top:2px}
+.group-form label{font-size:.78rem;color:#aeb7bc}
+.group-form input,.group-form select{width:100%;padding:12px 14px;border-radius:14px;border:1px solid #4b5861;background:#0e1013;color:#f3e4c9}
+.group-meta{font-size:.78rem;color:#aeb7bc;margin-top:2px}
+.group-chip{display:inline-flex;align-items:center;gap:6px;border:1px solid #4b5861;background:#182128;border-radius:999px;padding:5px 9px;font-size:.72rem;margin:3px 4px 3px 0}
+.group-heading{display:flex;align-items:center;gap:8px;margin:16px 0 7px;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:#aeb7bc}
+.group-heading:before{content:'◌';color:#b8c98b}
+.group-manager{display:grid;gap:8px;margin-top:10px}
+.group-manager-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid #29333c}
+.small-btn{padding:8px 11px!important;font-size:.78rem!important}
+.pin-display{font-weight:800;letter-spacing:.15em;color:#dce7ac}
+
+.section-head{margin-bottom:12px}.section-head h2{margin:0 0 4px;font-size:1.35rem}.comedy-venue{font-size:.72rem;color:#aeb7bc;margin-top:2px}
+
+/* New Happenings indicator */
+.nav button.has-new{font-weight:800;color:#f06b61;position:relative}
+.nav button.has-new::after{content:'';position:absolute;width:7px;height:7px;border-radius:50%;background:#f06b61;top:6px;right:8px;box-shadow:0 0 0 2px #102033}
+
+.group-roster{margin:0 0 24px;padding:16px 0 4px;border-bottom:1px solid #34404a}.group-roster .section-head{margin-bottom:10px}.group-roster h3,.happenings-events-head h3{margin:0;font-size:1.08rem}.member-group{margin:0 0 14px}.member-group .group-heading{margin-top:8px}.member-count{font-size:.68rem;border:1px solid #4b5861;border-radius:999px;padding:2px 6px;color:#aeb9bf}.social-icon.person{font-size:10px;color:#aeb9bf;border-color:#566874}.happenings-events-head{margin:18px 0 8px}.happenings-empty{margin-top:10px}
+.custom-event-panel{margin:14px 0 22px;padding:16px;border:1px solid #34404a;border-radius:16px;background:#152738}.custom-event-launch{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0 14px;padding:12px 14px;border:1px solid #405568;border-radius:14px;background:#1a3044}.custom-event-launch button{white-space:nowrap}.custom-event-panel.collapsed .custom-event-form{display:none}.custom-event-panel.collapsed{padding-bottom:12px}.custom-event-panel h3{margin:0 0 5px}.custom-event-form{display:grid;gap:9px;margin-top:12px}.custom-event-form label{font-size:.75rem;color:#aeb7bc}.custom-event-form input,.custom-event-form select,.custom-event-form textarea{width:100%;padding:11px 13px;border-radius:12px;border:1px solid #4b5861;background:#0e1013;color:#f3e4c9}.custom-event-form textarea{min-height:70px;resize:vertical}.custom-event-row{display:grid;grid-template-columns:1fr 1fr;gap:9px}.custom-event-help{font-size:.7rem;color:#91a0a8;line-height:1.4}.custom-event-added{font-size:.7rem;color:#d8e59e;margin-top:6px}
+.install-area{margin:26px 0 12px;padding-top:18px;border-top:1px solid #34404a;text-align:center}.install-btn{width:100%;border-radius:999px!important;padding:14px 18px!important;font-weight:700!important}.install-btn.hidden{display:none}
+.settings-section,.settings-card{margin:0 0 18px;padding:16px;border:1px solid #294657;border-radius:16px;background:#102536}.settings-section{padding:14px 16px}.settings-section #venueList{margin-top:4px}.venue-settings-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.venue-actions{display:flex;gap:6px;flex-wrap:wrap}.venue-action{padding:7px 10px!important;font-size:.68rem!important;border-radius:999px!important}.profile-current{display:flex;align-items:center;gap:12px;padding:10px 0 14px}.profile-current img{width:52px;height:52px;object-fit:contain;border-radius:50%;overflow:visible;filter:drop-shadow(0 2px 5px rgba(0,0,0,.28))}.profile-current strong{display:block}.profile-icon-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-top:12px}.profile-icon-option{position:relative;padding:0!important;background:#0d2030!important;border:1px solid #294657!important;border-radius:14px!important;min-width:0;aspect-ratio:1}.profile-icon-option img{width:100%;height:100%;object-fit:contain;border-radius:12px;display:block}.profile-icon-option.selected{border-color:var(--bw-teal)!important;box-shadow:0 0 0 2px rgba(77,182,172,.18)}.profile-icon-option.selected:after{content:"✓";position:absolute;right:2px;top:2px;width:15px;height:15px;border-radius:50%;display:grid;place-items:center;background:var(--bw-teal);color:#08141F;font-size:10px;font-weight:900}.profile-icon-note{font-size:.7rem;color:#91a0a8;line-height:1.4}.social-icon.profile{width:24px;height:24px;border:0;background:transparent;border-radius:50%;overflow:visible;padding:0}.social-icon.profile img{width:30px;height:30px;display:block;object-fit:contain;border-radius:50%;overflow:visible;transform:translateY(-2px);filter:drop-shadow(0 2px 3px rgba(0,0,0,.28))} .social-chip.profile-chip{padding-left:4px}.happening-summary{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 4px}.happening-summary-pill{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;font-size:.72rem;font-weight:800;border:1px solid #345468;background:#0F2231;color:#C3D0D6}.happening-summary-pill.going{border-color:#856A29;background:#40321A;color:#FFD982}.happening-summary-pill.interested{border-color:#397A72;background:#153B39;color:#8FE0D5}.happening-people{display:grid;gap:7px;margin-top:10px}.happening-person{display:flex;align-items:center;gap:8px;min-height:30px}.happening-person .social-icon.profile{flex:0 0 28px;width:28px;height:28px}.happening-person .social-icon.profile img{width:34px;height:34px}.happening-person-name{min-width:0;flex:1;font-size:.76rem;font-weight:600;color:#D9E7E7}.happening-status{font-size:.66rem;font-weight:800;letter-spacing:.02em;padding:5px 8px;border-radius:999px;white-space:nowrap}.happening-status.going{color:#FFD982;background:#40321A;border:1px solid #856A29}.happening-status.interested{color:#8FE0D5;background:#153B39;border:1px solid #397A72}.happening-group{margin-top:12px}.happening-group+.happening-group{padding-top:10px;border-top:1px solid #294657}.happening-group .group-heading{margin:0 0 6px}.settings-card h3{margin:0 0 6px;color:var(--bw-cream)}.settings-card .note{margin-bottom:12px}.support-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:11px 15px;border-radius:12px;background:#FF7767;color:#08141F!important;font-weight:800;text-decoration:none;border:1px solid #FF7767}.settings-links{display:flex;gap:16px;flex-wrap:wrap;padding:4px 2px 18px}.settings-links a{color:#A7B5BE}
+</style>
+
+<style id="jakarta-design-system">
+:root{
+  --font-ui:"Plus Jakarta Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --ink:#172335; --cream:#f3e4c9; --navy:#122238; --card:#1b3041;
+  --line:#42576a; --sage:#d8e59e; --orange:#b85a38; --muted:#aeb9bf;
+}
+html,body,button,input,a{font-family:var(--font-ui)!important}
+body{letter-spacing:-.01em}
+h1,h2,h3,p,.brand,.sub,.title,.meta,.price,.empty,.note,.day,
+.statusline,.venue-row,.nav button,.ticket,.actions button,.scale,
+.people,.badge,.week,.today{font-family:var(--font-ui)!important}
+
+.brand{font-weight:800;letter-spacing:-.045em}
+.brand span{font-weight:800}
+h2{font-size:1.45rem;line-height:1.15;letter-spacing:-.035em;margin:24px 0 8px}
+.title{font-size:1.05rem;line-height:1.25;font-weight:700;letter-spacing:-.025em}
+.meta{font-size:.78rem;line-height:1.4;font-weight:500}
+.price{font-size:.78rem;line-height:1.3;font-weight:700}
+.day{font-size:.7rem;line-height:1.2;font-weight:800;letter-spacing:.06em}
+.sub,.statusline,.note,.empty{font-size:.72rem;line-height:1.45;font-weight:500}
+.controls{align-items:stretch}
+.controls button{display:flex;align-items:center;justify-content:center;min-height:42px}
+.week{font-weight:700;letter-spacing:-.01em}
+.today{font-weight:700}
+.card{padding:15px 15px 14px;margin:9px 0;border-radius:16px}
+.actions{align-items:center}
+.actions button,.ticket{font-weight:700;letter-spacing:-.01em}
+.people{align-items:center}
+.people span{font-weight:500}
+.commitment{align-items:stretch}
+.scale{font-family:var(--font-ui)!important;font-weight:600;letter-spacing:-.005em}
+.venue-row{font-weight:600}
+.nav{gap:4px}
+.nav button{flex:1;max-width:180px}
+.nav{justify-content:center}
+.nav button{letter-spacing:-.005em}
+.ticket{display:inline-flex;align-items:center;justify-content:center}
+.people-card{padding-bottom:15px}
+.people-card h3{font-family:var(--font-ui)!important;font-weight:700;letter-spacing:-.025em}
+
+.modalbox h2{font-family:var(--font-ui)!important;font-weight:800}
+.modalbox p{font-family:var(--font-ui)!important}
+.modal input,.modal button{font-family:var(--font-ui)!important}
+@media (max-width:430px){
+  .controls{gap:5px}
+  .controls button{min-height:40px;padding:9px 8px}
+  .week{font-size:.77rem}
+  .commitment{gap:5px}
+  .scale{font-size:9px;min-height:40px;padding:8px 6px}
+  .nav button{font-size:11px}
+}
+</style>
+
+<style id="alignment-system">
+.wrap{width:100%;max-width:780px;margin-left:auto;margin-right:auto}
+.app-main{padding-top:4px;padding-bottom:calc(110px + env(safe-area-inset-bottom))}
+header .wrap{padding-left:15px;padding-right:15px}
+.controls>*{min-width:0}
+.card .actions .ticket{min-height:38px}
+.card .actions button{min-height:38px}
+.people-card{margin-left:0;margin-right:0}
+</style>
+
+<style id="v11-commitment">
+.commitment{display:flex;align-items:center;justify-content:flex-start;gap:8px;margin-top:13px;flex-wrap:wrap}
+.commit-btn{
+  appearance:none;border:0;background:transparent;color:#bfc7c9;
+  display:inline-flex;align-items:center;gap:6px;padding:6px 3px;
+  font:600 12px/1 var(--font-ui);letter-spacing:-.02em;
+  cursor:pointer;border-radius:999px;transition:color .16s ease,transform .12s ease,background .16s ease
+}
+.commit-btn:hover{background:rgba(255,255,255,.035)}
+.commit-btn:active{transform:scale(.97)}
+.commit-icon{
+  width:28px;height:28px;border:1px solid #566874;border-radius:50%;
+  display:inline-grid;place-items:center;font:500 17px/1 var(--font-ui);
+  background:#20384a;color:#d9d5ca;flex:0 0 28px
+}
+.commit-btn.no .commit-icon{color:#d5b1b6;border-color:#75585f}
+.commit-btn.yes .commit-icon{color:#d7e3a4;border-color:#687451;font-size:19px}
+.commit-btn.bought .commit-icon{color:#e1c09b;border-color:#725f4c;font-size:14px}
+.commit-btn.selected.no{color:#f0d6d9}
+.commit-btn.selected.no .commit-icon{background:#3b2d31;border-color:#a06a72;color:#f0d6d9;box-shadow:0 0 0 2px rgba(160,106,114,.12)}
+.commit-btn.selected.yes{color:#e0eab8}
+.commit-btn.selected.yes .commit-icon{background:#304039;border-color:#9cac70;color:#e0eab8;box-shadow:0 0 0 2px rgba(156,172,112,.12)}
+.commit-btn.selected.bought{color:#efcca1}
+.commit-btn.selected.bought .commit-icon{background:#47382a;border-color:#b88d5e;color:#efcca1;box-shadow:0 0 0 2px rgba(184,141,94,.12)}
+
+
+.people-card .commitment{margin-top:12px}
+</style>
+
+<style id="icon-design-system">
+:root{
+  --ui-font:"Plus Jakarta Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --bg:#101114; --navy:#122238; --card:#1a2c3b; --line:#3d5565;
+  --cream:#f3e4c9; --muted:#a8b3b9; --sage:#d8e59e; --mush:#b86a48;
+}
+html,body{font-family:var(--ui-font)!important}
+body{background:var(--bg)}
+h1,h2,h3,.brand,.sub,.title,.meta,.price,.day,.empty,.note,
+.statusline,.nav button,.week,.today,.ticket,.actions button,.venue-row,
+.commitment,.commit-btn,.people,.badge{font-family:var(--ui-font)!important}
+
+/* Shared icon language */
+.icon-chip{
+  display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;
+  border:1px solid #596f7b;background:#1d3546;color:#e2ddd1;
+  font:500 16px/1 var(--ui-font);flex:0 0 28px;
+}
+.icon-chip.heart{color:#d6e2a3;border-color:#687452}
+.icon-chip.ticket{color:#e3c49f;border-color:#725e49}
+.icon-chip.cross{color:#d5b3b7;border-color:#75585e}
+
+/* App-wide compact "icon + label" pattern */
+.ui-pill{
+  display:inline-flex;align-items:center;gap:7px;border:1px solid #455d6b;
+  border-radius:999px;padding:5px 9px 5px 5px;background:rgba(255,255,255,.018);
+  color:#d4d9d5;font:600 11px/1 var(--ui-font);letter-spacing:-.015em;
+}
+.ui-pill .icon-chip{width:24px;height:24px;flex-basis:24px;font-size:14px;background:#20394b}
+
+/* Event commitment controls */
+.commitment{display:flex;align-items:center;gap:7px;margin-top:13px;flex-wrap:wrap}
+.commit-btn{
+  appearance:none;border:1px solid #455d6b;background:transparent;color:#c8cfd0;
+  display:inline-flex;align-items:center;gap:7px;padding:5px 10px 5px 5px;
+  font:600 11px/1 var(--ui-font);letter-spacing:-.015em;cursor:pointer;border-radius:999px;
+  transition:background .15s,border-color .15s,color .15s,transform .12s
+}
+.commit-btn:hover{background:rgba(255,255,255,.035);border-color:#627986}
+.commit-btn:active{transform:scale(.985)}
+.commit-icon{width:27px;height:27px;border:1px solid #566874;border-radius:50%;display:inline-grid;place-items:center;background:#20384a;flex:0 0 27px;font:500 16px/1 var(--ui-font)}
+.commit-btn.no .commit-icon{color:#d5b3b7;border-color:#75585e}
+.commit-btn.yes .commit-icon{color:#d7e2a4;border-color:#687452;font-size:18px}
+.commit-btn.bought .commit-icon{color:#e3c49f;border-color:#725e49;font-size:13px}
+.commit-btn.selected.no{background:#33272b;color:#edcbcf;border-color:#835d64}
+.commit-btn.selected.yes{background:#293733;color:#dce7ac;border-color:#8f9e69}
+.commit-btn.selected.bought{background:#403228;color:#efd0a7;border-color:#ab8257}
+
+/* Shared social summary chips */
+.people{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:11px}
+.people span{
+  display:inline-flex;align-items:center;gap:5px;background:#213849;border:1px solid #334d5e;
+  padding:5px 8px;border-radius:999px;font:500 10px/1 var(--ui-font);color:#cfd5d3
+}
+.people .social-chip{padding:4px 7px 4px 4px}
+.social-icon{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;font-size:12px;border:1px solid #516777}
+.social-icon.heart{color:#d7e2a4;border-color:#687452}
+.social-icon.ticket{color:#e3c49f;border-color:#725e49}
+
+/* Happenings cards use exactly the same icon language */
+.people-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px;margin:10px 0}
+.people-card h3{font:700 17px/1.25 var(--ui-font)!important;letter-spacing:-.03em}
+.happening-section{display:flex;align-items:center;gap:7px;font:800 10px/1 var(--ui-font);letter-spacing:.08em;color:#aebcc0;margin:14px 0 7px}
+.happening-section .icon-chip{width:24px;height:24px;flex-basis:24px;font-size:13px}
+
+/* Navigation */
+.nav button{position:relative;display:flex;align-items:center;justify-content:center;gap:6px}
+.nav-icon{font-size:15px;line-height:1}
+.nav button.active{color:var(--sage)}
+.nav button.active .nav-icon{transform:translateY(-1px)}
+
+/* Venue toggles */
+.venue-row{display:flex;align-items:center;justify-content:space-between;padding:14px 2px;border-bottom:1px solid #303b43;font-weight:600}
+.venue-name{display:flex;align-items:center;gap:8px}
+.venue-dot{width:8px;height:8px;border-radius:50%;background:#506673;box-shadow:0 0 0 3px rgba(80,102,115,.13)}
+.venue-row input{accent-color:var(--sage);width:20px;height:20px}
+
+/* Date / weekend treatment */
+.weekend-mark{
+  display:inline-flex;align-items:center;gap:6px;margin:8px 0 2px;color:#cbd3d0;
+  font:600 11px/1 var(--ui-font)
+}
+.weekend-mark .tiny-icon{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;border:1px solid #556a72;color:#d8e59e}
+
+/* Ticket button */
+.ticket{display:inline-flex;align-items:center;gap:6px}
+.ticket::before{content:"🎟";font-size:13px}
+
+.google-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:#202124;border:1px solid #dadce0;font-weight:700;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.google-btn::before{content:"G";font:800 18px Arial,sans-serif;color:#4285f4}
+.google-btn:disabled{opacity:.65;cursor:wait}
+
+/* Plus one */
+
+
+/* Consistent card hierarchy */
+.card{box-shadow:0 6px 18px rgba(0,0,0,.08)}
+</style>
+
+<style id="brighton-weekend-v41-design-system">
+:root{
+  --bw-navy:#0B2D4A;--bw-blue:#1976A3;--bw-teal:#4DB6AC;--bw-coral:#FF7F7F;
+  --bw-yellow:#FFD166;--bw-cream:#FFF7E8;--bw-white:#FFFFFF;--bw-muted:#647487;
+  --bw-line:#D8E1E6;--bw-card:#FFFFFF;--bw-bg:#FFF7E8;
+}
+html{background:var(--bw-bg)}
+body{background:var(--bw-bg);color:var(--bw-navy);font-family:var(--font-ui)!important}
+header{background:var(--bw-white);color:var(--bw-navy);border-bottom:1px solid var(--bw-line);padding:12px 15px;box-shadow:0 2px 12px rgba(11,45,74,.06)}
+header .wrap{max-width:860px}
+.app-brand{display:flex;align-items:center;gap:11px;min-height:48px}
+.app-brand img{width:46px;height:46px;border-radius:13px;object-fit:cover;box-shadow:0 3px 10px rgba(11,45,74,.12)}
+.brand{font-size:1.28rem!important;line-height:1;font-weight:800!important;letter-spacing:-.045em!important;color:var(--bw-navy)!important}
+.brand span{color:var(--bw-navy)!important}
+.sub{color:var(--bw-muted)!important;margin-top:4px}
+.controls{margin-top:10px}
+.controls button{background:var(--bw-white)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important;border-radius:12px!important;box-shadow:0 2px 8px rgba(11,45,74,.04)}
+.controls button:hover{border-color:#B9CCD7!important;background:#F7FBFC!important}
+.controls .today{color:var(--bw-coral)!important;border-color:#FFC1C1!important;background:#FFF8F8!important}
+.day{color:var(--bw-navy)!important}
+.card,.people-card{background:var(--bw-card)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important;border-radius:16px!important;box-shadow:0 4px 16px rgba(11,45,74,.07)!important}
+.title,.people-card h3{color:var(--bw-navy)!important}
+.meta,.note,.empty,.group-meta,.comedy-venue{color:var(--bw-muted)!important}
+.badge.sold{background:#FFE3E3!important;color:#B84B4B!important;border:1px solid #FFC2C2}
+.people span{background:#EEF7F6!important;border:1px solid #CDE7E4!important;color:var(--bw-navy)!important}
+.actions button,.ticket{border-radius:10px!important}
+.ticket{background:var(--bw-navy)!important;color:var(--bw-white)!important;border:1px solid var(--bw-navy)!important}
+.commitment{gap:7px}
+.commit-btn{border-color:var(--bw-line)!important;color:#5C6D7B!important;background:#FAFCFC!important}
+.commit-icon{background:#F1F7F8!important;border-color:#C9DADF!important;color:var(--bw-navy)!important}
+.commit-btn.selected.no{background:#FFF1F1!important;border-color:#FFB9B9!important;color:#B84B4B!important}
+.commit-btn.selected.no .commit-icon{background:#FFE3E3!important;border-color:#FFB9B9!important;color:#B84B4B!important}
+.commit-btn.selected.yes{background:#EEF9F7!important;border-color:#9FDAD4!important;color:#19756F!important}
+.commit-btn.selected.yes .commit-icon{background:#DDF2EF!important;border-color:#9FDAD4!important;color:#19756F!important}
+.commit-btn.selected.bought{background:#FFF7E5!important;border-color:#F3D48B!important;color:#936D12!important}
+.commit-btn.selected.bought .commit-icon{background:#FFF0C8!important;border-color:#F3D48B!important;color:#936D12!important}
+.nav{background:var(--bw-white)!important;border-top:1px solid var(--bw-line)!important;box-shadow:0 -4px 18px rgba(11,45,74,.08)!important;padding-top:9px!important}
+.nav button{color:#7A8A96!important}
+.nav button.active{color:var(--bw-coral)!important}
+.nav button.has-new{color:var(--bw-coral)!important}
+.nav button.has-new::after{background:var(--bw-coral)!important;box-shadow:0 0 0 2px var(--bw-white)!important}
+.venue-row{color:var(--bw-navy)!important;border-bottom:1px solid var(--bw-line)!important}
+.venue-row input{accent-color:var(--bw-teal)}
+.section-head h2,h2{color:var(--bw-navy)!important}
+.custom-event-launch,.custom-event-panel{background:#F3FAF9!important;border:1px solid #CDE7E4!important;color:var(--bw-navy)!important}
+.custom-event-launch button,.custom-event-panel button,.group-form button,#partyOnBtn{background:var(--bw-coral)!important;color:var(--bw-white)!important;border:1px solid var(--bw-coral)!important}
+.custom-event-form input,.custom-event-form select,.custom-event-form textarea,.group-form input,.group-form select{background:var(--bw-white)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important}
+.secondary{background:var(--bw-white)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important}
+.install-area{border-top:1px solid var(--bw-line)!important}
+.install-btn{background:var(--bw-navy)!important;color:var(--bw-white)!important;border:1px solid var(--bw-navy)!important}
+.group-choice{background:var(--bw-white)!important;border:1px solid var(--bw-line)!important;color:var(--bw-navy)!important}
+.group-choice input{accent-color:var(--bw-teal)}
+.group-panel,.group-roster{border-color:var(--bw-line)!important}
+.group-heading{color:var(--bw-muted)!important}
+.group-heading:before{color:var(--bw-teal)!important}
+.group-chip{background:#F3F8FA!important;border-color:var(--bw-line)!important;color:var(--bw-navy)!important}
+.social-icon{border-color:#BFD0D8!important}
+.social-icon.heart{color:#19756F!important;border-color:#9FDAD4!important}
+.social-icon.ticket{color:#936D12!important;border-color:#F3D48B!important}
+.welcome-card{background:var(--bw-white)!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important;border-radius:24px!important;box-shadow:0 18px 50px rgba(11,45,74,.18)!important}
+#welcome{background:var(--bw-navy)!important}
+.welcome-card h2{color:var(--bw-navy)!important}
+.welcome-card p{color:var(--bw-muted)!important}
+.welcome-card input{background:#FAFCFC!important;color:var(--bw-navy)!important;border:1px solid var(--bw-line)!important}
+.welcome-card input:focus{border-color:var(--bw-teal)!important;box-shadow:0 0 0 3px rgba(77,182,172,.15)!important}
+.welcome-card button{background:var(--bw-coral)!important;color:var(--bw-white)!important;border-color:var(--bw-coral)!important}
+.welcome-info{border-color:var(--bw-line)!important}.welcome-info a{color:var(--bw-blue)!important}
+.google-btn{background:var(--bw-navy)!important;border-color:var(--bw-navy)!important}
+.auth-logo{width:88px;height:88px;border-radius:22px;display:block;margin:0 auto 16px;box-shadow:0 6px 20px rgba(11,45,74,.16)}
+.app-main{padding-bottom:calc(112px + env(safe-area-inset-bottom))}
+@media(max-width:600px){.app-brand img{width:42px;height:42px}.brand{font-size:1.14rem!important}.sub{font-size:.68rem!important}}
+</style>
+
+<style id="brighton-weekend-v41-dark-theme">
+:root{
+ --bw-navy:#0B1D2F;--bw-blue:#1976A3;--bw-teal:#4DB6AC;--bw-coral:#FF7767;--bw-yellow:#FFD166;
+ --bw-cream:#F3E4C9;--bw-white:#FFFFFF;--bw-muted:#A7B5BE;--bw-line:#294657;--bw-card:#102536;--bw-bg:#08141F;
+}
+html,body{background:var(--bw-bg)!important;color:var(--bw-cream)!important}
+body{color-scheme:dark}
+header{background:#0B1D2F!important;color:var(--bw-cream)!important;border-bottom:1px solid #294657!important;box-shadow:0 4px 18px rgba(0,0,0,.28)!important}
+.app-brand img{box-shadow:0 4px 16px rgba(0,0,0,.35)!important}.brand,.brand span{color:var(--bw-cream)!important}.sub{color:#9FB0BB!important}
+.controls button{background:#102536!important;color:var(--bw-cream)!important;border-color:#294657!important;box-shadow:none!important}.controls button:hover{background:#163047!important;border-color:#3B6276!important}.controls .today{color:#FF9B8F!important;border-color:#71463F!important;background:#251A1A!important}
+.day{color:var(--bw-cream)!important}.card,.people-card{background:var(--bw-card)!important;color:var(--bw-cream)!important;border-color:var(--bw-line)!important;box-shadow:0 8px 22px rgba(0,0,0,.22)!important}.title,.people-card h3,.section-head h2,h2{color:var(--bw-cream)!important}.meta,.note,.empty,.group-meta,.comedy-venue{color:#9FB0BB!important}
+.badge.sold{background:#382022!important;color:#FFB0A9!important;border-color:#704047!important}.people span{background:#153443!important;border-color:#285365!important;color:#D9E7E7!important}
+.ticket{background:var(--bw-coral)!important;color:#0B1D2F!important;border-color:var(--bw-coral)!important;font-weight:800}.actions button{border-color:var(--bw-line)!important}
+.commit-btn{border-color:#345468!important;color:#C3D0D6!important;background:#0F2231!important}.commit-icon{background:#173347!important;border-color:#3B6074!important;color:var(--bw-cream)!important}
+.commit-btn.selected.no{background:#351F24!important;border-color:#7A454D!important;color:#FFB5B0!important}.commit-btn.selected.no .commit-icon{background:#47262D!important;border-color:#8D4F59!important;color:#FFB5B0!important}
+.commit-btn.selected.yes{background:#153B39!important;border-color:#397A72!important;color:#8FE0D5!important}.commit-btn.selected.yes .commit-icon{background:#1D4A46!important;border-color:#4D9C92!important;color:#9AE6DC!important}
+.commit-btn.selected.bought{background:#40321A!important;border-color:#856A29!important;color:#FFD982!important}.commit-btn.selected.bought .commit-icon{background:#54421E!important;border-color:#A08334!important;color:#FFD982!important}
+.nav{background:#0B1D2F!important;border-top:1px solid #294657!important;box-shadow:0 -6px 22px rgba(0,0,0,.3)!important}.nav button{color:#8095A3!important}.nav button.active,.nav button.has-new{color:var(--bw-coral)!important}.nav button.has-new::after{background:var(--bw-coral)!important;box-shadow:0 0 0 2px #0B1D2F!important}
+.venue-row{color:var(--bw-cream)!important;border-bottom-color:#294657!important}.venue-row input{accent-color:var(--bw-teal)}.group-panel,.group-roster{border-color:#294657!important}.group-heading{color:#A7B5BE!important}.group-chip,.group-choice{background:#102536!important;border-color:#294657!important;color:var(--bw-cream)!important}.group-choice input{accent-color:var(--bw-teal)}
+.custom-event-launch,.custom-event-panel{background:#0F2A31!important;border-color:#285A5C!important;color:var(--bw-cream)!important}.custom-event-launch button,.custom-event-panel button,.group-form button,#partyOnBtn{background:var(--bw-coral)!important;color:#0B1D2F!important;border-color:var(--bw-coral)!important;font-weight:800}.custom-event-form input,.custom-event-form select,.custom-event-form textarea,.group-form input,.group-form select{background:#0F2231!important;color:var(--bw-cream)!important;border-color:#345468!important}.secondary{background:#102536!important;color:var(--bw-cream)!important;border-color:#294657!important}.install-area{border-top-color:#294657!important}.install-btn{background:var(--bw-coral)!important;color:#0B1D2F!important;border-color:var(--bw-coral)!important;font-weight:800}
+.welcome-card{background:#102536!important;color:var(--bw-cream)!important;border-color:#294657!important;box-shadow:0 20px 60px rgba(0,0,0,.45)!important}#welcome{background:#08141F!important}.welcome-card h2{color:var(--bw-cream)!important}.welcome-card p{color:#A7B5BE!important}.welcome-card input{background:#0B1D2F!important;color:var(--bw-cream)!important;border-color:#345468!important}.welcome-card input:focus{border-color:var(--bw-teal)!important;box-shadow:0 0 0 3px rgba(77,182,172,.18)!important}.welcome-card button{background:var(--bw-coral)!important;color:#0B1D2F!important;border-color:var(--bw-coral)!important;font-weight:800}.welcome-info{border-color:#294657!important}.welcome-info a{color:#6CCBC2!important}.google-btn{background:#FFFFFF!important;color:#202124!important;border-color:#DADCE0!important}
+.icon-chip{background:#173347!important;border-color:#3B6074!important}.icon-chip.heart,.social-icon.heart{color:#8FE0D5!important;border-color:#397A72!important}.icon-chip.ticket,.social-icon.ticket{color:#FFD982!important;border-color:#856A29!important}.icon-chip.cross{color:#FFB5B0!important;border-color:#7A454D!important}.ui-pill{background:#0F2231!important;border-color:#345468!important;color:#D2DEE2!important}.ui-pill .icon-chip{background:#173347!important}.happening-section{color:#A7B5BE!important}.social-icon{border-color:#345468!important}
+.auth-logo{box-shadow:0 8px 24px rgba(0,0,0,.45)!important}
+</style>
+</head>
+<body>
+
+</div>
+
+<section id="welcome">
+  <div class="welcome-card">
+    <div id="authStep">
+      <img class="auth-logo" src="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-192.png?v=49" alt="Brighton Weekend logo">
+      <h2>Welcome to Brighton Weekend</h2>
+      <p>Sign in securely to keep your plans, groups and profile across devices.</p>
+      <button type="button" id="googleSignInBtn" class="google-btn">Continue with Google</button>
+      <div class="magic-link-divider"><span>or</span></div>
+      <form id="magicLinkForm" class="magic-link-form">
+        <input id="magicLinkEmail" type="email" autocomplete="email" inputmode="email" placeholder="Your email address" aria-label="Email address" required>
+        <button type="submit" id="magicLinkBtn" class="magic-link-btn">Email me a sign-in link</button>
+      </form>
+      <p id="authMessage" class="group-meta"></p>
+      <div class="welcome-info">
+        <p><strong>Brighton Weekend</strong> helps you discover gigs, comedy, theatre and nightlife in Brighton &amp; Hove, then make plans with your groups.</p>
+        <p><a href="about.html" target="_blank" rel="noopener">About</a> · <a href="privacy.html" target="_blank" rel="noopener">Privacy</a> · <a href="terms.html" target="_blank" rel="noopener">Terms</a></p>
+      </div>
+    </div>
+    <div id="nameStep" class="hidden">
+      <h2>Nearly there</h2>
+      <p>What should we call you?</p>
+      <form id="nameForm">
+        <input id="nameInput" type="text" maxlength="40" placeholder="Your name" autocomplete="name" required>
+        <button type="submit">Next →</button>
+      </form>
+    </div>
+    <div id="groupStep" class="hidden">
+      <h2>Your groups</h2>
+      <p>Choose your circles. Happenings only shows activity from people who share a group with you.</p>
+      <div id="onboardingGroups" class="group-list"></div>
+      <div id="groupEmpty" class="group-meta">You can join more than one group.</div>
+      <div class="group-actions">
+        <button type="button" class="secondary" id="showCreateGroup">+ Create</button>
+        <button type="button" class="secondary" id="showJoinGroup">Join</button>
+      </div>
+      <div id="createGroupPanel" class="group-panel hidden">
+        <div class="group-form">
+          <label>Group name<input id="newGroupName" maxlength="50" placeholder="e.g. Brighton Crew"></label>
+          <label>Privacy<select id="newGroupPrivacy"><option value="public">Open — anyone can join</option><option value="private">Private — 3 digit PIN</option></select></label>
+          <div id="pinNote" class="group-meta">Private groups use a 3 digit PIN to join.</div>
+          <button type="button" id="createGroupBtn">Create group</button>
+        </div>
+      </div>
+      <div id="joinGroupPanel" class="group-panel hidden">
+        <div class="group-form">
+          <label>Open groups<select id="publicGroupSelect"><option value="">Choose an open group…</option></select></label>
+          <button type="button" id="joinPublicBtn">Join selected group</button>
+          <div class="group-meta">Or join a private group:</div>
+          <label>Private group name<input id="privateGroupName" maxlength="50" placeholder="Exact group name"></label>
+          <label>3 digit PIN<input id="privateGroupPin" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" placeholder="123"></label>
+          <button type="button" id="joinPrivateBtn">Join private group</button>
+        </div>
+      </div>
+      <button type="button" id="partyOnBtn">Party On →</button>
+    </div>
+  </div>
+</section>
+
+<header><div class="wrap">
+  <div class="app-brand"><img src="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-192.png?v=49" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
+  <div class="sub" id="subtitle">Friday · Saturday · Sunday · finish times shown when published</div></div></div>
+  <div class="controls">
+    <button id="prev">‹</button><button id="week" class="week"></button><button id="next">›</button>
+    <button id="today" class="today">TODAY</button><button id="refresh">↻</button>
+  </div>
+</div></header>
+
+<main id="discover" class="wrap app-main"></main>
+<main id="comedyTab" class="wrap app-main hidden">
+  <div class="section-head">
+    <h2>Comedy</h2>
+    <div class="note">Stand-up, improv and comedy across Brighton · Thu–Sun</div>
+  </div>
+  <div id="comedyList"></div>
+</main>
+<main id="peopleTab" class="wrap app-main hidden">
+<h2>Happenings</h2>
+<p class="note">See what people are interested in and where they have bought tickets.</p>
+<div class="custom-event-launch"><div><strong>Add something missing?</strong><div class="custom-event-help">Add an event and it will appear in the main event feed.</div></div><button id="toggleCustomEvent" type="button">＋ Add event</button></div>
+<section id="customEventPanel" class="custom-event-panel collapsed">
+  <h3>Add an event</h3>
+  <div class="custom-event-help">Add something you've found that isn't in Brighton Weekend yet. It will appear on the main event feed for everyone.</div>
+  <div class="custom-event-form">
+    <label>Event name<input id="customTitle" maxlength="120" placeholder="e.g. DJ Yoda — 80s Mixtape Live"></label>
+    <div class="custom-event-row"><label>Date<input id="customDate" type="date"></label><label>Category<select id="customCategory"><option>Music</option><option>Comedy</option><option>Club</option><option>Theatre</option><option>Other</option></select></label></div>
+    <label>Venue<select id="customVenue"><option value="">Choose a venue…</option><option>Brighton Centre</option><option>Brighton Dome</option><option>CHALK</option><option>Concorde 2</option><option>The Old Market</option><option>Green Door Store</option><option>Volks</option><option>Quarters</option><option>Patterns</option><option>DUST</option><option>Komedia</option><option>The Forge Comedy Club</option><option>Theatre Royal Brighton</option><option>The Hope &amp; Ruin</option><option>The Prince Albert</option><option>A L P H A B E T</option><option>The Pipeline</option><option>Brighton Racecourse</option><option>The Gladstone</option><option>Babble</option><option>Amex Stadium</option><option>Shelter Hall</option><option>Other</option></select></label>
+    <div id="customVenueDetailWrap" class="hidden"><label>Other venue<input id="customVenueDetail" maxlength="100" placeholder="Venue name"></label></div>
+    <div class="custom-event-row"><label>Start time<input id="customTime" type="time"></label><label>Finish time<input id="customFinish" type="time"></label></div>
+    <div class="custom-event-row"><label>Price<input id="customPrice" maxlength="50" placeholder="e.g. £18"></label><label>Ticket link<input id="customTicket" type="url" placeholder="https://…"></label></div>
+    <label>Description (optional)<textarea id="customDescription" maxlength="500" placeholder="Anything useful about the event"></textarea></label>
+    <button id="addCustomEventBtn" type="button">Add event</button>
+  </div>
+</section>
+<div id="peopleList"></div>
+</main>
+<main id="venuesTab" class="wrap app-main hidden">
+<h2>Settings</h2>
+<div class="settings-section"><div class="section-head venue-settings-head"><div><h3>Venues</h3><div class="note">Choose which venues appear in Discover.</div></div><div class="venue-actions"><button type="button" class="venue-action secondary" id="selectAllVenues">Select all</button><button type="button" class="venue-action secondary" id="unselectAllVenues">Unselect all</button></div></div><div id="venueList"></div></div>
+<div class="settings-card"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" src="profile-icons/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong><div class="profile-icon-note">You get one at random when you first sign in. Pick a different one whenever you like.</div></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div><div class="group-panel"><h3 style="margin:12px 0 4px">Groups</h3><p class="note">Manage the groups that shape your Happenings feed.</p><div id="groupManager"></div><button id="manageGroups" class="secondary">Manage groups</button></div>
+<div class="settings-card"><h3>Support Brighton Weekend</h3><p class="note">If you enjoy using the app, you can buy me a coffee to help keep it running and improving.</p><a class="support-btn" href="https://www.buymeacoffee.com/jonnysadler" target="_blank" rel="noopener">☕ Buy me a coffee ↗</a></div>
+<div class="settings-card"><h3>Account</h3><button id="changeName">Change my name</button> <button id="signOut" class="secondary">Sign out</button><div id="accountEmail" class="group-meta"></div></div>
+<div class="settings-card install-area"><h3>Install the app</h3><button id="installApp" class="install-btn">↓ Add Brighton Weekend to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
+<div class="settings-links"><a href="about.html" target="_blank" rel="noopener">About</a><a href="privacy.html" target="_blank" rel="noopener">Privacy</a><a href="terms.html" target="_blank" rel="noopener">Terms</a></div>
+</main>
+<div class="nav"><button class="active" data-tab="discover"><span class="nav-icon">♬</span> Discover</button><button data-tab="comedyTab"><span class="nav-icon">☻</span> Comedy</button><button data-tab="peopleTab"><span class="nav-icon">♡</span> Happenings</button><button data-tab="venuesTab"><span class="nav-icon">⚙</span> Settings</button></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>(() => {
+const SUPABASE_URL='https://zqvccsnfrkrtcsitfwcd.supabase.co';
+const SUPABASE_KEY='sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1';
+const supabase=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+let authUser=null;
+let authSession=null;
+let profileName='';
+let profileIcon='';
+let profileIconsByUser={};
+const PROFILE_ICONS=['fox','badger','otter','hedgehog','squirrel','rabbit','deer','seagull','pigeon','kingfisher','owl','raven','cat','dog','dolphin','shark','whale','octopus','crab','starfish','bee','butterfly','dragonfly','ladybird','moth','beetle','spider','praying-mantis','grasshopper','firefly','snail','ant','wasp','fly','cicada','caterpillar','stick-insect','shield-bug','bumblebee','moth-pink','mushroom','clover','fern','sunflower','lavender','oak-leaf','cherry-blossom','holly','pine-tree','bonsai','unicorn','dragon','phoenix','griffin','mermaid','fairy','wizard','ghost','alien','planet','pegasus','centaur','minotaur','kraken','ice-dragon','sky-dragon','sea-serpent','dire-wolf','sphinx','winged-lion'];
+const PROFILE_LABELS={'fox':'Fox','badger':'Badger','otter':'Otter','hedgehog':'Hedgehog','squirrel':'Squirrel','rabbit':'Rabbit','deer':'Deer','seagull':'Seagull','pigeon':'Pigeon','kingfisher':'Kingfisher','owl':'Owl','raven':'Raven','cat':'Cat','dog':'Dog','dolphin':'Dolphin','shark':'Shark','whale':'Whale','octopus':'Octopus','crab':'Crab','starfish':'Starfish','bee':'Bee','butterfly':'Butterfly','dragonfly':'Dragonfly','ladybird':'Ladybird','moth':'Moth','beetle':'Beetle','spider':'Spider','praying-mantis':'Praying Mantis','grasshopper':'Grasshopper','firefly':'Firefly','snail':'Snail','ant':'Ant','wasp':'Wasp','fly':'Fly','cicada':'Cicada','caterpillar':'Caterpillar','stick-insect':'Stick Insect','shield-bug':'Shield Bug','bumblebee':'Bumblebee','moth-pink':'Moth','mushroom':'Mushroom','clover':'Clover','fern':'Fern','sunflower':'Sunflower','lavender':'Lavender','oak-leaf':'Oak Leaf','cherry-blossom':'Cherry Blossom','holly':'Holly','pine-tree':'Pine Tree','bonsai':'Bonsai','unicorn':'Unicorn','dragon':'Dragon','phoenix':'Phoenix','griffin':'Griffin','mermaid':'Mermaid','fairy':'Fairy','wizard':'Wizard','ghost':'Ghost','alien':'Alien','planet':'Planet','pegasus':'Pegasus','centaur':'Centaur','minotaur':'Minotaur','kraken':'Kraken','ice-dragon':'Ice Dragon','sky-dragon':'Sky Dragon','sea-serpent':'Sea Serpent','dire-wolf':'Dire Wolf','sphinx':'Sphinx','winged-lion':'Winged Lion'};
+const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","The Hope & Ruin","The Prince Albert","A L P H A B E T","The Pipeline","Brighton Racecourse","The Gladstone","Babble","Amex Stadium","Shelter Hall","Other"];
+const $=id=>document.getElementById(id);
+let events=[], attendance=[], groupHappenings=[], groups=[], groupMembers=[], customEvents=[];
+const savedVenues=JSON.parse(localStorage.getItem('bw_venues')||'null');
+// Persist venue preferences exactly as the user selected them. Do not merge newly added venues into an existing saved list.
+let enabled=Array.isArray(savedVenues)?Array.from(new Set(savedVenues.filter(v=>VENUES.includes(v)))):VENUES.slice();
+function uid(){return authUser?.id||''}
+function name(){return profileName||localStorage.getItem('bw_name')||''}
+async function loadProfile(){
+ if(!authUser){profileName='';profileIcon='';return false}
+ try{
+  let rows;
+  try{rows=await api('GET','bw_profiles?select=display_name,email,profile_icon&user_id=eq.'+encodeURIComponent(authUser.id));}
+  catch(e){rows=await api('GET','bw_profiles?select=display_name,email&user_id=eq.'+encodeURIComponent(authUser.id));}
+  if(Array.isArray(rows)&&rows[0]){
+   profileName=rows[0].display_name||'';
+   profileIcon=PROFILE_ICONS.includes(rows[0].profile_icon)?rows[0].profile_icon:'';
+   localStorage.setItem('bw_name',profileName);
+   if(profileIcon)localStorage.setItem('bw_profile_icon_'+authUser.id,profileIcon);
+   $('accountEmail').textContent=authUser.email||rows[0].email||'';
+   if(!profileIcon){profileIcon=localStorage.getItem('bw_profile_icon_'+authUser.id)||randomProfileIcon();try{await saveProfileIcon(profileIcon)}catch(e){console.warn('Profile icon save unavailable',e)}}
+   renderProfileIconSettings();
+   return !!profileName
+  }
+ }catch(e){console.warn('Profile load unavailable',e)}
+ profileName=localStorage.getItem('bw_name')||'';
+ profileIcon=localStorage.getItem('bw_profile_icon_'+authUser.id)||randomProfileIcon();
+ if($('accountEmail'))$('accountEmail').textContent=authUser.email||'';
+ renderProfileIconSettings();
+ return false;
+}
+function randomProfileIcon(){return PROFILE_ICONS[Math.floor(Math.random()*PROFILE_ICONS.length)]}
+function iconSrc(icon){return 'profile-icons/'+encodeURIComponent(icon)+'.png'}
+function userIcon(iconUserId){const icon=profileIconsByUser[iconUserId]||((iconUserId===uid())?profileIcon:'');return icon||'fox'}
+async function saveProfileIcon(icon){
+ if(!authUser||!PROFILE_ICONS.includes(icon))return;
+ await api('PATCH','bw_profiles?user_id=eq.'+encodeURIComponent(authUser.id),{profile_icon:icon},{'Prefer':'return=representation'});
+ profileIcon=icon;profileIconsByUser[authUser.id]=icon;localStorage.setItem('bw_profile_icon_'+authUser.id,icon);renderProfileIconSettings();renderAll();
+}
+function renderProfileIconSettings(){
+ const current=$('currentProfileIcon'),nameEl=$('currentProfileIconName'),grid=$('profileIconGrid');
+ if(!current||!grid)return;
+ const icon=PROFILE_ICONS.includes(profileIcon)?profileIcon:'fox';
+ current.src=iconSrc(icon);current.alt=(PROFILE_LABELS[icon]||icon)+' profile icon';
+ nameEl.textContent=PROFILE_LABELS[icon]||icon;
+ grid.innerHTML=PROFILE_ICONS.map(x=>`<button type="button" class="profile-icon-option ${x===icon?'selected':''}" data-profile-icon="${x}" title="${esc(PROFILE_LABELS[x]||x)}"><img src="${iconSrc(x)}" alt="${esc(PROFILE_LABELS[x]||x)}"></button>`).join('');
+ grid.querySelectorAll('[data-profile-icon]').forEach(b=>b.onclick=async()=>{const x=b.dataset.profileIcon;try{await saveProfileIcon(x)}catch(e){alert('Could not save your icon yet. Please run the profile-icons database update first.')}});
+}
+async function loadProfileIcons(){
+ profileIconsByUser={};
+ if(!authUser)return;
+ try{const rows=await rpc('bw_profile_icons_for_user',{p_user_id:uid()});(Array.isArray(rows)?rows:[]).forEach(x=>{if(x.user_id&&PROFILE_ICONS.includes(x.profile_icon))profileIconsByUser[x.user_id]=x.profile_icon});}
+ catch(e){console.warn('Profile icons unavailable',e)}
+ if(profileIcon)profileIconsByUser[uid()]=profileIcon;
+}
+async function saveProfile(displayName){
+ const clean=displayName.trim(); if(!clean||!authUser) return;
+ if(!PROFILE_ICONS.includes(profileIcon))profileIcon=randomProfileIcon();
+ await api('POST','bw_profiles',{user_id:authUser.id,email:authUser.email,display_name:clean,profile_icon:profileIcon},{'Prefer':'resolution=merge-duplicates,return=representation'});
+ profileName=clean;localStorage.setItem('bw_profile_icon_'+authUser.id,profileIcon);profileIconsByUser[authUser.id]=profileIcon;localStorage.setItem('bw_name',clean);$('accountEmail').textContent=authUser.email||'';
+}
+const APP_URL='https://brightonspindoctor.github.io/Brighton-weekend/';
+async function signInWithGoogle(){
+ const {error}=await supabase.auth.signInWithOAuth({
+   provider:'google',
+   options:{redirectTo:APP_URL}
+ });
+ if(error)throw error;
+}
+async function signInWithMagicLink(email){
+ const clean=email.trim().toLowerCase();
+ if(!clean)throw new Error('Enter your email address.');
+ const {error}=await supabase.auth.signInWithOtp({
+   email:clean,
+   options:{emailRedirectTo:APP_URL}
+ });
+ if(error)throw error;
+}
+async function initAuth(){
+ const {data,error}=await supabase.auth.getSession();
+ if(error)throw error;
+ authSession=data.session||null;
+ authUser=authSession?.user||null;
+ supabase.auth.onAuthStateChange((_event,session)=>{authSession=session||null;authUser=session?.user||null;setTimeout(()=>{if(authUser)bootstrapAuthed().catch(console.warn);else showWelcome('auth')},0)});
+ if(authUser) await bootstrapAuthed(); else showWelcome('auth');
+}
+async function bootstrapAuthed(){
+ const hasProfile=await loadProfile();
+ if($('authStep'))hide('authStep');
+ if(!hasProfile){showWelcome('name');return;}
+ await loadGroups();
+ await loadProfileIcons();
+ if(groups.length) hide('welcome'); else showWelcome('groups');
+ trackVisitor();
+}
+function dateKey(d){const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`}
+function parseEventDate(value){if(!/^\d{4}-\d{2}-\d{2}$/.test(value||''))return null;const d=new Date(value+'T12:00:00');return Number.isNaN(d.getTime())?null:d}
+function renderAll(){render();renderComedy();renderPeople();}
+function getFriday(){const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()+(5-d.getDay()+7)%7);return d}
+let friday=getFriday();
+function getThursday(){const d=new Date(friday);d.setDate(d.getDate()-1);return d}
+function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
+function people(id,status){return attendance.filter(x=>x.event_id===id&&x.status===status)}
+function groupPeople(id,status){return groupHappenings.filter(x=>x.event_id===id&&x.status===status)}
+function uniqueGroupPeopleCount(id,status){const ids=new Set(groupPeople(id,status).map(x=>x.user_id).filter(Boolean)); const mine=attendance.find(x=>x.event_id===id&&x.user_id===uid()&&x.status===status); if(mine)ids.add(uid()); return ids.size}
+function venueVisible(e){return e.venue==='Other'||(e.is_custom && e.venue==='Other' ? true : enabled.includes(e.venue))}
+function show(el){$(el).classList.remove('hidden')}
+function hide(el){$(el).classList.add('hidden')}
+
+async function api(method,path,body,extraHeaders={}){
+ const r=await fetch(SUPABASE_URL+'/rest/v1/'+path,{
+  method,
+  headers:{apikey:SUPABASE_KEY,Authorization:'Bearer '+(authSession?.access_token||SUPABASE_KEY),'Content-Type':'application/json','Prefer':'return=representation',...extraHeaders},
+  body:body===undefined?undefined:JSON.stringify(body)
+ });
+ if(!r.ok) throw new Error(await r.text());
+ if(r.status===204) return [];
+ const t=await r.text(); return t?JSON.parse(t):[];
+}
+async function rpc(fn,body){
+ return api('POST','rpc/'+fn,body);
+}
+
+async function loadCustomEvents(){
+ try{
+  const rows=await api('GET','bw_custom_events?select=id,title,date,venue,venue_detail,time,finish_time,price,status,ticket_url,category,created_by,created_by_name,created_at&order=date.asc,time.asc');
+  customEvents=Array.isArray(rows)?rows:[];
+ }catch(e){console.warn('Custom events unavailable',e);customEvents=[]}
+}
+function mergeEvents(base){
+ const seen=new Set(), merged=[];
+ [...base,...customEvents.map(e=>({...e,source:'community',is_custom:true}))].forEach(e=>{
+  if(!e||!e.id||seen.has(e.id)||!parseEventDate(e.date)||!e.title||!e.venue)return;
+  seen.add(e.id);
+  if(e.venue==='Other' && e.venue_detail)e.venue_display='Other · '+e.venue_detail; else e.venue_display=e.venue;
+  merged.push(e);
+ });
+ return merged;
+}
+async function addCustomEvent(){
+ if(!name()){showWelcome('name');return}
+ const title=$('customTitle').value.trim(), date=$('customDate').value, venue=$('customVenue').value, venueDetail=$('customVenueDetail').value.trim(), time=$('customTime').value, finish=$('customFinish').value, price=$('customPrice').value.trim(), ticket=$('customTicket').value.trim(), category=$('customCategory').value, description=$('customDescription').value.trim();
+ if(!title||!date||!venue)return alert('Please add a title, date and venue.');
+ if(venue==='Other'&&!venueDetail)return alert('Please tell us the other venue.');
+ if(!parseEventDate(date))return alert('Please choose a valid date.');
+ try{
+  const payload={title,date,venue,venue_detail:venue==='Other'?venueDetail:null,time:time||null,finish_time:finish||null,price:price||null,status:'',ticket_url:ticket||null,category:category||'Other',description:description||null,created_by:uid(),created_by_name:name()};
+  await api('POST','bw_custom_events',payload);
+  await loadCustomEvents();
+  events=mergeEvents(events.filter(e=>!e.is_custom));
+  ['customTitle','customDate','customTime','customFinish','customPrice','customTicket','customDescription','customVenueDetail'].forEach(id=>$(id).value='');
+  $('customVenue').value=''; $('customCategory').value='Other'; toggleOtherVenue();
+  $('customEventPanel').classList.add('collapsed');
+  $('toggleCustomEvent').textContent='＋ Add event';
+  renderAll();
+  alert('Added to Brighton Weekend.');
+ }catch(e){alert('Could not add that event. '+e.message)}
+}
+function toggleOtherVenue(){
+ const other=$('customVenue')?.value==='Other';
+ $('customVenueDetailWrap')?.classList.toggle('hidden',!other);
+}
+async function loadAttendance(){
+ try{attendance=await api('GET','event_interest?select=event_id,user_name,status,user_id')}catch(e){console.warn('Social layer unavailable',e)}
+}
+async function loadGroups(){
+ if(!name()) return;
+ try{
+  groups=await rpc('bw_my_groups',{p_user_id:uid()});
+  groups=Array.isArray(groups)?groups:[];
+ }catch(e){console.warn('Groups unavailable',e);groups=[]}
+ await loadGroupMembers();
+}
+async function loadGroupMembers(){
+ if(!groups.length){groupMembers=[];return}
+ try{
+  groupMembers=await rpc('bw_group_members_for_user',{p_user_id:uid()});
+  groupMembers=Array.isArray(groupMembers)?groupMembers:[];
+ }catch(e){console.warn('Group member list unavailable',e);groupMembers=[]}
+}
+function happeningsSignature(rows){
+ return rows.map(x=>[x.group_id,x.event_id,x.user_id,x.status].join(':')).sort().join('|');
+}
+function markHappeningsSeen(){
+ localStorage.setItem('bw_happenings_seen_'+uid(),happeningsSignature(groupHappenings));
+ updateHappeningsBadge();
+}
+function updateHappeningsBadge(){
+ const tab=document.querySelector('.nav button[data-tab="peopleTab"]');
+ if(!tab)return;
+ const seen=localStorage.getItem('bw_happenings_seen_'+uid())||'';
+ const current=happeningsSignature(groupHappenings);
+ const hasNew=!!current && current!==seen;
+ tab.classList.toggle('has-new',hasNew);
+}
+
+async function loadGroupHappenings(){
+ if(!groups.length){groupHappenings=[];return}
+ try{
+  groupHappenings=await rpc('bw_shared_happenings',{p_user_id:uid()});
+  groupHappenings=Array.isArray(groupHappenings)?groupHappenings:[];
+ }catch(e){console.warn('Group happenings unavailable',e);groupHappenings=[]}
+ updateHappeningsBadge();
+}
+function trackVisitor(){
+ api('POST','app_visitors',{user_id:uid(),display_name:name()},{'Prefer':'resolution=merge-duplicates,return=minimal'}).catch(()=>{});
+}
+
+function renderOnboardingGroups(){
+ const list=$('onboardingGroups');
+ list.innerHTML=groups.length?groups.map(g=>`<div class="group-choice"><span>${g.is_private?'🔒':'◌'}</span><div><strong>${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} member${(g.member_count||1)==1?'':'s'} · ${g.is_private?'Private':'Open'}</div></div></div>`).join(''):'';
+ $('groupEmpty').textContent=groups.length?'You can belong to as many groups as you like.':'You are not in any groups yet. Create one or join one.';
+}
+async function loadPublicGroups(){
+ try{
+  const data=await rpc('bw_public_groups',{p_user_id:uid()});
+  $('publicGroupSelect').innerHTML='<option value="">Choose an open group…</option>'+data.map(g=>`<option value="${esc(g.id)}">${esc(g.name)} · ${g.member_count} members</option>`).join('');
+ }catch(e){console.warn(e)}
+}
+async function openGroupStep(){
+ hide('nameStep'); show('groupStep');
+ await loadGroups(); renderOnboardingGroups(); await loadPublicGroups();
+}
+function showWelcome(mode='auth'){
+ show('welcome');
+ $('nameInput').value=name();
+ hide('authStep');hide('nameStep');hide('groupStep');hide('createGroupPanel');hide('joinGroupPanel');
+ if(mode==='auth' || !authUser){show('authStep');return}
+ if(mode==='name' || !name()){show('nameStep');setTimeout(()=>$('nameInput').focus(),50);return}
+ openGroupStep();
+}
+function finishWelcome(){
+ hide('welcome'); trackVisitor(); renderAll(); renderGroupManager();
+}
+async function createGroup(){
+ const n=$('newGroupName').value.trim(), privacy=$('newGroupPrivacy').value;
+ if(!n){alert('Please give your group a name.');return}
+ try{
+  const data=await rpc('bw_create_group',{p_user_id:uid(),p_user_name:name(),p_name:n,p_is_private:privacy==='private'});
+  const g=Array.isArray(data)?data[0]:data;
+  $('newGroupName').value='';
+  if(g?.join_pin) alert(`Private group created. Share this PIN with friends: ${g.join_pin}`);
+  await loadGroups();renderOnboardingGroups();await loadPublicGroups();renderGroupManager();
+ }catch(e){alert('Could not create group. '+e.message)}
+}
+async function joinGroup(groupId,pin=null,privateName=null){
+ try{
+  const data=await rpc('bw_join_group',{p_user_id:uid(),p_user_name:name(),p_group_id:groupId||null,p_pin:pin,p_group_name:privateName||null});
+  const r=Array.isArray(data)?data[0]:data;
+  if(!r?.ok) throw new Error(r?.message||'Could not join group');
+  await loadGroups();renderOnboardingGroups();await loadPublicGroups();renderGroupManager();
+  hide('joinGroupPanel');
+ }catch(e){alert('Could not join group. '+e.message)}
+}
+function renderGroupManager(){
+ const el=$('groupManager'); if(!el)return;
+ el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} members · ${g.is_private?'Private':'Open'}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div></div>`).join(''):'<div class="group-meta">No groups yet.</div>';
+}
+
+window.act=async(id,status)=>{
+ if(!name()){showWelcome('name');return}
+ const mine=attendance.find(x=>x.event_id===id&&x.user_id===uid());
+ const targetStatus=(mine&&mine.status===status)?null:status;
+ try{
+  const result=await rpc('bw_set_event_interest',{
+   p_user_id:uid(),
+   p_user_name:name(),
+   p_event_id:id,
+   p_status:targetStatus
+  });
+  if(!Array.isArray(result)) throw new Error('Unexpected response from Supabase.');
+  await loadAttendance();
+  const saved=attendance.find(x=>x.event_id===id&&x.user_id===uid());
+  if(targetStatus===null){
+   if(saved) throw new Error('Supabase did not remove the commitment.');
+  }else if(!saved || saved.status!==targetStatus){
+   throw new Error('Supabase did not save the commitment.');
+  }
+  await loadGroupHappenings();
+  updateHappeningsBadge();
+  renderAll();
+ }catch(e){
+  console.error('[Brighton Weekend] commitment save failed',e);
+  alert('Could not save that yet. '+(e.message||e));
+ }
+};
+function commitmentButtons(e,mine){
+ return `<div class="commitment">
+ <button class="commit-btn no ${mine?.status==='not_interested'?'selected':''}" onclick="act('${e.id}','not_interested')"><span class="commit-icon">×</span><span>Not for me</span></button>
+ <button class="commit-btn yes ${mine?.status==='interested'?'selected':''}" onclick="act('${e.id}','interested')"><span class="commit-icon">♡</span><span>Interested</span></button>
+ <button class="commit-btn bought ${mine?.status==='ticket_bought'?'selected':''}" onclick="act('${e.id}','ticket_bought')" title="Ticket bought"><span class="commit-icon">🎟</span><span>Going</span></button>
+ </div>`;
+}
+function render(){
+ const start=getThursday(), end=new Date(friday);end.setDate(end.getDate()+2);
+ $('week').textContent=start.toLocaleDateString('en-GB',{day:'numeric',month:'short'})+' – '+end.toLocaleDateString('en-GB',{day:'numeric',month:'short'});
+ let h='';
+ ['THURSDAY','FRIDAY','SATURDAY','SUNDAY'].forEach((label,i)=>{
+  const d=new Date(start);d.setDate(d.getDate()+i);
+  const list=events.filter(e=>e.date===dateKey(d)&&venueVisible(e));
+  h+=`<div class="day">${label} · ${d.toLocaleDateString('en-GB',{day:'numeric',month:'long'})}</div>`;
+  h+=list.length?list.map(e=>{
+   const mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
+   const a=uniqueGroupPeopleCount(e.id,'interested'), t=uniqueGroupPeopleCount(e.id,'ticket_bought');
+   return `<article class="card"><div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="group-meta">· added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${esc(e.venue_display||e.venue)}${e.time?' · '+esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
+   ${e.price?`<div class="price">${esc(e.price)}</div>`:''}
+   <div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>${a} interested</span><span class="social-chip"><i class="social-icon ticket">🎟</i>${t} going</span></div>
+   ${commitmentButtons(e,mine)}
+   <div class="actions">${e.ticket_url?`<a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a>`:''}</div></article>`;
+  }).join(''):'<div class="empty">No events found for your selected venues.</div>';
+ });
+ $('discover').innerHTML=h;
+}
+
+function isComedy(e){
+ const hay=[e.category,e.type,e.genre,e.tags,e.title,e.description].filter(Boolean).join(' ').toLowerCase();
+ return /\b(comedy|comedian|stand.?up|standup|improv|improvisation|sketch|open mic comedy)\b/.test(hay);
+}
+function renderComedy(){
+ const start=getThursday(), end=new Date(start);end.setDate(end.getDate()+3);
+ const comedy=events.filter(e=>{
+   const d=parseEventDate(e.date);
+   return d&&d>=start&&d<=end&&isComedy(e)&&venueVisible(e);
+ });
+ if(!comedy.length){
+   $('comedyList').innerHTML='<div class="empty">No comedy events found for your selected venues this weekend.</div>';
+   return;
+ }
+ $('comedyList').innerHTML=['THURSDAY','FRIDAY','SATURDAY','SUNDAY'].map((label,i)=>{
+   const d=new Date(start);d.setDate(d.getDate()+i);
+   const list=comedy.filter(e=>e.date===dateKey(d));
+   if(!list.length)return '';
+   return `<div class="day">${label} · ${d.toLocaleDateString('en-GB',{day:'numeric',month:'long'})}</div>`+
+   list.map(e=>{
+    const mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
+   const a=uniqueGroupPeopleCount(e.id,'interested'), t=uniqueGroupPeopleCount(e.id,'ticket_bought');
+    return `<article class="card"><div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="group-meta">· added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${esc(e.venue_display||e.venue)}${e.time?' · '+esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>
+    ${e.price?`<div class="price">${esc(e.price)}</div>`:''}
+    <div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>${a} interested</span><span class="social-chip"><i class="social-icon ticket">🎟</i>${t} going</span></div>
+    ${commitmentButtons(e,mine)}<div class="actions">${e.ticket_url?`<a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a>`:''}</div></article>`;
+   }).join('');
+ }).join('');
+}
+function renderPeople(){
+ const byEvent=new Map();
+ groupHappenings.forEach(x=>{if(!byEvent.has(x.event_id))byEvent.set(x.event_id,[]);byEvent.get(x.event_id).push(x)});
+ const active=events.filter(e=>byEvent.has(e.id)).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
+ if(!groups.length){$('peopleList').innerHTML='<div class="empty">Join or create a group to see what your people are planning.</div>';return}
+ const memberGroups=new Map();
+ groupMembers.forEach(m=>{if(!memberGroups.has(m.group_id))memberGroups.set(m.group_id,{name:m.group_name,members:[]});memberGroups.get(m.group_id).members.push(m)});
+ const roster=[...memberGroups.values()].map(g=>{
+   const members=[...new Map(g.members.map(m=>[m.user_id,m])).values()].sort((a,b)=>(a.user_name||'').localeCompare(b.user_name||''));
+   return `<div class="member-group"><div class="group-heading">${esc(g.name)} <span class="member-count">${members.length}</span></div><div class="people">${members.map(m=>`<span class="social-chip profile-chip"><i class="social-icon profile"><img src="${iconSrc(userIcon(m.user_id))}" alt=""></i>${esc(m.user_name)}</span>`).join('')}</div></div>`;
+ }).join('');
+ let html=`<section class="group-roster"><div class="section-head"><h3>People in your groups</h3><div class="note">Everyone who shares a group with you.</div></div>${roster}</section>`;
+ if(!active.length){$('peopleList').innerHTML=html+'<div class="empty happenings-empty">No event activity yet. Mark an event as Interested or Going to get things started.</div>';return}
+ html+='<div class="section-head happenings-events-head"><h3>What\'s happening</h3></div>';
+ html+=active.map(e=>{
+  const rows=byEvent.get(e.id)||[], mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
+  const unique=new Map();
+  rows.forEach(x=>{
+    if(!x.user_id || !['interested','ticket_bought'].includes(x.status))return;
+    const existing=unique.get(x.user_id);
+    if(!existing || x.status==='ticket_bought') unique.set(x.user_id,x);
+  });
+  const goingCount=[...unique.values()].filter(x=>x.status==='ticket_bought').length;
+  const interestedCount=[...unique.values()].filter(x=>x.status==='interested').length;
+  const summary=[];
+  if(goingCount)summary.push(`<span class="happening-summary-pill going">🎟 ${goingCount} friend${goingCount===1?'':'s'} going</span>`);
+  if(interestedCount)summary.push(`<span class="happening-summary-pill interested">♡ ${interestedCount} interested</span>`);
+  const byGroup=new Map();
+  rows.forEach(x=>{if(!byGroup.has(x.group_id))byGroup.set(x.group_id,{name:x.group_name,rows:[]});byGroup.get(x.group_id).rows.push(x)});
+  const sections=[...byGroup.values()].map(g=>{
+   const peopleByUser=new Map();
+   g.rows.filter(x=>['interested','ticket_bought'].includes(x.status)).forEach(x=>{
+     const existing=peopleByUser.get(x.user_id);
+     if(!existing || x.status==='ticket_bought')peopleByUser.set(x.user_id,x);
+   });
+   const people=[...peopleByUser.values()].sort((a,b)=>{
+     if(a.status!==b.status)return a.status==='ticket_bought'?-1:1;
+     return (a.user_name||'').localeCompare(b.user_name||'');
+   });
+   return `<div class="happening-group"><div class="group-heading">${esc(g.name)}</div><div class="happening-people">${people.map(x=>`<div class="happening-person"><i class="social-icon profile"><img src="${iconSrc(userIcon(x.user_id))}" alt=""></i><span class="happening-person-name">${esc(x.user_name)}</span><span class="happening-status ${x.status==='ticket_bought'?'going':'interested'}">${x.status==='ticket_bought'?'🎟 GOING':'♡ INTERESTED'}</span></div>`).join('')}</div></div>`;
+  }).join('');
+  return `<div class="people-card card"><div class="top"><div><h3 style="margin:0">${esc(e.title)}${e.is_custom?` <span class="group-meta">· community added</span>`:''}</h3><div class="meta">${esc(e.venue_display||e.venue)} · ${esc(e.date)}${e.time?' · '+esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>${summary.length?`<div class="happening-summary">${summary.join('')}</div>`:''}${sections}${commitmentButtons(e,mine)}<div class="actions">${e.ticket_url?`<a class="ticket" href="${esc(e.ticket_url)}" target="_blank" rel="noopener">TICKETS ↗</a>`:''}</div></div>`;
+ }).join('');
+ $('peopleList').innerHTML=html;
+}
+
+function renderVenues(){
+ $('venueList').innerHTML=VENUES.map(v=>`<label class="venue-row">${esc(v)}<input type="checkbox" data-v="${esc(v)}" ${enabled.includes(v)?'checked':''}></label>`).join('');
+ document.querySelectorAll('[data-v]').forEach(x=>x.onchange=()=>{enabled=x.checked?[...new Set([...enabled,x.dataset.v])]:enabled.filter(v=>v!==x.dataset.v);localStorage.setItem('bw_venues',JSON.stringify(enabled));renderAll()});
+ const all=$('selectAllVenues'),none=$('unselectAllVenues');
+ if(all)all.onclick=()=>{enabled=VENUES.slice();localStorage.setItem('bw_venues',JSON.stringify(enabled));renderVenues();renderAll()};
+ if(none)none.onclick=()=>{enabled=[];localStorage.setItem('bw_venues',JSON.stringify(enabled));renderVenues();renderAll()};
+}
+function debugData(){
+ const ids=new Set(), duplicates=[];
+ for(const e of events){if(ids.has(e.id))duplicates.push(e.id);ids.add(e.id)}
+ const bad=events.filter(e=>!e.id||!parseEventDate(e.date)||!e.venue||!e.title);
+ console.info('[Brighton Weekend] diagnostics',{events:events.length,duplicateIds:duplicates.length,invalidEvents:bad.length,venues:[...new Set(events.map(e=>e.venue))].length});
+ if(duplicates.length)console.warn('[Brighton Weekend] duplicate event IDs',duplicates);
+ if(bad.length)console.warn('[Brighton Weekend] invalid events',bad);
+}
+
+async function refresh(){
+ try{
+  const response=await fetch('events.json?refresh='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw new Error(`Events feed returned ${response.status}`);
+  const j=await response.json();
+  const incoming=Array.isArray(j.events)?j.events:[];
+  const seen=new Set(), cleaned=[];
+  for(const e of incoming){
+   if(!e||!e.id||seen.has(e.id))continue;
+   seen.add(e.id);
+   if(!parseEventDate(e.date))continue;
+   cleaned.push(e);
+  }
+  events=mergeEvents(cleaned);
+  $('subtitle').textContent=`${events.length} events · updated ${j.updated||''}`;
+  debugData();
+  renderAll();
+  return {ok:true,count:events.length};
+ }catch(e){
+  console.warn('Events refresh failed',e);
+  $('subtitle').textContent='Could not refresh events';
+  return {ok:false,error:e};
+ }
+}
+
+let deferredInstallPrompt=null;
+function setupInstallButton(){const btn=$('installApp'),hint=$('installHint');if(!btn)return;
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstallPrompt=e;});
+window.addEventListener('appinstalled',()=>{deferredInstallPrompt=null;btn.classList.add('hidden');hint.textContent='Brighton Weekend is installed on your home screen.'});
+btn.onclick=async()=>{if(deferredInstallPrompt){deferredInstallPrompt.prompt();await deferredInstallPrompt.userChoice;deferredInstallPrompt=null;return;}
+const isiOS=/iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream;
+if(isiOS)alert('To add Brighton Weekend: use Safari, tap Share, choose “Add to Home Screen”, then tap Add. The Brighton Weekend icon will be used.');else alert('To add Brighton Weekend: open this site in Chrome, tap the three-dot menu, then choose “Install app” or “Add to Home screen”.');};
+if(window.matchMedia('(display-mode: standalone)').matches||navigator.standalone){btn.classList.add('hidden');hint.textContent='Brighton Weekend is already installed.';}}
+setupInstallButton();
+
+$('googleSignInBtn').addEventListener('click',async()=>{const btn=$('googleSignInBtn'),msg=$('authMessage');try{btn.disabled=true;msg.textContent='Opening Google…';await signInWithGoogle();}catch(err){msg.textContent='Could not start Google sign-in. '+(err.message||err);btn.disabled=false}});
+$('magicLinkForm').addEventListener('submit',async e=>{e.preventDefault();const btn=$('magicLinkBtn'),input=$('magicLinkEmail'),msg=$('authMessage');try{btn.disabled=true;input.disabled=true;msg.className='group-meta';msg.textContent='Sending your sign-in link…';await signInWithMagicLink(input.value);msg.className='group-meta auth-success';msg.textContent='Check your email — your sign-in link is on its way.';}catch(err){msg.className='group-meta auth-error';msg.textContent='Could not send the sign-in link. '+(err.message||err);btn.disabled=false;input.disabled=false;}});
+$('nameForm').addEventListener('submit',async e=>{e.preventDefault();const n=$('nameInput').value.trim();if(!n)return;try{await saveProfile(n);await openGroupStep()}catch(err){alert('Could not save your profile. '+(err.message||err))}});
+$('signOut').onclick=async()=>{await supabase.auth.signOut();authUser=null;authSession=null;profileName='';groups=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';localStorage.removeItem('bw_name');showWelcome('auth')};
+$('partyOnBtn').onclick=finishWelcome;
+$('showCreateGroup').onclick=()=>{hide('joinGroupPanel');$('createGroupPanel').classList.toggle('hidden')};
+$('showJoinGroup').onclick=async()=>{hide('createGroupPanel');$('joinGroupPanel').classList.toggle('hidden');if(!$('joinGroupPanel').classList.contains('hidden'))await loadPublicGroups()};
+$('newGroupPrivacy').onchange=()=>{$('pinNote').textContent=$('newGroupPrivacy').value==='private'?'A random 3 digit PIN will be created and shown to you.':'Anyone using Brighton Weekend can find and join this group.'};
+$('createGroupBtn').onclick=createGroup;
+$('joinPublicBtn').onclick=()=>{const id=$('publicGroupSelect').value;if(!id)return alert('Choose a group first.');joinGroup(id)};
+$('joinPrivateBtn').onclick=()=>{const n=$('privateGroupName').value.trim(),p=$('privateGroupPin').value.trim();if(!n||!/^\d{3}$/.test(p))return alert('Enter the exact group name and a 3 digit PIN.');joinGroup(null,p,n)};
+$('prev').onclick=()=>{friday.setDate(friday.getDate()-7);renderAll()};
+$('next').onclick=()=>{friday.setDate(friday.getDate()+7);renderAll()};
+$('today').onclick=()=>{friday=getFriday();renderAll()};
+$('refresh').onclick=async()=>{
+ const btn=$('refresh');btn.disabled=true;
+ try{await refresh();await loadAttendance();await loadGroups();await loadGroupHappenings();renderAll();}
+ finally{btn.disabled=false;}
+};
+$('changeName').onclick=()=>showWelcome('name');
+$('manageGroups').onclick=()=>showWelcome('groups');
+$('customVenue').onchange=toggleOtherVenue;
+$('toggleCustomEvent').onclick=()=>{const panel=$('customEventPanel');const open=panel.classList.toggle('collapsed')===false;$('toggleCustomEvent').textContent=open?'− Hide form':'＋ Add event';if(open) setTimeout(()=>$('customTitle').focus(),50)};
+$('addCustomEventBtn').onclick=addCustomEvent;
+document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');['discover','comedyTab','peopleTab','venuesTab'].forEach(id=>$(id).classList.toggle('hidden',id!==b.dataset.tab));if(b.dataset.tab==='comedyTab')renderComedy();if(b.dataset.tab==='peopleTab'){renderPeople();markHappeningsSeen()}if(b.dataset.tab==='venuesTab'){renderVenues();renderGroupManager()}});
+(async()=>{
+ renderVenues(); renderAll();
+ try{await initAuth();}catch(e){console.error('Auth init failed',e);showWelcome('auth')}
+ if(authUser){
+   await Promise.all([refresh(),loadAttendance(),loadCustomEvents()]);
+   await loadGroupHappenings(); await loadProfileIcons(); events=mergeEvents(events); renderProfileIconSettings(); renderAll();renderGroupManager();
+ }else{await refresh();events=mergeEvents(events);renderAll();}
+})();
+})();</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=51',{updateViaCache:'none'}).catch(console.warn));
+}
+</script>
+</body></html>
