@@ -1,0 +1,88 @@
+name: Apply UI fixes
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update app
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          p = Path('index.html')
+          s = p.read_text()
+
+          # Magic-link option on the existing auth start screen.
+          if 'id="magicLinkForm"' not in s:
+              anchor = '''      <p>Sign in securely with your Google account.</p>\n      <button type="button" id="googleSignInBtn" class="google-btn">Continue with Google</button>\n      <p id="authMessage" class="group-meta"></p>'''
+              replacement = '''      <p>Sign in securely to keep your plans, groups and profile across devices.</p>\n      <button type="button" id="googleSignInBtn" class="google-btn">Continue with Google</button>\n      <div class="magic-link-divider"><span>or</span></div>\n      <form id="magicLinkForm" class="magic-link-form">\n        <input id="magicLinkEmail" type="email" autocomplete="email" inputmode="email" placeholder="Your email address" aria-label="Email address" required>\n        <button type="submit" id="magicLinkBtn" class="magic-link-btn">Email me a sign-in link</button>\n      </form>\n      <p id="authMessage" class="group-meta"></p>'''
+              if anchor not in s:
+                  raise SystemExit('Auth start-screen anchor not found')
+              s = s.replace(anchor, replacement, 1)
+
+          # Magic-link styles.
+          if 'magic-link-divider' not in s:
+              anchor = '.google-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:#202124;border:1px solid #dadce0;font-weight:700;box-shadow:0 1px 2px rgba(0,0,0,.12)}'
+              addition = '''\n.magic-link-divider{display:flex;align-items:center;gap:10px;margin:14px 0 10px;color:#7f8b92;font-size:.72rem}.magic-link-divider:before,.magic-link-divider:after{content:"";height:1px;flex:1;background:#294657}.magic-link-form{display:grid;gap:9px}.magic-link-form input{margin:0}.magic-link-btn{background:#102536!important;color:#dce7ac!important;border-color:#4d6b73!important}.magic-link-btn:hover{background:#173346!important}.auth-success{color:#8FE0D5!important;margin-top:8px!important}.auth-error{color:#ff9c91!important;margin-top:8px!important}\n'''
+              if anchor not in s:
+                  raise SystemExit('Google CSS anchor not found')
+              s = s.replace(anchor, anchor + addition, 1)
+
+          # Magic-link function.
+          if 'async function signInWithMagicLink' not in s:
+              anchor = '''async function signInWithGoogle(){\n const {error}=await supabase.auth.signInWithOAuth({\n   provider:'google',\n   options:{redirectTo:APP_URL}\n });\n if(error)throw error;\n}'''
+              addition = '''\nasync function signInWithMagicLink(email){\n const clean=email.trim().toLowerCase();\n if(!clean)throw new Error('Enter your email address.');\n const {error}=await supabase.auth.signInWithOtp({\n   email:clean,\n   options:{emailRedirectTo:APP_URL}\n });\n if(error)throw error;\n}'''
+              if anchor not in s:
+                  raise SystemExit('Google auth function anchor not found')
+              s = s.replace(anchor, anchor + addition, 1)
+
+          # Magic-link form handler.
+          if "$('magicLinkForm').addEventListener" not in s:
+              anchor = '''$('googleSignInBtn').addEventListener('click',async()=>{const btn=$('googleSignInBtn'),msg=$('authMessage');try{btn.disabled=true;msg.textContent='Opening Google…';await signInWithGoogle();}catch(err){msg.textContent='Could not start Google sign-in. '+(err.message||err);btn.disabled=false}});'''
+              addition = '''\n$('magicLinkForm').addEventListener('submit',async e=>{e.preventDefault();const btn=$('magicLinkBtn'),input=$('magicLinkEmail'),msg=$('authMessage');try{btn.disabled=true;input.disabled=true;msg.className='group-meta';msg.textContent='Sending your sign-in link…';await signInWithMagicLink(input.value);msg.className='group-meta auth-success';msg.textContent='Check your email — your sign-in link is on its way.';}catch(err){msg.className='group-meta auth-error';msg.textContent='Could not send the sign-in link. '+(err.message||err);btn.disabled=false;input.disabled=false;}});'''
+              if anchor not in s:
+                  raise SystemExit('Google listener anchor not found')
+              s = s.replace(anchor, anchor + addition, 1)
+
+          # More breathing room between coral buttons on the group join/create screen.
+          if '.group-form{display:grid;gap:14px;margin-top:10px}' not in s:
+              old = '.group-form{display:grid;gap:9px;margin-top:10px}'
+              if old not in s:
+                  raise SystemExit('Group form CSS anchor not found')
+              s = s.replace(old, '.group-form{display:grid;gap:14px;margin-top:10px}.group-form button{margin-top:2px}.group-form button + .group-meta{margin-top:2px}', 1)
+          old_actions = '.group-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}'
+          new_actions = '.group-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:12px 0 14px}'
+          s = s.replace(old_actions, new_actions, 1)
+
+          p.write_text(s)
+
+          sw = Path('sw.js')
+          t = sw.read_text()
+          t = t.replace('brighton-weekend-v53-shelter-hall', 'brighton-weekend-v54-magic-link')
+          sw.write_text(t)
+          PY
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html sw.js
+          git commit -m "Add magic link and improve group button spacing"
+          git push
+
+      - name: Remove workflow
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/apply-ui-fixes.yml
+          git commit -m "Remove temporary UI fix workflow"
+          git push
