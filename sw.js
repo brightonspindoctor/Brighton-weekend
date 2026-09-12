@@ -1,4 +1,4 @@
-const CACHE="brighton-weekend-v57-bears-auth";
+const CACHE="brighton-weekend-v58-groups-cosmetic";
 const CORE=["./","./index.html","./manifest.webmanifest","./favicon.ico","./icons/icon-32.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-192-maskable.png","./icons/icon-512-maskable.png","./icons/apple-touch-icon.png","./about.html","./privacy.html","./terms.html","./profile-icons/brown-bear.svg","./profile-icons/red-panda-bear.svg","./profile-icons/giant-panda-bear.svg"];
 self.addEventListener("install",event=>{event.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
@@ -16,6 +16,13 @@ async function transformIndex(response){
  // Use the secure profile-icon RPC rather than a direct PATCH.
  text=text.replace(/await api\('PATCH','bw_profiles\?user_id=eq\.'\+encodeURIComponent\(authUser\.id\),\{profile_icon:icon\},\{'Prefer':'return=representation'\}\);/,"await rpc('bw_set_profile_icon',{p_user_id:uid(),p_profile_icon:icon});");
  text=text.replace(/Could not save your icon yet\. Please run the profile-icons database update first\./g,'Could not save your icon yet. Please try again.');
+ // Cosmetic group-page fixes: keep the onboarding card scrollable and give its final action room.
+ text=text.replace(/\.group-step\{display:grid;gap:12px;text-align:left\}/,`.group-step{display:grid;gap:12px;text-align:left}`);
+ text=text.replace(/\.group-form button \+ \.group-meta\{margin-top:2px\}/,`.group-form button + .group-meta{margin-top:2px}.group-step{padding-bottom:18px}.welcome-card{max-height:calc(100dvh - 40px);overflow-y:auto}.welcome-card #partyOnBtn{margin-top:8px}`);
+ // Put Manage Groups beside the Groups heading and make it a compact coral pill.
+ text=text.replace(`<div class="group-panel"><h3 style="margin:12px 0 4px">Groups</h3><p class="note">Manage the groups that shape your Happenings feed.</p>`, `<div class="group-panel"><div class="group-settings-head"><h3>Groups</h3><button id="manageGroups" class="manage-groups-btn">Manage groups</button></div><p class="note">Manage the groups that shape your Happenings feed.</p>`);
+ text=text.replace(`<button id="manageGroups" class="secondary">Manage groups</button></div>`, `</div>`);
+ text=text.replace(`.settings-card h3{margin:0 0 6px;color:var(--bw-cream)}`, `.settings-card h3{margin:0 0 6px;color:var(--bw-cream)}.group-settings-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0 5px}.group-settings-head h3{margin:0}.manage-groups-btn{width:auto!important;flex:0 0 auto;padding:9px 13px!important;border-radius:999px!important;background:var(--bw-coral)!important;color:#0B1D2F!important;border:1px solid var(--bw-coral)!important;font-weight:800!important;font-size:.72rem!important;white-space:nowrap}`);
  return new Response(text,{status:response.status,statusText:response.statusText,headers:new Headers(response.headers)});
 }
 self.addEventListener("fetch",event=>{const req=event.request;if(req.method!=="GET")return;const url=new URL(req.url);if(url.origin!==self.location.origin)return;
