@@ -20,13 +20,13 @@ for (const id of names) {
   const assetPath = `profile-icons/${file}`;
   if (!fs.existsSync(assetPath)) throw new Error(`Missing avatar asset: ${id} -> ${file}`);
 
-  const ext = file.slice(file.lastIndexOf('.')).toLowerCase();
-  if (!['.png', '.jpg', '.jpeg', '.webp'].includes(ext)) {
-    throw new Error(`Avatar ${id} uses unsupported/non-raster asset: ${file}`);
-  }
-
-  // Every newly registered avatar must retain the exact selected artwork.
+  // Existing legacy avatars may be SVGs. New selected-artwork entries in the
+  // manifest must be raster and must retain the exact selected file bytes.
   if (manifest[id]) {
+    const ext = file.slice(file.lastIndexOf('.')).toLowerCase();
+    if (!['.png', '.jpg', '.jpeg', '.webp'].includes(ext)) {
+      throw new Error(`Avatar ${id} uses unsupported/non-raster selected artwork: ${file}`);
+    }
     if (manifest[id].file !== file) throw new Error(`Avatar manifest mismatch: ${id} -> ${file}`);
     const actualSha256 = crypto.createHash('sha256').update(fs.readFileSync(assetPath)).digest('hex');
     if (manifest[id].sha256 !== actualSha256) {
@@ -36,4 +36,4 @@ for (const id of names) {
 }
 
 if (names.includes('bee') || names.includes('bumblebee')) throw new Error('Legacy bee avatar still registered');
-console.log(`Validated ${names.length} avatar assets and selected-artwork fingerprints.`);
+console.log(`Validated ${names.length} avatar assets; selected-artwork fingerprints checked for ${Object.keys(manifest).length} registered raster avatars.`);
