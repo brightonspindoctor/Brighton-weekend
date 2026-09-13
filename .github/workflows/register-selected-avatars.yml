@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/register-selected-avatars.yml'
       - 'scripts/validate-avatars.mjs'
+      - 'sw.js'
       - 'profile-icons/raccoon.jpg'
       - 'profile-icons/orange-tabby.jpg'
       - 'profile-icons/black-cat.jpg'
@@ -26,13 +27,32 @@ jobs:
       - name: Register exact selected artwork
         run: |
           set -e
-          node scripts/add-avatar.mjs --id=orange-tabby --label="Orange Tabby" --file=orange-tabby.jpg
-          node scripts/add-avatar.mjs --id=black-cat --label="Black Cat" --file=black-cat.jpg
-          node scripts/add-avatar.mjs --id=fluffy-cat --label="Fluffy Cat" --file=fluffy-cat.jpg
-          node scripts/add-avatar.mjs --id=tuxedo-cat --label="Tuxedo Cat" --file=tuxedo-cat.jpg
-          node scripts/validate-avatars.mjs
+          grep -q "'orange-tabby'" index.html || node scripts/add-avatar.mjs --id=orange-tabby --label="Orange Tabby" --file=orange-tabby.jpg
+          grep -q "'black-cat'" index.html || node scripts/add-avatar.mjs --id=black-cat --label="Black Cat" --file=black-cat.jpg
+          grep -q "'fluffy-cat'" index.html || node scripts/add-avatar.mjs --id=fluffy-cat --label="Fluffy Cat" --file=fluffy-cat.jpg
+          grep -q "'tuxedo-cat'" index.html || node scripts/add-avatar.mjs --id=tuxedo-cat --label="Tuxedo Cat" --file=tuxedo-cat.jpg
 
-      - name: Commit registration
+      - name: Update service-worker avatar cache
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('sw.js')
+          s=p.read_text()
+          s=s.replace('brighton-weekend-v75-avatar-assets','brighton-weekend-v76-avatar-assets')
+          for asset in ['orange-tabby.jpg','black-cat.jpg','fluffy-cat.jpg','tuxedo-cat.jpg']:
+              token=f'./profile-icons/{asset}'
+              if token not in s:
+                  s=s.replace('"./profile-icons/moose.jpg"]', f'"./profile-icons/moose.jpg","{token}"]')
+          old="function iconSrc(icon){return 'profile-icons/'+encodeURIComponent(icon)+(icon==='raccoon'?'.jpg':(icon.endsWith('-bear')?'.svg':'.png'))}"
+          new="function iconSrc(icon){const files={'brown-bear':'brown-bear.svg','red-panda-bear':'red-panda-bear.svg','giant-panda-bear':'giant-panda-bear.svg','raccoon':'raccoon.jpg','moose':'moose.jpg','orange-tabby':'orange-tabby.jpg','black-cat':'black-cat.jpg','fluffy-cat':'fluffy-cat.jpg','tuxedo-cat':'tuxedo-cat.jpg'};return 'profile-icons/'+encodeURIComponent(files[icon]||(icon+'.png'))}"
+          s=s.replace(old,new)
+          p.write_text(s)
+          PY
+
+      - name: Validate avatar registry and fingerprints
+        run: node scripts/validate-avatars.mjs
+
+      - name: Commit registration and cache
         run: |
           if git diff --quiet; then
             echo 'No changes to commit.'
@@ -40,6 +60,6 @@ jobs:
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add index.html profile-icons/avatar-manifest.json
-          git commit -m 'Add selected cat avatars'
+          git add index.html sw.js profile-icons/avatar-manifest.json
+          git commit -m 'Add selected cat avatars and cache artwork'
           git push
