@@ -12,7 +12,7 @@ on:
         required: true
         type: string
       file:
-        description: 'Existing asset filename in profile-icons/, e.g. red-fox.png'
+        description: 'The exact selected artwork filename already added to profile-icons/, e.g. red-fox.jpg'
         required: true
         type: string
 
@@ -26,7 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Register avatar
+      - name: Register the exact selected artwork
         env:
           AVATAR_ID: ${{ inputs.id }}
           AVATAR_LABEL: ${{ inputs.label }}
@@ -37,7 +37,7 @@ jobs:
             --label="$AVATAR_LABEL" \
             --file="$AVATAR_FILE"
 
-      - name: Validate avatar registry
+      - name: Validate avatar registry and artwork fingerprint
         run: node scripts/validate-avatars.mjs
 
       - name: Commit registration
@@ -48,6 +48,6 @@ jobs:
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add index.html
+          git add index.html profile-icons/avatar-manifest.json
           git commit -m "Add avatar: ${{ inputs.label }}"
           git push
