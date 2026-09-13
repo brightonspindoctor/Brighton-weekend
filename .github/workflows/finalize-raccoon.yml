@@ -1,0 +1,39 @@
+name: Finalize raccoon avatar
+on:
+  push:
+    branches: [main]
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Point app at browser-safe raccoon asset
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('index.html'); s=p.read_text()
+          s=s.replace("icon==='raccoon'||icon.endsWith('-bear')?'.svg':'.png'", "icon==='raccoon'?'.webp':(icon.endsWith('-bear')?'.svg':'.png')")
+          s=s.replace("icon.endsWith('-bear')||icon==='raccoon'?'.svg':'.png'", "icon==='raccoon'?'.webp':(icon.endsWith('-bear')?'.svg':'.png')")
+          s=s.replace("./sw.js?v=71", "./sw.js?v=72")
+          p.write_text(s)
+          p=Path('sw.js'); s=p.read_text()
+          s=s.replace('brighton-weekend-v71-bears','brighton-weekend-v72-raccoon-webp')
+          s=s.replace('"./profile-icons/raccoon.svg"','"./profile-icons/raccoon.webp"')
+          s=s.replace("icon.endsWith('-bear')||icon==='raccoon'?'.svg':'.png'", "icon==='raccoon'?'.webp':(icon.endsWith('-bear')?'.svg':'.png')")
+          p.write_text(s)
+          PY
+      - name: Commit and remove workflow
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html sw.js .github/workflows/finalize-raccoon.yml
+          git commit -m 'Use browser-safe raccoon avatar asset'
+          git push
+          rm .github/workflows/finalize-raccoon.yml
+          git add .github/workflows/finalize-raccoon.yml
+          git commit -m 'Remove temporary raccoon workflow'
+          git push
