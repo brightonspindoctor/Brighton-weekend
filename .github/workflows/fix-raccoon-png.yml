@@ -1,0 +1,46 @@
+name: Fix raccoon avatar asset
+on:
+  workflow_dispatch:
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Convert raccoon asset to PNG
+        run: |
+          set -e
+          test -s profile-icons/raccoon.webp
+          python3 - <<'PY'
+          from PIL import Image
+          im = Image.open('profile-icons/raccoon.webp').convert('RGBA')
+          im.save('profile-icons/raccoon.png', optimize=True)
+          print(im.size)
+          PY
+      - name: Patch avatar source and service worker
+        run: |
+          set -e
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          s=s.replace("icon==='raccoon'?'.webp'", "icon==='raccoon'?'.png'")
+          s=s.replace("profile-icons/raccoon.webp?v=1", "profile-icons/raccoon.png?v=2")
+          p.write_text(s)
+          p=Path('sw.js')
+          s=p.read_text()
+          s=s.replace('brighton-weekend-v72-raccoon-webp', 'brighton-weekend-v73-raccoon-png')
+          s=s.replace("./profile-icons/raccoon.webp", "./profile-icons/raccoon.png")
+          s=s.replace("icon==='raccoon'?'.webp'", "icon==='raccoon'?'.png'")
+          p.write_text(s)
+          PY
+      - name: Commit fix and remove workflow
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add profile-icons/raccoon.png index.html sw.js
+          git commit -m "Fix raccoon avatar with PNG asset"
+          git rm .github/workflows/fix-raccoon-png.yml
+          git commit -m "Remove temporary raccoon fix workflow"
+          git push
