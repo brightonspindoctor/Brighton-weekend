@@ -39,10 +39,12 @@ jobs:
           p=Path('sw.js')
           s=p.read_text()
           s=s.replace('brighton-weekend-v75-avatar-assets','brighton-weekend-v76-avatar-assets')
-          for asset in ['orange-tabby.jpg','black-cat.jpg','fluffy-cat.jpg','tuxedo-cat.jpg']:
+          assets=['orange-tabby.jpg','black-cat.jpg','fluffy-cat.jpg','tuxedo-cat.jpg']
+          for asset in assets:
               token=f'./profile-icons/{asset}'
               if token not in s:
-                  s=s.replace('"./profile-icons/moose.jpg"]', f'"./profile-icons/moose.jpg","{token}"]')
+                  s=s.replace('"./profile-icons/orange-tabby.jpg"]', f'"./profile-icons/orange-tabby.jpg","./profile-icons/black-cat.jpg","./profile-icons/fluffy-cat.jpg","./profile-icons/tuxedo-cat.jpg"]')
+                  break
           old="function iconSrc(icon){return 'profile-icons/'+encodeURIComponent(icon)+(icon==='raccoon'?'.jpg':(icon.endsWith('-bear')?'.svg':'.png'))}"
           new="function iconSrc(icon){const files={'brown-bear':'brown-bear.svg','red-panda-bear':'red-panda-bear.svg','giant-panda-bear':'giant-panda-bear.svg','raccoon':'raccoon.jpg','moose':'moose.jpg','orange-tabby':'orange-tabby.jpg','black-cat':'black-cat.jpg','fluffy-cat':'fluffy-cat.jpg','tuxedo-cat':'tuxedo-cat.jpg'};return 'profile-icons/'+encodeURIComponent(files[icon]||(icon+'.png'))}"
           s=s.replace(old,new)
