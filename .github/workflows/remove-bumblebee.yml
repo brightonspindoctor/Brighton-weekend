@@ -1,0 +1,49 @@
+name: Remove Bumblebee avatar
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  remove-bumblebee:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Remove Bumblebee from avatar catalogue
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          for name in ('index.html', 'sw.js'):
+              p = Path(name)
+              if not p.exists():
+                  continue
+              s = p.read_text()
+              s = re.sub(r"'bumblebee'\s*,", "", s)
+              s = re.sub(r",\s*'bumblebee'\s*:\s*'Bumblebee'", "", s)
+              s = re.sub(r"'bumblebee'\s*:\s*'Bumblebee'\s*,", "", s)
+              p.write_text(s)
+
+          sw = Path('sw.js')
+          if sw.exists():
+              s = sw.read_text().replace('brighton-weekend-v68-avatar-onboarding', 'brighton-weekend-v69-no-bumblebee')
+              s = s.replace(".replace(/'bee',/g,'').replace(/,'bee':'Bee'/g,'')", ".replace(/'bee',/g,'').replace(/,'bee':'Bee'/g,'').replace(/'bumblebee',/g,'').replace(/,'bumblebee':'Bumblebee'/g,'')")
+              sw.write_text(s)
+          PY
+      - name: Commit and remove temporary workflow
+        run: |
+          rm -f .github/workflows/remove-bumblebee.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html sw.js .github/workflows/remove-bumblebee.yml
+          if git diff --cached --quiet; then
+            echo 'No changes needed.'
+          else
+            git commit -m 'Remove Bumblebee avatar'
+            git push
+          fi
