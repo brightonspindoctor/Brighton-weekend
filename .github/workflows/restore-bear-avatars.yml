@@ -1,0 +1,81 @@
+name: Restore bear avatars
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore bear avatars in source and bump cache
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          p = Path('index.html')
+          s = p.read_text()
+
+          # Remove retired bee variants.
+          s = s.replace("'bee',", "").replace(",'bee':'Bee'", "")
+          s = s.replace("'bumblebee',", "").replace(",'bumblebee':'Bumblebee'", "")
+
+          # Restore the three bear avatars alongside the raccoon.
+          s = s.replace(
+              "'winged-lion','raccoon'];",
+              "'winged-lion','brown-bear','red-panda-bear','giant-panda-bear','raccoon'];"
+          )
+          s = s.replace(
+              "'winged-lion':'Winged Lion','raccoon':'Raccoon'",
+              "'winged-lion':'Winged Lion','brown-bear':'Brown Bear','red-panda-bear':'Red Panda','giant-panda-bear':'Giant Panda','raccoon':'Raccoon'"
+          )
+          # Also handle the unlikely case where the catalogue ends at winged-lion.
+          s = s.replace(
+              "'winged-lion'];",
+              "'winged-lion','brown-bear','red-panda-bear','giant-panda-bear','raccoon'];"
+          )
+          s = s.replace(
+              "'winged-lion':'Winged Lion'};",
+              "'winged-lion':'Winged Lion','brown-bear':'Brown Bear','red-panda-bear':'Red Panda','giant-panda-bear':'Giant Panda','raccoon':'Raccoon'};"
+          )
+
+          p.write_text(s)
+
+          p = Path('sw.js')
+          s = p.read_text()
+          s = s.replace('brighton-weekend-v70-raccoon', 'brighton-weekend-v71-bears')
+          s = s.replace('?v=70', '?v=71')
+          s = s.replace(
+              "if(!text.includes(\"'brown-bear'\")) text=text.replace(/'winged-lion'\\];/,\"'winged-lion','brown-bear','red-panda-bear','giant-panda-bear','raccoon'];\");",
+              "text=text.replace(/'winged-lion','raccoon'\\];/,\"'winged-lion','brown-bear','red-panda-bear','giant-panda-bear','raccoon'];\");text=text.replace(/'winged-lion'\\];/,\"'winged-lion','brown-bear','red-panda-bear','giant-panda-bear','raccoon'];\");"
+          )
+          s = s.replace(
+              "if(!text.includes(\"'brown-bear':'Brown Bear'\")) text=text.replace(/'winged-lion':'Winged Lion'\\};/,\"'winged-lion':'Winged Lion','brown-bear':'Brown Bear','red-panda-bear':'Red Panda','giant-panda-bear':'Giant Panda','raccoon':'Raccoon'};\");",
+              "text=text.replace(/'winged-lion':'Winged Lion','raccoon':'Raccoon'\\}/,\"'winged-lion':'Winged Lion','brown-bear':'Brown Bear','red-panda-bear':'Red Panda','giant-panda-bear':'Giant Panda','raccoon':'Raccoon'}\");"
+          )
+          p.write_text(s)
+          PY
+
+          if git diff --quiet; then
+            echo "No changes needed"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add index.html sw.js
+            git commit -m "Restore bear avatars and bump cache"
+            git push
+          fi
+
+      - name: Remove temporary workflow
+        run: |
+          rm -f .github/workflows/restore-bear-avatars.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -u .github/workflows/restore-bear-avatars.yml
+          git commit -m "Remove temporary bear avatar workflow" || true
+          git push || true
