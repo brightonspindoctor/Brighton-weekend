@@ -1,0 +1,53 @@
+name: Add avatar
+
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: 'Avatar id, e.g. red-fox'
+        required: true
+        type: string
+      label:
+        description: 'Display label, e.g. Red Fox'
+        required: true
+        type: string
+      file:
+        description: 'Existing asset filename in profile-icons/, e.g. red-fox.png'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  add-avatar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Register avatar
+        env:
+          AVATAR_ID: ${{ inputs.id }}
+          AVATAR_LABEL: ${{ inputs.label }}
+          AVATAR_FILE: ${{ inputs.file }}
+        run: |
+          node scripts/add-avatar.mjs \
+            --id="$AVATAR_ID" \
+            --label="$AVATAR_LABEL" \
+            --file="$AVATAR_FILE"
+
+      - name: Validate avatar registry
+        run: node scripts/validate-avatars.mjs
+
+      - name: Commit registration
+        run: |
+          if git diff --quiet; then
+            echo 'No changes to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git commit -m "Add avatar: ${{ inputs.label }}"
+          git push
