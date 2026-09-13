@@ -1,0 +1,49 @@
+name: Final raccoon asset fix
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/fix-raccoon-final.yml'
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Convert raccoon to standard PNG
+        run: |
+          set -e
+          python3 - <<'PY'
+          from PIL import Image
+          im=Image.open('profile-icons/raccoon.jpg').convert('RGB')
+          im.save('profile-icons/raccoon.png', format='PNG', optimize=True)
+          PY
+      - name: Remove broken legacy asset
+        run: rm -f profile-icons/raccoon.webp
+      - name: Point app and service worker at PNG
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          for name in ['index.html','sw.js']:
+            p=Path(name); s=p.read_text()
+            s=s.replace("'raccoon':'raccoon.jpg'", "'raccoon':'raccoon.png'")
+            s=s.replace("./profile-icons/raccoon.jpg", "./profile-icons/raccoon.png")
+            s=s.replace("icon==='raccoon'?'.jpg'", "icon==='raccoon'?'.png'")
+            if name == 'index.html':
+              s=s.replace("sw.js?v=72", "sw.js?v=74")
+            p.write_text(s)
+          PY
+      - name: Validate
+        run: |
+          test -s profile-icons/raccoon.png
+          grep -q "'raccoon':'raccoon.png'" index.html
+          grep -q 'profile-icons/raccoon.png' sw.js
+      - name: Commit fix
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add index.html sw.js profile-icons/raccoon.png .github/workflows/fix-raccoon-final.yml
+          git add -u profile-icons/raccoon.webp profile-icons/raccoon.jpg || true
+          git commit -m "Fix raccoon avatar as standard PNG" || exit 0
+          git push
