@@ -1,5 +1,5 @@
-const CACHE="brighton-weekend-v75-avatar-assets";
-const CORE=["./","./index.html","./manifest.webmanifest","./favicon.ico","./icons/icon-32.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-192-maskable.png","./icons/icon-512-maskable.png","./icons/apple-touch-icon.png","./about.html","./privacy.html","./terms.html","./profile-icons/brown-bear.svg","./profile-icons/red-panda-bear.svg","./profile-icons/giant-panda-bear.svg","./profile-icons/raccoon.jpg","./profile-icons/moose.jpg"];
+const CACHE="brighton-weekend-v76-avatar-assets";
+const CORE=["./","./index.html","./manifest.webmanifest","./favicon.ico","./icons/icon-32.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-192-maskable.png","./icons/icon-512-maskable.png","./icons/apple-touch-icon.png","./about.html","./privacy.html","./terms.html","./profile-icons/brown-bear.svg","./profile-icons/red-panda-bear.svg","./profile-icons/giant-panda-bear.svg","./profile-icons/raccoon.jpg","./profile-icons/moose.jpg","./profile-icons/orange-tabby.jpg"];
 self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 
@@ -11,7 +11,7 @@ async function transformIndex(response){
  text=text.replace(/'winged-lion','raccoon'\];/,"'winged-lion','brown-bear','red-panda-bear','giant-panda-bear','raccoon'];");text=text.replace(/'winged-lion'\];/,"'winged-lion','brown-bear','red-panda-bear','giant-panda-bear','raccoon'];");
  text=text.replace(/'winged-lion':'Winged Lion','raccoon':'Raccoon'\}/,"'winged-lion':'Winged Lion','brown-bear':'Brown Bear','red-panda-bear':'Red Panda','giant-panda-bear':'Giant Panda','raccoon':'Raccoon'}");
  // New assets are SVG wrappers; keep all legacy avatars as PNGs.
- text=text.replace("function iconSrc(icon){return 'profile-icons/'+encodeURIComponent(icon)+'.png'}","function iconSrc(icon){return 'profile-icons/'+encodeURIComponent(icon)+(icon==='raccoon'?'.jpg':(icon.endsWith('-bear')?'.svg':'.png'))}");
+ text=text.replace("function iconSrc(icon){return 'profile-icons/'+encodeURIComponent(icon)+'.png'}","function iconSrc(icon){const files={'brown-bear':'brown-bear.svg','red-panda-bear':'red-panda-bear.svg','giant-panda-bear':'giant-panda-bear.svg','raccoon':'raccoon.jpg','moose':'moose.jpg','orange-tabby':'orange-tabby.jpg','black-cat':'black-cat.jpg','fluffy-cat':'fluffy-cat.jpg','tuxedo-cat':'tuxedo-cat.jpg'};return 'profile-icons/'+encodeURIComponent(files[icon]||(icon+'.png'))}");
  text=text.replace("await api('PATCH','bw_profiles?user_id=eq.'+encodeURIComponent(authUser.id),{profile_icon:icon},{'Prefer':'return=representation'});","await rpc('bw_set_profile_icon',{p_user_id:uid(),p_profile_icon:icon});");
  text=text.replace('Could not save your icon yet. Please run the profile-icons database update first.','Could not save your icon yet. Please try again.');
  // Handle magic-link callback before reading the session.
