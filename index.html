@@ -531,7 +531,16 @@ async function loadProfile(){
  return false;
 }
 function randomProfileIcon(){return PROFILE_ICONS[Math.floor(Math.random()*PROFILE_ICONS.length)]}
-function iconSrc(icon){return 'profile-icons/'+encodeURIComponent(icon)+(icon==='raccoon'?'.webp':(icon.endsWith('-bear')?'.svg':'.png'))}
+const PROFILE_ICON_FILES={
+  'brown-bear':'brown-bear.svg',
+  'red-panda-bear':'red-panda-bear.svg',
+  'giant-panda-bear':'giant-panda-bear.svg',
+  'raccoon':'raccoon.jpg'
+};
+function iconSrc(icon){
+  const file=PROFILE_ICON_FILES[icon]||(icon+'.png');
+  return 'profile-icons/'+encodeURIComponent(file);
+}
 function userIcon(iconUserId){const icon=profileIconsByUser[iconUserId]||((iconUserId===uid())?profileIcon:'');return icon||'fox'}
 async function saveProfileIcon(icon){
  if(!authUser||!PROFILE_ICONS.includes(icon))return;
@@ -978,18 +987,5 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=72',{updateViaCache:'none'}).catch(console.warn));
 }
 </script>
-<script>
-/* BW_DIRECT_RACCOON_FIX_V1 */
-try {
-  if (typeof PROFILE_ICONS !== 'undefined' && !PROFILE_ICONS.includes('raccoon')) PROFILE_ICONS.push('raccoon');
-  if (typeof PROFILE_LABELS !== 'undefined') PROFILE_LABELS.raccoon = 'Raccoon';
-  window.bwRaccoonIconSrc = function(icon) {
-    if (icon === 'raccoon') return 'profile-icons/raccoon.webp?v=1';
-    return 'profile-icons/' + encodeURIComponent(icon) + '.png';
-  };
-  if (typeof iconSrc === 'function') {
-    iconSrc = window.bwRaccoonIconSrc;
-  }
-} catch (e) { console.warn('Direct raccoon avatar fallback failed', e); }
-</script>
+
 </body></html>
