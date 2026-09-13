@@ -1,0 +1,41 @@
+name: Direct raccoon avatar fix
+
+on:
+  push:
+    paths:
+      - '.github/workflows/raccoon-direct-fix.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Patch index with direct raccoon fallback
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+          marker = '/* BW_DIRECT_RACCOON_FIX_V1 */'
+          if marker not in s:
+              injection = '''<script>\n/* BW_DIRECT_RACCOON_FIX_V1 */\ntry {\n  if (typeof PROFILE_ICONS !== 'undefined' && !PROFILE_ICONS.includes('raccoon')) PROFILE_ICONS.push('raccoon');\n  if (typeof PROFILE_LABELS !== 'undefined') PROFILE_LABELS.raccoon = 'Raccoon';\n  window.bwRaccoonIconSrc = function(icon) {\n    if (icon === 'raccoon') return 'profile-icons/raccoon.webp?v=1';\n    return 'profile-icons/' + encodeURIComponent(icon) + '.png';\n  };\n  if (typeof iconSrc === 'function') {\n    iconSrc = window.bwRaccoonIconSrc;\n  }\n} catch (e) { console.warn('Direct raccoon avatar fallback failed', e); }\n</script>'''
+              if '</body>' not in s:
+                  raise SystemExit('Could not find </body> in index.html')
+              s = s.replace('</body>', injection + '\n</body>', 1)
+              p.write_text(s, encoding='utf-8')
+          PY
+
+      - name: Commit direct fallback and remove workflow
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html .github/workflows/raccoon-direct-fix.yml
+          git rm .github/workflows/raccoon-direct-fix.yml
+          git commit -m 'Make raccoon avatar direct and cache-busted'
+          git push origin HEAD:main
