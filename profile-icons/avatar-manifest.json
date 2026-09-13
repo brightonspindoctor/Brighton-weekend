@@ -1,0 +1,22 @@
+{
+  "orange-tabby": {
+    "label": "Orange Tabby",
+    "file": "orange-tabby.jpg",
+    "sha256": "39048fbdf1cfcc22654ba3bd1c4e221afe5f9a4cf9ad77ecbfc48e33a75fb47b"
+  },
+  "black-cat": {
+    "label": "Black Cat",
+    "file": "black-cat.jpg",
+    "sha256": "af5b53a9a182178d098ce57201bf77266aadf6a53af81589a0fec8f176e64820"
+  },
+  "fluffy-cat": {
+    "label": "Fluffy Cat",
+    "file": "fluffy-cat.jpg",
+    "sha256": "db91e861fe506694a51c68b886e7bb6f477893a9ef42cd66e82702b5ece2b812"
+  },
+  "tuxedo-cat": {
+    "label": "Tuxedo Cat",
+    "file": "tuxedo-cat.jpg",
+    "sha256": "51b58b066be05c36dd2124d7e6aaffb62ffa57910dba0327a25ba63ea167c5ff"
+  }
+}
