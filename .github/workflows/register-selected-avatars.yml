@@ -1,0 +1,44 @@
+name: Register selected raster avatars
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'profile-icons/raccoon.jpg'
+      - 'profile-icons/orange-tabby.jpg'
+      - 'profile-icons/black-cat.jpg'
+      - 'profile-icons/fluffy-cat.jpg'
+      - 'profile-icons/tuxedo-cat.jpg'
+      - 'profile-icons/bengal-cat.jpg'
+
+permissions:
+  contents: write
+
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Register exact selected artwork
+        run: |
+          set -e
+          node scripts/add-avatar.mjs --id=orange-tabby --label="Orange Tabby" --file=orange-tabby.jpg
+          node scripts/add-avatar.mjs --id=black-cat --label="Black Cat" --file=black-cat.jpg
+          node scripts/add-avatar.mjs --id=fluffy-cat --label="Fluffy Cat" --file=fluffy-cat.jpg
+          node scripts/add-avatar.mjs --id=tuxedo-cat --label="Tuxedo Cat" --file=tuxedo-cat.jpg
+          node scripts/add-avatar.mjs --id=bengal-cat --label="Bengal Cat" --file=bengal-cat.jpg
+          node scripts/validate-avatars.mjs
+
+      - name: Commit registration
+        run: |
+          if git diff --quiet; then
+            echo 'No changes to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html profile-icons/avatar-manifest.json
+          git commit -m 'Add selected cat avatars'
+          git push
