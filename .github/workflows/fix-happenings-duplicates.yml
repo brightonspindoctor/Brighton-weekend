@@ -1,46 +1,35 @@
 name: Fix Happenings duplicate people
-
 on:
   push:
-    branches: [main]
-    paths:
-      - '.github/workflows/fix-happenings-duplicates.yml'
-
+    branches:
+      - main
 permissions:
   contents: write
-
 jobs:
   fix:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - name: Update Happenings rendering
-        shell: python
         run: |
+          python3 - <<'PY'
           from pathlib import Path
-          import re
-
-          p = Path('index.html')
-          s = p.read_text()
-
-          start = s.find('  const byGroup=new Map();')
-          end = s.find('  return `<div class="people-card card">', start)
+          p=Path('index.html')
+          s=p.read_text()
+          start=s.find('  const byGroup=new Map();')
+          end=s.find('  return `<div class="people-card card">', start)
           if start < 0 or end < 0:
               raise SystemExit('Could not locate Happenings group rendering block')
-
-          replacement = '''  const people=[...unique.values()].sort((a,b)=>{
+          replacement='''  const people=[...unique.values()].sort((a,b)=>{
     if(a.status!==b.status)return a.status==='ticket_bought'?-1:1;
     return (a.user_name||'').localeCompare(b.user_name||'');
   });
   const peopleHtml=people.length?`<div class="happening-people">${people.map(x=>`<div class="happening-person"><i class="social-icon profile"><img src="${iconSrc(userIcon(x.user_id))}" alt=""></i><span class="happening-person-name">${esc(x.user_name)}</span><span class="happening-status ${x.status==='ticket_bought'?'going':'interested'}">${x.status==='ticket_bought'?'🎟 GOING':'♡ INTERESTED'}</span></div>`).join('')}</div>`:'';
 '''
-          s = s[:start] + replacement + s[end:]
+          s=s[:start]+replacement+s[end:]
           p.write_text(s)
-
-      - name: Remove this temporary workflow and commit
-        shell: bash
+          PY
+      - name: Commit the fix and remove this temporary workflow
         run: |
           rm .github/workflows/fix-happenings-duplicates.yml
           git config user.name 'github-actions[bot]'
