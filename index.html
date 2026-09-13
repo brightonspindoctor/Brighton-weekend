@@ -531,7 +531,7 @@ async function loadProfile(){
  return false;
 }
 function randomProfileIcon(){return PROFILE_ICONS[Math.floor(Math.random()*PROFILE_ICONS.length)]}
-function iconSrc(icon){return 'profile-icons/'+encodeURIComponent(icon)+(icon==='raccoon'||icon.endsWith('-bear')?'.svg':'.png')}
+function iconSrc(icon){return 'profile-icons/'+encodeURIComponent(icon)+(icon==='raccoon'?'.webp':(icon.endsWith('-bear')?'.svg':'.png'))}
 function userIcon(iconUserId){const icon=profileIconsByUser[iconUserId]||((iconUserId===uid())?profileIcon:'');return icon||'fox'}
 async function saveProfileIcon(icon){
  if(!authUser||!PROFILE_ICONS.includes(icon))return;
@@ -975,7 +975,7 @@ document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.quer
 })();</script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=71',{updateViaCache:'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=72',{updateViaCache:'none'}).catch(console.warn));
 }
 </script>
 </body></html>
