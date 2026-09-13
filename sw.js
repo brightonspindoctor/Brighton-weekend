@@ -1,16 +1,16 @@
-const CACHE="brighton-weekend-v64-auth-groups-share";
-const CORE=["./","./index.html","./manifest.webmanifest","./favicon.ico","./icons/icon-32.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-192-maskable.png","./icons/icon-512-maskable.png","./icons/apple-touch-icon.png","./about.html","./privacy.html","./terms.html","./profile-icons/brown-bear.svg","./profile-icons/red-panda-bear.svg","./profile-icons/giant-panda-bear.svg"];
+const CACHE="brighton-weekend-v65-auth-groups-share";
+const CORE=["./","./index.html","./manifest.webmanifest","./favicon.ico","./icons/icon-32.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-192-maskable.png","./icons/icon-512-maskable.png","./icons/apple-touch-icon.png","./about.html","./privacy.html","./terms.html","./profile-icons/brown-bear.svg","./profile-icons/red-panda-bear.svg","./profile-icons/giant-panda-bear.svg","./profile-icons/raccoon.svg"];
 self.addEventListener("install",event=>{event.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 
 async function transformIndex(response){
  if(!response||!response.ok)return response;
  let text=await response.text();
-
- // Profile picker: add the three bear avatars while keeping the existing avatar set intact.
- if(!text.includes("'brown-bear'")) text=text.replace(/'winged-lion'\];/,"'winged-lion','brown-bear','red-panda-bear','giant-panda-bear'];");
- if(!text.includes("'brown-bear':'Brown Bear'")) text=text.replace(/'winged-lion':'Winged Lion'\};/,"'winged-lion':'Winged Lion','brown-bear':'Brown Bear','red-panda-bear':'Red Panda Bear','giant-panda-bear':'Giant Panda Bear'};");
- text=text.replace("function iconSrc(icon){return 'profile-icons/'+encodeURIComponent(icon)+'.png'}","function iconSrc(icon){return 'profile-icons/'+encodeURIComponent(icon)+(icon.endsWith('-bear')?'.svg':'.png')}");
+ // Profile picker: add new avatars while keeping the existing set intact, except bee which is retired.
+ if(!text.includes("'raccoon'")) text=text.replace(/'winged-lion'\];/,"'winged-lion','raccoon'];");
+ if(!text.includes("'raccoon':'Raccoon'")) text=text.replace(/'winged-lion':'Winged Lion'\};/,"'winged-lion':'Winged Lion','raccoon':'Raccoon'};");
+ text=text.replace(/'bee',/g,'').replace(/,'bee':'Bee'/g,'');
+ text=text.replace("function iconSrc(icon){return 'profile-icons/'+encodeURIComponent(icon)+'.png'}","function iconSrc(icon){return 'profile-icons/'+encodeURIComponent(icon)+(icon.endsWith('-bear')||icon==='raccoon'?'.svg':'.png')}");
  text=text.replace("await api('PATCH','bw_profiles?user_id=eq.'+encodeURIComponent(authUser.id),{profile_icon:icon},{'Prefer':'return=representation'});","await rpc('bw_set_profile_icon',{p_user_id:uid(),p_profile_icon:icon});");
  text=text.replace('Could not save your icon yet. Please run the profile-icons database update first.','Could not save your icon yet. Please try again.');
 
