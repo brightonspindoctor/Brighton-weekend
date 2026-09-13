@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/register-selected-avatars.yml'
+      - 'scripts/validate-avatars.mjs'
       - 'profile-icons/raccoon.jpg'
       - 'profile-icons/orange-tabby.jpg'
       - 'profile-icons/black-cat.jpg'
