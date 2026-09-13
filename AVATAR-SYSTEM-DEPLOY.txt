@@ -1,0 +1,1 @@
+Deployment trigger for the permanent avatar asset system.
