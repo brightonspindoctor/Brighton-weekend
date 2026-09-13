@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
     paths:
+      - '.github/workflows/register-selected-avatars.yml'
       - 'profile-icons/raccoon.jpg'
       - 'profile-icons/orange-tabby.jpg'
       - 'profile-icons/black-cat.jpg'
@@ -28,7 +29,6 @@ jobs:
           node scripts/add-avatar.mjs --id=black-cat --label="Black Cat" --file=black-cat.jpg
           node scripts/add-avatar.mjs --id=fluffy-cat --label="Fluffy Cat" --file=fluffy-cat.jpg
           node scripts/add-avatar.mjs --id=tuxedo-cat --label="Tuxedo Cat" --file=tuxedo-cat.jpg
-          node scripts/add-avatar.mjs --id=bengal-cat --label="Bengal Cat" --file=bengal-cat.jpg
           node scripts/validate-avatars.mjs
 
       - name: Commit registration
