@@ -978,4 +978,18 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=72',{updateViaCache:'none'}).catch(console.warn));
 }
 </script>
+<script>
+/* BW_DIRECT_RACCOON_FIX_V1 */
+try {
+  if (typeof PROFILE_ICONS !== 'undefined' && !PROFILE_ICONS.includes('raccoon')) PROFILE_ICONS.push('raccoon');
+  if (typeof PROFILE_LABELS !== 'undefined') PROFILE_LABELS.raccoon = 'Raccoon';
+  window.bwRaccoonIconSrc = function(icon) {
+    if (icon === 'raccoon') return 'profile-icons/raccoon.webp?v=1';
+    return 'profile-icons/' + encodeURIComponent(icon) + '.png';
+  };
+  if (typeof iconSrc === 'function') {
+    iconSrc = window.bwRaccoonIconSrc;
+  }
+} catch (e) { console.warn('Direct raccoon avatar fallback failed', e); }
+</script>
 </body></html>
