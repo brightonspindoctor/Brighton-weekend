@@ -1,4 +1,4 @@
-name: Repair avatar assets
+name: Finalise avatar system
 on:
   push:
     paths:
@@ -10,34 +10,19 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Repair raccoon asset
-        run: |
-          set -e
-          test -s profile-icons/raccoon.webp
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg imagemagick webp
-          rm -f profile-icons/raccoon.png
-          if dwebp profile-icons/raccoon.webp -o profile-icons/raccoon.png >/tmp/dwebp.log 2>&1; then :
-          elif magick profile-icons/raccoon.webp profile-icons/raccoon.png >/tmp/magick.log 2>&1; then :
-          elif ffmpeg -y -i profile-icons/raccoon.webp profile-icons/raccoon.png >/tmp/ffmpeg.log 2>&1; then :
-          else
-            cat /tmp/dwebp.log /tmp/magick.log /tmp/ffmpeg.log || true
-            exit 1
-          fi
-          test -s profile-icons/raccoon.png
-          file profile-icons/raccoon.png
       - name: Standardise avatar source mapping
         run: |
           set -e
+          test -s profile-icons/raccoon.jpg
           python3 - <<'PY'
           from pathlib import Path
           p=Path('index.html')
           s=p.read_text()
-          marker="function iconSrc(icon){"
+          marker='function iconSrc(icon){'
           start=s.find(marker)
           if start < 0: raise SystemExit('iconSrc not found')
           end=s.find('}', start)+1
-          new="""const PROFILE_ICON_FILES={\n  'brown-bear':'brown-bear.svg',\n  'red-panda-bear':'red-panda-bear.svg',\n  'giant-panda-bear':'giant-panda-bear.svg',\n  'raccoon':'raccoon.png'\n};\nfunction iconSrc(icon){\n  const file=PROFILE_ICON_FILES[icon]||(icon+'.png');\n  return 'profile-icons/'+encodeURIComponent(file);\n}"""
+          new="""const PROFILE_ICON_FILES={\n  'brown-bear':'brown-bear.svg',\n  'red-panda-bear':'red-panda-bear.svg',\n  'giant-panda-bear':'giant-panda-bear.svg',\n  'raccoon':'raccoon.jpg'\n};\nfunction iconSrc(icon){\n  const file=PROFILE_ICON_FILES[icon]||(icon+'.png');\n  return 'profile-icons/'+encodeURIComponent(file);\n}"""
           s=s[:start]+new+s[end:]
           a=s.find('/* BW_DIRECT_RACCOON_FIX_V1 */')
           if a>=0:
@@ -52,24 +37,25 @@ jobs:
           from pathlib import Path
           p=Path('sw.js'); s=p.read_text()
           s=s.replace('brighton-weekend-v72-raccoon-webp','brighton-weekend-v73-avatar-assets')
-          s=s.replace("./profile-icons/raccoon.webp","./profile-icons/raccoon.png")
-          s=s.replace("icon==='raccoon'?'.webp'","icon==='raccoon'?'.png'")
+          s=s.replace("./profile-icons/raccoon.webp","./profile-icons/raccoon.jpg")
+          s=s.replace("icon==='raccoon'?'.webp'","icon==='raccoon'?'.jpg'")
           p.write_text(s)
           PY
-      - name: Add avatar asset validation
+      - name: Add avatar validation
         run: |
           set -e
           mkdir -p scripts
           cat > scripts/validate-avatars.mjs <<'JS'
           import fs from 'node:fs';
           const source=fs.readFileSync('index.html','utf8');
-          const ids=[...source.matchAll(/PROFILE_ICONS\s*=\s*\[([^\]]+)\]/s)][0]?.[1]||'';
-          const names=[...ids.matchAll(/['\"]([^'\"]+)['\"]/g)].map(m=>m[1]);
+          const match=source.match(/PROFILE_ICONS\s*=\s*\[([^\]]+)\]/s);
+          if(!match) throw new Error('PROFILE_ICONS registry not found');
+          const names=[...match[1].matchAll(/['\"]([^'\"]+)['\"]/g)].map(m=>m[1]);
           const special={
             'brown-bear':'brown-bear.svg',
             'red-panda-bear':'red-panda-bear.svg',
             'giant-panda-bear':'giant-panda-bear.svg',
-            'raccoon':'raccoon.png'
+            'raccoon':'raccoon.jpg'
           };
           for(const id of names){
             const file=special[id]||`${id}.png`;
@@ -79,12 +65,12 @@ jobs:
           console.log(`Validated ${names.length} avatar assets.`);
           JS
           node scripts/validate-avatars.mjs
-      - name: Commit permanent avatar fix and remove temporary workflow
+      - name: Commit permanent avatar system and remove temporary workflow
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add profile-icons/raccoon.png index.html sw.js scripts/validate-avatars.mjs
-          git commit -m "Standardise avatar asset handling" || true
+          git add index.html sw.js scripts/validate-avatars.mjs
+          git commit -m "Standardise avatar asset handling"
           git rm .github/workflows/fix-raccoon-png.yml
           git commit -m "Remove temporary avatar repair workflow"
           git push
