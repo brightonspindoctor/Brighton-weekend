@@ -1,0 +1,37 @@
+name: Fix dog avatar crops
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-dog-avatars.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Correct dog portrait proportions
+        run: |
+          python -m pip install --quiet Pillow
+          python <<'PY'
+          from PIL import Image
+          from pathlib import Path
+
+          names = ['golden-retriever','black-labrador','cockapoo','french-bulldog','staffy','border-collie']
+          for name in names:
+              p = Path('profile-icons') / f'{name}.jpg'
+              img = Image.open(p).convert('RGB')
+              # The previous upload compressed a 256x524 source crop into 128x128.
+              # Restore that known vertical scale and recenter the portrait.
+              restored = img.resize((128,262), Image.Resampling.LANCZOS)
+              fixed = restored.crop((0,23,128,151))
+              fixed.save(p,'JPEG',quality=82,optimize=True)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-icons/golden-retriever.jpg profile-icons/black-labrador.jpg profile-icons/cockapoo.jpg profile-icons/french-bulldog.jpg profile-icons/staffy.jpg profile-icons/border-collie.jpg
+          git commit -m "Fix dog avatar portrait proportions" || exit 0
+          git push
