@@ -24,7 +24,7 @@ jobs:
           HOUR=$(TZ=Europe/London date +%H)
           DOW=$(TZ=Europe/London date +%u)
           echo "Europe/London: $(TZ=Europe/London date)"
-          if [ "$DOW" = "2" ] && [ "$HOUR" = "07" ]; then
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || { [ "$DOW" = "2" ] && [ "$HOUR" = "07" ]; }; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
