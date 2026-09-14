@@ -7,12 +7,12 @@ on:
       - '.github/workflows/register-selected-avatars.yml'
       - 'scripts/validate-avatars.mjs'
       - 'sw.js'
-      - 'profile-icons/raccoon.jpg'
-      - 'profile-icons/orange-tabby.jpg'
-      - 'profile-icons/black-cat.jpg'
-      - 'profile-icons/fluffy-cat.jpg'
-      - 'profile-icons/tuxedo-cat.jpg'
-      - 'profile-icons/bengal-cat.jpg'
+      - 'profile-icons/black-labrador.jpg'
+      - 'profile-icons/border-collie.jpg'
+      - 'profile-icons/cockapoo.jpg'
+      - 'profile-icons/french-bulldog.jpg'
+      - 'profile-icons/golden-retriever.jpg'
+      - 'profile-icons/staffy.jpg'
 
 permissions:
   contents: write
@@ -24,13 +24,35 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Register exact selected artwork
+      - name: Register exact selected dog artwork
         run: |
           set -e
-          grep -q "'orange-tabby'" index.html || node scripts/add-avatar.mjs --id=orange-tabby --label="Orange Tabby" --file=orange-tabby.jpg
-          grep -q "'black-cat'" index.html || node scripts/add-avatar.mjs --id=black-cat --label="Black Cat" --file=black-cat.jpg
-          grep -q "'fluffy-cat'" index.html || node scripts/add-avatar.mjs --id=fluffy-cat --label="Fluffy Cat" --file=fluffy-cat.jpg
-          grep -q "'tuxedo-cat'" index.html || node scripts/add-avatar.mjs --id=tuxedo-cat --label="Tuxedo Cat" --file=tuxedo-cat.jpg
+          grep -q "'golden-retriever'" index.html || node scripts/add-avatar.mjs --id=golden-retriever --label="Golden Retriever" --file=golden-retriever.jpg
+          grep -q "'black-labrador'" index.html || node scripts/add-avatar.mjs --id=black-labrador --label="Black Labrador" --file=black-labrador.jpg
+          grep -q "'cockapoo'" index.html || node scripts/add-avatar.mjs --id=cockapoo --label="Cockapoo" --file=cockapoo.jpg
+          grep -q "'french-bulldog'" index.html || node scripts/add-avatar.mjs --id=french-bulldog --label="French Bulldog" --file=french-bulldog.jpg
+          grep -q "'staffy'" index.html || node scripts/add-avatar.mjs --id=staffy --label="Staffy" --file=staffy.jpg
+          grep -q "'border-collie'" index.html || node scripts/add-avatar.mjs --id=border-collie --label="Border Collie" --file=border-collie.jpg
+
+      - name: Remove broken raccoon avatar
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          p=Path('index.html')
+          s=p.read_text()
+          s=s.replace("'raccoon',", "")
+          s=s.replace("'raccoon':'Raccoon',", "")
+          s=s.replace("'raccoon':'raccoon.jpg',", "")
+          p.write_text(s)
+          m=Path('profile-icons/avatar-manifest.json')
+          if m.exists():
+              data=json.loads(m.read_text())
+              data.pop('raccoon', None)
+              m.write_text(json.dumps(data, indent=2) + "\n")
+          rp=Path('profile-icons/raccoon.jpg')
+          if rp.exists(): rp.unlink()
+          PY
 
       - name: Update service-worker avatar cache
         run: |
@@ -38,16 +60,14 @@ jobs:
           from pathlib import Path
           p=Path('sw.js')
           s=p.read_text()
-          s=s.replace('brighton-weekend-v75-avatar-assets','brighton-weekend-v76-avatar-assets')
-          assets=['orange-tabby.jpg','black-cat.jpg','fluffy-cat.jpg','tuxedo-cat.jpg']
-          for asset in assets:
-              token=f'./profile-icons/{asset}'
-              if token not in s:
-                  s=s.replace('"./profile-icons/orange-tabby.jpg"]', f'"./profile-icons/orange-tabby.jpg","./profile-icons/black-cat.jpg","./profile-icons/fluffy-cat.jpg","./profile-icons/tuxedo-cat.jpg"]')
-                  break
-          old="function iconSrc(icon){return 'profile-icons/'+encodeURIComponent(icon)+(icon==='raccoon'?'.jpg':(icon.endsWith('-bear')?'.svg':'.png'))}"
-          new="function iconSrc(icon){const files={'brown-bear':'brown-bear.svg','red-panda-bear':'red-panda-bear.svg','giant-panda-bear':'giant-panda-bear.svg','raccoon':'raccoon.jpg','moose':'moose.jpg','orange-tabby':'orange-tabby.jpg','black-cat':'black-cat.jpg','fluffy-cat':'fluffy-cat.jpg','tuxedo-cat':'tuxedo-cat.jpg'};return 'profile-icons/'+encodeURIComponent(files[icon]||(icon+'.png'))}"
-          s=s.replace(old,new)
+          s=s.replace('brighton-weekend-v76-avatar-assets','brighton-weekend-v77-avatar-assets')
+          s=s.replace('"./profile-icons/raccoon.jpg",','')
+          s=s.replace("'raccoon':'raccoon.jpg',",'')
+          dog_assets=['golden-retriever.jpg','black-labrador.jpg','cockapoo.jpg','french-bulldog.jpg','staffy.jpg','border-collie.jpg']
+          marker='"./profile-icons/orange-tabby.jpg"'
+          if './profile-icons/golden-retriever.jpg' not in s:
+              additions=','.join('"./profile-icons/'+a+'"' for a in dog_assets)
+              s=s.replace(marker, marker+','+additions)
           p.write_text(s)
           PY
 
@@ -62,6 +82,7 @@ jobs:
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add index.html sw.js profile-icons/avatar-manifest.json
-          git commit -m 'Add selected cat avatars and cache artwork'
+          git add index.html sw.js profile-icons/avatar-manifest.json profile-icons
+          git rm -f profile-icons/raccoon.jpg 2>/dev/null || true
+          git commit -m 'Add dog avatars and remove broken raccoon'
           git push
