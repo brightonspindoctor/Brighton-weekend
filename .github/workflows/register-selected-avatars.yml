@@ -54,20 +54,34 @@ jobs:
           if rp.exists(): rp.unlink()
           PY
 
-      - name: Update service-worker avatar cache
+      - name: Update service-worker avatar cache and catalogue
         run: |
           python - <<'PY'
           from pathlib import Path
           p=Path('sw.js')
           s=p.read_text()
           s=s.replace('brighton-weekend-v76-avatar-assets','brighton-weekend-v77-avatar-assets')
+          s=s.replace('brighton-weekend-v77-avatar-assets','brighton-weekend-v78-avatar-assets')
           s=s.replace('"./profile-icons/raccoon.jpg",','')
           s=s.replace("'raccoon':'raccoon.jpg',",'')
+          s=s.replace("'winged-lion','raccoon'\\];","'winged-lion'\\];")
+          s=s.replace("'winged-lion','brown-bear','red-panda-bear','giant-panda-bear','raccoon'];","'winged-lion','brown-bear','red-panda-bear','giant-panda-bear'];")
+          s=s.replace("'winged-lion':'Winged Lion','raccoon':'Raccoon'\\}","'winged-lion':'Winged Lion'\\}")
           dog_assets=['golden-retriever.jpg','black-labrador.jpg','cockapoo.jpg','french-bulldog.jpg','staffy.jpg','border-collie.jpg']
           marker='"./profile-icons/orange-tabby.jpg"'
           if './profile-icons/golden-retriever.jpg' not in s:
               additions=','.join('"./profile-icons/'+a+'"' for a in dog_assets)
               s=s.replace(marker, marker+','+additions)
+          # The service worker historically patched index.html at runtime. Make that
+          # patch idempotent and keep it aligned with the real catalogue.
+          if './profile-icons/golden-retriever.jpg' in s:
+              s=s.replace("// Avatar catalogue: retire bee and add the new bear/raccoon set.","// Avatar catalogue: retire legacy bee/raccoon entries and keep the current registry.")
+              s=s.replace("text=text.replace(/'winged-lion','raccoon'\\];/,\"'winged-lion','brown-bear','red-panda-bear','giant-panda-bear','raccoon'];\");text=text.replace(/'winged-lion'\\];/,\"'winged-lion','brown-bear','red-panda-bear','giant-panda-bear','raccoon'];\");","")
+              s=s.replace("text=text.replace(/'winged-lion':'Winged Lion','raccoon':'Raccoon'\\}/,\"'winged-lion':'Winged Lion','brown-bear':'Brown Bear','red-panda-bear':'Red Panda','giant-panda-bear':'Giant Panda','raccoon':'Raccoon'}\");","")
+              # Remove any raccoon reintroduction and add the six dogs when absent.
+              s=s.replace("text=text.replace(/'bee',/g,'').replace(/,'bee':'Bee'/g,'').replace(/'bumblebee',/g,'').replace(/,'bumblebee':'Bumblebee'/g,'');", "text=text.replace(/'bee',/g,'').replace(/,'bee':'Bee'/g,'').replace(/'bumblebee',/g,'').replace(/,'bumblebee':'Bumblebee'/g,'');")
+              if "golden-retriever" not in s[s.find('async function transformIndex'):s.find('self.addEventListener(\"fetch\"')]:
+                  s=s.replace("let text=await response.text();", "let text=await response.text();\n const dogIds=['golden-retriever','black-labrador','cockapoo','french-bulldog','staffy','border-collie'];\n if(!text.includes(\"'golden-retriever'\")){text=text.replace(/,'tuxedo-cat'\\];/,\",'tuxedo-cat','golden-retriever','black-labrador','cockapoo','french-bulldog','staffy','border-collie'];\");text=text.replace(/,'tuxedo-cat':'Tuxedo Cat'\\}/,\",'tuxedo-cat':'Tuxedo Cat','golden-retriever':'Golden Retriever','black-labrador':'Black Labrador','cockapoo':'Cockapoo','french-bulldog':'French Bulldog','staffy':'Staffy','border-collie':'Border Collie'}\");text=text.replace(/'tuxedo-cat':'tuxedo-cat.jpg'\\};/,\"'tuxedo-cat':'tuxedo-cat.jpg','golden-retriever':'golden-retriever.jpg','black-labrador':'black-labrador.jpg','cockapoo':'cockapoo.jpg','french-bulldog':'french-bulldog.jpg','staffy':'staffy.jpg','border-collie':'border-collie.jpg'};\");}\n text=text.replace(/'raccoon',/g,'').replace(/,'raccoon':'Raccoon'/g,'').replace(/'raccoon':'raccoon.jpg',/g,'');")
           p.write_text(s)
           PY
 
