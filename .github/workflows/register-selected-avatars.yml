@@ -54,14 +54,14 @@ jobs:
           if rp.exists(): rp.unlink()
           PY
 
-      - name: Update service-worker avatar cache and catalogue
+      - name: Update service-worker avatar cache
         run: |
           python - <<'PY'
           from pathlib import Path
           p=Path('sw.js')
           s=p.read_text()
-          s=s.replace('brighton-weekend-v76-avatar-assets','brighton-weekend-v78-avatar-assets')
-          s=s.replace('brighton-weekend-v77-avatar-assets','brighton-weekend-v78-avatar-assets')
+          s=s.replace('brighton-weekend-v76-avatar-assets','brighton-weekend-v79-avatar-assets')
+          s=s.replace('brighton-weekend-v77-avatar-assets','brighton-weekend-v79-avatar-assets')
           s=s.replace('brighton-weekend-v78-avatar-assets','brighton-weekend-v79-avatar-assets')
           s=s.replace('"./profile-icons/raccoon.jpg",','')
           s=s.replace("'raccoon':'raccoon.jpg',",'')
@@ -71,11 +71,6 @@ jobs:
           if './profile-icons/golden-retriever.jpg' not in s:
               additions=','.join('"./profile-icons/'+a+'"' for a in dog_assets)
               s=s.replace(marker, marker+','+additions)
-          if './profile-icons/golden-retriever.jpg' in s:
-              s=s.replace("// Avatar catalogue: retire legacy bee/raccoon entries and keep the current registry.","// Avatar catalogue: retire legacy bee entries and keep the current registry.")
-              s=s.replace("text=text.replace(/'raccoon',/g,'').replace(/,'raccoon':'Raccoon'/g,'').replace(/'raccoon':'raccoon.jpg',/g,'');","")
-              s=s.replace("text=text.replace(/'bee',/g,'').replace(/,'bee':'Bee'/g,'').replace(/'bumblebee',/g,'').replace(/,'bumblebee':'Bumblebee'/g,'');", "text=text.replace(/'bee',/g,'').replace(/,'bee':'Bee'/g,'').replace(/'bumblebee',/g,'').replace(/,'bumblebee':'Bumblebee'/g,'');")
-              s=s.replace("text=text.replace(/'winged-lion':'Winged Lion'\\}/,\"'winged-lion':'Winged Lion','brown-bear':'Brown Bear','red-panda-bear':'Red Panda','giant-panda-bear':'Giant Panda','raccoon':'Raccoon'}\\");","")
           p.write_text(s)
           PY
 
