@@ -2,14 +2,18 @@ name: Weekly event refresh
 
 on:
   workflow_dispatch:
-  # GitHub Actions schedules are UTC. Run at both 06:00 and 07:00 UTC and
-  # let the job below select the one that is 07:00 Europe/London. This keeps
-  # the refresh at 7am through the UK daylight-saving change.
   schedule:
-    - cron: '0 6,7 * * 2'
+    # GitHub Actions now supports IANA timezones. This runs at 07:00 every
+    # Tuesday in Europe/London, automatically following UK daylight saving.
+    - cron: '0 7 * * 2'
+      timezone: 'Europe/London'
 
 permissions:
   contents: write
+
+concurrency:
+  group: weekly-event-refresh
+  cancel-in-progress: false
 
 jobs:
   refresh-events:
@@ -18,37 +22,21 @@ jobs:
       - name: Check out Brighton Weekend
         uses: actions/checkout@v4
 
-      - name: Check local UK time
-        id: gate
-        run: |
-          HOUR=$(TZ=Europe/London date +%H)
-          DOW=$(TZ=Europe/London date +%u)
-          echo "Europe/London: $(TZ=Europe/London date)"
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || { [ "$DOW" = "2" ] && [ "$HOUR" = "07" ]; }; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Set up Python
-        if: steps.gate.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
       - name: Install scraper dependencies
-        if: steps.gate.outputs.run == 'true'
         run: |
           python -m pip install --upgrade pip
           pip install playwright beautifulsoup4 python-dateutil
           python -m playwright install --with-deps chromium
 
-      - name: Scrape all venue websites
-        if: steps.gate.outputs.run == 'true'
+      - name: Scrape all configured venue websites
         run: python scripts/scrape-events.py
 
       - name: Commit updated events file
-        if: steps.gate.outputs.run == 'true'
         run: |
           git config user.name 'Brighton Weekend event scraper'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
