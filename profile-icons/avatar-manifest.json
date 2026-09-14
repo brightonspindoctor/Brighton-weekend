@@ -18,5 +18,35 @@
     "label": "Tuxedo Cat",
     "file": "tuxedo-cat.jpg",
     "sha256": "51b58b066be05c36dd2124d7e6aaffb62ffa57910dba0327a25ba63ea167c5ff"
+  },
+  "golden-retriever": {
+    "label": "Golden Retriever",
+    "file": "golden-retriever.jpg",
+    "sha256": "534c7ccc2828f53a8a2cada8585267afdc2ecd1a44653ed8b9a87cdc2d9cd11a"
+  },
+  "black-labrador": {
+    "label": "Black Labrador",
+    "file": "black-labrador.jpg",
+    "sha256": "a3e240852537721a1dbea146fcac08a1b4014e64fff33a2d408557f260d00e51"
+  },
+  "cockapoo": {
+    "label": "Cockapoo",
+    "file": "cockapoo.jpg",
+    "sha256": "5f112b75b5dbbe0bd6c21fc58a836167ee4675998c2322616c6989b0f8a4e379"
+  },
+  "french-bulldog": {
+    "label": "French Bulldog",
+    "file": "french-bulldog.jpg",
+    "sha256": "69956549641e2ff815cf54ec488efc851033672a1774c6331b6c288bc09d9df3"
+  },
+  "staffy": {
+    "label": "Staffy",
+    "file": "staffy.jpg",
+    "sha256": "e68cf1926a219c2594450935636953cae1012e9b0894087bffb99ec977daab57"
+  },
+  "border-collie": {
+    "label": "Border Collie",
+    "file": "border-collie.jpg",
+    "sha256": "d81d9465db3ff4f96418789e2f4fbfe5294d10fa04ed62cc49dfdafa2f7cff8f"
   }
 }
