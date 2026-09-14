@@ -54,15 +54,14 @@ jobs:
           if rp.exists(): rp.unlink()
           PY
 
-      - name: Rebuild service worker from known-good version
+      - name: Repair service worker and avatar cache
         run: |
-          set -e
-          git show 0aff4b4a40f4071fe39aed30368191d91c66154c:sw.js > sw.js
           python - <<'PY'
           from pathlib import Path
           p=Path('sw.js')
           s=p.read_text()
-          s=s.replace('brighton-weekend-v76-avatar-assets','brighton-weekend-v80-avatar-assets')
+          for old in ['brighton-weekend-v76-avatar-assets','brighton-weekend-v77-avatar-assets','brighton-weekend-v78-avatar-assets','brighton-weekend-v79-avatar-assets']:
+              s=s.replace(old,'brighton-weekend-v80-avatar-assets')
           s=s.replace('"./profile-icons/raccoon.jpg",','')
           marker='"./profile-icons/orange-tabby.jpg"'
           assets=['black-cat.jpg','fluffy-cat.jpg','tuxedo-cat.jpg','golden-retriever.jpg','black-labrador.jpg','cockapoo.jpg','french-bulldog.jpg','staffy.jpg','border-collie.jpg']
@@ -87,5 +86,5 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add index.html sw.js profile-icons/avatar-manifest.json profile-icons
           git rm -f profile-icons/raccoon.jpg 2>/dev/null || true
-          git commit -m 'Finalise dog avatars and retire raccoon'
+          git commit -m 'Repair avatar cache and retire raccoon'
           git push
