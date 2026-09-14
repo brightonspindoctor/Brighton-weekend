@@ -54,23 +54,23 @@ jobs:
           if rp.exists(): rp.unlink()
           PY
 
-      - name: Update service-worker avatar cache
+      - name: Rebuild service worker from known-good version
         run: |
+          set -e
+          git show 0aff4b4a40f4071fe39aed30368191d91c66154c:sw.js > sw.js
           python - <<'PY'
           from pathlib import Path
           p=Path('sw.js')
           s=p.read_text()
-          s=s.replace('brighton-weekend-v76-avatar-assets','brighton-weekend-v79-avatar-assets')
-          s=s.replace('brighton-weekend-v77-avatar-assets','brighton-weekend-v79-avatar-assets')
-          s=s.replace('brighton-weekend-v78-avatar-assets','brighton-weekend-v79-avatar-assets')
+          s=s.replace('brighton-weekend-v76-avatar-assets','brighton-weekend-v80-avatar-assets')
           s=s.replace('"./profile-icons/raccoon.jpg",','')
-          s=s.replace("'raccoon':'raccoon.jpg',",'')
-          s=s.replace("'raccoon':'Raccoon'",'')
-          dog_assets=['golden-retriever.jpg','black-labrador.jpg','cockapoo.jpg','french-bulldog.jpg','staffy.jpg','border-collie.jpg']
           marker='"./profile-icons/orange-tabby.jpg"'
-          if './profile-icons/golden-retriever.jpg' not in s:
-              additions=','.join('"./profile-icons/'+a+'"' for a in dog_assets)
-              s=s.replace(marker, marker+','+additions)
+          assets=['black-cat.jpg','fluffy-cat.jpg','tuxedo-cat.jpg','golden-retriever.jpg','black-labrador.jpg','cockapoo.jpg','french-bulldog.jpg','staffy.jpg','border-collie.jpg']
+          if './profile-icons/black-cat.jpg' not in s:
+              s=s.replace(marker, marker+','+','.join('"./profile-icons/'+a+'"' for a in assets))
+          start=s.index('async function transformIndex(response){')
+          end=s.index('\nself.addEventListener("fetch"', start)
+          s=s[:start]+'async function transformIndex(response){ return response; }\n'+s[end:]
           p.write_text(s)
           PY
 
@@ -87,5 +87,5 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add index.html sw.js profile-icons/avatar-manifest.json profile-icons
           git rm -f profile-icons/raccoon.jpg 2>/dev/null || true
-          git commit -m 'Keep dog avatars and raccoon removal consistent'
+          git commit -m 'Finalise dog avatars and retire raccoon'
           git push
