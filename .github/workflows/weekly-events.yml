@@ -35,6 +35,7 @@ jobs:
         run: |
           if [[ -f .restore-events-once ]]; then
             echo 'restored=true' >> "$GITHUB_OUTPUT"
+            git fetch --unshallow
             git show 02cb2f3b15d96da769f2052fc9a4da781b761901:events.json > events.json
             rm .restore-events-once
             git config user.name 'Brighton Weekend event scraper'
