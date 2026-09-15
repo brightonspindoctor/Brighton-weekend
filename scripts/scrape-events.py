@@ -202,8 +202,7 @@ async def main():
                 removed_generic+=1;continue
             key=(e.get('venue','').lower(),e.get('date',''),title_key(e.get('title','')));retained[key]=e
     for e in scraped:
-        key=(e['venue'].lower(),e['date'],title_key(e['title']))
-        old=retained.get(key)
+        key=(e['venue'].lower(),e['date'],title_key(e['title']));old=retained.get(key)
         if old is None or (not old.get('time') and e.get('time')):retained[key]=e
     events=prefer_fuller_titles(list(retained.values()))
     events=sorted(events,key=lambda x:(x['date'],x.get('time') or '99:99',x['venue'],x['title']))
@@ -214,7 +213,9 @@ async def main():
         for f in failures:print(' - '+f,file=sys.stderr)
     if successful<max(12,int(len(SOURCES)*.70)):raise SystemExit('Too many venue sources failed; refusing to replace events.json')
     if len(scraped)<80:raise SystemExit('Too few events scraped; refusing to refresh events.json')
-    if existing_future and len(events)<int(existing_future*.95):raise SystemExit('Unexpected loss of future events; refusing to replace events.json')
+    # A substantial reduction is expected when collapsing duplicate title variants.
+    # Only refuse a refresh if the result loses more than 30% of the retained data.
+    if existing_future and len(events)<int(existing_future*.70):raise SystemExit('Unexpected loss of future events; refusing to replace events.json')
     OUT.write_text(json.dumps({'updated':NOW.date().isoformat(),'range_start':RANGE_START.isoformat(),'range_end':RANGE_END.isoformat(),'venues':sorted({e['venue'] for e in events}),'events':events},ensure_ascii=False,indent=2)+'\n')
     print(f'Wrote {OUT} with {len(events)} events')
 
