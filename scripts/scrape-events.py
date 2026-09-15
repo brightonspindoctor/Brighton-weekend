@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh Brighton Weekend events from configured venue sites.
-
-Brighton Dome gets an extra pass through its 2026 event search index and the
-individual event pages linked from that index. The main What's On page is a
-curated/limited view and does not expose the full future programme in one page.
-"""
+"""Refresh Brighton Weekend events from configured venue sites."""
 import asyncio, json, re, sys
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -25,8 +20,24 @@ MONTHS=r'Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)
 DATE_RE=re.compile(rf'\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\.?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s*(?:\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?)\b',re.I)
 TIME_RE=re.compile(r'\b(\d{1,2}(?::\d{2})?\s*(?:am|pm))\b',re.I)
 CATEGORIES={'Comedy':['comedy','comedian','stand-up','stand up','laughs'],'Club':['club','dj','dnb','drum & bass','rave','techno','house night','party'],'Theatre':['theatre','theater','play','musical','west end'],'Dance':['dance','ballet','contemporary dance'],'Family':['family','kids','children','storytelling','baby'],'Talk':['talk','in conversation','lecture','spoken word','author'],'Sport':['football','boxing','wrestling','sport','racecourse'],'Music':['gig','live','band','concert','tour','festival','dj set','orchestra','singer']}
+GENERIC_TITLES={'comedy','classical music','music','talks & debate','talks and debate','dance','theatre','family',"what's on",'events','upcoming events','get tickets','buy tickets','book tickets','learn more','more info','more info & tickets','find out more','event details','sold out','on sale','on sale today','tickets','read more','view event'}
+CTA_PREFIXES=('get tickets','buy tickets','book tickets','learn more','more info','find out more','event details','on sale','sold out')
 
 def clean(s): return re.sub(r'\s+',' ',s or '').strip()
+def valid_title(title):
+    t=clean(title); low=t.lower()
+    if not t or low in GENERIC_TITLES:return False
+    if any(low.startswith(p) for p in CTA_PREFIXES):return False
+    if len(t)<3 or len(t)>180:return False
+    return True
+
+def slug_title(url):
+    slug=urlparse(url).path.rstrip('/').split('/')[-1]
+    slug=re.sub(r'^[A-Za-z0-9_-]+-', '', slug)
+    slug=re.sub(r'[-_]+',' ',slug).strip()
+    if not slug:return ''
+    return clean(slug.title())
+
 def category(title,text=''):
     hay=clean(f'{title} {text}').lower()
     for cat,words in CATEGORIES.items():
@@ -43,7 +54,7 @@ def parse_dt(value):
 
 def normalise(raw,venue,page_url):
     title=clean(raw.get('name') or raw.get('title')); start_raw=raw.get('startDate') or raw.get('start_date') or raw.get('date'); start=parse_dt(start_raw)
-    if not title or not start or not (RANGE_START<=start.date()<=RANGE_END):return None
+    if not valid_title(title) or not start or not (RANGE_START<=start.date()<=RANGE_END):return None
     blob=clean(' '.join(str(raw.get(k,'')) for k in ('name','description','status'))).lower()
     if any(x in blob for x in ('cancelled','canceled','postponed','event cancelled')):return None
     end=parse_dt(raw.get('endDate') or raw.get('end_date')); offers=raw.get('offers'); offer_url=offers.get('url') if isinstance(offers,dict) else None
@@ -79,15 +90,21 @@ def dom_events(html,venue,page_url,detail_only=False):
         if not dt or not (RANGE_START<=dt.date()<=RANGE_END):continue
         links=node.find_all('a',href=True)
         if detail_only:links=[a for a in links if '/whats-on/' in urlparse(urljoin(page_url,a['href'])).path]
-        if not links:continue
-        title='';href=page_url
-        for a in links:
-            t=clean(a.get_text(' ',strip=True))
-            if 3<=len(t)<=180 and t.lower() not in {'more info','more info & tickets','buy tickets','book tickets','find out more','event details'}:
-                title=t;href=urljoin(page_url,a['href']);break
-        if not title:
-            h=node.find(['h1','h2','h3','h4']);title=clean(h.get_text(' ',strip=True)) if h else ''
-        if not title or title.lower() in {"what's on",'events','upcoming events'}:continue
+        h=node.find(['h1','h2','h3','h4'])
+        title=clean(h.get_text(' ',strip=True)) if h else ''
+        href=page_url
+        if not valid_title(title):
+            title=''
+            for a in links:
+                t=clean(a.get_text(' ',strip=True)); u=urljoin(page_url,a['href'])
+                if valid_title(t) and '/whats-on/' in urlparse(u).path:
+                    title=t;href=u;break
+            if not title and links:
+                for a in links:
+                    u=urljoin(page_url,a['href']); candidate=slug_title(u)
+                    if valid_title(candidate) and '/whats-on/' in urlparse(u).path:
+                        title=candidate;href=u;break
+        if not valid_title(title):continue
         times=TIME_RE.findall(text);tm=times[0] if times else None;end_tm=times[-1] if len(times)>1 else None
         raw={'name':title,'startDate':f'{dt.date().isoformat()}T{tm or "00:00"}','url':href,'description':text}
         if end_tm:raw['endDate']=f'{dt.date().isoformat()}T{end_tm}'
@@ -149,18 +166,20 @@ async def main():
     for e in all_events:
         key=(e['venue'].lower(),e['date'],re.sub(r'[^a-z0-9]+',' ',e['title'].lower()).strip());old=scraped.get(key)
         if old is None or (not old.get('time') and e.get('time')):scraped[key]=e
-    existing=json.loads(OUT.read_text()) if OUT.exists() else {};retained={}
+    existing=json.loads(OUT.read_text()) if OUT.exists() else {};retained={};removed_generic=0
     for e in existing.get('events',[]):
         try:d=datetime.fromisoformat(e['date']).date()
         except Exception:continue
         if RANGE_START<=d<=RANGE_END:
+            if not valid_title(e.get('title','')):
+                removed_generic+=1;continue
             key=(e.get('venue','').lower(),e.get('date',''),re.sub(r'[^a-z0-9]+',' ',e.get('title','').lower()).strip());retained[key]=e
     for k,e in scraped.items():
         old=retained.get(k)
         if old is None or (not old.get('time') and e.get('time')):retained[k]=e
     events=sorted(retained.values(),key=lambda x:(x['date'],x.get('time') or '99:99',x['venue'],x['title']))
-    existing_future=sum(1 for e in existing.get('events',[]) if e.get('date','')>=RANGE_START.isoformat())
-    print(f'Successful sources: {successful}/{len(SOURCES)}; scraped: {len(scraped)}; retained future: {existing_future}; final: {len(events)}')
+    existing_future=sum(1 for e in existing.get('events',[]) if e.get('date','')>=RANGE_START.isoformat() and valid_title(e.get('title','')))
+    print(f'Successful sources: {successful}/{len(SOURCES)}; scraped: {len(scraped)}; retained future: {existing_future}; removed generic: {removed_generic}; final: {len(events)}')
     if failures:
         print('Source failures:',file=sys.stderr)
         for f in failures:print(' - '+f,file=sys.stderr)
