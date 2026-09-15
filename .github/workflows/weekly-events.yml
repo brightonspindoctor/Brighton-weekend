@@ -2,6 +2,12 @@ name: Weekly event refresh
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'event-sources.json'
+      - 'scripts/scrape-events.py'
+      - 'scripts/scrape-discovery.py'
+      - '.github/workflows/weekly-events.yml'
   schedule:
     # GitHub Actions now supports IANA timezones. This runs at 07:00 every
     # Tuesday in Europe/London, automatically following UK daylight saving.
@@ -35,6 +41,9 @@ jobs:
 
       - name: Scrape all configured venue websites
         run: python scripts/scrape-events.py
+
+      - name: Scrape broad Brighton discovery calendars
+        run: python scripts/scrape-discovery.py
 
       - name: Commit updated events file
         run: |
