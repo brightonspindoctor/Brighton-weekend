@@ -1,0 +1,48 @@
+name: Restore group leave action
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/restore-group-leave.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Patch group UI
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          old='''<div class="group-manager-row"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong>'''
+          new='''<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong>'''
+          if old not in s:
+              raise SystemExit('group row template not found')
+          s=s.replace(old,new,1)
+          marker='''function renderGroupManager(){'''
+          leave='''async function leaveGroup(groupId,groupName,btn){\n if(!groupId)return;\n if(!confirm(`Leave ${groupName}? You can join it again later.`))return;\n btn.disabled=true;\n try{\n  const result=await rpc('bw_leave_group',{p_user_id:uid(),p_group_id:groupId});\n  const r=Array.isArray(result)?result[0]:result;\n  if(!r?.ok)throw new Error(r?.message||'Could not leave group');\n  await loadGroups();\n  await loadGroupHappenings();\n  renderGroupManager();\n  renderOnboardingGroups();\n  renderPeople();\n }catch(e){btn.disabled=false;alert('Could not leave the group. '+(e.message||e))}\n}\n'''
+          if leave not in s:
+              s=s.replace(marker,leave+marker,1)
+          oldline='''el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} members · ${g.is_private?'Private':'Open'}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div></div>`).join(''):''' 
+          newline='''el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} members · ${g.is_private?'Private':'Open'}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div><button type="button" class="secondary small-btn" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button></div>`).join(''):'''
+          if oldline not in s:
+              raise SystemExit('group manager render line not found')
+          s=s.replace(oldline,newline,1)
+          marker2="$('manageGroups').onclick=()=>showWelcome('groups');"
+          handler="""$('manageGroups').onclick=()=>showWelcome('groups');\ndocument.addEventListener('click',e=>{const b=e.target.closest('[data-leave-group]');if(!b)return;leaveGroup(b.dataset.leaveGroup,b.dataset.leaveName,b)});"""
+          if marker2 not in s:
+              raise SystemExit('group management handler marker not found')
+          s=s.replace(marker2,handler,1)
+          p.write_text(s)
+          PY
+      - name: Commit
+        run: |
+          git config user.name 'Brighton Weekend automation'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git commit -m 'Restore leave group action'
+          git push origin HEAD:main
