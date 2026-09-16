@@ -15,7 +15,7 @@ from dateutil import parser as dateparser
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
 
 ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'events.json'; TZ=ZoneInfo('Europe/London'); NOW=datetime.now(TZ); START=NOW.date(); END=(NOW+timedelta(days=280)).date()
-VENUES={"Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","The Hope & Ruin","The Prince Albert","A L P H A B E T","The Pipeline","Brighton Racecourse","The Gladstone","Babble","Shelter Hall","Amex Stadium"}
+VENUES={"Brighton Centre","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","The Hope & Ruin","The Prince Albert","A L P H A B E T","The Pipeline","Brighton Racecourse","The Gladstone","Babble","Shelter Hall","Amex Stadium"}
 SOURCES=["https://www.visitbrighton.com/whats-on/Brighton","https://www.eventbrite.co.uk/d/united-kingdom--brighton/events/"]
 MONTHS=r"Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?"
 DATE_RE=re.compile(rf"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\.?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s*(?:\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?)\b",re.I); TIME_RE=re.compile(r"\b(\d{1,2}(?::\d{2})?\s*(?:am|pm))\b",re.I)
@@ -53,7 +53,7 @@ def venue_from_text(text):
  low=clean(text).lower()
  for v in sorted(VENUES,key=len,reverse=True):
   if v.lower() in low:return v
- for a,v in {"concorde2":"Concorde 2","concorde 2":"Concorde 2","brighton dome":"Brighton Dome","theatre royal":"Theatre Royal Brighton"}.items():
+ for a,v in {"concorde2":"Concorde 2","concorde 2":"Concorde 2","theatre royal":"Theatre Royal Brighton"}.items():
   if a in low:return v
  return None
 def category(title,text):
