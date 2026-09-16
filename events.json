@@ -3708,6 +3708,16 @@
       "source_url": "https://www.concorde2.co.uk/whats-on"
     },
     {
+      "id": "2026-10-22-dust-buff-dusters",
+      "title": "Buff Dusters",
+      "date": "2026-10-22",
+      "venue": "DUST",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/buff-dusters-p2940281"
+    },
+    {
       "id": "2026-10-22-19-00-every-hell",
       "title": "Every Hell",
       "date": "2026-10-22",
@@ -3715,6 +3725,16 @@
       "time": null,
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust"
+    },
+    {
+      "id": "2026-10-22-dust-openings",
+      "title": "Openings",
+      "date": "2026-10-22",
+      "venue": "DUST",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/Brighton"
     },
     {
       "id": "2026-10-22-greendoorstore-pete-fij",
@@ -3863,6 +3883,16 @@
       "time": null,
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
       "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-10-23-dust-buff-dusters",
+      "title": "Buff Dusters",
+      "date": "2026-10-23",
+      "venue": "DUST",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/Brighton"
     },
     {
       "id": "2026-10-23-green-door-store-mutations-festival-2026",
@@ -4722,16 +4752,24 @@
       "ticket_url": "https://www.theoldmarket.com/shows"
     },
     {
-      "id": "2026-10-31-the-prince-albert-moonpunx-19-albertween-halloween",
-      "title": "MoonPunx #19 Albertween! Halloween",
+      "id": "2026-10-31-the-prince-albert-moonpunx-19-albertween-halloween-at-the-prince-albert",
+      "title": "Moonpunx #19 Albertween! Halloween at the Prince Albert",
       "date": "2026-10-31",
       "venue": "The Prince Albert",
-      "time": null,
-      "finish_time": null,
-      "category": "Club",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/moonpunx-19-albertween-halloween-at-the-prince-albert-p2928481"
+    },
+    {
+      "id": "2026-10-31-the-prince-albert-openings",
+      "title": "Openings",
+      "date": "2026-10-31",
+      "venue": "The Prince Albert",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/Brighton"
     },
     {
       "id": "2026-10-31-theatreroyalbrighton-horrible-histories-awful-egyptians",
