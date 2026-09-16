@@ -1,4 +1,5 @@
 name: Restore group leave action
+# One-shot repair for the group membership UI.
 on:
   workflow_dispatch:
   push:
