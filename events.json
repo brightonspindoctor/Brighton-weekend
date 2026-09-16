@@ -3727,16 +3727,6 @@
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust"
     },
     {
-      "id": "2026-10-22-dust-openings",
-      "title": "Openings",
-      "date": "2026-10-22",
-      "venue": "DUST",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/Brighton"
-    },
-    {
       "id": "2026-10-22-greendoorstore-pete-fij",
       "title": "Pete Fij",
       "date": "2026-10-22",
@@ -4760,16 +4750,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.visitbrighton.com/whats-on/moonpunx-19-albertween-halloween-at-the-prince-albert-p2928481"
-    },
-    {
-      "id": "2026-10-31-the-prince-albert-openings",
-      "title": "Openings",
-      "date": "2026-10-31",
-      "venue": "The Prince Albert",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/Brighton"
     },
     {
       "id": "2026-10-31-theatreroyalbrighton-horrible-histories-awful-egyptians",
@@ -6583,16 +6563,6 @@
       "ticket_url": "https://www.ents24.com/brighton-events/the-pipeline"
     },
     {
-      "id": "2026-11-21-the-prince-albert-openings",
-      "title": "Openings",
-      "date": "2026-11-21",
-      "venue": "The Prince Albert",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/Brighton"
-    },
-    {
       "id": "2026-11-21-the-prince-albert-the-jack-cades-live-at-the-prince-albert",
       "title": "The Jack Cades Live at the Prince Albert",
       "date": "2026-11-21",
@@ -7352,16 +7322,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.visitbrighton.com/whats-on/komedia-christmas-party-p2067461"
-    },
-    {
-      "id": "2026-12-03-komedia-openings",
-      "title": "Openings",
-      "date": "2026-12-03",
-      "venue": "Komedia",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/Brighton"
     },
     {
       "id": "2026-12-03-the-hope-ruin-makthaverskan",
