@@ -8,6 +8,7 @@ on:
       - 'event-sources.json'
       - 'scripts/scrape-events.py'
       - 'scripts/scrape-discovery.py'
+      - 'scripts/prepare-events.py'
       - 'scripts/validate-events.py'
       - 'requirements-events.txt'
       - '.github/workflows/weekly-events.yml'
@@ -48,6 +49,9 @@ jobs:
 
       - name: Scrape broad Brighton discovery calendars
         run: python scripts/scrape-discovery.py
+
+      - name: Prepare event data
+        run: python scripts/prepare-events.py
 
       - name: Validate event data
         run: python scripts/validate-events.py
