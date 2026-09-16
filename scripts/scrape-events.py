@@ -140,29 +140,6 @@ def dom_events(html,venue,page_url,detail_only=False):
             out.append(e)
     return out
 
-def patterns_recurring_events():
-    """Patterns publishes recurring Friday/Saturday programming without individual dates.
-    Turn the venue's explicitly advertised weekly programme into dated events so the app
-    does not incorrectly present Patterns as empty when the site's CMS omits date records.
-    """
-    out=[]
-    day=RANGE_START
-    while day<=RANGE_END:
-        if day.weekday()==4:  # Friday
-            for title,url in (
-                ('Foundations','https://patternsbrighton.com/foundations/'),
-                ('FNKY FRDY','https://patternsbrighton.com/fnky-frdy/')
-            ):
-                out.append({'id':re.sub(r'[^a-z0-9]+','-',f'{day}-patterns-{title}'.lower()).strip('-'),
-                            'title':title,'date':day.isoformat(),'venue':'Patterns','time':'22:00','finish_time':'04:00',
-                            'category':'Club','ticket_url':url,'source_url':url})
-        elif day.weekday()==5:  # Saturday
-            url='https://patternsbrighton.com/bookings/'
-            out.append({'id':f'{day}-patterns-bottomless-brunch','title':'Bottomless Brunch','date':day.isoformat(),
-                        'venue':'Patterns','time':'13:00','finish_time':'15:00','category':'Other','ticket_url':url,'source_url':url})
-        day += timedelta(days=1)
-    return out
-
 async def get_html(browser,url):
     page=await browser.new_page();page.set_default_timeout(25000)
     try:
@@ -195,11 +172,6 @@ async def scrape_source(browser,source):
     venue=source['venue'];is_dome_search='brightondome.org/search/' in source['url']
     events=jsonld_events(html,venue,final)
     events.extend(dom_events(html,venue,final,detail_only=is_dome_search))
-    if venue=='Patterns':
-        # The current Patterns CMS exposes recurring programming as evergreen pages
-        # rather than dated Event schema, so supplement the normal scrape from the
-        # venue's own published weekly schedule.
-        events.extend(patterns_recurring_events())
     if venue=='Brighton Dome':
         soup=BeautifulSoup(html,'html.parser');urls=set()
         for a in soup.find_all('a',href=True):
@@ -241,6 +213,8 @@ async def main():
         for f in failures:print(' - '+f,file=sys.stderr)
     if successful<max(12,int(len(SOURCES)*.70)):raise SystemExit('Too many venue sources failed; refusing to replace events.json')
     if len(scraped)<80:raise SystemExit('Too few events scraped; refusing to refresh events.json')
+    # A substantial reduction is expected when collapsing duplicate title variants.
+    # Only refuse a refresh if the result loses more than 30% of the retained data.
     if existing_future and len(events)<int(existing_future*.70):raise SystemExit('Unexpected loss of future events; refusing to replace events.json')
     OUT.write_text(json.dumps({'updated':NOW.date().isoformat(),'range_start':RANGE_START.isoformat(),'range_end':RANGE_END.isoformat(),'venues':sorted({e['venue'] for e in events}),'events':events},ensure_ascii=False,indent=2)+'\n')
     print(f'Wrote {OUT} with {len(events)} events')
