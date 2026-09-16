@@ -7,11 +7,10 @@ on:
       - 'event-sources.json'
       - 'scripts/scrape-events.py'
       - 'scripts/scrape-discovery.py'
+      - 'scripts/clean-event-data.py'
       - '.github/workflows/weekly-events.yml'
       - '.restore-events-once'
   schedule:
-    # GitHub Actions now supports IANA timezones. This runs at 07:00 every
-    # Tuesday in Europe/London, automatically following UK daylight saving.
     - cron: '0 7 * * 2'
       timezone: 'Europe/London'
 
@@ -67,6 +66,10 @@ jobs:
       - name: Scrape broad Brighton discovery calendars
         if: steps.restore.outputs.restored != 'true'
         run: python scripts/scrape-discovery.py
+
+      - name: Remove excluded event classes
+        if: steps.restore.outputs.restored != 'true'
+        run: python scripts/clean-event-data.py
 
       - name: Commit updated events file
         if: steps.restore.outputs.restored != 'true'
