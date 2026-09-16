@@ -760,9 +760,24 @@ async function joinGroup(groupId,pin=null,privateName=null){
   hide('joinGroupPanel');
  }catch(e){alert('Could not join group. '+e.message)}
 }
+async function leaveGroup(groupId,groupName,btn){
+ if(!groupId)return;
+ if(!confirm(`Leave ${groupName}? You can join it again later.`))return;
+ btn.disabled=true;
+ try{
+  const result=await rpc('bw_leave_group',{p_user_id:uid(),p_group_id:groupId});
+  const r=Array.isArray(result)?result[0]:result;
+  if(!r?.ok)throw new Error(r?.message||'Could not leave group');
+  await loadGroups();
+  await loadGroupHappenings();
+  renderGroupManager();
+  renderOnboardingGroups();
+  renderPeople();
+ }catch(e){btn.disabled=false;alert('Could not leave the group. '+(e.message||e))}
+}
 function renderGroupManager(){
  const el=$('groupManager'); if(!el)return;
- el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} members · ${g.is_private?'Private':'Open'}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div></div>`).join(''):'<div class="group-meta">No groups yet.</div>';
+ el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} members · ${g.is_private?'Private':'Open'}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div><button type="button" class="secondary small-btn" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button></div>`).join(''):'<div class="group-meta">No groups yet.</div>';
 }
 
 window.act=async(id,status)=>{
@@ -968,6 +983,7 @@ $('refresh').onclick=async()=>{
 };
 $('changeName').onclick=()=>showWelcome('name');
 $('manageGroups').onclick=()=>showWelcome('groups');
+document.addEventListener('click',e=>{const b=e.target.closest('[data-leave-group]');if(!b)return;leaveGroup(b.dataset.leaveGroup,b.dataset.leaveName,b)});
 $('customVenue').onchange=toggleOtherVenue;
 $('toggleCustomEvent').onclick=()=>{const panel=$('customEventPanel');const open=panel.classList.toggle('collapsed')===false;$('toggleCustomEvent').textContent=open?'− Hide form':'＋ Add event';if(open) setTimeout(()=>$('customTitle').focus(),50)};
 $('addCustomEventBtn').onclick=addCustomEvent;
