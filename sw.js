@@ -1,4 +1,4 @@
-const CACHE="brighton-weekend-v103-assets";
+const CACHE="brighton-weekend-v104-assets";
 const CORE=["./","./index.html","./manifest.webmanifest","./favicon.ico","./icons/icon-32.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-192-maskable.png","./icons/icon-512-maskable.png","./icons/apple-touch-icon.png","./about.html","./privacy.html","./terms.html","./profile-icons/brown-bear.svg","./profile-icons/red-panda-bear.svg","./profile-icons/giant-panda-bear.svg","./profile-icons/moose.jpg","./profile-icons/orange-tabby.jpg","./profile-icons/black-cat.jpg","./profile-icons/fluffy-cat.jpg","./profile-icons/tuxedo-cat.jpg"];
 self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
@@ -10,11 +10,43 @@ async function transformIndex(response){
  const dayCode=`<script>(function(){
   const DAYS=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
   const key='bw_interest_days';
+  let lastState='';
   function selected(){try{const x=JSON.parse(localStorage.getItem(key)||'null');return Array.isArray(x)&&x.length?new Set(x.map(Number)):new Set([0,1,2,3,4,5,6])}catch(e){return new Set([0,1,2,3,4,5,6])}}
-  function apply(){const s=selected();document.querySelectorAll('[data-bw-day]').forEach(c=>c.checked=s.has(Number(c.dataset.bwDay)));const days=[...document.querySelectorAll('.day')];days.forEach((el)=>{const m=el.textContent.match(/^(MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY)/);const show=!!m&&s.has(DAYS.indexOf(m[1][0]+m[1].slice(1).toLowerCase()));el.style.display=show?'':'none';let n=el.nextElementSibling;while(n&&!n.classList.contains('day')){n.style.display=show?'':'none';n=n.nextElementSibling;}});}
-  function setup(){const grid=document.getElementById('bwDayGrid');if(!grid)return;const s=selected();grid.querySelectorAll('[data-bw-day]').forEach(c=>{c.checked=s.has(Number(c.dataset.bwDay));c.onchange=()=>{const vals=[...grid.querySelectorAll('[data-bw-day]:checked')].map(x=>Number(x.dataset.bwDay));localStorage.setItem(key,JSON.stringify(vals.length?vals:[0,1,2,3,4,5,6]));apply();};});apply();}
-  window.addEventListener('load',()=>setTimeout(setup,100));
-})();</script>`;
+  function apply(){
+   const s=selected();
+   document.querySelectorAll('[data-bw-day]').forEach(c=>c.checked=s.has(Number(c.dataset.bwDay)));
+   document.querySelectorAll('.day').forEach(el=>{
+    const text=(el.textContent||'').trim();
+    const m=text.match(/^(MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY)\\b/i);
+    if(!m)return;
+    const idx=DAYS.indexOf(m[1].charAt(0).toUpperCase()+m[1].slice(1).toLowerCase());
+    const show=s.has(idx);
+    el.style.display=show?'':'none';
+    let n=el.nextElementSibling;
+    while(n&&!n.classList.contains('day')){n.style.display=show?'':'none';n=n.nextElementSibling;}
+   });
+  }
+  function setup(){
+   const grid=document.getElementById('bwDayGrid');
+   if(!grid)return;
+   const s=selected();
+   grid.querySelectorAll('[data-bw-day]').forEach(c=>{
+    c.checked=s.has(Number(c.dataset.bwDay));
+    if(c.dataset.bwBound==='1')return;
+    c.dataset.bwBound='1';
+    c.onchange=()=>{
+     const vals=[...grid.querySelectorAll('[data-bw-day]:checked')].map(x=>Number(x.dataset.bwDay));
+     localStorage.setItem(key,JSON.stringify(vals.length?vals:[0,1,2,3,4,5,6]));
+     apply();
+    };
+   });
+   apply();
+  }
+  function refresh(){const state=[...selected()].sort().join(',');if(state!==lastState){lastState=state;}setup();}
+  window.addEventListener('load',()=>{setTimeout(refresh,100);setTimeout(refresh,500);setTimeout(refresh,1200);});
+  const observer=new MutationObserver(()=>{setup();});
+  observer.observe(document.documentElement,{childList:true,subtree:true});
+ })();</script>`;
  let patched=html.replace('</head>',dayCss+'</head>');
  patched=patched.replace("const start=getThursday(), end=new Date(friday);end.setDate(end.getDate()+2);", "const start=new Date(friday);start.setDate(start.getDate()-4); const end=new Date(start);end.setDate(end.getDate()+6);");
  patched=patched.replace("const start=getThursday(), end=new Date(start);end.setDate(end.getDate()+3);", "const start=new Date(friday);start.setDate(start.getDate()-4); const end=new Date(start);end.setDate(end.getDate()+6);");
