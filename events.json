@@ -7,6 +7,7 @@
     "Amex Stadium",
     "Babble",
     "Brighton Centre",
+    "Brighton Dome - Concert Hall",
     "Brighton Racecourse",
     "CHALK",
     "Concorde 2",
@@ -180,6 +181,26 @@
       "ticket_url": "https://www.komedia.co.uk/shows/tatty-macleod-things-my-mother-did/?eid=20659"
     },
     {
+      "id": "2026-09-17-brighton-dome-concert-hall-freya-ridings-mother-of-pearl-tour",
+      "title": "Freya Ridings: Mother of Pearl Tour",
+      "date": "2026-09-17",
+      "venue": "Brighton Dome - Concert Hall",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/"
+    },
+    {
+      "id": "2026-09-17-brighton-dome-concert-hall-you-might-also-like",
+      "title": "You Might Also Like",
+      "date": "2026-09-17",
+      "venue": "Brighton Dome - Concert Hall",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/"
+    },
+    {
       "id": "2026-09-17-chalk-vundabar-yot-club",
       "title": "Vundabar, Yot Club",
       "date": "2026-09-17",
@@ -304,6 +325,16 @@
       "finish_time": "04:00",
       "category": "Club",
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
+    },
+    {
+      "id": "2026-09-18-brighton-dome-concert-hall-paul-simon-s-graceland-reimagined",
+      "title": "Paul Simon's 'Graceland' Reimagined",
+      "date": "2026-09-18",
+      "venue": "Brighton Dome - Concert Hall",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/"
     },
     {
       "id": "2026-09-18-the-hope-ruin-tv-smith-the-bored-teenagers-fractured",
@@ -782,6 +813,16 @@
       "finish_time": "19:00",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/sandro-ford-lager-than-life/?eid=19281"
+    },
+    {
+      "id": "2026-09-22-brighton-dome-concert-hall-michael-ball",
+      "title": "Michael Ball",
+      "date": "2026-09-22",
+      "venue": "Brighton Dome - Concert Hall",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/"
     },
     {
       "id": "2026-09-22-chalk-live",
@@ -6787,6 +6828,16 @@
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
+      "id": "2026-11-26-brighton-dome-concert-hall-ben-folds-the-paper-airplane-request-tour",
+      "title": "Ben Folds: The Paper Airplane Request Tour",
+      "date": "2026-11-26",
+      "venue": "Brighton Dome - Concert Hall",
+      "time": "19:15",
+      "finish_time": "23:00",
+      "category": "Theatre",
+      "ticket_url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/"
+    },
+    {
       "id": "2026-11-26-concorde-2-graham-coxon",
       "title": "Graham Coxon",
       "date": "2026-11-26",
@@ -9188,6 +9239,16 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
+      "id": "2027-02-25-komedia-comic-boom-comedy-club",
+      "title": "Comic Boom Comedy Club",
+      "date": "2027-02-25",
+      "venue": "Komedia",
+      "time": "19:30",
+      "finish_time": "18:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
       "id": "2027-02-25-chalk-iceage",
       "title": "Iceage",
       "date": "2027-02-25",
@@ -9546,6 +9607,16 @@
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
+      "id": "2027-03-25-komedia-comic-boom-comedy-club",
+      "title": "Comic Boom Comedy Club",
+      "date": "2027-03-25",
+      "venue": "Komedia",
+      "time": "19:30",
+      "finish_time": "18:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
       "id": "2027-03-26-komedia-komedia-comedy-club-fri-26-mar-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club Fri 26 Mar 2027 8:00 PM ( Doors: 7:00 PM )",
       "date": "2027-03-26",
@@ -9724,6 +9795,16 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.theoldmarket.com/shows"
+    },
+    {
+      "id": "2027-04-29-komedia-comic-boom-comedy-club",
+      "title": "Comic Boom Comedy Club",
+      "date": "2027-04-29",
+      "venue": "Komedia",
+      "time": "19:30",
+      "finish_time": "18:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
     {
       "id": "2027-05-01-komedia-james-phelan-the-man-who-was-magic-tue-5-jan-2027-8-00-pm-doors-7-00-pm",
