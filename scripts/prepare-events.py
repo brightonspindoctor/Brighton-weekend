@@ -12,7 +12,9 @@ DOME_VENUES = {
     "dome - concert hall",
     "dome - corn exchange",
     "dome - studio theatre",
+    "brighton dome - concert hall",
 }
+BEN_FOLDS_TITLE = "ben folds"
 PATTERNS_RECURRING = (
     "foundations",
     "fnky frdy",
@@ -38,6 +40,9 @@ def fuller_title(a, b):
         return a if len(ka) > len(kb) else b
     return None
 
+def is_ben_folds_exception(venue, title):
+    return venue == "brighton dome - concert hall" and BEN_FOLDS_TITLE in title_key(title)
+
 data = json.loads(DATA.read_text())
 events = data.get("events", [])
 kept = []
@@ -46,7 +51,7 @@ for event in events:
     venue = str(event.get("venue") or "").strip().lower()
     title = str(event.get("title") or "").strip()
     low = title.lower()
-    if venue in DOME_VENUES:
+    if venue in DOME_VENUES and not is_ben_folds_exception(venue, title):
         removed["dome"] += 1; continue
     if venue == "patterns" and any(marker in low for marker in PATTERNS_RECURRING):
         removed["patterns_recurring"] += 1; continue
