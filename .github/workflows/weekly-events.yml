@@ -13,7 +13,6 @@ on:
       - 'requirements-events.txt'
       - '.github/workflows/weekly-events.yml'
   schedule:
-    # Run off the hour to reduce GitHub Actions scheduling contention.
     - cron: '17 7 * * *'
       timezone: 'Europe/London'
 
@@ -30,32 +29,25 @@ jobs:
     steps:
       - name: Check out Brighton Weekend
         uses: actions/checkout@v5
-
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
           python-version: '3.12'
           cache: pip
           cache-dependency-path: requirements-events.txt
-
       - name: Install scraper dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements-events.txt
           python -m playwright install --with-deps chromium
-
       - name: Scrape configured venue websites
         run: python scripts/scrape-events.py
-
       - name: Scrape broad Brighton discovery calendars
         run: python scripts/scrape-discovery.py
-
       - name: Prepare event data
         run: python scripts/prepare-events.py
-
       - name: Validate event data
         run: python scripts/validate-events.py
-
       - name: Commit updated events file
         run: |
           git config user.name 'Brighton Weekend event scraper'
@@ -66,6 +58,47 @@ jobs:
             exit 0
           fi
           git commit -m 'Refresh event data'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+
+  restore-group-leave:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Add leave controls to group manager
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          row_old='''<div class="group-manager-row"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong>'''
+          row_new='''<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong>'''
+          if row_old not in s:
+              raise SystemExit('group manager row template not found')
+          s=s.replace(row_old,row_new,1)
+          marker='''function renderGroupManager(){'''
+          leave='''async function leaveGroup(groupId,groupName,btn){\n if(!groupId)return;\n if(!confirm(`Leave ${groupName}? You can join it again later.`))return;\n btn.disabled=true;\n try{\n  const result=await rpc('bw_leave_group',{p_user_id:uid(),p_group_id:groupId});\n  const r=Array.isArray(result)?result[0]:result;\n  if(!r?.ok)throw new Error(r?.message||'Could not leave group');\n  await loadGroups();\n  await loadGroupHappenings();\n  renderGroupManager();\n  renderOnboardingGroups();\n  renderPeople();\n }catch(e){btn.disabled=false;alert('Could not leave the group. '+(e.message||e))}\n}\n'''
+          if leave not in s:
+              if marker not in s: raise SystemExit('group manager function not found')
+              s=s.replace(marker,leave+marker,1)
+          old='''el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} members · ${g.is_private?'Private':'Open'}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div></div>`).join(''):'';'''
+          new='''el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} members · ${g.is_private?'Private':'Open'}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div><button type="button" class="secondary small-btn" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button></div>`).join(''):'';'''
+          if old not in s: raise SystemExit('group manager render line not found')
+          s=s.replace(old,new,1)
+          marker2="$('manageGroups').onclick=()=>showWelcome('groups');"
+          if marker2 not in s: raise SystemExit('manage groups handler not found')
+          s=s.replace(marker2,marker2+"\ndocument.addEventListener('click',e=>{const b=e.target.closest('[data-leave-group]');if(!b)return;leaveGroup(b.dataset.leaveGroup,b.dataset.leaveName,b)});",1)
+          p.write_text(s)
+          PY
+      - name: Commit group UI repair
+        run: |
+          git config user.name 'Brighton Weekend automation'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          if git diff --cached --quiet; then echo 'Group leave already patched.'; exit 0; fi
+          git commit -m 'Restore leave group action'
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
