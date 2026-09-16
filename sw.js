@@ -1,5 +1,32 @@
-const CACHE="brighton-weekend-v102-assets";
+const CACHE="brighton-weekend-v103-assets";
 const CORE=["./","./index.html","./manifest.webmanifest","./favicon.ico","./icons/icon-32.png","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-192-maskable.png","./icons/icon-512-maskable.png","./icons/apple-touch-icon.png","./about.html","./privacy.html","./terms.html","./profile-icons/brown-bear.svg","./profile-icons/red-panda-bear.svg","./profile-icons/giant-panda-bear.svg","./profile-icons/moose.jpg","./profile-icons/orange-tabby.jpg","./profile-icons/black-cat.jpg","./profile-icons/fluffy-cat.jpg","./profile-icons/tuxedo-cat.jpg"];
 self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
-self.addEventListener("fetch",event=>{const req=event.request;if(req.method!=="GET")return;const url=new URL(req.url);if(url.origin!==self.location.origin)return;if(url.pathname.endsWith('events.json')){event.respondWith(fetch(req,{cache:'no-store'}).then(r=>{const c=r.clone();caches.open(CACHE).then(x=>x.put(req,c));return r}).catch(()=>caches.match(req)));return}if(req.mode==='navigate'||url.pathname.endsWith('.html')){event.respondWith(fetch(req,{cache:'no-store'}).then(r=>{const c=r.clone();caches.open(CACHE).then(x=>x.put(req,c));return r}).catch(()=>caches.match(req).then(r=>r||caches.match('./index.html'))));return}event.respondWith(caches.match(req).then(cached=>cached||fetch(req).then(r=>{const c=r.clone();caches.open(CACHE).then(x=>x.put(req,c));return r}))});
+
+async function transformIndex(response){
+ const html=await response.text();
+ const dayCss='<style id="bw-day-settings">.day-preferences{margin-top:14px;padding-top:14px;border-top:1px solid #294657}.day-preferences h4{margin:0 0 5px;font-size:.9rem}.day-preferences .note{margin-bottom:10px}.day-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.day-choice{display:flex;align-items:center;gap:8px;padding:10px 11px;border:1px solid #294657;border-radius:12px;background:#0F2231;color:#F3E4C9;font-size:.78rem;font-weight:600}.day-choice input{accent-color:#4DB6AC;width:18px;height:18px}.day-choice input:checked+span{color:#8FE0D5}@media(min-width:520px){.day-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}</style>';
+ const dayHtml='<div class="day-preferences"><h4>Days</h4><div class="note">Choose which days you want to see in Discover and Comedy.</div><div id="bwDayGrid" class="day-grid">'+['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'].map((d,i)=>`<label class="day-choice"><input type="checkbox" data-bw-day="${i}" checked><span>${d}</span></label>`).join('')+'</div></div>';
+ const dayCode=`<script>(function(){
+  const DAYS=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'];
+  const key='bw_interest_days';
+  function selected(){try{const x=JSON.parse(localStorage.getItem(key)||'null');return Array.isArray(x)&&x.length?new Set(x.map(Number)):new Set([0,1,2,3,4,5,6])}catch(e){return new Set([0,1,2,3,4,5,6])}}
+  function apply(){const s=selected();document.querySelectorAll('[data-bw-day]').forEach(c=>c.checked=s.has(Number(c.dataset.bwDay)));const days=[...document.querySelectorAll('.day')];days.forEach((el)=>{const m=el.textContent.match(/^(MONDAY|TUESDAY|WEDNESDAY|THURSDAY|FRIDAY|SATURDAY|SUNDAY)/);const show=!!m&&s.has(DAYS.indexOf(m[1][0]+m[1].slice(1).toLowerCase()));el.style.display=show?'':'none';let n=el.nextElementSibling;while(n&&!n.classList.contains('day')){n.style.display=show?'':'none';n=n.nextElementSibling;}});}
+  function setup(){const grid=document.getElementById('bwDayGrid');if(!grid)return;const s=selected();grid.querySelectorAll('[data-bw-day]').forEach(c=>{c.checked=s.has(Number(c.dataset.bwDay));c.onchange=()=>{const vals=[...grid.querySelectorAll('[data-bw-day]:checked')].map(x=>Number(x.dataset.bwDay));localStorage.setItem(key,JSON.stringify(vals.length?vals:[0,1,2,3,4,5,6]));apply();};});apply();}
+  window.addEventListener('load',()=>setTimeout(setup,100));
+})();</script>`;
+ let patched=html.replace('</head>',dayCss+'</head>');
+ patched=patched.replace("const start=getThursday(), end=new Date(friday);end.setDate(end.getDate()+2);", "const start=new Date(friday);start.setDate(start.getDate()-4); const end=new Date(start);end.setDate(end.getDate()+6);");
+ patched=patched.replace("const start=getThursday(), end=new Date(start);end.setDate(end.getDate()+3);", "const start=new Date(friday);start.setDate(start.getDate()-4); const end=new Date(start);end.setDate(end.getDate()+6);");
+ patched=patched.replace("['THURSDAY','FRIDAY','SATURDAY','SUNDAY']", "['MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY','SUNDAY']");
+ patched=patched.replace('<div id="venueList"></div></div>','<div id="venueList"></div>'+dayHtml+'</div>');
+ patched=patched.replace('</body>',dayCode+'</body>');
+ return new Response(patched,{status:response.status,statusText:response.statusText,headers:response.headers});
+}
+self.addEventListener("fetch",event=>{
+ const req=event.request;if(req.method!=="GET")return;
+ const url=new URL(req.url);if(url.origin!==self.location.origin)return;
+ if(url.pathname.endsWith("events.json")){event.respondWith(fetch(req,{cache:"no-store"}).then(r=>{const c=r.clone();caches.open(CACHE).then(x=>x.put(req,c));return r}).catch(()=>caches.match(req)));return}
+ if(req.mode==="navigate"||url.pathname.endsWith('.html')){event.respondWith(fetch(req,{cache:'no-store'}).then(async r=>{const transformed=(url.pathname.endsWith('/index.html')||url.pathname.endsWith('/'))?await transformIndex(r):r;const c=transformed.clone();caches.open(CACHE).then(x=>x.put(req,c));return transformed}).catch(()=>caches.match(req).then(r=>r||caches.match('./index.html'))));return}
+ event.respondWith(caches.match(req).then(cached=>cached||fetch(req).then(r=>{const c=r.clone();caches.open(CACHE).then(x=>x.put(req,c));return r})));
+});
