@@ -181,26 +181,6 @@
       "ticket_url": "https://www.komedia.co.uk/shows/tatty-macleod-things-my-mother-did/?eid=20659"
     },
     {
-      "id": "2026-09-17-brighton-dome-concert-hall-freya-ridings-mother-of-pearl-tour",
-      "title": "Freya Ridings: Mother of Pearl Tour",
-      "date": "2026-09-17",
-      "venue": "Brighton Dome - Concert Hall",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/"
-    },
-    {
-      "id": "2026-09-17-brighton-dome-concert-hall-you-might-also-like",
-      "title": "You Might Also Like",
-      "date": "2026-09-17",
-      "venue": "Brighton Dome - Concert Hall",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/"
-    },
-    {
       "id": "2026-09-17-chalk-vundabar-yot-club",
       "title": "Vundabar, Yot Club",
       "date": "2026-09-17",
@@ -325,16 +305,6 @@
       "finish_time": "04:00",
       "category": "Club",
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
-    },
-    {
-      "id": "2026-09-18-brighton-dome-concert-hall-paul-simon-s-graceland-reimagined",
-      "title": "Paul Simon's 'Graceland' Reimagined",
-      "date": "2026-09-18",
-      "venue": "Brighton Dome - Concert Hall",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/"
     },
     {
       "id": "2026-09-18-the-hope-ruin-tv-smith-the-bored-teenagers-fractured",
@@ -813,16 +783,6 @@
       "finish_time": "19:00",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/sandro-ford-lager-than-life/?eid=19281"
-    },
-    {
-      "id": "2026-09-22-brighton-dome-concert-hall-michael-ball",
-      "title": "Michael Ball",
-      "date": "2026-09-22",
-      "venue": "Brighton Dome - Concert Hall",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/"
     },
     {
       "id": "2026-09-22-chalk-live",
@@ -9267,6 +9227,16 @@
       "finish_time": "19:00",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=20961"
+    },
+    {
+      "id": "2027-02-26-komedia-sean-collins-good-to-be-here",
+      "title": "Sean Collins – Good To Be Here",
+      "date": "2027-02-26",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "19:30",
+      "category": "Other",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
     {
       "id": "2027-02-26-chalk-scientist",
