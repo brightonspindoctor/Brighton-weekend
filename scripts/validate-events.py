@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "events.json"
-DOME_VENUES = {"brighton dome", "dome - concert hall", "dome - corn exchange", "dome - studio theatre"}
+DOME_VENUES = {"brighton dome", "dome - concert hall", "dome - corn exchange", "dome - studio theatre", "brighton dome - concert hall"}
 PATTERNS_RECURRING = ("foundations", "fnky frdy", "fnky friday", "bottomless brunch")
 GENERIC_TITLES = {
     "comedy", "classical music", "music", "talks & debate", "talks and debate", "dance", "theatre", "family",
@@ -20,6 +20,9 @@ GENERIC_TITLES = {
 def fail(message):
     print(f"ERROR: {message}", file=sys.stderr)
     raise SystemExit(1)
+
+def is_ben_folds_exception(venue, title):
+    return venue.lower() == "brighton dome - concert hall" and "ben folds" in re.sub(r"[^a-z0-9]+", " ", title.lower())
 
 if not DATA.exists(): fail("events.json is missing")
 try: data = json.loads(DATA.read_text())
@@ -47,7 +50,7 @@ for i, event in enumerate(events):
     if key in keys: errors.append(f"duplicate venue/date/title: {venue} / {event_date} / {title}")
     keys.add(key)
     if not (start <= event_date <= end): errors.append(f"{event_id}: date outside declared range")
-    if venue.lower() in DOME_VENUES: errors.append(f"Brighton Dome event still present: {event_id}")
+    if venue.lower() in DOME_VENUES and not is_ben_folds_exception(venue, title): errors.append(f"unauthorised Brighton Dome event still present: {event_id}")
     low = title.lower()
     if venue.lower() == "patterns" and any(marker in low for marker in PATTERNS_RECURRING): errors.append(f"recurring Patterns event still present: {event_id}")
     if low in GENERIC_TITLES: errors.append(f"generic title still present: {event_id}")
@@ -57,4 +60,4 @@ if errors:
     if len(errors) > 50: print(f"... and {len(errors) - 50} more errors", file=sys.stderr)
     raise SystemExit(1)
 print(f"Validated {len(events)} events across {len({e['venue'] for e in events})} venues.")
-print("No duplicate IDs, duplicate venue/date/title records, Brighton Dome events, recurring Patterns entries, or generic titles found.")
+print("No duplicate IDs, duplicate venue/date/title records, unauthorised Brighton Dome events, recurring Patterns entries, or generic titles found.")
