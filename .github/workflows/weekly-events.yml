@@ -1,24 +1,26 @@
-name: Weekly event refresh
+name: Daily event refresh
 
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
       - 'event-sources.json'
       - 'scripts/scrape-events.py'
       - 'scripts/scrape-discovery.py'
-      - 'scripts/clean-event-data.py'
+      - 'scripts/validate-events.py'
+      - 'requirements-events.txt'
       - '.github/workflows/weekly-events.yml'
-      - '.restore-events-once'
   schedule:
-    - cron: '0 7 * * 2'
+    # Run off the hour to reduce GitHub Actions scheduling contention.
+    - cron: '17 7 * * *'
       timezone: 'Europe/London'
 
 permissions:
   contents: write
 
 concurrency:
-  group: weekly-event-refresh
+  group: daily-event-refresh
   cancel-in-progress: false
 
 jobs:
@@ -26,60 +28,40 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out Brighton Weekend
-        uses: actions/checkout@v4
-
-      - name: Restore last known-good event data once
-        id: restore
-        shell: bash
-        run: |
-          if [[ -f .restore-events-once ]]; then
-            echo 'restored=true' >> "$GITHUB_OUTPUT"
-            git fetch --unshallow
-            git show 02cb2f3b15d96da769f2052fc9a4da781b761901:events.json > events.json
-            rm .restore-events-once
-            git config user.name 'Brighton Weekend event scraper'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add events.json .restore-events-once
-            git commit -m 'Restore event data after destructive refresh'
-            git push
-          else
-            echo 'restored=false' >> "$GITHUB_OUTPUT"
-          fi
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        if: steps.restore.outputs.restored != 'true'
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements-events.txt
 
       - name: Install scraper dependencies
-        if: steps.restore.outputs.restored != 'true'
         run: |
           python -m pip install --upgrade pip
-          pip install playwright beautifulsoup4 python-dateutil
+          python -m pip install -r requirements-events.txt
           python -m playwright install --with-deps chromium
 
-      - name: Scrape all configured venue websites
-        if: steps.restore.outputs.restored != 'true'
+      - name: Scrape configured venue websites
         run: python scripts/scrape-events.py
 
       - name: Scrape broad Brighton discovery calendars
-        if: steps.restore.outputs.restored != 'true'
         run: python scripts/scrape-discovery.py
 
-      - name: Remove excluded event classes
-        if: steps.restore.outputs.restored != 'true'
-        run: python scripts/clean-event-data.py
+      - name: Validate event data
+        run: python scripts/validate-events.py
 
       - name: Commit updated events file
-        if: steps.restore.outputs.restored != 'true'
         run: |
           git config user.name 'Brighton Weekend event scraper'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add events.json
           if git diff --cached --quiet; then
-            echo 'No event data changes this week.'
-          else
-            git commit -m "Refresh weekly event data"
-            git push
+            echo 'No event data changes this run.'
+            exit 0
           fi
+          git commit -m 'Refresh event data'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
