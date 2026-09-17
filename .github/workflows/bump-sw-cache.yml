@@ -1,0 +1,24 @@
+name: Refresh service worker cache
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    if: ${{ github.event.head_commit.message != 'Refresh service worker cache version' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bump cache version and remove one-time workflow
+        run: |
+          sed -i 's/brighton-weekend-v107-assets/brighton-weekend-v108-assets/' sw.js
+          rm -f .github/workflows/bump-sw-cache.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add sw.js .github/workflows/bump-sw-cache.yml
+          git commit -m 'Refresh service worker cache version'
+          git push
