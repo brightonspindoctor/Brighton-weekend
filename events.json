@@ -8967,6 +8967,16 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
+      "id": "2027-02-10-komedia-komedia-new-comedy-award",
+      "title": "Komedia New Comedy Award",
+      "date": "2027-02-10",
+      "venue": "Komedia",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/Brighton"
+    },
+    {
       "id": "2027-02-11-theprincealbert-these-new-south-whales",
       "title": "These New South Whales",
       "date": "2027-02-11",
@@ -9698,6 +9708,16 @@
       "venue": "Komedia",
       "time": "19:30",
       "finish_time": "18:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
+      "id": "2027-04-30-komedia-komedia-comedy-club",
+      "title": "Komedia Comedy Club",
+      "date": "2027-04-30",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "19:00",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
