@@ -726,9 +726,22 @@ async function loadPublicGroups(){
   $('publicGroupSelect').innerHTML='<option value="">Choose an open group…</option>'+data.map(g=>`<option value="${esc(g.id)}">${esc(g.name)} · ${g.member_count} members</option>`).join('');
  }catch(e){console.warn(e)}
 }
+async function handleGroupInvite(){
+ const q=new URLSearchParams(window.location.search);
+ const groupId=q.get('group_invite');
+ if(!groupId||!authUser||!name())return false;
+ const groupName=q.get('group_name')||'this group';
+ const pin=q.get('group_pin')||null;
+ if(!confirm(`Join ${groupName}?`))return false;
+ await joinGroup(groupId,pin,groupName);
+ const clean=window.location.pathname+window.location.hash;
+ window.history.replaceState({},document.title,clean);
+ return true;
+}
 async function openGroupStep(){
  hide('nameStep'); show('groupStep');
  await loadGroups(); renderOnboardingGroups(); await loadPublicGroups();
+ await handleGroupInvite();
 }
 function showWelcome(mode='auth'){
  show('welcome');
@@ -776,9 +789,26 @@ async function leaveGroup(groupId,groupName,btn){
   renderPeople();
  }catch(e){btn.disabled=false;alert('Could not leave the group. '+(e.message||e))}
 }
+async function createGroupInviteLink(groupId,groupName,isPrivate,pin,btn){
+ if(!groupId)return;
+ const base=window.location.href.split('#')[0].split('?')[0];
+ const params=new URLSearchParams();
+ params.set('group_invite',groupId);
+ if(groupName)params.set('group_name',groupName);
+ if(isPrivate&&pin)params.set('group_pin',pin);
+ const url=base+'?'+params.toString();
+ try{
+  if(navigator.share){await navigator.share({title:`Join ${groupName}`,text:`Join my Brighton Weekend group, ${groupName}.`,url});return;}
+  if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);alert('Invite link copied to your clipboard.');return;}
+  window.prompt('Copy this group invite link:',url);
+ }catch(e){
+  if(e?.name==='AbortError')return;
+  try{window.prompt('Copy this group invite link:',url)}catch(_){alert(url)}
+ }
+}
 function renderGroupManager(){
  const el=$('groupManager'); if(!el)return;
- el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} members · ${g.is_private?'Private':'Open'}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div><button type="button" class="secondary small-btn" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button></div>`).join(''):'<div class="group-meta">No groups yet.</div>';
+ el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} members · ${g.is_private?'Private':'Open'}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div><div style="display:flex;gap:6px;flex-shrink:0"><button type="button" class="secondary small-btn" data-invite-group="${esc(g.id)}" data-invite-name="${esc(g.name)}" data-invite-private="${g.is_private?'1':'0'}" data-invite-pin="${esc(g.join_pin||'')}">Invite link</button><button type="button" class="secondary small-btn" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button></div></div>`).join(''):'<div class="group-meta">No groups yet.</div>';
 }
 
 window.act=async(id,status)=>{
@@ -984,7 +1014,7 @@ $('refresh').onclick=async()=>{
 };
 $('changeName').onclick=()=>showWelcome('name');
 $('manageGroups').onclick=()=>showWelcome('groups');
-document.addEventListener('click',e=>{const b=e.target.closest('[data-leave-group]');if(!b)return;leaveGroup(b.dataset.leaveGroup,b.dataset.leaveName,b)});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-leave-group]');if(!b)return;leaveGroup(b.dataset.leaveGroup,b.dataset.leaveName,b)});document.addEventListener('click',e=>{const b=e.target.closest('[data-invite-group]');if(!b)return;createGroupInviteLink(b.dataset.inviteGroup,b.dataset.inviteName,b.dataset.invitePrivate==='1',b.dataset.invitePin,b)});
 $('customVenue').onchange=toggleOtherVenue;
 $('toggleCustomEvent').onclick=()=>{const panel=$('customEventPanel');const open=panel.classList.toggle('collapsed')===false;$('toggleCustomEvent').textContent=open?'− Hide form':'＋ Add event';if(open) setTimeout(()=>$('customTitle').focus(),50)};
 $('addCustomEventBtn').onclick=addCustomEvent;
