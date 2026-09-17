@@ -1,0 +1,66 @@
+name: Fix Happenings read state
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-happenings-read-state.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch Happenings read state
+        shell: python
+        run: |
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text()
+
+          old = '''function markHappeningsSeen(){
+ localStorage.setItem('bw_happenings_seen_'+uid(),happeningsSignature(groupHappenings));
+ updateHappeningsBadge();
+}'''
+          new = '''function markHappeningsSeen(){
+ const current=happeningsSignature(groupHappenings);
+ if(current){
+  localStorage.setItem('bw_happenings_seen_'+uid(),current);
+  localStorage.removeItem('bw_happenings_mark_pending_'+uid());
+ }else{
+  localStorage.setItem('bw_happenings_mark_pending_'+uid(),'1');
+ }
+ updateHappeningsBadge();
+}'''
+          if s.count(old) != 1:
+              raise SystemExit('Expected markHappeningsSeen block not found exactly once')
+          s = s.replace(old, new)
+
+          old2 = '''  groupHappenings=Array.isArray(groupHappenings)?groupHappenings:[];
+ }catch(e){console.warn('Group happenings unavailable',e);groupHappenings=[]}
+ updateHappeningsBadge();
+}'''
+          new2 = '''  groupHappenings=Array.isArray(groupHappenings)?groupHappenings:[];
+ }catch(e){console.warn('Group happenings unavailable',e);groupHappenings=[]}
+ if(groupHappenings.length && localStorage.getItem('bw_happenings_mark_pending_'+uid())==='1'){
+  localStorage.setItem('bw_happenings_seen_'+uid(),happeningsSignature(groupHappenings));
+  localStorage.removeItem('bw_happenings_mark_pending_'+uid());
+ }
+ updateHappeningsBadge();
+}'''
+          if s.count(old2) != 1:
+              raise SystemExit('Expected loadGroupHappenings block not found exactly once')
+          s = s.replace(old2, new2)
+
+          p.write_text(s)
+
+      - name: Commit patch and remove workflow
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html .github/workflows/fix-happenings-read-state.yml
+          git commit -m 'Fix Happenings read state after async load'
+          git push
