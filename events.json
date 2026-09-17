@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-16",
-  "range_start": "2026-09-16",
-  "range_end": "2027-06-23",
+  "updated": "2026-09-17",
+  "range_start": "2026-09-17",
+  "range_end": "2027-06-24",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -18,7 +18,6 @@
     "Quarters",
     "Shelter Hall",
     "The Forge Comedy Club",
-    "The Gladstone",
     "The Hope & Ruin",
     "The Old Market",
     "The Pipeline",
@@ -27,130 +26,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-09-16-the-gladstone-wrekonize-half-decent-more",
-      "title": "Wrekonize + Half Decent + more",
-      "date": "2026-09-16",
-      "venue": "The Gladstone",
-      "time": "18:00",
-      "finish_time": "23:00",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.eventbrite.co.uk/e/wrekonize-the-gladstone-brighton-wednesday-16th-september-2026-tickets-1997636463437"
-    },
-    {
-      "id": "2026-09-16-green-door-store-marla",
-      "title": "Marla",
-      "date": "2026-09-16",
-      "venue": "Green Door Store",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-16-komedia-boast-in-show-wed-16-sep-2026-8-00-pm-doors-7-30-pm",
-      "title": "Boast in Show Wed 16 Sep 2026 8:00 PM ( Doors: 7:30 PM )",
-      "date": "2026-09-16",
-      "venue": "Komedia",
-      "time": "20:00",
-      "finish_time": "19:30",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/boast-in-show/?eid=18694"
-    },
-    {
-      "id": "2026-09-16-komedia-fanna-fi-allah-sufi-qawwali-wed-16-sep-2026-8-00-pm-doors-7-00-pm",
-      "title": "Fanna-Fi Allah Sufi Qawwali Wed 16 Sep 2026 8:00 PM ( Doors: 7:00 PM )",
-      "date": "2026-09-16",
-      "venue": "Komedia",
-      "time": "20:00",
-      "finish_time": "19:00",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/fanna-fi-allah-sufi-qawwali/?eid=18826"
-    },
-    {
-      "id": "2026-09-16-shelter-hall-comedy-mansion",
-      "title": "The Comedy Mansion at Shelter Hall",
-      "date": "2026-09-16",
-      "venue": "Shelter Hall",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://shelterhall.co.uk/whats-on/the-comedy-mansion-at-shelter-hall/"
-    },
-    {
-      "id": "2026-09-16-the-prince-albert-bratakus",
-      "title": "Bratakus",
-      "date": "2026-09-16",
-      "venue": "The Prince Albert",
-      "time": null,
-      "finish_time": null,
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
-    },
-    {
-      "id": "2026-09-16-theatre-royal-brighton-autumn-spells",
-      "title": "Autumn Spells",
-      "date": "2026-09-16",
-      "venue": "Theatre Royal Brighton",
-      "time": "",
-      "finish_time": "",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
-    },
-    {
-      "id": "2026-09-16-theatre-royal-brighton-micky-flanagan",
-      "title": "Micky Flanagan",
-      "date": "2026-09-16",
-      "venue": "Theatre Royal Brighton",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://www.atgtickets.com/shows/micky-flanagan/theatre-royal-brighton/"
-    },
-    {
-      "id": "2026-09-16-theatre-royal-brighton-musical-theatre-masterclass-legally-blonde-ages-13-17-years",
-      "title": "Musical Theatre Masterclass - Legally Blonde (Ages 13-17 years)",
-      "date": "2026-09-16",
-      "venue": "Theatre Royal Brighton",
-      "time": "",
-      "finish_time": "",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
-    },
-    {
-      "id": "2026-09-16-theatre-royal-brighton-musical-theatre-masterclass-legally-blonde-ages-9-12-years",
-      "title": "Musical Theatre Masterclass - Legally Blonde (Ages 9-12 years)",
-      "date": "2026-09-16",
-      "venue": "Theatre Royal Brighton",
-      "time": "",
-      "finish_time": "",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
-    },
-    {
-      "id": "2026-09-16-theatre-royal-brighton-musical-theatre-masterclass-six-ages-13-17-years",
-      "title": "Musical Theatre Masterclass - Six (Ages 13-17 years)",
-      "date": "2026-09-16",
-      "venue": "Theatre Royal Brighton",
-      "time": "",
-      "finish_time": "",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
-    },
-    {
-      "id": "2026-09-16-theatre-royal-brighton-musical-theatre-masterclass-six-ages-9-12-years",
-      "title": "Musical Theatre Masterclass - Six (Ages 9-12 years)",
-      "date": "2026-09-16",
-      "venue": "Theatre Royal Brighton",
-      "time": "",
-      "finish_time": "",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
-    },
     {
       "id": "2026-09-17-green-door-store-ivebeeneatingfruit",
       "title": "Ivebeeneatingfruit",
@@ -1187,6 +1062,16 @@
       "ticket_url": "https://www.eventbrite.co.uk/",
       "finish_time": "03:00",
       "source_url": "Eventbrite"
+    },
+    {
+      "id": "2026-09-25-green-door-store-that-s-f-ing-rubbish-lana-del-ray-vs-radiohead-2",
+      "title": "that’s f***ing rubbish – lana del ray vs radiohead #2",
+      "date": "2026-09-25",
+      "venue": "Green Door Store",
+      "time": "23:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
     },
     {
       "id": "2026-09-25-komedia-crushed-fri-25-sep-2026-doors-11-00-pm",
