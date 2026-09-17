@@ -1,0 +1,52 @@
+name: Fix Happenings indicator
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Patch Happenings behaviour and remove stray text
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          p=Path('index.html')
+          s=p.read_text()
+
+          # The indicator is intentionally text-only: no red dot.
+          s=s.replace('.nav button.has-new::after{content:\'\';position:absolute;width:7px;height:7px;border-radius:50%;background:#f06b61;top:6px;right:8px;box-shadow:0 0 0 2px #102033}', '')
+
+          # Remove any accidentally rendered JS fragment from the page body.
+          s=re.sub(r'Settings\\s*document\\.addEventListener\\(\'click\',e=>\\{const b=e\.target\.closest\\(\'.nav button\\[data-tab="peopleTab"\\]\\'\\);if\\(!b\\|\\|!uid\\(\\)\\)return;setTimeout\\(\\(\\)=>\\{if\\(typeof markHappeningsSeen===\'function\'\\).*?\\}\\);?\\s*', '', s, flags=re.S)
+          p.write_text(s)
+
+          p=Path('sw.js')
+          s=p.read_text()
+          old="b.classList.add('active');document.querySelectorAll('main').forEach(m=>m.classList.toggle('hidden',m.id!==b.dataset.tab))"
+          new="b.classList.add('active');document.querySelectorAll('main').forEach(m=>m.classList.toggle('hidden',m.id!==b.dataset.tab));if(b.dataset.tab==='peopleTab'&&typeof markHappeningsSeen==='function')markHappeningsSeen()"
+          if old not in s:
+              raise SystemExit('navigation handler not found in sw.js')
+          s=s.replace(old,new,1)
+          s=s.replace('const CACHE="brighton-weekend-v106-assets"','const CACHE="brighton-weekend-v107-assets"',1)
+          p.write_text(s)
+          PY
+      - name: Commit and remove one-time workflow
+        run: |
+          git config user.name 'Brighton Weekend automation'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html sw.js .github/workflows/fix-happenings-indicator.yml
+          git commit -m 'Fix Happenings indicator behaviour'
+          git rm .github/workflows/fix-happenings-indicator.yml
+          git commit -m 'Remove one-time Happenings repair workflow'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
