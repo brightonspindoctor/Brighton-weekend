@@ -1,4 +1,4 @@
-name: Add group sharing
+name: Add group invite links
 
 on:
   push:
@@ -14,65 +14,65 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - name: Patch group sharing
+      - name: Add group invite-link button
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
           p=Path('index.html')
           s=p.read_text()
-          old="""async function leaveGroup(groupId,groupName,btn){
+
+          invite_fn="""async function createGroupInviteLink(groupId,groupName,isPrivate,pin,btn){
  if(!groupId)return;
- if(!confirm(`Leave ${groupName}? You can join it again later.`))return;
- btn.disabled=true;
+ const base=window.location.href.split('#')[0].split('?')[0];
+ const params=new URLSearchParams();
+ params.set('group_invite',groupId);
+ if(groupName)params.set('group_name',groupName);
+ if(isPrivate&&pin)params.set('group_pin',pin);
+ const url=base+'?'+params.toString();
+ const text=`Join my Brighton Weekend group, ${groupName}.`;
  try{
-  const result=await rpc('bw_leave_group',{p_user_id:uid(),p_group_id:groupId});
-  const r=Array.isArray(result)?result[0]:result;
-  if(!r?.ok)throw new Error(r?.message||'Could not leave group');
-  await loadGroups();
-  await loadGroupHappenings();
-  renderGroupManager();
-  renderOnboardingGroups();
-  renderPeople();
- }catch(e){btn.disabled=false;alert('Could not leave the group. '+(e.message||e))}
-}
-"""
-          share="""async function shareGroup(groupId,groupName,isPrivate,pin,btn){
- if(!groupId)return;
- const url=window.location.href.split('#')[0];
- const text=isPrivate
-  ? `Join my private Brighton Weekend group, ${groupName}. Open Brighton Weekend and join using the group name and PIN ${pin}.`
-  : `Join my Brighton Weekend group, ${groupName}. Open Brighton Weekend and choose Join a group to find it.`;
- const shareData={title:`Join ${groupName}`,text,url};
- try{
-  if(navigator.share){await navigator.share(shareData);return;}
-  await navigator.clipboard.writeText(`${text} ${url}`);
-  alert('Group invite copied to your clipboard.');
+  if(navigator.share){
+   await navigator.share({title:`Join ${groupName}`,text,url});
+   return;
+  }
+  await navigator.clipboard.writeText(url);
+  alert('Invite link copied to your clipboard.');
  }catch(e){
   if(e?.name==='AbortError')return;
-  alert('Could not share the group. '+(e.message||e));
+  try{window.prompt('Copy this group invite link:',url)}catch(_){alert(url)}
  }
 }
 """
-          if share not in s:
-              if old not in s: raise SystemExit('leaveGroup function not found')
-              s=s.replace(old,old+share,1)
-          oldrow='''<button type="button" class="secondary small-btn" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button>'''
-          newrow='''<div style="display:flex;gap:6px;flex-shrink:0"><button type="button" class="secondary small-btn" data-share-group="${esc(g.id)}" data-share-name="${esc(g.name)}" data-share-private="${g.is_private?'1':'0'}" data-share-pin="${esc(g.join_pin||'')}">Share</button><button type="button" class="secondary small-btn" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button></div>'''
-          if oldrow not in s: raise SystemExit('group action row not found')
-          s=s.replace(oldrow,newrow,1)
-          marker="document.addEventListener('click',e=>{const b=e.target.closest('[data-leave-group]');if(!b)return;leaveGroup(b.dataset.leaveGroup,b.dataset.leaveName,b)});"
-          handler="document.addEventListener('click',e=>{const b=e.target.closest('[data-share-group]');if(!b)return;shareGroup(b.dataset.shareGroup,b.dataset.shareName,b.dataset.sharePrivate==='1',b.dataset.sharePin,b)});"
-          if handler not in s:
-              if marker not in s: raise SystemExit('leave handler not found')
+
+          if 'async function createGroupInviteLink(' not in s:
+              m=re.search(r'async function leaveGroup\(groupId,groupName,btn\)\{.*?\n\}\n',s,re.S)
+              if not m:
+                  raise SystemExit('leaveGroup function not found')
+              s=s[:m.end()]+invite_fn+s[m.end():]
+
+          old='''<button type="button" class="secondary small-btn" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button>'''
+          if 'data-invite-group="${esc(g.id)}"' not in s:
+              new='''<div style="display:flex;gap:6px;flex-shrink:0"><button type="button" class="secondary small-btn" data-invite-group="${esc(g.id)}" data-invite-name="${esc(g.name)}" data-invite-private="${g.is_private?'1':'0'}" data-invite-pin="${esc(g.join_pin||'')}">Invite link</button><button type="button" class="secondary small-btn" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button></div>'''
+              if old not in s:
+                  raise SystemExit('group leave button not found')
+              s=s.replace(old,new,1)
+
+          handler="""document.addEventListener('click',e=>{const b=e.target.closest('[data-invite-group]');if(!b)return;createGroupInviteLink(b.dataset.inviteGroup,b.dataset.inviteName,b.dataset.invitePrivate==='1',b.dataset.invitePin,b)});"""
+          if '[data-invite-group]' not in s or 'createGroupInviteLink(b.dataset.inviteGroup' not in s:
+              marker="document.addEventListener('click',e=>{const b=e.target.closest('[data-leave-group]');if(!b)return;leaveGroup(b.dataset.leaveGroup,b.dataset.leaveName,b)});"
+              if marker not in s:
+                  raise SystemExit('leave handler not found')
               s=s.replace(marker,marker+handler,1)
+
           p.write_text(s)
           PY
-      - name: Remove one-time patcher
+      - name: Remove patcher
         run: rm .github/workflows/add-group-sharing.yml
-      - name: Commit group sharing
+      - name: Commit invite-link change
         run: |
           git config user.name 'Brighton Weekend automation'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add index.html .github/workflows/add-group-sharing.yml
-          git commit -m 'Add group sharing'
+          git commit -m 'Add group invite link button'
           git push origin HEAD:main
