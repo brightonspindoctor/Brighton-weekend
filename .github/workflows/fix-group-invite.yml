@@ -1,0 +1,119 @@
+name: Fix group invite UI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-group-invite.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Patch group invite support
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          p = Path('index.html')
+          s = p.read_text()
+          original = s
+
+          if 'async function createGroupInviteLink(' not in s:
+              marker = 'function renderGroupManager(){'
+              fn = '''async function createGroupInviteLink(groupId,groupName,isPrivate,pin,btn){
+           if(!groupId)return;
+           const base=window.location.href.split('#')[0].split('?')[0];
+           const params=new URLSearchParams();
+           params.set('group_invite',groupId);
+           if(groupName)params.set('group_name',groupName);
+           if(isPrivate&&pin)params.set('group_pin',pin);
+           const url=base+'?'+params.toString();
+           try{
+            if(navigator.share){await navigator.share({title:`Join ${groupName}`,text:`Join my Brighton Weekend group, ${groupName}.`,url});return;}
+            if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);alert('Invite link copied to your clipboard.');return;}
+            window.prompt('Copy this group invite link:',url);
+           }catch(e){
+            if(e?.name==='AbortError')return;
+            try{window.prompt('Copy this group invite link:',url)}catch(_){alert(url)}
+           }
+          }
+          '''
+              if marker not in s:
+                  raise SystemExit('renderGroupManager marker not found')
+              s = s.replace(marker, fn + marker, 1)
+
+          start = s.find('function renderGroupManager(){')
+          end = s.find('\n}\n\nwindow.act=', start)
+          if start < 0 or end < 0:
+              raise SystemExit('renderGroupManager block boundaries not found')
+          block = s[start:end+2]
+          if 'data-invite-group=' not in block:
+              old_button = '<button type="button" class="secondary small-btn" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button>'
+              new_buttons = '<div style="display:flex;gap:6px;flex-shrink:0"><button type="button" class="secondary small-btn" data-invite-group="${esc(g.id)}" data-invite-name="${esc(g.name)}" data-invite-private="${g.is_private?\'1\':\'0\'}" data-invite-pin="${esc(g.join_pin||\'\')}">Invite link</button>'+old_button+'</div>'
+              if old_button not in block:
+                  raise SystemExit('existing Leave button not found')
+              block = block.replace(old_button, new_buttons, 1)
+              s = s[:start] + block + s[end+2:]
+
+          if 'function handleGroupInvite(' not in s:
+              marker = 'async function openGroupStep(){'
+              fn = '''async function handleGroupInvite(){
+           const q=new URLSearchParams(window.location.search);
+           const groupId=q.get('group_invite');
+           if(!groupId||!authUser||!name())return false;
+           const groupName=q.get('group_name')||'this group';
+           const pin=q.get('group_pin')||null;
+           if(!confirm(`Join ${groupName}?`))return false;
+           await joinGroup(groupId,pin,groupName);
+           const clean=window.location.pathname+window.location.hash;
+           window.history.replaceState({},document.title,clean);
+           return true;
+          }
+          '''
+              if marker not in s:
+                  raise SystemExit('openGroupStep marker not found')
+              s = s.replace(marker, fn + marker, 1)
+
+          if 'await handleGroupInvite();' not in s:
+              marker = 'async function openGroupStep(){\n hide(\'nameStep\'); show(\'groupStep\');\n await loadGroups(); renderOnboardingGroups(); await loadPublicGroups();\n}'
+              replacement = 'async function openGroupStep(){\n hide(\'nameStep\'); show(\'groupStep\');\n await loadGroups(); renderOnboardingGroups(); await loadPublicGroups();\n await handleGroupInvite();\n}'
+              if marker not in s:
+                  raise SystemExit('openGroupStep body not found')
+              s = s.replace(marker, replacement, 1)
+
+          if "createGroupInviteLink(b.dataset.inviteGroup" not in s:
+              marker = "document.addEventListener('click',e=>{const b=e.target.closest('[data-leave-group]');if(!b)return;leaveGroup(b.dataset.leaveGroup,b.dataset.leaveName,b)});"
+              handler = "document.addEventListener('click',e=>{const b=e.target.closest('[data-invite-group]');if(!b)return;createGroupInviteLink(b.dataset.inviteGroup,b.dataset.inviteName,b.dataset.invitePrivate==='1',b.dataset.invitePin,b)});"
+              if marker not in s:
+                  raise SystemExit('leave click handler not found')
+              s = s.replace(marker, marker + handler, 1)
+
+          if original == s:
+              raise SystemExit('No changes made; expected group UI patterns were not found')
+
+          p.write_text(s)
+          PY
+      - name: Validate HTML script syntax
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          s=Path('index.html').read_text()
+          for needle in ['createGroupInviteLink(', 'data-invite-group=', 'handleGroupInvite(', 'await handleGroupInvite();']:
+              assert needle in s, needle
+          assert s.count('data-invite-group=') == 1, 'invite button should be rendered once'
+          print('Group invite patch checks passed')
+          PY
+      - name: Commit patched application
+        run: |
+          git config user.name 'Brighton Weekend automation'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git commit -m 'Add group invite links' || exit 0
+          git push origin HEAD:main
