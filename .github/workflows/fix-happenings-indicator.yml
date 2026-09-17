@@ -1,0 +1,79 @@
+name: Fix Happenings read-state indicator
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/fix-happenings-indicator.yml'
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch Happenings indicator
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          old='''<style id="bw-happenings-indicator-fix">.nav button.has-new::after{display:none!important}.nav button.bw-happenings-seen{color:#9cabb2!important}</style>'''
+          new='''<style id="bw-happenings-indicator-fix">
+          .nav button.bw-happenings-seen,.nav button.active.bw-happenings-seen{color:#7A8A96!important}
+          .nav button.has-new{color:var(--bw-coral)!important}
+          .nav button.has-new .nav-icon{color:var(--bw-coral)!important}
+          .nav button.bw-happenings-seen .nav-icon{color:#7A8A96!important}
+          </style>'''
+          if old not in s: raise SystemExit('Expected indicator style block not found')
+          s=s.replace(old,new,1)
+          old_js='''function markHappeningsSeen(){
+ localStorage.setItem('bw_happenings_seen_'+uid(),happeningsSignature(groupHappenings));
+ updateHappeningsBadge();
+}
+function updateHappeningsBadge(){
+ const tab=document.querySelector('.nav button[data-tab="peopleTab"]');
+ if(!tab)return;
+ const seen=localStorage.getItem('bw_happenings_seen_'+uid())||'';
+ const current=happeningsSignature(groupHappenings);
+ const hasNew=!!current && current!==seen;
+ tab.classList.toggle('has-new',hasNew);
+ if(hasNew)tab.classList.remove('bw-happenings-seen');
+}'''
+          new_js='''function markHappeningsSeen(){
+ localStorage.setItem('bw_happenings_seen_'+uid(),happeningsSignature(groupHappenings));
+ updateHappeningsBadge();
+}
+function updateHappeningsBadge(){
+ const tab=document.querySelector('.nav button[data-tab="peopleTab"]');
+ if(!tab)return;
+ const seen=localStorage.getItem('bw_happenings_seen_'+uid())||'';
+ const current=happeningsSignature(groupHappenings);
+ const hasNew=!!current && current!==seen;
+ tab.classList.toggle('has-new',hasNew);
+ tab.classList.toggle('bw-happenings-seen',!hasNew);
+ const icon=tab.querySelector('.nav-icon');
+ if(icon)icon.textContent=hasNew?'♥':'♡';
+}
+'''
+          if old_js not in s: raise SystemExit('Expected Happenings badge JS not found')
+          s=s.replace(old_js,new_js,1)
+          old_click="""if(b.dataset.tab==='peopleTab'){renderPeople();markHappeningsSeen()}"""
+          new_click="""if(b.dataset.tab==='peopleTab'){renderPeople();markHappeningsSeen();updateHappeningsBadge()}"""
+          if old_click not in s: raise SystemExit('Expected Happenings tab click handler not found')
+          s=s.replace(old_click,new_click,1)
+          p.write_text(s)
+          PY
+      - name: Validate
+        run: |
+          grep -q "tab.classList.toggle('bw-happenings-seen',!hasNew)" index.html
+          grep -q "icon.textContent=hasNew?'♥':'♡'" index.html
+          grep -q "active.bw-happenings-seen" index.html
+      - name: Commit and remove workflow
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git commit -m 'Fix Happenings read-state indicator'
+          git rm .github/workflows/fix-happenings-indicator.yml
+          git commit -m 'Remove one-time Happenings fix workflow'
+          git push
