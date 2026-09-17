@@ -29,33 +29,7 @@ jobs:
     steps:
       - name: Check out Brighton Weekend
         uses: actions/checkout@v5
-      - name: Patch Happenings read-state indicator
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          import re
-          p=Path('index.html')
-          s=p.read_text()
-          marker='/* Happenings read-state indicator v2 */'
-          if marker not in s:
-              css='''\n<style>\n/* Happenings read-state indicator v2 */\n.nav button.has-new{font-weight:800;color:#f06b61!important;position:relative}\n.nav button.has-new::after{display:none!important}\n.nav button.has-new .nav-icon{color:#f06b61!important}\n.nav button.bw-happenings-seen,.nav button.active.bw-happenings-seen{color:#7A8A96!important}\n.nav button.bw-happenings-seen .nav-icon{color:#7A8A96!important}\n</style>\n'''
-              s=s.replace('</head>',css+'</head>',1)
-          else:
-              s=re.sub(r'<style>\\n/\\* Happenings read-state indicator v2 \\*/.*?</style>\\n','',s,flags=re.S)
-          old=re.compile(r"function markHappeningsSeen\(\)\{.*?\}\s*function updateHappeningsBadge\(\)\{.*?\}\s*",re.S)
-          new='''function markHappeningsSeen(){\n localStorage.setItem('bw_happenings_seen_'+uid(),happeningsSignature(groupHappenings));\n updateHappeningsBadge();\n}\nfunction updateHappeningsBadge(){\n const tab=document.querySelector('.nav button[data-tab="peopleTab"]');\n if(!tab)return;\n const seen=localStorage.getItem('bw_happenings_seen_'+uid())||'';\n const current=happeningsSignature(groupHappenings);\n const hasNew=!!current && current!==seen;\n tab.classList.toggle('has-new',hasNew);\n tab.classList.toggle('bw-happenings-seen',!hasNew);\n const icon=tab.querySelector('.nav-icon');\n if(icon)icon.textContent=hasNew?'♥':'♡';\n}\n'''
-          if not old.search(s):
-              raise SystemExit('Could not find Happenings indicator functions')
-          s=old.sub(new,s,count=1)
-          s=s.replace("if(b.dataset.tab==='peopleTab'){renderPeople();markHappeningsSeen()}","if(b.dataset.tab==='peopleTab'){renderPeople();markHappeningsSeen();updateHappeningsBadge()}")
-          p.write_text(s)
-          PY
-      - name: Validate Happenings indicator patch
-        run: |
-          grep -q "bw-happenings-seen',!hasNew" index.html
-          grep -q "textContent=hasNew?'♥':'♡'" index.html
-          grep -q "Happenings read-state indicator v2" index.html
-      - name: Install scraper dependencies
+      - name: Set up Python
         uses: actions/setup-python@v7
         with:
           python-version: '3.12'
@@ -74,16 +48,16 @@ jobs:
         run: python scripts/prepare-events.py
       - name: Validate event data
         run: python scripts/validate-events.py
-      - name: Commit updated app and events
+      - name: Commit updated events file
         run: |
           git config user.name 'Brighton Weekend event scraper'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add events.json index.html
+          git add events.json
           if git diff --cached --quiet; then
-            echo 'No changes to commit.'
+            echo 'No event data changes this run.'
             exit 0
           fi
-          git commit -m 'Fix Happenings read-state indicator'
+          git commit -m 'Refresh event data'
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
