@@ -67,38 +67,93 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - name: Add leave controls to group manager
+      - name: Add leave and invite controls to group manager
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
           p=Path('index.html')
           s=p.read_text()
+          changed=False
+
           row_old='''<div class="group-manager-row"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong>'''
           row_new='''<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong>'''
-          if row_old not in s:
-              raise SystemExit('group manager row template not found')
-          s=s.replace(row_old,row_new,1)
+          if row_old in s:
+              s=s.replace(row_old,row_new,1)
+              changed=True
+
           marker='''function renderGroupManager(){'''
-          leave='''async function leaveGroup(groupId,groupName,btn){\n if(!groupId)return;\n if(!confirm(`Leave ${groupName}? You can join it again later.`))return;\n btn.disabled=true;\n try{\n  const result=await rpc('bw_leave_group',{p_user_id:uid(),p_group_id:groupId});\n  const r=Array.isArray(result)?result[0]:result;\n  if(!r?.ok)throw new Error(r?.message||'Could not leave group');\n  await loadGroups();\n  await loadGroupHappenings();\n  renderGroupManager();\n  renderOnboardingGroups();\n  renderPeople();\n }catch(e){btn.disabled=false;alert('Could not leave the group. '+(e.message||e))}\n}\n'''
+          leave='''async function leaveGroup(groupId,groupName,btn){
+ if(!groupId)return;
+ if(!confirm(`Leave ${groupName}? You can join it again later.`))return;
+ btn.disabled=true;
+ try{
+  const result=await rpc('bw_leave_group',{p_user_id:uid(),p_group_id:groupId});
+  const r=Array.isArray(result)?result[0]:result;
+  if(!r?.ok)throw new Error(r?.message||'Could not leave group');
+  await loadGroups();
+  await loadGroupHappenings();
+  renderGroupManager();
+  renderOnboardingGroups();
+  renderPeople();
+ }catch(e){btn.disabled=false;alert('Could not leave the group. '+(e.message||e))}
+}
+'''
           if leave not in s:
               if marker not in s: raise SystemExit('group manager function not found')
               s=s.replace(marker,leave+marker,1)
+              changed=True
+
+          invite='''async function createGroupInviteLink(groupId,groupName,isPrivate,pin,btn){
+ if(!groupId)return;
+ const base=window.location.href.split('#')[0].split('?')[0];
+ const params=new URLSearchParams();
+ params.set('group_invite',groupId);
+ if(groupName)params.set('group_name',groupName);
+ if(isPrivate&&pin)params.set('group_pin',pin);
+ const url=base+'?'+params.toString();
+ try{
+  if(navigator.share){await navigator.share({title:`Join ${groupName}`,text:`Join my Brighton Weekend group, ${groupName}.`,url});return;}
+  await navigator.clipboard.writeText(url);
+  alert('Invite link copied to your clipboard.');
+ }catch(e){
+  if(e?.name==='AbortError')return;
+  try{window.prompt('Copy this group invite link:',url)}catch(_){alert(url)}
+ }
+}
+'''
+          if 'async function createGroupInviteLink(' not in s:
+              s=s.replace(marker,invite+marker,1)
+              changed=True
+
           old='''el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} members · ${g.is_private?'Private':'Open'}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div></div>`).join(''):'';'''
-          new='''el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} members · ${g.is_private?'Private':'Open'}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div><button type="button" class="secondary small-btn" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button></div>`).join(''):'';'''
-          if old not in s: raise SystemExit('group manager render line not found')
-          s=s.replace(old,new,1)
+          new='''el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} members · ${g.is_private?'Private':'Open'}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div><div style="display:flex;gap:6px;flex-shrink:0"><button type="button" class="secondary small-btn" data-invite-group="${esc(g.id)}" data-invite-name="${esc(g.name)}" data-invite-private="${g.is_private?'1':'0'}" data-invite-pin="${esc(g.join_pin||'')}">Invite link</button><button type="button" class="secondary small-btn" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button></div></div>`).join(''):'';'''
+          if old in s:
+              s=s.replace(old,new,1)
+              changed=True
+          elif 'data-invite-group="${esc(g.id)}"' not in s:
+              raise SystemExit('group manager render line not found')
+
           marker2="$('manageGroups').onclick=()=>showWelcome('groups');"
-          if marker2 not in s: raise SystemExit('manage groups handler not found')
-          s=s.replace(marker2,marker2+"\ndocument.addEventListener('click',e=>{const b=e.target.closest('[data-leave-group]');if(!b)return;leaveGroup(b.dataset.leaveGroup,b.dataset.leaveName,b)});",1)
-          p.write_text(s)
+          leave_handler="document.addEventListener('click',e=>{const b=e.target.closest('[data-leave-group]');if(!b)return;leaveGroup(b.dataset.leaveGroup,b.dataset.leaveName,b)});"
+          invite_handler="document.addEventListener('click',e=>{const b=e.target.closest('[data-invite-group]');if(!b)return;createGroupInviteLink(b.dataset.inviteGroup,b.dataset.inviteName,b.dataset.invitePrivate==='1',b.dataset.invitePin,b)});"
+          if leave_handler not in s:
+              if marker2 not in s: raise SystemExit('manage groups handler not found')
+              s=s.replace(marker2,marker2+'\n'+leave_handler,1)
+              changed=True
+          if invite_handler not in s:
+              s=s.replace(marker2,marker2+'\n'+invite_handler,1)
+              changed=True
+
+          if changed: p.write_text(s)
           PY
       - name: Commit group UI repair
         run: |
           git config user.name 'Brighton Weekend automation'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add index.html
-          if git diff --cached --quiet; then echo 'Group leave already patched.'; exit 0; fi
-          git commit -m 'Restore leave group action'
+          if git diff --cached --quiet; then echo 'Group controls already patched.'; exit 0; fi
+          git commit -m 'Add group invite link button'
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
