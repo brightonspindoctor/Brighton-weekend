@@ -985,6 +985,16 @@
       "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20749"
     },
     {
+      "id": "2026-09-25-patterns-freshly-baked-basement-rave",
+      "title": "Freshly Baked - Basement Rave",
+      "date": "2026-09-25",
+      "venue": "Patterns",
+      "time": "11pm",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/freshly-baked-basement-rave-p2927281"
+    },
+    {
       "id": "2026-09-25-komedia-story-magic-baby-sessions-fri-25-sep-2026-12-30-pm-doors-12-20-pm",
       "title": "Story Magic – Baby Sessions Fri 25 Sep 2026 12:30 PM ( Doors: 12:20 PM )",
       "date": "2026-09-25",
@@ -3982,6 +3992,16 @@
       "time": null,
       "ticket_url": "https://thegreendoorstore.co.uk/events/",
       "source_url": "https://thegreendoorstore.co.uk/events/"
+    },
+    {
+      "id": "2026-10-25-the-old-market-dreamy-place-talking-of-nature",
+      "title": "Dreamy Place: Talking Of Nature…",
+      "date": "2026-10-25",
+      "venue": "The Old Market",
+      "time": "",
+      "finish_time": "",
+      "category": "Talk",
+      "ticket_url": "https://www.theoldmarket.com/shows"
     },
     {
       "id": "2026-10-25-the-prince-albert-lene-lovich",
@@ -7376,6 +7396,16 @@
       "ticket_url": "https://www.visitbrighton.com/whats-on/Brighton"
     },
     {
+      "id": "2026-12-05-patterns-george-fitzgerald-all-day-long",
+      "title": "George Fitzgerald (All Day Long)",
+      "date": "2026-12-05",
+      "venue": "Patterns",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/george-fitzgerald-all-day-long-p2902241"
+    },
+    {
       "id": "2026-12-05-theatre-royal-brighton-stories-with-skip-moon-and-stars",
       "title": "Stories with Skip - Moon and Stars",
       "date": "2026-12-05",
@@ -8847,6 +8877,16 @@
       "finish_time": "19:00",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=20946"
+    },
+    {
+      "id": "2027-02-01-the-old-market-teach-rex",
+      "title": "Teach Rex",
+      "date": "2027-02-01",
+      "venue": "The Old Market",
+      "time": "",
+      "finish_time": "",
+      "category": "Family",
+      "ticket_url": "https://www.theoldmarket.com/shows"
     },
     {
       "id": "2027-02-02-theatreroyalbrighton-agatha-christie-s-the-hollow",
