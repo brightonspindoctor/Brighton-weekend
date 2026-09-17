@@ -1,3 +1,4 @@
+# one-time trigger
 name: Fix Happenings read-state indicator
 on:
   workflow_dispatch:
