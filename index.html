@@ -499,7 +499,7 @@ let profileIcon='';
 let profileIconsByUser={};
 const PROFILE_ICONS=['fox','badger','otter','hedgehog','squirrel','rabbit','deer','seagull','pigeon','kingfisher','owl','raven','cat','dog','dolphin','shark','whale','octopus','crab','starfish','butterfly','dragonfly','ladybird','moth','beetle','spider','praying-mantis','grasshopper','firefly','snail','ant','wasp','fly','cicada','caterpillar','stick-insect','shield-bug','moth-pink','mushroom','clover','fern','sunflower','lavender','oak-leaf','cherry-blossom','holly','pine-tree','bonsai','unicorn','dragon','phoenix','griffin','mermaid','fairy','wizard','ghost','alien','planet','pegasus','centaur','minotaur','kraken','ice-dragon','sky-dragon','sea-serpent','dire-wolf','sphinx','winged-lion','brown-bear','red-panda-bear','giant-panda-bear','moose','orange-tabby','black-cat','fluffy-cat','tuxedo-cat'];
 const PROFILE_LABELS={'fox':'Fox','badger':'Badger','otter':'Otter','hedgehog':'Hedgehog','squirrel':'Squirrel','rabbit':'Rabbit','deer':'Deer','seagull':'Seagull','pigeon':'Pigeon','kingfisher':'Kingfisher','owl':'Owl','raven':'Raven','cat':'Cat','dog':'Dog','dolphin':'Dolphin','shark':'Shark','whale':'Whale','octopus':'Octopus','crab':'Crab','starfish':'Starfish','butterfly':'Butterfly','dragonfly':'Dragonfly','ladybird':'Ladybird','moth':'Moth','beetle':'Beetle','spider':'Spider','praying-mantis':'Praying Mantis','grasshopper':'Grasshopper','firefly':'Firefly','snail':'Snail','ant':'Ant','wasp':'Wasp','fly':'Fly','cicada':'Cicada','caterpillar':'Caterpillar','stick-insect':'Stick Insect','shield-bug':'Shield Bug','moth-pink':'Moth','mushroom':'Mushroom','clover':'Clover','fern':'Fern','sunflower':'Sunflower','lavender':'Lavender','oak-leaf':'Oak Leaf','cherry-blossom':'Cherry Blossom','holly':'Holly','pine-tree':'Pine Tree','bonsai':'Bonsai','unicorn':'Unicorn','dragon':'Dragon','phoenix':'Phoenix','griffin':'Griffin','mermaid':'Mermaid','fairy':'Fairy','wizard':'Wizard','ghost':'Ghost','alien':'Alien','planet':'Planet','pegasus':'Pegasus','centaur':'Centaur','minotaur':'Minotaur','kraken':'Kraken','ice-dragon':'Ice Dragon','sky-dragon':'Sky Dragon','sea-serpent':'Sea Serpent','dire-wolf':'Dire Wolf','sphinx':'Sphinx','winged-lion':'Winged Lion','brown-bear':'Brown Bear','red-panda-bear':'Red Panda','giant-panda-bear':'Giant Panda','moose':'Moose','orange-tabby':'Orange Tabby','black-cat':'Black Cat','fluffy-cat':'Fluffy Cat','tuxedo-cat':'Tuxedo Cat'};
-const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","The Hope & Ruin","The Prince Albert","A L P H A B E T","The Pipeline","Brighton Racecourse","The Gladstone","Babble","Amex Stadium","Shelter Hall","Other"];const COMEDY_VENUES=["Brighton Centre","Brighton Dome","The Old Market","Komedia","The Forge Comedy Club","Theatre Royal Brighton"];
+const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","The Hope & Ruin","The Prince Albert","A L P H A B E T","The Pipeline","Brighton Racecourse","The Gladstone","Babble","Amex Stadium","Shelter Hall","Other"];const COMEDY_VENUES=["Brighton Centre","Brighton Dome","The Old Market","Komedia","The Forge Comedy Club","Theatre Royal Brighton"];const VENUE_ALIASES={"Brighton Dome - Concert Hall":"Brighton Dome"};
 const $=id=>document.getElementById(id);
 let events=[], attendance=[], groupHappenings=[], groups=[], groupMembers=[], customEvents=[];
 const savedVenues=JSON.parse(localStorage.getItem('bw_venues')||'null');
@@ -611,7 +611,8 @@ function esc(s){const d=document.createElement('div');d.textContent=s||'';return
 function people(id,status){return attendance.filter(x=>x.event_id===id&&x.status===status)}
 function groupPeople(id,status){return groupHappenings.filter(x=>x.event_id===id&&x.status===status)}
 function uniqueGroupPeopleCount(id,status){const ids=new Set(groupPeople(id,status).map(x=>x.user_id).filter(Boolean)); const mine=attendance.find(x=>x.event_id===id&&x.user_id===uid()&&x.status===status); if(mine)ids.add(uid()); return ids.size}
-function venueVisible(e){return e.venue==='Other'||(e.is_custom && e.venue==='Other' ? true : enabled.includes(e.venue))}
+function canonicalVenue(v){return VENUE_ALIASES[v]||v}
+function venueVisible(e){const venue=canonicalVenue(e.venue);return venue==='Other'||(e.is_custom&&venue==='Other'?true:enabled.includes(venue))}
 function show(el){$(el).classList.remove('hidden')}
 function hide(el){$(el).classList.add('hidden')}
 
@@ -640,7 +641,7 @@ function mergeEvents(base){
  [...base,...customEvents.map(e=>({...e,source:'community',is_custom:true}))].forEach(e=>{
   if(!e||!e.id||seen.has(e.id)||!parseEventDate(e.date)||!e.title||!e.venue)return;
   seen.add(e.id);
-  if(e.venue==='Other' && e.venue_detail)e.venue_display='Other · '+e.venue_detail; else e.venue_display=e.venue;
+  if(e.venue==='Other' && e.venue_detail)e.venue_display='Other · '+e.venue_detail; else e.venue_display=canonicalVenue(e.venue);
   merged.push(e);
  });
  return merged;
