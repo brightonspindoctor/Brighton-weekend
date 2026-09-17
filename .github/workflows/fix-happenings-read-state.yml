@@ -3,7 +3,7 @@ name: Fix Happenings read state
 on:
   push:
     paths:
-      - '.github/workflows/fix-happenings-read-state.yml'
+      - '.happenings-read-state-trigger'
 
 permissions:
   contents: write
@@ -53,14 +53,13 @@ jobs:
           if s.count(old2) != 1:
               raise SystemExit('Expected loadGroupHappenings block not found exactly once')
           s = s.replace(old2, new2)
-
           p.write_text(s)
 
-      - name: Commit patch and remove workflow
+      - name: Commit patch
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add index.html .github/workflows/fix-happenings-read-state.yml
+          git add index.html
           git commit -m 'Fix Happenings read state after async load'
           git push
