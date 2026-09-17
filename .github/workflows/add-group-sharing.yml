@@ -2,6 +2,8 @@ name: Add group invite links
 
 on:
   push:
+    branches:
+      - main
 
 permissions:
   contents: write
