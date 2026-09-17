@@ -1,0 +1,39 @@
+name: Fix Happenings indicator
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-happenings-indicator.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Patch indicator behaviour
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text()
+          css='<style id="bw-happenings-indicator-fix">.nav button.has-new::after{display:none!important}.nav button.bw-happenings-seen{color:#9cabb2!important}</style>'
+          if 'id="bw-happenings-indicator-fix"' not in s:
+              s=s.replace('</head>',css+'</head>',1)
+          marker='''function updateHappeningsBadge(){\n const tab=document.querySelector('.nav button[data-tab="peopleTab"]');\n if(!tab)return;\n const seen=localStorage.getItem('bw_happenings_seen_'+uid())||'';\n const current=happeningsSignature(groupHappenings);\n const hasNew=!!current && current!==seen;\n tab.classList.toggle('has-new',hasNew);\n}'''
+          replacement='''function updateHappeningsBadge(){\n const tab=document.querySelector('.nav button[data-tab="peopleTab"]');\n if(!tab)return;\n const seen=localStorage.getItem('bw_happenings_seen_'+uid())||'';\n const current=happeningsSignature(groupHappenings);\n const hasNew=!!current && current!==seen;\n tab.classList.toggle('has-new',hasNew);\n if(hasNew)tab.classList.remove('bw-happenings-seen');\n}'''
+          if marker in s:
+              s=s.replace(marker,replacement,1)
+          click='''document.addEventListener('click',e=>{const b=e.target.closest('.nav button[data-tab="peopleTab"]');if(!b||!uid())return;setTimeout(()=>{if(typeof markHappeningsSeen==='function'){markHappeningsSeen();b.classList.remove('has-new');b.classList.add('bw-happenings-seen')}},0)});'''
+          if 'bw-happenings-seen' not in s[s.find('</body>'):]:
+              s=s.replace('</body>',click+'</body>',1)
+          p.write_text(s)
+          PY
+      - name: Commit and remove one-shot workflow
+        run: |
+          git config user.name 'Brighton Weekend automation'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git rm .github/workflows/fix-happenings-indicator.yml
+          git commit -m 'Fix Happenings unread indicator'
+          git push origin HEAD:main
