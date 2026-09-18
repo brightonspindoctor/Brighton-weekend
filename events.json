@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-17",
-  "range_start": "2026-09-17",
-  "range_end": "2027-06-24",
+  "updated": "2026-09-18",
+  "range_start": "2026-09-18",
+  "range_end": "2027-06-25",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -26,55 +26,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-09-17-green-door-store-ivebeeneatingfruit",
-      "title": "Ivebeeneatingfruit",
-      "date": "2026-09-17",
-      "venue": "Green Door Store",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-17-concorde-2-allie-sherlock",
-      "title": "Allie Sherlock",
-      "date": "2026-09-17",
-      "venue": "Concorde 2",
-      "time": "19:30",
-      "category": "Music/Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on"
-    },
-    {
-      "id": "2026-09-17-komedia-tatty-macleod-things-my-mother-did-tour-preview-thu-17-sep-2026-8-00-pm-doors-7-30-pm",
-      "title": "Tatty Macleod: Things My Mother Did (Tour Preview) Thu 17 Sep 2026 8:00 PM ( Doors: 7:30 PM )",
-      "date": "2026-09-17",
-      "venue": "Komedia",
-      "time": "20:00",
-      "finish_time": "19:30",
-      "category": "Music",
-      "ticket_url": "https://www.komedia.co.uk/shows/tatty-macleod-things-my-mother-did/?eid=20659"
-    },
-    {
-      "id": "2026-09-17-chalk-vundabar-yot-club",
-      "title": "Vundabar, Yot Club",
-      "date": "2026-09-17",
-      "venue": "CHALK",
-      "category": "Music",
-      "time": null,
-      "ticket_url": "https://chalkvenue.com/",
-      "source_url": "https://chalkvenue.com/"
-    },
-    {
-      "id": "2026-09-17-theoldmarket-tom-gilbey-absolute-filth",
-      "title": "Tom Gilbey: Absolute Filth",
-      "date": "2026-09-17",
-      "venue": "The Old Market",
-      "category": "Comedy",
-      "time": null,
-      "ticket_url": "https://www.theoldmarket.com/shows",
-      "source_url": "https://www.theoldmarket.com/shows"
-    },
     {
       "id": "2026-09-18-komedia-story-magic-fri-18-sep-2026-10-00-am-doors-9-50-am",
       "title": "Story Magic Fri 18 Sep 2026 10:00 AM ( Doors: 9:50 AM )",
@@ -1195,6 +1146,16 @@
       "time": "12:30",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/"
+    },
+    {
+      "id": "2026-09-26-green-door-store-234-fest-2026",
+      "title": "234 Fest 2026",
+      "date": "2026-09-26",
+      "venue": "Green Door Store",
+      "time": "13:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
     },
     {
       "id": "2026-09-26-komedia-mystery-musicals-day-party-sat-26-sep-2026-1-00-pm-doors-12-00-pm",
@@ -10000,6 +9961,16 @@
       "finish_time": "19:00",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=20991"
+    },
+    {
+      "id": "2027-06-25-komedia-komedia-comedy-club",
+      "title": "Komedia Comedy Club",
+      "date": "2027-06-25",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "19:00",
+      "category": "Comedy",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
     }
   ]
 }
