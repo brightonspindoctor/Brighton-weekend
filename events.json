@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-18",
-  "range_start": "2026-09-18",
-  "range_end": "2027-06-25",
+  "updated": "2026-09-19",
+  "range_start": "2026-09-19",
+  "range_end": "2027-06-26",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -26,154 +26,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-09-18-komedia-story-magic-fri-18-sep-2026-10-00-am-doors-9-50-am",
-      "title": "Story Magic Fri 18 Sep 2026 10:00 AM ( Doors: 9:50 AM )",
-      "date": "2026-09-18",
-      "venue": "Komedia",
-      "time": "10:00",
-      "finish_time": "09:50",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20746"
-    },
-    {
-      "id": "2026-09-18-komedia-story-magic-fri-18-sep-2026-11-00-am-doors-10-50-am",
-      "title": "Story Magic Fri 18 Sep 2026 11:00 AM ( Doors: 10:50 AM )",
-      "date": "2026-09-18",
-      "venue": "Komedia",
-      "time": "11:00",
-      "finish_time": "10:50",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20747"
-    },
-    {
-      "id": "2026-09-18-komedia-story-magic-baby-sessions-fri-18-sep-2026-12-30-pm-doors-12-20-pm",
-      "title": "Story Magic – Baby Sessions Fri 18 Sep 2026 12:30 PM ( Doors: 12:20 PM )",
-      "date": "2026-09-18",
-      "venue": "Komedia",
-      "time": "12:30",
-      "finish_time": "12:20",
-      "category": "Family",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic-baby-sessions/?eid=20802"
-    },
-    {
-      "id": "2026-09-18-concorde-2-guns-n-roses-experience",
-      "title": "Guns N' Roses Experience",
-      "date": "2026-09-18",
-      "venue": "Concorde 2",
-      "time": "19:00",
-      "category": "Music/Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on"
-    },
-    {
-      "id": "2026-09-18-green-door-store-polite-bureaux",
-      "title": "Polite Bureaux",
-      "date": "2026-09-18",
-      "venue": "Green Door Store",
-      "time": "19:00",
-      "category": "Music",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-18-19-00-wu-lyf",
-      "title": "WU LYF",
-      "date": "2026-09-18",
-      "venue": "Patterns",
-      "time": "19:00",
-      "category": "Music",
-      "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055"
-    },
-    {
-      "id": "2026-09-18-komedia-bela-fool-x-undereel-support-fri-18-sep-2026-7-30-pm-doors-7-00-pm",
-      "title": "Bela Fool X Undereel (+Support) Fri 18 Sep 2026 7:30 PM ( Doors: 7:00 PM )",
-      "date": "2026-09-18",
-      "venue": "Komedia",
-      "time": "19:30",
-      "finish_time": "19:00",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/bela-fool-x-undereel-support/?eid=20393"
-    },
-    {
-      "id": "2026-09-18-komedia-komedia-comedy-club-fri-18-sep-2026-8-00-pm-doors-7-00-pm",
-      "title": "Komedia Comedy Club Fri 18 Sep 2026 8:00 PM ( Doors: 7:00 PM )",
-      "date": "2026-09-18",
-      "venue": "Komedia",
-      "time": "20:00",
-      "finish_time": "19:00",
-      "category": "Comedy",
-      "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=18919"
-    },
-    {
-      "id": "2026-09-18-the-forge-comedy-club-forge-comedy-club",
-      "title": "Forge Comedy Club",
-      "date": "2026-09-18",
-      "venue": "The Forge Comedy Club",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/brighton-comedy-shows/"
-    },
-    {
-      "id": "2026-09-18-green-door-store-party-4-u",
-      "title": "party 4 u",
-      "date": "2026-09-18",
-      "venue": "Green Door Store",
-      "time": "23:00",
-      "category": "Club",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-18-quarters-sofia-kourtesis",
-      "title": "Sofia Kourtesis",
-      "date": "2026-09-18",
-      "venue": "Quarters",
-      "time": "23:00",
-      "finish_time": "04:00",
-      "category": "Club",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson"
-    },
-    {
-      "id": "2026-09-18-the-hope-ruin-tv-smith-the-bored-teenagers-fractured",
-      "title": "TV Smith & The Bored Teenagers + Fractured",
-      "date": "2026-09-18",
-      "venue": "The Hope & Ruin",
-      "time": null,
-      "finish_time": null,
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-hope-and-ruin"
-    },
-    {
-      "id": "2026-09-18-the-old-market-cabaret",
-      "title": "Cabaret",
-      "date": "2026-09-18",
-      "venue": "The Old Market",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://www.theoldmarket.com/shows?category=Cabaret"
-    },
-    {
-      "id": "2026-09-18-the-old-market-ginger-johnson-show-pony",
-      "title": "Ginger Johnson: Show Pony",
-      "date": "2026-09-18",
-      "venue": "The Old Market",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://www.theoldmarket.com/shows"
-    },
-    {
-      "id": "2026-09-18-theatre-royal-brighton-age-is-a-stage",
-      "title": "Age is a Stage",
-      "date": "2026-09-18",
-      "venue": "Theatre Royal Brighton",
-      "time": "",
-      "finish_time": "",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/shows/age-is-a-stage/theatre-royal-brighton/"
-    },
     {
       "id": "2026-09-19-komedia-irvine-welsh-can-nothing-save-us-sat-19-sep-2026-2-00-pm-doors-1-00-pm",
       "title": "Irvine Welsh: Can Nothing Save Us Sat 19 Sep 2026 2:00 PM ( Doors: 1:00 PM )",
@@ -1121,6 +973,16 @@
       "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
     },
     {
+      "id": "2026-09-25-theatre-royal-brighton-age-is-a-stage",
+      "title": "Age is a Stage",
+      "date": "2026-09-25",
+      "venue": "Theatre Royal Brighton",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+    },
+    {
       "id": "2026-09-25-theatreroyalbrighton-stand-or-fall-the-fall-and-rise-of-brighton-and-hove-albion",
       "title": "Stand or Fall - The Fall and Rise of Brighton and Hove Albion",
       "date": "2026-09-25",
@@ -1234,6 +1096,16 @@
       "time": "23:00",
       "category": "Music/Club",
       "ticket_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-09-26-green-door-store-it-is-still-1985",
+      "title": "It Is Still 1985",
+      "date": "2026-09-26",
+      "venue": "Green Door Store",
+      "time": "23:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
     },
     {
       "id": "2026-09-26-komedia-the-brighton-moon-hop-sat-26-sep-2026-doors-11-00-pm",
@@ -2971,14 +2843,14 @@
       "ticket_url": "https://www.concorde2.co.uk/whats-on"
     },
     {
-      "id": "2026-10-16-quarters-4am-kru",
-      "title": "4am Kru",
+      "id": "2026-10-16-quarters-4am-kru-jolie-p-more-tba",
+      "title": "4am Kru + Jolie P + more TBA",
       "date": "2026-10-16",
       "venue": "Quarters",
-      "time": "23:00",
-      "finish_time": "04:00",
+      "time": "4am",
+      "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson"
+      "ticket_url": "https://www.visitbrighton.com/whats-on/4am-kru-jolie-p-more-tba-p2929791"
     },
     {
       "id": "2026-10-16-brightoncentre-magic-men-world-tour-2026-magic-men-live",
@@ -6089,6 +5961,16 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/a-l-p-h-a-b-e-t"
+    },
+    {
+      "id": "2026-11-19-chalk-ktam-unleashed",
+      "title": "Ktam Unleashed",
+      "date": "2026-11-19",
+      "venue": "CHALK",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/ktam-unleashed-p2950571"
     },
     {
       "id": "2026-11-19-concorde2-chop-suey-slipnot-a7xperience-propa-roach",
@@ -9966,6 +9848,16 @@
       "id": "2027-06-25-komedia-komedia-comedy-club",
       "title": "Komedia Comedy Club",
       "date": "2027-06-25",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "19:00",
+      "category": "Comedy",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
+      "id": "2027-06-26-komedia-komedia-comedy-club",
+      "title": "Komedia Comedy Club",
+      "date": "2027-06-26",
       "venue": "Komedia",
       "time": "20:00",
       "finish_time": "19:00",
