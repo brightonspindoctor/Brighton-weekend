@@ -49,7 +49,7 @@ for (const icon of icons) {
   const src = path.join(dir, srcName);
   const dest = path.join(outDir, icon + '.png');
 
-  const artwork = await sharp(src)
+  const artwork = await sharp(src, { failOn: 'none' })
     .resize(104, 104, { fit: 'cover', position: 'centre' })
     .png()
     .toBuffer();
@@ -57,23 +57,6 @@ for (const icon of icons) {
   const maskSvg = Buffer.from(
     '<svg width="104" height="104" xmlns="http://www.w3.org/2000/svg"><circle cx="52" cy="52" r="52" fill="white"/></svg>'
   );
-
-  const output = await sharp({
-    create: { width: 128, height: 128, channels: 4, background: NAVY }
-  })
-    .composite([
-      {
-        input: Buffer.from(
-          '<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">' +
-          '<circle cx="64" cy="64" r="62" fill="' + TEAL + '"/>' +
-          '<circle cx="64" cy="64" r="58" fill="' + NAVY + '"/>' +
-          '</svg>'
-        )
-      },
-      { input: artwork, left: 12, top: 12, blend: 'over', mask: undefined }
-    ])
-    .png()
-    .toBuffer();
 
   // Apply a circular alpha mask to the artwork layer by rebuilding the composite cleanly.
   const maskedArtwork = await sharp(artwork)
