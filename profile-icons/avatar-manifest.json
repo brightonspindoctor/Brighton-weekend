@@ -354,11 +354,6 @@
     "file": "standardized/giant-panda-bear.png",
     "sha256": "2b60eb73a08c5270dd9e10a9e1b97358a01e8a60613a5fcdac7dbb2e79f45a79"
   },
-  "moose": {
-    "label": "Moose",
-    "file": "standardized/moose.png",
-    "sha256": "50da8b65c2607b297aa3957abf1963c9e126435c5643a369a0b93a33f882772d"
-  },
   "orange-tabby": {
     "label": "Orange Tabby",
     "file": "standardized/orange-tabby.png",
