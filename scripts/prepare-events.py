@@ -41,6 +41,10 @@ def fuller_title(a, b):
         return a if len(ka) > len(kb) else b
     return None
 
+def is_date_only_title(title):
+    value = str(title or "").strip()
+    return bool(re.fullmatch(r"(?:mon|tue|wed|thu|fri|sat|sun)(?:day)?\\s+\\d{1,2}\\s+[a-z]{3,9}\\s+\\d{2,4}", value, re.I))
+
 def is_ben_folds_exception(venue, title):
     return venue == "brighton dome - concert hall" and BEN_FOLDS_TITLE in title_key(title)
 
@@ -56,7 +60,7 @@ for event in events:
         removed["dome"] += 1; continue
     if venue == "patterns" and any(marker in low for marker in PATTERNS_RECURRING):
         removed["patterns_recurring"] += 1; continue
-    if low in GENERIC_TITLES or not title:
+    if low in GENERIC_TITLES or is_date_only_title(title) or not title:
         removed["generic"] += 1; continue
     kept.append(event)
 
