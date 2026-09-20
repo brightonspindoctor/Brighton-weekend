@@ -98,7 +98,7 @@ const standardizedMap = Object.fromEntries(icons.map(icon => {
   return [icon, sourceOnly ? (sourceMap[icon] || icon + '.webp') : 'standardized/' + icon + '.png'];
 }));
 const replacement = 'const PROFILE_ICON_FILES=' + JSON.stringify(standardizedMap) + ';';
-const updatedIndex = index.replace(/const PROFILE_ICON_FILES=\{.*?\};/s, replacement);
+const updatedIndex = index.replace(/const PROFILE_ICON_FILES\s*=\s*\{.*?\};/s, replacement);
 if (updatedIndex === index) throw new Error('PROFILE_ICON_FILES replacement failed');
 fs.writeFileSync(indexPath, updatedIndex);
 
