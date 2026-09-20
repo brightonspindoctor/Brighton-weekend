@@ -141,16 +141,6 @@
       "ticket_url": "https://www.komedia.co.uk/shows/chaps-straps-queer-line-dancing/?eid=20779"
     },
     {
-      "id": "2026-09-21-chalk-mon-21-sep-26",
-      "title": "Mon 21 Sep 26",
-      "date": "2026-09-21",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/"
-    },
-    {
       "id": "2026-09-21-concorde2-king-king",
       "title": "King King",
       "date": "2026-09-21",
@@ -223,16 +213,6 @@
       "source_url": "https://chalkvenue.com/"
     },
     {
-      "id": "2026-09-22-chalk-tue-22-sep-26",
-      "title": "Tue 22 Sep 26",
-      "date": "2026-09-22",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://chalkvenue.com/"
-    },
-    {
       "id": "2026-09-22-thehoperuin-midnight-cowgirls",
       "title": "Midnight Cowgirls",
       "date": "2026-09-22",
@@ -281,16 +261,6 @@
       "time": null,
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/"
-    },
-    {
-      "id": "2026-09-23-chalk-wed-23-sep-26",
-      "title": "Wed 23 Sep 26",
-      "date": "2026-09-23",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://chalkvenue.com/"
     },
     {
       "id": "2026-09-23-concorde2-grace-petrie",
@@ -394,16 +364,6 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/a-l-p-h-a-b-e-t"
-    },
-    {
-      "id": "2026-09-24-chalk-thu-24-sep-26",
-      "title": "Thu 24 Sep 26",
-      "date": "2026-09-24",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/"
     },
     {
       "id": "2026-09-24-concorde2-the-drum-n-bass-band",
@@ -617,16 +577,6 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
-      "id": "2026-09-25-chalk-fri-25-sep-26",
-      "title": "Fri 25 Sep 26",
-      "date": "2026-09-25",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/"
-    },
-    {
       "id": "2026-09-25-chalk-toby-lee",
       "title": "Toby Lee",
       "date": "2026-09-25",
@@ -828,16 +778,6 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
-      "id": "2026-09-26-chalk-sat-26-sep-26",
-      "title": "Sat 26 Sep 26",
-      "date": "2026-09-26",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://chalkvenue.com/"
-    },
-    {
       "id": "2026-09-26-chalk-the-afghan-whigs-ed-harcourt",
       "title": "The Afghan Whigs Ed Harcourt",
       "date": "2026-09-26",
@@ -856,6 +796,16 @@
       "time": null,
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
       "source_url": "https://www.concorde2.co.uk/whats-on"
+    },
+    {
+      "id": "2026-09-26-patterns-boudica-with-boris-berghain-brighton-debut",
+      "title": "Boudica With Boris (berghain/brighton Debut)",
+      "date": "2026-09-26",
+      "venue": "Patterns",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/boudica-with-boris-berghain-brighton-debut-p2932121"
     },
     {
       "id": "2026-09-26-patterns-tyber-peter-the-dualers",
@@ -1072,16 +1022,6 @@
       "ticket_url": "https://www.brighton-racecourse.co.uk/whats-on"
     },
     {
-      "id": "2026-09-28-chalk-mon-28-sep-26",
-      "title": "Mon 28 Sep 26",
-      "date": "2026-09-28",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/"
-    },
-    {
       "id": "2026-09-28-the-prince-albert-frankcastre-audio-june-la-luna",
       "title": "Frankcastre Audio / June / La Luna",
       "date": "2026-09-28",
@@ -1122,16 +1062,6 @@
       "finish_time": "22:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/rich-hall-chin-music-tickets-1985513545463"
-    },
-    {
-      "id": "2026-09-29-chalk-tue-29-sep-26",
-      "title": "Tue 29 Sep 26",
-      "date": "2026-09-29",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://chalkvenue.com/"
     },
     {
       "id": "2026-09-29-theoldmarket-mammal-hands",
@@ -1204,16 +1134,6 @@
       "time": null,
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/"
-    },
-    {
-      "id": "2026-09-30-chalk-wed-30-sep-26",
-      "title": "Wed 30 Sep 26",
-      "date": "2026-09-30",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://chalkvenue.com/"
     },
     {
       "id": "2026-09-30-concorde2-man-woman-chainsaw",
