@@ -24,12 +24,13 @@ if (mapMatch) {
 function sourceFor(icon) {
   const explicit = sourceMap[icon];
   const candidates = [
-    explicit,
+    explicit && !explicit.startsWith('standardized/') ? explicit : null,
     icon + '.png',
     icon + '.jpg',
     icon + '.jpeg',
     icon + '.webp',
-    icon + '.svg'
+    icon + '.svg',
+    explicit
   ].filter(Boolean);
   for (const c of candidates) {
     if (fs.existsSync(path.join(dir, c))) return c;
@@ -41,6 +42,16 @@ function sha256(file) {
   return crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 }
 
+async function sourceImage(src) {
+  const raw = fs.readFileSync(src);
+  if (src.toLowerCase().endsWith('.svg')) {
+    const text = raw.toString('utf8');
+    const match = text.match(/data:image\\/webp;base64,([^"']+)/i);
+    if (match) return sharp(Buffer.from(match[1], 'base64'), { failOn: 'none' });
+  }
+  return sharp(raw, { failOn: 'none' });
+}
+
 const NAVY = '#101C2C';
 const TEAL = '#35A7A0';
 
@@ -49,10 +60,11 @@ for (const icon of icons) {
   const src = path.join(dir, srcName);
   const dest = path.join(outDir, icon + '.png');
 
-  const artwork = await sharp(src, { failOn: 'none' })
-    .resize(104, 104, { fit: 'cover', position: 'centre' })
-    .png()
-    .toBuffer();
+  const base = await sourceImage(src);
+  const isBear = ['brown-bear', 'red-panda-bear', 'giant-panda-bear'].includes(icon);
+  const artwork = isBear
+    ? await base.resize(124, 124, { fit: 'cover', position: 'centre' }).extract({ left: 10, top: 10, width: 104, height: 104 }).png().toBuffer()
+    : await base.resize(104, 104, { fit: 'cover', position: 'centre' }).png().toBuffer();
 
   const maskSvg = Buffer.from(
     '<svg width="104" height="104" xmlns="http://www.w3.org/2000/svg"><circle cx="52" cy="52" r="52" fill="white"/></svg>'
