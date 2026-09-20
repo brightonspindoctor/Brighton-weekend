@@ -141,38 +141,8 @@
       "ticket_url": "https://www.komedia.co.uk/shows/chaps-straps-queer-line-dancing/?eid=20779"
     },
     {
-      "id": "2026-09-21-chalk-club",
-      "title": "Club",
-      "date": "2026-09-21",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/club"
-    },
-    {
-      "id": "2026-09-21-chalk-live",
-      "title": "Live",
-      "date": "2026-09-21",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/event/vundarbar-and-you-club"
-    },
-    {
       "id": "2026-09-21-chalk-mon-21-sep-26",
       "title": "Mon 21 Sep 26",
-      "date": "2026-09-21",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/"
-    },
-    {
-      "id": "2026-09-21-chalk-this-week",
-      "title": "This week",
       "date": "2026-09-21",
       "venue": "CHALK",
       "time": "",
@@ -243,16 +213,6 @@
       "ticket_url": "https://www.komedia.co.uk/shows/sandro-ford-lager-than-life/?eid=19281"
     },
     {
-      "id": "2026-09-22-chalk-live",
-      "title": "Live",
-      "date": "2026-09-22",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://chalkvenue.com/event/the-lemonheads-1"
-    },
-    {
       "id": "2026-09-22-chalk-the-lemonheads",
       "title": "The Lemonheads",
       "date": "2026-09-22",
@@ -321,16 +281,6 @@
       "time": null,
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/"
-    },
-    {
-      "id": "2026-09-23-chalk-live",
-      "title": "Live",
-      "date": "2026-09-23",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://chalkvenue.com/event/holy-fuck-1"
     },
     {
       "id": "2026-09-23-chalk-wed-23-sep-26",
@@ -446,16 +396,6 @@
       "ticket_url": "https://www.ents24.com/brighton-events/a-l-p-h-a-b-e-t"
     },
     {
-      "id": "2026-09-24-chalk-club",
-      "title": "Club",
-      "date": "2026-09-24",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/event/secret-discotheque-sussex-freshers"
-    },
-    {
       "id": "2026-09-24-chalk-thu-24-sep-26",
       "title": "Thu 24 Sep 26",
       "date": "2026-09-24",
@@ -484,16 +424,6 @@
       "time": null,
       "ticket_url": "https://www.hope.pub/",
       "source_url": "https://www.hope.pub/"
-    },
-    {
-      "id": "2026-09-24-the-old-market-film",
-      "title": "Film",
-      "date": "2026-09-24",
-      "venue": "The Old Market",
-      "time": "",
-      "finish_time": "",
-      "category": "Talk",
-      "ticket_url": "https://www.theoldmarket.com/shows?category=Film"
     },
     {
       "id": "2026-09-24-the-old-market-people-s-emergency-briefing",
@@ -685,16 +615,6 @@
       "finish_time": "04:00",
       "category": "Club",
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
-    },
-    {
-      "id": "2026-09-25-chalk-club",
-      "title": "Club",
-      "date": "2026-09-25",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/event/notorious-homegrown-special"
     },
     {
       "id": "2026-09-25-chalk-fri-25-sep-26",
@@ -906,26 +826,6 @@
       "finish_time": "05:00",
       "category": "Club",
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
-    },
-    {
-      "id": "2026-09-26-chalk-club",
-      "title": "Club",
-      "date": "2026-09-26",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/event/brainrot-sussex-freshers"
-    },
-    {
-      "id": "2026-09-26-chalk-live",
-      "title": "Live",
-      "date": "2026-09-26",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://chalkvenue.com/event/the-afghan-whigs"
     },
     {
       "id": "2026-09-26-chalk-sat-26-sep-26",
@@ -1172,16 +1072,6 @@
       "ticket_url": "https://www.brighton-racecourse.co.uk/whats-on"
     },
     {
-      "id": "2026-09-28-chalk-club",
-      "title": "Club",
-      "date": "2026-09-28",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/event/fat-poppadaddys-brighton-freshers"
-    },
-    {
       "id": "2026-09-28-chalk-mon-28-sep-26",
       "title": "Mon 28 Sep 26",
       "date": "2026-09-28",
@@ -1232,16 +1122,6 @@
       "finish_time": "22:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/rich-hall-chin-music-tickets-1985513545463"
-    },
-    {
-      "id": "2026-09-29-chalk-live",
-      "title": "Live",
-      "date": "2026-09-29",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://chalkvenue.com/event/keo"
     },
     {
       "id": "2026-09-29-chalk-tue-29-sep-26",
@@ -1324,16 +1204,6 @@
       "time": null,
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/"
-    },
-    {
-      "id": "2026-09-30-chalk-live",
-      "title": "Live",
-      "date": "2026-09-30",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://chalkvenue.com/event/bridge-city-sinners"
     },
     {
       "id": "2026-09-30-chalk-wed-30-sep-26",
@@ -3528,6 +3398,16 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.theoldmarket.com/shows"
+    },
+    {
+      "id": "2026-10-24-shelter-hall-2026",
+      "title": "2026",
+      "date": "2026-10-24",
+      "venue": "Shelter Hall",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://shelterhall.co.uk/whats-on/brightons-oktoberfest-2026/"
     },
     {
       "id": "2026-10-24-shelter-hall-brightons-oktoberfest",
@@ -9073,16 +8953,6 @@
       "time": null,
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
-    },
-    {
-      "id": "2027-03-17-the-old-market-film",
-      "title": "Film",
-      "date": "2027-03-17",
-      "venue": "The Old Market",
-      "time": "",
-      "finish_time": "",
-      "category": "Talk",
-      "ticket_url": "https://www.theoldmarket.com/shows?category=Film"
     },
     {
       "id": "2027-03-17-the-old-market-kendal-mountain-festival-live-tour-2027",
