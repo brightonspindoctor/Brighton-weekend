@@ -43,7 +43,7 @@ def fuller_title(a, b):
 
 def is_date_only_title(title):
     value = str(title or "").strip()
-    return bool(re.fullmatch(r"(?:mon|tue|wed|thu|fri|sat|sun)(?:day)?\\s+\\d{1,2}\\s+[a-z]{3,9}\\s+\\d{2,4}", value, re.I))
+    return bool(re.fullmatch(r"(?:mon|tue|wed|thu|fri|sat|sun)(?:day)?\s+\d{1,2}\s+[a-z]{3,9}\s+\d{2,4}", value, re.I))
 
 def is_ben_folds_exception(venue, title):
     return venue == "brighton dome - concert hall" and BEN_FOLDS_TITLE in title_key(title)
