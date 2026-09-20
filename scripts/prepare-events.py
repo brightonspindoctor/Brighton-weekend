@@ -41,7 +41,7 @@ def fuller_title(a, b):
         return a if len(ka) > len(kb) else b
     return None
 
-def is_date_only_title(title):
+# Reject venue placeholders such as “Mon 21 Sep 26” rather than publishing them as events.\ndef is_date_only_title(title):
     value = str(title or "").strip()
     return bool(re.fullmatch(r"(?:mon|tue|wed|thu|fri|sat|sun)(?:day)?\s+\d{1,2}\s+[a-z]{3,9}\s+\d{2,4}", value, re.I))
 
