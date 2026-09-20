@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-19",
-  "range_start": "2026-09-19",
-  "range_end": "2027-06-26",
+  "updated": "2026-09-20",
+  "range_start": "2026-09-20",
+  "range_end": "2027-06-27",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -26,226 +26,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-09-19-komedia-irvine-welsh-can-nothing-save-us-sat-19-sep-2026-2-00-pm-doors-1-00-pm",
-      "title": "Irvine Welsh: Can Nothing Save Us Sat 19 Sep 2026 2:00 PM ( Doors: 1:00 PM )",
-      "date": "2026-09-19",
-      "venue": "Komedia",
-      "time": "14:00",
-      "finish_time": "13:00",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/irvine-welsh-can-nothing-save-us/?eid=19803"
-    },
-    {
-      "id": "2026-09-19-amex-stadium-brighton-v-arsenal",
-      "title": "Brighton v Arsenal",
-      "date": "2026-09-19",
-      "venue": "Amex Stadium",
-      "time": "15:00",
-      "finish_time": null,
-      "category": "Other",
-      "ticket_url": "https://www.brightonandhovealbion.com/tickets"
-    },
-    {
-      "id": "2026-09-19-komedia-lovers-ii-friends-90s-00s-day-party-sat-19-sep-2026-doors-4-00-pm",
-      "title": "Lovers II Friends – 90s/00s Day Party Sat 19 Sep 2026 ( Doors: 4:00 PM )",
-      "date": "2026-09-19",
-      "venue": "Komedia",
-      "time": "16:00",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.komedia.co.uk/shows/lovers-ii-friends-90s-00s-day-party/?eid=20256"
-    },
-    {
-      "id": "2026-09-19-concorde-2-sanctum-sanctorium-the-dark-side-of-the-80s",
-      "title": "Sanctum Sanctorium - The Dark Side Of The 80s",
-      "date": "2026-09-19",
-      "venue": "Concorde 2",
-      "time": "19:00",
-      "category": "Music/Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on"
-    },
-    {
-      "id": "2026-09-19-green-door-store-aquatic-ape-theory",
-      "title": "Aquatic Ape Theory",
-      "date": "2026-09-19",
-      "venue": "Green Door Store",
-      "time": "19:00",
-      "category": "Music",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-19-komedia-komedia-comedy-club-sat-19-sep-2026-8-00-pm-doors-7-00-pm",
-      "title": "Komedia Comedy Club Sat 19 Sep 2026 8:00 PM ( Doors: 7:00 PM )",
-      "date": "2026-09-19",
-      "venue": "Komedia",
-      "time": "20:00",
-      "finish_time": "19:00",
-      "category": "Comedy",
-      "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=18920"
-    },
-    {
-      "id": "2026-09-19-the-forge-comedy-club-forge-comedy-club",
-      "title": "Forge Comedy Club",
-      "date": "2026-09-19",
-      "venue": "The Forge Comedy Club",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/brighton-comedy-shows/"
-    },
-    {
-      "id": "2026-09-19-komedia-spellbound-sat-19-sep-2026-doors-9-00-pm",
-      "title": "Spellbound Sat 19 Sep 2026 ( Doors: 9:00 PM )",
-      "date": "2026-09-19",
-      "venue": "Komedia",
-      "time": "21:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/spellbound/?eid=19567"
-    },
-    {
-      "id": "2026-09-19-chalk-brainrot-moving-in-weekend",
-      "title": "BRAINROT: MOVING IN WEEKEND!!",
-      "date": "2026-09-19",
-      "venue": "CHALK",
-      "time": "22:00",
-      "finish_time": "03:00",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/"
-    },
-    {
-      "id": "2026-09-19-concorde-2-moody-disco-sosa",
-      "title": "Moody Disco - Sosa",
-      "date": "2026-09-19",
-      "venue": "Concorde 2",
-      "time": "23:00",
-      "category": "Music/Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on"
-    },
-    {
-      "id": "2026-09-19-green-door-store-it-is-still-1985",
-      "title": "It Is Still 1985",
-      "date": "2026-09-19",
-      "venue": "Green Door Store",
-      "time": "23:00",
-      "category": "Club",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-19-quarters-groove-cartel-presents-tommy-phillips",
-      "title": "Groove Cartel Presents Tommy Phillips",
-      "date": "2026-09-19",
-      "venue": "Quarters",
-      "time": "23:00",
-      "finish_time": "05:00",
-      "category": "Club",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson"
-    },
-    {
-      "id": "2026-09-19-a-l-p-h-a-b-e-t-immersion",
-      "title": "Immersion",
-      "date": "2026-09-19",
-      "venue": "A L P H A B E T",
-      "time": null,
-      "finish_time": null,
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/a-l-p-h-a-b-e-t"
-    },
-    {
-      "id": "2026-09-19-komedia-in-conversation-with-irvine-welsh-can-nothing-save-us",
-      "title": "In Conversation with Irvine Welsh: Can Nothing Save Us",
-      "date": "2026-09-19",
-      "venue": "Komedia",
-      "category": "Talk",
-      "time": null,
-      "ticket_url": "https://www.komedia.co.uk/",
-      "source_url": "https://www.komedia.co.uk/"
-    },
-    {
-      "id": "2026-09-19-theoldmarket-nick-cope-s-family-show",
-      "title": "Nick Cope's Family Show",
-      "date": "2026-09-19",
-      "venue": "The Old Market",
-      "category": "Family",
-      "time": null,
-      "ticket_url": "https://www.theoldmarket.com/shows",
-      "source_url": "https://www.theoldmarket.com/shows"
-    },
-    {
-      "id": "2026-09-19-the-pipeline-flote-sulu-khoshekh-danger-of-death-blow-up-doll",
-      "title": "Flote / Sulu Khoshekh / Danger of Death / Blow Up Doll",
-      "date": "2026-09-19",
-      "venue": "The Pipeline",
-      "time": null,
-      "finish_time": null,
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-pipeline"
-    },
-    {
-      "id": "2026-09-19-the-prince-albert-gyasi",
-      "title": "Gyasi",
-      "date": "2026-09-19",
-      "venue": "The Prince Albert",
-      "time": null,
-      "finish_time": null,
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
-    },
-    {
-      "id": "2026-09-19-the-prince-albert-tragic-roundabout-the-qwarks-the-crumpets",
-      "title": "Tragic Roundabout / The Qwarks / The Crumpets",
-      "date": "2026-09-19",
-      "venue": "The Prince Albert",
-      "time": null,
-      "finish_time": null,
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
-    },
-    {
-      "id": "2026-09-19-theatre-royal-brighton-austentatious-an-improvised-jane-austen-novel",
-      "title": "Austentatious: An Improvised Jane Austen Novel",
-      "date": "2026-09-19",
-      "venue": "Theatre Royal Brighton",
-      "category": "Comedy",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
-    },
-    {
-      "id": "2026-09-19-theatre-royal-brighton-backstage-tours",
-      "title": "Backstage Tours",
-      "date": "2026-09-19",
-      "venue": "Theatre Royal Brighton",
-      "time": "",
-      "finish_time": "",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/shows/backstage-tours/theatre-royal-brighton/"
-    },
-    {
-      "id": "2026-09-19-23-00-sub-liminal-konichi-teej-pa",
-      "title": "Sub-liminal - Konichi, Teej, PA",
-      "date": "2026-09-19",
-      "venue": "Volks",
-      "time": null,
-      "category": "Music/Club",
-      "ticket_url": "https://www.axs.com/uk/venues/134040/volks-club-brighton-tickets"
-    },
-    {
-      "id": "2026-09-19-19-00-vexed",
-      "title": "Vexed",
-      "date": "2026-09-19",
-      "venue": "Volks",
-      "time": null,
-      "category": "Music/Club",
-      "ticket_url": "https://www.axs.com/uk/venues/134040/volks-club-brighton-tickets"
-    },
     {
       "id": "2026-09-20-komedia-laboratory-of-lullabies-with-noodle-music-sun-20-sep-2026-1-30-pm-doors-2-00-pm",
       "title": "Laboratory Of Lullabies With Noodle Music Sun 20 Sep 2026 1:30 PM ( Doors: 2:00 PM )",
@@ -1222,6 +1002,16 @@
       "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
     },
     {
+      "id": "2026-09-26-theatre-royal-brighton-backstage-tours",
+      "title": "Backstage Tours",
+      "date": "2026-09-26",
+      "venue": "Theatre Royal Brighton",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+    },
+    {
       "id": "2026-09-26-theatreroyalbrighton-stand-or-fall-the-fall-and-rise-of-brighton-and-hove-albion",
       "title": "Stand or Fall - The Fall and Rise of Brighton and Hove Albion",
       "date": "2026-09-26",
@@ -1238,6 +1028,16 @@
       "venue": "Theatre Royal Brighton",
       "category": "Theatre",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+    },
+    {
+      "id": "2026-09-27-green-door-store-234-fest-2026",
+      "title": "234 Fest 2026",
+      "date": "2026-09-27",
+      "venue": "Green Door Store",
+      "time": "13:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
     },
     {
       "id": "2026-09-27-concorde-2-feng",
@@ -1402,6 +1202,16 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
+    },
+    {
+      "id": "2026-09-29-green-door-store-noize-magazine-vol-3-launch-ft-milkmaiden-more",
+      "title": "Noize Magazine Vol. 3 Launch ft Milkmaiden + more",
+      "date": "2026-09-29",
+      "venue": "Green Door Store",
+      "time": "19:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
     },
     {
       "id": "2026-09-29-komedia-mark-thomas-40-in-stand-up-years-tue-29-sep-2026-8-00-pm-doors-7-00-pm",
@@ -7830,6 +7640,16 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/a-l-p-h-a-b-e-t"
+    },
+    {
+      "id": "2026-12-17-komedia-the-witchcraft-and-vagrancy-act-a-horror-folk-christmas",
+      "title": "The Witchcraft And Vagrancy Act: A Horror Folk Christmas",
+      "date": "2026-12-17",
+      "venue": "Komedia",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/the-witchcraft-and-vagrancy-act-a-horror-folk-christmas-p2729711"
     },
     {
       "id": "2026-12-18-komedia-story-magic-fri-18-dec-2026-10-00-am-doors-9-50-am",
