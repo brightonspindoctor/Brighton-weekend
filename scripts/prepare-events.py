@@ -22,6 +22,7 @@ PATTERNS_RECURRING = (
     "bottomless brunch",
 )
 GENERIC_TITLES = {
+    "event", "club", "live", "this week", "film",
     "comedy", "classical music", "music", "talks & debate", "talks and debate",
     "dance", "theatre", "family", "what's on", "events", "upcoming events",
     "get tickets", "buy tickets", "book tickets", "learn more", "more info",
