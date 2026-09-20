@@ -46,7 +46,7 @@ async function sourceImage(src) {
   const raw = fs.readFileSync(src);
   if (src.toLowerCase().endsWith('.svg')) {
     const text = raw.toString('utf8');
-    const match = text.match(/data:image\\/webp;base64,([^"']+)/i);
+    const match = text.match(/data:image\/webp;base64,([^"']+)/i);
     if (match) return sharp(Buffer.from(match[1], 'base64'), { failOn: 'none' });
   }
   return sharp(raw, { failOn: 'none' });
