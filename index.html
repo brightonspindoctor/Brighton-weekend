@@ -697,7 +697,13 @@ function happeningsSignature(rows){
  return rows.map(x=>[x.group_id,x.event_id,x.user_id,x.status].join(':')).sort().join('|');
 }
 function markHappeningsSeen(){
- localStorage.setItem('bw_happenings_seen_'+uid(),happeningsSignature(groupHappenings));
+ const current=happeningsSignature(groupHappenings);
+ if(current){
+  localStorage.setItem('bw_happenings_seen_'+uid(),current);
+  localStorage.removeItem('bw_happenings_mark_pending_'+uid());
+ }else{
+  localStorage.setItem('bw_happenings_mark_pending_'+uid(),'1');
+ }
  updateHappeningsBadge();
 }
 function updateHappeningsBadge(){
@@ -717,6 +723,10 @@ async function loadGroupHappenings(){
   groupHappenings=await rpc('bw_shared_happenings',{p_user_id:uid()});
   groupHappenings=Array.isArray(groupHappenings)?groupHappenings:[];
  }catch(e){console.warn('Group happenings unavailable',e);groupHappenings=[]}
+ if(groupHappenings.length && localStorage.getItem('bw_happenings_mark_pending_'+uid())==='1'){
+  localStorage.setItem('bw_happenings_seen_'+uid(),happeningsSignature(groupHappenings));
+  localStorage.removeItem('bw_happenings_mark_pending_'+uid());
+ }
  updateHappeningsBadge();
 }
 function trackVisitor(){
