@@ -294,20 +294,20 @@
     "file": "standardized/pegasus.png",
     "sha256": "0dd8046e0a993ea753786a462523fb233d6b365a22df88d4f4c5cd668e05d739"
   },
-  "centaur": {
-    "label": "Centaur",
-    "file": "standardized/centaur.png",
-    "sha256": "2e0ffcaddc1a318bcc9774809d78526a6bd289e1db6d95fa719fd3894609a17a"
+  "forest-spirit": {
+    "label": "Forest Spirit",
+    "file": "forest-spirit.webp",
+    "sha256": "0176524b6f30076493eed8251914da1982977258003a41d3daf5454955a4baff"
   },
-  "minotaur": {
-    "label": "Minotaur",
-    "file": "standardized/minotaur.png",
-    "sha256": "4ad95bbdf6f48f8f0d8f4819b4fdea13da4128a94e1c3bba0fe53d93643f714f"
+  "moon-hare": {
+    "label": "Moon Hare",
+    "file": "moon-hare.webp",
+    "sha256": "8b0e03e827b92c2bfec71ec7c94f63b612dfecedf37a1ab89410dc77471c3d86"
   },
-  "kraken": {
-    "label": "Kraken",
-    "file": "standardized/kraken.png",
-    "sha256": "31700de5c42564fa1061ffc0717ed2c7bb65d6acaff541841d0b7115b0b83cb7"
+  "leviathan": {
+    "label": "Leviathan",
+    "file": "leviathan.webp",
+    "sha256": "de5d4af637130b5e3a1b9b26001f5126a1c0e445d1fda550b92cd48aae70bfb3"
   },
   "ice-dragon": {
     "label": "Ice Dragon",
@@ -329,11 +329,6 @@
     "file": "standardized/dire-wolf.png",
     "sha256": "6d0f57458355aa76a34ed1530388322e65c5ec31af8508c20c6aa8e818520ae6"
   },
-  "sphinx": {
-    "label": "Sphinx",
-    "file": "standardized/sphinx.png",
-    "sha256": "61f8cc6d344f3a903f342302fa29974fd520bdefd408413b276b43aa735e28a1"
-  },
   "winged-lion": {
     "label": "Winged Lion",
     "file": "standardized/winged-lion.png",
@@ -341,18 +336,18 @@
   },
   "brown-bear": {
     "label": "Brown Bear",
-    "file": "standardized/brown-bear.png",
-    "sha256": "2b60eb73a08c5270dd9e10a9e1b97358a01e8a60613a5fcdac7dbb2e79f45a79"
+    "file": "brown-bear.svg",
+    "sha256": "28676d94856a7bb9546c354271791239e1cf3fa6c7c2d79f8ac8b748e5a8a63f"
   },
   "red-panda-bear": {
     "label": "Red Panda Bear",
-    "file": "standardized/red-panda-bear.png",
-    "sha256": "2b60eb73a08c5270dd9e10a9e1b97358a01e8a60613a5fcdac7dbb2e79f45a79"
+    "file": "red-panda-bear.svg",
+    "sha256": "acaf11345b9e7004dee6f2a4031351966f2910ecda66019f6754afe4d0b92703"
   },
   "giant-panda-bear": {
     "label": "Giant Panda Bear",
-    "file": "standardized/giant-panda-bear.png",
-    "sha256": "2b60eb73a08c5270dd9e10a9e1b97358a01e8a60613a5fcdac7dbb2e79f45a79"
+    "file": "giant-panda-bear.svg",
+    "sha256": "2e8b771d901896ee77f2740db1d7d54618725c678b638dd424d0b0c6bcd052e7"
   },
   "orange-tabby": {
     "label": "Orange Tabby",
@@ -373,20 +368,5 @@
     "label": "Tuxedo Cat",
     "file": "standardized/tuxedo-cat.png",
     "sha256": "ca00552d38e99b64b9e7ea14bdc53afacbe68673c235e9f99d4e47ba01b89944"
-  },
-  "forest-spirit": {
-    "label": "Forest Spirit",
-    "file": "forest-spirit.webp",
-    "sha256": "0176524b6f30076493eed8251914da1982977258003a41d3daf5454955a4baff"
-  },
-  "moon-hare": {
-    "label": "Moon Hare",
-    "file": "moon-hare.webp",
-    "sha256": "8b0e03e827b92c2bfec71ec7c94f63b612dfecedf37a1ab89410dc77471c3d86"
-  },
-  "leviathan": {
-    "label": "Leviathan",
-    "file": "leviathan.webp",
-    "sha256": "de5d4af637130b5e3a1b9b26001f5126a1c0e445d1fda550b92cd48aae70bfb3"
   }
 }
