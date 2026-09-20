@@ -99,7 +99,7 @@ const standardizedMap = Object.fromEntries(icons.map(icon => {
 }));
 const replacement = 'const PROFILE_ICON_FILES=' + JSON.stringify(standardizedMap) + ';';
 const updatedIndex = index.replace(/const PROFILE_ICON_FILES\s*=\s*\{.*?\};/s, replacement);
-if (updatedIndex === index) throw new Error('PROFILE_ICON_FILES replacement failed');
+if (!/const PROFILE_ICON_FILES\s*=\s*\{.*?\};/s.test(index)) throw new Error('PROFILE_ICON_FILES mapping not found');
 fs.writeFileSync(indexPath, updatedIndex);
 
 const manifest = {};
