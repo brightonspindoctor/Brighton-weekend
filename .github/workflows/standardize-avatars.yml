@@ -1,4 +1,5 @@
 name: Standardise Brighton Weekend avatars
+# Avatar framing refresh: keep source artwork clean before standardisation.
 
 on:
   workflow_dispatch:
