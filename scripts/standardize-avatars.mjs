@@ -18,7 +18,7 @@ const icons = [...iconsMatch[1].matchAll(/'([^']+)'/g)].map(m => m[1]);
 const mapMatch = index.match(/const PROFILE_ICON_FILES=\{(.*?)\};/s);
 const sourceMap = {};
 if (mapMatch) {
-  for (const m of mapMatch[1].matchAll(/'([^']+)':'([^']+)'/g)) sourceMap[m[1]] = m[2];
+  for (const m of mapMatch[1].matchAll(/[\"']([^\"']+)[\"']\s*:\s*[\"']([^\"']+)[\"']/g)) sourceMap[m[1]] = m[2];
 }
 
 function sourceFor(icon) {
@@ -55,10 +55,14 @@ async function sourceImage(src) {
 const NAVY = '#101C2C';
 const TEAL = '#35A7A0';
 
+const sourceOnlyIcons = ['brown-bear','red-panda-bear','giant-panda-bear','forest-spirit','moon-hare','leviathan'];
+
 for (const icon of icons) {
   const srcName = sourceFor(icon);
   const src = path.join(dir, srcName);
   const dest = path.join(outDir, icon + '.png');
+
+  if (sourceOnlyIcons.includes(icon)) continue;
 
   const base = await sourceImage(src);
   const isBear = ['brown-bear', 'red-panda-bear', 'giant-panda-bear'].includes(icon);
@@ -89,7 +93,10 @@ for (const icon of icons) {
   fs.writeFileSync(dest, final);
 }
 
-const standardizedMap = Object.fromEntries(icons.map(icon => { const sourceOnly = ['brown-bear','red-panda-bear','giant-panda-bear','forest-spirit','moon-hare','leviathan'].includes(icon); return [icon, sourceOnly ? `${icon}.svg` : `standardized/${icon}.png`]; }));
+const standardizedMap = Object.fromEntries(icons.map(icon => {
+  const sourceOnly = sourceOnlyIcons.includes(icon);
+  return [icon, sourceOnly ? (sourceMap[icon] || icon + '.webp') : 'standardized/' + icon + '.png'];
+}));
 const replacement = 'const PROFILE_ICON_FILES=' + JSON.stringify(standardizedMap) + ';';
 const updatedIndex = index.replace(/const PROFILE_ICON_FILES=\{.*?\};/s, replacement);
 if (updatedIndex === index) throw new Error('PROFILE_ICON_FILES replacement failed');
@@ -97,10 +104,11 @@ fs.writeFileSync(indexPath, updatedIndex);
 
 const manifest = {};
 for (const icon of icons) {
-  const file = path.join(outDir, icon + '.png');
+  const sourceOnly = sourceOnlyIcons.includes(icon);
+  const file = sourceOnly ? path.join(dir, sourceMap[icon] || icon + '.webp') : path.join(outDir, icon + '.png');
   manifest[icon] = {
     label: icon.replace(/(^|-)([a-z])/g, (_, p, c) => (p ? ' ' : '') + c.toUpperCase()),
-    file: 'standardized/' + icon + '.png',
+    file: sourceOnly ? (sourceMap[icon] || icon + '.webp') : 'standardized/' + icon + '.png',
     sha256: sha256(file)
   };
 }
