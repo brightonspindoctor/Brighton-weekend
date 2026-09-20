@@ -373,5 +373,20 @@
     "label": "Tuxedo Cat",
     "file": "standardized/tuxedo-cat.png",
     "sha256": "ca00552d38e99b64b9e7ea14bdc53afacbe68673c235e9f99d4e47ba01b89944"
+  },
+  "forest-spirit": {
+    "label": "Forest Spirit",
+    "file": "forest-spirit.webp",
+    "sha256": "0176524b6f30076493eed8251914da1982977258003a41d3daf5454955a4baff"
+  },
+  "moon-hare": {
+    "label": "Moon Hare",
+    "file": "moon-hare.webp",
+    "sha256": "8b0e03e827b92c2bfec71ec7c94f63b612dfecedf37a1ab89410dc77471c3d86"
+  },
+  "leviathan": {
+    "label": "Leviathan",
+    "file": "leviathan.webp",
+    "sha256": "de5d4af637130b5e3a1b9b26001f5126a1c0e445d1fda550b92cd48aae70bfb3"
   }
 }

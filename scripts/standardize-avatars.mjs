@@ -89,7 +89,7 @@ for (const icon of icons) {
   fs.writeFileSync(dest, final);
 }
 
-const standardizedMap = Object.fromEntries(icons.map(icon => { const sourceOnly = ['brown-bear','red-panda-bear','giant-panda-bear'].includes(icon); return [icon, sourceOnly ? `${icon}.svg` : `standardized/${icon}.png`]; }));
+const standardizedMap = Object.fromEntries(icons.map(icon => { const sourceOnly = ['brown-bear','red-panda-bear','giant-panda-bear','forest-spirit','moon-hare','leviathan'].includes(icon); return [icon, sourceOnly ? `${icon}.svg` : `standardized/${icon}.png`]; }));
 const replacement = 'const PROFILE_ICON_FILES=' + JSON.stringify(standardizedMap) + ';';
 const updatedIndex = index.replace(/const PROFILE_ICON_FILES=\{.*?\};/s, replacement);
 if (updatedIndex === index) throw new Error('PROFILE_ICON_FILES replacement failed');
