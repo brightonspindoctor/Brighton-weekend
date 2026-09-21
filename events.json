@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-20",
-  "range_start": "2026-09-20",
-  "range_end": "2027-06-27",
+  "updated": "2026-09-21",
+  "range_start": "2026-09-21",
+  "range_end": "2027-06-28",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -26,100 +26,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-09-20-komedia-laboratory-of-lullabies-with-noodle-music-sun-20-sep-2026-1-30-pm-doors-2-00-pm",
-      "title": "Laboratory Of Lullabies With Noodle Music Sun 20 Sep 2026 1:30 PM ( Doors: 2:00 PM )",
-      "date": "2026-09-20",
-      "venue": "Komedia",
-      "time": "13:30",
-      "finish_time": "14:00",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/laboratory-of-lullabies-with-noodle-music/?eid=20635"
-    },
-    {
-      "id": "2026-09-20-amex-stadium-brighton-women-v-aston-villa",
-      "title": "Brighton Women v Aston Villa",
-      "date": "2026-09-20",
-      "venue": "Amex Stadium",
-      "time": "14:00",
-      "finish_time": null,
-      "category": "Other",
-      "ticket_url": "https://www.brightonandhovealbion.com/tickets"
-    },
-    {
-      "id": "2026-09-20-green-door-store-patrick-circus",
-      "title": "Patrick Circus",
-      "date": "2026-09-20",
-      "venue": "Green Door Store",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-20-komedia-jonny-cole-armagudd-n-sun-20-sep-2026-7-00-pm-doors-6-00-pm",
-      "title": "Jonny Cole – Armagudd’n Sun 20 Sep 2026 7:00 PM ( Doors: 6:00 PM )",
-      "date": "2026-09-20",
-      "venue": "Komedia",
-      "time": "19:00",
-      "finish_time": "18:00",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/jonny-cole-armaguddn/?eid=18189"
-    },
-    {
-      "id": "2026-09-20-komedia-david-correos-noise-zealand-sun-20-sep-2026-7-30-pm-doors-7-00-pm",
-      "title": "David Correos: Noise Zealand Sun 20 Sep 2026 7:30 PM ( Doors: 7:00 PM )",
-      "date": "2026-09-20",
-      "venue": "Komedia",
-      "time": "19:30",
-      "finish_time": "19:00",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/david-correos-noise-zealand/?eid=20674"
-    },
-    {
-      "id": "2026-09-20-chalk-thompson-twins-tom-bailey-blancmange",
-      "title": "Thompson Twins' Tom Bailey Blancmange",
-      "date": "2026-09-20",
-      "venue": "CHALK",
-      "category": "Music",
-      "time": null,
-      "ticket_url": "https://chalkvenue.com/",
-      "source_url": "https://chalkvenue.com/"
-    },
-    {
-      "id": "2026-09-20-theoldmarket-nick-cope-s-family-show",
-      "title": "Nick Cope's Family Show",
-      "date": "2026-09-20",
-      "venue": "The Old Market",
-      "category": "Family",
-      "time": null,
-      "ticket_url": "https://www.theoldmarket.com/shows",
-      "source_url": "https://www.theoldmarket.com/shows"
-    },
-    {
-      "id": "2026-09-20-the-prince-albert-asbo-derek",
-      "title": "ASBO Derek",
-      "date": "2026-09-20",
-      "venue": "The Prince Albert",
-      "time": null,
-      "finish_time": null,
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
-    },
-    {
-      "id": "2026-09-20-the-prince-albert-glasshouse-red-spider-mite",
-      "title": "glasshouse / red spider mite",
-      "date": "2026-09-20",
-      "venue": "The Prince Albert",
-      "time": null,
-      "finish_time": null,
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
-    },
     {
       "id": "2026-09-21-green-door-store-jim-ghedi",
       "title": "Jim Ghedi",
@@ -1094,6 +1000,16 @@
       "time": null,
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+    },
+    {
+      "id": "2026-09-30-green-door-store-agenda-collective-2nd-birthday-party",
+      "title": "Agenda Collective 2nd Birthday Party",
+      "date": "2026-09-30",
+      "venue": "Green Door Store",
+      "time": "19:00",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
     },
     {
       "id": "2026-09-30-komedia-brushy-one-string-wed-30-sep-2026-doors-7-30-pm",
