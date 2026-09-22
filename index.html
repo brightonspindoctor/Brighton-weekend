@@ -373,14 +373,7 @@ header{background:#0B1D2F!important;color:var(--bw-cream)!important;border-botto
 .icon-chip{background:#173347!important;border-color:#3B6074!important}.icon-chip.heart,.social-icon.heart{color:#8FE0D5!important;border-color:#397A72!important}.icon-chip.ticket,.social-icon.ticket{color:#FFD982!important;border-color:#856A29!important}.icon-chip.cross{color:#FFB5B0!important;border-color:#7A454D!important}.ui-pill{background:#0F2231!important;border-color:#345468!important;color:#D2DEE2!important}.ui-pill .icon-chip{background:#173347!important}.happening-section{color:#A7B5BE!important}.social-icon{border-color:#345468!important}
 .auth-logo{box-shadow:0 8px 24px rgba(0,0,0,.45)!important}
 </style>
-<style id="bw-happenings-indicator-fix">.nav button.has-new::after{display:none!important}.nav button.bw-happenings-seen{color:#9cabb2!important}</style>
 <style>
-/* Happenings read-state indicator v2 */
-.nav button.has-new{font-weight:800;color:#f06b61!important;position:relative}
-.nav button.has-new::after{display:none!important}
-.nav button.has-new .nav-icon{color:#f06b61!important}
-.nav button.bw-happenings-seen,.nav button.active.bw-happenings-seen{color:#7A8A96!important}
-.nav button.bw-happenings-seen .nav-icon{color:#7A8A96!important}
 </style>
 </head>
 <body>
@@ -710,9 +703,6 @@ function updateHappeningsBadge(){
  const current=happeningsSignature(groupHappenings);
  const hasNew=!!current && current!==seen;
  tab.classList.toggle('has-new',hasNew);
- tab.classList.toggle('bw-happenings-seen',!hasNew);
- const icon=tab.querySelector('.nav-icon');
- if(icon)icon.textContent=hasNew?'♥':'♡';
 }
 async function loadGroupHappenings(){
  if(!groups.length){groupHappenings=[];return}
