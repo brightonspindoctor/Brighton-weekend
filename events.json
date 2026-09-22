@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-21",
-  "range_start": "2026-09-21",
-  "range_end": "2027-06-28",
+  "updated": "2026-09-22",
+  "range_start": "2026-09-22",
+  "range_end": "2027-06-29",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -26,58 +26,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-09-21-green-door-store-jim-ghedi",
-      "title": "Jim Ghedi",
-      "date": "2026-09-21",
-      "venue": "Green Door Store",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-21-komedia-chaps-straps-queer-line-dancing-mon-21-sep-2026-doors-7-00-pm",
-      "title": "Chaps & Straps – Queer Line Dancing Mon 21 Sep 2026 ( Doors: 7:00 PM )",
-      "date": "2026-09-21",
-      "venue": "Komedia",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/chaps-straps-queer-line-dancing/?eid=20779"
-    },
-    {
-      "id": "2026-09-21-concorde2-king-king",
-      "title": "King King",
-      "date": "2026-09-21",
-      "venue": "Concorde 2",
-      "category": "Music",
-      "time": null,
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "source_url": "https://www.concorde2.co.uk/whats-on"
-    },
-    {
-      "id": "2026-09-21-thehoperuin-grimrite-table-football-aquatic-ape-theory",
-      "title": "Grimrite + Table Football + Aquatic Ape Theory",
-      "date": "2026-09-21",
-      "venue": "The Hope & Ruin",
-      "category": "Music",
-      "time": null,
-      "ticket_url": "https://www.hope.pub/",
-      "source_url": "https://www.hope.pub/"
-    },
-    {
-      "id": "2026-09-21-the-prince-albert-bennie-jetz",
-      "title": "Bennie Jetz",
-      "date": "2026-09-21",
-      "venue": "The Prince Albert",
-      "time": null,
-      "finish_time": null,
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
-    },
     {
       "id": "2026-09-22-green-door-store-bimm-freshers-cade-more",
       "title": "BIMM Freshers: Cade + more",
@@ -4245,6 +4193,16 @@
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust"
     },
     {
+      "id": "2026-11-06-komedia-gooseberry-special-guests",
+      "title": "Gooseberry + Special Guests",
+      "date": "2026-11-06",
+      "venue": "Komedia",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/gooseberry-special-guests-p2940201"
+    },
+    {
       "id": "2026-11-06-patterns-employed-to-serve-cabal",
       "title": "Employed To Serve, CABAL",
       "date": "2026-11-06",
@@ -7988,6 +7946,16 @@
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
+      "id": "2027-01-21-komedia-sam-eley-is-basil-crumbwick-soul-sewage",
+      "title": "Sam Eley is Basil Crumbwick: Soul Sewage",
+      "date": "2027-01-21",
+      "venue": "Komedia",
+      "time": "19:30",
+      "finish_time": "19:00",
+      "category": "Other",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
       "id": "2027-01-21-chalk-david-byrne-s-night",
       "title": "David Byrne's Night",
       "date": "2027-01-21",
@@ -8503,6 +8471,16 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/jill-edwards-comedy-workshops-at-komedia-brighton/?eid=19160"
+    },
+    {
+      "id": "2027-02-24-komedia-hudson-freeman-support",
+      "title": "HUDSON FREEMAN + SUPPORT",
+      "date": "2027-02-24",
+      "venue": "Komedia",
+      "time": "19:30",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
     {
       "id": "2027-02-24-theatre-royal-brighton-vanessa-williams-live-in-concert",
@@ -9179,6 +9157,16 @@
       "finish_time": "19:00",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=20982"
+    },
+    {
+      "id": "2027-05-19-komedia-tom-glover-did-you-see-that-reel-i-sent-you",
+      "title": "Tom Glover: Did you see that reel I sent you?",
+      "date": "2027-05-19",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "19:00",
+      "category": "Other",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
     {
       "id": "2027-05-21-komedia-komedia-comedy-club-fri-21-may-2027-8-00-pm-doors-7-00-pm",
