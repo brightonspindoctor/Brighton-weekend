@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-23",
-  "range_start": "2026-09-23",
-  "range_end": "2027-06-30",
+  "updated": "2026-09-24",
+  "range_start": "2026-09-24",
+  "range_end": "2027-07-01",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -26,78 +26,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-09-23-green-door-store-dead-air",
-      "title": "Dead Air",
-      "date": "2026-09-23",
-      "venue": "Green Door Store",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-23-chalk-holy-f",
-      "title": "Holy F***",
-      "date": "2026-09-23",
-      "venue": "CHALK",
-      "category": "Music",
-      "time": null,
-      "ticket_url": "https://chalkvenue.com/",
-      "source_url": "https://chalkvenue.com/"
-    },
-    {
-      "id": "2026-09-23-concorde2-grace-petrie",
-      "title": "Grace Petrie",
-      "date": "2026-09-23",
-      "venue": "Concorde 2",
-      "category": "Music",
-      "time": null,
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "source_url": "https://www.concorde2.co.uk/whats-on"
-    },
-    {
-      "id": "2026-09-23-the-hope-ruin-chinese-american-bear",
-      "title": "Chinese American Bear",
-      "date": "2026-09-23",
-      "venue": "The Hope & Ruin",
-      "time": null,
-      "finish_time": null,
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-hope-and-ruin"
-    },
-    {
-      "id": "2026-09-23-theatreroyalbrighton-stand-or-fall-the-fall-and-rise-of-brighton-and-hove-albion",
-      "title": "Stand or Fall - The Fall and Rise of Brighton and Hove Albion",
-      "date": "2026-09-23",
-      "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
-      "time": null,
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
-    },
-    {
-      "id": "2026-09-23-theatre-royal-brighton-stand-or-fall-the-play",
-      "title": "Stand or Fall - The Play",
-      "date": "2026-09-23",
-      "venue": "Theatre Royal Brighton",
-      "time": "",
-      "finish_time": "",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/shows/stand-or-fall-the-play/theatre-royal-brighton/"
-    },
-    {
-      "id": "2026-09-23-volks-lost-in-motion",
-      "title": "Lost in Motion",
-      "date": "2026-09-23",
-      "venue": "Volks",
-      "category": "Club",
-      "time": null,
-      "ticket_url": "https://www.ents24.com/brighton-events/the-volks",
-      "source_url": "https://www.ents24.com/brighton-events/the-volks"
-    },
     {
       "id": "2026-09-24-quarters-v-b",
       "title": "VÆB",
@@ -3314,6 +3242,16 @@
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
+      "id": "2026-10-27-komedia-chaps-straps-queer-line-dancing",
+      "title": "Chaps & Straps – Queer Line Dancing",
+      "date": "2026-10-27",
+      "venue": "Komedia",
+      "time": "19:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
       "id": "2026-10-27-19-00-ugly",
       "title": "UGLY",
       "date": "2026-10-27",
@@ -5848,6 +5786,16 @@
       "time": null,
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/"
+    },
+    {
+      "id": "2026-11-24-the-old-market-coram-shakespeare-schools-festival",
+      "title": "Coram Shakespeare Schools Festival",
+      "date": "2026-11-24",
+      "venue": "The Old Market",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://www.theoldmarket.com/shows"
     },
     {
       "id": "2026-11-24-theatreroyalbrighton-the-mousetrap",
@@ -8441,6 +8389,16 @@
       "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
     {
+      "id": "2027-02-25-komedia-patrick-monahan-i-m-not-a-terrorist-i-m-freddie-mercury",
+      "title": "Patrick Monahan: I’m Not a Terrorist – I’m Freddie Mercury",
+      "date": "2027-02-25",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "19:30",
+      "category": "Other",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
       "id": "2027-02-25-chalk-iceage",
       "title": "Iceage",
       "date": "2027-02-25",
@@ -8879,6 +8837,16 @@
       "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
     {
+      "id": "2027-04-04-komedia-down-the-hatch-comedy-club",
+      "title": "Down the Hatch Comedy Club",
+      "date": "2027-04-04",
+      "venue": "Komedia",
+      "time": "19:00",
+      "finish_time": "18:00",
+      "category": "Comedy",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
       "id": "2027-04-05-komedia-jim-white-ben-de-la-cour-tue-4-may-2027-7-30-pm-doors-7-00-pm",
       "title": "Jim White + Ben De La Cour Tue 4 May 2027 7:30 PM ( Doors: 7:00 PM )",
       "date": "2027-04-05",
@@ -9299,6 +9267,16 @@
       "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
     {
+      "id": "2027-06-06-komedia-down-the-hatch-comedy-club",
+      "title": "Down the Hatch Comedy Club",
+      "date": "2027-06-06",
+      "venue": "Komedia",
+      "time": "19:00",
+      "finish_time": "18:00",
+      "category": "Comedy",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
       "id": "2027-06-18-komedia-komedia-comedy-club-fri-18-jun-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club Fri 18 Jun 2027 8:00 PM ( Doors: 7:00 PM )",
       "date": "2027-06-18",
@@ -9336,6 +9314,16 @@
       "time": "20:00",
       "finish_time": "19:00",
       "category": "Comedy",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
+      "id": "2027-07-01-komedia-james-phelan-the-man-who-was-magic",
+      "title": "James Phelan: The Man Who Was Magic",
+      "date": "2027-07-01",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "19:00",
+      "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/whats-on/"
     }
   ]
