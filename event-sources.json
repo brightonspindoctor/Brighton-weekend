@@ -1,23 +1,90 @@
 [
-  {"venue":"Brighton Centre","url":"https://brightoncentre.co.uk/"},
-  {"venue":"CHALK","url":"https://chalkvenue.com/"},
-  {"venue":"Concorde 2","url":"https://www.concorde2.co.uk/whats-on"},
-  {"venue":"The Old Market","url":"https://www.theoldmarket.com/shows"},
-  {"venue":"Green Door Store","url":"https://thegreendoorstore.co.uk/events/"},
-  {"venue":"Volks","url":"https://www.volksclub.co.uk/events"},
-  {"venue":"Quarters","url":"https://www.quartersbrighton.co.uk/whatson"},
-  {"venue":"Patterns","url":"https://patternsbrighton.com/club/"},
-  {"venue":"DUST","url":"https://dustbrighton.com/"},
-  {"venue":"Komedia","url":"https://www.komedia.co.uk/whats-on/"},
-  {"venue":"The Forge Comedy Club","url":"https://forgecomedyclub.com/"},
-  {"venue":"Theatre Royal Brighton","url":"https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"},
-  {"venue":"The Hope & Ruin","url":"https://www.hopeandruin.com/events"},
-  {"venue":"The Prince Albert","url":"https://princealbertbrighton.co.uk/"},
-  {"venue":"A L P H A B E T","url":"https://alphabetvenue.co.uk/"},
-  {"venue":"The Pipeline","url":"https://pipelinebrighton.com/"},
-  {"venue":"Brighton Racecourse","url":"https://www.brighton-racecourse.co.uk/whats-on"},
-  {"venue":"The Gladstone","url":"https://www.thegladstone.co.uk/whats-on/"},
-  {"venue":"Babble","url":"https://www.babblebrighton.co.uk/"},
-  {"venue":"Shelter Hall","url":"https://shelterhall.co.uk/whats-on/"},
-  {"venue":"Brighton Dome - Concert Hall","url":"https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/"}
+  {
+    "venue": "Brighton Centre",
+    "url": "https://brightoncentre.co.uk/"
+  },
+  {
+    "venue": "CHALK",
+    "url": "https://chalkvenue.com/"
+  },
+  {
+    "venue": "Concorde 2",
+    "url": "https://www.concorde2.co.uk/whats-on"
+  },
+  {
+    "venue": "The Old Market",
+    "url": "https://www.theoldmarket.com/shows"
+  },
+  {
+    "venue": "Green Door Store",
+    "url": "https://thegreendoorstore.co.uk/events/"
+  },
+  {
+    "venue": "Volks",
+    "url": "https://www.volksclub.co.uk/events"
+  },
+  {
+    "venue": "Quarters",
+    "url": "https://www.quartersbrighton.co.uk/whatson"
+  },
+  {
+    "venue": "Patterns",
+    "url": "https://patternsbrighton.com/club/"
+  },
+  {
+    "venue": "DUST",
+    "url": "https://dustbrighton.com/"
+  },
+  {
+    "venue": "Komedia",
+    "url": "https://www.komedia.co.uk/whats-on/"
+  },
+  {
+    "venue": "The Forge Comedy Club",
+    "url": "https://forgecomedyclub.com/"
+  },
+  {
+    "venue": "Theatre Royal Brighton",
+    "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+  },
+  {
+    "venue": "The Hope & Ruin",
+    "url": "https://www.hopeandruin.com/events"
+  },
+  {
+    "venue": "The Prince Albert",
+    "url": "https://princealbertbrighton.co.uk/"
+  },
+  {
+    "venue": "A L P H A B E T",
+    "url": "https://alphabetvenue.co.uk/"
+  },
+  {
+    "venue": "The Pipeline",
+    "url": "https://pipelinebrighton.com/"
+  },
+  {
+    "venue": "Brighton Racecourse",
+    "url": "https://www.brighton-racecourse.co.uk/whats-on"
+  },
+  {
+    "venue": "The Gladstone",
+    "url": "https://www.thegladstone.co.uk/whats-on/"
+  },
+  {
+    "venue": "Babble",
+    "url": "https://www.babblebrighton.co.uk/"
+  },
+  {
+    "venue": "Shelter Hall",
+    "url": "https://shelterhall.co.uk/whats-on/"
+  },
+  {
+    "venue": "Brighton Dome - Concert Hall",
+    "url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/"
+  },
+  {
+    "venue": "Brighton Dome",
+    "url": "https://brightondome.org/whats-on/"
+  }
 ]
