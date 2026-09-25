@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Brighton Weekend · Design system</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css?v=48">
+<style>
+/* Page-only layout for the reference sheet. Components below use app.css unchanged. */
+.ds{padding-bottom:60px}
+.ds h2{margin:40px 0 6px}
+.ds>p.note{max-width:60ch}
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:12px}
+.swatch{border:1px solid var(--bw-line);border-radius:var(--bw-radius-md);overflow:hidden;background:var(--bw-card)}
+.swatch i{display:block;height:56px}
+.swatch div{padding:8px 10px;font-size:var(--bw-text-xs);line-height:1.5}
+.swatch code{color:var(--bw-muted)}
+.type-row{display:flex;align-items:baseline;gap:16px;padding:10px 0;border-bottom:1px solid var(--bw-line)}
+.type-row code{flex:0 0 120px;font-size:var(--bw-text-xs);color:var(--bw-muted)}
+.demo-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px}
+.ds-xl{font-size:var(--bw-text-xl);font-weight:800}.ds-flush{margin:0}
+.nav.demo{position:static;margin-top:12px;border-radius:var(--bw-radius-lg)}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="app-brand"><img src="icons/icon-192.png?v=48" alt=""><div><div class="brand">BRIGHTON WEEKEND</div><div class="sub">Design system reference · rendered with css/app.css</div></div></div></div></header>
+<main class="wrap ds">
+
+<h2>Surfaces</h2>
+<p class="note">The sea at night, darkest to lightest. See DESIGN-SYSTEM.md for when to use each.</p>
+<div class="swatches" id="surfaces"></div>
+
+<h2>Text and accents</h2>
+<p class="note">Coral means “do something”. Teal means “you picked this”.</p>
+<div class="swatches" id="accents"></div>
+
+<h2>Commitment states</h2>
+<p class="note">One colour family per status, used on buttons, pills and labels.</p>
+<div class="swatches" id="states"></div>
+
+<h2>Type</h2>
+<p class="note">Plus Jakarta Sans, one family throughout.</p>
+<div class="type-row"><code>--bw-text-xl</code><span class="ds-xl">Comedy this week</span></div>
+<div class="type-row"><code>--bw-text-lg</code><span class="title">Milo Edwards: Catamaran</span></div>
+<div class="type-row"><code>--bw-text-md</code><span>Sign in to keep your plans across devices.</span></div>
+<div class="type-row"><code>--bw-text-sm</code><span class="meta ds-flush">Komedia · 20:00–22:00</span></div>
+<div class="type-row"><code>--bw-text-xs</code><span class="social-chip">3 interested</span></div>
+
+<h2>Buttons</h2>
+<div class="demo-row"><button class="btn btn-primary">Add event</button><button class="btn btn-secondary">Change my name</button><button class="btn btn-ghost">Sign out</button><button class="btn btn-chip">Invite link</button></div>
+
+<h2>Event card</h2>
+<p class="note">Built by eventCard() in js/app.js. Discover, Comedy and Search all use it.</p>
+<article class="card"><div class="top"><div><div class="title">Milo Edwards: Catamaran</div><div class="meta">Komedia · 20:00–22:00</div></div><span class="badge sold">Sold out</span></div>
+<div class="price">£16</div>
+<div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>3 interested</span><span class="social-chip"><i class="social-icon ticket">🎟</i>1 going</span></div>
+<div class="commitment"><button type="button" class="commit-btn no"><span class="commit-icon">×</span><span>Not for me</span></button><button type="button" class="commit-btn yes selected"><span class="commit-icon">♡</span><span>Interested</span></button><button type="button" class="commit-btn bought"><span class="commit-icon">🎟</span><span>Going</span></button></div>
+<div class="actions"><a class="ticket" href="#">Tickets ↗</a></div></article>
+
+<h2>Status pills</h2>
+<div class="demo-row"><span class="happening-summary-pill going">🎟 2 friends going</span><span class="happening-summary-pill interested">♡ 3 interested</span><span class="happening-status going">🎟 GOING</span><span class="happening-status interested">♡ INTERESTED</span></div>
+
+<h2>Forms</h2>
+<div class="panel"><div class="segmented"><button class="active">Dates and venues</button><button>Artist</button></div>
+<div class="form-stack"><div class="form-row"><label>From<input type="date"></label><label>To<input type="date"></label></div>
+<label>Venue<select><option>Concorde 2</option></select></label>
+<div class="choice-grid"><label class="choice"><input type="checkbox" checked><span>CHALK</span></label><label class="choice"><input type="checkbox"><span>Komedia</span></label></div></div></div>
+
+<h2>Bottom navigation</h2>
+<nav class="nav demo"><button class="active"><span class="nav-icon">♬</span> Discover</button><button><span class="nav-icon">☻</span> Comedy</button><button><span class="nav-icon">⌕</span> Search</button><button class="has-new"><span class="nav-icon">♡</span> Happenings</button><button><span class="nav-icon">⚙</span> Settings</button></nav>
+</main>
+<script>
+const groups={
+ surfaces:['abyss','navy','deep','card','raised','line','line-strong'],
+ accents:['cream','muted','subtle','coral','coral-ink','teal'],
+ states:['interested-fg','interested-bg','interested-line','going-fg','going-bg','going-line','pass-fg','pass-bg','pass-line']
+};
+const css=getComputedStyle(document.documentElement);
+for(const [id,names] of Object.entries(groups)){
+ document.getElementById(id).innerHTML=names.map(n=>{const v=css.getPropertyValue('--bw-'+n).trim();return `<div class="swatch"><i style="background:${v}"></i><div><strong>--bw-${n}</strong><br><code>${v}</code></div></div>`}).join('');
+}
+</script>
+</body>
+</html>
