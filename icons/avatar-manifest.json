@@ -1,0 +1,372 @@
+{
+  "fox": {
+    "label": "Fox",
+    "file": "standardized/fox.png",
+    "sha256": "513fd13b36fffe7893fd82bd19fbf20c585f11389b66f6e25bf31804d01b33bd"
+  },
+  "badger": {
+    "label": "Badger",
+    "file": "standardized/badger.png",
+    "sha256": "388dd645ea7c8fc4ea523c8b55f1f1991259d98f2990dd559badbc3616ae3802"
+  },
+  "otter": {
+    "label": "Otter",
+    "file": "standardized/otter.png",
+    "sha256": "a68240d0b1eb0538aac13e2344e9cc808e28ca2bb5fa18937b5a9146c61aa243"
+  },
+  "hedgehog": {
+    "label": "Hedgehog",
+    "file": "standardized/hedgehog.png",
+    "sha256": "a5cab49492020f123baed05560f13e23695339664edbcdb31ab2317004cc2120"
+  },
+  "squirrel": {
+    "label": "Squirrel",
+    "file": "standardized/squirrel.png",
+    "sha256": "ace1cf38aba57632a95edd2103efd11c13818d3ae331c0d5e23bafbf76829c36"
+  },
+  "rabbit": {
+    "label": "Rabbit",
+    "file": "standardized/rabbit.png",
+    "sha256": "8c4d1b202a730793829823271002a26683ff4a1096761c6fc9887af9fd9f5d3b"
+  },
+  "deer": {
+    "label": "Deer",
+    "file": "standardized/deer.png",
+    "sha256": "851b7099eb57f75197d3a5e5ac84401d4daec33df67e86d0d162b6a5139728a1"
+  },
+  "seagull": {
+    "label": "Seagull",
+    "file": "standardized/seagull.png",
+    "sha256": "1d2dd85f8431f3e9e87b048f3fbb275af5c97cfaf75f23e6569f53aca6f27f51"
+  },
+  "pigeon": {
+    "label": "Pigeon",
+    "file": "standardized/pigeon.png",
+    "sha256": "25a474d398002c3de517f73a2a67bda2dd6c61e9115fb3f7a813afd91f513b33"
+  },
+  "kingfisher": {
+    "label": "Kingfisher",
+    "file": "standardized/kingfisher.png",
+    "sha256": "0556c36f7c8fa0dd5a0c9466d7bd6a2beeab63b976f3352377f3f46ec32a7f38"
+  },
+  "owl": {
+    "label": "Owl",
+    "file": "standardized/owl.png",
+    "sha256": "3db82000bd1e44fc309349edc4935ee3e72c277ef1ec7c9443c5d14aed112570"
+  },
+  "raven": {
+    "label": "Raven",
+    "file": "standardized/raven.png",
+    "sha256": "2e0da3f86ecb5d1a9cbf22434aa0a582fc142ca8177a46eb8be6958b81bacfc8"
+  },
+  "cat": {
+    "label": "Cat",
+    "file": "standardized/cat.png",
+    "sha256": "2b980545dd6fb01556846c3b435c6db2ca3e59d80556283b32efbafc3b14a0da"
+  },
+  "dog": {
+    "label": "Dog",
+    "file": "standardized/dog.png",
+    "sha256": "91c3b8e3f3f5858faa88ef2335ea2732593be769a7449e3fd0ac144671cf4701"
+  },
+  "dolphin": {
+    "label": "Dolphin",
+    "file": "standardized/dolphin.png",
+    "sha256": "2b8290fbcfd075e37c12ac2c1e78670ff9980e6e1cd13fe11d8a81d0905d5656"
+  },
+  "shark": {
+    "label": "Shark",
+    "file": "standardized/shark.png",
+    "sha256": "cf0bc23880d77c11ed995f2c46e09a334693c9bb06520127409f7e5d0b70d3c7"
+  },
+  "whale": {
+    "label": "Whale",
+    "file": "standardized/whale.png",
+    "sha256": "fba1c4b3cae9efbd3629f7302cab2c98254b5cd0e741be684e1726e5a77dab05"
+  },
+  "octopus": {
+    "label": "Octopus",
+    "file": "standardized/octopus.png",
+    "sha256": "8c91bd756a083cd4f4d1f08fd86b3a3142736e414fcd39ca5d9a85049aeab416"
+  },
+  "crab": {
+    "label": "Crab",
+    "file": "standardized/crab.png",
+    "sha256": "fdef75da1020977b929276564635207627ae34789fa4930ccc08e17e59e245d7"
+  },
+  "starfish": {
+    "label": "Starfish",
+    "file": "standardized/starfish.png",
+    "sha256": "b3069151efa88ab3a676c72047e33d88b6b1081b290409fd1c1a6f880c040c05"
+  },
+  "butterfly": {
+    "label": "Butterfly",
+    "file": "standardized/butterfly.png",
+    "sha256": "70f00a38f965cc3862a128b6e7b1c5b8ea8bf2ef52f17fe8e4332507365cca34"
+  },
+  "dragonfly": {
+    "label": "Dragonfly",
+    "file": "standardized/dragonfly.png",
+    "sha256": "d4b71d252e353e3cd69d9de3e96159348e4a15f90c1050c33a32a1bbd50054c3"
+  },
+  "ladybird": {
+    "label": "Ladybird",
+    "file": "standardized/ladybird.png",
+    "sha256": "7f35487813a4916ef872f2175ce87778683666de63ab083cdf4ea0be8f5f3d44"
+  },
+  "moth": {
+    "label": "Moth",
+    "file": "standardized/moth.png",
+    "sha256": "5ffd90707c1d294ae989aaaa73bd512b2edccd7626c52b096959076d1c436a2e"
+  },
+  "beetle": {
+    "label": "Beetle",
+    "file": "standardized/beetle.png",
+    "sha256": "ab942d651542a07954dbcba9f22a2a67b68954292efcf2604a52cacd8a1a68f4"
+  },
+  "spider": {
+    "label": "Spider",
+    "file": "standardized/spider.png",
+    "sha256": "295b4cfb28ffcbe6db5e99af1fbd74caa1b82d3c40fd180c8c5aba37e6a04879"
+  },
+  "praying-mantis": {
+    "label": "Praying Mantis",
+    "file": "standardized/praying-mantis.png",
+    "sha256": "835e8a4792688b53ee139776cb1ad89485f32b1286a947128521cda5a705cf1a"
+  },
+  "grasshopper": {
+    "label": "Grasshopper",
+    "file": "standardized/grasshopper.png",
+    "sha256": "00249835a255f37e7252c374bd43da093024c4be94725973a8214e2f0f566ae4"
+  },
+  "firefly": {
+    "label": "Firefly",
+    "file": "standardized/firefly.png",
+    "sha256": "dba5e0bf85c20755ef960573716cff090bc5e5937693bdc310e09840168b7d3d"
+  },
+  "snail": {
+    "label": "Snail",
+    "file": "standardized/snail.png",
+    "sha256": "60cfdb1ebc1e53ed9d3295efcf21a021591bd2c65115b3b709205c2e5b350947"
+  },
+  "ant": {
+    "label": "Ant",
+    "file": "standardized/ant.png",
+    "sha256": "5f0e18ad87d5934e26b8c6b93853a81741132a6e1f77c4c15f4a05ca558dca17"
+  },
+  "wasp": {
+    "label": "Wasp",
+    "file": "standardized/wasp.png",
+    "sha256": "1cbf1274d409caa0357c2da10df42200345a47c71c68b9381a6db806b1278291"
+  },
+  "fly": {
+    "label": "Fly",
+    "file": "standardized/fly.png",
+    "sha256": "0c10a922d564c7b3cbb7201fc542757a7b7f6286447828caf0da7afeaddfc25f"
+  },
+  "cicada": {
+    "label": "Cicada",
+    "file": "standardized/cicada.png",
+    "sha256": "18337c1d017ae148749241d1cf451c440794148c8e74423395b2b97967046f78"
+  },
+  "caterpillar": {
+    "label": "Caterpillar",
+    "file": "standardized/caterpillar.png",
+    "sha256": "ffa8c9bc8de634e8f7f8ea443aa753f780b31484fb0c2dbd012bb84ed46b1d26"
+  },
+  "stick-insect": {
+    "label": "Stick Insect",
+    "file": "standardized/stick-insect.png",
+    "sha256": "6b517d0d2efabbe504692a0a3366e6d6aa1697bcee2076653a3c62b443ecee5c"
+  },
+  "shield-bug": {
+    "label": "Shield Bug",
+    "file": "standardized/shield-bug.png",
+    "sha256": "ef108d0ede609f367d60a36494e9b3ce4d281211bdd1861dc183925a601509bf"
+  },
+  "moth-pink": {
+    "label": "Moth",
+    "file": "standardized/moth-pink.png",
+    "sha256": "20bc444b90440017e9fedb5a280b5b97e6598a620455e067906db93ae0d387bc"
+  },
+  "mushroom": {
+    "label": "Mushroom",
+    "file": "standardized/mushroom.png",
+    "sha256": "20ea49d18adc60a63a1d0cd5df0edb4492801fc653bb7eaf0f66d4e839846f22"
+  },
+  "clover": {
+    "label": "Clover",
+    "file": "standardized/clover.png",
+    "sha256": "547fcefea8317c089e6d098144e24c206bccb2918b95c5b459f381dd5c52585f"
+  },
+  "fern": {
+    "label": "Fern",
+    "file": "standardized/fern.png",
+    "sha256": "e9ffd7896eb8bd098b933f76be4645fa720739e4edf3f7974c08ccbfde77400c"
+  },
+  "sunflower": {
+    "label": "Sunflower",
+    "file": "standardized/sunflower.png",
+    "sha256": "7428e651efaf3ed187b1e85290b40669661e71a2fcec4bf13f60f89d5f737aa0"
+  },
+  "lavender": {
+    "label": "Lavender",
+    "file": "standardized/lavender.png",
+    "sha256": "2c48b6a61dab9d210a22a3b2bca0176365674f59d5ddbd070543646d57ad483e"
+  },
+  "oak-leaf": {
+    "label": "Oak Leaf",
+    "file": "standardized/oak-leaf.png",
+    "sha256": "b69dc1261b1936518a6706a6486ea49c7338e9b02c900202962c510fb635903a"
+  },
+  "cherry-blossom": {
+    "label": "Cherry Blossom",
+    "file": "standardized/cherry-blossom.png",
+    "sha256": "6a633a3562f7b5295852e49f567769391b953e435ec0e60e9bce1fbb635747a2"
+  },
+  "holly": {
+    "label": "Holly",
+    "file": "standardized/holly.png",
+    "sha256": "0477827cfe32f2d9bb111dc98a1185bb731581596200ead186dee688b984c5b0"
+  },
+  "pine-tree": {
+    "label": "Pine Tree",
+    "file": "standardized/pine-tree.png",
+    "sha256": "c33941c1b7c3bdc9018a8cb763ddbf642085037f67ed05370cc0245902284b02"
+  },
+  "bonsai": {
+    "label": "Bonsai",
+    "file": "standardized/bonsai.png",
+    "sha256": "f4c3e328a9d319e1173530b080419f407b98c395c4d62a3175efed825ad391c8"
+  },
+  "unicorn": {
+    "label": "Unicorn",
+    "file": "standardized/unicorn.png",
+    "sha256": "c8d1902cfa546f7033f3e59e1f959fe9afbedead43184c59344c7db1c69c23ea"
+  },
+  "dragon": {
+    "label": "Dragon",
+    "file": "standardized/dragon.png",
+    "sha256": "94a14f5eb8566d98109ee683d53e569e75f68a1b86502370f2af208583113f57"
+  },
+  "phoenix": {
+    "label": "Phoenix",
+    "file": "standardized/phoenix.png",
+    "sha256": "c24919b214cee679d017c1f892c20593cade0f238c31331c95a1be6bf02f4535"
+  },
+  "griffin": {
+    "label": "Griffin",
+    "file": "standardized/griffin.png",
+    "sha256": "73eb98e500427ff8ae785137b21039f0776d889c295cb64ff35beb2defe41f37"
+  },
+  "mermaid": {
+    "label": "Mermaid",
+    "file": "standardized/mermaid.png",
+    "sha256": "e02e9cfa6280d071530e22f370d6e9d713afe7547d66314927613326b7ae4a5e"
+  },
+  "fairy": {
+    "label": "Fairy",
+    "file": "standardized/fairy.png",
+    "sha256": "37a6c61d5df16e470f1c048b774a8a55304945cfbcfccf1d55e38038d9d6258d"
+  },
+  "wizard": {
+    "label": "Wizard",
+    "file": "standardized/wizard.png",
+    "sha256": "8bb1db9e4598a6fbf447bc5997859eb5efcce661d61ef0c7c957021c71c6c166"
+  },
+  "ghost": {
+    "label": "Ghost",
+    "file": "standardized/ghost.png",
+    "sha256": "c0a4853d0efd424b0b06c210e92a2419fb81860279a21e8c7f16ff656a327811"
+  },
+  "alien": {
+    "label": "Alien",
+    "file": "standardized/alien.png",
+    "sha256": "f0077b77e1bcf1d9fcd53c252d3bffdbd7b1701c1ad7c2864e4af8c6e8258e2e"
+  },
+  "planet": {
+    "label": "Planet",
+    "file": "standardized/planet.png",
+    "sha256": "b2ffcea5010b237209bdbbf3ab6baf48b0c59502ac8737528742a1c68cbade59"
+  },
+  "pegasus": {
+    "label": "Pegasus",
+    "file": "standardized/pegasus.png",
+    "sha256": "1f585aea59746d1128f2d38dd9ac3d371f258b00f785ff01e319addbc1cb9e9b"
+  },
+  "forest-spirit": {
+    "label": "Forest Spirit",
+    "file": "standardized/forest-spirit.png",
+    "sha256": "cd2286a6cf8093b00cec4c1bece7696bb386fb76b1f297195ce9d2ee9b3d1fdf"
+  },
+  "moon-hare": {
+    "label": "Moon Hare",
+    "file": "standardized/moon-hare.png",
+    "sha256": "beb0d39d083450611e7f792613def195ab133f289ae3c60dc32902731f2cbac8"
+  },
+  "leviathan": {
+    "label": "Leviathan",
+    "file": "standardized/leviathan.png",
+    "sha256": "59ee1738a5672cb7d20a33226d191e8cc5842dea424cf2c5ab1eac2760de1d29"
+  },
+  "ice-dragon": {
+    "label": "Ice Dragon",
+    "file": "standardized/ice-dragon.png",
+    "sha256": "285c88c587a66db3c50969379bd6c2dbf4dc95c30a1484bc63d39c8ad8dcf99d"
+  },
+  "sky-dragon": {
+    "label": "Sky Dragon",
+    "file": "standardized/sky-dragon.png",
+    "sha256": "7836f8d9fd8e0a8dd4929f125da2771794f58aca67c6d06a4deadb9759842dad"
+  },
+  "sea-serpent": {
+    "label": "Sea Serpent",
+    "file": "standardized/sea-serpent.png",
+    "sha256": "d027f2eaaef60e63d34d3f584fed2e4fa660d835dadc0baebba73e24253afb6f"
+  },
+  "dire-wolf": {
+    "label": "Dire Wolf",
+    "file": "standardized/dire-wolf.png",
+    "sha256": "3cb26046624d292627939646b3ecf95ee3ca528f06fb74ee1f9e9f884c3ca912"
+  },
+  "winged-lion": {
+    "label": "Winged Lion",
+    "file": "standardized/winged-lion.png",
+    "sha256": "c97e61e1fab419fdfe1d1f48f4f3c5b52fceed9e45d8f15d13a07c95a0b6ca7a"
+  },
+  "brown-bear": {
+    "label": "Brown Bear",
+    "file": "standardized/brown-bear.png",
+    "sha256": "912459c0a6ca9d289440d127f5cc00db0a82bb90bf7424f4985f9ba851d0f693"
+  },
+  "red-panda-bear": {
+    "label": "Red Panda",
+    "file": "standardized/red-panda-bear.png",
+    "sha256": "9da6cc3d77289a1d2c16222dea90bd142519c64a8f549cf1fd04fdd4778236c5"
+  },
+  "giant-panda-bear": {
+    "label": "Giant Panda",
+    "file": "standardized/giant-panda-bear.png",
+    "sha256": "408a11e5ca739e2445a5db667a07f2a183b4608f3b11eaa7ad38f2c0fa1f6eb4"
+  },
+  "orange-tabby": {
+    "label": "Orange Tabby",
+    "file": "standardized/orange-tabby.png",
+    "sha256": "d0e5df807fdca70cf863a70e9fba85efbfc82526f591063c5113c3d8f58d83b3"
+  },
+  "black-cat": {
+    "label": "Black Cat",
+    "file": "standardized/black-cat.png",
+    "sha256": "5adf20afafd90650aaf4cae87a3561225f6ee73257ad30905e4529a2cc61f5a2"
+  },
+  "fluffy-cat": {
+    "label": "Fluffy Cat",
+    "file": "standardized/fluffy-cat.png",
+    "sha256": "a7d9d8aee8543d4b8f5f5433c7245d4beb1cd67da78fdfe0f7ded062f5bff9c2"
+  },
+  "tuxedo-cat": {
+    "label": "Tuxedo Cat",
+    "file": "standardized/tuxedo-cat.png",
+    "sha256": "bbea167a4346be971a90ceca1c151462fc5c1c3c14226fedddda823283e4c0ca"
+  }
+}
