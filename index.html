@@ -285,6 +285,36 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 #groupStep .group-panel{text-align:left}
 #partyOnBtn{margin-top:6px;width:100%}
 
+/* ---------- 13. Landing page ---------- */
+#home{position:fixed;inset:0;z-index:15;overflow:auto;display:grid;place-items:center;padding:20px;padding-top:max(20px,env(safe-area-inset-top));background:var(--bw-abyss)}
+.home-card{width:min(440px,100%);background:var(--bw-card);border:1px solid var(--bw-line);border-radius:var(--bw-radius-xl);padding:26px 20px 20px;box-shadow:0 20px 60px rgba(0,0,0,.45);text-align:center}
+.home-avatar{width:72px;height:72px;margin:0 auto 14px}
+.home-card h2{font-size:1.75rem;margin-bottom:6px}
+.home-card>.note{font-size:var(--bw-text-md);margin-bottom:18px}
+.home-rows{display:grid;gap:8px;margin-bottom:18px;text-align:left}
+.home-row{display:flex;align-items:center;gap:12px;width:100%;padding:12px;border:1px solid var(--bw-line);border-radius:var(--bw-radius-lg);background:var(--bw-deep);color:var(--bw-cream);text-align:left}
+.home-row:hover{border-color:var(--bw-line-strong);background:var(--bw-raised)}
+.home-icon{display:grid;place-items:center;width:40px;height:40px;flex:none;border-radius:50%;border:1px solid;font-size:18px}
+.home-icon .ticket-glyph{width:20px;height:20px}
+.home-icon.events{color:var(--bw-coral);background:#251A1A;border-color:#71463F}
+.home-icon.plans{color:var(--bw-going-fg);background:var(--bw-going-bg);border-color:var(--bw-going-line)}
+.home-icon.people{color:var(--bw-interested-fg);background:var(--bw-interested-bg);border-color:var(--bw-interested-line)}
+.home-text{flex:1;min-width:0;display:grid;gap:2px}
+.home-text strong{font-size:var(--bw-text-md);font-weight:700;line-height:1.3}
+.home-text span{font-size:var(--bw-text-sm);color:var(--bw-muted);line-height:1.35}
+.home-chevron{color:var(--bw-subtle);font-size:22px;line-height:1}
+.home-card .btn{width:100%}
+
+/* New-since-last-visit panel at the top of Discover */
+.new-panel{margin-top:var(--bw-space-4);padding:14px;border:1px solid #71463F;border-radius:var(--bw-radius-lg);background:#1A1719}
+.new-panel-head{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.new-panel-head h3{display:flex;align-items:center;gap:8px}
+
+/* Add to calendar */
+.cal-link{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:8px 12px;border-radius:var(--bw-radius-sm);border:1px solid var(--bw-line);background:var(--bw-deep);color:var(--bw-cream);font-size:var(--bw-text-sm);font-weight:700;text-decoration:none}
+.cal-link:hover{border-color:var(--bw-line-strong)}
+.cal-glyph{width:16px;height:16px}
+
 </style>
 <title>Brighton Weekend</title>
 </head>
@@ -344,6 +374,16 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
       </div>
       <button type="button" id="partyOnBtn" class="btn btn-primary">Party on</button>
     </div>
+  </div>
+</section>
+
+<section id="home" class="hidden" aria-labelledby="homeGreeting">
+  <div class="home-card">
+    <img id="homeAvatar" class="avatar home-avatar" src="profile-icons/standardized/fox.png" alt="">
+    <h2 id="homeGreeting">Welcome</h2>
+    <p id="homeSub" class="note"></p>
+    <div id="homeRows" class="home-rows"></div>
+    <button type="button" id="homeContinue" class="btn btn-primary">See this week</button>
   </div>
 </section>
 
@@ -428,7 +468,7 @@ let profileIcon='';
 let profileIconsByUser={};
 const PROFILE_ICONS=['fox','badger','otter','hedgehog','squirrel','rabbit','deer','seagull','pigeon','kingfisher','owl','raven','cat','dog','dolphin','shark','whale','octopus','crab','starfish','butterfly','dragonfly','ladybird','moth','beetle','spider','praying-mantis','grasshopper','firefly','snail','ant','wasp','fly','cicada','caterpillar','stick-insect','shield-bug','moth-pink','mushroom','clover','fern','sunflower','lavender','oak-leaf','cherry-blossom','holly','pine-tree','bonsai'];
 const PROFILE_LABELS={'fox':'Fox','badger':'Badger','otter':'Otter','hedgehog':'Hedgehog','squirrel':'Squirrel','rabbit':'Rabbit','deer':'Deer','seagull':'Seagull','pigeon':'Pigeon','kingfisher':'Kingfisher','owl':'Owl','raven':'Raven','cat':'Cat','dog':'Dog','dolphin':'Dolphin','shark':'Shark','whale':'Whale','octopus':'Octopus','crab':'Crab','starfish':'Starfish','butterfly':'Butterfly','dragonfly':'Dragonfly','ladybird':'Ladybird','moth':'Moth','beetle':'Beetle','spider':'Spider','praying-mantis':'Praying Mantis','grasshopper':'Grasshopper','firefly':'Firefly','snail':'Snail','ant':'Ant','wasp':'Wasp','fly':'Fly','cicada':'Cicada','caterpillar':'Caterpillar','stick-insect':'Stick Insect','shield-bug':'Shield Bug','moth-pink':'Moth','mushroom':'Mushroom','clover':'Clover','fern':'Fern','sunflower':'Sunflower','lavender':'Lavender','oak-leaf':'Oak Leaf','cherry-blossom':'Cherry Blossom','holly':'Holly','pine-tree':'Pine Tree','bonsai':'Bonsai'};
-const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","The Hope & Ruin","The Prince Albert","A L P H A B E T","The Pipeline","Brighton Racecourse","The Gladstone","Babble","Amex Stadium","Shelter Hall","Old Albion","Other"];const COMEDY_VENUES=["Brighton Centre","Brighton Dome","The Old Market","Komedia","The Forge Comedy Club","Theatre Royal Brighton"];const VENUE_ALIASES={"Brighton Dome - Concert Hall":"Brighton Dome"};
+const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","The Hope & Ruin","The Prince Albert","A L P H A B E T","The Pipeline","Brighton Racecourse","The Gladstone","Babble","Amex Stadium","Shelter Hall","Other"];const COMEDY_VENUES=["Brighton Centre","Brighton Dome","The Old Market","Komedia","The Forge Comedy Club","Theatre Royal Brighton"];const VENUE_ALIASES={"Brighton Dome - Concert Hall":"Brighton Dome"};
 const $=id=>document.getElementById(id);
 let events=[], attendance=[], groupHappenings=[], groups=[], groupMembers=[], customEvents=[];
 const savedVenues=JSON.parse(localStorage.getItem('bw_venues')||'null');
@@ -705,7 +745,7 @@ function showWelcome(mode='auth'){
  openGroupStep();
 }
 function finishWelcome(){
- hide('welcome'); trackVisitor(); renderAll(); renderGroupManager();
+ hide('welcome'); homeShown=true; saveSeen(); trackVisitor(); renderAll(); renderGroupManager();
 }
 async function createGroup(){
  const n=$('newGroupName').value.trim(), privacy=$('newGroupPrivacy').value;
@@ -798,6 +838,32 @@ function commitmentButtons(e,mine){
  return `<div class="commitment">${b('not_interested','no','×','Not for me')}${b('interested','yes','♡','Interested')}${b('ticket_bought','bought',TICKET_ICON,'Going')}</div>`;
 }
 function timeRange(e){return e.time?esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}
+// Google Calendar "add event" link (no sign-in or API needed; Google shows a pre-filled event to save).
+function gcalUrl(e){
+ const d=parseEventDate(e.date);if(!d)return '';
+ const [y,m,day]=e.date.split('-').map(Number);
+ const pad=n=>String(n).padStart(2,'0');
+ const stamp=t=>`${t.getUTCFullYear()}${pad(t.getUTCMonth()+1)}${pad(t.getUTCDate())}`;
+ const stampTime=t=>`${stamp(t)}T${pad(t.getUTCHours())}${pad(t.getUTCMinutes())}00`;
+ let dates;
+ const hm=/^(\d{2}):(\d{2})$/.exec(e.time||'');
+ if(hm){
+  const start=new Date(Date.UTC(y,m-1,day,+hm[1],+hm[2]));
+  let end;const fm=/^(\d{2}):(\d{2})$/.exec(e.finish_time||'');
+  if(fm){end=new Date(Date.UTC(y,m-1,day,+fm[1],+fm[2]));if(end<=start)end=new Date(end.getTime()+864e5)} // finishes after midnight
+  else end=new Date(start.getTime()+3*36e5); // no published finish: assume three hours
+  dates=`${stampTime(start)}/${stampTime(end)}`;
+ }else{
+  const start=new Date(Date.UTC(y,m-1,day)),end=new Date(start.getTime()+864e5);
+  dates=`${stamp(start)}/${stamp(end)}`; // all-day
+ }
+ const venue=String(e.venue_display||e.venue||'');
+ const details=[safeUrl(e.ticket_url)?'Tickets: '+safeUrl(e.ticket_url):'',e.price?'Price: '+e.price:'','Added from Brighton Weekend'].filter(Boolean).join('\n');
+ const q=new URLSearchParams({action:'TEMPLATE',text:e.title||'',dates,ctz:'Europe/London',location:venue?venue+', Brighton':'Brighton',details});
+ return 'https://calendar.google.com/calendar/render?'+q.toString();
+}
+function calendarLink(e){const u=gcalUrl(e);return u?`<a class="cal-link" href="${esc(u)}" target="_blank" rel="noopener" aria-label="Add ${esc(e.title)} to Google Calendar">${CAL_ICON}<span>Add to calendar</span></a>`:''}
+const CAL_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 13v4M10 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 function ticketLink(e){const u=safeUrl(e.ticket_url);return u?`<a class="ticket" href="${esc(u)}" target="_blank" rel="noopener">Tickets ↗</a>`:''}
 function eventCard(e,{showDate=false}={}){
  const mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
@@ -808,14 +874,14 @@ function eventCard(e,{showDate=false}={}){
  ${e.price?`<div class="price">${esc(e.price)}</div>`:''}
  <div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>${a} interested</span><span class="social-chip"><i class="social-icon going">${TICKET_ICON}</i>${t} going</span></div>
  ${commitmentButtons(e,mine)}
- <div class="actions">${ticketLink(e)}</div></article>`;
+ <div class="actions">${ticketLink(e)}${calendarLink(e)}</div></article>`;
 }
 function render(){
  const end=new Date(weekStart);end.setDate(end.getDate()+6);
  $('week').textContent=weekStart.toLocaleDateString('en-GB',{day:'numeric',month:'short'})+' – '+end.toLocaleDateString('en-GB',{day:'numeric',month:'short'});
  const days=weekDays();
- if(!days.length){$('discover').innerHTML='<div class="empty">None of your chosen days are left this week. Tap › for next week, or change your days in Settings.</div>';return}
- $('discover').innerHTML=days.map(day=>{
+ if(!days.length){$('discover').innerHTML=newPanelHtml()+'<div class="empty">None of your chosen days are left this week. Tap › for next week, or change your days in Settings.</div>';return}
+ $('discover').innerHTML=newPanelHtml()+days.map(day=>{
   const list=events.filter(e=>e.date===day.key&&venueVisible(e)&&!isComedy(e));
   return dayHeading(day)+(list.length?list.map(e=>eventCard(e)).join(''):'<div class="empty">No events at your selected venues.</div>');
  }).join('');
@@ -877,7 +943,7 @@ function renderPeople(){
   }).join('');
   const you=mine?`<div class="happening-you"><span class="happening-person-name">You</span>${statusPill(mine)}</div>`:'';
   const quiet=!sections?'<div class="note happening-quiet">No one in your groups has responded yet.</div>':'';
-  return `<div class="people-card card"><div class="top"><div><h3>${esc(e.title)}${e.is_custom?` <span class="added-by">community added</span>`:''}</h3><div class="meta">${[esc(e.venue_display||e.venue),esc((parseEventDate(e.date)||new Date()).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})),timeRange(e)].filter(Boolean).join(' · ')}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">Sold out</span>':''}</div>${you}${summary.length?`<div class="happening-summary">${summary.join('')}</div>`:''}${sections}${quiet}${commitmentButtons(e,mine?{status:mine}:null)}<div class="actions">${ticketLink(e)}</div></div>`;
+  return `<div class="people-card card"><div class="top"><div><h3>${esc(e.title)}${e.is_custom?` <span class="added-by">community added</span>`:''}</h3><div class="meta">${[esc(e.venue_display||e.venue),esc((parseEventDate(e.date)||new Date()).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})),timeRange(e)].filter(Boolean).join(' · ')}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">Sold out</span>':''}</div>${you}${summary.length?`<div class="happening-summary">${summary.join('')}</div>`:''}${sections}${quiet}${commitmentButtons(e,mine?{status:mine}:null)}<div class="actions">${ticketLink(e)}${calendarLink(e)}</div></div>`;
  }).join('');
  $('peopleList').innerHTML=html;
 }
@@ -1016,12 +1082,77 @@ document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{
 });
 // Commitment buttons are rendered in several lists; one delegated handler serves them all.
 document.addEventListener('click',e=>{const b=e.target.closest('[data-act]');if(!b)return;act(b.dataset.eventId,b.dataset.act)});
+// ---- Landing page ----
+// Remembers, per user on this device, what was on screen at the last visit and
+// reports what is new since then.
+const seenKey=()=>'bw_seen_'+uid();
+let newSinceVisit=[], showNewPanel=false, homeShown=false;
+function readSeen(){try{return JSON.parse(localStorage.getItem(seenKey())||'null')}catch(e){return null}}
+function friendPlanKeys(){const me=uid(),today=todayKey(),ids=new Set(events.filter(e=>e.date>=today).map(e=>e.id));return [...new Set(groupHappenings.filter(x=>x.user_id&&x.user_id!==me&&(x.status==='interested'||x.status==='ticket_bought')&&ids.has(x.event_id)).map(x=>x.user_id+':'+x.event_id+':'+x.status))]}
+function memberMap(){const m={};groupMembers.forEach(x=>{(m[x.group_id]=m[x.group_id]||[]).push(x.user_id)});return m}
+function saveSeen(){
+ try{const today=todayKey();localStorage.setItem(seenKey(),JSON.stringify({at:new Date().toISOString(),events:events.filter(e=>e.date>=today).map(e=>e.id),plans:friendPlanKeys(),members:memberMap()}))}
+ catch(e){console.warn('Could not remember this visit',e)}
+}
+function homeRow({tab,tone,icon,title,detail}){return `<button type="button" class="home-row" data-home-go="${tab}"><span class="home-icon ${tone}" aria-hidden="true">${icon}</span><span class="home-text"><strong>${title}</strong><span>${detail}</span></span><span class="home-chevron" aria-hidden="true">›</span></button>`}
+function showHome(){
+ if(homeShown||!authUser||!name()||!$('welcome').classList.contains('hidden'))return;
+ homeShown=true;
+ const seen=readSeen(),me=uid(),today=todayKey(),first=!seen;
+ const upcoming=events.filter(e=>e.date>=today);
+ // New events
+ const seenIds=new Set(seen?.events||[]);
+ newSinceVisit=first?[]:upcoming.filter(e=>!seenIds.has(e.id)).sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
+ showNewPanel=newSinceVisit.length>0;
+ const n=newSinceVisit.length;
+ const rows=[homeRow({tab:'discover',tone:'events',icon:'♬',
+  title:first?`${upcoming.length} upcoming events`:n?`${n} new event${n===1?'':'s'}`:'No new events',
+  detail:first?'Gigs, comedy, clubs and theatre across Brighton':n?'Added since your last visit':'Nothing added since your last visit'})];
+ if(groups.length){
+  // New plans from friends
+  const seenPlans=new Set(seen?.plans||[]),plans=friendPlanKeys(),newPlans=first?plans:plans.filter(k=>!seenPlans.has(k));
+  const p=newPlans.length;
+  rows.push(homeRow({tab:'peopleTab',tone:'plans',icon:TICKET_ICON,
+   title:p?`${p} ${first?'':'new '}plan${p===1?'':'s'} from your groups`:(first?'No plans from your groups yet':'No new plans'),
+   detail:p?'Friends who are interested or going':'Mark something Interested or Going to get things started'}));
+  // New group members (only in groups you were already in last time)
+  let joined=[];
+  if(!first){const before=seen.members||{};groupMembers.forEach(x=>{if(x.user_id!==me&&before[x.group_id]&&!before[x.group_id].includes(x.user_id))joined.push(x)})}
+  const names=[...new Map(joined.map(x=>[x.user_id,x.user_name])).values()];
+  const groupsJoined=[...new Set(joined.map(x=>x.group_name))];
+  rows.push(homeRow({tab:'peopleTab',tone:'people',icon:'☺',
+   title:!names.length?'No one new in your groups':names.length===1?`${esc(names[0])} joined ${esc(groupsJoined.length===1?groupsJoined[0]:'your groups')}`:`${esc(names[0])} and ${names.length-1} other${names.length===2?'':'s'} joined ${esc(groupsJoined.length===1?groupsJoined[0]:'your groups')}`,
+   detail:names.length?'See who is in your groups':(first?`${new Set(groupMembers.map(x=>x.user_id).filter(u=>u!==me)).size} other people share a group with you`:'Invite friends from Settings')}));
+ }else{
+  rows.push(homeRow({tab:'venuesTab',tone:'people',icon:'☺',title:'Join a group',detail:'See what your friends are planning'}));
+ }
+ const last=seen?.at?new Date(seen.at):null;
+ const when=last?last.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}):'';
+ $('homeGreeting').textContent=(first?'Welcome, ':'Welcome back, ')+name();
+ $('homeSub').textContent=first?"Here's what's on in Brighton.":`Here's what's changed since your last visit on ${when}.`;
+ $('homeAvatar').src=iconSrc(PROFILE_ICONS.includes(profileIcon)?profileIcon:'fox');
+ $('homeRows').innerHTML=rows.join('');
+ show('home');
+ saveSeen();
+ render(); // draw the 'New since your last visit' panel into Discover
+}
+function openTab(tab){hide('home');const b=document.querySelector(`.nav button[data-tab="${tab}"]`);if(b)b.click()}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-home-go]');if(b)openTab(b.dataset.homeGo)});
+$('homeContinue').onclick=()=>openTab('discover');
+function newPanelHtml(){
+ if(!showNewPanel||!newSinceVisit.length)return '';
+ const list=newSinceVisit.filter(e=>venueVisible(e)),shown=list.slice(0,30);
+ return `<section class="new-panel"><div class="new-panel-head"><h3>New since your last visit <span class="member-count">${newSinceVisit.length}</span></h3><button type="button" class="btn btn-chip" id="closeNewPanel">Hide</button></div>${shown.map(e=>eventCard(e,{showDate:true})).join('')||'<div class="empty">None at the venues you follow. Turn on more venues in Settings.</div>'}${list.length>shown.length?`<div class="note">Showing the first ${shown.length}. Use Search to see the rest.</div>`:''}</section>`;
+}
+document.addEventListener('click',e=>{if(e.target.closest('#closeNewPanel')){showNewPanel=false;render()}});
+
 async function loadUserData(){
  if(!authUser)return;
  await Promise.all([loadAttendance(),loadCustomEvents()]);
  events=mergeEvents(events.filter(e=>!e.is_custom));
  await loadGroupHappenings(); await loadProfileIcons();
  renderProfileIconSettings(); renderAll(); renderGroupManager();
+ showHome();
 }
 (async()=>{
  renderVenues(); renderAll();
@@ -1035,7 +1166,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=51', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=50', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
