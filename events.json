@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "range_start": "2026-09-25",
   "range_end": "2027-07-02",
   "venues": [
@@ -7,6 +7,7 @@
     "Amex Stadium",
     "Babble",
     "Brighton Centre",
+    "Brighton Dome",
     "Brighton Dome - Concert Hall",
     "Brighton Racecourse",
     "CHALK",
@@ -14,6 +15,7 @@
     "DUST",
     "Green Door Store",
     "Komedia",
+    "Old Albion",
     "Patterns",
     "Quarters",
     "Shelter Hall",
@@ -2236,6 +2238,16 @@
       "ticket_url": "https://www.komedia.co.uk/shows/jordan-brookes-the-part-of-you-thats-always-screaming/?eid=18866"
     },
     {
+      "id": "2026-10-17-brighton-dome-stevie-martin-clout",
+      "title": "Stevie Martin: Clout",
+      "date": "2026-10-17",
+      "venue": "Brighton Dome",
+      "time": "19:00",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/Ltk-stevie-martin-clout/"
+    },
+    {
       "id": "2026-10-17-concorde-2-reef",
       "title": "Reef",
       "date": "2026-10-17",
@@ -2484,16 +2496,6 @@
       "ticket_url": "https://www.komedia.co.uk/shows/raise-the-roof-2-a-fundraiser-for-ymca-brighton/?eid=20353"
     },
     {
-      "id": "2026-10-19-the-old-market-notes-a-wine-and-music-pairing-night",
-      "title": "NOTES: A Wine and Music Pairing Night",
-      "date": "2026-10-19",
-      "venue": "The Old Market",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.theoldmarket.com/shows"
-    },
-    {
       "id": "2026-10-19-theoldmarket-notes-wine-music-pairing-night",
       "title": "Notes - Wine & Music Pairing Night",
       "date": "2026-10-19",
@@ -2503,6 +2505,16 @@
       "ticket_url": "https://www.theoldmarket.com/shows",
       "source_url": "https://www.theoldmarket.com/shows",
       "finish_time": ""
+    },
+    {
+      "id": "2026-10-19-the-old-market-notes-a-wine-and-music-pairing-night",
+      "title": "NOTES: A Wine and Music Pairing Night",
+      "date": "2026-10-19",
+      "venue": "The Old Market",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.theoldmarket.com/shows"
     },
     {
       "id": "2026-10-20-19-00-nectar-woode",
@@ -7158,6 +7170,16 @@
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
       "source_url": "https://www.concorde2.co.uk/whats-on",
       "finish_time": ""
+    },
+    {
+      "id": "2026-12-12-brighton-dome-paddy-young-will-sir-be-laughing-alone",
+      "title": "Paddy Young: Will Sir Be Laughing Alone?",
+      "date": "2026-12-12",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LgN-paddy-young-will-sir-be-laughing-alone/"
     },
     {
       "id": "2026-12-12-the-forge-comedy-club-festive-forge-comedy-club",
