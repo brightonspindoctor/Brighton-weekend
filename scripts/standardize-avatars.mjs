@@ -6,7 +6,10 @@
 //
 // Sources can be PNG/JPG/WEBP, or an SVG wrapping an embedded image. Many
 // sources already have a dark rim or a painted ring near the edge, so the
-// circle is cut slightly inside the artwork (CROP) to remove it.
+// circle is cut slightly inside the artwork (CROP) to remove it. The artwork
+// is then drawn at ZOOM of the circle's width with a soft edge, over a fill
+// matching the artwork's own dark background, so avatars aren't cramped and no
+// second ring appears.
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -16,7 +19,9 @@ const root = process.cwd();
 const dir = path.join(root, 'profile-icons');
 const outDir = path.join(dir, 'standardized');
 const SIZE = 192;
-const CROP = 0.86; // fraction of the source's width kept inside the circle
+const CROP = 0.86; // fraction of the source's width kept (removes painted rims)
+const ZOOM = 0.88; // artwork diameter as a fraction of the avatar (smaller = more zoomed out)
+const FEATHER = 0.14; // soft edge on the artwork, as a fraction of its radius
 fs.mkdirSync(outDir, { recursive: true });
 
 // The icon list lives in the app code: inline in index.html (js/app.js in a split build).
@@ -43,7 +48,24 @@ function load(file) {
   return sharp(raw, { failOn: 'none' });
 }
 
-const mask = Buffer.from(`<svg width="${SIZE}" height="${SIZE}" xmlns="http://www.w3.org/2000/svg"><circle cx="${SIZE / 2}" cy="${SIZE / 2}" r="${SIZE / 2}" fill="#fff"/></svg>`);
+const circle = (d, feather = 0) => Buffer.from(`<svg width="${d}" height="${d}" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="g"><stop offset="${1 - feather}" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs><circle cx="${d / 2}" cy="${d / 2}" r="${d / 2}" fill="${feather ? 'url(#g)' : '#fff'}"/></svg>`);
+const mask = circle(SIZE);
+const FALLBACK_BG = [11, 27, 38];
+
+// The fill behind the artwork: the median of the dark pixels around the
+// artwork's edge, so it matches that image's own background (not the subject).
+async function backgroundOf(art) {
+  const { data } = await sharp(art).raw().toBuffer({ resolveWithObject: true });
+  const dark = [];
+  const c = SIZE / 2, r = SIZE / 2 - 8;
+  for (let a = 0; a < 360; a += 2) {
+    const x = Math.round(c + r * Math.cos(a * Math.PI / 180)), y = Math.round(c + r * Math.sin(a * Math.PI / 180));
+    const i = (y * SIZE + x) * 4;
+    if (0.2126 * data[i] + 0.7152 * data[i + 1] + 0.0722 * data[i + 2] < 55) dark.push([data[i], data[i + 1], data[i + 2]]);
+  }
+  const channel = k => dark.length > 20 ? dark.map(p => p[k]).sort((a, b) => a - b)[dark.length >> 1] : FALLBACK_BG[k];
+  return { r: channel(0), g: channel(1), b: channel(2), alpha: 1 };
+}
 const scaled = Math.round(SIZE / CROP);
 const offset = Math.floor((scaled - SIZE) / 2);
 const failures = [];
@@ -57,7 +79,12 @@ for (const icon of icons) {
       .ensureAlpha()
       .png()
       .toBuffer();
-    const out = await sharp(art).composite([{ input: mask, blend: 'dest-in' }]).png({ compressionLevel: 9 }).toBuffer();
+    const d = Math.round(SIZE * ZOOM), o = Math.floor((SIZE - d) / 2);
+    const small = await sharp(art).resize(d, d).composite([{ input: circle(d, FEATHER), blend: 'dest-in' }]).png().toBuffer();
+    const out = await sharp({ create: { width: SIZE, height: SIZE, channels: 4, background: await backgroundOf(art) } })
+      .composite([{ input: small, left: o, top: o }, { input: mask, blend: 'dest-in' }])
+      .png({ compressionLevel: 9 })
+      .toBuffer();
     fs.writeFileSync(path.join(outDir, icon + '.png'), out);
   } catch (err) {
     failures.push(`${icon} (${src}): ${err.message}`);
