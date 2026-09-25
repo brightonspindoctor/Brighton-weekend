@@ -1,9 +1,10 @@
 # Brighton Weekend design system
 
 This describes the look the app already has and fixes it in one place. The
-source of truth is the token block at the top of `css/app.css`. The page
-`design-system.html` shows every token and component rendered with the real
-stylesheet, so open it after any style change.
+app is a single file: the source of truth is the token block at the top of the
+`<style id="bw-styles">` element in `index.html`. The page
+`design-system.html` renders every token and component with a copy of the same
+stylesheet, so update it alongside any style change and open it to check.
 
 ## Idea
 
@@ -90,8 +91,10 @@ everywhere, including buttons and badges ("Sold out", "Tickets").
 | Button | `.btn` + `.btn-primary` / `.btn-secondary` / `.btn-ghost` / `.btn-chip` | Use one primary per panel. Chip is the small size for row actions. |
 | Event card | `.card` › `.top`, `.title`, `.meta`, `.price`, `.people`, `.commitment`, `.actions` | Built by `eventCard()` in `js/app.js`. Discover, Comedy and Search all use it. |
 | Commitment control | `.commitment` › `.commit-btn.no/.yes/.bought` (+ `.selected`) | Three equal columns that never wrap. Icons hide below 360px wide. |
-| Social chip | `.social-chip` › `.social-icon.heart/.ticket/.profile` | Counts on cards and names in the group roster. |
-| Status pill | `.happening-summary-pill` / `.happening-status` + `.going` / `.interested` | Happenings only. |
+| Social chip | `.social-chip` › `.social-icon.heart/.going/.profile` | Counts on cards and names in the group roster. Don't use the class `ticket` here: that's the coral Tickets link. |
+| Ticket icon | `TICKET_ICON` in the app script (`.ticket-glyph`) | A vector ticket drawn in `currentColor`, used for Going everywhere so it looks the same on every phone. |
+| Avatar | `img.avatar` | The artwork file is already a circle; CSS adds exactly one 1px outline (2px teal when selected). No boxes, rings or per-avatar variants. |
+| Status pill | `.happening-summary-pill` / `.happening-status` + `.going` / `.interested` / `.pass` | Happenings only. Your own status appears once per event in `.happening-you`. |
 | Panel | `.panel`, `.settings-card`, `.settings-section` | Card-coloured container for forms and settings. |
 | Segmented control | `.segmented` | Two-way mode switch (Search). |
 | Checkbox tile | `.choice`, `.day-choice` in `.choice-grid` / `.day-grid` | Multi-select lists. |
@@ -107,4 +110,7 @@ everywhere, including buttons and badges ("Sold out", "Tickets").
    That's how v11–v41 ended up with eight stacked layers.
 3. **No inline styles** in HTML or in JS templates. Add a class.
 4. **Reuse `eventCard()`** for any new event list, so cards stay identical.
-5. **Check `design-system.html`** and a 390px-wide phone view after changes.
+5. **Avatars come from `scripts/standardize-avatars.mjs`.** Add new artwork
+   to `profile-icons/`, add the name to `PROFILE_ICONS`, and let the workflow
+   build the circular file. Never paint frames into the artwork.
+6. **Check `design-system.html`** and a 390px-wide phone view after changes.

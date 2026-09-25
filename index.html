@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
+<style id="bw-styles">
 /* ==========================================================================
    Brighton Weekend — app stylesheet
    One stylesheet, driven by the tokens below. See DESIGN-SYSTEM.md.
@@ -148,21 +148,22 @@ header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1
 /* Social summary chips */
 .people{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:11px}
 .social-chip{display:inline-flex;align-items:center;gap:5px;padding:4px 8px 4px 4px;border-radius:var(--bw-radius-pill);background:#153443;border:1px solid #285365;color:#D9E7E7;font-size:var(--bw-text-xs);font-weight:500;line-height:1}
-.social-icon{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;font-size:10px;line-height:1;overflow:hidden;font-style:normal;border:1px solid var(--bw-line-strong);background:var(--bw-raised)}
+.social-icon{display:inline-grid;place-items:center;width:20px;height:20px;aspect-ratio:1;flex:none;border-radius:50%;font-size:10px;line-height:1;overflow:hidden;font-style:normal;border:1px solid var(--bw-line-strong);background:var(--bw-raised)}
 .social-icon.heart{color:var(--bw-interested-fg);border-color:var(--bw-interested-line)}
-.social-icon.ticket{color:var(--bw-going-fg);border-color:var(--bw-going-line)}
-.social-icon.profile{width:24px;height:24px;border:0;background:transparent;overflow:visible}
-.social-icon.profile img{width:30px;height:30px;display:block;object-fit:contain;border-radius:50%;transform:translateY(-2px);filter:drop-shadow(0 2px 3px rgba(0,0,0,.28))}
+.social-icon.going{color:var(--bw-going-fg);border-color:var(--bw-going-line)}
+.ticket-glyph{width:62%;height:62%;display:block}
+.social-icon.profile{width:24px;height:24px;border:0;background:none;overflow:visible}
+.social-icon.profile img{width:24px;height:24px}
 
 /* Commitment control: three equal segments that never wrap */
 .commitment{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:13px}
 .commit-btn{appearance:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:38px;padding:5px 6px;border-radius:var(--bw-radius-pill);border:1px solid #345468;background:var(--bw-deep);color:#C3D0D6;font-size:var(--bw-text-xs);font-weight:700;letter-spacing:-.015em;white-space:nowrap;transition:background .15s,border-color .15s,color .15s,transform .12s}
 .commit-btn:hover{border-color:var(--bw-line-strong)}
 .commit-btn:active{transform:scale(.97)}
-.commit-icon{display:inline-grid;place-items:center;width:24px;height:24px;flex:0 0 24px;border-radius:50%;border:1px solid var(--bw-line-strong);background:var(--bw-raised);font-size:14px;line-height:1}
+.commit-icon{display:inline-grid;place-items:center;width:24px;height:24px;aspect-ratio:1;flex:none;border-radius:50%;border:1px solid var(--bw-line-strong);background:var(--bw-raised);font-size:14px;line-height:1}
 .commit-btn.no .commit-icon{color:var(--bw-pass-fg);border-color:var(--bw-pass-line)}
 .commit-btn.yes .commit-icon{color:var(--bw-interested-fg);border-color:var(--bw-interested-line)}
-.commit-btn.bought .commit-icon{color:var(--bw-going-fg);border-color:var(--bw-going-line);font-size:11px;overflow:hidden}
+.commit-btn.bought .commit-icon{color:var(--bw-going-fg);border-color:var(--bw-going-line)}
 .commit-btn.selected.no{background:var(--bw-pass-bg);border-color:var(--bw-pass-line);color:var(--bw-pass-fg)}
 .commit-btn.selected.yes{background:var(--bw-interested-bg);border-color:var(--bw-interested-line);color:var(--bw-interested-fg)}
 .commit-btn.selected.bought{background:var(--bw-going-bg);border-color:var(--bw-going-line);color:var(--bw-going-fg)}
@@ -209,17 +210,18 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .support-btn{display:inline-flex;align-items:center;gap:6px;padding:11px 15px;border-radius:var(--bw-radius-md);background:var(--bw-coral);color:var(--bw-coral-ink);font-weight:800;text-decoration:none}
 .settings-links{display:flex;gap:16px;flex-wrap:wrap;padding:4px 2px 18px}
 .settings-links a{color:var(--bw-muted)}
+/* Avatars: the artwork is already a circle (see scripts/standardize-avatars.mjs).
+   CSS adds exactly one outline. Every avatar is treated the same way. */
+.avatar{display:block;border-radius:50%;object-fit:cover;background:var(--bw-deep);box-shadow:0 0 0 1px var(--bw-line)}
 .profile-current{display:flex;align-items:center;gap:12px;padding:10px 0 14px}
-.profile-current img{width:52px;height:52px;object-fit:contain;border-radius:50%;filter:drop-shadow(0 2px 5px rgba(0,0,0,.28))}
+.profile-current img{width:56px;height:56px;flex:none}
 .profile-current strong{display:block}
-.profile-icon-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-top:12px}
-.profile-icon-option{position:relative;padding:0;min-width:0;aspect-ratio:1;background:#0d2030;border:1px solid var(--bw-line);border-radius:14px}
-.profile-icon-option img{width:100%;height:100%;object-fit:contain;border-radius:12px;display:block}
-.profile-icon-option.profile-mystic{background:#14152d;border-color:#6551aa}
-.profile-icon-option.profile-bear{border-radius:50%;overflow:hidden;border-color:#35A7A0}
-.profile-icon-option.profile-bear img{border-radius:50%;object-fit:cover}
-.profile-icon-option.selected{border-color:var(--bw-teal);box-shadow:0 0 0 2px rgba(77,182,172,.3)}
-.profile-icon-option.selected::after{content:"✓";position:absolute;right:2px;top:2px;width:15px;height:15px;border-radius:50%;display:grid;place-items:center;background:var(--bw-teal);color:var(--bw-abyss);font-size:10px;font-weight:800}
+.profile-icon-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(48px,1fr));gap:10px;margin-top:12px}
+.profile-icon-option{position:relative;display:block;width:100%;aspect-ratio:1;padding:0;border:0;border-radius:50%;background:none}
+.profile-icon-option img{width:100%;height:100%}
+.profile-icon-option:hover img{box-shadow:0 0 0 1px var(--bw-line-strong)}
+.profile-icon-option.selected img{box-shadow:0 0 0 2px var(--bw-teal)}
+.profile-icon-option.selected::after{content:"✓";position:absolute;right:-2px;bottom:-2px;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;background:var(--bw-teal);color:var(--bw-abyss);font-size:11px;font-weight:800;box-shadow:0 0 0 2px var(--bw-card)}
 
 /* Groups */
 .group-panel{margin-top:10px;padding-top:12px;border-top:1px solid var(--bw-line)}
@@ -245,12 +247,16 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .happening-summary-pill,.happening-status{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:var(--bw-radius-pill);font-size:var(--bw-text-xs);font-weight:800;border:1px solid;white-space:nowrap}
 .happening-summary-pill.going,.happening-status.going{color:var(--bw-going-fg);background:var(--bw-going-bg);border-color:var(--bw-going-line)}
 .happening-summary-pill.interested,.happening-status.interested{color:var(--bw-interested-fg);background:var(--bw-interested-bg);border-color:var(--bw-interested-line)}
+.happening-summary-pill .ticket-glyph,.happening-status .ticket-glyph{width:13px;height:13px;display:inline-block;vertical-align:-2px}
+.happening-status.pass{color:var(--bw-pass-fg);background:var(--bw-pass-bg);border-color:var(--bw-pass-line)}
+.happening-you{display:flex;align-items:center;gap:8px;margin-top:12px;padding:8px 10px;border-radius:var(--bw-radius-md);background:var(--bw-deep);border:1px solid var(--bw-line)}
+.happening-quiet{margin-top:10px}
 .happening-group{margin-top:12px}
 .happening-group+.happening-group{padding-top:10px;border-top:1px solid var(--bw-line)}
 .happening-group .group-heading{margin:0 0 6px}
 .happening-people{display:grid;gap:7px}
 .happening-person{display:flex;align-items:center;gap:8px;min-height:30px}
-.happening-person .social-icon.profile{flex:0 0 28px}
+.happening-person .social-icon.profile,.happening-person .social-icon.profile img{flex:0 0 28px;width:28px;height:28px}
 .happening-person-name{flex:1;min-width:0;font-size:var(--bw-text-sm);font-weight:600;color:#D9E7E7}
 
 /* ---------- 11. Bottom navigation ---------- */
@@ -399,7 +405,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <main id="venuesTab" class="wrap app-main hidden">
 <h2>Settings</h2>
 <div class="settings-section"><div class="section-head venue-settings-head"><div><h3>Venues</h3><div class="note">Choose which venues appear in Discover.</div></div><div class="venue-actions"><button type="button" class="btn btn-chip" id="selectComedyVenues">Comedy venues</button><button type="button" class="btn btn-chip" id="selectAllVenues">Select all</button><button type="button" class="btn btn-chip" id="unselectAllVenues">Unselect all</button></div></div><div id="venueList"></div><div class="day-preferences"><h4>Days</h4><div class="note">Choose which days appear in Discover and Comedy.</div><div id="dayGrid" class="day-grid"></div></div></div>
-<div class="settings-card"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" src="profile-icons/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong><div class="profile-icon-note">You get one at random when you first sign in. Pick a different one whenever you like.</div></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div><div class="group-panel"><h3>Groups</h3><p class="note">Manage the groups that shape your Happenings feed.</p><div id="groupManager"></div><button id="manageGroups" class="btn btn-secondary">Manage groups</button></div>
+<div class="settings-card"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" class="avatar" src="profile-icons/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong><div class="profile-icon-note">You get one at random when you first sign in. Pick a different one whenever you like.</div></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div><div class="group-panel"><h3>Groups</h3><p class="note">Manage the groups that shape your Happenings feed.</p><div id="groupManager"></div><button id="manageGroups" class="btn btn-secondary">Manage groups</button></div>
 <div class="settings-card"><h3>Support Brighton Weekend</h3><p class="note">If you enjoy using the app, you can buy me a coffee to help keep it running and improving.</p><a class="support-btn" href="https://www.buymeacoffee.com/jonnysadler" target="_blank" rel="noopener">☕ Buy me a coffee ↗</a></div>
 <div class="settings-card"><h3>Account</h3><button id="changeName" class="btn btn-secondary">Change my name</button> <button id="signOut" class="btn btn-ghost">Sign out</button><div id="accountEmail" class="group-meta"></div></div>
 <div class="settings-card install-area"><h3>Install the app</h3><button id="installApp" class="btn btn-primary install-btn">↓ Add Brighton Weekend to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
@@ -408,7 +414,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <nav class="nav" aria-label="Main"><button class="active" data-tab="discover"><span class="nav-icon">♬</span> Discover</button><button data-tab="comedyTab"><span class="nav-icon">☻</span> Comedy</button><button data-tab="searchTab"><span class="nav-icon">⌕</span> Search</button><button data-tab="peopleTab"><span class="nav-icon">♡</span> Happenings</button><button data-tab="venuesTab"><span class="nav-icon">⚙</span> Settings</button></nav>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script>
+<script id="bw-app">
 /* Brighton Weekend app logic. Loaded by index.html after supabase-js. */
 (() => {
 'use strict';
@@ -454,7 +460,7 @@ async function loadProfile(){
  return false;
 }
 function randomProfileIcon(){return PROFILE_ICONS[Math.floor(Math.random()*PROFILE_ICONS.length)]}
-const PROFILE_ICON_FILES={"fox":"standardized/fox.png","badger":"standardized/badger.png","otter":"standardized/otter.png","hedgehog":"standardized/hedgehog.png","squirrel":"standardized/squirrel.png","rabbit":"standardized/rabbit.png","deer":"standardized/deer.png","seagull":"standardized/seagull.png","pigeon":"standardized/pigeon.png","kingfisher":"standardized/kingfisher.png","owl":"standardized/owl.png","raven":"standardized/raven.png","cat":"standardized/cat.png","dog":"standardized/dog.png","dolphin":"standardized/dolphin.png","shark":"standardized/shark.png","whale":"standardized/whale.png","octopus":"standardized/octopus.png","crab":"standardized/crab.png","starfish":"standardized/starfish.png","butterfly":"standardized/butterfly.png","dragonfly":"standardized/dragonfly.png","ladybird":"standardized/ladybird.png","moth":"standardized/moth.png","beetle":"standardized/beetle.png","spider":"standardized/spider.png","praying-mantis":"standardized/praying-mantis.png","grasshopper":"standardized/grasshopper.png","firefly":"standardized/firefly.png","snail":"standardized/snail.png","ant":"standardized/ant.png","wasp":"standardized/wasp.png","fly":"standardized/fly.png","cicada":"standardized/cicada.png","caterpillar":"standardized/caterpillar.png","stick-insect":"standardized/stick-insect.png","shield-bug":"standardized/shield-bug.png","moth-pink":"standardized/moth-pink.png","mushroom":"standardized/mushroom.png","clover":"standardized/clover.png","fern":"standardized/fern.png","sunflower":"standardized/sunflower.png","lavender":"standardized/lavender.png","oak-leaf":"standardized/oak-leaf.png","cherry-blossom":"standardized/cherry-blossom.png","holly":"standardized/holly.png","pine-tree":"standardized/pine-tree.png","bonsai":"standardized/bonsai.png","unicorn":"standardized/unicorn.png","dragon":"standardized/dragon.png","phoenix":"standardized/phoenix.png","griffin":"standardized/griffin.png","mermaid":"standardized/mermaid.png","fairy":"standardized/fairy.png","wizard":"standardized/wizard.png","ghost":"standardized/ghost.png","alien":"standardized/alien.png","planet":"standardized/planet.png","pegasus":"standardized/pegasus.png","forest-spirit":"forest-spirit.webp","moon-hare":"moon-hare.webp","leviathan":"leviathan.webp","ice-dragon":"standardized/ice-dragon.png","sky-dragon":"standardized/sky-dragon.png","sea-serpent":"standardized/sea-serpent.png","dire-wolf":"standardized/dire-wolf.png","winged-lion":"standardized/winged-lion.png","brown-bear":"brown-bear.svg","red-panda-bear":"red-panda-bear.svg","giant-panda-bear":"giant-panda-bear.svg","orange-tabby":"standardized/orange-tabby.png","black-cat":"standardized/black-cat.png","fluffy-cat":"standardized/fluffy-cat.png","tuxedo-cat":"standardized/tuxedo-cat.png"};
+const PROFILE_ICON_FILES={"fox":"standardized/fox.png","badger":"standardized/badger.png","otter":"standardized/otter.png","hedgehog":"standardized/hedgehog.png","squirrel":"standardized/squirrel.png","rabbit":"standardized/rabbit.png","deer":"standardized/deer.png","seagull":"standardized/seagull.png","pigeon":"standardized/pigeon.png","kingfisher":"standardized/kingfisher.png","owl":"standardized/owl.png","raven":"standardized/raven.png","cat":"standardized/cat.png","dog":"standardized/dog.png","dolphin":"standardized/dolphin.png","shark":"standardized/shark.png","whale":"standardized/whale.png","octopus":"standardized/octopus.png","crab":"standardized/crab.png","starfish":"standardized/starfish.png","butterfly":"standardized/butterfly.png","dragonfly":"standardized/dragonfly.png","ladybird":"standardized/ladybird.png","moth":"standardized/moth.png","beetle":"standardized/beetle.png","spider":"standardized/spider.png","praying-mantis":"standardized/praying-mantis.png","grasshopper":"standardized/grasshopper.png","firefly":"standardized/firefly.png","snail":"standardized/snail.png","ant":"standardized/ant.png","wasp":"standardized/wasp.png","fly":"standardized/fly.png","cicada":"standardized/cicada.png","caterpillar":"standardized/caterpillar.png","stick-insect":"standardized/stick-insect.png","shield-bug":"standardized/shield-bug.png","moth-pink":"standardized/moth-pink.png","mushroom":"standardized/mushroom.png","clover":"standardized/clover.png","fern":"standardized/fern.png","sunflower":"standardized/sunflower.png","lavender":"standardized/lavender.png","oak-leaf":"standardized/oak-leaf.png","cherry-blossom":"standardized/cherry-blossom.png","holly":"standardized/holly.png","pine-tree":"standardized/pine-tree.png","bonsai":"standardized/bonsai.png","unicorn":"standardized/unicorn.png","dragon":"standardized/dragon.png","phoenix":"standardized/phoenix.png","griffin":"standardized/griffin.png","mermaid":"standardized/mermaid.png","fairy":"standardized/fairy.png","wizard":"standardized/wizard.png","ghost":"standardized/ghost.png","alien":"standardized/alien.png","planet":"standardized/planet.png","pegasus":"standardized/pegasus.png","forest-spirit":"standardized/forest-spirit.png","moon-hare":"standardized/moon-hare.png","leviathan":"standardized/leviathan.png","ice-dragon":"standardized/ice-dragon.png","sky-dragon":"standardized/sky-dragon.png","sea-serpent":"standardized/sea-serpent.png","dire-wolf":"standardized/dire-wolf.png","winged-lion":"standardized/winged-lion.png","brown-bear":"standardized/brown-bear.png","red-panda-bear":"standardized/red-panda-bear.png","giant-panda-bear":"standardized/giant-panda-bear.png","orange-tabby":"standardized/orange-tabby.png","black-cat":"standardized/black-cat.png","fluffy-cat":"standardized/fluffy-cat.png","tuxedo-cat":"standardized/tuxedo-cat.png"};
 function iconSrc(icon){
   const file=PROFILE_ICON_FILES[icon]||(icon+'.png');
   return 'profile-icons/'+file.split('/').map(encodeURIComponent).join('/');
@@ -471,7 +477,7 @@ function renderProfileIconSettings(){
  const icon=PROFILE_ICONS.includes(profileIcon)?profileIcon:'fox';
  current.src=iconSrc(icon);current.alt=(PROFILE_LABELS[icon]||icon)+' profile icon';
  nameEl.textContent=PROFILE_LABELS[icon]||icon;
- grid.innerHTML=PROFILE_ICONS.map(x=>{const mystic=['unicorn','dragon','phoenix','griffin','mermaid','fairy','wizard','ghost','alien','planet','pegasus','forest-spirit','moon-hare','leviathan','ice-dragon','sky-dragon','sea-serpent','dire-wolf','winged-lion'].includes(x);const bear=['brown-bear','red-panda-bear','giant-panda-bear'].includes(x);const classes=['profile-icon-option',x===icon?'selected':'',mystic?'profile-mystic':'',bear?'profile-bear':''].filter(Boolean).join(' ');return `<button type="button" class="${classes}" data-profile-icon="${x}" title="${esc(PROFILE_LABELS[x]||x)}"><img src="${iconSrc(x)}" alt="${esc(PROFILE_LABELS[x]||x)}"></button>`}).join('');
+ grid.innerHTML=PROFILE_ICONS.map(x=>`<button type="button" class="profile-icon-option${x===icon?' selected':''}" data-profile-icon="${x}" title="${esc(PROFILE_LABELS[x]||x)}" aria-label="${esc(PROFILE_LABELS[x]||x)}" aria-pressed="${x===icon}"><img class="avatar" src="${iconSrc(x)}" alt="" loading="lazy"></button>`).join('');
  grid.querySelectorAll('[data-profile-icon]').forEach(b=>b.onclick=async()=>{const x=b.dataset.profileIcon;try{await saveProfileIcon(x)}catch(e){alert('Could not save your icon yet. Please run the profile-icons database update first.')}});
 }
 async function loadProfileIcons(){
@@ -626,7 +632,7 @@ async function loadGroupMembers(){
  }catch(e){console.warn('Group member list unavailable',e);groupMembers=[]}
 }
 function happeningsSignature(rows){
- return rows.map(x=>[x.group_id,x.event_id,x.user_id,x.status].join(':')).sort().join('|');
+ return rows.filter(x=>x.user_id!==uid()&&(x.status==='interested'||x.status==='ticket_bought')).map(x=>[x.group_id,x.event_id,x.user_id,x.status].join(':')).sort().join('|');
 }
 function markHappeningsSeen(){
  const current=happeningsSignature(groupHappenings);
@@ -785,9 +791,11 @@ async function act(id,status){
   alert('Could not save that yet. '+(e.message||e));
  }
 }
+// A ticket with notched sides and a perforation; drawn in currentColor so it takes each state's colour.
+const TICKET_ICON='<svg class="ticket-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16a1 1 0 0 1 1 1v3a2 2 0 0 0 0 4v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a2 2 0 0 0 0-4V7a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 7.5v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1.5 2"/></svg>';
 function commitmentButtons(e,mine){
  const b=(status,cls,icon,label)=>`<button type="button" class="commit-btn ${cls}${mine?.status===status?' selected':''}" data-act="${esc(status)}" data-event-id="${esc(e.id)}" aria-pressed="${mine?.status===status}"><span class="commit-icon" aria-hidden="true">${icon}</span><span>${label}</span></button>`;
- return `<div class="commitment">${b('not_interested','no','×','Not for me')}${b('interested','yes','♡','Interested')}${b('ticket_bought','bought','🎟','Going')}</div>`;
+ return `<div class="commitment">${b('not_interested','no','×','Not for me')}${b('interested','yes','♡','Interested')}${b('ticket_bought','bought',TICKET_ICON,'Going')}</div>`;
 }
 function timeRange(e){return e.time?esc(e.time)+(e.finish_time?'–'+esc(e.finish_time):''):''}
 function ticketLink(e){const u=safeUrl(e.ticket_url);return u?`<a class="ticket" href="${esc(u)}" target="_blank" rel="noopener">Tickets ↗</a>`:''}
@@ -798,7 +806,7 @@ function eventCard(e,{showDate=false}={}){
  const when=[esc(e.venue_display||e.venue),timeRange(e)].filter(Boolean).join(' · ');
  return `<article class="card">${d?`<div class="card-date">${esc(d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}))}</div>`:''}<div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="added-by">added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${when}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">Sold out</span>':''}</div>
  ${e.price?`<div class="price">${esc(e.price)}</div>`:''}
- <div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>${a} interested</span><span class="social-chip"><i class="social-icon ticket">🎟</i>${t} going</span></div>
+ <div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>${a} interested</span><span class="social-chip"><i class="social-icon going">${TICKET_ICON}</i>${t} going</span></div>
  ${commitmentButtons(e,mine)}
  <div class="actions">${ticketLink(e)}</div></article>`;
 }
@@ -824,53 +832,55 @@ function renderComedy(){
  }).join('');
  $('comedyList').innerHTML=html||'<div class="empty">No comedy this week at your selected venues. Try another week or turn on more venues in Settings.</div>';
 }
+const STATUS_LABEL={ticket_bought:'Going',interested:'Interested',not_interested:'Not for me'};
+const STATUS_CLASS={ticket_bought:'going',interested:'interested',not_interested:'pass'};
+const STATUS_RANK={ticket_bought:0,interested:1,not_interested:2};
+function statusPill(status){return `<span class="happening-status ${STATUS_CLASS[status]}">${status==='ticket_bought'?TICKET_ICON:status==='interested'?'♡':'×'} ${STATUS_LABEL[status]}</span>`}
 function renderPeople(){
- const byEvent=new Map();
- groupHappenings.forEach(x=>{if(!byEvent.has(x.event_id))byEvent.set(x.event_id,[]);byEvent.get(x.event_id).push(x)});
- const today=todayKey();
- const active=events.filter(e=>byEvent.has(e.id)&&e.date>=today).sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
  if(!groups.length){$('peopleList').innerHTML='<div class="empty">Join or create a group to see what your people are planning.</div>';return}
+ const me=uid(), today=todayKey();
  const memberGroups=new Map();
  groupMembers.forEach(m=>{if(!memberGroups.has(m.group_id))memberGroups.set(m.group_id,{name:m.group_name,members:[]});memberGroups.get(m.group_id).members.push(m)});
  const roster=[...memberGroups.values()].map(g=>{
    const members=[...new Map(g.members.map(m=>[m.user_id,m])).values()].sort((a,b)=>(a.user_name||'').localeCompare(b.user_name||''));
-   return `<div class="member-group"><div class="group-heading">${esc(g.name)} <span class="member-count">${members.length}</span></div><div class="people">${members.map(m=>`<span class="social-chip profile-chip"><i class="social-icon profile"><img src="${iconSrc(userIcon(m.user_id))}" alt=""></i>${esc(m.user_name)}</span>`).join('')}</div></div>`;
+   return `<div class="member-group"><div class="group-heading">${esc(g.name)} <span class="member-count">${members.length}</span></div><div class="people">${members.map(m=>`<span class="social-chip profile-chip"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(m.user_id))}" alt=""></i>${esc(m.user_name)}</span>`).join('')}</div></div>`;
  }).join('');
  let html=`<section class="group-roster"><div class="section-head"><h3>People in your groups</h3><div class="note">Everyone who shares a group with you.</div></div>${roster}</section>`;
- if(!active.length){$('peopleList').innerHTML=html+'<div class="empty happenings-empty">No event activity yet. Mark an event as Interested or Going to get things started.</div>';return}
+
+ // Other people's responses, grouped by event. My own rows are left out here:
+ // my status is shown once per card from my own commitments instead.
+ const others=new Map();
+ groupHappenings.forEach(x=>{if(!x.user_id||x.user_id===me||!STATUS_LABEL[x.status])return;if(!others.has(x.event_id))others.set(x.event_id,[]);others.get(x.event_id).push(x)});
+ const myStatus=id=>attendance.find(x=>x.event_id===id&&x.user_id===me)?.status||null;
+ // An event is listed when I, or someone in my groups, is Interested or Going.
+ const keen=s=>s==='interested'||s==='ticket_bought';
+ const active=events.filter(e=>e.date>=today&&(keen(myStatus(e.id))||(others.get(e.id)||[]).some(x=>keen(x.status))))
+  .sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
+ if(!active.length){$('peopleList').innerHTML=html+'<div class="empty happenings-empty">No plans yet. Mark an event Interested or Going and it will show here for your groups.</div>';return}
+
  html+='<div class="section-head happenings-events-head"><h3>What\'s happening</h3></div>';
  html+=active.map(e=>{
-  const rows=byEvent.get(e.id)||[], mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
-  const unique=new Map();
-  rows.forEach(x=>{
-    if(!x.user_id || !['interested','ticket_bought'].includes(x.status))return;
-    const existing=unique.get(x.user_id);
-    if(!existing || x.status==='ticket_bought') unique.set(x.user_id,x);
-  });
-  const goingCount=[...unique.values()].filter(x=>x.status==='ticket_bought').length;
-  const interestedCount=[...unique.values()].filter(x=>x.status==='interested').length;
+  const rows=others.get(e.id)||[], mine=myStatus(e.id);
+  // Friend totals count each person once, using their strongest response.
+  const best=new Map();
+  rows.forEach(x=>{const o=best.get(x.user_id);if(!o||STATUS_RANK[x.status]<STATUS_RANK[o.status])best.set(x.user_id,x)});
+  const going=[...best.values()].filter(x=>x.status==='ticket_bought').length, keenCount=[...best.values()].filter(x=>x.status==='interested').length;
   const summary=[];
-  if(goingCount)summary.push(`<span class="happening-summary-pill going">🎟 ${goingCount} friend${goingCount===1?'':'s'} going</span>`);
-  if(interestedCount)summary.push(`<span class="happening-summary-pill interested">♡ ${interestedCount} interested</span>`);
+  if(going)summary.push(`<span class="happening-summary-pill going">${TICKET_ICON} ${going} friend${going===1?'':'s'} going</span>`);
+  if(keenCount)summary.push(`<span class="happening-summary-pill interested">♡ ${keenCount} interested</span>`);
+  // Only groups where someone other than me has responded.
   const byGroup=new Map();
-  rows.forEach(x=>{if(!byGroup.has(x.group_id))byGroup.set(x.group_id,{name:x.group_name,rows:[]});byGroup.get(x.group_id).rows.push(x)});
-  const sections=[...byGroup.values()].map(g=>{
-   const peopleByUser=new Map();
-   g.rows.filter(x=>['interested','ticket_bought'].includes(x.status)).forEach(x=>{
-     const existing=peopleByUser.get(x.user_id);
-     if(!existing || x.status==='ticket_bought')peopleByUser.set(x.user_id,x);
-   });
-   const people=[...peopleByUser.values()].sort((a,b)=>{
-     if(a.status!==b.status)return a.status==='ticket_bought'?-1:1;
-     return (a.user_name||'').localeCompare(b.user_name||'');
-   });
-   return `<div class="happening-group"><div class="group-heading">${esc(g.name)}</div><div class="happening-people">${people.map(x=>`<div class="happening-person"><i class="social-icon profile"><img src="${iconSrc(userIcon(x.user_id))}" alt=""></i><span class="happening-person-name">${esc(x.user_name)}</span><span class="happening-status ${x.status==='ticket_bought'?'going':'interested'}">${x.status==='ticket_bought'?'🎟 GOING':'♡ INTERESTED'}</span></div>`).join('')}</div></div>`;
+  rows.forEach(x=>{if(!byGroup.has(x.group_id))byGroup.set(x.group_id,{name:x.group_name,people:new Map()});const g=byGroup.get(x.group_id),o=g.people.get(x.user_id);if(!o||STATUS_RANK[x.status]<STATUS_RANK[o.status])g.people.set(x.user_id,x)});
+  const sections=[...byGroup.values()].sort((a,b)=>(a.name||'').localeCompare(b.name||'')).map(g=>{
+   const people=[...g.people.values()].sort((a,b)=>STATUS_RANK[a.status]-STATUS_RANK[b.status]||(a.user_name||'').localeCompare(b.user_name||''));
+   return `<div class="happening-group"><div class="group-heading">${esc(g.name)}</div><div class="happening-people">${people.map(x=>`<div class="happening-person"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(x.user_id))}" alt=""></i><span class="happening-person-name">${esc(x.user_name)}</span>${statusPill(x.status)}</div>`).join('')}</div></div>`;
   }).join('');
-  return `<div class="people-card card"><div class="top"><div><h3>${esc(e.title)}${e.is_custom?` <span class="added-by">community added</span>`:''}</h3><div class="meta">${[esc(e.venue_display||e.venue),esc((parseEventDate(e.date)||new Date()).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})),timeRange(e)].filter(Boolean).join(' · ')}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">SOLD OUT</span>':''}</div>${summary.length?`<div class="happening-summary">${summary.join('')}</div>`:''}${sections}${commitmentButtons(e,mine)}<div class="actions">${ticketLink(e)}</div></div>`;
+  const you=mine?`<div class="happening-you"><span class="happening-person-name">You</span>${statusPill(mine)}</div>`:'';
+  const quiet=!sections?'<div class="note happening-quiet">No one in your groups has responded yet.</div>':'';
+  return `<div class="people-card card"><div class="top"><div><h3>${esc(e.title)}${e.is_custom?` <span class="added-by">community added</span>`:''}</h3><div class="meta">${[esc(e.venue_display||e.venue),esc((parseEventDate(e.date)||new Date()).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})),timeRange(e)].filter(Boolean).join(' · ')}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">Sold out</span>':''}</div>${you}${summary.length?`<div class="happening-summary">${summary.join('')}</div>`:''}${sections}${quiet}${commitmentButtons(e,mine?{status:mine}:null)}<div class="actions">${ticketLink(e)}</div></div>`;
  }).join('');
  $('peopleList').innerHTML=html;
 }
-
 function renderVenues(){
  $('venueList').innerHTML=VENUES.map(v=>`<label class="venue-row"><span>${esc(v)}</span><input type="checkbox" data-v="${esc(v)}" ${enabled.includes(v)?'checked':''}></label>`).join('');
  renderDayPreferences();
@@ -1025,7 +1035,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=49', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=50', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>

@@ -7,7 +7,272 @@
 <title>Brighton Weekend · Design system</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/app.css?v=48">
+<style>
+/* ==========================================================================
+   Brighton Weekend — app stylesheet
+   One stylesheet, driven by the tokens below. See DESIGN-SYSTEM.md.
+   Replaces the eight stacked <style> blocks (v11 → v41) that overrode each
+   other with !important.
+   ========================================================================== */
+
+/* ---------- 1. Tokens ---------- */
+:root{
+  /* Sea at night: surfaces, darkest to lightest */
+  --bw-abyss:#08141F;      /* page background */
+  --bw-navy:#0B1D2F;       /* header, nav, inputs */
+  --bw-deep:#0F2231;       /* recessed controls */
+  --bw-card:#102536;       /* cards and panels */
+  --bw-raised:#173347;     /* icon wells, hover */
+  --bw-line:#294657;       /* default borders */
+  --bw-line-strong:#3B6074;/* hover / emphasised borders */
+
+  /* Text */
+  --bw-cream:#F3E4C9;      /* primary text */
+  --bw-muted:#A7B5BE;      /* secondary text */
+  --bw-subtle:#8095A3;     /* tertiary text, inactive nav */
+
+  /* Accents: pier lights */
+  --bw-coral:#FF7767;      /* primary action, active nav, ticket links */
+  --bw-coral-ink:#0B1D2F;  /* text on coral */
+  --bw-teal:#4DB6AC;       /* focus, selection, checkboxes */
+
+  /* Commitment states: one colour family per status */
+  --bw-interested-fg:#8FE0D5; --bw-interested-bg:#153B39; --bw-interested-line:#397A72;
+  --bw-going-fg:#FFD982;      --bw-going-bg:#40321A;      --bw-going-line:#856A29;
+  --bw-pass-fg:#FFB5B0;       --bw-pass-bg:#351F24;       --bw-pass-line:#7A454D;
+
+  /* Type */
+  --bw-font:"Plus Jakarta Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --bw-text-xs:.6875rem;   /* 11px: chips, status labels */
+  --bw-text-sm:.78rem;     /* meta, notes */
+  --bw-text-md:.9375rem;   /* body, controls */
+  --bw-text-lg:1.0625rem;  /* card titles */
+  --bw-text-xl:1.45rem;    /* section headings */
+
+  /* Shape and space */
+  --bw-radius-sm:10px; --bw-radius-md:12px; --bw-radius-lg:16px; --bw-radius-xl:24px; --bw-radius-pill:999px;
+  --bw-space-1:4px; --bw-space-2:8px; --bw-space-3:12px; --bw-space-4:16px; --bw-space-5:24px;
+  --bw-shadow-card:0 8px 22px rgba(0,0,0,.22);
+  --bw-shadow-bar:0 4px 18px rgba(0,0,0,.28);
+  --bw-focus:0 0 0 3px rgba(77,182,172,.35);
+  --bw-nav-height:64px;
+}
+
+/* ---------- 2. Base ---------- */
+*{box-sizing:border-box}
+html{background:var(--bw-abyss);color-scheme:dark}
+body{margin:0;min-height:100%;background:var(--bw-abyss);color:var(--bw-cream);font-family:var(--bw-font);font-size:var(--bw-text-md);letter-spacing:-.01em;-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:inherit}
+h1,h2,h3,h4{margin:0;letter-spacing:-.03em;line-height:1.2}
+h2{font-size:var(--bw-text-xl);font-weight:800}
+h3{font-size:var(--bw-text-lg);font-weight:700}
+h4{font-size:var(--bw-text-md);font-weight:700}
+.hidden{display:none!important}
+:focus-visible{outline:none;box-shadow:var(--bw-focus)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.note,.group-meta,.custom-event-help,.profile-icon-note{font-size:var(--bw-text-sm);line-height:1.45;color:var(--bw-muted);margin:0}
+.empty{font-size:var(--bw-text-sm);color:var(--bw-subtle);padding:var(--bw-space-3) 0}
+
+/* ---------- 3. Layout ---------- */
+.wrap{width:100%;max-width:780px;margin:0 auto;padding:0 15px}
+.app-main{padding-top:var(--bw-space-2);padding-bottom:calc(var(--bw-nav-height) + 48px + env(safe-area-inset-bottom))}
+.section-head{margin:var(--bw-space-5) 0 var(--bw-space-3)}
+.section-head h2{margin-bottom:var(--bw-space-1)}
+.app-main>h2{margin:var(--bw-space-5) 0 var(--bw-space-2)}
+.results-head{display:flex;justify-content:space-between;align-items:baseline;margin:var(--bw-space-5) 0 var(--bw-space-2)}
+
+/* ---------- 4. Header ---------- */
+header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1px solid var(--bw-line);box-shadow:var(--bw-shadow-bar);padding:12px 0 calc(12px);padding-top:max(12px,env(safe-area-inset-top))}
+.app-brand{display:flex;align-items:center;gap:11px;min-height:48px}
+.app-brand img{width:46px;height:46px;border-radius:13px;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,.35)}
+.brand{font-size:1.28rem;line-height:1;font-weight:800;letter-spacing:-.045em}
+.sub{font-size:var(--bw-text-xs);color:var(--bw-muted);margin-top:4px}
+.controls{display:flex;gap:7px;margin-top:10px}
+.controls>*{min-width:0}
+.controls button{display:flex;align-items:center;justify-content:center;min-height:42px;padding:9px 12px;background:var(--bw-card);color:var(--bw-cream);border:1px solid var(--bw-line);border-radius:var(--bw-radius-md);font-weight:700}
+.controls button:hover{background:var(--bw-raised);border-color:var(--bw-line-strong)}
+.controls .week{flex:1}
+.controls .today{margin-left:5px;color:var(--bw-coral);background:#251A1A;border-color:#71463F}
+@media (max-width:600px){.app-brand img{width:42px;height:42px}.brand{font-size:1.14rem}}
+@media (max-width:430px){.controls{gap:5px}.controls button{min-height:40px;padding:8px}.controls .week{font-size:var(--bw-text-sm)}}
+
+/* ---------- 5. Day headings ---------- */
+.day{margin:var(--bw-space-5) 0 var(--bw-space-2);font-size:var(--bw-text-sm);font-weight:800;letter-spacing:.01em;color:var(--bw-cream)}
+.day span{font-weight:500;color:var(--bw-muted);margin-left:4px}
+
+/* ---------- 6. Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:42px;padding:10px 16px;border-radius:var(--bw-radius-pill);border:1px solid transparent;font-weight:700;font-size:var(--bw-text-md);text-decoration:none;transition:background .15s,border-color .15s}
+.btn:disabled{opacity:.6;cursor:wait}
+.btn-primary{background:var(--bw-coral);border-color:var(--bw-coral);color:var(--bw-coral-ink);font-weight:800}
+.btn-primary:hover{background:#FF8B7D}
+.btn-secondary{background:var(--bw-card);border-color:var(--bw-line);color:var(--bw-cream)}
+.btn-secondary:hover{background:var(--bw-raised);border-color:var(--bw-line-strong)}
+.btn-ghost{background:transparent;border-color:var(--bw-line);color:var(--bw-muted)}
+.btn-ghost:hover{color:var(--bw-cream);border-color:var(--bw-line-strong)}
+.btn-chip{min-height:32px;padding:6px 11px;font-size:var(--bw-text-xs);background:var(--bw-deep);border-color:var(--bw-line);color:var(--bw-cream)}
+.btn-chip:hover{border-color:var(--bw-line-strong)}
+.google-btn{background:#fff;color:#202124;border-color:#dadce0;width:100%}
+.google-btn::before{content:"G";font:800 18px Arial,sans-serif;color:#4285f4}
+
+/* ---------- 7. Event card ---------- */
+.card{background:var(--bw-card);border:1px solid var(--bw-line);border-radius:var(--bw-radius-lg);padding:15px 15px 14px;margin:9px 0;box-shadow:var(--bw-shadow-card)}
+.card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.card-date{font-size:var(--bw-text-xs);font-weight:800;color:var(--bw-interested-fg);margin-bottom:5px}
+.title{font-size:var(--bw-text-lg);line-height:1.25;font-weight:700;letter-spacing:-.025em;overflow-wrap:anywhere}
+.added-by{font-size:var(--bw-text-xs);font-weight:500;color:var(--bw-muted);letter-spacing:0}
+.meta{font-size:var(--bw-text-sm);line-height:1.4;font-weight:500;color:var(--bw-muted);margin-top:5px}
+.price{font-size:var(--bw-text-sm);font-weight:700;margin-top:6px}
+.badge{font-size:var(--bw-text-xs);font-weight:800;padding:5px 8px;border-radius:var(--bw-radius-pill);white-space:nowrap}
+.badge.sold{background:#382022;color:var(--bw-pass-fg);border:1px solid #704047}
+.actions{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.actions:empty{display:none}
+.ticket{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:9px 13px;border-radius:var(--bw-radius-sm);background:var(--bw-coral);color:var(--bw-coral-ink);font-size:var(--bw-text-sm);font-weight:800;text-decoration:none}
+.ticket::before{content:"🎟";font-size:13px}
+
+/* Social summary chips */
+.people{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:11px}
+.social-chip{display:inline-flex;align-items:center;gap:5px;padding:4px 8px 4px 4px;border-radius:var(--bw-radius-pill);background:#153443;border:1px solid #285365;color:#D9E7E7;font-size:var(--bw-text-xs);font-weight:500;line-height:1}
+.social-icon{display:inline-grid;place-items:center;width:20px;height:20px;aspect-ratio:1;flex:none;border-radius:50%;font-size:10px;line-height:1;overflow:hidden;font-style:normal;border:1px solid var(--bw-line-strong);background:var(--bw-raised)}
+.social-icon.heart{color:var(--bw-interested-fg);border-color:var(--bw-interested-line)}
+.social-icon.going{color:var(--bw-going-fg);border-color:var(--bw-going-line)}
+.ticket-glyph{width:62%;height:62%;display:block}
+.social-icon.profile{width:24px;height:24px;border:0;background:none;overflow:visible}
+.social-icon.profile img{width:24px;height:24px}
+
+/* Commitment control: three equal segments that never wrap */
+.commitment{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:13px}
+.commit-btn{appearance:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:38px;padding:5px 6px;border-radius:var(--bw-radius-pill);border:1px solid #345468;background:var(--bw-deep);color:#C3D0D6;font-size:var(--bw-text-xs);font-weight:700;letter-spacing:-.015em;white-space:nowrap;transition:background .15s,border-color .15s,color .15s,transform .12s}
+.commit-btn:hover{border-color:var(--bw-line-strong)}
+.commit-btn:active{transform:scale(.97)}
+.commit-icon{display:inline-grid;place-items:center;width:24px;height:24px;aspect-ratio:1;flex:none;border-radius:50%;border:1px solid var(--bw-line-strong);background:var(--bw-raised);font-size:14px;line-height:1}
+.commit-btn.no .commit-icon{color:var(--bw-pass-fg);border-color:var(--bw-pass-line)}
+.commit-btn.yes .commit-icon{color:var(--bw-interested-fg);border-color:var(--bw-interested-line)}
+.commit-btn.bought .commit-icon{color:var(--bw-going-fg);border-color:var(--bw-going-line)}
+.commit-btn.selected.no{background:var(--bw-pass-bg);border-color:var(--bw-pass-line);color:var(--bw-pass-fg)}
+.commit-btn.selected.yes{background:var(--bw-interested-bg);border-color:var(--bw-interested-line);color:var(--bw-interested-fg)}
+.commit-btn.selected.bought{background:var(--bw-going-bg);border-color:var(--bw-going-line);color:var(--bw-going-fg)}
+@media (max-width:360px){.commit-icon{display:none}}
+
+/* ---------- 8. Panels and forms ---------- */
+.panel,.settings-section,.settings-card,.custom-event-panel{background:var(--bw-card);border:1px solid var(--bw-line);border-radius:var(--bw-radius-lg);padding:var(--bw-space-4);margin:0 0 18px}
+.settings-card h3,.settings-section h3,.custom-event-panel h3{margin-bottom:6px}
+.settings-card .note{margin-bottom:12px}
+label{display:grid;gap:6px;font-size:var(--bw-text-sm);color:var(--bw-muted)}
+input:not([type=checkbox]):not([type=radio]),select,textarea{width:100%;padding:12px 14px;border-radius:var(--bw-radius-md);border:1px solid var(--bw-line);background:var(--bw-navy);color:var(--bw-cream);font-size:16px;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--bw-teal);box-shadow:var(--bw-focus)}
+textarea{min-height:70px;resize:vertical}
+input[type=checkbox]{accent-color:var(--bw-teal);width:20px;height:20px;margin:0}
+.form-stack,.group-form,.custom-event-form{display:grid;gap:12px}
+.form-row,.custom-event-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px}
+.form-row>label,.custom-event-row>label{min-width:0}
+input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance:none;min-height:46px}
+.custom-event-form{margin-top:12px}
+.panel>.btn-ghost{margin-top:14px;width:100%}
+
+/* Segmented control (Search mode) */
+.segmented{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;margin-bottom:14px;border-radius:var(--bw-radius-pill);background:var(--bw-navy);border:1px solid var(--bw-line)}
+.segmented button{border:0;background:transparent;color:var(--bw-muted);padding:9px 10px;border-radius:var(--bw-radius-pill);font-size:var(--bw-text-sm);font-weight:700}
+.segmented button.active{background:var(--bw-interested-bg);color:var(--bw-interested-fg)}
+
+/* Checkbox tiles: search venues, days */
+.choice-grid,.day-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;max-height:310px;overflow:auto}
+.choice,.day-choice{display:flex;align-items:center;gap:8px;padding:10px 11px;border:1px solid var(--bw-line);border-radius:var(--bw-radius-md);background:var(--bw-deep);color:var(--bw-cream);font-size:var(--bw-text-sm);font-weight:600}
+.choice input:checked+span,.day-choice input:checked+span{color:var(--bw-interested-fg)}
+@media (min-width:520px){.day-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:360px){.choice-grid,.form-row,.custom-event-row{grid-template-columns:1fr}}
+
+/* ---------- 9. Settings ---------- */
+.venue-settings-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin:0}
+.venue-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+#venueList{margin-top:4px}
+.venue-row{display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:14px 2px;border-bottom:1px solid var(--bw-line);font-size:var(--bw-text-md);font-weight:600;color:var(--bw-cream)}
+.day-preferences{margin-top:14px;padding-top:14px;border-top:1px solid var(--bw-line)}
+.day-preferences .note{margin:4px 0 10px}
+.settings-card .btn+.btn{margin-left:6px}
+#accountEmail{margin-top:10px}
+.install-area{text-align:center}.install-btn{width:100%}
+.support-btn{display:inline-flex;align-items:center;gap:6px;padding:11px 15px;border-radius:var(--bw-radius-md);background:var(--bw-coral);color:var(--bw-coral-ink);font-weight:800;text-decoration:none}
+.settings-links{display:flex;gap:16px;flex-wrap:wrap;padding:4px 2px 18px}
+.settings-links a{color:var(--bw-muted)}
+/* Avatars: the artwork is already a circle (see scripts/standardize-avatars.mjs).
+   CSS adds exactly one outline. Every avatar is treated the same way. */
+.avatar{display:block;border-radius:50%;object-fit:cover;background:var(--bw-deep);box-shadow:0 0 0 1px var(--bw-line)}
+.profile-current{display:flex;align-items:center;gap:12px;padding:10px 0 14px}
+.profile-current img{width:56px;height:56px;flex:none}
+.profile-current strong{display:block}
+.profile-icon-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(48px,1fr));gap:10px;margin-top:12px}
+.profile-icon-option{position:relative;display:block;width:100%;aspect-ratio:1;padding:0;border:0;border-radius:50%;background:none}
+.profile-icon-option img{width:100%;height:100%}
+.profile-icon-option:hover img{box-shadow:0 0 0 1px var(--bw-line-strong)}
+.profile-icon-option.selected img{box-shadow:0 0 0 2px var(--bw-teal)}
+.profile-icon-option.selected::after{content:"✓";position:absolute;right:-2px;bottom:-2px;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;background:var(--bw-teal);color:var(--bw-abyss);font-size:11px;font-weight:800;box-shadow:0 0 0 2px var(--bw-card)}
+
+/* Groups */
+.group-panel{margin-top:10px;padding-top:12px;border-top:1px solid var(--bw-line)}
+.group-panel h3{margin-bottom:4px}
+.group-list{display:grid;gap:8px;max-height:230px;overflow:auto;text-align:left}
+.group-choice{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid var(--bw-line);border-radius:var(--bw-radius-lg);background:var(--bw-navy)}
+.group-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0 14px}
+.group-manager-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--bw-line)}
+.row-actions{display:flex;gap:6px;flex-shrink:0}
+.pin-display{font-weight:800;letter-spacing:.15em;color:var(--bw-going-fg)}
+.group-heading{display:flex;align-items:center;gap:8px;margin:16px 0 7px;font-size:var(--bw-text-sm);font-weight:700;color:var(--bw-muted)}
+.member-count{font-size:var(--bw-text-xs);border:1px solid var(--bw-line);border-radius:var(--bw-radius-pill);padding:2px 7px}
+
+/* ---------- 10. Happenings ---------- */
+.custom-event-launch{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0 14px;padding:12px 14px;border:1px solid #285A5C;border-radius:14px;background:#0F2A31}
+.custom-event-launch .btn{white-space:nowrap;min-height:38px;padding:8px 14px}
+.custom-event-panel{background:#0F2A31;border-color:#285A5C}
+.custom-event-panel.collapsed{display:none}
+.group-roster{margin:0 0 20px;padding:4px 0;border-bottom:1px solid var(--bw-line)}
+.group-roster .section-head,.happenings-events-head{margin:14px 0 8px}
+.people-card h3{margin:0}
+.happening-summary{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 4px}
+.happening-summary-pill,.happening-status{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:var(--bw-radius-pill);font-size:var(--bw-text-xs);font-weight:800;border:1px solid;white-space:nowrap}
+.happening-summary-pill.going,.happening-status.going{color:var(--bw-going-fg);background:var(--bw-going-bg);border-color:var(--bw-going-line)}
+.happening-summary-pill.interested,.happening-status.interested{color:var(--bw-interested-fg);background:var(--bw-interested-bg);border-color:var(--bw-interested-line)}
+.happening-summary-pill .ticket-glyph,.happening-status .ticket-glyph{width:13px;height:13px;display:inline-block;vertical-align:-2px}
+.happening-status.pass{color:var(--bw-pass-fg);background:var(--bw-pass-bg);border-color:var(--bw-pass-line)}
+.happening-you{display:flex;align-items:center;gap:8px;margin-top:12px;padding:8px 10px;border-radius:var(--bw-radius-md);background:var(--bw-deep);border:1px solid var(--bw-line)}
+.happening-quiet{margin-top:10px}
+.happening-group{margin-top:12px}
+.happening-group+.happening-group{padding-top:10px;border-top:1px solid var(--bw-line)}
+.happening-group .group-heading{margin:0 0 6px}
+.happening-people{display:grid;gap:7px}
+.happening-person{display:flex;align-items:center;gap:8px;min-height:30px}
+.happening-person .social-icon.profile,.happening-person .social-icon.profile img{flex:0 0 28px;width:28px;height:28px}
+.happening-person-name{flex:1;min-width:0;font-size:var(--bw-text-sm);font-weight:600;color:#D9E7E7}
+
+/* ---------- 11. Bottom navigation ---------- */
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:10;display:flex;justify-content:center;gap:2px;background:var(--bw-navy);border-top:1px solid var(--bw-line);box-shadow:0 -6px 22px rgba(0,0,0,.3);padding:8px max(6px,env(safe-area-inset-left)) calc(8px + env(safe-area-inset-bottom))}
+.nav button{flex:1;max-width:150px;display:flex;flex-direction:column;align-items:center;gap:3px;border:0;background:none;padding:6px 2px;color:var(--bw-subtle);font-size:var(--bw-text-xs);font-weight:700;border-radius:var(--bw-radius-md)}
+.nav-icon{font-size:17px;line-height:1}
+.nav button.active,.nav button.has-new{color:var(--bw-coral)}
+.nav button.has-new .nav-icon::after{content:"";display:inline-block;width:6px;height:6px;margin-left:2px;border-radius:50%;background:var(--bw-coral);vertical-align:top}
+
+/* ---------- 12. Welcome / sign-in ---------- */
+#welcome{position:fixed;inset:0;z-index:20;min-height:100dvh;overflow:auto;display:grid;place-items:center;padding:20px;background:var(--bw-abyss)}
+.welcome-card{width:min(420px,92vw);background:var(--bw-card);border:1px solid var(--bw-line);border-radius:var(--bw-radius-xl);padding:30px 26px;box-shadow:0 20px 60px rgba(0,0,0,.45);text-align:center}
+.welcome-card h2{font-size:1.9rem;margin-bottom:9px}
+.welcome-card>div>p{color:var(--bw-muted);font-size:var(--bw-text-md);line-height:1.45;margin:0 0 20px}
+.welcome-card form{display:grid;gap:10px}
+.welcome-card .btn{width:100%}
+.auth-logo{width:88px;height:88px;border-radius:22px;display:block;margin:0 auto 16px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.magic-link-divider{display:flex;align-items:center;gap:10px;margin:16px 0;color:var(--bw-subtle);font-size:var(--bw-text-sm)}
+.magic-link-divider::before,.magic-link-divider::after{content:"";flex:1;height:1px;background:var(--bw-line)}
+#authMessage{margin-top:12px;min-height:1em}
+.auth-success{color:var(--bw-interested-fg)}.auth-error{color:var(--bw-pass-fg)}
+.welcome-info{margin-top:18px;padding-top:16px;border-top:1px solid var(--bw-line)}
+.welcome-info p{margin:0 0 9px;font-size:var(--bw-text-sm);color:var(--bw-muted)}
+.welcome-info a{color:var(--bw-interested-fg);text-decoration:none}
+.welcome-info a:hover{text-decoration:underline}
+#groupStep .group-panel{text-align:left}
+#partyOnBtn{margin-top:6px;width:100%}
+
+</style>
 <style>
 /* Page-only layout for the reference sheet. Components below use app.css unchanged. */
 .ds{padding-bottom:60px}
@@ -56,8 +321,8 @@
 <p class="note">Built by eventCard() in js/app.js. Discover, Comedy and Search all use it.</p>
 <article class="card"><div class="top"><div><div class="title">Milo Edwards: Catamaran</div><div class="meta">Komedia · 20:00–22:00</div></div><span class="badge sold">Sold out</span></div>
 <div class="price">£16</div>
-<div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>3 interested</span><span class="social-chip"><i class="social-icon ticket">🎟</i>1 going</span></div>
-<div class="commitment"><button type="button" class="commit-btn no"><span class="commit-icon">×</span><span>Not for me</span></button><button type="button" class="commit-btn yes selected"><span class="commit-icon">♡</span><span>Interested</span></button><button type="button" class="commit-btn bought"><span class="commit-icon">🎟</span><span>Going</span></button></div>
+<div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>3 interested</span><span class="social-chip"><i class="social-icon going"><svg class="ticket-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16a1 1 0 0 1 1 1v3a2 2 0 0 0 0 4v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a2 2 0 0 0 0-4V7a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 7.5v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1.5 2"/></svg></i>1 going</span></div>
+<div class="commitment"><button type="button" class="commit-btn no"><span class="commit-icon">×</span><span>Not for me</span></button><button type="button" class="commit-btn yes selected"><span class="commit-icon">♡</span><span>Interested</span></button><button type="button" class="commit-btn bought"><span class="commit-icon"><svg class="ticket-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16a1 1 0 0 1 1 1v3a2 2 0 0 0 0 4v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a2 2 0 0 0 0-4V7a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 7.5v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1.5 2"/></svg></span><span>Going</span></button></div>
 <div class="actions"><a class="ticket" href="#">Tickets ↗</a></div></article>
 
 <h2>Status pills</h2>

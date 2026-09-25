@@ -1,13 +1,13 @@
 /* Brighton Weekend service worker.
  * Caching only. Earlier versions rewrote index.html here to inject the Search
- * tab and day filters; those features now live in index.html / js/app.js.
+ * tab and day filters; those features now live in index.html.
  *
  * Strategy:
  *  - Pages, CSS, JS and events.json: network first, fall back to cache offline.
  *  - Images and icons: cache first (they are versioned by filename or ?v=).
  * Bump VERSION whenever you want every installed copy to drop old caches.
  */
-const VERSION = 'bw-v49';
+const VERSION = 'bw-v50';
 const CORE = [
   './',
   './index.html',
