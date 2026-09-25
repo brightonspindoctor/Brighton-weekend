@@ -28,6 +28,14 @@ def valid_title(title):
  if any(low.startswith(p) for p in CTA_PREFIXES):return False
  return 3<=len(t)<=180
 def title_key(title):return re.sub(r'[^a-z0-9]+',' ',clean(title).lower()).strip()
+def to_hhmm(value):
+ # '7:30pm' -> '19:30' so discovery times match the venue scraper's format
+ m=re.fullmatch(r'(\d{1,2})(?::(\d{2}))?\s*(am|pm)?',clean(value).lower())
+ if not m:return ''
+ h=int(m.group(1));mi=int(m.group(2) or 0)
+ if m.group(3)=='pm' and h<12:h+=12
+ if m.group(3)=='am' and h==12:h=0
+ return f'{h:02d}:{mi:02d}' if h<24 and mi<60 else ''
 def fuller_title(a,b):
  ka,kb=title_key(a),title_key(b)
  if ka==kb:return a if len(a)>=len(b) else b
@@ -36,7 +44,7 @@ def fuller_title(a,b):
  return None
 def prefer_fuller_titles(events):
  groups={}
- for e in events:groups.setdefault((e.get('venue','').lower(),e.get('date','')),[]).append(e)
+ for e in events:groups.setdefault((e.get('venue','').lower(),e.get('date',''),e.get('time') or ''),[]).append(e)
  kept=[]
  for group in groups.values():
   group=sorted(group,key=lambda e:len(title_key(e.get('title',''))),reverse=True);chosen=[]
@@ -65,8 +73,9 @@ def category(title,text):
  return 'Other'
 def make_event(title,date,time,url,venue,text):
  if not valid_title(title) or not date or date<START or date>END or not venue:return None
+ time=to_hhmm(time)
  ident=re.sub(r'[^a-z0-9]+','-',f'{date}-{venue}-{title}'.lower()).strip('-')[:180]
- return {'id':ident,'title':title,'date':date.isoformat(),'venue':venue,'time':time or '','finish_time':'','category':category(title,text),'ticket_url':url}
+ return {'id':ident,'title':title,'date':date.isoformat(),'venue':venue,'time':time,'finish_time':'','category':category(title,text),'ticket_url':url}
 def extract_cards(html,page_url):
  soup=BeautifulSoup(html,'html.parser');out=[]
  for tag in soup.find_all('script',attrs={'type':re.compile('ld\\+json',re.I)}):
@@ -121,11 +130,11 @@ async def main():
  data=json.loads(OUT.read_text());merged={}
  for e in data.get('events',[]):
   if not valid_title(e.get('title','')):continue
-  key=(e.get('venue','').lower(),e.get('date',''),title_key(e.get('title','')));old=merged.get(key)
-  if old is None or (not old.get('time') and e.get('time')):merged[key]=e
+  key=(e.get('venue','').lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
+  if key not in merged:merged[key]=e
  for e in all_events:
-  key=(e['venue'].lower(),e['date'],title_key(e['title']));old=merged.get(key)
-  if old is None or (not old.get('time') and e.get('time')):merged[key]=e
+  key=(e.get('venue','').lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
+  if key not in merged:merged[key]=e
  events=prefer_fuller_titles(list(merged.values()))
  data['events']=sorted(events,key=lambda x:(x['date'],x.get('time') or '99:99',x['venue'],x['title']));data['venues']=sorted({e['venue'] for e in events});data['updated']=NOW.date().isoformat();OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');print(f'Merged {len(all_events)} discovery events; events.json now has {len(events)} events')
 if __name__=='__main__':asyncio.run(main())

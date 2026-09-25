@@ -32,6 +32,12 @@ def valid_title(title):
     return True
 
 def title_key(title): return re.sub(r'[^a-z0-9]+',' ',clean(title).lower()).strip()
+TRAILING_DATE=re.compile(rf'\s*(?:(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+)?\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\.?\s+\d{{4}}\b.*$',re.I)
+def strip_listing_date(title):
+    """Drop a trailing "Fri 25 Sep 2026 8:00 PM ( Doors: 7:00 PM )" from a title."""
+    cleaned=TRAILING_DATE.sub('',clean(title)).strip(' -–|·')
+    return cleaned if len(cleaned)>=3 else clean(title)
+def event_key(e): return (e.get('venue','').lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
 def fuller_title(a,b):
     """Return the fuller title when one title is a clear prefix of the other."""
     ka,kb=title_key(a),title_key(b)
@@ -43,7 +49,7 @@ def fuller_title(a,b):
 def prefer_fuller_titles(events):
     """Collapse same-venue/date duplicates where one title extends the other."""
     groups={}
-    for e in events: groups.setdefault((e.get('venue','').lower(),e.get('date','')),[]).append(e)
+    for e in events: groups.setdefault((e.get('venue','').lower(),e.get('date',''),e.get('time') or ''),[]).append(e)
     kept=[]
     for group in groups.values():
         group=sorted(group,key=lambda e:len(title_key(e.get('title',''))),reverse=True)
@@ -79,7 +85,7 @@ def parse_dt(value):
     except Exception:return None
 
 def normalise(raw,venue,page_url):
-    title=clean(raw.get('name') or raw.get('title')); start_raw=raw.get('startDate') or raw.get('start_date') or raw.get('date'); start=parse_dt(start_raw)
+    title=strip_listing_date(raw.get('name') or raw.get('title')); start_raw=raw.get('startDate') or raw.get('start_date') or raw.get('date'); start=parse_dt(start_raw)
     if not valid_title(title) or not start or not (RANGE_START<=start.date()<=RANGE_END):return None
     blob=clean(' '.join(str(raw.get(k,'')) for k in ('name','description','status'))).lower()
     if any(x in blob for x in ('cancelled','canceled','postponed','event cancelled')):return None
@@ -131,12 +137,15 @@ def dom_events(html,venue,page_url,detail_only=False):
                     if valid_title(candidate) and '/whats-on/' in urlparse(u).path:
                         title=candidate;href=u;break
         if not valid_title(title):continue
-        times=TIME_RE.findall(text);tm=times[0] if times else None;end_tm=times[-1] if len(times)>1 else None
+        # Ignore "Doors: 7pm" style times; they are not start or finish times.
+        timed_text=re.sub(r'doors?\s*(?:open)?\s*[:\-]?\s*\d{1,2}(?::\d{2})?\s*(?:am|pm)',' ',text,flags=re.I)
+        times=TIME_RE.findall(timed_text);tm=times[0] if times else None;end_tm=times[-1] if len(times)>1 else None
         raw={'name':title,'startDate':f'{dt.date().isoformat()}T{tm or "00:00"}','url':href,'description':text}
         if end_tm:raw['endDate']=f'{dt.date().isoformat()}T{end_tm}'
         e=normalise(raw,venue,page_url)
         if e:
             if not tm:e['time']=''
+            if e['finish_time']==e['time']:e['finish_time']=''
             out.append(e)
     return out
 
@@ -190,8 +199,8 @@ async def main():
         successful+=1;all_events.extend(events);print(f"{source['venue']}: {len(events)} events")
     scraped={}
     for e in all_events:
-        key=(e['venue'].lower(),e['date'],title_key(e['title']));old=scraped.get(key)
-        if old is None or (not old.get('time') and e.get('time')):scraped[key]=e
+        key=event_key(e)
+        if key not in scraped:scraped[key]=e
     scraped=prefer_fuller_titles(list(scraped.values()))
     existing=json.loads(OUT.read_text()) if OUT.exists() else {};retained={};removed_generic=0
     for e in existing.get('events',[]):
@@ -200,10 +209,10 @@ async def main():
         if RANGE_START<=d<=RANGE_END:
             if not valid_title(e.get('title','')):
                 removed_generic+=1;continue
-            key=(e.get('venue','').lower(),e.get('date',''),title_key(e.get('title','')));retained[key]=e
+            e=dict(e,title=strip_listing_date(e.get('title','')));retained[event_key(e)]=e
     for e in scraped:
-        key=(e['venue'].lower(),e['date'],title_key(e['title']));old=retained.get(key)
-        if old is None or (not old.get('time') and e.get('time')):retained[key]=e
+        key=event_key(e)
+        if key not in retained:retained[key]=e  # keep the existing record so its id (and saved choices) survive
     events=prefer_fuller_titles(list(retained.values()))
     events=sorted(events,key=lambda x:(x['date'],x.get('time') or '99:99',x['venue'],x['title']))
     existing_future=sum(1 for e in existing.get('events',[]) if e.get('date','')>=RANGE_START.isoformat() and valid_title(e.get('title','')))

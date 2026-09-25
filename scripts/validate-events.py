@@ -46,18 +46,21 @@ for i, event in enumerate(events):
     except ValueError: errors.append(f"{event_id}: invalid date {event['date']!r}"); continue
     if event_id in ids: errors.append(f"duplicate id: {event_id}")
     ids.add(event_id)
-    key = (venue.lower(), event_date.isoformat(), re.sub(r"[^a-z0-9]+", " ", title.lower()).strip())
-    if key in keys: errors.append(f"duplicate venue/date/title: {venue} / {event_date} / {title}")
+    key = (venue.lower(), event_date.isoformat(), re.sub(r"[^a-z0-9]+", " ", title.lower()).strip(), str(event.get("time") or ""))
+    if key in keys: errors.append(f"duplicate venue/date/time/title: {venue} / {event_date} {event.get('time') or ''} / {title}")
     keys.add(key)
     if not (start <= event_date <= end): errors.append(f"{event_id}: date outside declared range")
     if venue.lower() in DOME_VENUES and not is_ben_folds_exception(venue, title): errors.append(f"unauthorised Brighton Dome event still present: {event_id}")
     low = title.lower()
     if venue.lower() == "patterns" and any(marker in low for marker in PATTERNS_RECURRING): errors.append(f"recurring Patterns event still present: {event_id}")
     if low in GENERIC_TITLES: errors.append(f"generic title still present: {event_id}")
+    for field in ("time", "finish_time"):
+        value = str(event.get(field) or "")
+        if value and not re.fullmatch(r"\d{2}:\d{2}", value): errors.append(f"{event_id}: {field} {value!r} is not HH:MM")
 
 if errors:
     print("\n".join(errors[:50]), file=sys.stderr)
     if len(errors) > 50: print(f"... and {len(errors) - 50} more errors", file=sys.stderr)
     raise SystemExit(1)
 print(f"Validated {len(events)} events across {len({e['venue'] for e in events})} venues.")
-print("No duplicate IDs, duplicate venue/date/title records, unauthorised Brighton Dome events, recurring Patterns entries, or generic titles found.")
+print("No duplicate IDs, duplicate venue/date/time/title records, unauthorised Brighton Dome events, recurring Patterns entries, or generic titles found.")
