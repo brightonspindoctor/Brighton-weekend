@@ -97,7 +97,9 @@ for event in events:
     venue = str(event.get("venue") or "").strip().lower()
     title = str(event.get("title") or "").strip()
     low = title.lower()
-    if venue in DOME_VENUES and not is_ben_folds_exception(venue, title):
+    # Brighton Dome is a major comedy venue as well as a concert/theatre venue.
+    # Keep its comedy listings so named comedians are not silently discarded.
+    if venue in DOME_VENUES and not is_ben_folds_exception(venue, title) and str(event.get("category") or "").lower() != "comedy":
         removed["dome"] += 1; continue
     if venue == "patterns" and any(marker in low for marker in PATTERNS_RECURRING):
         removed["patterns_recurring"] += 1; continue
