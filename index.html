@@ -160,6 +160,7 @@ header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1
 .commit-btn{appearance:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:38px;padding:5px 6px;border-radius:var(--bw-radius-pill);border:1px solid #345468;background:var(--bw-deep);color:#C3D0D6;font-size:var(--bw-text-xs);font-weight:700;letter-spacing:-.015em;white-space:nowrap;transition:background .15s,border-color .15s,color .15s,transform .12s}
 .commit-btn:hover{border-color:var(--bw-line-strong)}
 .commit-btn:active{transform:scale(.97)}
+.commit-btn:disabled{cursor:progress}
 .commit-icon{display:inline-grid;place-items:center;width:24px;height:24px;aspect-ratio:1;flex:none;border-radius:50%;border:1px solid var(--bw-line-strong);background:var(--bw-raised);font-size:14px;line-height:1}
 .commit-btn.no .commit-icon{color:var(--bw-pass-fg);border-color:var(--bw-pass-line)}
 .commit-btn.yes .commit-icon{color:var(--bw-interested-fg);border-color:var(--bw-interested-line)}
@@ -577,7 +578,7 @@ async function bootstrapAuthed(){
 }
 function dateKey(d){const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`}
 function parseEventDate(value){if(!/^\d{4}-\d{2}-\d{2}$/.test(value||''))return null;const d=new Date(value+'T12:00:00');return Number.isNaN(d.getTime())?null:d}
-function renderAll(){render();renderComedy();renderPeople();}
+function renderAll(){render();renderComedy();renderPeople();renderSearch();}
 // Weeks run Monday to Sunday. On a Saturday or Sunday the current week is still shown.
 function getMonday(from=new Date()){const d=new Date(from);d.setHours(12,0,0,0);d.setDate(d.getDate()-((d.getDay()+6)%7));return d}
 let weekStart=getMonday();
@@ -808,6 +809,11 @@ async function act(id,status){
  if(!name()){showWelcome('name');return}
  const mine=attendance.find(x=>x.event_id===id&&x.user_id===uid());
  const targetStatus=(mine&&mine.status===status)?null:status;
+ // Show the choice straight away and lock this event's buttons until the save
+ // finishes, so a quick second tap can't undo it.
+ const buttons=[...document.querySelectorAll('[data-act]')].filter(b=>b.dataset.eventId===id);
+ if(buttons.some(b=>b.disabled))return;
+ buttons.forEach(b=>{const on=b.dataset.act===targetStatus;b.classList.toggle('selected',on);b.setAttribute('aria-pressed',on);b.disabled=true});
  try{
   const result=await rpc('bw_set_event_interest',{
    p_user_id:uid(),
@@ -829,7 +835,8 @@ async function act(id,status){
  }catch(e){
   console.error('[Brighton Weekend] commitment save failed',e);
   alert('Could not save that yet. '+(e.message||e));
- }
+  renderAll(); // put the buttons back to what is actually saved
+ }finally{buttons.forEach(b=>{if(b.isConnected)b.disabled=false})}
 }
 // A ticket with notched sides and a perforation; drawn in currentColor so it takes each state's colour.
 const TICKET_ICON='<svg class="ticket-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16a1 1 0 0 1 1 1v3a2 2 0 0 0 0 4v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a2 2 0 0 0 0-4V7a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 7.5v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1.5 2"/></svg>';
