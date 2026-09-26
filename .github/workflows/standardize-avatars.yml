@@ -1,7 +1,6 @@
 name: Standardise Brighton Weekend avatars
-# Avatar framing refresh: keep source artwork clean before standardisation.
-# Source extraction refresh.
-# Generate new Mystic Creature assets.
+# Rebuilds profile-icons/standardized from the source artwork whenever the
+# artwork or the script changes (see scripts/standardize-avatars.mjs).
 
 on:
   workflow_dispatch:
@@ -14,11 +13,20 @@ on:
 permissions:
   contents: write
 
+# Several uploads in a row start several runs. Only the newest is needed,
+# because each run rebuilds every avatar, so older runs are cancelled.
+concurrency:
+  group: standardize-avatars
+  cancel-in-progress: true
+
 jobs:
   standardize:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -41,4 +49,7 @@ jobs:
             exit 0
           fi
           git commit -m "Standardise Brighton Weekend avatar artwork"
-          git push
+          # Pick up anything pushed while this ran (uploads, the daily event refresh).
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
