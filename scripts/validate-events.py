@@ -21,8 +21,17 @@ def fail(message):
     print(f"ERROR: {message}", file=sys.stderr)
     raise SystemExit(1)
 
-def is_ben_folds_exception(venue, title):
-    return venue.lower() == "brighton dome - concert hall" and "ben folds" in re.sub(r"[^a-z0-9]+", " ", title.lower())
+# One Dome rule, identical in prepare-events.py and validate-events.py so the
+# two scripts can never disagree. An event is a Brighton Dome event if its venue
+# names the Dome or its id was built from a Dome venue ("-brighton-dome-").
+# The only Dome listing allowed is the Ben Folds date.
+def is_dome_event(event):
+    venue = re.sub(r"\s+", " ", str(event.get("venue") or "")).strip().lower()
+    event_id = str(event.get("id") or "").lower()
+    return venue in DOME_VENUES or "dome" in re.findall(r"[a-z]+", venue) or "-brighton-dome-" in event_id or "-dome-concert-hall-" in event_id
+
+def is_allowed_dome_event(event):
+    return "ben folds" in re.sub(r"[^a-z0-9]+", " ", str(event.get("title") or "").lower())
 
 if not DATA.exists(): fail("events.json is missing")
 try: data = json.loads(DATA.read_text())
@@ -50,7 +59,7 @@ for i, event in enumerate(events):
     if key in keys: errors.append(f"duplicate venue/date/time/title: {venue} / {event_date} {event.get('time') or ''} / {title}")
     keys.add(key)
     if not (start <= event_date <= end): errors.append(f"{event_id}: date outside declared range")
-    if venue.lower() in DOME_VENUES and not is_ben_folds_exception(venue, title): errors.append(f"unauthorised Brighton Dome event still present: {event_id}")
+    if is_dome_event(event) and not is_allowed_dome_event(event): errors.append(f"unauthorised Brighton Dome event still present: {event_id} (venue {venue!r})")
     low = title.lower()
     if venue.lower() == "patterns" and any(marker in low for marker in PATTERNS_RECURRING): errors.append(f"recurring Patterns event still present: {event_id}")
     if low in GENERIC_TITLES: errors.append(f"generic title still present: {event_id}")
