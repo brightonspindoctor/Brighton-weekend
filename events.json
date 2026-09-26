@@ -1,13 +1,12 @@
 {
   "updated": "2026-09-26",
-  "range_start": "2026-09-25",
-  "range_end": "2027-07-02",
+  "range_start": "2026-09-26",
+  "range_end": "2027-07-03",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
     "Babble",
     "Brighton Centre",
-    "Brighton Dome",
     "Brighton Dome - Concert Hall",
     "Brighton Racecourse",
     "CHALK",
@@ -15,7 +14,6 @@
     "DUST",
     "Green Door Store",
     "Komedia",
-    "Old Albion",
     "Patterns",
     "Quarters",
     "Shelter Hall",
@@ -28,225 +26,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-09-25-komedia-story-magic-fri-25-sep-2026-10-00-am-doors-9-50-am",
-      "title": "Story Magic",
-      "date": "2026-09-25",
-      "venue": "Komedia",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20748"
-    },
-    {
-      "id": "2026-09-25-komedia-story-magic-fri-25-sep-2026-11-00-am-doors-10-50-am",
-      "title": "Story Magic",
-      "date": "2026-09-25",
-      "venue": "Komedia",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20749"
-    },
-    {
-      "id": "2026-09-25-komedia-story-magic-baby-sessions-fri-25-sep-2026-12-30-pm-doors-12-20-pm",
-      "title": "Story Magic – Baby Sessions",
-      "date": "2026-09-25",
-      "venue": "Komedia",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Family",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic-baby-sessions/?eid=20803"
-    },
-    {
-      "id": "2026-09-25-concorde-2-just-radiohead",
-      "title": "Just Radiohead",
-      "date": "2026-09-25",
-      "venue": "Concorde 2",
-      "time": "19:00",
-      "category": "Music/Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-25-green-door-store-khan",
-      "title": "Khan",
-      "date": "2026-09-25",
-      "venue": "Green Door Store",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-25-19-00-the-surfrajettes",
-      "title": "The Surfrajettes",
-      "date": "2026-09-25",
-      "venue": "Patterns",
-      "time": "19:00",
-      "category": "Music",
-      "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-25-komedia-new-wave-breakers-fri-25-sep-2026-7-30-pm-doors-7-00-pm",
-      "title": "New Wave Breakers",
-      "date": "2026-09-25",
-      "venue": "Komedia",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/new-wave-breakers/?eid=20406"
-    },
-    {
-      "id": "2026-09-25-komedia-komedia-comedy-club-fri-25-sep-2026-8-00-pm-doors-7-00-pm",
-      "title": "Komedia Comedy Club",
-      "date": "2026-09-25",
-      "venue": "Komedia",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=18921"
-    },
-    {
-      "id": "2026-09-25-the-forge-comedy-club-forge-comedy-club",
-      "title": "Forge Comedy Club",
-      "date": "2026-09-25",
-      "venue": "The Forge Comedy Club",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/brighton-comedy-shows/"
-    },
-    {
-      "id": "2026-09-25-dust-reggaeton-party-brighton-september-2026",
-      "title": "Reggaeton Party (Brighton) September 2026",
-      "date": "2026-09-25",
-      "venue": "DUST",
-      "category": "Club",
-      "time": "23:00",
-      "ticket_url": "https://www.eventbrite.co.uk/",
-      "finish_time": "03:00",
-      "source_url": "Eventbrite"
-    },
-    {
-      "id": "2026-09-25-green-door-store-that-s-f-ing-rubbish-lana-del-ray-vs-radiohead-2",
-      "title": "that’s f***ing rubbish – lana del ray vs radiohead #2",
-      "date": "2026-09-25",
-      "venue": "Green Door Store",
-      "time": "23:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-25-komedia-crushed-fri-25-sep-2026-doors-11-00-pm",
-      "title": "CRUSHED",
-      "date": "2026-09-25",
-      "venue": "Komedia",
-      "time": "23:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/crushed/?eid=20847"
-    },
-    {
-      "id": "2026-09-25-patterns-freshly-baked-basement-rave",
-      "title": "Freshly Baked - Basement Rave",
-      "date": "2026-09-25",
-      "venue": "Patterns",
-      "time": "23:00",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/freshly-baked-basement-rave-p2927281"
-    },
-    {
-      "id": "2026-09-25-quarters-mungos-hi-fi",
-      "title": "Mungos Hi-Fi",
-      "date": "2026-09-25",
-      "venue": "Quarters",
-      "time": "23:00",
-      "finish_time": "04:00",
-      "category": "Club",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson"
-    },
-    {
-      "id": "2026-09-25-chalk-toby-lee",
-      "title": "Toby Lee",
-      "date": "2026-09-25",
-      "venue": "CHALK",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://chalkvenue.com/",
-      "source_url": "https://chalkvenue.com/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-25-the-hope-ruin-playlunch",
-      "title": "Playlunch",
-      "date": "2026-09-25",
-      "venue": "The Hope & Ruin",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-hope-and-ruin"
-    },
-    {
-      "id": "2026-09-25-the-pipeline-the-noir-mates",
-      "title": "The Noir Mates",
-      "date": "2026-09-25",
-      "venue": "The Pipeline",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-pipeline"
-    },
-    {
-      "id": "2026-09-25-the-prince-albert-divorce-attorney",
-      "title": "Divorce Attorney",
-      "date": "2026-09-25",
-      "venue": "The Prince Albert",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
-    },
-    {
-      "id": "2026-09-25-theatre-royal-brighton-age-is-a-stage",
-      "title": "Age is a Stage",
-      "date": "2026-09-25",
-      "venue": "Theatre Royal Brighton",
-      "time": "",
-      "finish_time": "",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
-    },
-    {
-      "id": "2026-09-25-theatreroyalbrighton-stand-or-fall-the-fall-and-rise-of-brighton-and-hove-albion",
-      "title": "Stand or Fall - The Fall and Rise of Brighton and Hove Albion",
-      "date": "2026-09-25",
-      "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
-      "time": "",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-25-theatre-royal-brighton-stand-or-fall-the-play",
-      "title": "Stand or Fall - The Play",
-      "date": "2026-09-25",
-      "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "time": "",
-      "finish_time": ""
-    },
     {
       "id": "2026-09-26-komedia-mystery-musicals-bottomless-brunch",
       "title": "Mystery Musicals Bottomless Brunch",
@@ -2238,16 +2017,6 @@
       "ticket_url": "https://www.komedia.co.uk/shows/jordan-brookes-the-part-of-you-thats-always-screaming/?eid=18866"
     },
     {
-      "id": "2026-10-17-brighton-dome-stevie-martin-clout",
-      "title": "Stevie Martin: Clout",
-      "date": "2026-10-17",
-      "venue": "Brighton Dome",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://brightondome.org/whats-on/Ltk-stevie-martin-clout/"
-    },
-    {
       "id": "2026-10-17-concorde-2-reef",
       "title": "Reef",
       "date": "2026-10-17",
@@ -2496,6 +2265,16 @@
       "ticket_url": "https://www.komedia.co.uk/shows/raise-the-roof-2-a-fundraiser-for-ymca-brighton/?eid=20353"
     },
     {
+      "id": "2026-10-19-the-old-market-notes-a-wine-and-music-pairing-night",
+      "title": "NOTES: A Wine and Music Pairing Night",
+      "date": "2026-10-19",
+      "venue": "The Old Market",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.theoldmarket.com/shows"
+    },
+    {
       "id": "2026-10-19-theoldmarket-notes-wine-music-pairing-night",
       "title": "Notes - Wine & Music Pairing Night",
       "date": "2026-10-19",
@@ -2505,16 +2284,6 @@
       "ticket_url": "https://www.theoldmarket.com/shows",
       "source_url": "https://www.theoldmarket.com/shows",
       "finish_time": ""
-    },
-    {
-      "id": "2026-10-19-the-old-market-notes-a-wine-and-music-pairing-night",
-      "title": "NOTES: A Wine and Music Pairing Night",
-      "date": "2026-10-19",
-      "venue": "The Old Market",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.theoldmarket.com/shows"
     },
     {
       "id": "2026-10-20-19-00-nectar-woode",
@@ -7172,16 +6941,6 @@
       "finish_time": ""
     },
     {
-      "id": "2026-12-12-brighton-dome-paddy-young-will-sir-be-laughing-alone",
-      "title": "Paddy Young: Will Sir Be Laughing Alone?",
-      "date": "2026-12-12",
-      "venue": "Brighton Dome",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://brightondome.org/whats-on/LgN-paddy-young-will-sir-be-laughing-alone/"
-    },
-    {
       "id": "2026-12-12-the-forge-comedy-club-festive-forge-comedy-club",
       "title": "Festive Forge Comedy Club",
       "date": "2026-12-12",
@@ -7934,6 +7693,16 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.komedia.co.uk/shows/boogie-wonderland-70s-disco-nye-party/?eid=21032"
+    },
+    {
+      "id": "2026-12-31-komedia-disco-kidz-new-year-s-eve-special",
+      "title": "Disco Kidz – New Year’s Eve Special",
+      "date": "2026-12-31",
+      "venue": "Komedia",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
     {
       "id": "2027-01-03-brightoncentre-shen-yun-china-before-communism",
@@ -8848,6 +8617,16 @@
       "finish_time": ""
     },
     {
+      "id": "2027-03-07-komedia-komedia-comedy-club",
+      "title": "Komedia Comedy Club",
+      "date": "2027-03-07",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
       "id": "2027-03-08-theatreroyalbrighton-the-full-monty",
       "title": "The Full Monty",
       "date": "2027-03-08",
@@ -9672,6 +9451,16 @@
       "id": "2027-07-02-komedia-down-the-hatch-comedy-club",
       "title": "Down the Hatch Comedy Club",
       "date": "2027-07-02",
+      "venue": "Komedia",
+      "time": "19:00",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
+      "id": "2027-07-03-komedia-down-the-hatch-comedy-club",
+      "title": "Down the Hatch Comedy Club",
+      "date": "2027-07-03",
       "venue": "Komedia",
       "time": "19:00",
       "finish_time": "",
