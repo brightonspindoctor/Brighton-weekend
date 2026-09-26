@@ -52,12 +52,17 @@ jobs:
         run: |
           git config user.name 'Brighton Weekend event scraper'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          # events.json is regenerated in full on every run, so the fresh file
+          # replaces whatever is on main rather than being merged line by line.
+          # (Merging failed whenever events.json changed on main during a run.)
+          cp events.json "$RUNNER_TEMP/events.json"
+          git fetch origin main
+          git reset --hard origin/main
+          cp "$RUNNER_TEMP/events.json" events.json
           git add events.json
           if git diff --cached --quiet; then
             echo 'No event data changes this run.'
             exit 0
           fi
           git commit -m 'Refresh event data'
-          git fetch origin main
-          git rebase origin/main
           git push origin HEAD:main
