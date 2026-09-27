@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-26",
-  "range_start": "2026-09-26",
-  "range_end": "2027-07-03",
+  "updated": "2026-09-27",
+  "range_start": "2026-09-27",
+  "range_end": "2027-07-04",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -26,245 +26,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-09-26-komedia-mystery-musicals-bottomless-brunch",
-      "title": "Mystery Musicals Bottomless Brunch",
-      "date": "2026-09-26",
-      "venue": "Komedia",
-      "time": "12:30",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-26-green-door-store-234-fest-2026",
-      "title": "234 Fest 2026",
-      "date": "2026-09-26",
-      "venue": "Green Door Store",
-      "time": "13:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-26-komedia-mystery-musicals-day-party-sat-26-sep-2026-1-00-pm-doors-12-00-pm",
-      "title": "Mystery Musicals Day Party",
-      "date": "2026-09-26",
-      "venue": "Komedia",
-      "time": "13:00",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.komedia.co.uk/shows/mystery-musicals-day-party/?eid=18819"
-    },
-    {
-      "id": "2026-09-26-quarters-black-octopus-8th-birthday",
-      "title": "Black Octopus 8th Birthday",
-      "date": "2026-09-26",
-      "venue": "Quarters",
-      "time": "16:00",
-      "finish_time": "22:00",
-      "category": "Club",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson"
-    },
-    {
-      "id": "2026-09-26-concorde-2-the-big-indie-fest",
-      "title": "The Big Indie Fest",
-      "date": "2026-09-26",
-      "venue": "Concorde 2",
-      "time": "18:00",
-      "category": "Music/Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-26-the-old-market-jason-byrne-30-years-byrning",
-      "title": "Jason Byrne: 30 Years Byrning",
-      "date": "2026-09-26",
-      "venue": "The Old Market",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.theoldmarket.com/shows"
-    },
-    {
-      "id": "2026-09-26-komedia-funny-women-live-in-brighton-sat-26-sep-2026-8-00-pm-doors-7-30-pm",
-      "title": "Funny Women Live in Brighton",
-      "date": "2026-09-26",
-      "venue": "Komedia",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://www.komedia.co.uk/shows/funny-women-live-in-brighton/?eid=18474"
-    },
-    {
-      "id": "2026-09-26-komedia-komedia-comedy-club-sat-26-sep-2026-8-00-pm-doors-7-00-pm",
-      "title": "Komedia Comedy Club",
-      "date": "2026-09-26",
-      "venue": "Komedia",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=18922"
-    },
-    {
-      "id": "2026-09-26-the-forge-comedy-club-forge-comedy-club",
-      "title": "Forge Comedy Club",
-      "date": "2026-09-26",
-      "venue": "The Forge Comedy Club",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/brighton-comedy-shows/"
-    },
-    {
-      "id": "2026-09-26-concorde-2-official-beyond-boundaries-afterparty-with-basslayerz",
-      "title": "Official Beyond Boundaries Afterparty With Basslayerz",
-      "date": "2026-09-26",
-      "venue": "Concorde 2",
-      "time": "23:00",
-      "category": "Music/Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-26-green-door-store-it-is-still-1985",
-      "title": "It Is Still 1985",
-      "date": "2026-09-26",
-      "venue": "Green Door Store",
-      "time": "23:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-26-komedia-the-brighton-moon-hop-sat-26-sep-2026-doors-11-00-pm",
-      "title": "The Brighton Moon-Hop",
-      "date": "2026-09-26",
-      "venue": "Komedia",
-      "time": "23:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/the-brighton-moon-hop/?eid=19777"
-    },
-    {
-      "id": "2026-09-26-quarters-l-p-rhythm",
-      "title": "L.P. Rhythm",
-      "date": "2026-09-26",
-      "venue": "Quarters",
-      "time": "23:00",
-      "finish_time": "05:00",
-      "category": "Club",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson"
-    },
-    {
-      "id": "2026-09-26-chalk-the-afghan-whigs-ed-harcourt",
-      "title": "The Afghan Whigs Ed Harcourt",
-      "date": "2026-09-26",
-      "venue": "CHALK",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://chalkvenue.com/",
-      "source_url": "https://chalkvenue.com/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-26-concorde2-beyond-boundaries-afterparty-basslayerz",
-      "title": "Beyond Boundaries Afterparty Basslayerz",
-      "date": "2026-09-26",
-      "venue": "Concorde 2",
-      "category": "Club",
-      "time": "",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "source_url": "https://www.concorde2.co.uk/whats-on",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-26-patterns-boudica-with-boris-berghain-brighton-debut",
-      "title": "Boudica With Boris (berghain/brighton Debut)",
-      "date": "2026-09-26",
-      "venue": "Patterns",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/boudica-with-boris-berghain-brighton-debut-p2932121"
-    },
-    {
-      "id": "2026-09-26-patterns-tyber-peter-the-dualers",
-      "title": "Tyber & Peter (The Dualers)",
-      "date": "2026-09-26",
-      "venue": "Patterns",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/patterns",
-      "source_url": "https://www.ents24.com/brighton-events/patterns",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-26-quarters-rossi",
-      "title": "Rossi.",
-      "date": "2026-09-26",
-      "venue": "Quarters",
-      "category": "Club",
-      "time": "",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson",
-      "source_url": "https://quartersbrighton.co.uk/whatson",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-26-the-pipeline-delta-signal",
-      "title": "Delta Signal",
-      "date": "2026-09-26",
-      "venue": "The Pipeline",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-pipeline"
-    },
-    {
-      "id": "2026-09-26-the-prince-albert-the-warner-e-hodges-international-all-stars-stacie-collins",
-      "title": "The Warner E Hodges International All Stars / Stacie Collins",
-      "date": "2026-09-26",
-      "venue": "The Prince Albert",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
-    },
-    {
-      "id": "2026-09-26-theatre-royal-brighton-backstage-tours",
-      "title": "Backstage Tours",
-      "date": "2026-09-26",
-      "venue": "Theatre Royal Brighton",
-      "time": "",
-      "finish_time": "",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
-    },
-    {
-      "id": "2026-09-26-theatreroyalbrighton-stand-or-fall-the-fall-and-rise-of-brighton-and-hove-albion",
-      "title": "Stand or Fall - The Fall and Rise of Brighton and Hove Albion",
-      "date": "2026-09-26",
-      "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
-      "time": "",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-26-theatre-royal-brighton-stand-or-fall-the-play",
-      "title": "Stand or Fall - The Play",
-      "date": "2026-09-26",
-      "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "time": "",
-      "finish_time": ""
-    },
     {
       "id": "2026-09-27-green-door-store-234-fest-2026",
       "title": "234 Fest 2026",
@@ -399,6 +160,16 @@
       "finish_time": "",
       "category": "Sport",
       "ticket_url": "https://www.brighton-racecourse.co.uk/whats-on"
+    },
+    {
+      "id": "2026-09-28-chalk-coming-soon",
+      "title": "Coming Soon",
+      "date": "2026-09-28",
+      "venue": "CHALK",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://chalkvenue.com/"
     },
     {
       "id": "2026-09-28-the-prince-albert-frankcastre-audio-june-la-luna",
@@ -8946,6 +8717,16 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/jim-white-ben-de-la-cour/?eid=20913"
+    },
+    {
+      "id": "2027-04-07-komedia-down-the-hatch-comedy-club",
+      "title": "Down the Hatch Comedy Club",
+      "date": "2027-04-07",
+      "venue": "Komedia",
+      "time": "19:00",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
     {
       "id": "2027-04-08-brightoncentre-james-blunt",
