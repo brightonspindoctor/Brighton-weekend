@@ -9,13 +9,13 @@
 <meta name="apple-mobile-web-app-title" content="Brighton Weekend">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#0B1D2F">
-<link rel="manifest" href="https://brightonspindoctor.github.io/Brighton-weekend/manifest.webmanifest?v=48">
-<link rel="apple-touch-icon" sizes="180x180" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/apple-touch-icon.png?v=48">
-<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/apple-touch-icon.png?v=48">
-<link rel="icon" type="image/png" sizes="32x32" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-32.png?v=48">
-<link rel="icon" type="image/png" sizes="192x192" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-192.png?v=48">
-<link rel="icon" type="image/png" sizes="512x512" href="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-512.png?v=48">
-<link rel="shortcut icon" href="https://brightonspindoctor.github.io/Brighton-weekend/favicon.ico?v=48">
+<link rel="manifest" href="manifest.webmanifest?v=48">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png?v=48">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="icons/apple-touch-icon.png?v=48">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png?v=48">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png?v=48">
+<link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png?v=48">
+<link rel="shortcut icon" href="favicon.ico?v=48">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -323,7 +323,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <section id="welcome">
   <div class="welcome-card">
     <div id="authStep">
-      <img class="auth-logo" src="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-192.png?v=49" alt="Brighton Weekend logo">
+      <img class="auth-logo" src="icons/icon-192.png?v=49" alt="Brighton Weekend logo">
       <h2>Welcome to Brighton Weekend</h2>
       <p>Sign in securely to keep your plans, groups and profile across devices.</p>
       <button type="button" id="googleSignInBtn" class="btn google-btn">Continue with Google</button>
@@ -358,19 +358,16 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
       <div id="createGroupPanel" class="group-panel hidden">
         <div class="group-form">
           <label>Group name<input id="newGroupName" maxlength="50" placeholder="e.g. Brighton Crew"></label>
-          <label>Privacy<select id="newGroupPrivacy"><option value="public">Open — anyone can join</option><option value="private">Private — 3 digit PIN</option></select></label>
-          <div id="pinNote" class="group-meta">Private groups use a 3 digit PIN to join.</div>
+          <div class="group-meta">Every group gets a 3 digit PIN. Friends join with the group name and PIN, or with an invite link. Groups hold up to 25 people.</div>
           <button type="button" id="createGroupBtn" class="btn btn-primary">Create group</button>
         </div>
       </div>
       <div id="joinGroupPanel" class="group-panel hidden">
         <div class="group-form">
-          <label>Open groups<select id="publicGroupSelect"><option value="">Choose an open group…</option></select></label>
-          <button type="button" id="joinPublicBtn" class="btn btn-primary">Join selected group</button>
-          <div class="group-meta">Or join a private group:</div>
-          <label>Private group name<input id="privateGroupName" maxlength="50" placeholder="Exact group name"></label>
+          <div class="group-meta">Ask someone in the group for its name and PIN, or for an invite link.</div>
+          <label>Group name<input id="privateGroupName" maxlength="50" placeholder="Exact group name" autocomplete="off"></label>
           <label>3 digit PIN<input id="privateGroupPin" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" placeholder="123"></label>
-          <button type="button" id="joinPrivateBtn" class="btn btn-primary">Join private group</button>
+          <button type="button" id="joinPrivateBtn" class="btn btn-primary">Join group</button>
         </div>
       </div>
       <button type="button" id="partyOnBtn" class="btn btn-primary">Party on</button>
@@ -389,7 +386,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 </section>
 
 <header><div class="wrap">
-  <div class="app-brand"><img src="https://brightonspindoctor.github.io/Brighton-weekend/icons/icon-192.png?v=49" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
+  <div class="app-brand"><img src="icons/icon-192.png?v=49" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
   <div class="sub" id="subtitle">Loading events…</div></div></div>
   <div class="controls">
     <button id="prev" aria-label="Previous week">‹</button><button id="week" class="week" aria-live="polite"></button><button id="next" aria-label="Next week">›</button>
@@ -534,7 +531,8 @@ async function saveProfile(displayName){
  await api('POST','bw_profiles',{user_id:authUser.id,email:authUser.email,display_name:clean,profile_icon:profileIcon},{'Prefer':'resolution=merge-duplicates,return=representation'});
  profileName=clean;localStorage.setItem('bw_profile_icon_'+authUser.id,profileIcon);profileIconsByUser[authUser.id]=profileIcon;localStorage.setItem('bw_name',clean);$('accountEmail').textContent=authUser.email||'';
 }
-const APP_URL='https://brightonspindoctor.github.io/Brighton-weekend/';
+const APP_URL=new URL('./',location.href).href; // follows the current domain
+const GROUP_LIMIT=25;
 async function signInWithGoogle(){
  const {error}=await supabase.auth.signInWithOAuth({
    provider:'google',
@@ -711,15 +709,10 @@ function trackVisitor(){
 
 function renderOnboardingGroups(){
  const list=$('onboardingGroups');
- list.innerHTML=groups.length?groups.map(g=>`<div class="group-choice"><span>${g.is_private?'🔒':'◌'}</span><div><strong>${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} member${(g.member_count||1)==1?'':'s'} · ${g.is_private?'Private':'Open'}</div></div></div>`).join(''):'';
+ list.innerHTML=groups.length?groups.map(g=>`<div class="group-choice"><span>🔒</span><div><strong>${esc(g.name)}</strong><div class="group-meta">${memberCount(g)}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div></div>`).join(''):'';
  $('groupEmpty').textContent=groups.length?'You can belong to as many groups as you like.':'You are not in any groups yet. Create one or join one.';
 }
-async function loadPublicGroups(){
- try{
-  const data=await rpc('bw_public_groups',{p_user_id:uid()});
-  $('publicGroupSelect').innerHTML='<option value="">Choose an open group…</option>'+data.map(g=>`<option value="${esc(g.id)}">${esc(g.name)} · ${g.member_count} members</option>`).join('');
- }catch(e){console.warn(e)}
-}
+function memberCount(g){const n=Number(g.member_count)||1;return `${n}/${GROUP_LIMIT} members${n>=GROUP_LIMIT?' · full':''}`}
 async function handleGroupInvite(){
  const q=new URLSearchParams(window.location.search);
  const groupId=q.get('group_invite');
@@ -734,7 +727,7 @@ async function handleGroupInvite(){
 }
 async function openGroupStep(){
  hide('nameStep'); show('groupStep');
- await loadGroups(); renderOnboardingGroups(); await loadPublicGroups();
+ await loadGroups(); renderOnboardingGroups();
  await handleGroupInvite();
 }
 function showWelcome(mode='auth'){
@@ -749,14 +742,14 @@ function finishWelcome(){
  hide('welcome'); homeShown=true; saveSeen(); trackVisitor(); renderAll(); renderGroupManager();
 }
 async function createGroup(){
- const n=$('newGroupName').value.trim(), privacy=$('newGroupPrivacy').value;
+ const n=$('newGroupName').value.trim();
  if(!n){alert('Please give your group a name.');return}
  try{
-  const data=await rpc('bw_create_group',{p_user_id:uid(),p_user_name:name(),p_name:n,p_is_private:privacy==='private'});
+  const data=await rpc('bw_create_group',{p_user_id:uid(),p_user_name:name(),p_name:n,p_is_private:true});
   const g=Array.isArray(data)?data[0]:data;
   $('newGroupName').value='';
-  if(g?.join_pin) alert(`Private group created. Share this PIN with friends: ${g.join_pin}`);
-  await loadGroups();renderOnboardingGroups();await loadPublicGroups();renderGroupManager();
+  if(g?.join_pin) alert(`${n} is ready. Its PIN is ${g.join_pin}. Share the group name and PIN with friends, or use Invite link in Settings.`);
+  await loadGroups();renderOnboardingGroups();renderGroupManager();
  }catch(e){alert('Could not create group. '+e.message)}
 }
 async function joinGroup(groupId,pin=null,privateName=null){
@@ -764,7 +757,7 @@ async function joinGroup(groupId,pin=null,privateName=null){
   const data=await rpc('bw_join_group',{p_user_id:uid(),p_user_name:name(),p_group_id:groupId||null,p_pin:pin,p_group_name:privateName||null});
   const r=Array.isArray(data)?data[0]:data;
   if(!r?.ok) throw new Error(r?.message||'Could not join group');
-  await loadGroups();renderOnboardingGroups();await loadPublicGroups();renderGroupManager();
+  await loadGroups();renderOnboardingGroups();renderGroupManager();
   hide('joinGroupPanel');
  }catch(e){alert('Could not join group. '+e.message)}
 }
@@ -789,7 +782,7 @@ async function createGroupInviteLink(groupId,groupName,isPrivate,pin,btn){
  const params=new URLSearchParams();
  params.set('group_invite',groupId);
  if(groupName)params.set('group_name',groupName);
- if(isPrivate&&pin)params.set('group_pin',pin);
+ if(pin)params.set('group_pin',pin);
  const url=base+'?'+params.toString();
  try{
   if(navigator.share){await navigator.share({title:`Join ${groupName}`,text:`Join my Brighton Weekend group, ${groupName}.`,url});return;}
@@ -802,7 +795,7 @@ async function createGroupInviteLink(groupId,groupName,isPrivate,pin,btn){
 }
 function renderGroupManager(){
  const el=$('groupManager'); if(!el)return;
- el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>${g.is_private?'🔒':'◌'} ${esc(g.name)}</strong><div class="group-meta">${g.member_count||1} members · ${g.is_private?'Private':'Open'}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div><div class="row-actions"><button type="button" class="btn btn-chip" data-invite-group="${esc(g.id)}" data-invite-name="${esc(g.name)}" data-invite-private="${g.is_private?'1':'0'}" data-invite-pin="${esc(g.join_pin||'')}">Invite link</button><button type="button" class="btn btn-chip" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button></div></div>`).join(''):'<div class="group-meta">No groups yet.</div>';
+ el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>🔒 ${esc(g.name)}</strong><div class="group-meta">${memberCount(g)}${g.join_pin?` · PIN <span class="pin-display">${esc(g.join_pin)}</span>`:''}</div></div><div class="row-actions"><button type="button" class="btn btn-chip" data-invite-group="${esc(g.id)}" data-invite-name="${esc(g.name)}" data-invite-private="${g.is_private?'1':'0'}" data-invite-pin="${esc(g.join_pin||'')}">Invite link</button><button type="button" class="btn btn-chip" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button></div></div>`).join(''):'<div class="group-meta">No groups yet.</div>';
 }
 
 async function act(id,status){
@@ -1056,10 +1049,8 @@ $('nameForm').addEventListener('submit',async e=>{e.preventDefault();const n=$('
 $('signOut').onclick=async()=>{await supabase.auth.signOut();authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';localStorage.removeItem('bw_name');$('accountEmail').textContent='';renderAll();showWelcome('auth')};
 $('partyOnBtn').onclick=finishWelcome;
 $('showCreateGroup').onclick=()=>{hide('joinGroupPanel');$('createGroupPanel').classList.toggle('hidden')};
-$('showJoinGroup').onclick=async()=>{hide('createGroupPanel');$('joinGroupPanel').classList.toggle('hidden');if(!$('joinGroupPanel').classList.contains('hidden'))await loadPublicGroups()};
-$('newGroupPrivacy').onchange=()=>{$('pinNote').textContent=$('newGroupPrivacy').value==='private'?'A random 3 digit PIN will be created and shown to you.':'Anyone using Brighton Weekend can find and join this group.'};
+$('showJoinGroup').onclick=()=>{hide('createGroupPanel');$('joinGroupPanel').classList.toggle('hidden')};
 $('createGroupBtn').onclick=createGroup;
-$('joinPublicBtn').onclick=()=>{const id=$('publicGroupSelect').value;if(!id)return alert('Choose a group first.');joinGroup(id)};
 $('joinPrivateBtn').onclick=()=>{const n=$('privateGroupName').value.trim(),p=$('privateGroupPin').value.trim();if(!n||!/^\d{3}$/.test(p))return alert('Enter the exact group name and a 3 digit PIN.');joinGroup(null,p,n)};
 $('prev').onclick=()=>{weekStart.setDate(weekStart.getDate()-7);renderAll()};
 $('next').onclick=()=>{weekStart.setDate(weekStart.getDate()+7);renderAll()};
