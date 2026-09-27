@@ -17,9 +17,6 @@
 <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png?v=48">
 <link rel="shortcut icon" href="favicon.ico?v=48">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style id="bw-styles">
 /* ==========================================================================
    Brighton Weekend — app stylesheet
@@ -27,6 +24,9 @@
    Replaces the eight stacked <style> blocks (v11 → v41) that overrode each
    other with !important.
    ========================================================================== */
+
+/* ---------- 0. Font (self-hosted: no requests to Google) ---------- */
+@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:400 800;font-display:swap;src:url("fonts/plus-jakarta-sans-latin.woff2") format("woff2")}
 
 /* ---------- 1. Tokens ---------- */
 :root{
@@ -316,6 +316,13 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .cal-link:hover{border-color:var(--bw-line-strong)}
 .cal-glyph{width:16px;height:16px}
 
+/* Account deletion */
+.danger-zone{margin-top:18px;padding-top:14px;border-top:1px solid var(--bw-line)}
+.danger-zone h4{color:var(--bw-pass-fg);margin-bottom:4px}
+.danger-zone .note{margin-bottom:10px}
+.btn-danger{background:var(--bw-pass-bg);border-color:var(--bw-pass-line);color:var(--bw-pass-fg)}
+.btn-danger:hover{border-color:var(--bw-pass-fg)}
+
 </style>
 <title>Brighton Weekend</title>
 </head>
@@ -445,7 +452,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <div class="settings-section"><div class="section-head venue-settings-head"><div><h3>Venues</h3><div class="note">Choose which venues appear in Discover.</div></div><div class="venue-actions"><button type="button" class="btn btn-chip" id="selectComedyVenues">Comedy venues</button><button type="button" class="btn btn-chip" id="selectAllVenues">Select all</button><button type="button" class="btn btn-chip" id="unselectAllVenues">Unselect all</button></div></div><div id="venueList"></div><div class="day-preferences"><h4>Days</h4><div class="note">Choose which days appear in Discover and Comedy.</div><div id="dayGrid" class="day-grid"></div></div></div>
 <div class="settings-card"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" class="avatar" src="profile-icons/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong><div class="profile-icon-note">You get one at random when you first sign in. Pick a different one whenever you like.</div></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div><div class="group-panel"><h3>Groups</h3><p class="note">Manage the groups that shape your Happenings feed.</p><div id="groupManager"></div><button id="manageGroups" class="btn btn-secondary">Manage groups</button></div>
 <div class="settings-card"><h3>Support Brighton Weekend</h3><p class="note">If you enjoy using the app, you can buy me a coffee to help keep it running and improving.</p><a class="support-btn" href="https://www.buymeacoffee.com/jonnysadler" target="_blank" rel="noopener">☕ Buy me a coffee ↗</a></div>
-<div class="settings-card"><h3>Account</h3><button id="changeName" class="btn btn-secondary">Change my name</button> <button id="signOut" class="btn btn-ghost">Sign out</button><div id="accountEmail" class="group-meta"></div></div>
+<div class="settings-card"><h3>Account</h3><button id="changeName" class="btn btn-secondary">Change my name</button> <button id="signOut" class="btn btn-ghost">Sign out</button><div id="accountEmail" class="group-meta"></div><div class="danger-zone"><h4>Delete my account</h4><p class="note">Permanently deletes your profile, your Interested and Going choices, your group memberships and any events you added. This can't be undone.</p><button id="deleteAccount" type="button" class="btn btn-danger">Delete my account</button></div></div>
 <div class="settings-card install-area"><h3>Install the app</h3><button id="installApp" class="btn btn-primary install-btn">↓ Add Brighton Weekend to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
 <div class="settings-links"><a href="about.html" target="_blank" rel="noopener">About</a><a href="privacy.html" target="_blank" rel="noopener">Privacy</a><a href="terms.html" target="_blank" rel="noopener">Terms</a></div>
 </main>
@@ -1046,6 +1053,24 @@ setupInstallButton();
 $('googleSignInBtn').addEventListener('click',async()=>{const btn=$('googleSignInBtn'),msg=$('authMessage');try{btn.disabled=true;msg.textContent='Opening Google…';await signInWithGoogle();}catch(err){msg.textContent='Could not start Google sign-in. '+(err.message||err);btn.disabled=false}});
 $('magicLinkForm').addEventListener('submit',async e=>{e.preventDefault();const btn=$('magicLinkBtn'),input=$('magicLinkEmail'),msg=$('authMessage');try{btn.disabled=true;input.disabled=true;msg.className='group-meta';msg.textContent='Sending your sign-in link…';await signInWithMagicLink(input.value);msg.className='group-meta auth-success';msg.textContent='Check your email — your sign-in link is on its way.';}catch(err){msg.className='group-meta auth-error';msg.textContent='Could not send the sign-in link. '+(err.message||err);btn.disabled=false;input.disabled=false;}});
 $('nameForm').addEventListener('submit',async e=>{e.preventDefault();const n=$('nameInput').value.trim();if(!n)return;try{await saveProfile(n);await openGroupStep()}catch(err){alert('Could not save your profile. '+(err.message||err))}});
+$('deleteAccount').onclick=async()=>{
+ const typed=prompt('This permanently deletes your Brighton Weekend account, your plans, your group memberships and any events you added. It can\'t be undone.\n\nType DELETE to confirm.');
+ if(typed===null)return;
+ if(typed.trim().toUpperCase()!=='DELETE'){alert('Your account has not been deleted. Type DELETE (in capitals) if you want to go ahead.');return}
+ const btn=$('deleteAccount');btn.disabled=true;btn.textContent='Deleting…';
+ try{
+  const rows=await api('POST','rpc/bw_delete_my_account',{});
+  const r=Array.isArray(rows)?rows[0]:rows;
+  if(!r?.ok)throw new Error(r?.message||'The account could not be deleted.');
+  // Remove everything this app stored on the device, including the sign-in session.
+  Object.keys(localStorage).filter(k=>k.startsWith('bw_')||k.startsWith('sb-')).forEach(k=>localStorage.removeItem(k));
+  try{await supabase.auth.signOut()}catch(e){}
+  authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';customEvents=[];
+  events=events.filter(e=>!e.is_custom);$('accountEmail').textContent='';renderAll();showWelcome('auth');
+  const msg=$('authMessage');msg.className='auth-success';msg.textContent='Your account and data have been deleted.';
+ }catch(err){alert('Sorry, your account could not be deleted: '+(err.message||err)+'\nPlease try again, or email us using the address in the Privacy Policy.')}
+ finally{btn.disabled=false;btn.textContent='Delete my account'}
+};
 $('signOut').onclick=async()=>{await supabase.auth.signOut();authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';localStorage.removeItem('bw_name');$('accountEmail').textContent='';renderAll();showWelcome('auth')};
 $('partyOnBtn').onclick=finishWelcome;
 $('showCreateGroup').onclick=()=>{hide('joinGroupPanel');$('createGroupPanel').classList.toggle('hidden')};
@@ -1164,7 +1189,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=50', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=52', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>

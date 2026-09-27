@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Brighton Weekend · Design system</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* ==========================================================================
    Brighton Weekend — app stylesheet
@@ -14,6 +12,9 @@
    Replaces the eight stacked <style> blocks (v11 → v41) that overrode each
    other with !important.
    ========================================================================== */
+
+/* ---------- 0. Font (self-hosted: no requests to Google) ---------- */
+@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:400 800;font-display:swap;src:url("fonts/plus-jakarta-sans-latin.woff2") format("woff2")}
 
 /* ---------- 1. Tokens ---------- */
 :root{
@@ -147,6 +148,7 @@ header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1
 .commit-btn{appearance:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:38px;padding:5px 6px;border-radius:var(--bw-radius-pill);border:1px solid #345468;background:var(--bw-deep);color:#C3D0D6;font-size:var(--bw-text-xs);font-weight:700;letter-spacing:-.015em;white-space:nowrap;transition:background .15s,border-color .15s,color .15s,transform .12s}
 .commit-btn:hover{border-color:var(--bw-line-strong)}
 .commit-btn:active{transform:scale(.97)}
+.commit-btn:disabled{cursor:progress}
 .commit-icon{display:inline-grid;place-items:center;width:24px;height:24px;aspect-ratio:1;flex:none;border-radius:50%;border:1px solid var(--bw-line-strong);background:var(--bw-raised);font-size:14px;line-height:1}
 .commit-btn.no .commit-icon{color:var(--bw-pass-fg);border-color:var(--bw-pass-line)}
 .commit-btn.yes .commit-icon{color:var(--bw-interested-fg);border-color:var(--bw-interested-line)}
@@ -271,6 +273,43 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .welcome-info a:hover{text-decoration:underline}
 #groupStep .group-panel{text-align:left}
 #partyOnBtn{margin-top:6px;width:100%}
+
+/* ---------- 13. Landing page ---------- */
+#home{position:fixed;inset:0;z-index:15;overflow:auto;display:grid;place-items:center;padding:20px;padding-top:max(20px,env(safe-area-inset-top));background:var(--bw-abyss)}
+.home-card{width:min(440px,100%);background:var(--bw-card);border:1px solid var(--bw-line);border-radius:var(--bw-radius-xl);padding:26px 20px 20px;box-shadow:0 20px 60px rgba(0,0,0,.45);text-align:center}
+.home-avatar{width:72px;height:72px;margin:0 auto 14px}
+.home-card h2{font-size:1.75rem;margin-bottom:6px}
+.home-card>.note{font-size:var(--bw-text-md);margin-bottom:18px}
+.home-rows{display:grid;gap:8px;margin-bottom:18px;text-align:left}
+.home-row{display:flex;align-items:center;gap:12px;width:100%;padding:12px;border:1px solid var(--bw-line);border-radius:var(--bw-radius-lg);background:var(--bw-deep);color:var(--bw-cream);text-align:left}
+.home-row:hover{border-color:var(--bw-line-strong);background:var(--bw-raised)}
+.home-icon{display:grid;place-items:center;width:40px;height:40px;flex:none;border-radius:50%;border:1px solid;font-size:18px}
+.home-icon .ticket-glyph{width:20px;height:20px}
+.home-icon.events{color:var(--bw-coral);background:#251A1A;border-color:#71463F}
+.home-icon.plans{color:var(--bw-going-fg);background:var(--bw-going-bg);border-color:var(--bw-going-line)}
+.home-icon.people{color:var(--bw-interested-fg);background:var(--bw-interested-bg);border-color:var(--bw-interested-line)}
+.home-text{flex:1;min-width:0;display:grid;gap:2px}
+.home-text strong{font-size:var(--bw-text-md);font-weight:700;line-height:1.3}
+.home-text span{font-size:var(--bw-text-sm);color:var(--bw-muted);line-height:1.35}
+.home-chevron{color:var(--bw-subtle);font-size:22px;line-height:1}
+.home-card .btn{width:100%}
+
+/* New-since-last-visit panel at the top of Discover */
+.new-panel{margin-top:var(--bw-space-4);padding:14px;border:1px solid #71463F;border-radius:var(--bw-radius-lg);background:#1A1719}
+.new-panel-head{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.new-panel-head h3{display:flex;align-items:center;gap:8px}
+
+/* Add to calendar */
+.cal-link{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:8px 12px;border-radius:var(--bw-radius-sm);border:1px solid var(--bw-line);background:var(--bw-deep);color:var(--bw-cream);font-size:var(--bw-text-sm);font-weight:700;text-decoration:none}
+.cal-link:hover{border-color:var(--bw-line-strong)}
+.cal-glyph{width:16px;height:16px}
+
+/* Account deletion */
+.danger-zone{margin-top:18px;padding-top:14px;border-top:1px solid var(--bw-line)}
+.danger-zone h4{color:var(--bw-pass-fg);margin-bottom:4px}
+.danger-zone .note{margin-bottom:10px}
+.btn-danger{background:var(--bw-pass-bg);border-color:var(--bw-pass-line);color:var(--bw-pass-fg)}
+.btn-danger:hover{border-color:var(--bw-pass-fg)}
 
 </style>
 <style>
