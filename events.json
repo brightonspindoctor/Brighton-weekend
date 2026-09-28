@@ -7,6 +7,7 @@
     "Amex Stadium",
     "Babble",
     "Brighton Centre",
+    "Brighton Dome",
     "Brighton Dome - Concert Hall",
     "Brighton Racecourse",
     "CHALK",
@@ -26,6 +27,16 @@
     "Volks"
   ],
   "events": [
+    {
+      "id": "2026-09-28-brighton-dome-how-geography-explains-our-world-with-tim-marshall",
+      "title": "How Geography Explains Our World, with Tim Marshall",
+      "date": "2026-09-28",
+      "venue": "Brighton Dome",
+      "time": "19:00",
+      "finish_time": "23:00",
+      "category": "Talk",
+      "ticket_url": "https://brightondome.org/whats-on/L2K-how-geography-explains-our-world-with-tim-marshall/"
+    },
     {
       "id": "2026-09-28-komedia-nlca-comedy-night-mon-28-sep-2026-8-00-pm-doors-7-30-pm",
       "title": "NLCA Comedy Night",
@@ -107,6 +118,16 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://thegreendoorstore.co.uk/events/"
+    },
+    {
+      "id": "2026-09-29-brighton-dome-crush",
+      "title": "CRUSH",
+      "date": "2026-09-29",
+      "venue": "Brighton Dome",
+      "time": "20:00",
+      "finish_time": "23:00",
+      "category": "Talk",
+      "ticket_url": "https://brightondome.org/whats-on/L1e-crush/"
     },
     {
       "id": "2026-09-29-komedia-mark-thomas-40-in-stand-up-years-tue-29-sep-2026-8-00-pm-doors-7-00-pm",
@@ -202,6 +223,26 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": ""
+    },
+    {
+      "id": "2026-09-30-brighton-dome-crush",
+      "title": "CRUSH",
+      "date": "2026-09-30",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://brightondome.org/whats-on/L1e-crush/"
+    },
+    {
+      "id": "2026-09-30-brighton-dome-you-might-also-like",
+      "title": "You might also like",
+      "date": "2026-09-30",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/L17-brighton-dome-backstage-tours/"
     },
     {
       "id": "2026-09-30-chalk-bridge-city-sinners",
@@ -1304,6 +1345,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-14-brighton-dome-finding-your-funny-workshop",
+      "title": "Finding Your Funny Workshop",
+      "date": "2026-10-14",
+      "venue": "Brighton Dome",
+      "time": "11:00",
+      "finish_time": "16:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/L8q-finding-your-funny-workshop/"
+    },
+    {
       "id": "2026-10-14-komedia-comic-baby-boom-wed-14-oct-2026-7-00-pm-doors-6-30-pm",
       "title": "Comic Baby Boom",
       "date": "2026-10-14",
@@ -1430,6 +1481,16 @@
       "ticket_url": "https://www.ents24.com/brighton-events/a-l-p-h-a-b-e-t"
     },
     {
+      "id": "2026-10-15-brighton-dome-lulu",
+      "title": "Lulu",
+      "date": "2026-10-15",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/LtE-african-soul-rebels-les-amazones-dafrique-gasper-nali-nfamady-kouyat/"
+    },
+    {
       "id": "2026-10-15-brighton-racecourse-season-finale-2026-thursday-15-october-2026",
       "title": "Season Finale 2026",
       "date": "2026-10-15",
@@ -1514,6 +1575,36 @@
       "ticket_url": "https://www.komedia.co.uk/shows/story-magic-baby-sessions/?eid=20806"
     },
     {
+      "id": "2026-10-16-brighton-dome-jazz-emu-the-pleasure-is-all-yours",
+      "title": "Jazz Emu: The Pleasure Is All Yours",
+      "date": "2026-10-16",
+      "venue": "Brighton Dome",
+      "time": "18:00",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/Ljb-jazz-emu-the-pleasure-is-all-yours/"
+    },
+    {
+      "id": "2026-10-16-brighton-dome-alfie-brown-the-entertainer",
+      "title": "Alfie Brown: The Entertainer",
+      "date": "2026-10-16",
+      "venue": "Brighton Dome",
+      "time": "19:00",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LEd-alfie-brown-the-entertainer/"
+    },
+    {
+      "id": "2026-10-16-brighton-dome-celya-ab-we-must-stop-meeting-like-this",
+      "title": "Celya AB: We Must Stop Meeting Like This",
+      "date": "2026-10-16",
+      "venue": "Brighton Dome",
+      "time": "19:00",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/Ls4-celya-ab-we-must-stop-meeting-like-this/"
+    },
+    {
       "id": "2026-10-16-concorde-2-boris-pink-20th-anniversary-uk-tour",
       "title": "Boris - Pink 20th Anniversary UK Tour",
       "date": "2026-10-16",
@@ -1542,6 +1633,16 @@
       "finish_time": "22:00",
       "category": "Music",
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
+    },
+    {
+      "id": "2026-10-16-brighton-dome-tom-davis-spudgun",
+      "title": "Tom Davis: Spudgun",
+      "date": "2026-10-16",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/Le9-tom-davis-spudgun/"
     },
     {
       "id": "2026-10-16-komedia-komedia-comedy-club-fri-16-oct-2026-8-00-pm-doors-7-00-pm",
@@ -1575,6 +1676,26 @@
       "ticket_url": "https://www.theoldmarket.com/shows"
     },
     {
+      "id": "2026-10-16-brighton-dome-catherine-bohart-borrowing-trouble",
+      "title": "Catherine Bohart: Borrowing Trouble",
+      "date": "2026-10-16",
+      "venue": "Brighton Dome",
+      "time": "20:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/L7X-catherine-bohart-borrowing-trouble/"
+    },
+    {
+      "id": "2026-10-16-brighton-dome-komedia-comedy-club",
+      "title": "Komedia Comedy Club",
+      "date": "2026-10-16",
+      "venue": "Brighton Dome",
+      "time": "20:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LET-komedia-comedy-club/"
+    },
+    {
       "id": "2026-10-16-concorde-2-rinse-fm-presents-flowdan-neffa-t-more",
       "title": "Rinse FM Presents Flowdan, Neffa-T & More",
       "date": "2026-10-16",
@@ -1594,6 +1715,16 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": ""
+    },
+    {
+      "id": "2026-10-16-brighton-dome-more-brighton-dome-comedy-festival-events",
+      "title": "More Brighton Dome Comedy Festival events",
+      "date": "2026-10-16",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LZc-free-comedy-workshops-for-young-people-age-11-16/"
     },
     {
       "id": "2026-10-16-chalk-the-hoosiers-hunny-buzz",
@@ -1663,6 +1794,36 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-17-brighton-dome-make-a-fly-workshop",
+      "title": "Make a Fly Workshop",
+      "date": "2026-10-17",
+      "venue": "Brighton Dome",
+      "time": "11:00",
+      "finish_time": "13:00",
+      "category": "Other",
+      "ticket_url": "https://brightondome.org/whats-on/LGF-make-a-fly-workshop/"
+    },
+    {
+      "id": "2026-10-17-brighton-dome-modern-toss-flies",
+      "title": "Modern Toss: Flies",
+      "date": "2026-10-17",
+      "venue": "Brighton Dome",
+      "time": "11:00",
+      "finish_time": "13:00",
+      "category": "Other",
+      "ticket_url": "https://brightondome.org/whats-on/LGJ-modern-toss-flies/"
+    },
+    {
+      "id": "2026-10-17-brighton-dome-comedy-club-4-kids",
+      "title": "Comedy Club 4 Kids",
+      "date": "2026-10-17",
+      "venue": "Brighton Dome",
+      "time": "14:00",
+      "finish_time": "15:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/Lnm-comedy-club-4-kids/"
+    },
+    {
       "id": "2026-10-17-komedia-comedy-club-4-kids-sat-17-oct-2026-2-00-pm-doors-1-30-pm",
       "title": "Comedy Club 4 Kids",
       "date": "2026-10-17",
@@ -1683,6 +1844,16 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
+      "id": "2026-10-17-brighton-dome-all-my-friends-day-disco",
+      "title": "All My Friends Day Disco",
+      "date": "2026-10-17",
+      "venue": "Brighton Dome",
+      "time": "15:00",
+      "finish_time": "20:00",
+      "category": "Club",
+      "ticket_url": "https://brightondome.org/whats-on/LGl-all-my-friends-day-disco/"
+    },
+    {
       "id": "2026-10-17-brighton-centre-the-mary-wallopers",
       "title": "The Mary Wallopers",
       "date": "2026-10-17",
@@ -1691,6 +1862,16 @@
       "category": "Music",
       "ticket_url": "https://brightoncentre.co.uk/",
       "finish_time": ""
+    },
+    {
+      "id": "2026-10-17-brighton-dome-jordan-brookes-the-part-of-you-that-s-always-screaming",
+      "title": "Jordan Brookes: The Part of You That's Always Screaming",
+      "date": "2026-10-17",
+      "venue": "Brighton Dome",
+      "time": "18:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LED-jordan-brookes-the-part-of-you-thats-always-screaming/"
     },
     {
       "id": "2026-10-17-komedia-jordan-brookes-the-part-of-you-that-s-always-screaming-sat-17-oct-2026-6-30-pm-doors-6-00-pm",
@@ -1703,6 +1884,16 @@
       "ticket_url": "https://www.komedia.co.uk/shows/jordan-brookes-the-part-of-you-thats-always-screaming/?eid=18866"
     },
     {
+      "id": "2026-10-17-brighton-dome-stevie-martin-clout",
+      "title": "Stevie Martin: Clout",
+      "date": "2026-10-17",
+      "venue": "Brighton Dome",
+      "time": "19:00",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/Ltk-stevie-martin-clout/"
+    },
+    {
       "id": "2026-10-17-concorde-2-reef",
       "title": "Reef",
       "date": "2026-10-17",
@@ -1711,6 +1902,16 @@
       "category": "Music/Club",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
       "finish_time": ""
+    },
+    {
+      "id": "2026-10-17-brighton-dome-lara-ricote-inkling",
+      "title": "Lara Ricote: Inkling",
+      "date": "2026-10-17",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LSn-lara-ricote-inkling/"
     },
     {
       "id": "2026-10-17-komedia-komedia-comedy-club-sat-17-oct-2026-8-00-pm-doors-7-00-pm",
@@ -1783,6 +1984,16 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.brightonandhovealbion.com/tickets"
+    },
+    {
+      "id": "2026-10-17-brighton-dome-for-the-kids",
+      "title": "For the kids",
+      "date": "2026-10-17",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/comedyfestival/"
     },
     {
       "id": "2026-10-17-greendoorstore-bishopskin",
@@ -1867,6 +2078,36 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/the-noise-next-door-furnace-with-deborah-frances-white-tickets-1952116054669"
     },
     {
+      "id": "2026-10-18-brighton-dome-jimeoin-ballyhoo",
+      "title": "Jimeoin: BALLYHOO!",
+      "date": "2026-10-18",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LZj-jimeoin-ballyhoo/"
+    },
+    {
+      "id": "2026-10-18-brighton-dome-robin-ince-joanna-neary",
+      "title": "Robin Ince & Joanna Neary",
+      "date": "2026-10-18",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LEq-robin-ince-joanna-neary/"
+    },
+    {
+      "id": "2026-10-18-brighton-dome-the-blindboy-podcast-live",
+      "title": "The Blindboy Podcast LIVE",
+      "date": "2026-10-18",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Club",
+      "ticket_url": "https://brightondome.org/whats-on/LrI-the-blindboy-podcast-live/"
+    },
+    {
       "id": "2026-10-18-komedia-robin-ince-joanna-neary-sun-18-oct-2026-7-30-pm-doors-7-00-pm",
       "title": "Robin Ince & Joanna Neary",
       "date": "2026-10-18",
@@ -1875,6 +2116,16 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/robin-ince-joanna-neary/?eid=19295"
+    },
+    {
+      "id": "2026-10-18-brighton-dome-john-crace-what-the-hell-just-happened",
+      "title": "John Crace: What The Hell Just Happened?",
+      "date": "2026-10-18",
+      "venue": "Brighton Dome",
+      "time": "20:00",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LGj-john-crace-what-the-hell-just-happened/"
     },
     {
       "id": "2026-10-18-komedia-john-crace-what-the-hell-just-happened-sun-18-oct-2026-8-00-pm-doors-7-00-pm",
@@ -1931,6 +2182,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-19-brighton-dome-siblings-dreamweavers",
+      "title": "Siblings: Dreamweavers",
+      "date": "2026-10-19",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "21:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/L0L-siblings-dreamweavers/"
+    },
+    {
       "id": "2026-10-19-komedia-siblings-dreamweavers-mon-19-oct-2026-7-30-pm-doors-7-00-pm",
       "title": "Siblings: Dreamweavers",
       "date": "2026-10-19",
@@ -1939,6 +2200,16 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/siblings-dreamweavers/?eid=18395"
+    },
+    {
+      "id": "2026-10-19-brighton-dome-raising-the-roof-2-a-fundraiser-for-ymca-brighton",
+      "title": "Raising the Roof 2: A Fundraiser for YMCA Brighton",
+      "date": "2026-10-19",
+      "venue": "Brighton Dome",
+      "time": "20:00",
+      "finish_time": "21:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LnQ-raising-the-roof-2-a-fundraiser-for-ymca-brighton/"
     },
     {
       "id": "2026-10-19-komedia-raising-the-roof-2-a-fundraiser-for-ymca-brighton-mon-19-oct-2026-8-00-pm-doors-7-00-pm",
@@ -1980,6 +2251,16 @@
       "category": "Music",
       "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055",
       "finish_time": ""
+    },
+    {
+      "id": "2026-10-20-brighton-dome-phil-ellis-bath-mat",
+      "title": "Phil Ellis: Bath Mat",
+      "date": "2026-10-20",
+      "venue": "Brighton Dome",
+      "time": "20:00",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LEK-phil-ellis-bath-mat/"
     },
     {
       "id": "2026-10-20-komedia-phil-ellis-bath-mat-tue-20-oct-2026-8-00-pm-doors-7-00-pm",
@@ -2058,6 +2339,36 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-21-brighton-dome-elouise-eftos-australia-s-first-attractive-comedian",
+      "title": "Elouise Eftos: Australia's First Attractive Comedian",
+      "date": "2026-10-21",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/Lpx-elouise-eftos-australias-first-attractive-comedian/"
+    },
+    {
+      "id": "2026-10-21-brighton-dome-maisie-adam-whatsherface",
+      "title": "Maisie Adam: Whatsherface",
+      "date": "2026-10-21",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LlA-maisie-adam-whatsherface/"
+    },
+    {
+      "id": "2026-10-21-brighton-dome-sergi-polo-live-in-brighton",
+      "title": "Sergi Polo: LIVE in Brighton",
+      "date": "2026-10-21",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LEj-sergi-polo-live-in-brighton/"
+    },
+    {
       "id": "2026-10-21-komedia-sergi-polo-live-in-brighton-in-english-wed-21-oct-2026-7-30-pm-doors-7-00-pm",
       "title": "Sergi Polo – LIVE in Brighton (in English)",
       "date": "2026-10-21",
@@ -2066,6 +2377,16 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.komedia.co.uk/shows/sergi-polo-live-in-brighton-in-english/?eid=18805"
+    },
+    {
+      "id": "2026-10-21-brighton-dome-solve-along-a-murder-she-wrote",
+      "title": "Solve-Along-a-Murder-She-Wrote",
+      "date": "2026-10-21",
+      "venue": "Brighton Dome",
+      "time": "20:00",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://brightondome.org/whats-on/LEe-solve-along-a-murder-she-wrote/"
     },
     {
       "id": "2026-10-21-komedia-solve-along-a-murder-she-wrote-wed-21-oct-2026-8-00-pm-doors-7-00-pm",
@@ -2123,6 +2444,26 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-22-brighton-dome-comic-boom-comedy-club",
+      "title": "Comic Boom Comedy Club",
+      "date": "2026-10-22",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LEQ-comic-boom-comedy-club/"
+    },
+    {
+      "id": "2026-10-22-brighton-dome-simon-amstell-i-love-it-here",
+      "title": "Simon Amstell: I Love It Here",
+      "date": "2026-10-22",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LgI-simon-amstell-i-love-it-here/"
+    },
+    {
       "id": "2026-10-22-komedia-comic-boom-comedy-club-thu-22-oct-2026-7-30-pm-doors-6-30-pm",
       "title": "Comic Boom Comedy Club",
       "date": "2026-10-22",
@@ -2141,6 +2482,16 @@
       "finish_time": "21:30",
       "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/shows"
+    },
+    {
+      "id": "2026-10-22-brighton-dome-amy-matthews-definitions-of-toast",
+      "title": "Amy Matthews: Definitions of Toast",
+      "date": "2026-10-22",
+      "venue": "Brighton Dome",
+      "time": "20:00",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://brightondome.org/whats-on/LEA-amy-matthews-definitions-of-toast/"
     },
     {
       "id": "2026-10-22-komedia-amy-matthews-definitions-of-toast-thu-22-oct-2026-8-00-pm-doors-7-30-pm",
@@ -2290,6 +2641,36 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-23-brighton-dome-an-evening-with-katherine-ryan-firstborn-daughter",
+      "title": "An Evening with Katherine Ryan: Firstborn Daughter",
+      "date": "2026-10-23",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LGr-an-evening-with-katherine-ryan-firstborn-daughter/"
+    },
+    {
+      "id": "2026-10-23-brighton-dome-dan-tiernan-quartz-and-all",
+      "title": "Dan Tiernan: Quartz and All",
+      "date": "2026-10-23",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LSF-dan-tiernan-quartz-and-all/"
+    },
+    {
+      "id": "2026-10-23-brighton-dome-nish-kumar-angry-humour-from-a-really-nice-guy",
+      "title": "Nish Kumar: Angry Humour from a Really Nice Guy",
+      "date": "2026-10-23",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LKc-nish-kumar-angry-humour-from-a-really-nice-guy/"
+    },
+    {
       "id": "2026-10-23-the-old-market-everybody-scream-new-note-orchestra-and-wham-jam-thank-you-ma-am-choir",
       "title": "Everybody Scream! New Note Orchestra and Wham Jam Thank You Ma’am Choir",
       "date": "2026-10-23",
@@ -2298,6 +2679,16 @@
       "finish_time": "21:30",
       "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/shows"
+    },
+    {
+      "id": "2026-10-23-brighton-dome-kim-blythe-puzzle",
+      "title": "Kim Blythe: Puzzle",
+      "date": "2026-10-23",
+      "venue": "Brighton Dome",
+      "time": "20:00",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://brightondome.org/whats-on/LG6-kim-blythe-puzzle/"
     },
     {
       "id": "2026-10-23-komedia-kim-blythe-puzzle-fri-23-oct-2026-8-00-pm-doors-7-30-pm",
@@ -2348,6 +2739,26 @@
       "category": "Music/Club",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
       "finish_time": ""
+    },
+    {
+      "id": "2026-10-23-brighton-dome-exhibitions-and-workshops",
+      "title": "Exhibitions and Workshops",
+      "date": "2026-10-23",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/comedyfestival/"
+    },
+    {
+      "id": "2026-10-23-brighton-dome-finding-your-funny-workshop",
+      "title": "Finding Your Funny Workshop",
+      "date": "2026-10-23",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/L3B-gianmarco-soresi-the-misery-loves-tour/"
     },
     {
       "id": "2026-10-23-concorde2-the-rnb-orchestra",
@@ -2433,6 +2844,26 @@
       "ticket_url": "https://www.komedia.co.uk/shows/bogan-bingo-afternoon-delight/?eid=20119"
     },
     {
+      "id": "2026-10-24-brighton-dome-shelf-the-kids-show-2",
+      "title": "SHELF: The Kids Show 2",
+      "date": "2026-10-24",
+      "venue": "Brighton Dome",
+      "time": "14:00",
+      "finish_time": "17:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/L1m-shelf-the-kids-show-2/"
+    },
+    {
+      "id": "2026-10-24-brighton-dome-live-at-brighton-dome-bleeped",
+      "title": "Live at Brighton Dome BLEEPED",
+      "date": "2026-10-24",
+      "venue": "Brighton Dome",
+      "time": "18:00",
+      "finish_time": "20:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LGp-live-at-brighton-dome-bleeped/"
+    },
+    {
       "id": "2026-10-24-concorde-2-chris-hill-s-dirty-dc-brian-bon-show",
       "title": "Chris Hill's Dirty DC - Brian & Bon Show",
       "date": "2026-10-24",
@@ -2441,6 +2872,26 @@
       "category": "Music/Club",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
       "finish_time": ""
+    },
+    {
+      "id": "2026-10-24-brighton-dome-funny-women-live-in-brighton",
+      "title": "Funny Women Live In Brighton",
+      "date": "2026-10-24",
+      "venue": "Brighton Dome",
+      "time": "20:00",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LEv-funny-women-live-in-brighton/"
+    },
+    {
+      "id": "2026-10-24-brighton-dome-sam-campbell-kid-giblet",
+      "title": "Sam Campbell: Kid Giblet",
+      "date": "2026-10-24",
+      "venue": "Brighton Dome",
+      "time": "20:00",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LTr-sam-campbell-kid-giblet/"
     },
     {
       "id": "2026-10-24-komedia-funny-women-live-in-brighton-sat-24-oct-2026-8-00-pm-doors-7-30-pm",
@@ -2481,6 +2932,36 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.theoldmarket.com/shows"
+    },
+    {
+      "id": "2026-10-24-brighton-dome-stamptown",
+      "title": "Stamptown",
+      "date": "2026-10-24",
+      "venue": "Brighton Dome",
+      "time": "21:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LJ1-stamptown/"
+    },
+    {
+      "id": "2026-10-24-brighton-dome-komedia-comedy-club",
+      "title": "Komedia Comedy Club",
+      "date": "2026-10-24",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/comedyfestival/"
+    },
+    {
+      "id": "2026-10-24-brighton-dome-make-a-fly-workshop",
+      "title": "Make a Fly Workshop",
+      "date": "2026-10-24",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/comedyfestival/"
     },
     {
       "id": "2026-10-24-shelter-hall-2026",
@@ -2544,6 +3025,16 @@
       "ticket_url": "https://www.brightonandhovealbion.com/tickets"
     },
     {
+      "id": "2026-10-25-brighton-dome-rich-wilson-to-the-cradle-from-the-rave",
+      "title": "Rich Wilson: To The Cradle, From The Rave",
+      "date": "2026-10-25",
+      "venue": "Brighton Dome",
+      "time": "15:30",
+      "finish_time": "19:00",
+      "category": "Club",
+      "ticket_url": "https://brightondome.org/whats-on/LGt-rich-wilson-to-the-cradle-from-the-rave/"
+    },
+    {
       "id": "2026-10-25-komedia-rich-wilson-to-the-cradle-from-the-rave-sun-25-oct-2026-3-30-pm-doors-3-00-pm",
       "title": "Rich Wilson: To The Cradle, From The Rave",
       "date": "2026-10-25",
@@ -2552,6 +3043,36 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.komedia.co.uk/shows/rich-wilson-to-the-cradle-from-the-rave/?eid=20223"
+    },
+    {
+      "id": "2026-10-25-brighton-dome-the-young-comedians-comedy-show",
+      "title": "The Young Comedians Comedy Show",
+      "date": "2026-10-25",
+      "venue": "Brighton Dome",
+      "time": "19:00",
+      "finish_time": "20:30",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LGk-the-young-comedians-comedy-show/"
+    },
+    {
+      "id": "2026-10-25-brighton-dome-rosie-holt-the-illegal-aliens-have-landed",
+      "title": "Rosie Holt: The Illegal Aliens Have Landed!",
+      "date": "2026-10-25",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://brightondome.org/whats-on/LEk-rosie-holt-the-illegal-aliens-have-landed/"
+    },
+    {
+      "id": "2026-10-25-brighton-dome-sooz-kempner",
+      "title": "Sooz Kempner",
+      "date": "2026-10-25",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LEh-sooz-kempner/"
     },
     {
       "id": "2026-10-25-concorde-2-gurriers",
@@ -2574,6 +3095,16 @@
       "ticket_url": "https://www.komedia.co.uk/shows/sooz-kempner/?eid=18688"
     },
     {
+      "id": "2026-10-25-brighton-dome-aurie-styla-maverick",
+      "title": "Aurie Styla: Maverick",
+      "date": "2026-10-25",
+      "venue": "Brighton Dome",
+      "time": "20:00",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/Lzu-aurie-styla-maverick/"
+    },
+    {
       "id": "2026-10-25-komedia-aurie-styla-maverick-sun-25-oct-2026-8-00-pm-doors-7-00-pm",
       "title": "Aurie Styla: Maverick",
       "date": "2026-10-25",
@@ -2582,6 +3113,46 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/aurie-styla-maverick/?eid=19365"
+    },
+    {
+      "id": "2026-10-25-brighton-dome-brighton-dome-comedy-festival-in-cahoots-with-komedia",
+      "title": "Brighton Dome Comedy Festival in cahoots with Komedia",
+      "date": "2026-10-25",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/comedyfestival/"
+    },
+    {
+      "id": "2026-10-25-brighton-dome-free-comedy-workshops-for-young-people-age-11-16",
+      "title": "Free Comedy Workshops for Young People Age 11–16",
+      "date": "2026-10-25",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LZc-free-comedy-workshops-for-young-people-age-11-16/"
+    },
+    {
+      "id": "2026-10-25-brighton-dome-sam-campbell-kid-giblet",
+      "title": "Sam Campbell: Kid Giblet",
+      "date": "2026-10-25",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/comedyfestival/"
+    },
+    {
+      "id": "2026-10-25-brighton-dome-you-might-also-like",
+      "title": "You Might Also Like",
+      "date": "2026-10-25",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/L3B-gianmarco-soresi-the-misery-loves-tour/"
     },
     {
       "id": "2026-10-25-chalk-stornoway",
@@ -2922,6 +3493,26 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-29-brighton-dome-crafty-kids-halloween-spooky-spiders-and-chatty-bats",
+      "title": "Crafty Kids: Halloween Spooky Spiders and Chatty Bats",
+      "date": "2026-10-29",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Family",
+      "ticket_url": "https://brightondome.org/whats-on/LM9-crafty-kids-seaside-adventures/"
+    },
+    {
+      "id": "2026-10-29-brighton-dome-more-crafty-kids",
+      "title": "More Crafty Kids",
+      "date": "2026-10-29",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Family",
+      "ticket_url": "https://brightondome.org/whats-on/LM9-crafty-kids-seaside-adventures/"
+    },
+    {
       "id": "2026-10-29-chalk-st-paul-the-broken-bones",
       "title": "St. Paul & The Broken Bones",
       "date": "2026-10-29",
@@ -3068,6 +3659,16 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": ""
+    },
+    {
+      "id": "2026-10-30-brighton-dome-crafty-kids-halloween-shadow-puppets",
+      "title": "Crafty Kids: Halloween Shadow Puppets",
+      "date": "2026-10-30",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Family",
+      "ticket_url": "https://brightondome.org/whats-on/LM9-crafty-kids-seaside-adventures/"
     },
     {
       "id": "2026-10-30-chalk-soil-finger-eleven-adema",
@@ -3261,6 +3862,16 @@
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
       "source_url": "https://www.concorde2.co.uk/whats-on",
       "finish_time": ""
+    },
+    {
+      "id": "2026-10-31-concorde-2-moody-disco-halloween-rave-w-obsk-r",
+      "title": "Moody Disco Halloween Rave w/ Obskür",
+      "date": "2026-10-31",
+      "venue": "Concorde 2",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Concorde-2/Moody-Disco-Halloween-Rave-w-Obskr/42622726/"
     },
     {
       "id": "2026-10-31-the-hope-ruin-penelope-isles-evening-show",
@@ -3878,6 +4489,26 @@
       "ticket_url": "https://forgecomedyclub.co.uk/"
     },
     {
+      "id": "2026-11-10-brighton-dome-the-stravinsky-connection",
+      "title": "The Stravinsky Connection",
+      "date": "2026-11-10",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/Lz1-kian-soltani-plays-dvok/"
+    },
+    {
+      "id": "2026-11-10-brighton-dome-you-might-also-like",
+      "title": "You Might Also Like",
+      "date": "2026-11-10",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/Lz1-kian-soltani-plays-dvok/"
+    },
+    {
       "id": "2026-11-10-greendoorstore-bloodsports",
       "title": "Bloodsports",
       "date": "2026-11-10",
@@ -4456,6 +5087,26 @@
       "finish_time": ""
     },
     {
+      "id": "2026-11-14-brighton-dome-juliet-romeo",
+      "title": "Juliet & Romeo",
+      "date": "2026-11-14",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Brighton-Dome-Corn-Exchange/Juliet--Romeo/42643563/"
+    },
+    {
+      "id": "2026-11-14-brighton-dome-nation",
+      "title": "Nation",
+      "date": "2026-11-14",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Brighton-Dome-Studio-Theatre/Nation/42643569/"
+    },
+    {
       "id": "2026-11-14-chalk-tropical-f-ck-storm",
       "title": "Tropical F*ck Storm",
       "date": "2026-11-14",
@@ -4607,6 +5258,16 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/maureen-younger-be-more-maureen/?eid=20048"
+    },
+    {
+      "id": "2026-11-15-brighton-dome-dido-and-aeneazz-purcell-pachelbel-and-jazz",
+      "title": "Dido and Aeneazz: Purcell, Pachelbel and Jazz",
+      "date": "2026-11-15",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/Lz1-kian-soltani-plays-dvok/"
     },
     {
       "id": "2026-11-15-patterns-aaron-rowe",
@@ -4770,6 +5431,16 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": ""
+    },
+    {
+      "id": "2026-11-18-brighton-dome-once-upon-a-time-in-sokoto",
+      "title": "Once Upon a Time in Sokoto",
+      "date": "2026-11-18",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Brighton-Dome-Corn-Exchange/Once-Upon-a-Time-in-Sokoto/42643577/"
     },
     {
       "id": "2026-11-18-chalk-seb-lowe",
@@ -5290,6 +5961,16 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/sam-browne-youll-miss-the-sunset/?eid=20329"
+    },
+    {
+      "id": "2026-11-22-brighton-dome-crafty-kids-make-a-keepsake-box",
+      "title": "Crafty Kids: Make A Keepsake Box!",
+      "date": "2026-11-22",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Family",
+      "ticket_url": "https://brightondome.org/whats-on/LM9-crafty-kids-seaside-adventures/"
     },
     {
       "id": "2026-11-22-chalk-jesca-hoop",
@@ -6625,6 +7306,16 @@
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
       "source_url": "https://www.concorde2.co.uk/whats-on",
       "finish_time": ""
+    },
+    {
+      "id": "2026-12-12-brighton-dome-paddy-young-will-sir-be-laughing-alone",
+      "title": "Paddy Young: Will Sir Be Laughing Alone?",
+      "date": "2026-12-12",
+      "venue": "Brighton Dome",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LgN-paddy-young-will-sir-be-laughing-alone/"
     },
     {
       "id": "2026-12-12-the-forge-comedy-club-festive-forge-comedy-club",
