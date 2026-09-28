@@ -7,14 +7,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "events.json"
 
-DOME_VENUES = {
-    "brighton dome",
-    "dome - concert hall",
-    "dome - corn exchange",
-    "dome - studio theatre",
-    "brighton dome - concert hall",
-}
-BEN_FOLDS_TITLE = "ben folds"
 PATTERNS_RECURRING = (
     "foundations",
     "fnky frdy",
@@ -50,14 +42,6 @@ def is_date_only_title(title):
 # two scripts can never disagree. An event is a Brighton Dome event if its venue
 # names the Dome or its id was built from a Dome venue ("-brighton-dome-").
 # The only Dome listing allowed is the Ben Folds date.
-def is_dome_event(event):
-    venue = re.sub(r"\s+", " ", str(event.get("venue") or "")).strip().lower()
-    event_id = str(event.get("id") or "").lower()
-    return venue in DOME_VENUES or "dome" in re.findall(r"[a-z]+", venue) or "-brighton-dome-" in event_id or "-dome-concert-hall-" in event_id
-
-def is_allowed_dome_event(event):
-    return "ben folds" in re.sub(r"[^a-z0-9]+", " ", str(event.get("title") or "").lower())
-
 # Venue sites sometimes append the listing date/time/doors to the title, e.g.
 # "Story Magic Fri 25 Sep 2026 10:00 AM ( Doors: 9:50 AM )". Strip that tail.
 TRAILING_DATE = re.compile(
@@ -101,13 +85,11 @@ for event in data.get("events", []):
     fix_times(event)
 events = data.get("events", [])
 kept = []
-removed = {"dome": 0, "patterns_recurring": 0, "generic": 0, "duplicates": 0}
+removed = {"patterns_recurring": 0, "generic": 0, "duplicates": 0}
 for event in events:
     venue = str(event.get("venue") or "").strip().lower()
     title = str(event.get("title") or "").strip()
     low = title.lower()
-    if is_dome_event(event) and not is_allowed_dome_event(event):
-        removed["dome"] += 1; continue
     if venue == "patterns" and any(marker in low for marker in PATTERNS_RECURRING):
         removed["patterns_recurring"] += 1; continue
     if low in GENERIC_TITLES or is_date_only_title(title) or not title:

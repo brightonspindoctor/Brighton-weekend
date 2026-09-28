@@ -1,0 +1,7 @@
+{
+  "description": "Upcoming events that must be discoverable while they remain in the publication window.",
+  "events": [
+    {"title_contains": "stevie martin", "date": "2026-10-17", "venue": "Brighton Dome"},
+    {"title_contains": "paddy young", "date": "2026-12-12", "venue": "Brighton Dome"}
+  ]
+}

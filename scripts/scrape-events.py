@@ -178,7 +178,7 @@ async def scrape_detail_urls(browser,venue,urls):
 async def scrape_source(browser,source):
     html,final,err=await get_html(browser,source['url'])
     if err:return [],err
-    venue=source['venue'];is_dome_search='brightondome.org/search/' in source['url']
+    venue=source['venue'];is_dome_search='brightondome.org' in source['url']
     events=jsonld_events(html,venue,final)
     events.extend(dom_events(html,venue,final,detail_only=is_dome_search))
     if venue=='Brighton Dome':

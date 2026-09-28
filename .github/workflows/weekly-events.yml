@@ -48,6 +48,8 @@ jobs:
         run: python scripts/prepare-events.py
       - name: Validate event data
         run: python scripts/validate-events.py
+      - name: Validate critical event coverage
+        run: python scripts/validate-required-events.py
       - name: Commit updated events file
         run: |
           git config user.name 'Brighton Weekend event scraper'
