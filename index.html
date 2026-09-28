@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://zqvccsnfrkrtcsitfwcd.supabase.co wss://zqvccsnfrkrtcsitfwcd.supabase.co; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="application-name" content="Brighton Weekend">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -711,7 +712,7 @@ async function loadGroupHappenings(){
  updateHappeningsBadge();
 }
 function trackVisitor(){
- api('POST','app_visitors',{user_id:uid(),display_name:name()},{'Prefer':'resolution=merge-duplicates,return=minimal'}).catch(()=>{});
+ api('POST','rpc/bw_track_visit',{}).catch(()=>{}); // records this visit for the admin dashboard (v53)
 }
 
 function renderOnboardingGroups(){
@@ -1189,7 +1190,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=52', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=53', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
