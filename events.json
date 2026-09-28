@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-27",
-  "range_start": "2026-09-27",
-  "range_end": "2027-07-04",
+  "updated": "2026-09-28",
+  "range_start": "2026-09-28",
+  "range_end": "2027-07-05",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -26,91 +26,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-09-27-green-door-store-234-fest-2026",
-      "title": "234 Fest 2026",
-      "date": "2026-09-27",
-      "venue": "Green Door Store",
-      "time": "13:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-27-concorde-2-feng",
-      "title": "Feng",
-      "date": "2026-09-27",
-      "venue": "Concorde 2",
-      "time": "19:00",
-      "category": "Music/Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-27-the-forge-comedy-club-jeff-innocent-work-in-progress",
-      "title": "Jeff Innocent: Work In Progress",
-      "date": "2026-09-27",
-      "venue": "The Forge Comedy Club",
-      "time": "19:00",
-      "finish_time": "21:00",
-      "category": "Comedy",
-      "status": "SOLD OUT",
-      "ticket_url": "https://forgecomedyclub.co.uk/brighton-comedy-shows/"
-    },
-    {
-      "id": "2026-09-27-the-old-market-dominic-miller",
-      "title": "Dominic Miller",
-      "date": "2026-09-27",
-      "venue": "The Old Market",
-      "time": "19:00",
-      "finish_time": "22:00",
-      "category": "Music",
-      "ticket_url": "https://www.theoldmarket.com/shows"
-    },
-    {
-      "id": "2026-09-27-brightoncentre-anastacia-acrobvt",
-      "title": "Anastacia ACROBVT",
-      "date": "2026-09-27",
-      "venue": "Brighton Centre",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://brightoncentre.co.uk/",
-      "source_url": "https://brightoncentre.co.uk/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-27-brighton-centre-don-t-miss",
-      "title": "Don't Miss",
-      "date": "2026-09-27",
-      "venue": "Brighton Centre",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://brightoncentre.co.uk/"
-    },
-    {
-      "id": "2026-09-27-quarters-shy-fx",
-      "title": "Shy FX",
-      "date": "2026-09-27",
-      "venue": "Quarters",
-      "category": "Club",
-      "time": "",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson",
-      "source_url": "https://quartersbrighton.co.uk/whatson",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-27-the-prince-albert-carp-bliss-pit-hoverdonkey",
-      "title": "Carp! / Bliss Pit / HOVERDONKEY",
-      "date": "2026-09-27",
-      "venue": "The Prince Albert",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
-    },
     {
       "id": "2026-09-28-komedia-nlca-comedy-night-mon-28-sep-2026-8-00-pm-doors-7-30-pm",
       "title": "NLCA Comedy Night",
@@ -9244,6 +9159,16 @@
       "date": "2027-07-03",
       "venue": "Komedia",
       "time": "19:00",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
+      "id": "2027-07-05-komedia-komedia-comedy-club",
+      "title": "Komedia Comedy Club",
+      "date": "2027-07-05",
+      "venue": "Komedia",
+      "time": "20:00",
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/whats-on/"
