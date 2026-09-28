@@ -1,0 +1,57 @@
+name: One-off repo clean-up
+# Removes leftover files from earlier versions (none are used by the app) and
+# moves the two SQL records into a supabase/ folder. Running it again does
+# nothing. You can delete this file afterwards.
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/cleanup-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Remove leftover files
+        run: |
+          remove() { for f in "$@"; do if [ -e "$f" ]; then git rm -q -- "$f" && echo "removed $f"; fi; done; }
+          # Stray copies from earlier uploads (index (2).html is an old, publicly reachable copy of the app)
+          remove "index (2).html" app.css app.js head.txt
+          # Unused old icons
+          remove apple-touch-icon-v29.png apple-touch-icon-v40.png apple-touch-icon-v41.png
+          # Old notes, changelogs and test reports
+          remove CHANGELOG-v26.txt CHANGELOG-v27.txt CHANGELOG-v28.txt CHANGELOG-v29.txt CHANGELOG-v30.txt \
+                 CHANGELOG-v31.txt CHANGELOG-v32.txt CHANGELOG-v33.txt CHANGELOG-v34.txt
+          remove DESIGN-SYSTEM-v41.md EVENT-DATA-SOURCES-v30.md EVENT-DATA-SOURCES-v46.md EVENT-DATA-SOURCES-v47.md \
+                 GOOGLE-BRANDING-v40.md GOOGLE-SETUP-v39.md LOGO-FIX-v43.md LOGO-SETTINGS-v44.md README-v37.md README-v38.md
+          remove TEST-REPORT-v33.md TEST-REPORT-v34.md TEST-REPORT-v35.md TEST-REPORT-v36.md TEST-REPORT-v37.md TEST-REPORT-v41.md
+          # Superseded database scripts (they also published details of the database setup)
+          remove supabase-custom-events-v30.sql supabase-groups-v20.sql supabase-happenings-v28.sql supabase-happenings-v29.sql \
+                 supabase-v31-complete.sql supabase-v31-repair.sql supabase-v33-bought-fix.sql supabase-v34-bought-happenings-fix.sql \
+                 supabase-v35-bought-happenings.sql supabase-v36-bought-happenings.sql supabase-v37-auth.sql
+          # Keep the current database records, in their own folder
+          mkdir -p supabase
+          for f in v48-security-hardening.sql v49-happenings-responses.sql; do
+            if [ -e "$f" ]; then git mv -- "$f" "supabase/$f" && echo "moved $f to supabase/"; fi
+          done
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --cached --quiet; then
+            echo "Nothing left to clean up."
+            exit 0
+          fi
+          git commit -m "Remove leftover files from earlier versions"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
