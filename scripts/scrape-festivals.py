@@ -35,6 +35,14 @@ def norm(s):
     return re.sub(r"[^a-z0-9]+"," ",s).strip()
 def parse_date_range(text, default_year):
     text=clean(text)
+    cross=re.search(rf"\b(\d{{1,2}})(?:st|nd|rd|th)?\s+({MONTHS})\s*[–-]\s*(\d{{1,2}})(?:st|nd|rd|th)?\s+({MONTHS})(?:\s+(\d{{4}}))?\b",text,re.I)
+    if cross:
+        year=int(cross.group(5) or default_year)
+        try:
+            d1=dateparser.parse(f"{cross.group(1)} {cross.group(2)} {year}",dayfirst=True).date()
+            d2=dateparser.parse(f"{cross.group(3)} {cross.group(4)} {year}",dayfirst=True).date()
+            if d1 and d2:return d1,d2
+        except Exception: pass
     m=re.search(rf"\b(\d{{1,2}})(?:st|nd|rd|th)?\s*[–-]\s*(\d{{1,2}})(?:st|nd|rd|th)?\s+(?:{MONTHS})(?:\s+(\d{{4}}))?\b",text,re.I)
     if m:
         raw=m.group(0)
