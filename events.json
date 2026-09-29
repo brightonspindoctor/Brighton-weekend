@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-28",
-  "range_start": "2026-09-28",
-  "range_end": "2027-07-05",
+  "updated": "2026-09-29",
+  "range_start": "2026-09-29",
+  "range_end": "2027-07-06",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -27,88 +27,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-09-28-brighton-dome-how-geography-explains-our-world-with-tim-marshall",
-      "title": "How Geography Explains Our World, with Tim Marshall",
-      "date": "2026-09-28",
-      "venue": "Brighton Dome",
-      "time": "19:00",
-      "finish_time": "23:00",
-      "category": "Talk",
-      "ticket_url": "https://brightondome.org/whats-on/L2K-how-geography-explains-our-world-with-tim-marshall/"
-    },
-    {
-      "id": "2026-09-28-komedia-nlca-comedy-night-mon-28-sep-2026-8-00-pm-doors-7-30-pm",
-      "title": "NLCA Comedy Night",
-      "date": "2026-09-28",
-      "venue": "Komedia",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://www.komedia.co.uk/shows/nlca-comedy-night-2/?eid=20704"
-    },
-    {
-      "id": "2026-09-28-brighton-racecourse-buy-ticket",
-      "title": "Buy Ticket",
-      "date": "2026-09-28",
-      "venue": "Brighton Racecourse",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.brighton-racecourse.co.uk/whats-on/monday-afternoon-september-flat-racing-2026"
-    },
-    {
-      "id": "2026-09-28-brighton-racecourse-home",
-      "title": "Home",
-      "date": "2026-09-28",
-      "venue": "Brighton Racecourse",
-      "time": "",
-      "finish_time": "",
-      "category": "Sport",
-      "ticket_url": "https://www.brighton-racecourse.co.uk/"
-    },
-    {
-      "id": "2026-09-28-brighton-racecourse-monday-afternoon-september-flat-racing-2026-monday-28-september-2026",
-      "title": "Monday Afternoon - September Flat Racing 2026",
-      "date": "2026-09-28",
-      "venue": "Brighton Racecourse",
-      "time": "",
-      "finish_time": "",
-      "category": "Family",
-      "ticket_url": "https://www.brighton-racecourse.co.uk/whats-on/monday-afternoon-september-flat-racing-2026"
-    },
-    {
-      "id": "2026-09-28-brighton-racecourse-whats-on",
-      "title": "Whats On",
-      "date": "2026-09-28",
-      "venue": "Brighton Racecourse",
-      "time": "",
-      "finish_time": "",
-      "category": "Sport",
-      "ticket_url": "https://www.brighton-racecourse.co.uk/whats-on"
-    },
-    {
-      "id": "2026-09-28-chalk-coming-soon",
-      "title": "Coming Soon",
-      "date": "2026-09-28",
-      "venue": "CHALK",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/"
-    },
-    {
-      "id": "2026-09-28-the-prince-albert-frankcastre-audio-june-la-luna",
-      "title": "Frankcastre Audio / June / La Luna",
-      "date": "2026-09-28",
-      "venue": "The Prince Albert",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
-    },
     {
       "id": "2026-09-29-green-door-store-noize-magazine-vol-3-launch-ft-milkmaiden-more",
       "title": "Noize Magazine Vol. 3 Launch ft Milkmaiden + more",
@@ -1064,6 +982,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-10-brighton-dome-woodhill",
+      "title": "Woodhill",
+      "date": "2026-10-10",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://brightondome.org/whats-on/L1o-man-or-bear/"
+    },
+    {
       "id": "2026-10-10-chalk-devotchka",
       "title": "DeVotchKa",
       "date": "2026-10-10",
@@ -1994,6 +1922,16 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/comedyfestival/"
+    },
+    {
+      "id": "2026-10-17-chalk-the-tumbling-paddies",
+      "title": "The Tumbling Paddies",
+      "date": "2026-10-17",
+      "venue": "CHALK",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Chalk-Brighton/The-Tumbling-Paddies/41654513/"
     },
     {
       "id": "2026-10-17-greendoorstore-bishopskin",
@@ -6500,6 +6438,16 @@
       "ticket_url": "https://www.brightonandhovealbion.com/tickets"
     },
     {
+      "id": "2026-11-28-brighton-dome-famehungry",
+      "title": "Famehungry",
+      "date": "2026-11-28",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Brighton-Dome-Studio-Theatre/Famehungry/42643584/"
+    },
+    {
       "id": "2026-11-28-chalk-death-in-vegas",
       "title": "Death In Vegas",
       "date": "2026-11-28",
@@ -6617,6 +6565,16 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/a-l-p-h-a-b-e-t"
+    },
+    {
+      "id": "2026-11-29-brighton-racecourse-antiques-vintage-fair-by-love-fairs",
+      "title": "Antiques & Vintage Fair by Love Fairs",
+      "date": "2026-11-29",
+      "venue": "Brighton Racecourse",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.brighton-racecourse.co.uk/whats-on/antiques-vintage-fair-by-love-fairs-sunday-29th-november-2026"
     },
     {
       "id": "2026-11-29-the-prince-albert-the-amber-squad-the-sleepers-sweet-jonny",
@@ -7140,6 +7098,16 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "time": "",
       "finish_time": ""
+    },
+    {
+      "id": "2026-12-10-brighton-dome-fire-fire-by-john-webber",
+      "title": "Fire Fire by John Webber",
+      "date": "2026-12-10",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://brightondome.org/whats-on/L1o-man-or-bear/"
     },
     {
       "id": "2026-12-10-komedia-komedia-christmas-party",
@@ -9753,6 +9721,16 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/michael-akadiri-dont-call-me-uncle/?eid=20514"
+    },
+    {
+      "id": "2027-06-03-brighton-centre-will-young",
+      "title": "Will Young",
+      "date": "2027-06-03",
+      "venue": "Brighton Centre",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://brightoncentre.co.uk/"
     },
     {
       "id": "2027-06-06-komedia-record-fair",
