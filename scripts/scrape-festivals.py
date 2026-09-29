@@ -218,8 +218,37 @@ def extract_efestivals(html,url):
             if candidate and len(candidate)<180: location=candidate
         ticket=urljoin(url,a["href"])
         if not ticket or not re.search(r"/festivals/[^/]+/|tickets|ticket", a.get("href",""), re.I): continue
-        out.append({"title":title,"date":d.isoformat(),"date_end":(date_end or d).isoformat(),"location":location,"category":"Music","ticket_url":ticket,"source":url})
+        out.append({"title":title,"date":d.isoformat(),"date_end":(date_end or d).isoformat(),"location":location,"category":"Music","ticket_url":ticket,"source":url,"detail_url":ticket})
     return out
+async def validate_candidate(browser,e):
+    url=e.get("detail_url") or e.get("ticket_url")
+    if not url or not re.match(r"^https?://",url,re.I): return False
+    page=await browser.new_page()
+    page.set_default_timeout(15000)
+    try:
+        response=await page.goto(url,wait_until="domcontentloaded",timeout=20000)
+        if not response or response.status >= 400: return False
+        try: await page.wait_for_load_state("networkidle",timeout=5000)
+        except PlaywrightTimeoutError: pass
+        body=clean(await page.locator("body").inner_text())
+        title_norm=norm(e["title"])
+        body_norm=norm(body)
+        title_words=[w for w in title_norm.split() if len(w)>2]
+        if not title_words or sum(w in body_norm.split() for w in title_words) < max(1,min(3,len(title_words))):
+            return False
+        d=date.fromisoformat(e["date"])
+        date_tokens=(d.strftime("%d %B %Y"),d.strftime("%-d %B %Y"),d.strftime("%d %b %Y"),d.strftime("%-d %b %Y"))
+        if not any(norm(x) in body_norm for x in date_tokens):
+            parsed_start,_=parse_date_range(body,TODAY.year)
+            if parsed_start != d: return False
+        if is_brighton_location(e["location"]) and not is_brighton_location(body):
+            return False
+        return True
+    except Exception:
+        return False
+    finally:
+        await page.close()
+
 def merge(items):
     chosen=[]
     for e in sorted(items,key=lambda x:(x["date"],x["title"])):
@@ -300,7 +329,12 @@ async def main():
                     print("eFestivals failed:",url,exc)
         finally:
             await browser.close()
-    festivals=merge(items)
+    validated=[]
+    for e in items:
+        if await validate_candidate(browser,e):
+            validated.append(e)
+    print(f"Validated {len(validated)} of {len(items)} scraped candidates.")
+    festivals=merge(validated)
     OUT.write_text(json.dumps({"updated":TODAY.isoformat(),"range_start":TODAY.isoformat(),"range_end":END.isoformat(),"sources":["VisitBrighton","Brighton Scoop","Fezzy","eFestivals"],"festivals":festivals},ensure_ascii=False,indent=2)+"\n")
-    print(f"Published {len(festivals)} unique festivals from {len(items)} candidates.")
+    print(f"Published {len(festivals)} unique validated festivals.")
 if __name__=="__main__": asyncio.run(main())
