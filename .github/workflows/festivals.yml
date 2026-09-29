@@ -1,0 +1,54 @@
+name: Daily festival refresh
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/scrape-festivals.py'
+      - 'scripts/validate-festivals.py'
+      - 'requirements-events.txt'
+      - '.github/workflows/festivals.yml'
+  schedule:
+    - cron: '37 7 * * *'
+      timezone: 'Europe/London'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-festival-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-festivals:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Brighton Weekend
+        uses: actions/checkout@v5
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements-events.txt
+      - name: Install scraper dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-events.txt
+          python -m playwright install --with-deps chromium
+      - name: Refresh festival data
+        run: python scripts/scrape-festivals.py
+      - name: Validate festival data
+        run: python scripts/validate-festivals.py
+      - name: Commit updated festival data
+        run: |
+          git config user.name 'Brighton Weekend festival scraper'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add festivals.json
+          if git diff --cached --quiet; then
+            echo 'No festival data changes this run.'
+            exit 0
+          fi
+          git commit -m 'Refresh festival data'
+          git push origin HEAD:main
