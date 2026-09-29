@@ -342,16 +342,16 @@ async def main():
                     print("eFestivals",url,"candidates:",len(found))
                 except Exception as exc:
                     print("eFestivals failed:",url,exc)
+        sem=asyncio.Semaphore(8)
+        async def checked(e):
+            async with sem:
+                return e if await validate_candidate(browser,e) else None
+        checked_items=await asyncio.gather(*(checked(e) for e in items))
+        validated=[e for e in checked_items if e]
+        print(f"Validated {len(validated)} of {len(items)} scraped candidates.")
+        festivals=merge(validated)
+        OUT.write_text(json.dumps({"updated":TODAY.isoformat(),"range_start":TODAY.isoformat(),"range_end":END.isoformat(),"sources":["VisitBrighton","Brighton Scoop","Fezzy","eFestivals"],"festivals":festivals},ensure_ascii=False,indent=2)+"\n")
+        print(f"Published {len(festivals)} unique validated festivals.")
         finally:
             await browser.close()
-    sem=asyncio.Semaphore(8)
-    async def checked(e):
-        async with sem:
-            return e if await validate_candidate(browser,e) else None
-    checked_items=await asyncio.gather(*(checked(e) for e in items))
-    validated=[e for e in checked_items if e]
-    print(f"Validated {len(validated)} of {len(items)} scraped candidates.")
-    festivals=merge(validated)
-    OUT.write_text(json.dumps({"updated":TODAY.isoformat(),"range_start":TODAY.isoformat(),"range_end":END.isoformat(),"sources":["VisitBrighton","Brighton Scoop","Fezzy","eFestivals"],"festivals":festivals},ensure_ascii=False,indent=2)+"\n")
-    print(f"Published {len(festivals)} unique validated festivals.")
 if __name__=="__main__": asyncio.run(main())
