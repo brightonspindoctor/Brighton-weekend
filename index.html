@@ -146,6 +146,11 @@ header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1
 .ticket{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:9px 13px;border-radius:var(--bw-radius-sm);background:var(--bw-coral);color:var(--bw-coral-ink);font-size:var(--bw-text-sm);font-weight:800;text-decoration:none}
 .ticket::before{content:"🎟";font-size:13px}
 
+/* Festivals */
+.festival-card{margin:9px 0}
+.festival-card .festival-location{font-size:var(--bw-text-sm);line-height:1.4;font-weight:500;color:var(--bw-muted);margin-top:5px}
+.festival-card .festival-actions{margin-top:12px}
+
 /* Social summary chips */
 .people{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:11px}
 .social-chip{display:inline-flex;align-items:center;gap:5px;padding:4px 8px 4px 4px;border-radius:var(--bw-radius-pill);background:#153443;border:1px solid #285365;color:#D9E7E7;font-size:var(--bw-text-xs);font-weight:500;line-height:1}
@@ -403,6 +408,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 </div></header>
 
 <main id="discover" class="wrap app-main"></main>
+<main id="festivalTab" class="wrap app-main hidden"><div class="section-head"><h2>Festivals</h2><div class="note">Upcoming festivals in Brighton &amp; nearby over the next year.</div></div><div id="festivalList"></div></main>
 <main id="comedyTab" class="wrap app-main hidden">
   <div class="section-head">
     <h2>Comedy</h2>
@@ -457,7 +463,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <div class="settings-card install-area"><h3>Install the app</h3><button id="installApp" class="btn btn-primary install-btn">↓ Add Brighton Weekend to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
 <div class="settings-links"><a href="about.html" target="_blank" rel="noopener">About</a><a href="privacy.html" target="_blank" rel="noopener">Privacy</a><a href="terms.html" target="_blank" rel="noopener">Terms</a></div>
 </main>
-<nav class="nav" aria-label="Main"><button class="active" data-tab="discover"><span class="nav-icon">♬</span> Discover</button><button data-tab="comedyTab"><span class="nav-icon">☻</span> Comedy</button><button data-tab="searchTab"><span class="nav-icon">⌕</span> Search</button><button data-tab="peopleTab"><span class="nav-icon">♡</span> Happenings</button><button data-tab="venuesTab"><span class="nav-icon">⚙</span> Settings</button></nav>
+<nav class="nav" aria-label="Main"><button class="active" data-tab="discover"><span class="nav-icon">♬</span> Discover</button><button data-tab="festivalTab"><span class="nav-icon">✦</span> Festivals</button><button data-tab="comedyTab"><span class="nav-icon">☻</span> Comedy</button><button data-tab="searchTab"><span class="nav-icon">⌕</span> Search</button><button data-tab="peopleTab"><span class="nav-icon">♡</span> Happenings</button><button data-tab="venuesTab"><span class="nav-icon">⚙</span> Settings</button></nav>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script id="bw-app">
@@ -476,7 +482,7 @@ const PROFILE_ICONS=['fox','badger','otter','hedgehog','squirrel','rabbit','deer
 const PROFILE_LABELS={'fox':'Fox','badger':'Badger','otter':'Otter','hedgehog':'Hedgehog','squirrel':'Squirrel','rabbit':'Rabbit','deer':'Deer','seagull':'Seagull','pigeon':'Pigeon','kingfisher':'Kingfisher','owl':'Owl','raven':'Raven','cat':'Cat','dog':'Dog','dolphin':'Dolphin','shark':'Shark','whale':'Whale','octopus':'Octopus','crab':'Crab','starfish':'Starfish','butterfly':'Butterfly','dragonfly':'Dragonfly','ladybird':'Ladybird','moth':'Moth','beetle':'Beetle','spider':'Spider','praying-mantis':'Praying Mantis','grasshopper':'Grasshopper','firefly':'Firefly','snail':'Snail','ant':'Ant','wasp':'Wasp','fly':'Fly','cicada':'Cicada','caterpillar':'Caterpillar','stick-insect':'Stick Insect','shield-bug':'Shield Bug','moth-pink':'Moth','mushroom':'Mushroom','clover':'Clover','fern':'Fern','sunflower':'Sunflower','lavender':'Lavender','oak-leaf':'Oak Leaf','cherry-blossom':'Cherry Blossom','holly':'Holly','pine-tree':'Pine Tree','bonsai':'Bonsai'};
 const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","The Hope & Ruin","The Prince Albert","A L P H A B E T","The Pipeline","Brighton Racecourse","The Gladstone","Babble","Old Albion","Amex Stadium","Shelter Hall","Other"];const COMEDY_VENUES=["Brighton Centre","Brighton Dome","The Old Market","Komedia","The Forge Comedy Club","Theatre Royal Brighton"];const VENUE_ALIASES={"Brighton Dome - Concert Hall":"Brighton Dome"};
 const $=id=>document.getElementById(id);
-let events=[], attendance=[], groupHappenings=[], groups=[], groupMembers=[], customEvents=[];
+let events=[], festivals=[], attendance=[], groupHappenings=[], groups=[], groupMembers=[], customEvents=[];
 const savedVenues=JSON.parse(localStorage.getItem('bw_venues')||'null');
 // Persist venue preferences exactly as the user selected them. Do not merge newly added venues into an existing saved list.
 let enabled=Array.isArray(savedVenues)?Array.from(new Set(savedVenues.filter(v=>VENUES.includes(v)))):VENUES.slice();
@@ -584,7 +590,7 @@ async function bootstrapAuthed(){
 }
 function dateKey(d){const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`}
 function parseEventDate(value){if(!/^\d{4}-\d{2}-\d{2}$/.test(value||''))return null;const d=new Date(value+'T12:00:00');return Number.isNaN(d.getTime())?null:d}
-function renderAll(){render();renderComedy();renderPeople();renderSearch();}
+function renderAll(){render();renderFestivals();renderComedy();renderPeople();renderSearch();}
 // Weeks run Monday to Sunday. On a Saturday or Sunday the current week is still shown.
 function getMonday(from=new Date()){const d=new Date(from);d.setHours(12,0,0,0);d.setDate(d.getDate()-((d.getDay()+6)%7));return d}
 let weekStart=getMonday();
@@ -898,6 +904,9 @@ function isComedy(e){
  const hay=[e.category,e.type,e.genre,e.tags,e.title,e.description].filter(Boolean).join(' ').toLowerCase();
  return /\b(comedy|comedian|stand.?up|standup|improv|improvisation|sketch|open mic comedy)\b/.test(hay);
 }
+function formatFestivalDate(f){const start=parseEventDate(f.start_date),end=parseEventDate(f.end_date);if(!start||!end)return '';if(start.getTime()===end.getTime())return start.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});const sameMonth=start.getFullYear()===end.getFullYear()&&start.getMonth()===end.getMonth();return sameMonth?start.toLocaleDateString('en-GB',{day:'numeric'})+'–'+end.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'}):start.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})+' – '+end.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});}
+function festivalCard(f){const ticket=safeUrl(f.ticket_url);return `<article class="card festival-card"><div class="card-date">${esc(formatFestivalDate(f))}</div><div class="top"><div><div class="title">${esc(f.title)}</div><div class="festival-location">${esc(f.location)}</div></div></div><div class="actions festival-actions">${ticket?`<a class="ticket" href="${esc(ticket)}" target="_blank" rel="noopener">Tickets ↗</a>`:''}</div></article>`;}
+function renderFestivals(){const box=$('festivalList');if(!box)return;const today=parseEventDate(todayKey()),limit=new Date(today);limit.setFullYear(limit.getFullYear()+1);const list=festivals.filter(f=>{const d=parseEventDate(f.start_date);return d&&d>=today&&d<=limit}).sort((a,b)=>String(a.start_date).localeCompare(String(b.start_date)));box.innerHTML=list.length?list.map(festivalCard).join(''):'<div class="empty">No festival dates are currently listed for the next year.</div>';}
 function renderComedy(){
  const days=weekDays();
  const html=days.map(day=>{
@@ -1003,6 +1012,8 @@ async function refresh(){
  }
 }
 
+async function refreshFestivals(){try{const response=await fetch('festivals.json?refresh='+Date.now(),{cache:'no-store'});if(!response.ok)throw new Error(`Festivals feed returned ${response.status}`);const j=await response.json();const incoming=Array.isArray(j.festivals)?j.festivals:[];const seen=new Set(),cleaned=[];for(const f of incoming){if(!f||!f.id||seen.has(f.id)||!f.title||!f.start_date||!f.end_date||!parseEventDate(f.start_date)||!parseEventDate(f.end_date))continue;seen.add(f.id);cleaned.push(f);}festivals=cleaned;renderFestivals();return {ok:true,count:festivals.length};}catch(e){console.warn('Festivals refresh failed',e);festivals=[];renderFestivals();return {ok:false,error:e};}}
+
 // ---- Search ----
 let searchMode='venue';const searchVenues=new Set();
 function populateSearchVenues(){
@@ -1093,12 +1104,13 @@ $('customVenue').innerHTML='<option value="">Choose a venue…</option>'+VENUES.
 $('customVenue').onchange=toggleOtherVenue;
 $('toggleCustomEvent').onclick=()=>{const panel=$('customEventPanel');const open=panel.classList.toggle('collapsed')===false;$('toggleCustomEvent').textContent=open?'− Hide form':'＋ Add event';if(open) setTimeout(()=>$('customTitle').focus(),50)};
 $('addCustomEventBtn').onclick=addCustomEvent;
-const TABS=['discover','comedyTab','searchTab','peopleTab','venuesTab'];
+const TABS=['discover','festivalTab','comedyTab','searchTab','peopleTab','venuesTab'];
 document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{
  document.querySelectorAll('.nav button').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-current',x===b?'page':'false')});
  TABS.forEach(id=>$(id).classList.toggle('hidden',id!==b.dataset.tab));
  document.querySelector('header .controls').classList.toggle('hidden',['searchTab','venuesTab','peopleTab'].includes(b.dataset.tab));
  window.scrollTo(0,0);
+ if(b.dataset.tab==='festivalTab')renderFestivals();
  if(b.dataset.tab==='comedyTab')renderComedy();
  if(b.dataset.tab==='searchTab'){populateSearchVenues();renderSearch()}
  if(b.dataset.tab==='peopleTab'){renderPeople();markHappeningsSeen();updateHappeningsBadge()}
@@ -1181,8 +1193,10 @@ async function loadUserData(){
 (async()=>{
  renderVenues(); renderAll();
  const eventsLoaded=refresh();
+ const festivalsLoaded=refreshFestivals();
  try{await initAuth();}catch(e){console.error('Auth init failed',e);showWelcome('auth')}
  await eventsLoaded;
+ await festivalsLoaded;
  await loadUserData();
 })();
 })();

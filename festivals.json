@@ -1,0 +1,109 @@
+{
+  "updated": "2026-09-29",
+  "festivals": [
+    {
+      "id": "mutations-2026",
+      "title": "Mutations Festival",
+      "start_date": "2026-10-23",
+      "end_date": "2026-10-24",
+      "location": "Various venues, Brighton",
+      "ticket_url": "https://mutationsfestival.com/"
+    },
+    {
+      "id": "brighton-dome-comedy-festival-2026",
+      "title": "Brighton Dome Comedy Festival",
+      "start_date": "2026-10-16",
+      "end_date": "2026-10-25",
+      "location": "Brighton Dome & Komedia, Brighton",
+      "ticket_url": "https://brightondome.org/comedyfestival/"
+    },
+    {
+      "id": "brighton-wine-festival-2026",
+      "title": "Brighton Wine Festival",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-05",
+      "location": "Brighton Dome, Brighton",
+      "ticket_url": "https://brightonwinefestival.co.uk/"
+    },
+    {
+      "id": "brighton-tattoo-convention-2027",
+      "title": "Brighton Tattoo Convention",
+      "start_date": "2027-02-27",
+      "end_date": "2027-02-28",
+      "location": "Brighton Centre, Brighton",
+      "ticket_url": "https://www.brightontattoo.com/"
+    },
+    {
+      "id": "brighton-festival-2027",
+      "title": "Brighton Festival",
+      "start_date": "2027-05-01",
+      "end_date": "2027-05-23",
+      "location": "Venues across Brighton & Hove",
+      "ticket_url": "https://brightonfestival.org/"
+    },
+    {
+      "id": "brighton-fringe-2027",
+      "title": "Brighton Fringe",
+      "start_date": "2027-05-07",
+      "end_date": "2027-06-06",
+      "location": "Venues across Brighton & Hove",
+      "ticket_url": "https://www.brightonfringe.org/"
+    },
+    {
+      "id": "great-escape-2027",
+      "title": "The Great Escape",
+      "start_date": "2027-05-12",
+      "end_date": "2027-05-15",
+      "location": "Various venues, Brighton",
+      "ticket_url": "https://www.greatescapefestival.com/buy-festival-tickets/"
+    },
+    {
+      "id": "land-beyond-2027",
+      "title": "Land Beyond Festival",
+      "start_date": "2027-05-30",
+      "end_date": "2027-05-30",
+      "location": "East Brighton Park, Brighton",
+      "ticket_url": "https://www.landbeyondfestival.co.uk/"
+    },
+    {
+      "id": "glorious-day-2027",
+      "title": "Glorious Day Festival",
+      "start_date": "2027-06-05",
+      "end_date": "2027-06-05",
+      "location": "Hove Lawns, Hove",
+      "ticket_url": "https://gloriousdayfestival.co.uk/"
+    },
+    {
+      "id": "love-supreme-2027",
+      "title": "Love Supreme Jazz Festival",
+      "start_date": "2027-07-02",
+      "end_date": "2027-07-04",
+      "location": "Glynde Place, East Sussex",
+      "ticket_url": "https://lovesupremefestival.com/tickets/"
+    },
+    {
+      "id": "plumpton-revival-2027",
+      "title": "Plumpton Revival",
+      "start_date": "2027-08-07",
+      "end_date": "2027-08-08",
+      "location": "Plumpton Racecourse, East Sussex",
+      "ticket_url": "https://plumptonrevival.co.uk/tickets"
+    },
+    {
+      "id": "brighton-mod-weekender-2027",
+      "title": "Brighton Mod Weekender",
+      "start_date": "2027-08-27",
+      "end_date": "2027-08-30",
+      "location": "Various venues, Brighton",
+      "ticket_url": "https://www.newuntouchables.com/brighton-mod-weekender/"
+    },
+    {
+      "id": "brighton-psych-fest-2027",
+      "title": "Brighton Psych Fest",
+      "start_date": "2027-09-04",
+      "end_date": "2027-09-04",
+      "location": "Multiple venues, Brighton",
+      "ticket_url": "https://brightonpsychfest.com/"
+    }
+  ]
+}
