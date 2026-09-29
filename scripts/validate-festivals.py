@@ -14,7 +14,7 @@ except Exception: raise SystemExit("invalid festival date range")
 if end!=date(start.year+1,12,31): raise SystemExit("festival range must end on 31 December of the following calendar year")
 ids=set(); keys=set(); errors=[]
 for i,f in enumerate(festivals):
-    for k in ("id","title","date","date_end","location","category","ticket_url"):
+    for k in ("id","title","date","date_end","location","category","ticket_url","detail_url"):
         if not f.get(k): errors.append(f"{i}: missing {k}")
     try: d=date.fromisoformat(str(f.get("date")))
     except Exception: errors.append(f"{i}: invalid date"); continue
@@ -27,6 +27,9 @@ for i,f in enumerate(festivals):
     if key in keys: errors.append(f"duplicate title/date {f.get('title')} {d}")
     keys.add(key)
     if f.get("category") not in {"Music","Arts & Culture","Food & Drink","Family","Wellness","Comedy","Film","Sport & Outdoor","Other"}: errors.append(f"{f.get('id')}: invalid category")
+    bad_titles={"read more","read less","places to stay","next","previous","list view","map view","grid view","plan your visit","things to do","what's on","work with us","submit event","site map","skip to main content","sign up for e-newsletter","translate","media"}
+    if str(f.get("title","")).strip().lower() in bad_titles: errors.append(f"{f.get('id')}: navigation title")
+    if "@" in str(f.get("title","")): errors.append(f"{f.get('id')}: email-like title")
 if errors:
     print("\n".join(errors[:50]),file=sys.stderr); raise SystemExit(1)
 print(f"Validated {len(festivals)} festivals from {start} to {end}.")
