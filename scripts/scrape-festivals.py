@@ -33,15 +33,25 @@ def clean(s): return re.sub(r"\s+"," ",str(s or "")).strip()
 def norm(s):
     s=re.sub(r"\b(?:19|20)\d{2}\b","",clean(s).lower())
     return re.sub(r"[^a-z0-9]+"," ",s).strip()
-def parse_date(text, default_year):
+def parse_date_range(text, default_year):
     text=clean(text)
+    m=re.search(rf"\\b(\\d{{1,2}})(?:st|nd|rd|th)?\\s*[–-]\\s*(\\d{{1,2}})(?:st|nd|rd|th)?\\s+(?:{MONTHS})(?:\\s+(\\d{{4}}))?\\b",text,re.I)
+    if m:
+        raw=m.group(0)
+        try:
+            d1=dateparser.parse(raw,dayfirst=True,default=datetime(default_year,1,1),fuzzy=True)
+            month=re.search(rf"(?:{MONTHS})",raw,re.I).group(0)
+            end_day=int(re.search(r"[–-]\\s*(\\d{1,2})",raw).group(1))
+            d2=dateparser.parse(f"{end_day} {month} {d1.year}",dayfirst=True)
+            if d1 and d2:return d1.date(),d2.date()
+        except Exception: pass
     candidates=DATE_RE.findall(text)
     for raw in candidates:
         try:
             d=dateparser.parse(raw,dayfirst=True,default=datetime(default_year,1,1),fuzzy=True)
-            if d and TODAY<=d.date()<=END: return d.date()
+            if d:return d.date(),d.date()
         except Exception: pass
-    return None
+    return None,None
 def location_key(s):
     s=norm(s)
     aliases={"brighton and hove":"brighton","brighton & hove":"brighton","east sussex":"east sussex"}
@@ -69,7 +79,7 @@ def extract_card(h3):
     return None
 def card_data(card,title,default_year,source):
     text=clean(card.get_text(" ",strip=True))
-    d=parse_date(text,default_year)
+    d,date_end=parse_date_range(text,default_year)
     if not d: return None
     lines=[clean(x) for x in card.stripped_strings if clean(x)]
     idx=next((i for i,x in enumerate(lines) if norm(x)==norm(title)),0)
