@@ -10,18 +10,6 @@
   ],
   "festivals": [
     {
-      "title": "Osberton International Horse Trials",
-      "date": "2026-10-01",
-      "date_end": "2026-10-04",
-      "location": "Worksop",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/osberton-international-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/osberton-international-horse-trials/",
-      "id": "festival:osberton-international-horse-trials:2026-10-01",
-      "location_display": "Worksop"
-    },
-    {
       "title": "UKLTA Cyberpunk - A Life on the Edge",
       "date": "2026-10-02",
       "date_end": "2026-10-04",
@@ -46,18 +34,6 @@
       "location_display": "Wetherby"
     },
     {
-      "title": "Little Downham Horse Trials",
-      "date": "2026-10-03",
-      "date_end": "2026-10-07",
-      "location": "Ely",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/little-downham-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/little-downham-horse-trials/",
-      "id": "festival:little-downham-horse-trials:2026-10-03",
-      "location_display": "Ely"
-    },
-    {
       "title": "Orion Sphere Event 16 - Domino",
       "date": "2026-10-09",
       "date_end": "2026-10-11",
@@ -80,18 +56,6 @@
       "detail_url": "https://fezzy.uk/festival/wilde-realms-event-4-the-sacrifices-we-make/",
       "id": "festival:wilde-realms-event-4-the-sacrifices-we-make:2026-10-23",
       "location_display": "Herne Bay"
-    },
-    {
-      "title": "Tetworth Horse Trials",
-      "date": "2026-10-24",
-      "date_end": "2026-10-25",
-      "location": "Sandy, Cambridgeshire",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/tetworth-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/tetworth-horse-trials/",
-      "id": "festival:tetworth-horse-trials:2026-10-24",
-      "location_display": "Sandy, Cambridgeshire"
     },
     {
       "title": "Damnation Festival",
@@ -706,18 +670,6 @@
       "location_display": "Castle Donington"
     },
     {
-      "title": "Bramham International Horse Trials",
-      "date": "2027-06-10",
-      "date_end": "2027-06-13",
-      "location": "Wetherby",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/bramham-international-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/bramham-international-horse-trials/",
-      "id": "festival:bramham-international-horse-trials:2027-06-10",
-      "location_display": "Wetherby"
-    },
-    {
       "title": "Mighty Dub Fest",
       "date": "2027-06-10",
       "date_end": "2027-06-13",
@@ -788,18 +740,6 @@
       "detail_url": "https://fezzy.uk/festival/witney-music-festival/",
       "id": "festival:witney-music-festival:2027-06-12",
       "location_display": "Witney"
-    },
-    {
-      "title": "June",
-      "date": "2027-06-14",
-      "date_end": "2027-06-14",
-      "location": "Castle Donington · Rock",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/download-festival/",
-      "source": "https://fezzy.uk/collections/rock-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/download-festival/",
-      "id": "festival:june:2027-06-14",
-      "location_display": "Castle Donington · Rock"
     },
     {
       "title": "Isle of Wight Festival",
@@ -1066,18 +1006,6 @@
       "location_display": "Elvaston"
     },
     {
-      "title": "July",
-      "date": "2027-07-05",
-      "date_end": "2027-07-05",
-      "location": "Chilfest",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/chilfest/",
-      "source": "https://fezzy.uk/collections/pop-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/chilfest/",
-      "id": "festival:july:2027-07-05",
-      "location_display": "Chilfest"
-    },
-    {
       "title": "2000 Trees",
       "date": "2027-07-07",
       "date_end": "2027-07-10",
@@ -1100,18 +1028,6 @@
       "detail_url": "https://fezzy.uk/festival/henley-festival/",
       "id": "festival:henley-festival:2027-07-07",
       "location_display": "Henley-on-Thames"
-    },
-    {
-      "title": "July",
-      "date": "2027-07-08",
-      "date_end": "2027-07-08",
-      "location": "Limavady · Indie",
-      "category": "Food & Drink",
-      "ticket_url": "https://fezzy.uk/festival/stendhal-festival/",
-      "source": "https://fezzy.uk/collections/indie-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/stendhal-festival/",
-      "id": "festival:july:2027-07-08",
-      "location_display": "Limavady · Indie"
     },
     {
       "title": "Love Trails",
@@ -1256,18 +1172,6 @@
       "detail_url": "https://fezzy.uk/festival/rempstone-steam-country-show/",
       "id": "festival:rempstone-steam-country-show:2027-07-10",
       "location_display": "Wymeswold, Leicestershire"
-    },
-    {
-      "title": "July",
-      "date": "2027-07-11",
-      "date_end": "2027-07-11",
-      "location": "Minety · Rock",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/minety-music-festival/",
-      "source": "https://fezzy.uk/collections/rock-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/minety-music-festival/",
-      "id": "festival:july:2027-07-11",
-      "location_display": "Minety · Rock"
     },
     {
       "title": "HebCelt Festival",
@@ -1688,30 +1592,6 @@
       "detail_url": "https://fezzy.uk/festival/cambridge-folk-festival/",
       "id": "festival:cambridge-folk-festival:2027-08-01",
       "location_display": "Cambridge"
-    },
-    {
-      "title": "August",
-      "date": "2027-08-02",
-      "date_end": "2027-08-02",
-      "location": "All Points East",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/all-points-east/",
-      "source": "https://fezzy.uk/collections/pop-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/all-points-east/",
-      "id": "festival:august:2027-08-02",
-      "location_display": "All Points East"
-    },
-    {
-      "title": "August",
-      "date": "2027-08-04",
-      "date_end": "2027-08-04",
-      "location": "Blackpool · Punk",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/rebellion-festival/",
-      "source": "https://fezzy.uk/collections/rock-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/rebellion-festival/",
-      "id": "festival:august:2027-08-04",
-      "location_display": "Blackpool · Punk"
     },
     {
       "title": "Boardmasters",
@@ -2408,18 +2288,6 @@
       "detail_url": "https://fezzy.uk/festival/we-have-ways-fest/",
       "id": "festival:we-have-ways-fest:2027-09-11",
       "location_display": "Stowe"
-    },
-    {
-      "title": "Blenheim Palace International Horse Trials",
-      "date": "2027-09-16",
-      "date_end": "2027-09-19",
-      "location": "Woodstock",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/blenheim-palace-international-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/blenheim-palace-international-horse-trials/",
-      "id": "festival:blenheim-palace-international-horse-trials:2027-09-16",
-      "location_display": "Woodstock"
     },
     {
       "title": "Goodwood Revival",
