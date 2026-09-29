@@ -22,6 +22,9 @@ OUT=ROOT/"festivals.json"
 TZ=ZoneInfo("Europe/London")
 TODAY=datetime.now(TZ).date()
 END=date(TODAY.year+1,12,31)
+# Refuse to publish if a run finds fewer festivals than this, or loses more than half.
+MIN_FESTIVALS=20
+MAX_DROP=0.5
 VISITBRIGHTON_SOURCES=[
     "https://www.visitbrighton.com/whats-on/festivals?p=1",
     "https://www.visitbrighton.com/whats-on/festivals?p=2",
@@ -46,39 +49,66 @@ EFESTIVALS=[f"https://www.efestivals.co.uk/festivals/festivals.php?from={n}&year
 MONTHS="Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?"
 DATE_RE=re.compile(rf"\b(?:\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})(?:\s+\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?)\b",re.I)
 RANGE_RE=re.compile(rf"\b\d{{1,2}}(?:st|nd|rd|th)?(?:\s*[–-]\s*\d{{1,2}}(?:st|nd|rd|th)?)?\s+(?:{MONTHS})(?:\s+\d{{4}})?\b",re.I)
-GENERIC={"festival","details","tickets","buy tickets","2027 tickets","check tickets","more","show more festivals","source checked","source check pending","read more","read less","places to stay","next","previous","list view","map view","grid view","plan your visit","things to do","what's on","work with us","submit event","site map","skip to main content","sign up for e-newsletter","translate","media","contact us","accommodation","info@aoh.org.uk"}
+GENERIC={"festival","details","tickets","buy tickets","2027 tickets","check tickets","more","show more festivals","source checked","source check pending","read more","read less","places to stay","next","previous","list view","map view","grid view","plan your visit","things to do","what's on","work with us","submit event","site map","skip to main content","sign up for e-newsletter","translate","media","contact us","accommodation"}
 
 def clean(s): return re.sub(r"\s+"," ",str(s or "")).strip()
 def norm(s):
     s=re.sub(r"\b(?:19|20)\d{2}\b","",clean(s).lower())
     return re.sub(r"[^a-z0-9]+"," ",s).strip()
+MONTH_NUM={m:i for i,m in enumerate(("jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"),1)}
+_WD=r"(?:(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?,?\s+)?"
+_DAY=r"(\d{1,2})(?:st|nd|rd|th)?"
+_SEP=r"\s*(?:[–—-]|to|until)\s*"
+_YEAR=r"(?:,?\s+(\d{4}))?"
+CROSS_MONTH_RE=re.compile(rf"\b{_WD}{_DAY}\s+({MONTHS})\.?{_YEAR}{_SEP}{_WD}{_DAY}\s+({MONTHS})\.?{_YEAR}\b",re.I)
+SAME_MONTH_RE=re.compile(rf"\b{_WD}{_DAY}{_SEP}{_WD}{_DAY}\s+({MONTHS})\.?{_YEAR}\b",re.I)
+SINGLE_RE=re.compile(rf"\b{_WD}{_DAY}\s+({MONTHS})\.?{_YEAR}\b",re.I)
+US_SINGLE_RE=re.compile(rf"\b({MONTHS})\.?\s+{_DAY}{_YEAR}\b",re.I)
+
+def _mk(year,month,day):
+    try: return date(int(year),MONTH_NUM[month[:3].lower()],int(day))
+    except (ValueError,KeyError): return None
+
+def _settle(d1,d2,explicit_year):
+    """Fix the year of a parsed range. A range that crosses New Year
+    ('28 Dec - 2 Jan 2027') starts in the previous year; a date given without
+    a year that has already passed is next year's edition."""
+    if not d1 or not d2: return None,None
+    if d2<d1:
+        if explicit_year: d1=_mk(d1.year-1,d1.strftime("%b"),d1.day)
+        else: d2=_mk(d2.year+1,d2.strftime("%b"),d2.day)
+        if not d1 or not d2: return None,None
+    if not explicit_year and d2<TODAY:
+        d1=_mk(d1.year+1,d1.strftime("%b"),d1.day); d2=_mk(d2.year+1,d2.strftime("%b"),d2.day)
+        if not d1 or not d2: return None,None
+    return d1,d2
+
+def iter_date_ranges(text,default_year):
+    """Yield every (start, end) date range found in text, in order of appearance.
+    Dates are built from the matched parts directly; a fuzzy parser reads the
+    first day of '5-7 June' as the year 2005."""
+    text=clean(text); found=[]
+    for m in CROSS_MONTH_RE.finditer(text):
+        y2=m.group(6); y1=m.group(3) or y2 or default_year
+        found.append((m.start(),m.end(),_settle(_mk(y1,m.group(2),m.group(1)),_mk(y2 or y1,m.group(5),m.group(4)),bool(m.group(3) or m.group(6)))))
+    for m in SAME_MONTH_RE.finditer(text):
+        y=m.group(4) or default_year
+        found.append((m.start(),m.end(),_settle(_mk(y,m.group(3),m.group(1)),_mk(y,m.group(3),m.group(2)),bool(m.group(4)))))
+    for rx,order in ((SINGLE_RE,(1,2,3)),(US_SINGLE_RE,(2,1,3))):
+        for m in rx.finditer(text):
+            day,month,year=(m.group(i) for i in order)
+            d=_mk(year or default_year,month,day)
+            found.append((m.start(),m.end(),_settle(d,d,bool(year))))
+    # Prefer the longest match at each position, and drop matches inside another.
+    found.sort(key=lambda x:(x[0],-(x[1]-x[0])))
+    last_end=-1
+    for start,end,(d1,d2) in found:
+        if start<last_end: continue
+        last_end=end
+        if d1 and d2: yield d1,d2
+
 def parse_date_range(text, default_year):
-    text=clean(text)
-    cross=re.search(rf"\b(\d{{1,2}})(?:st|nd|rd|th)?\s+({MONTHS})\s*[–-]\s*(\d{{1,2}})(?:st|nd|rd|th)?\s+({MONTHS})(?:\s+(\d{{4}}))?\b",text,re.I)
-    if cross:
-        year=int(cross.group(5) or default_year)
-        try:
-            d1=dateparser.parse(f"{cross.group(1)} {cross.group(2)} {year}",dayfirst=True).date()
-            d2=dateparser.parse(f"{cross.group(3)} {cross.group(4)} {year}",dayfirst=True).date()
-            if d1 and d2:return d1,d2
-        except Exception: pass
-    m=re.search(rf"\b(\d{{1,2}})(?:st|nd|rd|th)?\s*[–-]\s*(\d{{1,2}})(?:st|nd|rd|th)?\s+(?:{MONTHS})(?:\s+(\d{{4}}))?\b",text,re.I)
-    if m:
-        raw=m.group(0)
-        try:
-            d1=dateparser.parse(raw,dayfirst=True,default=datetime(default_year,1,1),fuzzy=True)
-            month=re.search(rf"(?:{MONTHS})",raw,re.I).group(0)
-            end_day=int(re.search(r"[–-]\s*(\d{1,2})",raw).group(1))
-            d2=dateparser.parse(f"{end_day} {month} {d1.year}",dayfirst=True)
-            if d1 and d2:return d1.date(),d2.date()
-        except Exception: pass
-    candidates=DATE_RE.findall(text)
-    for raw in candidates:
-        try:
-            d=dateparser.parse(raw,dayfirst=True,default=datetime(default_year,1,1),fuzzy=True)
-            if d:return d.date(),d.date()
-        except Exception: pass
-    return None,None
+    return next(iter_date_ranges(text,default_year),(None,None))
 def location_key(s):
     s=norm(s)
     aliases={"brighton and hove":"brighton","brighton & hove":"brighton","east sussex":"east sussex"}
@@ -142,14 +172,19 @@ def extract_visitbrighton(html,url):
         if not re.search(r"/whats-on/[^/?#]+-p\d+",href,re.I): continue
         title=clean(a.get_text(" ",strip=True))
         if not valid_title(title): continue
-        parent=a
+        # Climb to this listing's own card. Stop (and skip the link) as soon as
+        # the block holds a second listing: a date or address found beyond that
+        # point belongs to a neighbouring card.
+        parent=a; card=None
         for _ in range(5):
             parent=parent.parent
             if not parent: break
+            listings={x.get("href","").split("?")[0] for x in parent.find_all("a",href=True) if re.search(r"/whats-on/[^/?#]+-p\d+",x.get("href",""),re.I)}
+            if len(listings)>1: break
             text=clean(parent.get_text(" ",strip=True))
-            if 80 <= len(text) <= 1800 and DATE_RE.search(text): break
-        if not parent: continue
-        text=clean(parent.get_text(" ",strip=True))
+            if 80 <= len(text) <= 1800 and DATE_RE.search(text): card=parent; break
+        if card is None: continue
+        text=clean(card.get_text(" ",strip=True))
         d,date_end=parse_date_range(text,TODAY.year)
         if not d: continue
         m=re.search(r"Address\s+(.+?)(?:\s+Telephone\b|\s+Type\b|\s+Website\b)",text,re.I)
@@ -183,7 +218,7 @@ def extract_brightonscoop(html,url):
         out.append({"title":title,"date":d.isoformat(),"date_end":(date_end or d).isoformat(),"location":location,"category":classify(text),"ticket_url":link,"source":url,"detail_url":link})
     return out
 
-def extract_fezzzy(html,url):
+def extract_fezzy(html,url):
     soup=BeautifulSoup(html,"html.parser"); out=[]
     for heading in soup.find_all(["h2","h3","button"]):
         title=clean(heading.get_text(" ",strip=True))
@@ -213,14 +248,15 @@ def extract_efestivals(html,url):
         # eFestivals exposes lots of navigation links; festival names generally
         # sit in links whose parent block also contains a date and ticket text.
 
-        parent=a
+        parent=a; card=None
         for _ in range(5):
             parent=parent.parent
             if not parent: break
             text=clean(parent.get_text(" ",strip=True))
-            if len(text)>=80 and len(text)<=900: break
-        if not parent: continue
-        text=clean(parent.get_text(" ",strip=True))
+            if len(text)>900: break
+            if len(text)>=80: card=parent; break
+        if card is None: continue
+        text=clean(card.get_text(" ",strip=True))
         d,date_end=parse_date_range(text,TODAY.year+1)
         if not d: continue
         # eFestivals puts the location immediately after the dated portion.
@@ -254,8 +290,8 @@ async def validate_candidate(browser,e):
         d=date.fromisoformat(e["date"])
         date_tokens=(d.strftime("%d %B %Y"),d.strftime("%-d %B %Y"),d.strftime("%d %b %Y"),d.strftime("%-d %b %Y"))
         if not any(norm(x) in body_norm for x in date_tokens):
-            parsed_start,_=parse_date_range(body,TODAY.year)
-            if parsed_start != d: return False
+            default_year=d.year
+            if not any(start==d for start,_ in iter_date_ranges(body,default_year)): return False
         if is_brighton_location(e["location"]) and not is_brighton_location(body):
             return False
         return True
@@ -273,7 +309,9 @@ def merge(items):
         for old in chosen:
             if old["date"]!=e["date"]: continue
             on=norm(old["title"]); ol=location_key(old["location"])
-            similar=(en==on or en in on or on in en or SequenceMatcher(None,en,on).ratio()>=0.88)
+            # Whole-word containment only, so "Folk Fest 2" never swallows "Folk Fest 22".
+            short,long_=sorted((en,on),key=len)
+            similar=(en==on or (len(short.split())>=2 and f" {short} " in f" {long_} ") or (re.sub(r"\D","",en)==re.sub(r"\D","",on) and SequenceMatcher(None,en,on).ratio()>=0.92))
             same_loc=(el=="uk" or ol=="uk" or el==ol or SequenceMatcher(None,el,ol).ratio()>=0.8)
             if similar and same_loc:
                 duplicate=True
@@ -284,10 +322,18 @@ def merge(items):
                     old.update({"ticket_url":e["ticket_url"],"source":e["source"]})
                 break
         if not duplicate: chosen.append(e)
-    result=[]
+    result=[]; used=set()
     for e in chosen:
         slug=re.sub(r"[^a-z0-9]+","-",norm(e["title"])).strip("-")[:100]
         e["id"]="festival:"+slug+":"+e["date"]
+        if e["id"] in used:
+            loc=re.sub(r"[^a-z0-9]+","-",location_key(e["location"])).strip("-")[:40] or "x"
+            e["id"]="festival:"+slug+"-"+loc+":"+e["date"]
+        n=2
+        while e["id"] in used:
+            e["id"]=f"festival:{slug}-{n}:{e['date']}"; n+=1
+        used.add(e["id"])
+        e.setdefault("detail_url",e["ticket_url"])
         e["location_display"]=e["location"]
         result.append(e)
     return result
@@ -329,7 +375,7 @@ async def main():
             for fezzy_url in FEZZY_SOURCES:
                 try:
                     html=await fetch_page(browser,fezzy_url)
-                    found=extract_fezzzy(html,fezzy_url)
+                    found=extract_fezzy(html,fezzy_url)
                     items+=found
                     print("Fezzy",fezzy_url,"candidates:",len(found))
                 except Exception as exc:
@@ -342,16 +388,23 @@ async def main():
                     print("eFestivals",url,"candidates:",len(found))
                 except Exception as exc:
                     print("eFestivals failed:",url,exc)
-        sem=asyncio.Semaphore(8)
-        async def checked(e):
-            async with sem:
-                return e if await validate_candidate(browser,e) else None
-        checked_items=await asyncio.gather(*(checked(e) for e in items))
-        validated=[e for e in checked_items if e]
-        print(f"Validated {len(validated)} of {len(items)} scraped candidates.")
-        festivals=merge(validated)
-        OUT.write_text(json.dumps({"updated":TODAY.isoformat(),"range_start":TODAY.isoformat(),"range_end":END.isoformat(),"sources":["VisitBrighton","Brighton Scoop","Fezzy","eFestivals"],"festivals":festivals},ensure_ascii=False,indent=2)+"\n")
-        print(f"Published {len(festivals)} unique validated festivals.")
+            sem=asyncio.Semaphore(8)
+            async def checked(e):
+                async with sem:
+                    return e if await validate_candidate(browser,e) else None
+            checked_items=await asyncio.gather(*(checked(e) for e in items))
+            validated=[e for e in checked_items if e]
+            print(f"Validated {len(validated)} of {len(items)} scraped candidates.")
+            festivals=merge(validated)
+            existing=0
+            try: existing=len(json.loads(OUT.read_text()).get("festivals",[]))
+            except Exception: pass
+            if len(festivals)<MIN_FESTIVALS:
+                raise SystemExit(f"Only {len(festivals)} festivals validated (minimum {MIN_FESTIVALS}); keeping the existing festivals.json")
+            if existing and len(festivals)<existing*MAX_DROP:
+                raise SystemExit(f"Festival count fell from {existing} to {len(festivals)}; keeping the existing festivals.json")
+            OUT.write_text(json.dumps({"updated":TODAY.isoformat(),"range_start":TODAY.isoformat(),"range_end":END.isoformat(),"sources":["VisitBrighton","Brighton Scoop","Fezzy","eFestivals"],"festivals":festivals},ensure_ascii=False,indent=2)+"\n")
+            print(f"Published {len(festivals)} unique validated festivals.")
         finally:
             await browser.close()
 if __name__=="__main__": asyncio.run(main())
