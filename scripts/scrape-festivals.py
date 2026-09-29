@@ -94,7 +94,7 @@ def card_data(card,title,default_year,source):
     location=""
     for x in lines[idx+1:idx+7]:
         lx=x.lower()
-        if x and len(x)<80 and not any(y in lx for y in ("featured","hidden gem","festival","cap","tickets","edition","source checked","source check pending","details")):
+        if x and len(x)<80 and not DATE_RE.search(x) and not any(y in lx for y in ("featured","hidden gem","festival","cap","tickets","edition","source checked","source check pending","details")):
             location=x; break
     if not location:
         location="UK"
