@@ -14,11 +14,12 @@ except Exception: raise SystemExit("invalid festival date range")
 if end!=date(start.year+1,12,31): raise SystemExit("festival range must end on 31 December of the following calendar year")
 ids=set(); keys=set(); errors=[]
 for i,f in enumerate(festivals):
-    for k in ("id","title","date","location","category","ticket_url"):
+    for k in ("id","title","date","date_end","location","category","ticket_url"):
         if not f.get(k): errors.append(f"{i}: missing {k}")
     try: d=date.fromisoformat(str(f.get("date")))
     except Exception: errors.append(f"{i}: invalid date"); continue
-    if not (start<=d<=end): errors.append(f"{f.get('id')}: outside range")
+    try: de=date.fromisoformat(str(f.get("date_end"))); assert d<=de<=end
+    except Exception: errors.append(f"{f.get('id')}: invalid date_end or outside range")
     if not str(f.get("id","")).startswith("festival:"): errors.append(f"{i}: id is not festival-scoped")
     if f.get("id") in ids: errors.append(f"duplicate id {f.get('id')}")
     ids.add(f.get("id"))
