@@ -166,18 +166,6 @@
       "location_display": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton"
     },
     {
-      "title": "More Details",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton",
-      "category": "Arts & Culture",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
-      "detail_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
-      "id": "festival:more-details:2026-11-28",
-      "location_display": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton"
-    },
-    {
       "title": "Celtic Connections",
       "date": "2027-01-14",
       "date_end": "2027-01-31",
@@ -236,18 +224,6 @@
       "detail_url": "https://fezzy.uk/festival/stockton-calling/",
       "id": "festival:stockton-calling:2027-03-27",
       "location_display": "Stockton-on-Tees"
-    },
-    {
-      "title": "April",
-      "date": "2027-04-02",
-      "date_end": "2027-04-02",
-      "location": "Manchester · Punk",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/manchester-punk-festival/",
-      "source": "https://fezzy.uk/collections/rock-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/manchester-punk-festival/",
-      "id": "festival:april:2027-04-02",
-      "location_display": "Manchester · Punk"
     },
     {
       "title": "York Blues Festival",
@@ -2350,18 +2326,6 @@
       "location_display": "Castle Donington"
     },
     {
-      "title": "September",
-      "date": "2027-09-03",
-      "date_end": "2027-09-03",
-      "location": "BunkFest",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/bunkfest/",
-      "source": "https://fezzy.uk/collections/rock-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/bunkfest/",
-      "id": "festival:september:2027-09-03",
-      "location_display": "BunkFest"
-    },
-    {
       "title": "Love to Be",
       "date": "2027-09-04",
       "date_end": "2027-09-04",
@@ -2372,18 +2336,6 @@
       "detail_url": "https://fezzy.uk/festival/love-to-be/",
       "id": "festival:love-to-be:2027-09-04",
       "location_display": "Scarborough"
-    },
-    {
-      "title": "September",
-      "date": "2027-09-04",
-      "date_end": "2027-09-04",
-      "location": "Tetbury · Electronic",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/existance-festival/",
-      "source": "https://fezzy.uk/collections/electronic-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/existance-festival/",
-      "id": "festival:september:2027-09-04",
-      "location_display": "Tetbury · Electronic"
     },
     {
       "title": "All England September Tour",
