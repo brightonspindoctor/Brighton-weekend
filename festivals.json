@@ -2480,6 +2480,90 @@
       "detail_url": "https://fezzy.uk/festival/goodwood-revival/",
       "id": "festival:goodwood-revival:2027-09-17",
       "location_display": "Chichester"
+    },
+    {
+      "title": "Brighton Festival",
+      "date": "2027-05-01",
+      "date_end": "2027-05-23",
+      "location": "Brighton & Hove",
+      "category": "Arts & Culture",
+      "ticket_url": "https://brightonfestival.org/",
+      "source": "https://brightonfestival.org/",
+      "detail_url": "https://brightonfestival.org/",
+      "id": "festival:brighton-festival:2027-05-01",
+      "location_display": "Brighton & Hove"
+    },
+    {
+      "title": "Brighton Fringe",
+      "date": "2027-05-07",
+      "date_end": "2027-06-06",
+      "location": "Brighton & Hove",
+      "category": "Arts & Culture",
+      "ticket_url": "https://www.brightonfringe.org/",
+      "source": "https://www.brightonfringe.org/",
+      "detail_url": "https://www.brightonfringe.org/",
+      "id": "festival:brighton-fringe:2027-05-07",
+      "location_display": "Brighton & Hove"
+    },
+    {
+      "title": "Land Beyond Festival",
+      "date": "2027-05-30",
+      "date_end": "2027-05-30",
+      "location": "East Brighton Park",
+      "category": "Music",
+      "ticket_url": "https://www.landbeyondfestival.co.uk/",
+      "source": "https://www.landbeyondfestival.co.uk/",
+      "detail_url": "https://www.landbeyondfestival.co.uk/",
+      "id": "festival:land-beyond-festival:2027-05-30",
+      "location_display": "East Brighton Park, Brighton"
+    },
+    {
+      "title": "Glorious Day Festival",
+      "date": "2027-06-05",
+      "date_end": "2027-06-05",
+      "location": "Hove Lawns",
+      "category": "Music",
+      "ticket_url": "https://gloriousdayfestival.co.uk/",
+      "source": "https://gloriousdayfestival.co.uk/",
+      "detail_url": "https://gloriousdayfestival.co.uk/",
+      "id": "festival:glorious-day-festival:2027-06-05",
+      "location_display": "Hove Lawns, Brighton & Hove"
+    },
+    {
+      "title": "At The Edge Of The Sea XVII",
+      "date": "2027-08-06",
+      "date_end": "2027-08-07",
+      "location": "Concorde 2",
+      "category": "Music",
+      "ticket_url": "https://www.scopitones.co.uk/ateots",
+      "source": "https://www.scopitones.co.uk/ateots",
+      "detail_url": "https://www.scopitones.co.uk/ateots",
+      "id": "festival:at-the-edge-of-the-sea-xvii:2027-08-06",
+      "location_display": "Concorde 2, Brighton"
+    },
+    {
+      "title": "Brighton Mod Weekender",
+      "date": "2027-08-27",
+      "date_end": "2027-08-30",
+      "location": "Various venues, Brighton",
+      "category": "Music",
+      "ticket_url": "https://www.efestivals.co.uk/festivals/brightonmod/2027",
+      "source": "https://www.efestivals.co.uk/festivals/brightonmod/2027",
+      "detail_url": "https://www.efestivals.co.uk/festivals/brightonmod/2027",
+      "id": "festival:brighton-mod-weekender:2027-08-27",
+      "location_display": "Various venues, Brighton"
+    },
+    {
+      "title": "Brighton Psych Fest",
+      "date": "2027-09-04",
+      "date_end": "2027-09-04",
+      "location": "Brighton",
+      "category": "Music",
+      "ticket_url": "https://brightonpsychfest.com/",
+      "source": "https://brightonpsychfest.com/",
+      "detail_url": "https://brightonpsychfest.com/",
+      "id": "festival:brighton-psych-fest:2027-09-04",
+      "location_display": "Brighton"
     }
   ]
 }
