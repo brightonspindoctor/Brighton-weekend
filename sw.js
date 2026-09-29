@@ -7,7 +7,7 @@
  *  - Images and icons: cache first (they are versioned by filename or ?v=).
  * Bump VERSION whenever you want every installed copy to drop old caches.
  */
-const VERSION = 'bw-v54';
+const VERSION = 'bw-v53';
 const CORE = [
   './',
   './index.html',
@@ -22,7 +22,6 @@ const CORE = [
   './about.html',
   './privacy.html',
   './terms.html',
-  './festivals.json',
   './profile-icons/brown-bear.svg',
   './profile-icons/red-panda-bear.svg',
   './profile-icons/giant-panda-bear.svg',
