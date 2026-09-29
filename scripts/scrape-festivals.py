@@ -22,8 +22,20 @@ OUT=ROOT/"festivals.json"
 TZ=ZoneInfo("Europe/London")
 TODAY=datetime.now(TZ).date()
 END=date(TODAY.year+1,12,31)
-FEZZY_SOURCES=["https://fezzy.uk/uk-festivals-2027/","https://fezzy.uk/search/"]
-EFESTIVALS=[f"https://www.efestivals.co.uk/festivals/festivals.php?from={n}&year={TODAY.year+1}" for n in range(0,70,10)] + ["https://www.efestivals.co.uk/festivals/festivals.php?area=S&year=now"]
+FEZZY_SOURCES=[
+    "https://fezzy.uk/uk-festivals-2027/",
+    "https://fezzy.uk/search/",
+    "https://fezzy.uk/collections/pop-festivals-uk-2026/",
+    "https://fezzy.uk/collections/rock-festivals-uk-2026/",
+    "https://fezzy.uk/collections/indie-festivals-uk-2026/",
+    "https://fezzy.uk/collections/electronic-festivals-uk-2026/",
+    "https://fezzy.uk/collections/electronic-edm-festivals-uk-2026/",
+    "https://fezzy.uk/collections/indie-alt-festivals-2026/",
+]
+EFESTIVALS=[f"https://www.efestivals.co.uk/festivals/festivals.php?from={n}&year={TODAY.year+1}" for n in range(0,70,10)] + [
+    "https://www.efestivals.co.uk/festivals/festivals.php?area=S&year=2027",
+    "https://www.efestivals.co.uk/festivals/festivals.php?area=S&year=now",
+]
 MONTHS="Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?"
 DATE_RE=re.compile(rf"\b(?:\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})(?:\s+\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?)\b",re.I)
 RANGE_RE=re.compile(rf"\b\d{{1,2}}(?:st|nd|rd|th)?(?:\s*[–-]\s*\d{{1,2}}(?:st|nd|rd|th)?)?\s+(?:{MONTHS})(?:\s+\d{{4}})?\b",re.I)
@@ -140,7 +152,7 @@ def extract_efestivals(html,url):
         if not d: continue
         # eFestivals puts the location immediately after the dated portion.
         location="UK"
-        date_tail=re.search(r"(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+\d{1,2}(?:st|nd|rd|th)?(?:\s+to\s+(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+\d{1,2}(?:st|nd|rd|th)?)?\s+(?:\${MONTHS})\s+\d{4}",text,re.I)
+        date_tail=re.search(r"(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+\d{1,2}(?:st|nd|rd|th)?(?:\s+to\s+(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+\d{1,2}(?:st|nd|rd|th)?)?\s+(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+\d{4}",text,re.I)
         if date_tail:
             tail=text[date_tail.end():]
             candidate=re.split(r"\s+(?:£\s?\d|not yet on sale|sold out|early bird|tier \d|varies by|tickets? go-|registration|on sale|free)",tail,1,flags=re.I)[0]
@@ -196,15 +208,24 @@ async def main():
         browser=await p.chromium.launch(headless=True)
         items=[]
         try:
-        for fezzy_url in FEZZY_SOURCES:
-            try:
-                html=await fetch_page(browser,fezzy_url); found=extract_fezzzy(html,fezzy_url); items+=found; print("Fezzy",fezzy_url,"candidates:",len(found))
-            except Exception as exc: print("Fezzy failed:",exc)
-        for url in EFESTIVALS:
-            try:
-                html=await fetch_page(browser,url); found=extract_efestivals(html,url); items+=found; print("eFestivals",url,"candidates:",len(found))
-            except Exception as exc: print("eFestivals failed:",url,exc)
-        await browser.close()
+            for fezzy_url in FEZZY_SOURCES:
+                try:
+                    html=await fetch_page(browser,fezzy_url)
+                    found=extract_fezzzy(html,fezzy_url)
+                    items+=found
+                    print("Fezzy",fezzy_url,"candidates:",len(found))
+                except Exception as exc:
+                    print("Fezzy failed:",fezzy_url,exc)
+            for url in EFESTIVALS:
+                try:
+                    html=await fetch_page(browser,url)
+                    found=extract_efestivals(html,url)
+                    items+=found
+                    print("eFestivals",url,"candidates:",len(found))
+                except Exception as exc:
+                    print("eFestivals failed:",url,exc)
+        finally:
+            await browser.close()
     festivals=merge(items)
     OUT.write_text(json.dumps({"updated":TODAY.isoformat(),"range_start":TODAY.isoformat(),"range_end":END.isoformat(),"sources":["Fezzy","eFestivals"],"festivals":festivals},ensure_ascii=False,indent=2)+"\n")
     print(f"Published {len(festivals)} unique festivals from {len(items)} candidates.")
