@@ -22,6 +22,13 @@ OUT=ROOT/"festivals.json"
 TZ=ZoneInfo("Europe/London")
 TODAY=datetime.now(TZ).date()
 END=date(TODAY.year+1,12,31)
+VISITBRIGHTON_SOURCES=[
+    "https://www.visitbrighton.com/whats-on/festivals?p=1",
+    "https://www.visitbrighton.com/whats-on/festivals?p=2",
+]
+BRIGHTONSCOOP_SOURCES=[
+    "https://www.brightonscoop.co.uk/festivals-in-brighton",
+]
 FEZZY_SOURCES=[
     "https://fezzy.uk/uk-festivals-2027/",
     "https://fezzy.uk/search/",
@@ -119,6 +126,57 @@ def card_data(card,title,default_year,source):
         if ("details" in label or "/festival/" in href) and not detail: detail=href
     if not ticket: ticket=detail
     return {"title":title,"date":d.isoformat(),"date_end":date_end.isoformat(),"location":location,"category":classify(text),"ticket_url":ticket or detail or source,"source":source}
+
+def is_brighton_location(location):
+    h=clean(location).lower()
+    return any(k in h for k in ("brighton","hove","stanmer park","preston park","east brighton","madeira drive","banjo groyne"))
+
+def extract_visitbrighton(html,url):
+    soup=BeautifulSoup(html,"html.parser"); out=[]
+    for a in soup.find_all("a",href=True):
+        title=clean(a.get_text(" ",strip=True))
+        if not valid_title(title) or title.lower() in {"festivals in brighton","more details"}: continue
+        parent=a
+        for _ in range(7):
+            parent=parent.parent
+            if not parent: break
+            text=clean(parent.get_text(" ",strip=True))
+            if re.search(r"Type\s*:??\s*Festival\b",text,re.I) and len(text)<=3000: break
+        if not parent: continue
+        text=clean(parent.get_text(" ",strip=True))
+        if not re.search(r"Type\s*:??\s*Festival\b",text,re.I): continue
+        d,date_end=parse_date_range(text,TODAY.year)
+        if not d: continue
+        m=re.search(r"Address\s+(.+?)(?:\s+Telephone\b|\s+Type\b)",text,re.I)
+        address=clean(m.group(1)) if m else ""
+        if not is_brighton_location(address): continue
+        detail=urljoin(url,a["href"])
+        out.append({"title":title,"date":d.isoformat(),"date_end":(date_end or d).isoformat(),"location":address,"category":classify(text),"ticket_url":detail,"source":url})
+    return out
+
+def extract_brightonscoop(html,url):
+    soup=BeautifulSoup(html,"html.parser"); out=[]; current_year=TODAY.year
+    for node in soup.find_all(["h2","h3","p","li"]):
+        text=clean(node.get_text(" ",strip=True))
+        if re.fullmatch(r"(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+20\d{2}",text,re.I):
+            current_year=int(re.search(r"20\d{2}",text).group()); continue
+        if "|" not in text: continue
+        parts=[clean(x) for x in text.split("|")]
+        if len(parts)<2: continue
+        title=re.sub(r"^[^A-Za-z0-9]+","",parts[0]).strip()
+        if not valid_title(title) or "festival" not in title.lower(): continue
+        location=parts[1]
+        if not is_brighton_location(location): continue
+        d,date_end=parse_date_range(text,current_year)
+        if not d: continue
+        link=""
+        for a in node.find_all("a",href=True):
+            label=clean(a.get_text(" ",strip=True)).lower()
+            if "ticket" in label or "info" in label:
+                link=urljoin(url,a["href"]); break
+        out.append({"title":title,"date":d.isoformat(),"date_end":(date_end or d).isoformat(),"location":location,"category":classify(text),"ticket_url":link or url,"source":url})
+    return out
+
 def extract_fezzzy(html,url):
     soup=BeautifulSoup(html,"html.parser"); out=[]
     for h3 in soup.find_all(["h2","h3"]):
@@ -208,6 +266,22 @@ async def main():
         browser=await p.chromium.launch(headless=True)
         items=[]
         try:
+            for url in VISITBRIGHTON_SOURCES:
+                try:
+                    html=await fetch_page(browser,url)
+                    found=extract_visitbrighton(html,url)
+                    items+=found
+                    print("VisitBrighton",url,"candidates:",len(found))
+                except Exception as exc:
+                    print("VisitBrighton failed:",url,exc)
+            for url in BRIGHTONSCOOP_SOURCES:
+                try:
+                    html=await fetch_page(browser,url)
+                    found=extract_brightonscoop(html,url)
+                    items+=found
+                    print("Brighton Scoop",url,"candidates:",len(found))
+                except Exception as exc:
+                    print("Brighton Scoop failed:",url,exc)
             for fezzy_url in FEZZY_SOURCES:
                 try:
                     html=await fetch_page(browser,fezzy_url)
@@ -227,6 +301,6 @@ async def main():
         finally:
             await browser.close()
     festivals=merge(items)
-    OUT.write_text(json.dumps({"updated":TODAY.isoformat(),"range_start":TODAY.isoformat(),"range_end":END.isoformat(),"sources":["Fezzy","eFestivals"],"festivals":festivals},ensure_ascii=False,indent=2)+"\n")
+    OUT.write_text(json.dumps({"updated":TODAY.isoformat(),"range_start":TODAY.isoformat(),"range_end":END.isoformat(),"sources":["VisitBrighton","Brighton Scoop","Fezzy","eFestivals"],"festivals":festivals},ensure_ascii=False,indent=2)+"\n")
     print(f"Published {len(festivals)} unique festivals from {len(items)} candidates.")
 if __name__=="__main__": asyncio.run(main())
