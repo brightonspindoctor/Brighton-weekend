@@ -152,7 +152,7 @@ def extract_efestivals(html,url):
         if not d: continue
         # eFestivals puts the location immediately after the dated portion.
         location="UK"
-        date_tail=re.search(r"(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+\d{1,2}(?:st|nd|rd|th)?(?:\s+to\s+(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+\d{1,2}(?:st|nd|rd|th)?)?\s+{MONTHS}\s+\d{4}",text,re.I)
+        date_tail=re.search(r"(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+\d{1,2}(?:st|nd|rd|th)?(?:\s+to\s+(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+\d{1,2}(?:st|nd|rd|th)?)?\s+(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+\d{4}",text,re.I)
         if date_tail:
             tail=text[date_tail.end():]
             candidate=re.split(r"\s+(?:£\s?\d|not yet on sale|sold out|early bird|tier \d|varies by|tickets? go-|registration|on sale|free)",tail,1,flags=re.I)[0]
