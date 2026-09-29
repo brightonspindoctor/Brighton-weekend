@@ -22,8 +22,8 @@ OUT=ROOT/"festivals.json"
 TZ=ZoneInfo("Europe/London")
 TODAY=datetime.now(TZ).date()
 END=date(TODAY.year+1,12,31)
-FEZZY="https://fezzy.uk/search/"
-EFESTIVALS=[f"https://www.efestivals.co.uk/festivals/festivals.php?from={n}&year={TODAY.year+1}" for n in range(0,70,10)]
+FEZZY_SOURCES=["https://fezzy.uk/uk-festivals-2027/","https://fezzy.uk/search/"]
+EFESTIVALS=[f"https://www.efestivals.co.uk/festivals/festivals.php?from={n}&year={TODAY.year+1}" for n in range(0,70,10)] + ["https://www.efestivals.co.uk/festivals/festivals.php?area=S&year=now"]
 MONTHS="Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?"
 DATE_RE=re.compile(rf"\b(?:\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})(?:\s+\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?)\b",re.I)
 RANGE_RE=re.compile(rf"\b\d{{1,2}}(?:st|nd|rd|th)?(?:\s*[–-]\s*\d{{1,2}}(?:st|nd|rd|th)?)?\s+(?:{MONTHS})(?:\s+\d{{4}})?\b",re.I)
@@ -118,10 +118,16 @@ def extract_fezzzy(html,url):
             if e: out.append(e)
     return out
 def extract_efestivals(html,url):
+    # eFestivals listing cards contain the title, date range, location and ticket
+    # link in one compact text block. Keep only links that actually sit inside
+    # a dated festival listing so navigation/footer links cannot become records.
     soup=BeautifulSoup(html,"html.parser"); out=[]
     for a in soup.find_all("a",href=True):
         title=clean(a.get_text(" ",strip=True))
         if not valid_title(title) or len(title)>120: continue
+        # eFestivals exposes lots of navigation links; festival names generally
+        # sit in links whose parent block also contains a date and ticket text.
+
         parent=a
         for _ in range(5):
             parent=parent.parent
@@ -129,16 +135,20 @@ def extract_efestivals(html,url):
             text=clean(parent.get_text(" ",strip=True))
             if len(text)>=80 and len(text)<=900: break
         if not parent: continue
-        text=clean(parent.get_text(" ",strip=True)); d=parse_date(text,TODAY.year+1)
+        text=clean(parent.get_text(" ",strip=True))
+        d,date_end=parse_date_range(text,TODAY.year+1)
         if not d: continue
-        # eFestivals' listing text normally contains the town/venue after the date.
+        # eFestivals puts the location immediately after the dated portion.
         location="UK"
-        m=re.search(r"(?:2027|2026)\s+(.*?)(?:£|not yet on sale|sold out|BUY TICKETS|$)",text,re.I)
-        if m:
-            candidate=clean(m.group(1))
-            if candidate and len(candidate)<140: location=candidate
+        date_tail=re.search(r"(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+\d{1,2}(?:st|nd|rd|th)?(?:\s+to\s+(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+\d{1,2}(?:st|nd|rd|th)?)?\s+(?:\${MONTHS})\s+\d{4}",text,re.I)
+        if date_tail:
+            tail=text[date_tail.end():]
+            candidate=re.split(r"\s+(?:£\s?\d|not yet on sale|sold out|early bird|tier \d|varies by|tickets? go-|registration|on sale|free)",tail,1,flags=re.I)[0]
+            candidate=clean(candidate)
+            if candidate and len(candidate)<180: location=candidate
         ticket=urljoin(url,a["href"])
-        out.append({"title":title,"date":d.isoformat(),"date_end":date_end.isoformat(),"location":location,"category":"Music","ticket_url":ticket,"source":url})
+        if not ticket or not re.search(r"/festivals/[^/]+/|tickets|ticket", a.get("href",""), re.I): continue
+        out.append({"title":title,"date":d.isoformat(),"date_end":(date_end or d).isoformat(),"location":location,"category":"Music","ticket_url":ticket,"source":url})
     return out
 def merge(items):
     chosen=[]
@@ -186,9 +196,10 @@ async def main():
         browser=await p.chromium.launch(headless=True)
         items=[]
         try:
-            html=await fetch_page(browser,FEZZY); items+=extract_fezzzy(html,FEZZY); print("Fezzy candidates:",len(items))
-        except Exception as exc: print("Fezzy failed:",exc)
-        before=len(items)
+        for fezzy_url in FEZZY_SOURCES:
+            try:
+                html=await fetch_page(browser,fezzy_url); found=extract_fezzzy(html,fezzy_url); items+=found; print("Fezzy",fezzy_url,"candidates:",len(found))
+            except Exception as exc: print("Fezzy failed:",exc)
         for url in EFESTIVALS:
             try:
                 html=await fetch_page(browser,url); found=extract_efestivals(html,url); items+=found; print("eFestivals",url,"candidates:",len(found))
