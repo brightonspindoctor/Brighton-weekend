@@ -174,7 +174,8 @@ def extract_brightonscoop(html,url):
             label=clean(a.get_text(" ",strip=True)).lower()
             if "ticket" in label or "info" in label:
                 link=urljoin(url,a["href"]); break
-        out.append({"title":title,"date":d.isoformat(),"date_end":(date_end or d).isoformat(),"location":location,"category":classify(text),"ticket_url":link or url,"source":url})
+        if not link: continue
+        out.append({"title":title,"date":d.isoformat(),"date_end":(date_end or d).isoformat(),"location":location,"category":classify(text),"ticket_url":link,"source":url,"detail_url":link})
     return out
 
 def extract_fezzzy(html,url):
