@@ -22,8 +22,8 @@ OUT=ROOT/"festivals.json"
 TZ=ZoneInfo("Europe/London")
 TODAY=datetime.now(TZ).date()
 END=date(TODAY.year+1,12,31)
-FEZZY="https://fezzy.uk/search/"
-EFESTIVALS=[f"https://www.efestivals.co.uk/festivals/festivals.php?from={n}&year={TODAY.year+1}" for n in range(0,70,10)]
+FEZZY="https://fezzy.uk/uk-festivals-2027/"
+EFESTIVALS=[f"https://www.efestivals.co.uk/festivals/festivals.php?from={n}&year={TODAY.year+1}" for n in range(0,70,10)] + ["https://www.efestivals.co.uk/festivals/festivals.php?area=S&year=now"]
 MONTHS="Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?"
 DATE_RE=re.compile(rf"\b(?:\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})(?:\s+\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?)\b",re.I)
 RANGE_RE=re.compile(rf"\b\d{{1,2}}(?:st|nd|rd|th)?(?:\s*[–-]\s*\d{{1,2}}(?:st|nd|rd|th)?)?\s+(?:{MONTHS})(?:\s+\d{{4}})?\b",re.I)
@@ -118,10 +118,16 @@ def extract_fezzzy(html,url):
             if e: out.append(e)
     return out
 def extract_efestivals(html,url):
+    # eFestivals listing cards contain the title, date range, location and ticket
+    # link in one compact text block. Keep only links that actually sit inside
+    # a dated festival listing so navigation/footer links cannot become records.
     soup=BeautifulSoup(html,"html.parser"); out=[]
     for a in soup.find_all("a",href=True):
         title=clean(a.get_text(" ",strip=True))
         if not valid_title(title) or len(title)>120: continue
+        # eFestivals exposes lots of navigation links; festival names generally
+        # sit in links whose parent block also contains a date and ticket text.
+
         parent=a
         for _ in range(5):
             parent=parent.parent
@@ -129,7 +135,8 @@ def extract_efestivals(html,url):
             text=clean(parent.get_text(" ",strip=True))
             if len(text)>=80 and len(text)<=900: break
         if not parent: continue
-        text=clean(parent.get_text(" ",strip=True)); d=parse_date(text,TODAY.year+1)
+        text=clean(parent.get_text(" ",strip=True))
+        d,date_end=parse_date_range(text,TODAY.year+1)
         if not d: continue
         # eFestivals' listing text normally contains the town/venue after the date.
         location="UK"
@@ -138,7 +145,8 @@ def extract_efestivals(html,url):
             candidate=clean(m.group(1))
             if candidate and len(candidate)<140: location=candidate
         ticket=urljoin(url,a["href"])
-        out.append({"title":title,"date":d.isoformat(),"date_end":date_end.isoformat(),"location":location,"category":"Music","ticket_url":ticket,"source":url})
+        if not ticket or not re.search(r"/festivals/[^/]+/|tickets|ticket", a.get("href",""), re.I): continue
+        out.append({"title":title,"date":d.isoformat(),"date_end":(date_end or d).isoformat(),"location":location,"category":"Music","ticket_url":ticket,"source":url})
     return out
 def merge(items):
     chosen=[]
