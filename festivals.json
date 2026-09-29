@@ -10,479 +10,6 @@
   ],
   "festivals": [
     {
-      "title": "#VisitBrighton",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.instagram.com/visit.brighton/",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:visitbrighton:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "A-Z Lowest",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:a-z-lowest:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "A=415 Instrumental Workshop",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/a-415-instrumental-workshop-p2934421",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:a-415-instrumental-workshop:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Accessibility Statement",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/information/accessibility-statement",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:accessibility-statement:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Amidst the Shades",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/amidst-the-shades-p2934361",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:amidst-the-shades:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Artist Open Houses Winter",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:artist-open-houses-winter:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Bremf Clubnight",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/bremf-clubnight-p2934411",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:bremf-clubnight:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Bremf Emerging Artists Showcase",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/bremf-emerging-artists-showcase-p2934671",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:bremf-emerging-artists-showcase:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Business Directory",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/business-directory",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:business-directory:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "City of Dreams",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/city-of-dreams-p2932861",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:city-of-dreams:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Conferences",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/conferences",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:conferences:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Data Protection Policy",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/information/data-protection-policy",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:data-protection-policy:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Early Music Open Mic",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/early-music-open-mic-p2932961",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:early-music-open-mic:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Eat, Drink, Shop",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/food-and-drink",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:eat-drink-shop:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Latin New Year’s Eve party",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/latin-new-years-eve-party-p2940401",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:latin-new-year-s-eve-party:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "List View",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:list-view:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Map View",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:map-view:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Media",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/media",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:media:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Nightly Cares: A Pilgrim’s Solace",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/nightly-cares-a-pilgrims-solace-p2934511",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:nightly-cares-a-pilgrim-s-solace:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Places to stay in Brighton",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/accommodation",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:places-to-stay-in-brighton:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Plan Your Visit",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/plan-your-visit",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:plan-your-visit:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Polia’s Power",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/polias-power-p2934681",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:polia-s-power:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Read Less",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:read-less:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Read More",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:read-more:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Send it by the Water",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/send-it-by-the-water-p2934311",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:send-it-by-the-water:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Sign up for e-newsletter",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/information/enewsletter-sign-up",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:sign-up-for-e-newsletter:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Site Map",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/information/site-map",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:site-map:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Skip To Main Content",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/festivals?p=1#mainContent",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:skip-to-main-content:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "SongPath Walk",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/songpath-walk-p2934241",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:songpath-walk:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Stars of the Night",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/stars-of-the-night-p2934521",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:stars-of-the-night:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Submit event",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/submit-event",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:submit-event:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Terms and Conditions",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/information/terms-and-conditions",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:terms-and-conditions:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "The Fairy Queen",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/the-fairy-queen-p2934301",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:the-fairy-queen:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "The Story Trail Farewell Weekend",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/the-story-trail-farewell-weekend-p2952401",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:the-story-trail-farewell-weekend:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "The Sussex Peasant Big Autumn Market",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/the-sussex-peasant-big-autumn-market-p2945361",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:the-sussex-peasant-big-autumn-market:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Things to Do",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/things-to-do",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:things-to-do:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Transform your Dreams Workshop",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/transform-your-dreams-workshop-p2934351",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:transform-your-dreams-workshop:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Translate",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://translate.google.com",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:translate:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "What's On",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:what-s-on:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Work with Us",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/work-with-us",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:work-with-us:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "Z-A Z-A",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:z-a-z-a:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "info@aoh.org.uk",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "mailto:info%40aoh.org.uk",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:info-aoh-org-uk:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
-      "title": "next",
-      "date": "2026-11-28",
-      "date_end": "2026-11-28",
-      "location": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton",
-      "category": "Wellness",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/festivals?p=2",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "id": "festival:next:2026-11-28",
-      "location_display": "St George's Church, St George's Road, Brighton, BN2 1ED Brighton"
-    },
-    {
       "title": "Stockton Calling",
       "date": "2027-03-27",
       "date_end": "2027-03-27",
@@ -491,7 +18,8 @@
       "ticket_url": "https://www.stocktoncalling.co.uk/book-tickets/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:stockton-calling:2027-03-27",
-      "location_display": "Stockton-on-Tees"
+      "location_display": "Stockton-on-Tees",
+      "detail_url": "https://www.stocktoncalling.co.uk/book-tickets/"
     },
     {
       "title": "York Blues Festival",
@@ -502,7 +30,8 @@
       "ticket_url": "https://fezzy.uk/festival/york-blues-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:york-blues-festival:2027-04-17",
-      "location_display": "York"
+      "location_display": "York",
+      "detail_url": "https://fezzy.uk/festival/york-blues-festival/"
     },
     {
       "title": "Cheltenham Jazz Festival",
@@ -513,7 +42,8 @@
       "ticket_url": "https://fezzy.uk/festival/cheltenham-jazz-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:cheltenham-jazz-festival:2027-04-28",
-      "location_display": "Cheltenham"
+      "location_display": "Cheltenham",
+      "detail_url": "https://fezzy.uk/festival/cheltenham-jazz-festival/"
     },
     {
       "title": "Shetland Folk Festival",
@@ -524,7 +54,8 @@
       "ticket_url": "https://fezzy.uk/festival/shetland-folk-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:shetland-folk-festival:2027-04-29",
-      "location_display": "Lerwick"
+      "location_display": "Lerwick",
+      "detail_url": "https://fezzy.uk/festival/shetland-folk-festival/"
     },
     {
       "title": "Bonfest",
@@ -535,7 +66,8 @@
       "ticket_url": "https://www.skiddle.com/whats-on/Dundee/Bonfest-Festival-Site-Kirriemuir-DD8-5PU/Bonfest-2027/42517617/?sktag=15441&skcampaign=fezzy",
       "source": "https://fezzy.uk/search/",
       "id": "festival:bonfest:2027-04-30",
-      "location_display": "Kirriemuir"
+      "location_display": "Kirriemuir",
+      "detail_url": "https://www.skiddle.com/whats-on/Dundee/Bonfest-Festival-Site-Kirriemuir-DD8-5PU/Bonfest-2027/42517617/?sktag=15441&skcampaign=fezzy"
     },
     {
       "title": "Teddy Rocks Festival",
@@ -546,7 +78,8 @@
       "ticket_url": "https://fezzy.uk/festival/teddy-rocks-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:teddy-rocks-festival:2027-04-30",
-      "location_display": "Blandford"
+      "location_display": "Blandford",
+      "detail_url": "https://fezzy.uk/festival/teddy-rocks-festival/"
     },
     {
       "title": "Dot To Dot Festival",
@@ -557,7 +90,8 @@
       "ticket_url": "https://fezzy.uk/festival/dot-to-dot-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:dot-to-dot-festival:2027-05-29",
-      "location_display": "Bristol and Nottingham"
+      "location_display": "Bristol and Nottingham",
+      "detail_url": "https://fezzy.uk/festival/dot-to-dot-festival/"
     },
     {
       "title": "Field Day",
@@ -568,7 +102,8 @@
       "ticket_url": "https://fezzy.uk/festival/field-day/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:field-day:2027-05-29",
-      "location_display": "London"
+      "location_display": "London",
+      "detail_url": "https://fezzy.uk/festival/field-day/"
     },
     {
       "title": "Slam Dunk Festival North",
@@ -579,7 +114,8 @@
       "ticket_url": "https://fezzy.uk/festival/slam-dunk-festival-north/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:slam-dunk-festival-north:2027-05-29",
-      "location_display": "Leeds"
+      "location_display": "Leeds",
+      "detail_url": "https://fezzy.uk/festival/slam-dunk-festival-north/"
     },
     {
       "title": "Call of the Wild Festival",
@@ -590,7 +126,8 @@
       "ticket_url": "https://www.gigantic.com/call-of-the-wild-festival-tickets",
       "source": "https://fezzy.uk/search/",
       "id": "festival:call-of-the-wild-festival:2027-05-30",
-      "location_display": "Lincoln"
+      "location_display": "Lincoln",
+      "detail_url": "https://www.gigantic.com/call-of-the-wild-festival-tickets"
     },
     {
       "title": "Cross The Tracks",
@@ -601,7 +138,8 @@
       "ticket_url": "https://fezzy.uk/festival/cross-the-tracks/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:cross-the-tracks:2027-05-30",
-      "location_display": "London"
+      "location_display": "London",
+      "detail_url": "https://fezzy.uk/festival/cross-the-tracks/"
     },
     {
       "title": "Knockengorroch Festival",
@@ -612,7 +150,8 @@
       "ticket_url": "https://fezzy.uk/festival/knockengorroch-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:knockengorroch-festival:2027-05-30",
-      "location_display": "Castle Douglas"
+      "location_display": "Castle Douglas",
+      "detail_url": "https://fezzy.uk/festival/knockengorroch-festival/"
     },
     {
       "title": "Shindig Festival",
@@ -623,7 +162,8 @@
       "ticket_url": "https://shindigfestival.seetickets.com/event/shindig-festival-2027/shindig-festival/3643193",
       "source": "https://fezzy.uk/search/",
       "id": "festival:shindig-festival:2027-05-30",
-      "location_display": "South West"
+      "location_display": "South West",
+      "detail_url": "https://shindigfestival.seetickets.com/event/shindig-festival-2027/shindig-festival/3643193"
     },
     {
       "title": "Slam Dunk Festival South",
@@ -634,7 +174,8 @@
       "ticket_url": "https://fezzy.uk/festival/slam-dunk-festival-south/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:slam-dunk-festival-south:2027-05-30",
-      "location_display": "Hatfield"
+      "location_display": "Hatfield",
+      "detail_url": "https://fezzy.uk/festival/slam-dunk-festival-south/"
     },
     {
       "title": "The Orkney Folk Festival",
@@ -645,7 +186,8 @@
       "ticket_url": "https://fezzy.uk/festival/the-orkney-folk-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:the-orkney-folk-festival:2027-05-30",
-      "location_display": "Stromness"
+      "location_display": "Stromness",
+      "detail_url": "https://fezzy.uk/festival/the-orkney-folk-festival/"
     },
     {
       "title": "Sidmouth International Jazz & Blues Festival",
@@ -656,7 +198,8 @@
       "ticket_url": "https://fezzy.uk/festival/sidmouth-international-jazz-blues-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:sidmouth-international-jazz-blues-festival:2027-05-31",
-      "location_display": "Sidmouth"
+      "location_display": "Sidmouth",
+      "detail_url": "https://fezzy.uk/festival/sidmouth-international-jazz-blues-festival/"
     },
     {
       "title": "Belsonic",
@@ -667,7 +210,8 @@
       "ticket_url": "https://fezzy.uk/festival/belsonic/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:belsonic:2027-06-11",
-      "location_display": "Belfast"
+      "location_display": "Belfast",
+      "detail_url": "https://fezzy.uk/festival/belsonic/"
     },
     {
       "title": "Restricted Forest",
@@ -678,7 +222,8 @@
       "ticket_url": "https://www.skiddle.com/festivals/restricted-forest/?sktag=15441&skcampaign=fezzy",
       "source": "https://fezzy.uk/search/",
       "id": "festival:restricted-forest:2027-06-26",
-      "location_display": "North West"
+      "location_display": "North West",
+      "detail_url": "https://www.skiddle.com/festivals/restricted-forest/?sktag=15441&skcampaign=fezzy"
     },
     {
       "title": "Lytham Festival",
@@ -689,7 +234,8 @@
       "ticket_url": "https://fezzy.uk/festival/lytham-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:lytham-festival:2027-06-30",
-      "location_display": "Lytham"
+      "location_display": "Lytham",
+      "detail_url": "https://fezzy.uk/festival/lytham-festival/"
     },
     {
       "title": "Boogietown",
@@ -700,7 +246,8 @@
       "ticket_url": "https://fezzy.uk/festival/boogietown/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:boogietown:2027-07-10",
-      "location_display": "South East"
+      "location_display": "South East",
+      "detail_url": "https://fezzy.uk/festival/boogietown/"
     },
     {
       "title": "Folk By The Oak",
@@ -711,7 +258,8 @@
       "ticket_url": "https://fezzy.uk/festival/folk-by-the-oak/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:folk-by-the-oak:2027-07-18",
-      "location_display": "Hatfield"
+      "location_display": "Hatfield",
+      "detail_url": "https://fezzy.uk/festival/folk-by-the-oak/"
     },
     {
       "title": "Kendal Calling",
@@ -722,7 +270,8 @@
       "ticket_url": "https://kendalcalling.seetickets.com/event/kendal-calling-2027/lowther-deer-park/3699840",
       "source": "https://fezzy.uk/search/",
       "id": "festival:kendal-calling:2027-07-29",
-      "location_display": "Kendal"
+      "location_display": "Kendal",
+      "detail_url": "https://kendalcalling.seetickets.com/event/kendal-calling-2027/lowther-deer-park/3699840"
     },
     {
       "title": "The Green Gathering",
@@ -733,7 +282,8 @@
       "ticket_url": "https://fezzy.uk/festival/the-green-gathering/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:the-green-gathering:2027-07-29",
-      "location_display": "Wales"
+      "location_display": "Wales",
+      "detail_url": "https://fezzy.uk/festival/the-green-gathering/"
     },
     {
       "title": "Valley Fest",
@@ -744,7 +294,8 @@
       "ticket_url": "https://fezzy.uk/festival/valley-fest/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:valley-fest:2027-07-29",
-      "location_display": "Bristol"
+      "location_display": "Bristol",
+      "detail_url": "https://fezzy.uk/festival/valley-fest/"
     },
     {
       "title": "Wickham Festival",
@@ -755,7 +306,8 @@
       "ticket_url": "https://fezzy.uk/festival/wickham-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:wickham-festival:2027-07-29",
-      "location_display": "Wickham"
+      "location_display": "Wickham",
+      "detail_url": "https://fezzy.uk/festival/wickham-festival/"
     },
     {
       "title": "Empire LARP",
@@ -766,7 +318,8 @@
       "ticket_url": "https://fezzy.uk/festival/empire-larp/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:empire-larp:2027-07-30",
-      "location_display": "Cottenham"
+      "location_display": "Cottenham",
+      "detail_url": "https://fezzy.uk/festival/empire-larp/"
     },
     {
       "title": "Festival On The Farm",
@@ -777,7 +330,8 @@
       "ticket_url": "https://fezzy.uk/festival/festival-on-the-farm/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:festival-on-the-farm:2027-07-30",
-      "location_display": "Swindon"
+      "location_display": "Swindon",
+      "detail_url": "https://fezzy.uk/festival/festival-on-the-farm/"
     },
     {
       "title": "Harlequin Fayre",
@@ -788,7 +342,8 @@
       "ticket_url": "https://fezzy.uk/festival/harlequin-fayre/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:harlequin-fayre:2027-07-30",
-      "location_display": "East of England"
+      "location_display": "East of England",
+      "detail_url": "https://fezzy.uk/festival/harlequin-fayre/"
     },
     {
       "title": "Radar Festival",
@@ -799,7 +354,8 @@
       "ticket_url": "https://radarfestival.seetickets.com/event/radar-festival-2027/magna/3699236",
       "source": "https://fezzy.uk/search/",
       "id": "festival:radar-festival:2027-07-30",
-      "location_display": "Manchester"
+      "location_display": "Manchester",
+      "detail_url": "https://radarfestival.seetickets.com/event/radar-festival-2027/magna/3699236"
     },
     {
       "title": "Sidmouth Folk Festival",
@@ -810,7 +366,8 @@
       "ticket_url": "https://fezzy.uk/festival/sidmouth-folk-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:sidmouth-folk-festival:2027-07-30",
-      "location_display": "Sidmouth"
+      "location_display": "Sidmouth",
+      "detail_url": "https://fezzy.uk/festival/sidmouth-folk-festival/"
     },
     {
       "title": "Stowaway Festival",
@@ -821,7 +378,8 @@
       "ticket_url": "https://www.stowawayfestival.co.uk/tickets",
       "source": "https://fezzy.uk/search/",
       "id": "festival:stowaway-festival:2027-07-30",
-      "location_display": "Aylesbury"
+      "location_display": "Aylesbury",
+      "detail_url": "https://www.stowawayfestival.co.uk/tickets"
     },
     {
       "title": "Y Not Festival",
@@ -832,7 +390,8 @@
       "ticket_url": "https://fezzy.uk/festival/y-not-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:y-not-festival:2027-07-30",
-      "location_display": "East Midlands"
+      "location_display": "East Midlands",
+      "detail_url": "https://fezzy.uk/festival/y-not-festival/"
     },
     {
       "title": "Reggae Land",
@@ -843,7 +402,8 @@
       "ticket_url": "https://www.skiddle.com/festivals/Reggae-Land/?sktag=15441&skcampaign=fezzy",
       "source": "https://fezzy.uk/search/",
       "id": "festival:reggae-land:2027-07-31",
-      "location_display": "South East"
+      "location_display": "South East",
+      "detail_url": "https://www.skiddle.com/festivals/Reggae-Land/?sktag=15441&skcampaign=fezzy"
     },
     {
       "title": "Cambridge Folk Festival",
@@ -854,7 +414,8 @@
       "ticket_url": "https://fezzy.uk/festival/cambridge-folk-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:cambridge-folk-festival:2027-08-01",
-      "location_display": "Cambridge"
+      "location_display": "Cambridge",
+      "detail_url": "https://fezzy.uk/festival/cambridge-folk-festival/"
     },
     {
       "title": "Lincs Summer Sounds",
@@ -865,7 +426,8 @@
       "ticket_url": "https://fezzy.uk/festival/lincs-summer-sounds/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:lincs-summer-sounds:2027-08-28",
-      "location_display": "Boston, Lincolnshire"
+      "location_display": "Boston, Lincolnshire",
+      "detail_url": "https://fezzy.uk/festival/lincs-summer-sounds/"
     },
     {
       "title": "Stonedead Festival",
@@ -876,7 +438,8 @@
       "ticket_url": "https://fezzy.uk/festival/stonedead-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:stonedead-festival:2027-08-28",
-      "location_display": "East Midlands"
+      "location_display": "East Midlands",
+      "detail_url": "https://fezzy.uk/festival/stonedead-festival/"
     },
     {
       "title": "CarFest (North & South)",
@@ -887,7 +450,8 @@
       "ticket_url": "https://fezzy.uk/festival/carfest-north-south/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:carfest-north-south:2027-08-29",
-      "location_display": "East Midlands"
+      "location_display": "East Midlands",
+      "detail_url": "https://fezzy.uk/festival/carfest-north-south/"
     },
     {
       "title": "CarFest Silverstone",
@@ -898,7 +462,8 @@
       "ticket_url": "https://fezzy.uk/festival/carfest-silverstone/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:carfest-silverstone:2027-08-29",
-      "location_display": "Towcester"
+      "location_display": "Towcester",
+      "detail_url": "https://fezzy.uk/festival/carfest-silverstone/"
     },
     {
       "title": "Electric Picnic",
@@ -909,7 +474,8 @@
       "ticket_url": "https://fezzy.uk/festival/electric-picnic/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:electric-picnic:2027-08-29",
-      "location_display": "Stradbally"
+      "location_display": "Stradbally",
+      "detail_url": "https://fezzy.uk/festival/electric-picnic/"
     },
     {
       "title": "Found Festival",
@@ -920,7 +486,8 @@
       "ticket_url": "https://fezzy.uk/festival/found-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:found-festival:2027-08-29",
-      "location_display": "Buckingham"
+      "location_display": "Buckingham",
+      "detail_url": "https://fezzy.uk/festival/found-festival/"
     },
     {
       "title": "The Big Feastival",
@@ -931,7 +498,8 @@
       "ticket_url": "https://fezzy.uk/festival/the-big-feastival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:the-big-feastival:2027-08-29",
-      "location_display": "South East"
+      "location_display": "South East",
+      "detail_url": "https://fezzy.uk/festival/the-big-feastival/"
     },
     {
       "title": "Victorious Festival",
@@ -942,7 +510,8 @@
       "ticket_url": "https://fezzy.uk/festival/victorious-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:victorious-festival:2027-08-29",
-      "location_display": "South East"
+      "location_display": "South East",
+      "detail_url": "https://fezzy.uk/festival/victorious-festival/"
     },
     {
       "title": "Greenbelt Festival",
@@ -953,7 +522,8 @@
       "ticket_url": "https://fezzy.uk/festival/greenbelt-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:greenbelt-festival:2027-08-30",
-      "location_display": "Kettering"
+      "location_display": "Kettering",
+      "detail_url": "https://fezzy.uk/festival/greenbelt-festival/"
     },
     {
       "title": "Shrewsbury Folk Festival",
@@ -964,7 +534,8 @@
       "ticket_url": "https://fezzy.uk/festival/shrewsbury-folk-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:shrewsbury-folk-festival:2027-08-30",
-      "location_display": "Shrewsbury"
+      "location_display": "Shrewsbury",
+      "detail_url": "https://fezzy.uk/festival/shrewsbury-folk-festival/"
     },
     {
       "title": "Twinwood Festival",
@@ -975,7 +546,8 @@
       "ticket_url": "https://fezzy.uk/festival/twinwood-festival/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:twinwood-festival:2027-08-30",
-      "location_display": "East of England"
+      "location_display": "East of England",
+      "detail_url": "https://fezzy.uk/festival/twinwood-festival/"
     },
     {
       "title": "Camp Wildfire",
@@ -986,7 +558,8 @@
       "ticket_url": "https://fezzy.uk/festival/camp-wildfire/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:camp-wildfire:2027-08-31",
-      "location_display": "Sevenoaks"
+      "location_display": "Sevenoaks",
+      "detail_url": "https://fezzy.uk/festival/camp-wildfire/"
     },
     {
       "title": "Love to Be",
@@ -997,7 +570,8 @@
       "ticket_url": "https://fezzy.uk/festival/love-to-be/",
       "source": "https://fezzy.uk/search/",
       "id": "festival:love-to-be:2027-09-04",
-      "location_display": "Scarborough"
+      "location_display": "Scarborough",
+      "detail_url": "https://fezzy.uk/festival/love-to-be/"
     }
   ]
 }
