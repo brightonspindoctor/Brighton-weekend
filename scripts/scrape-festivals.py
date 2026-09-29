@@ -35,7 +35,7 @@ def norm(s):
     return re.sub(r"[^a-z0-9]+"," ",s).strip()
 def parse_date_range(text, default_year):
     text=clean(text)
-    m=re.search(rf"\\b(\\d{{1,2}})(?:st|nd|rd|th)?\\s*[–-]\\s*(\\d{{1,2}})(?:st|nd|rd|th)?\\s+(?:{MONTHS})(?:\\s+(\\d{{4}}))?\\b",text,re.I)
+    m=re.search(rf"\b(\d{{1,2}})(?:st|nd|rd|th)?\s*[–-]\\s*(\\d{{1,2}})(?:st|nd|rd|th)?\\s+(?:{MONTHS})(?:\\s+(\\d{{4}}))?\\b",text,re.I)
     if m:
         raw=m.group(0)
         try:
