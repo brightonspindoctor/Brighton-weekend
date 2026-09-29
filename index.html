@@ -1124,13 +1124,13 @@ $('deleteAccount').onclick=async()=>{
   // Remove everything this app stored on the device, including the sign-in session.
   Object.keys(localStorage).filter(k=>k.startsWith('bw_')||k.startsWith('sb-')).forEach(k=>localStorage.removeItem(k));
   try{await supabase.auth.signOut()}catch(e){}
-  authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';customEvents=[];
+  authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';customEvents=[];festivals=[];
   events=events.filter(e=>!e.is_custom);$('accountEmail').textContent='';renderAll();showWelcome('auth');
   const msg=$('authMessage');msg.className='auth-success';msg.textContent='Your account and data have been deleted.';
  }catch(err){alert('Sorry, your account could not be deleted: '+(err.message||err)+'\nPlease try again, or email us using the address in the Privacy Policy.')}
  finally{btn.disabled=false;btn.textContent='Delete my account'}
 };
-$('signOut').onclick=async()=>{await supabase.auth.signOut();authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';localStorage.removeItem('bw_name');$('accountEmail').textContent='';renderAll();showWelcome('auth')};
+$('signOut').onclick=async()=>{await supabase.auth.signOut();authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';festivals=[];localStorage.removeItem('bw_name');$('accountEmail').textContent='';renderAll();showWelcome('auth')};
 $('partyOnBtn').onclick=finishWelcome;
 $('showCreateGroup').onclick=()=>{hide('joinGroupPanel');$('createGroupPanel').classList.toggle('hidden')};
 $('showJoinGroup').onclick=()=>{hide('createGroupPanel');$('joinGroupPanel').classList.toggle('hidden')};
@@ -1141,7 +1141,7 @@ $('next').onclick=()=>{weekStart.setDate(weekStart.getDate()+7);renderAll()};
 $('today').onclick=()=>{weekStart=getMonday();renderAll()};
 $('refresh').onclick=async()=>{
  const btn=$('refresh');btn.disabled=true;
- try{await loadCustomEvents();await refresh();await loadAttendance();await loadGroups();await loadGroupHappenings();renderAll();}
+ try{await loadCustomEvents();await refresh();await loadFestivals();await loadAttendance();await loadGroups();await loadGroupHappenings();renderAll();}
  finally{btn.disabled=false;}
 };
 $('changeName').onclick=()=>showWelcome('name');
