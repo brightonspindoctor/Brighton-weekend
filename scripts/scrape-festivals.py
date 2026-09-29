@@ -88,7 +88,7 @@ def card_data(card,title,default_year,source):
         if "ticket" in label and not ticket: ticket=href
         if ("details" in label or "/festival/" in href) and not detail: detail=href
     if not ticket: ticket=detail
-    return {"title":title,"date":d.isoformat(),"location":location,"category":classify(text),"ticket_url":ticket or detail or source,"source":source}
+    return {"title":title,"date":d.isoformat(),"date_end":date_end.isoformat(),"location":location,"category":classify(text),"ticket_url":ticket or detail or source,"source":source}
 def extract_fezzzy(html,url):
     soup=BeautifulSoup(html,"html.parser"); out=[]
     for h3 in soup.find_all(["h2","h3"]):
@@ -120,7 +120,7 @@ def extract_efestivals(html,url):
             candidate=clean(m.group(1))
             if candidate and len(candidate)<140: location=candidate
         ticket=urljoin(url,a["href"])
-        out.append({"title":title,"date":d.isoformat(),"location":location,"category":"Music","ticket_url":ticket,"source":url})
+        out.append({"title":title,"date":d.isoformat(),"date_end":date_end.isoformat(),"location":location,"category":"Music","ticket_url":ticket,"source":url})
     return out
 def merge(items):
     chosen=[]
@@ -136,6 +136,8 @@ def merge(items):
             if similar and same_loc:
                 duplicate=True
                 # Prefer a real ticket link over an aggregator detail page.
+                if date.fromisoformat(e.get("date_end",e["date"])) > date.fromisoformat(old.get("date_end",old["date"])):
+                    old["date_end"]=e["date_end"]
                 if "efestivals" in old["ticket_url"] and "efestivals" not in e["ticket_url"]:
                     old.update({"ticket_url":e["ticket_url"],"source":e["source"]})
                 break
