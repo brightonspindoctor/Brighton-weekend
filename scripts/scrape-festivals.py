@@ -46,7 +46,7 @@ EFESTIVALS=[f"https://www.efestivals.co.uk/festivals/festivals.php?from={n}&year
 MONTHS="Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?"
 DATE_RE=re.compile(rf"\b(?:\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})(?:\s+\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?)\b",re.I)
 RANGE_RE=re.compile(rf"\b\d{{1,2}}(?:st|nd|rd|th)?(?:\s*[–-]\s*\d{{1,2}}(?:st|nd|rd|th)?)?\s+(?:{MONTHS})(?:\s+\d{{4}})?\b",re.I)
-GENERIC={"festival","details","tickets","buy tickets","2027 tickets","check tickets","more","show more festivals","source checked","source check pending"}
+GENERIC={"festival","details","tickets","buy tickets","2027 tickets","check tickets","more","show more festivals","source checked","source check pending","read more","read less","places to stay","next","previous","list view","map view","grid view","plan your visit","things to do","what's on","work with us","submit event","site map","skip to main content","sign up for e-newsletter","translate","media","contact us","accommodation","info@aoh.org.uk"}
 
 def clean(s): return re.sub(r"\s+"," ",str(s or "")).strip()
 def norm(s):
@@ -95,7 +95,11 @@ def classify(text):
     if any(k in h for k in ("music","rock","pop","indie","electronic","folk","jazz","blues","metal","dance","dj","house","techno","punk","ska","soul","r&b")): return "Music"
     return "Other"
 def valid_title(t):
-    t=clean(t); return len(t)>=3 and len(t)<=180 and t.lower() not in GENERIC and not t.lower().startswith(("2026 edition","2027 tickets","check tickets"))
+    t=clean(t); h=t.lower()
+    if not (len(t)>=4 and len(t)<=180): return False
+    if h in GENERIC or h.startswith(("2026 edition","2027 tickets","check tickets")): return False
+    if "@" in t or re.fullmatch(r"[a-z]-[a-z](?: [a-z]-[a-z])*",h): return False
+    return bool(re.search(r"[a-z]{3}",h))
 def extract_card(h3):
     node=h3
     for _ in range(6):
@@ -134,24 +138,25 @@ def is_brighton_location(location):
 def extract_visitbrighton(html,url):
     soup=BeautifulSoup(html,"html.parser"); out=[]
     for a in soup.find_all("a",href=True):
+        href=a.get("href","")
+        if not re.search(r"/whats-on/[^/?#]+-p\d+",href,re.I): continue
         title=clean(a.get_text(" ",strip=True))
-        if not valid_title(title) or title.lower() in {"festivals in brighton","more details"}: continue
+        if not valid_title(title): continue
         parent=a
-        for _ in range(7):
+        for _ in range(5):
             parent=parent.parent
             if not parent: break
             text=clean(parent.get_text(" ",strip=True))
-            if re.search(r"Type\s*:??\s*Festival\b",text,re.I) and len(text)<=3000: break
+            if 80 <= len(text) <= 1800 and DATE_RE.search(text): break
         if not parent: continue
         text=clean(parent.get_text(" ",strip=True))
-        if not re.search(r"Type\s*:??\s*Festival\b",text,re.I): continue
         d,date_end=parse_date_range(text,TODAY.year)
         if not d: continue
-        m=re.search(r"Address\s+(.+?)(?:\s+Telephone\b|\s+Type\b)",text,re.I)
+        m=re.search(r"Address\s+(.+?)(?:\s+Telephone\b|\s+Type\b|\s+Website\b)",text,re.I)
         address=clean(m.group(1)) if m else ""
         if not is_brighton_location(address): continue
-        detail=urljoin(url,a["href"])
-        out.append({"title":title,"date":d.isoformat(),"date_end":(date_end or d).isoformat(),"location":address,"category":classify(text),"ticket_url":detail,"source":url})
+        detail=urljoin(url,href)
+        out.append({"title":title,"date":d.isoformat(),"date_end":(date_end or d).isoformat(),"location":address,"category":classify(text),"ticket_url":detail,"source":url,"detail_url":detail})
     return out
 
 def extract_brightonscoop(html,url):
@@ -180,13 +185,22 @@ def extract_brightonscoop(html,url):
 
 def extract_fezzzy(html,url):
     soup=BeautifulSoup(html,"html.parser"); out=[]
-    for h3 in soup.find_all(["h2","h3"]):
-        title=clean(h3.get_text(" ",strip=True))
+    for heading in soup.find_all(["h2","h3","button"]):
+        title=clean(heading.get_text(" ",strip=True))
         if not valid_title(title): continue
-        card=extract_card(h3)
-        if card:
-            e=card_data(card,title,TODAY.year,url)
-            if e: out.append(e)
+        card=extract_card(heading)
+        if not card: continue
+        detail=None
+        for a in card.find_all("a",href=True):
+            href=a.get("href","")
+            if re.search(r"/festival/[^/?#]+/?$",href,re.I):
+                detail=urljoin(url,href); break
+        if not detail: continue
+        e=card_data(card,title,TODAY.year,url)
+        if e:
+            e["detail_url"]=detail
+            e["ticket_url"]=detail
+            out.append(e)
     return out
 def extract_efestivals(html,url):
     # eFestivals listing cards contain the title, date range, location and ticket
