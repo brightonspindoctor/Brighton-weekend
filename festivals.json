@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-29",
-  "range_start": "2026-09-29",
+  "updated": "2026-09-30",
+  "range_start": "2026-09-30",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -9,6 +9,18 @@
     "eFestivals"
   ],
   "festivals": [
+    {
+      "title": "Osberton International Horse Trials",
+      "date": "2026-10-01",
+      "date_end": "2026-10-04",
+      "location": "Worksop",
+      "category": "Sport & Outdoor",
+      "ticket_url": "https://fezzy.uk/festival/osberton-international-horse-trials/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/osberton-international-horse-trials/",
+      "id": "festival:osberton-international-horse-trials:2026-10-01",
+      "location_display": "Worksop"
+    },
     {
       "title": "UKLTA Cyberpunk - A Life on the Edge",
       "date": "2026-10-02",
@@ -34,6 +46,18 @@
       "location_display": "Wetherby"
     },
     {
+      "title": "Little Downham Horse Trials",
+      "date": "2026-10-03",
+      "date_end": "2026-10-07",
+      "location": "Ely",
+      "category": "Sport & Outdoor",
+      "ticket_url": "https://fezzy.uk/festival/little-downham-horse-trials/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/little-downham-horse-trials/",
+      "id": "festival:little-downham-horse-trials:2026-10-03",
+      "location_display": "Ely"
+    },
+    {
       "title": "Orion Sphere Event 16 - Domino",
       "date": "2026-10-09",
       "date_end": "2026-10-11",
@@ -56,6 +80,18 @@
       "detail_url": "https://fezzy.uk/festival/wilde-realms-event-4-the-sacrifices-we-make/",
       "id": "festival:wilde-realms-event-4-the-sacrifices-we-make:2026-10-23",
       "location_display": "Herne Bay"
+    },
+    {
+      "title": "Tetworth Horse Trials",
+      "date": "2026-10-24",
+      "date_end": "2026-10-25",
+      "location": "Sandy, Cambridgeshire",
+      "category": "Sport & Outdoor",
+      "ticket_url": "https://fezzy.uk/festival/tetworth-horse-trials/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/tetworth-horse-trials/",
+      "id": "festival:tetworth-horse-trials:2026-10-24",
+      "location_display": "Sandy, Cambridgeshire"
     },
     {
       "title": "Damnation Festival",
@@ -130,6 +166,18 @@
       "location_display": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton"
     },
     {
+      "title": "More Details",
+      "date": "2026-11-28",
+      "date_end": "2026-11-28",
+      "location": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton",
+      "category": "Arts & Culture",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
+      "detail_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
+      "id": "festival:more-details:2026-11-28",
+      "location_display": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton"
+    },
+    {
       "title": "Celtic Connections",
       "date": "2027-01-14",
       "date_end": "2027-01-31",
@@ -188,6 +236,18 @@
       "detail_url": "https://fezzy.uk/festival/stockton-calling/",
       "id": "festival:stockton-calling:2027-03-27",
       "location_display": "Stockton-on-Tees"
+    },
+    {
+      "title": "April",
+      "date": "2027-04-02",
+      "date_end": "2027-04-02",
+      "location": "Manchester · Punk",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/manchester-punk-festival/",
+      "source": "https://fezzy.uk/collections/rock-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/manchester-punk-festival/",
+      "id": "festival:april:2027-04-02",
+      "location_display": "Manchester · Punk"
     },
     {
       "title": "York Blues Festival",
@@ -658,6 +718,30 @@
       "location_display": "Glasgow"
     },
     {
+      "title": "More Details",
+      "date": "2027-06-06",
+      "date_end": "2027-06-06",
+      "location": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove",
+      "category": "Family",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
+      "detail_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
+      "id": "festival:more-details:2027-06-06",
+      "location_display": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove"
+    },
+    {
+      "title": "Rotary Family Festival & Big Help Out",
+      "date": "2027-06-06",
+      "date_end": "2027-06-06",
+      "location": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove",
+      "category": "Family",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
+      "detail_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
+      "id": "festival:rotary-family-festival-big-help-out:2027-06-06",
+      "location_display": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove"
+    },
+    {
       "title": "Download Festival",
       "date": "2027-06-09",
       "date_end": "2027-06-13",
@@ -668,6 +752,18 @@
       "detail_url": "https://fezzy.uk/festival/download-festival/",
       "id": "festival:download-festival:2027-06-09",
       "location_display": "Castle Donington"
+    },
+    {
+      "title": "Bramham International Horse Trials",
+      "date": "2027-06-10",
+      "date_end": "2027-06-13",
+      "location": "Wetherby",
+      "category": "Sport & Outdoor",
+      "ticket_url": "https://fezzy.uk/festival/bramham-international-horse-trials/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/bramham-international-horse-trials/",
+      "id": "festival:bramham-international-horse-trials:2027-06-10",
+      "location_display": "Wetherby"
     },
     {
       "title": "Mighty Dub Fest",
@@ -740,6 +836,18 @@
       "detail_url": "https://fezzy.uk/festival/witney-music-festival/",
       "id": "festival:witney-music-festival:2027-06-12",
       "location_display": "Witney"
+    },
+    {
+      "title": "June",
+      "date": "2027-06-14",
+      "date_end": "2027-06-14",
+      "location": "Castle Donington · Rock",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/download-festival/",
+      "source": "https://fezzy.uk/collections/rock-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/download-festival/",
+      "id": "festival:june:2027-06-14",
+      "location_display": "Castle Donington · Rock"
     },
     {
       "title": "Isle of Wight Festival",
@@ -1006,6 +1114,18 @@
       "location_display": "Elvaston"
     },
     {
+      "title": "July",
+      "date": "2027-07-05",
+      "date_end": "2027-07-05",
+      "location": "Chilfest",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/chilfest/",
+      "source": "https://fezzy.uk/collections/pop-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/chilfest/",
+      "id": "festival:july:2027-07-05",
+      "location_display": "Chilfest"
+    },
+    {
       "title": "2000 Trees",
       "date": "2027-07-07",
       "date_end": "2027-07-10",
@@ -1028,6 +1148,18 @@
       "detail_url": "https://fezzy.uk/festival/henley-festival/",
       "id": "festival:henley-festival:2027-07-07",
       "location_display": "Henley-on-Thames"
+    },
+    {
+      "title": "July",
+      "date": "2027-07-08",
+      "date_end": "2027-07-08",
+      "location": "Limavady · Indie",
+      "category": "Food & Drink",
+      "ticket_url": "https://fezzy.uk/festival/stendhal-festival/",
+      "source": "https://fezzy.uk/collections/indie-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/stendhal-festival/",
+      "id": "festival:july:2027-07-08",
+      "location_display": "Limavady · Indie"
     },
     {
       "title": "Love Trails",
@@ -1172,6 +1304,18 @@
       "detail_url": "https://fezzy.uk/festival/rempstone-steam-country-show/",
       "id": "festival:rempstone-steam-country-show:2027-07-10",
       "location_display": "Wymeswold, Leicestershire"
+    },
+    {
+      "title": "July",
+      "date": "2027-07-11",
+      "date_end": "2027-07-11",
+      "location": "Minety · Rock",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/minety-music-festival/",
+      "source": "https://fezzy.uk/collections/rock-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/minety-music-festival/",
+      "id": "festival:july:2027-07-11",
+      "location_display": "Minety · Rock"
     },
     {
       "title": "HebCelt Festival",
@@ -1592,6 +1736,30 @@
       "detail_url": "https://fezzy.uk/festival/cambridge-folk-festival/",
       "id": "festival:cambridge-folk-festival:2027-08-01",
       "location_display": "Cambridge"
+    },
+    {
+      "title": "August",
+      "date": "2027-08-02",
+      "date_end": "2027-08-02",
+      "location": "All Points East",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/all-points-east/",
+      "source": "https://fezzy.uk/collections/pop-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/all-points-east/",
+      "id": "festival:august:2027-08-02",
+      "location_display": "All Points East"
+    },
+    {
+      "title": "August",
+      "date": "2027-08-04",
+      "date_end": "2027-08-04",
+      "location": "Blackpool · Punk",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/rebellion-festival/",
+      "source": "https://fezzy.uk/collections/rock-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/rebellion-festival/",
+      "id": "festival:august:2027-08-04",
+      "location_display": "Blackpool · Punk"
     },
     {
       "title": "Boardmasters",
@@ -2074,6 +2242,18 @@
       "location_display": "Buckingham"
     },
     {
+      "title": "Glenn Miller Festival",
+      "date": "2027-08-27",
+      "date_end": "2027-08-30",
+      "location": "Bedford",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/glenn-miller-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/glenn-miller-festival/",
+      "id": "festival:glenn-miller-festival:2027-08-27",
+      "location_display": "Bedford"
+    },
+    {
       "title": "Lincs Summer Sounds",
       "date": "2027-08-27",
       "date_end": "2027-08-28",
@@ -2206,6 +2386,18 @@
       "location_display": "Castle Donington"
     },
     {
+      "title": "September",
+      "date": "2027-09-03",
+      "date_end": "2027-09-03",
+      "location": "BunkFest",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/bunkfest/",
+      "source": "https://fezzy.uk/collections/rock-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/bunkfest/",
+      "id": "festival:september:2027-09-03",
+      "location_display": "BunkFest"
+    },
+    {
       "title": "Love to Be",
       "date": "2027-09-04",
       "date_end": "2027-09-04",
@@ -2216,6 +2408,18 @@
       "detail_url": "https://fezzy.uk/festival/love-to-be/",
       "id": "festival:love-to-be:2027-09-04",
       "location_display": "Scarborough"
+    },
+    {
+      "title": "September",
+      "date": "2027-09-04",
+      "date_end": "2027-09-04",
+      "location": "Tetbury · Electronic",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/existance-festival/",
+      "source": "https://fezzy.uk/collections/electronic-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/existance-festival/",
+      "id": "festival:september:2027-09-04",
+      "location_display": "Tetbury · Electronic"
     },
     {
       "title": "All England September Tour",
@@ -2290,6 +2494,18 @@
       "location_display": "Stowe"
     },
     {
+      "title": "Blenheim Palace International Horse Trials",
+      "date": "2027-09-16",
+      "date_end": "2027-09-19",
+      "location": "Woodstock",
+      "category": "Sport & Outdoor",
+      "ticket_url": "https://fezzy.uk/festival/blenheim-palace-international-horse-trials/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/blenheim-palace-international-horse-trials/",
+      "id": "festival:blenheim-palace-international-horse-trials:2027-09-16",
+      "location_display": "Woodstock"
+    },
+    {
       "title": "Goodwood Revival",
       "date": "2027-09-17",
       "date_end": "2027-09-19",
@@ -2300,90 +2516,6 @@
       "detail_url": "https://fezzy.uk/festival/goodwood-revival/",
       "id": "festival:goodwood-revival:2027-09-17",
       "location_display": "Chichester"
-    },
-    {
-      "title": "Brighton Festival",
-      "date": "2027-05-01",
-      "date_end": "2027-05-23",
-      "location": "Brighton & Hove",
-      "category": "Arts & Culture",
-      "ticket_url": "https://brightonfestival.org/",
-      "source": "https://brightonfestival.org/",
-      "detail_url": "https://brightonfestival.org/",
-      "id": "festival:brighton-festival:2027-05-01",
-      "location_display": "Brighton & Hove"
-    },
-    {
-      "title": "Brighton Fringe",
-      "date": "2027-05-07",
-      "date_end": "2027-06-06",
-      "location": "Brighton & Hove",
-      "category": "Arts & Culture",
-      "ticket_url": "https://www.brightonfringe.org/",
-      "source": "https://www.brightonfringe.org/",
-      "detail_url": "https://www.brightonfringe.org/",
-      "id": "festival:brighton-fringe:2027-05-07",
-      "location_display": "Brighton & Hove"
-    },
-    {
-      "title": "Land Beyond Festival",
-      "date": "2027-05-30",
-      "date_end": "2027-05-30",
-      "location": "East Brighton Park",
-      "category": "Music",
-      "ticket_url": "https://www.landbeyondfestival.co.uk/",
-      "source": "https://www.landbeyondfestival.co.uk/",
-      "detail_url": "https://www.landbeyondfestival.co.uk/",
-      "id": "festival:land-beyond-festival:2027-05-30",
-      "location_display": "East Brighton Park, Brighton"
-    },
-    {
-      "title": "Glorious Day Festival",
-      "date": "2027-06-05",
-      "date_end": "2027-06-05",
-      "location": "Hove Lawns",
-      "category": "Music",
-      "ticket_url": "https://gloriousdayfestival.co.uk/",
-      "source": "https://gloriousdayfestival.co.uk/",
-      "detail_url": "https://gloriousdayfestival.co.uk/",
-      "id": "festival:glorious-day-festival:2027-06-05",
-      "location_display": "Hove Lawns, Brighton & Hove"
-    },
-    {
-      "title": "At The Edge Of The Sea XVII",
-      "date": "2027-08-06",
-      "date_end": "2027-08-07",
-      "location": "Concorde 2",
-      "category": "Music",
-      "ticket_url": "https://www.scopitones.co.uk/ateots",
-      "source": "https://www.scopitones.co.uk/ateots",
-      "detail_url": "https://www.scopitones.co.uk/ateots",
-      "id": "festival:at-the-edge-of-the-sea-xvii:2027-08-06",
-      "location_display": "Concorde 2, Brighton"
-    },
-    {
-      "title": "Brighton Mod Weekender",
-      "date": "2027-08-27",
-      "date_end": "2027-08-30",
-      "location": "Various venues, Brighton",
-      "category": "Music",
-      "ticket_url": "https://www.efestivals.co.uk/festivals/brightonmod/2027",
-      "source": "https://www.efestivals.co.uk/festivals/brightonmod/2027",
-      "detail_url": "https://www.efestivals.co.uk/festivals/brightonmod/2027",
-      "id": "festival:brighton-mod-weekender:2027-08-27",
-      "location_display": "Various venues, Brighton"
-    },
-    {
-      "title": "Brighton Psych Fest",
-      "date": "2027-09-04",
-      "date_end": "2027-09-04",
-      "location": "Brighton",
-      "category": "Music",
-      "ticket_url": "https://brightonpsychfest.com/",
-      "source": "https://brightonpsychfest.com/",
-      "detail_url": "https://brightonpsychfest.com/",
-      "id": "festival:brighton-psych-fest:2027-09-04",
-      "location_display": "Brighton"
     }
   ]
 }
