@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-29",
-  "range_start": "2026-09-29",
-  "range_end": "2027-07-06",
+  "updated": "2026-09-30",
+  "range_start": "2026-09-30",
+  "range_end": "2027-07-07",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -27,80 +27,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-09-29-green-door-store-noize-magazine-vol-3-launch-ft-milkmaiden-more",
-      "title": "Noize Magazine Vol. 3 Launch ft Milkmaiden + more",
-      "date": "2026-09-29",
-      "venue": "Green Door Store",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-29-brighton-dome-crush",
-      "title": "CRUSH",
-      "date": "2026-09-29",
-      "venue": "Brighton Dome",
-      "time": "20:00",
-      "finish_time": "23:00",
-      "category": "Talk",
-      "ticket_url": "https://brightondome.org/whats-on/L1e-crush/"
-    },
-    {
-      "id": "2026-09-29-komedia-mark-thomas-40-in-stand-up-years-tue-29-sep-2026-8-00-pm-doors-7-00-pm",
-      "title": "Mark Thomas: 40 in Stand-Up Years",
-      "date": "2026-09-29",
-      "venue": "Komedia",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://www.komedia.co.uk/shows/mark-thomas-40-in-stand-up-years/?eid=19951"
-    },
-    {
-      "id": "2026-09-29-the-forge-comedy-club-rich-hall-chin-music",
-      "title": "Rich Hall: Chin Music",
-      "date": "2026-09-29",
-      "venue": "The Forge Comedy Club",
-      "time": "20:00",
-      "finish_time": "22:00",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/rich-hall-chin-music-tickets-1985513545463"
-    },
-    {
-      "id": "2026-09-29-theoldmarket-mammal-hands",
-      "title": "Mammal Hands",
-      "date": "2026-09-29",
-      "venue": "The Old Market",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://www.theoldmarket.com/shows",
-      "source_url": "https://www.theoldmarket.com/shows",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-29-the-prince-albert-club-brat-the-goods-joel-cusamano",
-      "title": "Club Brat / The Goods / Joel Cusamano",
-      "date": "2026-09-29",
-      "venue": "The Prince Albert",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
-    },
-    {
-      "id": "2026-09-29-theatreroyalbrighton-the-curious-incident-of-the-dog-in-the-night-time",
-      "title": "The Curious Incident Of The Dog In The Night-Time",
-      "date": "2026-09-29",
-      "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
-      "time": "",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "finish_time": ""
-    },
     {
       "id": "2026-09-30-green-door-store-agenda-collective-2nd-birthday-party",
       "title": "Agenda Collective 2nd Birthday Party",
@@ -205,6 +131,16 @@
       "ticket_url": "https://www.ents24.com/brighton-events/patterns",
       "source_url": "https://www.ents24.com/brighton-events/patterns",
       "finish_time": ""
+    },
+    {
+      "id": "2026-09-30-theatre-royal-brighton-the-curious-incident-of-the-dog-in-the-night-time",
+      "title": "The Curious Incident of the Dog in the Night-Time",
+      "date": "2026-09-30",
+      "venue": "Theatre Royal Brighton",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
       "id": "2026-10-01-the-forge-comedy-club-carl-hutchinson-fine-whine",
@@ -4865,6 +4801,16 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": ""
+    },
+    {
+      "id": "2026-11-13-brighton-dome-juliet-romeo",
+      "title": "Juliet & Romeo",
+      "date": "2026-11-13",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Brighton-Dome-Corn-Exchange/Juliet--Romeo/42643562/"
     },
     {
       "id": "2026-11-13-chalk-tigercub",
@@ -9808,6 +9754,16 @@
       "date": "2027-07-02",
       "venue": "Komedia",
       "time": "10:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
+      "id": "2027-07-02-komedia-tinky-winky-my-story",
+      "title": "Tinky Winky: My Story",
+      "date": "2027-07-02",
+      "venue": "Komedia",
+      "time": "18:30",
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/whats-on/"
