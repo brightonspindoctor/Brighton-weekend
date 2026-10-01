@@ -10,13 +10,13 @@
 <meta name="apple-mobile-web-app-title" content="Brighton Weekend">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#0B1D2F">
-<link rel="manifest" href="manifest.webmanifest?v=48">
-<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png?v=48">
-<link rel="apple-touch-icon-precomposed" sizes="180x180" href="icons/apple-touch-icon.png?v=48">
-<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png?v=48">
-<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png?v=48">
-<link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png?v=48">
-<link rel="shortcut icon" href="favicon.ico?v=48">
+<link rel="manifest" href="manifest.webmanifest?v=55">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png?v=55">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="icons/apple-touch-icon.png?v=55">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png?v=55">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png?v=55">
+<link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png?v=55">
+<link rel="shortcut icon" href="favicon.ico?v=55">
 
 <style id="bw-styles">
 /* ==========================================================================
@@ -323,6 +323,10 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .new-panel-head{display:flex;justify-content:space-between;align-items:center;gap:10px}
 .new-panel-head h3{display:flex;align-items:center;gap:8px}
 
+.welcome-install{width:100%;margin:0 0 12px}
+.shared-target{outline:2px solid var(--bw-coral);box-shadow:0 0 0 5px rgba(255,119,103,.16),var(--bw-shadow-card)}
+.share-link{appearance:none;cursor:pointer}
+
 /* Add to calendar */
 .cal-link{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:8px 12px;border-radius:var(--bw-radius-sm);border:1px solid var(--bw-line);background:var(--bw-deep);color:var(--bw-cream);font-size:var(--bw-text-sm);font-weight:700;text-decoration:none}
 .cal-link:hover{border-color:var(--bw-line-strong)}
@@ -342,7 +346,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <section id="welcome">
   <div class="welcome-card">
     <div id="authStep">
-      <img class="auth-logo" src="icons/icon-192.png?v=49" alt="Brighton Weekend logo">
+      <img class="auth-logo" src="icons/icon-192.png?v=55" alt="Brighton Weekend logo">
       <h2>Welcome to Brighton Weekend</h2>
       <p>Sign in securely to keep your plans, groups and profile across devices.</p>
       <button type="button" id="googleSignInBtn" class="btn google-btn">Continue with Google</button>
@@ -352,6 +356,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
         <button type="submit" id="magicLinkBtn" class="btn btn-secondary">Email me a sign-in link</button>
       </form>
       <p id="authMessage" class="group-meta"></p>
+      <button type="button" id="welcomeInstallApp" class="btn btn-primary welcome-install">↓ Download the app</button>
       <div class="welcome-info">
         <p><strong>Brighton Weekend</strong> helps you discover gigs, comedy, theatre and nightlife in Brighton &amp; Hove, then make plans with your groups.</p>
         <p><a href="about.html" target="_blank" rel="noopener">About</a> · <a href="privacy.html" target="_blank" rel="noopener">Privacy</a> · <a href="terms.html" target="_blank" rel="noopener">Terms</a></p>
@@ -405,7 +410,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 </section>
 
 <header><div class="wrap">
-  <div class="app-brand"><img src="icons/icon-192.png?v=49" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
+  <div class="app-brand"><img src="icons/icon-192.png?v=55" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
   <div class="sub" id="subtitle">Loading events…</div></div></div>
   <div class="controls">
     <button id="prev" aria-label="Previous week">‹</button><button id="week" class="week" aria-live="polite"></button><button id="next" aria-label="Next week">›</button>
@@ -902,6 +907,10 @@ function gcalUrl(e){
  return 'https://calendar.google.com/calendar/render?'+q.toString();
 }
 function calendarLink(e){const u=gcalUrl(e);return u?`<a class="cal-link" href="${esc(u)}" target="_blank" rel="noopener" aria-label="Add ${esc(e.title)} to Google Calendar">${CAL_ICON}<span>Add to calendar</span></a>`:''}
+function eventShareUrl(e){const base=window.location.href.split("#")[0].split("?")[0];return base+"?event="+encodeURIComponent(e.id)}
+async function shareEvent(e){const url=eventShareUrl(e),title=e.title||"Brighton Weekend event",text=[e.title,e.date?new Date(e.date+"T12:00:00").toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"}):"",e.venue_display||e.venue||""].filter(Boolean).join(" · ");try{if(navigator.share){await navigator.share({title,text,url});return}if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);alert("Event link copied to your clipboard.");return}window.prompt("Copy this event link:",url)}catch(err){if(err?.name==="AbortError")return;try{window.prompt("Copy this event link:",url)}catch(_){alert(url)}}}
+const SHARE_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="12" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="19" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 11l7.8-4.4M8 13l7.8 4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+function shareLink(e){return `<button type="button" class="cal-link share-link" data-share-event="${esc(e.id)}" aria-label="Share ${esc(e.title)}">${SHARE_ICON}<span>Share</span></button>`}
 const CAL_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 13v4M10 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 function ticketLink(e){const u=safeUrl(e.ticket_url);return u?`<a class="ticket" href="${esc(u)}" target="_blank" rel="noopener">Tickets ↗</a>`:''}
 function eventCard(e,{showDate=false}={}){
@@ -909,11 +918,11 @@ function eventCard(e,{showDate=false}={}){
  const a=uniqueGroupPeopleCount(e.id,'interested'), t=uniqueGroupPeopleCount(e.id,'ticket_bought');
  const d=showDate?parseEventDate(e.date):null;
  const when=[esc(e.venue_display||e.venue),timeRange(e)].filter(Boolean).join(' · ');
- return `<article class="card">${d?`<div class="card-date">${esc(d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}))}</div>`:''}<div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="added-by">added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${when}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">Sold out</span>':''}</div>
+ return `<article class="card" data-event-id="${esc(e.id)}">${d?`<div class="card-date">${esc(d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}))}</div>`:''}<div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="added-by">added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${when}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">Sold out</span>':''}</div>
  ${e.price?`<div class="price">${esc(e.price)}</div>`:''}
  <div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>${a} interested</span><span class="social-chip"><i class="social-icon going">${TICKET_ICON}</i>${t} going</span></div>
  ${commitmentButtons(e,mine)}
- <div class="actions">${ticketLink(e)}${calendarLink(e)}</div></article>`;
+ <div class="actions">${ticketLink(e)}${calendarLink(e)}${shareLink(e)}</div></article>`;
 }
 function render(){
  const end=new Date(weekStart);end.setDate(end.getDate()+6);
@@ -982,7 +991,7 @@ function renderPeople(){
   }).join('');
   const you=mine?`<div class="happening-you"><span class="happening-person-name">You</span>${statusPill(mine)}</div>`:'';
   const quiet=!sections?'<div class="note happening-quiet">No one in your groups has responded yet.</div>':'';
-  return `<div class="people-card card"><div class="top"><div><h3>${esc(e.title)}${e.is_custom?` <span class="added-by">community added</span>`:''}</h3><div class="meta">${e.id?.startsWith('festival:')?esc((e.location_display||e.location||'UK')+' · '+festivalDateLabel(e)):[esc(e.venue_display||e.venue),esc((parseEventDate(e.date)||new Date()).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})),timeRange(e)].filter(Boolean).join(' · ')}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">Sold out</span>':''}</div>${you}${summary.length?`<div class="happening-summary">${summary.join('')}</div>`:''}${sections}${quiet}${commitmentButtons(e,mine?{status:mine}:null)}<div class="actions">${ticketLink(e)}${calendarLink(e)}</div></div>`;
+  return `<div class="people-card card"><div class="top"><div><h3>${esc(e.title)}${e.is_custom?` <span class="added-by">community added</span>`:''}</h3><div class="meta">${e.id?.startsWith('festival:')?esc((e.location_display||e.location||'UK')+' · '+festivalDateLabel(e)):[esc(e.venue_display||e.venue),esc((parseEventDate(e.date)||new Date()).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})),timeRange(e)].filter(Boolean).join(' · ')}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">Sold out</span>':''}</div>${you}${summary.length?`<div class="happening-summary">${summary.join('')}</div>`:''}${sections}${quiet}${commitmentButtons(e,mine?{status:mine}:null)}<div class="actions">${ticketLink(e)}${calendarLink(e)}${shareLink(e)}</div></div>`;
  }).join('');
  $('peopleList').innerHTML=html;
 }
@@ -1109,13 +1118,14 @@ function setupSearch(){
 setupSearch();
 
 let deferredInstallPrompt=null;
-function setupInstallButton(){const btn=$('installApp'),hint=$('installHint');if(!btn)return;
+function setupInstallButton(){const btn=$('installApp'),welcomeBtn=$('welcomeInstallApp'),hint=$('installHint');const buttons=[btn,welcomeBtn].filter(Boolean);if(!buttons.length)return;
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstallPrompt=e;});
-window.addEventListener('appinstalled',()=>{deferredInstallPrompt=null;btn.classList.add('hidden');hint.textContent='Brighton Weekend is installed on your home screen.'});
-btn.onclick=async()=>{if(deferredInstallPrompt){deferredInstallPrompt.prompt();await deferredInstallPrompt.userChoice;deferredInstallPrompt=null;return;}
+window.addEventListener('appinstalled',()=>{deferredInstallPrompt=null;buttons.forEach(b=>b.classList.add('hidden'));if(hint)hint.textContent='Brighton Weekend is installed on your home screen.'});
+const install=async()=>{if(deferredInstallPrompt){deferredInstallPrompt.prompt();await deferredInstallPrompt.userChoice;deferredInstallPrompt=null;return;}
 const isiOS=/iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream;
 if(isiOS)alert('To add Brighton Weekend: use Safari, tap Share, choose “Add to Home Screen”, then tap Add. The Brighton Weekend icon will be used.');else alert('To add Brighton Weekend: open this site in Chrome, tap the three-dot menu, then choose “Install app” or “Add to Home screen”.');};
-if(window.matchMedia('(display-mode: standalone)').matches||navigator.standalone){btn.classList.add('hidden');hint.textContent='Brighton Weekend is already installed.';}}
+buttons.forEach(b=>b.onclick=install);
+if(window.matchMedia('(display-mode: standalone)').matches||navigator.standalone){buttons.forEach(b=>b.classList.add('hidden'));if(hint)hint.textContent='Brighton Weekend is already installed.'}}
 setupInstallButton();
 
 $('googleSignInBtn').addEventListener('click',async()=>{const btn=$('googleSignInBtn'),msg=$('authMessage');try{btn.disabled=true;msg.textContent='Opening Google…';await signInWithGoogle();}catch(err){msg.textContent='Could not start Google sign-in. '+(err.message||err);btn.disabled=false}});
@@ -1175,9 +1185,11 @@ document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{
 document.querySelectorAll('[data-festival-filter]').forEach(b=>b.onclick=()=>{festivalFilter=b.dataset.festivalFilter;renderFestivals()});
 // Commitment buttons are rendered in several lists; one delegated handler serves them all.
 document.addEventListener('click',e=>{const b=e.target.closest('[data-act]');if(!b)return;act(b.dataset.eventId,b.dataset.act)});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-share-event]');if(!b)return;const id=b.dataset.shareEvent,e=[...events,...festivals].find(x=>String(x.id)===String(id));if(e)shareEvent(e)});
 // ---- Landing page ----
 // Remembers, per user on this device, what was on screen at the last visit and
 // reports what is new since then.
+let pendingSharedEventId=new URLSearchParams(window.location.search).get("event");
 const seenKey=()=>'bw_seen_'+uid();
 let newSinceVisit=[], showNewPanel=false, homeShown=false;
 function readSeen(){try{return JSON.parse(localStorage.getItem(seenKey())||'null')}catch(e){return null}}
@@ -1245,7 +1257,7 @@ async function loadUserData(){
  events=mergeEvents(events.filter(e=>!e.is_custom));
  await loadGroupHappenings(); await loadProfileIcons();
  renderProfileIconSettings(); renderAll(); renderGroupManager();
- showHome();
+ showHome(); showSharedEvent();
 }
 (async()=>{
  renderVenues(); renderAll();
@@ -1259,8 +1271,8 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=54', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=55', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
-</html>
+</html>function showSharedEvent(){if(!pendingSharedEventId)return;const e=[...events,...festivals].find(x=>String(x.id)===String(pendingSharedEventId));if(!e)return;pendingSharedEventId=null;openTab("discover");const box=$('discover');const existing=box.querySelector('[data-event-id="'+CSS.escape(String(e.id))+']');if(existing){existing.scrollIntoView({behavior:"smooth",block:"center"});existing.classList.add("shared-target");setTimeout(()=>existing.classList.remove("shared-target"),3000);return}box.innerHTML='<section class="shared-event-panel"><div class="section-head"><h2>Shared event</h2><div class="note">Someone shared this event with you.</div></div>'+eventCard(e,{showDate:true})+'</section>'+box.innerHTML;const card=box.querySelector(".shared-event-panel [data-event-id]");if(card){card.classList.add("shared-target");setTimeout(()=>card.classList.remove("shared-target"),3000)}}
