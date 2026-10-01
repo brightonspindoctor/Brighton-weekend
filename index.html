@@ -1188,7 +1188,7 @@ document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{
 document.querySelectorAll('[data-festival-filter]').forEach(b=>b.onclick=()=>{festivalFilter=b.dataset.festivalFilter;renderFestivals()});
 // Commitment buttons are rendered in several lists; one delegated handler serves them all.
 document.addEventListener('click',e=>{const b=e.target.closest('[data-act]');if(!b)return;act(b.dataset.eventId,b.dataset.act)});
-document.addEventListener('click',e=>{const b=e.target.closest('[data-share-event]');if(!b)return;const id=b.dataset.shareEvent,e=[...events,...festivals].find(x=>String(x.id)===String(id));if(e)shareEvent(e)});
+document.addEventListener('click',ev=>{const b=ev.target.closest('[data-share-event]');if(!b)return;const id=b.dataset.shareEvent,e=[...events,...festivals].find(x=>String(x.id)===String(id));if(e)shareEvent(e)});
 // ---- Landing page ----
 // Remembers, per user on this device, what was on screen at the last visit and
 // reports what is new since then.
