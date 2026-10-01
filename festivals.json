@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-30",
-  "range_start": "2026-09-30",
+  "updated": "2026-10-01",
+  "range_start": "2026-10-01",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -160,7 +160,7 @@
       "location": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton",
       "category": "Arts & Culture",
       "ticket_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
       "detail_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
       "id": "festival:artist-open-houses-winter:2026-11-28",
       "location_display": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton"
@@ -172,7 +172,7 @@
       "location": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton",
       "category": "Arts & Culture",
       "ticket_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
       "detail_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
       "id": "festival:more-details:2026-11-28",
       "location_display": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton"
@@ -344,6 +344,18 @@
       "detail_url": "https://fezzy.uk/festival/glampfest/",
       "id": "festival:glampfest:2027-05-06",
       "location_display": "Knaresborough"
+    },
+    {
+      "title": "Pop festivals month by month",
+      "date": "2027-05-06",
+      "date_end": "2027-05-06",
+      "location": "May",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/liverpool-sound-city/",
+      "source": "https://fezzy.uk/collections/pop-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/liverpool-sound-city/",
+      "id": "festival:pop-festivals-month-by-month:2027-05-06",
+      "location_display": "May"
     },
     {
       "title": "Herofest",
@@ -724,7 +736,7 @@
       "location": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove",
       "category": "Family",
       "ticket_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
       "detail_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
       "id": "festival:more-details:2027-06-06",
       "location_display": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove"
@@ -736,7 +748,7 @@
       "location": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove",
       "category": "Family",
       "ticket_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
       "detail_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
       "id": "festival:rotary-family-festival-big-help-out:2027-06-06",
       "location_display": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove"
@@ -850,6 +862,18 @@
       "location_display": "Castle Donington · Rock"
     },
     {
+      "title": "Beardy Folk Festival",
+      "date": "2027-06-17",
+      "date_end": "2027-06-20",
+      "location": "West Midlands",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/beardy-folk-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/beardy-folk-festival/",
+      "id": "festival:beardy-folk-festival:2027-06-17",
+      "location_display": "West Midlands"
+    },
+    {
       "title": "Isle of Wight Festival",
       "date": "2027-06-17",
       "date_end": "2027-06-20",
@@ -910,15 +934,15 @@
       "location_display": "Chelmsford"
     },
     {
-      "title": "Wild Wood",
+      "title": "The Wild Wood Disco",
       "date": "2027-06-18",
       "date_end": "2027-06-21",
       "location": "Linton",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/wild-wood/",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/the-wild-wood-disco/",
       "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/wild-wood/",
-      "id": "festival:wild-wood:2027-06-18",
+      "detail_url": "https://fezzy.uk/festival/the-wild-wood-disco/",
+      "id": "festival:the-wild-wood-disco:2027-06-18",
       "location_display": "Linton"
     },
     {
@@ -1054,6 +1078,18 @@
       "location_display": "Largs"
     },
     {
+      "title": "Minety Music Festival",
+      "date": "2027-07-01",
+      "date_end": "2027-07-04",
+      "location": "Minety",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/minety-music-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/minety-music-festival/",
+      "id": "festival:minety-music-festival:2027-07-01",
+      "location_display": "Minety"
+    },
+    {
       "title": "Chilfest",
       "date": "2027-07-02",
       "date_end": "2027-07-03",
@@ -1148,6 +1184,18 @@
       "detail_url": "https://fezzy.uk/festival/henley-festival/",
       "id": "festival:henley-festival:2027-07-07",
       "location_display": "Henley-on-Thames"
+    },
+    {
+      "title": "New Forest Folk Festival",
+      "date": "2027-07-07",
+      "date_end": "2027-07-11",
+      "location": "South East",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/new-forest-folk-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/new-forest-folk-festival/",
+      "id": "festival:new-forest-folk-festival:2027-07-07",
+      "location_display": "South East"
     },
     {
       "title": "July",
@@ -1258,6 +1306,18 @@
       "location_display": "Priddy"
     },
     {
+      "title": "Todd in the Hole",
+      "date": "2027-07-09",
+      "date_end": "2027-07-11",
+      "location": "East of England",
+      "category": "Family",
+      "ticket_url": "https://fezzy.uk/festival/todd-in-the-hole/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/todd-in-the-hole/",
+      "id": "festival:todd-in-the-hole:2027-07-09",
+      "location_display": "East of England"
+    },
+    {
       "title": "Unity Fest",
       "date": "2027-07-09",
       "date_end": "2027-07-12",
@@ -1292,6 +1352,18 @@
       "detail_url": "https://fezzy.uk/festival/boogietown/",
       "id": "festival:boogietown:2027-07-10",
       "location_display": "South East"
+    },
+    {
+      "title": "Parklife",
+      "date": "2027-07-10",
+      "date_end": "2027-07-11",
+      "location": "Manchester",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/parklife/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/parklife/",
+      "id": "festival:parklife:2027-07-10",
+      "location_display": "Manchester"
     },
     {
       "title": "Rempstone Steam & Country Show",
@@ -1364,6 +1436,18 @@
       "detail_url": "https://fezzy.uk/festival/maid-of-stone-festival/",
       "id": "festival:maid-of-stone-festival:2027-07-16",
       "location_display": "Maidstone"
+    },
+    {
+      "title": "The Godney Gathering",
+      "date": "2027-07-16",
+      "date_end": "2027-07-17",
+      "location": "Glastonbury",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/the-godney-gathering/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/the-godney-gathering/",
+      "id": "festival:the-godney-gathering:2027-07-16",
+      "location_display": "Glastonbury"
     },
     {
       "title": "Wild in the Woods",
@@ -1798,6 +1882,18 @@
       "location_display": "Walton-on-Trent"
     },
     {
+      "title": "Deva Fest",
+      "date": "2027-08-05",
+      "date_end": "2027-08-08",
+      "location": "North West",
+      "category": "Food & Drink",
+      "ticket_url": "https://fezzy.uk/festival/deva-fest/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/deva-fest/",
+      "id": "festival:deva-fest:2027-08-05",
+      "location_display": "North West"
+    },
+    {
       "title": "Rebellion Festival",
       "date": "2027-08-05",
       "date_end": "2027-08-08",
@@ -1988,6 +2084,18 @@
       "detail_url": "https://fezzy.uk/festival/the-magpies-festival/",
       "id": "festival:the-magpies-festival:2027-08-13",
       "location_display": "York"
+    },
+    {
+      "title": "Timescape Festival",
+      "date": "2027-08-13",
+      "date_end": "2027-08-15",
+      "location": "Huntingdon",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/timescape-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/timescape-festival/",
+      "id": "festival:timescape-festival:2027-08-13",
+      "location_display": "Huntingdon"
     },
     {
       "title": "Vegan Camp Out",
