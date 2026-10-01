@@ -10,13 +10,13 @@
 <meta name="apple-mobile-web-app-title" content="Brighton Weekend">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#0B1D2F">
-<link rel="manifest" href="manifest.webmanifest?v=55">
-<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png?v=55">
-<link rel="apple-touch-icon-precomposed" sizes="180x180" href="icons/apple-touch-icon.png?v=55">
-<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png?v=55">
-<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png?v=55">
-<link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png?v=55">
-<link rel="shortcut icon" href="favicon.ico?v=55">
+<link rel="manifest" href="manifest.webmanifest?v=57">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png?v=57">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="icons/apple-touch-icon.png?v=57">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png?v=57">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png?v=57">
+<link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png?v=57">
+<link rel="shortcut icon" href="favicon.ico?v=57">
 
 <style id="bw-styles">
 /* ==========================================================================
@@ -346,7 +346,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <section id="welcome">
   <div class="welcome-card">
     <div id="authStep">
-      <img class="auth-logo" src="icons/icon-192.png?v=55" alt="Brighton Weekend logo">
+      <img class="auth-logo" src="icons/icon-192.png?v=57" alt="Brighton Weekend logo">
       <h2>Welcome to Brighton Weekend</h2>
       <p>Sign in securely to keep your plans, groups and profile across devices.</p>
       <button type="button" id="googleSignInBtn" class="btn google-btn">Continue with Google</button>
@@ -410,7 +410,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 </section>
 
 <header><div class="wrap">
-  <div class="app-brand"><img src="icons/icon-192.png?v=55" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
+  <div class="app-brand"><img src="icons/icon-192.png?v=57" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
   <div class="sub" id="subtitle">Loading events…</div></div></div>
   <div class="controls">
     <button id="prev" aria-label="Previous week">‹</button><button id="week" class="week" aria-live="polite"></button><button id="next" aria-label="Next week">›</button>
@@ -910,7 +910,7 @@ function calendarLink(e){const u=gcalUrl(e);return u?`<a class="cal-link" href="
 function eventShareUrl(e){const base=window.location.href.split("#")[0].split("?")[0];return base+"?event="+encodeURIComponent(e.id)}
 async function shareEvent(e){const url=eventShareUrl(e),title=e.title||"Brighton Weekend event",text=[e.title,e.date?new Date(e.date+"T12:00:00").toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"}):"",e.venue_display||e.venue||""].filter(Boolean).join(" · ");try{if(navigator.share){await navigator.share({title,text,url});return}if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);alert("Event link copied to your clipboard.");return}window.prompt("Copy this event link:",url)}catch(err){if(err?.name==="AbortError")return;try{window.prompt("Copy this event link:",url)}catch(_){alert(url)}}}
 const SHARE_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="12" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="19" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 11l7.8-4.4M8 13l7.8 4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
-function shareLink(e){return `<button type="button" class="cal-link share-link" data-share-event="${esc(e.id)}" aria-label="Share ${esc(e.title)}">${SHARE_ICON}<span>Share</span></button>`}
+function shareLink(e){return `<button type="button" class="cal-link share-link" title="Share this event" data-share-event="${esc(e.id)}" aria-label="Share ${esc(e.title)}">${SHARE_ICON}<span>Share</span></button>`}
 const CAL_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 13v4M10 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 function ticketLink(e){const u=safeUrl(e.ticket_url);return u?`<a class="ticket" href="${esc(u)}" target="_blank" rel="noopener">Tickets ↗</a>`:''}
 function eventCard(e,{showDate=false}={}){
@@ -1274,7 +1274,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=56', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=57', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
