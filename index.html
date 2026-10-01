@@ -78,6 +78,11 @@ html{background:var(--bw-abyss);color-scheme:dark}
 body{margin:0;min-height:100%;background:var(--bw-abyss);color:var(--bw-cream);font-family:var(--bw-font);font-size:var(--bw-text-md);letter-spacing:-.01em;-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none}
 button,input,select,textarea{font:inherit;color:inherit}
 button{cursor:pointer}
+/* App feel: nothing may widen the page past the screen, no double-tap zoom,
+   and form fields at 16px so iPhones don't zoom in when you tap them */
+html,body{overflow-x:clip;max-width:100%}
+body{touch-action:manipulation}
+input,select,textarea{font-size:max(16px,1em)}
 a{color:inherit}
 h1,h2,h3,h4{margin:0;letter-spacing:-.03em;line-height:1.2}
 h2{font-size:var(--bw-text-xl);font-weight:800}
@@ -1193,6 +1198,8 @@ document.addEventListener('click',ev=>{const b=ev.target.closest('[data-share-ev
 // Remembers, per user on this device, what was on screen at the last visit and
 // reports what is new since then.
 let pendingSharedEventId=new URLSearchParams(window.location.search).get("event");
+// Opens an event someone shared via a ?event= link
+function showSharedEvent(){if(!pendingSharedEventId)return;const e=[...events,...festivals].find(x=>String(x.id)===String(pendingSharedEventId));if(!e)return;pendingSharedEventId=null;openTab("discover");const box=$('discover');const existing=box.querySelector('[data-event-id="'+CSS.escape(String(e.id))+'"]');if(existing){existing.scrollIntoView({behavior:"smooth",block:"center"});existing.classList.add("shared-target");setTimeout(()=>existing.classList.remove("shared-target"),3000);return}box.innerHTML='<section class="shared-event-panel"><div class="section-head"><h2>Shared event</h2><div class="note">Someone shared this event with you.</div></div>'+eventCard(e,{showDate:true})+'</section>'+box.innerHTML;const card=box.querySelector(".shared-event-panel [data-event-id]");if(card){card.classList.add("shared-target");setTimeout(()=>card.classList.remove("shared-target"),3000)}}
 const seenKey=()=>'bw_seen_'+uid();
 let newSinceVisit=[], showNewPanel=false, homeShown=false;
 function readSeen(){try{return JSON.parse(localStorage.getItem(seenKey())||'null')}catch(e){return null}}
@@ -1278,4 +1285,4 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 </body>
-</html>function showSharedEvent(){if(!pendingSharedEventId)return;const e=[...events,...festivals].find(x=>String(x.id)===String(pendingSharedEventId));if(!e)return;pendingSharedEventId=null;openTab("discover");const box=$('discover');const existing=box.querySelector('[data-event-id="'+CSS.escape(String(e.id))+']');if(existing){existing.scrollIntoView({behavior:"smooth",block:"center"});existing.classList.add("shared-target");setTimeout(()=>existing.classList.remove("shared-target"),3000);return}box.innerHTML='<section class="shared-event-panel"><div class="section-head"><h2>Shared event</h2><div class="note">Someone shared this event with you.</div></div>'+eventCard(e,{showDate:true})+'</section>'+box.innerHTML;const card=box.querySelector(".shared-event-panel [data-event-id]");if(card){card.classList.add("shared-target");setTimeout(()=>card.classList.remove("shared-target"),3000)}}
+</html>
