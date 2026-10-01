@@ -282,7 +282,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .nav button.has-new .nav-icon::after{content:"";display:inline-block;width:6px;height:6px;margin-left:2px;border-radius:50%;background:var(--bw-coral);vertical-align:top}
 
 /* ---------- 12. Welcome / sign-in ---------- */
-#welcome{position:fixed;inset:0;z-index:20;width:100%;height:100dvh;min-height:100dvh;overflow:hidden;display:grid;place-items:center;touch-action:none;padding:max(8px,env(safe-area-inset-top)) 12px max(8px,env(safe-area-inset-bottom));background:var(--bw-abyss)}
+#welcome{position:fixed;inset:0;z-index:20;width:auto;height:auto;min-height:0;overflow:hidden;display:flex;align-items:center;justify-content:center;touch-action:none;padding:max(8px,env(safe-area-inset-top)) 12px max(8px,env(safe-area-inset-bottom));background:var(--bw-abyss)}
 .welcome-card{width:min(420px,92vw);background:var(--bw-card);border:1px solid var(--bw-line);border-radius:var(--bw-radius-xl);padding:20px 20px;box-shadow:0 20px 60px rgba(0,0,0,.45);text-align:center}
 .welcome-card h2{font-size:1.75rem;margin-bottom:7px}
 .welcome-card>div>p{color:var(--bw-muted);font-size:var(--bw-text-md);line-height:1.4;margin:0 0 14px}
