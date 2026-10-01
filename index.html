@@ -280,13 +280,13 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .nav button.has-new .nav-icon::after{content:"";display:inline-block;width:6px;height:6px;margin-left:2px;border-radius:50%;background:var(--bw-coral);vertical-align:top}
 
 /* ---------- 12. Welcome / sign-in ---------- */
-#welcome{position:fixed;inset:0;z-index:20;min-height:100dvh;overflow:auto;display:grid;place-items:center;padding:20px;background:var(--bw-abyss)}
-.welcome-card{width:min(420px,92vw);background:var(--bw-card);border:1px solid var(--bw-line);border-radius:var(--bw-radius-xl);padding:30px 26px;box-shadow:0 20px 60px rgba(0,0,0,.45);text-align:center}
+#welcome{position:fixed;inset:0;z-index:20;height:100dvh;overflow:hidden;display:grid;place-items:center;padding:max(12px,env(safe-area-inset-top)) 12px max(12px,env(safe-area-inset-bottom));background:var(--bw-abyss)}
+.welcome-card{width:min(420px,92vw);max-height:calc(100dvh - 24px);overflow:auto;background:var(--bw-card);border:1px solid var(--bw-line);border-radius:var(--bw-radius-xl);padding:24px 22px;box-shadow:0 20px 60px rgba(0,0,0,.45);text-align:center}
 .welcome-card h2{font-size:1.9rem;margin-bottom:9px}
 .welcome-card>div>p{color:var(--bw-muted);font-size:var(--bw-text-md);line-height:1.45;margin:0 0 20px}
 .welcome-card form{display:grid;gap:10px}
 .welcome-card .btn{width:100%}
-.auth-logo{width:88px;height:88px;border-radius:22px;display:block;margin:0 auto 16px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.auth-logo{width:76px;height:76px;border-radius:20px;display:block;margin:0 auto 12px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
 .magic-link-divider{display:flex;align-items:center;gap:10px;margin:16px 0;color:var(--bw-subtle);font-size:var(--bw-text-sm)}
 .magic-link-divider::before,.magic-link-divider::after{content:"";flex:1;height:1px;background:var(--bw-line)}
 #authMessage{margin-top:12px;min-height:1em}
@@ -356,7 +356,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
         <button type="submit" id="magicLinkBtn" class="btn btn-secondary">Email me a sign-in link</button>
       </form>
       <p id="authMessage" class="group-meta"></p>
-      <button type="button" id="welcomeInstallApp" class="btn btn-primary welcome-install">↓ Download the app</button>
+      <button type="button" id="welcomeInstallApp" class="btn btn-primary welcome-install hidden">↓ Download the app</button>
       <div class="welcome-info">
         <p><strong>Brighton Weekend</strong> helps you discover gigs, comedy, theatre and nightlife in Brighton &amp; Hove, then make plans with your groups.</p>
         <p><a href="about.html" target="_blank" rel="noopener">About</a> · <a href="privacy.html" target="_blank" rel="noopener">Privacy</a> · <a href="terms.html" target="_blank" rel="noopener">Terms</a></p>
@@ -1119,13 +1119,16 @@ setupSearch();
 
 let deferredInstallPrompt=null;
 function setupInstallButton(){const btn=$('installApp'),welcomeBtn=$('welcomeInstallApp'),hint=$('installHint');const buttons=[btn,welcomeBtn].filter(Boolean);if(!buttons.length)return;
-window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstallPrompt=e;});
+const standalone=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone;
+if(standalone){buttons.forEach(b=>b.classList.add('hidden'));if(hint)hint.textContent='Brighton Weekend is already installed.';return;}
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstallPrompt=e;if(welcomeBtn)welcomeBtn.classList.remove('hidden');});
 window.addEventListener('appinstalled',()=>{deferredInstallPrompt=null;buttons.forEach(b=>b.classList.add('hidden'));if(hint)hint.textContent='Brighton Weekend is installed on your home screen.'});
-const install=async()=>{if(deferredInstallPrompt){deferredInstallPrompt.prompt();await deferredInstallPrompt.userChoice;deferredInstallPrompt=null;return;}
 const isiOS=/iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream;
+if(isiOS&&welcomeBtn)welcomeBtn.classList.remove('hidden');
+const install=async()=>{if(deferredInstallPrompt){deferredInstallPrompt.prompt();await deferredInstallPrompt.userChoice;deferredInstallPrompt=null;return;}
 if(isiOS)alert('To add Brighton Weekend: use Safari, tap Share, choose “Add to Home Screen”, then tap Add. The Brighton Weekend icon will be used.');else alert('To add Brighton Weekend: open this site in Chrome, tap the three-dot menu, then choose “Install app” or “Add to Home screen”.');};
 buttons.forEach(b=>b.onclick=install);
-if(window.matchMedia('(display-mode: standalone)').matches||navigator.standalone){buttons.forEach(b=>b.classList.add('hidden'));if(hint)hint.textContent='Brighton Weekend is already installed.'}}
+}
 setupInstallButton();
 
 $('googleSignInBtn').addEventListener('click',async()=>{const btn=$('googleSignInBtn'),msg=$('authMessage');try{btn.disabled=true;msg.textContent='Opening Google…';await signInWithGoogle();}catch(err){msg.textContent='Could not start Google sign-in. '+(err.message||err);btn.disabled=false}});
@@ -1271,7 +1274,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=55', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=56', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
