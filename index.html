@@ -76,6 +76,7 @@
 *{box-sizing:border-box}
 html{background:var(--bw-abyss);color-scheme:dark}
 body{margin:0;min-height:100%;background:var(--bw-abyss);color:var(--bw-cream);font-family:var(--bw-font);font-size:var(--bw-text-md);letter-spacing:-.01em;-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none}
+body.welcome-open{height:100dvh;min-height:100dvh;overflow:hidden;position:fixed;width:100%;inset:0}
 button,input,select,textarea{font:inherit;color:inherit}
 button{cursor:pointer}
 a{color:inherit}
@@ -1279,7 +1280,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=57', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=59', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
