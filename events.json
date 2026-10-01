@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-30",
-  "range_start": "2026-09-30",
-  "range_end": "2027-07-07",
+  "updated": "2026-10-01",
+  "range_start": "2026-10-01",
+  "range_end": "2027-07-08",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -27,121 +27,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-09-30-green-door-store-agenda-collective-2nd-birthday-party",
-      "title": "Agenda Collective 2nd Birthday Party",
-      "date": "2026-09-30",
-      "venue": "Green Door Store",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/"
-    },
-    {
-      "id": "2026-09-30-komedia-brushy-one-string-wed-30-sep-2026-doors-7-30-pm",
-      "title": "Brushy One String",
-      "date": "2026-09-30",
-      "venue": "Komedia",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/brushy-one-string/?eid=20738"
-    },
-    {
-      "id": "2026-09-30-komedia-li-jin-hao-falling-from-a-moon-wed-30-sep-2026-8-00-pm-doors-7-30-pm",
-      "title": "Li Jin Hao: Falling from a Moon",
-      "date": "2026-09-30",
-      "venue": "Komedia",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/li-jin-hao-falling-from-a-moon/?eid=19564"
-    },
-    {
-      "id": "2026-09-30-brightoncentre-party101-with-matt-bennett",
-      "title": "Party101 with Matt Bennett",
-      "date": "2026-09-30",
-      "venue": "Brighton Centre",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://brightoncentre.co.uk/",
-      "source_url": "https://brightoncentre.co.uk/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-30-brighton-dome-crush",
-      "title": "CRUSH",
-      "date": "2026-09-30",
-      "venue": "Brighton Dome",
-      "time": "",
-      "finish_time": "",
-      "category": "Theatre",
-      "ticket_url": "https://brightondome.org/whats-on/L1e-crush/"
-    },
-    {
-      "id": "2026-09-30-brighton-dome-you-might-also-like",
-      "title": "You might also like",
-      "date": "2026-09-30",
-      "venue": "Brighton Dome",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://brightondome.org/whats-on/L17-brighton-dome-backstage-tours/"
-    },
-    {
-      "id": "2026-09-30-chalk-bridge-city-sinners",
-      "title": "Bridge City Sinners",
-      "date": "2026-09-30",
-      "venue": "CHALK",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://chalkvenue.com/",
-      "source_url": "https://chalkvenue.com/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-30-concorde2-man-woman-chainsaw",
-      "title": "Man/Woman/Chainsaw",
-      "date": "2026-09-30",
-      "venue": "Concorde 2",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "source_url": "https://www.concorde2.co.uk/whats-on",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-30-dust-francis-of-delirium",
-      "title": "Francis of Delirium",
-      "date": "2026-09-30",
-      "venue": "DUST",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://www.ticketmaster.co.uk/dust-tickets-brighton/venue/415678",
-      "source_url": "https://www.ticketmaster.co.uk/dust-tickets-brighton/venue/415678",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-30-patterns-spitalfield-jonah-matranga-jon-walker-gambling-with-dogs",
-      "title": "Spitalfield Jonah Matranga, Jon Walker, Gambling With Dogs",
-      "date": "2026-09-30",
-      "venue": "Patterns",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/patterns",
-      "source_url": "https://www.ents24.com/brighton-events/patterns",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-09-30-theatre-royal-brighton-the-curious-incident-of-the-dog-in-the-night-time",
-      "title": "The Curious Incident of the Dog in the Night-Time",
-      "date": "2026-09-30",
-      "venue": "Theatre Royal Brighton",
-      "time": "",
-      "finish_time": "",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
-    },
     {
       "id": "2026-10-01-the-forge-comedy-club-carl-hutchinson-fine-whine",
       "title": "Carl Hutchinson: Fine Whine",
@@ -878,6 +763,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-10-green-door-store-the-wolfgang-press",
+      "title": "The Wolfgang Press",
+      "date": "2026-10-10",
+      "venue": "Green Door Store",
+      "time": "19:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
+    },
+    {
       "id": "2026-10-10-komedia-komedia-comedy-club-sat-10-oct-2026-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2026-10-10",
@@ -920,6 +815,16 @@
     {
       "id": "2026-10-10-brighton-dome-woodhill",
       "title": "Woodhill",
+      "date": "2026-10-10",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://brightondome.org/whats-on/L1o-man-or-bear/"
+    },
+    {
+      "id": "2026-10-10-brighton-dome-you-might-also-like",
+      "title": "You might also like",
       "date": "2026-10-10",
       "venue": "Brighton Dome",
       "time": "",
@@ -3535,6 +3440,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-30-brighton-dome-congregational",
+      "title": "Congregational",
+      "date": "2026-10-30",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://brightondome.org/whats-on/L1o-man-or-bear/"
+    },
+    {
       "id": "2026-10-30-brighton-dome-crafty-kids-halloween-shadow-puppets",
       "title": "Crafty Kids: Halloween Shadow Puppets",
       "date": "2026-10-30",
@@ -4405,6 +4320,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-11-10-the-old-market-dr-fola-yahaya-dominic-kos-ai-threat-tool-or-transformation",
+      "title": "Dr Fola Yahaya & Dominic Kos– AI: Threat, Tool or Transformation?",
+      "date": "2026-11-10",
+      "venue": "The Old Market",
+      "time": "",
+      "finish_time": "",
+      "category": "Talk",
+      "ticket_url": "https://www.theoldmarket.com/shows"
+    },
+    {
       "id": "2026-11-10-the-old-market-jeremy-corbyn-a-life-in-politics-reflections-from-the-backbenches-to-downing-street-s-door",
       "title": "Jeremy Corbyn: A Life in Politics — Reflections from the Backbenches to Downing Street's Door",
       "date": "2026-11-10",
@@ -4811,6 +4736,16 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Brighton-Dome-Corn-Exchange/Juliet--Romeo/42643562/"
+    },
+    {
+      "id": "2026-11-13-brighton-dome-nation",
+      "title": "Nation",
+      "date": "2026-11-13",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Brighton-Dome-Studio-Theatre/Nation/42643568/"
     },
     {
       "id": "2026-11-13-chalk-tigercub",
@@ -7139,6 +7074,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-12-11-brighton-dome-juliet-romeo",
+      "title": "Juliet & Romeo",
+      "date": "2026-12-11",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Brighton-Dome-Corn-Exchange/Juliet--Romeo/42643561/"
+    },
+    {
       "id": "2026-12-11-chalk-uk-subs-knock-off-the-guitar-gangsters",
       "title": "UK Subs Knock Off, The Guitar Gangsters",
       "date": "2026-12-11",
@@ -8663,6 +8608,16 @@
       "finish_time": ""
     },
     {
+      "id": "2027-02-20-komedia-iain-lee-imposter-syndrome",
+      "title": "Iain Lee: Imposter Syndrome",
+      "date": "2027-02-20",
+      "venue": "Komedia",
+      "time": "17:30",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
       "id": "2027-02-20-komedia-komedia-comedy-club-sat-20-feb-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-02-20",
@@ -9054,6 +9009,16 @@
       "ticket_url": "https://www.theoldmarket.com/shows"
     },
     {
+      "id": "2027-03-19-komedia-john-robertson-excitable-boy",
+      "title": "John Robertson: Excitable Boy",
+      "date": "2027-03-19",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
       "id": "2027-03-19-komedia-komedia-comedy-club-fri-19-mar-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-03-19",
@@ -9197,6 +9162,16 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/james-phelan-the-man-who-was-magic/?eid=20210"
+    },
+    {
+      "id": "2027-04-02-komedia-lost-voice-guy-the-cerebral-palsy-puppet",
+      "title": "Lost Voice Guy – ‘The Cerebral Palsy Puppet’",
+      "date": "2027-04-02",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
     {
       "id": "2027-04-03-komedia-coldplace-the-world-s-leading-tribute-to-coldplay-thu-4-mar-2027-7-30-pm-doors-7-00-pm",
@@ -9483,6 +9458,16 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=20982"
+    },
+    {
+      "id": "2027-05-19-komedia-shane-daniel-byrne-baby-this-time",
+      "title": "Shane Daniel Byrne: Baby This Time",
+      "date": "2027-05-19",
+      "venue": "Komedia",
+      "time": "19:30",
+      "finish_time": "",
+      "category": "Family",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
     {
       "id": "2027-05-19-komedia-tom-glover-did-you-see-that-reel-i-sent-you",
