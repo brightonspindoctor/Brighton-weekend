@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-01",
-  "range_start": "2026-10-01",
-  "range_end": "2027-07-08",
+  "updated": "2026-10-02",
+  "range_start": "2026-10-02",
+  "range_end": "2027-07-09",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -27,103 +27,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-10-01-the-forge-comedy-club-carl-hutchinson-fine-whine",
-      "title": "Carl Hutchinson: Fine Whine",
-      "date": "2026-10-01",
-      "venue": "The Forge Comedy Club",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/brighton-comedy-shows/"
-    },
-    {
-      "id": "2026-10-01-the-old-market-devin-townsend-metamorphosis-solo",
-      "title": "Devin Townsend: Metamorphosis - Solo",
-      "date": "2026-10-01",
-      "venue": "The Old Market",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Music",
-      "ticket_url": "https://www.theoldmarket.com/shows"
-    },
-    {
-      "id": "2026-10-01-komedia-not-a-band-theme-a-geddon",
-      "title": "Not-A-Band: Theme-A-Geddon",
-      "date": "2026-10-01",
-      "venue": "Komedia",
-      "time": "20:00",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-01-a-l-p-h-a-b-e-t-white-flowers",
-      "title": "White Flowers",
-      "date": "2026-10-01",
-      "venue": "A L P H A B E T",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/a-l-p-h-a-b-e-t"
-    },
-    {
-      "id": "2026-10-01-chalk-the-tubs",
-      "title": "The Tubs",
-      "date": "2026-10-01",
-      "venue": "CHALK",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://chalkvenue.com/",
-      "source_url": "https://chalkvenue.com/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-01-concorde2-arkells-phantom-planet",
-      "title": "Arkells Phantom Planet",
-      "date": "2026-10-01",
-      "venue": "Concorde 2",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "source_url": "https://www.concorde2.co.uk/whats-on",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-01-greendoorstore-dice",
-      "title": "DICE",
-      "date": "2026-10-01",
-      "venue": "Green Door Store",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/",
-      "source_url": "https://thegreendoorstore.co.uk/events/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-01-the-hope-ruin-dba",
-      "title": "DBA!",
-      "date": "2026-10-01",
-      "venue": "The Hope & Ruin",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-hope-and-ruin"
-    },
-    {
-      "id": "2026-10-01-theatre-royal-brighton-the-curious-incident-of-the-dog-in-the-night-time",
-      "title": "The Curious Incident of the Dog in the Night-Time",
-      "date": "2026-10-01",
-      "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "time": "",
-      "finish_time": ""
-    },
     {
       "id": "2026-10-02-concorde-2-stereo-mcs",
       "title": "Stereo MCs",
@@ -813,6 +716,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-10-green-door-store-it-is-still-1985",
+      "title": "It Is Still 1985",
+      "date": "2026-10-10",
+      "venue": "Green Door Store",
+      "time": "23:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
+    },
+    {
       "id": "2026-10-10-brighton-dome-woodhill",
       "title": "Woodhill",
       "date": "2026-10-10",
@@ -1260,6 +1173,16 @@
       "ticket_url": "https://brightondome.org/whats-on/LtE-african-soul-rebels-les-amazones-dafrique-gasper-nali-nfamady-kouyat/"
     },
     {
+      "id": "2026-10-15-brighton-dome-the-signalman",
+      "title": "The Signalman",
+      "date": "2026-10-15",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://brightondome.org/whats-on/L1o-man-or-bear/"
+    },
+    {
       "id": "2026-10-15-brighton-racecourse-season-finale-2026-thursday-15-october-2026",
       "title": "Season Finale 2026",
       "date": "2026-10-15",
@@ -1494,6 +1417,16 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LZc-free-comedy-workshops-for-young-people-age-11-16/"
+    },
+    {
+      "id": "2026-10-16-brighton-dome-you-might-also-like",
+      "title": "You Might Also Like",
+      "date": "2026-10-16",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/L3B-gianmarco-soresi-the-misery-loves-tour/"
     },
     {
       "id": "2026-10-16-chalk-the-hoosiers-hunny-buzz",
@@ -5189,6 +5122,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-11-17-the-old-market-notes-a-wine-and-music-pairing-night",
+      "title": "NOTES: A Wine and Music Pairing Night",
+      "date": "2026-11-17",
+      "venue": "The Old Market",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.theoldmarket.com/shows"
+    },
+    {
       "id": "2026-11-17-theatreroyalbrighton-the-gruffalo",
       "title": "The Gruffalo",
       "date": "2026-11-17",
@@ -7346,6 +7289,16 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": ""
+    },
+    {
+      "id": "2026-12-15-the-old-market-notes-a-wine-and-music-pairing-night",
+      "title": "NOTES: A Wine and Music Pairing Night",
+      "date": "2026-12-15",
+      "venue": "The Old Market",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.theoldmarket.com/shows"
     },
     {
       "id": "2026-12-16-komedia-abba-re-bjorn-at-christmas-wed-16-dec-2026-doors-6-00-pm",
