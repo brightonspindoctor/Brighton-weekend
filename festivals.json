@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-01",
-  "range_start": "2026-10-01",
+  "updated": "2026-10-02",
+  "range_start": "2026-10-02",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -9,18 +9,6 @@
     "eFestivals"
   ],
   "festivals": [
-    {
-      "title": "Osberton International Horse Trials",
-      "date": "2026-10-01",
-      "date_end": "2026-10-04",
-      "location": "Worksop",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/osberton-international-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/osberton-international-horse-trials/",
-      "id": "festival:osberton-international-horse-trials:2026-10-01",
-      "location_display": "Worksop"
-    },
     {
       "title": "UKLTA Cyberpunk - A Life on the Edge",
       "date": "2026-10-02",
@@ -334,6 +322,18 @@
       "location_display": "Liverpool"
     },
     {
+      "title": "FOCUS Wales",
+      "date": "2027-05-06",
+      "date_end": "2027-05-08",
+      "location": "Wales",
+      "category": "Arts & Culture",
+      "ticket_url": "https://fezzy.uk/festival/focus-wales/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/focus-wales/",
+      "id": "festival:focus-wales:2027-05-06",
+      "location_display": "Wales"
+    },
+    {
       "title": "Glampfest",
       "date": "2027-05-06",
       "date_end": "2027-05-09",
@@ -356,6 +356,18 @@
       "detail_url": "https://fezzy.uk/festival/liverpool-sound-city/",
       "id": "festival:pop-festivals-month-by-month:2027-05-06",
       "location_display": "May"
+    },
+    {
+      "title": "Skye Live",
+      "date": "2027-05-06",
+      "date_end": "2027-05-08",
+      "location": "Portree",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/skye-live/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/skye-live/",
+      "id": "festival:skye-live:2027-05-06",
+      "location_display": "Portree"
     },
     {
       "title": "Herofest",
@@ -440,6 +452,18 @@
       "detail_url": "https://fezzy.uk/festival/wood-festival/",
       "id": "festival:wood-festival:2027-05-21",
       "location_display": "Wallingford"
+    },
+    {
+      "title": "Burning Nest",
+      "date": "2027-05-24",
+      "date_end": "2027-05-31",
+      "location": "Newton Abbot",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/burning-nest/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/burning-nest/",
+      "id": "festival:burning-nest:2027-05-24",
+      "location_display": "Newton Abbot"
     },
     {
       "title": "Bearded Theory",
@@ -886,6 +910,18 @@
       "location_display": "Newport"
     },
     {
+      "title": "Sonic Rock Solstice",
+      "date": "2027-06-17",
+      "date_end": "2027-06-21",
+      "location": "West Midlands",
+      "category": "Sport & Outdoor",
+      "ticket_url": "https://fezzy.uk/festival/sonic-rock-solstice/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/sonic-rock-solstice/",
+      "id": "festival:sonic-rock-solstice:2027-06-17",
+      "location_display": "West Midlands"
+    },
+    {
       "title": "Tower Festival (Towerfest)",
       "date": "2027-06-17",
       "date_end": "2027-06-20",
@@ -992,6 +1028,18 @@
       "detail_url": "https://fezzy.uk/festival/exile-music-festival/",
       "id": "festival:exile-music-festival:2027-06-25",
       "location_display": "East Midlands"
+    },
+    {
+      "title": "Llangollen International Musical Eisteddfod",
+      "date": "2027-06-25",
+      "date_end": "2027-07-10",
+      "location": "Llangollen",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/llangollen-international-musical-eisteddfod/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/llangollen-international-musical-eisteddfod/",
+      "id": "festival:llangollen-international-musical-eisteddfod:2027-06-25",
+      "location_display": "Llangollen"
     },
     {
       "title": "Royal Lancashire Show",
@@ -1220,6 +1268,18 @@
       "detail_url": "https://fezzy.uk/festival/love-trails/",
       "id": "festival:love-trails:2027-07-08",
       "location_display": "Wales"
+    },
+    {
+      "title": "Rock and Bike Fest",
+      "date": "2027-07-08",
+      "date_end": "2027-07-10",
+      "location": "East Midlands",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/rock-and-bike-fest/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/rock-and-bike-fest/",
+      "id": "festival:rock-and-bike-fest:2027-07-08",
+      "location_display": "East Midlands"
     },
     {
       "title": "Cedarwood Festival",
