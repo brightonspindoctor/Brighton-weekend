@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-02",
-  "range_start": "2026-10-02",
-  "range_end": "2027-07-09",
+  "updated": "2026-10-03",
+  "range_start": "2026-10-03",
+  "range_end": "2027-07-10",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -27,123 +27,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-10-02-concorde-2-stereo-mcs",
-      "title": "Stereo MCs",
-      "date": "2026-10-02",
-      "venue": "Concorde 2",
-      "time": "19:00",
-      "category": "Music/Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-02-komedia-the-maydays-confessions",
-      "title": "The Maydays: Confessions!",
-      "date": "2026-10-02",
-      "venue": "Komedia",
-      "time": "19:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.komedia.co.uk/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-02-the-old-market-trauma-industrial-complex-the-live-show-by-darren-mcgarvey",
-      "title": "Trauma Industrial Complex - The Live Show by Darren McGarvey",
-      "date": "2026-10-02",
-      "venue": "The Old Market",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.theoldmarket.com/shows"
-    },
-    {
-      "id": "2026-10-02-komedia-komedia-comedy-club",
-      "title": "Komedia Comedy Club",
-      "date": "2026-10-02",
-      "venue": "Komedia",
-      "time": "20:00",
-      "category": "Comedy",
-      "ticket_url": "https://www.komedia.co.uk/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-02-the-forge-comedy-club-forge-comedy-club",
-      "title": "Forge Comedy Club",
-      "date": "2026-10-02",
-      "venue": "The Forge Comedy Club",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/brighton-comedy-shows/"
-    },
-    {
-      "id": "2026-10-02-concorde2-latino-fest-brighton-october-2026",
-      "title": "Latino Fest (Brighton) October 2026",
-      "date": "2026-10-02",
-      "venue": "Concorde 2",
-      "category": "Club",
-      "time": "23:00",
-      "ticket_url": "https://www.eventbrite.co.uk/",
-      "finish_time": "04:00",
-      "source_url": "Eventbrite"
-    },
-    {
-      "id": "2026-10-02-chalk-african-head-charge",
-      "title": "African Head Charge",
-      "date": "2026-10-02",
-      "venue": "CHALK",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://chalkvenue.com/",
-      "source_url": "https://chalkvenue.com/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-02-the-hope-ruin-sons-of-sevilla",
-      "title": "Sons of Sevilla",
-      "date": "2026-10-02",
-      "venue": "The Hope & Ruin",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-hope-and-ruin"
-    },
-    {
-      "id": "2026-10-02-theoldmarket-loki-darren-mcgarvey",
-      "title": "Loki (Darren McGarvey)",
-      "date": "2026-10-02",
-      "venue": "The Old Market",
-      "category": "Talk",
-      "time": "",
-      "ticket_url": "https://www.theoldmarket.com/shows",
-      "source_url": "https://www.theoldmarket.com/shows",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-02-the-pipeline-sisters-of-hysteria-b-hin-hour-fatecrimes-armorica",
-      "title": "Sisters of Hysteria / B***hin' Hour / Fatecrimes / Armorica",
-      "date": "2026-10-02",
-      "venue": "The Pipeline",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-pipeline"
-    },
-    {
-      "id": "2026-10-02-theatre-royal-brighton-the-curious-incident-of-the-dog-in-the-night-time",
-      "title": "The Curious Incident of the Dog in the Night-Time",
-      "date": "2026-10-02",
-      "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "time": "",
-      "finish_time": ""
-    },
     {
       "id": "2026-10-03-concorde-2-day-fever",
       "title": "Day Fever",
@@ -291,6 +174,16 @@
       "ticket_url": "https://www.komedia.co.uk/",
       "source_url": "https://www.komedia.co.uk/",
       "finish_time": ""
+    },
+    {
+      "id": "2026-10-04-komedia-down-the-hatch",
+      "title": "Down the Hatch",
+      "date": "2026-10-04",
+      "venue": "Komedia",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/down-the-hatch-p2161931"
     },
     {
       "id": "2026-10-04-the-prince-albert-light-asylum",
@@ -726,6 +619,26 @@
       "ticket_url": "https://thegreendoorstore.co.uk/events/"
     },
     {
+      "id": "2026-10-10-brighton-dome-alison-moyet",
+      "title": "Alison Moyet",
+      "date": "2026-10-10",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/L3x-the-mehfil-space-presents-sanju-sahai-and-jason-kalidas/"
+    },
+    {
+      "id": "2026-10-10-brighton-dome-russell-t-davies",
+      "title": "Russell T Davies",
+      "date": "2026-10-10",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://brightondome.org/whats-on/LOw-dr-xand-van-tulleken/"
+    },
+    {
       "id": "2026-10-10-brighton-dome-woodhill",
       "title": "Woodhill",
       "date": "2026-10-10",
@@ -744,6 +657,16 @@
       "finish_time": "",
       "category": "Theatre",
       "ticket_url": "https://brightondome.org/whats-on/L1o-man-or-bear/"
+    },
+    {
+      "id": "2026-10-10-brighton-dome-concert-hall-alison-moyet",
+      "title": "Alison Moyet",
+      "date": "2026-10-10",
+      "venue": "Brighton Dome - Concert Hall",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/"
     },
     {
       "id": "2026-10-10-chalk-devotchka",
@@ -1075,6 +998,16 @@
       "finish_time": "",
       "category": "Family",
       "ticket_url": "https://www.komedia.co.uk/shows/jill-edwards-comedy-workshops-presents-comic-baby-boom/?eid=18106"
+    },
+    {
+      "id": "2026-10-14-brighton-dome-alice-cooper-s-devil-on-my-shoulder-book-tour",
+      "title": "Alice Cooper's 'Devil on my Shoulder' Book Tour",
+      "date": "2026-10-14",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Talk",
+      "ticket_url": "https://brightondome.org/whats-on/LOw-dr-xand-van-tulleken/"
     },
     {
       "id": "2026-10-14-chalk-antony-szmierek",
@@ -3673,6 +3606,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-11-01-patterns-brighton-sundae-w-marcia-carr",
+      "title": "Brighton Sundae w/ Marcia Carr",
+      "date": "2026-11-01",
+      "venue": "Patterns",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/brighton-sundae-w-marcia-carr-p2906761"
+    },
+    {
       "id": "2026-11-01-the-hope-ruin-cootie-catcher",
       "title": "Cootie Catcher",
       "date": "2026-11-01",
@@ -4158,6 +4101,26 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/deviants-market/?eid=18717"
+    },
+    {
+      "id": "2026-11-10-brighton-dome-black-history-our-history-barco-brighton-centre-takeover-2026",
+      "title": "Black History, Our History: BARCO Brighton Centre Takeover 2026",
+      "date": "2026-11-10",
+      "venue": "Brighton Dome",
+      "time": "11:00",
+      "finish_time": "17:00",
+      "category": "Theatre",
+      "ticket_url": "https://brightondome.org/whats-on/LG8-status-flo-black-history-month/"
+    },
+    {
+      "id": "2026-11-10-green-door-store-psychedelic-sundae",
+      "title": "Psychedelic Sundae",
+      "date": "2026-11-10",
+      "venue": "Green Door Store",
+      "time": "15:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
     },
     {
       "id": "2026-11-10-the-forge-comedy-club-harriet-kemsley-floozy-extra-matinee-show",
