@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-02",
-  "range_start": "2026-10-02",
+  "updated": "2026-10-03",
+  "range_start": "2026-10-03",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -9,18 +9,6 @@
     "eFestivals"
   ],
   "festivals": [
-    {
-      "title": "UKLTA Cyberpunk - A Life on the Edge",
-      "date": "2026-10-02",
-      "date_end": "2026-10-04",
-      "location": "UK",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/uklta-cyberpunk-a-life-on-the-edge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/uklta-cyberpunk-a-life-on-the-edge/",
-      "id": "festival:uklta-cyberpunk-a-life-on-the-edge:2026-10-02",
-      "location_display": "UK"
-    },
     {
       "title": "Dirt Fest Off Road Festival",
       "date": "2026-10-03",
@@ -760,7 +748,7 @@
       "location": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove",
       "category": "Family",
       "ticket_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
       "detail_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
       "id": "festival:more-details:2027-06-06",
       "location_display": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove"
@@ -772,7 +760,7 @@
       "location": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove",
       "category": "Family",
       "ticket_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
       "detail_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
       "id": "festival:rotary-family-festival-big-help-out:2027-06-06",
       "location_display": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove"
@@ -850,6 +838,18 @@
       "location_display": "Yeovil"
     },
     {
+      "title": "Moovin Festival",
+      "date": "2027-06-11",
+      "date_end": "2027-06-13",
+      "location": "North West",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/moovin-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/moovin-festival/",
+      "id": "festival:moovin-festival:2027-06-11",
+      "location_display": "North West"
+    },
+    {
       "title": "Solas Festival",
       "date": "2027-06-11",
       "date_end": "2027-06-13",
@@ -889,13 +889,13 @@
       "title": "Beardy Folk Festival",
       "date": "2027-06-17",
       "date_end": "2027-06-20",
-      "location": "West Midlands",
+      "location": "Cleobury Mortimer",
       "category": "Music",
       "ticket_url": "https://fezzy.uk/festival/beardy-folk-festival/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/beardy-folk-festival/",
       "id": "festival:beardy-folk-festival:2027-06-17",
-      "location_display": "West Midlands"
+      "location_display": "Cleobury Mortimer"
     },
     {
       "title": "Isle of Wight Festival",
@@ -1138,6 +1138,18 @@
       "location_display": "Minety"
     },
     {
+      "title": "Stendhal Festival",
+      "date": "2027-07-01",
+      "date_end": "2027-07-03",
+      "location": "Limavady",
+      "category": "Family",
+      "ticket_url": "https://fezzy.uk/festival/stendhal-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/stendhal-festival/",
+      "id": "festival:stendhal-festival:2027-07-01",
+      "location_display": "Limavady"
+    },
+    {
       "title": "Chilfest",
       "date": "2027-07-02",
       "date_end": "2027-07-03",
@@ -1172,6 +1184,30 @@
       "detail_url": "https://fezzy.uk/festival/love-supreme/",
       "id": "festival:love-supreme:2027-07-02",
       "location_display": "Glynde"
+    },
+    {
+      "title": "Maverick Festival",
+      "date": "2027-07-02",
+      "date_end": "2027-07-04",
+      "location": "East of England",
+      "category": "Sport & Outdoor",
+      "ticket_url": "https://fezzy.uk/festival/maverick-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/maverick-festival/",
+      "id": "festival:maverick-festival:2027-07-02",
+      "location_display": "East of England"
+    },
+    {
+      "title": "The Weekend Rumble",
+      "date": "2027-07-02",
+      "date_end": "2027-07-03",
+      "location": "Wales",
+      "category": "Arts & Culture",
+      "ticket_url": "https://fezzy.uk/festival/the-weekend-rumble/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/the-weekend-rumble/",
+      "id": "festival:the-weekend-rumble:2027-07-02",
+      "location_display": "Wales"
     },
     {
       "title": "Duncombe Park Steam & Vintage Rally",
@@ -1472,6 +1508,18 @@
       "detail_url": "https://fezzy.uk/festival/goodwood-festival-of-speed/",
       "id": "festival:goodwood-festival-of-speed:2027-07-15",
       "location_display": "Chichester"
+    },
+    {
+      "title": "Magikana",
+      "date": "2027-07-15",
+      "date_end": "2027-07-20",
+      "location": "Carmarthen",
+      "category": "Arts & Culture",
+      "ticket_url": "https://fezzy.uk/festival/magikana/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/magikana/",
+      "id": "festival:magikana:2027-07-15",
+      "location_display": "Carmarthen"
     },
     {
       "title": "Beat-Herder",
