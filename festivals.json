@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-03",
-  "range_start": "2026-10-03",
+  "updated": "2026-10-04",
+  "range_start": "2026-10-04",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -9,30 +9,6 @@
     "eFestivals"
   ],
   "festivals": [
-    {
-      "title": "Dirt Fest Off Road Festival",
-      "date": "2026-10-03",
-      "date_end": "2026-10-04",
-      "location": "Wetherby",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/dirt-fest-off-road-festival/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/dirt-fest-off-road-festival/",
-      "id": "festival:dirt-fest-off-road-festival:2026-10-03",
-      "location_display": "Wetherby"
-    },
-    {
-      "title": "Little Downham Horse Trials",
-      "date": "2026-10-03",
-      "date_end": "2026-10-07",
-      "location": "Ely",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/little-downham-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/little-downham-horse-trials/",
-      "id": "festival:little-downham-horse-trials:2026-10-03",
-      "location_display": "Ely"
-    },
     {
       "title": "Orion Sphere Event 16 - Domino",
       "date": "2026-10-09",
@@ -136,7 +112,7 @@
       "location": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton",
       "category": "Arts & Culture",
       "ticket_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
       "detail_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
       "id": "festival:artist-open-houses-winter:2026-11-28",
       "location_display": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton"
@@ -148,7 +124,7 @@
       "location": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton",
       "category": "Arts & Culture",
       "ticket_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
       "detail_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
       "id": "festival:more-details:2026-11-28",
       "location_display": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton"
@@ -514,6 +490,18 @@
       "location_display": "Sidmouth"
     },
     {
+      "title": "Soul Revolution Festival",
+      "date": "2027-05-27",
+      "date_end": "2027-05-31",
+      "location": "West Midlands",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/soul-revolution-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/soul-revolution-festival/",
+      "id": "festival:soul-revolution-festival:2027-05-27",
+      "location_display": "West Midlands"
+    },
+    {
       "title": "The Orkney Folk Festival",
       "date": "2027-05-27",
       "date_end": "2027-05-30",
@@ -584,6 +572,18 @@
       "detail_url": "https://fezzy.uk/festival/gala-festival/",
       "id": "festival:gala-festival:2027-05-28",
       "location_display": "London"
+    },
+    {
+      "title": "HowTheLightGetsIn",
+      "date": "2027-05-28",
+      "date_end": "2027-05-31",
+      "location": "Hay-on-Wye",
+      "category": "Comedy",
+      "ticket_url": "https://fezzy.uk/festival/howthelightgetsin/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/howthelightgetsin/",
+      "id": "festival:howthelightgetsin:2027-05-28",
+      "location_display": "Hay-on-Wye"
     },
     {
       "title": "Dot To Dot Festival",
