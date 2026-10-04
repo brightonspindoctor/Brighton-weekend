@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-03",
-  "range_start": "2026-10-03",
-  "range_end": "2027-07-10",
+  "updated": "2026-10-04",
+  "range_start": "2026-10-04",
+  "range_end": "2027-07-11",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -27,121 +27,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-10-03-concorde-2-day-fever",
-      "title": "Day Fever",
-      "date": "2026-10-03",
-      "venue": "Concorde 2",
-      "time": "15:00",
-      "category": "Music/Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-03-quarters-chicane",
-      "title": "Chicane",
-      "date": "2026-10-03",
-      "venue": "Quarters",
-      "time": "16:00",
-      "finish_time": "22:00",
-      "category": "Club",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson"
-    },
-    {
-      "id": "2026-10-03-komedia-komedia-comedy-club",
-      "title": "Komedia Comedy Club",
-      "date": "2026-10-03",
-      "venue": "Komedia",
-      "time": "20:00",
-      "category": "Comedy",
-      "ticket_url": "https://www.komedia.co.uk/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-03-the-forge-comedy-club-forge-comedy-club",
-      "title": "Forge Comedy Club",
-      "date": "2026-10-03",
-      "venue": "The Forge Comedy Club",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/brighton-comedy-shows/"
-    },
-    {
-      "id": "2026-10-03-concorde-2-fish56octagon",
-      "title": "Fish56octagon",
-      "date": "2026-10-03",
-      "venue": "Concorde 2",
-      "time": "23:00",
-      "category": "Music/Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-03-quarters-delta-heavy",
-      "title": "Delta Heavy",
-      "date": "2026-10-03",
-      "venue": "Quarters",
-      "time": "23:00",
-      "finish_time": "04:00",
-      "category": "Club",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson"
-    },
-    {
-      "id": "2026-10-03-chalk-drink-the-sea",
-      "title": "Drink The Sea",
-      "date": "2026-10-03",
-      "venue": "CHALK",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://chalkvenue.com/",
-      "source_url": "https://chalkvenue.com/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-03-the-hope-ruin-cory-hanson",
-      "title": "Cory Hanson",
-      "date": "2026-10-03",
-      "venue": "The Hope & Ruin",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-hope-and-ruin"
-    },
-    {
-      "id": "2026-10-03-the-prince-albert-family-of-strangers",
-      "title": "Family of Strangers",
-      "date": "2026-10-03",
-      "venue": "The Prince Albert",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
-    },
-    {
-      "id": "2026-10-03-theatre-royal-brighton-stories-with-skip-on-the-farm",
-      "title": "Stories with Skip – On the Farm",
-      "date": "2026-10-03",
-      "venue": "Theatre Royal Brighton",
-      "category": "Family",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "time": "",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-03-theatre-royal-brighton-the-curious-incident-of-the-dog-in-the-night-time",
-      "title": "The Curious Incident of the Dog in the Night-Time",
-      "date": "2026-10-03",
-      "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "time": "",
-      "finish_time": ""
-    },
     {
       "id": "2026-10-04-brighton-racecourse-brighton-creed-comic-con-october-2026",
       "title": "Brighton Creed Comic Con - October 2026",
@@ -549,6 +434,16 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
+      "id": "2026-10-10-brighton-dome-russell-t-davies",
+      "title": "Russell T Davies",
+      "date": "2026-10-10",
+      "venue": "Brighton Dome",
+      "time": "19:00",
+      "finish_time": "23:00",
+      "category": "Talk",
+      "ticket_url": "https://brightondome.org/whats-on/LO7-russell-t-davies/"
+    },
+    {
       "id": "2026-10-10-concorde-2-nirvana-uk",
       "title": "Nirvana UK",
       "date": "2026-10-10",
@@ -619,6 +514,16 @@
       "ticket_url": "https://thegreendoorstore.co.uk/events/"
     },
     {
+      "id": "2026-10-10-brighton-dome-accessible-events-theatre",
+      "title": "Accessible Events Theatre",
+      "date": "2026-10-10",
+      "venue": "Brighton Dome",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://brightondome.org/whats-on/L0U-woodhill/"
+    },
+    {
       "id": "2026-10-10-brighton-dome-alison-moyet",
       "title": "Alison Moyet",
       "date": "2026-10-10",
@@ -629,14 +534,14 @@
       "ticket_url": "https://brightondome.org/whats-on/L3x-the-mehfil-space-presents-sanju-sahai-and-jason-kalidas/"
     },
     {
-      "id": "2026-10-10-brighton-dome-russell-t-davies",
-      "title": "Russell T Davies",
+      "id": "2026-10-10-brighton-dome-literature-poetry-spoken-word",
+      "title": "Literature, Poetry & Spoken Word",
       "date": "2026-10-10",
       "venue": "Brighton Dome",
       "time": "",
       "finish_time": "",
       "category": "Theatre",
-      "ticket_url": "https://brightondome.org/whats-on/LOw-dr-xand-van-tulleken/"
+      "ticket_url": "https://brightondome.org/whats-on/LO7-russell-t-davies/"
     },
     {
       "id": "2026-10-10-brighton-dome-woodhill",
@@ -734,6 +639,16 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/the-pipeline"
+    },
+    {
+      "id": "2026-10-10-theatre-royal-brighton-backstage-tours",
+      "title": "Backstage Tours",
+      "date": "2026-10-10",
+      "venue": "Theatre Royal Brighton",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
     },
     {
       "id": "2026-10-10-theatre-royal-brighton-musical-theatre-masterclass-six-ages-13-17-years",
@@ -960,6 +875,16 @@
       "ticket_url": "https://brightondome.org/whats-on/L8q-finding-your-funny-workshop/"
     },
     {
+      "id": "2026-10-14-green-door-store-big-trousers",
+      "title": "Big Trousers",
+      "date": "2026-10-14",
+      "venue": "Green Door Store",
+      "time": "19:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
+    },
+    {
       "id": "2026-10-14-komedia-comic-baby-boom-wed-14-oct-2026-7-00-pm-doors-6-30-pm",
       "title": "Comic Baby Boom",
       "date": "2026-10-14",
@@ -1052,6 +977,16 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": ""
+    },
+    {
+      "id": "2026-10-15-green-door-store-m-woodroe",
+      "title": "M. Woodroe",
+      "date": "2026-10-15",
+      "venue": "Green Door Store",
+      "time": "19:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
     },
     {
       "id": "2026-10-15-concorde-2-ibibio-sound-machine",
@@ -1240,6 +1175,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-16-green-door-store-mould",
+      "title": "Mould",
+      "date": "2026-10-16",
+      "venue": "Green Door Store",
+      "time": "19:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
+    },
+    {
       "id": "2026-10-16-komedia-alfie-brown-the-entertainer-fri-16-oct-2026-7-00-pm-doors-6-30-pm",
       "title": "Alfie Brown: THE ENTERTAINER",
       "date": "2026-10-16",
@@ -1370,17 +1315,6 @@
       "time": "",
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-16-greendoorstore-mould",
-      "title": "MOULD",
-      "date": "2026-10-16",
-      "venue": "Green Door Store",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/",
-      "source_url": "https://thegreendoorstore.co.uk/events/",
       "finish_time": ""
     },
     {
@@ -7137,6 +7071,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-12-12-concorde-2-hybrid-minds-brighton",
+      "title": "Hybrid Minds | Brighton",
+      "date": "2026-12-12",
+      "venue": "Concorde 2",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Concorde-2/Hybrid-Minds--Brighton/42829358/"
+    },
+    {
       "id": "2026-12-12-19-00-barbara",
       "title": "Barbara",
       "date": "2026-12-12",
@@ -8667,6 +8611,16 @@
       "finish_time": ""
     },
     {
+      "id": "2027-02-27-komedia-funny-women-live-in-brighton",
+      "title": "Funny Women Live in Brighton",
+      "date": "2027-02-27",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
       "id": "2027-02-27-komedia-komedia-comedy-club-sat-27-feb-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-02-27",
@@ -9050,6 +9004,16 @@
       "finish_time": ""
     },
     {
+      "id": "2027-03-27-komedia-funny-women-live-in-brighton",
+      "title": "Funny Women Live in Brighton",
+      "date": "2027-03-27",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
       "id": "2027-03-27-komedia-komedia-comedy-club-sat-27-mar-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-03-27",
@@ -9068,6 +9032,16 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/lawrence-chaney-weight-a-minute/?eid=20253"
+    },
+    {
+      "id": "2027-03-31-komedia-freddie-meredith-need-a-light",
+      "title": "Freddie Meredith: Need A Light?",
+      "date": "2027-03-31",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
     {
       "id": "2027-04-01-komedia-james-phelan-the-man-who-was-magic-mon-4-jan-2027-8-00-pm-doors-7-00-pm",
@@ -9232,6 +9206,16 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=20977"
+    },
+    {
+      "id": "2027-04-24-komedia-funny-women-live-in-brighton",
+      "title": "Funny Women Live in Brighton",
+      "date": "2027-04-24",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
     {
       "id": "2027-04-24-komedia-komedia-comedy-club-sat-24-apr-2027-8-00-pm-doors-7-00-pm",
@@ -9627,6 +9611,16 @@
       "time": "20:00",
       "finish_time": "",
       "category": "Comedy",
+      "ticket_url": "https://www.komedia.co.uk/whats-on/"
+    },
+    {
+      "id": "2027-06-26-komedia-funny-women-live-in-brighton",
+      "title": "Funny Women Live in Brighton",
+      "date": "2027-06-26",
+      "venue": "Komedia",
+      "time": "20:00",
+      "finish_time": "",
+      "category": "Music",
       "ticket_url": "https://www.komedia.co.uk/whats-on/"
     },
     {
