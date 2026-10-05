@@ -37,7 +37,9 @@ def strip_listing_date(title):
     """Drop a trailing "Fri 25 Sep 2026 8:00 PM ( Doors: 7:00 PM )" from a title."""
     cleaned=TRAILING_DATE.sub('',clean(title)).strip(' -–|·')
     return cleaned if len(cleaned)>=3 else clean(title)
-def event_key(e): return (e.get('venue','').lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
+VENUE_ALIASES={'Brighton Dome - Concert Hall':'Brighton Dome'}  # same as prepare-events.py and index.html
+def canonical_venue(v): return VENUE_ALIASES.get(v,v)
+def event_key(e): return (canonical_venue(e.get('venue','')).lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
 def fuller_title(a,b):
     """Return the fuller title when one title is a clear prefix of the other."""
     ka,kb=title_key(a),title_key(b)
@@ -76,11 +78,22 @@ def category(title,text=''):
         if any(w in hay for w in words): return cat
     return 'Other'
 
+# A listing that leaves out the year ("Fri 15 Jan") means the next one: in
+# October, "15 Jan" is January NEXT year, not a date that has already passed.
+# Only dates well in the past are moved on, so a stale "last week" listing is
+# not turned into a phantom event next year.
+ROLLOVER_DAYS=60
+def roll_year_forward(dt,text):
+    if re.search(r'\b\d{4}\b',str(text)) or dt.date()>=(NOW-timedelta(days=ROLLOVER_DAYS)).date():return dt
+    try:return dt.replace(year=dt.year+1)
+    except ValueError:return dt.replace(year=dt.year+1,day=28)  # 29 Feb
+
 def parse_dt(value):
     if not value:return None
     try:
         dt=dateparser.parse(clean(str(value)),dayfirst=True,fuzzy=True,default=datetime(NOW.year,1,1))
         if not dt:return None
+        dt=roll_year_forward(dt,value)
         return dt.replace(tzinfo=TZ) if dt.tzinfo is None else dt.astimezone(TZ)
     except Exception:return None
 
@@ -92,7 +105,7 @@ def normalise(raw,venue,page_url):
     end=parse_dt(raw.get('endDate') or raw.get('end_date')); offers=raw.get('offers'); offer_url=offers.get('url') if isinstance(offers,dict) else None
     url=urljoin(page_url,raw.get('url') or offer_url or page_url)
     ident=re.sub(r'[^a-z0-9]+','-',f'{start.date()}-{venue}-{title}'.lower()).strip('-')[:180]
-    return {'id':ident,'title':title,'date':start.date().isoformat(),'venue':venue,'time':start.strftime('%H:%M') if start_raw and re.search(r'T|\d{1,2}:\d{2}|am|pm',str(start_raw),re.I) else '','finish_time':end.strftime('%H:%M') if end else '','category':category(title,raw.get('description','')),'ticket_url':url}
+    return {'id':ident,'title':title,'date':start.date().isoformat(),'venue':venue,'source':'venue','time':start.strftime('%H:%M') if start_raw and re.search(r'T|\d{1,2}:\d{2}|am|pm',str(start_raw),re.I) else '','finish_time':end.strftime('%H:%M') if end else '','category':category(title,raw.get('description','')),'ticket_url':url}
 
 def jsonld_events(html,venue,page_url):
     soup=BeautifulSoup(html,'html.parser');out=[]
@@ -193,30 +206,46 @@ async def scrape_source(browser,source):
 async def main():
     async with async_playwright() as p:
         browser=await p.chromium.launch(headless=True);results=await asyncio.gather(*(scrape_source(browser,s) for s in SOURCES));await browser.close()
-    all_events=[];successful=0;failures=[]
+    all_events=[];successful=0;failures=[];failed_venues=set()
     for source,(events,err) in zip(SOURCES,results):
-        if err:failures.append(f"{source['venue']}: {err}");continue
+        if err:failures.append(f"{source['venue']}: {err}");failed_venues.add(canonical_venue(source['venue']));continue
         successful+=1;all_events.extend(events);print(f"{source['venue']}: {len(events)} events")
     scraped={}
     for e in all_events:
         key=event_key(e)
         if key not in scraped:scraped[key]=e
     scraped=prefer_fuller_titles(list(scraped.values()))
-    existing=json.loads(OUT.read_text()) if OUT.exists() else {};retained={};removed_generic=0
+    existing=json.loads(OUT.read_text()) if OUT.exists() else {};retained={};removed_generic=0;removed_stale=0
+    # A venue is "healthy" when every one of its sources loaded and it returned at
+    # least half as many upcoming events as last time. Only then are its old
+    # listings that are no longer on its site treated as cancelled/moved and
+    # dropped; otherwise they are kept, so a site outage can't empty the app.
+    def future(evs):return [e for e in evs if RANGE_START.isoformat()<=str(e.get('date',''))<=RANGE_END.isoformat()]
+    before={};now_count={}
+    for e in future(existing.get('events',[])):
+        if e.get('source')!='discovery':v=canonical_venue(e.get('venue',''));before[v]=before.get(v,0)+1
+    for e in scraped:v=canonical_venue(e.get('venue',''));now_count[v]=now_count.get(v,0)+1
+    healthy={v for v in {canonical_venue(s['venue']) for s in SOURCES}
+             if v not in failed_venues and now_count.get(v,0)>=max(1,before.get(v,0)//2)}
+    scraped_keys={event_key(e) for e in scraped}
     for e in existing.get('events',[]):
         try:d=datetime.fromisoformat(e['date']).date()
         except Exception:continue
         if RANGE_START<=d<=RANGE_END:
             if not valid_title(e.get('title','')):
                 removed_generic+=1;continue
-            e=dict(e,title=strip_listing_date(e.get('title','')));retained[event_key(e)]=e
+            e=dict(e,title=strip_listing_date(e.get('title','')))
+            # Discovery-calendar events are judged by scrape-discovery.py, not here.
+            if e.get('source')!='discovery' and canonical_venue(e.get('venue',''))in healthy and event_key(e) not in scraped_keys:
+                removed_stale+=1;continue
+            retained[event_key(e)]=e
     for e in scraped:
         key=event_key(e)
         if key not in retained:retained[key]=e  # keep the existing record so its id (and saved choices) survive
     events=prefer_fuller_titles(list(retained.values()))
     events=sorted(events,key=lambda x:(x['date'],x.get('time') or '99:99',x['venue'],x['title']))
     existing_future=sum(1 for e in existing.get('events',[]) if e.get('date','')>=RANGE_START.isoformat() and valid_title(e.get('title','')))
-    print(f'Successful sources: {successful}/{len(SOURCES)}; scraped: {len(scraped)}; retained future: {existing_future}; removed generic: {removed_generic}; final: {len(events)}')
+    print(f'Successful sources: {successful}/{len(SOURCES)}; scraped: {len(scraped)}; retained future: {existing_future}; removed generic: {removed_generic}; removed no-longer-listed: {removed_stale}; healthy venues: {len(healthy)}; final: {len(events)}')
     if failures:
         print('Source failures:',file=sys.stderr)
         for f in failures:print(' - '+f,file=sys.stderr)

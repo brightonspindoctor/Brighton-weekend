@@ -370,6 +370,11 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
         <input id="magicLinkEmail" type="email" autocomplete="email" inputmode="email" placeholder="Your email address" aria-label="Email address" required>
         <button type="submit" id="magicLinkBtn" class="btn btn-secondary">Email me a sign-in link</button>
       </form>
+      <form id="otpCodeForm" class="magic-link-form hidden">
+        <input id="otpCode" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6,10}" maxlength="10" placeholder="Code from the email" aria-label="Sign-in code from the email" required>
+        <button type="submit" id="otpCodeBtn" class="btn btn-primary">Sign in with code</button>
+        <button type="button" id="otpRestart" class="btn btn-ghost">Use a different email</button>
+      </form>
       <p id="authMessage" class="group-meta"></p>
       <button type="button" id="welcomeInstallApp" class="btn btn-primary welcome-install hidden">↓ Download the app</button>
       <div class="welcome-info">
@@ -662,6 +667,7 @@ async function initAuth(){
  if(authUser) await bootstrapAuthed(); else showWelcome('auth');
 }
 async function bootstrapAuthed(){
+ if($('otpCodeForm')&&!$('otpCodeForm').classList.contains('hidden'))resetCodeStep(); // signed in (by code or link): reset the email step
  const hasProfile=await loadProfile();
  if($('authStep'))hide('authStep');
  if(!hasProfile){showWelcome('name');return;}
@@ -1205,7 +1211,44 @@ buttons.forEach(b=>b.onclick=install);
 setupInstallButton();
 
 $('googleSignInBtn').addEventListener('click',async()=>{const btn=$('googleSignInBtn'),msg=$('authMessage');try{btn.disabled=true;msg.textContent='Opening Google…';await signInWithGoogle();}catch(err){msg.textContent='Could not start Google sign-in. '+(err.message||err);btn.disabled=false}});
-$('magicLinkForm').addEventListener('submit',async e=>{e.preventDefault();const btn=$('magicLinkBtn'),input=$('magicLinkEmail'),msg=$('authMessage');try{btn.disabled=true;input.disabled=true;msg.className='group-meta';msg.textContent='Sending your sign-in link…';await signInWithMagicLink(input.value);msg.className='group-meta auth-success';msg.textContent='Check your email — your sign-in link is on its way.';}catch(err){msg.className='group-meta auth-error';msg.textContent='Could not send the sign-in link. '+(err.message||err);btn.disabled=false;input.disabled=false;}});
+// Email sign-in sends a link AND a code. The code is the reliable route: email
+// scanners can use up a one-time link before the person taps it, and on phones
+// the link often opens a browser instead of the installed app.
+const OTP_EMAIL_KEY='bw_otp_email';
+function showCodeStep(email){
+ $('magicLinkEmail').value=email;$('magicLinkEmail').disabled=true;$('magicLinkBtn').disabled=true;
+ show('otpCodeForm');$('otpCode').value='';
+ const msg=$('authMessage');msg.className='group-meta auth-success';
+ msg.textContent=`We've emailed ${email}. Type the code from the email here, or tap the link in it.`;
+ setTimeout(()=>$('otpCode').focus(),50);
+}
+function resetCodeStep(){
+ try{localStorage.removeItem(OTP_EMAIL_KEY)}catch(e){}
+ hide('otpCodeForm');$('magicLinkEmail').disabled=false;$('magicLinkBtn').disabled=false;
+ const msg=$('authMessage');msg.className='group-meta';msg.textContent='';
+}
+(function restoreCodeStep(){
+ // Coming back to the app after checking email (which may reload it): reopen the code box.
+ try{const x=JSON.parse(localStorage.getItem(OTP_EMAIL_KEY)||'null');if(x&&x.email&&Date.now()-x.at<36e5)showCodeStep(x.email);else localStorage.removeItem(OTP_EMAIL_KEY)}catch(e){}
+})();
+$('magicLinkForm').addEventListener('submit',async e=>{e.preventDefault();const btn=$('magicLinkBtn'),input=$('magicLinkEmail'),msg=$('authMessage');try{btn.disabled=true;input.disabled=true;msg.className='group-meta';msg.textContent='Sending your sign-in email…';const email=input.value.trim().toLowerCase();await signInWithMagicLink(email);try{localStorage.setItem(OTP_EMAIL_KEY,JSON.stringify({email,at:Date.now()}))}catch(_){}showCodeStep(email);}catch(err){msg.className='group-meta auth-error';msg.textContent='Could not send the sign-in email. '+(err.message||err);btn.disabled=false;input.disabled=false;}});
+$('otpCodeForm').addEventListener('submit',async e=>{
+ e.preventDefault();
+ const btn=$('otpCodeBtn'),msg=$('authMessage'),token=$('otpCode').value.replace(/\s+/g,''),email=$('magicLinkEmail').value.trim().toLowerCase();
+ if(!/^\d{6,10}$/.test(token)){msg.className='group-meta auth-error';msg.textContent='Enter the code from the email (numbers only).';return}
+ btn.disabled=true;msg.className='group-meta';msg.textContent='Checking your code…';
+ try{
+  const {error}=await supabase.auth.verifyOtp({email,token,type:'email'});
+  if(error)throw error;
+  resetCodeStep();msg.className='group-meta auth-success';msg.textContent='Signed in.';
+  // onAuthStateChange (SIGNED_IN) takes it from here.
+ }catch(err){
+  msg.className='group-meta auth-error';
+  msg.textContent=/expired|invalid/i.test(err.message||'')?'That code is wrong or has expired. Check the latest email, or use a different email to send a new one.':'Could not sign you in. '+(err.message||err);
+  btn.disabled=false;
+ }
+});
+$('otpRestart').onclick=resetCodeStep;
 $('nameForm').addEventListener('submit',async e=>{e.preventDefault();const n=$('nameInput').value.trim();if(!n)return;try{await saveProfile(n);await openGroupStep()}catch(err){alert('Could not save your profile. '+(err.message||err))}});
 $('deleteAccount').onclick=async()=>{
  const typed=prompt('This permanently deletes your Brighton Weekend account, your plans, your group memberships and any events you added. It can\'t be undone.\n\nType DELETE to confirm.');
@@ -1267,7 +1310,10 @@ document.addEventListener('click',ev=>{const b=ev.target.closest('[data-share-ev
 // Remembers, per user on this device, what was on screen at the last visit and
 // reports what is new since then.
 // Opens an event someone shared via a ?event= link (remembered across sign-in by capturePendingLink)
-function showSharedEvent(){const pendingSharedEventId=readPendingLink()?.event;if(!pendingSharedEventId)return;const e=[...events,...festivals].find(x=>String(x.id)===String(pendingSharedEventId));clearPendingLink('event');if(!e){alert('That shared event has passed or is no longer listed.');return}openTab("discover");const box=$('discover');const existing=box.querySelector('[data-event-id="'+CSS.escape(String(e.id))+'"]');if(existing){existing.scrollIntoView({behavior:"smooth",block:"center"});existing.classList.add("shared-target");setTimeout(()=>existing.classList.remove("shared-target"),3000);return}box.innerHTML='<section class="shared-event-panel"><div class="section-head"><h2>Shared event</h2><div class="note">Someone shared this event with you.</div></div>'+eventCard(e,{showDate:true})+'</section>'+box.innerHTML;const card=box.querySelector(".shared-event-panel [data-event-id]");if(card){card.classList.add("shared-target");setTimeout(()=>card.classList.remove("shared-target"),3000)}}
+function showSharedEvent(){const pendingSharedEventId=readPendingLink()?.event;if(!pendingSharedEventId)return;
+ // If the listings didn't load (offline, say), keep the link and try again on the next load.
+ if(!events.length&&!festivals.length)return;
+ const e=[...events,...festivals].find(x=>String(x.id)===String(pendingSharedEventId));clearPendingLink('event');if(!e){alert('That shared event has passed or is no longer listed.');return}openTab("discover");const box=$('discover');const existing=box.querySelector('[data-event-id="'+CSS.escape(String(e.id))+'"]');if(existing){existing.scrollIntoView({behavior:"smooth",block:"center"});existing.classList.add("shared-target");setTimeout(()=>existing.classList.remove("shared-target"),3000);return}box.innerHTML='<section class="shared-event-panel"><div class="section-head"><h2>Shared event</h2><div class="note">Someone shared this event with you.</div></div>'+eventCard(e,{showDate:true})+'</section>'+box.innerHTML;const card=box.querySelector(".shared-event-panel [data-event-id]");if(card){card.classList.add("shared-target");setTimeout(()=>card.classList.remove("shared-target"),3000)}}
 const seenKey=()=>'bw_seen_'+uid();
 let newSinceVisit=[], showNewPanel=false, homeShown=false;
 function readSeen(){try{return JSON.parse(localStorage.getItem(seenKey())||'null')}catch(e){return null}}

@@ -65,9 +65,15 @@ def prefer_fuller_titles(events):
    if not any(fuller_title(x.get('title',''),e.get('title','')) for x in chosen):chosen.append(e)
   kept.extend(chosen)
  return kept
+ROLLOVER_DAYS=60  # same rule as scrape-events.py: "15 Jan" seen in October means next January
 def parse_date(s):
  try:
-  d=dateparser.parse(clean(s),dayfirst=True,fuzzy=True,default=datetime(START.year,1,1));return d.date() if d else None
+  d=dateparser.parse(clean(s),dayfirst=True,fuzzy=True,default=datetime(START.year,1,1))
+  if not d:return None
+  if not re.search(r'\b\d{4}\b',str(s)) and d.date()<START-timedelta(days=ROLLOVER_DAYS):
+   try:d=d.replace(year=d.year+1)
+   except ValueError:d=d.replace(year=d.year+1,day=28)
+  return d.date()
  except Exception:return None
 def venue_from_text(text):
  low=clean(text).lower()
@@ -87,7 +93,7 @@ def make_event(title,date,time,url,venue,text):
  if not valid_title(title) or not date or date<START or date>END or not venue:return None
  time=to_hhmm(time)
  ident=re.sub(r'[^a-z0-9]+','-',f'{date}-{venue}-{title}'.lower()).strip('-')[:180]
- return {'id':ident,'title':title,'date':date.isoformat(),'venue':venue,'time':time,'finish_time':'','category':category(title,text),'ticket_url':url}
+ return {'id':ident,'title':title,'date':date.isoformat(),'venue':venue,'source':'discovery','time':time,'finish_time':'','category':category(title,text),'ticket_url':url}
 def extract_cards(html,page_url):
  soup=BeautifulSoup(html,'html.parser');out=[]
  for tag in soup.find_all('script',attrs={'type':re.compile('ld\\+json',re.I)}):
@@ -128,25 +134,32 @@ def extract_cards(html,page_url):
  return out
 async def main():
  async with async_playwright() as p:
-  browser=await p.chromium.launch(headless=True);all_events=[]
+  browser=await p.chromium.launch(headless=True);all_events=[];ok_sources=0
   for url in SOURCES:
    page=await browser.new_page();page.set_default_timeout(25000)
    try:
     await page.goto(url,wait_until='domcontentloaded',timeout=30000)
     try:await page.wait_for_load_state('networkidle',timeout=10000)
     except PlaywrightTimeoutError:pass
-    await page.wait_for_timeout(2000);events=extract_cards(await page.content(),page.url);all_events.extend(events);print(f'Discovery {url}: {len(events)} usable events')
+    await page.wait_for_timeout(2000);events=extract_cards(await page.content(),page.url);all_events.extend(events);ok_sources+=1;print(f'Discovery {url}: {len(events)} usable events')
    except Exception as exc:print(f'Discovery failed {url}: {exc}')
    finally:await page.close()
   await browser.close()
  data=json.loads(OUT.read_text());merged={}
+ key_of=lambda e:(e.get('venue','').lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
+ found={key_of(e) for e in all_events}
+ # When the calendars loaded properly, drop discovery events they no longer list
+ # (cancelled or moved). If they mostly failed, keep everything.
+ healthy=ok_sources>=max(1,len(SOURCES)//2) and len(all_events)>=10
+ removed_stale=0
  for e in data.get('events',[]):
   if not valid_title(e.get('title','')):continue
-  key=(e.get('venue','').lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
+  key=key_of(e)
+  if healthy and e.get('source')=='discovery' and key not in found:removed_stale+=1;continue
   if key not in merged:merged[key]=e
  for e in all_events:
   key=(e.get('venue','').lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
   if key not in merged:merged[key]=e
  events=prefer_fuller_titles(list(merged.values()))
- data['events']=sorted(events,key=lambda x:(x['date'],x.get('time') or '99:99',x['venue'],x['title']));data['venues']=sorted({e['venue'] for e in events});data['updated']=NOW.date().isoformat();OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');print(f'Merged {len(all_events)} discovery events; events.json now has {len(events)} events')
+ data['events']=sorted(events,key=lambda x:(x['date'],x.get('time') or '99:99',x['venue'],x['title']));data['venues']=sorted({e['venue'] for e in events});data['updated']=NOW.date().isoformat();OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');print(f'Merged {len(all_events)} discovery events from {ok_sources}/{len(SOURCES)} calendars; removed no-longer-listed: {removed_stale}; events.json now has {len(events)} events')
 if __name__=='__main__':asyncio.run(main())

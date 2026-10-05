@@ -1,0 +1,13 @@
+# Keeps the GitHub Actions used by the workflows (checkout, setup-python,
+# setup-node) up to date with security fixes. Dependabot opens a pull request
+# once a month when a newer version is out; nothing changes until you merge it.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: monthly
