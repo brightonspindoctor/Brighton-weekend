@@ -1,6 +1,6 @@
 -- ============================================================================
 -- Brighton Weekend v59 — account clean-up, community-event limits, privacy
--- Run once in the Supabase SQL Editor, after v58. Safe to re-run.
+-- Applied to the live project on 2026-10-05 (run in the SQL Editor). Safe to re-run.
 --
 --   1. Deleting a user anywhere (in the app OR in the Supabase dashboard)
 --      now removes all of their app data. Before, dashboard deletions left
