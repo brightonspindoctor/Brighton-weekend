@@ -65,6 +65,53 @@ def prefer_fuller_titles(events):
         kept.extend(chosen)
     return kept
 
+# ---- Choosing the ticket link -------------------------------------------
+# An event card on a listings page usually holds several links. Pick the one
+# that gets people closest to buying: a ticketing site or a "Tickets"/"Book"
+# button first, then the link whose text is the event's name (its own page).
+# Never the listings page itself, the venue's homepage or social media.
+TICKET_HOSTS=('seetickets','ticketmaster','skiddle','dice.fm','eventbrite','ticketweb','gigantic','fatsoma',
+              'ra.co','residentadvisor','wegottickets','ents24','atgtickets','ticketsource','tickettailor',
+              'universe.com','fixr','tixr','billetto','ticketline','eventim','ticketsolve','spektrix',
+              'kililive','stagedates','ticketebo','ticketsellers','designmynight','headfirstbristol')
+SKIP_HOSTS=('facebook.','instagram.','twitter.','x.com','tiktok.','youtube.','youtu.be','spotify.','soundcloud.',
+            'google.','apple.com','linktr.ee','mailchimp','wa.me','whatsapp','threads.net','bsky.')
+LISTING_SLUGS={'whats-on','whatson','events','event','shows','listings','calendar','gigs','club','tickets',
+               'comedy','music','search','programme','all-events','upcoming'}
+def is_listing_or_home(u,page_url=''):
+    p=urlparse(u);path=p.path.strip('/')
+    if not path:return True
+    if page_url and u.split('#')[0].rstrip('/')==page_url.split('#')[0].rstrip('/'):return True
+    return path.split('/')[-1].lower() in LISTING_SLUGS and p.query==''
+def best_link(node,page_url,title):
+    """Return the best ticket/event link inside an event card, or None."""
+    scored={}
+    for a in node.find_all('a',href=True):
+        raw=a['href'].strip()
+        if not raw or raw.startswith(('#','mailto:','tel:','javascript:','sms:')):continue
+        u=urljoin(page_url,raw).split('#')[0];p=urlparse(u);host=p.netloc.lower()
+        if p.scheme not in ('http','https') or any(h in host for h in SKIP_HOSTS):continue
+        ticket_site=any(h in host for h in TICKET_HOSTS)
+        if is_listing_or_home(u,page_url) and not (ticket_site and p.path.strip('/')):continue
+        text=clean(a.get_text(' ',strip=True)).lower() or clean(a.get('aria-label','')).lower() or clean(a.get('title','')).lower()
+        score=1
+        if ticket_site:score+=4
+        if re.search(r'\b(tickets?|book(?:ing)?|buy)\b',text):score+=3
+        if title and title_key(text) and (title_key(text)==title_key(title) or title_key(title) in title_key(text)):score+=2
+        scored[u]=max(score,scored.get(u,0))
+    if not scored:return None
+    best=max(scored,key=scored.get)
+    # A block holding many different event links is a whole listing, not one
+    # event's card: only trust a link there if it is clearly this event's.
+    if len(scored)>4 and scored[best]<3:return None
+    return best
+
+def offer_url(raw):
+    offers=raw.get('offers')
+    for o in (offers if isinstance(offers,list) else [offers]):
+        if isinstance(o,dict) and re.match(r'https?://',str(o.get('url',''))):return o['url']
+    return None
+
 def slug_title(url):
     slug=urlparse(url).path.rstrip('/').split('/')[-1]
     slug=re.sub(r'^[A-Za-z0-9_-]+-', '', slug)
@@ -102,8 +149,11 @@ def normalise(raw,venue,page_url):
     if not valid_title(title) or not start or not (RANGE_START<=start.date()<=RANGE_END):return None
     blob=clean(' '.join(str(raw.get(k,'')) for k in ('name','description','status'))).lower()
     if any(x in blob for x in ('cancelled','canceled','postponed','event cancelled')):return None
-    end=parse_dt(raw.get('endDate') or raw.get('end_date')); offers=raw.get('offers'); offer_url=offers.get('url') if isinstance(offers,dict) else None
-    url=urljoin(page_url,raw.get('url') or offer_url or page_url)
+    end=parse_dt(raw.get('endDate') or raw.get('end_date'))
+    # Closest to the tickets first: the ticket offer, then the event's own page,
+    # and the listings page only as a last resort.
+    candidates=[offer_url(raw),raw.get('url')]
+    url=next((urljoin(page_url,c) for c in candidates if c and not is_listing_or_home(urljoin(page_url,c),page_url)),None) or urljoin(page_url,raw.get('url') or page_url)
     ident=re.sub(r'[^a-z0-9]+','-',f'{start.date()}-{venue}-{title}'.lower()).strip('-')[:180]
     return {'id':ident,'title':title,'date':start.date().isoformat(),'venue':venue,'source':'venue','time':start.strftime('%H:%M') if start_raw and re.search(r'T|\d{1,2}:\d{2}|am|pm',str(start_raw),re.I) else '','finish_time':end.strftime('%H:%M') if end else '','category':category(title,raw.get('description','')),'ticket_url':url}
 
@@ -150,6 +200,8 @@ def dom_events(html,venue,page_url,detail_only=False):
                     if valid_title(candidate) and '/whats-on/' in urlparse(u).path:
                         title=candidate;href=u;break
         if not valid_title(title):continue
+        if href==page_url and not detail_only:
+            href=best_link(node,page_url,title) or page_url
         # Ignore "Doors: 7pm" style times; they are not start or finish times.
         timed_text=re.sub(r'doors?\s*(?:open)?\s*[:\-]?\s*\d{1,2}(?::\d{2})?\s*(?:am|pm)',' ',text,flags=re.I)
         times=TIME_RE.findall(timed_text);tm=times[0] if times else None;end_tm=times[-1] if len(times)>1 else None
@@ -241,7 +293,16 @@ async def main():
             retained[event_key(e)]=e
     for e in scraped:
         key=event_key(e)
-        if key not in retained:retained[key]=e  # keep the existing record so its id (and saved choices) survive
+        old=retained.get(key)
+        if old is None:retained[key]=e
+        else:
+            # Same event found again: keep its id (so saved Interested/Going
+            # choices still match) but take today's ticket link and details,
+            # unless today's link is worse (a listings/home page) than the old one.
+            fresh=dict(e,id=old['id'])
+            if is_listing_or_home(fresh.get('ticket_url',''),'') and not is_listing_or_home(old.get('ticket_url',''),''):
+                fresh['ticket_url']=old['ticket_url']
+            retained[key]=fresh
     events=prefer_fuller_titles(list(retained.values()))
     events=sorted(events,key=lambda x:(x['date'],x.get('time') or '99:99',x['venue'],x['title']))
     existing_future=sum(1 for e in existing.get('events',[]) if e.get('date','')>=RANGE_START.isoformat() and valid_title(e.get('title','')))
