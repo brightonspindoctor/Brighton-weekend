@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-04",
-  "range_start": "2026-10-04",
-  "range_end": "2027-07-11",
+  "updated": "2026-10-05",
+  "range_start": "2026-10-05",
+  "range_end": "2027-07-12",
   "venues": [
     "A L P H A B E T",
     "Amex Stadium",
@@ -27,73 +27,6 @@
     "Volks"
   ],
   "events": [
-    {
-      "id": "2026-10-04-brighton-racecourse-brighton-creed-comic-con-october-2026",
-      "title": "Brighton Creed Comic Con - October 2026",
-      "date": "2026-10-04",
-      "venue": "Brighton Racecourse",
-      "time": "10:00",
-      "finish_time": "16:00",
-      "category": "Other",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.eventbrite.co.uk/e/brighton-creed-comic-con-october-2026-tickets-1984073157223"
-    },
-    {
-      "id": "2026-10-04-amex-stadium-brighton-women-v-charlton-athletic",
-      "title": "Brighton Women v Charlton Athletic",
-      "date": "2026-10-04",
-      "venue": "Amex Stadium",
-      "time": "14:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.brightonandhovealbion.com/tickets"
-    },
-    {
-      "id": "2026-10-04-komedia-ari-eldj-rn",
-      "title": "Ari Eldjárn",
-      "date": "2026-10-04",
-      "venue": "Komedia",
-      "category": "Comedy",
-      "time": "",
-      "ticket_url": "https://www.komedia.co.uk/",
-      "source_url": "https://www.komedia.co.uk/",
-      "finish_time": ""
-    },
-    {
-      "id": "2026-10-04-komedia-down-the-hatch",
-      "title": "Down the Hatch",
-      "date": "2026-10-04",
-      "venue": "Komedia",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/down-the-hatch-p2161931"
-    },
-    {
-      "id": "2026-10-04-the-prince-albert-light-asylum",
-      "title": "Light Asylum",
-      "date": "2026-10-04",
-      "venue": "The Prince Albert",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
-    },
-    {
-      "id": "2026-10-04-the-prince-albert-stormtrooper-trash-social-security",
-      "title": "Stormtrooper Trash / Social Security",
-      "date": "2026-10-04",
-      "venue": "The Prince Albert",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert"
-    },
     {
       "id": "2026-10-05-the-prince-albert-spinnaker-the-fifty-one-luvd",
       "title": "Spinnaker / The Fifty One / Luvd",
@@ -434,6 +367,16 @@
       "ticket_url": "https://quartersbrighton.co.uk/whatson"
     },
     {
+      "id": "2026-10-10-brighton-dome-alison-moyet",
+      "title": "Alison Moyet",
+      "date": "2026-10-10",
+      "venue": "Brighton Dome",
+      "time": "19:00",
+      "finish_time": "23:00",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/L2q-alison-moyet/"
+    },
+    {
       "id": "2026-10-10-brighton-dome-russell-t-davies",
       "title": "Russell T Davies",
       "date": "2026-10-10",
@@ -524,14 +467,14 @@
       "ticket_url": "https://brightondome.org/whats-on/L0U-woodhill/"
     },
     {
-      "id": "2026-10-10-brighton-dome-alison-moyet",
-      "title": "Alison Moyet",
+      "id": "2026-10-10-brighton-dome-contemporary-music",
+      "title": "Contemporary Music",
       "date": "2026-10-10",
       "venue": "Brighton Dome",
       "time": "",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/L3x-the-mehfil-space-presents-sanju-sahai-and-jason-kalidas/"
+      "ticket_url": "https://brightondome.org/whats-on/L2q-alison-moyet/"
     },
     {
       "id": "2026-10-10-brighton-dome-literature-poetry-spoken-word",
@@ -1276,6 +1219,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-16-green-door-store-party-4-u",
+      "title": "party 4 u",
+      "date": "2026-10-16",
+      "venue": "Green Door Store",
+      "time": "23:00",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
+    },
+    {
       "id": "2026-10-16-brightoncentre-magic-men-world-tour-2026-magic-men-live",
       "title": "Magic Men World Tour 2026 Magic Men Live!",
       "date": "2026-10-16",
@@ -1473,6 +1426,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-17-green-door-store-bishopskin",
+      "title": "Bishopskin",
+      "date": "2026-10-17",
+      "venue": "Green Door Store",
+      "time": "19:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/"
+    },
+    {
       "id": "2026-10-17-brighton-dome-lara-ricote-inkling",
       "title": "Lara Ricote: Inkling",
       "date": "2026-10-17",
@@ -1573,17 +1536,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Chalk-Brighton/The-Tumbling-Paddies/41654513/"
-    },
-    {
-      "id": "2026-10-17-greendoorstore-bishopskin",
-      "title": "Bishopskin",
-      "date": "2026-10-17",
-      "venue": "Green Door Store",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/",
-      "source_url": "https://thegreendoorstore.co.uk/events/",
-      "finish_time": ""
     },
     {
       "id": "2026-10-17-theatre-royal-brighton-fin-taylor-the-pre-emptive-comeback-special",
@@ -3453,6 +3405,16 @@
       "finish_time": ""
     },
     {
+      "id": "2026-10-31-concorde-2-drum-and-bass-classics-brighton-halloween-all-dayer",
+      "title": "Drum and Bass Classics Brighton | Halloween All Dayer",
+      "date": "2026-10-31",
+      "venue": "Concorde 2",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-Concorde-2/Drum-and-Bass-Classics-Brighton--Halloween-All-Dayer/42417352/"
+    },
+    {
       "id": "2026-10-31-concorde-2-moody-disco-halloween-rave-w-obsk-r",
       "title": "Moody Disco Halloween Rave w/ Obskür",
       "date": "2026-10-31",
@@ -4047,6 +4009,16 @@
       "ticket_url": "https://brightondome.org/whats-on/LG8-status-flo-black-history-month/"
     },
     {
+      "id": "2026-11-10-brighton-dome-the-stravinsky-connection",
+      "title": "The Stravinsky Connection",
+      "date": "2026-11-10",
+      "venue": "Brighton Dome",
+      "time": "13:45",
+      "finish_time": "22:00",
+      "category": "Club",
+      "ticket_url": "https://brightondome.org/whats-on/LgD-the-stravinsky-connection/"
+    },
+    {
       "id": "2026-11-10-green-door-store-psychedelic-sundae",
       "title": "Psychedelic Sundae",
       "date": "2026-11-10",
@@ -4106,16 +4078,6 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://forgecomedyclub.co.uk/"
-    },
-    {
-      "id": "2026-11-10-brighton-dome-the-stravinsky-connection",
-      "title": "The Stravinsky Connection",
-      "date": "2026-11-10",
-      "venue": "Brighton Dome",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/Lz1-kian-soltani-plays-dvok/"
     },
     {
       "id": "2026-11-10-brighton-dome-you-might-also-like",
