@@ -1,6 +1,6 @@
 -- ============================================================================
 -- Brighton Weekend — live database schema (public schema)
--- Exported from the live Supabase project on 2026-10-05, after v58.
+-- Exported from the live Supabase project on 2026-10-05, after v58 and v59.
 --
 -- This file is the reference for what is actually running. The numbered
 -- files (v48, v49, v58) are the change history. When you change the database,
@@ -112,6 +112,9 @@ alter table public.bw_custom_events add constraint bw_custom_events_ticket_url_h
 alter table public.bw_custom_events add constraint bw_custom_events_title_check CHECK (((char_length(TRIM(BOTH FROM title)) >= 2) AND (char_length(TRIM(BOTH FROM title)) <= 120)));
 alter table public.bw_custom_events add constraint bw_custom_events_title_length CHECK ((char_length(title) <= 150)) NOT VALID;
 alter table public.bw_custom_events add constraint bw_custom_events_venue_detail_length CHECK ((char_length(venue_detail) <= 120)) NOT VALID;
+alter table public.bw_custom_events add constraint bw_custom_events_time_format CHECK (((time IS NULL) OR (time ~ '^([01][0-9]|2[0-3]):[0-5][0-9]$'::text)));
+alter table public.bw_custom_events add constraint bw_custom_events_finish_time_format CHECK (((finish_time IS NULL) OR (finish_time ~ '^([01][0-9]|2[0-3]):[0-5][0-9]$'::text)));
+alter table public.bw_custom_events add constraint bw_custom_events_status_allowed CHECK ((status = ANY (ARRAY[''::text, 'SOLD OUT'::text])));
 -- Must match VENUES in index.html.
 alter table public.bw_custom_events add constraint bw_custom_events_venue_allowed CHECK ((venue = ANY (ARRAY[
   'Brighton Centre'::text, 'Brighton Dome'::text, 'CHALK'::text, 'Concorde 2'::text, 'The Old Market'::text,
@@ -174,7 +177,9 @@ CREATE UNIQUE INDEX event_interest_event_user_unique ON public.event_interest US
 -- (app_visitors, bw_groups, bw_group_members, bw_join_attempts and user_roles
 --  have NO grants or policies: only the functions below can touch them.)
 -- ---------------------------------------------------------------------------
-grant select on public.bw_custom_events to anon;
+-- Signed-out visitors can't see who added an event (no created_by / created_by_name).
+grant select (id, title, date, venue, venue_detail, time, finish_time, price, status,
+              ticket_url, category, description, created_at) on public.bw_custom_events to anon;
 grant select, insert, delete on public.bw_custom_events to authenticated;
 grant select, insert, update on public.bw_profiles to authenticated;
 grant select on public.event_interest to authenticated;
@@ -539,14 +544,49 @@ CREATE OR REPLACE FUNCTION public.bw_custom_events_limit()
  SECURITY DEFINER
  SET search_path TO 'public'
 AS $function$
+declare d date; today date := (now() at time zone 'Europe/London')::date;
 begin
+  begin
+    d := to_date(new.date, 'YYYY-MM-DD');
+  exception when others then
+    raise exception 'Please choose a valid date.';
+  end;
+  if to_char(d, 'YYYY-MM-DD') <> new.date then
+    raise exception 'Please choose a valid date.';
+  end if;
+  if d < today or d > today + 730 then
+    raise exception 'Events can be added from today up to two years ahead.';
+  end if;
+
   if (select count(*) from public.bw_custom_events e
        where e.created_by = new.created_by
-         and e.date >= to_char(current_date, 'YYYY-MM-DD')) >= 20 then
+         and e.date >= to_char(today, 'YYYY-MM-DD')) >= 20 then
     raise exception 'You''ve added the maximum of 20 upcoming events. Please try again once some have passed.';
   end if;
   new.created_by_name := public.bw_caller_name(new.created_by_name);
   return new;
+end;
+$function$;
+
+-- Removes all app data when an auth user is deleted (in the app or the dashboard).
+CREATE OR REPLACE FUNCTION public.bw_cleanup_deleted_user()
+ RETURNS trigger
+ LANGUAGE plpgsql
+ SECURITY DEFINER
+ SET search_path TO 'public'
+AS $function$
+declare uid text := old.id::text;
+begin
+  delete from public.event_interest   where user_id = uid;
+  delete from public.bw_group_members where user_id = uid;
+  delete from public.bw_groups g
+   where not exists (select 1 from public.bw_group_members m where m.group_id = g.id);
+  delete from public.bw_custom_events where created_by = uid;
+  delete from public.bw_join_attempts where user_id = uid;
+  delete from public.app_visitors     where user_id = uid;
+  delete from public.user_roles       where user_id = uid;
+  delete from public.bw_profiles      where user_id::text = uid;
+  return old;
 end;
 $function$;
 
@@ -583,6 +623,7 @@ $function$;
 CREATE TRIGGER bw_custom_events_limit BEFORE INSERT ON public.bw_custom_events FOR EACH ROW EXECUTE FUNCTION bw_custom_events_limit();
 CREATE TRIGGER bw_profiles_touch_updated_at BEFORE UPDATE ON public.bw_profiles FOR EACH ROW EXECUTE FUNCTION bw_profiles_touch_updated_at();
 CREATE TRIGGER bw_profiles_propagate_name AFTER UPDATE OF display_name ON public.bw_profiles FOR EACH ROW EXECUTE FUNCTION bw_profiles_propagate_name();
+CREATE TRIGGER bw_cleanup_deleted_user AFTER DELETE ON auth.users FOR EACH ROW EXECUTE FUNCTION public.bw_cleanup_deleted_user();
 
 -- ---------------------------------------------------------------------------
 -- Function permissions: signed-in users only; helpers not callable at all

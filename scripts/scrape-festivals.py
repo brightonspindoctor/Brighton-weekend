@@ -43,7 +43,7 @@ FEZZY_SOURCES=[
     "https://fezzy.uk/collections/indie-alt-festivals-2026/",
 ]
 EFESTIVALS=[f"https://www.efestivals.co.uk/festivals/festivals.php?from={n}&year={TODAY.year+1}" for n in range(0,70,10)] + [
-    "https://www.efestivals.co.uk/festivals/festivals.php?area=S&year=2027",
+    f"https://www.efestivals.co.uk/festivals/festivals.php?area=S&year={TODAY.year+1}",
     "https://www.efestivals.co.uk/festivals/festivals.php?area=S&year=now",
 ]
 MONTHS="Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?"
