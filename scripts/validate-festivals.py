@@ -20,6 +20,9 @@ BAD_TITLES = {
 }
 
 def norm(s): return re.sub(r"[^a-z0-9]+", " ", str(s or "").lower()).strip()
+# Same rule as is_layout_text() in scrape-festivals.py: month/day headings and buttons.
+_MD = r"(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?|mon(?:day)?|tue(?:s(?:day)?)?|wed(?:nesday)?|thu(?:rs(?:day)?)?|fri(?:day)?|sat(?:urday)?|sun(?:day)?)"
+LAYOUT = re.compile(rf"(?:{_MD}\s*)+(?:\d{{1,2}}(?:st|nd|rd|th)?\s*)?(?:\d{{4}})?|(?:more details|more info(?:rmation)?|find out more|view (?:details|event|festival|more)|see (?:details|more)|learn more|book now|buy now|book tickets?|buy tickets?|get tickets?|details|info|tickets?)")
 
 if not DATA.exists(): raise SystemExit("festivals.json is missing")
 try: data = json.loads(DATA.read_text())
@@ -49,6 +52,7 @@ for i, f in enumerate(festivals):
     if f["category"] not in CATEGORIES: errors.append(f"{label}: invalid category {f['category']!r}")
     title = str(f["title"]).strip()
     if title.lower() in BAD_TITLES or title.startswith("#"): errors.append(f"{label}: navigation title {title!r}")
+    if LAYOUT.fullmatch(norm(title)): errors.append(f"{label}: month, date or button text as title {title!r}")
     if "@" in title: errors.append(f"{label}: email-like title")
     for k in ("ticket_url", "detail_url"):
         if not re.match(r"^https?://", str(f[k]), re.I): errors.append(f"{label}: {k} is not a web link")

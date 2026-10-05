@@ -11,7 +11,7 @@ import asyncio, json, re
 from datetime import date, datetime
 from difflib import SequenceMatcher
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urlparse, urljoin
 from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
@@ -124,8 +124,26 @@ def classify(text):
     if any(k in h for k in ("running","trail","cycling","equestrian","horse trials","motorsport","sport","outdoor","adventure","surf")): return "Sport & Outdoor"
     if any(k in h for k in ("music","rock","pop","indie","electronic","folk","jazz","blues","metal","dance","dj","house","techno","punk","ska","soul","r&b")): return "Music"
     return "Other"
+# Text that is part of the page layout, not a festival name: month/day group
+# headings ("April", "June 2027") and buttons ("More Details", "Book now").
+MONTH_DAY=r"(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?|mon(?:day)?|tue(?:s(?:day)?)?|wed(?:nesday)?|thu(?:rs(?:day)?)?|fri(?:day)?|sat(?:urday)?|sun(?:day)?)"
+CTA=r"(?:more details|more info(?:rmation)?|find out more|view (?:details|event|festival|more)|see (?:details|more)|learn more|book now|buy now|book tickets?|buy tickets?|get tickets?|details|info|tickets?)"
+def is_layout_text(t):
+    h=norm(t)
+    # Only month/day names and numbers ("April", "June 2027", "Sat 14 June"), or a button label.
+    return bool(re.fullmatch(rf"(?:(?:{MONTH_DAY}|\d{{1,4}}(?:st|nd|rd|th)?)\s*)+",h) or re.fullmatch(CTA,h))
+def title_from_url(href):
+    """'/festival/all-points-east/' -> 'All Points East' (used when a card's heading is a month)."""
+    slug=urlparse(href).path.rstrip("/").split("/")[-1]
+    slug=re.sub(r"-p\d+$","",slug)
+    words=[w for w in re.split(r"[-_]+",slug) if w]
+    if not words: return ""
+    small={"and","of","the","on","in","at","by","for","a"}
+    return " ".join(w.capitalize() if i==0 or w not in small else w for i,w in enumerate(words))
+
 def valid_title(t):
     t=clean(t); h=t.lower()
+    if is_layout_text(t): return False
     if not (len(t)>=4 and len(t)<=180): return False
     if h in GENERIC or h.startswith(("2026 edition","2027 tickets","check tickets")): return False
     if "@" in t or re.fullmatch(r"[a-z]-[a-z](?: [a-z]-[a-z])*",h): return False
@@ -222,7 +240,8 @@ def extract_fezzy(html,url):
     soup=BeautifulSoup(html,"html.parser"); out=[]
     for heading in soup.find_all(["h2","h3","button"]):
         title=clean(heading.get_text(" ",strip=True))
-        if not valid_title(title): continue
+        layout=is_layout_text(title)  # e.g. a month group heading such as "April"
+        if not layout and not valid_title(title): continue
         card=extract_card(heading)
         if not card: continue
         detail=None
@@ -231,8 +250,16 @@ def extract_fezzy(html,url):
             if re.search(r"/festival/[^/?#]+/?$",href,re.I):
                 detail=urljoin(url,href); break
         if not detail: continue
+        if layout:
+            # The heading was a month, so the real name is the festival's own
+            # address. merge() folds it into the proper record if there is one.
+            title=title_from_url(detail)
+            if not valid_title(title): continue
+            # Its date and place came from the month block, not this festival:
+            # validate_candidate() re-reads the dates from the festival's own page.
         e=card_data(card,title,TODAY.year,url)
         if e:
+            if layout: e["_derived"]=True
             e["detail_url"]=detail
             e["ticket_url"]=detail
             out.append(e)
@@ -282,6 +309,12 @@ async def validate_candidate(browser,e):
         try: await page.wait_for_load_state("networkidle",timeout=5000)
         except PlaywrightTimeoutError: pass
         body=clean(await page.locator("body").inner_text())
+        if e.get("_derived"):
+            # Named from its address because the card heading was a month: take
+            # the dates from the festival's own page (first upcoming range).
+            found=next(((a,b) for a,b in iter_date_ranges(body,TODAY.year) if a and TODAY<=a<=END),None)
+            if not found: return False
+            e["date"]=found[0].isoformat(); e["date_end"]=(found[1] or found[0]).isoformat()
         title_norm=norm(e["title"])
         body_norm=norm(body)
         title_words=[w for w in title_norm.split() if len(w)>2]
@@ -302,6 +335,15 @@ async def validate_candidate(browser,e):
 
 def merge(items):
     chosen=[]
+    items=[e for e in items if not is_layout_text(e.get("title",""))]
+    # One record per festival page, preferring a properly read card over one
+    # named from its address.
+    by_page={}
+    for e in sorted(items,key=lambda x:bool(x.get("_derived"))):
+        key=(e.get("detail_url") or "").split("#")[0].rstrip("/") or id(e)
+        if key not in by_page: by_page[key]=e
+    items=list(by_page.values())
+    for e in items: e.pop("_derived",None)
     for e in sorted(items,key=lambda x:(x["date"],x["title"])):
         if not (TODAY<=date.fromisoformat(e["date"])<=END): continue
         en=norm(e["title"]); el=location_key(e["location"])

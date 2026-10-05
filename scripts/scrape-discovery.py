@@ -160,6 +160,9 @@ async def main():
  for e in all_events:
   key=(e.get('venue','').lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
   if key not in merged:merged[key]=e
+  elif merged[key].get('source')=='discovery':
+   # Found again: keep the id, take today's link and details.
+   merged[key]=dict(e,id=merged[key]['id'])
  events=prefer_fuller_titles(list(merged.values()))
  data['events']=sorted(events,key=lambda x:(x['date'],x.get('time') or '99:99',x['venue'],x['title']));data['venues']=sorted({e['venue'] for e in events});data['updated']=NOW.date().isoformat();OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');print(f'Merged {len(all_events)} discovery events from {ok_sources}/{len(SOURCES)} calendars; removed no-longer-listed: {removed_stale}; events.json now has {len(events)} events')
 if __name__=='__main__':asyncio.run(main())
