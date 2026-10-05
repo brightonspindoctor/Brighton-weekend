@@ -14,16 +14,18 @@ GENERIC_TITLES = {
     "what's on", "events", "upcoming events", "get tickets", "buy tickets", "book tickets", "learn more",
     "more info", "more info & tickets", "find out more", "event details", "sold out", "on sale", "on sale today",
     "tickets", "read more", "view event", "openings",
+    # Page sections and category labels scraped from venue sites (seen on Brighton Dome pages).
+    "you might also like", "accessible events", "accessible events theatre", "contemporary music",
+    "literature, poetry & spoken word", "literature poetry and spoken word", "spoken word",
+    "related events", "similar events", "more events", "whats on", "coming soon",
 }
+
+GENERIC_KEYS = {re.sub(r"[^a-z0-9]+", " ", t).strip() for t in GENERIC_TITLES}
 
 def fail(message):
     print(f"ERROR: {message}", file=sys.stderr)
     raise SystemExit(1)
 
-# One Dome rule, identical in prepare-events.py and validate-events.py so the
-# two scripts can never disagree. An event is a Brighton Dome event if its venue
-# names the Dome or its id was built from a Dome venue ("-brighton-dome-").
-# The only Dome listing allowed is the Ben Folds date.
 if not DATA.exists(): fail("events.json is missing")
 try: data = json.loads(DATA.read_text())
 except Exception as exc: fail(f"events.json is not valid JSON: {exc}")
@@ -52,7 +54,7 @@ for i, event in enumerate(events):
     if not (start <= event_date <= end): errors.append(f"{event_id}: date outside declared range")
     low = title.lower()
     if venue.lower() == "patterns" and any(marker in low for marker in PATTERNS_RECURRING): errors.append(f"recurring Patterns event still present: {event_id}")
-    if low in GENERIC_TITLES: errors.append(f"generic title still present: {event_id}")
+    if low in GENERIC_TITLES or re.sub(r"[^a-z0-9]+", " ", low).strip() in GENERIC_KEYS: errors.append(f"generic title still present: {event_id}")
     for field in ("time", "finish_time"):
         value = str(event.get(field) or "")
         if value and not re.fullmatch(r"\d{2}:\d{2}", value): errors.append(f"{event_id}: {field} {value!r} is not HH:MM")

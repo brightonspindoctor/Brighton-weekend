@@ -45,6 +45,13 @@ jobs:
         run: |
           git config user.name 'Brighton Weekend festival scraper'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          # festivals.json is regenerated in full, so put the fresh file on top of
+          # the latest main (the event refresh or an avatar upload may have pushed
+          # while this ran) instead of pushing a stale branch that gets rejected.
+          cp festivals.json "$RUNNER_TEMP/festivals.json"
+          git fetch origin main
+          git reset --hard origin/main
+          cp "$RUNNER_TEMP/festivals.json" festivals.json
           git add festivals.json
           if git diff --cached --quiet; then
             echo 'No festival data changes this run.'

@@ -41,6 +41,8 @@ jobs:
         run: node scripts/validate-avatars.mjs
 
       - name: Commit registration
+        env:
+          AVATAR_LABEL: ${{ inputs.label }}
         run: |
           if git diff --quiet; then
             echo 'No changes to commit.'
@@ -49,7 +51,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add index.html profile-icons/avatar-manifest.json
-          git commit -m "Add avatar: ${{ inputs.label }}"
+          git commit -m "Add avatar: $AVATAR_LABEL"
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main

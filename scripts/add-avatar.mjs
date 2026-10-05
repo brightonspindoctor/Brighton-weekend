@@ -15,6 +15,9 @@ if (!id || !label || !file) {
 }
 if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) throw new Error(`Invalid avatar id: ${id}`);
 if (!/^[A-Za-z0-9._-]+$/.test(file)) throw new Error(`Invalid avatar filename: ${file}`);
+// The label is written into index.html as a JavaScript string, so keep it to
+// plain characters: no quotes, backslashes, braces or angle brackets.
+if (!/^[A-Za-z0-9][A-Za-z0-9 &()\-]{0,39}$/.test(label)) throw new Error(`Invalid avatar label (letters, numbers, spaces, & ( ) - only, up to 40 characters): ${label}`);
 if (id === 'bee' || id === 'bumblebee') throw new Error('Legacy bee avatars are not allowed');
 
 // Avatar creation must use the selected raster artwork itself. Do not substitute

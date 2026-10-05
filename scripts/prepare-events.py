@@ -20,10 +20,16 @@ GENERIC_TITLES = {
     "get tickets", "buy tickets", "book tickets", "learn more", "more info",
     "more info & tickets", "find out more", "event details", "sold out",
     "on sale", "on sale today", "tickets", "read more", "view event", "openings",
+    # Page sections and category labels scraped from venue sites (seen on Brighton Dome pages).
+    "you might also like", "accessible events", "accessible events theatre", "contemporary music",
+    "literature, poetry & spoken word", "literature poetry and spoken word", "spoken word",
+    "related events", "similar events", "more events", "whats on", "coming soon",
 }
 
 def title_key(title):
     return re.sub(r"[^a-z0-9]+", " ", str(title or "").lower()).strip()
+
+GENERIC_KEYS = {re.sub(r"[^a-z0-9]+", " ", t).strip() for t in GENERIC_TITLES}
 
 def fuller_title(a, b):
     ka, kb = title_key(a), title_key(b)
@@ -38,10 +44,10 @@ def is_date_only_title(title):
     value = str(title or "").strip()
     return bool(re.fullmatch(r"(?:mon|tue|wed|thu|fri|sat|sun)(?:day)?\s+\d{1,2}\s+[a-z]{3,9}\s+\d{2,4}", value, re.I))
 
-# One Dome rule, identical in prepare-events.py and validate-events.py so the
-# two scripts can never disagree. An event is a Brighton Dome event if its venue
-# names the Dome or its id was built from a Dome venue ("-brighton-dome-").
-# The only Dome listing allowed is the Ben Folds date.
+# Some venue sites list one hall under a longer name. Publish one venue name so
+# the same show isn't listed twice (matches VENUE_ALIASES in index.html).
+VENUE_ALIASES = {"Brighton Dome - Concert Hall": "Brighton Dome"}
+
 # Venue sites sometimes append the listing date/time/doors to the title, e.g.
 # "Story Magic Fri 25 Sep 2026 10:00 AM ( Doors: 9:50 AM )". Strip that tail.
 TRAILING_DATE = re.compile(
@@ -83,6 +89,9 @@ for event in data.get("events", []):
         event["title"] = new_title  # the id is kept so saved Interested/Going choices still match
         cleaned_titles += 1
     fix_times(event)
+    venue = str(event.get("venue") or "").strip()
+    if venue in VENUE_ALIASES:
+        event["venue"] = VENUE_ALIASES[venue]
 events = data.get("events", [])
 kept = []
 removed = {"patterns_recurring": 0, "generic": 0, "duplicates": 0}
@@ -92,7 +101,7 @@ for event in events:
     low = title.lower()
     if venue == "patterns" and any(marker in low for marker in PATTERNS_RECURRING):
         removed["patterns_recurring"] += 1; continue
-    if low in GENERIC_TITLES or is_date_only_title(title) or not title:
+    if low in GENERIC_TITLES or title_key(title) in GENERIC_KEYS or is_date_only_title(title) or not title:
         removed["generic"] += 1; continue
     kept.append(event)
 

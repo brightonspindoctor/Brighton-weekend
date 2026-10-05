@@ -18,10 +18,10 @@
 <button id="signout">Sign out</button>
 </section>
 </main>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="vendor/supabase-js-2.117.2.js"></script>
 <script>
-const URL='https://zqvccsnfrkrtcsitfwcd.supabase.co',KEY='sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1';
-const db=supabase.createClient(URL,KEY), $=id=>document.getElementById(id);
+const SB_URL='https://zqvccsnfrkrtcsitfwcd.supabase.co',SB_KEY='sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1';
+const db=supabase.createClient(SB_URL,SB_KEY), $=id=>document.getElementById(id);
 async function load(){
  $('loginError').textContent='';
  const {data:userData,error:userError}=await db.auth.getUser();

@@ -3,16 +3,17 @@
  * tab and day filters; those features now live in index.html.
  *
  * Strategy:
- *  - Pages, CSS, JS and events.json: network first, fall back to cache offline.
+ *  - Pages, CSS, JS and data files: network first, fall back to cache offline.
  *  - Images and icons: cache first (they are versioned by filename or ?v=).
  * Bump VERSION whenever you want every installed copy to drop old caches.
  */
-const VERSION = 'bw-v57';
+const VERSION = 'bw-v58';
 const CORE = [
   './',
   './index.html',
   './manifest.webmanifest',
   './favicon.ico',
+  './vendor/supabase-js-2.117.2.js',
   './icons/icon-32.png',
   './icons/icon-192.png',
   './icons/icon-512.png',
@@ -21,20 +22,7 @@ const CORE = [
   './icons/apple-touch-icon.png',
   './about.html',
   './privacy.html',
-  './terms.html',
-  './profile-icons/brown-bear.svg',
-  './profile-icons/red-panda-bear.svg',
-  './profile-icons/giant-panda-bear.svg',
-  './profile-icons/forest-spirit.webp',
-  './profile-icons/moon-hare.webp',
-  './profile-icons/leviathan.webp',
-  './profile-icons/standardized/brown-bear.png',
-  './profile-icons/standardized/red-panda-bear.png',
-  './profile-icons/standardized/giant-panda-bear.png',
-  './profile-icons/orange-tabby.jpg',
-  './profile-icons/black-cat.jpg',
-  './profile-icons/fluffy-cat.jpg',
-  './profile-icons/tuxedo-cat.jpg'
+  './terms.html'
 ];
 
 self.addEventListener('install', event => {
@@ -53,16 +41,27 @@ self.addEventListener('activate', event => {
   );
 });
 
+// Network-first responses are stored under the address WITHOUT its query string.
+// The app fetches events.json?refresh=<timestamp> on every load; keying the cache
+// by the full address stored a new ~400 KB copy each time and never removed them.
+function cacheKey(request) {
+  const url = new URL(request.url);
+  url.search = '';
+  return url.href;
+}
+
 function networkFirst(request) {
+  const key = cacheKey(request);
   return fetch(request, {cache: 'no-store'})
     .then(response => {
       if (response.ok) {
         const copy = response.clone();
-        caches.open(VERSION).then(cache => cache.put(request, copy));
+        caches.open(VERSION).then(cache => cache.put(key, copy));
       }
       return response;
     })
-    .catch(() => caches.match(request, {ignoreSearch: true})
+    .catch(() => caches.match(key)
+      .then(hit => hit || caches.match(request, {ignoreSearch: true}))
       .then(hit => hit || (request.mode === 'navigate' ? caches.match('./index.html') : undefined))
       .then(hit => hit || Response.error()));
 }
@@ -81,7 +80,7 @@ self.addEventListener('fetch', event => {
   const request = event.request;
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
-  if (url.origin !== self.location.origin) return; // Supabase, fonts, CDN: straight to network
+  if (url.origin !== self.location.origin) return; // Supabase, fonts: straight to network
   const isFresh = request.mode === 'navigate' || /\.(html|css|js|json|webmanifest)$/.test(url.pathname) || url.pathname.endsWith('/');
   event.respondWith(isFresh ? networkFirst(request) : cacheFirst(request));
 });
