@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-04",
-  "range_start": "2026-10-04",
+  "updated": "2026-10-05",
+  "range_start": "2026-10-05",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -112,7 +112,7 @@
       "location": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton",
       "category": "Arts & Culture",
       "ticket_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
       "detail_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
       "id": "festival:artist-open-houses-winter:2026-11-28",
       "location_display": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton"
@@ -124,7 +124,7 @@
       "location": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton",
       "category": "Arts & Culture",
       "ticket_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
       "detail_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
       "id": "festival:more-details:2026-11-28",
       "location_display": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton"
@@ -748,7 +748,7 @@
       "location": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove",
       "category": "Family",
       "ticket_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
       "detail_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
       "id": "festival:more-details:2027-06-06",
       "location_display": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove"
@@ -760,7 +760,7 @@
       "location": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove",
       "category": "Family",
       "ticket_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
       "detail_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
       "id": "festival:rotary-family-festival-big-help-out:2027-06-06",
       "location_display": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove"
@@ -896,6 +896,18 @@
       "detail_url": "https://fezzy.uk/festival/beardy-folk-festival/",
       "id": "festival:beardy-folk-festival:2027-06-17",
       "location_display": "Cleobury Mortimer"
+    },
+    {
+      "title": "Ground Rules Festival",
+      "date": "2027-06-17",
+      "date_end": "2027-06-20",
+      "location": "Corby",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/ground-rules-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/ground-rules-festival/",
+      "id": "festival:ground-rules-festival:2027-06-17",
+      "location_display": "Corby"
     },
     {
       "title": "Isle of Wight Festival",
@@ -2338,6 +2350,18 @@
       "location_display": "Dunfermline"
     },
     {
+      "title": "Lincs Summer Sounds",
+      "date": "2027-08-23",
+      "date_end": "2027-08-29",
+      "location": "Boston, Lincolnshire",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/lincs-summer-sounds/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/lincs-summer-sounds/",
+      "id": "festival:lincs-summer-sounds:2027-08-23",
+      "location_display": "Boston, Lincolnshire"
+    },
+    {
       "title": "Beermageddon",
       "date": "2027-08-26",
       "date_end": "2027-08-29",
@@ -2468,18 +2492,6 @@
       "detail_url": "https://fezzy.uk/festival/glenn-miller-festival/",
       "id": "festival:glenn-miller-festival:2027-08-27",
       "location_display": "Bedford"
-    },
-    {
-      "title": "Lincs Summer Sounds",
-      "date": "2027-08-27",
-      "date_end": "2027-08-28",
-      "location": "Boston, Lincolnshire",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/lincs-summer-sounds/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/lincs-summer-sounds/",
-      "id": "festival:lincs-summer-sounds:2027-08-27",
-      "location_display": "Boston, Lincolnshire"
     },
     {
       "title": "Shrewsbury Folk Festival",
