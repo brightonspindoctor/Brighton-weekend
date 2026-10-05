@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Brighton Weekend v58 — security and data fixes
--- NOT YET APPLIED to the live project (first attempt was cancelled).
--- Run once in the Supabase SQL Editor, after v49. Safe to re-run.
+-- Applied to the live project on 2026-10-05 (run in the SQL Editor).
+-- Safe to re-run.
 --
 --   1. PIN guessing: a successful join no longer wipes the failed-attempt
 --      counter. Before, someone could guess 4 PINs, rejoin a group of their own
