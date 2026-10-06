@@ -9,6 +9,13 @@ from event_matching import display_title, is_venue_name, same_show
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "events.json"
+# Events hidden on request: {"venue", "title_contains", "note"} in excluded-events.json.
+EXCLUDED = [dict(r, venue=str(r.get("venue", "")).strip().lower(), title_contains=str(r.get("title_contains", "")).strip().lower())
+            for r in (json.loads((ROOT / "excluded-events.json").read_text()) if (ROOT / "excluded-events.json").exists() else [])]
+
+def is_excluded(event):
+    venue, title = str(event.get("venue") or "").strip().lower(), str(event.get("title") or "").lower()
+    return any(r["title_contains"] and r["title_contains"] in title and (not r["venue"] or r["venue"] == venue) for r in EXCLUDED)
 
 PATTERNS_RECURRING = (
     "foundations",
@@ -113,13 +120,15 @@ for event in data.get("events", []):
         event["venue"] = VENUE_ALIASES[venue]
 events = data.get("events", [])
 kept = []
-removed = {"patterns_recurring": 0, "generic": 0, "duplicates": 0}
+removed = {"patterns_recurring": 0, "excluded": 0, "generic": 0, "duplicates": 0}
 for event in events:
     venue = str(event.get("venue") or "").strip().lower()
     title = str(event.get("title") or "").strip()
     low = title.lower()
     if venue == "patterns" and any(marker in low for marker in PATTERNS_RECURRING):
         removed["patterns_recurring"] += 1; continue
+    if is_excluded(event):
+        removed["excluded"] += 1; continue
     if low in GENERIC_TITLES or title_key(title) in GENERIC_KEYS or NOT_A_TITLE.fullmatch(low) or not re.search(r"[^\W\d_]{2}", low) or is_date_only_title(title) or not title:
         removed["generic"] += 1; continue
     kept.append(event)

@@ -11,6 +11,7 @@ on:
       - 'scripts/prepare-events.py'
       - 'scripts/event_matching.py'
       - 'scripts/tag-genres.py'
+      - 'excluded-events.json'
       - 'scripts/validate-events.py'
       - 'requirements-events.txt'
       - '.github/workflows/weekly-events.yml'

@@ -50,6 +50,12 @@ Listings are refreshed every day at 07:17 (Europe/London) by
   first, then the event's own page; never a listings page, homepage or social
   media.
 
+## Hiding an event
+
+Add an entry to `excluded-events.json`: `venue` (exact app venue name; leave
+empty for any venue), `title_contains` (case-insensitive text in the title) and
+a `note`. The next refresh removes every matching listing and keeps it out.
+
 ## Checking how each source did
 
 `events.json` includes `source_report`: for each venue page, the number of
