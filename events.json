@@ -59,19 +59,19 @@
       "error": "",
       "sample": [
         {
-          "title": "Mon 12 Oct 26",
+          "title": "Club",
           "date": "2026-10-12",
           "time": "",
           "link": "https://chalkvenue.com/event/fat-poppadaddys-societies-4"
         },
         {
-          "title": "Tue 13 Oct 26",
+          "title": "Live",
           "date": "2026-10-13",
           "time": "",
           "link": "https://chalkvenue.com/event/cancer-bats-1"
         },
         {
-          "title": "Wed 14 Oct 26",
+          "title": "Live",
           "date": "2026-10-14",
           "time": "",
           "link": "https://chalkvenue.com/event/antony-szmierek"
@@ -91,7 +91,7 @@
           "link": "https://www.concorde2.co.uk/event/yonaka"
         },
         {
-          "title": "Yonaka 06/10/26 7:30pm Live",
+          "title": "Yonaka",
           "date": "2026-10-06",
           "time": "19:30",
           "link": "https://www.concorde2.co.uk/event/yonaka"
@@ -166,17 +166,17 @@
     {
       "venue": "Quarters",
       "url": "https://www.quartersbrighton.co.uk/whatson",
-      "events": 115,
+      "events": 120,
       "error": "",
       "sample": [
         {
-          "title": "Club Events ZERO 7 (DJ Set)",
+          "title": "ZERO 7 (DJ Set)",
           "date": "2026-10-09",
           "time": "18:00",
           "link": "https://www.seetickets.com/event/zero-7-dj-set-/quarters/3702298"
         },
         {
-          "title": "Club Events ZERO 7 (DJ Set)",
+          "title": "ZERO 7 (DJ Set)",
           "date": "2026-10-09",
           "time": "18:00",
           "link": "https://www.seetickets.com/event/zero-7-dj-set-/quarters/3702298"
@@ -416,7 +416,7 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/whats-on/",
-      "events": 126,
+      "events": 123,
       "error": "",
       "sample": [
         {
@@ -530,7 +530,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-06-brighton-dome-katherine-jenkins",
+      "id": "2026-10-06-brighton-dome-katherine-jenkins-2",
       "title": "Katherine Jenkins",
       "date": "2026-10-06",
       "venue": "Brighton Dome",
@@ -674,7 +674,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-07-brighton-dome-ocean-film-festival-world-tour-2",
+      "id": "2026-10-07-brighton-dome-ocean-film-festival-world-tour",
       "title": "Ocean Film Festival World Tour",
       "date": "2026-10-07",
       "venue": "Brighton Dome",
@@ -710,7 +710,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-07-brighton-dome-man-or-bear-2",
+      "id": "2026-10-07-brighton-dome-man-or-bear",
       "title": "Man or Bear",
       "date": "2026-10-07",
       "venue": "Brighton Dome",
@@ -783,7 +783,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-08-brighton-dome-the-wonder-stuff-inspiral-carpets",
+      "id": "2026-10-08-brighton-dome-the-wonder-stuff-inspiral-carpets-2",
       "title": "The Wonder Stuff & Inspiral Carpets",
       "date": "2026-10-08",
       "venue": "Brighton Dome",
@@ -1024,7 +1024,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-09-brighton-dome-dr-xand-van-tulleken-2",
+      "id": "2026-10-09-brighton-dome-dr-xand-van-tulleken",
       "title": "Dr. Xand van Tulleken",
       "date": "2026-10-09",
       "venue": "Brighton Dome",
@@ -1217,14 +1217,14 @@
     },
     {
       "id": "2026-10-09-the-pipeline-borrowed-time-the-pipeline",
-      "title": "Borrowed Time @ The Pipeline",
+      "title": "Borrowed Time",
       "date": "2026-10-09",
       "venue": "The Pipeline",
       "source": "venue",
       "time": "",
       "finish_time": "00:00",
       "category": "Other",
-      "ticket_url": "http://www.songkick.com/concerts/43342454-borrowed-time-at-pipeline?utm_medium=organic&utm_source=microformat",
+      "ticket_url": "https://www.songkick.com/concerts/43342454-borrowed-time-at-pipeline?utm_medium=organic&utm_source=microformat",
       "last_seen": "2026-10-06"
     },
     {
@@ -1289,7 +1289,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-10-brighton-dome-alison-moyet-2",
+      "id": "2026-10-10-brighton-dome-alison-moyet",
       "title": "Alison Moyet",
       "date": "2026-10-10",
       "venue": "Brighton Dome",
@@ -1301,7 +1301,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-10-brighton-dome-russell-t-davies-2",
+      "id": "2026-10-10-brighton-dome-russell-t-davies",
       "title": "Russell T Davies",
       "date": "2026-10-10",
       "venue": "Brighton Dome",
@@ -1614,7 +1614,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-11-brighton-dome-the-stravinsky-connection",
+      "id": "2026-10-11-brighton-dome-the-stravinsky-connection-2",
       "title": "The Stravinsky Connection",
       "date": "2026-10-11",
       "venue": "Brighton Dome",
@@ -1843,7 +1843,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-12-brighton-dome-fire-fire-by-john-webber",
+      "id": "2026-10-12-brighton-dome-fire-fire-by-john-webber-2",
       "title": "Fire Fire by John Webber",
       "date": "2026-10-12",
       "venue": "Brighton Dome",
@@ -2229,6 +2229,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-16-quarters-4am-kru-2",
+      "title": "4Am Kru 2",
+      "date": "2026-10-16",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "04:00",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/4am-kru-jolie-p-more-tba/quarters/3706963",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-16-quarters-4am-kru-jolie-p-more-tba",
       "title": "4am Kru + Jolie P + more TBA",
       "date": "2026-10-16",
@@ -2276,7 +2288,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-brighton-dome-jazz-emu-the-pleasure-is-all-yours-2",
+      "id": "2026-10-16-brighton-dome-jazz-emu-the-pleasure-is-all-yours",
       "title": "Jazz Emu: The Pleasure Is All Yours",
       "date": "2026-10-16",
       "venue": "Brighton Dome",
@@ -2300,7 +2312,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-brighton-dome-celya-ab-we-must-stop-meeting-like-this-2",
+      "id": "2026-10-16-brighton-dome-celya-ab-we-must-stop-meeting-like-this",
       "title": "Celya AB: We Must Stop Meeting Like This",
       "date": "2026-10-16",
       "venue": "Brighton Dome",
@@ -2348,7 +2360,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-brighton-dome-tom-davis-spudgun-2",
+      "id": "2026-10-16-brighton-dome-tom-davis-spudgun",
       "title": "Tom Davis: Spudgun",
       "date": "2026-10-16",
       "venue": "Brighton Dome",
@@ -2408,7 +2420,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-brighton-dome-catherine-bohart-borrowing-trouble-2",
+      "id": "2026-10-16-brighton-dome-catherine-bohart-borrowing-trouble",
       "title": "Catherine Bohart: Borrowing Trouble",
       "date": "2026-10-16",
       "venue": "Brighton Dome",
@@ -2625,7 +2637,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-brighton-dome-comedy-club-4-kids-2",
+      "id": "2026-10-17-brighton-dome-comedy-club-4-kids",
       "title": "Comedy Club 4 Kids",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2649,7 +2661,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-brighton-dome-all-my-friends-day-disco-2",
+      "id": "2026-10-17-brighton-dome-all-my-friends-day-disco",
       "title": "All My Friends Day Disco",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2661,7 +2673,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-brighton-dome-jordan-brookes-the-part-of-you-that-s-always-screaming-2",
+      "id": "2026-10-17-brighton-dome-jordan-brookes-the-part-of-you-that-s-always-screaming",
       "title": "Jordan Brookes: The Part of You That's Always Screaming",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2685,7 +2697,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-brighton-dome-stevie-martin-clout-2",
+      "id": "2026-10-17-brighton-dome-stevie-martin-clout",
       "title": "Stevie Martin: Clout",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2721,7 +2733,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-brighton-dome-lara-ricote-inkling-2",
+      "id": "2026-10-17-brighton-dome-lara-ricote-inkling",
       "title": "Lara Ricote: Inkling",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2959,7 +2971,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-18-brighton-dome-jimeoin-ballyhoo-2",
+      "id": "2026-10-18-brighton-dome-jimeoin-ballyhoo",
       "title": "Jimeoin: BALLYHOO!",
       "date": "2026-10-18",
       "venue": "Brighton Dome",
@@ -2971,7 +2983,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-18-brighton-dome-robin-ince-joanna-neary-2",
+      "id": "2026-10-18-brighton-dome-robin-ince-joanna-neary",
       "title": "Robin Ince & Joanna Neary",
       "date": "2026-10-18",
       "venue": "Brighton Dome",
@@ -2983,7 +2995,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-18-brighton-dome-the-blindboy-podcast-live-2",
+      "id": "2026-10-18-brighton-dome-the-blindboy-podcast-live",
       "title": "The Blindboy Podcast LIVE",
       "date": "2026-10-18",
       "venue": "Brighton Dome",
@@ -3007,7 +3019,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-18-brighton-dome-john-crace-what-the-hell-just-happened-2",
+      "id": "2026-10-18-brighton-dome-john-crace-what-the-hell-just-happened",
       "title": "John Crace: What The Hell Just Happened?",
       "date": "2026-10-18",
       "venue": "Brighton Dome",
@@ -3093,7 +3105,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-19-brighton-dome-siblings-dreamweavers-2",
+      "id": "2026-10-19-brighton-dome-siblings-dreamweavers",
       "title": "Siblings: Dreamweavers",
       "date": "2026-10-19",
       "venue": "Brighton Dome",
@@ -3117,7 +3129,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-19-brighton-dome-raising-the-roof-2-a-fundraiser-for-ymca-brighton-2",
+      "id": "2026-10-19-brighton-dome-raising-the-roof-2-a-fundraiser-for-ymca-brighton",
       "title": "Raising the Roof 2: A Fundraiser for YMCA Brighton",
       "date": "2026-10-19",
       "venue": "Brighton Dome",
@@ -3188,7 +3200,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-20-brighton-dome-phil-ellis-bath-mat-2",
+      "id": "2026-10-20-brighton-dome-phil-ellis-bath-mat",
       "title": "Phil Ellis: Bath Mat",
       "date": "2026-10-20",
       "venue": "Brighton Dome",
@@ -3272,7 +3284,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-21-brighton-dome-elouise-eftos-australia-s-first-attractive-comedian-2",
+      "id": "2026-10-21-brighton-dome-elouise-eftos-australia-s-first-attractive-comedian",
       "title": "Elouise Eftos: Australia's First Attractive Comedian",
       "date": "2026-10-21",
       "venue": "Brighton Dome",
@@ -3284,7 +3296,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-21-brighton-dome-maisie-adam-whatsherface-2",
+      "id": "2026-10-21-brighton-dome-maisie-adam-whatsherface",
       "title": "Maisie Adam: Whatsherface",
       "date": "2026-10-21",
       "venue": "Brighton Dome",
@@ -3296,7 +3308,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-21-brighton-dome-sergi-polo-live-in-brighton-2",
+      "id": "2026-10-21-brighton-dome-sergi-polo-live-in-brighton",
       "title": "Sergi Polo: LIVE in Brighton",
       "date": "2026-10-21",
       "venue": "Brighton Dome",
@@ -3320,7 +3332,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-21-brighton-dome-solve-along-a-murder-she-wrote-2",
+      "id": "2026-10-21-brighton-dome-solve-along-a-murder-she-wrote",
       "title": "Solve-Along-a-Murder-She-Wrote",
       "date": "2026-10-21",
       "venue": "Brighton Dome",
@@ -3393,7 +3405,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-22-brighton-dome-comic-boom-comedy-club-2",
+      "id": "2026-10-22-brighton-dome-comic-boom-comedy-club",
       "title": "Comic Boom Comedy Club",
       "date": "2026-10-22",
       "venue": "Brighton Dome",
@@ -3405,7 +3417,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-22-brighton-dome-simon-amstell-i-love-it-here-2",
+      "id": "2026-10-22-brighton-dome-simon-amstell-i-love-it-here",
       "title": "Simon Amstell: I Love It Here",
       "date": "2026-10-22",
       "venue": "Brighton Dome",
@@ -3452,7 +3464,7 @@
       "last_seen": "2026-10-05"
     },
     {
-      "id": "2026-10-22-brighton-dome-amy-matthews-definitions-of-toast-2",
+      "id": "2026-10-22-brighton-dome-amy-matthews-definitions-of-toast",
       "title": "Amy Matthews: Definitions of Toast",
       "date": "2026-10-22",
       "venue": "Brighton Dome",
@@ -3618,7 +3630,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-brighton-dome-an-evening-with-katherine-ryan-firstborn-daughter-2",
+      "id": "2026-10-23-brighton-dome-an-evening-with-katherine-ryan-firstborn-daughter",
       "title": "An Evening with Katherine Ryan: Firstborn Daughter",
       "date": "2026-10-23",
       "venue": "Brighton Dome",
@@ -3630,7 +3642,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-brighton-dome-dan-tiernan-quartz-and-all-2",
+      "id": "2026-10-23-brighton-dome-dan-tiernan-quartz-and-all",
       "title": "Dan Tiernan: Quartz and All",
       "date": "2026-10-23",
       "venue": "Brighton Dome",
@@ -3642,7 +3654,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-brighton-dome-nish-kumar-angry-humour-from-a-really-nice-guy-2",
+      "id": "2026-10-23-brighton-dome-nish-kumar-angry-humour-from-a-really-nice-guy",
       "title": "Nish Kumar: Angry Humour from a Really Nice Guy",
       "date": "2026-10-23",
       "venue": "Brighton Dome",
@@ -3654,7 +3666,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-brighton-dome-kim-blythe-puzzle-2",
+      "id": "2026-10-23-brighton-dome-kim-blythe-puzzle",
       "title": "Kim Blythe: Puzzle",
       "date": "2026-10-23",
       "venue": "Brighton Dome",
@@ -3853,7 +3865,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-brighton-dome-shelf-the-kids-show-2-2",
+      "id": "2026-10-24-brighton-dome-shelf-the-kids-show-2",
       "title": "SHELF: The Kids Show 2",
       "date": "2026-10-24",
       "venue": "Brighton Dome",
@@ -3865,7 +3877,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-brighton-dome-live-at-brighton-dome-bleeped-2",
+      "id": "2026-10-24-brighton-dome-live-at-brighton-dome-bleeped",
       "title": "Live at Brighton Dome BLEEPED",
       "date": "2026-10-24",
       "venue": "Brighton Dome",
@@ -3889,7 +3901,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-brighton-dome-funny-women-live-in-brighton-2",
+      "id": "2026-10-24-brighton-dome-funny-women-live-in-brighton",
       "title": "Funny Women Live In Brighton",
       "date": "2026-10-24",
       "venue": "Brighton Dome",
@@ -3949,7 +3961,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-brighton-dome-stamptown-2",
+      "id": "2026-10-24-brighton-dome-stamptown",
       "title": "Stamptown",
       "date": "2026-10-24",
       "venue": "Brighton Dome",
@@ -4066,7 +4078,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-brighton-dome-rich-wilson-to-the-cradle-from-the-rave-2",
+      "id": "2026-10-25-brighton-dome-rich-wilson-to-the-cradle-from-the-rave",
       "title": "Rich Wilson: To The Cradle, From The Rave",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
@@ -4090,7 +4102,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-brighton-dome-the-young-comedians-comedy-show-2",
+      "id": "2026-10-25-brighton-dome-the-young-comedians-comedy-show",
       "title": "The Young Comedians Comedy Show",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
@@ -4102,7 +4114,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-brighton-dome-rosie-holt-the-illegal-aliens-have-landed-2",
+      "id": "2026-10-25-brighton-dome-rosie-holt-the-illegal-aliens-have-landed",
       "title": "Rosie Holt: The Illegal Aliens Have Landed!",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
@@ -4114,7 +4126,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-brighton-dome-sooz-kempner-2",
+      "id": "2026-10-25-brighton-dome-sooz-kempner",
       "title": "Sooz Kempner",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
@@ -4150,7 +4162,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-brighton-dome-aurie-styla-maverick-2",
+      "id": "2026-10-25-brighton-dome-aurie-styla-maverick",
       "title": "Aurie Styla: Maverick",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
@@ -5774,14 +5786,14 @@
     },
     {
       "id": "2026-11-07-quarters-club-events-andy-c",
-      "title": "Andy C",
+      "title": "Andy C Zc45V",
       "date": "2026-11-07",
       "venue": "Quarters",
       "source": "venue",
       "time": "",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/andy-c-day-party-/quarters/3706966",
+      "ticket_url": "https://www.quartersbrighton.co.uk/whatson/andy-c-zc45v",
       "last_seen": "2026-10-06"
     },
     {
@@ -5794,18 +5806,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://quarters.seetickets.com/event/groove-cartel-w-archie-hamilton-boss-priester/quarters/3731800",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-07-quarters-zc45v",
-      "title": "Zc45V",
-      "date": "2026-11-07",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.quartersbrighton.co.uk/whatson/andy-c-zc45v",
       "last_seen": "2026-10-06"
     },
     {
@@ -7371,26 +7371,14 @@
     },
     {
       "id": "2026-11-20-quarters-club-events-limited-free-tickets-degs",
-      "title": "DEGS &",
+      "title": "Degs Friends",
       "date": "2026-11-20",
       "venue": "Quarters",
       "source": "venue",
       "time": "",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/degs-friends/quarters/3732774",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-20-quarters-friends",
-      "title": "Friends",
-      "date": "2026-11-20",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/degs-friends/quarters/3732774",
+      "ticket_url": "https://www.quartersbrighton.co.uk/whatson/degs-friends",
       "last_seen": "2026-10-06"
     },
     {
@@ -7578,14 +7566,14 @@
     },
     {
       "id": "2026-11-21-quarters-locklead-julian-anthony-more-tba",
-      "title": "Locklead, Julian Anthony + more TBA",
+      "title": "Locklead + Julian Anthony",
       "date": "2026-11-21",
       "venue": "Quarters",
-      "source": "discovery",
+      "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/locklead-julian-anthony-more-tba-p2941111",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/locklead-julian-anthony-more-tba/quarters/3708218",
       "last_seen": "2026-10-06"
     },
     {
@@ -8369,8 +8357,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-28-quarters-club-events-sign-up-shanti-celeste-midland",
-      "title": "Sign Up Shanti Celeste + Midland",
+      "id": "2026-11-28-quarters-shanti-celeste-midland",
+      "title": "Shanti Celeste Midland",
       "date": "2026-11-28",
       "venue": "Quarters",
       "source": "venue",
@@ -10622,7 +10610,7 @@
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
-      "category": "Music",
+      "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/event/pigeon",
       "last_seen": "2026-10-06"
     },
@@ -11034,8 +11022,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-29-quarters-monkeys",
-      "title": "Monkeys",
+      "id": "2027-01-29-quarters-live-events-the-antarctic",
+      "title": "The Antarctic Monkeys",
       "date": "2027-01-29",
       "venue": "Quarters",
       "source": "venue",
@@ -11043,18 +11031,6 @@
       "finish_time": "22:00",
       "category": "Dance",
       "ticket_url": "https://www.quartersbrighton.co.uk/whatson/the-antarctic-monkeys",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-29-quarters-live-events-the-antarctic",
-      "title": "The Antarctic",
-      "date": "2027-01-29",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "18:30",
-      "finish_time": "22:00",
-      "category": "Dance",
-      "ticket_url": "https://pinkdot.seetickets.com/event/the-antarctic-monkeys/quarters/3614681",
       "last_seen": "2026-10-06"
     },
     {
@@ -11328,7 +11304,7 @@
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
-      "category": "Other",
+      "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/motorheadache",
       "last_seen": "2026-10-06"
     },
