@@ -39,7 +39,7 @@ NOT_A_TITLE = re.compile(r"""(?:
   |\d{1,2}(?::\d{2})?\s*(?:am|pm)(?:\s*[-–]\s*\d{1,2}(?::\d{2})?\s*(?:am|pm))?   # 8pm, 8pm-11pm
   |limited\s+(?:free\s+)?tickets?\b.*|early\s*bird(?:\s+tickets?)?|bu[yt]\s+tickets?\b.*
   |pub\s+events|top\s+picks|next\s+up(?:\s+in\s+the\s+venue)?|this\s+week|coming\s+(?:up|soon)|upcoming
-  |featured|free\s+tickets?|all\s+events|whats?\s+on|more\s+events|you\s+might\s+also\s+like|edition
+  |featured|free\s+tickets?|all\s+events|whats?\s+on|more\s+events|more\s+.+\s+events|you\s+might\s+also\s+like|edition
 )""", re.I | re.X)
 def valid_title(title):
     t=clean(title); low=t.lower()
@@ -47,14 +47,24 @@ def valid_title(title):
     if any(low.startswith(p) for p in CTA_PREFIXES):return False
     if len(t)<3 or len(t)>180:return False
     if not re.search(r'[^\W\d_]{2}',low):return False  # a year or number on its own, e.g. "2026"
+    # Only a date ('Mon 12 Oct 26', 'Friday October 9th'): nothing is left once it is removed.
+    rest=re.sub(r'\b(?:mon|tue|wed|thu|fri|sat|sun)[a-z]*\b','',DATE_RE.sub('',low))
+    if not re.search(r'[^\W\d_]{2}',rest):return False
     return True
 
 def title_key(title): return re.sub(r'[^a-z0-9]+',' ',clean(title).lower()).strip()
 # A listing date appended to a title: '... Fri 25 Sep 2026 8:00 PM' or '... October 9, 2026'.
-TRAILING_DATE=re.compile(rf'\s*(?:(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?,?\s+)?(?:\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\.?|(?:{MONTHS})\.?\s+\d{{1,2}}(?:st|nd|rd|th)?,?)\s+\d{{4}}\b.*$',re.I)
+TRAILING_DATE=re.compile(rf'\s*(?:(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?,?\s+)?(?:(?:\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\.?|(?:{MONTHS})\.?\s+\d{{1,2}}(?:st|nd|rd|th)?,?)\s+\d{{4}}\b|\d{{1,2}}/\d{{1,2}}/\d{{2,4}}\b).*$',re.I)
+# Labels some venues put before the name in the same link: 'Club Events ZERO 7',
+# 'Limited Free Tickets Fully Local', 'Sold Out: ...'.
+LEADING_LABEL=re.compile(r'^(?:(?:club|live|comedy|music|theatre|family|special|featured|free)\s+events?|limited\s+(?:free\s+)?tickets?|sold\s+out|on\s+sale\s+now|just\s+announced)\s*[-:–|]?\s+',re.I)
 def strip_listing_date(title):
     """Drop a trailing "Fri 25 Sep 2026 8:00 PM ( Doors: 7:00 PM )" from a title."""
     cleaned=TRAILING_DATE.sub('',clean(html.unescape(str(title or '')))).strip(' -–|·')
+    while True:
+        shorter=LEADING_LABEL.sub('',cleaned,count=1)
+        if shorter==cleaned or len(shorter)<3:break
+        cleaned=shorter
     return cleaned if len(cleaned)>=3 else clean(html.unescape(str(title or '')))
 VENUE_ALIASES={'Brighton Dome - Concert Hall':'Brighton Dome'}  # same as prepare-events.py and index.html
 def canonical_venue(v): return VENUE_ALIASES.get(v,v)
@@ -180,9 +190,14 @@ def card_title(node,page_url):
     el=node.find(class_=TITLE_CLASS) or node.find(['h5','h6'])
     t=strip_listing_date(el.get_text(' ',strip=True)) if el else ''
     if valid_title(t) and not DATE_RE.search(t) and not TIME_RE.search(t):return t,(link or page_url)
-    for u,text,_ in cands:
+    for u,text,ticket_site in cands:
         text=strip_listing_date(text)
         if valid_title(text) and not TIME_RE.fullmatch(text):return text,u
+        if DATE_RE.search(text) and not ticket_site:
+            # The link text is only a date ('Mon 12 Oct 26', as at CHALK): use the
+            # event page's address instead ('/event/fat-poppadaddys').
+            t=slug_title(u)
+            if valid_title(t):return t,u
     for u,_,ticket_site in cands:
         t=slug_title(u)
         if not ticket_site and valid_title(t):return t,u
@@ -196,7 +211,9 @@ def offer_url(raw):
 
 def slug_title(url):
     slug=urlparse(url).path.rstrip('/').split('/')[-1]
-    slug=re.sub(r'^[A-Za-z0-9_-]+-', '', slug)
+    # Brighton Dome prefixes its addresses with a short mixed-case id ('LiM-ben-folds').
+    m=re.match(r'^([A-Za-z0-9]{2,5})-(.+)$',slug)
+    if m and re.search(r'[A-Z]',m.group(1)) and re.search(r'[a-z]',m.group(1)):slug=m.group(2)
     slug=re.sub(r'[-_]+',' ',slug).strip()
     if not slug:return ''
     return clean(slug.title())
