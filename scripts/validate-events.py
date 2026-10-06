@@ -33,6 +33,7 @@ NOT_A_TITLE = re.compile(r"""(?:
   |pub\s+events|top\s+picks|next\s+up(?:\s+in\s+the\s+venue)?|this\s+week|coming\s+(?:up|soon)|upcoming
   |featured|free\s+tickets?|all\s+events|whats?\s+on|more\s+events|more\s+.+\s+events|you\s+might\s+also\s+like|edition
 )""", re.I | re.X)
+EXCLUDED = json.loads((ROOT / "excluded-events.json").read_text()) if (ROOT / "excluded-events.json").exists() else []
 GENERIC_KEYS = {re.sub(r"[^a-z0-9]+", " ", t).strip() for t in GENERIC_TITLES}
 
 def fail(message):
@@ -67,6 +68,8 @@ for i, event in enumerate(events):
     if not (start <= event_date <= end): errors.append(f"{event_id}: date outside declared range")
     low = title.lower()
     if venue.lower() == "patterns" and any(marker in low for marker in PATTERNS_RECURRING): errors.append(f"recurring Patterns event still present: {event_id}")
+    if any(str(r.get("title_contains", "")).lower() in low and (not r.get("venue") or str(r["venue"]).lower() == venue.lower()) for r in EXCLUDED if r.get("title_contains")):
+        errors.append(f"hidden event still present (excluded-events.json): {event_id}")
     if low in GENERIC_TITLES or re.sub(r"[^a-z0-9]+", " ", low).strip() in GENERIC_KEYS or not re.search(r"[^\W\d_]{2}", low) or NOT_A_TITLE.fullmatch(low): errors.append(f"generic title still present: {event_id}")
     for field in ("time", "finish_time"):
         value = str(event.get(field) or "")

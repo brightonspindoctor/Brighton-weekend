@@ -1096,42 +1096,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-09-komedia-story-magic",
-      "title": "Story Magic",
-      "date": "2026-10-09",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20752",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-09-komedia-story-magic-2",
-      "title": "Story Magic",
-      "date": "2026-10-09",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20753",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-09-komedia-story-magic-baby-sessions",
-      "title": "Story Magic – Baby Sessions",
-      "date": "2026-10-09",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Family",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic-baby-sessions/?eid=20805",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-09-quarters-club-events-zero-7-dj-set",
       "title": "ZERO 7 (DJ Set)",
       "date": "2026-10-09",
@@ -2511,42 +2475,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://quarters.seetickets.com/event/4am-kru-jolie-p-more-tba/quarters/3706963",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-16-komedia-story-magic-fri-16-oct-2026-10-00-am-doors-9-50-am",
-      "title": "Story Magic",
-      "date": "2026-10-16",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20754",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-16-komedia-story-magic-fri-16-oct-2026-11-00-am-doors-10-50-am",
-      "title": "Story Magic",
-      "date": "2026-10-16",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20755",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-16-komedia-story-magic-baby-sessions-fri-16-oct-2026-12-30-pm-doors-12-20-pm",
-      "title": "Story Magic – Baby Sessions",
-      "date": "2026-10-16",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Family",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic-baby-sessions/?eid=20806",
       "last_seen": "2026-10-06"
     },
     {
@@ -4081,42 +4009,6 @@
       "category": "Music",
       "ticket_url": "https://link.dice.fm/Mb0633515f9a",
       "promoter": "JOY. Concerts",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-23-komedia-story-magic-fri-23-oct-2026-10-00-am-doors-9-50-am",
-      "title": "Story Magic",
-      "date": "2026-10-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20756",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-23-komedia-story-magic-fri-23-oct-2026-11-00-am-doors-10-50-am",
-      "title": "Story Magic",
-      "date": "2026-10-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20757",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-23-komedia-story-magic-baby-sessions-fri-23-oct-2026-12-30-pm-doors-12-20-pm",
-      "title": "Story Magic – Baby Sessions",
-      "date": "2026-10-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Family",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic-baby-sessions/?eid=20807",
       "last_seen": "2026-10-06"
     },
     {
@@ -6173,42 +6065,6 @@
       "genre_source": "musicbrainz:5c4c2df9-63ba-4605-a965-5ea11db27cf5"
     },
     {
-      "id": "2026-11-06-komedia-story-magic",
-      "title": "Story Magic",
-      "date": "2026-11-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20758",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-06-komedia-story-magic-2",
-      "title": "Story Magic",
-      "date": "2026-11-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20759",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-06-komedia-story-magic-baby-sessions",
-      "title": "Story Magic – Baby Sessions",
-      "date": "2026-11-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Family",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic-baby-sessions/?eid=20808",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-06-concorde-2-dj-yoda",
       "title": "DJ Yoda",
       "date": "2026-11-06",
@@ -7024,42 +6880,6 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-13-komedia-story-magic-fri-13-nov-2026-10-00-am-doors-9-50-am",
-      "title": "Story Magic",
-      "date": "2026-11-13",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20760",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-13-komedia-story-magic-fri-13-nov-2026-11-00-am-doors-10-50-am",
-      "title": "Story Magic",
-      "date": "2026-11-13",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20761",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-13-komedia-story-magic-baby-sessions-fri-13-nov-2026-12-30-pm-doors-12-20-pm",
-      "title": "Story Magic – Baby Sessions",
-      "date": "2026-11-13",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Family",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic-baby-sessions/?eid=20809",
       "last_seen": "2026-10-06"
     },
     {
@@ -8043,42 +7863,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-20-komedia-story-magic-fri-20-nov-2026-10-00-am-doors-9-50-am",
-      "title": "Story Magic",
-      "date": "2026-11-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20762",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-20-komedia-story-magic-fri-20-nov-2026-11-00-am-doors-10-50-am",
-      "title": "Story Magic",
-      "date": "2026-11-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20763",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-20-komedia-story-magic-baby-sessions-fri-20-nov-2026-12-30-pm-doors-12-20-pm",
-      "title": "Story Magic – Baby Sessions",
-      "date": "2026-11-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Family",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic-baby-sessions/?eid=20810",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-20-concorde-2-uk-foo-fighters",
       "title": "UK Foo Fighters",
       "date": "2026-11-20",
@@ -8924,42 +8708,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-27-komedia-story-magic-fri-27-nov-2026-10-00-am-doors-9-50-am",
-      "title": "Story Magic",
-      "date": "2026-11-27",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20764",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-27-komedia-story-magic-fri-27-nov-2026-11-00-am-doors-10-50-am",
-      "title": "Story Magic",
-      "date": "2026-11-27",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20765",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-27-komedia-story-magic-baby-sessions-fri-27-nov-2026-12-30-pm-doors-12-20-pm",
-      "title": "Story Magic – Baby Sessions",
-      "date": "2026-11-27",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Family",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic-baby-sessions/?eid=20811",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-27-concorde-2-uncle-acid-and-the-deadbeats",
       "title": "Uncle Acid And The Deadbeats",
       "date": "2026-11-27",
@@ -9653,42 +9401,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-04-komedia-story-magic",
-      "title": "Story Magic",
-      "date": "2026-12-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20766",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-04-komedia-story-magic-2",
-      "title": "Story Magic",
-      "date": "2026-12-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20767",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-04-komedia-story-magic-baby-sessions",
-      "title": "Story Magic – Baby Sessions",
-      "date": "2026-12-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Family",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic-baby-sessions/?eid=20812",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-04-brighton-centre-royal-blood",
       "title": "Royal Blood",
       "date": "2026-12-04",
@@ -10298,42 +10010,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-12-komedia-story-magic-fri-11-dec-2026-10-00-am-doors-9-50-am",
-      "title": "Story Magic",
-      "date": "2026-12-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20768",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-12-komedia-story-magic-fri-11-dec-2026-11-00-am-doors-10-50-am",
-      "title": "Story Magic",
-      "date": "2026-12-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20769",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-12-komedia-story-magic-baby-sessions-fri-11-dec-2026-12-30-pm-doors-12-20-pm",
-      "title": "Story Magic – Baby Sessions",
-      "date": "2026-12-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Family",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic-baby-sessions/?eid=20813",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-11-concorde-2-elvana",
       "title": "Elvana",
       "date": "2026-12-11",
@@ -10881,42 +10557,6 @@
       "category": "Other",
       "ticket_url": "https://www.visitbrighton.com/whats-on/the-witchcraft-and-vagrancy-act-a-horror-folk-christmas-p2729711",
       "last_seen": "2026-10-05"
-    },
-    {
-      "id": "2026-12-18-komedia-story-magic-fri-18-dec-2026-10-00-am-doors-9-50-am",
-      "title": "Story Magic",
-      "date": "2026-12-18",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20770",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-18-komedia-story-magic-fri-18-dec-2026-11-00-am-doors-10-50-am",
-      "title": "Story Magic",
-      "date": "2026-12-18",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20771",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-18-komedia-story-magic-baby-sessions-fri-18-dec-2026-12-30-pm-doors-12-20-pm",
-      "title": "Story Magic – Baby Sessions",
-      "date": "2026-12-18",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Family",
-      "ticket_url": "https://www.komedia.co.uk/shows/story-magic-baby-sessions/?eid=20814",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-12-18-concorde-2-80s-hifi-christmas-party",
