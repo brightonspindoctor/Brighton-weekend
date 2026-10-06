@@ -1724,10 +1724,7 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/harriet-kemsley-floozy-extra-matinee-show-tickets-1984049437276",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-10-11-the-forge-comedy-club-harriet-kemsley-floozy",
-        "2026-10-11-the-forge-comedy-club-harriet-kemsley-floozy-2",
         "2026-10-11-the-forge-comedy-club-the-forge-comedy-club",
-        "2026-10-11-the-forge-comedy-club-the-forge-comedy-club-2",
         "2026-11-10-the-forge-comedy-club-harriet-kemsley-floozy"
       ]
     },
@@ -1765,10 +1762,7 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/harriet-kemsley-floozy-tickets-1852111478289",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-10-11-the-forge-comedy-club-the-forge-comedy-club-2"
-      ]
+      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-10-11-the-prince-albert-embodiment-infected-dead-support-live-at-the-albert-11th-october",
@@ -1917,19 +1911,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-12-concorde2-beth-orton",
-      "title": "Beth Orton",
-      "date": "2026-10-12",
-      "venue": "Concorde 2",
-      "source": "venue",
-      "time": "00:00",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/event/beth-orton",
-      "last_seen": "2026-10-06",
-      "promoter": "JOY. Concerts"
-    },
-    {
       "id": "2026-12-10-komedia-sussex-beacon-presents-banter-with-the-beacon-mon-12-oct-2026-7-30-pm-doors-6-45-pm",
       "title": "Sussex Beacon Presents ‘Banter With The Beacon’",
       "date": "2026-10-12",
@@ -1955,6 +1936,19 @@
       "also_ids": [
         "2026-10-12-brighton-dome-fire-fire-by-john-webber-2"
       ]
+    },
+    {
+      "id": "2026-10-12-concorde2-beth-orton",
+      "title": "Beth Orton",
+      "date": "2026-10-12",
+      "venue": "Concorde 2",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.concorde2.co.uk/event/beth-orton",
+      "last_seen": "2026-10-06",
+      "promoter": "JOY. Concerts"
     },
     {
       "id": "2026-10-12-the-prince-albert-dylan-flynn-the-dead-poets",
@@ -8189,10 +8183,7 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/peter-antoniou-pretty-psychic-extra-show-tickets-1985773598288",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-11-25-the-forge-comedy-club-peter-antoniou-pretty-psychic",
-        "2026-11-25-the-forge-comedy-club-peter-antoniou-pretty-psychic-2",
-        "2026-11-25-the-forge-comedy-club-the-forge-comedy-club",
-        "2026-11-25-the-forge-comedy-club-the-forge-comedy-club-2"
+        "2026-11-25-the-forge-comedy-club-the-forge-comedy-club"
       ]
     },
     {
@@ -8258,10 +8249,7 @@
       "finish_time": "21:45",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/peter-antoniou-pretty-psychic-tickets-1985109985404",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-11-25-the-forge-comedy-club-the-forge-comedy-club-2"
-      ]
+      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-11-25-brightoncentre-paul-smith-comedian",
@@ -9576,10 +9564,7 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/scummy-mummies-christmas-show/?eid=19436",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-12-08-komedia-scummy-mummies-christmas-show-3"
-      ]
+      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-12-08-komedia-scummy-mummies-christmas-show-2",
@@ -12572,18 +12557,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-03-19-concorde-2-the-lilacs",
-      "title": "The Lilacs",
-      "date": "2027-03-19",
-      "venue": "Concorde 2",
-      "source": "venue",
-      "time": "00:00",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/event/the-lilacs",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-03-19-komedia-john-robertson-excitable-boy",
       "title": "John Robertson: Excitable Boy",
       "date": "2027-03-19",
@@ -12617,6 +12590,18 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2027-03-19-concorde-2-the-lilacs",
+      "title": "The Lilacs",
+      "date": "2027-03-19",
+      "venue": "Concorde 2",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.concorde2.co.uk/event/the-lilacs",
       "last_seen": "2026-10-06"
     },
     {

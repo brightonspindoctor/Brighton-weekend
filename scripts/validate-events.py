@@ -81,6 +81,12 @@ for i, event in enumerate(events):
         value = str(event.get(field) or "")
         if value and not re.fullmatch(r"\d{2}:\d{2}", value): errors.append(f"{event_id}: {field} {value!r} is not HH:MM")
 
+alias_owner = {}
+for event in events:
+    for a in event.get("also_ids", []) or []:
+        if a in ids: errors.append(f"{event.get('id')}: also_ids points at live event {a}")
+        if a in alias_owner: errors.append(f"also_ids {a} claimed by {alias_owner[a]} and {event.get('id')}")
+        alias_owner[a] = event.get("id")
 if errors:
     print("\n".join(errors[:50]), file=sys.stderr)
     if len(errors) > 50: print(f"... and {len(errors) - 50} more errors", file=sys.stderr)

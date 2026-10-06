@@ -292,6 +292,10 @@ def jsonld_events(html,venue,page_url,match_location=None):
             if isinstance(obj,list):stack.extend(obj);continue
             if not isinstance(obj,dict):continue
             if isinstance(obj.get('@graph'),list):stack.extend(obj['@graph'])
+            # Events can sit inside another record: Skiddle lists a venue's gigs
+            # under the venue's "event" key, item lists under "itemListElement".
+            for key in ('event','events','subEvent','itemListElement','item','mainEntity'):
+                if isinstance(obj.get(key),(list,dict)):stack.append(obj[key])
             typ=obj.get('@type','');types=typ if isinstance(typ,list) else [typ]
             if any(str(t).lower()=='event' or str(t).lower().endswith('event') for t in types):
                 if match_location and match_location.lower() not in location_text(obj):continue
@@ -371,11 +375,24 @@ async def scrape_detail_urls(browser,venue,urls):
         out.extend(ev)
     return out,fails
 
+def fetch_plain(url):
+    """Plain request, for ticketing sites that show automated browsers a
+    security check ("Just a moment...") but serve the page itself to this."""
+    from urllib.request import Request,urlopen
+    req=Request(url,headers={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36','Accept':'text/html'})
+    with urlopen(req,timeout=30) as r:return r.read().decode('utf-8','replace'),r.geturl()
 async def scrape_source(browser,source):
     html,final,err=await get_html(browser,source['url'])
-    if err:return [],err
     venue=source['venue'];is_dome_search='brightondome.org' in source['url']
-    events=jsonld_events(html,venue,final,source.get('match_location'))
+    events=[] if err else jsonld_events(html,venue,final,source.get('match_location'))
+    if source.get('jsonld_only') and not events:
+        # Skiddle/Songkick blocked the browser, or it rendered no event data: try a plain request.
+        try:
+            html,final=fetch_plain(source['url']);err=None
+            events=jsonld_events(html,venue,final,source.get('match_location'))
+        except Exception as exc:
+            err=err or str(exc)
+    if err:return [],err
     # "jsonld_only" sources are ticketing-site pages (Skiddle, Songkick): only
     # their structured event data is trusted, never the page layout.
     if not source.get('jsonld_only'):

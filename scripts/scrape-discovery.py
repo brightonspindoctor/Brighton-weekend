@@ -180,8 +180,10 @@ def extract_cards(html,page_url):
    if isinstance(obj,list):stack.extend(obj);continue
    if not isinstance(obj,dict):continue
    if isinstance(obj.get('@graph'),list):stack.extend(obj['@graph'])
+   for key in ('event','events','subEvent','itemListElement','item','mainEntity'):  # events nested in a venue or list record
+    if isinstance(obj.get(key),(list,dict)):stack.append(obj[key])
    typ=obj.get('@type','');types=typ if isinstance(typ,list) else [typ]
-   if not any(str(t).lower()=='event' for t in types):continue
+   if not any(str(t).lower()=='event' or str(t).lower().endswith('event') for t in types):continue  # MusicEvent, ComedyEvent…
    title=clean(obj.get('name') or obj.get('headline'));start=obj.get('startDate') or obj.get('start_date')
    if not valid_title(title) or not start:continue
    d=parse_date(start);loc=obj.get('location') or {};locs=loc if isinstance(loc,list) else [loc]
@@ -244,6 +246,7 @@ async def main():
   if old is None:merged[key]=dict(e,last_seen=today);matched.add(id(merged[key]));brand_new.add(id(merged[key]));continue
   matched.add(id(old));old['last_seen']=today
   if e.get('promoter'):old['promoter']=e['promoter']  # a venue's listing of a Joy gig gets the Joy sticker
+  if not old.get('time') and e.get('time'):old['time']=e['time']  # e.g. Beat Down gives the start the venue page lacks
   if old.get('source')=='discovery':
    # Found again: keep the id, take today's link and details.
    k=key_of(old);merged[k]=dict(e,id=old['id'],last_seen=today,**({'also_ids':old['also_ids']} if old.get('also_ids') else {}),**({'promoter':e.get('promoter') or old['promoter']} if (e.get('promoter') or old.get('promoter')) else {}));matched.add(id(merged[k]))
