@@ -341,5 +341,40 @@
     "source_sha256": "83848ceef8f68dad4a1c7c7333b7e985236d85794a0ed386df87b0d9e4348b5a",
     "file": "standardized/starling.png",
     "sha256": "fc1ec0c7e8d837622969837a84a8ec131ae2c7de5cfd2bd361fe90da09f65c09"
+  },
+  "peregrine-falcon": {
+    "label": "Peregrine Falcon",
+    "source": "peregrine-falcon.png",
+    "source_sha256": "b2dc24644a1962840bb5e45a0f0a41074226770a00a93b49d51d86542d5360ed",
+    "file": "standardized/peregrine-falcon.png",
+    "sha256": "e18e38eb05786627002a062758451e3cb53f70fe72156182f16784fc686d564c"
+  },
+  "seahorse": {
+    "label": "Seahorse",
+    "source": "seahorse.png",
+    "source_sha256": "cbec3f9c3675045385adeacaec975bf2cd7635c9084116bf2ba676b8ce61c433",
+    "file": "standardized/seahorse.png",
+    "sha256": "f9e1c8e2a4e9a4408b26b17e03256e70483ffc49c008839b30c62ac4b65c9f2a"
+  },
+  "jellyfish": {
+    "label": "Jellyfish",
+    "source": "jellyfish.png",
+    "source_sha256": "49c02dbde4155b38c38cb258a801df0b53a3e9e8842a71971441348a72d305b7",
+    "file": "standardized/jellyfish.png",
+    "sha256": "c24b8b29c64e4181ec95f6cacd31175f49ee2649ebcc86c8a5156505a8734b98"
+  },
+  "hare": {
+    "label": "Hare",
+    "source": "hare.png",
+    "source_sha256": "c7d36d44aceeebbb5d235d49f3931c9f007d22372c8c2011b7c82066dce8cb01",
+    "file": "standardized/hare.png",
+    "sha256": "ddfc5977b03496bc1610f7e7b5f3e886d99bd343b440b29e33189944eaf85be9"
+  },
+  "puffin": {
+    "label": "Puffin",
+    "source": "puffin.png",
+    "source_sha256": "b7d0a9babd9219595ba05793cb06c83aedc9bf5ed4be8239aba6a2371756fcc4",
+    "file": "standardized/puffin.png",
+    "sha256": "6d0d0cc469a401919d0bb2e8b7a89b571dfac565580c8bf170794b7656f7ed59"
   }
 }
