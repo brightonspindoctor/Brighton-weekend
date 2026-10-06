@@ -1,0 +1,6601 @@
+{
+ "summary": {
+  "events": 481,
+  "tagged": 105,
+  "title": 11,
+  "musicbrainz": 94
+ },
+ "rows": [
+  {
+   "date": "2026-10-06",
+   "venue": "The Hope & Ruin",
+   "title": "CULT MILK: Collage Club",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "CULT MILK",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-06",
+   "venue": "The Hope & Ruin",
+   "title": "CULT MILK: Collage Club",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "CULT MILK",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-06",
+   "venue": "Concorde 2",
+   "title": "Yonaka",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Yonaka",
+   "musicbrainz": "https://musicbrainz.org/artist/3ae6f3b9-0cb7-4083-ab23-34847f5fcda9",
+   "mb_genres": [
+    {
+     "name": "alternative rock",
+     "count": 2
+    },
+    {
+     "name": "indie rock",
+     "count": 2
+    },
+    {
+     "name": "pop rock",
+     "count": 2
+    },
+    {
+     "name": "rock",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-10-06",
+   "venue": "Brighton Dome",
+   "title": "David Bowie: You’re Not Alone",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "David Bowie",
+   "musicbrainz": "https://musicbrainz.org/artist/5441c29d-3602-4898-b1a1-b77fa23b8e50",
+   "mb_genres": [
+    {
+     "name": "alternative rock",
+     "count": 10
+    },
+    {
+     "name": "art pop",
+     "count": 7
+    },
+    {
+     "name": "art rock",
+     "count": 22
+    },
+    {
+     "name": "classic rock",
+     "count": 3
+    },
+    {
+     "name": "glam rock",
+     "count": 22
+    },
+    {
+     "name": "new wave",
+     "count": 5
+    },
+    {
+     "name": "pop",
+     "count": 10
+    },
+    {
+     "name": "pop rock",
+     "count": 5
+    },
+    {
+     "name": "rock",
+     "count": 8
+    }
+   ]
+  },
+  {
+   "date": "2026-10-06",
+   "venue": "Brighton Dome",
+   "title": "New on Sale Music David Bowie: You’re Not Alone A Lightroom Production Fri 16 Jul - Mon 30 Aug Brighton Dome Corn Exchange From £26 Find tickets",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "New on Sale Music David Bowie",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-06",
+   "venue": "CHALK",
+   "title": "Ruel",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Ruel",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-10-07",
+   "venue": "The Hope & Ruin",
+   "title": "HH: Winter Gardens + Opal Mag + Lucy Darke + Tears At The Table",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "HH",
+   "reason": "4 artists share this name"
+  },
+  {
+   "date": "2026-10-07",
+   "venue": "Brighton Dome",
+   "title": "Ocean Film Festival World Tour",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Ocean Film Festival World",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-07",
+   "venue": "Komedia",
+   "title": "Ditch Hustle Culture To Build Career Longevity: Live Podcast",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Ditch Hustle Culture To Build Career Longevity",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-07",
+   "venue": "Brighton Dome",
+   "title": "Film & Visual Arts Ocean Film Festival World Tour BANFF Wed 7 Oct Concert Hall From £19.50 Find out more",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Film & Visual Arts Ocean Film Festival World Tour BANFF Wed 7 Oct Concert Hall From £19.50 Find out more",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-07",
+   "venue": "The Prince Albert",
+   "title": "The Yummy Fur",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "The Yummy Fur",
+   "musicbrainz": "https://musicbrainz.org/artist/a7bdaa59-18fb-4ad4-9fca-bb710544b365",
+   "mb_genres": [
+    {
+     "name": "indie rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-08",
+   "venue": "The Hope & Ruin",
+   "title": "Ulrika Spacek",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Ulrika Spacek",
+   "musicbrainz": "https://musicbrainz.org/artist/b4e8e5f4-be91-473f-af73-de332ecd8f20",
+   "mb_genres": [
+    {
+     "name": "alternative rock",
+     "count": 1
+    },
+    {
+     "name": "dream pop",
+     "count": 1
+    },
+    {
+     "name": "indie rock",
+     "count": 1
+    },
+    {
+     "name": "post-rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-08",
+   "venue": "Concorde 2",
+   "title": "The Wanted 2.0",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Wanted 2.0",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-08",
+   "venue": "The Hope & Ruin",
+   "title": "DJ FREAKING OUT THE NEIGHBOURHOOD",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "DJ FREAKING OUT THE NEIGHBOURHOOD",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-08",
+   "venue": "The Hope & Ruin",
+   "title": "DJ FREAKING OUT THE NEIGHBOURHOOD",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "DJ FREAKING OUT THE NEIGHBOURHOOD",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-08",
+   "venue": "CHALK",
+   "title": "Violet Grohl",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Violet Grohl",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-08",
+   "venue": "Green Door Store",
+   "title": "Pebbledash",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Pebbledash",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-08",
+   "venue": "The Prince Albert",
+   "title": "Dateline",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Dateline",
+   "musicbrainz": "https://musicbrainz.org/artist/b8ac2b3e-3c91-48a4-9f93-f047472dd2f2",
+   "mb_genres": [
+    {
+     "name": "grunge",
+     "count": 1
+    },
+    {
+     "name": "indie rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-08",
+   "venue": "Volks",
+   "title": "Bathing Suits",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Bathing Suits",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-09",
+   "venue": "Quarters",
+   "title": "ZERO 7 (DJ Set)",
+   "category": "Club",
+   "genre": "Electronic",
+   "source": "musicbrainz",
+   "act": "ZERO 7",
+   "musicbrainz": "https://musicbrainz.org/artist/c23b637b-97c6-41eb-8ef6-6c724efc80a8",
+   "mb_genres": [
+    {
+     "name": "acid jazz",
+     "count": 2
+    },
+    {
+     "name": "ambient",
+     "count": 2
+    },
+    {
+     "name": "chillout",
+     "count": 1
+    },
+    {
+     "name": "downtempo",
+     "count": 8
+    },
+    {
+     "name": "electronic",
+     "count": 4
+    },
+    {
+     "name": "electronica",
+     "count": 3
+    },
+    {
+     "name": "lounge",
+     "count": 1
+    },
+    {
+     "name": "soul",
+     "count": 1
+    },
+    {
+     "name": "trip hop",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "venue": "Brighton Dome",
+   "title": "Dr. Xand van Tulleken",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Dr. Xand van Tulleken",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-09",
+   "venue": "Concorde 2",
+   "title": "Letz Zep",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Letz Zep",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-09",
+   "venue": "Green Door Store",
+   "title": "i f***ing h8 clubbing",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "i f *ing h8 clubbing",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-09",
+   "venue": "CHALK",
+   "title": "The Amazons",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Amazons",
+   "reason": "4 artists share this name"
+  },
+  {
+   "date": "2026-10-09",
+   "venue": "Green Door Store",
+   "title": "ARKAYLA Raynor",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "ARKAYLA Raynor",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-09",
+   "venue": "Quarters",
+   "title": "Amplify & Basstripper",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Amplify & Basstripper",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-09",
+   "venue": "The Old Market",
+   "title": "Josephine Foster",
+   "category": "Music",
+   "genre": "Folk & Country",
+   "source": "musicbrainz",
+   "act": "Josephine Foster",
+   "musicbrainz": "https://musicbrainz.org/artist/c9c2342e-83e9-4a73-8b62-f38d99cd8050",
+   "mb_genres": [
+    {
+     "name": "avant-folk",
+     "count": 1
+    },
+    {
+     "name": "contemporary folk",
+     "count": 1
+    },
+    {
+     "name": "freak folk",
+     "count": 1
+    },
+    {
+     "name": "psychedelic folk",
+     "count": 1
+    },
+    {
+     "name": "psychedelic rock",
+     "count": 1
+    },
+    {
+     "name": "singer-songwriter",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "venue": "The Prince Albert",
+   "title": "Harker / Burnt Tapes / Making Friends",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Harker / Burnt Tapes / Making Friends",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-09",
+   "venue": "Volks",
+   "title": "Channel One Sound System",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Channel One Sound System",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-10",
+   "venue": "The Hope & Ruin",
+   "title": "H&R ONE’S 2 WATCH: Flavours + Ponceau + Autofiction",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "H&R ONE’S 2 WATCH",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-10",
+   "venue": "Brighton Dome",
+   "title": "Alison Moyet",
+   "category": "Music",
+   "genre": "Pop",
+   "source": "musicbrainz",
+   "act": "Alison Moyet",
+   "musicbrainz": "https://musicbrainz.org/artist/79feb79b-8f0d-4306-b30a-e28bd88c9323",
+   "mb_genres": [
+    {
+     "name": "alternative pop",
+     "count": 1
+    },
+    {
+     "name": "art pop",
+     "count": 1
+    },
+    {
+     "name": "blue-eyed soul",
+     "count": 1
+    },
+    {
+     "name": "blues",
+     "count": 2
+    },
+    {
+     "name": "club",
+     "count": 1
+    },
+    {
+     "name": "dance",
+     "count": 1
+    },
+    {
+     "name": "dance-pop",
+     "count": 3
+    },
+    {
+     "name": "hi-nrg",
+     "count": 1
+    },
+    {
+     "name": "new wave",
+     "count": 2
+    },
+    {
+     "name": "pop",
+     "count": 4
+    },
+    {
+     "name": "rock",
+     "count": 2
+    },
+    {
+     "name": "soul",
+     "count": 1
+    },
+    {
+     "name": "synth-pop",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-10",
+   "venue": "Concorde 2",
+   "title": "Nirvana UK",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Nirvana UK",
+   "musicbrainz": "https://musicbrainz.org/artist/8f32371e-4bac-4090-ba13-2c1cd1aeab0d",
+   "mb_genres": [
+    {
+     "name": "alternative rock",
+     "count": 1
+    },
+    {
+     "name": "grunge",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-10",
+   "venue": "Concorde 2",
+   "title": "Scruffest",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Scruffest",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-10",
+   "venue": "CHALK",
+   "title": "DeVotchKa",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "DeVotchKa",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-10-10",
+   "venue": "Quarters",
+   "title": "Fully Local",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Fully Local",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-10",
+   "venue": "Quarters",
+   "title": "Mr Cutts",
+   "category": "Music",
+   "genre": "Hip-hop & R&B",
+   "source": "musicbrainz",
+   "act": "Mr Cutts",
+   "musicbrainz": "https://musicbrainz.org/artist/dacec29f-4200-430b-a0d1-bc7046af092c",
+   "mb_genres": [
+    {
+     "name": "boom bap",
+     "count": 1
+    },
+    {
+     "name": "chillwave",
+     "count": 1
+    },
+    {
+     "name": "downtempo",
+     "count": 1
+    },
+    {
+     "name": "hip hop",
+     "count": 1
+    },
+    {
+     "name": "instrumental",
+     "count": 1
+    },
+    {
+     "name": "instrumental hip hop",
+     "count": 1
+    },
+    {
+     "name": "lo-fi",
+     "count": 1
+    },
+    {
+     "name": "lo-fi hip hop",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-10",
+   "venue": "Quarters",
+   "title": "Sota",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Sota",
+   "reason": "7 artists share this name"
+  },
+  {
+   "date": "2026-10-10",
+   "venue": "The Hope & Ruin",
+   "title": "Blood Wizard",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Blood Wizard",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-10",
+   "venue": "The Old Market",
+   "title": "Field Trip",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Field Trip",
+   "reason": "8 artists share this name"
+  },
+  {
+   "date": "2026-10-10",
+   "venue": "The Pipeline",
+   "title": "Shake Some Acton #177",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Shake Some Acton #177",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-10",
+   "venue": "Volks",
+   "title": "Hard Hush",
+   "category": "Music/Club",
+   "genre": null,
+   "source": null,
+   "act": "Hard Hush",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-11",
+   "venue": "Brighton Dome",
+   "title": "The Stravinsky Connection",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "The Stravinsky Connection",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-11",
+   "venue": "Concorde 2",
+   "title": "Hed P.E. / Cold",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Hed P.E. / Cold",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-11",
+   "venue": "The Prince Albert",
+   "title": "Embodiment Infected Dead Support Live At The Albert 11Th October",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Embodiment Infected Dead",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-11",
+   "venue": "Green Door Store",
+   "title": "Psychedelic Autumn Sundae",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Psychedelic Autumn Sundae",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-11",
+   "venue": "The Hope & Ruin",
+   "title": "TCHOTCHKE (USA)",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "TCHOTCHKE",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-10-11",
+   "venue": "The Old Market",
+   "title": "John Kampfner – Braver New World",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "John Kampfner",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-12",
+   "venue": "Concorde 2",
+   "title": "Beth Orton",
+   "category": "Music",
+   "genre": "Folk & Country",
+   "source": "musicbrainz",
+   "act": "Beth Orton",
+   "musicbrainz": "https://musicbrainz.org/artist/214d84a5-e9e5-4432-af95-8c84da7ba4c0",
+   "mb_genres": [
+    {
+     "name": "alternative folk",
+     "count": 2
+    },
+    {
+     "name": "alternative pop",
+     "count": 1
+    },
+    {
+     "name": "alternative rock",
+     "count": 1
+    },
+    {
+     "name": "electronic",
+     "count": 2
+    },
+    {
+     "name": "electronica",
+     "count": 1
+    },
+    {
+     "name": "folk",
+     "count": 2
+    },
+    {
+     "name": "folk rock",
+     "count": 3
+    },
+    {
+     "name": "folktronica",
+     "count": 4
+    },
+    {
+     "name": "indie folk",
+     "count": 1
+    },
+    {
+     "name": "indie rock",
+     "count": 1
+    },
+    {
+     "name": "pop",
+     "count": 1
+    },
+    {
+     "name": "singer-songwriter",
+     "count": 2
+    },
+    {
+     "name": "trip hop",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-10-12",
+   "venue": "CHALK",
+   "title": "Fat Poppadaddys Societies",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Fat Poppadaddys Societies",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-12",
+   "venue": "The Prince Albert",
+   "title": "Dylan Flynn & The Dead Poets",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Dylan Flynn & The Dead Poets",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-13",
+   "venue": "Concorde 2",
+   "title": "Jake Xerxes Fussell",
+   "category": "Music",
+   "genre": "Folk & Country",
+   "source": "musicbrainz",
+   "act": "Jake Xerxes Fussell",
+   "musicbrainz": "https://musicbrainz.org/artist/fbc3a7a5-e602-4e7e-b730-af63a232f87d",
+   "mb_genres": [
+    {
+     "name": "americana",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-13",
+   "venue": "Brighton Centre",
+   "title": "Westlife",
+   "category": "Music",
+   "genre": "Pop",
+   "source": "musicbrainz",
+   "act": "Westlife",
+   "musicbrainz": "https://musicbrainz.org/artist/5f000e69-3cfd-4871-8f1b-faa7f0d4bcbc",
+   "mb_genres": [
+    {
+     "name": "ballad",
+     "count": 1
+    },
+    {
+     "name": "pop",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "date": "2026-10-13",
+   "venue": "CHALK",
+   "title": "Cancer Bats",
+   "category": "Music",
+   "genre": "Punk & Metal",
+   "source": "musicbrainz",
+   "act": "Cancer Bats",
+   "musicbrainz": "https://musicbrainz.org/artist/00b952be-6c97-4880-84f9-06de584b491b",
+   "mb_genres": [
+    {
+     "name": "hardcore punk",
+     "count": 2
+    },
+    {
+     "name": "southern rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-13",
+   "venue": "The Hope & Ruin",
+   "title": "Gallus",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Gallus",
+   "reason": "4 artists share this name"
+  },
+  {
+   "date": "2026-10-14",
+   "venue": "Komedia",
+   "title": "BudPod Live",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "BudPod",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-14",
+   "venue": "CHALK",
+   "title": "Antony Szmierek",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Antony Szmierek",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-14",
+   "venue": "Patterns",
+   "title": "SPARTA Hammok",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "SPARTA Hammok",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-15",
+   "venue": "Concorde 2",
+   "title": "Ibibio Sound Machine",
+   "category": "Music",
+   "genre": "House & Disco",
+   "source": "musicbrainz",
+   "act": "Ibibio Sound Machine",
+   "musicbrainz": "https://musicbrainz.org/artist/0ece139d-19a4-44c6-85e6-0406e8055a21",
+   "mb_genres": [
+    {
+     "name": "disco",
+     "count": 2
+    },
+    {
+     "name": "electro",
+     "count": 1
+    },
+    {
+     "name": "electro-funk",
+     "count": 1
+    },
+    {
+     "name": "highlife",
+     "count": 1
+    },
+    {
+     "name": "psychedelic",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-15",
+   "venue": "The Hope & Ruin",
+   "title": "DJ FREAKING OUT THE NEIGHBOURHOOD",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "DJ FREAKING OUT THE NEIGHBOURHOOD",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-15",
+   "venue": "The Hope & Ruin",
+   "title": "DJ FREAKING OUT THE NEIGHBOURHOOD",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "DJ FREAKING OUT THE NEIGHBOURHOOD",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-15",
+   "venue": "A L P H A B E T",
+   "title": "Firefriend",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Firefriend",
+   "musicbrainz": "https://musicbrainz.org/artist/bdde0863-e23c-48ad-b7e8-f36601531f14",
+   "mb_genres": [
+    {
+     "name": "alternative rock",
+     "count": 1
+    },
+    {
+     "name": "dark wave",
+     "count": 1
+    },
+    {
+     "name": "garage rock",
+     "count": 1
+    },
+    {
+     "name": "neo-psychedelia",
+     "count": 1
+    },
+    {
+     "name": "psychedelic",
+     "count": 1
+    },
+    {
+     "name": "psychedelic rock",
+     "count": 2
+    },
+    {
+     "name": "shoegaze",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-15",
+   "venue": "Brighton Dome",
+   "title": "Lulu",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Lulu",
+   "reason": "7 artists share this name"
+  },
+  {
+   "date": "2026-10-15",
+   "venue": "CHALK",
+   "title": "Secret Discotheque Bingo",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Secret Discotheque Bingo",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-15",
+   "venue": "CHALK",
+   "title": "The Skints",
+   "category": "Music",
+   "genre": "Reggae & Ska",
+   "source": "musicbrainz",
+   "act": "The Skints",
+   "musicbrainz": "https://musicbrainz.org/artist/7a279145-e778-4099-8f73-ea917a1956c9",
+   "mb_genres": [
+    {
+     "name": "dub",
+     "count": 1
+    },
+    {
+     "name": "punk rock",
+     "count": 1
+    },
+    {
+     "name": "reggae",
+     "count": 2
+    },
+    {
+     "name": "ska",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-15",
+   "venue": "The Hope & Ruin",
+   "title": "BURGLAR",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "BURGLAR",
+   "reason": "5 artists share this name"
+  },
+  {
+   "date": "2026-10-15",
+   "venue": "Volks",
+   "title": "COUPDEKAT",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "COUPDEKAT",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-16",
+   "venue": "Quarters",
+   "title": "4Am Kru",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "4Am Kru",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-10-16",
+   "venue": "Concorde 2",
+   "title": "Boris - Pink 20th Anniversary UK Tour",
+   "category": "Music",
+   "genre": "Punk & Metal",
+   "source": "musicbrainz",
+   "act": "Boris",
+   "musicbrainz": "https://musicbrainz.org/artist/57652bf8-cfe8-42e7-b9a7-5572a7080d8d",
+   "mb_genres": [
+    {
+     "name": "ambient",
+     "count": 2
+    },
+    {
+     "name": "doom metal",
+     "count": 9
+    },
+    {
+     "name": "drone",
+     "count": 11
+    },
+    {
+     "name": "drone metal",
+     "count": 5
+    },
+    {
+     "name": "experimental",
+     "count": 1
+    },
+    {
+     "name": "noise",
+     "count": 5
+    },
+    {
+     "name": "noise rock",
+     "count": 2
+    },
+    {
+     "name": "post-metal",
+     "count": 1
+    },
+    {
+     "name": "post-rock",
+     "count": 1
+    },
+    {
+     "name": "psychedelic rock",
+     "count": 4
+    },
+    {
+     "name": "shoegaze",
+     "count": 2
+    },
+    {
+     "name": "sludge metal",
+     "count": 6
+    },
+    {
+     "name": "stoner metal",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "venue": "Concorde 2",
+   "title": "Rinse FM Presents Flowdan, Neffa-T & More",
+   "category": "Music/Club",
+   "genre": null,
+   "source": null,
+   "act": "Rinse FM Presents Flowdan, Neffa-T & More",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-16",
+   "venue": "Green Door Store",
+   "title": "party 4 u",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "party 4 u",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-16",
+   "venue": "Brighton Centre",
+   "title": "Magic Men World Tour 2026 Magic Men Live!",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Magic Men World Tour 2026 Magic Men Live!",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-16",
+   "venue": "CHALK",
+   "title": "The Hoosiers",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "The Hoosiers",
+   "musicbrainz": "https://musicbrainz.org/artist/52fe888b-112f-4023-adc9-f8287f177f7a",
+   "mb_genres": [
+    {
+     "name": "indie pop",
+     "count": 1
+    },
+    {
+     "name": "pop",
+     "count": 1
+    },
+    {
+     "name": "rock",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "venue": "Patterns",
+   "title": "The Jam UK - The Definitive Tribute to The Jam",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2026-10-16",
+   "venue": "Quarters",
+   "title": "Damian Lewis",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Damian Lewis",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-16",
+   "venue": "The Hope & Ruin",
+   "title": "Jim Jones All Stars",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Jim Jones All Stars",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-16",
+   "venue": "The Prince Albert",
+   "title": "Glenn Richards & The Venus Lakes",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Glenn Richards & The Venus Lakes",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-17",
+   "venue": "Brighton Dome",
+   "title": "All My Friends Day Disco",
+   "category": "Club",
+   "genre": "House & Disco",
+   "source": "title"
+  },
+  {
+   "date": "2026-10-17",
+   "venue": "Concorde 2",
+   "title": "Reef",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Reef",
+   "reason": "9 artists share this name"
+  },
+  {
+   "date": "2026-10-17",
+   "venue": "Concorde 2",
+   "title": "Kanine",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Kanine",
+   "reason": "3 artists share this name"
+  },
+  {
+   "date": "2026-10-17",
+   "venue": "A L P H A B E T",
+   "title": "John Craigie",
+   "category": "Music",
+   "genre": "Folk & Country",
+   "source": "musicbrainz",
+   "act": "John Craigie",
+   "musicbrainz": "https://musicbrainz.org/artist/89b381cf-89f4-43d7-b85b-f53efb2bd1a8",
+   "mb_genres": [
+    {
+     "name": "americana",
+     "count": 1
+    },
+    {
+     "name": "folk",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-17",
+   "venue": "CHALK",
+   "title": "Brainrot",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Brainrot",
+   "reason": "3 artists share this name"
+  },
+  {
+   "date": "2026-10-17",
+   "venue": "CHALK",
+   "title": "The Tumbling Paddies",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Tumbling Paddies",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-17",
+   "venue": "Quarters",
+   "title": "Echo x Ibiza Playabout - Ibiza Closing Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Echo x Ibiza Playabout",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-17",
+   "venue": "Quarters",
+   "title": "Notion",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Notion",
+   "reason": "9 artists share this name"
+  },
+  {
+   "date": "2026-10-17",
+   "venue": "The Hope & Ruin",
+   "title": "TOAST CLUB",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "TOAST CLUB",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-17",
+   "venue": "Volks",
+   "title": "OMEGA NEBULA",
+   "category": "Music/Club",
+   "genre": "Reggae & Ska",
+   "source": "musicbrainz",
+   "act": "OMEGA NEBULA",
+   "musicbrainz": "https://musicbrainz.org/artist/bbec7683-65e4-485d-bbd7-604f96190e4a",
+   "mb_genres": [
+    {
+     "name": "dub",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-18",
+   "venue": "Komedia",
+   "title": "Sundae Club",
+   "category": "Club",
+   "genre": "Electronic",
+   "source": "musicbrainz",
+   "act": "Sundae Club",
+   "musicbrainz": "https://musicbrainz.org/artist/e896b296-c440-4bdc-99d6-1ea6f511c7ab",
+   "mb_genres": [
+    {
+     "name": "electronic",
+     "count": 1
+    },
+    {
+     "name": "electronica",
+     "count": 1
+    },
+    {
+     "name": "progressive",
+     "count": 1
+    },
+    {
+     "name": "techno",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-18",
+   "venue": "Brighton Dome",
+   "title": "The Blindboy Podcast LIVE",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "The Blindboy Podcast",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-18",
+   "venue": "Quarters",
+   "title": "Toploader",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Toploader",
+   "musicbrainz": "https://musicbrainz.org/artist/3bdf9667-3205-4c5b-865b-ca3bb33fc5ac",
+   "mb_genres": [
+    {
+     "name": "pop rock",
+     "count": 1
+    },
+    {
+     "name": "post-britpop",
+     "count": 1
+    },
+    {
+     "name": "rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-18",
+   "venue": "The Hope & Ruin",
+   "title": "Tom McRae",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Tom McRae",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-10-18",
+   "venue": "The Prince Albert",
+   "title": "Kacy & Clayton",
+   "category": "Music",
+   "genre": "Folk & Country",
+   "source": "musicbrainz",
+   "act": "Kacy & Clayton",
+   "musicbrainz": "https://musicbrainz.org/artist/e1dbae23-0f9f-4c60-b142-4e31434d8c34",
+   "mb_genres": [
+    {
+     "name": "americana",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-19",
+   "venue": "CHALK",
+   "title": "Fat Poppadaddys Record Store",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Fat Poppadaddys Record Store",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-20",
+   "venue": "Patterns",
+   "title": "NECTAR WOODE",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "NECTAR WOODE",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-20",
+   "venue": "Concorde 2",
+   "title": "Huey Morgan",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Huey Morgan",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-20",
+   "venue": "DUST",
+   "title": "BEN QUAD",
+   "category": "Music",
+   "genre": "Punk & Metal",
+   "source": "musicbrainz",
+   "act": "BEN QUAD",
+   "musicbrainz": "https://musicbrainz.org/artist/219f330f-4b12-418a-a69b-451c3c2a7383",
+   "mb_genres": [
+    {
+     "name": "emo",
+     "count": 2
+    },
+    {
+     "name": "midwest emo",
+     "count": 1
+    },
+    {
+     "name": "pop punk",
+     "count": 1
+    },
+    {
+     "name": "post-hardcore",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "venue": "The Prince Albert",
+   "title": "Pina Palau",
+   "category": "Music",
+   "genre": "Folk & Country",
+   "source": "musicbrainz",
+   "act": "Pina Palau",
+   "musicbrainz": "https://musicbrainz.org/artist/b835cf9b-5605-406e-aade-d94cec2a1a2d",
+   "mb_genres": [
+    {
+     "name": "indie folk",
+     "count": 1
+    },
+    {
+     "name": "indie rock",
+     "count": 1
+    },
+    {
+     "name": "singer-songwriter",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "venue": "Volks",
+   "title": "BABY DAVE",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "BABY DAVE",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-21",
+   "venue": "Komedia",
+   "title": "Sergi Polo – LIVE in Brighton (in English)",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Sergi Polo",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-21",
+   "venue": "A L P H A B E T",
+   "title": "Shadowman",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Shadowman",
+   "reason": "8 artists share this name"
+  },
+  {
+   "date": "2026-10-21",
+   "venue": "Brighton Centre",
+   "title": "Professor Brian Cox: Emergence World Tour",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Professor Brian Cox",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-21",
+   "venue": "CHALK",
+   "title": "Cabaret Voltaire",
+   "category": "Music",
+   "genre": "Punk & Metal",
+   "source": "musicbrainz",
+   "act": "Cabaret Voltaire",
+   "musicbrainz": "https://musicbrainz.org/artist/439a29ad-f4ef-4857-a7cd-3d4a551056c8",
+   "mb_genres": [
+    {
+     "name": "alternative dance",
+     "count": 1
+    },
+    {
+     "name": "ambient techno",
+     "count": 1
+    },
+    {
+     "name": "electro-industrial",
+     "count": 3
+    },
+    {
+     "name": "electronic",
+     "count": 6
+    },
+    {
+     "name": "electronica",
+     "count": 1
+    },
+    {
+     "name": "industrial",
+     "count": 14
+    },
+    {
+     "name": "minimal synth",
+     "count": 2
+    },
+    {
+     "name": "minimal wave",
+     "count": 2
+    },
+    {
+     "name": "post-punk",
+     "count": 9
+    },
+    {
+     "name": "synth-pop",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "venue": "Concorde 2",
+   "title": "Jake Vaadeland",
+   "category": "Music",
+   "genre": "Folk & Country",
+   "source": "musicbrainz",
+   "act": "Jake Vaadeland",
+   "musicbrainz": "https://musicbrainz.org/artist/d3ab05f3-493f-4466-8c8e-8c44f6fe980d",
+   "mb_genres": [
+    {
+     "name": "bluegrass",
+     "count": 1
+    },
+    {
+     "name": "rockabilly",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "venue": "Brighton Centre",
+   "title": "Professor Brian Cox: Emergence World Tour",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Professor Brian Cox",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-22",
+   "venue": "CHALK",
+   "title": "Sea Power Pictish Trail",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Sea Power Pictish Trail",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-22",
+   "venue": "CHALK",
+   "title": "Seapower7",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Seapower7",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-22",
+   "venue": "DUST",
+   "title": "Every Hell",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Every Hell",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-22",
+   "venue": "Green Door Store",
+   "title": "Pete Fij",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Pete Fij",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-22",
+   "venue": "The Old Market",
+   "title": "Kristin Hersh",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Kristin Hersh",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-22",
+   "venue": "The Prince Albert",
+   "title": "Mekons",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Mekons",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-22",
+   "venue": "Volks",
+   "title": "LANA DEATH RAY",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "LANA DEATH RAY",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-23",
+   "venue": "Concorde 2",
+   "title": "The R&B Orchestra",
+   "category": "Music",
+   "genre": "Hip-hop & R&B",
+   "source": "title"
+  },
+  {
+   "date": "2026-10-23",
+   "venue": "Concorde 2",
+   "title": "The RnB Orchestra",
+   "category": "Music",
+   "genre": "Hip-hop & R&B",
+   "source": "title"
+  },
+  {
+   "date": "2026-10-23",
+   "venue": "Green Door Store",
+   "title": "Mutations Festival 2026",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Mutations Festival",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-23",
+   "venue": "Quarters",
+   "title": "Hospital30",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Hospital30",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-23",
+   "venue": "The Old Market",
+   "title": "Everybody Scream! New Note Orchestra and Wham Jam Thank You Ma’am Choir",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Everybody Scream! New Note Orchestra and Wham Jam Thank You Ma’am Choir",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-23",
+   "venue": "The Pipeline",
+   "title": "LoVeDoGz / Hekate Heads / The Dolarhydes / Charmian Devi and the Raven",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "LoVeDoGz / Hekate Heads / The Dolarhydes / Charmian Devi and the Raven",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-24",
+   "venue": "Green Door Store",
+   "title": "Mutations Festival 2026",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Mutations Festival",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-24",
+   "venue": "Concorde 2",
+   "title": "Chris Hill's Dirty DC - Brian & Bon Show",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Chris Hill's Dirty DC",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-24",
+   "venue": "Komedia",
+   "title": "Funny Women Live in Brighton",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Funny Women Live in Brighton",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-24",
+   "venue": "Concorde 2",
+   "title": "Holdtight - Congo Natty",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Holdtight",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-24",
+   "venue": "Volks",
+   "title": "Hardcore Unlocked Hixxy, Maddy V, Hang The DJs",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Hardcore Unlocked Hixxy, Maddy V, Hang The DJs",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-25",
+   "venue": "Brighton Dome",
+   "title": "Rich Wilson: To The Cradle, From The Rave",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Rich Wilson",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-10-25",
+   "venue": "Komedia",
+   "title": "Rich Wilson: To The Cradle, From The Rave",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Rich Wilson",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-10-25",
+   "venue": "Concorde 2",
+   "title": "Gurriers",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Gurriers",
+   "musicbrainz": "https://musicbrainz.org/artist/b3e28883-d118-4180-b458-568a18bc239d",
+   "mb_genres": [
+    {
+     "name": "alternative rock",
+     "count": 1
+    },
+    {
+     "name": "indie rock",
+     "count": 1
+    },
+    {
+     "name": "noise rock",
+     "count": 1
+    },
+    {
+     "name": "post-punk",
+     "count": 2
+    },
+    {
+     "name": "shoegaze",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "venue": "CHALK",
+   "title": "Stornoway",
+   "category": "Music",
+   "genre": "Folk & Country",
+   "source": "musicbrainz",
+   "act": "Stornoway",
+   "musicbrainz": "https://musicbrainz.org/artist/04073f0b-a1e5-4cef-9b36-c1978e5d7d23",
+   "mb_genres": [
+    {
+     "name": "folk",
+     "count": 1
+    },
+    {
+     "name": "indie folk",
+     "count": 1
+    },
+    {
+     "name": "indie rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "venue": "Green Door Store",
+   "title": "Formal Sppeedwear",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Formal Sppeedwear",
+   "musicbrainz": "https://musicbrainz.org/artist/91695d2d-d3e1-4342-ae6a-1df59e2074b0",
+   "mb_genres": [
+    {
+     "name": "art rock",
+     "count": 1
+    },
+    {
+     "name": "new wave",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "venue": "The Prince Albert",
+   "title": "Lene Lovich",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Lene Lovich",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-10-26",
+   "venue": "Patterns",
+   "title": "SPORTS",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "SPORTS",
+   "reason": "3 artists share this name"
+  },
+  {
+   "date": "2026-10-26",
+   "venue": "Komedia",
+   "title": "The Running Joke – Live",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Running Joke",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-26",
+   "venue": "CHALK",
+   "title": "Conway the Machine",
+   "category": "Music",
+   "genre": "Hip-hop & R&B",
+   "source": "musicbrainz",
+   "act": "Conway the Machine",
+   "musicbrainz": "https://musicbrainz.org/artist/a633ebb5-b81a-400f-b5df-0e625ea81fe9",
+   "mb_genres": [
+    {
+     "name": "boom bap",
+     "count": 2
+    },
+    {
+     "name": "conscious hip hop",
+     "count": 2
+    },
+    {
+     "name": "east coast hip hop",
+     "count": 2
+    },
+    {
+     "name": "gangsta rap",
+     "count": 1
+    },
+    {
+     "name": "hardcore hip hop",
+     "count": 1
+    },
+    {
+     "name": "hip hop",
+     "count": 5
+    },
+    {
+     "name": "indie pop",
+     "count": 1
+    },
+    {
+     "name": "new age",
+     "count": 1
+    },
+    {
+     "name": "pop",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "venue": "Green Door Store",
+   "title": "My First Time",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "My First Time",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-26",
+   "venue": "The Hope & Ruin",
+   "title": "Schur",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Schur",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-10-27",
+   "venue": "Patterns",
+   "title": "UGLY",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "UGLY",
+   "reason": "5 artists share this name"
+  },
+  {
+   "date": "2026-10-27",
+   "venue": "Concorde 2",
+   "title": "Grandmaster Flash",
+   "category": "Music",
+   "genre": "Hip-hop & R&B",
+   "source": "musicbrainz",
+   "act": "Grandmaster Flash",
+   "musicbrainz": "https://musicbrainz.org/artist/7db590cd-d7e6-4b36-b4e7-e8209426b02d",
+   "mb_genres": [
+    {
+     "name": "hip hop",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "venue": "CHALK",
+   "title": "Adult DVD lttl mort",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Adult DVD lttl mort",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-28",
+   "venue": "Concorde 2",
+   "title": "My New Band Believe",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "My New Band Believe",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-28",
+   "venue": "Brighton Centre",
+   "title": "Soul II Soul",
+   "category": "Music",
+   "genre": "Pop",
+   "source": "musicbrainz",
+   "act": "Soul II Soul",
+   "musicbrainz": "https://musicbrainz.org/artist/9350241a-d698-4489-92bf-41794f383ff3",
+   "mb_genres": [
+    {
+     "name": "contemporary r&b",
+     "count": 1
+    },
+    {
+     "name": "dance-pop",
+     "count": 3
+    },
+    {
+     "name": "house",
+     "count": 1
+    },
+    {
+     "name": "soul",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "venue": "CHALK",
+   "title": "Transvision Vamp with Wendy James",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Transvision Vamp",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-28",
+   "venue": "The Hope & Ruin",
+   "title": "Deradoorian",
+   "category": "Music",
+   "genre": "Pop",
+   "source": "musicbrainz",
+   "act": "Deradoorian",
+   "musicbrainz": "https://musicbrainz.org/artist/d609e858-c033-4cfb-8441-6736e23b291c",
+   "mb_genres": [
+    {
+     "name": "art pop",
+     "count": 3
+    },
+    {
+     "name": "indie pop",
+     "count": 1
+    },
+    {
+     "name": "indietronica",
+     "count": 1
+    },
+    {
+     "name": "minimal wave",
+     "count": 1
+    },
+    {
+     "name": "neo-psychedelia",
+     "count": 1
+    },
+    {
+     "name": "progressive pop",
+     "count": 1
+    },
+    {
+     "name": "psychedelic rock",
+     "count": 1
+    },
+    {
+     "name": "rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "venue": "Concorde 2",
+   "title": "Kerrbang!",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Kerrbang!",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-29",
+   "venue": "Brighton Centre",
+   "title": "Steve Backshall's Deadly Live!",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Steve Backshall's Deadly Live!",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-29",
+   "venue": "CHALK",
+   "title": "St. Paul & The Broken Bones",
+   "category": "Music",
+   "genre": "Jazz, Soul & Funk",
+   "source": "musicbrainz",
+   "act": "St. Paul & The Broken Bones",
+   "musicbrainz": "https://musicbrainz.org/artist/4486702e-7b26-43fd-babc-c0df7be0e1d9",
+   "mb_genres": [
+    {
+     "name": "soul",
+     "count": 1
+    },
+    {
+     "name": "southern soul",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "venue": "The Hope & Ruin",
+   "title": "Rikas",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Rikas",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-29",
+   "venue": "The Old Market",
+   "title": "Max Cooper: 3D/AV Live",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Max Cooper",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-10-30",
+   "venue": "DUST",
+   "title": "Reggaeton Halloween Party (Brighton) 2026",
+   "category": "Club",
+   "genre": "Latin & Afrobeats",
+   "source": "title"
+  },
+  {
+   "date": "2026-10-30",
+   "venue": "Concorde 2",
+   "title": "Born On Road",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Born On Road",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-30",
+   "venue": "A L P H A B E T",
+   "title": "Hollow Hand",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Hollow Hand",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-10-30",
+   "venue": "Brighton Centre",
+   "title": "The Rock Orchestra",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Rock Orchestra",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-10-30",
+   "venue": "CHALK",
+   "title": "Soil Finger Eleven, Adema",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Soil Finger Eleven, Adema",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-30",
+   "venue": "Komedia",
+   "title": "BLACK PARADE – 00S EMO ANTHEMS HALLOWEEN PARTY",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "BLACK PARADE",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-30",
+   "venue": "Komedia",
+   "title": "Black Sabbath's Paranoid The Album Era",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Black Sabbath's Paranoid The Album Era",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-30",
+   "venue": "The Old Market",
+   "title": "Max Cooper: 3D/AV Live",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Max Cooper",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-10-30",
+   "venue": "The Pipeline",
+   "title": "Killer Tone Jones / The Noir Mates / The Bad Breed",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Killer Tone Jones / The Noir Mates / The Bad Breed",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-30",
+   "venue": "The Prince Albert",
+   "title": "Captain Accident & The Disasters",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Captain Accident & The Disasters",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-31",
+   "venue": "Concorde 2",
+   "title": "Drum & Bass Classics Halloween All Dayer",
+   "category": "Club",
+   "genre": "Drum & Bass",
+   "source": "title"
+  },
+  {
+   "date": "2026-10-31",
+   "venue": "DUST",
+   "title": "Tooth + Special Guests",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Tooth",
+   "reason": "6 artists share this name"
+  },
+  {
+   "date": "2026-10-31",
+   "venue": "Komedia",
+   "title": "The Witchcraft and Vagrancy Act Halloween Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "The Witchcraft and Vagrancy Act Halloween Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-31",
+   "venue": "Concorde 2",
+   "title": "Moody Disco - Obskur",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Moody Disco",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-31",
+   "venue": "A L P H A B E T",
+   "title": "Blood Red Shoes",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Blood Red Shoes",
+   "musicbrainz": "https://musicbrainz.org/artist/cd830a8f-89d2-4e96-96cb-7a497e51d437",
+   "mb_genres": [
+    {
+     "name": "alternative rock",
+     "count": 1
+    },
+    {
+     "name": "garage rock",
+     "count": 2
+    },
+    {
+     "name": "grunge",
+     "count": 1
+    },
+    {
+     "name": "indie rock",
+     "count": 2
+    },
+    {
+     "name": "post-punk",
+     "count": 1
+    },
+    {
+     "name": "punk",
+     "count": 1
+    },
+    {
+     "name": "punk rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-31",
+   "venue": "Brighton Centre",
+   "title": "Ministry Of Sound Classical",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Ministry Of Sound Classical",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-31",
+   "venue": "Concorde 2",
+   "title": "Drum and Bass Classics Brighton | Halloween All Dayer",
+   "category": "Club",
+   "genre": "Drum & Bass",
+   "source": "title"
+  },
+  {
+   "date": "2026-10-31",
+   "venue": "Concorde 2",
+   "title": "Moody Disco Halloween Rave w/ Obskür",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Moody Disco Halloween Rave",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-31",
+   "venue": "Quarters",
+   "title": "Black Octopus 8th Birthday Part 2: Kenny Larkin & Rolando",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Black Octopus 8th Birthday Part 2",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-31",
+   "venue": "Quarters",
+   "title": "GROUNDWORK 002: Halloween w/ Soul Mass Transit System & Captain Wallop",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "GROUNDWORK 002",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-10-31",
+   "venue": "The Hope & Ruin",
+   "title": "Penelope Isles - Evening Show",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Penelope Isles",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-10-31",
+   "venue": "The Hope & Ruin",
+   "title": "Penelope Isles - Matinee Show",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Penelope Isles",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-01",
+   "venue": "Komedia",
+   "title": "Sergi Polo – LIVE in Brighton (in Spanish)",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Sergi Polo",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-01",
+   "venue": "Concorde 2",
+   "title": "The Bluetones",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "The Bluetones",
+   "musicbrainz": "https://musicbrainz.org/artist/024bea6e-e250-4348-9e69-2dfcad38442e",
+   "mb_genres": [
+    {
+     "name": "alternative rock",
+     "count": 1
+    },
+    {
+     "name": "britpop",
+     "count": 4
+    },
+    {
+     "name": "indie pop",
+     "count": 2
+    },
+    {
+     "name": "indie rock",
+     "count": 1
+    },
+    {
+     "name": "jangle pop",
+     "count": 2
+    },
+    {
+     "name": "new wave",
+     "count": 1
+    },
+    {
+     "name": "pop",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-01",
+   "venue": "Green Door Store",
+   "title": "Burner Beyond Extinction",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Burner Beyond Extinction",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-01",
+   "venue": "The Hope & Ruin",
+   "title": "Cootie Catcher",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Cootie Catcher",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-01",
+   "venue": "The Prince Albert",
+   "title": "Stu Larsen",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Stu Larsen",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-02",
+   "venue": "The Hope & Ruin",
+   "title": "Asher White",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Asher White",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-03",
+   "venue": "CHALK",
+   "title": "Slayyyter",
+   "category": "Music",
+   "genre": "Pop",
+   "source": "musicbrainz",
+   "act": "Slayyyter",
+   "musicbrainz": "https://musicbrainz.org/artist/9058d01e-8afc-47a4-8664-621fb5f159c0",
+   "mb_genres": [
+    {
+     "name": "dance",
+     "count": 2
+    },
+    {
+     "name": "dance-pop",
+     "count": 4
+    },
+    {
+     "name": "electronica",
+     "count": 1
+    },
+    {
+     "name": "electropop",
+     "count": 1
+    },
+    {
+     "name": "hip hop",
+     "count": 1
+    },
+    {
+     "name": "hyperpop",
+     "count": 7
+    },
+    {
+     "name": "pop",
+     "count": 8
+    },
+    {
+     "name": "teen pop",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "venue": "CHALK",
+   "title": "Elder Island",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Elder Island",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-04",
+   "venue": "Green Door Store",
+   "title": "zzzahara",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "zzzahara",
+   "musicbrainz": "https://musicbrainz.org/artist/ba95e737-134e-4fb2-ae2f-9db0cd9890e2",
+   "mb_genres": [
+    {
+     "name": "indie rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "venue": "The Hope & Ruin",
+   "title": "ASHER WHITE",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "ASHER WHITE",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-04",
+   "venue": "The Prince Albert",
+   "title": "Dateless Wonder Club Little Death EP Launch Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Dateless Wonder Club Little Death EP Launch Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-05",
+   "venue": "Concorde 2",
+   "title": "Teenage Fanclub",
+   "category": "Club",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Teenage Fanclub",
+   "musicbrainz": "https://musicbrainz.org/artist/e6f8912b-7df9-4aae-b551-2cd03dc29588",
+   "mb_genres": [
+    {
+     "name": "alternative rock",
+     "count": 5
+    },
+    {
+     "name": "folk pop",
+     "count": 2
+    },
+    {
+     "name": "indie rock",
+     "count": 3
+    },
+    {
+     "name": "jangle pop",
+     "count": 4
+    },
+    {
+     "name": "power pop",
+     "count": 4
+    },
+    {
+     "name": "rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "venue": "Volks",
+   "title": "Moon Walker",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Moon Walker",
+   "musicbrainz": "https://musicbrainz.org/artist/5c4c2df9-63ba-4605-a965-5ea11db27cf5",
+   "mb_genres": [
+    {
+     "name": "alternative rock",
+     "count": 1
+    },
+    {
+     "name": "indie rock",
+     "count": 3
+    },
+    {
+     "name": "punk rock",
+     "count": 4
+    },
+    {
+     "name": "rock",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-11-06",
+   "venue": "Concorde 2",
+   "title": "DJ Yoda",
+   "category": "Club",
+   "genre": "Hip-hop & R&B",
+   "source": "musicbrainz",
+   "act": "DJ Yoda",
+   "musicbrainz": "https://musicbrainz.org/artist/c266a7ab-7b9f-478f-a26d-91c5f8f04c7c",
+   "mb_genres": [
+    {
+     "name": "hip hop",
+     "count": 1
+    },
+    {
+     "name": "turntablism",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-06",
+   "venue": "Concorde 2",
+   "title": "It's A Jungle Out There - Coco Bryce & J:Kenzo",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "It's A Jungle Out There",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-06",
+   "venue": "CHALK",
+   "title": "Republica Trampolene",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Republica Trampolene",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-06",
+   "venue": "DUST",
+   "title": "LOTS OF HANDS + SUNDOTS + Special Guests",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "LOTS OF HANDS",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-06",
+   "venue": "Patterns",
+   "title": "Employed To Serve, CABAL",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Employed To Serve, CABAL",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-06",
+   "venue": "Quarters",
+   "title": "K Motionz",
+   "category": "Club",
+   "genre": "Drum & Bass",
+   "source": "musicbrainz",
+   "act": "K Motionz",
+   "musicbrainz": "https://musicbrainz.org/artist/d116c57a-0f88-462d-aece-e97cad9f38d4",
+   "mb_genres": [
+    {
+     "name": "drum and bass",
+     "count": 2
+    },
+    {
+     "name": "electronic",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-06",
+   "venue": "The Hope & Ruin",
+   "title": "Swapmeet",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Swapmeet",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-06",
+   "venue": "The Old Market",
+   "title": "Rival Consoles",
+   "category": "Music",
+   "genre": "Electronic",
+   "source": "musicbrainz",
+   "act": "Rival Consoles",
+   "musicbrainz": "https://musicbrainz.org/artist/803f2853-7e3e-4dff-96a7-9f77b5f56de5",
+   "mb_genres": [
+    {
+     "name": "electronic",
+     "count": 2
+    },
+    {
+     "name": "idm",
+     "count": 1
+    },
+    {
+     "name": "microhouse",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-06",
+   "venue": "The Pipeline",
+   "title": "King Effers / Not The Face / The Glitterbombs",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "King Effers / Not The Face / The Glitterbombs",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-07",
+   "venue": "Concorde 2",
+   "title": "Slipmatt, Ellis Dee, 2 Bad Mice & DJ Ratty",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Slipmatt, Ellis Dee, 2 Bad Mice & DJ Ratty",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-07",
+   "venue": "Babble",
+   "title": "Lo Fidelity Allstars DJ Set",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Lo Fidelity Allstars DJ Set",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-07",
+   "venue": "CHALK",
+   "title": "Dutch & Graft",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Dutch & Graft",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-07",
+   "venue": "Patterns",
+   "title": "Nick Hakim",
+   "category": "Music",
+   "genre": "Jazz, Soul & Funk",
+   "source": "musicbrainz",
+   "act": "Nick Hakim",
+   "musicbrainz": "https://musicbrainz.org/artist/21e8f8ef-00d2-4748-be00-451f1f5dfcaa",
+   "mb_genres": [
+    {
+     "name": "neo soul",
+     "count": 1
+    },
+    {
+     "name": "psychedelic soul",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-07",
+   "venue": "Quarters",
+   "title": "Andy C Zc45V",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Andy C Zc45V",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-07",
+   "venue": "Quarters",
+   "title": "Groove Cartel Presents Archie Hamilton & Boss Priester",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Groove Cartel Presents Archie Hamilton & Boss Priester",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-07",
+   "venue": "The Prince Albert",
+   "title": "The Battle of Cable Street - 90th Anniversary Celebration Gig",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2026-11-08",
+   "venue": "Concorde 2",
+   "title": "Holy Fawn + MØL",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Holy Fawn",
+   "musicbrainz": "https://musicbrainz.org/artist/42489dbe-d79d-45a4-aee7-4666aba8180a",
+   "mb_genres": [
+    {
+     "name": "doomgaze",
+     "count": 2
+    },
+    {
+     "name": "post-rock",
+     "count": 1
+    },
+    {
+     "name": "shoegaze",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "venue": "Patterns",
+   "title": "Chasing Abbey",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Chasing Abbey",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-08",
+   "venue": "The Hope & Ruin",
+   "title": "Kiwi Jr.",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Kiwi Jr.",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-08",
+   "venue": "The Prince Albert",
+   "title": "Alien Boy",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Alien Boy",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-09",
+   "venue": "Concorde 2",
+   "title": "Cardinals",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Cardinals",
+   "reason": "3 artists share this name"
+  },
+  {
+   "date": "2026-11-09",
+   "venue": "Green Door Store",
+   "title": "Hiding Places",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Hiding Places",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-09",
+   "venue": "The Hope & Ruin",
+   "title": "bby",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "bby",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-11-10",
+   "venue": "Concorde 2",
+   "title": "Mykki Blanco",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Mykki Blanco",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-11-10",
+   "venue": "Green Door Store",
+   "title": "Bloodsports",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Bloodsports",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-11-10",
+   "venue": "The Old Market",
+   "title": "Peter Kyle MP & Dr Fola Yahaya – AI: Threat, Tool or Transformation?",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Peter Kyle MP & Dr Fola Yahaya",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-10",
+   "venue": "The Old Market",
+   "title": "Talk",
+   "category": "Club",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Talk",
+   "musicbrainz": "https://musicbrainz.org/artist/b8b3d675-a685-4709-8219-4052435f770b",
+   "mb_genres": [
+    {
+     "name": "folk rock",
+     "count": 1
+    },
+    {
+     "name": "glam rock",
+     "count": 1
+    },
+    {
+     "name": "indie rock",
+     "count": 1
+    },
+    {
+     "name": "pop rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "venue": "Volks",
+   "title": "Babe Haven, Latter",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Babe Haven, Latter",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-11",
+   "venue": "CHALK",
+   "title": "Cassia",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Cassia",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-11-11",
+   "venue": "Green Door Store",
+   "title": "Storefront Church",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Storefront Church",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-11",
+   "venue": "Komedia",
+   "title": "Steve Knightley & The Winter Yards Band + Megan Henwood",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Steve Knightley & The Winter Yards Band",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-11",
+   "venue": "Patterns",
+   "title": "Tom A Smith",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Tom A Smith",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-11",
+   "venue": "The Hope & Ruin",
+   "title": "An Dannsa Dub",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "An Dannsa Dub",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-11-11",
+   "venue": "The Prince Albert",
+   "title": "Big|Brave",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Big|Brave",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-11-11",
+   "venue": "Theatre Royal Brighton",
+   "title": "Cody Dahler",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Cody Dahler",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-11",
+   "venue": "Volks",
+   "title": "GONE FISHIN': DUMBHEAD",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "GONE FISHIN'",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-11-12",
+   "venue": "Concorde 2",
+   "title": "The Allergies (Live)",
+   "category": "Music",
+   "genre": "Electronic",
+   "source": "musicbrainz",
+   "act": "The Allergies",
+   "musicbrainz": "https://musicbrainz.org/artist/7f9c97b9-03d6-4f31-9cfe-59f5b8c5b42d",
+   "mb_genres": [
+    {
+     "name": "electronic",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "venue": "A L P H A B E T",
+   "title": "Dutch Criminal Record",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Dutch Criminal Record",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-12",
+   "venue": "CHALK",
+   "title": "Goldie MBE",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Goldie MBE",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-12",
+   "venue": "The Hope & Ruin",
+   "title": "Michael McGovern",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Michael McGovern",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-12",
+   "venue": "Theatre Royal Brighton",
+   "title": "The Chicago Blues Brothers",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Chicago Blues Brothers",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-13",
+   "venue": "Concorde 2",
+   "title": "John Digweed",
+   "category": "Club",
+   "genre": "House & Disco",
+   "source": "musicbrainz",
+   "act": "John Digweed",
+   "musicbrainz": "https://musicbrainz.org/artist/68cac857-3147-43d0-879e-c63dc9c82014",
+   "mb_genres": [
+    {
+     "name": "electronic",
+     "count": 2
+    },
+    {
+     "name": "house",
+     "count": 2
+    },
+    {
+     "name": "progressive house",
+     "count": 2
+    },
+    {
+     "name": "techno",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "venue": "Brighton Centre",
+   "title": "Peter Kay - Better Late Than Never",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Peter Kay",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-13",
+   "venue": "CHALK",
+   "title": "Tigercub",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Tigercub",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-13",
+   "venue": "DUST",
+   "title": "Grace Cummings + Special Guests",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Grace Cummings",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-11-13",
+   "venue": "Patterns",
+   "title": "The Entitled Sons",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Entitled Sons",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-13",
+   "venue": "Quarters",
+   "title": "Yung Singh + Riria",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Yung Singh",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-13",
+   "venue": "The Prince Albert",
+   "title": "Lenna and the Snakemen",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Lenna and the Snakemen",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "Concorde 2",
+   "title": "Junebabies - John Digweed Afterparty",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Junebabies",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "Komedia",
+   "title": "Mystery Musicals Day Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Mystery Musicals Day Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "Concorde 2",
+   "title": "Metallica Reloaded",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Metallica Reloaded",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "A L P H A B E T",
+   "title": "Butch Kassidy",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Butch Kassidy",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "Brighton Centre",
+   "title": "Peter Kay - Better Late Than Never",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Peter Kay",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "CHALK",
+   "title": "Tropical F*ck Storm",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Tropical F*ck Storm",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "DUST",
+   "title": "Electric Eel Shock",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Electric Eel Shock",
+   "musicbrainz": "https://musicbrainz.org/artist/9068fa4c-73db-4ac5-91fd-62c47b504f56",
+   "mb_genres": [
+    {
+     "name": "garage rock",
+     "count": 1
+    },
+    {
+     "name": "j-rock",
+     "count": 1
+    },
+    {
+     "name": "metal",
+     "count": 1
+    },
+    {
+     "name": "rock",
+     "count": 1
+    },
+    {
+     "name": "rock and roll",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "Quarters",
+   "title": "Ben Hemsley",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Ben Hemsley",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "Quarters",
+   "title": "Emo Day Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Emo Day Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "The Hope & Ruin",
+   "title": "Zac Schulze Gang",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Zac Schulze Gang",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "The Pipeline",
+   "title": "Vigilantes",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Vigilantes",
+   "reason": "4 artists share this name"
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "The Prince Albert",
+   "title": "City Baby Attacked By Rats Festival",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "City Baby Attacked By Rats Festival",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "Theatre Royal Brighton",
+   "title": "Spice Girls Experience",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "Theatre Royal Brighton",
+   "title": "The Spice Girls - The Theatre Show",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Spice Girls",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-14",
+   "venue": "Volks",
+   "title": "Aba Shanti-I Ras Kayleb, Easy Skankin DJs",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Aba Shanti-I Ras Kayleb, Easy Skankin DJs",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-15",
+   "venue": "Concorde 2",
+   "title": "MNEK",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "MNEK",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-11-15",
+   "venue": "Brighton Dome",
+   "title": "Dido and Aeneazz: Purcell, Pachelbel and Jazz",
+   "category": "Music",
+   "genre": "Jazz, Soul & Funk",
+   "source": "title"
+  },
+  {
+   "date": "2026-11-15",
+   "venue": "CHALK",
+   "title": "PORTRAYAL OF GUILT",
+   "category": "Music",
+   "genre": "Punk & Metal",
+   "source": "musicbrainz",
+   "act": "PORTRAYAL OF GUILT",
+   "musicbrainz": "https://musicbrainz.org/artist/0f3f7357-73d3-42a3-81a5-b359bc4e8a56",
+   "mb_genres": [
+    {
+     "name": "black metal",
+     "count": 4
+    },
+    {
+     "name": "metal",
+     "count": 2
+    },
+    {
+     "name": "screamo",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-11-15",
+   "venue": "Patterns",
+   "title": "Aaron Rowe",
+   "category": "Music",
+   "genre": "Folk & Country",
+   "source": "musicbrainz",
+   "act": "Aaron Rowe",
+   "musicbrainz": "https://musicbrainz.org/artist/eee8e86c-04d5-464b-addc-939eb6d2f54a",
+   "mb_genres": [
+    {
+     "name": "folk",
+     "count": 1
+    },
+    {
+     "name": "singer-songwriter",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-15",
+   "venue": "The Prince Albert",
+   "title": "City Baby Attacked By Rats Festival 2",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "City Baby Attacked By Rats Festival 2",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-16",
+   "venue": "Brighton Centre",
+   "title": "Ricky Gervais",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Ricky Gervais",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-16",
+   "venue": "DUST",
+   "title": "Grommet",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Grommet",
+   "reason": "3 artists share this name"
+  },
+  {
+   "date": "2026-11-16",
+   "venue": "The Hope & Ruin",
+   "title": "60juno",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "60juno",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-16",
+   "venue": "The Prince Albert",
+   "title": "Dermot Henry",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Dermot Henry",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-11-17",
+   "venue": "Brighton Centre",
+   "title": "Ricky Gervais",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Ricky Gervais",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-17",
+   "venue": "DUST",
+   "title": "CHARLIE NOORDEWIER",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "CHARLIE NOORDEWIER",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-18",
+   "venue": "Concorde 2",
+   "title": "Oh My God! It's The Church",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Oh My God! It's The Church",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-18",
+   "venue": "Brighton Centre",
+   "title": "Skye Newman",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Skye Newman",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-18",
+   "venue": "CHALK",
+   "title": "Seb Lowe",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Seb Lowe",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-11-18",
+   "venue": "Green Door Store",
+   "title": "lavender",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "lavender",
+   "reason": "8 artists share this name"
+  },
+  {
+   "date": "2026-11-18",
+   "venue": "The Prince Albert",
+   "title": "Outpost Drive",
+   "category": "Music",
+   "genre": "Folk & Country",
+   "source": "musicbrainz",
+   "act": "Outpost Drive",
+   "musicbrainz": "https://musicbrainz.org/artist/5403e1bd-32a3-455a-89ef-1cee9498e865",
+   "mb_genres": [
+    {
+     "name": "indie folk",
+     "count": 1
+    },
+    {
+     "name": "singer-songwriter",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "venue": "Theatre Royal Brighton",
+   "title": "Man In The Mirror - A Tribute To Michael Jackson",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2026-11-18",
+   "venue": "Volks",
+   "title": "POISON RUÏN",
+   "category": "Music",
+   "genre": "Punk & Metal",
+   "source": "musicbrainz",
+   "act": "POISON RUÏN",
+   "musicbrainz": "https://musicbrainz.org/artist/99e1a3c4-3f44-4c6d-9098-5380e3056fae",
+   "mb_genres": [
+    {
+     "name": "deathrock",
+     "count": 1
+    },
+    {
+     "name": "post-punk",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "venue": "Concorde 2",
+   "title": "Forever Nu - 25th Anniversary of Toxicity & Iowa",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Forever Nu",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-19",
+   "venue": "A L P H A B E T",
+   "title": "Gold Panda",
+   "category": "Music",
+   "genre": "Electronic",
+   "source": "musicbrainz",
+   "act": "Gold Panda",
+   "musicbrainz": "https://musicbrainz.org/artist/bfbccd40-1a06-4ee7-b24d-b2f8cc714fa9",
+   "mb_genres": [
+    {
+     "name": "electronic",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "venue": "Concorde 2",
+   "title": "Chop Suey!, SlipNot A7Xperience, Propa Roach",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Chop Suey!, SlipNot A7Xperience, Propa Roach",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-19",
+   "venue": "DUST",
+   "title": "TOKYO TEA ROOM + Special Guests",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "TOKYO TEA ROOM",
+   "musicbrainz": "https://musicbrainz.org/artist/f836a8dd-6b20-4d95-9e0f-5b758ff3eeb3",
+   "mb_genres": [
+    {
+     "name": "dream pop",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "venue": "Green Door Store",
+   "title": "GENN",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "GENN",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-19",
+   "venue": "Komedia",
+   "title": "Moving Pictures - A Tribute to Rush",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2026-11-19",
+   "venue": "The Prince Albert",
+   "title": "Niall McNamee",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Niall McNamee",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-19",
+   "venue": "Theatre Royal Brighton",
+   "title": "The Yacht Rock Experience",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2026-11-20",
+   "venue": "Concorde 2",
+   "title": "UK Foo Fighters",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "UK Foo Fighters",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-20",
+   "venue": "Concorde 2",
+   "title": "State of Us Presents - HAAi, Planningtorock DJ & Dykes On Decks",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "State of Us Presents",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-20",
+   "venue": "CHALK",
+   "title": "Reverend And The Makers",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Reverend And The Makers",
+   "musicbrainz": "https://musicbrainz.org/artist/e472c434-9eb9-41d3-b493-0d2f115faed2",
+   "mb_genres": [
+    {
+     "name": "rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-20",
+   "venue": "Green Door Store",
+   "title": "Barbican Estate",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Barbican Estate",
+   "musicbrainz": "https://musicbrainz.org/artist/4fc4d344-fbd9-4043-acee-8d52553b21ee",
+   "mb_genres": [
+    {
+     "name": "psychedelic rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-20",
+   "venue": "Komedia",
+   "title": "SWEAT: Queer Hyperpop Party Presents Gupi",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "SWEAT",
+   "reason": "7 artists share this name"
+  },
+  {
+   "date": "2026-11-20",
+   "venue": "Quarters",
+   "title": "Degs Friends",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Degs Friends",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-20",
+   "venue": "The Hope & Ruin",
+   "title": "Grandmas House",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Grandmas House",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-20",
+   "venue": "The Prince Albert",
+   "title": "The Spitfires",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Spitfires",
+   "reason": "5 artists share this name"
+  },
+  {
+   "date": "2026-11-21",
+   "venue": "Concorde 2",
+   "title": "Getdown Services",
+   "category": "Music",
+   "genre": "Punk & Metal",
+   "source": "musicbrainz",
+   "act": "Getdown Services",
+   "musicbrainz": "https://musicbrainz.org/artist/ca57dd61-590f-4605-85ec-72e947a6148b",
+   "mb_genres": [
+    {
+     "name": "art pop",
+     "count": 1
+    },
+    {
+     "name": "disco",
+     "count": 1
+    },
+    {
+     "name": "post-punk",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-11-21",
+   "venue": "Concorde 2",
+   "title": "Culture Shock",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Culture Shock",
+   "reason": "10 artists share this name"
+  },
+  {
+   "date": "2026-11-21",
+   "venue": "A L P H A B E T",
+   "title": "Pearl & The Oysters",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Pearl & The Oysters",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-11-21",
+   "venue": "Brighton Centre",
+   "title": "The Australian Pink Floyd Show",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "The Australian Pink Floyd Show",
+   "musicbrainz": "https://musicbrainz.org/artist/1814cbfc-131d-473f-a6e7-7208a25a69c1",
+   "mb_genres": [
+    {
+     "name": "progressive rock",
+     "count": 1
+    },
+    {
+     "name": "psychedelic rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-21",
+   "venue": "CHALK",
+   "title": "The Undertones",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Undertones",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-11-21",
+   "venue": "Quarters",
+   "title": "Locklead + Julian Anthony",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Locklead",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-21",
+   "venue": "Quarters",
+   "title": "R&B Mania",
+   "category": "Club",
+   "genre": "Hip-hop & R&B",
+   "source": "title"
+  },
+  {
+   "date": "2026-11-21",
+   "venue": "The Pipeline",
+   "title": "IO / Playing Alice / Spooky Huge / Dateless Wonder Club",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "IO / Playing Alice / Spooky Huge / Dateless Wonder Club",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-21",
+   "venue": "The Prince Albert",
+   "title": "The Jack Cades",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Jack Cades",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-22",
+   "venue": "Komedia",
+   "title": "Sundae Club",
+   "category": "Club",
+   "genre": "Electronic",
+   "source": "musicbrainz",
+   "act": "Sundae Club",
+   "musicbrainz": "https://musicbrainz.org/artist/e896b296-c440-4bdc-99d6-1ea6f511c7ab",
+   "mb_genres": [
+    {
+     "name": "electronic",
+     "count": 1
+    },
+    {
+     "name": "electronica",
+     "count": 1
+    },
+    {
+     "name": "progressive",
+     "count": 1
+    },
+    {
+     "name": "techno",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-22",
+   "venue": "Concorde 2",
+   "title": "Getdown Services",
+   "category": "Music",
+   "genre": "Punk & Metal",
+   "source": "musicbrainz",
+   "act": "Getdown Services",
+   "musicbrainz": "https://musicbrainz.org/artist/ca57dd61-590f-4605-85ec-72e947a6148b",
+   "mb_genres": [
+    {
+     "name": "art pop",
+     "count": 1
+    },
+    {
+     "name": "disco",
+     "count": 1
+    },
+    {
+     "name": "post-punk",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-11-22",
+   "venue": "CHALK",
+   "title": "Jesca Hoop",
+   "category": "Music",
+   "genre": "Folk & Country",
+   "source": "musicbrainz",
+   "act": "Jesca Hoop",
+   "musicbrainz": "https://musicbrainz.org/artist/b5330942-ffdf-49cb-8a13-b5d7b5d67bff",
+   "mb_genres": [
+    {
+     "name": "alternative rock",
+     "count": 1
+    },
+    {
+     "name": "art pop",
+     "count": 1
+    },
+    {
+     "name": "indie folk",
+     "count": 3
+    },
+    {
+     "name": "indie rock",
+     "count": 1
+    },
+    {
+     "name": "singer-songwriter",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-11-22",
+   "venue": "The Prince Albert",
+   "title": "Inner Terrestrials",
+   "category": "Music",
+   "genre": "Punk & Metal",
+   "source": "musicbrainz",
+   "act": "Inner Terrestrials",
+   "musicbrainz": "https://musicbrainz.org/artist/081f0b70-f191-40a1-9da4-1688ec61bc92",
+   "mb_genres": [
+    {
+     "name": "punk",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-11-22",
+   "venue": "The Prince Albert",
+   "title": "Mildred",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Mildred",
+   "reason": "5 artists share this name"
+  },
+  {
+   "date": "2026-11-23",
+   "venue": "Concorde 2",
+   "title": "The Big Moon",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "The Big Moon",
+   "musicbrainz": "https://musicbrainz.org/artist/9bb06c9f-31d7-4809-9e95-2e647a23a735",
+   "mb_genres": [
+    {
+     "name": "alternative rock",
+     "count": 2
+    },
+    {
+     "name": "dream pop",
+     "count": 2
+    },
+    {
+     "name": "indie pop",
+     "count": 2
+    },
+    {
+     "name": "indie rock",
+     "count": 2
+    },
+    {
+     "name": "shoegaze",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "venue": "CHALK",
+   "title": "Cheekface Emperor X, Playboy Manbaby",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Cheekface Emperor X, Playboy Manbaby",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-25",
+   "venue": "Concorde 2",
+   "title": "DakhaBrakha",
+   "category": "Music",
+   "genre": "Folk & Country",
+   "source": "musicbrainz",
+   "act": "DakhaBrakha",
+   "musicbrainz": "https://musicbrainz.org/artist/208334a1-abf0-4791-9705-b45838244b29",
+   "mb_genres": [
+    {
+     "name": "experimental",
+     "count": 2
+    },
+    {
+     "name": "folk",
+     "count": 2
+    },
+    {
+     "name": "white voice",
+     "count": 2
+    },
+    {
+     "name": "world fusion",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "venue": "Brighton Centre",
+   "title": "Paul Smith (Comedian)",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Paul Smith",
+   "reason": "9 artists share this name"
+  },
+  {
+   "date": "2026-11-25",
+   "venue": "CHALK",
+   "title": "This Is Lorelei",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "This Is Lorelei",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-26",
+   "venue": "Concorde 2",
+   "title": "Graham Coxon",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Graham Coxon",
+   "musicbrainz": "https://musicbrainz.org/artist/fb56cc34-2ab1-4621-ac18-9bf2895e5f4f",
+   "mb_genres": [
+    {
+     "name": "alternative rock",
+     "count": 1
+    },
+    {
+     "name": "contemporary folk",
+     "count": 1
+    },
+    {
+     "name": "experimental rock",
+     "count": 1
+    },
+    {
+     "name": "indie rock",
+     "count": 1
+    },
+    {
+     "name": "rock",
+     "count": 1
+    },
+    {
+     "name": "singer-songwriter",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "venue": "Brighton Centre",
+   "title": "Bloc Party & Interpol",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Bloc Party & Interpol",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-26",
+   "venue": "Brighton Centre",
+   "title": "Interpol, Bloc Party",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Interpol, Bloc Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-26",
+   "venue": "Green Door Store",
+   "title": "Pyncher",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Pyncher",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-26",
+   "venue": "The Hope & Ruin",
+   "title": "KEG",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "KEG",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-26",
+   "venue": "The Prince Albert",
+   "title": "Guana Batz",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Guana Batz",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-11-26",
+   "venue": "Volks",
+   "title": "SLUMBER",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "SLUMBER",
+   "reason": "8 artists share this name"
+  },
+  {
+   "date": "2026-11-27",
+   "venue": "Concorde 2",
+   "title": "Uncle Acid And The Deadbeats",
+   "category": "Music",
+   "genre": "Punk & Metal",
+   "source": "musicbrainz",
+   "act": "Uncle Acid And The Deadbeats",
+   "musicbrainz": "https://musicbrainz.org/artist/e5edd3b8-2a81-42c4-93a4-c19a10713295",
+   "mb_genres": [
+    {
+     "name": "doom metal",
+     "count": 3
+    },
+    {
+     "name": "heavy psych",
+     "count": 4
+    },
+    {
+     "name": "psychedelic",
+     "count": 1
+    },
+    {
+     "name": "psychedelic rock",
+     "count": 3
+    },
+    {
+     "name": "stoner rock",
+     "count": 4
+    },
+    {
+     "name": "traditional doom metal",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "venue": "A L P H A B E T",
+   "title": "Jetstream Pony / Firestations",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Jetstream Pony / Firestations",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-27",
+   "venue": "Brighton Centre",
+   "title": "Interpol, Bloc Party",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Interpol, Bloc Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-27",
+   "venue": "Brighton Dome",
+   "title": "Brighton Dome Backstage Tours",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Brighton Dome Backstage Tours",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-27",
+   "venue": "Brighton Dome",
+   "title": "Heritage & Tours",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Heritage & Tours",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-27",
+   "venue": "DUST",
+   "title": "Reggaeton Party",
+   "category": "Club",
+   "genre": "Latin & Afrobeats",
+   "source": "title"
+  },
+  {
+   "date": "2026-11-27",
+   "venue": "Quarters",
+   "title": "Carnival Collective",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Carnival Collective",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-27",
+   "venue": "Quarters",
+   "title": "Kings Of The Rollers",
+   "category": "Club",
+   "genre": "Drum & Bass",
+   "source": "musicbrainz",
+   "act": "Kings Of The Rollers",
+   "musicbrainz": "https://musicbrainz.org/artist/21382a0a-d615-4c1e-81a4-ae610acbd627",
+   "mb_genres": [
+    {
+     "name": "drum and bass",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "venue": "Volks",
+   "title": "COWBOYY",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "COWBOYY",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-28",
+   "venue": "Concorde 2",
+   "title": "Day Fever",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Day Fever",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-28",
+   "venue": "Komedia",
+   "title": "Funny Women Live in Brighton",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Funny Women Live in Brighton",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-28",
+   "venue": "Concorde 2",
+   "title": "Moody Disco - Marsolo",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Moody Disco",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-28",
+   "venue": "CHALK",
+   "title": "Death In Vegas",
+   "category": "Music",
+   "genre": "Electronic",
+   "source": "musicbrainz",
+   "act": "Death In Vegas",
+   "musicbrainz": "https://musicbrainz.org/artist/5b32946a-4c08-4a75-b1b1-60700470671f",
+   "mb_genres": [
+    {
+     "name": "alternative dance",
+     "count": 1
+    },
+    {
+     "name": "alternative rock",
+     "count": 1
+    },
+    {
+     "name": "ambient",
+     "count": 1
+    },
+    {
+     "name": "big beat",
+     "count": 2
+    },
+    {
+     "name": "breakbeat",
+     "count": 1
+    },
+    {
+     "name": "breaks",
+     "count": 1
+    },
+    {
+     "name": "club",
+     "count": 1
+    },
+    {
+     "name": "dance",
+     "count": 1
+    },
+    {
+     "name": "edm",
+     "count": 1
+    },
+    {
+     "name": "electronic",
+     "count": 4
+    },
+    {
+     "name": "electronica",
+     "count": 1
+    },
+    {
+     "name": "experimental",
+     "count": 1
+    },
+    {
+     "name": "house",
+     "count": 1
+    },
+    {
+     "name": "melodic house",
+     "count": 1
+    },
+    {
+     "name": "melodic techno",
+     "count": 1
+    },
+    {
+     "name": "neo-psychedelia",
+     "count": 3
+    },
+    {
+     "name": "pop",
+     "count": 1
+    },
+    {
+     "name": "pop rock",
+     "count": 1
+    },
+    {
+     "name": "shoegaze",
+     "count": 3
+    },
+    {
+     "name": "techno",
+     "count": 1
+    },
+    {
+     "name": "trip hop",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-11-28",
+   "venue": "DUST",
+   "title": "DISGUSTING SISTERS",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "DISGUSTING SISTERS",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-28",
+   "venue": "Patterns",
+   "title": "Utah Saints",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Utah Saints",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-11-28",
+   "venue": "Quarters",
+   "title": "Shanti Celeste Midland",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Shanti Celeste Midland",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-28",
+   "venue": "The Prince Albert",
+   "title": "Digitalis / Palindrones",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Digitalis / Palindrones",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-28",
+   "venue": "Volks",
+   "title": "Dusk Before Dark",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Dusk Before Dark",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-11-29",
+   "venue": "Concorde 2",
+   "title": "Gotts Street Park",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Gotts Street Park",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-11-29",
+   "venue": "A L P H A B E T",
+   "title": "Dylan LeBlanc",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Dylan LeBlanc",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-11-29",
+   "venue": "Komedia",
+   "title": "Brighton Soul Club",
+   "category": "Club",
+   "genre": "Jazz, Soul & Funk",
+   "source": "title"
+  },
+  {
+   "date": "2026-11-29",
+   "venue": "The Prince Albert",
+   "title": "The Amber Squad / The Sleepers / Sweet Jonny",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Amber Squad / The Sleepers / Sweet Jonny",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-01",
+   "venue": "Concorde 2",
+   "title": "Andrew Cushin",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Andrew Cushin",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-12-01",
+   "venue": "Brighton Centre",
+   "title": "Bill Bailey",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Bill Bailey",
+   "reason": "3 artists share this name"
+  },
+  {
+   "date": "2026-12-01",
+   "venue": "CHALK",
+   "title": "Westside Cowboy",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Westside Cowboy",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-12-01",
+   "venue": "DUST",
+   "title": "THISTLE.",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "THISTLE.",
+   "reason": "7 artists share this name"
+  },
+  {
+   "date": "2026-12-01",
+   "venue": "Green Door Store",
+   "title": "mustbejohn",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "mustbejohn",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-12-02",
+   "venue": "Concorde 2",
+   "title": "The Ordinary Boys",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "The Ordinary Boys",
+   "musicbrainz": "https://musicbrainz.org/artist/69b50aed-f122-4c45-aba9-863043f5b513",
+   "mb_genres": [
+    {
+     "name": "britpop",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "venue": "CHALK",
+   "title": "Kurupt FM",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Kurupt FM",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-12-03",
+   "venue": "Concorde 2",
+   "title": "The House of Love",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The House of Love",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-12-03",
+   "venue": "Komedia",
+   "title": "Komedia Christmas Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Komedia Christmas Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-03",
+   "venue": "The Hope & Ruin",
+   "title": "Makthaverskan",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Makthaverskan",
+   "musicbrainz": "https://musicbrainz.org/artist/735f0aca-dd56-4247-8d11-1d7260c25436",
+   "mb_genres": [
+    {
+     "name": "dream pop",
+     "count": 1
+    },
+    {
+     "name": "indie rock",
+     "count": 1
+    },
+    {
+     "name": "post-punk",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "venue": "Brighton Centre",
+   "title": "Royal Blood",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Royal Blood",
+   "reason": "6 artists share this name"
+  },
+  {
+   "date": "2026-12-04",
+   "venue": "Concorde 2",
+   "title": "Martin Kemp - Back To The 80s Xmas Special",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Martin Kemp",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-12-04",
+   "venue": "A L P H A B E T",
+   "title": "Ríoghnach Connolly / Honeyfeet",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Ríoghnach Connolly / Honeyfeet",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-04",
+   "venue": "CHALK",
+   "title": "Alborosie",
+   "category": "Music",
+   "genre": "Reggae & Ska",
+   "source": "musicbrainz",
+   "act": "Alborosie",
+   "musicbrainz": "https://musicbrainz.org/artist/dad904da-8bd7-46b2-b202-f9a9ecd6bbab",
+   "mb_genres": [
+    {
+     "name": "dancehall",
+     "count": 3
+    },
+    {
+     "name": "dub",
+     "count": 3
+    },
+    {
+     "name": "reggae",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "venue": "Green Door Store",
+   "title": "Danalogue",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Danalogue",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-12-04",
+   "venue": "Komedia",
+   "title": "Komedia Christmas Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Komedia Christmas Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-04",
+   "venue": "Patterns",
+   "title": "Good Health Good Wealth",
+   "category": "Music",
+   "genre": "Pop",
+   "source": "musicbrainz",
+   "act": "Good Health Good Wealth",
+   "musicbrainz": "https://musicbrainz.org/artist/492b0368-e6c6-4578-bf37-3b01a59cfd97",
+   "mb_genres": [
+    {
+     "name": "alternative pop",
+     "count": 1
+    },
+    {
+     "name": "indie pop",
+     "count": 1
+    },
+    {
+     "name": "pop",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "venue": "Quarters",
+   "title": "QUANTIC (DJ SET)",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "QUANTIC",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-12-04",
+   "venue": "The Pipeline",
+   "title": "Hurly Burly",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Hurly Burly",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-12-04",
+   "venue": "Volks",
+   "title": "Guns 2 Roses",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Guns 2 Roses",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-12-05",
+   "venue": "Komedia",
+   "title": "The Sassy Cabaret Club Presents…A Christmas Cracker!",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "The Sassy Cabaret Club Presents…A Christmas Cracker!",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-05",
+   "venue": "Concorde 2",
+   "title": "Beefmince",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Beefmince",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-05",
+   "venue": "Brighton Centre",
+   "title": "Squeeze Billy Bragg",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Squeeze Billy Bragg",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-05",
+   "venue": "Komedia",
+   "title": "Komedia Christmas Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Komedia Christmas Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-06",
+   "venue": "Concorde 2",
+   "title": "Electric Six",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Electric Six",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-12-06",
+   "venue": "Brighton Centre",
+   "title": "Morrissey",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Morrissey",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-12-06",
+   "venue": "The Prince Albert",
+   "title": "Vive Le XMESS",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Vive Le XMESS",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-07",
+   "venue": "Brighton Centre",
+   "title": "The Holiday in Concert - Film with Live Orchestra",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2026-12-07",
+   "venue": "Brighton Centre",
+   "title": "The Holiday In Concert - The Film with Live Orchestra",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2026-12-08",
+   "venue": "Brighton Centre",
+   "title": "Ocean Colour Scene The Enemy",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Ocean Colour Scene The Enemy",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-08",
+   "venue": "Concorde 2",
+   "title": "THE SCRIPT",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "THE SCRIPT",
+   "musicbrainz": "https://musicbrainz.org/artist/4c98aa1b-34eb-4336-987f-5e50aa059c00",
+   "mb_genres": [
+    {
+     "name": "alternative rock",
+     "count": 1
+    },
+    {
+     "name": "pop",
+     "count": 1
+    },
+    {
+     "name": "pop rock",
+     "count": 2
+    },
+    {
+     "name": "rock",
+     "count": 2
+    },
+    {
+     "name": "soft rock",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-12-08",
+   "venue": "Patterns",
+   "title": "Ethan Regan",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Ethan Regan",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-12-09",
+   "venue": "Concorde 2",
+   "title": "Young Knives",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Young Knives",
+   "musicbrainz": "https://musicbrainz.org/artist/b26b4b58-10b6-42e9-ba80-b1addd4b0adf",
+   "mb_genres": [
+    {
+     "name": "art punk",
+     "count": 1
+    },
+    {
+     "name": "art rock",
+     "count": 1
+    },
+    {
+     "name": "electronic",
+     "count": 1
+    },
+    {
+     "name": "experimental rock",
+     "count": 1
+    },
+    {
+     "name": "indie rock",
+     "count": 1
+    },
+    {
+     "name": "industrial rock",
+     "count": 1
+    },
+    {
+     "name": "neo-psychedelia",
+     "count": 1
+    },
+    {
+     "name": "noise rock",
+     "count": 1
+    },
+    {
+     "name": "post-punk",
+     "count": 1
+    },
+    {
+     "name": "post-punk revival",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-12-09",
+   "venue": "CHALK",
+   "title": "Big Special The Joy Hotel, Bradley Taylor",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Big Special The Joy Hotel, Bradley Taylor",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-09",
+   "venue": "Patterns",
+   "title": "Daydreamers",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Daydreamers",
+   "reason": "3 artists share this name"
+  },
+  {
+   "date": "2026-12-10",
+   "venue": "Concorde 2",
+   "title": "Buzzcocks",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Buzzcocks",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2026-12-10",
+   "venue": "Komedia",
+   "title": "Christian Jegard’s Christmas Bedsit Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Christian Jegard’s Christmas Bedsit Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-10",
+   "venue": "DUST",
+   "title": "The Black Queen",
+   "category": "Music",
+   "genre": "Electronic",
+   "source": "musicbrainz",
+   "act": "The Black Queen",
+   "musicbrainz": "https://musicbrainz.org/artist/e89e325e-ae11-4c2a-86a8-3e9a967ffda3",
+   "mb_genres": [
+    {
+     "name": "ambient",
+     "count": 1
+    },
+    {
+     "name": "dark wave",
+     "count": 1
+    },
+    {
+     "name": "electronic",
+     "count": 1
+    },
+    {
+     "name": "synth-pop",
+     "count": 1
+    },
+    {
+     "name": "synthwave",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-12-10",
+   "venue": "A L P H A B E T",
+   "title": "CQ Wrestling",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "CQ Wrestling",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-12-10",
+   "venue": "Komedia",
+   "title": "Komedia Christmas Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Komedia Christmas Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-11",
+   "venue": "Concorde 2",
+   "title": "Elvana",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Elvana",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-12-11",
+   "venue": "Brighton Centre",
+   "title": "UB40 Featuring Ali Campbell",
+   "category": "Music",
+   "genre": "Reggae & Ska",
+   "source": "musicbrainz",
+   "act": "UB40",
+   "musicbrainz": "https://musicbrainz.org/artist/7113aab7-628f-4050-ae49-dbecac110ca8",
+   "mb_genres": [
+    {
+     "name": "dub",
+     "count": 3
+    },
+    {
+     "name": "pop",
+     "count": 2
+    },
+    {
+     "name": "reggae",
+     "count": 9
+    },
+    {
+     "name": "reggae-pop",
+     "count": 1
+    },
+    {
+     "name": "roots reggae",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-12-11",
+   "venue": "CHALK",
+   "title": "UK Subs Knock Off, The Guitar Gangsters",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "UK Subs Knock Off, The Guitar Gangsters",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-11",
+   "venue": "DUST",
+   "title": "GOODNIGHT, TEXAS",
+   "category": "Music",
+   "genre": "Folk & Country",
+   "source": "musicbrainz",
+   "act": "GOODNIGHT, TEXAS",
+   "musicbrainz": "https://musicbrainz.org/artist/5def8c5b-3a30-43b8-95ee-5c830d717694",
+   "mb_genres": [
+    {
+     "name": "alternative country",
+     "count": 1
+    },
+    {
+     "name": "americana",
+     "count": 1
+    },
+    {
+     "name": "folk",
+     "count": 1
+    },
+    {
+     "name": "folk rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-12-11",
+   "venue": "Komedia",
+   "title": "Komedia Christmas Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Komedia Christmas Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-11",
+   "venue": "Patterns",
+   "title": "SLAG",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "SLAG",
+   "reason": "8 artists share this name"
+  },
+  {
+   "date": "2026-12-11",
+   "venue": "Quarters",
+   "title": "City Wall x Mark Broom",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "City Wall x Mark Broom",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-11",
+   "venue": "Quarters",
+   "title": "DADDY G (Massive Attack)",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "DADDY G",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-12-12",
+   "venue": "A L P H A B E T",
+   "title": "The Roebucks",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Roebucks",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-12-12",
+   "venue": "Brighton Centre",
+   "title": "Jools Holland & His Rhythm & Blues Orchestra Roachford, Joe Webb",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Jools Holland & His Rhythm & Blues Orchestra Roachford, Joe Webb",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-12",
+   "venue": "CHALK",
+   "title": "Gentleman's Dub Club",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Gentleman's Dub Club",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-12",
+   "venue": "DUST",
+   "title": "Barbara",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Barbara",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2026-12-12",
+   "venue": "Komedia",
+   "title": "Komedia Christmas Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Komedia Christmas Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-12",
+   "venue": "Quarters",
+   "title": "Trancecoda Presents J00F Editions",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Trancecoda Presents J00F Editions",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-13",
+   "venue": "Brighton Centre",
+   "title": "Disney's The Muppet Christmas Carol in concert live to film",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2026-12-13",
+   "venue": "Brighton Centre",
+   "title": "The Muppet Christmas Carol in Concert",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2026-12-13",
+   "venue": "Komedia",
+   "title": "Komedia Christmas Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Komedia Christmas Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-13",
+   "venue": "The Prince Albert",
+   "title": "Criminal Damage / Face Up! / Not The Face / City Riot",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Criminal Damage / Face Up! / Not The Face / City Riot",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-15",
+   "venue": "Concorde 2",
+   "title": "The Simpsons Ultimate Quiz",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Simpsons Ultimate Quiz",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-15",
+   "venue": "Brighton Centre",
+   "title": "The Darkness Brothers Osborne",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Darkness Brothers Osborne",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-16",
+   "venue": "Concorde 2",
+   "title": "Abba Revival",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Abba Revival",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-16",
+   "venue": "Concorde 2",
+   "title": "Revival - ABBA Tribute Band",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2026-12-16",
+   "venue": "The Hope & Ruin",
+   "title": "GIRLBAND! + Currls + tall child + Kanukai",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "GIRLBAND!",
+   "reason": "6 artists share this name"
+  },
+  {
+   "date": "2026-12-17",
+   "venue": "A L P H A B E T",
+   "title": "1000 Rabbits",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "1000 Rabbits",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-12-17",
+   "venue": "Komedia",
+   "title": "Komedia Christmas Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Komedia Christmas Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-18",
+   "venue": "Concorde 2",
+   "title": "80s HiFi Christmas Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "80s HiFi Christmas Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-18",
+   "venue": "Brighton Centre",
+   "title": "Step Into Christmas",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Step Into Christmas",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-18",
+   "venue": "Komedia",
+   "title": "Komedia Christmas Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Komedia Christmas Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-18",
+   "venue": "The Prince Albert",
+   "title": "Helen McCookerybook / ASBO Derek",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Helen McCookerybook / ASBO Derek",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-19",
+   "venue": "Concorde 2",
+   "title": "Absolute Bowie Christmas Special",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Absolute Bowie Christmas Special",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-19",
+   "venue": "Brighton Centre",
+   "title": "The Bootleg Beatles",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "The Bootleg Beatles",
+   "musicbrainz": "https://musicbrainz.org/artist/78f48270-d409-4454-b020-f33325da8e5b",
+   "mb_genres": [
+    {
+     "name": "rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-12-19",
+   "venue": "Komedia",
+   "title": "Komedia Christmas Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Komedia Christmas Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-19",
+   "venue": "Komedia",
+   "title": "Lovers II Friends – 90s/00s Day Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Lovers II Friends",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-20",
+   "venue": "Brighton Centre",
+   "title": "Jamie T",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "Jamie T",
+   "musicbrainz": "https://musicbrainz.org/artist/bc883961-64d4-46b3-8b1c-64009854291c",
+   "mb_genres": [
+    {
+     "name": "hip hop",
+     "count": 1
+    },
+    {
+     "name": "indie pop",
+     "count": 1
+    },
+    {
+     "name": "indie rock",
+     "count": 3
+    },
+    {
+     "name": "singer-songwriter",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-12-20",
+   "venue": "Concorde 2",
+   "title": "The Smyths",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Smyths",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2026-12-21",
+   "venue": "Brighton Centre",
+   "title": "Love Actually - Live in Concert",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2026-12-22",
+   "venue": "Concorde 2",
+   "title": "Resident Presents The Script",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Resident Presents The Script",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-22",
+   "venue": "Brighton Centre",
+   "title": "Anton at Christmas",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Anton at Christmas",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-22",
+   "venue": "Concorde 2",
+   "title": "Resident Presents The Script",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Resident Presents The Script",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2026-12-23",
+   "venue": "Concorde 2",
+   "title": "From The Jam",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "From The Jam",
+   "musicbrainz": "https://musicbrainz.org/artist/b38041f2-24e7-4733-97cd-0bf51fa1439d",
+   "mb_genres": [
+    {
+     "name": "pop",
+     "count": 1
+    },
+    {
+     "name": "pop rock",
+     "count": 1
+    },
+    {
+     "name": "rock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-12-31",
+   "venue": "Komedia",
+   "title": "Boogie Wonderland – 70s Disco NYE party!",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Boogie Wonderland",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-01-03",
+   "venue": "Brighton Centre",
+   "title": "Shen Yun - China Before Communism",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Shen Yun",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-01-04",
+   "venue": "Brighton Centre",
+   "title": "Shen Yun - China Before Communism",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Shen Yun",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-01-05",
+   "venue": "Brighton Centre",
+   "title": "Shen Yun - China Before Communism",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Shen Yun",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-01-08",
+   "venue": "Concorde 2",
+   "title": "Pigeon",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Pigeon",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2027-01-08",
+   "venue": "Theatre Royal Brighton",
+   "title": "Bowie Experience",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2027-01-12",
+   "venue": "Theatre Royal Brighton",
+   "title": "Go Your Own Way",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Go Your Own Way",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-01-13",
+   "venue": "Theatre Royal Brighton",
+   "title": "It's A Beautiful Noise - The Definitive Tribute To Neil Diamond",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2027-01-19",
+   "venue": "Concorde 2",
+   "title": "The Dolly Parton and Kenny Rogers Experience",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2027-01-20",
+   "venue": "Theatre Royal Brighton",
+   "title": "Killer Queen",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Killer Queen",
+   "reason": "3 artists share this name"
+  },
+  {
+   "date": "2027-01-21",
+   "venue": "CHALK",
+   "title": "David Byrne's Night",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "David Byrne's Night",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2027-01-22",
+   "venue": "The Prince Albert",
+   "title": "Chuck Ragan",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Chuck Ragan",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2027-01-23",
+   "venue": "Patterns",
+   "title": "THE XCERTS",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "THE XCERTS",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-01-24",
+   "venue": "Komedia",
+   "title": "Sundae Club",
+   "category": "Club",
+   "genre": "Electronic",
+   "source": "musicbrainz",
+   "act": "Sundae Club",
+   "musicbrainz": "https://musicbrainz.org/artist/e896b296-c440-4bdc-99d6-1ea6f511c7ab",
+   "mb_genres": [
+    {
+     "name": "electronic",
+     "count": 1
+    },
+    {
+     "name": "electronica",
+     "count": 1
+    },
+    {
+     "name": "progressive",
+     "count": 1
+    },
+    {
+     "name": "techno",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2027-01-27",
+   "venue": "Concorde 2",
+   "title": "Fujiya & Miyagi",
+   "category": "Music",
+   "genre": "Electronic",
+   "source": "musicbrainz",
+   "act": "Fujiya & Miyagi",
+   "musicbrainz": "https://musicbrainz.org/artist/41a94033-8b12-4c60-a22c-38c78801e363",
+   "mb_genres": [
+    {
+     "name": "electronic",
+     "count": 1
+    },
+    {
+     "name": "indietronica",
+     "count": 1
+    },
+    {
+     "name": "krautrock",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2027-01-28",
+   "venue": "Brighton Centre",
+   "title": "Jack Whitehall",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Jack Whitehall",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-01-28",
+   "venue": "Green Door Store",
+   "title": "TV Priest",
+   "category": "Music",
+   "genre": "Punk & Metal",
+   "source": "musicbrainz",
+   "act": "TV Priest",
+   "musicbrainz": "https://musicbrainz.org/artist/cfcfb26e-91c2-4404-b01f-ae3daa01cc20",
+   "mb_genres": [
+    {
+     "name": "post-punk",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2027-01-28",
+   "venue": "The Hope & Ruin",
+   "title": "Keywest",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Keywest",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-01-29",
+   "venue": "Concorde 2",
+   "title": "Jo Whiley's 90s Anthems",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Jo Whiley's 90s Anthems",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2027-01-29",
+   "venue": "Brighton Centre",
+   "title": "Jack Whitehall",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Jack Whitehall",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-01-30",
+   "venue": "Brighton Dome",
+   "title": "JOSÉ GONZALES",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "JOSÉ GONZALES",
+   "reason": "3 artists share this name"
+  },
+  {
+   "date": "2027-01-30",
+   "venue": "CHALK",
+   "title": "The Devout - Depeche Mode Tribute Band",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2027-02-03",
+   "venue": "The Prince Albert",
+   "title": "Modern Woman",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Modern Woman",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-02-04",
+   "venue": "CHALK",
+   "title": "The Scratch",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Scratch",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2027-02-06",
+   "venue": "Brighton Centre",
+   "title": "Bonobo",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Bonobo",
+   "reason": "4 artists share this name"
+  },
+  {
+   "date": "2027-02-11",
+   "venue": "The Prince Albert",
+   "title": "These New South Whales",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "These New South Whales",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-02-12",
+   "venue": "Concorde 2",
+   "title": "Motorheadache",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Motorheadache",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-02-12",
+   "venue": "The Prince Albert",
+   "title": "The Len Price 3",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Len Price 3",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-02-13",
+   "venue": "Concorde 2",
+   "title": "Reggae Orchestra",
+   "category": "Music",
+   "genre": "Reggae & Ska",
+   "source": "title"
+  },
+  {
+   "date": "2027-02-14",
+   "venue": "DUST",
+   "title": "HAYDEN THORPE PERFORMING THE SONGS OF WILD BEASTS",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2027-02-18",
+   "venue": "Komedia",
+   "title": "Red Richardson Premium Economy Tour",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Red Richardson Premium Economy",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2027-02-18",
+   "venue": "Green Door Store",
+   "title": "GREG FREEMAN",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "GREG FREEMAN",
+   "reason": "6 artists share this name"
+  },
+  {
+   "date": "2027-02-19",
+   "venue": "Concorde 2",
+   "title": "The Cureheads",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Cureheads",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-02-19",
+   "venue": "Komedia",
+   "title": "The Music of Wes Anderson Performed by Wes Banderson",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2027-02-19",
+   "venue": "Komedia",
+   "title": "Wes Banderson - The Music Of Wes Anderson",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2027-02-21",
+   "venue": "Komedia",
+   "title": "Sundae Club",
+   "category": "Club",
+   "genre": "Electronic",
+   "source": "musicbrainz",
+   "act": "Sundae Club",
+   "musicbrainz": "https://musicbrainz.org/artist/e896b296-c440-4bdc-99d6-1ea6f511c7ab",
+   "mb_genres": [
+    {
+     "name": "electronic",
+     "count": 1
+    },
+    {
+     "name": "electronica",
+     "count": 1
+    },
+    {
+     "name": "progressive",
+     "count": 1
+    },
+    {
+     "name": "techno",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2027-02-24",
+   "venue": "Theatre Royal Brighton",
+   "title": "Vanessa Williams: Live in Concert",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2027-02-25",
+   "venue": "CHALK",
+   "title": "Iceage",
+   "category": "Music",
+   "genre": "Punk & Metal",
+   "source": "musicbrainz",
+   "act": "Iceage",
+   "musicbrainz": "https://musicbrainz.org/artist/7e01053e-e701-4e55-8a29-b8cfdcdee205",
+   "mb_genres": [
+    {
+     "name": "art punk",
+     "count": 1
+    },
+    {
+     "name": "noise rock",
+     "count": 2
+    },
+    {
+     "name": "post-hardcore",
+     "count": 2
+    },
+    {
+     "name": "post-punk",
+     "count": 2
+    },
+    {
+     "name": "punk blues",
+     "count": 1
+    },
+    {
+     "name": "punk rock",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2027-02-26",
+   "venue": "CHALK",
+   "title": "Scientist",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Scientist",
+   "reason": "6 artists share this name"
+  },
+  {
+   "date": "2027-02-27",
+   "venue": "Komedia",
+   "title": "Funny Women Live in Brighton",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Funny Women Live in Brighton",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2027-02-28",
+   "venue": "The Old Market",
+   "title": "Daniel Martinez Flamenco Company: Al Compas Del Querer - Flamenco",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Daniel Martinez Flamenco Company",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2027-03-06",
+   "venue": "CHALK",
+   "title": "The Rasmus Skarlett Riot",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Rasmus Skarlett Riot",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2027-03-10",
+   "venue": "The Old Market",
+   "title": "Nouvelle Vague - A Date with Depeche Mode Tour",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Nouvelle Vague",
+   "reason": "3 artists share this name"
+  },
+  {
+   "date": "2027-03-11",
+   "venue": "Concorde 2",
+   "title": "Frankie Stew & Harvey Gunn",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Frankie Stew & Harvey Gunn",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-03-12",
+   "venue": "Brighton Centre",
+   "title": "Björn Again",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Björn Again",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-03-13",
+   "venue": "Komedia",
+   "title": "Luke Kidgell – Live in the UK and Ireland",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Luke Kidgell",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2027-03-13",
+   "venue": "Komedia",
+   "title": "Luke Kidgell – Live in the UK and Ireland",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Luke Kidgell",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2027-03-13",
+   "venue": "Brighton Centre",
+   "title": "Disney Princess: The Concert",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Disney Princess",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2027-03-13",
+   "venue": "CHALK",
+   "title": "Saul Williams",
+   "category": "Music",
+   "genre": "Hip-hop & R&B",
+   "source": "musicbrainz",
+   "act": "Saul Williams",
+   "musicbrainz": "https://musicbrainz.org/artist/756cf672-d4ae-4470-a3af-a43d776a211d",
+   "mb_genres": [
+    {
+     "name": "alternative hip hop",
+     "count": 1
+    },
+    {
+     "name": "poetry",
+     "count": 1
+    },
+    {
+     "name": "spoken word",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2027-03-13",
+   "venue": "Green Door Store",
+   "title": "Rowena Wise",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Rowena Wise",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2027-03-19",
+   "venue": "Concorde 2",
+   "title": "The Lilacs",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Lilacs",
+   "reason": "3 artists share this name"
+  },
+  {
+   "date": "2027-03-19",
+   "venue": "CHALK",
+   "title": "HENGE",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "HENGE",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2027-03-20",
+   "venue": "Concorde 2",
+   "title": "Lebanon Hanover",
+   "category": "Music",
+   "genre": "Punk & Metal",
+   "source": "musicbrainz",
+   "act": "Lebanon Hanover",
+   "musicbrainz": "https://musicbrainz.org/artist/7de3b7b4-8288-4baf-929b-98af9224c0cb",
+   "mb_genres": [
+    {
+     "name": "coldwave",
+     "count": 2
+    },
+    {
+     "name": "dark wave",
+     "count": 4
+    },
+    {
+     "name": "gothic",
+     "count": 1
+    },
+    {
+     "name": "gothic rock",
+     "count": 2
+    },
+    {
+     "name": "minimal synth",
+     "count": 1
+    },
+    {
+     "name": "minimal wave",
+     "count": 6
+    },
+    {
+     "name": "neofolk",
+     "count": 1
+    },
+    {
+     "name": "new wave",
+     "count": 1
+    },
+    {
+     "name": "post-industrial",
+     "count": 1
+    },
+    {
+     "name": "post-punk",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "date": "2027-03-21",
+   "venue": "Komedia",
+   "title": "Sundae Club",
+   "category": "Club",
+   "genre": "Electronic",
+   "source": "musicbrainz",
+   "act": "Sundae Club",
+   "musicbrainz": "https://musicbrainz.org/artist/e896b296-c440-4bdc-99d6-1ea6f511c7ab",
+   "mb_genres": [
+    {
+     "name": "electronic",
+     "count": 1
+    },
+    {
+     "name": "electronica",
+     "count": 1
+    },
+    {
+     "name": "progressive",
+     "count": 1
+    },
+    {
+     "name": "techno",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2027-03-26",
+   "venue": "CHALK",
+   "title": "Dirty DC",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Dirty DC",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-03-27",
+   "venue": "Komedia",
+   "title": "Funny Women Live in Brighton",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Funny Women Live in Brighton",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2027-03-31",
+   "venue": "Concorde 2",
+   "title": "Moses Boyd",
+   "category": "Music",
+   "genre": "Electronic",
+   "source": "musicbrainz",
+   "act": "Moses Boyd",
+   "musicbrainz": "https://musicbrainz.org/artist/90c07789-6d90-4b86-9780-0a954cc4469c",
+   "mb_genres": [
+    {
+     "name": "electronic",
+     "count": 1
+    },
+    {
+     "name": "grime",
+     "count": 1
+    },
+    {
+     "name": "hip hop",
+     "count": 1
+    },
+    {
+     "name": "jazz",
+     "count": 1
+    },
+    {
+     "name": "trip hop",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "date": "2027-04-02",
+   "venue": "Concorde 2",
+   "title": "The Big Indie Fest",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Big Indie Fest",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2027-04-03",
+   "venue": "Concorde 2",
+   "title": "Stop Making Sense Live",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Stop Making Sense",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-04-08",
+   "venue": "Brighton Centre",
+   "title": "James Blunt",
+   "category": "Music",
+   "genre": "Indie & Rock",
+   "source": "musicbrainz",
+   "act": "James Blunt",
+   "musicbrainz": "https://musicbrainz.org/artist/ebee61b4-bbdd-4087-9bcb-d5aa099088ec",
+   "mb_genres": [
+    {
+     "name": "acoustic rock",
+     "count": 1
+    },
+    {
+     "name": "britpop",
+     "count": 1
+    },
+    {
+     "name": "folk rock",
+     "count": 1
+    },
+    {
+     "name": "piano rock",
+     "count": 1
+    },
+    {
+     "name": "pop",
+     "count": 4
+    },
+    {
+     "name": "pop rock",
+     "count": 3
+    },
+    {
+     "name": "rock",
+     "count": 2
+    },
+    {
+     "name": "singer-songwriter",
+     "count": 2
+    },
+    {
+     "name": "soft rock",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "date": "2027-04-10",
+   "venue": "Concorde 2",
+   "title": "Keeno Live ft. Vibre Strings",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Keeno",
+   "reason": "3 artists share this name"
+  },
+  {
+   "date": "2027-04-10",
+   "venue": "Quarters",
+   "title": "Rock Day Party",
+   "category": "Club",
+   "genre": null,
+   "source": null,
+   "act": "Rock Day Party",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2027-04-11",
+   "venue": "CHALK",
+   "title": "Emma Ruth Rundle",
+   "category": "Music",
+   "genre": "Folk & Country",
+   "source": "musicbrainz",
+   "act": "Emma Ruth Rundle",
+   "musicbrainz": "https://musicbrainz.org/artist/7ba593b9-79d4-4860-92c8-ade2a1ef4551",
+   "mb_genres": [
+    {
+     "name": "ambient",
+     "count": 2
+    },
+    {
+     "name": "contemporary folk",
+     "count": 3
+    },
+    {
+     "name": "dream pop",
+     "count": 3
+    },
+    {
+     "name": "experimental",
+     "count": 1
+    },
+    {
+     "name": "folk",
+     "count": 1
+    },
+    {
+     "name": "folk rock",
+     "count": 1
+    },
+    {
+     "name": "post-rock",
+     "count": 1
+    },
+    {
+     "name": "singer-songwriter",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "date": "2027-04-16",
+   "venue": "Concorde 2",
+   "title": "Noasis",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Noasis",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-04-17",
+   "venue": "DUST",
+   "title": "MARTIN STEPHENSON & THE DAINTEES",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "MARTIN STEPHENSON & THE DAINTEES",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-04-24",
+   "venue": "Komedia",
+   "title": "Funny Women Live in Brighton",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Funny Women Live in Brighton",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2027-04-25",
+   "venue": "Volks",
+   "title": "SADNESS",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "SADNESS",
+   "reason": "7 artists share this name"
+  },
+  {
+   "date": "2027-04-30",
+   "venue": "Concorde 2",
+   "title": "A Tribute To Amy",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "reason": "not an act name (tribute, festival or mixed bill)"
+  },
+  {
+   "date": "2027-05-01",
+   "venue": "Concorde 2",
+   "title": "Beatles Complete",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Beatles Complete",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-05-08",
+   "venue": "Brighton Centre",
+   "title": "John Bishop",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "John Bishop",
+   "reason": "9 artists share this name"
+  },
+  {
+   "date": "2027-05-08",
+   "venue": "The Prince Albert",
+   "title": "Bec O'Malley",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Bec O'Malley",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-05-22",
+   "venue": "CHALK",
+   "title": "Toby Lee",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Toby Lee",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2027-05-28",
+   "venue": "Concorde 2",
+   "title": "Love - Forever Changes 60th Anniversary Tour",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Love",
+   "reason": "2 artists share this name"
+  },
+  {
+   "date": "2027-05-29",
+   "venue": "CHALK",
+   "title": "The Specials Ltd",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The Specials Ltd",
+   "reason": "no genre tags"
+  },
+  {
+   "date": "2027-05-29",
+   "venue": "The Prince Albert",
+   "title": "Meow Meows Hakuna Pesa, Family of Strangers",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Meow Meows Hakuna Pesa, Family of Strangers",
+   "reason": "not in MusicBrainz"
+  },
+  {
+   "date": "2027-05-30",
+   "venue": "CHALK",
+   "title": "The House & Garage Orchestra",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "The House & Garage Orchestra",
+   "reason": "genres unclear"
+  },
+  {
+   "date": "2027-06-26",
+   "venue": "Komedia",
+   "title": "Funny Women Live in Brighton",
+   "category": "Music",
+   "genre": null,
+   "source": null,
+   "act": "Funny Women Live in Brighton",
+   "reason": "not in MusicBrainz"
+  }
+ ]
+}
