@@ -21,7 +21,8 @@ Listings are refreshed every day at 07:17 (Europe/London) by
    | `"disabled": true` | Don't fetch this page. The venue stays known to the discovery scraper. |
    | `"note"` | Why the entry is set up this way. |
 
-2. **Discovery calendars** (Visit Brighton, Eventbrite, Ticketmaster, Skiddle),
+2. **Discovery calendars** (Visit Brighton, Eventbrite, Ticketmaster, Skiddle,
+   and the promoter JOY. Concerts),
    read by `scripts/scrape-discovery.py`. Events are kept only when they are at
    a venue in `event-sources.json` (or the Amex Stadium).
 
@@ -58,10 +59,17 @@ the scraper could not read it, which usually means the venue changed its site.
 
 ## Venue status (6 October 2026)
 
+JOY. Concerts (`joyconcerts.com/listings`) is read by its own card reader in
+`scrape-discovery.py`: only gigs whose town is Brighton or Hove, at a venue in
+`event-sources.json`, are kept. Its listing has no start times; the venue's own
+listing supplies the time when there is one.
+
+
 | Venue | Status |
 |---|---|
 | Volks, DUST | Own sites gone: listings via Skiddle |
 | Patterns | Own page builds listings with JavaScript: Skiddle added as a second source |
 | The Pipeline, The Gladstone | Own sites gone or broken: listings via Songkick |
 | The Hope & Ruin | Moved to hope.pub |
-| A L P H A B E T, Babble, Old Albion | Switched off: no listings found anywhere |
+| A L P H A B E T | Own listings switched off: its JOY. Concerts gigs come via joyconcerts.com |
+| Babble, Old Albion | Switched off: no listings found anywhere |
