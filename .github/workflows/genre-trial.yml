@@ -1,0 +1,20 @@
+name: Genre trial (temporary)
+on:
+  push:
+    branches: [genre-trial]
+    paths: ['.github/workflows/genre-trial.yml', 'scripts/tag-genres.py']
+permissions:
+  contents: write
+jobs:
+  trial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: { python-version: '3.12' }
+      - run: python scripts/tag-genres.py --self-test
+      - run: python scripts/tag-genres.py --report genre-report.json
+      - run: |
+          git config user.name 'genre trial'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add genre-report.json genre-cache.json && git commit -m 'Genre trial results' && git push origin HEAD:genre-trial
