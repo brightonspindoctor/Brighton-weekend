@@ -21,6 +21,7 @@ GENERIC_TITLES = {
     "more info & tickets", "find out more", "event details", "sold out",
     "on sale", "on sale today", "tickets", "read more", "view event", "openings",
     # Page sections and category labels scraped from venue sites (seen on Brighton Dome pages).
+    "buy ticket", "book ticket", "get ticket", "book now", "more details", "sign up", "subscribe", "newsletter",
     "you might also like", "accessible events", "accessible events theatre", "contemporary music",
     "literature, poetry & spoken word", "literature poetry and spoken word", "spoken word",
     "related events", "similar events", "more events", "whats on", "coming soon",
@@ -101,7 +102,7 @@ for event in events:
     low = title.lower()
     if venue == "patterns" and any(marker in low for marker in PATTERNS_RECURRING):
         removed["patterns_recurring"] += 1; continue
-    if low in GENERIC_TITLES or title_key(title) in GENERIC_KEYS or is_date_only_title(title) or not title:
+    if low in GENERIC_TITLES or title_key(title) in GENERIC_KEYS or not re.search(r"[a-z]{2}", low) or is_date_only_title(title) or not title:
         removed["generic"] += 1; continue
     kept.append(event)
 

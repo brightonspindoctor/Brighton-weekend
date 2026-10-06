@@ -65,10 +65,18 @@ def prefer_fuller_titles(events):
    if not any(fuller_title(x.get('title',''),e.get('title','')) for x in chosen):chosen.append(e)
   kept.extend(chosen)
  return kept
+STALE_DAYS=3  # same rule as scrape-events.py
+def same_show(a,b):
+ ka,kb=title_key(a),title_key(b)
+ if not ka or not kb:return False
+ if ka==kb or ka.startswith(kb+' ') or kb.startswith(ka+' '):return True
+ from difflib import SequenceMatcher
+ return SequenceMatcher(None,ka,kb).ratio()>=0.85
 ROLLOVER_DAYS=60  # same rule as scrape-events.py: "15 Jan" seen in October means next January
 def parse_date(s):
  try:
-  d=dateparser.parse(clean(s),dayfirst=True,fuzzy=True,default=datetime(START.year,1,1))
+  v=clean(s);iso=bool(re.match(r'\d{4}-\d{1,2}-\d{1,2}',v))  # 2026-12-10 is year-month-day, never year-day-month
+  d=dateparser.parse(v,dayfirst=not iso,yearfirst=iso,fuzzy=True,default=datetime(START.year,1,1))
   if not d:return None
   if not re.search(r'\b\d{4}\b',str(s)) and d.date()<START-timedelta(days=ROLLOVER_DAYS):
    try:d=d.replace(year=d.year+1)
@@ -147,22 +155,30 @@ async def main():
   await browser.close()
  data=json.loads(OUT.read_text());merged={}
  key_of=lambda e:(e.get('venue','').lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
- found={key_of(e) for e in all_events}
- # When the calendars loaded properly, drop discovery events they no longer list
- # (cancelled or moved). If they mostly failed, keep everything.
+ today=NOW.date().isoformat();stale_before=(NOW-timedelta(days=STALE_DAYS)).date().isoformat()
+ # When the calendars loaded properly, a discovery event they have not listed
+ # for STALE_DAYS days in a row is dropped (cancelled or moved). If they mostly
+ # failed, nothing is dropped.
  healthy=ok_sources>=max(1,len(SOURCES)//2) and len(all_events)>=10
- removed_stale=0
+ removed_stale=0;matched=set()
  for e in data.get('events',[]):
   if not valid_title(e.get('title','')):continue
+  e.setdefault('last_seen',today)
   key=key_of(e)
-  if healthy and e.get('source')=='discovery' and key not in found:removed_stale+=1;continue
   if key not in merged:merged[key]=e
  for e in all_events:
-  key=(e.get('venue','').lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
-  if key not in merged:merged[key]=e
-  elif merged[key].get('source')=='discovery':
+  key=key_of(e);old=merged.get(key)
+  if old is None:
+   old=next((x for x in merged.values() if (x.get('venue','').lower(),x.get('date',''))==(e.get('venue','').lower(),e.get('date','')) and id(x) not in matched and same_show(x.get('title',''),e.get('title',''))),None)
+  if old is None:merged[key]=dict(e,last_seen=today);matched.add(id(merged[key]));continue
+  matched.add(id(old));old['last_seen']=today
+  if old.get('source')=='discovery':
    # Found again: keep the id, take today's link and details.
-   merged[key]=dict(e,id=merged[key]['id'])
+   k=key_of(old);merged[k]=dict(e,id=old['id'],last_seen=today);matched.add(id(merged[k]))
+ for k,e in list(merged.items()):
+  if healthy and e.get('source')=='discovery' and id(e) not in matched and str(e.get('last_seen',today))<=stale_before:
+   del merged[k];removed_stale+=1
+ data['discovery_report']={'calendars_loaded':ok_sources,'calendars':len(SOURCES),'events_found':len(all_events)}
  events=prefer_fuller_titles(list(merged.values()))
- data['events']=sorted(events,key=lambda x:(x['date'],x.get('time') or '99:99',x['venue'],x['title']));data['venues']=sorted({e['venue'] for e in events});data['updated']=NOW.date().isoformat();OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');print(f'Merged {len(all_events)} discovery events from {ok_sources}/{len(SOURCES)} calendars; removed no-longer-listed: {removed_stale}; events.json now has {len(events)} events')
+ data['events']=sorted(events,key=lambda x:(x['date'],x.get('time') or '99:99',x['venue'],x['title']));data['venues']=sorted({e['venue'] for e in events});data['updated']=NOW.date().isoformat();OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');print(f'Merged {len(all_events)} discovery events from {ok_sources}/{len(SOURCES)} calendars; removed after {STALE_DAYS} days unlisted: {removed_stale}; events.json now has {len(events)} events')
 if __name__=='__main__':asyncio.run(main())
