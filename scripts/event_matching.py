@@ -33,7 +33,9 @@ SEP = r"[\s\-–—|:,·/(\[]+"
 def _plain(text):
     text = html.unescape(str(text or ""))
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
-    return text.lower().replace("&", " and ")
+    # "$layyyter" is how one source styles Slayyyter.
+    text = re.sub(r"\$(?=[a-z])", "s", text.lower())
+    return text.replace("&", " and ")
 
 
 def _key(text):
@@ -59,6 +61,7 @@ def core_title(title, venue=""):
     patterns = [
         r"\s+(?:20\d\d)$",                                         # "... 2026"
         r"\s+tickets?$",                                            # "... tickets"
+        r"\s+free\s+entry$",                                       # "*Free Entry*"
         rf"\s+(?:live\s+)?(?:at|in)\s+(?:the\s+)?(?:{venue_re})(?:\s+{CITY})?$",  # "at Concorde 2 Brighton"
         rf"\s+(?:{venue_re})(?:\s+{CITY})?$",                       # "| Concorde 2"
         rf"\s+(?:live\s+)?in\s+{CITY}$",                            # "live in Brighton"
@@ -107,6 +110,7 @@ def display_title(title, venue=""):
     names = [n for n in _venue_names(venue)]
     venue_re = "|".join(r"\s+".join(map(re.escape, n.split())) for n in names) if names else r"(?!x)x"
     patterns = [
+        r"\s*[*(\[]\s*free\s+entry\s*[*)\]]\s*$",
         rf"\s+(?:live\s+)?(?:at|@)\s+(?:the\s+)?(?:{venue_re})\b[\s,\-–|]*(?:{CITY})?\s*$",
         rf"\s+@\s+.+$",
         rf"\s*[\-–—|·]\s*(?:{CITY})\s*$",
@@ -130,6 +134,7 @@ def _self_test():
         ("Mr Cutts", "Cutts", "Komedia"),
         ("Reggaeton Party", "Reggaeton Party (Brighton)", "DUST"),
         ("Kepler", "Keplter", "Concorde 2"),
+        ("$layyyter", "Slayyyter", "CHALK"),
     ]
     cases_different = [
         ("Brighton v Crystal Palace", "Brighton v Everton", "Amex Stadium"),
@@ -146,6 +151,8 @@ def _self_test():
     assert display_title("Kepler at Concorde 2 - Brighton", "Concorde 2") == "Kepler"
     assert display_title("Hybrid Minds | Brighton", "Concorde 2") == "Hybrid Minds"
     assert display_title("Reggaeton Party (Brighton)", "DUST") == "Reggaeton Party"
+    assert display_title("Bathing Suits *Free Entry*", "Volks") == "Bathing Suits"
+    assert same_show("Bathing Suits", "Bathing Suits *Free Entry*", "Volks")
     assert display_title("Brighton Soul Club", "Komedia") == "Brighton Soul Club"
     assert display_title("Bring Your Own Baby Comedy Brighton", "Komedia") == "Bring Your Own Baby Comedy Brighton"
     assert display_title("Lafs + Supports @ the Pipleline, Brighton", "The Pipeline") == "Lafs + Supports"

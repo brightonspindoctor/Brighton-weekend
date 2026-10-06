@@ -24,13 +24,14 @@ VENUE_ALIASES={
  "brighton komedia":"Komedia","corn exchange":"Brighton Dome","brighton dome":"Brighton Dome",
  "old albion":"Old Albion","the old albion":"Old Albion","the brighton centre":"Brighton Centre",
  "the pipeline":"The Pipeline","pipeline brighton":"The Pipeline","volks club":"Volks","the volks":"Volks",
- "patterns brighton":"Patterns","dust brighton":"DUST","hope & ruin":"The Hope & Ruin","the hope & ruin":"The Hope & Ruin",
+ "patterns brighton":"Patterns","dust brighton":"DUST","alphabet":"A L P H A B E T","alphabet brighton":"A L P H A B E T","hope & ruin":"The Hope & Ruin","the hope & ruin":"The Hope & Ruin",
 }
 SOURCES=[
  "https://www.visitbrighton.com/whats-on/Brighton",
  "https://www.eventbrite.co.uk/d/united-kingdom--brighton/events/",
  "https://www.ticketmaster.co.uk/discover/brighton",
- "https://www.skiddle.com/whats-on/Brighton/"
+ "https://www.skiddle.com/whats-on/Brighton/",
+ "https://www.joyconcerts.com/listings",  # JOY. Concerts, promoter: gigs at Concorde 2, Volks, Hope & Ruin, Green Door Store and more
 ]
 MONTHS=r"Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?"
 DATE_RE=re.compile(rf"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\.?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s*(?:\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?|\d{{1,2}}/\d{{1,2}}/(?:\d{{4}}|\d{{2}}))\b",re.I); TIME_RE=re.compile(r"\b(\d{1,2}(?::\d{2})?\s*(?:am|pm))\b",re.I)
@@ -106,8 +107,32 @@ def make_event(title,date,time,url,venue,text):
  time=to_hhmm(time)
  ident=re.sub(r'[^a-z0-9]+','-',f'{date}-{venue}-{title}'.lower()).strip('-')[:180]
  return {'id':ident,'title':title,'date':date.isoformat(),'venue':venue,'source':'discovery','time':time,'finish_time':'','category':category(title,text),'ticket_url':url}
+def joy_cards(soup,page_url):
+ """JOY. Concerts listings: one <article> per gig with the act in <h2>, venue
+ and town in <li>s, the date as dd/mm/yy in <datetime>, and a Buy link. The
+ promoter also books London, Bristol, Worthing etc., so only Brighton/Hove gigs
+ at venues Brighton Weekend knows are kept. The listing shows no start times;
+ when the venue's own site lists the gig, its time is used (prepare-events.py)."""
+ out=[]
+ for card in soup.find_all('article'):
+  h=card.find('h2');dt=card.find('datetime')
+  items=[clean(li.get_text(' ',strip=True)) for li in card.find_all('li')]
+  if not h or not dt or len(items)<2:continue
+  if not re.fullmatch(r'(?:brighton|hove|brighton\s*(?:&|and)\s*hove)',items[-1],re.I):continue
+  venue=venue_from_text(items[0])
+  if not venue:continue
+  title=clean(h.get_text(' ',strip=True))
+  page=card.find('a',title=re.compile(r'^View event',re.I))
+  buy=next((a for a in card.find_all('a',href=True) if re.search(r'\b(?:buy|tickets?|book)\b',a.get_text(' ',strip=True),re.I)),None)
+  url=urljoin(page_url,(buy or page or {}).get('href') or page_url)
+  e=make_event(title,parse_date(dt.get_text(strip=True)),'',url,venue,'')
+  if e:
+   if e['category']=='Other' and not re.search(r'wrestling|quiz|market|talk',title,re.I):e['category']='Music'
+   out.append(e)
+ return out
 def extract_cards(html,page_url):
  soup=BeautifulSoup(html,'html.parser');out=[]
+ if 'joyconcerts.com' in page_url:return joy_cards(soup,page_url)
  for tag in soup.find_all('script',attrs={'type':re.compile('ld\\+json',re.I)}):
   try:data=json.loads(tag.string or tag.get_text())
   except Exception:continue
