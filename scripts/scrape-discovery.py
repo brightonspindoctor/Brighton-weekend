@@ -32,7 +32,13 @@ SOURCES=[
  "https://www.ticketmaster.co.uk/discover/brighton",
  "https://www.skiddle.com/whats-on/Brighton/",
  "https://www.joyconcerts.com/listings",  # JOY. Concerts, promoter: gigs at Concorde 2, Volks, Hope & Ruin, Green Door Store and more
+ "https://www.tickettailor.com/events/beatdown",  # Beat Down Promotions (hip-hop), sells through Ticket Tailor
 ]
+# Promoters whose own listings we read: their gigs get the promoter's sticker in the app
+# (PROMOTER_STICKERS in index.html), also when a venue's listing of the same gig is the one kept.
+PROMOTERS={'joyconcerts.com':'JOY. Concerts','tickettailor.com/events/beatdown':'Beat Down Promotions'}
+def promoter_for(page_url):return next((name for key,name in PROMOTERS.items() if key in page_url),None)
+BRIGHTON_POSTCODE=re.compile(r'\bBN(?:1|2|3|41|42)\b',re.I)  # Brighton & Hove
 MONTHS=r"Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?"
 DATE_RE=re.compile(rf"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\.?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s*(?:\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?|\d{{1,2}}/\d{{1,2}}/(?:\d{{4}}|\d{{2}}))\b",re.I); TIME_RE=re.compile(r"\b(\d{1,2}(?::\d{2})?\s*(?:am|pm))\b",re.I)
 GENERIC_TITLES={'comedy','classical music','music','talks & debate','talks and debate','dance','theatre','family',"what's on",'events','upcoming events','get tickets','buy tickets','book tickets','learn more','more info','more info & tickets','find out more','event details','sold out','on sale','on sale today','tickets','read more','view event'}
@@ -127,13 +133,37 @@ def joy_cards(soup,page_url):
   url=urljoin(page_url,(buy or page or {}).get('href') or page_url)
   e=make_event(title,parse_date(dt.get_text(strip=True)),'',url,venue,'')
   if e:
-   e['promoter']='JOY. Concerts'  # shown as a sticker on the event card
+   e['promoter']=promoter_for(page_url)  # shown as a sticker on the event card
    if e['category']=='Other' and not re.search(r'wrestling|quiz|market|talk',title,re.I):e['category']='Music'
+   out.append(e)
+ return out
+def tickettailor_cards(soup,page_url):
+ """A promoter's Ticket Tailor page: one <li class="events-listing__item"> per
+ gig, titled 'ACT // DATE // VENUE // TOWN', with the date in
+ .event-meta__date ('Mon 26 Oct 2026 6:30 PM - 10:00 PM') and the place in
+ .event-meta__location ('Chalk, BN1 1NJ'). Only Brighton & Hove postcodes at
+ venues Brighton Weekend knows are kept."""
+ out=[]
+ for card in soup.select('li.events-listing__item'):
+  link=card.select_one('a.event__link');when=card.select_one('.event-meta__date');where=card.select_one('.event-meta__location')
+  if not link or not when or not where:continue
+  place=clean(where.get_text(' ',strip=True))
+  if not BRIGHTON_POSTCODE.search(place):continue
+  venue=venue_from_text(place.split(',')[0])
+  if not venue:continue
+  title=clean(link.get_text(' ',strip=True).split('//')[0])
+  stamp=clean(when.get_text(' ',strip=True))
+  tm=TIME_RE.search(stamp)
+  e=make_event(title,parse_date(re.sub(r'\d{1,2}(?::\d{2})?\s*(?:am|pm).*$','',stamp,flags=re.I)),tm.group(1) if tm else '',urljoin(page_url,link.get('href')),venue,'')
+  if e:
+   e['promoter']=promoter_for(page_url)
+   if e['category']=='Other':e['category']='Music'
    out.append(e)
  return out
 def extract_cards(html,page_url):
  soup=BeautifulSoup(html,'html.parser');out=[]
  if 'joyconcerts.com' in page_url:return joy_cards(soup,page_url)
+ if 'tickettailor.com/events/' in page_url:return tickettailor_cards(soup,page_url)
  for tag in soup.find_all('script',attrs={'type':re.compile('ld\\+json',re.I)}):
   try:data=json.loads(tag.string or tag.get_text())
   except Exception:continue
