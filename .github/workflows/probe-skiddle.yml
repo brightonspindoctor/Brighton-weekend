@@ -19,7 +19,9 @@ jobs:
           import json,sys,types,importlib.util
           sys.path.insert(0,'scripts')
           spec=importlib.util.spec_from_file_location('s','scripts/scrape-events.py');s=importlib.util.module_from_spec(spec);spec.loader.exec_module(s)
-          for src in json.load(open('event-sources.json')):
+          for n,u in [('volks','https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/'),('dust','https://www.skiddle.com/whats-on/Brighton/Dust/')]:
+              h,f=s.fetch_plain(u); open(f'probe/{n}.html','w').write(h); print(n,'final url',f,'size',len(h))
+          for src in []:
               if src.get('jsonld_only') and not src.get('disabled'):
                   try:
                       html,final=s.fetch_plain(src['url'])

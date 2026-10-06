@@ -1,5 +1,0 @@
-Volks https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/ plain: 0 [] 
-Patterns https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/ plain: 0 [] 
-DUST https://www.skiddle.com/whats-on/Brighton/Dust/ plain: 0 [] 
-The Pipeline https://www.songkick.com/venues/3633674-pipeline plain: 5 ['Flail (UK)', 'Borrowed Time', 'Desert Vipers'] 
-The Gladstone https://www.songkick.com/venues/1380051-gladstone plain: 0 [] 
