@@ -1762,6 +1762,40 @@
   "act": "Getdown Services",
   "checked": "2026-10-06"
  },
+ "ghostface killah": {
+  "mbid": "3b39abeb-0064-4eed-9ddd-ee47a45c54cb",
+  "name": "Ghostface Killah",
+  "genres": [
+   {
+    "name": "abstract hip hop",
+    "count": 1
+   },
+   {
+    "name": "boom bap",
+    "count": 1
+   },
+   {
+    "name": "east coast hip hop",
+    "count": 2
+   },
+   {
+    "name": "hardcore hip hop",
+    "count": 2
+   },
+   {
+    "name": "hip hop",
+    "count": 2
+   },
+   {
+    "name": "pop rap",
+    "count": 2
+   }
+  ],
+  "bucket": "Hip-hop & R&B",
+  "reason": "tagged",
+  "act": "GHOSTFACE KILLAH",
+  "checked": "2026-10-06"
+ },
  "girlband": {
   "bucket": null,
   "reason": "6 artists share this name",
