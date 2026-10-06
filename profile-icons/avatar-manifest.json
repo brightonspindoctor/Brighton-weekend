@@ -376,5 +376,47 @@
     "source_sha256": "b7d0a9babd9219595ba05793cb06c83aedc9bf5ed4be8239aba6a2371756fcc4",
     "file": "standardized/puffin.png",
     "sha256": "6d0d0cc469a401919d0bb2e8b7a89b571dfac565580c8bf170794b7656f7ed59"
+  },
+  "fairy": {
+    "label": "Fairy",
+    "source": "fairy.png",
+    "source_sha256": "9062d864c3aafd30adcbe5eb264fa97392f0c7dedba22832769c473da060f636",
+    "file": "standardized/fairy.png",
+    "sha256": "9653358797af1bf16a00721e091d7f31a5b40f247c24bf9132623b4312bae517"
+  },
+  "dragon": {
+    "label": "Dragon",
+    "source": "dragon.png",
+    "source_sha256": "3b255f372c93d966af4ec6ee5d19d956d6370a6141fee9bc40ef5d303f643951",
+    "file": "standardized/dragon.png",
+    "sha256": "e73661147bbe8164d1166c6b8108799b5df62aaa68e931622c6013b772693462"
+  },
+  "unicorn": {
+    "label": "Unicorn",
+    "source": "unicorn.png",
+    "source_sha256": "c2caf1ae1a498d064502b5334671ecb83f50ed1aa1c413fa08970ab4465bca4b",
+    "file": "standardized/unicorn.png",
+    "sha256": "b0c12c0d7734e147b584e692fd7e610dee07ec37d62b01f95176ace42c801f21"
+  },
+  "phoenix": {
+    "label": "Phoenix",
+    "source": "phoenix.png",
+    "source_sha256": "885458314aa0336e67bce8aa93921adb3eb6981b3600c2b72f575faaa0dcf7a1",
+    "file": "standardized/phoenix.png",
+    "sha256": "a59c50301b07d5d11a66f62f7bd7b04bd4b8d424e78eba8b3ada741230e1acb3"
+  },
+  "water-dragon": {
+    "label": "Water Dragon",
+    "source": "water-dragon.png",
+    "source_sha256": "a43b7eac90bb55633ca1a214ade906d1abe7e9cc7894303570e88bb0ddedcc4b",
+    "file": "standardized/water-dragon.png",
+    "sha256": "0a4a0def7c7a3fac47d7a37d1c71f50b5a9b3d59e1b12aa047c1415a1fd3b02f"
+  },
+  "griffin": {
+    "label": "Griffin",
+    "source": "griffin.png",
+    "source_sha256": "dbd634953413cdf7ba34a2001a4ea5939d8bbf2c87b7157b4935a43a49042de7",
+    "file": "standardized/griffin.png",
+    "sha256": "eddbebbdbf92ad0473ee3f1dc19a201390be84aa99a607f83377ec1742dd4237"
   }
 }
