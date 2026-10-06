@@ -31,7 +31,12 @@ if (!codeFile) throw new Error('PROFILE_ICONS not found in index.html or js/app.
 const code = fs.readFileSync(codeFile, 'utf8');
 const icons = [...code.match(/const PROFILE_ICONS=\[(.*?)\];/s)[1].matchAll(/'([^']+)'/g)].map(m => m[1]);
 
+const manifestPath = path.join(dir, 'avatar-manifest.json');
+const previous = fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, 'utf8')) : {};
+
 function sourceFor(icon) {
+  const recorded = previous[icon]?.source;
+  if (recorded && fs.existsSync(path.join(dir, recorded))) return recorded;
   for (const ext of ['.png', '.jpg', '.jpeg', '.webp', '.svg']) {
     const f = icon + ext;
     if (fs.existsSync(path.join(dir, f))) return f;
@@ -101,11 +106,18 @@ const labels = Object.fromEntries([...(code.match(/const PROFILE_LABELS=\{(.*?)\
 const manifest = {};
 for (const icon of icons) {
   const file = path.join(outDir, icon + '.png');
+  const source = sourceFor(icon);
   manifest[icon] = {
     label: labels[icon] || icon.replace(/(^|-)([a-z])/g, (_, p, c) => (p ? ' ' : '') + c.toUpperCase()),
+    // The selected artwork, and its fingerprint when it was chosen.
+    source,
+    source_sha256: previous[icon]?.source === source && previous[icon]?.source_sha256
+      ? previous[icon].source_sha256
+      : crypto.createHash('sha256').update(fs.readFileSync(path.join(dir, source))).digest('hex'),
+    // What the app shows: the standardised circle.
     file: 'standardized/' + icon + '.png',
     sha256: crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')
   };
 }
-fs.writeFileSync(path.join(dir, 'avatar-manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
+fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
 console.log(`Standardised ${icons.length} avatars to ${SIZE}px circular PNGs (updated ${path.relative(root, codeFile)}).`);

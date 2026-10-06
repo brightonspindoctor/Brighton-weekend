@@ -506,18 +506,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-06-komedia-doors-11-15-am",
-      "title": "Doors: 11:15 AM",
-      "date": "2026-10-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-06-the-hope-ruin-cult-milk-collage-club",
       "title": "CULT MILK: Collage Club",
       "date": "2026-10-06",
@@ -532,18 +520,6 @@
     {
       "id": "2026-10-06-the-hope-ruin-cult-milk-collage-club-2",
       "title": "CULT MILK: Collage Club",
-      "date": "2026-10-06",
-      "venue": "The Hope & Ruin",
-      "source": "venue",
-      "time": "18:00",
-      "finish_time": "21:00",
-      "category": "Club",
-      "ticket_url": "https://www.hope.pub/event/cult-milk-collage-club-87/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-06-the-hope-ruin-pub-events",
-      "title": "Pub Events",
       "date": "2026-10-06",
       "venue": "The Hope & Ruin",
       "source": "venue",
@@ -602,32 +578,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-06-the-hope-ruin-next-up-in-the-venue",
-      "title": "Next Up in the Venue",
-      "date": "2026-10-06",
-      "venue": "The Hope & Ruin",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.hope.pub/event/skating-polly-lord-friday/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-06-the-hope-ruin-skating-polly-lord-friday",
       "title": "Skating Polly + Lord Friday",
-      "date": "2026-10-06",
-      "venue": "The Hope & Ruin",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.hope.pub/event/skating-polly-lord-friday/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-06-the-hope-ruin-top-picks",
-      "title": "Top Picks",
       "date": "2026-10-06",
       "venue": "The Hope & Ruin",
       "source": "venue",
@@ -710,18 +662,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-07-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2026-10-07",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-07-the-hope-ruin-hh-winter-gardens-opal-mag-lucy-darke-tears-at-the-table-2",
       "title": "HH: Winter Gardens + Opal Mag + Lucy Darke + Tears At The Table",
       "date": "2026-10-07",
@@ -743,18 +683,6 @@
       "finish_time": "23:00",
       "category": "Theatre",
       "ticket_url": "https://brightondome.org/whats-on/L1o-man-or-bear/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-07-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-07",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -879,30 +807,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-08-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-08",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-08-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-08",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-08-komedia-queer-cxntry",
       "title": "Queer Cxntry",
       "date": "2026-10-08",
@@ -1024,18 +928,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-09-komedia-doors-9-50-am",
-      "title": "Doors: 9:50 AM",
-      "date": "2026-10-09",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-09-komedia-story-magic",
       "title": "Story Magic",
       "date": "2026-10-09",
@@ -1048,18 +940,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-09-komedia-doors-10-50-am",
-      "title": "Doors: 10:50 AM",
-      "date": "2026-10-09",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-09-komedia-story-magic-2",
       "title": "Story Magic",
       "date": "2026-10-09",
@@ -1069,18 +949,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20753",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-09-komedia-doors-12-20-pm",
-      "title": "Doors: 12:20 PM",
-      "date": "2026-10-09",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -1097,7 +965,7 @@
     },
     {
       "id": "2026-10-09-quarters-zero-7-dj-set",
-      "title": "ZERO 7 (DJ Set) October 9, 2026 6pm-10pm Zero 7 bring their signature blend of downtempo, electronica, soul and trip-hop to Quarters this October.",
+      "title": "ZERO 7 (DJ Set)",
       "date": "2026-10-09",
       "venue": "Quarters",
       "source": "venue",
@@ -1177,30 +1045,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.hope.pub/event/wasuremono/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-09-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-09",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-09-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-10-09",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -1311,18 +1155,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-09-quarters-basstripper",
-      "title": "Basstripper",
-      "date": "2026-10-09",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/supercharged-presents-amplify-basstripper/quarters/3707810",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-09-the-old-market-josephine-foster",
       "title": "Josephine Foster",
       "date": "2026-10-09",
@@ -1409,20 +1241,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-10-komedia-doors-12-00-pm",
-      "title": "Doors: 12:00 PM",
-      "date": "2026-10-10",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-10-the-hope-ruin-h-038-r-one-8217-s-2-watch-flavours-ponceau-autofiction",
-      "title": "H&#038;R ONE&#8217;S 2 WATCH: Flavours + Ponceau + Autofiction",
+      "title": "H&R ONE’S 2 WATCH: Flavours + Ponceau + Autofiction",
       "date": "2026-10-10",
       "venue": "The Hope & Ruin",
       "source": "venue",
@@ -1490,30 +1310,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.hope.pub/event/hr-ones-2-watch-flavours-ponceau-autofiction/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-10-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-10",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-10-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-10-10",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -1637,32 +1433,8 @@
       "last_seen": "2026-10-05"
     },
     {
-      "id": "2026-10-10-quarters-cutts",
-      "title": "Cutts",
-      "date": "2026-10-10",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://quarters.seetickets.com/event/mr-cutts/quarters/3708031",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-10-quarters-limited-free-tickets",
-      "title": "Limited Free Tickets",
-      "date": "2026-10-10",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/fully-local/quarters/3726187",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-10-quarters-mr-cutts",
-      "title": "Mr Cutts October 10, 2026 18:00-22:00 Mr Cutts brings old music, soul samples and stories to Quarters - a journey through the records, influences and sounds that shaped him.",
+      "title": "Mr Cutts",
       "date": "2026-10-10",
       "venue": "Quarters",
       "source": "venue",
@@ -1842,18 +1614,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-11-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-10-komedia-guess-boo-the-mystery-of-my-nans-ashes-sun-11-oct-2026-7-30-pm-doors-7-00-pm",
       "title": "Guess Boo – The Mystery of my Nans Ashes",
       "date": "2026-10-11",
@@ -1899,30 +1659,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/deviants-market/?eid=18717",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-11-komedia-doors-10-30-am",
-      "title": "Doors: 10:30 AM",
-      "date": "2026-10-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-11-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-10-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -2044,18 +1780,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-12-komedia-doors-6-45-pm",
-      "title": "Doors: 6:45 PM",
-      "date": "2026-10-12",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -2205,18 +1929,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-14-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-10-14",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-14-the-forge-comedy-club-charlie-baker-go-get-it",
       "title": "Charlie Baker: Go Get It",
       "date": "2026-10-14",
@@ -2241,18 +1953,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-14-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-14",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-14-komedia-comic-baby-boom-wed-14-oct-2026-9-00-pm-doors-8-30-pm",
       "title": "Comic Baby Boom",
       "date": "2026-10-14",
@@ -2262,18 +1962,6 @@
       "finish_time": "",
       "category": "Family",
       "ticket_url": "https://www.komedia.co.uk/shows/jill-edwards-comedy-workshops-presents-comic-baby-boom/?eid=18106",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-14-komedia-doors-8-30-pm",
-      "title": "Doors: 8:30 PM",
-      "date": "2026-10-14",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "21:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -2370,18 +2058,6 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/dan-nightingale-friends-tickets-1985442982407",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-15-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-10-15",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -2492,18 +2168,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-komedia-doors-9-50-am",
-      "title": "Doors: 9:50 AM",
-      "date": "2026-10-16",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-16-komedia-story-magic-fri-16-oct-2026-10-00-am-doors-9-50-am",
       "title": "Story Magic",
       "date": "2026-10-16",
@@ -2516,18 +2180,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-komedia-doors-10-50-am",
-      "title": "Doors: 10:50 AM",
-      "date": "2026-10-16",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-16-komedia-story-magic-fri-16-oct-2026-11-00-am-doors-10-50-am",
       "title": "Story Magic",
       "date": "2026-10-16",
@@ -2537,18 +2189,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20755",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-16-komedia-doors-12-20-pm",
-      "title": "Doors: 12:20 PM",
-      "date": "2026-10-16",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -2636,18 +2276,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-10-16",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-16-brighton-dome-tom-davis-spudgun",
       "title": "Tom Davis: Spudgun",
       "date": "2026-10-16",
@@ -2669,18 +2297,6 @@
       "finish_time": "00:00",
       "category": "Other",
       "ticket_url": "http://www.songkick.com/concerts/43439659-floralis-at-pipeline?utm_medium=organic&utm_source=microformat",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-16-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-16",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -2804,19 +2420,7 @@
     },
     {
       "id": "2026-10-16-quarters-damian-lewis",
-      "title": "Damian Lewis October 16, 2026 19:00-22:00 Award-winning actor and musician Damian Lewis has announced an exclusive live show in support of his highly anticipated album Sweet Chaos.",
-      "date": "2026-10-16",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://pinkdot.seetickets.com/event/damian-lewis/quarters/3644752",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-16-quarters-lewis",
-      "title": "Lewis",
+      "title": "Damian Lewis",
       "date": "2026-10-16",
       "venue": "Quarters",
       "source": "venue",
@@ -2925,18 +2529,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-komedia-doors-1-30-pm",
-      "title": "Doors: 1:30 PM",
-      "date": "2026-10-17",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "14:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-17-quarters-echo-x-ibiza-playabout-ibiza-closing-party",
       "title": "Echo x Ibiza Playabout - Ibiza Closing Party",
       "date": "2026-10-17",
@@ -2969,18 +2561,6 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LED-jordan-brookes-the-part-of-you-thats-always-screaming/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-17-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2026-10-17",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "18:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -3041,18 +2621,6 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LSn-lara-ricote-inkling/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-17-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-17",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -3151,18 +2719,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-komedia-doors-9-00-pm",
-      "title": "Doors: 9:00 PM",
-      "date": "2026-10-17",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-17-komedia-get-down-sat-17-oct-2026-doors-9-00-pm",
       "title": "Get Down!",
       "date": "2026-10-17",
@@ -3176,7 +2732,7 @@
     },
     {
       "id": "2026-10-17-quarters-notion",
-      "title": "Notion October 17, 2026 23:00-04:00 Notion brings his bass heavy, genre blurring sets to Quarters - bassline, garage & DnB, delivered with relentless energy.",
+      "title": "Notion",
       "date": "2026-10-17",
       "venue": "Quarters",
       "source": "venue",
@@ -3184,18 +2740,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://quarters.seetickets.com/event/notion/quarters/3706964",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-17-quarters-party",
-      "title": "Party",
-      "date": "2026-10-17",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/echo-ibiza-closing-party-energy/quarters/3707754",
       "last_seen": "2026-10-06"
     },
     {
@@ -3243,18 +2787,6 @@
       "category": "Music/Club",
       "ticket_url": "https://www.axs.com/uk/venues/134040/volks-club-brighton-tickets",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-18-komedia-doors-10-30-am",
-      "title": "Doors: 10:30 AM",
-      "date": "2026-10-18",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -3318,18 +2850,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-18-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-18",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-18-komedia-robin-ince-joanna-neary-sun-18-oct-2026-7-30-pm-doors-7-00-pm",
       "title": "Robin Ince & Joanna Neary",
       "date": "2026-10-18",
@@ -3351,18 +2871,6 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LGj-john-crace-what-the-hell-just-happened/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-18-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-18",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -3391,7 +2899,7 @@
     },
     {
       "id": "2026-10-18-quarters-toploader",
-      "title": "Toploader October 18, 2026 18:00-22:00 25 years since the release of their debut album 'Onka's Big Moka’, Toploader return for a hotly-anticipated UK tour.",
+      "title": "Toploader",
       "date": "2026-10-18",
       "venue": "Quarters",
       "source": "venue",
@@ -3452,18 +2960,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-19-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-19",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-19-komedia-siblings-dreamweavers-mon-19-oct-2026-7-30-pm-doors-7-00-pm",
       "title": "Siblings: Dreamweavers",
       "date": "2026-10-19",
@@ -3485,18 +2981,6 @@
       "finish_time": "21:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LnQ-raising-the-roof-2-a-fundraiser-for-ymca-brighton/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-19-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-19",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -3568,18 +3052,6 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LEK-phil-ellis-bath-mat/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-20-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -3691,18 +3163,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-21-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-21-komedia-sergi-polo-live-in-brighton-in-english-wed-21-oct-2026-7-30-pm-doors-7-00-pm",
       "title": "Sergi Polo – LIVE in Brighton (in English)",
       "date": "2026-10-21",
@@ -3724,18 +3184,6 @@
       "finish_time": "23:00",
       "category": "Other",
       "ticket_url": "https://brightondome.org/whats-on/LEe-solve-along-a-murder-she-wrote/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-21-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -3848,18 +3296,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-22-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-10-22",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-22-the-old-market-kristen-hersh",
       "title": "Kristen Hersh",
       "date": "2026-10-22",
@@ -3892,18 +3328,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/amy-matthews-definitions-of-toast/?eid=19003",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-22-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-10-22",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -4001,18 +3425,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-komedia-doors-9-50-am",
-      "title": "Doors: 9:50 AM",
-      "date": "2026-10-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-23-komedia-story-magic-fri-23-oct-2026-10-00-am-doors-9-50-am",
       "title": "Story Magic",
       "date": "2026-10-23",
@@ -4025,18 +3437,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-komedia-doors-10-50-am",
-      "title": "Doors: 10:50 AM",
-      "date": "2026-10-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-23-komedia-story-magic-fri-23-oct-2026-11-00-am-doors-10-50-am",
       "title": "Story Magic",
       "date": "2026-10-23",
@@ -4046,18 +3446,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20757",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-23-komedia-doors-12-20-pm",
-      "title": "Doors: 12:20 PM",
-      "date": "2026-10-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -4130,30 +3518,6 @@
       "finish_time": "23:00",
       "category": "Other",
       "ticket_url": "https://brightondome.org/whats-on/LG6-kim-blythe-puzzle/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-23-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-23-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-10-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -4263,7 +3627,7 @@
     },
     {
       "id": "2026-10-23-quarters-hospital30",
-      "title": "Hospital30 October 23, 2026 21:00-03:00 This October, Hospitality returns to Brighton as the Hospital30 celebrations continue, taking over Quarters for anniversary edition.",
+      "title": "Hospital30",
       "date": "2026-10-23",
       "venue": "Quarters",
       "source": "venue",
@@ -4344,18 +3708,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-komedia-doors-12-30-pm",
-      "title": "Doors: 12:30 PM",
-      "date": "2026-10-24",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "13:15",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-24-brighton-dome-shelf-the-kids-show-2",
       "title": "SHELF: The Kids Show 2",
       "date": "2026-10-24",
@@ -4413,30 +3765,6 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LTr-sam-campbell-kid-giblet/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-24-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-24",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-24-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-10-24",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -4535,18 +3863,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-shelter-hall-edition",
-      "title": "Edition",
-      "date": "2026-10-24",
-      "venue": "Shelter Hall",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://shelterhall.co.uk/whats-on/drag-music-bingo-halloween-edition/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-24-shelter-hall-oktoberfest-returns-to-brighton-23-24-october-secure-your-spot",
       "title": "Oktoberfest Returns to Brighton! 23–24 October · Secure Your Spot",
       "date": "2026-10-24",
@@ -4617,18 +3933,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-komedia-doors-3-00-pm",
-      "title": "Doors: 3:00 PM",
-      "date": "2026-10-25",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "15:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-25-komedia-rich-wilson-to-the-cradle-from-the-rave-sun-25-oct-2026-3-30-pm-doors-3-00-pm",
       "title": "Rich Wilson: To The Cradle, From The Rave",
       "date": "2026-10-25",
@@ -4689,18 +3993,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-25",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-25-komedia-sooz-kempner-sun-25-oct-2026-7-30-pm-doors-7-00-pm",
       "title": "Sooz Kempner",
       "date": "2026-10-25",
@@ -4734,18 +4026,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/aurie-styla-maverick/?eid=19365",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-25-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-25",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -4842,18 +4122,6 @@
       "category": "Music",
       "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-26-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-26",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -5001,18 +4269,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-27-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-27",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-27-the-old-market-podcast",
       "title": "Podcast",
       "date": "2026-10-27",
@@ -5061,19 +4317,7 @@
     },
     {
       "id": "2026-10-28-quarters-lol-tolhurst",
-      "title": "Lol Tolhurst October 28, 2026 7pm-11pm The Cure co-founder, Rock & Roll Hall of Fame inductee and acclaimed author Lol Tolhurst, has announced an epic headline show at Quarters.",
-      "date": "2026-10-28",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "23:00",
-      "category": "Talk",
-      "ticket_url": "https://www.seetickets.com/event/lol-tolhurst/quarters/3632200",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-28-quarters-tolhurst",
-      "title": "Tolhurst",
+      "title": "Lol Tolhurst",
       "date": "2026-10-28",
       "venue": "Quarters",
       "source": "venue",
@@ -5093,18 +4337,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-28-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-28",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -5141,18 +4373,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/christopher-hall-pizazz/?eid=18407",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-28-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-28",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -5214,30 +4434,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-29-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-29",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-29-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-10-29",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -5384,18 +4580,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-30-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-30",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-30-komedia-komedia-comedy-club-fri-30-oct-2026-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2026-10-30",
@@ -5539,30 +4723,6 @@
       "last_seen": "2026-10-05"
     },
     {
-      "id": "2026-10-30-komedia-doors-11-00-pm",
-      "title": "Doors: 11:00 PM",
-      "date": "2026-10-30",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-30-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-10-30",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-30-komedia-the-album-era-performs-black-sabbath-s-paranoid-fri-30-oct-2026-doors-7-30-pm",
       "title": "The Album Era Performs Black Sabbath’s Paranoid",
       "date": "2026-10-30",
@@ -5645,30 +4805,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-31-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-10-31",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-31-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-10-31",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -5790,18 +4926,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-31-komedia-doors-11-00-pm",
-      "title": "Doors: 11:00 PM",
-      "date": "2026-10-31",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-31-komedia-spellbound-sat-31-oct-2026-doors-11-00-pm",
       "title": "Spellbound",
       "date": "2026-10-31",
@@ -5823,18 +4947,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://quarters.seetickets.com/event/black-octopus-8th-birthday/quarters/3724738",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-31-quarters-wallop",
-      "title": "Wallop",
-      "date": "2026-10-31",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/halloween-w-soul-mass-transit-system-captain-wallop/quarters/3643030",
       "last_seen": "2026-10-06"
     },
     {
@@ -5899,30 +5011,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-01-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2026-11-01",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-01-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-11-01",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-01-komedia-down-the-hatch-comedy-club",
       "title": "Down the Hatch Comedy Club",
       "date": "2026-11-01",
@@ -5980,18 +5068,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/disco-kidz-halloween-special/?eid=21362",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-01-komedia-doors-1-00-pm",
-      "title": "Doors: 1:00 PM",
-      "date": "2026-11-01",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -6057,18 +5133,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-03-komedia-doors-11-15-am",
-      "title": "Doors: 11:15 AM",
-      "date": "2026-11-03",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-03-chalk-slayyyter",
       "title": "Slayyyter",
       "date": "2026-11-03",
@@ -6078,18 +5142,6 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-03-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-11-03",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -6126,18 +5178,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/cardiac-comedy-13/?eid=20700",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-04-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -6226,30 +5266,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-05-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-05",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-05-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-11-05",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-05-komedia-late-night-with-terry-wogan",
       "title": "Late Night with Terry Wogan",
       "date": "2026-11-05",
@@ -6298,18 +5314,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-06-komedia-doors-9-50-am",
-      "title": "Doors: 9:50 AM",
-      "date": "2026-11-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-06-komedia-story-magic",
       "title": "Story Magic",
       "date": "2026-11-06",
@@ -6322,18 +5326,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-06-komedia-doors-10-50-am",
-      "title": "Doors: 10:50 AM",
-      "date": "2026-11-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-06-komedia-story-magic-2",
       "title": "Story Magic",
       "date": "2026-11-06",
@@ -6343,18 +5335,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20759",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-06-komedia-doors-12-20-pm",
-      "title": "Doors: 12:20 PM",
-      "date": "2026-11-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -6379,30 +5359,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/event/dj-yoda",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-06-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-06-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-11-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -6490,19 +5446,7 @@
     },
     {
       "id": "2026-11-06-quarters-k-motionz",
-      "title": "K Motionz November 6, 2026 23:00-04:00 One of the most exciting names in UK drum & bass is coming to Quarters. From dancefloor weapons to deep rollers built for the rave.",
-      "date": "2026-11-06",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/k-motionz/quarters/3676957",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-06-quarters-motionz",
-      "title": "Motionz",
+      "title": "K Motionz",
       "date": "2026-11-06",
       "venue": "Quarters",
       "source": "venue",
@@ -6572,18 +5516,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-07-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-07",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -6684,7 +5616,7 @@
     },
     {
       "id": "2026-11-07-quarters-andy-c",
-      "title": "Andy C November 7, 2026 15:00-22:00 Some names need no introduction. Andy C lands at Quarters on 07.11 for an all day drum & bass session. No gimmicks. Just pure energy.",
+      "title": "Andy C",
       "date": "2026-11-07",
       "venue": "Quarters",
       "source": "venue",
@@ -6787,30 +5719,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/ben-poole-2/?eid=20156",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-08-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-11-08",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-08-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-11-08",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -6949,18 +5857,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-10-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-11-10",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-11-komedia-stand-up-for-animals-tue-10-nov-2026-7-30-pm-doors-6-30-pm",
       "title": "Stand up for Animals",
       "date": "2026-11-10",
@@ -7031,18 +5927,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-11-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-11-komedia-the-march-violets-wed-11-nov-2026-7-30-pm-doors-7-00-pm",
       "title": "The March Violets",
       "date": "2026-11-11",
@@ -7076,18 +5960,6 @@
       "ticket_url": "https://thegreendoorstore.co.uk/events/",
       "source_url": "https://thegreendoorstore.co.uk/events/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-11-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-11-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -7177,18 +6049,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-12-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-11-12",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-11-komedia-reece-kidd-1-irishman-in-brighton-thu-12-nov-2026-8-00-pm-doors-7-30-pm",
       "title": "Reece Kidd – 1 Irishman in Brighton",
       "date": "2026-11-12",
@@ -7275,18 +6135,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-13-komedia-doors-9-50-am",
-      "title": "Doors: 9:50 AM",
-      "date": "2026-11-13",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-13-komedia-story-magic-fri-13-nov-2026-10-00-am-doors-9-50-am",
       "title": "Story Magic",
       "date": "2026-11-13",
@@ -7299,18 +6147,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-13-komedia-doors-10-50-am",
-      "title": "Doors: 10:50 AM",
-      "date": "2026-11-13",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-13-komedia-story-magic-fri-13-nov-2026-11-00-am-doors-10-50-am",
       "title": "Story Magic",
       "date": "2026-11-13",
@@ -7320,18 +6156,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20761",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-13-komedia-doors-12-20-pm",
-      "title": "Doors: 12:20 PM",
-      "date": "2026-11-13",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -7356,30 +6180,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-13-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-13",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-13-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-11-13",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -7499,29 +6299,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-13-quarters-early-bird",
-      "title": "Early Bird",
-      "date": "2026-11-13",
-      "venue": "Quarters",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.quartersbrighton.co.uk/whatson/yung-singh-riria",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-13-quarters-riria",
-      "title": "Riria",
-      "date": "2026-11-13",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/yung-sing-riria/quarters/3676117",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-13-the-hope-ruin-quaking-aspens-winnipeg-mn-drainfly",
       "title": "Quaking Aspens + Winnipeg, Mn + Drainfly",
       "date": "2026-11-13",
@@ -7582,18 +6359,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-14-komedia-doors-12-00-pm",
-      "title": "Doors: 12:00 PM",
-      "date": "2026-11-14",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "13:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-14-komedia-mystery-musicals-day-party-sat-14-nov-2026-1-00-pm-doors-12-00-pm",
       "title": "Mystery Musicals Day Party",
       "date": "2026-11-14",
@@ -7615,18 +6380,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-14-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-14",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -7737,7 +6490,7 @@
     },
     {
       "id": "2026-11-14-quarters-ben-hemsley-november-14-2026-23-00-04-00-ben-hemsley-lands-at-quarters-bringing-his-blend-of-euphoric-house-driving-techno-and-old-school-rave-nostalgia-to-the-",
-      "title": "Ben Hemsley November 14, 2026 23:00-04:00 Ben Hemsley lands at Quarters, bringing his blend of euphoric house, driving techno and old-school rave nostalgia to the dancefloor.",
+      "title": "Ben Hemsley",
       "date": "2026-11-14",
       "venue": "Quarters",
       "source": "venue",
@@ -7749,31 +6502,7 @@
     },
     {
       "id": "2026-11-14-quarters-emo-day-party",
-      "title": "Emo Day Party November 14, 2026 16:00-20:00 Elder Emo Day Party lands in Brighton! Expect emo & pop-punk anthems, scream-alongs and nostalgic bangers from MCR, Paramore & more.",
-      "date": "2026-11-14",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/elder-emo-day-party/quarters/3704425",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-14-quarters-hemsley",
-      "title": "Hemsley",
-      "date": "2026-11-14",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/ben-hemsley/quarters/3731925",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-14-quarters-party",
-      "title": "Party",
+      "title": "Emo Day Party",
       "date": "2026-11-14",
       "venue": "Quarters",
       "source": "venue",
@@ -7916,18 +6645,6 @@
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/keith-barry-unhinged-the-final-shows/?eid=19856",
       "last_seen": "2026-10-05"
-    },
-    {
-      "id": "2026-11-15-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-11-15",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-11-15-komedia-maureen-younger-be-more-maureen-sun-15-nov-2026-8-00-pm-doors-7-30-pm",
@@ -8099,18 +6816,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-18-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-18",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-18-komedia-killian-sundermann-killian-dollar-baby-wed-18-nov-2026-7-30-pm-doors-7-00-pm",
       "title": "Killian Sundermann: Killian Dollar Baby",
       "date": "2026-11-18",
@@ -8120,18 +6825,6 @@
       "finish_time": "",
       "category": "Family",
       "ticket_url": "https://www.komedia.co.uk/shows/killian-sundermann-killian-dollar-baby/?eid=20459",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-18-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-18",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -8266,30 +6959,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-19-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-19",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-19-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-11-19",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-19-komedia-moving-pictures-rush-tribute-thu-19-nov-2026-8-00-pm-doors-7-00-pm",
       "title": "Moving Pictures – Rush Tribute",
       "date": "2026-11-19",
@@ -8410,18 +7079,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-20-komedia-doors-9-50-am",
-      "title": "Doors: 9:50 AM",
-      "date": "2026-11-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-20-komedia-story-magic-fri-20-nov-2026-10-00-am-doors-9-50-am",
       "title": "Story Magic",
       "date": "2026-11-20",
@@ -8434,18 +7091,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-20-komedia-doors-10-50-am",
-      "title": "Doors: 10:50 AM",
-      "date": "2026-11-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-20-komedia-story-magic-fri-20-nov-2026-11-00-am-doors-10-50-am",
       "title": "Story Magic",
       "date": "2026-11-20",
@@ -8455,18 +7100,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20763",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-20-komedia-doors-12-20-pm",
-      "title": "Doors: 12:20 PM",
-      "date": "2026-11-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -8491,18 +7124,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-20-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -8566,18 +7187,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-20-komedia-doors-11-00-pm",
-      "title": "Doors: 11:00 PM",
-      "date": "2026-11-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-20-komedia-sweat-queer-hyperpop-party-presents-gupi",
       "title": "SWEAT: Queer Hyperpop Party Presents Gupi",
       "date": "2026-11-20",
@@ -8599,18 +7208,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/the-zangwills-plus-cinnabar/?eid=20356",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-20-quarters-limited-free-tickets-degs-friends-november-20-2026-23-00-04-00-degs-friends-comes-to-quarters-this-november-with-one-of-drum-bass-most-distinctive-voices-at-the",
-      "title": "Limited Free Tickets DEGS & FRIENDS November 20, 2026 23:00-04:00 Degs & Friends comes to Quarters this November, with one of drum & bass’ most distinctive voices at the helm.",
-      "date": "2026-11-20",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/degs-friends/quarters/3732774",
       "last_seen": "2026-10-06"
     },
     {
@@ -8676,18 +7273,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-21-komedia-doors-12-00-pm",
-      "title": "Doors: 12:00 PM",
-      "date": "2026-11-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-21-concorde-2-getdown-services",
       "title": "Getdown Services",
       "date": "2026-11-21",
@@ -8709,30 +7294,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/dan-schreiber-this-changes-everything/?eid=19474",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-21-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2026-11-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "18:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-21-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -8820,30 +7381,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-21-komedia-doors-11-00-pm",
-      "title": "Doors: 11:00 PM",
-      "date": "2026-11-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-21-komedia-doors-9-00-pm",
-      "title": "Doors: 9:00 PM",
-      "date": "2026-11-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-21-komedia-spellbound-sat-21-nov-2026-doors-9-00-pm",
       "title": "Spellbound",
       "date": "2026-11-21",
@@ -8868,18 +7405,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-21-quarters-anthony",
-      "title": "Anthony",
-      "date": "2026-11-21",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/locklead-julian-anthony-more-tba/quarters/3708218",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-21-quarters-locklead-julian-anthony-more-tba",
       "title": "Locklead, Julian Anthony + more TBA",
       "date": "2026-11-21",
@@ -8892,20 +7417,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-21-quarters-mania",
-      "title": "Mania",
-      "date": "2026-11-21",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/rnb-mania-brighton-s-r-b-festival/quarters/3705590",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-21-quarters-r-b-mania",
-      "title": "R&B Mania November 21, 2026 15:00-22:00 RNB MANIA returns to Quarters. All eras of R&B, from 90s & 00s classics to today’s favourites. Big records, bigger singalongs.",
+      "title": "R&B Mania",
       "date": "2026-11-21",
       "venue": "Quarters",
       "source": "venue",
@@ -8952,18 +7465,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-22-komedia-doors-10-30-am",
-      "title": "Doors: 10:30 AM",
-      "date": "2026-11-22",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-22-komedia-sundae-club-sun-22-nov-2026-11-00-am-doors-10-30-am",
       "title": "Sundae Club",
       "date": "2026-11-22",
@@ -9000,18 +7501,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-22-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2026-11-22",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-22-the-forge-comedy-club-scott-bennett-blood-sugar-baby",
       "title": "Scott Bennett: Blood Sugar Baby",
       "date": "2026-11-22",
@@ -9021,18 +7510,6 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/scott-bennett-blood-sugar-baby-tickets-1693326197239",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-22-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-11-22",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -9121,18 +7598,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-23-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-24-chalk-cheekface-emperor-x-playboy-manbaby",
       "title": "Cheekface Emperor X, Playboy Manbaby",
       "date": "2026-11-24",
@@ -9214,30 +7679,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/caitlin-oryan-at-what-point/?eid=20653",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-25-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-25",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-25-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-11-25",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -9349,18 +7790,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-26-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-11-26",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-26-the-forge-comedy-club-james-barr-sorry-i-hurt-your-son-said-my-ex-to-my-mum",
       "title": "James Barr: Sorry I Hurt Your Son (Said My Ex To My Mum)",
       "date": "2026-11-26",
@@ -9458,18 +7887,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-27-komedia-doors-9-50-am",
-      "title": "Doors: 9:50 AM",
-      "date": "2026-11-27",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-27-komedia-story-magic-fri-27-nov-2026-10-00-am-doors-9-50-am",
       "title": "Story Magic",
       "date": "2026-11-27",
@@ -9482,18 +7899,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-27-komedia-doors-10-50-am",
-      "title": "Doors: 10:50 AM",
-      "date": "2026-11-27",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-27-komedia-story-magic-fri-27-nov-2026-11-00-am-doors-10-50-am",
       "title": "Story Magic",
       "date": "2026-11-27",
@@ -9503,18 +7908,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20765",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-27-komedia-doors-12-20-pm",
-      "title": "Doors: 12:20 PM",
-      "date": "2026-11-27",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -9539,18 +7932,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-27-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-27",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -9650,18 +8031,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-27-quarters-rollers",
-      "title": "Rollers",
-      "date": "2026-11-27",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/kings-of-the-rollers-the-holy-grail-uk-tour/quarters/3727410",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-27-theatreroyalbrighton-the-mousetrap",
       "title": "The Mousetrap",
       "date": "2026-11-27",
@@ -9683,30 +8052,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-28-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-28",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-28-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-11-28",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -9801,18 +8146,6 @@
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-28-komedia-doors-11-00-pm",
-      "title": "Doors: 11:00 PM",
-      "date": "2026-11-28",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -9913,18 +8246,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-29-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-11-29",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-29-a-l-p-h-a-b-e-t-dylan-leblanc",
       "title": "Dylan LeBlanc",
       "date": "2026-11-29",
@@ -9974,30 +8295,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-29-komedia-doors-10-30-am",
-      "title": "Doors: 10:30 AM",
-      "date": "2026-11-29",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-29-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2026-11-29",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-29-the-prince-albert-the-amber-squad-the-sleepers-sweet-jonny",
       "title": "The Amber Squad / The Sleepers / Sweet Jonny",
       "date": "2026-11-29",
@@ -10023,18 +8320,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-01-komedia-doors-11-15-am",
-      "title": "Doors: 11:15 AM",
-      "date": "2026-12-01",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-01-concorde-2-andrew-cushin",
       "title": "Andrew Cushin",
       "date": "2026-12-01",
@@ -10044,18 +8329,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/event/andrew-cushin",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-01-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-12-01",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -10155,30 +8428,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-02-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-12-02",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-02-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-12-02",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-02-chalk-kurupt-fm",
       "title": "Kurupt FM",
       "date": "2026-12-02",
@@ -10227,18 +8476,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-03-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-12-03",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-03-komedia-stand-up-for-gaza",
       "title": "STAND UP FOR GAZA",
       "date": "2026-12-03",
@@ -10260,18 +8497,6 @@
       "finish_time": "22:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/ian-stone-looking-for-the-wow-extra-show-tickets-1982765100791",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-03-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-12-03",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -10312,18 +8537,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-04-komedia-doors-9-50-am",
-      "title": "Doors: 9:50 AM",
-      "date": "2026-12-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-04-komedia-story-magic",
       "title": "Story Magic",
       "date": "2026-12-04",
@@ -10336,18 +8549,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-04-komedia-doors-10-50-am",
-      "title": "Doors: 10:50 AM",
-      "date": "2026-12-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-04-komedia-story-magic-2",
       "title": "Story Magic",
       "date": "2026-12-04",
@@ -10357,18 +8558,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20767",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-04-komedia-doors-12-20-pm",
-      "title": "Doors: 12:20 PM",
-      "date": "2026-12-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -10405,18 +8594,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-04-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-12-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -10481,18 +8658,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-04-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-12-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-04-komedia-komedia-christmas-party",
       "title": "Komedia Christmas Party",
       "date": "2026-12-04",
@@ -10518,19 +8683,7 @@
     },
     {
       "id": "2026-12-04-quarters-quantic-dj-set",
-      "title": "QUANTIC (DJ SET) December 4, 2026 18:00-22:00 Quantic & Jamz Supernova bring global grooves, soulful rhythms and genre blurring club sounds to Quarters.",
-      "date": "2026-12-04",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.seetickets.com/event/quantic-dj-set-/quarters/3709389",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-04-quarters-set",
-      "title": "Set",
+      "title": "QUANTIC (DJ SET)",
       "date": "2026-12-04",
       "venue": "Quarters",
       "source": "venue",
@@ -10575,18 +8728,6 @@
       "ticket_url": "https://www.ents24.com/brighton-events/the-volks",
       "source_url": "https://www.ents24.com/brighton-events/the-volks",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-05-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-12-05",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -10635,18 +8776,6 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-05-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-12-05",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -10708,18 +8837,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-06-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-12-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-06-brightoncentre-morrissey",
       "title": "Morrissey",
       "date": "2026-12-06",
@@ -10741,42 +8858,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/britallica-britney-spears-metal-tribute-support/?eid=20011",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-06-komedia-doors-10-00-am",
-      "title": "Doors: 10:00 AM",
-      "date": "2026-12-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-06-komedia-doors-2-00-pm",
-      "title": "Doors: 2:00 PM",
-      "date": "2026-12-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-06-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-12-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -10841,18 +8922,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-07-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-12-07",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-07-komedia-solve-along-a-murder-she-wrote",
       "title": "Solve-Along-A-Murder-She-Wrote",
       "date": "2026-12-07",
@@ -10877,18 +8946,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-08-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2026-12-08",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-08-komedia-scummy-mummies-christmas-show",
       "title": "Scummy Mummies – Christmas Show",
       "date": "2026-12-08",
@@ -10898,18 +8955,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/scummy-mummies-christmas-show/?eid=19436",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-08-komedia-doors-8-45-pm",
-      "title": "Doors: 8:45 PM",
-      "date": "2026-12-08",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "21:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -10970,18 +9015,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/do-all-the-christmas-things/?eid=20409",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-09-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-12-09",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -11057,18 +9090,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-10-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-12-10",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-10-19-00-the-black-queen",
       "title": "The Black Queen",
       "date": "2026-12-10",
@@ -11104,18 +9125,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-10-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-12-10",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-12-komedia-komedia-christmas-party-thu-10-dec-2026-doors-6-30-pm",
       "title": "Komedia Christmas Party",
       "date": "2026-12-10",
@@ -11140,18 +9149,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-11-komedia-doors-9-50-am",
-      "title": "Doors: 9:50 AM",
-      "date": "2026-12-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-12-komedia-story-magic-fri-11-dec-2026-10-00-am-doors-9-50-am",
       "title": "Story Magic",
       "date": "2026-12-11",
@@ -11164,18 +9161,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-11-komedia-doors-10-50-am",
-      "title": "Doors: 10:50 AM",
-      "date": "2026-12-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-12-komedia-story-magic-fri-11-dec-2026-11-00-am-doors-10-50-am",
       "title": "Story Magic",
       "date": "2026-12-11",
@@ -11185,18 +9170,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20769",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-11-komedia-doors-12-20-pm",
-      "title": "Doors: 12:20 PM",
-      "date": "2026-12-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -11244,18 +9217,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/adam-riches-is-sean-bean-in-how-the-bean-saved-christmas/?eid=20159",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-11-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-12-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -11318,18 +9279,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-11-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-12-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-12-komedia-komedia-christmas-party-fri-11-dec-2026-doors-6-30-pm",
       "title": "Komedia Christmas Party",
       "date": "2026-12-11",
@@ -11342,32 +9291,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-11-quarters-attack",
-      "title": "Attack",
-      "date": "2026-12-11",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.seetickets.com/event/daddy-g/quarters/3707646",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-11-quarters-broom",
-      "title": "Broom",
-      "date": "2026-12-11",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/city-wall-presents-mark-broom/quarters/3715360",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-11-quarters-city-wall-x-mark-broom-december-11-2026-23-00-04-00-city-wall-records-turns-18-with-uk-techno-legend-mark-broom-at-quarters-joined-by-acid-carbon-gosia-founder-",
-      "title": "City Wall x Mark Broom December 11, 2026 23:00 - 04:00 City Wall Records turns 18 with UK techno legend Mark Broom at Quarters, joined by Acid Carbon, Gosia & founder Ross Harper.",
+      "title": "City Wall x Mark Broom",
       "date": "2026-12-11",
       "venue": "Quarters",
       "source": "venue",
@@ -11399,18 +9324,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/comedy-club-4-kids/?eid=18273",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-12-komedia-doors-12-30-pm",
-      "title": "Doors: 12:30 PM",
-      "date": "2026-12-12",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "13:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -11532,18 +9445,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-12-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-12-12",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-12-komedia-komedia-christmas-party-sat-12-dec-2026-doors-6-30-pm",
       "title": "Komedia Christmas Party",
       "date": "2026-12-12",
@@ -11553,18 +9454,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-christmas-party/?eid=20597",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-12-quarters-editions",
-      "title": "Editions",
-      "date": "2026-12-12",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/trancecoda-present-j00f-editions/quarters/3635408",
       "last_seen": "2026-10-06"
     },
     {
@@ -11600,18 +9489,6 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-13-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-12-13",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -11652,18 +9529,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-14-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-12-14",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-14-theatreroyalbrighton-legally-blonde-the-musical",
       "title": "Legally Blonde - The Musical",
       "date": "2026-12-14",
@@ -11697,18 +9562,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/bogan-bingo/?eid=19277",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-15-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-12-15",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -11772,18 +9625,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-16-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2026-12-16",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-16-the-hope-ruin-girlband-currls-tall-child-kanukai",
       "title": "GIRLBAND! + Currls + tall child + Kanukai",
       "date": "2026-12-16",
@@ -11794,18 +9635,6 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/the-hope-and-ruin",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-17-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-12-17",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -11834,18 +9663,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-17-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-12-17",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-17-komedia-komedia-christmas-party-thu-17-dec-2026-doors-6-30-pm",
       "title": "Komedia Christmas Party",
       "date": "2026-12-17",
@@ -11869,18 +9686,6 @@
       "last_seen": "2026-10-05"
     },
     {
-      "id": "2026-12-18-komedia-doors-9-50-am",
-      "title": "Doors: 9:50 AM",
-      "date": "2026-12-18",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "10:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-18-komedia-story-magic-fri-18-dec-2026-10-00-am-doors-9-50-am",
       "title": "Story Magic",
       "date": "2026-12-18",
@@ -11893,18 +9698,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-18-komedia-doors-10-50-am",
-      "title": "Doors: 10:50 AM",
-      "date": "2026-12-18",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-18-komedia-story-magic-fri-18-dec-2026-11-00-am-doors-10-50-am",
       "title": "Story Magic",
       "date": "2026-12-18",
@@ -11914,18 +9707,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/story-magic/?eid=20771",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-18-komedia-doors-12-20-pm",
-      "title": "Doors: 12:20 PM",
-      "date": "2026-12-18",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "12:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -11988,18 +9769,6 @@
       "last_seen": "2026-10-05"
     },
     {
-      "id": "2026-12-18-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-12-18",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-18-komedia-komedia-christmas-party-fri-18-dec-2026-doors-6-30-pm",
       "title": "Komedia Christmas Party",
       "date": "2026-12-18",
@@ -12034,18 +9803,6 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-19-komedia-doors-10-30-am",
-      "title": "Doors: 10:30 AM",
-      "date": "2026-12-19",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12108,42 +9865,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-19-komedia-doors-4-00-pm",
-      "title": "Doors: 4:00 PM",
-      "date": "2026-12-19",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-19-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-12-19",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-19-komedia-doors-9-00-pm",
-      "title": "Doors: 9:00 PM",
-      "date": "2026-12-19",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-19-komedia-komedia-christmas-party-sat-19-dec-2026-doors-6-30-pm",
       "title": "Komedia Christmas Party",
       "date": "2026-12-19",
@@ -12192,18 +9913,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-20-komedia-doors-10-30-am",
-      "title": "Doors: 10:30 AM",
-      "date": "2026-12-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-20-komedia-longnose-puppets-presents-penguin-sun-20-dec-2026-11-00-am-doors-10-30-am",
       "title": "Longnose Puppets Presents: Penguin",
       "date": "2026-12-20",
@@ -12213,18 +9922,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/longnose-puppets-presents-penguin/?eid=20427",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-20-komedia-doors-3-00-pm",
-      "title": "Doors: 3:00 PM",
-      "date": "2026-12-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "15:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12276,18 +9973,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-20-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-12-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-20-komedia-uk-queen-sun-20-dec-2026-doors-7-30-pm",
       "title": "UK Queen",
       "date": "2026-12-20",
@@ -12312,18 +9997,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-21-komedia-doors-10-30-am",
-      "title": "Doors: 10:30 AM",
-      "date": "2026-12-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-21-komedia-longnose-puppets-presents-penguin-mon-21-dec-2026-11-00-am-doors-10-30-am",
       "title": "Longnose Puppets Presents: Penguin",
       "date": "2026-12-21",
@@ -12333,18 +10006,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/longnose-puppets-presents-penguin/?eid=20438",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-21-komedia-doors-1-30-pm",
-      "title": "Doors: 1:30 PM",
-      "date": "2026-12-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "14:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12372,18 +10033,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-21-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2026-12-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-21-komedia-suspiciously-elvis-christmas-special-mon-21-dec-2026-doors-6-00-pm",
       "title": "Suspiciously Elvis Christmas Special",
       "date": "2026-12-21",
@@ -12408,18 +10057,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-22-komedia-doors-10-30-am",
-      "title": "Doors: 10:30 AM",
-      "date": "2026-12-22",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-22-komedia-longnose-puppets-presents-penguin-tue-22-dec-2026-11-00-am-doors-10-30-am",
       "title": "Longnose Puppets Presents: Penguin",
       "date": "2026-12-22",
@@ -12429,18 +10066,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/longnose-puppets-presents-penguin/?eid=20440",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-22-komedia-doors-1-30-pm",
-      "title": "Doors: 1:30 PM",
-      "date": "2026-12-22",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "14:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12504,18 +10129,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-22-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-12-22",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-22-theatreroyalbrighton-the-christmas-cracker",
       "title": "The Christmas Cracker",
       "date": "2026-12-22",
@@ -12528,18 +10141,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-23-komedia-doors-10-30-am",
-      "title": "Doors: 10:30 AM",
-      "date": "2026-12-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-23-komedia-longnose-puppets-presents-penguin-wed-23-dec-2026-11-00-am-doors-10-30-am",
       "title": "Longnose Puppets Presents: Penguin",
       "date": "2026-12-23",
@@ -12549,18 +10150,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/longnose-puppets-presents-penguin/?eid=20442",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-23-komedia-doors-1-30-pm",
-      "title": "Doors: 1:30 PM",
-      "date": "2026-12-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "14:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12600,30 +10189,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-23-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2026-12-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-24-komedia-doors-10-30-am",
-      "title": "Doors: 10:30 AM",
-      "date": "2026-12-24",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-24-komedia-longnose-puppets-presents-penguin-thu-24-dec-2026-11-00-am-doors-10-30-am",
       "title": "Longnose Puppets Presents: Penguin",
       "date": "2026-12-24",
@@ -12636,18 +10201,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-27-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2026-12-27",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-27-komedia-rhiannon-the-fleetwood-mac-show-sun-27-dec-2026-8-00-pm-doors-7-30-pm",
       "title": "Rhiannon – The Fleetwood Mac Show",
       "date": "2026-12-27",
@@ -12657,18 +10210,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/rhiannon-the-fleetwood-mac-show/?eid=20637",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-29-komedia-doors-8-00-pm",
-      "title": "Doors: 8:00 PM",
-      "date": "2026-12-29",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12693,30 +10234,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/comic-boom/?eid=18639",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-30-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2026-12-30",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-31-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2026-12-31",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12768,42 +10285,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-31-komedia-doors-10-00-pm",
-      "title": "Doors: 10:00 PM",
-      "date": "2026-12-31",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-31-komedia-doors-1-00-pm",
-      "title": "Doors: 1:00 PM",
-      "date": "2026-12-31",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-31-komedia-doors-9-00-pm",
-      "title": "Doors: 9:00 PM",
-      "date": "2026-12-31",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-31-komedia-spellbound-thu-31-dec-2026-doors-9-00-pm",
       "title": "Spellbound",
       "date": "2026-12-31",
@@ -12813,18 +10294,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/spellbound/?eid=20112",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-02-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-02",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12864,18 +10333,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-04-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-04-01-komedia-james-phelan-the-man-who-was-magic-mon-4-jan-2027-8-00-pm-doors-7-00-pm",
       "title": "James Phelan: The Man Who Was Magic",
       "date": "2027-01-04",
@@ -12897,18 +10354,6 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-05-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-05",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12936,18 +10381,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-06-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-06-01-komedia-james-phelan-the-man-who-was-magic-wed-6-jan-2027-8-00-pm-doors-7-00-pm",
       "title": "James Phelan: The Man Who Was Magic",
       "date": "2027-01-06",
@@ -12957,18 +10390,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/james-phelan-the-man-who-was-magic/?eid=20212",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-07-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-07",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12996,18 +10417,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-08-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-08",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-01-08-komedia-komedia-comedy-club",
       "title": "Komedia Comedy Club",
       "date": "2027-01-08",
@@ -13029,18 +10438,6 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-09-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-09",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -13091,18 +10488,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-15-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-15",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-01-15-komedia-myndstate-deep-breath-fri-15-jan-2027-7-30-pm-doors-7-00-pm",
       "title": "myndstate: deep breath",
       "date": "2027-01-15",
@@ -13112,18 +10497,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/myndstate-deep-breath/?eid=20235",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-15-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-15",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -13139,18 +10512,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-16-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-16",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-01-16-komedia-komedia-comedy-club-sat-16-jan-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-01-16",
@@ -13163,18 +10524,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-17-komedia-doors-1-30-pm",
-      "title": "Doors: 1:30 PM",
-      "date": "2027-01-17",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "14:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-01-17-komedia-komedia-new-comedy-award-sun-17-jan-2027-2-00-pm-doors-1-30-pm",
       "title": "Komedia New Comedy Award",
       "date": "2027-01-17",
@@ -13184,18 +10533,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-new-comedy-award-in-association-with-comic-boom-and-victoria-nangle/?eid=20795",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-17-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2027-01-17",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "18:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -13235,18 +10572,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-21-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-01-21-komedia-sam-eley-is-basil-crumbwick-soul-sewage",
       "title": "Sam Eley is Basil Crumbwick: Soul Sewage",
       "date": "2027-01-21",
@@ -13280,18 +10605,6 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-22-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-22",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -13331,18 +10644,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-23-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-01-23-komedia-komedia-comedy-club-sat-23-jan-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-01-23",
@@ -13379,18 +10680,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-24-komedia-doors-10-30-am",
-      "title": "Doors: 10:30 AM",
-      "date": "2027-01-24",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-01-24-komedia-sundae-club-sun-24-jan-2027-11-00-am-doors-10-30-am",
       "title": "Sundae Club",
       "date": "2027-01-24",
@@ -13400,18 +10689,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.komedia.co.uk/shows/sundae-club/?eid=20582",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-24-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2027-01-24",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "18:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -13427,18 +10704,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-24-komedia-doors-6-00-pm-2",
-      "title": "Doors: 6:00 PM",
-      "date": "2027-01-24",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-01-24-komedia-rob-newman-21st-century-survival-guide-sun-24-jan-2027-7-00-pm-doors-6-00-pm",
       "title": "Rob Newman: 21st Century Survival Guide",
       "date": "2027-01-24",
@@ -13448,18 +10713,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/rob-newman-21st-century-survival-guide/?eid=20035",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-25-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-25",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -13475,18 +10728,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-26-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-26",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-01-26-komedia-james-phelan-the-man-who-was-magic-tue-26-jan-2027-8-00-pm-doors-7-00-pm",
       "title": "James Phelan: The Man Who Was Magic",
       "date": "2027-01-26",
@@ -13499,18 +10740,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-27-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-27",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-01-27-komedia-james-phelan-the-man-who-was-magic-wed-27-jan-2027-8-00-pm-doors-7-00-pm",
       "title": "James Phelan: The Man Who Was Magic",
       "date": "2027-01-27",
@@ -13520,30 +10749,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/james-phelan-the-man-who-was-magic/?eid=20216",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-28-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-28",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-28-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-01-28",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -13619,18 +10824,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-29-quarters-monkeys",
-      "title": "Monkeys",
-      "date": "2027-01-29",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "18:30",
-      "finish_time": "22:00",
-      "category": "Dance",
-      "ticket_url": "https://pinkdot.seetickets.com/event/the-antarctic-monkeys/quarters/3614681",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-01-29-quarters-the-antarctic-monkeys",
       "title": "The Antarctic Monkeys",
       "date": "2027-01-29",
@@ -13639,18 +10832,6 @@
       "finish_time": "22:00",
       "category": "Music",
       "ticket_url": "https://quartersbrighton.co.uk/whatson",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-29-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-29",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -13675,18 +10856,6 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-30-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-01-30",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -13726,18 +10895,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-31-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2027-01-31",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-01-31-komedia-mark-simmons-friends-sun-31-jan-2027-7-00-pm-doors-6-00-pm",
       "title": "Mark Simmons & Friends",
       "date": "2027-01-31",
@@ -13774,18 +10931,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-02-04-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-02-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-04-02-komedia-lost-voice-guy-the-cerebral-palsy-puppet",
       "title": "Lost Voice Guy – ‘The Cerebral Palsy Puppet’",
       "date": "2027-02-04",
@@ -13807,18 +10952,6 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-05-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-02-05",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -13858,18 +10991,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-02-06-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-02-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-06-02-komedia-komedia-comedy-club-sat-6-feb-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-02-06",
@@ -13879,30 +11000,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21111",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-06-komedia-doors-11-00-am",
-      "title": "Doors: 11:00 AM",
-      "date": "2027-02-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-06-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-02-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -13941,18 +11038,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-02-07-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2027-02-07",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "18:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-07-02-komedia-tinky-winky-my-story",
       "title": "Tinky Winky: My Story",
       "date": "2027-02-07",
@@ -13962,18 +11047,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/tinky-winky-my-story/?eid=21397",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-07-komedia-doors-6-00-pm-2",
-      "title": "Doors: 6:00 PM",
-      "date": "2027-02-07",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -13989,18 +11062,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-02-07-komedia-doors-10-00-am",
-      "title": "Doors: 10:00 AM",
-      "date": "2027-02-07",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-07-02-komedia-record-fair",
       "title": "Record Fair",
       "date": "2027-02-07",
@@ -14010,18 +11071,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/record-fair/?eid=21257",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-10-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-02-10",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -14061,18 +11110,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-02-12-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-02-12",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-02-12-komedia-komedia-comedy-club",
       "title": "Komedia Comedy Club",
       "date": "2027-02-12",
@@ -14106,18 +11143,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-13-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-02-13",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -14169,30 +11194,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-02-14-komedia-doors-10-00-am",
-      "title": "Doors: 10:00 AM",
-      "date": "2027-02-14",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-18-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-02-18",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-02-18-komedia-red-richardson-premium-economy-tour-thu-18-feb-2027-8-00-pm-doors-7-00-pm",
       "title": "Red Richardson Premium Economy Tour",
       "date": "2027-02-18",
@@ -14214,18 +11215,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-19-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-02-19",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -14265,18 +11254,6 @@
       "last_seen": "2026-10-05"
     },
     {
-      "id": "2027-02-20-komedia-doors-5-00-pm",
-      "title": "Doors: 5:00 PM",
-      "date": "2027-02-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "17:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-02-20-komedia-iain-lee-imposter-syndrome",
       "title": "Iain Lee: Imposter Syndrome",
       "date": "2027-02-20",
@@ -14289,18 +11266,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-02-20-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-02-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-02-20-komedia-komedia-comedy-club-sat-20-feb-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-02-20",
@@ -14310,18 +11275,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21113",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-21-komedia-doors-10-30-am",
-      "title": "Doors: 10:30 AM",
-      "date": "2027-02-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -14349,18 +11302,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-02-21-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-02-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-02-21-komedia-joan-as-police-woman-sun-21-feb-2027-doors-7-00-pm",
       "title": "Joan as Police Woman",
       "date": "2027-02-21",
@@ -14373,18 +11314,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-02-23-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-02-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-02-23-komedia-jill-edwards-comedy-workshops-tue-23-feb-2027-doors-7-00-pm",
       "title": "Jill Edwards Comedy Workshops",
       "date": "2027-02-23",
@@ -14394,18 +11323,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/jill-edwards-comedy-workshops-at-komedia-brighton/?eid=19160",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-24-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-02-24",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -14444,30 +11361,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-02-25-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2027-02-25",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-25-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-02-25",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-02-25-komedia-patrick-monahan-i-m-not-a-terrorist-i-m-freddie-mercury",
       "title": "Patrick Monahan: I’m Not a Terrorist – I’m Freddie Mercury",
       "date": "2027-02-25",
@@ -14489,30 +11382,6 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-26-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-02-26",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-26-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-02-26",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -14549,30 +11418,6 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-27-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-02-27",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-27-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-02-27",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -14621,30 +11466,6 @@
       "finish_time": "20:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/jeff-innocent-leaning-in-tickets-2001873996011",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-28-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2027-02-28",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-02-28-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-02-28",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -14708,30 +11529,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-03-04-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-03-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-03-05-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-03-05",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-05-03-komedia-fiona-allen-white-lies",
       "title": "Fiona Allen: White Lies",
       "date": "2027-03-05",
@@ -14744,18 +11541,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-03-05-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-03-05",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-05-03-komedia-komedia-comedy-club-fri-5-mar-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-03-05",
@@ -14765,30 +11550,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21084",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-03-06-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-03-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-03-06-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-03-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -14851,18 +11612,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-03-07-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2027-03-07",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-07-03-komedia-down-the-hatch-comedy-club",
       "title": "Down the Hatch Comedy Club",
       "date": "2027-03-07",
@@ -14884,18 +11633,6 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-03-10-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-03-10",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -14947,18 +11684,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-03-11-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-03-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-03-11-komedia-tape-face-20",
       "title": "Tape Face: 20",
       "date": "2027-03-11",
@@ -14968,18 +11693,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/tape-face-20/?eid=20834",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-03-12-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-03-12",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -15007,18 +11720,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-03-13-komedia-doors-4-30-pm",
-      "title": "Doors: 4:30 PM",
-      "date": "2027-03-13",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "17:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-03-13-komedia-luke-kidgell-live-in-the-uk-and-ireland-sat-13-mar-2027-5-00-pm-doors-4-30-pm",
       "title": "Luke Kidgell – Live in the UK and Ireland",
       "date": "2027-03-13",
@@ -15028,30 +11729,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.komedia.co.uk/shows/luke-kidgell-live-in-the-uk-and-ireland/?eid=20924",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-03-13-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-03-13",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-03-13-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-03-13",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -15127,30 +11804,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-03-14-komedia-doors-3-00-pm",
-      "title": "Doors: 3:00 PM",
-      "date": "2027-03-14",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-03-14-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-03-14",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-03-14-komedia-shovel-dance-collective-plus-support-sun-14-mar-2027-doors-7-00-pm",
       "title": "Shovel Dance Collective Plus Support",
       "date": "2027-03-14",
@@ -15211,30 +11864,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-03-19-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-03-19",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-03-19-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-03-19",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-03-19-komedia-john-robertson-excitable-boy",
       "title": "John Robertson: Excitable Boy",
       "date": "2027-03-19",
@@ -15271,18 +11900,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-03-20-komedia-doors-5-30-pm",
-      "title": "Doors: 5:30 PM",
-      "date": "2027-03-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "18:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-03-20-komedia-pleasure-incorporated-sat-20-mar-2027-6-00-pm-doors-5-30-pm",
       "title": "Pleasure Incorporated",
       "date": "2027-03-20",
@@ -15307,18 +11924,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-03-20-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-03-20",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-03-20-komedia-komedia-comedy-club-sat-20-mar-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-03-20",
@@ -15328,18 +11933,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21117",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-03-21-komedia-doors-10-30-am",
-      "title": "Doors: 10:30 AM",
-      "date": "2027-03-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -15415,18 +12008,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-03-25-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2027-03-25",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-03-25-the-forge-comedy-club-andrew-bird-on-edge",
       "title": "Andrew Bird: On Edge",
       "date": "2027-03-25",
@@ -15436,18 +12017,6 @@
       "finish_time": "21:15",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/andrew-bird-on-edge-tickets-1984672561056",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-03-26-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-03-26",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -15475,30 +12044,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-03-27-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-03-27",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-03-27-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-03-27",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-03-27-komedia-funny-women-live-in-brighton",
       "title": "Funny Women Live in Brighton",
       "date": "2027-03-27",
@@ -15523,18 +12068,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-03-28-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-03-28",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-03-28-komedia-lawrence-chaney-weight-a-minute-sun-28-mar-2027-8-00-pm-doors-7-00-pm",
       "title": "Lawrence Chaney – Weight A Minute",
       "date": "2027-03-28",
@@ -15556,18 +12089,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-03-31-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-03-31",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -15607,18 +12128,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-04-02-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-04-02",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-02-04-komedia-komedia-comedy-club-fri-2-apr-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-04-02",
@@ -15640,30 +12149,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-04-03-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-04-03",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-04-03-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-04-03",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -15715,18 +12200,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-04-04-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2027-04-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-04-04-komedia-down-the-hatch-comedy-club",
       "title": "Down the Hatch Comedy Club",
       "date": "2027-04-04",
@@ -15736,18 +12209,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/down-the-hatch/?eid=21350",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-04-04-komedia-doors-10-00-am",
-      "title": "Doors: 10:00 AM",
-      "date": "2027-04-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -15775,18 +12236,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-04-09-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-04-09",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-04-09-komedia-komedia-comedy-club",
       "title": "Komedia Comedy Club",
       "date": "2027-04-09",
@@ -15811,18 +12260,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-04-10-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-04-10",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-04-10-komedia-komedia-comedy-club",
       "title": "Komedia Comedy Club",
       "date": "2027-04-10",
@@ -15835,32 +12272,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-04-10-quarters-but-tickets",
-      "title": "But Tickets",
-      "date": "2027-04-10",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/rock-day-party/quarters/3704427",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-04-10-quarters-party",
-      "title": "Party",
-      "date": "2027-04-10",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.quartersbrighton.co.uk/whatson/rock-day-party",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-04-10-quarters-rock-day-party-april-10-2027-16-00-20-00-rock-day-party-lands-at-quarters-expect-huge-rock-anthems-singalongs-and-classics-from-queen-ac-dc-nirvana-the-killers-",
-      "title": "Rock Day Party April 10, 2027 16:00-20:00 Rock Day Party lands at Quarters! Expect huge rock anthems, singalongs and classics from Queen, AC/DC, Nirvana, The Killers & more.",
+      "title": "Rock Day Party",
       "date": "2027-04-10",
       "venue": "Quarters",
       "source": "venue",
@@ -15868,18 +12281,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://quarters.seetickets.com/event/rock-day-party/quarters/3704427",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-04-11-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2027-04-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -15931,18 +12332,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-04-16-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-04-16",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-04-16-komedia-komedia-comedy-club-fri-16-apr-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-04-16",
@@ -15963,18 +12352,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://brightoncentre.co.uk/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-04-17-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-04-17",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16038,18 +12415,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-04-23-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-04-23",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-04-23-komedia-komedia-comedy-club-fri-23-apr-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-04-23",
@@ -16059,30 +12424,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21091",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-04-24-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-04-24",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-04-24-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-04-24",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16134,18 +12475,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-04-29-komedia-doors-6-30-pm",
-      "title": "Doors: 6:30 PM",
-      "date": "2027-04-29",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-04-30-concorde-2-a-tribute-to-amy",
       "title": "A Tribute To Amy",
       "date": "2027-04-30",
@@ -16155,18 +12484,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-04-30-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-04-30",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16194,18 +12511,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-05-01-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-05-01",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-01-05-komedia-komedia-comedy-club-sat-1-may-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-05-01",
@@ -16215,18 +12520,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21123",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-05-02-komedia-doors-1-00-pm",
-      "title": "Doors: 1:00 PM",
-      "date": "2027-05-02",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16242,18 +12535,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-05-04-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-05-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-04-05-komedia-jim-white-ben-de-la-cour-tue-4-may-2027-7-30-pm-doors-7-00-pm",
       "title": "Jim White + Ben De La Cour",
       "date": "2027-05-04",
@@ -16263,18 +12544,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/jim-white-ben-de-la-cour/?eid=20913",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-05-05-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-05-05",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16290,18 +12559,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-05-07-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-05-07",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-07-05-komedia-komedia-comedy-club",
       "title": "Komedia Comedy Club",
       "date": "2027-05-07",
@@ -16311,18 +12568,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21093",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-05-08-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-05-08",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16386,18 +12631,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-05-15-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-05-15",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-05-15-komedia-komedia-comedy-club-sat-15-may-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-05-15",
@@ -16407,18 +12640,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21125",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-05-19-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-05-19",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16434,18 +12655,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-05-19-komedia-doors-7-00-pm-2",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-05-19",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-05-19-komedia-tom-glover-did-you-see-that-reel-i-sent-you",
       "title": "Tom Glover: Did you see that reel I sent you?",
       "date": "2027-05-19",
@@ -16455,18 +12664,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/tom-glover-did-you-see-that-reel-i-sent-you/?eid=21073",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-05-21-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-05-21",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16491,18 +12688,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.theoldmarket.com/shows/luke-kidgell",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-05-22-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-05-22",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16542,18 +12727,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-05-28-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-05-28",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-05-28-komedia-komedia-comedy-club-fri-28-may-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-05-28",
@@ -16563,18 +12736,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21095",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-05-29-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-05-29",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16614,18 +12775,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-05-30-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2027-05-30",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-05-30-komedia-joe-avati-good-old-days-sun-30-may-2027-7-00-pm-doors-6-00-pm",
       "title": "Joe Avati – Good Old Days",
       "date": "2027-05-30",
@@ -16661,18 +12810,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-06-05-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-06-05",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-05-06-komedia-komedia-comedy-club-sat-5-jun-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-06-05",
@@ -16682,18 +12819,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21128",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-06-05-komedia-doors-11-00-am",
-      "title": "Doors: 11:00 AM",
-      "date": "2027-06-05",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16709,18 +12834,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-06-06-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2027-06-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-06-06-komedia-down-the-hatch-comedy-club",
       "title": "Down the Hatch Comedy Club",
       "date": "2027-06-06",
@@ -16730,18 +12843,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/down-the-hatch/?eid=21351",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-06-06-komedia-doors-10-00-am",
-      "title": "Doors: 10:00 AM",
-      "date": "2027-06-06",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16757,18 +12858,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-06-11-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-06-11",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-06-11-komedia-komedia-comedy-club",
       "title": "Komedia Comedy Club",
       "date": "2027-06-11",
@@ -16778,18 +12867,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21096",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-06-12-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-06-12",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16805,18 +12882,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-06-12-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-06-12",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-06-12-komedia-king-awesome",
       "title": "King Awesome",
       "date": "2027-06-12",
@@ -16829,18 +12894,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-06-18-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-06-18",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-06-18-komedia-komedia-comedy-club-fri-18-jun-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-06-18",
@@ -16850,18 +12903,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21097",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-06-19-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-06-19",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16889,18 +12930,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-06-25-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-06-25",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-06-25-komedia-komedia-comedy-club",
       "title": "Komedia Comedy Club",
       "date": "2027-06-25",
@@ -16910,30 +12939,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21098",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-06-26-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-06-26",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-06-26-komedia-doors-7-30-pm",
-      "title": "Doors: 7:30 PM",
-      "date": "2027-06-26",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -16961,18 +12966,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-07-02-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-07-02",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-02-07-komedia-komedia-comedy-club",
       "title": "Komedia Comedy Club",
       "date": "2027-07-02",
@@ -16982,18 +12975,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21099",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-07-03-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-07-03",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {
@@ -17009,18 +12990,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-07-04-komedia-doors-6-00-pm",
-      "title": "Doors: 6:00 PM",
-      "date": "2027-07-04",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-04-07-komedia-down-the-hatch-comedy-club",
       "title": "Down the Hatch Comedy Club",
       "date": "2027-07-04",
@@ -17033,18 +13002,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-07-09-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-07-09",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2027-07-09-komedia-komedia-comedy-club",
       "title": "Komedia Comedy Club",
       "date": "2027-07-09",
@@ -17054,18 +13011,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21100",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-07-10-komedia-doors-7-00-pm",
-      "title": "Doors: 7:00 PM",
-      "date": "2027-07-10",
-      "venue": "Komedia",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.komedia.co.uk/whats-on/",
       "last_seen": "2026-10-06"
     },
     {

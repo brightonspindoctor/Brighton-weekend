@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://zqvccsnfrkrtcsitfwcd.supabase.co wss://zqvccsnfrkrtcsitfwcd.supabase.co; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://zqvccsnfrkrtcsitfwcd.supabase.co wss://zqvccsnfrkrtcsitfwcd.supabase.co; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="application-name" content="Brighton Weekend">
+<meta name="description" content="Brighton Weekend: make the most of yours. Gigs, comedy, clubs and theatre in Brighton &amp; Hove, planned with your groups.">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="Brighton Weekend">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#0B1D2F">
-<link rel="manifest" href="manifest.webmanifest?v=57">
+<link rel="manifest" href="manifest.webmanifest?v=58">
 <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png?v=57">
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="icons/apple-touch-icon.png?v=57">
 <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png?v=57">
@@ -296,6 +297,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 #welcome{position:fixed;inset:0;z-index:20;height:100dvh;overflow:hidden;display:grid;place-items:center;padding:max(12px,env(safe-area-inset-top)) 12px max(12px,env(safe-area-inset-bottom));background:var(--bw-abyss)}
 .welcome-card{width:min(420px,92vw);max-height:calc(100dvh - 24px);overflow:auto;background:var(--bw-card);border:1px solid var(--bw-line);border-radius:var(--bw-radius-xl);padding:24px 22px;box-shadow:0 20px 60px rgba(0,0,0,.45);text-align:center}
 .welcome-card h2{font-size:1.9rem;margin-bottom:9px}
+.slogan{font-weight:700;font-size:1.08rem;letter-spacing:-.01em;color:var(--bw-interested-fg)}
 .welcome-card>div>p{color:var(--bw-muted);font-size:var(--bw-text-md);line-height:1.45;margin:0 0 20px}
 .welcome-card form{display:grid;gap:10px}
 .welcome-card .btn{width:100%}
@@ -363,7 +365,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
     <div id="authStep">
       <img class="auth-logo" src="icons/icon-192.png?v=57" alt="Brighton Weekend logo">
       <h2>Welcome to Brighton Weekend</h2>
-      <p>Sign in securely to keep your plans, groups and profile across devices.</p>
+      <p class="slogan">Make the most of yours</p>
       <button type="button" id="googleSignInBtn" class="btn google-btn">Continue with Google</button>
       <div class="magic-link-divider"><span>or</span></div>
       <form id="magicLinkForm" class="magic-link-form">
@@ -431,7 +433,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 
 <header><div class="wrap">
   <div class="app-brand"><img src="icons/icon-192.png?v=57" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
-  <div class="sub" id="subtitle">Loading events…</div></div></div>
+  <div class="sub" id="subtitle">Make the most of yours</div></div></div>
   <div class="controls">
     <button id="prev" aria-label="Previous week">‹</button><button id="week" class="week" aria-live="polite"></button><button id="next" aria-label="Next week">›</button>
     <button id="today" class="today">This week</button><button id="refresh" aria-label="Refresh events">↻</button>
@@ -442,12 +444,11 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <main id="comedyTab" class="wrap app-main hidden">
   <div class="section-head">
     <h2>Comedy</h2>
-    <div class="note">Stand-up, improv and sketch across Brighton for the week shown above.</div>
   </div>
   <div id="comedyList"></div>
 </main>
 <main id="searchTab" class="wrap app-main hidden">
-<div class="section-head"><h2>Search</h2><div class="note">Find something by artist, dates and venues, or festivals.</div></div>
+<div class="section-head"><h2>Search</h2></div>
 <div class="panel">
   <div class="segmented search-segmented" role="group" aria-label="Search by"><button type="button" class="active" data-search-mode="venue" aria-pressed="true">Dates and venues</button><button type="button" data-search-mode="artist" aria-pressed="false">Artist</button><button type="button" data-search-mode="festival" aria-pressed="false">Festivals</button></div>
   <div id="searchVenueMode" class="form-stack">
@@ -457,11 +458,9 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
   </div>
   <div id="searchArtistMode" class="form-stack hidden">
     <label>Artist or show<input id="searchArtist" type="search" placeholder="e.g. Ben Folds" autocomplete="off"></label>
-    <p class="note">Searches every date in the listings.</p>
   </div>
   <div id="searchFestivalMode" class="form-stack hidden">
     <label>Festival<input id="searchFestival" type="search" placeholder="e.g. Brighton Festival" autocomplete="off"></label>
-    <p class="note">Searches festival names, locations and categories.</p>
   </div>
   <button id="searchClear" type="button" class="btn btn-ghost">Clear search</button>
 </div>
@@ -469,7 +468,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <div id="searchResults"></div>
 </main>
 <main id="festivalsTab" class="wrap app-main hidden">
-  <div class="section-head"><h2>Festivals</h2><div class="note">Upcoming UK festivals through the end of next year. Brighton shows all festival types in the city.</div></div>
+  <div class="section-head"><h2>Festivals</h2></div>
   <div id="festivalFilters" class="festival-filters" role="tablist" aria-label="Festival type">
     <button type="button" class="festival-filter active" data-festival-filter="Brighton" role="tab" aria-selected="true">Brighton</button>
     <button type="button" class="festival-filter" data-festival-filter="Music" role="tab" aria-selected="false">Music</button>
@@ -486,11 +485,10 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 </main>
 <main id="peopleTab" class="wrap app-main hidden">
 <h2>Happenings</h2>
-<p class="note">See what people are interested in and where they have bought tickets.</p>
-<div class="custom-event-launch"><div><strong>Add something missing?</strong><div class="custom-event-help">Add an event and it will appear in the main event feed.</div></div><button id="toggleCustomEvent" class="btn btn-primary" type="button">＋ Add event</button></div>
+<div class="custom-event-launch"><div><strong>Add something missing?</strong></div><button id="toggleCustomEvent" class="btn btn-primary" type="button">＋ Add event</button></div>
 <section id="customEventPanel" class="custom-event-panel collapsed">
   <h3>Add an event</h3>
-  <div class="custom-event-help">Add something you've found that isn't in Brighton Weekend yet. It will appear on the main event feed for everyone.</div>
+  <div class="custom-event-help">Everyone using Brighton Weekend will see it.</div>
   <div class="custom-event-form">
     <label>Event name<input id="customTitle" maxlength="120" placeholder="e.g. DJ Yoda — 80s Mixtape Live"></label>
     <div class="custom-event-row"><label>Date<input id="customDate" type="date"></label><label>Category<select id="customCategory"><option>Music</option><option>Comedy</option><option>Club</option><option>Theatre</option><option>Other</option></select></label></div>
@@ -506,8 +504,8 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 </main>
 <main id="venuesTab" class="wrap app-main hidden">
 <h2>Settings</h2>
-<div class="settings-section"><div class="section-head venue-settings-head"><div><h3>Venues</h3><div class="note">Choose which venues appear in Discover.</div></div><div class="venue-actions"><button type="button" class="btn btn-chip" id="selectComedyVenues">Comedy venues</button><button type="button" class="btn btn-chip" id="selectAllVenues">Select all</button><button type="button" class="btn btn-chip" id="unselectAllVenues">Unselect all</button></div></div><div id="venueList"></div><div class="day-preferences"><h4>Days</h4><div class="note">Choose which days appear in Discover and Comedy.</div><div id="dayGrid" class="day-grid"></div></div></div>
-<div class="settings-card"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" class="avatar" src="profile-icons/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong><div class="profile-icon-note">You get one at random when you first sign in. Pick a different one whenever you like.</div></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div><div class="settings-card settings-groups"><h3>Groups</h3><p class="note">Manage the groups that shape your Happenings feed.</p><div id="groupManager"></div><button id="manageGroups" class="btn btn-secondary">Manage groups</button></div>
+<div class="settings-section"><div class="section-head venue-settings-head"><div><h3>Venues</h3></div><div class="venue-actions"><button type="button" class="btn btn-chip" id="selectComedyVenues">Comedy venues</button><button type="button" class="btn btn-chip" id="selectAllVenues">Select all</button><button type="button" class="btn btn-chip" id="unselectAllVenues">Unselect all</button></div></div><div id="venueList"></div><div class="day-preferences"><h4>Days</h4><div id="dayGrid" class="day-grid"></div></div></div>
+<div class="settings-card"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" class="avatar" src="profile-icons/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div><div class="settings-card settings-groups"><h3>Groups</h3><div id="groupManager"></div><button id="manageGroups" class="btn btn-secondary">Manage groups</button></div>
 <div class="settings-card"><h3>Support Brighton Weekend</h3><p class="note">If you enjoy using the app, you can buy me a coffee to help keep it running and improving.</p><a class="support-btn" href="https://www.buymeacoffee.com/jonnysadler" target="_blank" rel="noopener">☕ Buy me a coffee ↗</a></div>
 <div class="settings-card"><h3>Account</h3><button id="changeName" class="btn btn-secondary">Change my name</button> <button id="signOut" class="btn btn-ghost">Sign out</button><div id="accountEmail" class="group-meta"></div><div class="danger-zone"><h4>Delete my account</h4><p class="note">Permanently deletes your profile, your Interested and Going choices, your group memberships and any events you added. This can't be undone.</p><button id="deleteAccount" type="button" class="btn btn-danger">Delete my account</button></div></div>
 <div class="settings-card install-area"><h3>Install the app</h3><button id="installApp" class="btn btn-primary install-btn">↓ Add to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
@@ -707,7 +705,11 @@ async function api(method,path,body,extraHeaders={}){
   headers:{apikey:SUPABASE_KEY,Authorization:'Bearer '+(authSession?.access_token||SUPABASE_KEY),'Content-Type':'application/json','Prefer':'return=representation',...extraHeaders},
   body:body===undefined?undefined:JSON.stringify(body)
  });
- if(!r.ok) throw new Error(await r.text());
+ if(!r.ok){
+  const text=await r.text();let msg=text;
+  try{const j=JSON.parse(text);msg=j.message||j.msg||j.error_description||j.error||text}catch(e){}
+  throw new Error(msg||('Request failed ('+r.status+')'));
+ }
  if(r.status===204) return [];
  const t=await r.text(); return t?JSON.parse(t):[];
 }
@@ -737,6 +739,7 @@ async function addCustomEvent(){
  if(!title||!date||!venue)return alert('Please add a title, date and venue.');
  if(venue==='Other'&&!venueDetail)return alert('Please tell us the other venue.');
  if(!parseEventDate(date))return alert('Please choose a valid date.');
+ if(date<todayKey())return alert('That date has passed. Please choose today or a later date.');
  if(ticket&&!safeUrl(ticket))return alert('Ticket links must start with https:// or http://');
  try{
   const payload={title,date,venue,venue_detail:venue==='Other'?venueDetail:null,time:time||null,finish_time:finish||null,price:price||null,status:'',ticket_url:ticket||null,category:category||'Other',description:description||null,created_by:uid(),created_by_name:name()};
@@ -1006,6 +1009,7 @@ function eventCard(e,{showDate=false}={}){
 function render(){
  const end=new Date(weekStart);end.setDate(end.getDate()+6);
  $('week').textContent=weekStart.toLocaleDateString('en-GB',{day:'numeric',month:'short'})+' – '+end.toLocaleDateString('en-GB',{day:'numeric',month:'short'});
+ $('prev').disabled=weekStart<=getMonday();
  const days=weekDays();
  if(!days.length){$('discover').innerHTML=newPanelHtml()+'<div class="empty">None of your chosen days are left this week. Tap › for next week, or change your days in Settings.</div>';return}
  $('discover').innerHTML=newPanelHtml()+days.map(day=>{
@@ -1038,7 +1042,7 @@ function renderPeople(){
    const members=[...new Map(g.members.map(m=>[m.user_id,m])).values()].sort((a,b)=>(a.user_name||'').localeCompare(b.user_name||''));
    return `<div class="member-group"><div class="group-heading">${esc(g.name)} <span class="member-count">${members.length}</span></div><div class="people">${members.map(m=>`<span class="social-chip profile-chip"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(m.user_id))}" alt=""></i>${esc(m.user_name)}</span>`).join('')}</div></div>`;
  }).join('');
- let html=`<section class="group-roster"><div class="section-head"><h3>People in your groups</h3><div class="note">Everyone who shares a group with you.</div></div>${roster}</section>`;
+ let html=`<section class="group-roster"><div class="section-head"><h3>People in your groups</h3></div>${roster}</section>`;
 
  // Other people's responses, grouped by event. My own rows are left out here:
  // my status is shown once per card from my own commitments instead.
@@ -1098,7 +1102,7 @@ function debugData(){
 }
 
 let festivalFilter='Brighton';
-function festivalIsBrighton(f){return String(f.location||f.location_display||'').toLowerCase().includes('brighton')}
+function festivalIsBrighton(f){return /\b(brighton|hove)\b/i.test(String(f.location||'')+' '+String(f.location_display||''))}
 function festivalDateLabel(f){
  const a=parseEventDate(f.date),b=parseEventDate(f.date_end||f.date); if(!a)return '';
  if(!b||dateKey(a)===dateKey(b))return a.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
@@ -1142,7 +1146,7 @@ async function refresh(){
    cleaned.push(e);
   }
   events=mergeEvents(cleaned);
-  $('subtitle').textContent=`${events.length} events · updated ${j.updated||''}`;
+  $('subtitle').textContent='Make the most of yours';
   debugData();
   renderAll();
   return {ok:true,count:events.length};
@@ -1274,7 +1278,7 @@ $('showCreateGroup').onclick=()=>{hide('joinGroupPanel');$('createGroupPanel').c
 $('showJoinGroup').onclick=()=>{hide('createGroupPanel');$('joinGroupPanel').classList.toggle('hidden')};
 $('createGroupBtn').onclick=createGroup;
 $('joinPrivateBtn').onclick=()=>{const n=$('privateGroupName').value.trim(),p=$('privateGroupPin').value.trim();if(!n||!/^\d{3}$/.test(p))return alert('Enter the exact group name and a 3 digit PIN.');joinGroup(null,p,n)};
-$('prev').onclick=()=>{weekStart.setDate(weekStart.getDate()-7);renderAll()};
+$('prev').onclick=()=>{if(weekStart<=getMonday())return;weekStart.setDate(weekStart.getDate()-7);renderAll()};
 $('next').onclick=()=>{weekStart.setDate(weekStart.getDate()+7);renderAll()};
 $('today').onclick=()=>{weekStart=getMonday();renderAll()};
 $('refresh').onclick=async()=>{
@@ -1287,7 +1291,9 @@ $('manageGroups').onclick=()=>showWelcome('groups');
 document.addEventListener('click',e=>{const b=e.target.closest('[data-leave-group]');if(!b)return;leaveGroup(b.dataset.leaveGroup,b.dataset.leaveName,b)});document.addEventListener('click',e=>{const b=e.target.closest('[data-invite-group]');if(!b)return;createGroupInviteLink(b.dataset.inviteGroup,b.dataset.inviteName,b.dataset.invitePrivate==='1',b.dataset.invitePin,b)});
 $('customVenue').innerHTML='<option value="">Choose a venue…</option>'+VENUES.map(v=>`<option>${esc(v)}</option>`).join('');
 $('customVenue').onchange=toggleOtherVenue;
-$('toggleCustomEvent').onclick=()=>{const panel=$('customEventPanel');const open=panel.classList.toggle('collapsed')===false;$('toggleCustomEvent').textContent=open?'− Hide form':'＋ Add event';if(open) setTimeout(()=>$('customTitle').focus(),50)};
+function setCustomDateLimits(){const d=$('customDate');if(!d)return;const t=new Date();d.min=dateKey(t);t.setDate(t.getDate()+730);d.max=dateKey(t)}
+setCustomDateLimits();
+$('toggleCustomEvent').onclick=()=>{setCustomDateLimits();const panel=$('customEventPanel');const open=panel.classList.toggle('collapsed')===false;$('toggleCustomEvent').textContent=open?'− Hide form':'＋ Add event';if(open) setTimeout(()=>$('customTitle').focus(),50)};
 $('addCustomEventBtn').onclick=addCustomEvent;
 const TABS=['discover','comedyTab','festivalsTab','searchTab','peopleTab','venuesTab'];
 document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{

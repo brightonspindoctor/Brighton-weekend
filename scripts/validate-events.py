@@ -21,6 +21,18 @@ GENERIC_TITLES = {
     "related events", "similar events", "more events", "whats on", "coming soon",
 }
 
+NOT_A_TITLE = re.compile(r"""(?:
+   doors?(?:\s*open)?\s*[:\-]?\s*\d.*                 # Doors: 7:00 PM
+  |starts?(?:\s*at)?\s*[:\-]?\s*\d.*                  # Starts 8pm
+  |(?:start\s*)?times?\s*[:\-]\s*\d.*                 # Time: 8pm
+  |on\s+sale(?:\s+now)?|on\s+sale\s+\d.*
+  |tickets?\s+from\s+\W?\d.*|from\s+\W?\d[\d.,]*      # Tickets from £10
+  |ages?\s*\d+\+?.*|\d{1,2}\+                         # Age 18+, 18+
+  |\d{1,2}(?::\d{2})?\s*(?:am|pm)(?:\s*[-–]\s*\d{1,2}(?::\d{2})?\s*(?:am|pm))?   # 8pm, 8pm-11pm
+  |limited\s+(?:free\s+)?tickets?\b.*|early\s*bird(?:\s+tickets?)?|bu[yt]\s+tickets?\b.*
+  |pub\s+events|top\s+picks|next\s+up(?:\s+in\s+the\s+venue)?|this\s+week|coming\s+(?:up|soon)|upcoming
+  |featured|free\s+tickets?|all\s+events|whats?\s+on|more\s+events|you\s+might\s+also\s+like|edition
+)""", re.I | re.X)
 GENERIC_KEYS = {re.sub(r"[^a-z0-9]+", " ", t).strip() for t in GENERIC_TITLES}
 
 def fail(message):
@@ -55,7 +67,7 @@ for i, event in enumerate(events):
     if not (start <= event_date <= end): errors.append(f"{event_id}: date outside declared range")
     low = title.lower()
     if venue.lower() == "patterns" and any(marker in low for marker in PATTERNS_RECURRING): errors.append(f"recurring Patterns event still present: {event_id}")
-    if low in GENERIC_TITLES or re.sub(r"[^a-z0-9]+", " ", low).strip() in GENERIC_KEYS or not re.search(r"[^\W\d_]{2}", low): errors.append(f"generic title still present: {event_id}")
+    if low in GENERIC_TITLES or re.sub(r"[^a-z0-9]+", " ", low).strip() in GENERIC_KEYS or not re.search(r"[^\W\d_]{2}", low) or NOT_A_TITLE.fullmatch(low): errors.append(f"generic title still present: {event_id}")
     for field in ("time", "finish_time"):
         value = str(event.get(field) or "")
         if value and not re.fullmatch(r"\d{2}:\d{2}", value): errors.append(f"{event_id}: {field} {value!r} is not HH:MM")

@@ -32,6 +32,15 @@ for (const id of names) {
     if (manifest[id].sha256 !== actualSha256) {
       throw new Error(`Avatar artwork changed after selection: ${id} -> ${file}`);
     }
+    // The selected source artwork must still be the exact file that was chosen.
+    if (manifest[id].source) {
+      const sourcePath = `profile-icons/${manifest[id].source}`;
+      if (!fs.existsSync(sourcePath)) throw new Error(`Avatar ${id}: selected artwork ${sourcePath} is missing`);
+      const sourceSha = crypto.createHash('sha256').update(fs.readFileSync(sourcePath)).digest('hex');
+      if (manifest[id].source_sha256 && manifest[id].source_sha256 !== sourceSha) {
+        throw new Error(`Avatar ${id}: selected artwork ${sourcePath} changed after selection`);
+      }
+    }
   }
 }
 
