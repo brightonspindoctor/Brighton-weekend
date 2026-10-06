@@ -148,7 +148,7 @@ def can_merge(kept_event, event):
     return kept_event.get("source") != event.get("source") and "discovery" in (kept_event.get("source"), event.get("source"))
 
 def absorb(kept_event, event):
-    for field in ("time", "finish_time", "ticket_url"):
+    for field in ("time", "finish_time", "ticket_url", "promoter"):
         if not kept_event.get(field) and event.get(field):
             kept_event[field] = event[field]
     if kept_event.get("category") in (None, "", "Other") and event.get("category") not in (None, "", "Other"):

@@ -127,6 +127,7 @@ def joy_cards(soup,page_url):
   url=urljoin(page_url,(buy or page or {}).get('href') or page_url)
   e=make_event(title,parse_date(dt.get_text(strip=True)),'',url,venue,'')
   if e:
+   e['promoter']='JOY. Concerts'  # shown as a sticker on the event card
    if e['category']=='Other' and not re.search(r'wrestling|quiz|market|talk',title,re.I):e['category']='Music'
    out.append(e)
  return out
@@ -201,9 +202,10 @@ async def main():
    old=next((x for x in merged.values() if (x.get('venue','').lower(),x.get('date',''))==(e.get('venue','').lower(),e.get('date','')) and id(x) not in matched and same_show(x.get('title',''),e.get('title',''),e.get('venue',''))),None)
   if old is None:merged[key]=dict(e,last_seen=today);matched.add(id(merged[key]));brand_new.add(id(merged[key]));continue
   matched.add(id(old));old['last_seen']=today
+  if e.get('promoter'):old['promoter']=e['promoter']  # a venue's listing of a Joy gig gets the Joy sticker
   if old.get('source')=='discovery':
    # Found again: keep the id, take today's link and details.
-   k=key_of(old);merged[k]=dict(e,id=old['id'],last_seen=today,**({'also_ids':old['also_ids']} if old.get('also_ids') else {}));matched.add(id(merged[k]))
+   k=key_of(old);merged[k]=dict(e,id=old['id'],last_seen=today,**({'also_ids':old['also_ids']} if old.get('also_ids') else {}),**({'promoter':e.get('promoter') or old['promoter']} if (e.get('promoter') or old.get('promoter')) else {}));matched.add(id(merged[k]))
  for k,e in list(merged.items()):
   if healthy and e.get('source')=='discovery' and id(e) not in matched and str(e.get('last_seen',today))<=stale_before:
    del merged[k];removed_stale+=1

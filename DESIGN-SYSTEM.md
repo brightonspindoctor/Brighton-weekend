@@ -92,6 +92,7 @@ everywhere, including buttons and badges ("Sold out", "Tickets").
 | Event card | `.card` › `.top`, `.title`, `.meta`, `.price`, `.people`, `.commitment`, `.actions` | Built by `eventCard()` in `js/app.js`. Discover, Comedy and Search all use it. |
 | Commitment control | `.commitment` › `.commit-btn.no/.yes/.bought` (+ `.selected`) | Three equal columns that never wrap. Icons hide below 360px wide. |
 | Social chip | `.social-chip` › `.social-icon.heart/.going/.profile` | Counts on cards and names in the group roster. Don't use the class `ticket` here: that's the coral Tickets link. |
+| Promoter sticker | `.card-flags` › `.promoter-sticker.joy` | Top right of an event card for gigs by a promoter we read (`e.promoter`, mapped in `PROMOTER_STICKERS`). Tilted 6°, square-ish corners, its own colour (JOY. yellow `#FFE14D`, navy text, 12:1): it is a label, never a button. Sits after "Sold out". |
 | Ticket icon | `TICKET_ICON` in the app script (`.ticket-glyph`) | A vector ticket drawn in `currentColor`, used for Going everywhere so it looks the same on every phone. |
 | Avatar | `img.avatar` | The artwork file is already a circle; CSS adds exactly one 1px outline (2px teal when selected). No boxes, rings or per-avatar variants. |
 | Status pill | `.happening-summary-pill` / `.happening-status` + `.going` / `.interested` / `.pass` | Happenings only. Your own status appears once per event in `.happening-you`. |
