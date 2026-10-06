@@ -29,7 +29,7 @@
     {
       "venue": "Brighton Centre",
       "url": "https://brightoncentre.co.uk/",
-      "events": 22,
+      "events": 19,
       "error": "",
       "sample": [
         {
@@ -55,52 +55,52 @@
     {
       "venue": "CHALK",
       "url": "https://chalkvenue.com/",
-      "events": 13,
+      "events": 10,
       "error": "",
       "sample": [
-        {
-          "title": "This week",
-          "date": "2026-10-12",
-          "time": "",
-          "link": "https://chalkvenue.com/"
-        },
-        {
-          "title": "This week",
-          "date": "2026-10-12",
-          "time": "",
-          "link": "https://chalkvenue.com/"
-        },
         {
           "title": "Mon 12 Oct 26",
           "date": "2026-10-12",
           "time": "",
-          "link": "https://chalkvenue.com/"
+          "link": "https://chalkvenue.com/event/fat-poppadaddys-societies-4"
+        },
+        {
+          "title": "Tue 13 Oct 26",
+          "date": "2026-10-13",
+          "time": "",
+          "link": "https://chalkvenue.com/event/cancer-bats-1"
+        },
+        {
+          "title": "Wed 14 Oct 26",
+          "date": "2026-10-14",
+          "time": "",
+          "link": "https://chalkvenue.com/event/antony-szmierek"
         }
       ]
     },
     {
       "venue": "Concorde 2",
       "url": "https://www.concorde2.co.uk/whats-on",
-      "events": 97,
+      "events": 185,
       "error": "",
       "sample": [
         {
           "title": "Yonaka",
           "date": "2026-10-06",
           "time": "19:30",
-          "link": "https://www.concorde2.co.uk/whats-on"
+          "link": "https://www.concorde2.co.uk/event/yonaka"
+        },
+        {
+          "title": "Yonaka 06/10/26 7:30pm Live",
+          "date": "2026-10-06",
+          "time": "19:30",
+          "link": "https://www.concorde2.co.uk/event/yonaka"
         },
         {
           "title": "The Wanted 2.0",
           "date": "2026-10-08",
           "time": "19:30",
-          "link": "https://www.concorde2.co.uk/whats-on"
-        },
-        {
-          "title": "Letz Zep",
-          "date": "2026-10-09",
-          "time": "19:00",
-          "link": "https://www.concorde2.co.uk/whats-on"
+          "link": "https://www.concorde2.co.uk/event/the-wanted-2-0"
         }
       ]
     },
@@ -133,20 +133,20 @@
     {
       "venue": "Green Door Store",
       "url": "https://thegreendoorstore.co.uk/events/",
-      "events": 50,
+      "events": 48,
       "error": "",
       "sample": [
         {
           "title": "Ragdoll",
           "date": "2026-10-08",
           "time": "19:00",
-          "link": "https://thegreendoorstore.co.uk/events/bones-ate-arfa/"
+          "link": "https://thegreendoorstore.co.uk/events/ragdoll/"
         },
         {
           "title": "Ragdoll",
           "date": "2026-10-08",
           "time": "19:00",
-          "link": "https://thegreendoorstore.co.uk/events/bones-ate-arfa/"
+          "link": "https://thegreendoorstore.co.uk/events/ragdoll/"
         },
         {
           "title": "Ragdoll",
@@ -166,26 +166,26 @@
     {
       "venue": "Quarters",
       "url": "https://www.quartersbrighton.co.uk/whatson",
-      "events": 113,
+      "events": 115,
       "error": "",
       "sample": [
         {
-          "title": "ZERO 7 (DJ Set) October 9, 2026 6pm-10pm Zero 7 bring their signature blend of downtempo, electronica, soul and trip-hop to Quarters this October.",
+          "title": "Club Events ZERO 7 (DJ Set)",
           "date": "2026-10-09",
           "time": "18:00",
           "link": "https://www.seetickets.com/event/zero-7-dj-set-/quarters/3702298"
         },
         {
-          "title": "Basstripper",
+          "title": "Club Events ZERO 7 (DJ Set)",
           "date": "2026-10-09",
-          "time": "",
-          "link": "https://quarters.seetickets.com/event/supercharged-presents-amplify-basstripper/quarters/3707810"
+          "time": "18:00",
+          "link": "https://www.seetickets.com/event/zero-7-dj-set-/quarters/3702298"
         },
         {
-          "title": "Basstripper",
+          "title": "ZERO 7 (DJ Set)",
           "date": "2026-10-09",
-          "time": "",
-          "link": "https://quarters.seetickets.com/event/supercharged-presents-amplify-basstripper/quarters/3707810"
+          "time": "18:00",
+          "link": "https://www.seetickets.com/event/zero-7-dj-set-/quarters/3702298"
         }
       ]
     },
@@ -226,13 +226,13 @@
           "title": "Bring Your Own Baby Comedy Brighton",
           "date": "2026-10-06",
           "time": "12:00",
-          "link": "https://www.komedia.co.uk/whats-on/"
+          "link": "https://www.komedia.co.uk/shows/bring-your-own-baby-comedy-brighton/?eid=17758"
         },
         {
-          "title": "Doors: 11:15 AM",
+          "title": "Bring Your Own Baby Comedy Brighton",
           "date": "2026-10-06",
           "time": "12:00",
-          "link": "https://www.komedia.co.uk/whats-on/"
+          "link": "https://www.komedia.co.uk/shows/bring-your-own-baby-comedy-brighton/?eid=17758"
         }
       ]
     },
@@ -272,7 +272,7 @@
     {
       "venue": "The Hope & Ruin",
       "url": "https://www.hope.pub/",
-      "events": 69,
+      "events": 72,
       "error": "",
       "sample": [
         {
@@ -282,7 +282,7 @@
           "link": "https://www.hope.pub/event/skating-polly-lord-friday/"
         },
         {
-          "title": "H&#038;R ONE&#8217;S 2 WATCH: Flavours + Ponceau + Autofiction",
+          "title": "H&R ONE’S 2 WATCH: Flavours + Ponceau + Autofiction",
           "date": "2026-10-10",
           "time": "18:30",
           "link": "https://www.hope.pub/event/hr-ones-2-watch-flavours-ponceau-autofiction/"
@@ -309,29 +309,29 @@
       "error": "",
       "sample": [
         {
-          "title": "Flail (UK) @ The Pipeline",
+          "title": "Flail (UK)",
           "date": "2026-10-07",
           "time": "",
-          "link": "http://www.songkick.com/concerts/43345159-flail-uk-at-pipeline?utm_medium=organic&utm_source=microformat"
+          "link": "https://www.songkick.com/concerts/43345159-flail-uk-at-pipeline?utm_medium=organic&utm_source=microformat"
         },
         {
-          "title": "Borrowed Time @ The Pipeline",
+          "title": "Borrowed Time",
           "date": "2026-10-09",
           "time": "",
-          "link": "http://www.songkick.com/concerts/43342454-borrowed-time-at-pipeline?utm_medium=organic&utm_source=microformat"
+          "link": "https://www.songkick.com/concerts/43342454-borrowed-time-at-pipeline?utm_medium=organic&utm_source=microformat"
         },
         {
-          "title": "Desert Vipers @ The Pipeline",
+          "title": "Desert Vipers",
           "date": "2026-10-10",
           "time": "",
-          "link": "http://www.songkick.com/concerts/43363247-desert-vipers-at-pipeline?utm_medium=organic&utm_source=microformat"
+          "link": "https://www.songkick.com/concerts/43363247-desert-vipers-at-pipeline?utm_medium=organic&utm_source=microformat"
         }
       ]
     },
     {
       "venue": "Brighton Racecourse",
       "url": "https://www.brighton-racecourse.co.uk/whats-on",
-      "events": 71,
+      "events": 65,
       "error": "",
       "sample": [
         {
@@ -364,7 +364,7 @@
     {
       "venue": "Shelter Hall",
       "url": "https://shelterhall.co.uk/whats-on/",
-      "events": 8,
+      "events": 7,
       "error": "",
       "sample": [
         {
@@ -374,10 +374,10 @@
           "link": "https://www.eventbrite.co.uk/e/brightons-oktoberfest-2026-tickets-1994136949296"
         },
         {
-          "title": "Edition",
+          "title": "Brighton’s Oktoberfest 2026",
           "date": "2026-10-24",
           "time": "",
-          "link": "https://shelterhall.co.uk/whats-on/drag-music-bingo-halloween-edition/"
+          "link": "https://shelterhall.co.uk/whats-on/brightons-oktoberfest-2026/"
         },
         {
           "title": "Brighton’s Oktoberfest 2026",
@@ -390,7 +390,7 @@
     {
       "venue": "Brighton Dome - Concert Hall",
       "url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/",
-      "events": 10,
+      "events": 13,
       "error": "",
       "sample": [
         {
@@ -416,7 +416,7 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/whats-on/",
-      "events": 102,
+      "events": 126,
       "error": "",
       "sample": [
         {
@@ -442,7 +442,7 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/comedyfestival/",
-      "events": 194,
+      "events": 203,
       "error": "",
       "sample": [
         {
@@ -468,7 +468,7 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/whats-on/LgN-paddy-young-will-sir-be-laughing-alone/",
-      "events": 52,
+      "events": 55,
       "error": "",
       "sample": [
         {
@@ -524,13 +524,13 @@
       "venue": "The Hope & Ruin",
       "source": "venue",
       "time": "18:00",
-      "finish_time": "21:00",
+      "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.hope.pub/event/cult-milk-collage-club-87/",
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-06-brighton-dome-katherine-jenkins-2",
+      "id": "2026-10-06-brighton-dome-katherine-jenkins",
       "title": "Katherine Jenkins",
       "date": "2026-10-06",
       "venue": "Brighton Dome",
@@ -567,14 +567,14 @@
     },
     {
       "id": "2026-10-06-concorde2-yonaka",
-      "title": "Yonaka",
+      "title": "Yonaka 06/10/26 7:30pm Live",
       "date": "2026-10-06",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/yonaka",
       "last_seen": "2026-10-06"
     },
     {
@@ -590,6 +590,42 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-06-brighton-dome-concert-hall-david-bowie-you-re-not-alone",
+      "title": "David Bowie: You’re Not Alone",
+      "date": "2026-10-06",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-06-brighton-dome-music-katherine-jenkins-special-guest-jodok-cello-will-be-performing-with-katherine-jenkins-tue-6-oct-concert-hall-from-39-75-find-out-more",
+      "title": "Music Katherine Jenkins Special guest Jodok Cello will be performing with Katherine Jenkins Tue 6 Oct Concert Hall From £39.75 Find out more",
+      "date": "2026-10-06",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/LtI-katherine-jenkins/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-06-brighton-dome-concert-hall-new-on-sale-music-david-bowie-you-re-not-alone-a-lightroom-production-fri-16-jul-mon-30-aug-brighton-dome-corn-exchange-from-26-find-tickets",
+      "title": "New on Sale Music David Bowie: You’re Not Alone A Lightroom Production Fri 16 Jul - Mon 30 Aug Brighton Dome Corn Exchange From £26 Find tickets",
+      "date": "2026-10-06",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/LIb-david-bowie-youre-not-alone/",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-06-brighton-racecourse-tuesday-afternoon-october-flat-racing-2026",
       "title": "Tuesday Afternoon - October Flat Racing 2026",
       "date": "2026-10-06",
@@ -597,7 +633,7 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Family",
+      "category": "Other",
       "ticket_url": "https://www.brighton-racecourse.co.uk/whats-on/tuesday-afternoon-october-flat-racing-2026",
       "last_seen": "2026-10-06"
     },
@@ -638,7 +674,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-07-brighton-dome-ocean-film-festival-world-tour",
+      "id": "2026-10-07-brighton-dome-ocean-film-festival-world-tour-2",
       "title": "Ocean Film Festival World Tour",
       "date": "2026-10-07",
       "venue": "Brighton Dome",
@@ -674,7 +710,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-07-brighton-dome-man-or-bear",
+      "id": "2026-10-07-brighton-dome-man-or-bear-2",
       "title": "Man or Bear",
       "date": "2026-10-07",
       "venue": "Brighton Dome",
@@ -699,7 +735,7 @@
     },
     {
       "id": "2026-10-07-brighton-dome-film-visual-arts",
-      "title": "Film & Visual Arts",
+      "title": "Film & Visual Arts Ocean Film Festival World Tour BANFF Wed 7 Oct Concert Hall From £19.50 Find out more",
       "date": "2026-10-07",
       "venue": "Brighton Dome",
       "source": "venue",
@@ -711,14 +747,14 @@
     },
     {
       "id": "2026-10-07-the-pipeline-flail-uk-the-pipeline",
-      "title": "Flail (UK) @ The Pipeline",
+      "title": "Flail (UK)",
       "date": "2026-10-07",
       "venue": "The Pipeline",
       "source": "venue",
       "time": "",
       "finish_time": "00:00",
       "category": "Other",
-      "ticket_url": "http://www.songkick.com/concerts/43345159-flail-uk-at-pipeline?utm_medium=organic&utm_source=microformat",
+      "ticket_url": "https://www.songkick.com/concerts/43345159-flail-uk-at-pipeline?utm_medium=organic&utm_source=microformat",
       "last_seen": "2026-10-06"
     },
     {
@@ -747,7 +783,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-08-brighton-dome-the-wonder-stuff-inspiral-carpets-2",
+      "id": "2026-10-08-brighton-dome-the-wonder-stuff-inspiral-carpets",
       "title": "The Wonder Stuff & Inspiral Carpets",
       "date": "2026-10-08",
       "venue": "Brighton Dome",
@@ -766,8 +802,8 @@
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/bones-ate-arfa/",
+      "category": "Other",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/ragdoll/",
       "last_seen": "2026-10-06"
     },
     {
@@ -784,14 +820,14 @@
     },
     {
       "id": "2026-10-08-concorde2-the-wanted-2-0",
-      "title": "The Wanted 2.0",
+      "title": "The Wanted 2.0 08/10/26 7:30pm Live",
       "date": "2026-10-08",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/the-wanted-2-0",
       "last_seen": "2026-10-06"
     },
     {
@@ -964,8 +1000,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-09-quarters-zero-7-dj-set",
-      "title": "ZERO 7 (DJ Set)",
+      "id": "2026-10-09-quarters-club-events-zero-7-dj-set",
+      "title": "Club Events ZERO 7 (DJ Set)",
       "date": "2026-10-09",
       "venue": "Quarters",
       "source": "venue",
@@ -988,7 +1024,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-09-brighton-dome-dr-xand-van-tulleken",
+      "id": "2026-10-09-brighton-dome-dr-xand-van-tulleken-2",
       "title": "Dr. Xand van Tulleken",
       "date": "2026-10-09",
       "venue": "Brighton Dome",
@@ -1001,14 +1037,14 @@
     },
     {
       "id": "2026-10-09-concorde-2-letz-zep",
-      "title": "Letz Zep",
+      "title": "Letz Zep 09/10/26 7:00pm Live",
       "date": "2026-10-09",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/letz-zep",
       "last_seen": "2026-10-06"
     },
     {
@@ -1085,14 +1121,14 @@
     },
     {
       "id": "2026-10-09-concorde-2-kepler",
-      "title": "Kepler",
+      "title": "Kepler 09/10/26 11:00pm",
       "date": "2026-10-09",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
       "category": "Other",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/kepler",
       "last_seen": "2026-10-06"
     },
     {
@@ -1105,17 +1141,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://thegreendoorstore.co.uk/events/i-fing-h8-clubbing/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-09-quarters-amplify-basstripper",
-      "title": "Amplify & Basstripper",
-      "date": "2026-10-09",
-      "venue": "Quarters",
-      "time": "23:00",
-      "finish_time": "04:00",
-      "category": "Club",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson",
       "last_seen": "2026-10-06"
     },
     {
@@ -1143,6 +1168,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-09-concorde-2-kepler-at-concorde-2-brighton",
+      "title": "Kepler at Concorde 2 - Brighton",
+      "date": "2026-10-09",
+      "venue": "Concorde 2",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Concorde-2/Kepler-at-Concorde-2---Brighton/42707940/",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-09-greendoorstore-arkayla-raynor",
       "title": "ARKAYLA Raynor",
       "date": "2026-10-09",
@@ -1155,6 +1192,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-09-quarters-club-events-amplify-basstripper",
+      "title": "Club Events Amplify & Basstripper",
+      "date": "2026-10-09",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/supercharged-presents-amplify-basstripper/quarters/3707810",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-09-the-old-market-josephine-foster",
       "title": "Josephine Foster",
       "date": "2026-10-09",
@@ -1164,19 +1213,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/shows/josephine-foster-toms-bar",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-09-the-pipeline-borrowed-time-fractured-vampire-slumber-party",
-      "title": "Borrowed Time / Fractured / Vampire Slumber Party",
-      "date": "2026-10-09",
-      "venue": "The Pipeline",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-pipeline",
       "last_seen": "2026-10-06"
     },
     {
@@ -1253,7 +1289,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-10-brighton-dome-alison-moyet",
+      "id": "2026-10-10-brighton-dome-alison-moyet-2",
       "title": "Alison Moyet",
       "date": "2026-10-10",
       "venue": "Brighton Dome",
@@ -1265,7 +1301,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-10-brighton-dome-russell-t-davies",
+      "id": "2026-10-10-brighton-dome-russell-t-davies-2",
       "title": "Russell T Davies",
       "date": "2026-10-10",
       "venue": "Brighton Dome",
@@ -1278,14 +1314,14 @@
     },
     {
       "id": "2026-10-10-concorde-2-nirvana-uk",
-      "title": "Nirvana UK",
+      "title": "Nirvana UK 10/10/26 7:00pm Live",
       "date": "2026-10-10",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/nirvana-uk",
       "last_seen": "2026-10-06"
     },
     {
@@ -1374,14 +1410,14 @@
     },
     {
       "id": "2026-10-10-concorde-2-scruffest",
-      "title": "Scruffest",
+      "title": "Scruffest 10/10/26 11:00pm Club",
       "date": "2026-10-10",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/scruffest",
       "last_seen": "2026-10-06"
     },
     {
@@ -1433,8 +1469,20 @@
       "last_seen": "2026-10-05"
     },
     {
-      "id": "2026-10-10-quarters-mr-cutts",
-      "title": "Mr Cutts",
+      "id": "2026-10-10-quarters-club-events-limited-free-tickets-fully-local",
+      "title": "Club Events Limited Free Tickets Fully Local",
+      "date": "2026-10-10",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/fully-local/quarters/3726187",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-10-quarters-live-events-mr-cutts",
+      "title": "Live Events Mr Cutts",
       "date": "2026-10-10",
       "venue": "Quarters",
       "source": "venue",
@@ -1483,14 +1531,14 @@
     },
     {
       "id": "2026-10-10-the-pipeline-desert-vipers-the-pipeline",
-      "title": "Desert Vipers @ The Pipeline",
+      "title": "Desert Vipers",
       "date": "2026-10-10",
       "venue": "The Pipeline",
       "source": "venue",
       "time": "",
       "finish_time": "00:00",
       "category": "Other",
-      "ticket_url": "http://www.songkick.com/concerts/43363247-desert-vipers-at-pipeline?utm_medium=organic&utm_source=microformat",
+      "ticket_url": "https://www.songkick.com/concerts/43363247-desert-vipers-at-pipeline?utm_medium=organic&utm_source=microformat",
       "last_seen": "2026-10-06"
     },
     {
@@ -1566,7 +1614,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-11-brighton-dome-the-stravinsky-connection-2",
+      "id": "2026-10-11-brighton-dome-the-stravinsky-connection",
       "title": "The Stravinsky Connection",
       "date": "2026-10-11",
       "venue": "Brighton Dome",
@@ -1603,14 +1651,14 @@
     },
     {
       "id": "2026-10-11-concorde2-hed-pe-cold",
-      "title": "Hed P.E. / Cold",
+      "title": "Hed P.E. / Cold 11/10/26 7:30pm Live",
       "date": "2026-10-11",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/hed-p-e-cold",
       "last_seen": "2026-10-06"
     },
     {
@@ -1772,14 +1820,14 @@
     },
     {
       "id": "2026-10-12-concorde2-beth-orton",
-      "title": "Beth Orton",
+      "title": "Beth Orton 12/10/26 12:00am Live",
       "date": "2026-10-12",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "00:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/beth-orton",
       "last_seen": "2026-10-06"
     },
     {
@@ -1795,7 +1843,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-12-brighton-dome-fire-fire-by-john-webber-2",
+      "id": "2026-10-12-brighton-dome-fire-fire-by-john-webber",
       "title": "Fire Fire by John Webber",
       "date": "2026-10-12",
       "venue": "Brighton Dome",
@@ -1821,14 +1869,14 @@
     },
     {
       "id": "2026-10-13-concorde2-jake-xerxes-fussell",
-      "title": "Jake Xerxes Fussell",
+      "title": "Jake Xerxes Fussell 13/10/26 7:30pm Live",
       "date": "2026-10-13",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/jake-xerxes-fussell",
       "last_seen": "2026-10-06"
     },
     {
@@ -2038,14 +2086,14 @@
     },
     {
       "id": "2026-10-15-concorde-2-ibibio-sound-machine",
-      "title": "Ibibio Sound Machine",
+      "title": "Ibibio Sound Machine 15/10/26 7:30pm Live",
       "date": "2026-10-15",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/ibibio-sound-machine",
       "last_seen": "2026-10-06"
     },
     {
@@ -2070,6 +2118,30 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/milo-edwards-catamaran/?eid=19601",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-15-the-hope-ruin-dj-freaking-out-the-neighbourhood",
+      "title": "DJ FREAKING OUT THE NEIGHBOURHOOD",
+      "date": "2026-10-15",
+      "venue": "The Hope & Ruin",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "00:00",
+      "category": "Club",
+      "ticket_url": "https://www.hope.pub/event/dj-freaking-out-the-neighbourhood-37/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-15-the-hope-ruin-dj-freaking-out-the-neighbourhood-2",
+      "title": "DJ FREAKING OUT THE NEIGHBOURHOOD",
+      "date": "2026-10-15",
+      "venue": "The Hope & Ruin",
+      "source": "venue",
+      "time": "21:00",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://www.hope.pub/event/dj-freaking-out-the-neighbourhood-37/",
       "last_seen": "2026-10-06"
     },
     {
@@ -2204,7 +2276,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-brighton-dome-jazz-emu-the-pleasure-is-all-yours",
+      "id": "2026-10-16-brighton-dome-jazz-emu-the-pleasure-is-all-yours-2",
       "title": "Jazz Emu: The Pleasure Is All Yours",
       "date": "2026-10-16",
       "venue": "Brighton Dome",
@@ -2216,7 +2288,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-brighton-dome-alfie-brown-the-entertainer",
+      "id": "2026-10-16-brighton-dome-alfie-brown-the-entertainer-2",
       "title": "Alfie Brown: The Entertainer",
       "date": "2026-10-16",
       "venue": "Brighton Dome",
@@ -2228,7 +2300,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-brighton-dome-celya-ab-we-must-stop-meeting-like-this",
+      "id": "2026-10-16-brighton-dome-celya-ab-we-must-stop-meeting-like-this-2",
       "title": "Celya AB: We Must Stop Meeting Like This",
       "date": "2026-10-16",
       "venue": "Brighton Dome",
@@ -2241,14 +2313,14 @@
     },
     {
       "id": "2026-10-16-concorde-2-boris-pink-20th-anniversary-uk-tour",
-      "title": "Boris - Pink 20th Anniversary UK Tour",
+      "title": "Boris - Pink 20th Anniversary UK Tour 16/10/26 7:00pm Live",
       "date": "2026-10-16",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/boris-pink-20th-anniversary-uk-tour",
       "last_seen": "2026-10-06"
     },
     {
@@ -2276,7 +2348,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-brighton-dome-tom-davis-spudgun",
+      "id": "2026-10-16-brighton-dome-tom-davis-spudgun-2",
       "title": "Tom Davis: Spudgun",
       "date": "2026-10-16",
       "venue": "Brighton Dome",
@@ -2289,14 +2361,14 @@
     },
     {
       "id": "2026-10-16-the-pipeline-floralis-the-pipeline",
-      "title": "Floralis @ The Pipeline",
+      "title": "Floralis",
       "date": "2026-10-16",
       "venue": "The Pipeline",
       "source": "venue",
       "time": "19:30",
       "finish_time": "00:00",
       "category": "Other",
-      "ticket_url": "http://www.songkick.com/concerts/43439659-floralis-at-pipeline?utm_medium=organic&utm_source=microformat",
+      "ticket_url": "https://www.songkick.com/concerts/43439659-floralis-at-pipeline?utm_medium=organic&utm_source=microformat",
       "last_seen": "2026-10-06"
     },
     {
@@ -2324,7 +2396,19 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-brighton-dome-catherine-bohart-borrowing-trouble",
+      "id": "2026-10-16-the-hope-ruin-cool-feeling",
+      "title": "Cool Feeling",
+      "date": "2026-10-16",
+      "venue": "The Hope & Ruin",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "01:00",
+      "category": "Theatre",
+      "ticket_url": "https://www.hope.pub/event/cool-feeling-60/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-16-brighton-dome-catherine-bohart-borrowing-trouble-2",
       "title": "Catherine Bohart: Borrowing Trouble",
       "date": "2026-10-16",
       "venue": "Brighton Dome",
@@ -2345,6 +2429,18 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LET-komedia-comedy-club/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-16-the-hope-ruin-cool-feeling-2",
+      "title": "Cool Feeling",
+      "date": "2026-10-16",
+      "venue": "The Hope & Ruin",
+      "source": "venue",
+      "time": "21:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.hope.pub/event/cool-feeling-60/",
       "last_seen": "2026-10-06"
     },
     {
@@ -2380,6 +2476,42 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-16-brighton-dome-accessible-events-comedy-celya-ab-we-must-stop-meeting-like-this-brighton-dome-comedy-festival-in-cahoots-with-komedia-2026-fri-16-oct-studio-theatre-from-",
+      "title": "Accessible Events Comedy Celya AB: We Must Stop Meeting Like This Brighton Dome Comedy Festival in cahoots with Komedia 2026 Fri 16 Oct Studio Theatre From £22 Find out more",
+      "date": "2026-10-16",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/Ls4-celya-ab-we-must-stop-meeting-like-this/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-16-brighton-dome-accessible-events-comedy-jazz-emu-the-pleasure-is-all-yours-brighton-dome-comedy-festival-in-cahoots-with-komedia-2026-fri-16-oct-corn-exchange-from-26-fin",
+      "title": "Accessible Events Comedy Jazz Emu: The Pleasure Is All Yours Brighton Dome Comedy Festival in cahoots with Komedia 2026 Fri 16 Oct Corn Exchange From £26 Find out more",
+      "date": "2026-10-16",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/Ljb-jazz-emu-the-pleasure-is-all-yours/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-16-brighton-dome-alfie-brown-the-entertainer",
+      "title": "Alfie Brown: The Entertainer Brighton Dome Comedy Festival in cahoots with Komedia 2026 Fri 16 Oct Find out more",
+      "date": "2026-10-16",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LEd-alfie-brown-the-entertainer/",
       "last_seen": "2026-10-06"
     },
     {
@@ -2419,8 +2551,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-quarters-damian-lewis",
-      "title": "Damian Lewis",
+      "id": "2026-10-16-quarters-live-events-damian-lewis",
+      "title": "Live Events Damian Lewis",
       "date": "2026-10-16",
       "venue": "Quarters",
       "source": "venue",
@@ -2505,7 +2637,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-brighton-dome-comedy-club-4-kids",
+      "id": "2026-10-17-brighton-dome-comedy-club-4-kids-2",
       "title": "Comedy Club 4 Kids",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2529,18 +2661,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-quarters-echo-x-ibiza-playabout-ibiza-closing-party",
-      "title": "Echo x Ibiza Playabout - Ibiza Closing Party",
-      "date": "2026-10-17",
-      "venue": "Quarters",
-      "time": "14:00",
-      "finish_time": "22:00",
-      "category": "Club",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-17-brighton-dome-all-my-friends-day-disco",
+      "id": "2026-10-17-brighton-dome-all-my-friends-day-disco-2",
       "title": "All My Friends Day Disco",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2552,7 +2673,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-brighton-dome-jordan-brookes-the-part-of-you-that-s-always-screaming",
+      "id": "2026-10-17-brighton-dome-jordan-brookes-the-part-of-you-that-s-always-screaming-2",
       "title": "Jordan Brookes: The Part of You That's Always Screaming",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2576,7 +2697,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-brighton-dome-stevie-martin-clout",
+      "id": "2026-10-17-brighton-dome-stevie-martin-clout-2",
       "title": "Stevie Martin: Clout",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2589,14 +2710,14 @@
     },
     {
       "id": "2026-10-17-concorde-2-reef",
-      "title": "Reef",
+      "title": "Reef 17/10/26 7:00pm Live",
       "date": "2026-10-17",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/reef",
       "last_seen": "2026-10-06"
     },
     {
@@ -2612,7 +2733,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-brighton-dome-lara-ricote-inkling",
+      "id": "2026-10-17-brighton-dome-lara-ricote-inkling-2",
       "title": "Lara Ricote: Inkling",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2648,15 +2769,39 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-17-the-hope-ruin-dad-rock",
+      "title": "Dad Rock",
+      "date": "2026-10-17",
+      "venue": "The Hope & Ruin",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "01:00",
+      "category": "Other",
+      "ticket_url": "https://www.hope.pub/event/dad-rock-53/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-17-the-hope-ruin-dad-rock-2",
+      "title": "Dad Rock",
+      "date": "2026-10-17",
+      "venue": "The Hope & Ruin",
+      "source": "venue",
+      "time": "21:00",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.hope.pub/event/dad-rock-53/",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-17-concorde-2-kanine",
-      "title": "Kanine",
+      "title": "Kanine 17/10/26 11:00pm Club",
       "date": "2026-10-17",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/kanine",
       "last_seen": "2026-10-06"
     },
     {
@@ -2731,8 +2876,20 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-quarters-notion",
-      "title": "Notion",
+      "id": "2026-10-17-quarters-echo-x-ibiza-playabout-ibiza-closing-party",
+      "title": "Club Events Echo x Ibiza Playabout - Ibiza Closing Party",
+      "date": "2026-10-17",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/echo-ibiza-closing-party-energy/quarters/3707754",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-17-quarters-club-events-notion",
+      "title": "Club Events Notion",
       "date": "2026-10-17",
       "venue": "Quarters",
       "source": "venue",
@@ -2814,7 +2971,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-18-brighton-dome-jimeoin-ballyhoo",
+      "id": "2026-10-18-brighton-dome-jimeoin-ballyhoo-2",
       "title": "Jimeoin: BALLYHOO!",
       "date": "2026-10-18",
       "venue": "Brighton Dome",
@@ -2826,7 +2983,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-18-brighton-dome-robin-ince-joanna-neary",
+      "id": "2026-10-18-brighton-dome-robin-ince-joanna-neary-2",
       "title": "Robin Ince & Joanna Neary",
       "date": "2026-10-18",
       "venue": "Brighton Dome",
@@ -2838,7 +2995,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-18-brighton-dome-the-blindboy-podcast-live",
+      "id": "2026-10-18-brighton-dome-the-blindboy-podcast-live-2",
       "title": "The Blindboy Podcast LIVE",
       "date": "2026-10-18",
       "venue": "Brighton Dome",
@@ -2862,7 +3019,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-18-brighton-dome-john-crace-what-the-hell-just-happened",
+      "id": "2026-10-18-brighton-dome-john-crace-what-the-hell-just-happened-2",
       "title": "John Crace: What The Hell Just Happened?",
       "date": "2026-10-18",
       "venue": "Brighton Dome",
@@ -2898,8 +3055,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-18-quarters-toploader",
-      "title": "Toploader",
+      "id": "2026-10-18-quarters-live-events-toploader",
+      "title": "Live Events Toploader",
       "date": "2026-10-18",
       "venue": "Quarters",
       "source": "venue",
@@ -2948,7 +3105,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-19-brighton-dome-siblings-dreamweavers",
+      "id": "2026-10-19-brighton-dome-siblings-dreamweavers-2",
       "title": "Siblings: Dreamweavers",
       "date": "2026-10-19",
       "venue": "Brighton Dome",
@@ -2972,7 +3129,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-19-brighton-dome-raising-the-roof-2-a-fundraiser-for-ymca-brighton",
+      "id": "2026-10-19-brighton-dome-raising-the-roof-2-a-fundraiser-for-ymca-brighton-2",
       "title": "Raising the Roof 2: A Fundraiser for YMCA Brighton",
       "date": "2026-10-19",
       "venue": "Brighton Dome",
@@ -3032,18 +3189,18 @@
     },
     {
       "id": "2026-10-20-concorde2-huey-morgan",
-      "title": "Huey Morgan",
+      "title": "Huey Morgan 20/10/26 7:30pm Live",
       "date": "2026-10-20",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/huey-morgan",
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-20-brighton-dome-phil-ellis-bath-mat",
+      "id": "2026-10-20-brighton-dome-phil-ellis-bath-mat-2",
       "title": "Phil Ellis: Bath Mat",
       "date": "2026-10-20",
       "venue": "Brighton Dome",
@@ -3127,7 +3284,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-21-brighton-dome-elouise-eftos-australia-s-first-attractive-comedian",
+      "id": "2026-10-21-brighton-dome-elouise-eftos-australia-s-first-attractive-comedian-2",
       "title": "Elouise Eftos: Australia's First Attractive Comedian",
       "date": "2026-10-21",
       "venue": "Brighton Dome",
@@ -3139,7 +3296,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-21-brighton-dome-maisie-adam-whatsherface",
+      "id": "2026-10-21-brighton-dome-maisie-adam-whatsherface-2",
       "title": "Maisie Adam: Whatsherface",
       "date": "2026-10-21",
       "venue": "Brighton Dome",
@@ -3151,7 +3308,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-21-brighton-dome-sergi-polo-live-in-brighton",
+      "id": "2026-10-21-brighton-dome-sergi-polo-live-in-brighton-2",
       "title": "Sergi Polo: LIVE in Brighton",
       "date": "2026-10-21",
       "venue": "Brighton Dome",
@@ -3175,7 +3332,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-21-brighton-dome-solve-along-a-murder-she-wrote",
+      "id": "2026-10-21-brighton-dome-solve-along-a-murder-she-wrote-2",
       "title": "Solve-Along-a-Murder-She-Wrote",
       "date": "2026-10-21",
       "venue": "Brighton Dome",
@@ -3248,7 +3405,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-22-brighton-dome-comic-boom-comedy-club",
+      "id": "2026-10-22-brighton-dome-comic-boom-comedy-club-2",
       "title": "Comic Boom Comedy Club",
       "date": "2026-10-22",
       "venue": "Brighton Dome",
@@ -3260,7 +3417,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-22-brighton-dome-simon-amstell-i-love-it-here",
+      "id": "2026-10-22-brighton-dome-simon-amstell-i-love-it-here-2",
       "title": "Simon Amstell: I Love It Here",
       "date": "2026-10-22",
       "venue": "Brighton Dome",
@@ -3273,14 +3430,14 @@
     },
     {
       "id": "2026-10-22-concorde2-jake-vaadeland-the-sturgeon-river-boys",
-      "title": "Jake Vaadeland",
+      "title": "Jake Vaadeland 22/10/26 7:30pm Live",
       "date": "2026-10-22",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/jake-vaadeland",
       "last_seen": "2026-10-06"
     },
     {
@@ -3307,7 +3464,7 @@
       "last_seen": "2026-10-05"
     },
     {
-      "id": "2026-10-22-brighton-dome-amy-matthews-definitions-of-toast",
+      "id": "2026-10-22-brighton-dome-amy-matthews-definitions-of-toast-2",
       "title": "Amy Matthews: Definitions of Toast",
       "date": "2026-10-22",
       "venue": "Brighton Dome",
@@ -3462,18 +3619,18 @@
     },
     {
       "id": "2026-10-23-concorde-2-the-r-b-orchestra",
-      "title": "The R&B Orchestra",
+      "title": "The R&B Orchestra 23/10/26 7:00pm Live",
       "date": "2026-10-23",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/the-r-b-orchestra",
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-brighton-dome-an-evening-with-katherine-ryan-firstborn-daughter",
+      "id": "2026-10-23-brighton-dome-an-evening-with-katherine-ryan-firstborn-daughter-2",
       "title": "An Evening with Katherine Ryan: Firstborn Daughter",
       "date": "2026-10-23",
       "venue": "Brighton Dome",
@@ -3485,7 +3642,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-brighton-dome-dan-tiernan-quartz-and-all",
+      "id": "2026-10-23-brighton-dome-dan-tiernan-quartz-and-all-2",
       "title": "Dan Tiernan: Quartz and All",
       "date": "2026-10-23",
       "venue": "Brighton Dome",
@@ -3497,7 +3654,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-brighton-dome-nish-kumar-angry-humour-from-a-really-nice-guy",
+      "id": "2026-10-23-brighton-dome-nish-kumar-angry-humour-from-a-really-nice-guy-2",
       "title": "Nish Kumar: Angry Humour from a Really Nice Guy",
       "date": "2026-10-23",
       "venue": "Brighton Dome",
@@ -3509,7 +3666,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-brighton-dome-kim-blythe-puzzle",
+      "id": "2026-10-23-brighton-dome-kim-blythe-puzzle-2",
       "title": "Kim Blythe: Puzzle",
       "date": "2026-10-23",
       "venue": "Brighton Dome",
@@ -3558,14 +3715,14 @@
     },
     {
       "id": "2026-10-23-concorde-2-bou",
-      "title": "Bou",
+      "title": "Bou 23/10/26 11:00pm",
       "date": "2026-10-23",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
       "category": "Other",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/bou",
       "last_seen": "2026-10-06"
     },
     {
@@ -3626,8 +3783,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-quarters-hospital30",
-      "title": "Hospital30",
+      "id": "2026-10-23-quarters-club-events-hospital30",
+      "title": "Club Events Hospital30",
       "date": "2026-10-23",
       "venue": "Quarters",
       "source": "venue",
@@ -3708,7 +3865,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-brighton-dome-shelf-the-kids-show-2",
+      "id": "2026-10-24-brighton-dome-shelf-the-kids-show-2-2",
       "title": "SHELF: The Kids Show 2",
       "date": "2026-10-24",
       "venue": "Brighton Dome",
@@ -3720,7 +3877,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-brighton-dome-live-at-brighton-dome-bleeped",
+      "id": "2026-10-24-brighton-dome-live-at-brighton-dome-bleeped-2",
       "title": "Live at Brighton Dome BLEEPED",
       "date": "2026-10-24",
       "venue": "Brighton Dome",
@@ -3733,18 +3890,18 @@
     },
     {
       "id": "2026-10-24-concorde-2-chris-hill-s-dirty-dc-brian-bon-show",
-      "title": "Chris Hill's Dirty DC - Brian & Bon Show",
+      "title": "Chris Hill's Dirty DC - Brian & Bon Show 24/10/26 7:00pm Live",
       "date": "2026-10-24",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/dirty-dc",
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-brighton-dome-funny-women-live-in-brighton",
+      "id": "2026-10-24-brighton-dome-funny-women-live-in-brighton-2",
       "title": "Funny Women Live In Brighton",
       "date": "2026-10-24",
       "venue": "Brighton Dome",
@@ -3804,7 +3961,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-brighton-dome-stamptown",
+      "id": "2026-10-24-brighton-dome-stamptown-2",
       "title": "Stamptown",
       "date": "2026-10-24",
       "venue": "Brighton Dome",
@@ -3817,14 +3974,14 @@
     },
     {
       "id": "2026-10-24-concorde-2-holdtight-congo-natty",
-      "title": "Holdtight - Congo Natty",
+      "title": "Holdtight - Congo Natty 24/10/26 11:00pm Club",
       "date": "2026-10-24",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/holdtight-congo-natty",
       "last_seen": "2026-10-06"
     },
     {
@@ -3921,7 +4078,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-brighton-dome-rich-wilson-to-the-cradle-from-the-rave",
+      "id": "2026-10-25-brighton-dome-rich-wilson-to-the-cradle-from-the-rave-2",
       "title": "Rich Wilson: To The Cradle, From The Rave",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
@@ -3945,7 +4102,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-brighton-dome-the-young-comedians-comedy-show",
+      "id": "2026-10-25-brighton-dome-the-young-comedians-comedy-show-2",
       "title": "The Young Comedians Comedy Show",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
@@ -3957,7 +4114,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-brighton-dome-rosie-holt-the-illegal-aliens-have-landed",
+      "id": "2026-10-25-brighton-dome-rosie-holt-the-illegal-aliens-have-landed-2",
       "title": "Rosie Holt: The Illegal Aliens Have Landed!",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
@@ -3969,7 +4126,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-brighton-dome-sooz-kempner",
+      "id": "2026-10-25-brighton-dome-sooz-kempner-2",
       "title": "Sooz Kempner",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
@@ -3982,14 +4139,14 @@
     },
     {
       "id": "2026-10-25-concorde-2-gurriers",
-      "title": "Gurriers",
+      "title": "Gurriers 25/10/26 7:30pm Live",
       "date": "2026-10-25",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/gurriers",
       "last_seen": "2026-10-06"
     },
     {
@@ -4005,7 +4162,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-brighton-dome-aurie-styla-maverick",
+      "id": "2026-10-25-brighton-dome-aurie-styla-maverick-2",
       "title": "Aurie Styla: Maverick",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
@@ -4038,6 +4195,18 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/comedyfestival/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-25-brighton-dome-comedy-free-comedy-workshops-for-young-people-age-11-16-presented-by-komedia-productions-in-partnership-with-brighton-dome-comedy-festival-2026-sat-3-sun-2",
+      "title": "Comedy Free Comedy Workshops for Young People Age 11–16 Presented by Komedia Productions in partnership with Brighton Dome Comedy Festival 2026 Sat 3 - Sun 25 Oct Find out more",
+      "date": "2026-10-25",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LZc-free-comedy-workshops-for-young-people-age-11-16/",
       "last_seen": "2026-10-06"
     },
     {
@@ -4138,14 +4307,14 @@
     },
     {
       "id": "2026-10-26-the-pipeline-vascha-the-pipeline",
-      "title": "VASCHA @ The Pipeline",
+      "title": "VASCHA",
       "date": "2026-10-26",
       "venue": "The Pipeline",
       "source": "venue",
       "time": "20:00",
       "finish_time": "00:00",
       "category": "Other",
-      "ticket_url": "http://www.songkick.com/concerts/43436503-vascha-at-pipeline?utm_medium=organic&utm_source=microformat",
+      "ticket_url": "https://www.songkick.com/concerts/43436503-vascha-at-pipeline?utm_medium=organic&utm_source=microformat",
       "last_seen": "2026-10-06"
     },
     {
@@ -4222,14 +4391,14 @@
     },
     {
       "id": "2026-10-27-concorde-2-grandmaster-flash",
-      "title": "Grandmaster Flash",
+      "title": "Grandmaster Flash 27/10/26 7:30pm Live",
       "date": "2026-10-27",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/grandmaster-flash",
       "last_seen": "2026-10-06"
     },
     {
@@ -4316,8 +4485,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-28-quarters-lol-tolhurst",
-      "title": "Lol Tolhurst",
+      "id": "2026-10-28-quarters-live-events-lol-tolhurst",
+      "title": "Live Events Lol Tolhurst",
       "date": "2026-10-28",
       "venue": "Quarters",
       "source": "venue",
@@ -4329,14 +4498,14 @@
     },
     {
       "id": "2026-10-28-concorde2-my-new-band-believe",
-      "title": "My New Band Believe",
+      "title": "My New Band Believe 28/10/26 7:30pm Live",
       "date": "2026-10-28",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/my-new-bad-believe",
       "last_seen": "2026-10-06"
     },
     {
@@ -4426,14 +4595,14 @@
     },
     {
       "id": "2026-10-29-concorde-2-kerrbang",
-      "title": "Kerrbang!",
+      "title": "Kerrbang! 29/10/26 7:30pm Live",
       "date": "2026-10-29",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/kerrbang",
       "last_seen": "2026-10-06"
     },
     {
@@ -4569,14 +4738,14 @@
     },
     {
       "id": "2026-10-30-concorde2-halloween-with-simon-pegg",
-      "title": "Halloween With Simon Pegg",
+      "title": "Halloween With Simon Pegg 30/10/26 7:00pm",
       "date": "2026-10-30",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Other",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/halloween-with-simon-pegg",
       "last_seen": "2026-10-06"
     },
     {
@@ -4628,14 +4797,14 @@
     },
     {
       "id": "2026-10-30-concorde-2-born-on-road",
-      "title": "Born On Road",
+      "title": "Born On Road 30/10/26 11:30pm Club",
       "date": "2026-10-30",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "23:30",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/born-on-road",
       "last_seen": "2026-10-06"
     },
     {
@@ -4786,14 +4955,14 @@
     },
     {
       "id": "2026-10-31-concorde-2-drum-bass-classics-halloween-all-dayer",
-      "title": "Drum & Bass Classics Halloween All Dayer",
+      "title": "Drum & Bass Classics Halloween All Dayer 31/10/26 2:00pm Club",
       "date": "2026-10-31",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "14:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/drum-bass-classics-halloween-all-dayer",
       "last_seen": "2026-10-06"
     },
     {
@@ -4845,25 +5014,14 @@
     },
     {
       "id": "2026-10-31-concorde-2-moody-disco-obskur",
-      "title": "Moody Disco - Obskur",
+      "title": "Moody Disco - Obskur 31/10/26 11:00pm Club",
       "date": "2026-10-31",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-31-quarters-groundwork-002-halloween-w-soul-mass-transit-system-captain-wallop",
-      "title": "GROUNDWORK 002: Halloween w/ Soul Mass Transit System & Captain Wallop",
-      "date": "2026-10-31",
-      "venue": "Quarters",
-      "time": "23:00",
-      "finish_time": "04:00",
-      "category": "Club",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson",
+      "ticket_url": "https://www.concorde2.co.uk/event/moody-disco-obskur",
       "last_seen": "2026-10-06"
     },
     {
@@ -4938,8 +5096,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-31-quarters-rolando",
-      "title": "Rolando",
+      "id": "2026-10-31-quarters-club-events-black-octopus-8th-birthday-part-2-kenny-larkin-rolando",
+      "title": "Club Events Black Octopus 8th Birthday Part 2: Kenny Larkin & Rolando",
       "date": "2026-10-31",
       "venue": "Quarters",
       "source": "venue",
@@ -4947,6 +5105,18 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://quarters.seetickets.com/event/black-octopus-8th-birthday/quarters/3724738",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-31-quarters-groundwork-002-halloween-w-soul-mass-transit-system-captain-wallop",
+      "title": "Club Events GROUNDWORK 002: Halloween w/ Soul Mass Transit System & Captain Wallop",
+      "date": "2026-10-31",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/halloween-w-soul-mass-transit-system-captain-wallop/quarters/3643030",
       "last_seen": "2026-10-06"
     },
     {
@@ -5036,14 +5206,14 @@
     },
     {
       "id": "2026-11-01-concorde-2-the-bluetones",
-      "title": "The Bluetones",
+      "title": "The Bluetones 01/11/26 7:30pm Live",
       "date": "2026-11-01",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/the-bluetones",
       "last_seen": "2026-10-06"
     },
     {
@@ -5255,14 +5425,14 @@
     },
     {
       "id": "2026-11-05-concorde-2-teenage-fanclub",
-      "title": "Teenage Fanclub",
+      "title": "Teenage Fanclub 05/11/26 7:30pm Live",
       "date": "2026-11-05",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/teenage-fanclub",
       "last_seen": "2026-10-06"
     },
     {
@@ -5351,7 +5521,7 @@
     },
     {
       "id": "2026-11-06-concorde-2-dj-yoda",
-      "title": "DJ Yoda",
+      "title": "DJ Yoda 06/11/26 7:00pm Live",
       "date": "2026-11-06",
       "venue": "Concorde 2",
       "source": "venue",
@@ -5399,14 +5569,14 @@
     },
     {
       "id": "2026-11-06-concorde-2-it-s-a-jungle-out-there-coco-bryce-and-j-kenzo",
-      "title": "It's A Jungle Out There - Coco Bryce & J:Kenzo",
+      "title": "It's A Jungle Out There - Coco Bryce & J:Kenzo 06/11/26 11:00pm Club",
       "date": "2026-11-06",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/its-a-jungle-out-there-coco-bryce-jkenzo",
       "last_seen": "2026-10-06"
     },
     {
@@ -5445,8 +5615,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-06-quarters-k-motionz",
-      "title": "K Motionz",
+      "id": "2026-11-06-quarters-club-events-k-motionz",
+      "title": "Club Events K Motionz",
       "date": "2026-11-06",
       "venue": "Quarters",
       "source": "venue",
@@ -5508,14 +5678,14 @@
     },
     {
       "id": "2026-11-07-concorde-2-slipmatt-ellis-dee-2-bad-mice-dj-ratty",
-      "title": "Slipmatt, Ellis Dee, 2 Bad Mice & DJ Ratty",
+      "title": "Slipmatt, Ellis Dee, 2 Bad Mice & DJ Ratty 07/11/26 5:00pm Club",
       "date": "2026-11-07",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "17:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/slipmatt-ellis-dee-2-bad-mice-dj-ratty",
       "last_seen": "2026-10-06"
     },
     {
@@ -5557,14 +5727,14 @@
     },
     {
       "id": "2026-11-07-concorde-2-nafe-smallz-x-rift",
-      "title": "Nafe Smallz x Rift",
+      "title": "Nafe Smallz x Rift 07/11/26 11:00pm",
       "date": "2026-11-07",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
       "category": "Other",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/nafe-smallz-x-rift",
       "last_seen": "2026-10-06"
     },
     {
@@ -5615,8 +5785,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-07-quarters-andy-c",
-      "title": "Andy C",
+      "id": "2026-11-07-quarters-club-events-andy-c",
+      "title": "Club Events Andy C",
       "date": "2026-11-07",
       "venue": "Quarters",
       "source": "venue",
@@ -5627,8 +5797,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-07-quarters-priester",
-      "title": "Priester",
+      "id": "2026-11-07-quarters-club-events-groove-cartel-presents-archie-hamilton-boss-priester",
+      "title": "Club Events Groove Cartel Presents Archie Hamilton & Boss Priester",
       "date": "2026-11-07",
       "venue": "Quarters",
       "source": "venue",
@@ -5647,7 +5817,7 @@
       "time": "",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/andy-c-day-party-/quarters/3706966",
+      "ticket_url": "https://www.quartersbrighton.co.uk/whatson/andy-c-zc45v",
       "last_seen": "2026-10-06"
     },
     {
@@ -5687,14 +5857,14 @@
     },
     {
       "id": "2026-11-08-concorde-2-holy-fawn-m-l",
-      "title": "Holy Fawn + MØL",
+      "title": "Holy Fawn + MØL 08/11/26 7:30pm Live",
       "date": "2026-11-08",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/holy-fawn",
       "last_seen": "2026-10-06"
     },
     {
@@ -5785,14 +5955,14 @@
     },
     {
       "id": "2026-11-09-concorde-2-cardinals",
-      "title": "Cardinals",
+      "title": "Cardinals 09/11/26 7:30pm Live",
       "date": "2026-11-09",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/cardinals",
       "last_seen": "2026-10-06"
     },
     {
@@ -5846,14 +6016,14 @@
     },
     {
       "id": "2026-11-10-concorde-2-mykki-blanco",
-      "title": "Mykki Blanco",
+      "title": "Mykki Blanco 10/11/26 7:30pm Live",
       "date": "2026-11-10",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/mykki-blanco",
       "last_seen": "2026-10-06"
     },
     {
@@ -6026,14 +6196,14 @@
     },
     {
       "id": "2026-11-12-concorde-2-the-allergies-live",
-      "title": "The Allergies (Live)",
+      "title": "The Allergies (Live) 12/11/26 7:30pm Live",
       "date": "2026-11-12",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/the-allergies-live",
       "last_seen": "2026-10-06"
     },
     {
@@ -6172,14 +6342,14 @@
     },
     {
       "id": "2026-11-13-concorde-2-john-digweed",
-      "title": "John Digweed",
+      "title": "John Digweed 13/11/26 7:00pm Club",
       "date": "2026-11-13",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/john-digweed",
       "last_seen": "2026-10-06"
     },
     {
@@ -6216,17 +6386,6 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541599346",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-13-quarters-yung-singh-riria",
-      "title": "Yung Singh + Riria",
-      "date": "2026-11-13",
-      "venue": "Quarters",
-      "time": "23:00",
-      "finish_time": "04:00",
-      "category": "Club",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson",
       "last_seen": "2026-10-06"
     },
     {
@@ -6299,6 +6458,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-13-quarters-club-events-yung-singh-riria",
+      "title": "Club Events Yung Singh + Riria",
+      "date": "2026-11-13",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/yung-sing-riria/quarters/3676117",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-13-the-hope-ruin-quaking-aspens-winnipeg-mn-drainfly",
       "title": "Quaking Aspens + Winnipeg, Mn + Drainfly",
       "date": "2026-11-13",
@@ -6348,14 +6519,14 @@
     },
     {
       "id": "2026-11-14-concorde-2-junebabies-john-digweed-afterparty",
-      "title": "Junebabies - John Digweed Afterparty",
+      "title": "Junebabies - John Digweed Afterparty 14/11/26 12:00am",
       "date": "2026-11-14",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "00:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/junebabies-john-digweed-afterparty",
       "last_seen": "2026-10-06"
     },
     {
@@ -6372,14 +6543,14 @@
     },
     {
       "id": "2026-11-14-concorde-2-metallica-reloaded",
-      "title": "Metallica Reloaded",
+      "title": "Metallica Reloaded 14/11/26 7:00pm Live",
       "date": "2026-11-14",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/metallica-reloaded",
       "last_seen": "2026-10-06"
     },
     {
@@ -6489,8 +6660,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-14-quarters-ben-hemsley-november-14-2026-23-00-04-00-ben-hemsley-lands-at-quarters-bringing-his-blend-of-euphoric-house-driving-techno-and-old-school-rave-nostalgia-to-the-",
-      "title": "Ben Hemsley",
+      "id": "2026-11-14-quarters-club-events-ben-hemsley",
+      "title": "Club Events Ben Hemsley",
       "date": "2026-11-14",
       "venue": "Quarters",
       "source": "venue",
@@ -6501,8 +6672,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-14-quarters-emo-day-party",
-      "title": "Emo Day Party",
+      "id": "2026-11-14-quarters-club-events-emo-day-party",
+      "title": "Club Events Emo Day Party",
       "date": "2026-11-14",
       "venue": "Quarters",
       "source": "venue",
@@ -6625,14 +6796,14 @@
     },
     {
       "id": "2026-11-15-concorde-2-mnek",
-      "title": "MNEK",
+      "title": "MNEK 15/11/26 7:30pm Live",
       "date": "2026-11-15",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/mnek",
       "last_seen": "2026-10-06"
     },
     {
@@ -6805,14 +6976,14 @@
     },
     {
       "id": "2026-11-18-concorde-2-oh-my-god-it-s-the-church",
-      "title": "Oh My God! It's The Church",
+      "title": "Oh My God! It's The Church 18/11/26 7:30pm Live",
       "date": "2026-11-18",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/oh-my-god-its-the-church",
       "last_seen": "2026-10-06"
     },
     {
@@ -6936,14 +7107,14 @@
     },
     {
       "id": "2026-11-19-concorde-2-forever-nu-25th-anniversary-of-toxicity-and-iowa",
-      "title": "Forever Nu - 25th Anniversary of Toxicity & Iowa",
+      "title": "Forever Nu - 25th Anniversary of Toxicity & Iowa 19/11/26 7:30pm Live",
       "date": "2026-11-19",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/chop-suey-slip-not",
       "last_seen": "2026-10-06"
     },
     {
@@ -7116,14 +7287,14 @@
     },
     {
       "id": "2026-11-20-concorde-2-uk-foo-fighters",
-      "title": "UK Foo Fighters",
+      "title": "UK Foo Fighters 20/11/26 7:00pm Live",
       "date": "2026-11-20",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/uk-foo-fighters",
       "last_seen": "2026-10-06"
     },
     {
@@ -7152,14 +7323,14 @@
     },
     {
       "id": "2026-11-20-concorde-2-state-of-us-presents-haai-planningtorock-dj-dykes-on-decks",
-      "title": "State of Us Presents - HAAi, Planningtorock DJ & Dykes On Decks",
+      "title": "State of Us Presents - HAAi, Planningtorock DJ & Dykes On Decks 20/11/26 11:00pm Club",
       "date": "2026-11-20",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/state-of-us-presents-haai",
       "last_seen": "2026-10-06"
     },
     {
@@ -7208,6 +7379,30 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/the-zangwills-plus-cinnabar/?eid=20356",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-20-quarters-club-events-limited-free-tickets-degs",
+      "title": "Club Events Limited Free Tickets DEGS &",
+      "date": "2026-11-20",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/degs-friends/quarters/3732774",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-20-quarters-friends",
+      "title": "Friends",
+      "date": "2026-11-20",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/degs-friends/quarters/3732774",
       "last_seen": "2026-10-06"
     },
     {
@@ -7274,14 +7469,14 @@
     },
     {
       "id": "2026-11-21-concorde-2-getdown-services",
-      "title": "Getdown Services",
+      "title": "Getdown Services 21/11/26 6:30pm Live",
       "date": "2026-11-21",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "18:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/get-down-services",
       "last_seen": "2026-10-06"
     },
     {
@@ -7322,25 +7517,14 @@
     },
     {
       "id": "2026-11-21-concorde-2-culture-shock",
-      "title": "Culture Shock",
+      "title": "Culture Shock 21/11/26 11:00pm Club",
       "date": "2026-11-21",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-21-quarters-locklead-julian-anthony",
-      "title": "Locklead + Julian Anthony",
-      "date": "2026-11-21",
-      "venue": "Quarters",
-      "time": "23:00",
-      "finish_time": "04:00",
-      "category": "Club",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson",
+      "ticket_url": "https://www.concorde2.co.uk/event/culture-shock",
       "last_seen": "2026-10-06"
     },
     {
@@ -7405,6 +7589,30 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-21-quarters-club-events-locklead-julian-anthony",
+      "title": "Club Events Locklead + Julian Anthony",
+      "date": "2026-11-21",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/locklead-julian-anthony-more-tba/quarters/3708218",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-21-quarters-club-events-r-b-mania",
+      "title": "Club Events R&B Mania",
+      "date": "2026-11-21",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/rnb-mania-brighton-s-r-b-festival/quarters/3705590",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-21-quarters-locklead-julian-anthony-more-tba",
       "title": "Locklead, Julian Anthony + more TBA",
       "date": "2026-11-21",
@@ -7414,18 +7622,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.visitbrighton.com/whats-on/locklead-julian-anthony-more-tba-p2941111",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-21-quarters-r-b-mania",
-      "title": "R&B Mania",
-      "date": "2026-11-21",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/rnb-mania-brighton-s-r-b-festival/quarters/3705590",
       "last_seen": "2026-10-06"
     },
     {
@@ -7478,14 +7674,14 @@
     },
     {
       "id": "2026-11-22-concorde2-getdown-services",
-      "title": "Getdown Services",
+      "title": "Getdown Services 22/11/26 6:30pm Live",
       "date": "2026-11-22",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "18:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/getdown-services",
       "last_seen": "2026-10-06"
     },
     {
@@ -7575,14 +7771,14 @@
     },
     {
       "id": "2026-11-23-concorde-2-the-big-moon",
-      "title": "The Big Moon",
+      "title": "The Big Moon 23/11/26 7:30pm Live",
       "date": "2026-11-23",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/the-big-moon",
       "last_seen": "2026-10-06"
     },
     {
@@ -7647,14 +7843,14 @@
     },
     {
       "id": "2026-11-25-concorde-2-dakhabrakha",
-      "title": "DakhaBrakha",
+      "title": "DakhaBrakha 25/11/26 7:30pm Live",
       "date": "2026-11-25",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/dakhabrakha",
       "last_seen": "2026-10-06"
     },
     {
@@ -7767,14 +7963,14 @@
     },
     {
       "id": "2026-11-26-concorde-2-graham-coxon",
-      "title": "Graham Coxon",
+      "title": "Graham Coxon 26/11/26 7:30pm Live",
       "date": "2026-11-26",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/graham-coxon",
       "last_seen": "2026-10-06"
     },
     {
@@ -7924,14 +8120,14 @@
     },
     {
       "id": "2026-11-27-concorde-2-uncle-acid-and-the-deadbeats",
-      "title": "Uncle Acid And The Deadbeats",
+      "title": "Uncle Acid And The Deadbeats 27/11/26 7:30pm Live",
       "date": "2026-11-27",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/uncle-acid-and-the-deadbeats",
       "last_seen": "2026-10-06"
     },
     {
@@ -7959,18 +8155,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-27-quarters-kings-of-the-rollers",
-      "title": "Kings Of The Rollers",
-      "date": "2026-11-27",
-      "venue": "Quarters",
-      "category": "Club",
-      "time": "23:00",
-      "ticket_url": "https://www.quartersbrighton.co.uk/whatson",
-      "source_url": "https://www.quartersbrighton.co.uk/whatson",
-      "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-27-a-l-p-h-a-b-e-t-jetstream-pony-firestations",
       "title": "Jetstream Pony / Firestations",
       "date": "2026-11-27",
@@ -7993,6 +8177,30 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-27-brighton-dome-brighton-dome-backstage-tours",
+      "title": "Brighton Dome Backstage Tours",
+      "date": "2026-11-27",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/L17-brighton-dome-backstage-tours/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-27-brighton-dome-heritage-tours",
+      "title": "Heritage & Tours",
+      "date": "2026-11-27",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/L17-brighton-dome-backstage-tours/",
       "last_seen": "2026-10-06"
     },
     {
@@ -8031,6 +8239,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-27-quarters-club-events-kings-of-the-rollers",
+      "title": "Club Events Kings Of The Rollers",
+      "date": "2026-11-27",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/kings-of-the-rollers-the-holy-grail-uk-tour/quarters/3727410",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-27-theatreroyalbrighton-the-mousetrap",
       "title": "The Mousetrap",
       "date": "2026-11-27",
@@ -8044,14 +8264,14 @@
     },
     {
       "id": "2026-11-28-concorde-2-day-fever",
-      "title": "Day Fever",
+      "title": "Day Fever 28/11/26 3:00pm Club",
       "date": "2026-11-28",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "15:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/day-fever-2",
       "last_seen": "2026-10-06"
     },
     {
@@ -8092,14 +8312,14 @@
     },
     {
       "id": "2026-11-28-concorde-2-moody-disco-marsolo",
-      "title": "Moody Disco - Marsolo",
+      "title": "Moody Disco - Marsolo 28/11/26 11:00pm Club",
       "date": "2026-11-28",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/moody-disco-marsolo",
       "last_seen": "2026-10-06"
     },
     {
@@ -8173,8 +8393,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-28-quarters-midland",
-      "title": "Midland",
+      "id": "2026-11-28-quarters-club-events-sign-up-shanti-celeste-midland",
+      "title": "Club Events Sign Up Shanti Celeste + Midland",
       "date": "2026-11-28",
       "venue": "Quarters",
       "source": "venue",
@@ -8223,14 +8443,14 @@
     },
     {
       "id": "2026-11-29-concorde-2-gotts-street-park",
-      "title": "Gotts Street Park",
+      "title": "Gotts Street Park 29/11/26 7:30pm Live",
       "date": "2026-11-29",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/gotts-street-park",
       "last_seen": "2026-10-06"
     },
     {
@@ -8321,13 +8541,13 @@
     },
     {
       "id": "2026-12-01-concorde-2-andrew-cushin",
-      "title": "Andrew Cushin",
+      "title": "Andrew Cushin 01/12/26 7:30pm Live",
       "date": "2026-12-01",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
-      "category": "Club",
+      "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/andrew-cushin",
       "last_seen": "2026-10-06"
     },
@@ -8393,14 +8613,14 @@
     },
     {
       "id": "2026-12-02-concorde-2-the-ordinary-boys",
-      "title": "The Ordinary Boys",
+      "title": "The Ordinary Boys 02/12/26 7:30pm Live",
       "date": "2026-12-02",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/the-ordinary-boys",
       "last_seen": "2026-10-06"
     },
     {
@@ -8465,14 +8685,14 @@
     },
     {
       "id": "2026-12-03-concorde-2-the-house-of-love",
-      "title": "The House of Love",
+      "title": "The House of Love 03/12/26 7:30pm Live",
       "date": "2026-12-03",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/the-house-of-love",
       "last_seen": "2026-10-06"
     },
     {
@@ -8586,14 +8806,14 @@
     },
     {
       "id": "2026-12-04-concorde-2-martin-kemp-back-to-the-80s-xmas-special",
-      "title": "Martin Kemp - Back To The 80s Xmas Special",
+      "title": "Martin Kemp - Back To The 80s Xmas Special 04/12/26 7:00pm Club",
       "date": "2026-12-04",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/martin-kemp-back-to-the-80s-xmas-special",
       "last_seen": "2026-10-06"
     },
     {
@@ -8682,8 +8902,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-04-quarters-quantic-dj-set",
-      "title": "QUANTIC (DJ SET)",
+      "id": "2026-12-04-quarters-live-events-quantic-dj-set",
+      "title": "Live Events QUANTIC (DJ SET)",
       "date": "2026-12-04",
       "venue": "Quarters",
       "source": "venue",
@@ -8756,14 +8976,14 @@
     },
     {
       "id": "2026-12-05-concorde-2-beefmince",
-      "title": "Beefmince",
+      "title": "Beefmince 05/12/26 11:00pm Club",
       "date": "2026-12-05",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/beefmince",
       "last_seen": "2026-10-06"
     },
     {
@@ -8814,14 +9034,14 @@
     },
     {
       "id": "2026-12-06-concorde-2-electric-six",
-      "title": "Electric Six",
+      "title": "Electric Six 06/12/26 7:30pm Live",
       "date": "2026-12-06",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/electric-six",
       "last_seen": "2026-10-06"
     },
     {
@@ -8995,14 +9215,14 @@
     },
     {
       "id": "2026-12-09-concorde2-young-knives-hot-face",
-      "title": "Young Knives",
+      "title": "Young Knives 09/12/26 7:30pm Live",
       "date": "2026-12-09",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/young-knives",
       "last_seen": "2026-10-06"
     },
     {
@@ -9067,14 +9287,14 @@
     },
     {
       "id": "2026-12-10-concorde-2-buzzcocks",
-      "title": "Buzzcocks",
+      "title": "Buzzcocks 10/12/26 7:30pm Live",
       "date": "2026-12-10",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/buzzcocks",
       "last_seen": "2026-10-06"
     },
     {
@@ -9185,26 +9405,15 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-11-quarters-daddy-g-massive-attack",
-      "title": "DADDY G (Massive Attack)",
-      "date": "2026-12-11",
-      "venue": "Quarters",
-      "time": "18:00",
-      "finish_time": "22:00",
-      "category": "Music",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-11-concorde-2-elvana",
-      "title": "Elvana",
+      "title": "Elvana 11/12/26 6:30pm Live",
       "date": "2026-12-11",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "18:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/elvana",
       "last_seen": "2026-10-06"
     },
     {
@@ -9291,8 +9500,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-11-quarters-city-wall-x-mark-broom-december-11-2026-23-00-04-00-city-wall-records-turns-18-with-uk-techno-legend-mark-broom-at-quarters-joined-by-acid-carbon-gosia-founder-",
-      "title": "City Wall x Mark Broom",
+      "id": "2026-12-11-quarters-club-events-city-wall-x-mark-broom",
+      "title": "Club Events City Wall x Mark Broom",
       "date": "2026-12-11",
       "venue": "Quarters",
       "source": "venue",
@@ -9300,6 +9509,18 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://quarters.seetickets.com/event/city-wall-presents-mark-broom/quarters/3715360",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-12-11-quarters-live-events-daddy-g-massive-attack",
+      "title": "Live Events DADDY G (Massive Attack)",
+      "date": "2026-12-11",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://www.seetickets.com/event/daddy-g/quarters/3707646",
       "last_seen": "2026-10-06"
     },
     {
@@ -9327,26 +9548,15 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-12-quarters-trancecoda-presents-j00f-editions",
-      "title": "Trancecoda Presents J00F Editions",
-      "date": "2026-12-12",
-      "venue": "Quarters",
-      "time": "16:00",
-      "finish_time": "22:00",
-      "category": "Club",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-12-concorde-2-rhythm-of-the-90s",
-      "title": "Rhythm Of The 90s",
+      "title": "Rhythm Of The 90s 12/12/26 7:00pm",
       "date": "2026-12-12",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Other",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/rhythm-of-the-90s",
       "last_seen": "2026-10-06"
     },
     {
@@ -9375,14 +9585,14 @@
     },
     {
       "id": "2026-12-12-concorde-2-hybrid-minds-brighton",
-      "title": "Hybrid Minds",
+      "title": "Hybrid Minds 12/12/26 11:00pm",
       "date": "2026-12-12",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
       "category": "Other",
-      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Concorde-2/Hybrid-Minds--Brighton/42829358/",
+      "ticket_url": "https://www.concorde2.co.uk/event/hybrid-minds",
       "last_seen": "2026-10-06"
     },
     {
@@ -9434,6 +9644,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-12-12-concorde-2-hybrid-minds-brighton-2",
+      "title": "Hybrid Minds | Brighton",
+      "date": "2026-12-12",
+      "venue": "Concorde 2",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Concorde-2/Hybrid-Minds--Brighton/42829358/",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-12-12-19-00-barbara",
       "title": "Barbara",
       "date": "2026-12-12",
@@ -9454,6 +9676,18 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-christmas-party/?eid=20597",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-12-12-quarters-club-events-trancecoda-presents-j00f-editions",
+      "title": "Club Events Trancecoda Presents J00F Editions",
+      "date": "2026-12-12",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/trancecoda-present-j00f-editions/quarters/3635408",
       "last_seen": "2026-10-06"
     },
     {
@@ -9542,14 +9776,14 @@
     },
     {
       "id": "2026-12-15-concorde-2-the-simpsons-ultimate-quiz",
-      "title": "The Simpsons Ultimate Quiz",
+      "title": "The Simpsons Ultimate Quiz 15/12/26 7:00pm Live",
       "date": "2026-12-15",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/the-simpsons-ultimate-quiz",
       "last_seen": "2026-10-06"
     },
     {
@@ -9590,14 +9824,14 @@
     },
     {
       "id": "2026-12-16-concorde-2-abba-revival",
-      "title": "Abba Revival",
+      "title": "Abba Revival 16/12/26 7:30pm Live",
       "date": "2026-12-16",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/abba-revival",
       "last_seen": "2026-10-06"
     },
     {
@@ -9723,14 +9957,14 @@
     },
     {
       "id": "2026-12-18-concorde-2-80s-hifi-christmas-party",
-      "title": "80s HiFi Christmas Party",
+      "title": "80s HiFi Christmas Party 18/12/26 7:00pm Live",
       "date": "2026-12-18",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/80s-hifi-christmas-party",
       "last_seen": "2026-10-06"
     },
     {
@@ -9819,14 +10053,14 @@
     },
     {
       "id": "2026-12-19-concorde-2-absolute-bowie-christmas-special",
-      "title": "Absolute Bowie Christmas Special",
+      "title": "Absolute Bowie Christmas Special 19/12/26 7:00pm Live",
       "date": "2026-12-19",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/absolute-bowie-christmas-special",
       "last_seen": "2026-10-06"
     },
     {
@@ -9962,14 +10196,14 @@
     },
     {
       "id": "2026-12-20-concorde-2-the-smyths",
-      "title": "The Smyths",
+      "title": "The Smyths 20/12/26 7:30pm Live",
       "date": "2026-12-20",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/the-smyths",
       "last_seen": "2026-10-06"
     },
     {
@@ -10082,14 +10316,14 @@
     },
     {
       "id": "2026-12-22-concorde-2-resident-presents-the-script",
-      "title": "Resident Presents The Script",
+      "title": "Resident Presents The Script 22/12/26 5:00pm Live",
       "date": "2026-12-22",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "17:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/resident-presents-the-script",
       "last_seen": "2026-10-06"
     },
     {
@@ -10106,14 +10340,14 @@
     },
     {
       "id": "2026-12-22-concorde-2-resident-presents-the-script-2",
-      "title": "Resident Presents The Script",
+      "title": "Resident Presents The Script 22/12/26 8:00pm Live",
       "date": "2026-12-22",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "20:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/the-script",
       "last_seen": "2026-10-06"
     },
     {
@@ -10166,14 +10400,14 @@
     },
     {
       "id": "2026-12-23-concorde-2-from-the-jam",
-      "title": "From The Jam",
+      "title": "From The Jam 23/12/26 7:30pm Live",
       "date": "2026-12-23",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/from-the-jam",
       "last_seen": "2026-10-06"
     },
     {
@@ -10406,13 +10640,13 @@
     },
     {
       "id": "2027-01-08-concorde-2-pigeon",
-      "title": "Pigeon",
+      "title": "Pigeon 08/01/27 7:00pm Live",
       "date": "2027-01-08",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
-      "category": "Club",
+      "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/pigeon",
       "last_seen": "2026-10-06"
     },
@@ -10549,14 +10783,14 @@
     },
     {
       "id": "2027-01-19-concorde-2-the-dolly-parton-and-kenny-rogers-experience",
-      "title": "The Dolly Parton and Kenny Rogers Experience",
+      "title": "The Dolly Parton and Kenny Rogers Experience 19/01/27 7:30pm Live",
       "date": "2027-01-19",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/the-dolly-parton-and-kenny-rogers-experience-dollys-birthday-celebration",
       "last_seen": "2026-10-06"
     },
     {
@@ -10813,25 +11047,38 @@
     },
     {
       "id": "2027-01-29-concorde-2-jo-whiley-s-90s-anthems",
-      "title": "Jo Whiley's 90s Anthems",
+      "title": "Jo Whiley's 90s Anthems 29/01/27 6:00pm Club",
       "date": "2027-01-29",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "18:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/jo-whileys-90s-anthems",
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-01-29-quarters-the-antarctic-monkeys",
-      "title": "The Antarctic Monkeys",
+      "id": "2027-01-29-quarters-live-events-the-antarctic",
+      "title": "Live Events The Antarctic",
       "date": "2027-01-29",
       "venue": "Quarters",
+      "source": "venue",
       "time": "18:30",
       "finish_time": "22:00",
-      "category": "Music",
-      "ticket_url": "https://quartersbrighton.co.uk/whatson",
+      "category": "Dance",
+      "ticket_url": "https://pinkdot.seetickets.com/event/the-antarctic-monkeys/quarters/3614681",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2027-01-29-quarters-monkeys",
+      "title": "Monkeys",
+      "date": "2027-01-29",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "18:30",
+      "finish_time": "22:00",
+      "category": "Dance",
+      "ticket_url": "https://www.quartersbrighton.co.uk/whatson/the-antarctic-monkeys",
       "last_seen": "2026-10-06"
     },
     {
@@ -11099,13 +11346,13 @@
     },
     {
       "id": "2027-02-12-concorde-2-motorheadache",
-      "title": "Motorheadache",
+      "title": "Motorheadache 12/02/27 7:00pm",
       "date": "2027-02-12",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
-      "category": "Music",
+      "category": "Other",
       "ticket_url": "https://www.concorde2.co.uk/event/motorheadache",
       "last_seen": "2026-10-06"
     },
@@ -11135,14 +11382,14 @@
     },
     {
       "id": "2027-02-13-concorde-2-reggae-orchestra",
-      "title": "Reggae Orchestra",
+      "title": "Reggae Orchestra 13/02/27 7:00pm",
       "date": "2027-02-13",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/reggae-orchestra",
       "last_seen": "2026-10-06"
     },
     {
@@ -11207,14 +11454,14 @@
     },
     {
       "id": "2027-02-19-concorde-2-the-cureheads",
-      "title": "The Cureheads",
+      "title": "The Cureheads 19/02/27 7:00pm Live",
       "date": "2027-02-19",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/the-cureheads",
       "last_seen": "2026-10-06"
     },
     {
@@ -11661,7 +11908,7 @@
     },
     {
       "id": "2027-03-11-concorde-2-frankie-stew-harvey-gunn",
-      "title": "Frankie Stew & Harvey Gunn",
+      "title": "Frankie Stew & Harvey Gunn 11/03/27 7:30pm Live",
       "date": "2027-03-11",
       "venue": "Concorde 2",
       "source": "venue",
@@ -11853,14 +12100,14 @@
     },
     {
       "id": "2027-03-19-concorde-2-the-lilacs",
-      "title": "The Lilacs",
+      "title": "The Lilacs 19/03/27 12:00am Live",
       "date": "2027-03-19",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "00:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/the-lilacs",
       "last_seen": "2026-10-06"
     },
     {
@@ -11913,14 +12160,14 @@
     },
     {
       "id": "2027-03-20-concorde-2-lebanon-hanover",
-      "title": "Lebanon Hanover",
+      "title": "Lebanon Hanover 20/03/27 7:00pm Live",
       "date": "2027-03-20",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/lebanon-hanover",
       "last_seen": "2026-10-06"
     },
     {
@@ -12081,14 +12328,14 @@
     },
     {
       "id": "2027-03-31-concorde-2-moses-boyd",
-      "title": "Moses Boyd",
+      "title": "Moses Boyd 31/03/27 7:30pm Live",
       "date": "2027-03-31",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:30",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/moses-boyd",
       "last_seen": "2026-10-06"
     },
     {
@@ -12117,12 +12364,12 @@
     },
     {
       "id": "2027-04-02-concorde-2-the-big-indie-fest",
-      "title": "The Big Indie Fest",
+      "title": "The Big Indie Fest 02/04/27 6:00pm Live",
       "date": "2027-04-02",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "18:00",
-      "finish_time": "19:00",
+      "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/the-big-indie-fest-2",
       "last_seen": "2026-10-06"
@@ -12141,14 +12388,14 @@
     },
     {
       "id": "2027-04-03-concorde-2-stop-making-sense-live",
-      "title": "Stop Making Sense Live",
+      "title": "Stop Making Sense Live 03/04/27 7:00pm",
       "date": "2027-04-03",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/stop-making-sense-live",
       "last_seen": "2026-10-06"
     },
     {
@@ -12249,14 +12496,14 @@
     },
     {
       "id": "2027-04-10-concorde-2-keeno-live-ft-vibre-strings",
-      "title": "Keeno Live ft. Vibre Strings",
+      "title": "Keeno Live ft. Vibre Strings 10/04/27 6:00pm Live",
       "date": "2027-04-10",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "18:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/kenno-live",
       "last_seen": "2026-10-06"
     },
     {
@@ -12272,8 +12519,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2027-04-10-quarters-rock-day-party-april-10-2027-16-00-20-00-rock-day-party-lands-at-quarters-expect-huge-rock-anthems-singalongs-and-classics-from-queen-ac-dc-nirvana-the-killers-",
-      "title": "Rock Day Party",
+      "id": "2027-04-10-quarters-club-events-rock-day-party",
+      "title": "Club Events Rock Day Party",
       "date": "2027-04-10",
       "venue": "Quarters",
       "source": "venue",
@@ -12321,14 +12568,14 @@
     },
     {
       "id": "2027-04-16-concorde-2-noasis",
-      "title": "Noasis",
+      "title": "Noasis 16/04/27 7:00pm Live",
       "date": "2027-04-16",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/noasis",
       "last_seen": "2026-10-06"
     },
     {
@@ -12476,14 +12723,14 @@
     },
     {
       "id": "2027-04-30-concorde-2-a-tribute-to-amy",
-      "title": "A Tribute To Amy",
+      "title": "A Tribute To Amy 30/04/27 7:00pm Live",
       "date": "2027-04-30",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/a-tribute-to-amy",
       "last_seen": "2026-10-06"
     },
     {
@@ -12500,7 +12747,7 @@
     },
     {
       "id": "2027-05-01-concorde-2-beatles-complete",
-      "title": "Beatles Complete",
+      "title": "Beatles Complete 01/05/27 7:00pm Live",
       "date": "2027-05-01",
       "venue": "Concorde 2",
       "source": "venue",
@@ -12716,14 +12963,14 @@
     },
     {
       "id": "2027-05-28-concorde-2-love-forever-changes-60th-anniversary-tour",
-      "title": "Love - Forever Changes 60th Anniversary Tour",
+      "title": "Love - Forever Changes 60th Anniversary Tour 28/05/27 7:00pm Live",
       "date": "2027-05-28",
       "venue": "Concorde 2",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
+      "ticket_url": "https://www.concorde2.co.uk/event/love-forever-changes-60th-anniversary-tour",
       "last_seen": "2026-10-06"
     },
     {
