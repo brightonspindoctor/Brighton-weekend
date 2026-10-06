@@ -48,6 +48,12 @@
   "act": "80s HiFi Christmas Party",
   "checked": "2026-10-06"
  },
+ "a m c presents grassroots energy": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "A.M.C presents GRASSROOTS ENERGY",
+  "checked": "2026-10-06"
+ },
  "aaron rowe": {
   "mbid": "eee8e86c-04d5-464b-addc-939eb6d2f54a",
   "name": "Aaron Rowe",
@@ -1802,6 +1808,60 @@
   "act": "GIRLBAND!",
   "checked": "2026-10-06"
  },
+ "girls of the internet": {
+  "mbid": "11c3823e-91d0-4c68-8051-9cd55728ad8b",
+  "name": "Girls of the Internet",
+  "genres": [
+   {
+    "name": "ambient house",
+    "count": 1
+   },
+   {
+    "name": "deep house",
+    "count": 1
+   },
+   {
+    "name": "disco",
+    "count": 1
+   },
+   {
+    "name": "dub techno",
+    "count": 1
+   },
+   {
+    "name": "garage house",
+    "count": 1
+   },
+   {
+    "name": "house",
+    "count": 1
+   },
+   {
+    "name": "soul",
+    "count": 1
+   },
+   {
+    "name": "speed garage",
+    "count": 1
+   },
+   {
+    "name": "techno",
+    "count": 1
+   },
+   {
+    "name": "uk garage",
+    "count": 1
+   },
+   {
+    "name": "vocal house",
+    "count": 1
+   }
+  ],
+  "bucket": "House & Disco",
+  "reason": "tagged",
+  "act": "Girls of the Internet",
+  "checked": "2026-10-06"
+ },
  "glenn richards and the venus lakes": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -2264,6 +2324,96 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "It's A Jungle Out There",
+  "checked": "2026-10-06"
+ },
+ "ivy lab": {
+  "mbid": "05a8fca6-3178-4f95-ad82-d325bc6102fe",
+  "name": "Ivy Lab",
+  "genres": [
+   {
+    "name": "bassline",
+    "count": 1
+   },
+   {
+    "name": "breakbeat",
+    "count": 1
+   },
+   {
+    "name": "breaks",
+    "count": 1
+   },
+   {
+    "name": "club",
+    "count": 1
+   },
+   {
+    "name": "dance",
+    "count": 1
+   },
+   {
+    "name": "downtempo",
+    "count": 1
+   },
+   {
+    "name": "drum and bass",
+    "count": 4
+   },
+   {
+    "name": "drumstep",
+    "count": 1
+   },
+   {
+    "name": "electronic",
+    "count": 3
+   },
+   {
+    "name": "electronica",
+    "count": 1
+   },
+   {
+    "name": "future bass",
+    "count": 2
+   },
+   {
+    "name": "grime",
+    "count": 1
+   },
+   {
+    "name": "halftime",
+    "count": 3
+   },
+   {
+    "name": "hip hop",
+    "count": 2
+   },
+   {
+    "name": "instrumental hip hop",
+    "count": 3
+   },
+   {
+    "name": "liquid funk",
+    "count": 2
+   },
+   {
+    "name": "pop",
+    "count": 1
+   },
+   {
+    "name": "trap",
+    "count": 4
+   },
+   {
+    "name": "uk garage",
+    "count": 1
+   },
+   {
+    "name": "wonky",
+    "count": 2
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Ivy Lab",
   "checked": "2026-10-06"
  },
  "jack whitehall": {
@@ -3545,6 +3695,12 @@
   "act": "Rival Consoles",
   "checked": "2026-10-06"
  },
+ "rnli": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "RNLI",
+  "checked": "2026-10-06"
+ },
  "rock day party": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -3655,6 +3811,12 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Sergi Polo",
+  "checked": "2026-10-06"
+ },
+ "sexy lady massive presents": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Sexy Lady Massive Presents",
   "checked": "2026-10-06"
  },
  "shadowman": {
