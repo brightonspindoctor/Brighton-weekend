@@ -21,7 +21,7 @@ DATE_RE=re.compile(rf'\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\.?\s*(\d{{1,2}}(?:st|nd
 TIME_RE=re.compile(r'\b(\d{1,2}(?::\d{2})?\s*(?:am|pm))\b',re.I)
 CATEGORIES={'Comedy':['comedy','comedian','stand-up','stand up','laughs'],'Club':['club','dj','dnb','drum & bass','rave','techno','house night','party'],'Theatre':['theatre','theater','play','musical','west end'],'Dance':['dance','ballet','contemporary dance'],'Family':['family','kids','children','storytelling','baby'],'Talk':['talk','in conversation','lecture','spoken word','author'],'Sport':['football','boxing','wrestling','sport','racecourse'],'Music':['gig','live','band','concert','tour','festival','dj set','orchestra','singer']}
 GENERIC_TITLES={'comedy','classical music','music','talks & debate','talks and debate','dance','theatre','family',"what's on",'events','upcoming events','get tickets','buy tickets','book tickets','learn more','more info','more info & tickets','find out more','event details','sold out','on sale','on sale today','tickets','read more','view event'}
-CTA_PREFIXES=('get tickets','buy tickets','book tickets','learn more','more info','find out more','event details','on sale','sold out')
+CTA_PREFIXES=('get tickets','get ticket','buy tickets','buy ticket','book tickets','book ticket','book now','learn more','more info','more details','find out more','event details','on sale','sold out','sign up','subscribe','join our','join the mailing','newsletter','mailing list')
 
 def clean(s): return re.sub(r'\s+',' ',s or '').strip()
 def valid_title(title):
@@ -29,6 +29,7 @@ def valid_title(title):
     if not t or low in GENERIC_TITLES:return False
     if any(low.startswith(p) for p in CTA_PREFIXES):return False
     if len(t)<3 or len(t)>180:return False
+    if not re.search(r'[a-z]{2}',low):return False  # a year or number on its own, e.g. "2026"
     return True
 
 def title_key(title): return re.sub(r'[^a-z0-9]+',' ',clean(title).lower()).strip()
@@ -40,6 +41,25 @@ def strip_listing_date(title):
 VENUE_ALIASES={'Brighton Dome - Concert Hall':'Brighton Dome'}  # same as prepare-events.py and index.html
 def canonical_venue(v): return VENUE_ALIASES.get(v,v)
 def event_key(e): return (canonical_venue(e.get('venue','')).lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
+def day_key(e): return (canonical_venue(e.get('venue','')).lower(),e.get('date',''))
+def same_show(a,b):
+    """True when two titles on the same venue and day are the same show, e.g.
+    'Wot Italian?' and 'Wot Italian? Boothby Graffoe, Antonio Forcione'."""
+    ka,kb=title_key(a),title_key(b)
+    if not ka or not kb:return False
+    if ka==kb or ka.startswith(kb+' ') or kb.startswith(ka+' '):return True
+    from difflib import SequenceMatcher
+    return SequenceMatcher(None,ka,kb).ratio()>=0.85
+def swapped_date(iso):
+    """2026-11-10 -> 2026-10-11 (for repairing records saved with day and month swapped)."""
+    try:
+        y,m,d=(int(x) for x in iso.split('-'))
+        return None if d>12 or d==m else f'{y:04d}-{d:02d}-{m:02d}'
+    except Exception:return None
+# Drop an event only after its venue has stopped listing it for this many days
+# in a row (while the venue's own site was loading fine). One flaky night must
+# not remove real events.
+STALE_DAYS=3
 def fuller_title(a,b):
     """Return the fuller title when one title is a clear prefix of the other."""
     ka,kb=title_key(a),title_key(b)
@@ -138,7 +158,13 @@ def roll_year_forward(dt,text):
 def parse_dt(value):
     if not value:return None
     try:
-        dt=dateparser.parse(clean(str(value)),dayfirst=True,fuzzy=True,default=datetime(NOW.year,1,1))
+        v=clean(str(value))
+        # ISO dates (2026-12-10, as in structured event data and the page-text
+        # route below) are year-month-day. dayfirst=True makes dateutil read them
+        # as year-DAY-month, swapping day and month whenever the day is 12 or
+        # under, so day-first reading is only used for text such as "10/12/2026".
+        iso=bool(re.match(r'\d{4}-\d{1,2}-\d{1,2}',v))
+        dt=dateparser.parse(v,dayfirst=not iso,yearfirst=iso,fuzzy=True,default=datetime(NOW.year,1,1))
         if not dt:return None
         dt=roll_year_forward(dt,value)
         return dt.replace(tzinfo=TZ) if dt.tzinfo is None else dt.astimezone(TZ)
@@ -259,7 +285,9 @@ async def main():
     async with async_playwright() as p:
         browser=await p.chromium.launch(headless=True);results=await asyncio.gather(*(scrape_source(browser,s) for s in SOURCES));await browser.close()
     all_events=[];successful=0;failures=[];failed_venues=set()
+    report=[]
     for source,(events,err) in zip(SOURCES,results):
+        report.append({'venue':source['venue'],'url':source['url'],'events':len(events),'error':(err or '')[:300]})
         if err:failures.append(f"{source['venue']}: {err}");failed_venues.add(canonical_venue(source['venue']));continue
         successful+=1;all_events.extend(events);print(f"{source['venue']}: {len(events)} events")
     scraped={}
@@ -267,11 +295,11 @@ async def main():
         key=event_key(e)
         if key not in scraped:scraped[key]=e
     scraped=prefer_fuller_titles(list(scraped.values()))
-    existing=json.loads(OUT.read_text()) if OUT.exists() else {};retained={};removed_generic=0;removed_stale=0
+    existing=json.loads(OUT.read_text()) if OUT.exists() else {};removed_generic=0;removed_stale=0
+    today=NOW.date().isoformat();stale_before=(NOW-timedelta(days=STALE_DAYS)).date().isoformat()
     # A venue is "healthy" when every one of its sources loaded and it returned at
-    # least half as many upcoming events as last time. Only then are its old
-    # listings that are no longer on its site treated as cancelled/moved and
-    # dropped; otherwise they are kept, so a site outage can't empty the app.
+    # least half as many upcoming events as last time. Only for healthy venues are
+    # missing events counted towards removal, so a site outage can't empty the app.
     def future(evs):return [e for e in evs if RANGE_START.isoformat()<=str(e.get('date',''))<=RANGE_END.isoformat()]
     before={};now_count={}
     for e in future(existing.get('events',[])):
@@ -279,34 +307,50 @@ async def main():
     for e in scraped:v=canonical_venue(e.get('venue',''));now_count[v]=now_count.get(v,0)+1
     healthy={v for v in {canonical_venue(s['venue']) for s in SOURCES}
              if v not in failed_venues and now_count.get(v,0)>=max(1,before.get(v,0)//2)}
-    scraped_keys={event_key(e) for e in scraped}
+    # Existing upcoming events. Older records have no last_seen yet: start their clock today.
+    kept={}
     for e in existing.get('events',[]):
         try:d=datetime.fromisoformat(e['date']).date()
         except Exception:continue
-        if RANGE_START<=d<=RANGE_END:
-            if not valid_title(e.get('title','')):
-                removed_generic+=1;continue
-            e=dict(e,title=strip_listing_date(e.get('title','')))
-            # Discovery-calendar events are judged by scrape-discovery.py, not here.
-            if e.get('source')!='discovery' and canonical_venue(e.get('venue',''))in healthy and event_key(e) not in scraped_keys:
-                removed_stale+=1;continue
-            retained[event_key(e)]=e
+        if not (RANGE_START<=d<=RANGE_END):continue
+        if not valid_title(e.get('title','')):removed_generic+=1;continue
+        e=dict(e,title=strip_listing_date(e.get('title','')));e.setdefault('last_seen',today)
+        kept.setdefault(e['id'],e)
+    by_exact={event_key(e):e for e in kept.values()}
+    by_day={}
+    for e in kept.values():by_day.setdefault(day_key(e),[]).append(e)
+    # Match today's results to existing events. A match keeps the existing id (so
+    # saved Interested/Going choices still match) even if the time or the wording
+    # of the title has changed, and takes today's details and ticket link.
+    matched=set();new=[];pending=[];redated=0
+    def adopt(old,e):
+        fresh=dict(e,id=old['id'],last_seen=today)
+        if is_listing_or_home(fresh.get('ticket_url',''),'') and not is_listing_or_home(old.get('ticket_url',''),''):
+            fresh['ticket_url']=old['ticket_url']
+        kept[old['id']]=fresh;matched.add(old['id'])
     for e in scraped:
-        key=event_key(e)
-        old=retained.get(key)
-        if old is None:retained[key]=e
-        else:
-            # Same event found again: keep its id (so saved Interested/Going
-            # choices still match) but take today's ticket link and details,
-            # unless today's link is worse (a listings/home page) than the old one.
-            fresh=dict(e,id=old['id'])
-            if is_listing_or_home(fresh.get('ticket_url',''),'') and not is_listing_or_home(old.get('ticket_url',''),''):
-                fresh['ticket_url']=old['ticket_url']
-            retained[key]=fresh
-    events=prefer_fuller_titles(list(retained.values()))
+        old=by_exact.get(event_key(e))
+        if old is None or old['id'] in matched:
+            old=next((c for c in by_day.get(day_key(e),[]) if c['id'] not in matched and same_show(c['title'],e['title'])),None)
+        if old is None:pending.append(e)
+        else:adopt(old,e)
+    # Second pass, only for events still unmatched: an earlier version saved
+    # some dates with day and month swapped (10 Nov for 11 Oct). If the same show
+    # is stored, unmatched, on the swapped date, it is this event: move it to the
+    # right date and keep its id, so saved choices follow it.
+    for e in pending:
+        sw=swapped_date(e.get('date',''))
+        old=next((c for c in by_day.get((day_key(e)[0],sw),[]) if c['id'] not in matched and same_show(c['title'],e['title'])),None) if sw else None
+        if old is None:new.append(dict(e,last_seen=today))
+        else:adopt(old,e);redated+=1
+    for eid,e in list(kept.items()):
+        if eid in matched or e.get('source')=='discovery':continue  # discovery events: see scrape-discovery.py
+        if canonical_venue(e.get('venue','')) in healthy and str(e.get('last_seen',today))<=stale_before:
+            del kept[eid];removed_stale+=1
+    events=prefer_fuller_titles(list(kept.values())+new)
     events=sorted(events,key=lambda x:(x['date'],x.get('time') or '99:99',x['venue'],x['title']))
     existing_future=sum(1 for e in existing.get('events',[]) if e.get('date','')>=RANGE_START.isoformat() and valid_title(e.get('title','')))
-    print(f'Successful sources: {successful}/{len(SOURCES)}; scraped: {len(scraped)}; retained future: {existing_future}; removed generic: {removed_generic}; removed no-longer-listed: {removed_stale}; healthy venues: {len(healthy)}; final: {len(events)}')
+    print(f'Successful sources: {successful}/{len(SOURCES)}; scraped: {len(scraped)}; matched existing: {len(matched)} (re-dated {redated}); new: {len(new)}; retained future: {existing_future}; removed generic: {removed_generic}; removed after {STALE_DAYS} days unlisted: {removed_stale}; healthy venues: {len(healthy)}; final: {len(events)}')
     if failures:
         print('Source failures:',file=sys.stderr)
         for f in failures:print(' - '+f,file=sys.stderr)
@@ -315,7 +359,9 @@ async def main():
     # A substantial reduction is expected when collapsing duplicate title variants.
     # Only refuse a refresh if the result loses more than 30% of the retained data.
     if existing_future and len(events)<int(existing_future*.70):raise SystemExit('Unexpected loss of future events; refusing to replace events.json')
-    OUT.write_text(json.dumps({'updated':NOW.date().isoformat(),'range_start':RANGE_START.isoformat(),'range_end':RANGE_END.isoformat(),'venues':sorted({e['venue'] for e in events}),'events':events},ensure_ascii=False,indent=2)+'\n')
+    # source_report: how each venue's scrape went, so a venue that silently
+    # returns nothing is visible in the data (the app ignores this field).
+    OUT.write_text(json.dumps({'updated':NOW.date().isoformat(),'range_start':RANGE_START.isoformat(),'range_end':RANGE_END.isoformat(),'venues':sorted({e['venue'] for e in events}),'source_report':report,'events':events},ensure_ascii=False,indent=2)+'\n')
     print(f'Wrote {OUT} with {len(events)} events')
 
 if __name__=='__main__':asyncio.run(main())
