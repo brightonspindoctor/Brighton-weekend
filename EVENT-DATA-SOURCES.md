@@ -22,7 +22,7 @@ Listings are refreshed every day at 07:17 (Europe/London) by
    | `"note"` | Why the entry is set up this way. |
 
 2. **Discovery calendars** (Visit Brighton, Eventbrite, Ticketmaster, Skiddle,
-   and the promoter JOY. Concerts),
+   and the promoters JOY. Concerts and Beat Down Promotions),
    read by `scripts/scrape-discovery.py`. Events are kept only when they are at
    a venue in `event-sources.json` (or the Amex Stadium).
 
@@ -64,6 +64,11 @@ discovery calendars. A venue showing `0` with no error means its page loaded but
 the scraper could not read it, which usually means the venue changed its site.
 
 ## Venue status (6 October 2026)
+
+Beat Down Promotions (`tickettailor.com/events/beatdown`) is read by a Ticket
+Tailor reader in `scrape-discovery.py`, which suits any promoter selling on
+Ticket Tailor: add its page to `SOURCES` and `PROMOTERS`, and its sticker to
+`PROMOTER_STICKERS` in `index.html`. Only Brighton & Hove postcodes are kept.
 
 JOY. Concerts (`joyconcerts.com/listings`) is read by its own card reader in
 `scrape-discovery.py`: only gigs whose town is Brighton or Hove, at a venue in
