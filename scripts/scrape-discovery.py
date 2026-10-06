@@ -244,6 +244,7 @@ async def main():
   if old is None:merged[key]=dict(e,last_seen=today);matched.add(id(merged[key]));brand_new.add(id(merged[key]));continue
   matched.add(id(old));old['last_seen']=today
   if e.get('promoter'):old['promoter']=e['promoter']  # a venue's listing of a Joy gig gets the Joy sticker
+  if not old.get('time') and e.get('time'):old['time']=e['time']  # e.g. Beat Down gives the start the venue page lacks
   if old.get('source')=='discovery':
    # Found again: keep the id, take today's link and details.
    k=key_of(old);merged[k]=dict(e,id=old['id'],last_seen=today,**({'also_ids':old['also_ids']} if old.get('also_ids') else {}),**({'promoter':e.get('promoter') or old['promoter']} if (e.get('promoter') or old.get('promoter')) else {}));matched.add(id(merged[k]))

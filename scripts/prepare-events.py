@@ -115,6 +115,10 @@ def normalise_time(value):
 
 def fix_times(event):
     start = normalise_time(event.get("time"))
+    # A date with no time read as midnight ("2026-10-12T00:00"): a concert or
+    # show does not start at 00:00. Club nights can, so theirs is kept.
+    if start == "00:00" and event.get("category") != "Club":
+        start = ""
     finish = normalise_time(event.get("finish_time"))
     # A "finish" earlier than the start but not in the small hours is a doors time.
     if start and finish and (finish == start or (finish < start and finish >= "06:00")):
@@ -221,6 +225,29 @@ for event in sorted(final, key=lambda e: str(e.get("last_seen") or "")):
     while event["id"] in used:
         event["id"] = f"{base_id}-{n}"; n += 1
     used.add(event["id"])
+# Merged-away ids ("also_ids") let saved choices follow a show. An alias must
+# never point at another live event, be claimed by two events, or be another
+# live event's earlier id (same id apart from a -2 suffix): any of those would
+# move someone's choice onto the wrong show.
+def id_base(i):
+    return re.sub(r"-\d+$", "", str(i))
+live_ids = {e["id"] for e in final}
+live_bases = {}
+for e in final:
+    live_bases.setdefault(id_base(e["id"]), set()).add(e["id"])
+claims = {}
+for e in final:
+    for a in e.get("also_ids", []):
+        claims[a] = claims.get(a, 0) + 1
+dropped_aliases = 0
+for e in final:
+    if not e.get("also_ids"):
+        continue
+    keep = [a for a in e["also_ids"] if a not in live_ids and claims[a] == 1
+            and not (live_bases.get(id_base(a), set()) - {e["id"]})]
+    dropped_aliases += len(e["also_ids"]) - len(keep)
+    if keep: e["also_ids"] = keep
+    else: e.pop("also_ids")
 for event in final:
     event.pop("_card_text", None)
 data["events"] = final
@@ -228,4 +255,4 @@ data["venues"] = sorted({str(e["venue"]) for e in final if e.get("venue")})
 DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
 for line in merged_report:
     print("  merged duplicate: " + line)
-print("Prepared event data: " + ", ".join(f"{k}={v}" for k, v in removed.items()) + f"; cleaned_titles={cleaned_titles}; published={len(final)}")
+print("Prepared event data: " + ", ".join(f"{k}={v}" for k, v in removed.items()) + f"; cleaned_titles={cleaned_titles}; unsafe_aliases_dropped={dropped_aliases}; published={len(final)}")

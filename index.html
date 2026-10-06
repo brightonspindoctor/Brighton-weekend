@@ -731,7 +731,7 @@ async function loadCustomEvents(){
 // other ids in also_ids. Choices saved against those ids belong to the kept
 // event (see scripts/prepare-events.py).
 let eventIdAlias={};
-function rebuildEventIdAliases(){eventIdAlias={};for(const e of events)for(const a of (Array.isArray(e.also_ids)?e.also_ids:[]))if(a&&a!==e.id)eventIdAlias[a]=e.id}
+function rebuildEventIdAliases(){eventIdAlias={};const live=new Set(events.map(e=>e.id)),seen=new Set(),bad=new Set();for(const e of events)for(const a of (Array.isArray(e.also_ids)?e.also_ids:[])){if(!a||live.has(a))continue;if(seen.has(a))bad.add(a);seen.add(a);eventIdAlias[a]=e.id}bad.forEach(a=>delete eventIdAlias[a])}// never remap a live id, or an id two events claim
 function canonicalRows(rows){
  if(!Array.isArray(rows))return rows;
  const out=[],at=new Map();
