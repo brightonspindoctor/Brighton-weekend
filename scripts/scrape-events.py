@@ -29,7 +29,7 @@ def valid_title(title):
     if not t or low in GENERIC_TITLES:return False
     if any(low.startswith(p) for p in CTA_PREFIXES):return False
     if len(t)<3 or len(t)>180:return False
-    if not re.search(r'[a-z]{2}',low):return False  # a year or number on its own, e.g. "2026"
+    if not re.search(r'[^\W\d_]{2}',low):return False  # a year or number on its own, e.g. "2026"
     return True
 
 def title_key(title): return re.sub(r'[^a-z0-9]+',' ',clean(title).lower()).strip()
@@ -347,6 +347,15 @@ async def main():
         if eid in matched or e.get('source')=='discovery':continue  # discovery events: see scrape-discovery.py
         if canonical_venue(e.get('venue','')) in healthy and str(e.get('last_seen',today))<=stale_before:
             del kept[eid];removed_stale+=1
+    # A new event's id is built from its date, venue and title, so it can equal
+    # the id of an existing record (e.g. one moved to its correct date keeps the
+    # id it was created with). Existing ids carry people's saved choices, so the
+    # new event gets a suffix instead.
+    used=set(kept)
+    for e in new:
+        base_id=e['id'];n=2
+        while e['id'] in used:e['id']=f'{base_id}-{n}';n+=1
+        used.add(e['id'])
     events=prefer_fuller_titles(list(kept.values())+new)
     events=sorted(events,key=lambda x:(x['date'],x.get('time') or '99:99',x['venue'],x['title']))
     existing_future=sum(1 for e in existing.get('events',[]) if e.get('date','')>=RANGE_START.isoformat() and valid_title(e.get('title','')))

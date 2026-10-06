@@ -55,7 +55,7 @@ for i, event in enumerate(events):
     if not (start <= event_date <= end): errors.append(f"{event_id}: date outside declared range")
     low = title.lower()
     if venue.lower() == "patterns" and any(marker in low for marker in PATTERNS_RECURRING): errors.append(f"recurring Patterns event still present: {event_id}")
-    if low in GENERIC_TITLES or re.sub(r"[^a-z0-9]+", " ", low).strip() in GENERIC_KEYS or not re.search(r"[a-z]{2}", low): errors.append(f"generic title still present: {event_id}")
+    if low in GENERIC_TITLES or re.sub(r"[^a-z0-9]+", " ", low).strip() in GENERIC_KEYS or not re.search(r"[^\W\d_]{2}", low): errors.append(f"generic title still present: {event_id}")
     for field in ("time", "finish_time"):
         value = str(event.get(field) or "")
         if value and not re.fullmatch(r"\d{2}:\d{2}", value): errors.append(f"{event_id}: {field} {value!r} is not HH:MM")

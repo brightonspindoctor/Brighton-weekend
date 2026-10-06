@@ -160,7 +160,7 @@ async def main():
  # for STALE_DAYS days in a row is dropped (cancelled or moved). If they mostly
  # failed, nothing is dropped.
  healthy=ok_sources>=max(1,len(SOURCES)//2) and len(all_events)>=10
- removed_stale=0;matched=set()
+ removed_stale=0;matched=set();brand_new=set()
  for e in data.get('events',[]):
   if not valid_title(e.get('title','')):continue
   e.setdefault('last_seen',today)
@@ -170,7 +170,7 @@ async def main():
   key=key_of(e);old=merged.get(key)
   if old is None:
    old=next((x for x in merged.values() if (x.get('venue','').lower(),x.get('date',''))==(e.get('venue','').lower(),e.get('date','')) and id(x) not in matched and same_show(x.get('title',''),e.get('title',''))),None)
-  if old is None:merged[key]=dict(e,last_seen=today);matched.add(id(merged[key]));continue
+  if old is None:merged[key]=dict(e,last_seen=today);matched.add(id(merged[key]));brand_new.add(id(merged[key]));continue
   matched.add(id(old));old['last_seen']=today
   if old.get('source')=='discovery':
    # Found again: keep the id, take today's link and details.
@@ -179,6 +179,12 @@ async def main():
   if healthy and e.get('source')=='discovery' and id(e) not in matched and str(e.get('last_seen',today))<=stale_before:
    del merged[k];removed_stale+=1
  data['discovery_report']={'calendars_loaded':ok_sources,'calendars':len(SOURCES),'events_found':len(all_events)}
+ # Keep ids unique: an existing record keeps its id (saved choices); a new one gets a suffix.
+ used=set()
+ for e in sorted(merged.values(),key=lambda x:id(x) in brand_new):  # existing records first
+  base_id=e['id'];n=2
+  while e['id'] in used:e['id']=f'{base_id}-{n}';n+=1
+  used.add(e['id'])
  events=prefer_fuller_titles(list(merged.values()))
  data['events']=sorted(events,key=lambda x:(x['date'],x.get('time') or '99:99',x['venue'],x['title']));data['venues']=sorted({e['venue'] for e in events});data['updated']=NOW.date().isoformat();OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');print(f'Merged {len(all_events)} discovery events from {ok_sources}/{len(SOURCES)} calendars; removed after {STALE_DAYS} days unlisted: {removed_stale}; events.json now has {len(events)} events')
 if __name__=='__main__':asyncio.run(main())

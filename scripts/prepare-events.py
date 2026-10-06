@@ -102,7 +102,7 @@ for event in events:
     low = title.lower()
     if venue == "patterns" and any(marker in low for marker in PATTERNS_RECURRING):
         removed["patterns_recurring"] += 1; continue
-    if low in GENERIC_TITLES or title_key(title) in GENERIC_KEYS or not re.search(r"[a-z]{2}", low) or is_date_only_title(title) or not title:
+    if low in GENERIC_TITLES or title_key(title) in GENERIC_KEYS or not re.search(r"[^\W\d_]{2}", low) or is_date_only_title(title) or not title:
         removed["generic"] += 1; continue
     kept.append(event)
 
@@ -142,6 +142,15 @@ for group in groups.values():
     final.extend(chosen)
 
 final.sort(key=lambda e: (e.get("date", ""), e.get("time") or "99:99", e.get("venue", ""), e.get("title", "")))
+# Safety net: ids must be unique (they are what saved Interested/Going choices
+# point at). A record created on an earlier day keeps its id; a later
+# duplicate gets a suffix.
+used = set()
+for event in sorted(final, key=lambda e: str(e.get("last_seen") or "")):
+    base_id, n = event["id"], 2
+    while event["id"] in used:
+        event["id"] = f"{base_id}-{n}"; n += 1
+    used.add(event["id"])
 data["events"] = final
 data["venues"] = sorted({str(e["venue"]) for e in final if e.get("venue")})
 DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
