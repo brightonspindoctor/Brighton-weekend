@@ -11,13 +11,16 @@ from dateutil import parser as dateparser
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
 
 ROOT=Path(__file__).resolve().parents[1]
-SOURCES=json.loads((ROOT/'event-sources.json').read_text())
+# Sources marked "disabled" stay listed (the discovery scraper still recognises
+# their venue) but are not fetched.
+SOURCES=[s for s in json.loads((ROOT/'event-sources.json').read_text()) if not s.get('disabled')]
 OUT=ROOT/'events.json'
 TZ=ZoneInfo('Europe/London')
 NOW=datetime.now(TZ)
 RANGE_START=NOW.date(); RANGE_END=(NOW+timedelta(days=280)).date()
 MONTHS=r'Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?'
-DATE_RE=re.compile(rf'\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\.?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s*(?:\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?)\b',re.I)
+# '10 Oct 2026', 'October 10th, 2026' and UK numeric dates such as '10/10/26'.
+DATE_RE=re.compile(rf'\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\.?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s*(?:\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?|\d{{1,2}}/\d{{1,2}}/(?:\d{{4}}|\d{{2}}))\b',re.I)
 TIME_RE=re.compile(r'\b(\d{1,2}(?::\d{2})?\s*(?:am|pm))\b',re.I)
 CATEGORIES={'Comedy':['comedy','comedian','stand-up','stand up','laughs'],'Club':['club','dj','dnb','drum & bass','rave','techno','house night','party'],'Theatre':['theatre','theater','play','musical','west end'],'Dance':['dance','ballet','contemporary dance'],'Family':['family','kids','children','storytelling','baby'],'Talk':['talk','in conversation','lecture','spoken word','author'],'Sport':['football','boxing','wrestling','sport','racecourse'],'Music':['gig','live','band','concert','tour','festival','dj set','orchestra','singer']}
 GENERIC_TITLES={'comedy','classical music','music','talks & debate','talks and debate','dance','theatre','family',"what's on",'events','upcoming events','get tickets','buy tickets','book tickets','learn more','more info','more info & tickets','find out more','event details','sold out','on sale','on sale today','tickets','read more','view event'}
@@ -126,6 +129,35 @@ def best_link(node,page_url,title):
     if len(scored)>4 and scored[best]<3:return None
     return best
 
+TITLE_CLASS=re.compile(r'(^|[-_ ])(title|name|headline|heading|artist)([-_ ]|$)',re.I)
+def card_title(node,page_url):
+    """Title and link for an event card that has no h1-h4 heading. Tries, in
+    order: an element styled as a title (class 'title', 'name'...), h5/h6 or
+    bold text, the text of a link to the event's own page or a ticketing site,
+    and finally the event page's address ('/event/the-wanted-2-0'). Blocks that
+    link to several different events are skipped: each event's own card is read
+    separately, and a whole list must not become one event."""
+    cands=[]
+    for a in node.find_all('a',href=True):
+        raw=a['href'].strip()
+        if not raw or raw.startswith(('#','mailto:','tel:','javascript:')):continue
+        u=urljoin(page_url,raw).split('#')[0];p=urlparse(u);host=p.netloc.lower()
+        if p.scheme not in ('http','https') or any(h in host for h in SKIP_HOSTS) or is_listing_or_home(u,page_url):continue
+        ticket_site=any(h in host for h in TICKET_HOSTS)
+        if not ticket_site and len([x for x in p.path.split('/') if x])<2:continue  # '/about', '/contact'
+        cands.append((u,clean(a.get_text(' ',strip=True)),ticket_site))
+    if len({u for u,_,_ in cands})>3:return '',page_url
+    link=next((u for u,_,_ in cands),None)
+    el=node.find(class_=TITLE_CLASS) or node.find(['h5','h6']) or node.find(['strong','b'])
+    t=clean(el.get_text(' ',strip=True)) if el else ''
+    if valid_title(t) and not DATE_RE.fullmatch(t):return t,(link or page_url)
+    for u,text,_ in cands:
+        if valid_title(text):return text,u
+    for u,_,ticket_site in cands:
+        t=slug_title(u)
+        if not ticket_site and valid_title(t):return t,u
+    return '',page_url
+
 def offer_url(raw):
     offers=raw.get('offers')
     for o in (offers if isinstance(offers,list) else [offers]):
@@ -183,7 +215,20 @@ def normalise(raw,venue,page_url):
     ident=re.sub(r'[^a-z0-9]+','-',f'{start.date()}-{venue}-{title}'.lower()).strip('-')[:180]
     return {'id':ident,'title':title,'date':start.date().isoformat(),'venue':venue,'source':'venue','time':start.strftime('%H:%M') if start_raw and re.search(r'T|\d{1,2}:\d{2}|am|pm',str(start_raw),re.I) else '','finish_time':end.strftime('%H:%M') if end else '','category':category(title,raw.get('description','')),'ticket_url':url}
 
-def jsonld_events(html,venue,page_url):
+def location_text(obj):
+    """All the names and address text in a schema.org event's location, lower case."""
+    parts=[];stack=[obj.get('location')]
+    while stack:
+        x=stack.pop()
+        if isinstance(x,list):stack.extend(x)
+        elif isinstance(x,dict):stack.extend(v for k,v in x.items() if k in ('name','address','streetAddress','addressLocality','postalCode'))
+        elif isinstance(x,str):parts.append(x)
+    return clean(' '.join(parts)).lower()
+
+def jsonld_events(html,venue,page_url,match_location=None):
+    """Events from schema.org data. With match_location (used for ticketing-site
+    pages that can also show other venues' events), only events whose location
+    mentions it are kept."""
     soup=BeautifulSoup(html,'html.parser');out=[]
     for tag in soup.find_all('script',attrs={'type':re.compile(r'ld\+json',re.I)}):
         try:data=json.loads(tag.string or tag.get_text())
@@ -195,7 +240,8 @@ def jsonld_events(html,venue,page_url):
             if not isinstance(obj,dict):continue
             if isinstance(obj.get('@graph'),list):stack.extend(obj['@graph'])
             typ=obj.get('@type','');types=typ if isinstance(typ,list) else [typ]
-            if any(str(t).lower()=='event' for t in types):
+            if any(str(t).lower()=='event' or str(t).lower().endswith('event') for t in types):
+                if match_location and match_location.lower() not in location_text(obj):continue
                 e=normalise(obj,venue,page_url)
                 if e:out.append(e)
     return out
@@ -225,6 +271,9 @@ def dom_events(html,venue,page_url,detail_only=False):
                     u=urljoin(page_url,a['href']); candidate=slug_title(u)
                     if valid_title(candidate) and '/whats-on/' in urlparse(u).path:
                         title=candidate;href=u;break
+        if not valid_title(title) and not detail_only:
+            title,href=card_title(node,page_url)
+            if valid_title(title):href=best_link(node,page_url,title) or href  # a ticket link in the card beats the event page
         if not valid_title(title):continue
         if href==page_url and not detail_only:
             href=best_link(node,page_url,title) or page_url
@@ -270,8 +319,11 @@ async def scrape_source(browser,source):
     html,final,err=await get_html(browser,source['url'])
     if err:return [],err
     venue=source['venue'];is_dome_search='brightondome.org' in source['url']
-    events=jsonld_events(html,venue,final)
-    events.extend(dom_events(html,venue,final,detail_only=is_dome_search))
+    events=jsonld_events(html,venue,final,source.get('match_location'))
+    # "jsonld_only" sources are ticketing-site pages (Skiddle, Songkick): only
+    # their structured event data is trusted, never the page layout.
+    if not source.get('jsonld_only'):
+        events.extend(dom_events(html,venue,final,detail_only=is_dome_search))
     if venue=='Brighton Dome':
         soup=BeautifulSoup(html,'html.parser');urls=set()
         for a in soup.find_all('a',href=True):
@@ -287,7 +339,8 @@ async def main():
     all_events=[];successful=0;failures=[];failed_venues=set()
     report=[]
     for source,(events,err) in zip(SOURCES,results):
-        report.append({'venue':source['venue'],'url':source['url'],'events':len(events),'error':(err or '')[:300]})
+        report.append({'venue':source['venue'],'url':source['url'],'events':len(events),'error':(err or '').split('\n')[0][:200],
+                       'sample':[{'title':e['title'],'date':e['date'],'time':e.get('time',''),'link':e.get('ticket_url','')} for e in events[:3]]})
         if err:failures.append(f"{source['venue']}: {err}");failed_venues.add(canonical_venue(source['venue']));continue
         successful+=1;all_events.extend(events);print(f"{source['venue']}: {len(events)} events")
     scraped={}

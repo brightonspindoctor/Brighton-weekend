@@ -21,7 +21,10 @@
   },
   {
     "venue": "Volks",
-    "url": "https://www.volksclub.co.uk/events"
+    "url": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/",
+    "jsonld_only": true,
+    "match_location": "volks",
+    "note": "volksclub.co.uk/events no longer exists; listings via Skiddle"
   },
   {
     "venue": "Quarters",
@@ -32,8 +35,17 @@
     "url": "https://patternsbrighton.com/club/"
   },
   {
+    "venue": "Patterns",
+    "url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/",
+    "jsonld_only": true,
+    "match_location": "patterns"
+  },
+  {
     "venue": "DUST",
-    "url": "https://dustbrighton.com/"
+    "url": "https://www.skiddle.com/whats-on/Brighton/Dust/",
+    "jsonld_only": true,
+    "match_location": "dust",
+    "note": "dustbrighton.com no longer resolves; listings via Skiddle"
   },
   {
     "venue": "Komedia",
@@ -49,7 +61,7 @@
   },
   {
     "venue": "The Hope & Ruin",
-    "url": "https://www.hopeandruin.com/events"
+    "url": "https://www.hope.pub/"
   },
   {
     "venue": "The Prince Albert",
@@ -57,11 +69,16 @@
   },
   {
     "venue": "A L P H A B E T",
-    "url": "https://alphabetvenue.co.uk/"
+    "url": "https://alphabetvenue.co.uk/",
+    "disabled": true,
+    "note": "website gone and no upcoming events listed anywhere (last seen July 2026)"
   },
   {
     "venue": "The Pipeline",
-    "url": "https://pipelinebrighton.com/"
+    "url": "https://www.songkick.com/venues/3633674-pipeline",
+    "jsonld_only": true,
+    "match_location": "pipeline",
+    "note": "pipelinebrighton.com no longer resolves; listings via Songkick"
   },
   {
     "venue": "Brighton Racecourse",
@@ -69,11 +86,16 @@
   },
   {
     "venue": "The Gladstone",
-    "url": "https://www.thegladstone.co.uk/whats-on/"
+    "url": "https://www.songkick.com/venues/1380051-gladstone",
+    "jsonld_only": true,
+    "match_location": "gladstone",
+    "note": "thegladstone.co.uk has a broken security certificate; listings via Songkick"
   },
   {
     "venue": "Babble",
-    "url": "https://www.babblebrighton.co.uk/"
+    "url": "https://www.babblebrighton.co.uk/",
+    "disabled": true,
+    "note": "website gone; no event listings found"
   },
   {
     "venue": "Shelter Hall",
@@ -89,7 +111,9 @@
   },
   {
     "venue": "Old Albion",
-    "url": "https://www.oldalbion.pub/"
+    "url": "https://www.oldalbion.pub/",
+    "disabled": true,
+    "note": "its website has no event listings"
   },
   {
     "venue": "Brighton Dome",
