@@ -56,7 +56,8 @@ VENUE_ALIASES = {"Brighton Dome - Concert Hall": "Brighton Dome"}
 _MON = r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?"
 TRAILING_DATE = re.compile(
     r"\s*(?:(?:mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?,?\s+)?"
-    rf"(?:\d{{1,2}}(?:st|nd|rd|th)?\s+{_MON}|{_MON}\s+\d{{1,2}}(?:st|nd|rd|th)?,?)\s+\d{{4}}\b.*$", re.I)
+    rf"(?:(?:\d{{1,2}}(?:st|nd|rd|th)?\s+{_MON}|{_MON}\s+\d{{1,2}}(?:st|nd|rd|th)?,?)\s+\d{{4}}\b|\d{{1,2}}/\d{{1,2}}/\d{{2,4}}\b).*$", re.I)
+LEADING_LABEL = re.compile(r"^(?:(?:club|live|comedy|music|theatre|family|special|featured|free)\s+events?|limited\s+(?:free\s+)?tickets?|sold\s+out|on\s+sale\s+now|just\s+announced)\s*[-:–|]?\s+", re.I)
 # Same rule as scrape-events.py: door/start times and page section labels are not event names.
 NOT_A_TITLE = re.compile(r"""(?:
    doors?(?:\s*open)?\s*[:\-]?\s*\d.*                 # Doors: 7:00 PM
@@ -68,13 +69,18 @@ NOT_A_TITLE = re.compile(r"""(?:
   |\d{1,2}(?::\d{2})?\s*(?:am|pm)(?:\s*[-–]\s*\d{1,2}(?::\d{2})?\s*(?:am|pm))?   # 8pm, 8pm-11pm
   |limited\s+(?:free\s+)?tickets?\b.*|early\s*bird(?:\s+tickets?)?|bu[yt]\s+tickets?\b.*
   |pub\s+events|top\s+picks|next\s+up(?:\s+in\s+the\s+venue)?|this\s+week|coming\s+(?:up|soon)|upcoming
-  |featured|free\s+tickets?|all\s+events|whats?\s+on|more\s+events|you\s+might\s+also\s+like|edition
+  |featured|free\s+tickets?|all\s+events|whats?\s+on|more\s+events|more\s+.+\s+events|you\s+might\s+also\s+like|edition
 )""", re.I | re.X)
 
 
 def clean_title(title):
     raw = html.unescape(str(title or ""))
     cleaned = TRAILING_DATE.sub("", raw).strip(" -–|·")
+    while True:
+        shorter = LEADING_LABEL.sub("", cleaned, count=1)
+        if shorter == cleaned or len(shorter) < 3:
+            break
+        cleaned = shorter
     return cleaned if len(cleaned) >= 3 else raw.strip()
 
 def normalise_time(value):

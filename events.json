@@ -567,7 +567,7 @@
     },
     {
       "id": "2026-10-06-concorde2-yonaka",
-      "title": "Yonaka 06/10/26 7:30pm Live",
+      "title": "Yonaka",
       "date": "2026-10-06",
       "venue": "Concorde 2",
       "source": "venue",
@@ -820,7 +820,7 @@
     },
     {
       "id": "2026-10-08-concorde2-the-wanted-2-0",
-      "title": "The Wanted 2.0 08/10/26 7:30pm Live",
+      "title": "The Wanted 2.0",
       "date": "2026-10-08",
       "venue": "Concorde 2",
       "source": "venue",
@@ -1001,7 +1001,7 @@
     },
     {
       "id": "2026-10-09-quarters-club-events-zero-7-dj-set",
-      "title": "Club Events ZERO 7 (DJ Set)",
+      "title": "ZERO 7 (DJ Set)",
       "date": "2026-10-09",
       "venue": "Quarters",
       "source": "venue",
@@ -1037,7 +1037,7 @@
     },
     {
       "id": "2026-10-09-concorde-2-letz-zep",
-      "title": "Letz Zep 09/10/26 7:00pm Live",
+      "title": "Letz Zep",
       "date": "2026-10-09",
       "venue": "Concorde 2",
       "source": "venue",
@@ -1121,7 +1121,7 @@
     },
     {
       "id": "2026-10-09-concorde-2-kepler",
-      "title": "Kepler 09/10/26 11:00pm",
+      "title": "Kepler",
       "date": "2026-10-09",
       "venue": "Concorde 2",
       "source": "venue",
@@ -1193,7 +1193,7 @@
     },
     {
       "id": "2026-10-09-quarters-club-events-amplify-basstripper",
-      "title": "Club Events Amplify & Basstripper",
+      "title": "Amplify & Basstripper",
       "date": "2026-10-09",
       "venue": "Quarters",
       "source": "venue",
@@ -1314,7 +1314,7 @@
     },
     {
       "id": "2026-10-10-concorde-2-nirvana-uk",
-      "title": "Nirvana UK 10/10/26 7:00pm Live",
+      "title": "Nirvana UK",
       "date": "2026-10-10",
       "venue": "Concorde 2",
       "source": "venue",
@@ -1410,7 +1410,7 @@
     },
     {
       "id": "2026-10-10-concorde-2-scruffest",
-      "title": "Scruffest 10/10/26 11:00pm Club",
+      "title": "Scruffest",
       "date": "2026-10-10",
       "venue": "Concorde 2",
       "source": "venue",
@@ -1470,7 +1470,7 @@
     },
     {
       "id": "2026-10-10-quarters-club-events-limited-free-tickets-fully-local",
-      "title": "Club Events Limited Free Tickets Fully Local",
+      "title": "Fully Local",
       "date": "2026-10-10",
       "venue": "Quarters",
       "source": "venue",
@@ -1482,7 +1482,7 @@
     },
     {
       "id": "2026-10-10-quarters-live-events-mr-cutts",
-      "title": "Live Events Mr Cutts",
+      "title": "Mr Cutts",
       "date": "2026-10-10",
       "venue": "Quarters",
       "source": "venue",
@@ -1651,7 +1651,7 @@
     },
     {
       "id": "2026-10-11-concorde2-hed-pe-cold",
-      "title": "Hed P.E. / Cold 11/10/26 7:30pm Live",
+      "title": "Hed P.E. / Cold",
       "date": "2026-10-11",
       "venue": "Concorde 2",
       "source": "venue",
@@ -1820,7 +1820,7 @@
     },
     {
       "id": "2026-10-12-concorde2-beth-orton",
-      "title": "Beth Orton 12/10/26 12:00am Live",
+      "title": "Beth Orton",
       "date": "2026-10-12",
       "venue": "Concorde 2",
       "source": "venue",
@@ -1869,7 +1869,7 @@
     },
     {
       "id": "2026-10-13-concorde2-jake-xerxes-fussell",
-      "title": "Jake Xerxes Fussell 13/10/26 7:30pm Live",
+      "title": "Jake Xerxes Fussell",
       "date": "2026-10-13",
       "venue": "Concorde 2",
       "source": "venue",
@@ -2086,7 +2086,7 @@
     },
     {
       "id": "2026-10-15-concorde-2-ibibio-sound-machine",
-      "title": "Ibibio Sound Machine 15/10/26 7:30pm Live",
+      "title": "Ibibio Sound Machine",
       "date": "2026-10-15",
       "venue": "Concorde 2",
       "source": "venue",
@@ -2313,7 +2313,7 @@
     },
     {
       "id": "2026-10-16-concorde-2-boris-pink-20th-anniversary-uk-tour",
-      "title": "Boris - Pink 20th Anniversary UK Tour 16/10/26 7:00pm Live",
+      "title": "Boris - Pink 20th Anniversary UK Tour",
       "date": "2026-10-16",
       "venue": "Concorde 2",
       "source": "venue",
@@ -2515,18 +2515,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-brighton-dome-more-brighton-dome-comedy-festival-events",
-      "title": "More Brighton Dome Comedy Festival events",
-      "date": "2026-10-16",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://brightondome.org/whats-on/Ljb-jazz-emu-the-pleasure-is-all-yours/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-16-chalk-the-hoosiers-hunny-buzz",
       "title": "The Hoosiers Hunny Buzz",
       "date": "2026-10-16",
@@ -2552,7 +2540,7 @@
     },
     {
       "id": "2026-10-16-quarters-live-events-damian-lewis",
-      "title": "Live Events Damian Lewis",
+      "title": "Damian Lewis",
       "date": "2026-10-16",
       "venue": "Quarters",
       "source": "venue",
@@ -2710,7 +2698,7 @@
     },
     {
       "id": "2026-10-17-concorde-2-reef",
-      "title": "Reef 17/10/26 7:00pm Live",
+      "title": "Reef",
       "date": "2026-10-17",
       "venue": "Concorde 2",
       "source": "venue",
@@ -2794,7 +2782,7 @@
     },
     {
       "id": "2026-10-17-concorde-2-kanine",
-      "title": "Kanine 17/10/26 11:00pm Club",
+      "title": "Kanine",
       "date": "2026-10-17",
       "venue": "Concorde 2",
       "source": "venue",
@@ -2877,7 +2865,7 @@
     },
     {
       "id": "2026-10-17-quarters-echo-x-ibiza-playabout-ibiza-closing-party",
-      "title": "Club Events Echo x Ibiza Playabout - Ibiza Closing Party",
+      "title": "Echo x Ibiza Playabout - Ibiza Closing Party",
       "date": "2026-10-17",
       "venue": "Quarters",
       "source": "venue",
@@ -2889,7 +2877,7 @@
     },
     {
       "id": "2026-10-17-quarters-club-events-notion",
-      "title": "Club Events Notion",
+      "title": "Notion",
       "date": "2026-10-17",
       "venue": "Quarters",
       "source": "venue",
@@ -3056,7 +3044,7 @@
     },
     {
       "id": "2026-10-18-quarters-live-events-toploader",
-      "title": "Live Events Toploader",
+      "title": "Toploader",
       "date": "2026-10-18",
       "venue": "Quarters",
       "source": "venue",
@@ -3189,7 +3177,7 @@
     },
     {
       "id": "2026-10-20-concorde2-huey-morgan",
-      "title": "Huey Morgan 20/10/26 7:30pm Live",
+      "title": "Huey Morgan",
       "date": "2026-10-20",
       "venue": "Concorde 2",
       "source": "venue",
@@ -3430,7 +3418,7 @@
     },
     {
       "id": "2026-10-22-concorde2-jake-vaadeland-the-sturgeon-river-boys",
-      "title": "Jake Vaadeland 22/10/26 7:30pm Live",
+      "title": "Jake Vaadeland",
       "date": "2026-10-22",
       "venue": "Concorde 2",
       "source": "venue",
@@ -3619,7 +3607,7 @@
     },
     {
       "id": "2026-10-23-concorde-2-the-r-b-orchestra",
-      "title": "The R&B Orchestra 23/10/26 7:00pm Live",
+      "title": "The R&B Orchestra",
       "date": "2026-10-23",
       "venue": "Concorde 2",
       "source": "venue",
@@ -3715,7 +3703,7 @@
     },
     {
       "id": "2026-10-23-concorde-2-bou",
-      "title": "Bou 23/10/26 11:00pm",
+      "title": "Bou",
       "date": "2026-10-23",
       "venue": "Concorde 2",
       "source": "venue",
@@ -3784,7 +3772,7 @@
     },
     {
       "id": "2026-10-23-quarters-club-events-hospital30",
-      "title": "Club Events Hospital30",
+      "title": "Hospital30",
       "date": "2026-10-23",
       "venue": "Quarters",
       "source": "venue",
@@ -3890,7 +3878,7 @@
     },
     {
       "id": "2026-10-24-concorde-2-chris-hill-s-dirty-dc-brian-bon-show",
-      "title": "Chris Hill's Dirty DC - Brian & Bon Show 24/10/26 7:00pm Live",
+      "title": "Chris Hill's Dirty DC - Brian & Bon Show",
       "date": "2026-10-24",
       "venue": "Concorde 2",
       "source": "venue",
@@ -3974,7 +3962,7 @@
     },
     {
       "id": "2026-10-24-concorde-2-holdtight-congo-natty",
-      "title": "Holdtight - Congo Natty 24/10/26 11:00pm Club",
+      "title": "Holdtight - Congo Natty",
       "date": "2026-10-24",
       "venue": "Concorde 2",
       "source": "venue",
@@ -4139,7 +4127,7 @@
     },
     {
       "id": "2026-10-25-concorde-2-gurriers",
-      "title": "Gurriers 25/10/26 7:30pm Live",
+      "title": "Gurriers",
       "date": "2026-10-25",
       "venue": "Concorde 2",
       "source": "venue",
@@ -4391,7 +4379,7 @@
     },
     {
       "id": "2026-10-27-concorde-2-grandmaster-flash",
-      "title": "Grandmaster Flash 27/10/26 7:30pm Live",
+      "title": "Grandmaster Flash",
       "date": "2026-10-27",
       "venue": "Concorde 2",
       "source": "venue",
@@ -4486,7 +4474,7 @@
     },
     {
       "id": "2026-10-28-quarters-live-events-lol-tolhurst",
-      "title": "Live Events Lol Tolhurst",
+      "title": "Lol Tolhurst",
       "date": "2026-10-28",
       "venue": "Quarters",
       "source": "venue",
@@ -4498,7 +4486,7 @@
     },
     {
       "id": "2026-10-28-concorde2-my-new-band-believe",
-      "title": "My New Band Believe 28/10/26 7:30pm Live",
+      "title": "My New Band Believe",
       "date": "2026-10-28",
       "venue": "Concorde 2",
       "source": "venue",
@@ -4595,7 +4583,7 @@
     },
     {
       "id": "2026-10-29-concorde-2-kerrbang",
-      "title": "Kerrbang! 29/10/26 7:30pm Live",
+      "title": "Kerrbang!",
       "date": "2026-10-29",
       "venue": "Concorde 2",
       "source": "venue",
@@ -4738,7 +4726,7 @@
     },
     {
       "id": "2026-10-30-concorde2-halloween-with-simon-pegg",
-      "title": "Halloween With Simon Pegg 30/10/26 7:00pm",
+      "title": "Halloween With Simon Pegg",
       "date": "2026-10-30",
       "venue": "Concorde 2",
       "source": "venue",
@@ -4797,7 +4785,7 @@
     },
     {
       "id": "2026-10-30-concorde-2-born-on-road",
-      "title": "Born On Road 30/10/26 11:30pm Club",
+      "title": "Born On Road",
       "date": "2026-10-30",
       "venue": "Concorde 2",
       "source": "venue",
@@ -4955,7 +4943,7 @@
     },
     {
       "id": "2026-10-31-concorde-2-drum-bass-classics-halloween-all-dayer",
-      "title": "Drum & Bass Classics Halloween All Dayer 31/10/26 2:00pm Club",
+      "title": "Drum & Bass Classics Halloween All Dayer",
       "date": "2026-10-31",
       "venue": "Concorde 2",
       "source": "venue",
@@ -5014,7 +5002,7 @@
     },
     {
       "id": "2026-10-31-concorde-2-moody-disco-obskur",
-      "title": "Moody Disco - Obskur 31/10/26 11:00pm Club",
+      "title": "Moody Disco - Obskur",
       "date": "2026-10-31",
       "venue": "Concorde 2",
       "source": "venue",
@@ -5097,7 +5085,7 @@
     },
     {
       "id": "2026-10-31-quarters-club-events-black-octopus-8th-birthday-part-2-kenny-larkin-rolando",
-      "title": "Club Events Black Octopus 8th Birthday Part 2: Kenny Larkin & Rolando",
+      "title": "Black Octopus 8th Birthday Part 2: Kenny Larkin & Rolando",
       "date": "2026-10-31",
       "venue": "Quarters",
       "source": "venue",
@@ -5109,7 +5097,7 @@
     },
     {
       "id": "2026-10-31-quarters-groundwork-002-halloween-w-soul-mass-transit-system-captain-wallop",
-      "title": "Club Events GROUNDWORK 002: Halloween w/ Soul Mass Transit System & Captain Wallop",
+      "title": "GROUNDWORK 002: Halloween w/ Soul Mass Transit System & Captain Wallop",
       "date": "2026-10-31",
       "venue": "Quarters",
       "source": "venue",
@@ -5206,7 +5194,7 @@
     },
     {
       "id": "2026-11-01-concorde-2-the-bluetones",
-      "title": "The Bluetones 01/11/26 7:30pm Live",
+      "title": "The Bluetones",
       "date": "2026-11-01",
       "venue": "Concorde 2",
       "source": "venue",
@@ -5425,7 +5413,7 @@
     },
     {
       "id": "2026-11-05-concorde-2-teenage-fanclub",
-      "title": "Teenage Fanclub 05/11/26 7:30pm Live",
+      "title": "Teenage Fanclub",
       "date": "2026-11-05",
       "venue": "Concorde 2",
       "source": "venue",
@@ -5521,7 +5509,7 @@
     },
     {
       "id": "2026-11-06-concorde-2-dj-yoda",
-      "title": "DJ Yoda 06/11/26 7:00pm Live",
+      "title": "DJ Yoda",
       "date": "2026-11-06",
       "venue": "Concorde 2",
       "source": "venue",
@@ -5569,7 +5557,7 @@
     },
     {
       "id": "2026-11-06-concorde-2-it-s-a-jungle-out-there-coco-bryce-and-j-kenzo",
-      "title": "It's A Jungle Out There - Coco Bryce & J:Kenzo 06/11/26 11:00pm Club",
+      "title": "It's A Jungle Out There - Coco Bryce & J:Kenzo",
       "date": "2026-11-06",
       "venue": "Concorde 2",
       "source": "venue",
@@ -5616,7 +5604,7 @@
     },
     {
       "id": "2026-11-06-quarters-club-events-k-motionz",
-      "title": "Club Events K Motionz",
+      "title": "K Motionz",
       "date": "2026-11-06",
       "venue": "Quarters",
       "source": "venue",
@@ -5678,7 +5666,7 @@
     },
     {
       "id": "2026-11-07-concorde-2-slipmatt-ellis-dee-2-bad-mice-dj-ratty",
-      "title": "Slipmatt, Ellis Dee, 2 Bad Mice & DJ Ratty 07/11/26 5:00pm Club",
+      "title": "Slipmatt, Ellis Dee, 2 Bad Mice & DJ Ratty",
       "date": "2026-11-07",
       "venue": "Concorde 2",
       "source": "venue",
@@ -5727,7 +5715,7 @@
     },
     {
       "id": "2026-11-07-concorde-2-nafe-smallz-x-rift",
-      "title": "Nafe Smallz x Rift 07/11/26 11:00pm",
+      "title": "Nafe Smallz x Rift",
       "date": "2026-11-07",
       "venue": "Concorde 2",
       "source": "venue",
@@ -5786,7 +5774,7 @@
     },
     {
       "id": "2026-11-07-quarters-club-events-andy-c",
-      "title": "Club Events Andy C",
+      "title": "Andy C",
       "date": "2026-11-07",
       "venue": "Quarters",
       "source": "venue",
@@ -5798,7 +5786,7 @@
     },
     {
       "id": "2026-11-07-quarters-club-events-groove-cartel-presents-archie-hamilton-boss-priester",
-      "title": "Club Events Groove Cartel Presents Archie Hamilton & Boss Priester",
+      "title": "Groove Cartel Presents Archie Hamilton & Boss Priester",
       "date": "2026-11-07",
       "venue": "Quarters",
       "source": "venue",
@@ -5857,7 +5845,7 @@
     },
     {
       "id": "2026-11-08-concorde-2-holy-fawn-m-l",
-      "title": "Holy Fawn + MØL 08/11/26 7:30pm Live",
+      "title": "Holy Fawn + MØL",
       "date": "2026-11-08",
       "venue": "Concorde 2",
       "source": "venue",
@@ -5955,7 +5943,7 @@
     },
     {
       "id": "2026-11-09-concorde-2-cardinals",
-      "title": "Cardinals 09/11/26 7:30pm Live",
+      "title": "Cardinals",
       "date": "2026-11-09",
       "venue": "Concorde 2",
       "source": "venue",
@@ -6016,7 +6004,7 @@
     },
     {
       "id": "2026-11-10-concorde-2-mykki-blanco",
-      "title": "Mykki Blanco 10/11/26 7:30pm Live",
+      "title": "Mykki Blanco",
       "date": "2026-11-10",
       "venue": "Concorde 2",
       "source": "venue",
@@ -6196,7 +6184,7 @@
     },
     {
       "id": "2026-11-12-concorde-2-the-allergies-live",
-      "title": "The Allergies (Live) 12/11/26 7:30pm Live",
+      "title": "The Allergies (Live)",
       "date": "2026-11-12",
       "venue": "Concorde 2",
       "source": "venue",
@@ -6342,7 +6330,7 @@
     },
     {
       "id": "2026-11-13-concorde-2-john-digweed",
-      "title": "John Digweed 13/11/26 7:00pm Club",
+      "title": "John Digweed",
       "date": "2026-11-13",
       "venue": "Concorde 2",
       "source": "venue",
@@ -6459,7 +6447,7 @@
     },
     {
       "id": "2026-11-13-quarters-club-events-yung-singh-riria",
-      "title": "Club Events Yung Singh + Riria",
+      "title": "Yung Singh + Riria",
       "date": "2026-11-13",
       "venue": "Quarters",
       "source": "venue",
@@ -6519,7 +6507,7 @@
     },
     {
       "id": "2026-11-14-concorde-2-junebabies-john-digweed-afterparty",
-      "title": "Junebabies - John Digweed Afterparty 14/11/26 12:00am",
+      "title": "Junebabies - John Digweed Afterparty",
       "date": "2026-11-14",
       "venue": "Concorde 2",
       "source": "venue",
@@ -6543,7 +6531,7 @@
     },
     {
       "id": "2026-11-14-concorde-2-metallica-reloaded",
-      "title": "Metallica Reloaded 14/11/26 7:00pm Live",
+      "title": "Metallica Reloaded",
       "date": "2026-11-14",
       "venue": "Concorde 2",
       "source": "venue",
@@ -6661,7 +6649,7 @@
     },
     {
       "id": "2026-11-14-quarters-club-events-ben-hemsley",
-      "title": "Club Events Ben Hemsley",
+      "title": "Ben Hemsley",
       "date": "2026-11-14",
       "venue": "Quarters",
       "source": "venue",
@@ -6673,7 +6661,7 @@
     },
     {
       "id": "2026-11-14-quarters-club-events-emo-day-party",
-      "title": "Club Events Emo Day Party",
+      "title": "Emo Day Party",
       "date": "2026-11-14",
       "venue": "Quarters",
       "source": "venue",
@@ -6796,7 +6784,7 @@
     },
     {
       "id": "2026-11-15-concorde-2-mnek",
-      "title": "MNEK 15/11/26 7:30pm Live",
+      "title": "MNEK",
       "date": "2026-11-15",
       "venue": "Concorde 2",
       "source": "venue",
@@ -6976,7 +6964,7 @@
     },
     {
       "id": "2026-11-18-concorde-2-oh-my-god-it-s-the-church",
-      "title": "Oh My God! It's The Church 18/11/26 7:30pm Live",
+      "title": "Oh My God! It's The Church",
       "date": "2026-11-18",
       "venue": "Concorde 2",
       "source": "venue",
@@ -7107,7 +7095,7 @@
     },
     {
       "id": "2026-11-19-concorde-2-forever-nu-25th-anniversary-of-toxicity-and-iowa",
-      "title": "Forever Nu - 25th Anniversary of Toxicity & Iowa 19/11/26 7:30pm Live",
+      "title": "Forever Nu - 25th Anniversary of Toxicity & Iowa",
       "date": "2026-11-19",
       "venue": "Concorde 2",
       "source": "venue",
@@ -7287,7 +7275,7 @@
     },
     {
       "id": "2026-11-20-concorde-2-uk-foo-fighters",
-      "title": "UK Foo Fighters 20/11/26 7:00pm Live",
+      "title": "UK Foo Fighters",
       "date": "2026-11-20",
       "venue": "Concorde 2",
       "source": "venue",
@@ -7323,7 +7311,7 @@
     },
     {
       "id": "2026-11-20-concorde-2-state-of-us-presents-haai-planningtorock-dj-dykes-on-decks",
-      "title": "State of Us Presents - HAAi, Planningtorock DJ & Dykes On Decks 20/11/26 11:00pm Club",
+      "title": "State of Us Presents - HAAi, Planningtorock DJ & Dykes On Decks",
       "date": "2026-11-20",
       "venue": "Concorde 2",
       "source": "venue",
@@ -7383,7 +7371,7 @@
     },
     {
       "id": "2026-11-20-quarters-club-events-limited-free-tickets-degs",
-      "title": "Club Events Limited Free Tickets DEGS &",
+      "title": "DEGS &",
       "date": "2026-11-20",
       "venue": "Quarters",
       "source": "venue",
@@ -7469,7 +7457,7 @@
     },
     {
       "id": "2026-11-21-concorde-2-getdown-services",
-      "title": "Getdown Services 21/11/26 6:30pm Live",
+      "title": "Getdown Services",
       "date": "2026-11-21",
       "venue": "Concorde 2",
       "source": "venue",
@@ -7517,7 +7505,7 @@
     },
     {
       "id": "2026-11-21-concorde-2-culture-shock",
-      "title": "Culture Shock 21/11/26 11:00pm Club",
+      "title": "Culture Shock",
       "date": "2026-11-21",
       "venue": "Concorde 2",
       "source": "venue",
@@ -7589,30 +7577,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-21-quarters-club-events-locklead-julian-anthony",
-      "title": "Club Events Locklead + Julian Anthony",
-      "date": "2026-11-21",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/locklead-julian-anthony-more-tba/quarters/3708218",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-21-quarters-club-events-r-b-mania",
-      "title": "Club Events R&B Mania",
-      "date": "2026-11-21",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://quarters.seetickets.com/event/rnb-mania-brighton-s-r-b-festival/quarters/3705590",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-21-quarters-locklead-julian-anthony-more-tba",
       "title": "Locklead, Julian Anthony + more TBA",
       "date": "2026-11-21",
@@ -7622,6 +7586,18 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.visitbrighton.com/whats-on/locklead-julian-anthony-more-tba-p2941111",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-21-quarters-club-events-r-b-mania",
+      "title": "R&B Mania",
+      "date": "2026-11-21",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/rnb-mania-brighton-s-r-b-festival/quarters/3705590",
       "last_seen": "2026-10-06"
     },
     {
@@ -7674,7 +7650,7 @@
     },
     {
       "id": "2026-11-22-concorde2-getdown-services",
-      "title": "Getdown Services 22/11/26 6:30pm Live",
+      "title": "Getdown Services",
       "date": "2026-11-22",
       "venue": "Concorde 2",
       "source": "venue",
@@ -7771,7 +7747,7 @@
     },
     {
       "id": "2026-11-23-concorde-2-the-big-moon",
-      "title": "The Big Moon 23/11/26 7:30pm Live",
+      "title": "The Big Moon",
       "date": "2026-11-23",
       "venue": "Concorde 2",
       "source": "venue",
@@ -7843,7 +7819,7 @@
     },
     {
       "id": "2026-11-25-concorde-2-dakhabrakha",
-      "title": "DakhaBrakha 25/11/26 7:30pm Live",
+      "title": "DakhaBrakha",
       "date": "2026-11-25",
       "venue": "Concorde 2",
       "source": "venue",
@@ -7963,7 +7939,7 @@
     },
     {
       "id": "2026-11-26-concorde-2-graham-coxon",
-      "title": "Graham Coxon 26/11/26 7:30pm Live",
+      "title": "Graham Coxon",
       "date": "2026-11-26",
       "venue": "Concorde 2",
       "source": "venue",
@@ -8120,7 +8096,7 @@
     },
     {
       "id": "2026-11-27-concorde-2-uncle-acid-and-the-deadbeats",
-      "title": "Uncle Acid And The Deadbeats 27/11/26 7:30pm Live",
+      "title": "Uncle Acid And The Deadbeats",
       "date": "2026-11-27",
       "venue": "Concorde 2",
       "source": "venue",
@@ -8240,7 +8216,7 @@
     },
     {
       "id": "2026-11-27-quarters-club-events-kings-of-the-rollers",
-      "title": "Club Events Kings Of The Rollers",
+      "title": "Kings Of The Rollers",
       "date": "2026-11-27",
       "venue": "Quarters",
       "source": "venue",
@@ -8264,7 +8240,7 @@
     },
     {
       "id": "2026-11-28-concorde-2-day-fever",
-      "title": "Day Fever 28/11/26 3:00pm Club",
+      "title": "Day Fever",
       "date": "2026-11-28",
       "venue": "Concorde 2",
       "source": "venue",
@@ -8312,7 +8288,7 @@
     },
     {
       "id": "2026-11-28-concorde-2-moody-disco-marsolo",
-      "title": "Moody Disco - Marsolo 28/11/26 11:00pm Club",
+      "title": "Moody Disco - Marsolo",
       "date": "2026-11-28",
       "venue": "Concorde 2",
       "source": "venue",
@@ -8394,7 +8370,7 @@
     },
     {
       "id": "2026-11-28-quarters-club-events-sign-up-shanti-celeste-midland",
-      "title": "Club Events Sign Up Shanti Celeste + Midland",
+      "title": "Sign Up Shanti Celeste + Midland",
       "date": "2026-11-28",
       "venue": "Quarters",
       "source": "venue",
@@ -8443,7 +8419,7 @@
     },
     {
       "id": "2026-11-29-concorde-2-gotts-street-park",
-      "title": "Gotts Street Park 29/11/26 7:30pm Live",
+      "title": "Gotts Street Park",
       "date": "2026-11-29",
       "venue": "Concorde 2",
       "source": "venue",
@@ -8541,7 +8517,7 @@
     },
     {
       "id": "2026-12-01-concorde-2-andrew-cushin",
-      "title": "Andrew Cushin 01/12/26 7:30pm Live",
+      "title": "Andrew Cushin",
       "date": "2026-12-01",
       "venue": "Concorde 2",
       "source": "venue",
@@ -8613,7 +8589,7 @@
     },
     {
       "id": "2026-12-02-concorde-2-the-ordinary-boys",
-      "title": "The Ordinary Boys 02/12/26 7:30pm Live",
+      "title": "The Ordinary Boys",
       "date": "2026-12-02",
       "venue": "Concorde 2",
       "source": "venue",
@@ -8685,7 +8661,7 @@
     },
     {
       "id": "2026-12-03-concorde-2-the-house-of-love",
-      "title": "The House of Love 03/12/26 7:30pm Live",
+      "title": "The House of Love",
       "date": "2026-12-03",
       "venue": "Concorde 2",
       "source": "venue",
@@ -8806,7 +8782,7 @@
     },
     {
       "id": "2026-12-04-concorde-2-martin-kemp-back-to-the-80s-xmas-special",
-      "title": "Martin Kemp - Back To The 80s Xmas Special 04/12/26 7:00pm Club",
+      "title": "Martin Kemp - Back To The 80s Xmas Special",
       "date": "2026-12-04",
       "venue": "Concorde 2",
       "source": "venue",
@@ -8903,7 +8879,7 @@
     },
     {
       "id": "2026-12-04-quarters-live-events-quantic-dj-set",
-      "title": "Live Events QUANTIC (DJ SET)",
+      "title": "QUANTIC (DJ SET)",
       "date": "2026-12-04",
       "venue": "Quarters",
       "source": "venue",
@@ -8976,7 +8952,7 @@
     },
     {
       "id": "2026-12-05-concorde-2-beefmince",
-      "title": "Beefmince 05/12/26 11:00pm Club",
+      "title": "Beefmince",
       "date": "2026-12-05",
       "venue": "Concorde 2",
       "source": "venue",
@@ -9034,7 +9010,7 @@
     },
     {
       "id": "2026-12-06-concorde-2-electric-six",
-      "title": "Electric Six 06/12/26 7:30pm Live",
+      "title": "Electric Six",
       "date": "2026-12-06",
       "venue": "Concorde 2",
       "source": "venue",
@@ -9215,7 +9191,7 @@
     },
     {
       "id": "2026-12-09-concorde2-young-knives-hot-face",
-      "title": "Young Knives 09/12/26 7:30pm Live",
+      "title": "Young Knives",
       "date": "2026-12-09",
       "venue": "Concorde 2",
       "source": "venue",
@@ -9287,7 +9263,7 @@
     },
     {
       "id": "2026-12-10-concorde-2-buzzcocks",
-      "title": "Buzzcocks 10/12/26 7:30pm Live",
+      "title": "Buzzcocks",
       "date": "2026-12-10",
       "venue": "Concorde 2",
       "source": "venue",
@@ -9406,7 +9382,7 @@
     },
     {
       "id": "2026-12-11-concorde-2-elvana",
-      "title": "Elvana 11/12/26 6:30pm Live",
+      "title": "Elvana",
       "date": "2026-12-11",
       "venue": "Concorde 2",
       "source": "venue",
@@ -9501,7 +9477,7 @@
     },
     {
       "id": "2026-12-11-quarters-club-events-city-wall-x-mark-broom",
-      "title": "Club Events City Wall x Mark Broom",
+      "title": "City Wall x Mark Broom",
       "date": "2026-12-11",
       "venue": "Quarters",
       "source": "venue",
@@ -9513,7 +9489,7 @@
     },
     {
       "id": "2026-12-11-quarters-live-events-daddy-g-massive-attack",
-      "title": "Live Events DADDY G (Massive Attack)",
+      "title": "DADDY G (Massive Attack)",
       "date": "2026-12-11",
       "venue": "Quarters",
       "source": "venue",
@@ -9549,7 +9525,7 @@
     },
     {
       "id": "2026-12-12-concorde-2-rhythm-of-the-90s",
-      "title": "Rhythm Of The 90s 12/12/26 7:00pm",
+      "title": "Rhythm Of The 90s",
       "date": "2026-12-12",
       "venue": "Concorde 2",
       "source": "venue",
@@ -9585,7 +9561,7 @@
     },
     {
       "id": "2026-12-12-concorde-2-hybrid-minds-brighton",
-      "title": "Hybrid Minds 12/12/26 11:00pm",
+      "title": "Hybrid Minds",
       "date": "2026-12-12",
       "venue": "Concorde 2",
       "source": "venue",
@@ -9680,7 +9656,7 @@
     },
     {
       "id": "2026-12-12-quarters-club-events-trancecoda-presents-j00f-editions",
-      "title": "Club Events Trancecoda Presents J00F Editions",
+      "title": "Trancecoda Presents J00F Editions",
       "date": "2026-12-12",
       "venue": "Quarters",
       "source": "venue",
@@ -9776,7 +9752,7 @@
     },
     {
       "id": "2026-12-15-concorde-2-the-simpsons-ultimate-quiz",
-      "title": "The Simpsons Ultimate Quiz 15/12/26 7:00pm Live",
+      "title": "The Simpsons Ultimate Quiz",
       "date": "2026-12-15",
       "venue": "Concorde 2",
       "source": "venue",
@@ -9824,7 +9800,7 @@
     },
     {
       "id": "2026-12-16-concorde-2-abba-revival",
-      "title": "Abba Revival 16/12/26 7:30pm Live",
+      "title": "Abba Revival",
       "date": "2026-12-16",
       "venue": "Concorde 2",
       "source": "venue",
@@ -9957,7 +9933,7 @@
     },
     {
       "id": "2026-12-18-concorde-2-80s-hifi-christmas-party",
-      "title": "80s HiFi Christmas Party 18/12/26 7:00pm Live",
+      "title": "80s HiFi Christmas Party",
       "date": "2026-12-18",
       "venue": "Concorde 2",
       "source": "venue",
@@ -10053,7 +10029,7 @@
     },
     {
       "id": "2026-12-19-concorde-2-absolute-bowie-christmas-special",
-      "title": "Absolute Bowie Christmas Special 19/12/26 7:00pm Live",
+      "title": "Absolute Bowie Christmas Special",
       "date": "2026-12-19",
       "venue": "Concorde 2",
       "source": "venue",
@@ -10196,7 +10172,7 @@
     },
     {
       "id": "2026-12-20-concorde-2-the-smyths",
-      "title": "The Smyths 20/12/26 7:30pm Live",
+      "title": "The Smyths",
       "date": "2026-12-20",
       "venue": "Concorde 2",
       "source": "venue",
@@ -10316,7 +10292,7 @@
     },
     {
       "id": "2026-12-22-concorde-2-resident-presents-the-script",
-      "title": "Resident Presents The Script 22/12/26 5:00pm Live",
+      "title": "Resident Presents The Script",
       "date": "2026-12-22",
       "venue": "Concorde 2",
       "source": "venue",
@@ -10340,7 +10316,7 @@
     },
     {
       "id": "2026-12-22-concorde-2-resident-presents-the-script-2",
-      "title": "Resident Presents The Script 22/12/26 8:00pm Live",
+      "title": "Resident Presents The Script",
       "date": "2026-12-22",
       "venue": "Concorde 2",
       "source": "venue",
@@ -10400,7 +10376,7 @@
     },
     {
       "id": "2026-12-23-concorde-2-from-the-jam",
-      "title": "From The Jam 23/12/26 7:30pm Live",
+      "title": "From The Jam",
       "date": "2026-12-23",
       "venue": "Concorde 2",
       "source": "venue",
@@ -10640,7 +10616,7 @@
     },
     {
       "id": "2027-01-08-concorde-2-pigeon",
-      "title": "Pigeon 08/01/27 7:00pm Live",
+      "title": "Pigeon",
       "date": "2027-01-08",
       "venue": "Concorde 2",
       "source": "venue",
@@ -10783,7 +10759,7 @@
     },
     {
       "id": "2027-01-19-concorde-2-the-dolly-parton-and-kenny-rogers-experience",
-      "title": "The Dolly Parton and Kenny Rogers Experience 19/01/27 7:30pm Live",
+      "title": "The Dolly Parton and Kenny Rogers Experience",
       "date": "2027-01-19",
       "venue": "Concorde 2",
       "source": "venue",
@@ -11047,7 +11023,7 @@
     },
     {
       "id": "2027-01-29-concorde-2-jo-whiley-s-90s-anthems",
-      "title": "Jo Whiley's 90s Anthems 29/01/27 6:00pm Club",
+      "title": "Jo Whiley's 90s Anthems",
       "date": "2027-01-29",
       "venue": "Concorde 2",
       "source": "venue",
@@ -11055,18 +11031,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/event/jo-whileys-90s-anthems",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-01-29-quarters-live-events-the-antarctic",
-      "title": "Live Events The Antarctic",
-      "date": "2027-01-29",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "18:30",
-      "finish_time": "22:00",
-      "category": "Dance",
-      "ticket_url": "https://pinkdot.seetickets.com/event/the-antarctic-monkeys/quarters/3614681",
       "last_seen": "2026-10-06"
     },
     {
@@ -11079,6 +11043,18 @@
       "finish_time": "22:00",
       "category": "Dance",
       "ticket_url": "https://www.quartersbrighton.co.uk/whatson/the-antarctic-monkeys",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2027-01-29-quarters-live-events-the-antarctic",
+      "title": "The Antarctic",
+      "date": "2027-01-29",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "18:30",
+      "finish_time": "22:00",
+      "category": "Dance",
+      "ticket_url": "https://pinkdot.seetickets.com/event/the-antarctic-monkeys/quarters/3614681",
       "last_seen": "2026-10-06"
     },
     {
@@ -11346,7 +11322,7 @@
     },
     {
       "id": "2027-02-12-concorde-2-motorheadache",
-      "title": "Motorheadache 12/02/27 7:00pm",
+      "title": "Motorheadache",
       "date": "2027-02-12",
       "venue": "Concorde 2",
       "source": "venue",
@@ -11382,7 +11358,7 @@
     },
     {
       "id": "2027-02-13-concorde-2-reggae-orchestra",
-      "title": "Reggae Orchestra 13/02/27 7:00pm",
+      "title": "Reggae Orchestra",
       "date": "2027-02-13",
       "venue": "Concorde 2",
       "source": "venue",
@@ -11454,7 +11430,7 @@
     },
     {
       "id": "2027-02-19-concorde-2-the-cureheads",
-      "title": "The Cureheads 19/02/27 7:00pm Live",
+      "title": "The Cureheads",
       "date": "2027-02-19",
       "venue": "Concorde 2",
       "source": "venue",
@@ -11908,7 +11884,7 @@
     },
     {
       "id": "2027-03-11-concorde-2-frankie-stew-harvey-gunn",
-      "title": "Frankie Stew & Harvey Gunn 11/03/27 7:30pm Live",
+      "title": "Frankie Stew & Harvey Gunn",
       "date": "2027-03-11",
       "venue": "Concorde 2",
       "source": "venue",
@@ -12100,7 +12076,7 @@
     },
     {
       "id": "2027-03-19-concorde-2-the-lilacs",
-      "title": "The Lilacs 19/03/27 12:00am Live",
+      "title": "The Lilacs",
       "date": "2027-03-19",
       "venue": "Concorde 2",
       "source": "venue",
@@ -12160,7 +12136,7 @@
     },
     {
       "id": "2027-03-20-concorde-2-lebanon-hanover",
-      "title": "Lebanon Hanover 20/03/27 7:00pm Live",
+      "title": "Lebanon Hanover",
       "date": "2027-03-20",
       "venue": "Concorde 2",
       "source": "venue",
@@ -12328,7 +12304,7 @@
     },
     {
       "id": "2027-03-31-concorde-2-moses-boyd",
-      "title": "Moses Boyd 31/03/27 7:30pm Live",
+      "title": "Moses Boyd",
       "date": "2027-03-31",
       "venue": "Concorde 2",
       "source": "venue",
@@ -12364,7 +12340,7 @@
     },
     {
       "id": "2027-04-02-concorde-2-the-big-indie-fest",
-      "title": "The Big Indie Fest 02/04/27 6:00pm Live",
+      "title": "The Big Indie Fest",
       "date": "2027-04-02",
       "venue": "Concorde 2",
       "source": "venue",
@@ -12388,7 +12364,7 @@
     },
     {
       "id": "2027-04-03-concorde-2-stop-making-sense-live",
-      "title": "Stop Making Sense Live 03/04/27 7:00pm",
+      "title": "Stop Making Sense Live",
       "date": "2027-04-03",
       "venue": "Concorde 2",
       "source": "venue",
@@ -12496,7 +12472,7 @@
     },
     {
       "id": "2027-04-10-concorde-2-keeno-live-ft-vibre-strings",
-      "title": "Keeno Live ft. Vibre Strings 10/04/27 6:00pm Live",
+      "title": "Keeno Live ft. Vibre Strings",
       "date": "2027-04-10",
       "venue": "Concorde 2",
       "source": "venue",
@@ -12520,7 +12496,7 @@
     },
     {
       "id": "2027-04-10-quarters-club-events-rock-day-party",
-      "title": "Club Events Rock Day Party",
+      "title": "Rock Day Party",
       "date": "2027-04-10",
       "venue": "Quarters",
       "source": "venue",
@@ -12568,7 +12544,7 @@
     },
     {
       "id": "2027-04-16-concorde-2-noasis",
-      "title": "Noasis 16/04/27 7:00pm Live",
+      "title": "Noasis",
       "date": "2027-04-16",
       "venue": "Concorde 2",
       "source": "venue",
@@ -12723,7 +12699,7 @@
     },
     {
       "id": "2027-04-30-concorde-2-a-tribute-to-amy",
-      "title": "A Tribute To Amy 30/04/27 7:00pm Live",
+      "title": "A Tribute To Amy",
       "date": "2027-04-30",
       "venue": "Concorde 2",
       "source": "venue",
@@ -12747,7 +12723,7 @@
     },
     {
       "id": "2027-05-01-concorde-2-beatles-complete",
-      "title": "Beatles Complete 01/05/27 7:00pm Live",
+      "title": "Beatles Complete",
       "date": "2027-05-01",
       "venue": "Concorde 2",
       "source": "venue",
@@ -12963,7 +12939,7 @@
     },
     {
       "id": "2027-05-28-concorde-2-love-forever-changes-60th-anniversary-tour",
-      "title": "Love - Forever Changes 60th Anniversary Tour 28/05/27 7:00pm Live",
+      "title": "Love - Forever Changes 60th Anniversary Tour",
       "date": "2027-05-28",
       "venue": "Concorde 2",
       "source": "venue",

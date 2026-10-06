@@ -31,7 +31,7 @@ NOT_A_TITLE = re.compile(r"""(?:
   |\d{1,2}(?::\d{2})?\s*(?:am|pm)(?:\s*[-–]\s*\d{1,2}(?::\d{2})?\s*(?:am|pm))?   # 8pm, 8pm-11pm
   |limited\s+(?:free\s+)?tickets?\b.*|early\s*bird(?:\s+tickets?)?|bu[yt]\s+tickets?\b.*
   |pub\s+events|top\s+picks|next\s+up(?:\s+in\s+the\s+venue)?|this\s+week|coming\s+(?:up|soon)|upcoming
-  |featured|free\s+tickets?|all\s+events|whats?\s+on|more\s+events|you\s+might\s+also\s+like|edition
+  |featured|free\s+tickets?|all\s+events|whats?\s+on|more\s+events|more\s+.+\s+events|you\s+might\s+also\s+like|edition
 )""", re.I | re.X)
 GENERIC_KEYS = {re.sub(r"[^a-z0-9]+", " ", t).strip() for t in GENERIC_TITLES}
 
