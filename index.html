@@ -147,7 +147,7 @@ header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1
 .price{font-size:var(--bw-text-sm);font-weight:700;margin-top:var(--bw-space-2)}
 .event-description{margin-top:var(--bw-space-2);white-space:pre-line;overflow-wrap:anywhere}
 .badge{font-size:var(--bw-text-xs);font-weight:800;padding:5px 8px;border-radius:var(--bw-radius-pill);white-space:nowrap}
-.badge.sold{background:#382022;color:var(--bw-pass-fg);border:1px solid #704047}
+.badge.sold{background:#382022;color:var(--bw-pass-fg);border:1px solid #704047}.card-flags{display:flex;align-items:center;gap:var(--bw-space-2);flex-shrink:0}.promoter-sticker{display:inline-block;font-size:var(--bw-text-xs);font-weight:800;letter-spacing:.02em;line-height:1;padding:5px 7px;border-radius:4px;transform:rotate(6deg);box-shadow:0 2px 0 rgba(0,0,0,.35);white-space:nowrap;user-select:none}.promoter-sticker.joy{background:#FFE14D;color:#0B1D2F}
 .actions{display:flex;gap:var(--bw-space-2);flex-wrap:wrap;align-items:center;margin-top:var(--bw-space-3)}
 .actions:empty{display:none}
 .actions>.ticket,.actions>.cal-link:not(.share-link){flex:1 1 auto;justify-content:center;padding-left:10px;padding-right:10px;white-space:nowrap}
@@ -1016,12 +1016,20 @@ const SHARE_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true">
 function shareLink(e){return `<button type="button" class="cal-link share-link" title="Share this event" data-share-event="${esc(e.id)}" aria-label="Share ${esc(e.title)}">${SHARE_ICON}<span>Share</span></button>`}
 const CAL_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 13v4M10 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 function ticketLink(e){const u=safeUrl(e.ticket_url);return u?`<a class="ticket" href="${esc(u)}" target="_blank" rel="noopener">Tickets ↗</a>`:''}
+// Stickers for promoters whose gigs we read (scripts/scrape-discovery.py sets e.promoter).
+const PROMOTER_STICKERS={'JOY. Concerts':{label:'JOY.',cls:'joy'}};
+function cardFlags(e){
+ const p=PROMOTER_STICKERS[e.promoter];
+ const sticker=p?`<span class="promoter-sticker ${p.cls}" title="A ${esc(e.promoter)} gig" aria-label="A ${esc(e.promoter)} gig">${esc(p.label)}</span>`:'';
+ const sold=e.status==='SOLD OUT'?'<span class="badge sold">Sold out</span>':'';
+ return sticker||sold?`<div class="card-flags">${sold}${sticker}</div>`:'';
+}
 function eventCard(e,{showDate=false}={}){
  const mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
  const a=uniqueGroupPeopleCount(e.id,'interested'), t=uniqueGroupPeopleCount(e.id,'ticket_bought');
  const d=showDate?parseEventDate(e.date):null;
  const when=[esc(e.venue_display||e.venue),timeRange(e)].filter(Boolean).join(' · ');
- return `<article class="card" data-event-id="${esc(e.id)}">${d?`<div class="card-date">${esc(d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}))}</div>`:''}<div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="added-by">added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${when}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">Sold out</span>':''}</div>
+ return `<article class="card" data-event-id="${esc(e.id)}">${d?`<div class="card-date">${esc(d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}))}</div>`:''}<div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="added-by">added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${when}</div></div>${cardFlags(e)}</div>
  ${e.price?`<div class="price">${esc(e.price)}</div>`:''}
  ${e.is_custom&&e.description?`<div class="note event-description">${esc(e.description)}</div>`:''}
  <div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>${a} interested</span><span class="social-chip"><i class="social-icon going">${TICKET_ICON}</i>${t} going</span></div>
@@ -1113,7 +1121,7 @@ function renderPeople(){
   }).join('');
   const you=mine?`<div class="happening-you"><span class="happening-person-name">You</span>${statusPill(mine)}</div>`:'';
   const quiet=!sections?'<div class="note happening-quiet">No one in your groups has responded yet.</div>':'';
-  return `<div class="people-card card"><div class="top"><div><h3>${esc(e.title)}${e.is_custom?` <span class="added-by">community added</span>`:''}</h3><div class="meta">${String(e.id||'').startsWith('festival:')?esc((e.location_display||e.location||'UK')+' · '+festivalDateLabel(e)):[esc(e.venue_display||e.venue),esc((parseEventDate(e.date)||new Date()).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})),timeRange(e)].filter(Boolean).join(' · ')}</div></div>${e.status==='SOLD OUT'?'<span class="badge sold">Sold out</span>':''}</div>${you}${summary.length?`<div class="happening-summary">${summary.join('')}</div>`:''}${sections}${quiet}${commitmentButtons(e,mine?{status:mine}:null)}<div class="actions">${ticketLink(e)}${calendarLink(e)}${shareLink(e)}</div></div>`;
+  return `<div class="people-card card"><div class="top"><div><h3>${esc(e.title)}${e.is_custom?` <span class="added-by">community added</span>`:''}</h3><div class="meta">${String(e.id||'').startsWith('festival:')?esc((e.location_display||e.location||'UK')+' · '+festivalDateLabel(e)):[esc(e.venue_display||e.venue),esc((parseEventDate(e.date)||new Date()).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})),timeRange(e)].filter(Boolean).join(' · ')}</div></div>${cardFlags(e)}</div>${you}${summary.length?`<div class="happening-summary">${summary.join('')}</div>`:''}${sections}${quiet}${commitmentButtons(e,mine?{status:mine}:null)}<div class="actions">${ticketLink(e)}${calendarLink(e)}${shareLink(e)}</div></div>`;
  }).join('');
  $('peopleList').innerHTML=html;
 }

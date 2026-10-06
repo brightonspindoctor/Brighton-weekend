@@ -435,6 +435,7 @@ async def main():
     def adopt(old,e):
         fresh=dict(e,id=old['id'],last_seen=today)
         if old.get('also_ids'):fresh['also_ids']=old['also_ids']  # ids merged into this one (saved choices)
+        if old.get('promoter'):fresh['promoter']=old['promoter']  # set by scrape-discovery.py (e.g. JOY. Concerts)
         if is_listing_or_home(fresh.get('ticket_url',''),'') and not is_listing_or_home(old.get('ticket_url',''),''):
             fresh['ticket_url']=old['ticket_url']
         kept[old['id']]=fresh;matched.add(old['id'])
