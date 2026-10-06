@@ -1,4 +1,0 @@
-status 403
-url https://www.tickettailor.com/events/beatdown
-title Just a moment...
-parsed 0 []

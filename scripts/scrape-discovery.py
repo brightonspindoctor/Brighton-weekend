@@ -37,6 +37,13 @@ SOURCES=[
 # Promoters whose own listings we read: their gigs get the promoter's sticker in the app
 # (PROMOTER_STICKERS in index.html), also when a venue's listing of the same gig is the one kept.
 PROMOTERS={'joyconcerts.com':'JOY. Concerts','tickettailor.com/events/beatdown':'Beat Down Promotions'}
+# Ticket Tailor shows automated browsers a security check ("Just a moment...",
+# HTTP 403) but serves its static listing pages to a plain request.
+PLAIN_FETCH=('tickettailor.com/',)
+def fetch_plain(url):
+ from urllib.request import Request,urlopen
+ req=Request(url,headers={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36','Accept':'text/html'})
+ with urlopen(req,timeout=30) as r:return r.read().decode('utf-8','replace')
 def promoter_for(page_url):return next((name for key,name in PROMOTERS.items() if key in page_url),None)
 BRIGHTON_POSTCODE=re.compile(r'\bBN(?:1|2|3|41|42)\b',re.I)  # Brighton & Hove
 MONTHS=r"Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?"
@@ -204,6 +211,10 @@ async def main():
  async with async_playwright() as p:
   browser=await p.chromium.launch(headless=True);all_events=[];ok_sources=0
   for url in SOURCES:
+   if any(k in url for k in PLAIN_FETCH):
+    try:events=extract_cards(fetch_plain(url),url);all_events.extend(events);ok_sources+=1;print(f'Discovery {url}: {len(events)} usable events')
+    except Exception as exc:print(f'Discovery failed {url}: {exc}')
+    continue
    page=await browser.new_page();page.set_default_timeout(25000)
    try:
     await page.goto(url,wait_until='domcontentloaded',timeout=30000)
