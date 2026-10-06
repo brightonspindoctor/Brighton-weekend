@@ -888,18 +888,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-08-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-10-08",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-08-the-forge-comedy-club-tom-ward-post-millennium-tension",
       "title": "Tom Ward: Post-millennium Tension",
       "date": "2026-10-08",
@@ -911,6 +899,7 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/tom-ward-post-millennium-tension-tickets-1984052333940",
       "last_seen": "2026-10-06",
       "also_ids": [
+        "2026-10-08-the-forge-comedy-club-the-forge-comedy-club",
         "2026-10-08-the-forge-comedy-club-tom-ward-post-millennium-tension-2"
       ]
     },
@@ -1173,21 +1162,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-09-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-10-09",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540861138",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-10-09-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-10-09-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-10-09",
@@ -1197,7 +1171,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540861138",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-09-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-10-09-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-10-09-concorde-2-kepler",
@@ -1465,21 +1443,6 @@
       ]
     },
     {
-      "id": "2026-10-10-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-10-10",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094317541",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-10-10-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-10-10-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-10-10",
@@ -1489,7 +1452,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094317541",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-10-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-10-10-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-10-10-the-hope-ruin-this-is-the-90s",
@@ -1747,20 +1714,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/harriet-kemsley-floozy-extra-matinee-show-tickets-1984049437276",
       "last_seen": "2026-10-06",
       "also_ids": [
+        "2026-10-11-the-forge-comedy-club-the-forge-comedy-club",
         "2026-11-10-the-forge-comedy-club-harriet-kemsley-floozy"
       ]
-    },
-    {
-      "id": "2026-10-11-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-10-11",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "16:00",
-      "finish_time": "18:00",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-10-11-concorde2-hed-pe-cold",
@@ -1796,19 +1752,10 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/harriet-kemsley-floozy-tickets-1852111478289",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-11-the-forge-comedy-club-the-forge-comedy-club-2",
-      "title": "The Forge Comedy Club",
-      "date": "2026-10-11",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-11-the-forge-comedy-club-the-forge-comedy-club-2"
+      ]
     },
     {
       "id": "2026-10-11-the-prince-albert-embodiment-infected-dead-support-live-at-the-albert-11th-october",
@@ -2143,20 +2090,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/charlie-baker-go-get-it-tickets-1982964482146",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-10-14-the-forge-comedy-club-charlie-baker-go-get-it-2"
+        "2026-10-14-the-forge-comedy-club-charlie-baker-go-get-it-2",
+        "2026-10-14-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-10-14-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-10-14",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-10-14-komedia-budpod-live-brighton-wed-14-oct-2026-8-00-pm-doors-7-00-pm",
@@ -2280,20 +2216,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/dan-nightingale-friends-tickets-1985442982407",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-10-15-the-forge-comedy-club-dan-nightingale-friends-2"
+        "2026-10-15-the-forge-comedy-club-dan-nightingale-friends-2",
+        "2026-10-15-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-10-15-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-10-15",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-10-15-komedia-milo-edwards-catamaran-thu-15-oct-2026-8-00-pm-doors-7-30-pm",
@@ -2609,21 +2534,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-10-16",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540921318",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-10-16-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-10-16-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-10-16",
@@ -2633,7 +2543,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540921318",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-16-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-10-16-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-10-16-the-hope-ruin-cool-feeling",
@@ -2992,21 +2906,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-10-17",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094435895",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-10-17-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-10-17-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-10-17",
@@ -3016,7 +2915,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094435895",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-17-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-10-17-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-10-17-the-hope-ruin-dad-rock",
@@ -3247,18 +3150,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-18-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-10-18",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "21:00",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-18-the-forge-comedy-club-the-noise-next-door-furnace-with-deborah-frances-white",
       "title": "The Noise Next Door: Furnace With… Deborah Frances White!",
       "date": "2026-10-18",
@@ -3270,6 +3161,7 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/the-noise-next-door-furnace-with-deborah-frances-white-tickets-1952116054669",
       "last_seen": "2026-10-06",
       "also_ids": [
+        "2026-10-18-the-forge-comedy-club-the-forge-comedy-club",
         "2026-10-18-the-forge-comedy-club-the-noise-next-door-furnace-with-deborah-frances-white-2"
       ]
     },
@@ -4115,21 +4007,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-10-23",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540974477",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-10-23-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-10-23-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-10-23",
@@ -4139,7 +4016,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540974477",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-23-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-10-23-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-10-23-concorde-2-bou",
@@ -4386,21 +4267,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-10-24",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094512123",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-10-24-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-10-24-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-10-24",
@@ -4410,7 +4276,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094512123",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-24-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-10-24-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-10-24-brighton-dome-stamptown-2",
@@ -4888,20 +4758,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/romesh-ranganathan-work-in-progress-tickets-1988927648136",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-10-27-the-forge-comedy-club-romesh-ranganathan-work-in-progress-2"
+        "2026-10-27-the-forge-comedy-club-romesh-ranganathan-work-in-progress-2",
+        "2026-10-27-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-10-27-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-10-27",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:00",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-10-27-chalk-adult-dvd-lttl-mort",
@@ -5023,20 +4882,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/paul-sinha-2-sinha-lifetime-tickets-1985441864062",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-10-28-the-forge-comedy-club-paul-sinha-2-sinha-lifetime-2"
+        "2026-10-28-the-forge-comedy-club-paul-sinha-2-sinha-lifetime-2",
+        "2026-10-28-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-10-28-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-10-28",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:15",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-10-28-komedia-christopher-hall-pizazz-wed-28-oct-2026-8-00-pm-doors-7-00-pm",
@@ -5258,21 +5106,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-30-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-10-30",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541047696",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-10-30-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-10-30-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-10-30",
@@ -5282,7 +5115,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541047696",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-30-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-10-30-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-10-30-dust-reggaeton-halloween-party-brighton-2026",
@@ -5513,21 +5350,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-31-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-10-31",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094572303",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-10-31-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-10-31-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-10-31",
@@ -5537,7 +5359,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094572303",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-31-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-10-31-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-10-31-concorde-2-moody-disco-obskur",
@@ -6102,21 +5928,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-06-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-11-06",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541745784",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-11-06-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-11-06-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-11-06",
@@ -6126,7 +5937,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541745784",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-06-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-11-06-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-11-06-concorde-2-it-s-a-jungle-out-there-coco-bryce-and-j-kenzo",
@@ -6263,21 +6078,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-07-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-11-07",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094670597",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-11-07-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-11-07-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-11-07",
@@ -6287,7 +6087,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094670597",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-07-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-11-07-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-11-07-babble-lo-fidelity-allstars-dj-set",
@@ -6446,20 +6250,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/marcel-luconts-whine-list-tickets-1986318611437",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-11-08-the-forge-comedy-club-marcel-lucont-s-whine-list-2"
+        "2026-11-08-the-forge-comedy-club-marcel-lucont-s-whine-list-2",
+        "2026-11-08-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-11-08-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-11-08",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-11-08-komedia-ben-poole",
@@ -6633,20 +6426,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/jacob-hawley-fighting-age-man-tickets-1982785697396",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-11-10-the-forge-comedy-club-jacob-hawley-fighting-age-man"
+        "2026-11-10-the-forge-comedy-club-jacob-hawley-fighting-age-man",
+        "2026-11-10-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-11-10-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-11-10",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "21:45",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-11-10-greendoorstore-bloodsports",
@@ -6832,20 +6614,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/comedy-for-the-clock-tower-tickets-1994137231139",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-11-12-the-forge-comedy-club-comedy-for-the-clock-tower"
+        "2026-11-12-the-forge-comedy-club-comedy-for-the-clock-tower",
+        "2026-11-12-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-11-12-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-11-12",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-12-11-komedia-reece-kidd-1-irishman-in-brighton-thu-12-nov-2026-8-00-pm-doors-7-30-pm",
@@ -7007,21 +6778,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-13-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-11-13",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541599346",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-11-13-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-11-13-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-11-13",
@@ -7031,7 +6787,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541599346",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-13-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-11-13-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-11-13-brightoncentre-peter-kay-better-late-than-never",
@@ -7212,21 +6972,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-14-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-11-14",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094786945",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-11-14-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-11-14-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-11-14",
@@ -7236,7 +6981,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094786945",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-14-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-11-14-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-11-14-a-l-p-h-a-b-e-t-butch-kassidy",
@@ -7711,20 +7460,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/tez-ilyas-tez-things-i-hate-about-you-tickets-1972463816372",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-11-18-the-forge-comedy-club-tez-ilyas-tez-things-i-hate-about-you-2"
+        "2026-11-18-the-forge-comedy-club-tez-ilyas-tez-things-i-hate-about-you-2",
+        "2026-11-18-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-11-18-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-11-18",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:00",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-11-18-brightoncentre-skye-newman",
@@ -7847,20 +7585,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/finlay-christie-champagne-casanova-tickets-1978398612507",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-11-19-the-forge-comedy-club-finlay-christie-champagne-casanova-2"
+        "2026-11-19-the-forge-comedy-club-finlay-christie-champagne-casanova-2",
+        "2026-11-19-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-11-19-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-11-19",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-11-19-komedia-moving-pictures-rush-tribute-thu-19-nov-2026-8-00-pm-doors-7-00-pm",
@@ -8043,21 +7770,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-20-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-11-20",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541561232",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-11-20-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-11-20-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-11-20",
@@ -8067,7 +7779,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541561232",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-20-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-11-20-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-11-20-concorde-2-state-of-us-presents-haai-planningtorock-dj-dykes-on-decks",
@@ -8233,21 +7949,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-21-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-11-21",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094887245",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-11-21-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-11-21-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-11-21",
@@ -8257,7 +7958,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094887245",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-21-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-11-21-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-11-21-concorde-2-culture-shock",
@@ -8441,20 +8146,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/scott-bennett-blood-sugar-baby-tickets-1693326197239",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-11-22-the-forge-comedy-club-scott-bennett-blood-sugar-baby-2"
+        "2026-11-22-the-forge-comedy-club-scott-bennett-blood-sugar-baby-2",
+        "2026-11-22-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-11-22-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-11-22",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-11-22-komedia-sam-browne-you-ll-miss-the-sunset-sun-22-nov-2026-8-00-pm-doors-7-30-pm",
@@ -8590,20 +8284,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/peter-antoniou-pretty-psychic-extra-show-tickets-1985773598288",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-11-25-the-forge-comedy-club-peter-antoniou-pretty-psychic-2"
+        "2026-11-25-the-forge-comedy-club-peter-antoniou-pretty-psychic-2",
+        "2026-11-25-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-11-25-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-11-25",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "18:45",
-      "finish_time": "20:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-11-25-concorde-2-dakhabrakha",
@@ -8666,19 +8349,10 @@
       "finish_time": "21:45",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/peter-antoniou-pretty-psychic-tickets-1985109985404",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-25-the-forge-comedy-club-the-forge-comedy-club-2",
-      "title": "The Forge Comedy Club",
-      "date": "2026-11-25",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "21:45",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-25-the-forge-comedy-club-the-forge-comedy-club-2"
+      ]
     },
     {
       "id": "2026-11-25-brightoncentre-paul-smith-comedian",
@@ -8780,20 +8454,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/james-barr-sorry-i-hurt-your-son-said-my-ex-to-my-mum-tickets-1982735129145",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-11-26-the-forge-comedy-club-james-barr-sorry-i-hurt-your-son-said-my-ex-to-my-mum-2"
+        "2026-11-26-the-forge-comedy-club-james-barr-sorry-i-hurt-your-son-said-my-ex-to-my-mum-2",
+        "2026-11-26-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-11-26-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-11-26",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:00",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-11-26-the-forge-comedy-club-laura-lexx-yo-yo",
@@ -8807,20 +8470,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/laura-lexx-yo-yo-tickets-1475735226789",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-11-26-the-forge-comedy-club-laura-lexx-yo-yo-2"
+        "2026-11-26-the-forge-comedy-club-laura-lexx-yo-yo-2",
+        "2026-11-26-the-forge-comedy-club-the-forge-comedy-club-2"
       ]
-    },
-    {
-      "id": "2026-11-26-the-forge-comedy-club-the-forge-comedy-club-2",
-      "title": "The Forge Comedy Club",
-      "date": "2026-11-26",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "21:45",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-11-26-brighton-centre-bloc-party-interpol",
@@ -8986,21 +8638,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-27-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-11-27",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541373671",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-11-27-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-11-27-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-11-27",
@@ -9010,7 +8647,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541373671",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-27-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-11-27-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-11-27-a-l-p-h-a-b-e-t-jetstream-pony-firestations",
@@ -9171,21 +8812,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-28-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-11-28",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094960464",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-11-28-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-11-28-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-11-28",
@@ -9195,7 +8821,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094960464",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-28-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-11-28-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-11-28-concorde-2-moody-disco-marsolo",
@@ -9622,20 +9252,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/ian-stone-looking-for-the-wow-extra-show-tickets-1982765100791",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-12-03-the-forge-comedy-club-ian-stone-looking-for-the-wow-extra-show-2"
+        "2026-12-03-the-forge-comedy-club-ian-stone-looking-for-the-wow-extra-show-2",
+        "2026-12-03-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-12-03-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-12-03",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:00",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-12-03-komedia-komedia-christmas-party",
@@ -9747,21 +9366,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-04-the-forge-comedy-club-forge-comedy-club-2",
-      "title": "Forge Comedy Club",
-      "date": "2026-12-04",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "22:30",
-      "category": "Comedy",
-      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1998424321943",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-12-04-the-forge-comedy-club-forge-comedy-club-3"
-      ]
-    },
-    {
       "id": "2026-12-04-the-forge-comedy-club-forge-comedy-club",
       "title": "The Forge Comedy Club",
       "date": "2026-12-04",
@@ -9771,7 +9375,11 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1998424321943",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-12-04-the-forge-comedy-club-forge-comedy-club-2",
+        "2026-12-04-the-forge-comedy-club-forge-comedy-club-3"
+      ]
     },
     {
       "id": "2026-12-04-a-l-p-h-a-b-e-t-rioghnach-connolly-honeyfeet",
@@ -9907,20 +9515,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998398743437",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-12-05-the-forge-comedy-club-festive-forge-comedy-club-2"
+        "2026-12-05-the-forge-comedy-club-festive-forge-comedy-club-2",
+        "2026-12-05-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-12-05-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-12-05",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "23:59",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-12-05-concorde-2-beefmince",
@@ -10403,20 +10000,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998424637888",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-12-11-the-forge-comedy-club-festive-forge-comedy-club"
+        "2026-12-11-the-forge-comedy-club-festive-forge-comedy-club",
+        "2026-12-11-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-12-11-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-12-11",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "23:59",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-12-11-brightoncentre-ub40-featuring-ali-campbell",
@@ -10591,20 +10177,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998443615651",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-12-12-the-forge-comedy-club-festive-forge-comedy-club-2"
+        "2026-12-12-the-forge-comedy-club-festive-forge-comedy-club-2",
+        "2026-12-12-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-12-12-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-12-12",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "23:59",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-12-12-concorde-2-hybrid-minds-brighton",
@@ -10994,20 +10569,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998456252448",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-12-18-the-forge-comedy-club-festive-forge-comedy-club-2"
+        "2026-12-18-the-forge-comedy-club-festive-forge-comedy-club-2",
+        "2026-12-18-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-12-18-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-12-18",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "23:59",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-12-18-brightoncentre-step-into-christmas",
@@ -11105,20 +10669,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998456412928",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-12-19-the-forge-comedy-club-festive-forge-comedy-club-2"
+        "2026-12-19-the-forge-comedy-club-festive-forge-comedy-club-2",
+        "2026-12-19-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-12-19-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-12-19",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "23:59",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-12-19-amex-stadium-brighton-v-ipswich-town",
@@ -11228,18 +10781,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-20-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-12-20",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "21:00",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-12-20-the-forge-comedy-club-the-noise-next-door-furnace-christmas-special",
       "title": "The Noise Next Door: Furnace – Christmas Special",
       "date": "2026-12-20",
@@ -11251,6 +10792,7 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/the-noise-next-door-furnace-christmas-special-tickets-1952130828859",
       "last_seen": "2026-10-06",
       "also_ids": [
+        "2026-12-20-the-forge-comedy-club-the-forge-comedy-club",
         "2026-12-20-the-forge-comedy-club-the-noise-next-door-furnace-christmas-special-2"
       ]
     },
@@ -11555,20 +11097,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-new-years-eve-special-tickets-1998456550339",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-12-31-the-forge-comedy-club-forge-comedy-club-new-years-eve-special-2"
+        "2026-12-31-the-forge-comedy-club-forge-comedy-club-new-years-eve-special-2",
+        "2026-12-31-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2026-12-31-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2026-12-31",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "23:00",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-12-31-komedia-boogie-wonderland-70s-disco-nye-party-thu-31-dec-2026-doors-10-00-pm",
@@ -12832,20 +12363,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/jeff-innocent-leaning-in-tickets-2001873996011",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2027-02-28-the-forge-comedy-club-jeff-innocent-leaning-in-2"
+        "2027-02-28-the-forge-comedy-club-jeff-innocent-leaning-in-2",
+        "2027-02-28-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2027-02-28-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2027-02-28",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "18:00",
-      "finish_time": "20:00",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2027-02-28-komedia-laura-newman-ark-at-she-sun-28-feb-2027-7-30-pm-doors-6-30-pm",
@@ -13074,20 +12594,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/sean-mcloughlin-halfway-tickets-2001070260015",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2027-03-11-the-forge-comedy-club-sean-mcloughlin-halfway-2"
+        "2027-03-11-the-forge-comedy-club-sean-mcloughlin-halfway-2",
+        "2027-03-11-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2027-03-11-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2027-03-11",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2027-03-11-komedia-tape-face-20",
@@ -13426,20 +12935,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/andrew-bird-on-edge-tickets-1984672561056",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2027-03-25-the-forge-comedy-club-andrew-bird-on-edge-2"
+        "2027-03-25-the-forge-comedy-club-andrew-bird-on-edge-2",
+        "2027-03-25-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2027-03-25-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2027-03-25",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:15",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2027-03-26-komedia-komedia-comedy-club-fri-26-mar-2027-8-00-pm-doors-7-00-pm",
@@ -13622,20 +13120,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/andrew-ryan-honest-capacity-tickets-1982966467083",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2027-04-04-the-forge-comedy-club-andrew-ryan-honest-capacity-2"
+        "2027-04-04-the-forge-comedy-club-andrew-ryan-honest-capacity-2",
+        "2027-04-04-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2027-04-04-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2027-04-04",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "18:00",
-      "finish_time": "20:00",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2027-04-04-komedia-down-the-hatch-comedy-club",
@@ -13757,20 +13244,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/carl-hutchinson-fine-whine-tickets-1975741835014",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2027-04-15-the-forge-comedy-club-carl-hutchinson-fine-whine-2"
+        "2027-04-15-the-forge-comedy-club-carl-hutchinson-fine-whine-2",
+        "2027-04-15-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2027-04-15-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2027-04-15",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2027-04-16-concorde-2-noasis",
@@ -13843,32 +13319,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/matt-bragg-stand-up-comic-tickets-1986058834437",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2027-04-18-the-forge-comedy-club-matt-bragg-stand-up-comic"
+        "2027-04-18-the-forge-comedy-club-matt-bragg-stand-up-comic",
+        "2027-04-18-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2027-04-18-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2027-04-18",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2027-04-21-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2027-04-21",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:15",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2027-04-21-the-forge-comedy-club-tom-stade-rules",
@@ -13882,6 +13335,7 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/tom-stade-rules-tickets-1991700020376",
       "last_seen": "2026-10-06",
       "also_ids": [
+        "2027-04-21-the-forge-comedy-club-the-forge-comedy-club",
         "2027-04-21-the-forge-comedy-club-tom-stade-rules-2"
       ]
     },
@@ -14449,20 +13903,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/e/dom-joly-trigger-happy-tv-live-tickets-1986544766874",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2027-06-20-the-forge-comedy-club-dom-joly-trigger-happy-tv-live-2"
+        "2027-06-20-the-forge-comedy-club-dom-joly-trigger-happy-tv-live-2",
+        "2027-06-20-the-forge-comedy-club-the-forge-comedy-club"
       ]
-    },
-    {
-      "id": "2027-06-20-the-forge-comedy-club-the-forge-comedy-club",
-      "title": "The Forge Comedy Club",
-      "date": "2027-06-20",
-      "venue": "The Forge Comedy Club",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Comedy",
-      "ticket_url": "https://forgecomedyclub.co.uk/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2027-06-25-komedia-komedia-comedy-club",
