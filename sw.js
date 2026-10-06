@@ -7,7 +7,7 @@
  *  - Images and icons: cache first (they are versioned by filename or ?v=).
  * Bump VERSION whenever you want every installed copy to drop old caches.
  */
-const VERSION = 'bw-v65';
+const VERSION = 'bw-v66';
 const CORE = [
   './',
   './index.html',
