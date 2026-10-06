@@ -10,6 +10,7 @@ on:
       - 'scripts/scrape-discovery.py'
       - 'scripts/prepare-events.py'
       - 'scripts/event_matching.py'
+      - 'scripts/tag-genres.py'
       - 'scripts/validate-events.py'
       - 'requirements-events.txt'
       - '.github/workflows/weekly-events.yml'
@@ -49,6 +50,10 @@ jobs:
         run: python scripts/scrape-discovery.py
       - name: Prepare event data
         run: python scripts/prepare-events.py
+      - name: Tag genres (listing names it, or a confident MusicBrainz match)
+        run: |
+          python scripts/tag-genres.py --self-test
+          python scripts/tag-genres.py
       - name: Validate event data
         run: python scripts/validate-events.py
       - name: Validate critical event coverage
@@ -61,10 +66,12 @@ jobs:
           # replaces whatever is on main rather than being merged line by line.
           # (Merging failed whenever events.json changed on main during a run.)
           cp events.json "$RUNNER_TEMP/events.json"
+          cp genre-cache.json "$RUNNER_TEMP/genre-cache.json"
           git fetch origin main
           git reset --hard origin/main
           cp "$RUNNER_TEMP/events.json" events.json
-          git add events.json
+          cp "$RUNNER_TEMP/genre-cache.json" genre-cache.json
+          git add events.json genre-cache.json
           if git diff --cached --quiet; then
             echo 'No event data changes this run.'
             exit 0

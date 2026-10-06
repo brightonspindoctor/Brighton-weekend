@@ -147,7 +147,7 @@ header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1
 .price{font-size:var(--bw-text-sm);font-weight:700;margin-top:var(--bw-space-2)}
 .event-description{margin-top:var(--bw-space-2);white-space:pre-line;overflow-wrap:anywhere}
 .badge{font-size:var(--bw-text-xs);font-weight:800;padding:5px 8px;border-radius:var(--bw-radius-pill);white-space:nowrap}
-.badge.sold{background:#382022;color:var(--bw-pass-fg);border:1px solid #704047}.card-flags{display:flex;align-items:center;gap:var(--bw-space-2);flex-shrink:0}.promoter-sticker{display:inline-block;font-size:var(--bw-text-xs);font-weight:800;letter-spacing:.02em;line-height:1;padding:5px 7px;border-radius:4px;transform:rotate(6deg);box-shadow:0 2px 0 rgba(0,0,0,.35);white-space:nowrap;user-select:none}.promoter-sticker.joy{background:#FFE14D;color:#0B1D2F}
+.badge.sold{background:#382022;color:var(--bw-pass-fg);border:1px solid #704047}.card-flags{display:flex;align-items:center;gap:var(--bw-space-2);flex-shrink:0}.promoter-sticker{display:inline-block;font-size:var(--bw-text-xs);font-weight:800;letter-spacing:.02em;line-height:1;padding:5px 7px;border-radius:4px;transform:rotate(6deg);box-shadow:0 2px 0 rgba(0,0,0,.35);white-space:nowrap;user-select:none}.promoter-sticker.joy{background:#FFE14D;color:#0B1D2F}button.promoter-sticker{border:0;cursor:pointer;font-family:inherit}.genre-chips{display:flex;gap:8px;overflow-x:auto;padding:12px 0 4px;scrollbar-width:none}.genre-chips::-webkit-scrollbar{display:none}.pill-wrap{display:flex;flex-wrap:wrap;gap:8px}.search-filter{display:grid;gap:8px}.search-filter .label-text{font-size:var(--bw-text-sm);color:var(--bw-muted)}.genre-chip{flex:none;display:inline-flex;align-items:center;min-height:36px;padding:6px 13px;border-radius:var(--bw-radius-pill);background:var(--bw-deep);border:1px solid var(--bw-line);color:var(--bw-cream);font:inherit;font-size:var(--bw-text-xs);font-weight:700;white-space:nowrap;cursor:pointer}.genre-chip .n{opacity:.65;font-weight:600;margin-left:5px}.genre-chip.untagged{background:transparent;color:var(--bw-muted);border-style:dashed;border-color:var(--bw-line-strong)}.genre-chip[aria-pressed="true"]{background:#153B39;color:#8FE0D5;border:1px solid var(--bw-teal)}.genre-chip .promoter-sticker{margin-right:8px;font-size:10.5px;padding:4px 6px}.genre-tag{display:inline-block;margin-top:8px;font-size:11px;font-weight:700;color:#D9E7E7;background:#153443;border:1px solid #285365;border-radius:var(--bw-radius-pill);padding:4px 9px}.promoter-filter{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;padding:8px 8px 8px 12px;background:#153B39;border:1px solid var(--bw-teal);border-radius:var(--bw-radius-md);color:#8FE0D5;font-size:var(--bw-text-sm);font-weight:700}.promoter-filter .count{font-weight:500;opacity:.8}.promoter-filter .btn-chip{flex:none}
 .actions{display:flex;gap:var(--bw-space-2);flex-wrap:wrap;align-items:center;margin-top:var(--bw-space-3)}
 .actions:empty{display:none}
 .actions>.ticket,.actions>.cal-link:not(.share-link){flex:1 1 auto;justify-content:center;padding-left:10px;padding-right:10px;white-space:nowrap}
@@ -457,6 +457,8 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
     <div class="form-row"><label>From<input id="searchFrom" type="date"></label><label>To<input id="searchTo" type="date"></label></div>
     <label>Venues<input id="searchVenueFilter" type="search" placeholder="Filter the venue list" autocomplete="off"></label>
     <div id="searchVenueList" class="choice-grid"></div>
+    <div class="search-filter"><div class="label-text">Genre</div><div id="searchGenreList" class="pill-wrap"></div></div>
+    <div class="search-filter" id="searchPromoterBox"><div class="label-text">Promoter</div><div id="searchPromoterList" class="pill-wrap"></div></div>
   </div>
   <div id="searchArtistMode" class="form-stack hidden">
     <label>Artist or show<input id="searchArtist" type="search" placeholder="e.g. Ben Folds" autocomplete="off"></label>
@@ -1020,7 +1022,7 @@ function ticketLink(e){const u=safeUrl(e.ticket_url);return u?`<a class="ticket"
 const PROMOTER_STICKERS={'JOY. Concerts':{label:'JOY.',cls:'joy'}};
 function cardFlags(e){
  const p=PROMOTER_STICKERS[e.promoter];
- const sticker=p?`<span class="promoter-sticker ${p.cls}" title="A ${esc(e.promoter)} gig" aria-label="A ${esc(e.promoter)} gig">${esc(p.label)}</span>`:'';
+ const sticker=p?`<button type="button" class="promoter-sticker ${p.cls}" data-promoter="${esc(e.promoter)}" title="Show ${esc(e.promoter)} gigs" aria-label="A ${esc(e.promoter)} gig. Show only ${esc(e.promoter)} gigs">${esc(p.label)}</button>`:'';
  const sold=e.status==='SOLD OUT'?'<span class="badge sold">Sold out</span>':'';
  return sticker||sold?`<div class="card-flags">${sold}${sticker}</div>`:'';
 }
@@ -1029,23 +1031,61 @@ function eventCard(e,{showDate=false}={}){
  const a=uniqueGroupPeopleCount(e.id,'interested'), t=uniqueGroupPeopleCount(e.id,'ticket_bought');
  const d=showDate?parseEventDate(e.date):null;
  const when=[esc(e.venue_display||e.venue),timeRange(e)].filter(Boolean).join(' · ');
- return `<article class="card" data-event-id="${esc(e.id)}">${d?`<div class="card-date">${esc(d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}))}</div>`:''}<div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="added-by">added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${when}</div></div>${cardFlags(e)}</div>
+ return `<article class="card" data-event-id="${esc(e.id)}">${d?`<div class="card-date">${esc(d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}))}</div>`:''}<div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="added-by">added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${when}</div></div>${cardFlags(e)}</div>${e.genre?`<span class="genre-tag">${esc(e.genre)}</span>`:''}
  ${e.price?`<div class="price">${esc(e.price)}</div>`:''}
  ${e.is_custom&&e.description?`<div class="note event-description">${esc(e.description)}</div>`:''}
  <div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>${a} interested</span><span class="social-chip"><i class="social-icon going">${TICKET_ICON}</i>${t} going</span></div>
  ${commitmentButtons(e,mine)}
  <div class="actions">${ticketLink(e)}${calendarLink(e)}${shareLink(e)}${e.is_custom&&e.created_by&&e.created_by===uid()?`<button type="button" class="cal-link" data-delete-event="${esc(e.id)}" aria-label="Remove ${esc(e.title)}">Remove</button>`:''}</div></article>`;
 }
+// ---- Genre and promoter filters ----
+// Genres come from scripts/tag-genres.py and are only set when a listing names
+// the genre or MusicBrainz confidently knows the act; everything else is
+// "Untagged" (music and club events only).
+const GENRE_ORDER=["Indie & Rock","Pop","Electronic","House & Disco","Techno & Trance","Drum & Bass","Garage & Bass","Hip-hop & R&B","Latin & Afrobeats","Jazz, Soul & Funk","Folk & Country","Punk & Metal","Reggae & Ska","Classical"];
+const GENRE_TAGGABLE=new Set(['Music','Club','Music/Club']);
+let discoverGenre='All',discoverPromoter=null;
+function genreOf(e){return e.genre||(GENRE_TAGGABLE.has(e.category)?'Untagged':null)}
+function matchesGenre(e,g){return g==='All'||genreOf(e)===g}
+function genreChipsHtml(list){
+ const counts={};list.forEach(e=>{const g=genreOf(e);if(g)counts[g]=(counts[g]||0)+1});
+ const names=GENRE_ORDER.filter(g=>counts[g]||g===discoverGenre);
+ if(!names.length&&discoverGenre==='All')return ''; // no real genres this week: a lone "Untagged" chip says nothing
+ if(counts.Untagged||discoverGenre==='Untagged')names.push('Untagged');
+ const total=list.length;
+ const chip=(g,n)=>`<button type="button" class="genre-chip${g==='Untagged'?' untagged':''}" data-genre-chip="${esc(g)}" aria-pressed="${discoverGenre===g}">${esc(g==='All'?'All':g)}<span class="n">${n||0}</span></button>`;
+ return `<div class="genre-chips" role="group" aria-label="Filter by genre">${chip('All',total)}${names.map(g=>chip(g,counts[g])).join('')}</div>`;
+}
+function promoterBannerHtml(count){
+ if(!discoverPromoter)return '';
+ const p=PROMOTER_STICKERS[discoverPromoter];
+ return `<div class="promoter-filter">${p?`<span class="promoter-sticker ${p.cls}" aria-hidden="true">${esc(p.label)}</span>`:''}<span style="flex:1;min-width:0">${esc(discoverPromoter)} gigs <span class="count">· ${count} this week</span></span><button type="button" class="btn btn-chip" data-clear-promoter>Show all</button></div>`;
+}
+document.addEventListener('click',e=>{
+ const g=e.target.closest('[data-genre-chip]');if(g){discoverGenre=g.dataset.genreChip;render();return}
+ if(e.target.closest('[data-clear-promoter]')){discoverPromoter=null;render();return}
+ const p=e.target.closest('[data-promoter]');if(!p)return;
+ if(p.closest('#searchTab')){searchPromoters.add(p.dataset.promoter);populateSearchFilters();renderSearch();return}
+ discoverPromoter=p.dataset.promoter;
+ if(!$('discover').classList.contains('hidden'))render();else openTab('discover');
+ window.scrollTo({top:0,behavior:'smooth'});
+});
 function render(){
  const end=new Date(weekStart);end.setDate(end.getDate()+6);
  $('week').textContent=weekStart.toLocaleDateString('en-GB',{day:'numeric',month:'short'})+' – '+end.toLocaleDateString('en-GB',{day:'numeric',month:'short'});
  $('prev').disabled=weekStart<=getMonday();
  const days=weekDays();
  if(!days.length){$('discover').innerHTML=newPanelHtml()+'<div class="empty">None of your chosen days are left this week. Tap › for next week, or change your days in Settings.</div>';return}
- $('discover').innerHTML=newPanelHtml()+days.map(day=>{
+ const weekList=events.filter(e=>days.some(d=>d.key===e.date)&&venueVisible(e)&&!isComedy(e));
+ const promoterList=discoverPromoter?weekList.filter(e=>e.promoter===discoverPromoter):weekList;
+ const matched=promoterList.filter(e=>matchesGenre(e,discoverGenre)).length;
+ const filtering=discoverGenre!=='All'||!!discoverPromoter;
+ $('discover').innerHTML=newPanelHtml()+promoterBannerHtml(promoterList.length)+genreChipsHtml(promoterList)+days.map(day=>{
   const list=events.filter(e=>e.date===day.key&&venueVisible(e)&&!isComedy(e));
-  return dayHeading(day)+(list.length?list.map(e=>eventCard(e)).join(''):'<div class="empty">No events at your selected venues.</div>');
- }).join('');
+  const shown=list.filter(e=>matchesGenre(e,discoverGenre)&&(!discoverPromoter||e.promoter===discoverPromoter));
+  if(filtering&&!shown.length)return '';
+  return dayHeading(day)+(shown.length?shown.map(e=>eventCard(e)).join(''):'<div class="empty">No events at your selected venues.</div>');
+ }).join('')+(filtering&&!matched?'<div class="empty">Nothing this week matches this filter. <button type="button" class="btn btn-chip" data-genre-chip="All">Show everything</button></div>':'');
 }
 function isComedy(e){
  const hay=[e.category,e.type,e.genre,e.tags,e.title,e.description].filter(Boolean).join(' ').toLowerCase();
@@ -1206,7 +1246,21 @@ async function refresh(){
 }
 
 // ---- Search ----
-let searchMode='venue';const searchVenues=new Set();
+let searchMode='venue';const searchVenues=new Set(),searchGenres=new Set(),searchPromoters=new Set();
+function populateSearchFilters(){
+ const gl=$('searchGenreList'),pl=$('searchPromoterList');if(!gl||!pl)return;
+ const present=new Set(events.map(genreOf).filter(Boolean));
+ const genres=[...GENRE_ORDER.filter(g=>present.has(g)),...(present.has('Untagged')?['Untagged']:[])];
+ gl.innerHTML=genres.map(g=>`<button type="button" class="genre-chip${g==='Untagged'?' untagged':''}" data-search-genre="${esc(g)}" aria-pressed="${searchGenres.has(g)}">${esc(g)}</button>`).join('')||'<div class="note">No genres yet.</div>';
+ const promoters=[...new Set(events.map(e=>e.promoter).filter(Boolean))].sort();
+ $('searchPromoterBox').classList.toggle('hidden',!promoters.length);
+ pl.innerHTML=promoters.map(p=>{const s=PROMOTER_STICKERS[p];return `<button type="button" class="genre-chip" data-search-promoter="${esc(p)}" aria-pressed="${searchPromoters.has(p)}">${s?`<span class="promoter-sticker ${s.cls}" aria-hidden="true">${esc(s.label)}</span>`:''}${esc(p)}</button>`}).join('');
+}
+document.addEventListener('click',e=>{
+ const g=e.target.closest('[data-search-genre]'),p=e.target.closest('[data-search-promoter]');if(!g&&!p)return;
+ const set=g?searchGenres:searchPromoters,val=g?g.dataset.searchGenre:p.dataset.searchPromoter;
+ set.has(val)?set.delete(val):set.add(val);populateSearchFilters();renderSearch();
+});
 function populateSearchVenues(){
  const list=$('searchVenueList');if(!list)return;
  const q=($('searchVenueFilter').value||'').trim().toLowerCase();
@@ -1231,20 +1285,23 @@ function renderSearch(){
   if(q)out=festivals.filter(f=>[f.title,f.location,f.location_display,f.category,f.description].filter(Boolean).join(' ').toLowerCase().includes(q));
  }else{
   const from=$('searchFrom').value,to=$('searchTo').value;
-  if(from&&to&&searchVenues.size)out=events.filter(e=>e.date>=from&&e.date<=to&&searchVenues.has(String(e.venue_display||e.venue||'').trim()));
+  if(from&&to&&(searchVenues.size||searchGenres.size||searchPromoters.size))out=events.filter(e=>e.date>=from&&e.date<=to
+   &&(!searchVenues.size||searchVenues.has(String(e.venue_display||e.venue||'').trim()))
+   &&(!searchGenres.size||searchGenres.has(genreOf(e)))
+   &&(!searchPromoters.size||searchPromoters.has(e.promoter)));
  }
  const today=todayKey();
  if(searchMode==='festival')out=out.filter(f=>f.date>=today&&(f.date_end||f.date)>=today);else out=out.filter(e=>e.date>=today);
  out.sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
  $('searchCount').textContent=out.length+' '+(searchMode==='festival'?'festival':'event')+(out.length===1?'':'s');
- const empty=searchMode==='artist'?'Type an artist or show name to search every date.':searchMode==='festival'?'Type a festival name, location or category to search the festival listings.':'Choose a date range and at least one venue.';
+ const empty=searchMode==='artist'?'Type an artist or show name to search every date.':searchMode==='festival'?'Type a festival name, location or category to search the festival listings.':'Choose a date range, then venues, genres or a promoter.';
  box.innerHTML=out.length?(searchMode==='festival'?out.slice(0,200).map(festivalCard).join(''):out.slice(0,200).map(e=>eventCard(e,{showDate:true})).join('')):`<div class="empty">${empty}</div>`;
 }
 function setupSearch(){
  document.querySelectorAll('[data-search-mode]').forEach(b=>b.onclick=()=>setSearchMode(b.dataset.searchMode));
  ['searchFrom','searchTo'].forEach(id=>$(id).onchange=renderSearch);
  $('searchArtist').oninput=renderSearch;$('searchVenueFilter').oninput=populateSearchVenues;$('searchFestival').oninput=renderSearch;
- $('searchClear').onclick=()=>{searchVenues.clear();['searchFrom','searchTo','searchVenueFilter','searchArtist','searchFestival'].forEach(id=>$(id).value='');populateSearchVenues();setSearchMode('venue')};
+ $('searchClear').onclick=()=>{searchVenues.clear();searchGenres.clear();searchPromoters.clear();populateSearchFilters();['searchFrom','searchTo','searchVenueFilter','searchArtist','searchFestival'].forEach(id=>$(id).value='');populateSearchVenues();setSearchMode('venue')};
 }
 setupSearch();
 
@@ -1351,7 +1408,7 @@ document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{
  window.scrollTo(0,0);
  if(b.dataset.tab==='comedyTab')renderComedy();
  if(b.dataset.tab==='festivalsTab')renderFestivals();
- if(b.dataset.tab==='searchTab'){populateSearchVenues();renderSearch()}
+ if(b.dataset.tab==='searchTab'){populateSearchVenues();populateSearchFilters();renderSearch()}
  if(b.dataset.tab==='peopleTab'){renderPeople();markHappeningsSeen();updateHappeningsBadge()}
  if(b.dataset.tab==='venuesTab'){renderVenues();renderGroupManager()}
 });

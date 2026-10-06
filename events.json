@@ -586,7 +586,9 @@
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/yonaka",
       "last_seen": "2026-10-06",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:3ae6f3b9-0cb7-4083-ab23-34847f5fcda9"
     },
     {
       "id": "2026-10-06-the-hope-ruin-skating-polly-lord-friday",
@@ -610,7 +612,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:5441c29d-3602-4898-b1a1-b77fa23b8e50"
     },
     {
       "id": "2026-10-06-brighton-dome-music-katherine-jenkins-special-guest-jodok-cello-will-be-performing-with-katherine-jenkins-tue-6-oct-concert-hall-from-39-75-find-out-more",
@@ -849,7 +853,9 @@
       "finish_time": "22:00",
       "category": "Music",
       "ticket_url": "https://www.hope.pub/event/ulrika-spacek/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:b4e8e5f4-be91-473f-af73-de332ecd8f20"
     },
     {
       "id": "2026-10-08-concorde2-the-wanted-2-0",
@@ -1059,7 +1065,9 @@
       "finish_time": "22:00",
       "category": "Club",
       "ticket_url": "https://www.seetickets.com/event/zero-7-dj-set-/quarters/3702298",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Electronic",
+      "genre_source": "musicbrainz:c23b637b-97c6-41eb-8ef6-6c724efc80a8"
     },
     {
       "id": "2026-10-09-the-hope-ruin-wasuremono",
@@ -1262,7 +1270,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/shows/josephine-foster-toms-bar",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Folk & Country",
+      "genre_source": "musicbrainz:c9c2342e-83e9-4a73-8b62-f38d99cd8050"
     },
     {
       "id": "2026-10-09-the-pipeline-borrowed-time-the-pipeline",
@@ -1362,7 +1372,9 @@
       "last_seen": "2026-10-06",
       "also_ids": [
         "2026-10-10-brighton-dome-alison-moyet-2"
-      ]
+      ],
+      "genre": "Pop",
+      "genre_source": "musicbrainz:79feb79b-8f0d-4306-b30a-e28bd88c9323"
     },
     {
       "id": "2026-10-10-brighton-dome-russell-t-davies",
@@ -1552,7 +1564,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://quarters.seetickets.com/event/mr-cutts/quarters/3708031",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Hip-hop & R&B",
+      "genre_source": "musicbrainz:dacec29f-4200-430b-a0d1-bc7046af092c"
     },
     {
       "id": "2026-10-10-quarters-sota",
@@ -1990,7 +2004,9 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Pop",
+      "genre_source": "musicbrainz:5f000e69-3cfd-4871-8f1b-faa7f0d4bcbc"
     },
     {
       "id": "2026-10-13-chalk-cancer-bats-ignite-knives",
@@ -2002,7 +2018,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://chalkvenue.com/event/cancer-bats-1",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Punk & Metal",
+      "genre_source": "musicbrainz:00b952be-6c97-4880-84f9-06de584b491b"
     },
     {
       "id": "2026-10-13-the-hope-ruin-gallus",
@@ -2267,7 +2285,9 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/a-l-p-h-a-b-e-t",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:bdde0863-e23c-48ad-b7e8-f36601531f14"
     },
     {
       "id": "2026-10-15-brighton-dome-lulu",
@@ -2325,7 +2345,9 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Reggae & Ska",
+      "genre_source": "musicbrainz:7a279145-e778-4099-8f73-ea917a1956c9"
     },
     {
       "id": "2026-10-15-the-hope-ruin-burglar",
@@ -2468,7 +2490,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/boris-pink-20th-anniversary-uk-tour",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Punk & Metal",
+      "genre_source": "musicbrainz:57652bf8-cfe8-42e7-b9a7-5572a7080d8d"
     },
     {
       "id": "2026-10-16-green-door-store-mould",
@@ -2669,7 +2693,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://chalkvenue.com/event/the-hoosiers",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:52fe888b-112f-4023-adc9-f8287f177f7a"
     },
     {
       "id": "2026-10-16-patterns-the-jam-uk-the-definitive-tribute-to-the-jam",
@@ -2809,7 +2835,9 @@
       "last_seen": "2026-10-06",
       "also_ids": [
         "2026-10-17-brighton-dome-all-my-friends-day-disco-2"
-      ]
+      ],
+      "genre": "House & Disco",
+      "genre_source": "title"
     },
     {
       "id": "2026-10-17-brighton-dome-jordan-brookes-the-part-of-you-that-s-always-screaming",
@@ -2968,7 +2996,9 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/a-l-p-h-a-b-e-t",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Folk & Country",
+      "genre_source": "musicbrainz:89b381cf-89f4-43d7-b85b-f53efb2bd1a8"
     },
     {
       "id": "2026-10-17-amex-stadium-brighton-v-crystal-palace",
@@ -3462,7 +3492,9 @@
       "category": "Music",
       "ticket_url": "https://www.axs.com/uk/events/1427346/ben-quad-tickets",
       "promoter": "JOY. Concerts",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Punk & Metal",
+      "genre_source": "musicbrainz:219f330f-4b12-418a-a69b-451c3c2a7383"
     },
     {
       "id": "2026-10-20-greendoorstore-makeshift-art-bar",
@@ -3510,7 +3542,9 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Folk & Country",
+      "genre_source": "musicbrainz:b835cf9b-5605-406e-aade-d94cec2a1a2d"
     },
     {
       "id": "2026-10-20-theatreroyalbrighton-the-haunting-of-hill-house",
@@ -3920,7 +3954,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/the-r-b-orchestra",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Hip-hop & R&B",
+      "genre_source": "title"
     },
     {
       "id": "2026-10-23-brighton-dome-an-evening-with-katherine-ryan-firstborn-daughter",
@@ -4067,7 +4103,9 @@
       "ticket_url": "https://www.concorde2.co.uk/whats-on",
       "source_url": "https://www.concorde2.co.uk/whats-on",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Hip-hop & R&B",
+      "genre_source": "title"
     },
     {
       "id": "2026-10-23-dust-buff-dusters",
@@ -4484,7 +4522,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/gurriers",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:b3e28883-d118-4180-b458-568a18bc239d"
     },
     {
       "id": "2026-10-25-komedia-sooz-kempner-sun-25-oct-2026-7-30-pm-doors-7-00-pm",
@@ -4583,7 +4623,9 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Folk & Country",
+      "genre_source": "musicbrainz:04073f0b-a1e5-4cef-9b36-c1978e5d7d23"
     },
     {
       "id": "2026-10-25-greendoorstore-formal-sppeedwear",
@@ -4683,7 +4725,9 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Hip-hop & R&B",
+      "genre_source": "musicbrainz:a633ebb5-b81a-400f-b5df-0e625ea81fe9"
     },
     {
       "id": "2026-10-26-greendoorstore-my-first-time",
@@ -4744,7 +4788,9 @@
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/grandmaster-flash",
       "last_seen": "2026-10-06",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "genre": "Hip-hop & R&B",
+      "genre_source": "musicbrainz:7db590cd-d7e6-4b36-b4e7-e8209426b02d"
     },
     {
       "id": "2026-10-27-the-forge-comedy-club-romesh-ranganathan-work-in-progress",
@@ -5027,7 +5073,9 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Jazz, Soul & Funk",
+      "genre_source": "musicbrainz:4486702e-7b26-43fd-babc-c0df7be0e1d9"
     },
     {
       "id": "2026-10-29-shelter-hall-drag-music-bingo-halloween",
@@ -5131,7 +5179,9 @@
       "ticket_url": "https://www.eventbrite.co.uk/",
       "finish_time": "03:00",
       "source_url": "Eventbrite",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Latin & Afrobeats",
+      "genre_source": "title"
     },
     {
       "id": "2026-10-30-komedia-the-brighton-moon-hop-fri-30-oct-2026-doors-11-00-pm",
@@ -5312,7 +5362,9 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/event/drum-bass-classics-halloween-all-dayer",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Drum & Bass",
+      "genre_source": "title"
     },
     {
       "id": "2026-10-31-17-00-tooth-special-guests",
@@ -5388,7 +5440,9 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/a-l-p-h-a-b-e-t",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:cd830a8f-89d2-4e96-96cb-7a497e51d437"
     },
     {
       "id": "2026-10-31-brightoncentre-ministry-of-sound-classical",
@@ -5415,7 +5469,9 @@
       "last_seen": "2026-10-06",
       "also_ids": [
         "2026-10-31-concorde2-drum-bass-classics-brighton-halloween-all-dayer"
-      ]
+      ],
+      "genre": "Drum & Bass",
+      "genre_source": "title"
     },
     {
       "id": "2026-10-31-concorde-2-moody-disco-halloween-rave-w-obsk-r",
@@ -5571,7 +5627,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/the-bluetones",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:024bea6e-e250-4348-9e69-2dfcad38442e"
     },
     {
       "id": "2026-11-01-greendoorstore-burner-beyond-extinction",
@@ -5671,7 +5729,9 @@
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
       "last_seen": "2026-10-06",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "genre": "Pop",
+      "genre_source": "musicbrainz:9058d01e-8afc-47a4-8664-621fb5f159c0"
     },
     {
       "id": "2026-11-03-komedia-von-hertzen-brothers",
@@ -5853,7 +5913,9 @@
       "ticket_url": "https://www.ents24.com/brighton-events/the-volks",
       "source_url": "https://www.ents24.com/brighton-events/the-volks",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:5c4c2df9-63ba-4605-a965-5ea11db27cf5"
     },
     {
       "id": "2026-11-06-komedia-story-magic",
@@ -6026,7 +6088,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/rival-consoles",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Electronic",
+      "genre_source": "musicbrainz:803f2853-7e3e-4dff-96a7-9f77b5f56de5"
     },
     {
       "id": "2026-11-06-the-pipeline-king-effers-not-the-face-the-glitterbombs",
@@ -6164,7 +6228,9 @@
       "source_url": "https://www.ents24.com/brighton-events/patterns",
       "finish_time": "",
       "last_seen": "2026-10-06",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "genre": "Jazz, Soul & Funk",
+      "genre_source": "musicbrainz:21e8f8ef-00d2-4748-be00-451f1f5dfcaa"
     },
     {
       "id": "2026-11-07-quarters-club-events-andy-c",
@@ -6236,7 +6302,9 @@
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/holy-fawn",
       "last_seen": "2026-10-06",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:42489dbe-d79d-45a4-aee7-4666aba8180a"
     },
     {
       "id": "2026-11-08-the-forge-comedy-club-marcel-lucont-s-whine-list",
@@ -7055,7 +7123,9 @@
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:9068fa4c-73db-4ac5-91fd-62c47b504f56"
     },
     {
       "id": "2026-11-14-komedia-zelt-and-tashkezar-support-sat-14-nov-2026-doors-7-00-pm",
@@ -7248,7 +7318,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/Lz1-kian-soltani-plays-dvok/",
-      "last_seen": "2026-10-05"
+      "last_seen": "2026-10-05",
+      "genre": "Jazz, Soul & Funk",
+      "genre_source": "title"
     },
     {
       "id": "2026-11-15-chalk-portrayal-of-guilt",
@@ -7261,7 +7333,9 @@
       "category": "Music",
       "ticket_url": "https://www.axs.com/uk/events/1644840/portrayal-of-guilt-tickets",
       "promoter": "JOY. Concerts",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Punk & Metal",
+      "genre_source": "musicbrainz:0f3f7357-73d3-42a3-81a5-b359bc4e8a56"
     },
     {
       "id": "2026-11-15-patterns-aaron-rowe",
@@ -7273,7 +7347,9 @@
       "ticket_url": "https://www.ents24.com/brighton-events/patterns",
       "source_url": "https://www.ents24.com/brighton-events/patterns",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Folk & Country",
+      "genre_source": "musicbrainz:eee8e86c-04d5-464b-addc-939eb6d2f54a"
     },
     {
       "id": "2026-11-15-the-old-market-on-your-bike-baffo",
@@ -7534,7 +7610,9 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Folk & Country",
+      "genre_source": "musicbrainz:5403e1bd-32a3-455a-89ef-1cee9498e865"
     },
     {
       "id": "2026-11-18-theatreroyalbrighton-man-in-the-mirror-a-tribute-to-michael-jackson",
@@ -7658,7 +7736,9 @@
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:f836a8dd-6b20-4d95-9e0f-5b758ff3eeb3"
     },
     {
       "id": "2026-11-19-greendoorstore-genn",
@@ -7999,7 +8079,9 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:1814cbfc-131d-473f-a6e7-7208a25a69c1"
     },
     {
       "id": "2026-11-21-chalk-the-undertones",
@@ -8059,7 +8141,9 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://quarters.seetickets.com/event/rnb-mania-brighton-s-r-b-festival/quarters/3705590",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Hip-hop & R&B",
+      "genre_source": "title"
     },
     {
       "id": "2026-11-21-the-old-market-ballet-brighton-clara-s-dream",
@@ -8183,7 +8267,9 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Folk & Country",
+      "genre_source": "musicbrainz:b5330942-ffdf-49cb-8a13-b5d7b5d67bff"
     },
     {
       "id": "2026-11-22-the-prince-albert-inner-terrestrials",
@@ -8196,7 +8282,9 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Punk & Metal",
+      "genre_source": "musicbrainz:081f0b70-f191-40a1-9da4-1688ec61bc92"
     },
     {
       "id": "2026-11-22-the-prince-albert-mildred",
@@ -8222,7 +8310,9 @@
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/the-big-moon",
       "last_seen": "2026-10-06",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:9bb06c9f-31d7-4809-9e95-2e647a23a735"
     },
     {
       "id": "2026-11-23-komedia-ania-magliano-peach-fuzz-mon-23-nov-2026-8-00-pm-doors-7-00-pm",
@@ -8298,7 +8388,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/dakhabrakha",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Folk & Country",
+      "genre_source": "musicbrainz:208334a1-abf0-4791-9705-b45838244b29"
     },
     {
       "id": "2026-11-25-the-forge-comedy-club-hatty-preston-unapproachable",
@@ -8428,7 +8520,9 @@
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/graham-coxon",
       "last_seen": "2026-10-06",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:fb56cc34-2ab1-4621-ac18-9bf2895e5f4f"
     },
     {
       "id": "2026-11-26-komedia-comic-boom-comedy-club-thu-26-nov-2026-7-30-pm-doors-6-30-pm",
@@ -8623,7 +8717,9 @@
       "last_seen": "2026-10-06",
       "also_ids": [
         "2026-11-27-concorde2-uncle-acid-the-deadbeats"
-      ]
+      ],
+      "genre": "Punk & Metal",
+      "genre_source": "musicbrainz:e5edd3b8-2a81-42c4-93a4-c19a10713295"
     },
     {
       "id": "2026-11-27-komedia-komedia-comedy-club-fri-27-nov-2026-8-00-pm-doors-7-00-pm",
@@ -8712,7 +8808,9 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.visitbrighton.com/whats-on/reggaeton-party-brighton-p2945491",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Latin & Afrobeats",
+      "genre_source": "title"
     },
     {
       "id": "2026-11-27-komedia-back-in-time-a-tribute-to-the-80-s-with-murdoch-s-crazy-eyes-fri-27-nov-2026-doors-7-00-pm",
@@ -8872,7 +8970,9 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Electronic",
+      "genre_source": "musicbrainz:5b32946a-4c08-4a75-b1b1-60700470671f"
     },
     {
       "id": "2026-11-28-19-00-disgusting-sisters",
@@ -9018,7 +9118,9 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.komedia.co.uk/shows/brighton-soul-club-2/?eid=21023",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Jazz, Soul & Funk",
+      "genre_source": "title"
     },
     {
       "id": "2026-11-29-komedia-deviants-market-sun-29-nov-2026-doors-10-30-am",
@@ -9279,7 +9381,9 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/the-hope-and-ruin",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:735f0aca-dd56-4247-8d11-1d7260c25436"
     },
     {
       "id": "2026-12-03-theatreroyalbrighton-six-the-musical",
@@ -9404,7 +9508,9 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Reggae & Ska",
+      "genre_source": "musicbrainz:dad904da-8bd7-46b2-b202-f9a9ecd6bbab"
     },
     {
       "id": "2026-12-04-greendoorstore-danalogue",
@@ -9440,7 +9546,9 @@
       "ticket_url": "https://www.ents24.com/brighton-events/patterns",
       "source_url": "https://www.ents24.com/brighton-events/patterns",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Pop",
+      "genre_source": "musicbrainz:492b0368-e6c6-4578-bf37-3b01a59cfd97"
     },
     {
       "id": "2026-12-04-quarters-live-events-quantic-dj-set",
@@ -9757,7 +9865,9 @@
       "category": "Music",
       "ticket_url": "https://link.dice.fm/N0cca79179e9",
       "promoter": "JOY. Concerts",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Pop",
+      "genre_source": "musicbrainz:4c98aa1b-34eb-4336-987f-5e50aa059c00"
     },
     {
       "id": "2026-12-08-patterns-ethan-regan",
@@ -9781,7 +9891,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/young-knives",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:b26b4b58-10b6-42e9-ba80-b1addd4b0adf"
     },
     {
       "id": "2026-12-09-komedia-do-all-the-christmas-things",
@@ -9877,7 +9989,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Electronic",
+      "genre_source": "musicbrainz:e89e325e-ae11-4c2a-86a8-3e9a967ffda3"
     },
     {
       "id": "2026-12-10-a-l-p-h-a-b-e-t-cq-wrestling",
@@ -10014,7 +10128,9 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Reggae & Ska",
+      "genre_source": "musicbrainz:7113aab7-628f-4050-ae49-dbecac110ca8"
     },
     {
       "id": "2026-12-11-brighton-centre-ub40-ft-ali-campbell",
@@ -10062,7 +10178,9 @@
       "category": "Music",
       "ticket_url": "https://www.axs.com/uk/events/1452595/goodnight-texas-tickets",
       "promoter": "JOY. Concerts",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Folk & Country",
+      "genre_source": "musicbrainz:5def8c5b-3a30-43b8-95ee-5c830d717694"
     },
     {
       "id": "2026-11-12-komedia-komedia-christmas-party-fri-11-dec-2026-doors-6-30-pm",
@@ -10778,7 +10896,9 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:bc883961-64d4-46b3-8b1c-64009854291c"
     },
     {
       "id": "2026-12-20-the-forge-comedy-club-the-noise-next-door-furnace-christmas-special",
@@ -11011,7 +11131,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/from-the-jam",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Pop",
+      "genre_source": "musicbrainz:b38041f2-24e7-4733-97cd-0bf51fa1439d"
     },
     {
       "id": "2026-12-23-komedia-do-all-the-christmas-things-wed-23-dec-2026-8-00-pm-doors-7-00-pm",
@@ -12024,7 +12146,9 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/reggae-orchestra",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Reggae & Ska",
+      "genre_source": "title"
     },
     {
       "id": "2027-02-13-komedia-komedia-comedy-club-sat-13-feb-2027-8-00-pm-doors-7-00-pm",
@@ -12277,7 +12401,9 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Punk & Metal",
+      "genre_source": "musicbrainz:7e01053e-e701-4e55-8a29-b8cfdcdee205"
     },
     {
       "id": "2027-02-26-komedia-komedia-comedy-club-fri-26-feb-2027-8-00-pm-doors-7-00-pm",
@@ -12837,7 +12963,9 @@
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/lebanon-hanover",
       "last_seen": "2026-10-06",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "genre": "Electronic",
+      "genre_source": "musicbrainz:7de3b7b4-8288-4baf-929b-98af9224c0cb"
     },
     {
       "id": "2027-03-20-komedia-komedia-comedy-club-sat-20-mar-2027-8-00-pm-doors-7-00-pm",
@@ -13158,7 +13286,9 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Pop",
+      "genre_source": "musicbrainz:ebee61b4-bbdd-4087-9bcb-d5aa099088ec"
     },
     {
       "id": "2027-04-09-komedia-komedia-comedy-club",
@@ -13230,7 +13360,9 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "genre": "Folk & Country",
+      "genre_source": "musicbrainz:7ba593b9-79d4-4860-92c8-ade2a1ef4551"
     },
     {
       "id": "2027-04-15-the-forge-comedy-club-carl-hutchinson-fine-whine",
