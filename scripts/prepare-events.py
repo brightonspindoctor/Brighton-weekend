@@ -5,7 +5,7 @@ import json
 import re
 from pathlib import Path
 
-from event_matching import display_title, same_show
+from event_matching import display_title, is_venue_name, same_show
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "events.json"
@@ -136,13 +136,20 @@ def base_key(event):
 # The kept record lists the ids it absorbed in "also_ids", so Interested/Going
 # choices saved against either id still show (index.html reads them).
 def preference(event):
-    # Venue's own listing first, then a timed one, then the fuller title.
-    return (event.get("source") == "discovery", not event.get("time"), -len(title_key(event.get("title"))))
+    # A real show name before a title that is only the venue's name, then the
+    # venue's own listing, then a timed one, then the fuller title.
+    return (is_venue_name(event.get("title"), event.get("venue")), event.get("source") == "discovery",
+            not event.get("time"), -len(title_key(event.get("title"))))
 
 def can_merge(kept_event, event):
+    t1, t2 = kept_event.get("time") or "", event.get("time") or ""
+    # Some venue pages give each show a second card titled only with the venue's
+    # name ("The Forge Comedy Club" beside "Tom Ward: ..."). At the same time
+    # (or with no time) it is that show.
+    if is_venue_name(event.get("title"), event.get("venue")) and (not t1 or not t2 or t1 == t2):
+        return True
     if not same_show(kept_event.get("title"), event.get("title"), kept_event.get("venue")):
         return False
-    t1, t2 = kept_event.get("time") or "", event.get("time") or ""
     if not t1 or not t2 or t1 == t2:
         return True
     return kept_event.get("source") != event.get("source") and "discovery" in (kept_event.get("source"), event.get("source"))

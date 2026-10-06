@@ -74,9 +74,18 @@ def core_title(title, venue=""):
         changed = False
         for p in patterns:
             shorter = re.sub(p, "", k).strip()
-            if shorter != k and len(shorter) >= 3:
+            # "The Forge Comedy Club" at The Forge Comedy Club is the venue's
+            # own name, not decoration: don't strip it down to "the".
+            if shorter != k and len(shorter) >= 3 and shorter not in ("the", "a", "an"):
                 k, changed = shorter, True
     return k
+
+
+def is_venue_name(title, venue):
+    """True when a title is only the venue's name ("The Forge Comedy Club")."""
+    k = _key(_plain(title))
+    names = set(_venue_names(venue))
+    return bool(k) and (k in names or (k.startswith("the ") and k[4:] in names))
 
 
 def same_show(a, b, venue=""):
@@ -135,6 +144,7 @@ def _self_test():
         ("Reggaeton Party", "Reggaeton Party (Brighton)", "DUST"),
         ("Kepler", "Keplter", "Concorde 2"),
         ("$layyyter", "Slayyyter", "CHALK"),
+        ("The Forge Comedy Club", "Forge Comedy Club", "The Forge Comedy Club"),
     ]
     cases_different = [
         ("Brighton v Crystal Palace", "Brighton v Everton", "Amex Stadium"),
@@ -148,6 +158,10 @@ def _self_test():
         assert same_show(a, b, v), f"should match: {a!r} / {b!r} ({core_title(a, v)!r} / {core_title(b, v)!r})"
     for a, b, v in cases_different:
         assert not same_show(a, b, v), f"should not match: {a!r} / {b!r}"
+    assert is_venue_name("The Forge Comedy Club", "The Forge Comedy Club")
+    assert is_venue_name("Forge Comedy Club", "The Forge Comedy Club")
+    assert not is_venue_name("Tom Ward: Post-millennium Tension", "The Forge Comedy Club")
+    assert not same_show("The Forge Comedy Club", "Tom Ward: Post-millennium Tension", "The Forge Comedy Club")
     assert display_title("Kepler at Concorde 2 - Brighton", "Concorde 2") == "Kepler"
     assert display_title("Hybrid Minds | Brighton", "Concorde 2") == "Hybrid Minds"
     assert display_title("Reggaeton Party (Brighton)", "DUST") == "Reggaeton Party"
