@@ -23,7 +23,7 @@ MONTHS=r'Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)
 DATE_RE=re.compile(rf'\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\.?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s*(?:\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?|\d{{1,2}}/\d{{1,2}}/(?:\d{{4}}|\d{{2}}))\b',re.I)
 TIME_RE=re.compile(r'\b(\d{1,2}(?::\d{2})?\s*(?:am|pm))\b',re.I)
 CATEGORIES={'Comedy':['comedy','comedian','stand-up','stand up','laughs'],'Club':['club','dj','dnb','drum & bass','rave','techno','house night','party'],'Theatre':['theatre','theater','play','musical','west end'],'Dance':['dance','ballet','contemporary dance'],'Family':['family','kids','children','storytelling','baby'],'Talk':['talk','in conversation','lecture','spoken word','author'],'Sport':['football','boxing','wrestling','sport','racecourse'],'Music':['gig','live','band','concert','tour','festival','dj set','orchestra','singer']}
-GENERIC_TITLES={'comedy','classical music','music','talks & debate','talks and debate','dance','theatre','family',"what's on",'events','upcoming events','get tickets','buy tickets','book tickets','learn more','more info','more info & tickets','find out more','event details','sold out','on sale','on sale today','tickets','read more','view event'}
+GENERIC_TITLES={'club','live','event','film','gig','gigs','sport','other','late','night','music & club','comedy','classical music','music','talks & debate','talks and debate','dance','theatre','family',"what's on",'events','upcoming events','get tickets','buy tickets','book tickets','learn more','more info','more info & tickets','find out more','event details','sold out','on sale','on sale today','tickets','read more','view event'}
 CTA_PREFIXES=('get tickets','get ticket','buy tickets','buy ticket','book tickets','book ticket','book now','learn more','more info','more details','find out more','event details','on sale','sold out','sign up','subscribe','join our','join the mailing','newsletter','mailing list')
 
 def clean(s): return re.sub(r'\s+',' ',s or '').strip()
@@ -214,6 +214,7 @@ def slug_title(url):
     # Brighton Dome prefixes its addresses with a short mixed-case id ('LiM-ben-folds').
     m=re.match(r'^([A-Za-z0-9]{2,5})-(.+)$',slug)
     if m and re.search(r'[A-Z]',m.group(1)) and re.search(r'[a-z]',m.group(1)):slug=m.group(2)
+    slug=re.sub(r'(?<=[a-z])-\d{1,2}$','',slug)  # 'cancer-bats-1': a site's suffix for a repeated name (not 'the-wanted-2-0')
     slug=re.sub(r'[-_]+',' ',slug).strip()
     if not slug:return ''
     return clean(slug.title())

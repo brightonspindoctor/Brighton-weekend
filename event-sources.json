@@ -56,6 +56,11 @@
     "url": "https://forgecomedyclub.com/"
   },
   {
+    "venue": "The Forge Comedy Club",
+    "url": "https://forgecomedyclub.co.uk/",
+    "note": "its event links point at this address; forgecomedyclub.com returned no events on 6 Oct 2026"
+  },
+  {
     "venue": "Theatre Royal Brighton",
     "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
   },
