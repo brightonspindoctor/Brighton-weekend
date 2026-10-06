@@ -32,6 +32,15 @@ Listings are refreshed every day at 07:17 (Europe/London) by
 - An event found again keeps its id, even if its time or the wording of its
   title changed, so people's Interested/Going choices stay attached. It takes
   the newest details and ticket link.
+- The same show from two sources is published once. `scripts/event_matching.py`
+  compares titles at the same venue on the same day after removing decoration
+  ticketing sites add ("Kepler **at Concorde 2 - Brighton**", "**| Brighton**",
+  "**+ supports**"), `&`/`and` differences and a single misspelt word. The
+  venue's own listing is kept; the other record's id goes in its `also_ids`, and
+  the app shows choices saved under either id. Two timed listings from the same
+  source at different times are separate sessions and both stay. Each run prints
+  the merges it made (`merged duplicate: ...`) in the "Prepare event data" step.
+  To teach it a venue's other names in titles, add them to `VENUE_TITLE_NAMES`.
 - An event is removed only after its venue has not listed it for **3 days in a
   row** while the venue's own page was loading properly (`last_seen`).
 - If a venue's page fails, or returns less than half its usual number of

@@ -13,6 +13,7 @@ from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
+from event_matching import same_show as same_show_at_venue
 
 ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'events.json'; TZ=ZoneInfo('Europe/London'); NOW=datetime.now(TZ); START=NOW.date(); END=(NOW+timedelta(days=280)).date()
 SOURCE_CONFIG=json.loads((ROOT/'event-sources.json').read_text())
@@ -68,12 +69,13 @@ def prefer_fuller_titles(events):
   kept.extend(chosen)
  return kept
 STALE_DAYS=3  # same rule as scrape-events.py
-def same_show(a,b):
+def same_show(a,b,venue=''):
+ # 'Kepler at Concorde 2 - Brighton' (Skiddle) is the venue's 'Kepler': see event_matching.py
  ka,kb=title_key(a),title_key(b)
  if not ka or not kb:return False
  if ka==kb or ka.startswith(kb+' ') or kb.startswith(ka+' '):return True
  from difflib import SequenceMatcher
- return SequenceMatcher(None,ka,kb).ratio()>=0.85
+ return SequenceMatcher(None,ka,kb).ratio()>=0.85 or same_show_at_venue(a,b,venue)
 ROLLOVER_DAYS=60  # same rule as scrape-events.py: "15 Jan" seen in October means next January
 def parse_date(s):
  try:
@@ -171,12 +173,12 @@ async def main():
  for e in all_events:
   key=key_of(e);old=merged.get(key)
   if old is None:
-   old=next((x for x in merged.values() if (x.get('venue','').lower(),x.get('date',''))==(e.get('venue','').lower(),e.get('date','')) and id(x) not in matched and same_show(x.get('title',''),e.get('title',''))),None)
+   old=next((x for x in merged.values() if (x.get('venue','').lower(),x.get('date',''))==(e.get('venue','').lower(),e.get('date','')) and id(x) not in matched and same_show(x.get('title',''),e.get('title',''),e.get('venue',''))),None)
   if old is None:merged[key]=dict(e,last_seen=today);matched.add(id(merged[key]));brand_new.add(id(merged[key]));continue
   matched.add(id(old));old['last_seen']=today
   if old.get('source')=='discovery':
    # Found again: keep the id, take today's link and details.
-   k=key_of(old);merged[k]=dict(e,id=old['id'],last_seen=today);matched.add(id(merged[k]))
+   k=key_of(old);merged[k]=dict(e,id=old['id'],last_seen=today,**({'also_ids':old['also_ids']} if old.get('also_ids') else {}));matched.add(id(merged[k]))
  for k,e in list(merged.items()):
   if healthy and e.get('source')=='discovery' and id(e) not in matched and str(e.get('last_seen',today))<=stale_before:
    del merged[k];removed_stale+=1

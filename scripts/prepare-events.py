@@ -5,6 +5,8 @@ import json
 import re
 from pathlib import Path
 
+from event_matching import display_title, same_show
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "events.json"
 
@@ -32,15 +34,6 @@ def title_key(title):
     return re.sub(r"[^a-z0-9]+", " ", str(title or "").lower()).strip()
 
 GENERIC_KEYS = {re.sub(r"[^a-z0-9]+", " ", t).strip() for t in GENERIC_TITLES}
-
-def fuller_title(a, b):
-    ka, kb = title_key(a), title_key(b)
-    if ka == kb:
-        return a if len(str(a)) >= len(str(b)) else b
-    # One title is the start or the end of the other ("Mr Cutts" / "Cutts").
-    if ka and kb and (ka.startswith(kb + " ") or kb.startswith(ka + " ") or ka.endswith(" " + kb) or kb.endswith(" " + ka)):
-        return a if len(ka) > len(kb) else b
-    return None
 
 # Reject venue placeholders such as “Mon 21 Sep 26” rather than publishing them as events.
 def is_date_only_title(title):
@@ -109,7 +102,8 @@ def fix_times(event):
 data = json.loads(DATA.read_text())
 cleaned_titles = 0
 for event in data.get("events", []):
-    new_title = clean_title(event.get("title"))
+    venue_name = VENUE_ALIASES.get(str(event.get("venue") or "").strip(), str(event.get("venue") or "").strip())
+    new_title = display_title(clean_title(event.get("title")), venue_name)
     if new_title != event.get("title"):
         event["title"] = new_title  # the id is kept so saved Interested/Going choices still match
         cleaned_titles += 1
@@ -135,41 +129,49 @@ for event in events:
 def base_key(event):
     return (str(event.get("venue") or "").lower(), str(event.get("date") or ""), title_key(event.get("title")))
 
-exact = {}
+# The same show listed by more than one source, or worded differently
+# ("Kepler" from the venue, "Kepler at Concorde 2 - Brighton" from Skiddle),
+# becomes one event. Two timed listings from the same source at different
+# times are separate sessions (matinee and evening) and both stay.
+# The kept record lists the ids it absorbed in "also_ids", so Interested/Going
+# choices saved against either id still show (index.html reads them).
+def preference(event):
+    # Venue's own listing first, then a timed one, then the fuller title.
+    return (event.get("source") == "discovery", not event.get("time"), -len(title_key(event.get("title"))))
+
+def can_merge(kept_event, event):
+    if not same_show(kept_event.get("title"), event.get("title"), kept_event.get("venue")):
+        return False
+    t1, t2 = kept_event.get("time") or "", event.get("time") or ""
+    if not t1 or not t2 or t1 == t2:
+        return True
+    return kept_event.get("source") != event.get("source") and "discovery" in (kept_event.get("source"), event.get("source"))
+
+def absorb(kept_event, event):
+    for field in ("time", "finish_time", "ticket_url"):
+        if not kept_event.get(field) and event.get(field):
+            kept_event[field] = event[field]
+    if kept_event.get("category") in (None, "", "Other") and event.get("category") not in (None, "", "Other"):
+        kept_event["category"] = event["category"]
+    ids = [i for i in [*kept_event.get("also_ids", []), event.get("id"), *event.get("also_ids", [])] if i and i != kept_event.get("id")]
+    kept_event["also_ids"] = sorted(set(ids))
+    kept_event["last_seen"] = max(str(kept_event.get("last_seen") or ""), str(event.get("last_seen") or "")) or kept_event.get("last_seen")
+
+merged_report = []
+by_day = {}
 for event in kept:
-    key = base_key(event) + (event.get("time") or "",)
-    if key in exact:
-        removed["duplicates"] += 1
-        continue
-    exact[key] = event
-
-# An untimed listing is a duplicate when the same show has a timed listing that
-# day, or when its title is only part of another listing's title that day
-# (a fragment such as "Cutts" read from "Mr Cutts").
-timed = {base_key(e) for e in exact.values() if e.get("time")}
-titles_by_day = {}
-for e in exact.values():
-    titles_by_day.setdefault(base_key(e)[:2], []).append(title_key(e.get("title")))
-deduped = []
-for event in exact.values():
-    key = title_key(event.get("title"))
-    fragment = any(other != key and fuller_title(other, key) == other for other in titles_by_day.get(base_key(event)[:2], []))
-    if not event.get("time") and (base_key(event) in timed or fragment):
-        removed["duplicates"] += 1
-        continue
-    deduped.append(event)
-
-groups = {}
-for event in deduped:
-    groups.setdefault((str(event.get("venue") or "").lower(), str(event.get("date") or ""), event.get("time") or ""), []).append(event)
+    by_day.setdefault(base_key(event)[:2], []).append(event)
 final = []
-for group in groups.values():
+for day_events in by_day.values():
     chosen = []
-    for event in sorted(group, key=lambda e: len(title_key(e.get("title"))), reverse=True):
-        if any(fuller_title(existing.get("title"), event.get("title")) for existing in chosen):
-            removed["duplicates"] += 1
+    for event in sorted(day_events, key=preference):
+        match = next((c for c in chosen if can_merge(c, event)), None)
+        if match is None:
+            chosen.append(event)
             continue
-        chosen.append(event)
+        absorb(match, event)
+        removed["duplicates"] += 1
+        merged_report.append(f"{match['date']} {match['venue']}: kept {match['title']!r}, merged {event['title']!r}")
     final.extend(chosen)
 
 final.sort(key=lambda e: (e.get("date", ""), e.get("time") or "99:99", e.get("venue", ""), e.get("title", "")))
@@ -185,4 +187,6 @@ for event in sorted(final, key=lambda e: str(e.get("last_seen") or "")):
 data["events"] = final
 data["venues"] = sorted({str(e["venue"]) for e in final if e.get("venue")})
 DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+for line in merged_report:
+    print("  merged duplicate: " + line)
 print("Prepared event data: " + ", ".join(f"{k}={v}" for k, v in removed.items()) + f"; cleaned_titles={cleaned_titles}; published={len(final)}")

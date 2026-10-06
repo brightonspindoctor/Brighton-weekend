@@ -1136,7 +1136,10 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.concorde2.co.uk/event/kepler",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-09-concorde-2-kepler-at-concorde-2-brighton"
+      ]
     },
     {
       "id": "2026-10-09-green-door-store-i-f-ing-h8-clubbing",
@@ -1172,18 +1175,6 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-09-concorde-2-kepler-at-concorde-2-brighton",
-      "title": "Kepler at Concorde 2 - Brighton",
-      "date": "2026-10-09",
-      "venue": "Concorde 2",
-      "source": "discovery",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Concorde-2/Kepler-at-Concorde-2---Brighton/42707940/",
       "last_seen": "2026-10-06"
     },
     {
@@ -1375,9 +1366,12 @@
       "source": "venue",
       "time": "20:00",
       "finish_time": "",
-      "category": "Other",
+      "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/wot-italian/?eid=19284",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-10-komedia-wot-italian-boothby-graffoe-antonio-forcione"
+      ]
     },
     {
       "id": "2026-10-10-the-forge-comedy-club-forge-comedy-club",
@@ -1462,18 +1456,6 @@
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
       "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-10-komedia-wot-italian-boothby-graffoe-antonio-forcione",
-      "title": "Wot Italian? Boothby Graffoe, Antonio Forcione",
-      "date": "2026-10-10",
-      "venue": "Komedia",
-      "category": "Comedy",
-      "time": "",
-      "ticket_url": "https://www.komedia.co.uk/",
-      "source_url": "https://www.komedia.co.uk/",
-      "finish_time": "",
-      "last_seen": "2026-10-05"
     },
     {
       "id": "2026-10-10-quarters-club-events-limited-free-tickets-fully-local",
@@ -2009,7 +1991,7 @@
     },
     {
       "id": "2026-10-14-komedia-budpod-live-brighton-wed-14-oct-2026-8-00-pm-doors-7-00-pm",
-      "title": "BudPod Live [Brighton]",
+      "title": "BudPod Live",
       "date": "2026-10-14",
       "venue": "Komedia",
       "source": "venue",
@@ -2328,7 +2310,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LEd-alfie-brown-the-entertainer/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-16-brighton-dome-alfie-brown-the-entertainer"
+      ]
     },
     {
       "id": "2026-10-16-brighton-dome-celya-ab-we-must-stop-meeting-like-this-2",
@@ -2531,18 +2516,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/Ljb-jazz-emu-the-pleasure-is-all-yours/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-16-brighton-dome-alfie-brown-the-entertainer",
-      "title": "Alfie Brown: The Entertainer Brighton Dome Comedy Festival in cahoots with Komedia 2026 Fri 16 Oct Find out more",
-      "date": "2026-10-16",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://brightondome.org/whats-on/LEd-alfie-brown-the-entertainer/",
       "last_seen": "2026-10-06"
     },
     {
@@ -3505,7 +3478,10 @@
       "finish_time": "21:30",
       "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/shows",
-      "last_seen": "2026-10-05"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-22-theoldmarket-kristin-hersh"
+      ]
     },
     {
       "id": "2026-10-22-brighton-dome-amy-matthews-definitions-of-toast-2",
@@ -3599,18 +3575,6 @@
       "ticket_url": "https://thegreendoorstore.co.uk/events/",
       "source_url": "https://thegreendoorstore.co.uk/events/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-22-theoldmarket-kristin-hersh",
-      "title": "Kristin Hersh",
-      "date": "2026-10-22",
-      "venue": "The Old Market",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://www.theoldmarket.com/shows/kristin-hersh",
       "last_seen": "2026-10-06"
     },
     {
@@ -4371,7 +4335,10 @@
       "finish_time": "00:00",
       "category": "Other",
       "ticket_url": "https://www.songkick.com/concerts/43436503-vascha-at-pipeline?utm_medium=organic&utm_source=microformat",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-26-the-pipeline-vascha-vassi-ina-bipolia-anman-whytry"
+      ]
     },
     {
       "id": "2026-10-26-chalk-conway-the-machine",
@@ -4408,18 +4375,6 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/the-hope-and-ruin",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-26-the-pipeline-vascha-vassi-ina-bipolia-anman-whytry",
-      "title": "Vascha/ Vassiłina / Bipolia / Anman / Whytry",
-      "date": "2026-10-26",
-      "venue": "The Pipeline",
-      "source": "discovery",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/vascha-vassilina-bipolia-anman-whytry-p2963091",
       "last_seen": "2026-10-06"
     },
     {
@@ -4639,7 +4594,7 @@
     },
     {
       "id": "2026-10-28-the-pipeline-lafs-supports-the-pipleline-brighton",
-      "title": "Lafs + Supports @ the Pipleline, Brighton",
+      "title": "Lafs + Supports",
       "date": "2026-10-28",
       "venue": "The Pipeline",
       "source": "discovery",
@@ -4778,19 +4733,10 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-29-theatre-royal-brighton-horrible-histories-brighton",
-      "title": "Horrible Histories Brighton",
-      "date": "2026-10-29",
-      "venue": "Theatre Royal Brighton",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Family",
-      "ticket_url": "https://www.atgtickets.com/shows/horrible-histories-brighton/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-29-theatre-royal-brighton-horrible-histories-brighton"
+      ]
     },
     {
       "id": "2026-10-30-concorde2-halloween-with-simon-pegg",
@@ -5106,27 +5052,18 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-31-concorde2-drum-bass-classics-brighton-halloween-all-dayer",
-      "title": "Drum & Bass Classics Brighton - Halloween All Dayer",
-      "date": "2026-10-31",
-      "venue": "Concorde 2",
-      "category": "Club",
-      "time": "",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "source_url": "https://www.concorde2.co.uk/whats-on",
-      "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-31-concorde-2-drum-and-bass-classics-brighton-halloween-all-dayer",
       "title": "Drum and Bass Classics Brighton | Halloween All Dayer",
       "date": "2026-10-31",
       "venue": "Concorde 2",
       "time": "",
       "finish_time": "",
-      "category": "Other",
+      "category": "Club",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-Concorde-2/Drum-and-Bass-Classics-Brighton--Halloween-All-Dayer/42417352/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-31-concorde2-drum-bass-classics-brighton-halloween-all-dayer"
+      ]
     },
     {
       "id": "2026-10-31-concorde-2-moody-disco-halloween-rave-w-obsk-r",
@@ -5215,7 +5152,7 @@
     },
     {
       "id": "2026-10-31-the-prince-albert-moonpunx-19-albertween-halloween-at-the-prince-albert",
-      "title": "Moonpunx #19 Albertween! Halloween at the Prince Albert",
+      "title": "Moonpunx #19 Albertween! Halloween",
       "date": "2026-10-31",
       "venue": "The Prince Albert",
       "time": "",
@@ -7460,19 +7397,10 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.theoldmarket.com/shows/sht-faced-shakespeare-romeo-and-juliet",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-20-theoldmarket-sh-t-faced-shakespeare-romeo-juliet",
-      "title": "Sh*t-Faced Shakespeare - Romeo & Juliet",
-      "date": "2026-11-20",
-      "venue": "The Old Market",
-      "category": "Theatre",
-      "time": "",
-      "ticket_url": "https://www.theoldmarket.com/shows",
-      "source_url": "https://www.theoldmarket.com/shows",
-      "finish_time": "",
-      "last_seen": "2026-10-05"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-20-theoldmarket-sh-t-faced-shakespeare-romeo-juliet"
+      ]
     },
     {
       "id": "2026-11-20-the-prince-albert-the-spitfires",
@@ -7671,7 +7599,7 @@
     },
     {
       "id": "2026-11-21-the-prince-albert-the-jack-cades-live-at-the-prince-albert",
-      "title": "The Jack Cades Live at the Prince Albert",
+      "title": "The Jack Cades",
       "date": "2026-11-21",
       "venue": "The Prince Albert",
       "time": "",
@@ -8148,7 +8076,10 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/uncle-acid-and-the-deadbeats",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-27-concorde2-uncle-acid-the-deadbeats"
+      ]
     },
     {
       "id": "2026-11-27-komedia-komedia-comedy-club-fri-27-nov-2026-8-00-pm-doors-7-00-pm",
@@ -8224,20 +8155,8 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-27-concorde2-uncle-acid-the-deadbeats",
-      "title": "Uncle Acid & The Deadbeats",
-      "date": "2026-11-27",
-      "venue": "Concorde 2",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://www.concorde2.co.uk/whats-on",
-      "source_url": "https://www.concorde2.co.uk/whats-on",
-      "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-27-dust-reggaeton-party-brighton",
-      "title": "Reggaeton Party (Brighton)",
+      "title": "Reggaeton Party",
       "date": "2026-11-27",
       "venue": "DUST",
       "time": "",
@@ -9613,7 +9532,10 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.concorde2.co.uk/event/hybrid-minds",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-12-12-concorde-2-hybrid-minds-brighton-2"
+      ]
     },
     {
       "id": "2026-12-12-a-l-p-h-a-b-e-t-the-roebucks",
@@ -9661,18 +9583,6 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-12-concorde-2-hybrid-minds-brighton-2",
-      "title": "Hybrid Minds | Brighton",
-      "date": "2026-12-12",
-      "venue": "Concorde 2",
-      "source": "discovery",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Concorde-2/Hybrid-Minds--Brighton/42829358/",
       "last_seen": "2026-10-06"
     },
     {

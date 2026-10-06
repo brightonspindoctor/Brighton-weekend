@@ -725,6 +725,23 @@ async function loadCustomEvents(){
   customEvents=Array.isArray(rows)?rows:[];
  }catch(e){console.warn('Custom events unavailable',e);customEvents=[]}
 }
+// When the refresh merges two listings of one show, the kept event lists the
+// other ids in also_ids. Choices saved against those ids belong to the kept
+// event (see scripts/prepare-events.py).
+let eventIdAlias={};
+function rebuildEventIdAliases(){eventIdAlias={};for(const e of events)for(const a of (Array.isArray(e.also_ids)?e.also_ids:[]))if(a&&a!==e.id)eventIdAlias[a]=e.id}
+function canonicalRows(rows){
+ if(!Array.isArray(rows))return rows;
+ const out=[],at=new Map();
+ for(const r of rows){
+  const canon=r&&eventIdAlias[r.event_id];
+  const row=canon?{...r,event_id:canon,saved_event_id:r.event_id}:r;
+  const k=[row.group_id||'',row.user_id||'',row.event_id].join('|');
+  if(!at.has(k)){at.set(k,out.length);out.push(row);continue}
+  if(out[at.get(k)].saved_event_id&&!row.saved_event_id)out[at.get(k)]=row; // a choice saved on the kept id wins
+ }
+ return out;
+}
 function mergeEvents(base){
  const seen=new Set(), merged=[];
  [...base,...customEvents.map(e=>({...e,source:'community',is_custom:true}))].forEach(e=>{
@@ -775,7 +792,7 @@ function toggleOtherVenue(){
 }
 async function loadAttendance(){
  if(!uid()){attendance=[];return}
- try{attendance=await api('GET','event_interest?select=event_id,user_name,status,user_id&user_id=eq.'+encodeURIComponent(uid()))}catch(e){console.warn('Social layer unavailable',e)}
+ try{attendance=canonicalRows(await api('GET','event_interest?select=event_id,user_name,status,user_id&user_id=eq.'+encodeURIComponent(uid())))}catch(e){console.warn('Social layer unavailable',e)}
 }
 async function loadGroups(){
  if(!name()) return;
@@ -817,7 +834,7 @@ async function loadGroupHappenings(){
  if(!groups.length){groupHappenings=[];return}
  try{
   groupHappenings=await rpc('bw_shared_happenings',{p_user_id:uid()});
-  groupHappenings=Array.isArray(groupHappenings)?groupHappenings:[];
+  groupHappenings=Array.isArray(groupHappenings)?canonicalRows(groupHappenings):[];
  }catch(e){console.warn('Group happenings unavailable',e);groupHappenings=[]}
  if(groupHappenings.length && localStorage.getItem('bw_happenings_mark_pending_'+uid())==='1'){
   localStorage.setItem('bw_happenings_seen_'+uid(),happeningsSignature(groupHappenings));
@@ -942,6 +959,9 @@ async function act(id,status){
    p_status:targetStatus
   });
   if(!Array.isArray(result)) throw new Error('Unexpected response from Supabase.');
+  // Move any choice saved under a merged duplicate's id onto this event's id.
+  const aliases=(events.find(e=>e.id===id)?.also_ids)||[];
+  for(const a of aliases)await rpc('bw_set_event_interest',{p_user_id:uid(),p_user_name:name(),p_event_id:a,p_status:null});
   await loadAttendance();
   const saved=attendance.find(x=>x.event_id===id&&x.user_id===uid());
   if(targetStatus===null){
@@ -1165,6 +1185,7 @@ async function refresh(){
    cleaned.push(e);
   }
   events=mergeEvents(cleaned);
+  rebuildEventIdAliases();attendance=canonicalRows(attendance);groupHappenings=canonicalRows(groupHappenings);
   $('subtitle').textContent='Make the most of yours';
   debugData();
   renderAll();
