@@ -322,6 +322,18 @@
       "location_display": "Blandford"
     },
     {
+      "id": "festival:brighton-festival:2027-05-01",
+      "title": "Brighton Festival",
+      "date": "2027-05-01",
+      "date_end": "2027-05-23",
+      "location": "Brighton & Hove",
+      "location_display": "Brighton & Hove",
+      "category": "Arts & Culture",
+      "ticket_url": "https://brightonfestival.org/",
+      "detail_url": "https://brightonfestival.org/",
+      "source": "https://brightonfestival.org/"
+    },
+    {
       "title": "Girvan Traditional Folk Festival",
       "date": "2027-05-01",
       "date_end": "2027-05-01",
@@ -380,6 +392,18 @@
       "detail_url": "https://fezzy.uk/festival/skye-live/",
       "id": "festival:skye-live:2027-05-06",
       "location_display": "Portree"
+    },
+    {
+      "id": "festival:brighton-fringe:2027-05-07",
+      "title": "Brighton Fringe",
+      "date": "2027-05-07",
+      "date_end": "2027-06-06",
+      "location": "Brighton & Hove",
+      "location_display": "Brighton & Hove",
+      "category": "Arts & Culture",
+      "ticket_url": "https://www.brightonfringe.org/",
+      "detail_url": "https://www.brightonfringe.org/",
+      "source": "https://www.brightonfringe.org/"
     },
     {
       "title": "Herofest",
@@ -742,6 +766,18 @@
       "location_display": "London"
     },
     {
+      "id": "festival:land-beyond-festival:2027-05-30",
+      "title": "Land Beyond Festival",
+      "date": "2027-05-30",
+      "date_end": "2027-05-30",
+      "location": "East Brighton Park",
+      "location_display": "East Brighton Park, Brighton",
+      "category": "Music",
+      "ticket_url": "https://www.landbeyondfestival.co.uk/",
+      "detail_url": "https://www.landbeyondfestival.co.uk/",
+      "source": "https://www.landbeyondfestival.co.uk/"
+    },
+    {
       "title": "Slam Dunk Festival South",
       "date": "2027-05-30",
       "date_end": "2027-05-30",
@@ -824,6 +860,18 @@
       "detail_url": "https://fezzy.uk/festival/an-experience-festival/",
       "id": "festival:an-experience-festival:2027-06-05",
       "location_display": "Abbots Ripton · Electronic"
+    },
+    {
+      "id": "festival:glorious-day-festival:2027-06-05",
+      "title": "Glorious Day Festival",
+      "date": "2027-06-05",
+      "date_end": "2027-06-05",
+      "location": "Hove Lawns",
+      "location_display": "Hove Lawns, Brighton & Hove",
+      "category": "Music",
+      "ticket_url": "https://gloriousdayfestival.co.uk/",
+      "detail_url": "https://gloriousdayfestival.co.uk/",
+      "source": "https://gloriousdayfestival.co.uk/"
     },
     {
       "title": "Live on the Wye",
@@ -2398,6 +2446,18 @@
       "location_display": "South East"
     },
     {
+      "id": "festival:at-the-edge-of-the-sea-xvii:2027-08-06",
+      "title": "At The Edge Of The Sea XVII",
+      "date": "2027-08-06",
+      "date_end": "2027-08-07",
+      "location": "Concorde 2",
+      "location_display": "Concorde 2, Brighton",
+      "category": "Music",
+      "ticket_url": "https://www.scopitones.co.uk/ateots",
+      "detail_url": "https://www.scopitones.co.uk/ateots",
+      "source": "https://www.scopitones.co.uk/ateots"
+    },
+    {
       "title": "Broadstairs Folk Week",
       "date": "2027-08-06",
       "date_end": "2027-08-13",
@@ -2878,6 +2938,18 @@
       "location_display": "Merthyr Mawr"
     },
     {
+      "id": "festival:brighton-mod-weekender:2027-08-27",
+      "title": "Brighton Mod Weekender",
+      "date": "2027-08-27",
+      "date_end": "2027-08-30",
+      "location": "Various venues, Brighton",
+      "location_display": "Various venues, Brighton",
+      "category": "Music",
+      "ticket_url": "https://www.efestivals.co.uk/festivals/brightonmod/2027",
+      "detail_url": "https://www.efestivals.co.uk/festivals/brightonmod/2027",
+      "source": "https://www.efestivals.co.uk/festivals/brightonmod/2027"
+    },
+    {
       "title": "Camp Wildfire",
       "date": "2027-08-27",
       "date_end": "2027-08-31",
@@ -3152,6 +3224,18 @@
       "detail_url": "https://fezzy.uk/festival/off-the-tracks/",
       "id": "festival:off-the-tracks:2027-09-03",
       "location_display": "Castle Donington"
+    },
+    {
+      "id": "festival:brighton-psych-fest:2027-09-04",
+      "title": "Brighton Psych Fest",
+      "date": "2027-09-04",
+      "date_end": "2027-09-04",
+      "location": "Brighton",
+      "location_display": "Brighton",
+      "category": "Music",
+      "ticket_url": "https://brightonpsychfest.com/",
+      "detail_url": "https://brightonpsychfest.com/",
+      "source": "https://brightonpsychfest.com/"
     },
     {
       "title": "Bunkfest",

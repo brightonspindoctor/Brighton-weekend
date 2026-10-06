@@ -19,6 +19,7 @@ from playwright.async_api import async_playwright, TimeoutError as PlaywrightTim
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"festivals.json"
+CURATED=ROOT/"brighton-festivals.json"
 TZ=ZoneInfo("Europe/London")
 TODAY=datetime.now(TZ).date()
 END=date(TODAY.year+1,12,31)
@@ -333,6 +334,25 @@ async def validate_candidate(browser,e):
     finally:
         await page.close()
 
+def add_curated(festivals):
+    """Hand-confirmed Brighton festivals (brighton-festivals.json) are always
+    published until they end, replacing any scraped copy of the same festival.
+    Before this, festivals added by hand to festivals.json were wiped out by the
+    next daily refresh."""
+    try: curated=json.loads(CURATED.read_text()).get("festivals",[])
+    except Exception as exc:
+        print("Curated festivals unavailable:",exc); return festivals
+    keep=[]
+    for c in curated:
+        try: d=date.fromisoformat(c["date"]); de=date.fromisoformat(c.get("date_end") or c["date"])
+        except Exception: continue
+        if de<TODAY or d>END: continue
+        keep.append(dict(c,date_end=de.isoformat(),source=c.get("source") or c.get("detail_url") or c.get("ticket_url")))
+    names={norm(c["title"]) for c in keep}; ids={c["id"] for c in keep}
+    out=[f for f in festivals if norm(f["title"]) not in names and f["id"] not in ids]
+    print(f"Curated Brighton festivals: {len(keep)} published, {len(festivals)-len(out)} scraped copies replaced")
+    return sorted(out+keep,key=lambda x:(x["date"],x["title"]))
+
 def merge(items):
     chosen=[]
     items=[e for e in items if not is_layout_text(e.get("title",""))]
@@ -437,7 +457,7 @@ async def main():
             checked_items=await asyncio.gather(*(checked(e) for e in items))
             validated=[e for e in checked_items if e]
             print(f"Validated {len(validated)} of {len(items)} scraped candidates.")
-            festivals=merge(validated)
+            festivals=add_curated(merge(validated))
             existing=0
             try: existing=len(json.loads(OUT.read_text()).get("festivals",[]))
             except Exception: pass

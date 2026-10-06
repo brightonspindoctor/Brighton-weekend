@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/scrape-festivals.py'
+      - 'brighton-festivals.json'
       - 'scripts/validate-festivals.py'
       - 'requirements-events.txt'
       - '.github/workflows/festivals.yml'

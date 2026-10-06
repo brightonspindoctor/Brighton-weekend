@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Normalise and apply publication rules to the combined event dataset."""
+import html
 import json
 import re
 from pathlib import Path
@@ -36,7 +37,8 @@ def fuller_title(a, b):
     ka, kb = title_key(a), title_key(b)
     if ka == kb:
         return a if len(str(a)) >= len(str(b)) else b
-    if ka and kb and (ka.startswith(kb + " ") or kb.startswith(ka + " ")):
+    # One title is the start or the end of the other ("Mr Cutts" / "Cutts").
+    if ka and kb and (ka.startswith(kb + " ") or kb.startswith(ka + " ") or ka.endswith(" " + kb) or kb.endswith(" " + ka)):
         return a if len(ka) > len(kb) else b
     return None
 
@@ -51,13 +53,29 @@ VENUE_ALIASES = {"Brighton Dome - Concert Hall": "Brighton Dome"}
 
 # Venue sites sometimes append the listing date/time/doors to the title, e.g.
 # "Story Magic Fri 25 Sep 2026 10:00 AM ( Doors: 9:50 AM )". Strip that tail.
+_MON = r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?"
 TRAILING_DATE = re.compile(
-    r"\s*(?:(?:mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?\s+)?\d{1,2}(?:st|nd|rd|th)?\s+"
-    r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+\d{4}\b.*$", re.I)
+    r"\s*(?:(?:mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?,?\s+)?"
+    rf"(?:\d{{1,2}}(?:st|nd|rd|th)?\s+{_MON}|{_MON}\s+\d{{1,2}}(?:st|nd|rd|th)?,?)\s+\d{{4}}\b.*$", re.I)
+# Same rule as scrape-events.py: door/start times and page section labels are not event names.
+NOT_A_TITLE = re.compile(r"""(?:
+   doors?(?:\s*open)?\s*[:\-]?\s*\d.*                 # Doors: 7:00 PM
+  |starts?(?:\s*at)?\s*[:\-]?\s*\d.*                  # Starts 8pm
+  |(?:start\s*)?times?\s*[:\-]\s*\d.*                 # Time: 8pm
+  |on\s+sale(?:\s+now)?|on\s+sale\s+\d.*
+  |tickets?\s+from\s+\W?\d.*|from\s+\W?\d[\d.,]*      # Tickets from £10
+  |ages?\s*\d+\+?.*|\d{1,2}\+                         # Age 18+, 18+
+  |\d{1,2}(?::\d{2})?\s*(?:am|pm)(?:\s*[-–]\s*\d{1,2}(?::\d{2})?\s*(?:am|pm))?   # 8pm, 8pm-11pm
+  |limited\s+(?:free\s+)?tickets?\b.*|early\s*bird(?:\s+tickets?)?|bu[yt]\s+tickets?\b.*
+  |pub\s+events|top\s+picks|next\s+up(?:\s+in\s+the\s+venue)?|this\s+week|coming\s+(?:up|soon)|upcoming
+  |featured|free\s+tickets?|all\s+events|whats?\s+on|more\s+events|you\s+might\s+also\s+like|edition
+)""", re.I | re.X)
+
 
 def clean_title(title):
-    cleaned = TRAILING_DATE.sub("", str(title or "")).strip(" -–|·")
-    return cleaned if len(cleaned) >= 3 else str(title or "").strip()
+    raw = html.unescape(str(title or ""))
+    cleaned = TRAILING_DATE.sub("", raw).strip(" -–|·")
+    return cleaned if len(cleaned) >= 3 else raw.strip()
 
 def normalise_time(value):
     """Return HH:MM for values like '19:30', '7:30pm', '11pm'; '' if unreadable."""
@@ -102,7 +120,7 @@ for event in events:
     low = title.lower()
     if venue == "patterns" and any(marker in low for marker in PATTERNS_RECURRING):
         removed["patterns_recurring"] += 1; continue
-    if low in GENERIC_TITLES or title_key(title) in GENERIC_KEYS or not re.search(r"[^\W\d_]{2}", low) or is_date_only_title(title) or not title:
+    if low in GENERIC_TITLES or title_key(title) in GENERIC_KEYS or NOT_A_TITLE.fullmatch(low) or not re.search(r"[^\W\d_]{2}", low) or is_date_only_title(title) or not title:
         removed["generic"] += 1; continue
     kept.append(event)
 
@@ -119,11 +137,18 @@ for event in kept:
         continue
     exact[key] = event
 
-# An untimed listing is a duplicate when the same show has a timed listing that day.
+# An untimed listing is a duplicate when the same show has a timed listing that
+# day, or when its title is only part of another listing's title that day
+# (a fragment such as "Cutts" read from "Mr Cutts").
 timed = {base_key(e) for e in exact.values() if e.get("time")}
+titles_by_day = {}
+for e in exact.values():
+    titles_by_day.setdefault(base_key(e)[:2], []).append(title_key(e.get("title")))
 deduped = []
 for event in exact.values():
-    if not event.get("time") and base_key(event) in timed:
+    key = title_key(event.get("title"))
+    fragment = any(other != key and fuller_title(other, key) == other for other in titles_by_day.get(base_key(event)[:2], []))
+    if not event.get("time") and (base_key(event) in timed or fragment):
         removed["duplicates"] += 1
         continue
     deduped.append(event)

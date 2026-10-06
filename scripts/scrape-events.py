@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Refresh Brighton Weekend events from configured venue sites."""
-import asyncio, json, re, sys
+import asyncio, html, json, re, sys
 from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -27,20 +27,35 @@ GENERIC_TITLES={'comedy','classical music','music','talks & debate','talks and d
 CTA_PREFIXES=('get tickets','get ticket','buy tickets','buy ticket','book tickets','book ticket','book now','learn more','more info','more details','find out more','event details','on sale','sold out','sign up','subscribe','join our','join the mailing','newsletter','mailing list')
 
 def clean(s): return re.sub(r'\s+',' ',s or '').strip()
+# Text that sits in an event card but is not its name: door/start times and
+# page section labels.
+NOT_A_TITLE = re.compile(r"""(?:
+   doors?(?:\s*open)?\s*[:\-]?\s*\d.*                 # Doors: 7:00 PM
+  |starts?(?:\s*at)?\s*[:\-]?\s*\d.*                  # Starts 8pm
+  |(?:start\s*)?times?\s*[:\-]\s*\d.*                 # Time: 8pm
+  |on\s+sale(?:\s+now)?|on\s+sale\s+\d.*
+  |tickets?\s+from\s+\W?\d.*|from\s+\W?\d[\d.,]*      # Tickets from £10
+  |ages?\s*\d+\+?.*|\d{1,2}\+                         # Age 18+, 18+
+  |\d{1,2}(?::\d{2})?\s*(?:am|pm)(?:\s*[-–]\s*\d{1,2}(?::\d{2})?\s*(?:am|pm))?   # 8pm, 8pm-11pm
+  |limited\s+(?:free\s+)?tickets?\b.*|early\s*bird(?:\s+tickets?)?|bu[yt]\s+tickets?\b.*
+  |pub\s+events|top\s+picks|next\s+up(?:\s+in\s+the\s+venue)?|this\s+week|coming\s+(?:up|soon)|upcoming
+  |featured|free\s+tickets?|all\s+events|whats?\s+on|more\s+events|you\s+might\s+also\s+like|edition
+)""", re.I | re.X)
 def valid_title(title):
     t=clean(title); low=t.lower()
-    if not t or low in GENERIC_TITLES:return False
+    if not t or low in GENERIC_TITLES or NOT_A_TITLE.fullmatch(low):return False
     if any(low.startswith(p) for p in CTA_PREFIXES):return False
     if len(t)<3 or len(t)>180:return False
     if not re.search(r'[^\W\d_]{2}',low):return False  # a year or number on its own, e.g. "2026"
     return True
 
 def title_key(title): return re.sub(r'[^a-z0-9]+',' ',clean(title).lower()).strip()
-TRAILING_DATE=re.compile(rf'\s*(?:(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?\s+)?\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\.?\s+\d{{4}}\b.*$',re.I)
+# A listing date appended to a title: '... Fri 25 Sep 2026 8:00 PM' or '... October 9, 2026'.
+TRAILING_DATE=re.compile(rf'\s*(?:(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?,?\s+)?(?:\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\.?|(?:{MONTHS})\.?\s+\d{{1,2}}(?:st|nd|rd|th)?,?)\s+\d{{4}}\b.*$',re.I)
 def strip_listing_date(title):
     """Drop a trailing "Fri 25 Sep 2026 8:00 PM ( Doors: 7:00 PM )" from a title."""
-    cleaned=TRAILING_DATE.sub('',clean(title)).strip(' -–|·')
-    return cleaned if len(cleaned)>=3 else clean(title)
+    cleaned=TRAILING_DATE.sub('',clean(html.unescape(str(title or '')))).strip(' -–|·')
+    return cleaned if len(cleaned)>=3 else clean(html.unescape(str(title or '')))
 VENUE_ALIASES={'Brighton Dome - Concert Hall':'Brighton Dome'}  # same as prepare-events.py and index.html
 def canonical_venue(v): return VENUE_ALIASES.get(v,v)
 def event_key(e): return (canonical_venue(e.get('venue','')).lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
@@ -122,12 +137,31 @@ def best_link(node,page_url,title):
         if re.search(r'\b(tickets?|book(?:ing)?|buy)\b',text):score+=3
         if title and title_key(text) and (title_key(text)==title_key(title) or title_key(title) in title_key(text)):score+=2
         scored[u]=max(score,scored.get(u,0))
-    if not scored:return None
+    if not scored:
+        wrap=node.find_parent('a',href=True)
+        if wrap is not None:
+            u=urljoin(page_url,wrap['href'].strip()).split('#')[0]
+            if urlparse(u).scheme in ('http','https') and not is_listing_or_home(u,page_url) and not any(h in urlparse(u).netloc.lower() for h in SKIP_HOSTS):return u
+        return None
     best=max(scored,key=scored.get)
     # A block holding many different event links is a whole listing, not one
     # event's card: only trust a link there if it is clearly this event's.
     if len(scored)>4 and scored[best]<3:return None
     return best
+
+def detail_links(node,page_url,include_self=False):
+    """(url, text, is_ticket_site) for links in a block that could be an event's
+    own page or tickets: not listings/home pages, social media or '/about'."""
+    out=[];links=([node] if include_self else [])+node.find_all('a',href=True)
+    for a in links:
+        raw=(a.get('href') or '').strip()
+        if not raw or raw.startswith(('#','mailto:','tel:','javascript:')):continue
+        u=urljoin(page_url,raw).split('#')[0];p=urlparse(u);host=p.netloc.lower()
+        if p.scheme not in ('http','https') or any(h in host for h in SKIP_HOSTS) or is_listing_or_home(u,page_url):continue
+        ticket_site=any(h in host for h in TICKET_HOSTS)
+        if not ticket_site and len([x for x in p.path.split('/') if x])<2:continue  # '/about', '/contact'
+        out.append((u,clean(a.get_text(' ',strip=True)),ticket_site))
+    return out
 
 TITLE_CLASS=re.compile(r'(^|[-_ ])(title|name|headline|heading|artist)([-_ ]|$)',re.I)
 def card_title(node,page_url):
@@ -137,22 +171,18 @@ def card_title(node,page_url):
     and finally the event page's address ('/event/the-wanted-2-0'). Blocks that
     link to several different events are skipped: each event's own card is read
     separately, and a whole list must not become one event."""
-    cands=[]
-    for a in node.find_all('a',href=True):
-        raw=a['href'].strip()
-        if not raw or raw.startswith(('#','mailto:','tel:','javascript:')):continue
-        u=urljoin(page_url,raw).split('#')[0];p=urlparse(u);host=p.netloc.lower()
-        if p.scheme not in ('http','https') or any(h in host for h in SKIP_HOSTS) or is_listing_or_home(u,page_url):continue
-        ticket_site=any(h in host for h in TICKET_HOSTS)
-        if not ticket_site and len([x for x in p.path.split('/') if x])<2:continue  # '/about', '/contact'
-        cands.append((u,clean(a.get_text(' ',strip=True)),ticket_site))
+    cands=detail_links(node,page_url)
+    if not cands:
+        wrap=node.find_parent('a',href=True)  # the whole card is one link
+        if wrap is not None:cands=detail_links(wrap,page_url,include_self=True)
     if len({u for u,_,_ in cands})>3:return '',page_url
     link=next((u for u,_,_ in cands),None)
-    el=node.find(class_=TITLE_CLASS) or node.find(['h5','h6']) or node.find(['strong','b'])
-    t=clean(el.get_text(' ',strip=True)) if el else ''
-    if valid_title(t) and not DATE_RE.fullmatch(t):return t,(link or page_url)
+    el=node.find(class_=TITLE_CLASS) or node.find(['h5','h6'])
+    t=strip_listing_date(el.get_text(' ',strip=True)) if el else ''
+    if valid_title(t) and not DATE_RE.search(t) and not TIME_RE.search(t):return t,(link or page_url)
     for u,text,_ in cands:
-        if valid_title(text):return text,u
+        text=strip_listing_date(text)
+        if valid_title(text) and not TIME_RE.fullmatch(text):return text,u
     for u,_,ticket_site in cands:
         t=slug_title(u)
         if not ticket_site and valid_title(t):return t,u
@@ -203,7 +233,9 @@ def parse_dt(value):
     except Exception:return None
 
 def normalise(raw,venue,page_url):
-    title=strip_listing_date(raw.get('name') or raw.get('title')); start_raw=raw.get('startDate') or raw.get('start_date') or raw.get('date'); start=parse_dt(start_raw)
+    title=strip_listing_date(raw.get('name') or raw.get('title'))
+    core=re.sub(r'^the\s+','',venue,flags=re.I)
+    title=re.sub(rf'\s+@\s+(?:the\s+)?{re.escape(core)}\b.*$','',title,flags=re.I).strip(); start_raw=raw.get('startDate') or raw.get('start_date') or raw.get('date'); start=parse_dt(start_raw)
     if not valid_title(title) or not start or not (RANGE_START<=start.date()<=RANGE_END):return None
     blob=clean(' '.join(str(raw.get(k,'')) for k in ('name','description','status'))).lower()
     if any(x in blob for x in ('cancelled','canceled','postponed','event cancelled')):return None
@@ -212,6 +244,7 @@ def normalise(raw,venue,page_url):
     # and the listings page only as a last resort.
     candidates=[offer_url(raw),raw.get('url')]
     url=next((urljoin(page_url,c) for c in candidates if c and not is_listing_or_home(urljoin(page_url,c),page_url)),None) or urljoin(page_url,raw.get('url') or page_url)
+    if re.match(r'http://(?:www\.)?(?:songkick|skiddle|seetickets|eventbrite|ticketmaster|dice)\.',url):url='https://'+url[len('http://'):]
     ident=re.sub(r'[^a-z0-9]+','-',f'{start.date()}-{venue}-{title}'.lower()).strip('-')[:180]
     return {'id':ident,'title':title,'date':start.date().isoformat(),'venue':venue,'source':'venue','time':start.strftime('%H:%M') if start_raw and re.search(r'T|\d{1,2}:\d{2}|am|pm',str(start_raw),re.I) else '','finish_time':end.strftime('%H:%M') if end else '','category':category(title,raw.get('description','')),'ticket_url':url}
 
@@ -251,14 +284,17 @@ def dom_events(html,venue,page_url,detail_only=False):
     for node in soup.find_all(['article','li','div'],limit=15000):
         text=clean(node.get_text(' ',strip=True))
         if len(text)<12 or len(text)>1000:continue
-        dm=DATE_RE.search(text)
-        if not dm:continue
-        dt=parse_dt(dm.group(1))
-        if not dt or not (RANGE_START<=dt.date()<=RANGE_END):continue
+        dt=None
+        for dm in DATE_RE.finditer(text):
+            if text[max(0,dm.start(1)-1):dm.start(1)] in ('£','$','€'):continue  # '£15/12/10' is a price
+            cand=parse_dt(dm.group(1))
+            if cand and RANGE_START<=cand.date()<=RANGE_END:dt=cand;break
+        if not dt:continue
         links=node.find_all('a',href=True)
         if detail_only:links=[a for a in links if '/whats-on/' in urlparse(urljoin(page_url,a['href'])).path]
         h=node.find(['h1','h2','h3','h4'])
         title=clean(h.get_text(' ',strip=True)) if h else ''
+        if title and not detail_only and len({u for u,_,_ in detail_links(node,page_url)})>3:continue  # a list of events: its cards are read one by one
         href=page_url
         if not valid_title(title):
             title=''

@@ -1,6 +1,6 @@
 -- ============================================================================
 -- Brighton Weekend — live database schema (public schema)
--- Exported from the live Supabase project on 2026-10-05, after v58 and v59.
+-- Exported from the live Supabase project on 2026-10-05, after v58 and v59; v60 (avatar ids) applied on top.
 --
 -- This file is the reference for what is actually running. The numbered
 -- files (v48, v49, v58) are the change history. When you change the database,
@@ -138,20 +138,8 @@ alter table public.bw_profiles add constraint bw_profiles_user_id_fkey FOREIGN K
 alter table public.bw_profiles add constraint bw_profiles_display_name_check CHECK (((char_length(TRIM(BOTH FROM display_name)) >= 1) AND (char_length(TRIM(BOTH FROM display_name)) <= 40)));
 alter table public.bw_profiles add constraint bw_profiles_display_name_length CHECK ((char_length(display_name) <= 60)) NOT VALID;
 alter table public.bw_profiles add constraint bw_profiles_profile_icon_length CHECK ((char_length(profile_icon) <= 40)) NOT VALID;
--- Must include every id in PROFILE_ICONS in index.html.
-alter table public.bw_profiles add constraint bw_profiles_profile_icon_check CHECK (((profile_icon IS NULL) OR (profile_icon = ANY (ARRAY[
-  'fox'::text, 'badger'::text, 'otter'::text, 'hedgehog'::text, 'squirrel'::text, 'rabbit'::text, 'deer'::text,
-  'seagull'::text, 'pigeon'::text, 'kingfisher'::text, 'owl'::text, 'raven'::text, 'cat'::text, 'dog'::text,
-  'dolphin'::text, 'shark'::text, 'whale'::text, 'octopus'::text, 'crab'::text, 'starfish'::text, 'butterfly'::text,
-  'dragonfly'::text, 'ladybird'::text, 'moth'::text, 'beetle'::text, 'spider'::text, 'praying-mantis'::text,
-  'grasshopper'::text, 'firefly'::text, 'snail'::text, 'ant'::text, 'wasp'::text, 'fly'::text, 'cicada'::text,
-  'caterpillar'::text, 'stick-insect'::text, 'shield-bug'::text, 'bumblebee'::text, 'moth-pink'::text,
-  'mushroom'::text, 'clover'::text, 'fern'::text, 'sunflower'::text, 'lavender'::text, 'oak-leaf'::text,
-  'cherry-blossom'::text, 'holly'::text, 'pine-tree'::text, 'bonsai'::text, 'unicorn'::text, 'dragon'::text,
-  'phoenix'::text, 'griffin'::text, 'mermaid'::text, 'fairy'::text, 'wizard'::text, 'ghost'::text, 'alien'::text,
-  'planet'::text, 'pegasus'::text, 'centaur'::text, 'minotaur'::text, 'kraken'::text, 'ice-dragon'::text,
-  'sky-dragon'::text, 'sea-serpent'::text, 'dire-wolf'::text, 'sphinx'::text, 'winged-lion'::text,
-  'brown-bear'::text, 'red-panda-bear'::text, 'giant-panda-bear'::text]))));
+-- Any well-formed avatar id (v60); the app's PROFILE_ICONS list decides which exist.
+alter table public.bw_profiles add constraint bw_profiles_profile_icon_check CHECK (((profile_icon IS NULL) OR (profile_icon ~ '^[a-z0-9]+(-[a-z0-9]+)*$'::text)));
 
 alter table public.event_interest add constraint event_interest_pkey PRIMARY KEY (id);
 alter table public.event_interest add constraint event_interest_event_id_length CHECK ((char_length(event_id) <= 300)) NOT VALID;

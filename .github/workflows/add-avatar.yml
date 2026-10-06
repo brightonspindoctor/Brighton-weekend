@@ -1,23 +1,35 @@
 name: Add avatar
+# One run does everything: registers the selected artwork, makes the standard
+# 192px circle the app shows, validates, and commits it all to main.
+# (A push made by a workflow does not start other workflows, so the
+# standardise step runs here rather than relying on standardize-avatars.yml.)
+#
+# Before running: upload the selected artwork (PNG, JPG or WebP, square,
+# ideally 512px or larger) to profile-icons/ on main. Any file name works;
+# it is stored as profile-icons/<id>.<ext>.
 
 on:
   workflow_dispatch:
     inputs:
       id:
-        description: 'Avatar id, e.g. red-fox'
+        description: 'Avatar id: lowercase words joined by hyphens, e.g. red-fox'
         required: true
         type: string
       label:
-        description: 'Display label, e.g. Red Fox'
+        description: 'Name shown in the app, e.g. Red Fox'
         required: true
         type: string
       file:
-        description: 'The exact selected artwork filename already added to profile-icons/, e.g. red-fox.jpg'
+        description: 'The artwork file already uploaded to profile-icons/, e.g. red-fox.png'
         required: true
         type: string
 
 permissions:
   contents: write
+
+concurrency:
+  group: standardize-avatars
+  cancel-in-progress: false
 
 jobs:
   add-avatar:
@@ -25,8 +37,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          ref: main
 
-      - name: Register the exact selected artwork
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Register the selected artwork
         env:
           AVATAR_ID: ${{ inputs.id }}
           AVATAR_LABEL: ${{ inputs.label }}
@@ -37,20 +56,25 @@ jobs:
             --label="$AVATAR_LABEL" \
             --file="$AVATAR_FILE"
 
-      - name: Validate avatar registry and artwork fingerprint
+      - name: Make the standard circular avatar
+        run: |
+          npm install --no-save sharp
+          node scripts/standardize-avatars.mjs
+
+      - name: Validate avatars
         run: node scripts/validate-avatars.mjs
 
-      - name: Commit registration
+      - name: Commit
         env:
           AVATAR_LABEL: ${{ inputs.label }}
         run: |
-          if git diff --quiet; then
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A index.html profile-icons
+          if git diff --cached --quiet; then
             echo 'No changes to commit.'
             exit 0
           fi
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add index.html profile-icons/avatar-manifest.json
           git commit -m "Add avatar: $AVATAR_LABEL"
           git fetch origin main
           git rebase origin/main
