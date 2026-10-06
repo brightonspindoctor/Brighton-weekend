@@ -29,26 +29,26 @@
     {
       "venue": "Brighton Centre",
       "url": "https://brightoncentre.co.uk/",
-      "events": 19,
+      "events": 26,
       "error": "",
       "sample": [
         {
-          "title": "Erasure",
-          "date": "2027-05-11",
+          "title": "Roger Waters Presents Legacy",
+          "date": "2027-06-25",
           "time": "",
-          "link": "https://www.ticketmaster.co.uk/event/3E00653C94F332DE"
+          "link": "https://brightoncentre.co.uk/whats-on/2027/roger-waters-presents-legacy/"
         },
         {
-          "title": "Erasure",
-          "date": "2027-05-11",
+          "title": "Roger Waters Presents Legacy",
+          "date": "2027-06-25",
           "time": "",
-          "link": "https://www.ticketmaster.co.uk/event/3E00653C94F332DE"
+          "link": "https://brightoncentre.co.uk/whats-on/2027/roger-waters-presents-legacy/"
         },
         {
-          "title": "Erasure",
-          "date": "2027-05-11",
+          "title": "Roger Waters Presents Legacy",
+          "date": "2027-06-25",
           "time": "",
-          "link": "https://www.ticketmaster.co.uk/event/3E00653C94F332DE"
+          "link": "https://brightoncentre.co.uk/whats-on/2027/roger-waters-presents-legacy/"
         }
       ]
     },
@@ -81,7 +81,7 @@
     {
       "venue": "Concorde 2",
       "url": "https://www.concorde2.co.uk/whats-on",
-      "events": 185,
+      "events": 188,
       "error": "",
       "sample": [
         {
@@ -166,7 +166,7 @@
     {
       "venue": "Quarters",
       "url": "https://www.quartersbrighton.co.uk/whatson",
-      "events": 120,
+      "events": 124,
       "error": "",
       "sample": [
         {
@@ -192,9 +192,28 @@
     {
       "venue": "Patterns",
       "url": "https://patternsbrighton.com/club/",
-      "events": 0,
+      "events": 120,
       "error": "",
-      "sample": []
+      "sample": [
+        {
+          "title": "Jhariah",
+          "date": "2026-10-09",
+          "time": "19:00",
+          "link": "https://dice.fm/event/jhariah-9th-oct-patterns-brighton-tickets"
+        },
+        {
+          "title": "Grassroots: FREE entry - Jungle, Jungle Tek, Breaks",
+          "date": "2026-10-09",
+          "time": "23:00",
+          "link": "https://dice.fm/event/grassroots-free-entry-jungle-jungle-tek-breaks-9th-oct-patterns-brighton-tickets"
+        },
+        {
+          "title": "Fukushima Dolphin “Fish Party”",
+          "date": "2026-10-10",
+          "time": "19:00",
+          "link": "https://dice.fm/event/fukushima-dolphin-fish-party-10th-oct-patterns-brighton-tickets"
+        }
+      ]
     },
     {
       "venue": "Patterns",
@@ -213,7 +232,7 @@
     {
       "venue": "Komedia",
       "url": "https://www.komedia.co.uk/whats-on/",
-      "events": 951,
+      "events": 954,
       "error": "",
       "sample": [
         {
@@ -239,16 +258,54 @@
     {
       "venue": "The Forge Comedy Club",
       "url": "https://forgecomedyclub.com/",
-      "events": 0,
+      "events": 207,
       "error": "",
-      "sample": []
+      "sample": [
+        {
+          "title": "Tom Ward: Post-millennium Tension",
+          "date": "2026-10-08",
+          "time": "20:00",
+          "link": "https://www.eventbrite.co.uk/e/tom-ward-post-millennium-tension-tickets-1984052333940"
+        },
+        {
+          "title": "Tom Ward: Post-millennium Tension",
+          "date": "2026-10-08",
+          "time": "20:00",
+          "link": "https://www.eventbrite.co.uk/e/tom-ward-post-millennium-tension-tickets-1984052333940"
+        },
+        {
+          "title": "Tom Ward: Post-millennium Tension",
+          "date": "2026-10-08",
+          "time": "",
+          "link": "https://www.eventbrite.co.uk/e/tom-ward-post-millennium-tension-tickets-1984052333940"
+        }
+      ]
     },
     {
       "venue": "The Forge Comedy Club",
       "url": "https://forgecomedyclub.co.uk/",
-      "events": 0,
+      "events": 207,
       "error": "",
-      "sample": []
+      "sample": [
+        {
+          "title": "Tom Ward: Post-millennium Tension",
+          "date": "2026-10-08",
+          "time": "20:00",
+          "link": "https://www.eventbrite.co.uk/e/tom-ward-post-millennium-tension-tickets-1984052333940"
+        },
+        {
+          "title": "Tom Ward: Post-millennium Tension",
+          "date": "2026-10-08",
+          "time": "20:00",
+          "link": "https://www.eventbrite.co.uk/e/tom-ward-post-millennium-tension-tickets-1984052333940"
+        },
+        {
+          "title": "Tom Ward: Post-millennium Tension",
+          "date": "2026-10-08",
+          "time": "",
+          "link": "https://www.eventbrite.co.uk/e/tom-ward-post-millennium-tension-tickets-1984052333940"
+        }
+      ]
     },
     {
       "venue": "Theatre Royal Brighton",
@@ -305,9 +362,28 @@
     {
       "venue": "The Prince Albert",
       "url": "https://princealbertbrighton.co.uk/",
-      "events": 0,
+      "events": 5,
       "error": "",
-      "sample": []
+      "sample": [
+        {
+          "title": "Embodiment Infected Dead Support Live At The Albert 11Th October",
+          "date": "2026-10-11",
+          "time": "20:00",
+          "link": "https://utb.sumupstore.com/product/embodiment-infected-dead-support-live-at-the-albert-11th-october"
+        },
+        {
+          "title": "Embodiment Infected Dead Support Live At The Albert 11Th October",
+          "date": "2026-10-11",
+          "time": "20:00",
+          "link": "https://utb.sumupstore.com/product/embodiment-infected-dead-support-live-at-the-albert-11th-october"
+        },
+        {
+          "title": "Embodiment Infected Dead Support Live At The Albert 11Th October",
+          "date": "2026-10-11",
+          "time": "20:00",
+          "link": "https://utb.sumupstore.com/product/embodiment-infected-dead-support-live-at-the-albert-11th-october"
+        }
+      ]
     },
     {
       "venue": "The Pipeline",
@@ -423,33 +499,33 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/whats-on/",
-      "events": 123,
+      "events": 103,
       "error": "",
       "sample": [
         {
-          "title": "Free Comedy Workshops for Young People Age 11–16",
-          "date": "2026-10-25",
+          "title": "Katherine Jenkins",
+          "date": "2026-10-06",
           "time": "",
-          "link": "https://brightondome.org/whats-on/LZc-free-comedy-workshops-for-young-people-age-11-16/"
+          "link": "https://brightondome.org/whats-on/LtI-katherine-jenkins/"
         },
         {
-          "title": "Free Comedy Workshops for Young People Age 11–16",
-          "date": "2026-10-25",
+          "title": "Katherine Jenkins",
+          "date": "2026-10-06",
           "time": "",
-          "link": "https://brightondome.org/whats-on/LZc-free-comedy-workshops-for-young-people-age-11-16/"
+          "link": "https://brightondome.org/whats-on/LtI-katherine-jenkins/"
         },
         {
-          "title": "Free Comedy Workshops for Young People Age 11–16",
-          "date": "2026-10-25",
+          "title": "Katherine Jenkins",
+          "date": "2026-10-06",
           "time": "",
-          "link": "https://brightondome.org/whats-on/LZc-free-comedy-workshops-for-young-people-age-11-16/"
+          "link": "https://brightondome.org/whats-on/LtI-katherine-jenkins/"
         }
       ]
     },
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/comedyfestival/",
-      "events": 203,
+      "events": 184,
       "error": "",
       "sample": [
         {
@@ -537,7 +613,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-06-brighton-dome-katherine-jenkins",
+      "id": "2026-10-06-brighton-dome-katherine-jenkins-2",
       "title": "Katherine Jenkins",
       "date": "2026-10-06",
       "venue": "Brighton Dome",
@@ -546,7 +622,10 @@
       "finish_time": "23:00",
       "category": "Sport",
       "ticket_url": "https://brightondome.org/whats-on/LtI-katherine-jenkins/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-06-brighton-dome-katherine-jenkins"
+      ]
     },
     {
       "id": "2026-10-06-green-door-store-bones-ate-arfa",
@@ -616,7 +695,7 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Music",
+      "category": "Theatre",
       "ticket_url": "https://brightondome.org/whats-on/LtI-katherine-jenkins/",
       "last_seen": "2026-10-06"
     },
@@ -681,7 +760,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-07-brighton-dome-ocean-film-festival-world-tour-2",
+      "id": "2026-10-07-brighton-dome-ocean-film-festival-world-tour",
       "title": "Ocean Film Festival World Tour",
       "date": "2026-10-07",
       "venue": "Brighton Dome",
@@ -690,7 +769,10 @@
       "finish_time": "23:00",
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/L8Q-ocean-film-festival-world-tour/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-07-brighton-dome-ocean-film-festival-world-tour-2"
+      ]
     },
     {
       "id": "2026-10-07-komedia-ditch-hustle-culture-to-build-career-longevity-live-podcast",
@@ -717,7 +799,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-07-brighton-dome-man-or-bear-2",
+      "id": "2026-10-07-brighton-dome-man-or-bear",
       "title": "Man or Bear",
       "date": "2026-10-07",
       "venue": "Brighton Dome",
@@ -726,7 +808,10 @@
       "finish_time": "23:00",
       "category": "Theatre",
       "ticket_url": "https://brightondome.org/whats-on/L1o-man-or-bear/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-07-brighton-dome-man-or-bear-2"
+      ]
     },
     {
       "id": "2026-10-07-komedia-kane-brown",
@@ -750,6 +835,18 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/L8Q-ocean-film-festival-world-tour/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-07-brighton-dome-theatre-man-or-bear-a-funny-fierce-play-inspired-by-the-viral-question-wed-7-oct-studio-theatre-from-10-find-out-more",
+      "title": "Theatre Man or Bear A funny, fierce play inspired by the viral question Wed 7 Oct Studio Theatre From £10 Find out more",
+      "date": "2026-10-07",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://brightondome.org/whats-on/L1o-man-or-bear/",
       "last_seen": "2026-10-06"
     },
     {
@@ -790,7 +887,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-08-brighton-dome-the-wonder-stuff-inspiral-carpets",
+      "id": "2026-10-08-brighton-dome-the-wonder-stuff-inspiral-carpets-2",
       "title": "The Wonder Stuff & Inspiral Carpets",
       "date": "2026-10-08",
       "venue": "Brighton Dome",
@@ -799,7 +896,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/L80-the-wonder-stuff-inspiral-carpets/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-08-brighton-dome-the-wonder-stuff-inspiral-carpets"
+      ]
     },
     {
       "id": "2026-10-08-green-door-store-ragdoll",
@@ -862,6 +962,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-08-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-10-08",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "21:30",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-08-the-forge-comedy-club-tom-ward-post-millennium-tension",
       "title": "Tom Ward: Post-millennium Tension",
       "date": "2026-10-08",
@@ -871,7 +983,10 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/tom-ward-post-millennium-tension-tickets-1984052333940",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-08-the-forge-comedy-club-tom-ward-post-millennium-tension-2"
+      ]
     },
     {
       "id": "2026-10-08-the-hope-ruin-dj-freaking-out-the-neighbourhood",
@@ -1031,7 +1146,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-09-brighton-dome-dr-xand-van-tulleken-2",
+      "id": "2026-10-09-brighton-dome-dr-xand-van-tulleken",
       "title": "Dr. Xand van Tulleken",
       "date": "2026-10-09",
       "venue": "Brighton Dome",
@@ -1040,7 +1155,10 @@
       "finish_time": "23:00",
       "category": "Club",
       "ticket_url": "https://brightondome.org/whats-on/LOw-dr-xand-van-tulleken/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-09-brighton-dome-dr-xand-van-tulleken-2"
+      ]
     },
     {
       "id": "2026-10-09-concorde-2-letz-zep",
@@ -1064,6 +1182,18 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://thegreendoorstore.co.uk/events/sold-out-arkayla/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-09-patterns-jhariah",
+      "title": "Jhariah",
+      "date": "2026-10-09",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Theatre",
+      "ticket_url": "https://dice.fm/event/jhariah-9th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -1115,8 +1245,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-09-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-10-09-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-10-09",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540861138",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-09-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-10-09-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-10-09",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -1151,6 +1296,18 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://thegreendoorstore.co.uk/events/i-fing-h8-clubbing/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-09-patterns-grassroots-free-entry-jungle-jungle-tek-breaks",
+      "title": "Grassroots: FREE entry - Jungle, Jungle Tek, Breaks",
+      "date": "2026-10-09",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "23:00",
+      "finish_time": "04:00",
+      "category": "Dance",
+      "ticket_url": "https://dice.fm/event/grassroots-free-entry-jungle-jungle-tek-breaks-9th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -1275,6 +1432,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-10-brighton-dome-free-comedy-workshops-for-young-people-age-11-16",
+      "title": "Free Comedy Workshops for Young People Age 11–16",
+      "date": "2026-10-10",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "14:00",
+      "finish_time": "20:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/LZc-free-comedy-workshops-for-young-people-age-11-16/",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-10-the-hope-ruin-h-038-r-one-8217-s-2-watch-flavours-ponceau-autofiction",
       "title": "H&R ONE’S 2 WATCH: Flavours + Ponceau + Autofiction",
       "date": "2026-10-10",
@@ -1287,7 +1456,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-10-brighton-dome-alison-moyet-2",
+      "id": "2026-10-10-brighton-dome-alison-moyet",
       "title": "Alison Moyet",
       "date": "2026-10-10",
       "venue": "Brighton Dome",
@@ -1296,10 +1465,13 @@
       "finish_time": "23:00",
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/L2q-alison-moyet/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-10-brighton-dome-alison-moyet-2"
+      ]
     },
     {
-      "id": "2026-10-10-brighton-dome-russell-t-davies-2",
+      "id": "2026-10-10-brighton-dome-russell-t-davies",
       "title": "Russell T Davies",
       "date": "2026-10-10",
       "venue": "Brighton Dome",
@@ -1308,7 +1480,10 @@
       "finish_time": "23:00",
       "category": "Talk",
       "ticket_url": "https://brightondome.org/whats-on/LO7-russell-t-davies/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-10-brighton-dome-russell-t-davies-2"
+      ]
     },
     {
       "id": "2026-10-10-concorde-2-nirvana-uk",
@@ -1332,6 +1507,18 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://thegreendoorstore.co.uk/events/the-wolfgang-press/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-10-patterns-fukushima-dolphin-fish-party",
+      "title": "Fukushima Dolphin “Fish Party”",
+      "date": "2026-10-10",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Club",
+      "ticket_url": "https://dice.fm/event/fukushima-dolphin-fish-party-10th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -1366,7 +1553,7 @@
       "source": "venue",
       "time": "20:00",
       "finish_time": "",
-      "category": "Comedy",
+      "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/wot-italian/?eid=19284",
       "last_seen": "2026-10-06",
       "also_ids": [
@@ -1374,8 +1561,23 @@
       ]
     },
     {
-      "id": "2026-10-10-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-10-10-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-10-10",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094317541",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-10-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-10-10-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-10-10",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -1603,7 +1805,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-11-brighton-dome-the-stravinsky-connection",
+      "id": "2026-10-11-brighton-dome-the-stravinsky-connection-2",
       "title": "The Stravinsky Connection",
       "date": "2026-10-11",
       "venue": "Brighton Dome",
@@ -1612,7 +1814,10 @@
       "finish_time": "23:00",
       "category": "Club",
       "ticket_url": "https://brightondome.org/whats-on/LgD-the-stravinsky-connection/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-11-brighton-dome-the-stravinsky-connection"
+      ]
     },
     {
       "id": "2026-11-10-green-door-store-psychedelic-sundae",
@@ -1636,6 +1841,21 @@
       "finish_time": "18:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/harriet-kemsley-floozy-extra-matinee-show-tickets-1984049437276",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-10-the-forge-comedy-club-harriet-kemsley-floozy"
+      ]
+    },
+    {
+      "id": "2026-10-11-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-10-11",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "18:00",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -1663,7 +1883,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-10-the-forge-comedy-club-harriet-kemsley-floozy",
+      "id": "2026-10-11-the-forge-comedy-club-harriet-kemsley-floozy",
       "title": "Harriet Kemsley: Floozy",
       "date": "2026-10-11",
       "venue": "The Forge Comedy Club",
@@ -1672,6 +1892,30 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/harriet-kemsley-floozy-tickets-1852111478289",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-11-the-forge-comedy-club-the-forge-comedy-club-2",
+      "title": "The Forge Comedy Club",
+      "date": "2026-10-11",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:30",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-11-the-prince-albert-embodiment-infected-dead-support-live-at-the-albert-11th-october",
+      "title": "Embodiment Infected Dead Support Live At The Albert 11Th October",
+      "date": "2026-10-11",
+      "venue": "The Prince Albert",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "23:00",
+      "category": "Music",
+      "ticket_url": "https://utb.sumupstore.com/product/embodiment-infected-dead-support-live-at-the-albert-11th-october",
       "last_seen": "2026-10-06"
     },
     {
@@ -1832,7 +2076,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-12-brighton-dome-fire-fire-by-john-webber",
+      "id": "2026-10-12-brighton-dome-fire-fire-by-john-webber-2",
       "title": "Fire Fire by John Webber",
       "date": "2026-10-12",
       "venue": "Brighton Dome",
@@ -1841,7 +2085,10 @@
       "finish_time": "23:00",
       "category": "Theatre",
       "ticket_url": "https://brightondome.org/whats-on/L1u-fire-fire-by-john-webber/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-12-brighton-dome-fire-fire-by-john-webber"
+      ]
     },
     {
       "id": "2026-10-12-chalk-fat-poppadaddys-societies",
@@ -1987,6 +2234,21 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/charlie-baker-go-get-it-tickets-1982964482146",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-14-the-forge-comedy-club-charlie-baker-go-get-it-2"
+      ]
+    },
+    {
+      "id": "2026-10-14-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-10-14",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:30",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -2107,6 +2369,21 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/dan-nightingale-friends-tickets-1985442982407",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-15-the-forge-comedy-club-dan-nightingale-friends-2"
+      ]
+    },
+    {
+      "id": "2026-10-15-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-10-15",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:30",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -2243,13 +2520,14 @@
     },
     {
       "id": "2026-10-16-quarters-4am-kru-jolie-p-more-tba",
-      "title": "4am Kru + Jolie P + more TBA",
+      "title": "4Am Kru",
       "date": "2026-10-16",
       "venue": "Quarters",
+      "source": "venue",
       "time": "04:00",
       "finish_time": "",
       "category": "Club",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/4am-kru-jolie-p-more-tba-p2929791",
+      "ticket_url": "https://quarters.seetickets.com/event/4am-kru-jolie-p-more-tba/quarters/3706963",
       "last_seen": "2026-10-06"
     },
     {
@@ -2289,7 +2567,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-brighton-dome-jazz-emu-the-pleasure-is-all-yours-2",
+      "id": "2026-10-16-brighton-dome-jazz-emu-the-pleasure-is-all-yours",
       "title": "Jazz Emu: The Pleasure Is All Yours",
       "date": "2026-10-16",
       "venue": "Brighton Dome",
@@ -2298,10 +2576,13 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/Ljb-jazz-emu-the-pleasure-is-all-yours/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-16-brighton-dome-jazz-emu-the-pleasure-is-all-yours-2"
+      ]
     },
     {
-      "id": "2026-10-16-brighton-dome-alfie-brown-the-entertainer-2",
+      "id": "2026-10-16-brighton-dome-alfie-brown-the-entertainer",
       "title": "Alfie Brown: The Entertainer",
       "date": "2026-10-16",
       "venue": "Brighton Dome",
@@ -2312,11 +2593,11 @@
       "ticket_url": "https://brightondome.org/whats-on/LEd-alfie-brown-the-entertainer/",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-10-16-brighton-dome-alfie-brown-the-entertainer"
+        "2026-10-16-brighton-dome-alfie-brown-the-entertainer-2"
       ]
     },
     {
-      "id": "2026-10-16-brighton-dome-celya-ab-we-must-stop-meeting-like-this-2",
+      "id": "2026-10-16-brighton-dome-celya-ab-we-must-stop-meeting-like-this",
       "title": "Celya AB: We Must Stop Meeting Like This",
       "date": "2026-10-16",
       "venue": "Brighton Dome",
@@ -2325,7 +2606,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/Ls4-celya-ab-we-must-stop-meeting-like-this/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-16-brighton-dome-celya-ab-we-must-stop-meeting-like-this-2"
+      ]
     },
     {
       "id": "2026-10-16-concorde-2-boris-pink-20th-anniversary-uk-tour",
@@ -2364,7 +2648,19 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-brighton-dome-tom-davis-spudgun-2",
+      "id": "2026-10-16-patterns-the-jam-uk-the-definitive-tribute-to-the-jam",
+      "title": "The Jam UK",
+      "date": "2026-10-16",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Music",
+      "ticket_url": "https://dice.fm/event/the-jam-uk-16th-oct-patterns-brighton-tickets",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-16-brighton-dome-tom-davis-spudgun",
       "title": "Tom Davis: Spudgun",
       "date": "2026-10-16",
       "venue": "Brighton Dome",
@@ -2373,7 +2669,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/Le9-tom-davis-spudgun/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-16-brighton-dome-tom-davis-spudgun-2"
+      ]
     },
     {
       "id": "2026-10-16-the-pipeline-floralis-the-pipeline",
@@ -2400,8 +2699,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-10-16-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-10-16",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540921318",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-16-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-10-16-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-10-16",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -2424,7 +2738,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-brighton-dome-catherine-bohart-borrowing-trouble-2",
+      "id": "2026-10-16-brighton-dome-catherine-bohart-borrowing-trouble",
       "title": "Catherine Bohart: Borrowing Trouble",
       "date": "2026-10-16",
       "venue": "Brighton Dome",
@@ -2433,7 +2747,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/L7X-catherine-bohart-borrowing-trouble/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-16-brighton-dome-catherine-bohart-borrowing-trouble-2"
+      ]
     },
     {
       "id": "2026-10-16-brighton-dome-komedia-comedy-club",
@@ -2457,6 +2774,18 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.hope.pub/event/cool-feeling-60/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-16-patterns-club-2010",
+      "title": "club 2010",
+      "date": "2026-10-16",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "22:30",
+      "finish_time": "04:00",
+      "category": "Club",
+      "ticket_url": "https://dice.fm/event/club-2010-16th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -2528,18 +2857,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://chalkvenue.com/event/the-hoosiers",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-16-patterns-the-jam-uk-the-definitive-tribute-to-the-jam",
-      "title": "The Jam UK - The Definitive Tribute to The Jam",
-      "date": "2026-10-16",
-      "venue": "Patterns",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/patterns",
-      "source_url": "https://www.ents24.com/brighton-events/patterns",
-      "finish_time": "",
       "last_seen": "2026-10-06"
     },
     {
@@ -2629,7 +2946,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-brighton-dome-comedy-club-4-kids-2",
+      "id": "2026-10-17-brighton-dome-comedy-club-4-kids",
       "title": "Comedy Club 4 Kids",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2638,7 +2955,10 @@
       "finish_time": "15:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/Lnm-comedy-club-4-kids/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-17-brighton-dome-comedy-club-4-kids-2"
+      ]
     },
     {
       "id": "2026-10-17-komedia-comedy-club-4-kids-sat-17-oct-2026-2-00-pm-doors-1-30-pm",
@@ -2653,7 +2973,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-brighton-dome-all-my-friends-day-disco-2",
+      "id": "2026-10-17-brighton-dome-all-my-friends-day-disco",
       "title": "All My Friends Day Disco",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2662,10 +2982,25 @@
       "finish_time": "20:00",
       "category": "Club",
       "ticket_url": "https://brightondome.org/whats-on/LGl-all-my-friends-day-disco/",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-17-brighton-dome-all-my-friends-day-disco-2"
+      ]
+    },
+    {
+      "id": "2026-10-17-patterns-james-zabiela-memory-box",
+      "title": "James Zabiela",
+      "date": "2026-10-17",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "17:00",
+      "finish_time": "22:00",
+      "category": "Club",
+      "ticket_url": "https://dice.fm/event/james-zabiela-memory-box-17th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-brighton-dome-jordan-brookes-the-part-of-you-that-s-always-screaming-2",
+      "id": "2026-10-17-brighton-dome-jordan-brookes-the-part-of-you-that-s-always-screaming",
       "title": "Jordan Brookes: The Part of You That's Always Screaming",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2674,7 +3009,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LED-jordan-brookes-the-part-of-you-thats-always-screaming/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-17-brighton-dome-jordan-brookes-the-part-of-you-that-s-always-screaming-2"
+      ]
     },
     {
       "id": "2026-10-17-komedia-jordan-brookes-the-part-of-you-that-s-always-screaming-sat-17-oct-2026-6-30-pm-doors-6-00-pm",
@@ -2689,7 +3027,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-brighton-dome-stevie-martin-clout-2",
+      "id": "2026-10-17-brighton-dome-stevie-martin-clout",
       "title": "Stevie Martin: Clout",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2698,7 +3036,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/Ltk-stevie-martin-clout/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-17-brighton-dome-stevie-martin-clout-2"
+      ]
     },
     {
       "id": "2026-10-17-concorde-2-reef",
@@ -2725,7 +3066,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-brighton-dome-lara-ricote-inkling-2",
+      "id": "2026-10-17-brighton-dome-lara-ricote-inkling",
       "title": "Lara Ricote: Inkling",
       "date": "2026-10-17",
       "venue": "Brighton Dome",
@@ -2734,7 +3075,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LSn-lara-ricote-inkling/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-17-brighton-dome-lara-ricote-inkling-2"
+      ]
     },
     {
       "id": "2026-10-17-komedia-komedia-comedy-club-sat-17-oct-2026-8-00-pm-doors-7-00-pm",
@@ -2749,8 +3093,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-10-17-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-10-17",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094435895",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-17-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-10-17-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-10-17",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -2794,6 +3153,18 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/event/kanine",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-17-patterns-sexy-lady-massive-presents-the-massive-tour",
+      "title": "Sexy Lady Massive Presents: The Massive Tour",
+      "date": "2026-10-17",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "23:00",
+      "finish_time": "04:00",
+      "category": "Club",
+      "ticket_url": "https://dice.fm/event/sexy-lady-massive-presents-the-massive-tour-17th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -2881,6 +3252,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-17-komedia-jordan-brookes-the-part-of-you-that-s-always-screaming",
+      "title": "Jordan Brookes: the Part of You That's Always Screaming",
+      "date": "2026-10-17",
+      "venue": "Komedia",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/jordan-brookes-the-part-of-you-thats-always-screaming-p2788051",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-17-quarters-echo-x-ibiza-playabout-ibiza-closing-party",
       "title": "Echo x Ibiza Playabout - Ibiza Closing Party",
       "date": "2026-10-17",
@@ -2964,6 +3347,42 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-18-patterns-1btn-x-vicious-charm-presents-jim-live",
+      "title": "1BTN X Vicious Charm. Presents JIM live!",
+      "date": "2026-10-18",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "15:00",
+      "finish_time": "20:00",
+      "category": "Music",
+      "ticket_url": "https://dice.fm/event/1btn-x-vicious-charm-presents-jim-live-18th-oct-patterns-brighton-tickets",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-18-patterns-hyperreal-presents-the-carnival-of-light",
+      "title": "Hyperreal presents: The Carnival of Light",
+      "date": "2026-10-18",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Comedy",
+      "ticket_url": "https://dice.fm/event/hyperreal-presents-the-carnival-of-light-18th-oct-patterns-brighton-tickets",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-18-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-10-18",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "21:00",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-18-the-forge-comedy-club-the-noise-next-door-furnace-with-deborah-frances-white",
       "title": "The Noise Next Door: Furnace With… Deborah Frances White!",
       "date": "2026-10-18",
@@ -2973,10 +3392,13 @@
       "finish_time": "21:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/the-noise-next-door-furnace-with-deborah-frances-white-tickets-1952116054669",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-18-the-forge-comedy-club-the-noise-next-door-furnace-with-deborah-frances-white-2"
+      ]
     },
     {
-      "id": "2026-10-18-brighton-dome-jimeoin-ballyhoo-2",
+      "id": "2026-10-18-brighton-dome-jimeoin-ballyhoo",
       "title": "Jimeoin: BALLYHOO!",
       "date": "2026-10-18",
       "venue": "Brighton Dome",
@@ -2985,10 +3407,13 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LZj-jimeoin-ballyhoo/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-18-brighton-dome-jimeoin-ballyhoo-2"
+      ]
     },
     {
-      "id": "2026-10-18-brighton-dome-robin-ince-joanna-neary-2",
+      "id": "2026-10-18-brighton-dome-robin-ince-joanna-neary",
       "title": "Robin Ince & Joanna Neary",
       "date": "2026-10-18",
       "venue": "Brighton Dome",
@@ -2997,10 +3422,13 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LEq-robin-ince-joanna-neary/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-18-brighton-dome-robin-ince-joanna-neary-2"
+      ]
     },
     {
-      "id": "2026-10-18-brighton-dome-the-blindboy-podcast-live-2",
+      "id": "2026-10-18-brighton-dome-the-blindboy-podcast-live",
       "title": "The Blindboy Podcast LIVE",
       "date": "2026-10-18",
       "venue": "Brighton Dome",
@@ -3009,7 +3437,10 @@
       "finish_time": "23:00",
       "category": "Club",
       "ticket_url": "https://brightondome.org/whats-on/LrI-the-blindboy-podcast-live/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-18-brighton-dome-the-blindboy-podcast-live-2"
+      ]
     },
     {
       "id": "2026-10-18-komedia-robin-ince-joanna-neary-sun-18-oct-2026-7-30-pm-doors-7-00-pm",
@@ -3024,7 +3455,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-18-brighton-dome-john-crace-what-the-hell-just-happened-2",
+      "id": "2026-10-18-brighton-dome-john-crace-what-the-hell-just-happened",
       "title": "John Crace: What The Hell Just Happened?",
       "date": "2026-10-18",
       "venue": "Brighton Dome",
@@ -3033,7 +3464,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LGj-john-crace-what-the-hell-just-happened/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-18-brighton-dome-john-crace-what-the-hell-just-happened-2"
+      ]
     },
     {
       "id": "2026-10-18-komedia-john-crace-what-the-hell-just-happened-sun-18-oct-2026-8-00-pm-doors-7-00-pm",
@@ -3110,7 +3544,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-19-brighton-dome-siblings-dreamweavers-2",
+      "id": "2026-10-19-brighton-dome-siblings-dreamweavers",
       "title": "Siblings: Dreamweavers",
       "date": "2026-10-19",
       "venue": "Brighton Dome",
@@ -3119,7 +3553,10 @@
       "finish_time": "21:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/L0L-siblings-dreamweavers/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-19-brighton-dome-siblings-dreamweavers-2"
+      ]
     },
     {
       "id": "2026-10-19-komedia-siblings-dreamweavers-mon-19-oct-2026-7-30-pm-doors-7-00-pm",
@@ -3134,7 +3571,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-19-brighton-dome-raising-the-roof-2-a-fundraiser-for-ymca-brighton-2",
+      "id": "2026-10-19-brighton-dome-raising-the-roof-2-a-fundraiser-for-ymca-brighton",
       "title": "Raising the Roof 2: A Fundraiser for YMCA Brighton",
       "date": "2026-10-19",
       "venue": "Brighton Dome",
@@ -3143,7 +3580,10 @@
       "finish_time": "21:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LnQ-raising-the-roof-2-a-fundraiser-for-ymca-brighton/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-19-brighton-dome-raising-the-roof-2-a-fundraiser-for-ymca-brighton-2"
+      ]
     },
     {
       "id": "2026-10-19-komedia-raising-the-roof-2-a-fundraiser-for-ymca-brighton-mon-19-oct-2026-8-00-pm-doors-7-00-pm",
@@ -3195,13 +3635,14 @@
     },
     {
       "id": "2026-10-20-19-00-nectar-woode",
-      "title": "NECTAR WOODE",
+      "title": "Nectar Woode",
       "date": "2026-10-20",
       "venue": "Patterns",
+      "source": "venue",
       "time": "19:00",
-      "category": "Music",
-      "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055",
-      "finish_time": "",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://dice.fm/event/nectar-woode-20th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -3217,7 +3658,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-20-brighton-dome-phil-ellis-bath-mat-2",
+      "id": "2026-10-20-brighton-dome-phil-ellis-bath-mat",
       "title": "Phil Ellis: Bath Mat",
       "date": "2026-10-20",
       "venue": "Brighton Dome",
@@ -3226,7 +3667,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LEK-phil-ellis-bath-mat/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-20-brighton-dome-phil-ellis-bath-mat-2"
+      ]
     },
     {
       "id": "2026-10-20-komedia-phil-ellis-bath-mat-tue-20-oct-2026-8-00-pm-doors-7-00-pm",
@@ -3301,7 +3745,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-21-brighton-dome-elouise-eftos-australia-s-first-attractive-comedian-2",
+      "id": "2026-10-21-brighton-dome-elouise-eftos-australia-s-first-attractive-comedian",
       "title": "Elouise Eftos: Australia's First Attractive Comedian",
       "date": "2026-10-21",
       "venue": "Brighton Dome",
@@ -3310,10 +3754,13 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/Lpx-elouise-eftos-australias-first-attractive-comedian/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-21-brighton-dome-elouise-eftos-australia-s-first-attractive-comedian-2"
+      ]
     },
     {
-      "id": "2026-10-21-brighton-dome-maisie-adam-whatsherface-2",
+      "id": "2026-10-21-brighton-dome-maisie-adam-whatsherface",
       "title": "Maisie Adam: Whatsherface",
       "date": "2026-10-21",
       "venue": "Brighton Dome",
@@ -3322,10 +3769,13 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LlA-maisie-adam-whatsherface/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-21-brighton-dome-maisie-adam-whatsherface-2"
+      ]
     },
     {
-      "id": "2026-10-21-brighton-dome-sergi-polo-live-in-brighton-2",
+      "id": "2026-10-21-brighton-dome-sergi-polo-live-in-brighton",
       "title": "Sergi Polo: LIVE in Brighton",
       "date": "2026-10-21",
       "venue": "Brighton Dome",
@@ -3334,7 +3784,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LEj-sergi-polo-live-in-brighton/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-21-brighton-dome-sergi-polo-live-in-brighton-2"
+      ]
     },
     {
       "id": "2026-10-21-komedia-sergi-polo-live-in-brighton-in-english-wed-21-oct-2026-7-30-pm-doors-7-00-pm",
@@ -3349,16 +3802,19 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-21-brighton-dome-solve-along-a-murder-she-wrote-2",
+      "id": "2026-10-21-brighton-dome-solve-along-a-murder-she-wrote",
       "title": "Solve-Along-a-Murder-She-Wrote",
       "date": "2026-10-21",
       "venue": "Brighton Dome",
       "source": "venue",
       "time": "20:00",
       "finish_time": "23:00",
-      "category": "Other",
+      "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LEe-solve-along-a-murder-she-wrote/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-21-brighton-dome-solve-along-a-murder-she-wrote-2"
+      ]
     },
     {
       "id": "2026-10-21-komedia-solve-along-a-murder-she-wrote-wed-21-oct-2026-8-00-pm-doors-7-00-pm",
@@ -3422,7 +3878,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-22-brighton-dome-comic-boom-comedy-club-2",
+      "id": "2026-10-22-brighton-dome-comic-boom-comedy-club",
       "title": "Comic Boom Comedy Club",
       "date": "2026-10-22",
       "venue": "Brighton Dome",
@@ -3431,10 +3887,13 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LEQ-comic-boom-comedy-club/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-22-brighton-dome-comic-boom-comedy-club-2"
+      ]
     },
     {
-      "id": "2026-10-22-brighton-dome-simon-amstell-i-love-it-here-2",
+      "id": "2026-10-22-brighton-dome-simon-amstell-i-love-it-here",
       "title": "Simon Amstell: I Love It Here",
       "date": "2026-10-22",
       "venue": "Brighton Dome",
@@ -3443,7 +3902,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LgI-simon-amstell-i-love-it-here/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-22-brighton-dome-simon-amstell-i-love-it-here-2"
+      ]
     },
     {
       "id": "2026-10-22-concorde2-jake-vaadeland-the-sturgeon-river-boys",
@@ -3470,30 +3932,19 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-22-the-old-market-kristen-hersh",
-      "title": "Kristen Hersh",
-      "date": "2026-10-22",
-      "venue": "The Old Market",
-      "time": "19:30",
-      "finish_time": "21:30",
-      "category": "Music",
-      "ticket_url": "https://www.theoldmarket.com/shows",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-10-22-theoldmarket-kristin-hersh"
-      ]
-    },
-    {
-      "id": "2026-10-22-brighton-dome-amy-matthews-definitions-of-toast-2",
+      "id": "2026-10-22-brighton-dome-amy-matthews-definitions-of-toast",
       "title": "Amy Matthews: Definitions of Toast",
       "date": "2026-10-22",
       "venue": "Brighton Dome",
       "source": "venue",
       "time": "20:00",
       "finish_time": "23:00",
-      "category": "Other",
+      "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LEA-amy-matthews-definitions-of-toast/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-22-brighton-dome-amy-matthews-definitions-of-toast-2"
+      ]
     },
     {
       "id": "2026-10-22-komedia-amy-matthews-definitions-of-toast-thu-22-oct-2026-8-00-pm-doors-7-30-pm",
@@ -3578,6 +4029,21 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-22-the-old-market-kristen-hersh",
+      "title": "Kristin Hersh",
+      "date": "2026-10-22",
+      "venue": "The Old Market",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.theoldmarket.com/shows/kristin-hersh",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-22-theoldmarket-kristin-hersh"
+      ]
+    },
+    {
       "id": "2026-10-22-the-prince-albert-mekons",
       "title": "Mekons",
       "date": "2026-10-22",
@@ -3638,6 +4104,21 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-23-patterns-weekend-pass-mutations-festival-2026",
+      "title": "Weekend Pass: Mutations Festival 2026",
+      "date": "2026-10-23",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "15:00",
+      "finish_time": "22:00",
+      "category": "Club",
+      "ticket_url": "https://dice.fm/event/weekend-pass-mutations-festival-2026-23rd-oct-patterns-brighton-various-venues-brighton-brighton-tickets",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-23-patterns-weekend-pass-mutations-festival-2026-2"
+      ]
+    },
+    {
       "id": "2026-10-23-concorde-2-the-r-b-orchestra",
       "title": "The R&B Orchestra",
       "date": "2026-10-23",
@@ -3650,7 +4131,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-brighton-dome-an-evening-with-katherine-ryan-firstborn-daughter-2",
+      "id": "2026-10-23-brighton-dome-an-evening-with-katherine-ryan-firstborn-daughter",
       "title": "An Evening with Katherine Ryan: Firstborn Daughter",
       "date": "2026-10-23",
       "venue": "Brighton Dome",
@@ -3659,10 +4140,13 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LGr-an-evening-with-katherine-ryan-firstborn-daughter/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-23-brighton-dome-an-evening-with-katherine-ryan-firstborn-daughter-2"
+      ]
     },
     {
-      "id": "2026-10-23-brighton-dome-dan-tiernan-quartz-and-all-2",
+      "id": "2026-10-23-brighton-dome-dan-tiernan-quartz-and-all",
       "title": "Dan Tiernan: Quartz and All",
       "date": "2026-10-23",
       "venue": "Brighton Dome",
@@ -3671,10 +4155,13 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LSF-dan-tiernan-quartz-and-all/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-23-brighton-dome-dan-tiernan-quartz-and-all-2"
+      ]
     },
     {
-      "id": "2026-10-23-brighton-dome-nish-kumar-angry-humour-from-a-really-nice-guy-2",
+      "id": "2026-10-23-brighton-dome-nish-kumar-angry-humour-from-a-really-nice-guy",
       "title": "Nish Kumar: Angry Humour from a Really Nice Guy",
       "date": "2026-10-23",
       "venue": "Brighton Dome",
@@ -3683,19 +4170,25 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LKc-nish-kumar-angry-humour-from-a-really-nice-guy/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-23-brighton-dome-nish-kumar-angry-humour-from-a-really-nice-guy-2"
+      ]
     },
     {
-      "id": "2026-10-23-brighton-dome-kim-blythe-puzzle-2",
+      "id": "2026-10-23-brighton-dome-kim-blythe-puzzle",
       "title": "Kim Blythe: Puzzle",
       "date": "2026-10-23",
       "venue": "Brighton Dome",
       "source": "venue",
       "time": "20:00",
       "finish_time": "23:00",
-      "category": "Other",
+      "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LG6-kim-blythe-puzzle/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-23-brighton-dome-kim-blythe-puzzle-2"
+      ]
     },
     {
       "id": "2026-10-23-komedia-kim-blythe-puzzle-fri-23-oct-2026-8-00-pm-doors-7-30-pm",
@@ -3722,8 +4215,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-10-23-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-10-23",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540974477",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-23-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-10-23-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-10-23",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -3885,7 +4393,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-brighton-dome-shelf-the-kids-show-2-2",
+      "id": "2026-10-24-brighton-dome-shelf-the-kids-show-2",
       "title": "SHELF: The Kids Show 2",
       "date": "2026-10-24",
       "venue": "Brighton Dome",
@@ -3894,10 +4402,13 @@
       "finish_time": "17:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/L1m-shelf-the-kids-show-2/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-24-brighton-dome-shelf-the-kids-show-2-2"
+      ]
     },
     {
-      "id": "2026-10-24-brighton-dome-live-at-brighton-dome-bleeped-2",
+      "id": "2026-10-24-brighton-dome-live-at-brighton-dome-bleeped",
       "title": "Live at Brighton Dome BLEEPED",
       "date": "2026-10-24",
       "venue": "Brighton Dome",
@@ -3906,7 +4417,10 @@
       "finish_time": "20:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LGp-live-at-brighton-dome-bleeped/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-24-brighton-dome-live-at-brighton-dome-bleeped-2"
+      ]
     },
     {
       "id": "2026-10-24-concorde-2-chris-hill-s-dirty-dc-brian-bon-show",
@@ -3921,7 +4435,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-brighton-dome-funny-women-live-in-brighton-2",
+      "id": "2026-10-24-brighton-dome-funny-women-live-in-brighton",
       "title": "Funny Women Live In Brighton",
       "date": "2026-10-24",
       "venue": "Brighton Dome",
@@ -3930,7 +4444,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LEv-funny-women-live-in-brighton/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-24-brighton-dome-funny-women-live-in-brighton-2"
+      ]
     },
     {
       "id": "2026-10-24-brighton-dome-sam-campbell-kid-giblet",
@@ -3969,8 +4486,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-10-24-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-10-24",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094512123",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-24-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-10-24-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-10-24",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -3981,7 +4513,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-brighton-dome-stamptown-2",
+      "id": "2026-10-24-brighton-dome-stamptown",
       "title": "Stamptown",
       "date": "2026-10-24",
       "venue": "Brighton Dome",
@@ -3990,7 +4522,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LJ1-stamptown/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-24-brighton-dome-stamptown-2"
+      ]
     },
     {
       "id": "2026-10-24-concorde-2-holdtight-congo-natty",
@@ -4002,6 +4537,18 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/event/holdtight-congo-natty",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-24-patterns-p-rallel-nevermind-uk-tour",
+      "title": "P-rallel: Nevermind UK Tour",
+      "date": "2026-10-24",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "23:00",
+      "finish_time": "04:00",
+      "category": "Music",
+      "ticket_url": "https://dice.fm/event/p-rallel-nevermind-uk-tour-24th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -4098,7 +4645,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-brighton-dome-rich-wilson-to-the-cradle-from-the-rave-2",
+      "id": "2026-10-25-brighton-dome-rich-wilson-to-the-cradle-from-the-rave",
       "title": "Rich Wilson: To The Cradle, From The Rave",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
@@ -4107,7 +4654,10 @@
       "finish_time": "19:00",
       "category": "Club",
       "ticket_url": "https://brightondome.org/whats-on/LGt-rich-wilson-to-the-cradle-from-the-rave/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-25-brighton-dome-rich-wilson-to-the-cradle-from-the-rave-2"
+      ]
     },
     {
       "id": "2026-10-25-komedia-rich-wilson-to-the-cradle-from-the-rave-sun-25-oct-2026-3-30-pm-doors-3-00-pm",
@@ -4122,7 +4672,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-brighton-dome-the-young-comedians-comedy-show-2",
+      "id": "2026-10-25-brighton-dome-the-young-comedians-comedy-show",
       "title": "The Young Comedians Comedy Show",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
@@ -4131,22 +4681,28 @@
       "finish_time": "20:30",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LGk-the-young-comedians-comedy-show/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-25-brighton-dome-the-young-comedians-comedy-show-2"
+      ]
     },
     {
-      "id": "2026-10-25-brighton-dome-rosie-holt-the-illegal-aliens-have-landed-2",
+      "id": "2026-10-25-brighton-dome-rosie-holt-the-illegal-aliens-have-landed",
       "title": "Rosie Holt: The Illegal Aliens Have Landed!",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
       "source": "venue",
       "time": "19:30",
       "finish_time": "23:00",
-      "category": "Other",
+      "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LEk-rosie-holt-the-illegal-aliens-have-landed/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-25-brighton-dome-rosie-holt-the-illegal-aliens-have-landed-2"
+      ]
     },
     {
-      "id": "2026-10-25-brighton-dome-sooz-kempner-2",
+      "id": "2026-10-25-brighton-dome-sooz-kempner",
       "title": "Sooz Kempner",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
@@ -4155,7 +4711,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LEh-sooz-kempner/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-25-brighton-dome-sooz-kempner-2"
+      ]
     },
     {
       "id": "2026-10-25-concorde-2-gurriers",
@@ -4182,7 +4741,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-brighton-dome-aurie-styla-maverick-2",
+      "id": "2026-10-25-brighton-dome-aurie-styla-maverick",
       "title": "Aurie Styla: Maverick",
       "date": "2026-10-25",
       "venue": "Brighton Dome",
@@ -4191,7 +4750,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/Lzu-aurie-styla-maverick/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-25-brighton-dome-aurie-styla-maverick-2"
+      ]
     },
     {
       "id": "2026-10-25-komedia-aurie-styla-maverick-sun-25-oct-2026-8-00-pm-doors-7-00-pm",
@@ -4304,13 +4866,26 @@
     },
     {
       "id": "2026-10-26-19-00-sports",
-      "title": "SPORTS",
+      "title": "Sports",
       "date": "2026-10-26",
       "venue": "Patterns",
+      "source": "venue",
       "time": "19:00",
-      "category": "Music",
-      "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055",
+      "finish_time": "22:00",
+      "category": "Sport",
+      "ticket_url": "https://dice.fm/event/sports-26th-oct-patterns-brighton-tickets",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-26-concorde-2-rocky-horror-picture-show-screening",
+      "title": "Rocky Horror Picture Show Screening",
+      "date": "2026-10-26",
+      "venue": "Concorde 2",
+      "source": "venue",
+      "time": "19:30",
       "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.concorde2.co.uk/event/rocky-horror-picture-show-screening",
       "last_seen": "2026-10-06"
     },
     {
@@ -4391,13 +4966,14 @@
     },
     {
       "id": "2026-10-27-19-00-ugly",
-      "title": "UGLY",
+      "title": "Ugly",
       "date": "2026-10-27",
       "venue": "Patterns",
+      "source": "venue",
       "time": "19:00",
-      "category": "Music",
-      "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055",
-      "finish_time": "",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://dice.fm/event/ugly-27th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -4422,6 +4998,21 @@
       "finish_time": "22:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/romesh-ranganathan-work-in-progress-tickets-1988927648136",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-27-the-forge-comedy-club-romesh-ranganathan-work-in-progress-2"
+      ]
+    },
+    {
+      "id": "2026-10-27-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-10-27",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:00",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -4541,6 +5132,21 @@
       "finish_time": "21:15",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/paul-sinha-2-sinha-lifetime-tickets-1985441864062",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-28-the-forge-comedy-club-paul-sinha-2-sinha-lifetime-2"
+      ]
+    },
+    {
+      "id": "2026-10-28-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-10-28",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:15",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -4725,14 +5331,14 @@
     },
     {
       "id": "2026-10-29-theatreroyalbrighton-horrible-histories-terrible-tudors",
-      "title": "Horrible Histories - Terrible Tudors",
+      "title": "Horrible Histories Brighton",
       "date": "2026-10-29",
       "venue": "Theatre Royal Brighton",
-      "category": "Family",
+      "source": "venue",
       "time": "",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
+      "category": "Family",
+      "ticket_url": "https://www.atgtickets.com/shows/horrible-histories-brighton/",
       "last_seen": "2026-10-06",
       "also_ids": [
         "2026-10-29-theatre-royal-brighton-horrible-histories-brighton"
@@ -4751,6 +5357,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-30-patterns-lady-leshurr-10-years-of-the-queen-s-speech-tour",
+      "title": "Lady Leshurr - 10 Years of The Queen's Speech Tour",
+      "date": "2026-10-30",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Theatre",
+      "ticket_url": "https://dice.fm/event/lady-leshurr-10-years-of-the-queens-speech-tour-30th-oct-patterns-brighton-tickets",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-30-komedia-komedia-comedy-club-fri-30-oct-2026-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2026-10-30",
@@ -4763,8 +5381,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-30-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-10-30-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-10-30",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541047696",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-30-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-10-30-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-10-30",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -4796,6 +5429,18 @@
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/the-brighton-moon-hop/?eid=19317",
       "last_seen": "2026-10-05"
+    },
+    {
+      "id": "2026-10-30-patterns-dansu-discs-with-lucas-alexander-rtk-tarantino",
+      "title": "Dansu Discs with Lucas Alexander & RTK Tarantino",
+      "date": "2026-10-30",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "23:00",
+      "finish_time": "04:00",
+      "category": "Other",
+      "ticket_url": "https://dice.fm/event/dansu-discs-with-lucas-alexander-rtk-tarantino-30th-oct-patterns-brighton-tickets",
+      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-10-30-concorde-2-born-on-road",
@@ -4968,6 +5613,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-31-patterns-dusky-all-day-long-signals-tour",
+      "title": "Dusky - All Day Long - Signals Tour",
+      "date": "2026-10-31",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "17:00",
+      "finish_time": "22:00",
+      "category": "Club",
+      "ticket_url": "https://dice.fm/event/dusky-all-day-long-signals-tour-31st-oct-patterns-brighton-tickets",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-31-17-00-tooth-special-guests",
       "title": "Tooth + Special Guests",
       "date": "2026-10-31",
@@ -5003,8 +5660,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-31-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-10-31-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-10-31",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094572303",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-31-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-10-31-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-10-31",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -5024,6 +5696,18 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/event/moody-disco-obskur",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-31-patterns-carnevil-presents-rtrn-ii-ukgrave",
+      "title": "CarnEvil Presents: RTRN II UKGRave",
+      "date": "2026-10-31",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "23:00",
+      "finish_time": "04:00",
+      "category": "Club",
+      "ticket_url": "https://dice.fm/event/carnevil-presents-rtrn-ii-ukgrave-31st-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -5113,6 +5797,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-31-quarters-halloween-w-soul-mass-transit-system-captain-wallop",
+      "title": "Halloween W Soul Mass Transit System Captain Wallop",
+      "date": "2026-10-31",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.quartersbrighton.co.uk/whatson/halloween-w-soul-mass-transit-system-captain-wallop",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-31-the-hope-ruin-penelope-isles-evening-show",
       "title": "Penelope Isles - Evening Show",
       "date": "2026-10-31",
@@ -5174,6 +5870,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-01-patterns-brighton-sundae-w-marcia-carr",
+      "title": "Brighton Sundae w/ Marcia Carr",
+      "date": "2026-11-01",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "13:30",
+      "finish_time": "20:00",
+      "category": "Club",
+      "ticket_url": "https://dice.fm/event/brighton-sundae-w-marcia-carr-1st-nov-patterns-brighton-tickets",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-01-komedia-down-the-hatch-comedy-club",
       "title": "Down the Hatch Comedy Club",
       "date": "2026-11-01",
@@ -5231,17 +5939,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/disco-kidz-halloween-special/?eid=21362",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-01-patterns-brighton-sundae-w-marcia-carr",
-      "title": "Brighton Sundae w/ Marcia Carr",
-      "date": "2026-11-01",
-      "venue": "Patterns",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/brighton-sundae-w-marcia-carr-p2906761",
       "last_seen": "2026-10-06"
     },
     {
@@ -5525,6 +6222,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-06-patterns-employed-to-serve-cabal",
+      "title": "Employed To Serve",
+      "date": "2026-11-06",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://dice.fm/event/employed-to-serve-6th-nov-patterns-brighton-tickets",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-06-komedia-gooseberry-special-guests",
       "title": "Gooseberry + Special Guests",
       "date": "2026-11-06",
@@ -5549,8 +6258,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-06-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-11-06-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-11-06",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541745784",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-06-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-11-06-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-11-06",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -5592,18 +6316,6 @@
       "time": "",
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust",
-      "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-06-patterns-employed-to-serve-cabal",
-      "title": "Employed To Serve, CABAL",
-      "date": "2026-11-06",
-      "venue": "Patterns",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/patterns",
-      "source_url": "https://www.ents24.com/brighton-events/patterns",
       "finish_time": "",
       "last_seen": "2026-10-06"
     },
@@ -5682,6 +6394,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-07-patterns-nick-hakim",
+      "title": "Nick Hakim",
+      "date": "2026-11-07",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://dice.fm/event/nick-hakim-7th-nov-patterns-brighton-tickets",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-07-komedia-komedia-comedy-club",
       "title": "Komedia Comedy Club",
       "date": "2026-11-07",
@@ -5694,8 +6418,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-07-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-11-07-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-11-07",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094670597",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-07-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-11-07-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-11-07",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -5766,18 +6505,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-07-patterns-nick-hakim",
-      "title": "Nick Hakim",
-      "date": "2026-11-07",
-      "venue": "Patterns",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/patterns",
-      "source_url": "https://www.ents24.com/brighton-events/patterns",
-      "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-07-quarters-club-events-andy-c",
       "title": "Andy C Zc45V",
       "date": "2026-11-07",
@@ -5837,6 +6564,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-08-patterns-chasing-abbey",
+      "title": "Chasing Abbey",
+      "date": "2026-11-08",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Music",
+      "ticket_url": "https://dice.fm/event/chasing-abbey-8th-nov-patterns-brighton-tickets",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-08-concorde-2-holy-fawn-m-l",
       "title": "Holy Fawn + MØL",
       "date": "2026-11-08",
@@ -5858,6 +6597,21 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/marcel-luconts-whine-list-tickets-1986318611437",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-08-the-forge-comedy-club-marcel-lucont-s-whine-list-2"
+      ]
+    },
+    {
+      "id": "2026-11-08-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-11-08",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:30",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -5882,18 +6636,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/the-men-they-couldnt-hang/?eid=19442",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-08-patterns-chasing-abbey",
-      "title": "Chasing Abbey",
-      "date": "2026-11-08",
-      "venue": "Patterns",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/patterns",
-      "source_url": "https://www.ents24.com/brighton-events/patterns",
-      "finish_time": "",
       "last_seen": "2026-10-06"
     },
     {
@@ -6029,6 +6771,21 @@
       "finish_time": "21:45",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/jacob-hawley-fighting-age-man-tickets-1982785697396",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-10-the-forge-comedy-club-jacob-hawley-fighting-age-man"
+      ]
+    },
+    {
+      "id": "2026-11-10-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-11-10",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "21:45",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -6078,6 +6835,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-11-patterns-tom-a-smith",
+      "title": "Tom A Smith",
+      "date": "2026-11-11",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://dice.fm/event/tom-a-smith-11th-nov-patterns-brighton-tickets",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-11-komedia-the-march-violets-wed-11-nov-2026-7-30-pm-doors-7-00-pm",
       "title": "The March Violets",
       "date": "2026-11-11",
@@ -6123,18 +6892,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.komedia.co.uk/shows/steve-knightley-the-winter-yards-band/?eid=19828",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-11-patterns-tom-a-smith",
-      "title": "Tom A Smith",
-      "date": "2026-11-11",
-      "venue": "Patterns",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/patterns",
-      "source_url": "https://www.ents24.com/brighton-events/patterns",
-      "finish_time": "",
       "last_seen": "2026-10-06"
     },
     {
@@ -6197,6 +6954,21 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/comedy-for-the-clock-tower-tickets-1994137231139",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-12-the-forge-comedy-club-comedy-for-the-clock-tower"
+      ]
+    },
+    {
+      "id": "2026-11-12-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-11-12",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:30",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -6334,6 +7106,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-13-patterns-the-entitled-sons",
+      "title": "The Entitled Sons",
+      "date": "2026-11-13",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://dice.fm/event/the-entitled-sons-13th-nov-patterns-brighton-tickets",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-13-komedia-komedia-comedy-club-fri-13-nov-2026-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2026-11-13",
@@ -6358,8 +7142,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-13-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-11-13-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-11-13",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541599346",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-13-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-11-13-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-11-13",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -6423,18 +7222,6 @@
       "time": "",
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust",
-      "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-13-patterns-the-entitled-sons",
-      "title": "The Entitled Sons",
-      "date": "2026-11-13",
-      "venue": "Patterns",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/patterns",
-      "source_url": "https://www.ents24.com/brighton-events/patterns",
       "finish_time": "",
       "last_seen": "2026-10-06"
     },
@@ -6547,8 +7334,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-14-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-11-14-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-11-14",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094786945",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-14-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-11-14-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-11-14",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -7001,6 +7803,21 @@
       "finish_time": "22:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/tez-ilyas-tez-things-i-hate-about-you-tickets-1972463816372",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-18-the-forge-comedy-club-tez-ilyas-tez-things-i-hate-about-you-2"
+      ]
+    },
+    {
+      "id": "2026-11-18-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-11-18",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:00",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -7108,6 +7925,21 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/finlay-christie-champagne-casanova-tickets-1978398612507",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-19-the-forge-comedy-club-finlay-christie-champagne-casanova-2"
+      ]
+    },
+    {
+      "id": "2026-11-19-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-11-19",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:30",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -7291,8 +8123,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-20-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-11-20-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-11-20",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541561232",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-20-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-11-20-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-11-20",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -7464,8 +8311,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-21-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-11-21-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-11-21",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094887245",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-21-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-11-21-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-11-21",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -7654,6 +8516,21 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/scott-bennett-blood-sugar-baby-tickets-1693326197239",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-22-the-forge-comedy-club-scott-bennett-blood-sugar-baby-2"
+      ]
+    },
+    {
+      "id": "2026-11-22-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-11-22",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:30",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -7787,6 +8664,21 @@
       "finish_time": "20:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/peter-antoniou-pretty-psychic-extra-show-tickets-1985773598288",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-25-the-forge-comedy-club-peter-antoniou-pretty-psychic-2"
+      ]
+    },
+    {
+      "id": "2026-11-25-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-11-25",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "18:45",
+      "finish_time": "20:30",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -7802,7 +8694,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-25-the-forge-comedy-club-hatty-preston-unapproachable-2",
+      "id": "2026-11-25-the-forge-comedy-club-hatty-preston-unapproachable",
       "title": "Hatty Preston: Unapproachable",
       "date": "2026-11-25",
       "venue": "The Forge Comedy Club",
@@ -7811,7 +8703,10 @@
       "finish_time": "21:15",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/hatty-preston-unapproachable-tickets-1999088219679",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-25-the-forge-comedy-club-hatty-preston-unapproachable-2"
+      ]
     },
     {
       "id": "2026-11-25-komedia-caitlin-o-ryan-at-what-point-wed-25-nov-2026-8-00-pm-doors-7-30-pm",
@@ -7838,7 +8733,7 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-25-the-forge-comedy-club-peter-antoniou-pretty-psychic-2",
+      "id": "2026-11-25-the-forge-comedy-club-peter-antoniou-pretty-psychic",
       "title": "Peter Antoniou: Pretty Psychic",
       "date": "2026-11-25",
       "venue": "The Forge Comedy Club",
@@ -7847,6 +8742,18 @@
       "finish_time": "21:45",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/peter-antoniou-pretty-psychic-tickets-1985109985404",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-25-the-forge-comedy-club-the-forge-comedy-club-2",
+      "title": "The Forge Comedy Club",
+      "date": "2026-11-25",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "21:45",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -7907,7 +8814,10 @@
       "finish_time": "23:00",
       "category": "Theatre",
       "ticket_url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-26-brighton-dome-concert-hall-ben-folds-the-paper-airplane-request-tour-2"
+      ]
     },
     {
       "id": "2026-11-26-concorde-2-graham-coxon",
@@ -7943,10 +8853,25 @@
       "finish_time": "21:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/james-barr-sorry-i-hurt-your-son-said-my-ex-to-my-mum-tickets-1982735129145",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-26-the-forge-comedy-club-james-barr-sorry-i-hurt-your-son-said-my-ex-to-my-mum-2"
+      ]
+    },
+    {
+      "id": "2026-11-26-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-11-26",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:00",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-26-the-forge-comedy-club-laura-lexx-yo-yo-2",
+      "id": "2026-11-26-the-forge-comedy-club-laura-lexx-yo-yo",
       "title": "Laura Lexx: Yo-Yo",
       "date": "2026-11-26",
       "venue": "The Forge Comedy Club",
@@ -7955,6 +8880,21 @@
       "finish_time": "21:45",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/laura-lexx-yo-yo-tickets-1475735226789",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-26-the-forge-comedy-club-laura-lexx-yo-yo-2"
+      ]
+    },
+    {
+      "id": "2026-11-26-the-forge-comedy-club-the-forge-comedy-club-2",
+      "title": "The Forge Comedy Club",
+      "date": "2026-11-26",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "21:45",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -8094,8 +9034,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-27-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-11-27-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-11-27",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541373671",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-27-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-11-27-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-11-27",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -8155,10 +9110,11 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-27-dust-reggaeton-party-brighton",
+      "id": "2026-11-27-dust-reggaeton-party-brighton-2",
       "title": "Reggaeton Party",
       "date": "2026-11-27",
       "venue": "DUST",
+      "source": "discovery",
       "time": "",
       "finish_time": "",
       "category": "Club",
@@ -8175,6 +9131,18 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/back-in-time-80s-show-with-murdochs-crazy-eyes/?eid=18522",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-27-quarters-carnival-collective",
+      "title": "Carnival Collective",
+      "date": "2026-11-27",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.seetickets.com/event/carnival-collective/quarters/3733588",
       "last_seen": "2026-10-06"
     },
     {
@@ -8238,8 +9206,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-28-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-11-28-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-11-28",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094960464",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-11-28-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-11-28-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-11-28",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -8656,6 +9639,21 @@
       "finish_time": "22:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/ian-stone-looking-for-the-wow-extra-show-tickets-1982765100791",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-12-03-the-forge-comedy-club-ian-stone-looking-for-the-wow-extra-show-2"
+      ]
+    },
+    {
+      "id": "2026-12-03-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-12-03",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:00",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -8768,8 +9766,23 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-12-04-the-forge-comedy-club-forge-comedy-club",
+      "id": "2026-12-04-the-forge-comedy-club-forge-comedy-club-2",
       "title": "Forge Comedy Club",
+      "date": "2026-12-04",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "22:30",
+      "category": "Comedy",
+      "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1998424321943",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-12-04-the-forge-comedy-club-forge-comedy-club-3"
+      ]
+    },
+    {
+      "id": "2026-12-04-the-forge-comedy-club-forge-comedy-club",
+      "title": "The Forge Comedy Club",
       "date": "2026-12-04",
       "venue": "The Forge Comedy Club",
       "source": "venue",
@@ -8911,6 +9924,21 @@
       "finish_time": "23:59",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998398743437",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-12-05-the-forge-comedy-club-festive-forge-comedy-club-2"
+      ]
+    },
+    {
+      "id": "2026-12-05-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-12-05",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "23:59",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -9377,6 +10405,21 @@
       "finish_time": "23:59",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998424637888",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-12-11-the-forge-comedy-club-festive-forge-comedy-club"
+      ]
+    },
+    {
+      "id": "2026-12-11-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-12-11",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "23:59",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -9508,7 +10551,10 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LgN-paddy-young-will-sir-be-laughing-alone/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-12-12-brighton-dome-paddy-young-will-sir-be-laughing-alone-2"
+      ]
     },
     {
       "id": "2026-12-12-the-forge-comedy-club-festive-forge-comedy-club",
@@ -9520,6 +10566,21 @@
       "finish_time": "23:59",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998443615651",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-12-12-the-forge-comedy-club-festive-forge-comedy-club-2"
+      ]
+    },
+    {
+      "id": "2026-12-12-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-12-12",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "23:59",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -9907,6 +10968,21 @@
       "finish_time": "23:59",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998456252448",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-12-18-the-forge-comedy-club-festive-forge-comedy-club-2"
+      ]
+    },
+    {
+      "id": "2026-12-18-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-12-18",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "23:59",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -10003,6 +11079,21 @@
       "finish_time": "23:59",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998456412928",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-12-19-the-forge-comedy-club-festive-forge-comedy-club-2"
+      ]
+    },
+    {
+      "id": "2026-12-19-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-12-19",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "23:59",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -10113,6 +11204,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-12-20-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-12-20",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "21:00",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-12-20-the-forge-comedy-club-the-noise-next-door-furnace-christmas-special",
       "title": "The Noise Next Door: Furnace – Christmas Special",
       "date": "2026-12-20",
@@ -10122,7 +11225,10 @@
       "finish_time": "21:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/the-noise-next-door-furnace-christmas-special-tickets-1952130828859",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-12-20-the-forge-comedy-club-the-noise-next-door-furnace-christmas-special-2"
+      ]
     },
     {
       "id": "2026-12-20-concorde-2-the-smyths",
@@ -10422,6 +11528,21 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-new-years-eve-special-tickets-1998456550339",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-12-31-the-forge-comedy-club-forge-comedy-club-new-years-eve-special-2"
+      ]
+    },
+    {
+      "id": "2026-12-31-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2026-12-31",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -10576,7 +11697,7 @@
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
-      "category": "Club",
+      "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/pigeon",
       "last_seen": "2026-10-06"
     },
@@ -10901,6 +12022,18 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/james-phelan-the-man-who-was-magic/?eid=20215",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2027-01-27-concorde-2-fujiya-miyagi",
+      "title": "Fujiya & Miyagi",
+      "date": "2027-01-27",
+      "venue": "Concorde 2",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.concorde2.co.uk/event/fujiya-miyagi",
       "last_seen": "2026-10-06"
     },
     {
@@ -11631,6 +12764,21 @@
       "finish_time": "20:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/jeff-innocent-leaning-in-tickets-2001873996011",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2027-02-28-the-forge-comedy-club-jeff-innocent-leaning-in-2"
+      ]
+    },
+    {
+      "id": "2027-02-28-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2027-02-28",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "18:00",
+      "finish_time": "20:00",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -11789,6 +12937,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2027-03-07-brighton-centre-london-mavericks-vs-nic-leeds-rhinos",
+      "title": "London Mavericks vs NIC Leeds Rhinos",
+      "date": "2027-03-07",
+      "venue": "Brighton Centre",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://brightoncentre.co.uk/whats-on/2027/london-mavericks-netball-super-league-1/",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2027-03-08-theatreroyalbrighton-the-full-monty",
       "title": "The Full Monty",
       "date": "2027-03-08",
@@ -11846,6 +13006,21 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/sean-mcloughlin-halfway-tickets-2001070260015",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2027-03-11-the-forge-comedy-club-sean-mcloughlin-halfway-2"
+      ]
+    },
+    {
+      "id": "2027-03-11-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2027-03-11",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:30",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12182,6 +13357,21 @@
       "finish_time": "21:15",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/andrew-bird-on-edge-tickets-1984672561056",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2027-03-25-the-forge-comedy-club-andrew-bird-on-edge-2"
+      ]
+    },
+    {
+      "id": "2027-03-25-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2027-03-25",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:15",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12362,6 +13552,21 @@
       "finish_time": "20:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/andrew-ryan-honest-capacity-tickets-1982966467083",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2027-04-04-the-forge-comedy-club-andrew-ryan-honest-capacity-2"
+      ]
+    },
+    {
+      "id": "2027-04-04-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2027-04-04",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "18:00",
+      "finish_time": "20:00",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12482,6 +13687,21 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/carl-hutchinson-fine-whine-tickets-1975741835014",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2027-04-15-the-forge-comedy-club-carl-hutchinson-fine-whine-2"
+      ]
+    },
+    {
+      "id": "2027-04-15-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2027-04-15",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:30",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12553,6 +13773,33 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/matt-bragg-stand-up-comic-tickets-1986058834437",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2027-04-18-the-forge-comedy-club-matt-bragg-stand-up-comic"
+      ]
+    },
+    {
+      "id": "2027-04-18-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2027-04-18",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:30",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2027-04-21-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2027-04-21",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:15",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12565,7 +13812,10 @@
       "finish_time": "21:15",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/tom-stade-rules-tickets-1991700020376",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2027-04-21-the-forge-comedy-club-tom-stade-rules-2"
+      ]
     },
     {
       "id": "2027-04-22-the-old-market-kane-brown-crowd-work-king",
@@ -12613,6 +13863,18 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21122",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2027-04-24-brighton-centre-london-mavericks-vs-ao-manchester-thunder",
+      "title": "London Mavericks vs AO Manchester Thunder",
+      "date": "2027-04-24",
+      "venue": "Brighton Centre",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://brightoncentre.co.uk/whats-on/2027/london-mavericks-netball-super-league-2/",
       "last_seen": "2026-10-06"
     },
     {
@@ -12685,6 +13947,18 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21123",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2027-05-02-komedia-lee-peart-it-s-not-you-it-s-lee",
+      "title": "Lee Peart: It’s Not You, It’s Lee",
+      "date": "2027-05-02",
+      "venue": "Komedia",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.komedia.co.uk/shows/lee-peart-its-not-you-its-lee/?eid=21411",
       "last_seen": "2026-10-06"
     },
     {
@@ -13092,6 +14366,21 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/dom-joly-trigger-happy-tv-live-tickets-1986544766874",
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2027-06-20-the-forge-comedy-club-dom-joly-trigger-happy-tv-live-2"
+      ]
+    },
+    {
+      "id": "2027-06-20-the-forge-comedy-club-the-forge-comedy-club",
+      "title": "The Forge Comedy Club",
+      "date": "2027-06-20",
+      "venue": "The Forge Comedy Club",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "21:30",
+      "category": "Comedy",
+      "ticket_url": "https://forgecomedyclub.co.uk/",
       "last_seen": "2026-10-06"
     },
     {
@@ -13104,6 +14393,18 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21098",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2027-06-25-brighton-centre-roger-waters-presents-legacy",
+      "title": "Roger Waters Presents Legacy",
+      "date": "2027-06-25",
+      "venue": "Brighton Centre",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://brightoncentre.co.uk/whats-on/2027/roger-waters-presents-legacy/",
       "last_seen": "2026-10-06"
     },
     {
@@ -13194,6 +14495,6 @@
   "discovery_report": {
     "calendars_loaded": 4,
     "calendars": 4,
-    "events_found": 11
+    "events_found": 17
   }
 }
