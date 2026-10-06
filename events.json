@@ -192,28 +192,9 @@
     {
       "venue": "Patterns",
       "url": "https://patternsbrighton.com/club/",
-      "events": 120,
+      "events": 0,
       "error": "",
-      "sample": [
-        {
-          "title": "Jhariah",
-          "date": "2026-10-09",
-          "time": "19:00",
-          "link": "https://dice.fm/event/jhariah-9th-oct-patterns-brighton-tickets"
-        },
-        {
-          "title": "Grassroots: FREE entry - Jungle, Jungle Tek, Breaks",
-          "date": "2026-10-09",
-          "time": "23:00",
-          "link": "https://dice.fm/event/grassroots-free-entry-jungle-jungle-tek-breaks-9th-oct-patterns-brighton-tickets"
-        },
-        {
-          "title": "Fukushima Dolphin “Fish Party”",
-          "date": "2026-10-10",
-          "time": "19:00",
-          "link": "https://dice.fm/event/fukushima-dolphin-fish-party-10th-oct-patterns-brighton-tickets"
-        }
-      ]
+      "sample": []
     },
     {
       "venue": "Patterns",
@@ -499,7 +480,7 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/whats-on/",
-      "events": 103,
+      "events": 106,
       "error": "",
       "sample": [
         {
@@ -1086,6 +1067,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-08-volks-bathing-suits-free-entry",
+      "title": "Bathing Suits",
+      "date": "2026-10-08",
+      "venue": "Volks",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://link.dice.fm/p091d5ab8d82",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-09-komedia-story-magic",
       "title": "Story Magic",
       "date": "2026-10-09",
@@ -1182,18 +1175,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://thegreendoorstore.co.uk/events/sold-out-arkayla/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-09-patterns-jhariah",
-      "title": "Jhariah",
-      "date": "2026-10-09",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "22:00",
-      "category": "Theatre",
-      "ticket_url": "https://dice.fm/event/jhariah-9th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -1296,18 +1277,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://thegreendoorstore.co.uk/events/i-fing-h8-clubbing/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-09-patterns-grassroots-free-entry-jungle-jungle-tek-breaks",
-      "title": "Grassroots: FREE entry - Jungle, Jungle Tek, Breaks",
-      "date": "2026-10-09",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "23:00",
-      "finish_time": "04:00",
-      "category": "Dance",
-      "ticket_url": "https://dice.fm/event/grassroots-free-entry-jungle-jungle-tek-breaks-9th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -1507,18 +1476,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://thegreendoorstore.co.uk/events/the-wolfgang-press/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-10-patterns-fukushima-dolphin-fish-party",
-      "title": "Fukushima Dolphin “Fish Party”",
-      "date": "2026-10-10",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "22:00",
-      "category": "Club",
-      "ticket_url": "https://dice.fm/event/fukushima-dolphin-fish-party-10th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -2519,6 +2476,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-15-volks-coupdekat-free-entry",
+      "title": "COUPDEKAT",
+      "date": "2026-10-15",
+      "venue": "Volks",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://link.dice.fm/m3025659644d",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-16-quarters-4am-kru-jolie-p-more-tba",
       "title": "4Am Kru",
       "date": "2026-10-16",
@@ -2648,18 +2617,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-patterns-the-jam-uk-the-definitive-tribute-to-the-jam",
-      "title": "The Jam UK",
-      "date": "2026-10-16",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "22:00",
-      "category": "Music",
-      "ticket_url": "https://dice.fm/event/the-jam-uk-16th-oct-patterns-brighton-tickets",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-16-brighton-dome-tom-davis-spudgun",
       "title": "Tom Davis: Spudgun",
       "date": "2026-10-16",
@@ -2777,18 +2734,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-16-patterns-club-2010",
-      "title": "club 2010",
-      "date": "2026-10-16",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "22:30",
-      "finish_time": "04:00",
-      "category": "Club",
-      "ticket_url": "https://dice.fm/event/club-2010-16th-oct-patterns-brighton-tickets",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-16-concorde-2-rinse-fm-presents-flowdan-neffa-t-more",
       "title": "Rinse FM Presents Flowdan, Neffa-T & More",
       "date": "2026-10-16",
@@ -2857,6 +2802,18 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://chalkvenue.com/event/the-hoosiers",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-16-patterns-the-jam-uk-the-definitive-tribute-to-the-jam",
+      "title": "The Jam UK - The Definitive Tribute to The Jam",
+      "date": "2026-10-16",
+      "venue": "Patterns",
+      "category": "Music",
+      "time": "",
+      "ticket_url": "https://www.ents24.com/brighton-events/patterns",
+      "source_url": "https://www.ents24.com/brighton-events/patterns",
+      "finish_time": "",
       "last_seen": "2026-10-06"
     },
     {
@@ -2986,18 +2943,6 @@
       "also_ids": [
         "2026-10-17-brighton-dome-all-my-friends-day-disco-2"
       ]
-    },
-    {
-      "id": "2026-10-17-patterns-james-zabiela-memory-box",
-      "title": "James Zabiela",
-      "date": "2026-10-17",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "17:00",
-      "finish_time": "22:00",
-      "category": "Club",
-      "ticket_url": "https://dice.fm/event/james-zabiela-memory-box-17th-oct-patterns-brighton-tickets",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-10-17-brighton-dome-jordan-brookes-the-part-of-you-that-s-always-screaming",
@@ -3156,18 +3101,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-17-patterns-sexy-lady-massive-presents-the-massive-tour",
-      "title": "Sexy Lady Massive Presents: The Massive Tour",
-      "date": "2026-10-17",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "23:00",
-      "finish_time": "04:00",
-      "category": "Club",
-      "ticket_url": "https://dice.fm/event/sexy-lady-massive-presents-the-massive-tour-17th-oct-patterns-brighton-tickets",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-17-a-l-p-h-a-b-e-t-john-craigie",
       "title": "John Craigie",
       "date": "2026-10-17",
@@ -3288,6 +3221,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-17-the-hope-ruin-toast-club",
+      "title": "TOAST CLUB",
+      "date": "2026-10-17",
+      "venue": "The Hope & Ruin",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://link.dice.fm/l3f6ceff6c2b",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-17-theatre-royal-brighton-fin-taylor-the-pre-emptive-comeback-special",
       "title": "Fin Taylor: The Pre-emptive Comeback Special",
       "date": "2026-10-17",
@@ -3344,30 +3289,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.komedia.co.uk/shows/sundae-club/?eid=20576",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-18-patterns-1btn-x-vicious-charm-presents-jim-live",
-      "title": "1BTN X Vicious Charm. Presents JIM live!",
-      "date": "2026-10-18",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "15:00",
-      "finish_time": "20:00",
-      "category": "Music",
-      "ticket_url": "https://dice.fm/event/1btn-x-vicious-charm-presents-jim-live-18th-oct-patterns-brighton-tickets",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-18-patterns-hyperreal-presents-the-carnival-of-light",
-      "title": "Hyperreal presents: The Carnival of Light",
-      "date": "2026-10-18",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "22:00",
-      "category": "Comedy",
-      "ticket_url": "https://dice.fm/event/hyperreal-presents-the-carnival-of-light-18th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -3635,14 +3556,13 @@
     },
     {
       "id": "2026-10-20-19-00-nectar-woode",
-      "title": "Nectar Woode",
+      "title": "NECTAR WOODE",
       "date": "2026-10-20",
       "venue": "Patterns",
-      "source": "venue",
       "time": "19:00",
-      "finish_time": "22:00",
-      "category": "Other",
-      "ticket_url": "https://dice.fm/event/nectar-woode-20th-oct-patterns-brighton-tickets",
+      "category": "Music",
+      "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055",
+      "finish_time": "",
       "last_seen": "2026-10-06"
     },
     {
@@ -3682,6 +3602,18 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/phil-ellis-bath-mat/?eid=19142",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-20-dust-ben-quad",
+      "title": "BEN QUAD",
+      "date": "2026-10-20",
+      "venue": "DUST",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.axs.com/uk/events/1427346/ben-quad-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -3742,6 +3674,18 @@
       "finish_time": "",
       "category": "Theatre",
       "ticket_url": "https://www.atgtickets.com/shows/the-haunting-of-hill-house/theatre-royal-brighton/calendar/",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-10-20-volks-baby-dave",
+      "title": "BABY DAVE",
+      "date": "2026-10-20",
+      "venue": "Volks",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.axs.com/uk/events/1599361/baby-dave-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -4068,6 +4012,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-22-volks-lana-death-ray-free-entry",
+      "title": "LANA DEATH RAY",
+      "date": "2026-10-22",
+      "venue": "Volks",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://link.dice.fm/Mb0633515f9a",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-10-23-komedia-story-magic-fri-23-oct-2026-10-00-am-doors-9-50-am",
       "title": "Story Magic",
       "date": "2026-10-23",
@@ -4102,21 +4058,6 @@
       "category": "Family",
       "ticket_url": "https://www.komedia.co.uk/shows/story-magic-baby-sessions/?eid=20807",
       "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-23-patterns-weekend-pass-mutations-festival-2026",
-      "title": "Weekend Pass: Mutations Festival 2026",
-      "date": "2026-10-23",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "15:00",
-      "finish_time": "22:00",
-      "category": "Club",
-      "ticket_url": "https://dice.fm/event/weekend-pass-mutations-festival-2026-23rd-oct-patterns-brighton-various-venues-brighton-brighton-tickets",
-      "last_seen": "2026-10-06",
-      "also_ids": [
-        "2026-10-23-patterns-weekend-pass-mutations-festival-2026-2"
-      ]
     },
     {
       "id": "2026-10-23-concorde-2-the-r-b-orchestra",
@@ -4540,18 +4481,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-patterns-p-rallel-nevermind-uk-tour",
-      "title": "P-rallel: Nevermind UK Tour",
-      "date": "2026-10-24",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "23:00",
-      "finish_time": "04:00",
-      "category": "Music",
-      "ticket_url": "https://dice.fm/event/p-rallel-nevermind-uk-tour-24th-oct-patterns-brighton-tickets",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-24-brighton-dome-komedia-comedy-club",
       "title": "Komedia Comedy Club",
       "date": "2026-10-24",
@@ -4866,14 +4795,13 @@
     },
     {
       "id": "2026-10-26-19-00-sports",
-      "title": "Sports",
+      "title": "SPORTS",
       "date": "2026-10-26",
       "venue": "Patterns",
-      "source": "venue",
       "time": "19:00",
-      "finish_time": "22:00",
-      "category": "Sport",
-      "ticket_url": "https://dice.fm/event/sports-26th-oct-patterns-brighton-tickets",
+      "category": "Music",
+      "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055",
+      "finish_time": "",
       "last_seen": "2026-10-06"
     },
     {
@@ -4966,14 +4894,13 @@
     },
     {
       "id": "2026-10-27-19-00-ugly",
-      "title": "Ugly",
+      "title": "UGLY",
       "date": "2026-10-27",
       "venue": "Patterns",
-      "source": "venue",
       "time": "19:00",
-      "finish_time": "22:00",
-      "category": "Other",
-      "ticket_url": "https://dice.fm/event/ugly-27th-oct-patterns-brighton-tickets",
+      "category": "Music",
+      "ticket_url": "https://www.ticketmaster.co.uk/patterns-tickets-brighton/venue/256055",
+      "finish_time": "",
       "last_seen": "2026-10-06"
     },
     {
@@ -5357,18 +5284,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-30-patterns-lady-leshurr-10-years-of-the-queen-s-speech-tour",
-      "title": "Lady Leshurr - 10 Years of The Queen's Speech Tour",
-      "date": "2026-10-30",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "22:00",
-      "category": "Theatre",
-      "ticket_url": "https://dice.fm/event/lady-leshurr-10-years-of-the-queens-speech-tour-30th-oct-patterns-brighton-tickets",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-30-komedia-komedia-comedy-club-fri-30-oct-2026-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2026-10-30",
@@ -5429,18 +5344,6 @@
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/the-brighton-moon-hop/?eid=19317",
       "last_seen": "2026-10-05"
-    },
-    {
-      "id": "2026-10-30-patterns-dansu-discs-with-lucas-alexander-rtk-tarantino",
-      "title": "Dansu Discs with Lucas Alexander & RTK Tarantino",
-      "date": "2026-10-30",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "23:00",
-      "finish_time": "04:00",
-      "category": "Other",
-      "ticket_url": "https://dice.fm/event/dansu-discs-with-lucas-alexander-rtk-tarantino-30th-oct-patterns-brighton-tickets",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-10-30-concorde-2-born-on-road",
@@ -5613,18 +5516,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-31-patterns-dusky-all-day-long-signals-tour",
-      "title": "Dusky - All Day Long - Signals Tour",
-      "date": "2026-10-31",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "17:00",
-      "finish_time": "22:00",
-      "category": "Club",
-      "ticket_url": "https://dice.fm/event/dusky-all-day-long-signals-tour-31st-oct-patterns-brighton-tickets",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-31-17-00-tooth-special-guests",
       "title": "Tooth + Special Guests",
       "date": "2026-10-31",
@@ -5696,18 +5587,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/event/moody-disco-obskur",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-31-patterns-carnevil-presents-rtrn-ii-ukgrave",
-      "title": "CarnEvil Presents: RTRN II UKGRave",
-      "date": "2026-10-31",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "23:00",
-      "finish_time": "04:00",
-      "category": "Club",
-      "ticket_url": "https://dice.fm/event/carnevil-presents-rtrn-ii-ukgrave-31st-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -5870,18 +5749,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-01-patterns-brighton-sundae-w-marcia-carr",
-      "title": "Brighton Sundae w/ Marcia Carr",
-      "date": "2026-11-01",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "13:30",
-      "finish_time": "20:00",
-      "category": "Club",
-      "ticket_url": "https://dice.fm/event/brighton-sundae-w-marcia-carr-1st-nov-patterns-brighton-tickets",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-01-komedia-down-the-hatch-comedy-club",
       "title": "Down the Hatch Comedy Club",
       "date": "2026-11-01",
@@ -5939,6 +5806,17 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/disco-kidz-halloween-special/?eid=21362",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-01-patterns-brighton-sundae-w-marcia-carr",
+      "title": "Brighton Sundae w/ Marcia Carr",
+      "date": "2026-11-01",
+      "venue": "Patterns",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/brighton-sundae-w-marcia-carr-p2906761",
       "last_seen": "2026-10-06"
     },
     {
@@ -6062,6 +5940,18 @@
       "ticket_url": "https://thegreendoorstore.co.uk/events/",
       "source_url": "https://thegreendoorstore.co.uk/events/",
       "finish_time": "",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-04-the-hope-ruin-asher-white",
+      "title": "ASHER WHITE",
+      "date": "2026-11-04",
+      "venue": "The Hope & Ruin",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.axs.com/uk/events/1438354/asher-white-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -6222,18 +6112,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-06-patterns-employed-to-serve-cabal",
-      "title": "Employed To Serve",
-      "date": "2026-11-06",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "22:00",
-      "category": "Other",
-      "ticket_url": "https://dice.fm/event/employed-to-serve-6th-nov-patterns-brighton-tickets",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-06-komedia-gooseberry-special-guests",
       "title": "Gooseberry + Special Guests",
       "date": "2026-11-06",
@@ -6320,6 +6198,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-06-patterns-employed-to-serve-cabal",
+      "title": "Employed To Serve, CABAL",
+      "date": "2026-11-06",
+      "venue": "Patterns",
+      "category": "Music",
+      "time": "",
+      "ticket_url": "https://www.ents24.com/brighton-events/patterns",
+      "source_url": "https://www.ents24.com/brighton-events/patterns",
+      "finish_time": "",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-06-quarters-club-events-k-motionz",
       "title": "K Motionz",
       "date": "2026-11-06",
@@ -6391,18 +6281,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/event/slipmatt-ellis-dee-2-bad-mice-dj-ratty",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-07-patterns-nick-hakim",
-      "title": "Nick Hakim",
-      "date": "2026-11-07",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "22:00",
-      "category": "Other",
-      "ticket_url": "https://dice.fm/event/nick-hakim-7th-nov-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -6505,6 +6383,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-07-patterns-nick-hakim",
+      "title": "Nick Hakim",
+      "date": "2026-11-07",
+      "venue": "Patterns",
+      "category": "Music",
+      "time": "",
+      "ticket_url": "https://www.ents24.com/brighton-events/patterns",
+      "source_url": "https://www.ents24.com/brighton-events/patterns",
+      "finish_time": "",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-07-quarters-club-events-andy-c",
       "title": "Andy C Zc45V",
       "date": "2026-11-07",
@@ -6561,18 +6451,6 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "time": "",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-08-patterns-chasing-abbey",
-      "title": "Chasing Abbey",
-      "date": "2026-11-08",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "22:00",
-      "category": "Music",
-      "ticket_url": "https://dice.fm/event/chasing-abbey-8th-nov-patterns-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -6636,6 +6514,18 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/the-men-they-couldnt-hang/?eid=19442",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-08-patterns-chasing-abbey",
+      "title": "Chasing Abbey",
+      "date": "2026-11-08",
+      "venue": "Patterns",
+      "category": "Music",
+      "time": "",
+      "ticket_url": "https://www.ents24.com/brighton-events/patterns",
+      "source_url": "https://www.ents24.com/brighton-events/patterns",
+      "finish_time": "",
       "last_seen": "2026-10-06"
     },
     {
@@ -6835,18 +6725,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-11-patterns-tom-a-smith",
-      "title": "Tom A Smith",
-      "date": "2026-11-11",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "22:00",
-      "category": "Other",
-      "ticket_url": "https://dice.fm/event/tom-a-smith-11th-nov-patterns-brighton-tickets",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-11-komedia-the-march-violets-wed-11-nov-2026-7-30-pm-doors-7-00-pm",
       "title": "The March Violets",
       "date": "2026-11-11",
@@ -6895,6 +6773,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-11-patterns-tom-a-smith",
+      "title": "Tom A Smith",
+      "date": "2026-11-11",
+      "venue": "Patterns",
+      "category": "Music",
+      "time": "",
+      "ticket_url": "https://www.ents24.com/brighton-events/patterns",
+      "source_url": "https://www.ents24.com/brighton-events/patterns",
+      "finish_time": "",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-11-the-hope-ruin-an-dannsa-dub",
       "title": "An Dannsa Dub",
       "date": "2026-11-11",
@@ -6930,6 +6820,18 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-11-volks-gone-fishin-dumbhead",
+      "title": "GONE FISHIN': DUMBHEAD",
+      "date": "2026-11-11",
+      "venue": "Volks",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://link.dice.fm/a453e0649efc",
       "last_seen": "2026-10-06"
     },
     {
@@ -7106,18 +7008,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-13-patterns-the-entitled-sons",
-      "title": "The Entitled Sons",
-      "date": "2026-11-13",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "19:00",
-      "finish_time": "22:00",
-      "category": "Other",
-      "ticket_url": "https://dice.fm/event/the-entitled-sons-13th-nov-patterns-brighton-tickets",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-11-13-komedia-komedia-comedy-club-fri-13-nov-2026-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2026-11-13",
@@ -7222,6 +7112,18 @@
       "time": "",
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust",
+      "finish_time": "",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-13-patterns-the-entitled-sons",
+      "title": "The Entitled Sons",
+      "date": "2026-11-13",
+      "venue": "Patterns",
+      "category": "Music",
+      "time": "",
+      "ticket_url": "https://www.ents24.com/brighton-events/patterns",
+      "source_url": "https://www.ents24.com/brighton-events/patterns",
       "finish_time": "",
       "last_seen": "2026-10-06"
     },
@@ -7624,6 +7526,18 @@
       "last_seen": "2026-10-05"
     },
     {
+      "id": "2026-11-15-chalk-portrayal-of-guilt",
+      "title": "PORTRAYAL OF GUILT",
+      "date": "2026-11-15",
+      "venue": "CHALK",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://link.dice.fm/Ya9127838feb",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-15-patterns-aaron-rowe",
       "title": "Aaron Rowe",
       "date": "2026-11-15",
@@ -7731,6 +7645,18 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-17-dust-charlie-noordewier",
+      "title": "CHARLIE NOORDEWIER",
+      "date": "2026-11-17",
+      "venue": "DUST",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.axs.com/uk/events/1617073/charlie-noordeweir-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -7901,6 +7827,18 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-18-volks-poison-ru-n",
+      "title": "POISON RUÏN",
+      "date": "2026-11-18",
+      "venue": "Volks",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://dice.fm/partner/tickets/event/92356d-poison-ruin-18th-nov-volks-brighton-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -8934,6 +8872,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-26-the-hope-ruin-keg",
+      "title": "KEG",
+      "date": "2026-11-26",
+      "venue": "The Hope & Ruin",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.axs.com/uk/events/1513204/keg-tickets?skin=joyconcerts",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-26-the-old-market-a-night-for-the-mandem",
       "title": "A Night for the Mandem",
       "date": "2026-11-26",
@@ -8968,6 +8918,18 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-26-volks-slumber",
+      "title": "SLUMBER",
+      "date": "2026-11-26",
+      "venue": "Volks",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://link.dice.fm/Q865f47adb92",
       "last_seen": "2026-10-06"
     },
     {
@@ -9167,6 +9129,18 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-27-volks-cowboyy",
+      "title": "COWBOYY",
+      "date": "2026-11-27",
+      "venue": "Volks",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://link.dice.fm/J580a98a7728",
       "last_seen": "2026-10-06"
     },
     {
@@ -9507,6 +9481,18 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-12-01-dust-thistle",
+      "title": "THISTLE.",
+      "date": "2026-12-01",
+      "venue": "DUST",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.axs.com/uk/events/1613735/thistle-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -10169,6 +10155,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-12-08-concorde-2-the-script",
+      "title": "THE SCRIPT",
+      "date": "2026-12-08",
+      "venue": "Concorde 2",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://link.dice.fm/N0cca79179e9",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-12-08-patterns-ethan-regan",
       "title": "Ethan Regan",
       "date": "2026-12-08",
@@ -10470,6 +10468,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-12-11-dust-goodnight-texas",
+      "title": "GOODNIGHT, TEXAS",
+      "date": "2026-12-11",
+      "venue": "DUST",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.axs.com/uk/events/1452595/goodnight-texas-tickets",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2026-11-12-komedia-komedia-christmas-party-fri-11-dec-2026-doors-6-30-pm",
       "title": "Komedia Christmas Party",
       "date": "2026-12-11",
@@ -10479,6 +10489,18 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-christmas-party/?eid=20596",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-12-11-patterns-slag",
+      "title": "SLAG",
+      "date": "2026-12-11",
+      "venue": "Patterns",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.axs.com/uk/events/1573969/slag-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -11941,6 +11963,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2027-01-23-patterns-the-xcerts",
+      "title": "THE XCERTS",
+      "date": "2027-01-23",
+      "venue": "Patterns",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.axs.com/uk/events/1642653/the-xcerts-tickets",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2027-01-23-theatreroyalbrighton-varna-international-ballet-snow-white",
       "title": "Varna International Ballet - Snow White",
       "date": "2027-01-23",
@@ -12166,6 +12200,18 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21110",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2027-01-30-brighton-dome-jos-gonzales",
+      "title": "JOSÉ GONZALES",
+      "date": "2027-01-30",
+      "venue": "Brighton Dome",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://formpresents.seetickets.com/event/jose-gonzalez/brighton-dome-concert-hall/3631553",
       "last_seen": "2026-10-06"
     },
     {
@@ -12501,6 +12547,18 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.komedia.co.uk/shows/red-richardson-premium-economy-tour/?eid=20505",
+      "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2027-02-18-green-door-store-greg-freeman",
+      "title": "GREG FREEMAN",
+      "date": "2027-02-18",
+      "venue": "Green Door Store",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.axs.com/uk/events/1607387/greg-freeman-tickets",
       "last_seen": "2026-10-06"
     },
     {
@@ -13890,6 +13948,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2027-04-25-volks-sadness",
+      "title": "SADNESS",
+      "date": "2027-04-25",
+      "venue": "Volks",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://link.dice.fm/K1ac5f57986a",
+      "last_seen": "2026-10-06"
+    },
+    {
       "id": "2027-04-29-komedia-comic-boom-comedy-club",
       "title": "Comic Boom Comedy Club",
       "date": "2027-04-29",
@@ -14493,8 +14563,8 @@
     }
   ],
   "discovery_report": {
-    "calendars_loaded": 4,
-    "calendars": 4,
-    "events_found": 17
+    "calendars_loaded": 5,
+    "calendars": 5,
+    "events_found": 85
   }
 }
