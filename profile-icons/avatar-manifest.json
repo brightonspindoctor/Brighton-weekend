@@ -334,5 +334,12 @@
     "source_sha256": "f4c3e328a9d319e1173530b080419f407b98c395c4d62a3175efed825ad391c8",
     "file": "standardized/bonsai.png",
     "sha256": "3575c925336866474053c9148de8058574e720040054a1cbe2b65f07f9e84212"
+  },
+  "starling": {
+    "label": "Starling",
+    "source": "starling.png",
+    "source_sha256": "83848ceef8f68dad4a1c7c7333b7e985236d85794a0ed386df87b0d9e4348b5a",
+    "file": "standardized/starling.png",
+    "sha256": "fc1ec0c7e8d837622969837a84a8ec131ae2c7de5cfd2bd361fe90da09f65c09"
   }
 }
