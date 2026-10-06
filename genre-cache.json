@@ -8,6 +8,12 @@
   "act": "1000 Rabbits",
   "checked": "2026-10-06"
  },
+ "1btn x vicious charm presents jim live": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "1BTN X Vicious Charm. Presents JIM live!",
+  "checked": "2026-10-06"
+ },
  "4am kru": {
   "mbid": "ce2348e0-1819-4877-83d3-ed8c43133a5c",
   "name": "4am Kru",
@@ -3224,6 +3230,24 @@
   "act": "Outpost Drive",
   "checked": "2026-10-06"
  },
+ "p rallel": {
+  "mbid": "3209eb28-ef65-4920-9f23-4000451994a4",
+  "name": "p-rallel",
+  "genres": [
+   {
+    "name": "hip hop",
+    "count": 1
+   },
+   {
+    "name": "r&b",
+    "count": 1
+   }
+  ],
+  "bucket": "Hip-hop & R&B",
+  "reason": "tagged",
+  "act": "P-rallel",
+  "checked": "2026-10-06"
+ },
  "party 4 u": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -4231,6 +4255,12 @@
   "bucket": null,
   "reason": "no genre tags",
   "act": "The Jack Cades",
+  "checked": "2026-10-06"
+ },
+ "the jam uk": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Jam UK",
   "checked": "2026-10-06"
  },
  "the len price 3": {
