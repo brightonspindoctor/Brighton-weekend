@@ -605,7 +605,8 @@
       "ticket_url": "https://brightondome.org/whats-on/LtI-katherine-jenkins/",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-10-06-brighton-dome-katherine-jenkins"
+        "2026-10-06-brighton-dome-katherine-jenkins",
+        "2026-10-06-brighton-dome-music-katherine-jenkins-special-guest-jodok-cello-will-be-performing-with-katherine-jenkins-tue-6-oct-concert-hall-from-39-75-find-out-more"
       ]
     },
     {
@@ -670,32 +671,11 @@
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/",
       "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-06-brighton-dome-concert-hall-new-on-sale-music-david-bowie-you-re-not-alone-a-lightroom-production-fri-16-jul-mon-30-aug-brighton-dome-corn-exchange-from-26-find-tickets"
+      ],
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:5441c29d-3602-4898-b1a1-b77fa23b8e50"
-    },
-    {
-      "id": "2026-10-06-brighton-dome-music-katherine-jenkins-special-guest-jodok-cello-will-be-performing-with-katherine-jenkins-tue-6-oct-concert-hall-from-39-75-find-out-more",
-      "title": "Music Katherine Jenkins Special guest Jodok Cello will be performing with Katherine Jenkins Tue 6 Oct Concert Hall From £39.75 Find out more",
-      "date": "2026-10-06",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Theatre",
-      "ticket_url": "https://brightondome.org/whats-on/LtI-katherine-jenkins/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-06-brighton-dome-concert-hall-new-on-sale-music-david-bowie-you-re-not-alone-a-lightroom-production-fri-16-jul-mon-30-aug-brighton-dome-corn-exchange-from-26-find-tickets",
-      "title": "New on Sale Music David Bowie: You’re Not Alone A Lightroom Production Fri 16 Jul - Mon 30 Aug Brighton Dome Corn Exchange From £26 Find tickets",
-      "date": "2026-10-06",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/LIb-david-bowie-youre-not-alone/",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-10-06-brighton-racecourse-tuesday-afternoon-october-flat-racing-2026",
@@ -758,6 +738,7 @@
       "ticket_url": "https://brightondome.org/whats-on/L8Q-ocean-film-festival-world-tour/",
       "last_seen": "2026-10-06",
       "also_ids": [
+        "2026-10-07-brighton-dome-film-visual-arts",
         "2026-10-07-brighton-dome-ocean-film-festival-world-tour-2"
       ]
     },
@@ -797,7 +778,8 @@
       "ticket_url": "https://brightondome.org/whats-on/L1o-man-or-bear/",
       "last_seen": "2026-10-06",
       "also_ids": [
-        "2026-10-07-brighton-dome-man-or-bear-2"
+        "2026-10-07-brighton-dome-man-or-bear-2",
+        "2026-10-07-brighton-dome-theatre-man-or-bear-a-funny-fierce-play-inspired-by-the-viral-question-wed-7-oct-studio-theatre-from-10-find-out-more"
       ]
     },
     {
@@ -810,30 +792,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/kane-brown-crowd-work-king/?eid=19147",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-07-brighton-dome-film-visual-arts",
-      "title": "Film & Visual Arts Ocean Film Festival World Tour BANFF Wed 7 Oct Concert Hall From £19.50 Find out more",
-      "date": "2026-10-07",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/L8Q-ocean-film-festival-world-tour/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-07-brighton-dome-theatre-man-or-bear-a-funny-fierce-play-inspired-by-the-viral-question-wed-7-oct-studio-theatre-from-10-find-out-more",
-      "title": "Theatre Man or Bear A funny, fierce play inspired by the viral question Wed 7 Oct Studio Theatre From £10 Find out more",
-      "date": "2026-10-07",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Theatre",
-      "ticket_url": "https://brightondome.org/whats-on/L1o-man-or-bear/",
       "last_seen": "2026-10-06"
     },
     {
@@ -1132,15 +1090,19 @@
     },
     {
       "id": "2026-10-09-green-door-store-sold-out-arkayla",
-      "title": "*SOLD OUT* Arkayla",
+      "title": "Arkayla",
       "date": "2026-10-09",
       "venue": "Green Door Store",
       "source": "venue",
       "time": "19:00",
       "finish_time": "",
-      "category": "Other",
+      "category": "Music",
       "ticket_url": "https://thegreendoorstore.co.uk/events/sold-out-arkayla/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "status": "SOLD OUT",
+      "also_ids": [
+        "2026-10-09-greendoorstore-arkayla-raynor"
+      ]
     },
     {
       "id": "2026-10-09-patterns-jhariah",
@@ -1258,18 +1220,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-09-brighton-dome-select-a-date",
-      "title": "Select a date",
-      "date": "2026-10-09",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://brightondome.org/whats-on/L17-brighton-dome-backstage-tours/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-09-chalk-the-amazons",
       "title": "The Amazons",
       "date": "2026-10-09",
@@ -1278,18 +1228,6 @@
       "time": "",
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
-      "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-09-greendoorstore-arkayla-raynor",
-      "title": "ARKAYLA Raynor",
-      "date": "2026-10-09",
-      "venue": "Green Door Store",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/",
-      "source_url": "https://thegreendoorstore.co.uk/events/",
       "finish_time": "",
       "last_seen": "2026-10-06"
     },
@@ -2018,18 +1956,6 @@
       ]
     },
     {
-      "id": "2026-10-12-chalk-fat-poppadaddys-societies",
-      "title": "Fat Poppadaddys Societies",
-      "date": "2026-10-12",
-      "venue": "CHALK",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/event/fat-poppadaddys-societies-4",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-12-the-prince-albert-dylan-flynn-the-dead-poets",
       "title": "Dylan Flynn & The Dead Poets",
       "date": "2026-10-12",
@@ -2471,6 +2397,7 @@
       "ticket_url": "https://brightondome.org/whats-on/Ljb-jazz-emu-the-pleasure-is-all-yours/",
       "last_seen": "2026-10-06",
       "also_ids": [
+        "2026-10-16-brighton-dome-accessible-events-comedy-jazz-emu-the-pleasure-is-all-yours-brighton-dome-comedy-festival-in-cahoots-with-komedia-2026-fri-16-oct-corn-exchange-from-26-fin",
         "2026-10-16-brighton-dome-jazz-emu-the-pleasure-is-all-yours-2"
       ]
     },
@@ -2501,6 +2428,7 @@
       "ticket_url": "https://brightondome.org/whats-on/Ls4-celya-ab-we-must-stop-meeting-like-this/",
       "last_seen": "2026-10-06",
       "also_ids": [
+        "2026-10-16-brighton-dome-accessible-events-comedy-celya-ab-we-must-stop-meeting-like-this-brighton-dome-comedy-festival-in-cahoots-with-komedia-2026-fri-16-oct-studio-theatre-from-",
         "2026-10-16-brighton-dome-celya-ab-we-must-stop-meeting-like-this-2"
       ]
     },
@@ -2705,30 +2633,6 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-16-brighton-dome-accessible-events-comedy-celya-ab-we-must-stop-meeting-like-this-brighton-dome-comedy-festival-in-cahoots-with-komedia-2026-fri-16-oct-studio-theatre-from-",
-      "title": "Accessible Events Comedy Celya AB: We Must Stop Meeting Like This Brighton Dome Comedy Festival in cahoots with Komedia 2026 Fri 16 Oct Studio Theatre From £22 Find out more",
-      "date": "2026-10-16",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://brightondome.org/whats-on/Ls4-celya-ab-we-must-stop-meeting-like-this/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-16-brighton-dome-accessible-events-comedy-jazz-emu-the-pleasure-is-all-yours-brighton-dome-comedy-festival-in-cahoots-with-komedia-2026-fri-16-oct-corn-exchange-from-26-fin",
-      "title": "Accessible Events Comedy Jazz Emu: The Pleasure Is All Yours Brighton Dome Comedy Festival in cahoots with Komedia 2026 Fri 16 Oct Corn Exchange From £26 Find out more",
-      "date": "2026-10-16",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://brightondome.org/whats-on/Ljb-jazz-emu-the-pleasure-is-all-yours/",
       "last_seen": "2026-10-06"
     },
     {
@@ -3081,18 +2985,6 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.ticketmaster.co.uk/event/3E0064C4C74F6C2A",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-17-brighton-dome-for-the-kids",
-      "title": "For the kids",
-      "date": "2026-10-17",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://brightondome.org/comedyfestival/",
       "last_seen": "2026-10-06"
     },
     {
@@ -3480,18 +3372,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-19-chalk-fat-poppadaddys-record-store",
-      "title": "Fat Poppadaddys Record Store",
-      "date": "2026-10-19",
-      "venue": "CHALK",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://chalkvenue.com/event/fat-poppadaddys-record-store",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-19-the-old-market-notes-a-wine-and-music-pairing-night",
       "title": "NOTES: A Wine and Music Pairing Night",
       "date": "2026-10-19",
@@ -3582,18 +3462,6 @@
       "genre_source": "musicbrainz:219f330f-4b12-418a-a69b-451c3c2a7383"
     },
     {
-      "id": "2026-10-20-greendoorstore-makeshift-art-bar",
-      "title": "Makeshift Art Bar",
-      "date": "2026-10-20",
-      "venue": "Green Door Store",
-      "category": "Other",
-      "time": "",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/",
-      "source_url": "https://thegreendoorstore.co.uk/events/",
-      "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-20-theoldmarket-inside-the-world-of-the-beatles-with-gary-kemp-and-simon-halfon",
       "title": "Inside the World of The Beatles with Gary Kemp and Simon Halfon",
       "date": "2026-10-20",
@@ -3604,17 +3472,6 @@
       "category": "Talk",
       "ticket_url": "https://www.theoldmarket.com/shows/inside-the-world-of-the-beatles-with-gary-kemp-and-simon-halfon",
       "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-20-the-old-market-talk",
-      "title": "Talk",
-      "date": "2026-10-20",
-      "venue": "The Old Market",
-      "time": "",
-      "finish_time": "",
-      "category": "Talk",
-      "ticket_url": "https://www.theoldmarket.com/shows?category=Talk",
-      "last_seen": "2026-10-05"
     },
     {
       "id": "2026-10-20-the-prince-albert-pina-palau",
@@ -4135,17 +3992,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-23-brighton-dome-exhibitions-and-workshops",
-      "title": "Exhibitions and Workshops",
-      "date": "2026-10-23",
-      "venue": "Brighton Dome",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://brightondome.org/comedyfestival/",
-      "last_seen": "2026-10-05"
-    },
-    {
       "id": "2026-10-23-brighton-dome-finding-your-funny-workshop",
       "title": "Finding Your Funny Workshop",
       "date": "2026-10-23",
@@ -4461,18 +4307,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-24-shelter-hall-oktoberfest-returns-to-brighton-23-24-october-secure-your-spot",
-      "title": "Oktoberfest Returns to Brighton! 23–24 October · Secure Your Spot",
-      "date": "2026-10-24",
-      "venue": "Shelter Hall",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.eventbrite.co.uk/e/brightons-oktoberfest-2026-tickets-1994136949296",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-24-the-old-market-michael-spicer-hope-all-s-well",
       "title": "Michael Spicer: Hope All’s Well",
       "date": "2026-10-24",
@@ -4644,30 +4478,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-10-25-brighton-dome-brighton-dome-comedy-festival-in-cahoots-with-komedia",
-      "title": "Brighton Dome Comedy Festival in cahoots with Komedia",
-      "date": "2026-10-25",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://brightondome.org/comedyfestival/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-25-brighton-dome-comedy-free-comedy-workshops-for-young-people-age-11-16-presented-by-komedia-productions-in-partnership-with-brighton-dome-comedy-festival-2026-sat-3-sun-2",
-      "title": "Comedy Free Comedy Workshops for Young People Age 11–16 Presented by Komedia Productions in partnership with Brighton Dome Comedy Festival 2026 Sat 3 - Sun 25 Oct Find out more",
-      "date": "2026-10-25",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://brightondome.org/whats-on/LZc-free-comedy-workshops-for-young-people-age-11-16/",
-      "last_seen": "2026-10-06"
-    },
-    {
       "id": "2026-10-25-brighton-dome-free-comedy-workshops-for-young-people-age-11-16",
       "title": "Free Comedy Workshops for Young People Age 11–16",
       "date": "2026-10-25",
@@ -4677,7 +4487,10 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LZc-free-comedy-workshops-for-young-people-age-11-16/",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-10-25-brighton-dome-comedy-free-comedy-workshops-for-young-people-age-11-16-presented-by-komedia-productions-in-partnership-with-brighton-dome-comedy-festival-2026-sat-3-sun-2"
+      ]
     },
     {
       "id": "2026-10-25-brighton-dome-sam-campbell-kid-giblet",
@@ -4911,17 +4724,6 @@
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/chaps-straps-queer-line-dancing/?eid=21347",
       "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-10-27-the-old-market-podcast",
-      "title": "Podcast",
-      "date": "2026-10-27",
-      "venue": "The Old Market",
-      "time": "",
-      "finish_time": "",
-      "category": "Talk",
-      "ticket_url": "https://www.theoldmarket.com/shows?category=Podcast",
-      "last_seen": "2026-10-05"
     },
     {
       "id": "2026-10-27-the-old-market-shut-up-i-m-talking-live-halloween-special",
@@ -6611,17 +6413,6 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.theoldmarket.com/shows",
-      "last_seen": "2026-10-05"
-    },
-    {
-      "id": "2026-11-10-the-old-market-talk",
-      "title": "Talk",
-      "date": "2026-11-10",
-      "venue": "The Old Market",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.theoldmarket.com/shows?category=Talk",
       "last_seen": "2026-10-05"
     },
     {
@@ -8762,18 +8553,6 @@
     {
       "id": "2026-11-27-brighton-dome-brighton-dome-backstage-tours",
       "title": "Brighton Dome Backstage Tours",
-      "date": "2026-11-27",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/L17-brighton-dome-backstage-tours/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-11-27-brighton-dome-heritage-tours",
-      "title": "Heritage & Tours",
       "date": "2026-11-27",
       "venue": "Brighton Dome",
       "source": "venue",
