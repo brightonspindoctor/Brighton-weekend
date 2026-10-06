@@ -256,6 +256,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .festival-filters{display:flex;gap:var(--bw-space-2);overflow-x:auto;padding:2px 1px var(--bw-space-2);margin:0 -2px var(--bw-space-2);scrollbar-width:none;position:sticky;top:72px;z-index:4;background:var(--bw-abyss)}
 .festival-filters::-webkit-scrollbar{display:none}
 .festival-filter{flex:none;min-height:38px;padding:8px 14px;border-radius:var(--bw-radius-pill);border:1px solid var(--bw-line);background:var(--bw-deep);color:var(--bw-muted);font-size:var(--bw-text-sm);font-weight:800;white-space:nowrap}
+.comedy-venues{position:static;flex-wrap:wrap;overflow:visible}
 .festival-filter.active{background:var(--bw-interested-bg);border-color:var(--bw-interested-line);color:var(--bw-interested-fg)}
 .festival-card .festival-date{font-size:var(--bw-text-sm);font-weight:800;color:var(--bw-interested-fg);margin-bottom:var(--bw-space-1)}
 .festival-card .festival-location{font-size:var(--bw-text-sm);color:var(--bw-muted);margin-top:var(--bw-space-1)}
@@ -434,17 +435,18 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <header><div class="wrap">
   <div class="app-brand"><img src="icons/icon-192.png?v=57" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
   <div class="sub" id="subtitle">Make the most of yours</div></div></div>
-  <div class="controls">
+  <div class="controls hidden">
     <button id="prev" aria-label="Previous week">‹</button><button id="week" class="week" aria-live="polite"></button><button id="next" aria-label="Next week">›</button>
     <button id="today" class="today">This week</button><button id="refresh" aria-label="Refresh events">↻</button>
   </div>
 </div></header>
 
-<main id="discover" class="wrap app-main"></main>
+<main id="discover" class="wrap app-main hidden"></main>
 <main id="comedyTab" class="wrap app-main hidden">
   <div class="section-head">
     <h2>Comedy</h2>
   </div>
+  <div id="comedyVenues" class="festival-filters comedy-venues" role="group" aria-label="Comedy venues"></div>
   <div id="comedyList"></div>
 </main>
 <main id="searchTab" class="wrap app-main hidden">
@@ -483,7 +485,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
   </div>
   <div id="festivalList"></div>
 </main>
-<main id="peopleTab" class="wrap app-main hidden">
+<main id="peopleTab" class="wrap app-main">
 <h2>Happenings</h2>
 <div class="custom-event-launch"><div><strong>Add something missing?</strong></div><button id="toggleCustomEvent" class="btn btn-primary" type="button">＋ Add event</button></div>
 <section id="customEventPanel" class="custom-event-panel collapsed">
@@ -511,7 +513,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <div class="settings-card install-area"><h3>Install the app</h3><button id="installApp" class="btn btn-primary install-btn">↓ Add to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
 <div class="settings-links"><a href="about.html" target="_blank" rel="noopener">About</a><a href="privacy.html" target="_blank" rel="noopener">Privacy</a><a href="terms.html" target="_blank" rel="noopener">Terms</a></div>
 </main>
-<nav class="nav" aria-label="Main"><button class="active" data-tab="discover"><span class="nav-icon">♬</span> Discover</button><button data-tab="comedyTab"><span class="nav-icon">☻</span> Comedy</button><button data-tab="festivalsTab"><span class="nav-icon">⌂</span> Festivals</button><button data-tab="searchTab"><span class="nav-icon">⌕</span> Search</button><button data-tab="peopleTab"><span class="nav-icon">♡</span> Happenings</button><button data-tab="venuesTab"><span class="nav-icon">⚙</span> Settings</button></nav>
+<nav class="nav" aria-label="Main"><button class="active" data-tab="peopleTab" aria-current="page"><span class="nav-icon">♡</span> Happenings</button><button data-tab="discover"><span class="nav-icon">♬</span> Discover</button><button data-tab="comedyTab"><span class="nav-icon">☻</span> Comedy</button><button data-tab="festivalsTab"><span class="nav-icon">⌂</span> Festivals</button><button data-tab="searchTab"><span class="nav-icon">⌕</span> Search</button><button data-tab="venuesTab"><span class="nav-icon">⚙</span> Settings</button></nav>
 
 <!-- supabase-js is served from this site (pinned copy, see vendor/) rather than a CDN. -->
 <script src="vendor/supabase-js-2.117.2.js"></script>
@@ -821,7 +823,7 @@ async function loadGroupHappenings(){
   localStorage.setItem('bw_happenings_seen_'+uid(),happeningsSignature(groupHappenings));
   localStorage.removeItem('bw_happenings_mark_pending_'+uid());
  }
- updateHappeningsBadge();
+ if(!$('peopleTab').classList.contains('hidden'))markHappeningsSeen(); else updateHappeningsBadge();
 }
 function trackVisitor(){
  api('POST','rpc/bw_track_visit',{}).catch(()=>{}); // records this visit for the admin dashboard (v53)
@@ -1021,13 +1023,30 @@ function isComedy(e){
  const hay=[e.category,e.type,e.genre,e.tags,e.title,e.description].filter(Boolean).join(' ').toLowerCase();
  return /\b(comedy|comedian|stand.?up|standup|improv|improvisation|sketch|open mic comedy)\b/.test(hay);
 }
+// Venue toggles on the Comedy tab: the same venue setting as Settings → Venues.
+function comedyVenueNames(){
+ const withComedy=events.filter(isComedy).map(e=>canonicalVenue(e.venue)).filter(v=>v&&v!=='Other');
+ return [...new Set([...COMEDY_VENUES,...withComedy])].filter(v=>VENUES.includes(v)).sort((a,b)=>a.localeCompare(b));
+}
+function renderComedyVenues(){
+ const box=$('comedyVenues');if(!box)return;
+ box.innerHTML=comedyVenueNames().map(v=>{const on=enabled.includes(v);return `<button type="button" class="festival-filter${on?' active':''}" data-comedy-venue="${esc(v)}" aria-pressed="${on}">${esc(v)}</button>`}).join('');
+}
+document.addEventListener('click',e=>{
+ const b=e.target.closest('[data-comedy-venue]');if(!b)return;
+ const v=b.dataset.comedyVenue;
+ enabled=enabled.includes(v)?enabled.filter(x=>x!==v):[...enabled,v];
+ localStorage.setItem('bw_venues',JSON.stringify(enabled));
+ renderAll();
+});
 function renderComedy(){
+ renderComedyVenues();
  const days=weekDays();
  const html=days.map(day=>{
   const list=events.filter(e=>e.date===day.key&&isComedy(e)&&venueVisible(e));
   return list.length?dayHeading(day)+list.map(e=>eventCard(e)).join(''):'';
  }).join('');
- $('comedyList').innerHTML=html||'<div class="empty">No comedy this week at your selected venues. Try another week or turn on more venues in Settings.</div>';
+ $('comedyList').innerHTML=html||'<div class="empty">No comedy this week at your selected venues. Try another week or turn on more venues above.</div>';
 }
 const STATUS_LABEL={ticket_bought:'Going',interested:'Interested',not_interested:'Not for me'};
 const STATUS_CLASS={ticket_bought:'going',interested:'interested',not_interested:'pass'};
