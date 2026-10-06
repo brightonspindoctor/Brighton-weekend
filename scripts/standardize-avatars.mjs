@@ -61,15 +61,24 @@ const FALLBACK_BG = [11, 27, 38];
 // artwork's edge, so it matches that image's own background (not the subject).
 async function backgroundOf(art) {
   const { data } = await sharp(art).raw().toBuffer({ resolveWithObject: true });
-  const dark = [];
-  const c = SIZE / 2, r = SIZE / 2 - 8;
-  for (let a = 0; a < 360; a += 2) {
-    const x = Math.round(c + r * Math.cos(a * Math.PI / 180)), y = Math.round(c + r * Math.sin(a * Math.PI / 180));
-    const i = (y * SIZE + x) * 4;
-    if (0.2126 * data[i] + 0.7152 * data[i + 1] + 0.0722 * data[i + 2] < 55) dark.push([data[i], data[i + 1], data[i + 2]]);
-  }
-  const channel = k => dark.length > 20 ? dark.map(p => p[k]).sort((a, b) => a - b)[dark.length >> 1] : FALLBACK_BG[k];
-  return { r: channel(0), g: channel(1), b: channel(2), alpha: 1 };
+  const darkAt = pts => pts.map(([x, y]) => (y * SIZE + x) * 4)
+    .filter(i => data[i + 3] > 240 && 0.2126 * data[i] + 0.7152 * data[i + 1] + 0.0722 * data[i + 2] < 55)  // opaque, dark
+    .map(i => [data[i], data[i + 1], data[i + 2]]);
+  const median = (px, fallback) => [0, 1, 2].map(k => px.length > 20 ? px.map(p => p[k]).sort((a, b) => a - b)[px.length >> 1] : fallback[k]);
+  // Usually: the dark pixels in a ring near the artwork's edge.
+  const c = SIZE / 2, r = SIZE / 2 - 8, ringPts = [];
+  for (let a = 0; a < 360; a += 2) ringPts.push([Math.round(c + r * Math.cos(a * Math.PI / 180)), Math.round(c + r * Math.sin(a * Math.PI / 180))]);
+  const ring = median(darkAt(ringPts), FALLBACK_BG);
+  // But if wings or a tail reach the edge (the griffin), the ring picks up the
+  // subject's colour: then the corners, which are always background, decide.
+  const cornerPts = [];
+  for (const [cx, cy] of [[0, 0], [SIZE - 14, 0], [0, SIZE - 14], [SIZE - 14, SIZE - 14]])
+    for (let y = cy; y < cy + 14; y++) for (let x = cx; x < cx + 14; x++) cornerPts.push([x, y]);
+  const cornerPx = darkAt(cornerPts);
+  const corner = median(cornerPx, ring);
+  const far = Math.hypot(ring[0] - corner[0], ring[1] - corner[1], ring[2] - corner[2]) > 30;
+  const [rr, gg, bb] = far && cornerPx.length > 20 ? corner : ring;
+  return { r: rr, g: gg, b: bb, alpha: 1 };
 }
 const scaled = Math.round(SIZE / CROP);
 const offset = Math.floor((scaled - SIZE) / 2);
