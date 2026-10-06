@@ -22,6 +22,8 @@ VENUE_ALIASES={
  "theatre royal - brighton":"Theatre Royal Brighton","the hope and ruin":"The Hope & Ruin",
  "brighton komedia":"Komedia","corn exchange":"Brighton Dome","brighton dome":"Brighton Dome",
  "old albion":"Old Albion","the old albion":"Old Albion","the brighton centre":"Brighton Centre",
+ "the pipeline":"The Pipeline","pipeline brighton":"The Pipeline","volks club":"Volks","the volks":"Volks",
+ "patterns brighton":"Patterns","dust brighton":"DUST","hope & ruin":"The Hope & Ruin","the hope & ruin":"The Hope & Ruin",
 }
 SOURCES=[
  "https://www.visitbrighton.com/whats-on/Brighton",
@@ -30,7 +32,7 @@ SOURCES=[
  "https://www.skiddle.com/whats-on/Brighton/"
 ]
 MONTHS=r"Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?"
-DATE_RE=re.compile(rf"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\.?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s*(?:\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?)\b",re.I); TIME_RE=re.compile(r"\b(\d{1,2}(?::\d{2})?\s*(?:am|pm))\b",re.I)
+DATE_RE=re.compile(rf"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\.?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s*(?:\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?|\d{{1,2}}/\d{{1,2}}/(?:\d{{4}}|\d{{2}}))\b",re.I); TIME_RE=re.compile(r"\b(\d{1,2}(?::\d{2})?\s*(?:am|pm))\b",re.I)
 GENERIC_TITLES={'comedy','classical music','music','talks & debate','talks and debate','dance','theatre','family',"what's on",'events','upcoming events','get tickets','buy tickets','book tickets','learn more','more info','more info & tickets','find out more','event details','sold out','on sale','on sale today','tickets','read more','view event'}
 CTA_PREFIXES=('get tickets','buy tickets','book tickets','learn more','more info','find out more','event details','on sale','sold out')
 def clean(s):return re.sub(r"\s+"," ",s or "").strip()
