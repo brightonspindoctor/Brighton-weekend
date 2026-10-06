@@ -92,6 +92,9 @@ everywhere, including buttons and badges ("Sold out", "Tickets").
 | Event card | `.card` › `.top`, `.title`, `.meta`, `.price`, `.people`, `.commitment`, `.actions` | Built by `eventCard()` in `js/app.js`. Discover, Comedy and Search all use it. |
 | Commitment control | `.commitment` › `.commit-btn.no/.yes/.bought` (+ `.selected`) | Three equal columns that never wrap. Icons hide below 360px wide. |
 | Social chip | `.social-chip` › `.social-icon.heart/.going/.profile` | Counts on cards and names in the group roster. Don't use the class `ticket` here: that's the coral Tickets link. |
+| Genre chips | `.genre-chips` › `.genre-chip` (`aria-pressed`, `.untagged`) | Discover filter row and Search pickers. Selected uses the teal "you picked this" colours; Untagged is dashed. Counts in `.n`. |
+| Genre tag | `.genre-tag` | Under the venue on an event card, only when the event has a genre. |
+| Promoter filter | `.promoter-filter` | Teal bar on Discover after tapping a promoter sticker; "Show all" clears it. |
 | Promoter sticker | `.card-flags` › `.promoter-sticker.joy` | Top right of an event card for gigs by a promoter we read (`e.promoter`, mapped in `PROMOTER_STICKERS`). Tilted 6°, square-ish corners, its own colour (JOY. yellow `#FFE14D`, navy text, 12:1): it is a label, never a button. Sits after "Sold out". |
 | Ticket icon | `TICKET_ICON` in the app script (`.ticket-glyph`) | A vector ticket drawn in `currentColor`, used for Going everywhere so it looks the same on every phone. |
 | Avatar | `img.avatar` | The artwork file is already a circle; CSS adds exactly one 1px outline (2px teal when selected). No boxes, rings or per-avatar variants. |
