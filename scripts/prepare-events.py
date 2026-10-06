@@ -35,6 +35,10 @@ GENERIC_TITLES = {
     "you might also like", "accessible events", "accessible events theatre", "contemporary music",
     "literature, poetry & spoken word", "literature poetry and spoken word", "spoken word",
     "related events", "similar events", "more events", "whats on", "coming soon",
+    # Website buttons, section headings and marketing lines read as events (6 Oct 2026 review).
+    "select a date", "select date", "choose a date", "select a time", "choose a time", "select a performance",
+    "exhibitions and workshops", "exhibitions & workshops", "heritage & tours", "heritage and tours",
+    "for the kids", "podcast", "podcasts", "talk", "talks", "secure your spot", "book your spot",
 }
 
 def title_key(title):
@@ -57,7 +61,18 @@ _MON = r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?"
 TRAILING_DATE = re.compile(
     r"\s*(?:(?:mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?,?\s+)?"
     rf"(?:(?:\d{{1,2}}(?:st|nd|rd|th)?\s+{_MON}|{_MON}\s+\d{{1,2}}(?:st|nd|rd|th)?,?)\s+\d{{4}}\b|\d{{1,2}}/\d{{1,2}}/\d{{2,4}}\b).*$", re.I)
-LEADING_LABEL = re.compile(r"^(?:(?:club|live|comedy|music|theatre|family|special|featured|free)\s+events?|limited\s+(?:free\s+)?tickets?|sold\s+out|on\s+sale\s+now|just\s+announced)\s*[-:–|]?\s+", re.I)
+# A whole listing card read as a title: "Music Katherine Jenkins ... Tue 6 Oct
+# Concert Hall From £39.75 Find out more" (Brighton Dome). Its show name is
+# recovered and a cleaner listing of the same show is preferred.
+CARD_TEXT = re.compile(r"(?:\bfind\s+out\s+more|\bfind\s+tickets|\bbook\s+now|\bfrom\s+£\s?\d)\s*$", re.I)
+CARD_LABELS = re.compile(r"^(?:(?:new\s+on\s+sale|accessible\s+events|just\s+announced|music|comedy|theatre|dance|family|film\s*&\s*visual\s+arts|talks?\s*(?:&|and)\s*debate|classical\s+music|literature,?\s+poetry\s*&\s*spoken\s+word)\s+)+", re.I)
+CARD_TAIL = re.compile(r"\s+(?:(?:mon|tue|wed|thu|fri|sat|sun)[a-z]*\s+\d{1,2}\s+[a-z]{3,9}\b|brighton\s+dome\s+comedy\s+festival\b|presented\s+by\b).*$", re.I)
+
+def card_title(title):
+    t = CARD_TAIL.sub("", CARD_LABELS.sub("", str(title).strip())).strip(" -–|·")
+    return t if len(t) >= 3 else str(title)
+
+LEADING_LABEL = re.compile(r"^(?:\*+\s*sold\s+out\s*\*+|(?:club|live|comedy|music|theatre|family|special|featured|free)\s+events?|limited\s+(?:free\s+)?tickets?|sold\s+out|on\s+sale\s+now|just\s+announced)\s*[-:–|]?\s+", re.I)
 # Same rule as scrape-events.py: door/start times and page section labels are not event names.
 NOT_A_TITLE = re.compile(r"""(?:
    doors?(?:\s*open)?\s*[:\-]?\s*\d.*                 # Doors: 7:00 PM
@@ -110,7 +125,13 @@ data = json.loads(DATA.read_text())
 cleaned_titles = 0
 for event in data.get("events", []):
     venue_name = VENUE_ALIASES.get(str(event.get("venue") or "").strip(), str(event.get("venue") or "").strip())
-    new_title = display_title(clean_title(event.get("title")), venue_name)
+    raw_title = str(event.get("title") or "")
+    if CARD_TEXT.search(raw_title):
+        event["_card_text"] = True
+        raw_title = card_title(raw_title)
+    if re.match(r"^\*+\s*sold\s+out", raw_title, re.I):
+        event["status"] = "SOLD OUT"
+    new_title = display_title(clean_title(raw_title), venue_name)
     if new_title != event.get("title"):
         event["title"] = new_title  # the id is kept so saved Interested/Going choices still match
         cleaned_titles += 1
@@ -147,7 +168,7 @@ def base_key(event):
 def preference(event):
     # A real show name before a title that is only the venue's name, then the
     # venue's own listing, then a timed one, then the fuller title.
-    return (is_venue_name(event.get("title"), event.get("venue")), event.get("source") == "discovery",
+    return (bool(event.get("_card_text")), is_venue_name(event.get("title"), event.get("venue")), event.get("source") == "discovery",
             not event.get("time"), -len(title_key(event.get("title"))))
 
 def can_merge(kept_event, event):
@@ -200,6 +221,8 @@ for event in sorted(final, key=lambda e: str(e.get("last_seen") or "")):
     while event["id"] in used:
         event["id"] = f"{base_id}-{n}"; n += 1
     used.add(event["id"])
+for event in final:
+    event.pop("_card_text", None)
 data["events"] = final
 data["venues"] = sorted({str(e["venue"]) for e in final if e.get("venue")})
 DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")

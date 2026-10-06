@@ -19,6 +19,10 @@ GENERIC_TITLES = {
     "you might also like", "accessible events", "accessible events theatre", "contemporary music",
     "literature, poetry & spoken word", "literature poetry and spoken word", "spoken word",
     "related events", "similar events", "more events", "whats on", "coming soon",
+    # Website buttons, section headings and marketing lines read as events (6 Oct 2026 review).
+    "select a date", "select date", "choose a date", "select a time", "choose a time", "select a performance",
+    "exhibitions and workshops", "exhibitions & workshops", "heritage & tours", "heritage and tours",
+    "for the kids", "podcast", "podcasts", "talk", "talks", "secure your spot", "book your spot",
 }
 
 NOT_A_TITLE = re.compile(r"""(?:
@@ -71,6 +75,8 @@ for i, event in enumerate(events):
     if any(str(r.get("title_contains", "")).lower() in low and (not r.get("venue") or str(r["venue"]).lower() == venue.lower()) for r in EXCLUDED if r.get("title_contains")):
         errors.append(f"hidden event still present (excluded-events.json): {event_id}")
     if low in GENERIC_TITLES or re.sub(r"[^a-z0-9]+", " ", low).strip() in GENERIC_KEYS or not re.search(r"[^\W\d_]{2}", low) or NOT_A_TITLE.fullmatch(low): errors.append(f"generic title still present: {event_id}")
+    if re.search(r"(?:\bfind\s+out\s+more|\bfind\s+tickets|\bfrom\s+£\s?\d)", title, re.I): errors.append(f"listing card text as a title: {event_id}")
+    if re.match(r"^\*+\s*sold\s+out", title, re.I): errors.append(f"'SOLD OUT' label in title: {event_id}")
     for field in ("time", "finish_time"):
         value = str(event.get(field) or "")
         if value and not re.fullmatch(r"\d{2}:\d{2}", value): errors.append(f"{event_id}: {field} {value!r} is not HH:MM")
