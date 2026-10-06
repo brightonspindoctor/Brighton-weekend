@@ -9,6 +9,7 @@ from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
+from event_matching import same_show as same_show_at_venue
 
 ROOT=Path(__file__).resolve().parents[1]
 # Sources marked "disabled" stay listed (the discovery scraper still recognises
@@ -70,14 +71,15 @@ VENUE_ALIASES={'Brighton Dome - Concert Hall':'Brighton Dome'}  # same as prepar
 def canonical_venue(v): return VENUE_ALIASES.get(v,v)
 def event_key(e): return (canonical_venue(e.get('venue','')).lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
 def day_key(e): return (canonical_venue(e.get('venue','')).lower(),e.get('date',''))
-def same_show(a,b):
+def same_show(a,b,venue=''):
     """True when two titles on the same venue and day are the same show, e.g.
-    'Wot Italian?' and 'Wot Italian? Boothby Graffoe, Antonio Forcione'."""
+    'Wot Italian?' and 'Wot Italian? Boothby Graffoe, Antonio Forcione', or
+    'Kepler' and 'Kepler at Concorde 2 - Brighton' (see event_matching.py)."""
     ka,kb=title_key(a),title_key(b)
     if not ka or not kb:return False
     if ka==kb or ka.startswith(kb+' ') or kb.startswith(ka+' '):return True
     from difflib import SequenceMatcher
-    return SequenceMatcher(None,ka,kb).ratio()>=0.85
+    return SequenceMatcher(None,ka,kb).ratio()>=0.85 or same_show_at_venue(a,b,venue)
 def swapped_date(iso):
     """2026-11-10 -> 2026-10-11 (for repairing records saved with day and month swapped)."""
     try:
@@ -432,13 +434,14 @@ async def main():
     matched=set();new=[];pending=[];redated=0
     def adopt(old,e):
         fresh=dict(e,id=old['id'],last_seen=today)
+        if old.get('also_ids'):fresh['also_ids']=old['also_ids']  # ids merged into this one (saved choices)
         if is_listing_or_home(fresh.get('ticket_url',''),'') and not is_listing_or_home(old.get('ticket_url',''),''):
             fresh['ticket_url']=old['ticket_url']
         kept[old['id']]=fresh;matched.add(old['id'])
     for e in scraped:
         old=by_exact.get(event_key(e))
         if old is None or old['id'] in matched:
-            old=next((c for c in by_day.get(day_key(e),[]) if c['id'] not in matched and same_show(c['title'],e['title'])),None)
+            old=next((c for c in by_day.get(day_key(e),[]) if c['id'] not in matched and same_show(c['title'],e['title'],c.get('venue',''))),None)
         if old is None:pending.append(e)
         else:adopt(old,e)
     # Second pass, only for events still unmatched: an earlier version saved
@@ -447,7 +450,7 @@ async def main():
     # right date and keep its id, so saved choices follow it.
     for e in pending:
         sw=swapped_date(e.get('date',''))
-        old=next((c for c in by_day.get((day_key(e)[0],sw),[]) if c['id'] not in matched and same_show(c['title'],e['title'])),None) if sw else None
+        old=next((c for c in by_day.get((day_key(e)[0],sw),[]) if c['id'] not in matched and same_show(c['title'],e['title'],c.get('venue',''))),None) if sw else None
         if old is None:new.append(dict(e,last_seen=today))
         else:adopt(old,e);redated+=1
     for eid,e in list(kept.items()):
