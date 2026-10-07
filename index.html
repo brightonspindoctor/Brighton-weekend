@@ -891,6 +891,7 @@ function showWelcome(mode='auth'){
 }
 function finishWelcome(){
  hide('welcome'); homeShown=true; saveSeen(); trackVisitor(); renderAll(); renderGroupManager();
+ showSharedEvent(); // an event link opened before sign-up shows now, after Discover is redrawn
 }
 async function createGroup(){
  const n=$('newGroupName').value.trim();
@@ -1449,6 +1450,8 @@ document.addEventListener('click',ev=>{const b=ev.target.closest('[data-share-ev
 function showSharedEvent(){const pendingSharedEventId=readPendingLink()?.event;if(!pendingSharedEventId)return;
  // If the listings didn't load (offline, say), keep the link and try again on the next load.
  if(!events.length&&!festivals.length)return;
+ // New users are still on the welcome screens; keep the link until they finish (see finishWelcome).
+ if(!$('welcome').classList.contains('hidden'))return;
  const e=[...events,...festivals].find(x=>String(x.id)===String(pendingSharedEventId));clearPendingLink('event');if(!e){alert('That shared event has passed or is no longer listed.');return}openTab("discover");const box=$('discover');const existing=box.querySelector('[data-event-id="'+CSS.escape(String(e.id))+'"]');if(existing){existing.scrollIntoView({behavior:"smooth",block:"center"});existing.classList.add("shared-target");setTimeout(()=>existing.classList.remove("shared-target"),3000);return}box.innerHTML='<section class="shared-event-panel"><div class="section-head"><h2>Shared event</h2><div class="note">Someone shared this event with you.</div></div>'+eventCard(e,{showDate:true})+'</section>'+box.innerHTML;const card=box.querySelector(".shared-event-panel [data-event-id]");if(card){card.classList.add("shared-target");setTimeout(()=>card.classList.remove("shared-target"),3000)}}
 const seenKey=()=>'bw_seen_'+uid();
 let newSinceVisit=[], showNewPanel=false, homeShown=false;
