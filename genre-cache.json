@@ -14,6 +14,12 @@
   "act": "1BTN X Vicious Charm. Presents JIM live!",
   "checked": "2026-10-06"
  },
+ "3 daft monkeys 25th anniversary double set show": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "3 Daft Monkeys 25th anniversary double set show",
+  "checked": "2026-10-07"
+ },
  "4am kru": {
   "mbid": "ce2348e0-1819-4877-83d3-ed8c43133a5c",
   "name": "4am Kru",
@@ -36,6 +42,15 @@
   "act": "4Am Kru",
   "checked": "2026-10-06"
  },
+ "60 juno": {
+  "mbid": "2554d38a-50e8-4cbe-83c3-6e94d613bef6",
+  "name": "60 juno",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "60 Juno",
+  "checked": "2026-10-07"
+ },
  "60juno": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -47,6 +62,42 @@
   "reason": "not in MusicBrainz",
   "act": "80s HiFi Christmas Party",
   "checked": "2026-10-06"
+ },
+ "80s re mix": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "80s RE-MIX",
+  "checked": "2026-10-07"
+ },
+ "999": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "999",
+  "checked": "2026-10-07"
+ },
+ "a different thread": {
+  "mbid": "7b3c9f6b-4566-4136-9b2e-e818da624e6a",
+  "name": "A Different Thread",
+  "genres": [
+   {
+    "name": "americana",
+    "count": 1
+   },
+   {
+    "name": "blues",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "A Different Thread",
+  "checked": "2026-10-07"
+ },
+ "a gathering of witches": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "A Gathering of Witches",
+  "checked": "2026-10-07"
  },
  "a m c presents grassroots energy": {
   "bucket": null,
@@ -78,11 +129,43 @@
   "act": "Aba Shanti-I Ras Kayleb, Easy Skankin DJs",
   "checked": "2026-10-06"
  },
+ "abba": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "ABBA",
+  "checked": "2026-10-07"
+ },
  "abba revival": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Abba Revival",
   "checked": "2026-10-06"
+ },
+ "abigail lapell": {
+  "mbid": "49d23710-08bc-431d-901c-5bbb23c0e099",
+  "name": "Abigail Lapell",
+  "genres": [
+   {
+    "name": "folk",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Abigail Lapell",
+  "checked": "2026-10-07"
+ },
+ "abigail lapell show 2": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Abigail Lapell Show #2",
+  "checked": "2026-10-07"
+ },
+ "abigail rose": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Abigail Rose",
+  "checked": "2026-10-07"
  },
  "absolute bowie christmas special": {
   "bucket": null,
@@ -90,11 +173,47 @@
   "act": "Absolute Bowie Christmas Special",
   "checked": "2026-10-06"
  },
+ "acid box presents delivery": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "ACID BOX PRESENTS DELIVERY",
+  "checked": "2026-10-07"
+ },
+ "admt": {
+  "mbid": "bdc02a78-7bb1-45c4-81b5-70115abc4508",
+  "name": "ADMT",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "ADMT",
+  "checked": "2026-10-07"
+ },
  "adult dvd lttl mort": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Adult DVD lttl mort",
   "checked": "2026-10-06"
+ },
+ "age against the machine christmas special": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Age Against The Machine Christmas Special",
+  "checked": "2026-10-07"
+ },
+ "ahsoka": {
+  "mbid": "30535a55-f284-49d1-8e54-444c3437379f",
+  "name": "Ahsoka",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Ahsoka",
+  "checked": "2026-10-07"
+ },
+ "ajj": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "AJJ",
+  "checked": "2026-10-07"
  },
  "alborosie": {
   "mbid": "dad904da-8bd7-46b2-b202-f9a9ecd6bbab",
@@ -117,6 +236,12 @@
   "reason": "tagged",
   "act": "Alborosie",
   "checked": "2026-10-06"
+ },
+ "alex downey": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "ALEX DOWNEY",
+  "checked": "2026-10-07"
  },
  "alien boy": {
   "mbid": "428d1741-14b0-4afe-9706-572ffe7b719c",
@@ -189,11 +314,35 @@
   "act": "Alison Moyet",
   "checked": "2026-10-06"
  },
+ "alt anthems": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "ALT ANTHEMS",
+  "checked": "2026-10-07"
+ },
+ "alt pop": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Alt Pop",
+  "checked": "2026-10-07"
+ },
  "amplify and basstripper": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Amplify & Basstripper",
   "checked": "2026-10-06"
+ },
+ "an afternoon": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "An Afternoon",
+  "checked": "2026-10-07"
+ },
+ "an afternoon of indie": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "An Afternoon of Indie",
+  "checked": "2026-10-07"
  },
  "an dannsa dub": {
   "mbid": "5ed76531-b6ce-41aa-9db9-b047f38b6042",
@@ -213,6 +362,34 @@
   "act": "An Dannsa Dub",
   "checked": "2026-10-06"
  },
+ "an interview": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "AN INTERVIEW",
+  "checked": "2026-10-07"
+ },
+ "anciients": {
+  "mbid": "893d4e4c-4951-4e67-aa01-6b5ece048411",
+  "name": "Anciients",
+  "genres": [
+   {
+    "name": "metal",
+    "count": 1
+   },
+   {
+    "name": "progressive metal",
+    "count": 3
+   },
+   {
+    "name": "sludge metal",
+    "count": 1
+   }
+  ],
+  "bucket": "Punk & Metal",
+  "reason": "tagged",
+  "act": "Anciients",
+  "checked": "2026-10-07"
+ },
  "andrew cushin": {
   "mbid": "ea3552ed-715d-42e8-b1ad-116c2605e03c",
   "name": "Andrew Cushin",
@@ -227,6 +404,44 @@
   "reason": "not in MusicBrainz",
   "act": "Andy C Zc45V",
   "checked": "2026-10-06"
+ },
+ "anna erhard": {
+  "mbid": "55e7a975-3fb2-48bc-9665-b2973b189892",
+  "name": "Anna Erhard",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Anna Erhard",
+  "checked": "2026-10-07"
+ },
+ "anna katarina": {
+  "mbid": "1ffcf475-6140-404f-b005-a44267e06cc1",
+  "name": "Anna Katarina",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Anna Katarina",
+  "checked": "2026-10-07"
+ },
+ "annie claude deschenes": {
+  "mbid": "3366a266-b3ba-43ab-84bf-75f45417627d",
+  "name": "Annie-Claude Deschênes",
+  "genres": [
+   {
+    "name": "electronic",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Annie-Claude Deschênes",
+  "checked": "2026-10-07"
+ },
+ "antarctica": {
+  "bucket": null,
+  "reason": "8 artists share this name",
+  "act": "Antarctica",
+  "checked": "2026-10-07"
  },
  "anton at christmas": {
   "bucket": null,
@@ -258,6 +473,30 @@
   "act": "Asher White",
   "checked": "2026-10-06"
  },
+ "ashley singh": {
+  "mbid": "57a99095-8cee-4459-afa0-bc2e5e8e6957",
+  "name": "Ashley Singh",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Ashley Singh",
+  "checked": "2026-10-07"
+ },
+ "ax presents": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "AX Presents",
+  "checked": "2026-10-07"
+ },
+ "axel flovent": {
+  "mbid": "342fc60f-2c69-4be9-bf3b-1b3701da6eb0",
+  "name": "Axel Flóvent",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Axel Flovent",
+  "checked": "2026-10-07"
+ },
  "babe haven latter": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -272,6 +511,12 @@
   "reason": "no genre tags",
   "act": "BABY DAVE",
   "checked": "2026-10-06"
+ },
+ "balls deep": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Balls Deep",
+  "checked": "2026-10-07"
  },
  "barbara": {
   "mbid": "cf8ffbfe-02ba-4b91-a608-9783d91f709a",
@@ -301,6 +546,15 @@
   "act": "Barbican Estate",
   "checked": "2026-10-06"
  },
+ "basht": {
+  "mbid": "eefe0ce9-822e-4814-be32-d5fc0f83db2e",
+  "name": "Basht.",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Basht.",
+  "checked": "2026-10-07"
+ },
  "bathing suits": {
   "mbid": "d8ed2c1b-16bd-498b-932a-b5a52e54e874",
   "name": "Bathing Suits",
@@ -309,6 +563,30 @@
   "reason": "no genre tags",
   "act": "Bathing Suits",
   "checked": "2026-10-06"
+ },
+ "bats bats bats": {
+  "mbid": "e9e9b79b-37c2-4940-b772-bf4af5b90630",
+  "name": "Bats/Bats/Bats",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "BATS BATS BATS",
+  "checked": "2026-10-07"
+ },
+ "bats womb halloween special": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "BATS WOMB HALLOWEEN SPECIAL",
+  "checked": "2026-10-07"
+ },
+ "battle hymns": {
+  "mbid": "837a11bc-b6f0-4fb7-ba42-23958df76e83",
+  "name": "Battle Hymns",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "BATTLE HYMNS",
+  "checked": "2026-10-07"
  },
  "bby": {
   "mbid": "dfdb3f72-d28f-4eab-b3dd-644872d73245",
@@ -351,6 +629,43 @@
   "reason": "not in MusicBrainz",
   "act": "Beefmince",
   "checked": "2026-10-06"
+ },
+ "bel cobain": {
+  "mbid": "633ffe0d-e749-4810-a35c-475b21348711",
+  "name": "Bel Cobain",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "BEL COBAIN",
+  "checked": "2026-10-07"
+ },
+ "bela fool the decadent dayze neepo babies psycho jenny": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Bela Fool The Decadent Dayze, Neepo Babies, Psycho Jenny",
+  "checked": "2026-10-07"
+ },
+ "bellowhead": {
+  "mbid": "9b1e9c88-16e5-4a84-81ab-b7543149c8d2",
+  "name": "Bellowhead",
+  "genres": [
+   {
+    "name": "alternative folk",
+    "count": 1
+   },
+   {
+    "name": "british folk rock",
+    "count": 1
+   },
+   {
+    "name": "folk",
+    "count": 2
+   }
+  ],
+  "bucket": "Folk & Country",
+  "reason": "tagged",
+  "act": "Bellowhead",
+  "checked": "2026-10-07"
  },
  "ben hemsley": {
   "mbid": "8f5c77ee-dfb8-4f53-a08c-8e32dcca1545",
@@ -449,6 +764,33 @@
   "act": "Beth Orton",
   "checked": "2026-10-06"
  },
+ "betrayer of secrets": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "“Betrayer of Secrets”",
+  "checked": "2026-10-07"
+ },
+ "beyond extinction": {
+  "mbid": "e10c22a0-f6bb-49d7-a12d-31b5be078ee2",
+  "name": "Beyond Extinction",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "BEYOND EXTINCTION",
+  "checked": "2026-10-07"
+ },
+ "bhafc foundation benefit": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "BHAFC Foundation Benefit",
+  "checked": "2026-10-07"
+ },
+ "big band": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Big Band",
+  "checked": "2026-10-07"
+ },
  "big brave": {
   "mbid": "62a79008-39fd-4ace-ab62-945bc823386a",
   "name": "BIG|BRAVE",
@@ -483,6 +825,12 @@
   "act": "Big|Brave",
   "checked": "2026-10-06"
  },
+ "big red": {
+  "bucket": null,
+  "reason": "8 artists share this name",
+  "act": "Big Red",
+  "checked": "2026-10-07"
+ },
  "big special the joy hotel bradley taylor": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -494,6 +842,53 @@
   "reason": "3 artists share this name",
   "act": "Bill Bailey",
   "checked": "2026-10-06"
+ },
+ "bishopskin": {
+  "mbid": "1927d60c-ba5b-4f84-bd71-734bfa4fef66",
+  "name": "Bishopskin",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Bishopskin",
+  "checked": "2026-10-07"
+ },
+ "bitchin bajas": {
+  "mbid": "6243b9cb-63ad-438d-88f9-50c35d3f1088",
+  "name": "Bitchin Bajas",
+  "genres": [
+   {
+    "name": "ambient",
+    "count": 3
+   },
+   {
+    "name": "drone",
+    "count": 2
+   },
+   {
+    "name": "electronic",
+    "count": 2
+   },
+   {
+    "name": "experimental",
+    "count": 2
+   },
+   {
+    "name": "experimental electronic",
+    "count": 1
+   },
+   {
+    "name": "new age",
+    "count": 1
+   },
+   {
+    "name": "progressive electronic",
+    "count": 1
+   }
+  ],
+  "bucket": "Electronic",
+  "reason": "tagged",
+  "act": "BITCHIN BAJAS",
+  "checked": "2026-10-07"
  },
  "bjorn again": {
   "mbid": "3908a0ff-cc0c-4765-acf4-e33d52b16a6d",
@@ -521,6 +916,15 @@
   "reason": "not in MusicBrainz",
   "act": "Black Sabbath's Paranoid The Album Era",
   "checked": "2026-10-06"
+ },
+ "blind yeo": {
+  "mbid": "cf4a2a97-b932-41cf-af5a-e8640185c4f8",
+  "name": "Blind Yeo",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "BLIND YEO",
+  "checked": "2026-10-07"
  },
  "bloc party and interpol": {
   "bucket": null,
@@ -593,6 +997,12 @@
   "act": "Bloodsports",
   "checked": "2026-10-06"
  },
+ "blue lion band": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Blue Lion Band",
+  "checked": "2026-10-07"
+ },
  "bonobo": {
   "bucket": null,
   "reason": "4 artists share this name",
@@ -607,6 +1017,12 @@
   "reason": "no genre tags",
   "act": "Boogie Wonderland",
   "checked": "2026-10-06"
+ },
+ "bootgaze": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Bootgaze",
+  "checked": "2026-10-07"
  },
  "boris": {
   "mbid": "57652bf8-cfe8-42e7-b9a7-5572a7080d8d",
@@ -679,17 +1095,77 @@
   "act": "Born On Road",
   "checked": "2026-10-06"
  },
+ "bovril latrine": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "BOVRIL LATRINE",
+  "checked": "2026-10-07"
+ },
+ "boy fear presents mart": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "BOY FEAR PRESENTS MART",
+  "checked": "2026-10-07"
+ },
  "brainrot": {
   "bucket": null,
   "reason": "3 artists share this name",
   "act": "Brainrot",
   "checked": "2026-10-06"
  },
+ "brighton beach boys": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Brighton Beach Boys",
+  "checked": "2026-10-07"
+ },
+ "brighton big band": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Brighton Big Band",
+  "checked": "2026-10-07"
+ },
+ "brighton day of death 3": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "BRIGHTON DAY OF DEATH 3",
+  "checked": "2026-10-07"
+ },
  "brighton dome backstage tours": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Brighton Dome Backstage Tours",
   "checked": "2026-10-06"
+ },
+ "brighton early music festival": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Brighton Early Music Festival",
+  "checked": "2026-10-07"
+ },
+ "brighton gay mens chorus presents a merry murder mystery": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Brighton Gay Men’s Chorus Presents A Merry Murder Mystery",
+  "checked": "2026-10-07"
+ },
+ "brothers in the blues": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "‘BROTHERS IN THE BLUES’",
+  "checked": "2026-10-07"
+ },
+ "bruce foxton 50 years of the jam": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "BRUCE FOXTON '50 years of The Jam'",
+  "checked": "2026-10-07"
+ },
+ "brunswick basement arcade": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Brunswick Basement Arcade",
+  "checked": "2026-10-07"
  },
  "budpod": {
   "bucket": null,
@@ -702,6 +1178,12 @@
   "reason": "5 artists share this name",
   "act": "BURGLAR",
   "checked": "2026-10-06"
+ },
+ "burn it smith and friends": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "burn.it.smith & friends",
+  "checked": "2026-10-07"
  },
  "burner beyond extinction": {
   "bucket": null,
@@ -723,6 +1205,12 @@
   "reason": "2 artists share this name",
   "act": "Buzzcocks",
   "checked": "2026-10-06"
+ },
+ "byrnes night": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Byrne’s Night",
+  "checked": "2026-10-07"
  },
  "cabaret voltaire": {
   "mbid": "439a29ad-f4ef-4857-a7cd-3d4a551056c8",
@@ -774,6 +1262,24 @@
   "act": "Cabaret Voltaire",
   "checked": "2026-10-06"
  },
+ "caleb caudle": {
+  "mbid": "b550c259-b545-43f1-b1a0-f2f8d121332a",
+  "name": "Caleb Caudle",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Caleb Caudle",
+  "checked": "2026-10-07"
+ },
+ "calvin love": {
+  "mbid": "8df5d398-6812-4590-ad7b-97074fd58d61",
+  "name": "Calvin Love",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Calvin Love",
+  "checked": "2026-10-07"
+ },
  "cancer bats": {
   "mbid": "00b952be-6c97-4880-84f9-06de584b491b",
   "name": "Cancer Bats",
@@ -822,6 +1328,24 @@
   "act": "Cassia",
   "checked": "2026-10-06"
  },
+ "catbandcat": {
+  "mbid": "791bde11-3130-418f-b6a3-623fd62240d5",
+  "name": "catbandcat",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "catbandcat",
+  "checked": "2026-10-07"
+ },
+ "champion trees": {
+  "mbid": "5419d215-f096-41a5-9716-6fccc2c8ac34",
+  "name": "Champion Trees",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Champion Trees",
+  "checked": "2026-10-07"
+ },
  "channel one sound system": {
   "mbid": "e136692a-4f00-46cc-9f01-cf51a0b154b1",
   "name": "Channel One Sound System",
@@ -830,6 +1354,15 @@
   "reason": "no genre tags",
   "act": "Channel One Sound System",
   "checked": "2026-10-06"
+ },
+ "charleen": {
+  "mbid": "dc5b8151-5db4-4e59-b987-a0a822300251",
+  "name": "Charleen",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Charleen",
+  "checked": "2026-10-07"
  },
  "charlie noordewier": {
   "mbid": "93783633-f3e1-4808-a612-6a09661fdb98",
@@ -903,6 +1436,12 @@
   "act": "Chuck Ragan",
   "checked": "2026-10-06"
  },
+ "city baby attacked by rats": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "CITY BABY ATTACKED BY RATS",
+  "checked": "2026-10-07"
+ },
  "city baby attacked by rats festival": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -921,11 +1460,50 @@
   "act": "City Wall x Mark Broom",
   "checked": "2026-10-06"
  },
+ "clash n sleazy": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Clash 'N' Sleazy",
+  "checked": "2026-10-07"
+ },
+ "clover stieve": {
+  "mbid": "fe65f28b-b1c3-4293-b668-d4475cd99e80",
+  "name": "Clover Stieve",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Clover Stieve",
+  "checked": "2026-10-07"
+ },
  "cody dahler": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Cody Dahler",
   "checked": "2026-10-06"
+ },
+ "colin miller and told slant": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Colin Miller & Told Slant",
+  "checked": "2026-10-07"
+ },
+ "committee of sleep": {
+  "mbid": "29695a0f-187e-4a5f-a315-492e4510df51",
+  "name": "Committee of Sleep",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Committee of Sleep",
+  "checked": "2026-10-07"
+ },
+ "connor kelly and the time warp": {
+  "mbid": "255297e4-5773-4766-ab68-87a899beb28d",
+  "name": "Connor Kelly & The Time Warp",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "CONNOR KELLY & THE TIME WARP",
+  "checked": "2026-10-07"
  },
  "conway the machine": {
   "mbid": "a633ebb5-b81a-400f-b5df-0e625ea81fe9",
@@ -982,6 +1560,41 @@
   "act": "Cootie Catcher",
   "checked": "2026-10-06"
  },
+ "cosmic joke": {
+  "mbid": "10ad2ae2-1845-463d-a185-61eb0ba6f9c0",
+  "name": "Cosmic Joke",
+  "genres": [
+   {
+    "name": "hardcore punk",
+    "count": 1
+   },
+   {
+    "name": "melodic hardcore",
+    "count": 1
+   },
+   {
+    "name": "punk",
+    "count": 1
+   },
+   {
+    "name": "punk rock",
+    "count": 1
+   }
+  ],
+  "bucket": "Punk & Metal",
+  "reason": "tagged",
+  "act": "COSMIC JOKE",
+  "checked": "2026-10-07"
+ },
+ "cosmic kitten": {
+  "mbid": "c239b0ec-bed7-40b4-a06c-27a1dbe68df0",
+  "name": "Cosmic Kitten",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Cosmic Kitten",
+  "checked": "2026-10-07"
+ },
  "coupdekat": {
   "mbid": "234fedd3-0aa7-4202-801e-5c551a8f71c1",
   "name": "Coupdekat",
@@ -1009,11 +1622,73 @@
   "act": "CQ Wrestling",
   "checked": "2026-10-06"
  },
+ "creature and machine": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Creature & Machine",
+  "checked": "2026-10-07"
+ },
+ "creatures": {
+  "bucket": null,
+  "reason": "6 artists share this name",
+  "act": "CREATURES",
+  "checked": "2026-10-07"
+ },
+ "creeping embers": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Creeping Embers",
+  "checked": "2026-10-07"
+ },
  "criminal damage face up not the face city riot": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Criminal Damage / Face Up! / Not The Face / City Riot",
   "checked": "2026-10-06"
+ },
+ "crosby stills nash and young": {
+  "mbid": "46a782ea-4308-476b-abd1-a91b197f3037",
+  "name": "Crosby, Stills, Nash & Young",
+  "genres": [
+   {
+    "name": "acoustic rock",
+    "count": 3
+   },
+   {
+    "name": "country rock",
+    "count": 1
+   },
+   {
+    "name": "folk pop",
+    "count": 2
+   },
+   {
+    "name": "folk rock",
+    "count": 5
+   },
+   {
+    "name": "pop rock",
+    "count": 3
+   },
+   {
+    "name": "rock",
+    "count": 3
+   },
+   {
+    "name": "soft rock",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Crosby, Stills, Nash & Young",
+  "checked": "2026-10-07"
+ },
+ "cryer mya": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Cryer Mya",
+  "checked": "2026-10-07"
  },
  "cult milk": {
   "bucket": null,
@@ -1021,11 +1696,29 @@
   "act": "CULT MILK",
   "checked": "2026-10-06"
  },
+ "culture": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Culture",
+  "checked": "2026-10-07"
+ },
  "culture shock": {
   "bucket": null,
   "reason": "10 artists share this name",
   "act": "Culture Shock",
   "checked": "2026-10-06"
+ },
+ "cutflowers in superbloom": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "CUTFLOWERS IN SUPERBLOOM!",
+  "checked": "2026-10-07"
+ },
+ "cutflowers superbloom night 2": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Cutflowers Superbloom night 2",
+  "checked": "2026-10-07"
  },
  "daddy g": {
   "mbid": "57070ee8-e44c-48c7-9519-6c985adfe6b2",
@@ -1077,6 +1770,12 @@
   "act": "Danalogue",
   "checked": "2026-10-06"
  },
+ "dance till you die": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "DANCE TILL YOU DIE",
+  "checked": "2026-10-07"
+ },
  "daniel martinez flamenco company": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -1106,6 +1805,20 @@
   "reason": "tagged",
   "act": "Dateline",
   "checked": "2026-10-06"
+ },
+ "daudi matsiko": {
+  "mbid": "9a0d554a-4939-45aa-9e1c-746ab9a976bf",
+  "name": "Daudi Matsiko",
+  "genres": [
+   {
+    "name": "folk",
+    "count": 2
+   }
+  ],
+  "bucket": "Folk & Country",
+  "reason": "tagged",
+  "act": "DAUDI MATSIKO",
+  "checked": "2026-10-07"
  },
  "david bowie": {
   "mbid": "5441c29d-3602-4898-b1a1-b77fa23b8e50",
@@ -1159,6 +1872,21 @@
   "act": "David Byrne's Night",
   "checked": "2026-10-06"
  },
+ "david devant and his spirit wife": {
+  "mbid": "348390f8-94c8-4ce3-b18a-0563a3057ac2",
+  "name": "David Devant and His Spirit Wife",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "David Devant and His Spirit Wife",
+  "checked": "2026-10-07"
+ },
+ "david j": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "DAVID J",
+  "checked": "2026-10-07"
+ },
  "day fever": {
   "mbid": "5186a3af-7290-4a0d-9d19-6d8848e496cf",
   "name": "Day Fever",
@@ -1173,6 +1901,70 @@
   "reason": "3 artists share this name",
   "act": "Daydreamers",
   "checked": "2026-10-06"
+ },
+ "deacon blue": {
+  "mbid": "1d46cb3a-8071-45ba-855e-74e3cff20974",
+  "name": "Deacon Blue",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "dream pop",
+    "count": 1
+   },
+   {
+    "name": "indie rock",
+    "count": 1
+   },
+   {
+    "name": "pop",
+    "count": 2
+   },
+   {
+    "name": "pop rock",
+    "count": 2
+   },
+   {
+    "name": "rock",
+    "count": 2
+   },
+   {
+    "name": "soft rock",
+    "count": 2
+   }
+  ],
+  "bucket": "Pop",
+  "reason": "tagged",
+  "act": "Deacon Blue",
+  "checked": "2026-10-07"
+ },
+ "death goals": {
+  "mbid": "4e40d2f0-c594-4f25-9063-66aef97c4c99",
+  "name": "Death Goals",
+  "genres": [
+   {
+    "name": "mathcore",
+    "count": 1
+   },
+   {
+    "name": "metal",
+    "count": 1
+   },
+   {
+    "name": "queercore",
+    "count": 1
+   },
+   {
+    "name": "screamo",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "DEATH GOALS",
+  "checked": "2026-10-07"
  },
  "death in vegas": {
   "mbid": "5b32946a-4c08-4a75-b1b1-60700470671f",
@@ -1268,11 +2060,32 @@
   "act": "Death In Vegas",
   "checked": "2026-10-06"
  },
+ "decadance": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "DECADANCE",
+  "checked": "2026-10-07"
+ },
+ "december will be magic again": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "December Will Be Magic Again",
+  "checked": "2026-10-07"
+ },
  "degs friends": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Degs Friends",
   "checked": "2026-10-06"
+ },
+ "dekker": {
+  "mbid": "c5297503-fa61-4fe0-8dbb-49af0ef08004",
+  "name": "Dekker",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Dekker",
+  "checked": "2026-10-07"
  },
  "deradoorian": {
   "mbid": "d609e858-c033-4cfb-8441-6736e23b291c",
@@ -1322,17 +2135,95 @@
   "act": "Dermot Henry",
   "checked": "2026-10-06"
  },
+ "despair and ruin": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Despair & Ruin",
+  "checked": "2026-10-07"
+ },
+ "desperate journalist": {
+  "mbid": "20d443ec-6092-487c-9ae3-09fc1ffd8df3",
+  "name": "Desperate Journalist",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Desperate Journalist",
+  "checked": "2026-10-07"
+ },
+ "dessie magee": {
+  "mbid": "688f3411-9e60-422c-8d89-5208a6b930f3",
+  "name": "Dessie Magee",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Dessie Magee",
+  "checked": "2026-10-07"
+ },
  "devotchka": {
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "DeVotchKa",
   "checked": "2026-10-06"
  },
+ "dexys midnight runners": {
+  "mbid": "ccce2053-7007-4c36-b1e7-f8fcf5023a12",
+  "name": "Dexys Midnight Runners",
+  "genres": [
+   {
+    "name": "blue-eyed soul",
+    "count": 4
+   },
+   {
+    "name": "celtic rock",
+    "count": 1
+   },
+   {
+    "name": "new wave",
+    "count": 6
+   },
+   {
+    "name": "northern soul",
+    "count": 3
+   },
+   {
+    "name": "pop rock",
+    "count": 3
+   },
+   {
+    "name": "pop soul",
+    "count": 3
+   },
+   {
+    "name": "ska",
+    "count": 1
+   },
+   {
+    "name": "soul",
+    "count": 1
+   }
+  ],
+  "bucket": "Jazz, Soul & Funk",
+  "reason": "tagged",
+  "act": "Dexys Midnight Runners",
+  "checked": "2026-10-07"
+ },
+ "dick valentine acoustic": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "DICK VALENTINE ACOUSTIC",
+  "checked": "2026-10-07"
+ },
  "digitalis palindrones": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Digitalis / Palindrones",
   "checked": "2026-10-06"
+ },
+ "dinosaur pile up": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Dinosaur Pile-Up",
+  "checked": "2026-10-07"
  },
  "dirty dc": {
   "mbid": "a5ddb0f1-272d-4d17-9914-ebe8fe257943",
@@ -1370,6 +2261,12 @@
   "act": "DJ FREAKING OUT THE NEIGHBOURHOOD",
   "checked": "2026-10-06"
  },
+ "dj nature": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "DJ NATURE",
+  "checked": "2026-10-07"
+ },
  "dj yoda": {
   "mbid": "c266a7ab-7b9f-478f-a26d-91c5f8f04c7c",
   "name": "DJ Yoda",
@@ -1387,6 +2284,33 @@
   "reason": "tagged",
   "act": "DJ Yoda",
   "checked": "2026-10-06"
+ },
+ "dmas": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "DMAs",
+  "checked": "2026-10-07"
+ },
+ "doom by the sea vol 6": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "DOOM BY THE SEA VOL:6",
+  "checked": "2026-10-07"
+ },
+ "double bill": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "DOUBLE BILL",
+  "checked": "2026-10-07"
+ },
+ "dr razzu": {
+  "mbid": "89027561-18b2-44c9-89af-7e20c4f7ca42",
+  "name": "Dr Razzu",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "DR RAZZU",
+  "checked": "2026-10-07"
  },
  "dr xand van tulleken": {
   "bucket": null,
@@ -1415,6 +2339,15 @@
   "act": "Dutch Criminal Record",
   "checked": "2026-10-06"
  },
+ "dutty moonshine big band": {
+  "mbid": "1fdef9a9-8920-4de3-b96e-b34db23e7d78",
+  "name": "Dutty Moonshine Big Band",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Dutty Moonshine Big Band",
+  "checked": "2026-10-07"
+ },
  "dylan flynn and the dead poets": {
   "mbid": "9c9419df-1b5c-4911-940e-4685808d3fcd",
   "name": "Dylan Flynn & The Dead Poets",
@@ -1430,11 +2363,44 @@
   "act": "Dylan LeBlanc",
   "checked": "2026-10-06"
  },
+ "e r thorpe": {
+  "mbid": "41cc4169-54f2-4a77-8b91-41db7d49cf6c",
+  "name": "E.R. Thorpe",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "E.R Thorpe",
+  "checked": "2026-10-07"
+ },
+ "ebony osailah": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Ebony Osailah",
+  "checked": "2026-10-07"
+ },
  "echo x ibiza playabout": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Echo x Ibiza Playabout",
   "checked": "2026-10-06"
+ },
+ "ed blunt": {
+  "mbid": "75312bca-4f70-4086-a0aa-b4263ceb7245",
+  "name": "Ed Blunt",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Ed Blunt",
+  "checked": "2026-10-07"
+ },
+ "elanor moss": {
+  "mbid": "35f96e44-0f8c-495b-979a-55de67ff3b4f",
+  "name": "Elanor Moss",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Elanor Moss",
+  "checked": "2026-10-07"
  },
  "elder island": {
   "mbid": "c1344d27-2eaf-43e0-a769-9e5285c58866",
@@ -1481,6 +2447,18 @@
   "act": "Electric Six",
   "checked": "2026-10-06"
  },
+ "electron": {
+  "bucket": null,
+  "reason": "8 artists share this name",
+  "act": "ELECTRON",
+  "checked": "2026-10-07"
+ },
+ "ellie finnerty": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Ellie Finnerty",
+  "checked": "2026-10-07"
+ },
  "elvana": {
   "mbid": "521018bd-81ce-4280-944a-04fc0b1e52e5",
   "name": "Elvana",
@@ -1495,6 +2473,28 @@
   "reason": "not in MusicBrainz",
   "act": "Embodiment Infected Dead",
   "checked": "2026-10-06"
+ },
+ "emeli sande": {
+  "mbid": "7cfaac66-62e5-4fcd-af1b-9d3aa8f68e8b",
+  "name": "Emeli Sandé",
+  "genres": [
+   {
+    "name": "contemporary r&b",
+    "count": 3
+   },
+   {
+    "name": "r&b",
+    "count": 1
+   },
+   {
+    "name": "soul",
+    "count": 1
+   }
+  ],
+  "bucket": "Hip-hop & R&B",
+  "reason": "tagged",
+  "act": "Emeli Sandé",
+  "checked": "2026-10-07"
  },
  "emma ruth rundle": {
   "mbid": "7ba593b9-79d4-4860-92c8-ade2a1ef4551",
@@ -1574,6 +2574,71 @@
   "act": "Everybody Scream! New Note Orchestra and Wham Jam Thank You Ma’am Choir",
   "checked": "2026-10-06"
  },
+ "ex re": {
+  "mbid": "f0c4c98f-8f30-4b57-bcdd-a7f88c449641",
+  "name": "Ex:Re",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "indie rock",
+    "count": 1
+   },
+   {
+    "name": "indietronica",
+    "count": 1
+   },
+   {
+    "name": "singer-songwriter",
+    "count": 1
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Ex:Re",
+  "checked": "2026-10-07"
+ },
+ "eyes": {
+  "mbid": "90e129cb-8613-4d37-a692-993fd27cbbc9",
+  "name": "Eyes",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Eyes",
+  "checked": "2026-10-07"
+ },
+ "eyes of caelum": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Eyes of Caelum",
+  "checked": "2026-10-07"
+ },
+ "faberge falls": {
+  "mbid": "6f7b537c-15a9-4d93-8447-950a2e151e7c",
+  "name": "Fabergé Falls",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Fabergé Falls",
+  "checked": "2026-10-07"
+ },
+ "family ties": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Family Ties",
+  "checked": "2026-10-07"
+ },
+ "farma g": {
+  "mbid": "b51a512e-087d-476f-b39a-fc1e8cba7bb7",
+  "name": "Farma G",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "FARMA G",
+  "checked": "2026-10-07"
+ },
  "fat poppadaddys record store": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -1592,11 +2657,26 @@
   "act": "Field Trip",
   "checked": "2026-10-06"
  },
+ "fighting for unity": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "FIGHTING FOR UNITY",
+  "checked": "2026-10-07"
+ },
  "film and visual arts ocean film festival world tour banff wed 7 oct concert hall from 19 50 find out more": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Film & Visual Arts Ocean Film Festival World Tour BANFF Wed 7 Oct Concert Hall From £19.50 Find out more",
   "checked": "2026-10-06"
+ },
+ "finnian james": {
+  "mbid": "86a7a571-985a-46cb-a1af-1b71b0dd17c2",
+  "name": "Finnian James",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Finnian James",
+  "checked": "2026-10-07"
  },
  "firefriend": {
   "mbid": "bdde0863-e23c-48ad-b7e8-f36601531f14",
@@ -1636,6 +2716,149 @@
   "act": "Firefriend",
   "checked": "2026-10-06"
  },
+ "first time flyers": {
+  "mbid": "4e4b08aa-0756-4ae5-91aa-40a853a8af8e",
+  "name": "First Time Flyers",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "First Time Flyers",
+  "checked": "2026-10-07"
+ },
+ "flamenco express 30th anniversary": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Flamenco Express 30th Anniversary",
+  "checked": "2026-10-07"
+ },
+ "flat moon": {
+  "mbid": "c0215e54-f26f-46a5-be23-eba22b0d9e73",
+  "name": "Flat Moon",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "brit funk",
+    "count": 1
+   },
+   {
+    "name": "funk",
+    "count": 1
+   },
+   {
+    "name": "funk rock",
+    "count": 1
+   },
+   {
+    "name": "garage rock",
+    "count": 1
+   },
+   {
+    "name": "hard rock",
+    "count": 1
+   },
+   {
+    "name": "instrumental",
+    "count": 1
+   },
+   {
+    "name": "psychedelic",
+    "count": 1
+   },
+   {
+    "name": "psychedelic rock",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Flat Moon",
+  "checked": "2026-10-07"
+ },
+ "fleetwood mac": {
+  "mbid": "bd13909f-1c29-4c27-a874-d4aaf27c5b1a",
+  "name": "Fleetwood Mac",
+  "genres": [
+   {
+    "name": "art pop",
+    "count": 1
+   },
+   {
+    "name": "blues",
+    "count": 7
+   },
+   {
+    "name": "blues rock",
+    "count": 13
+   },
+   {
+    "name": "british blues",
+    "count": 6
+   },
+   {
+    "name": "classic rock",
+    "count": 3
+   },
+   {
+    "name": "pop",
+    "count": 5
+   },
+   {
+    "name": "pop rock",
+    "count": 11
+   },
+   {
+    "name": "rock",
+    "count": 19
+   },
+   {
+    "name": "soft rock",
+    "count": 15
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Fleetwood Mac",
+  "checked": "2026-10-07"
+ },
+ "folklore monthly showcase": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Folklore Monthly Showcase",
+  "checked": "2026-10-07"
+ },
+ "fontaines d c": {
+  "mbid": "fd87acc7-e0a0-4a45-bc2a-d2ab5c10be68",
+  "name": "Fontaines D.C.",
+  "genres": [
+   {
+    "name": "gothic rock",
+    "count": 1
+   },
+   {
+    "name": "indie rock",
+    "count": 2
+   },
+   {
+    "name": "post-punk",
+    "count": 5
+   },
+   {
+    "name": "rock",
+    "count": 2
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Fontaines D.C.",
+  "checked": "2026-10-07"
+ },
  "forever nu": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -1669,6 +2892,50 @@
   "act": "Frankie Stew & Harvey Gunn",
   "checked": "2026-10-06"
  },
+ "frazey ford": {
+  "mbid": "c455e254-994c-40d3-a953-4ff6954c3557",
+  "name": "Frazey Ford",
+  "genres": [
+   {
+    "name": "americana",
+    "count": 1
+   },
+   {
+    "name": "folk",
+    "count": 1
+   },
+   {
+    "name": "singer-songwriter",
+    "count": 1
+   },
+   {
+    "name": "soul",
+    "count": 1
+   }
+  ],
+  "bucket": "Folk & Country",
+  "reason": "tagged",
+  "act": "Frazey Ford",
+  "checked": "2026-10-07"
+ },
+ "friendly fires": {
+  "mbid": "ef656595-bbe8-4386-8953-be8df9f54472",
+  "name": "Friendly Fires",
+  "genres": [
+   {
+    "name": "indie rock",
+    "count": 1
+   },
+   {
+    "name": "indietronica",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Friendly Fires",
+  "checked": "2026-10-07"
+ },
  "from the jam": {
   "mbid": "b38041f2-24e7-4733-97cd-0bf51fa1439d",
   "name": "From the Jam",
@@ -1690,6 +2957,12 @@
   "reason": "tagged",
   "act": "From The Jam",
   "checked": "2026-10-06"
+ },
+ "frostbite audio": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Frostbite Audio",
+  "checked": "2026-10-07"
  },
  "fujiya and miyagi": {
   "mbid": "41a94033-8b12-4c60-a22c-38c78801e363",
@@ -1713,11 +2986,26 @@
   "act": "Fujiya & Miyagi",
   "checked": "2026-10-06"
  },
+ "fukushima dolphin": {
+  "mbid": "861611ed-dcda-41e6-a46d-8ef2052058d6",
+  "name": "Fukushima Dolphin",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Fukushima Dolphin",
+  "checked": "2026-10-07"
+ },
  "fully local": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Fully Local",
   "checked": "2026-10-06"
+ },
+ "funny girls": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "FUNNY GIRLS",
+  "checked": "2026-10-07"
  },
  "funny women live in brighton": {
   "bucket": null,
@@ -1730,6 +3018,40 @@
   "reason": "4 artists share this name",
   "act": "Gallus",
   "checked": "2026-10-06"
+ },
+ "gaudete": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Gaudete!",
+  "checked": "2026-10-07"
+ },
+ "gaz brookfield autumn 2026": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Gaz Brookfield, Autumn 2026",
+  "checked": "2026-10-07"
+ },
+ "gen and the degenerates": {
+  "mbid": "c5981482-72cb-4760-9744-b64d9653d01b",
+  "name": "Gen and the Degenerates",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "post-punk",
+    "count": 1
+   },
+   {
+    "name": "punk rock",
+    "count": 1
+   }
+  ],
+  "bucket": "Punk & Metal",
+  "reason": "tagged",
+  "act": "GEN & THE DEGENERATES",
+  "checked": "2026-10-07"
  },
  "genn": {
   "mbid": "ce4d52e4-2383-4086-ac93-890ebe0b9d81",
@@ -1745,6 +3067,21 @@
   "reason": "not in MusicBrainz",
   "act": "Gentleman's Dub Club",
   "checked": "2026-10-06"
+ },
+ "george boomsma": {
+  "mbid": "00f79a72-e312-40d3-9d86-ae166a3d545c",
+  "name": "George Boomsma",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "George Boomsma",
+  "checked": "2026-10-07"
+ },
+ "get your rocks off karaoke": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "GET YOUR ROCKS OFF KARAOKE",
+  "checked": "2026-10-07"
  },
  "getdown services": {
   "mbid": "ca57dd61-590f-4605-85ec-72e947a6148b",
@@ -1801,6 +3138,39 @@
   "reason": "tagged",
   "act": "GHOSTFACE KILLAH",
   "checked": "2026-10-06"
+ },
+ "ghoul bus presents": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Ghoul Bus Presents",
+  "checked": "2026-10-07"
+ },
+ "giant rooks": {
+  "mbid": "917f3950-9a2a-4c0b-804c-06b1ffddd0c5",
+  "name": "Giant Rooks",
+  "genres": [
+   {
+    "name": "indie pop",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Giant Rooks",
+  "checked": "2026-10-07"
+ },
+ "girl in the year above": {
+  "mbid": "e115f2cd-e4d3-465d-bcca-5d4f568e654f",
+  "name": "Girl in the Year Above",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Girl In The Year Above",
+  "checked": "2026-10-07"
  },
  "girlband": {
   "bucket": null,
@@ -1891,6 +3261,12 @@
   "act": "Gold Panda",
   "checked": "2026-10-06"
  },
+ "goldie": {
+  "bucket": null,
+  "reason": "5 artists share this name",
+  "act": "Goldie",
+  "checked": "2026-10-07"
+ },
  "goldie mbe": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -1902,6 +3278,21 @@
   "reason": "2 artists share this name",
   "act": "GONE FISHIN'",
   "checked": "2026-10-06"
+ },
+ "goo records showcase": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Goo Records Showcase",
+  "checked": "2026-10-07"
+ },
+ "good habits": {
+  "mbid": "de6080b8-d9b3-4179-9714-9d6f7a133190",
+  "name": "Good Habits",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Good Habits",
+  "checked": "2026-10-07"
  },
  "good health good wealth": {
   "mbid": "492b0368-e6c6-4578-bf37-3b01a59cfd97",
@@ -1951,6 +3342,12 @@
   "act": "GOODNIGHT, TEXAS",
   "checked": "2026-10-06"
  },
+ "gordi": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Gordi",
+  "checked": "2026-10-07"
+ },
  "gotts street park": {
   "mbid": "0c91c655-444e-4ae7-a0a0-9e9cb160301c",
   "name": "Gotts Street Park",
@@ -1965,6 +3362,15 @@
   "reason": "2 artists share this name",
   "act": "Grace Cummings",
   "checked": "2026-10-06"
+ },
+ "grace hayhurst": {
+  "mbid": "88358cf7-ca82-44e9-a50f-913766929c48",
+  "name": "Grace Hayhurst",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "GRACE HAYHURST",
+  "checked": "2026-10-07"
  },
  "graham coxon": {
   "mbid": "fb56cc34-2ab1-4621-ac18-9bf2895e5f4f",
@@ -2028,6 +3434,15 @@
   "reason": "6 artists share this name",
   "act": "GREG FREEMAN",
   "checked": "2026-10-06"
+ },
+ "grief ritual": {
+  "mbid": "484324b1-912a-42e7-ab6a-9537c2c3fc0b",
+  "name": "Grief Ritual",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "GRIEF RITUAL",
+  "checked": "2026-10-07"
  },
  "grommet": {
   "bucket": null,
@@ -2106,6 +3521,39 @@
   "act": "H&R ONE’S 2 WATCH",
   "checked": "2026-10-06"
  },
+ "had sandy": {
+  "mbid": "9c54930b-a260-4dab-a999-d035c959470f",
+  "name": "Had Sandy",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "HAD SANDY",
+  "checked": "2026-10-07"
+ },
+ "halloween akt fundraiser": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "HALLOWEEN AKT FUNDRAISER",
+  "checked": "2026-10-07"
+ },
+ "hamish hawk": {
+  "mbid": "cd5a1637-d504-45f9-893a-0128b89d14bd",
+  "name": "Hamish Hawk",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Hamish Hawk",
+  "checked": "2026-10-07"
+ },
+ "hang massive": {
+  "mbid": "2fe1afcb-1325-41ff-8f94-55696ca6955d",
+  "name": "Hang Massive",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Hang Massive",
+  "checked": "2026-10-07"
+ },
  "hard hush": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -2124,6 +3572,30 @@
   "act": "Harker / Burnt Tapes / Making Friends",
   "checked": "2026-10-06"
  },
+ "harmonium": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "Harmonium",
+  "checked": "2026-10-07"
+ },
+ "harry hudson taylor": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Harry Hudson Taylor",
+  "checked": "2026-10-07"
+ },
+ "hattie chandler": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Hattie Chandler",
+  "checked": "2026-10-07"
+ },
+ "haunted harmonies": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "HAUNTED HARMONIES",
+  "checked": "2026-10-07"
+ },
  "hed p e cold": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -2136,11 +3608,26 @@
   "act": "Helen McCookerybook / ASBO Derek",
   "checked": "2026-10-06"
  },
+ "helicopter pirates": {
+  "mbid": "ec5fcc2d-3f1d-401a-b412-fd5afd37eecc",
+  "name": "Helicopter Pirates",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Helicopter Pirates",
+  "checked": "2026-10-07"
+ },
  "henge": {
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "HENGE",
   "checked": "2026-10-06"
+ },
+ "henry": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "HENRY",
+  "checked": "2026-10-07"
  },
  "heritage and tours": {
   "bucket": null,
@@ -2154,6 +3641,18 @@
   "act": "HH",
   "checked": "2026-10-06"
  },
+ "hh presents": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "HH Presents",
+  "checked": "2026-10-07"
+ },
+ "hi jinx promotions presents free entry": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "HI JINX PROMOTIONS PRESENTS FREE ENTRY",
+  "checked": "2026-10-07"
+ },
  "hiding places": {
   "mbid": "f6575944-82b1-4f2c-8d34-80ec079145b5",
   "name": "Hiding Places",
@@ -2162,6 +3661,32 @@
   "reason": "no genre tags",
   "act": "Hiding Places",
   "checked": "2026-10-06"
+ },
+ "hiraeth presents": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Hiraeth presents",
+  "checked": "2026-10-07"
+ },
+ "hit like a girl": {
+  "mbid": "8fc53eb6-e87f-4221-903b-c1b8f6081b58",
+  "name": "Hit Like a Girl",
+  "genres": [
+   {
+    "name": "emo",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Hit Like A Girl",
+  "checked": "2026-10-07"
+ },
+ "hitman sheela": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Hitman Sheela",
+  "checked": "2026-10-07"
  },
  "holdtight": {
   "mbid": "5bdb8736-66bd-4068-95a6-b810d9ee0872",
@@ -2206,6 +3731,26 @@
   "act": "Hospital30",
   "checked": "2026-10-06"
  },
+ "hothouse flowers": {
+  "mbid": "9ddb555e-4cf2-4d76-a9d5-7627988cf6ab",
+  "name": "Hothouse Flowers",
+  "genres": [
+   {
+    "name": "rock",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Hothouse Flowers",
+  "checked": "2026-10-07"
+ },
+ "hove record fair": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Hove Record Fair",
+  "checked": "2026-10-07"
+ },
  "huey morgan": {
   "mbid": "2625c075-08de-4428-9f23-bb9d4f4dcf42",
   "name": "Huey Morgan",
@@ -2224,11 +3769,78 @@
   "act": "Hurly Burly",
   "checked": "2026-10-06"
  },
+ "hybrid minds": {
+  "mbid": "ceb88a0c-81ca-461a-82d2-ad7769447e15",
+  "name": "Hybrid Minds",
+  "genres": [
+   {
+    "name": "drum and bass",
+    "count": 5
+   },
+   {
+    "name": "electronic",
+    "count": 2
+   }
+  ],
+  "bucket": "Drum & Bass",
+  "reason": "tagged",
+  "act": "Hybrid Minds",
+  "checked": "2026-10-07"
+ },
  "i f ing h8 clubbing": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "i f *ing h8 clubbing",
   "checked": "2026-10-06"
+ },
+ "i promised the world": {
+  "mbid": "520b3730-4f29-465e-9003-0bee3cb3e5f4",
+  "name": "I Promised the World",
+  "genres": [
+   {
+    "name": "emo",
+    "count": 2
+   },
+   {
+    "name": "melodic metalcore",
+    "count": 2
+   },
+   {
+    "name": "metalcore",
+    "count": 3
+   },
+   {
+    "name": "pop screamo",
+    "count": 2
+   },
+   {
+    "name": "post-hardcore",
+    "count": 3
+   },
+   {
+    "name": "screamo",
+    "count": 1
+   }
+  ],
+  "bucket": "Punk & Metal",
+  "reason": "tagged",
+  "act": "I PROMISED THE WORLD",
+  "checked": "2026-10-07"
+ },
+ "ian prowse and amsterdam": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Ian Prowse & Amsterdam",
+  "checked": "2026-10-07"
+ },
+ "ian roland": {
+  "mbid": "35fc08e3-55e2-4030-8088-7b8f60b674fe",
+  "name": "Ian Roland",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Ian Roland",
+  "checked": "2026-10-07"
  },
  "ibibio sound machine": {
   "mbid": "0ece139d-19a4-44c6-85e6-0406e8055a21",
@@ -2294,6 +3906,42 @@
   "act": "Iceage",
   "checked": "2026-10-06"
  },
+ "indie rock night": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Indie Rock Night",
+  "checked": "2026-10-07"
+ },
+ "indie rock night big wig energy": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Indie Rock Night ∙ BIG WIG ENERGY",
+  "checked": "2026-10-07"
+ },
+ "indie rock night dad rock": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Indie Rock Night ∙ DAD ROCK",
+  "checked": "2026-10-07"
+ },
+ "indie rock night footy shirts": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Indie Rock Night ∙ FOOTY SHIRTS",
+  "checked": "2026-10-07"
+ },
+ "indie rock night indieween": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Indie Rock Night ∙ INDIEWEEN",
+  "checked": "2026-10-07"
+ },
+ "ink": {
+  "bucket": null,
+  "reason": "5 artists share this name",
+  "act": "Ink!",
+  "checked": "2026-10-07"
+ },
  "inner terrestrials": {
   "mbid": "081f0b70-f191-40a1-9da4-1688ec61bc92",
   "name": "Inner Terrestrials",
@@ -2308,6 +3956,12 @@
   "act": "Inner Terrestrials",
   "checked": "2026-10-06"
  },
+ "intercourse": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Intercourse",
+  "checked": "2026-10-07"
+ },
  "interpol bloc party": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -2319,6 +3973,12 @@
   "reason": "not in MusicBrainz",
   "act": "IO / Playing Alice / Spooky Huge / Dateless Wonder Club",
   "checked": "2026-10-06"
+ },
+ "isla collective": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Isla Collective",
+  "checked": "2026-10-07"
  },
  "it s a jungle out there": {
   "bucket": null,
@@ -2416,6 +4076,12 @@
   "act": "Ivy Lab",
   "checked": "2026-10-06"
  },
+ "jack barry": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Jack Barry",
+  "checked": "2026-10-07"
+ },
  "jack whitehall": {
   "mbid": "1e6cbee1-21e7-449e-9646-9e7263235dd8",
   "name": "Jack Whitehall",
@@ -2424,6 +4090,40 @@
   "reason": "no genre tags",
   "act": "Jack Whitehall",
   "checked": "2026-10-06"
+ },
+ "jake bugg": {
+  "mbid": "0d9905e6-add6-4713-94ca-9f686f9b5e9b",
+  "name": "Jake Bugg",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "blues",
+    "count": 2
+   },
+   {
+    "name": "folk",
+    "count": 2
+   },
+   {
+    "name": "indie folk",
+    "count": 1
+   },
+   {
+    "name": "indie rock",
+    "count": 1
+   },
+   {
+    "name": "singer-songwriter",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Jake Bugg",
+  "checked": "2026-10-07"
  },
  "jake vaadeland": {
   "mbid": "d3ab05f3-493f-4466-8c8e-8c44f6fe980d",
@@ -2503,6 +4203,12 @@
   "act": "James Blunt",
   "checked": "2026-10-06"
  },
+ "jamie mcintyre": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Jamie McIntyre",
+  "checked": "2026-10-07"
+ },
  "jamie t": {
   "mbid": "bc883961-64d4-46b3-8b1c-64009854291c",
   "name": "Jamie T",
@@ -2528,6 +4234,30 @@
   "reason": "tagged",
   "act": "Jamie T",
   "checked": "2026-10-06"
+ },
+ "jamie webster": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Jamie Webster",
+  "checked": "2026-10-07"
+ },
+ "jarrod dickenson": {
+  "mbid": "0ce7a4b7-25d8-4b76-9b19-51cb45434ab0",
+  "name": "Jarrod Dickenson",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Jarrod Dickenson",
+  "checked": "2026-10-07"
+ },
+ "jawdropped": {
+  "mbid": "6c6f75db-49b3-4454-b808-936de5057d1d",
+  "name": "Jawdropped",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Jawdropped",
+  "checked": "2026-10-07"
  },
  "jesca hoop": {
   "mbid": "b5330942-ffdf-49cb-8a13-b5d7b5d67bff",
@@ -2574,11 +4304,26 @@
   "act": "Jim Jones All Stars",
   "checked": "2026-10-06"
  },
+ "jjerome87": {
+  "mbid": "b372c503-8488-41b2-aca0-224c4fe565c9",
+  "name": "JJerome87",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "JJerome87",
+  "checked": "2026-10-07"
+ },
  "jo whiley s 90s anthems": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Jo Whiley's 90s Anthems",
   "checked": "2026-10-06"
+ },
+ "john adams": {
+  "bucket": null,
+  "reason": "10 artists share this name",
+  "act": "John Adams",
+  "checked": "2026-10-07"
  },
  "john bishop": {
   "bucket": null,
@@ -2682,6 +4427,20 @@
   "act": "Josephine Foster",
   "checked": "2026-10-06"
  },
+ "joshua idehen": {
+  "mbid": "3fc0070f-6b5b-4fc3-b5d3-afc87c80354a",
+  "name": "Joshua Idehen",
+  "genres": [
+   {
+    "name": "spoken word",
+    "count": 2
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Joshua Idehen",
+  "checked": "2026-10-07"
+ },
  "junebabies": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -2732,6 +4491,15 @@
   "act": "Keeno",
   "checked": "2026-10-06"
  },
+ "keep ya nose out": {
+  "mbid": "24d6bbfd-f1a0-4d16-ad2e-f963e2a64d18",
+  "name": "Keep Ya Nose Out",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "KEEP YA NOSE OUT",
+  "checked": "2026-10-07"
+ },
  "keg": {
   "mbid": "e447dc02-d59c-442e-b2eb-1cdd6c230867",
   "name": "KEG",
@@ -2740,6 +4508,21 @@
   "reason": "no genre tags",
   "act": "KEG",
   "checked": "2026-10-06"
+ },
+ "ken yates": {
+  "mbid": "38c89e76-7be7-4863-9610-2a96a90b0910",
+  "name": "Ken Yates",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Ken Yates",
+  "checked": "2026-10-07"
+ },
+ "kepler": {
+  "bucket": null,
+  "reason": "9 artists share this name",
+  "act": "Kepler",
+  "checked": "2026-10-07"
  },
  "kerrbang": {
   "bucket": null,
@@ -2755,6 +4538,24 @@
   "reason": "no genre tags",
   "act": "Keywest",
   "checked": "2026-10-06"
+ },
+ "kid bookie": {
+  "mbid": "ca8d545a-4eb7-478a-86ce-af6d08e17c4e",
+  "name": "Kid Bookie",
+  "genres": [
+   {
+    "name": "hip hop",
+    "count": 1
+   },
+   {
+    "name": "trap metal",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "KID BOOKIE",
+  "checked": "2026-10-07"
  },
  "killer queen": {
   "bucket": null,
@@ -2788,6 +4589,15 @@
   "act": "Kings Of The Rollers",
   "checked": "2026-10-06"
  },
+ "kirsteen harvey": {
+  "mbid": "dd089800-01b1-4a4f-bbce-344076d10f7e",
+  "name": "Kirsteen Harvey",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Kirsteen Harvey",
+  "checked": "2026-10-07"
+ },
  "kiwi jr": {
   "mbid": "64598fd8-5d7c-441d-a936-e1fc13d5a4f6",
   "name": "Kiwi Jr.",
@@ -2802,6 +4612,18 @@
   "reason": "not in MusicBrainz",
   "act": "Komedia Christmas Party",
   "checked": "2026-10-06"
+ },
+ "kotoa": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "KOTOA",
+  "checked": "2026-10-07"
+ },
+ "krapeoke halloween special": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "KRAPEOKE HALLOWEEN SPECIAL",
+  "checked": "2026-10-07"
  },
  "kristin hersh": {
   "mbid": "0b461f11-c7af-4ddb-a30e-5cb0aabb3e7f",
@@ -2821,11 +4643,53 @@
   "act": "Kurupt FM",
   "checked": "2026-10-06"
  },
+ "kytes": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Kytes",
+  "checked": "2026-10-07"
+ },
+ "lacuna": {
+  "bucket": null,
+  "reason": "5 artists share this name",
+  "act": "Lacuna",
+  "checked": "2026-10-07"
+ },
+ "lady nade": {
+  "mbid": "da73f280-41ca-4541-b041-7cce1cce7301",
+  "name": "Lady Nade",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Lady Nade",
+  "checked": "2026-10-07"
+ },
+ "lael neale and special guests": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Lael Neale & Special Guests",
+  "checked": "2026-10-07"
+ },
+ "lagrimas": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "LAGRIMAS",
+  "checked": "2026-10-07"
+ },
  "lana death ray": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "LANA DEATH RAY",
   "checked": "2026-10-06"
+ },
+ "language of shapes": {
+  "mbid": "104384f5-1cf4-4523-89f8-40caa2e37d39",
+  "name": "Language of Shapes",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "LANGUAGE OF SHAPES",
+  "checked": "2026-10-07"
  },
  "lavender": {
   "bucket": null,
@@ -2883,6 +4747,15 @@
   "act": "Lebanon Hanover",
   "checked": "2026-10-06"
  },
+ "lemoncello": {
+  "mbid": "170fc142-b46e-498c-bb26-29c7f091d792",
+  "name": "Lemoncello",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Lemoncello",
+  "checked": "2026-10-07"
+ },
  "lene lovich": {
   "mbid": "4eaceceb-cb2a-43ba-bee6-2fd7fe9aaaba",
   "name": "Lene Lovich",
@@ -2914,6 +4787,21 @@
   "act": "Lenna and the Snakemen",
   "checked": "2026-10-06"
  },
+ "lenna bahule": {
+  "mbid": "f633e88a-e23f-487c-aeb1-e3876fb4c210",
+  "name": "Lenna Bahule",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "LENNA BAHULE",
+  "checked": "2026-10-07"
+ },
+ "let s meet tommy romero": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Let's Meet Tommy Romero",
+  "checked": "2026-10-07"
+ },
  "letz zep": {
   "mbid": "95d79f59-9582-4e04-b860-eba7cda5d9fe",
   "name": "Letz Zep",
@@ -2922,6 +4810,39 @@
   "reason": "no genre tags",
   "act": "Letz Zep",
   "checked": "2026-10-06"
+ },
+ "liam c": {
+  "mbid": "1b9e9947-8408-4a04-88ee-02443f46b388",
+  "name": "Liam C",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Liam C",
+  "checked": "2026-10-07"
+ },
+ "liam cromby": {
+  "mbid": "a6f90ffa-8099-490b-b526-6cff76f5dd10",
+  "name": "Liam Cromby",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Liam Cromby",
+  "checked": "2026-10-07"
+ },
+ "liege and lief": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Liege and Lief",
+  "checked": "2026-10-07"
+ },
+ "little miss nasty": {
+  "mbid": "6f30279b-11aa-4982-9002-0e371054951a",
+  "name": "Little Miss Nasty",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Little Miss Nasty",
+  "checked": "2026-10-07"
  },
  "lo fidelity allstars dj set": {
   "bucket": null,
@@ -2938,6 +4859,27 @@
   "act": "Locklead",
   "checked": "2026-10-06"
  },
+ "look what happened presents": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Look What Happened Presents",
+  "checked": "2026-10-07"
+ },
+ "lost at sea": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "LOST AT SEA",
+  "checked": "2026-10-07"
+ },
+ "lost in motion": {
+  "mbid": "acecc11d-c6fe-469e-bdf5-f79ba1d64695",
+  "name": "Lost In Motion",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Lost in Motion",
+  "checked": "2026-10-07"
+ },
  "lots of hands": {
   "mbid": "e686eb25-a2f7-43fb-ad4d-84a4fdaf41c9",
   "name": "lots of hands",
@@ -2946,6 +4888,12 @@
   "reason": "no genre tags",
   "act": "LOTS OF HANDS",
   "checked": "2026-10-06"
+ },
+ "louise parkers petty in pink": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Louise Parker’s Petty in Pink",
+  "checked": "2026-10-07"
  },
  "love": {
   "bucket": null,
@@ -2965,6 +4913,15 @@
   "act": "Lovers II Friends",
   "checked": "2026-10-06"
  },
+ "lukas and frank": {
+  "mbid": "99f845b6-e37a-4d30-803d-98c39f1019d1",
+  "name": "Lukas & Frank",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Lukas & Frank",
+  "checked": "2026-10-07"
+ },
  "luke kidgell": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -2976,6 +4933,15 @@
   "reason": "7 artists share this name",
   "act": "Lulu",
   "checked": "2026-10-06"
+ },
+ "machukha": {
+  "mbid": "2e47782c-8b9d-4ca4-ba59-af4625400cc1",
+  "name": "Machukha",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "MACHUKHA",
+  "checked": "2026-10-07"
  },
  "magic men world tour 2026 magic men live": {
   "bucket": null,
@@ -3005,11 +4971,38 @@
   "act": "Makthaverskan",
   "checked": "2026-10-06"
  },
+ "mari merenda": {
+  "mbid": "fa350370-fe4e-47c0-9df9-c95801e259de",
+  "name": "Mari Merenda",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "MARI MERENDA",
+  "checked": "2026-10-07"
+ },
+ "marky ramone s blitzkrieg": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Marky Ramone's Blitzkrieg",
+  "checked": "2026-10-07"
+ },
+ "martin chambers and mike christie": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "MARTIN CHAMBERS & MIKE CHRISTIE",
+  "checked": "2026-10-07"
+ },
  "martin kemp": {
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "Martin Kemp",
   "checked": "2026-10-06"
+ },
+ "martin mcaloon of prefab sprout steve mcqueen": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Martin McAloon of Prefab Sprout Steve McQueen",
+  "checked": "2026-10-07"
  },
  "martin stephenson and the daintees": {
   "mbid": "b75b5e67-10e0-4e7b-ae2f-b9e6f28fdd3b",
@@ -3019,6 +5012,26 @@
   "reason": "no genre tags",
   "act": "MARTIN STEPHENSON & THE DAINTEES",
   "checked": "2026-10-06"
+ },
+ "matinee": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Matinee",
+  "checked": "2026-10-07"
+ },
+ "mauvey": {
+  "mbid": "a711daa7-6e6f-4491-b1aa-f6e3158b6b9d",
+  "name": "Mauvey",
+  "genres": [
+   {
+    "name": "hip hop",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "MAUVEY",
+  "checked": "2026-10-07"
  },
  "max cooper": {
   "bucket": null,
@@ -3032,11 +5045,53 @@
   "act": "Mekons",
   "checked": "2026-10-06"
  },
+ "memory box": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Memory Box",
+  "checked": "2026-10-07"
+ },
+ "menstrual cramps": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "MENSTRUAL CRAMPS",
+  "checked": "2026-10-07"
+ },
  "meow meows hakuna pesa family of strangers": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Meow Meows Hakuna Pesa, Family of Strangers",
   "checked": "2026-10-06"
+ },
+ "meryl streek": {
+  "mbid": "8e9e00bf-6028-47c3-af6e-da68d857feb0",
+  "name": "Meryl Streek",
+  "genres": [
+   {
+    "name": "art punk",
+    "count": 1
+   },
+   {
+    "name": "electronic",
+    "count": 1
+   },
+   {
+    "name": "post-punk",
+    "count": 1
+   },
+   {
+    "name": "punk",
+    "count": 1
+   },
+   {
+    "name": "spoken word",
+    "count": 1
+   }
+  ],
+  "bucket": "Punk & Metal",
+  "reason": "tagged",
+  "act": "Meryl Streek",
+  "checked": "2026-10-07"
  },
  "metallica reloaded": {
   "mbid": "9e8e7fd5-9d42-4474-bc39-bb4a3811e278",
@@ -3056,11 +5111,55 @@
   "act": "Michael McGovern",
   "checked": "2026-10-06"
  },
+ "midge ure": {
+  "mbid": "24cac374-29bd-499f-a0f8-72165d2f2f43",
+  "name": "Midge Ure",
+  "genres": [
+   {
+    "name": "art pop",
+    "count": 2
+   },
+   {
+    "name": "new romantic",
+    "count": 1
+   },
+   {
+    "name": "new wave",
+    "count": 1
+   },
+   {
+    "name": "pop",
+    "count": 3
+   },
+   {
+    "name": "pop rock",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   },
+   {
+    "name": "singer-songwriter",
+    "count": 1
+   }
+  ],
+  "bucket": "Pop",
+  "reason": "tagged",
+  "act": "Midge Ure",
+  "checked": "2026-10-07"
+ },
  "mildred": {
   "bucket": null,
   "reason": "5 artists share this name",
   "act": "Mildred",
   "checked": "2026-10-06"
+ },
+ "mind frog": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Mind Frog",
+  "checked": "2026-10-07"
  },
  "ministry of sound classical": {
   "mbid": "87c4eaa0-5c68-4d79-aa3e-f16441680876",
@@ -3070,6 +5169,15 @@
   "reason": "no genre tags",
   "act": "Ministry Of Sound Classical",
   "checked": "2026-10-06"
+ },
+ "minor dents": {
+  "mbid": "6ab65933-dc44-4c99-bdc3-2dbf18aa3c16",
+  "name": "Minor Dents",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Minor Dents",
+  "checked": "2026-10-07"
  },
  "mnek": {
   "mbid": "27e7c2e8-badc-4a97-8b93-24b6c530b038",
@@ -3141,6 +5249,28 @@
   "reason": "2 artists share this name",
   "act": "Morrissey",
   "checked": "2026-10-06"
+ },
+ "moscow death brigade": {
+  "mbid": "82b913a5-b278-4c97-9da5-1d17cf73afc8",
+  "name": "Moscow Death Brigade",
+  "genres": [
+   {
+    "name": "hip hop",
+    "count": 2
+   },
+   {
+    "name": "political hip hop",
+    "count": 2
+   },
+   {
+    "name": "punk",
+    "count": 2
+   }
+  ],
+  "bucket": "Hip-hop & R&B",
+  "reason": "tagged",
+  "act": "Moscow Death Brigade",
+  "checked": "2026-10-07"
  },
  "moses boyd": {
   "mbid": "90c07789-6d90-4b86-9780-0a954cc4469c",
@@ -3223,6 +5353,18 @@
   "act": "Mr Cutts",
   "checked": "2026-10-06"
  },
+ "ms ezra furman": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Ms. Ezra Furman",
+  "checked": "2026-10-07"
+ },
+ "murdock and themortals halloween": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Murdock&TheMortals Halloween!",
+  "checked": "2026-10-07"
+ },
  "mustbejohn": {
   "mbid": "f10032b6-d8e4-4d3d-90a5-79569b0af7de",
   "name": "mustbejohn",
@@ -3232,11 +5374,37 @@
   "act": "mustbejohn",
   "checked": "2026-10-06"
  },
+ "mutations 26": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "MUTATIONS 26",
+  "checked": "2026-10-07"
+ },
+ "mutations fest 26": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "MUTATIONS FEST ‘26",
+  "checked": "2026-10-07"
+ },
  "mutations festival": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Mutations Festival",
   "checked": "2026-10-06"
+ },
+ "mx lonely": {
+  "mbid": "b9e9859c-dbd8-400c-9f6d-3d87f5609277",
+  "name": "MX LONELY",
+  "genres": [
+   {
+    "name": "shoegaze",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "MX LONELY",
+  "checked": "2026-10-07"
  },
  "my first time": {
   "mbid": "c9f52853-8e09-4bdf-a261-1904c722f9a0",
@@ -3246,6 +5414,12 @@
   "reason": "no genre tags",
   "act": "My First Time",
   "checked": "2026-10-06"
+ },
+ "my homeland": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "My Homeland",
+  "checked": "2026-10-07"
  },
  "my new band believe": {
   "mbid": "d296518f-e5e3-4ba9-a026-560916dcbc2f",
@@ -3289,11 +5463,32 @@
   "act": "NECTAR WOODE",
   "checked": "2026-10-06"
  },
+ "nerd ball": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "NERD BALL",
+  "checked": "2026-10-07"
+ },
+ "neverunder": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "NeverUnder",
+  "checked": "2026-10-07"
+ },
  "new on sale music david bowie": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "New on Sale Music David Bowie",
   "checked": "2026-10-06"
+ },
+ "next wave": {
+  "mbid": "c54d1fe1-9188-4df6-9693-19a4e914c648",
+  "name": "Next Wave",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "NEXT WAVE",
+  "checked": "2026-10-07"
  },
  "niall mcnamee": {
   "mbid": "84e677be-c735-4dd6-b28e-87f045d2c53d",
@@ -3322,6 +5517,75 @@
   "act": "Nick Hakim",
   "checked": "2026-10-06"
  },
+ "nick heyward": {
+  "mbid": "2ff2543e-d8f9-42da-8734-e78532ac8147",
+  "name": "Nick Heyward",
+  "genres": [
+   {
+    "name": "indie pop",
+    "count": 1
+   },
+   {
+    "name": "new wave",
+    "count": 1
+   },
+   {
+    "name": "pop",
+    "count": 2
+   },
+   {
+    "name": "pop rock",
+    "count": 1
+   },
+   {
+    "name": "singer-songwriter",
+    "count": 2
+   },
+   {
+    "name": "sophisti-pop",
+    "count": 1
+   }
+  ],
+  "bucket": "Pop",
+  "reason": "tagged",
+  "act": "Nick Heyward",
+  "checked": "2026-10-07"
+ },
+ "nieve ella": {
+  "mbid": "0d351b4b-7986-4fd2-ac7f-40fdf2a34c71",
+  "name": "Nieve Ella",
+  "genres": [
+   {
+    "name": "alternative pop",
+    "count": 1
+   },
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "indie pop",
+    "count": 1
+   },
+   {
+    "name": "indie rock",
+    "count": 1
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Nieve Ella",
+  "checked": "2026-10-07"
+ },
+ "nina maia": {
+  "mbid": "af26487a-20e0-4a9f-8389-1de45e898508",
+  "name": "Nina Maia",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "NINA MAIA",
+  "checked": "2026-10-07"
+ },
  "nirvana uk": {
   "mbid": "8f32371e-4bac-4090-ba13-2c1cd1aeab0d",
   "name": "Nirvana UK",
@@ -3340,6 +5604,27 @@
   "act": "Nirvana UK",
   "checked": "2026-10-06"
  },
+ "no tits just hits": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "NO TITS JUST HITS",
+  "checked": "2026-10-07"
+ },
+ "noah derksen live in hove": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Noah Derksen live in Hove",
+  "checked": "2026-10-07"
+ },
+ "noah guthrie": {
+  "mbid": "af368247-36b7-48d7-9e47-2c996ff84147",
+  "name": "Noah Guthrie",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Noah Guthrie",
+  "checked": "2026-10-07"
+ },
  "noasis": {
   "mbid": "e0501a0f-7f11-4189-a492-2dc9cd1a38a8",
   "name": "Noasis",
@@ -3348,6 +5633,20 @@
   "reason": "no genre tags",
   "act": "Noasis",
   "checked": "2026-10-06"
+ },
+ "northcote": {
+  "mbid": "a7fc0b6e-82af-466d-b703-ef6b60703473",
+  "name": "Northcote",
+  "genres": [
+   {
+    "name": "rock",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Northcote",
+  "checked": "2026-10-07"
  },
  "notion": {
   "bucket": null,
@@ -3360,6 +5659,12 @@
   "reason": "3 artists share this name",
   "act": "Nouvelle Vague",
   "checked": "2026-10-06"
+ },
+ "nye family daytime disco": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "NYE Family Daytime Disco",
+  "checked": "2026-10-07"
  },
  "ocean colour scene the enemy": {
   "bucket": null,
@@ -3395,6 +5700,51 @@
   "reason": "tagged",
   "act": "OMEGA NEBULA",
   "checked": "2026-10-06"
+ },
+ "omne trium perfectum": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Omne trium perfectum",
+  "checked": "2026-10-07"
+ },
+ "open mic night": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Open Mic Night",
+  "checked": "2026-10-07"
+ },
+ "organoke": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "ORGANOKE",
+  "checked": "2026-10-07"
+ },
+ "orla rae": {
+  "mbid": "5cdeafd5-d097-4fee-aea0-6dbf78768983",
+  "name": "Orla Rae",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "ORLA RAE",
+  "checked": "2026-10-07"
+ },
+ "orphix": {
+  "mbid": "c51dbaf9-57e1-4c5b-8b0f-4973bfdf2918",
+  "name": "Orphix",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Orphix",
+  "checked": "2026-10-07"
+ },
+ "our man in the field": {
+  "mbid": "15f51d9c-093d-4b49-9c8f-5e8f37f7dc30",
+  "name": "Our Man in the Field",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Our Man in the Field",
+  "checked": "2026-10-07"
  },
  "outpost drive": {
   "mbid": "5403e1bd-32a3-455a-89ef-1cee9498e865",
@@ -3438,6 +5788,34 @@
   "act": "party 4 u",
   "checked": "2026-10-06"
  },
+ "paul heaton": {
+  "mbid": "ed652e25-7d55-42b3-a81c-cf31c6138d88",
+  "name": "Paul Heaton",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "indie pop",
+    "count": 1
+   },
+   {
+    "name": "pop",
+    "count": 1
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Paul Heaton",
+  "checked": "2026-10-07"
+ },
+ "paul mcgann and ben wheatley": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "PAUL MCGANN & BEN WHEATLEY",
+  "checked": "2026-10-07"
+ },
  "paul smith": {
   "bucket": null,
   "reason": "9 artists share this name",
@@ -3480,6 +5858,24 @@
   "act": "Penelope Isles",
   "checked": "2026-10-06"
  },
+ "perennial": {
+  "mbid": "ab88030c-19bf-4059-9349-16f21ae63f80",
+  "name": "Perennial",
+  "genres": [
+   {
+    "name": "art punk",
+    "count": 1
+   },
+   {
+    "name": "post-hardcore",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "PERENNIAL",
+  "checked": "2026-10-07"
+ },
  "pete fij": {
   "mbid": "e54ec7a4-abc2-4d91-9fc1-58f84a2bb873",
   "name": "Pete Fij",
@@ -3503,6 +5899,56 @@
   "reason": "not in MusicBrainz",
   "act": "Peter Kyle MP & Dr Fola Yahaya",
   "checked": "2026-10-06"
+ },
+ "peter serafinowicz and doon mackichan": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "PETER SERAFINOWICZ & DOON MACKICHAN",
+  "checked": "2026-10-07"
+ },
+ "phil jones": {
+  "bucket": null,
+  "reason": "10 artists share this name",
+  "act": "Phil Jones",
+  "checked": "2026-10-07"
+ },
+ "phoebe bridgers": {
+  "mbid": "96855c21-b832-4366-ba12-0d2330c36a86",
+  "name": "Phoebe Bridgers",
+  "genres": [
+   {
+    "name": "chamber pop",
+    "count": 3
+   },
+   {
+    "name": "christmas music",
+    "count": 1
+   },
+   {
+    "name": "contemporary folk",
+    "count": 2
+   },
+   {
+    "name": "folk",
+    "count": 4
+   },
+   {
+    "name": "indie folk",
+    "count": 9
+   },
+   {
+    "name": "indie rock",
+    "count": 9
+   },
+   {
+    "name": "singer-songwriter",
+    "count": 11
+   }
+  ],
+  "bucket": "Folk & Country",
+  "reason": "tagged",
+  "act": "Phoebe Bridgers",
+  "checked": "2026-10-07"
  },
  "pigeon": {
   "bucket": null,
@@ -3531,6 +5977,27 @@
   "reason": "tagged",
   "act": "Pina Palau",
   "checked": "2026-10-06"
+ },
+ "placeholder": {
+  "bucket": null,
+  "reason": "9 artists share this name",
+  "act": "Placeholder",
+  "checked": "2026-10-07"
+ },
+ "pleasure hunt": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Pleasure Hunt",
+  "checked": "2026-10-07"
+ },
+ "pocket sun": {
+  "mbid": "789f0711-6a80-4cfd-a168-717c5727181d",
+  "name": "Pocket Sun",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Pocket Sun",
+  "checked": "2026-10-07"
  },
  "poison ruin": {
   "mbid": "99e1a3c4-3f44-4c6d-9098-5380e3056fae",
@@ -3572,6 +6039,44 @@
   "act": "PORTRAYAL OF GUILT",
   "checked": "2026-10-06"
  },
+ "possessed by paul james": {
+  "mbid": "0a31b2d4-eba4-458b-8e0a-5b637e6cf0f9",
+  "name": "Possessed by Paul James",
+  "genres": [
+   {
+    "name": "alternative country",
+    "count": 1
+   },
+   {
+    "name": "anti-folk",
+    "count": 1
+   },
+   {
+    "name": "bluegrass",
+    "count": 1
+   },
+   {
+    "name": "blues",
+    "count": 1
+   },
+   {
+    "name": "country",
+    "count": 1
+   },
+   {
+    "name": "folk",
+    "count": 1
+   },
+   {
+    "name": "punk rock",
+    "count": 1
+   }
+  ],
+  "bucket": "Folk & Country",
+  "reason": "tagged",
+  "act": "Possessed by Paul James",
+  "checked": "2026-10-07"
+ },
  "professor brian cox": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -3583,6 +6088,15 @@
   "reason": "not in MusicBrainz",
   "act": "Psychedelic Autumn Sundae",
   "checked": "2026-10-06"
+ },
+ "pushbike": {
+  "mbid": "0de0f287-76c0-45dd-b8ba-ee21cbe52fe6",
+  "name": "Pushbike",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "PUSHBIKE",
+  "checked": "2026-10-07"
  },
  "pyncher": {
   "mbid": "bdd0974f-4dab-4c92-8505-8d2fcf31cf83",
@@ -3599,6 +6113,40 @@
   "act": "QUANTIC",
   "checked": "2026-10-06"
  },
+ "radiator": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "Radiator",
+  "checked": "2026-10-07"
+ },
+ "real sounds": {
+  "mbid": "5165ee43-657a-43f9-a222-164bc891e00b",
+  "name": "Real Sounds",
+  "genres": [
+   {
+    "name": "chimurenga",
+    "count": 1
+   },
+   {
+    "name": "congolese rumba",
+    "count": 1
+   },
+   {
+    "name": "soukous",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Real sounds",
+  "checked": "2026-10-07"
+ },
+ "rebecka edlund trio": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Rebecka Edlund Trio",
+  "checked": "2026-10-07"
+ },
  "red richardson premium economy": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -3611,17 +6159,50 @@
   "act": "Reef",
   "checked": "2026-10-06"
  },
+ "reek0": {
+  "mbid": "34cf71fb-7ee4-4111-bc4b-4cb9ff15966a",
+  "name": "Reek0",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "REEK0",
+  "checked": "2026-10-07"
+ },
+ "release the bats": {
+  "mbid": "abcc24ce-7d3e-443e-a0a7-b8da12bd7578",
+  "name": "Release The Bats",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "RELEASE THE BATS",
+  "checked": "2026-10-07"
+ },
  "republica trampolene": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Republica Trampolene",
   "checked": "2026-10-06"
  },
+ "resident lock in": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Resident Lock In",
+  "checked": "2026-10-07"
+ },
  "resident presents the script": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Resident Presents The Script",
   "checked": "2026-10-06"
+ },
+ "restraining order": {
+  "mbid": "dc2f7dfe-04fe-4f76-b0df-e8951ee8d5cf",
+  "name": "Restraining Order",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Restraining Order",
+  "checked": "2026-10-07"
  },
  "reverend and the makers": {
   "mbid": "e472c434-9eb9-41d3-b493-0d2f115faed2",
@@ -3637,11 +6218,38 @@
   "act": "Reverend And The Makers",
   "checked": "2026-10-06"
  },
+ "revolt": {
+  "bucket": null,
+  "reason": "9 artists share this name",
+  "act": "Revolt",
+  "checked": "2026-10-07"
+ },
+ "revolt brighton presents": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "REVOLT BRIGHTON PRESENTS",
+  "checked": "2026-10-07"
+ },
+ "rhythm of the 90s": {
+  "mbid": "a2b745c6-9c80-4e3b-9771-e017da5ce168",
+  "name": "Rhythm of the 90s",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Rhythm Of The 90s",
+  "checked": "2026-10-07"
+ },
  "rich wilson": {
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "Rich Wilson",
   "checked": "2026-10-06"
+ },
+ "richard walters": {
+  "bucket": null,
+  "reason": "5 artists share this name",
+  "act": "Richard Walters",
+  "checked": "2026-10-07"
  },
  "ricky gervais": {
   "mbid": "99970f34-8786-49b4-bc65-d3056872df1c",
@@ -3707,6 +6315,75 @@
   "act": "Rock Day Party",
   "checked": "2026-10-06"
  },
+ "rock n pole": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "ROCK 'N' POLE",
+  "checked": "2026-10-07"
+ },
+ "rocky horror picture show screening": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Rocky Horror Picture Show Screening",
+  "checked": "2026-10-07"
+ },
+ "roger mason": {
+  "bucket": null,
+  "reason": "6 artists share this name",
+  "act": "Roger Mason",
+  "checked": "2026-10-07"
+ },
+ "roll for performance": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "ROLL FOR PERFORMANCE",
+  "checked": "2026-10-07"
+ },
+ "romes": {
+  "bucket": null,
+  "reason": "3 artists share this name",
+  "act": "ROMES",
+  "checked": "2026-10-07"
+ },
+ "rootweave": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Rootweave",
+  "checked": "2026-10-07"
+ },
+ "rosalie cunningham": {
+  "mbid": "c339108e-8eeb-4392-9933-9a72bd50e9b6",
+  "name": "Rosalie Cunningham",
+  "genres": [
+   {
+    "name": "art rock",
+    "count": 1
+   },
+   {
+    "name": "psychedelic rock",
+    "count": 2
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Rosalie Cunningham",
+  "checked": "2026-10-07"
+ },
+ "rose divine and the d villes": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Rose Divine & The D'Villes",
+  "checked": "2026-10-07"
+ },
+ "roving crows": {
+  "mbid": "78469b73-1fa9-4e95-9fdb-939899a6cc41",
+  "name": "Roving Crows",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Roving Crows",
+  "checked": "2026-10-07"
+ },
  "rowena wise": {
   "mbid": "41a318d7-294a-4aa0-8b8c-5007d10628c3",
   "name": "Rowena Wise",
@@ -3737,11 +6414,47 @@
   "act": "Ruel",
   "checked": "2026-10-06"
  },
+ "runner devolver": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Runner Devolver",
+  "checked": "2026-10-07"
+ },
+ "ruthlyon elizahull annasmyrk": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "RuthLyon/ElizaHull/AnnaSmyrk",
+  "checked": "2026-10-07"
+ },
+ "ryotei": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "RYOTEI",
+  "checked": "2026-10-07"
+ },
  "sadness": {
   "bucket": null,
   "reason": "7 artists share this name",
   "act": "SADNESS",
   "checked": "2026-10-06"
+ },
+ "sametime": {
+  "mbid": "250216f9-42e9-407f-acff-eff4f48d88d6",
+  "name": "Sametime",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Sametime",
+  "checked": "2026-10-07"
+ },
+ "samuel nicholson": {
+  "mbid": "53978912-b5f2-4d54-9ad8-f25e00d14f09",
+  "name": "Samuel Nicholson",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Samuel Nicholson",
+  "checked": "2026-10-07"
  },
  "saul williams": {
   "mbid": "756cf672-d4ae-4470-a3af-a43d776a211d",
@@ -3764,6 +6477,12 @@
   "reason": "tagged",
   "act": "Saul Williams",
   "checked": "2026-10-06"
+ },
+ "scarlet reading": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Scarlet Reading",
+  "checked": "2026-10-07"
  },
  "schur": {
   "bucket": null,
@@ -3789,6 +6508,21 @@
   "act": "Sea Power Pictish Trail",
   "checked": "2026-10-06"
  },
+ "sean solomon": {
+  "mbid": "bc9cf7c3-409e-4ba7-9b4c-91b057c62371",
+  "name": "Sean Solomon",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Sean Solomon",
+  "checked": "2026-10-07"
+ },
+ "seany clarke": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Seany Clarke",
+  "checked": "2026-10-07"
+ },
  "seapower7": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -3806,6 +6540,15 @@
   "reason": "not in MusicBrainz",
   "act": "Secret Discotheque Bingo",
   "checked": "2026-10-06"
+ },
+ "sennen timcke": {
+  "mbid": "7b5f697a-5c1a-494b-b550-3d1880575fee",
+  "name": "Sennen Timcke",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Sennen Timcke",
+  "checked": "2026-10-07"
  },
  "sergi polo": {
   "bucket": null,
@@ -3831,11 +6574,77 @@
   "act": "Shake Some Acton #177",
   "checked": "2026-10-06"
  },
+ "shaking hand": {
+  "mbid": "060536f6-9bef-4233-898c-57004bc27cdb",
+  "name": "Shaking Hand",
+  "genres": [
+   {
+    "name": "indie rock",
+    "count": 1
+   },
+   {
+    "name": "post-rock",
+    "count": 1
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Shaking Hand",
+  "checked": "2026-10-07"
+ },
  "shanti celeste midland": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Shanti Celeste Midland",
   "checked": "2026-10-06"
+ },
+ "shaun kirk": {
+  "mbid": "266f8f91-d618-46ef-8067-61b31b05a049",
+  "name": "Shaun Kirk",
+  "genres": [
+   {
+    "name": "blues",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   },
+   {
+    "name": "soul",
+    "count": 1
+   }
+  ],
+  "bucket": "Jazz, Soul & Funk",
+  "reason": "tagged",
+  "act": "Shaun Kirk",
+  "checked": "2026-10-07"
+ },
+ "shed seven": {
+  "mbid": "4d8650ba-b4ed-4307-a6c8-368eb646210b",
+  "name": "Shed Seven",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "britpop",
+    "count": 2
+   },
+   {
+    "name": "jangle pop",
+    "count": 1
+   },
+   {
+    "name": "power pop",
+    "count": 1
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Shed Seven",
+  "checked": "2026-10-07"
  },
  "shen yun": {
   "mbid": "69fc8c8e-552c-4fac-b91b-e220fd0650fe",
@@ -3845,6 +6654,110 @@
   "reason": "no genre tags",
   "act": "Shen Yun",
   "checked": "2026-10-06"
+ },
+ "si connolly": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Si Connolly",
+  "checked": "2026-10-07"
+ },
+ "simply weller": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Simply Weller",
+  "checked": "2026-10-07"
+ },
+ "sindhu vee": {
+  "mbid": "c3730ea4-fc7c-40fe-a19e-ae8dc43e382d",
+  "name": "Sindhu Vee",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Sindhu Vee",
+  "checked": "2026-10-07"
+ },
+ "sing a long a wicker man": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Sing-A-Long-A- Wicker Man",
+  "checked": "2026-10-07"
+ },
+ "singer songwriters for free tibet": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Singer Songwriters for Free Tibet",
+  "checked": "2026-10-07"
+ },
+ "six by seven": {
+  "mbid": "5e2e050f-7280-464e-b251-0a1272c43300",
+  "name": "Six by Seven",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "indie rock",
+    "count": 1
+   },
+   {
+    "name": "neo-psychedelia",
+    "count": 1
+   },
+   {
+    "name": "space rock",
+    "count": 1
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Six By Seven",
+  "checked": "2026-10-07"
+ },
+ "six of one and half a dozen of the other": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Six of One and Half-a-Dozen of the Other",
+  "checked": "2026-10-07"
+ },
+ "sj mortimer": {
+  "mbid": "23fb2113-cdf6-4c54-a222-b3bda68c9790",
+  "name": "SJ Mortimer",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "SJ Mortimer",
+  "checked": "2026-10-07"
+ },
+ "sky valley mistress": {
+  "mbid": "8cb04822-147e-430b-83ad-321766fce295",
+  "name": "Sky Valley Mistress",
+  "genres": [
+   {
+    "name": "garage rock",
+    "count": 1
+   },
+   {
+    "name": "hard rock",
+    "count": 1
+   },
+   {
+    "name": "psychedelic rock",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   },
+   {
+    "name": "rock and roll",
+    "count": 1
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "SKY VALLEY MISTRESS",
+  "checked": "2026-10-07"
  },
  "skye newman": {
   "mbid": "41641281-e1aa-4bbe-ba19-5fb436996e86",
@@ -3903,11 +6816,31 @@
   "act": "Slayyyter",
   "checked": "2026-10-06"
  },
+ "sleeping giant": {
+  "bucket": null,
+  "reason": "5 artists share this name",
+  "act": "SLEEPING GIANT",
+  "checked": "2026-10-07"
+ },
  "slipmatt ellis dee 2 bad mice and dj ratty": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Slipmatt, Ellis Dee, 2 Bad Mice & DJ Ratty",
   "checked": "2026-10-06"
+ },
+ "slow leaves": {
+  "mbid": "6af757a6-4393-4c56-8e99-c2c0d2bd7162",
+  "name": "Slow Leaves",
+  "genres": [
+   {
+    "name": "rock",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Slow Leaves",
+  "checked": "2026-10-07"
  },
  "slumber": {
   "bucket": null,
@@ -3915,11 +6848,103 @@
   "act": "SLUMBER",
   "checked": "2026-10-06"
  },
+ "sodomise pauline parker": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "//Sodomise!!!//Pauline Parker",
+  "checked": "2026-10-07"
+ },
+ "sodomized cadaver": {
+  "mbid": "922fd80e-962c-49e9-873d-8a5f748dde37",
+  "name": "Sodomized Cadaver",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Sodomized Cadaver",
+  "checked": "2026-10-07"
+ },
+ "softcult": {
+  "mbid": "321eaf5a-be21-4faf-a7a0-0a4e59e5ee29",
+  "name": "Softcult",
+  "genres": [
+   {
+    "name": "dream pop",
+    "count": 2
+   },
+   {
+    "name": "grunge",
+    "count": 1
+   },
+   {
+    "name": "shoegaze",
+    "count": 2
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Softcult",
+  "checked": "2026-10-07"
+ },
  "soil finger eleven adema": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Soil Finger Eleven, Adema",
   "checked": "2026-10-06"
+ },
+ "soma dolls": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "SOMA DOLLS",
+  "checked": "2026-10-07"
+ },
+ "sonny tennet": {
+  "mbid": "929261e7-e9b1-49e6-aa90-95e389daaf4e",
+  "name": "Sonny Tennet",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Sonny Tennet",
+  "checked": "2026-10-07"
+ },
+ "soot sprite": {
+  "mbid": "be32c0ee-e3c9-46fa-beff-707750e92b84",
+  "name": "Soot Sprite",
+  "genres": [
+   {
+    "name": "dream pop",
+    "count": 1
+   },
+   {
+    "name": "indie rock",
+    "count": 1
+   },
+   {
+    "name": "shoegaze",
+    "count": 1
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Soot Sprite",
+  "checked": "2026-10-07"
+ },
+ "sorrel nation": {
+  "mbid": "a07fc3bb-08d4-434d-abfc-451927313899",
+  "name": "Sorrel Nation",
+  "genres": [
+   {
+    "name": "country rock",
+    "count": 1
+   },
+   {
+    "name": "folk rock",
+    "count": 1
+   }
+  ],
+  "bucket": "Folk & Country",
+  "reason": "tagged",
+  "act": "Sorrel Nation",
+  "checked": "2026-10-07"
  },
  "sota": {
   "bucket": null,
@@ -3953,17 +6978,67 @@
   "act": "Soul II Soul",
   "checked": "2026-10-06"
  },
+ "soul to soul": {
+  "mbid": "ec3d9375-9bc6-43bb-a5cb-a57ae26585bb",
+  "name": "Soul To Soul",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "SOUL TO SOUL",
+  "checked": "2026-10-07"
+ },
+ "sound of the sirens": {
+  "mbid": "b5935b3a-8c61-4144-9c3b-3b14301a37aa",
+  "name": "Sound of the Sirens",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Sound of The Sirens",
+  "checked": "2026-10-07"
+ },
+ "southern nights showcase": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "SOUTHERN NIGHTS SHOWCASE",
+  "checked": "2026-10-07"
+ },
+ "sparta": {
+  "bucket": null,
+  "reason": "6 artists share this name",
+  "act": "Sparta",
+  "checked": "2026-10-07"
+ },
  "sparta hammok": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "SPARTA Hammok",
   "checked": "2026-10-06"
  },
+ "split dogs": {
+  "mbid": "7f2b6721-2d04-40e6-b442-47c0c092fcfb",
+  "name": "Split Dogs",
+  "genres": [
+   {
+    "name": "punk",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Split Dogs",
+  "checked": "2026-10-07"
+ },
  "sports": {
   "bucket": null,
   "reason": "3 artists share this name",
   "act": "SPORTS",
   "checked": "2026-10-06"
+ },
+ "squeeze": {
+  "bucket": null,
+  "reason": "5 artists share this name",
+  "act": "Squeeze",
+  "checked": "2026-10-07"
  },
  "squeeze billy bragg": {
   "bucket": null,
@@ -4013,6 +7088,42 @@
   "act": "Steve Knightley & The Winter Yards Band",
   "checked": "2026-10-06"
  },
+ "steve white trio": {
+  "mbid": "b1a606c3-d857-4996-b878-610787b6ded6",
+  "name": "Steve White Trio",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Steve White Trio",
+  "checked": "2026-10-07"
+ },
+ "stewart lee": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Stewart Lee",
+  "checked": "2026-10-07"
+ },
+ "stone angels": {
+  "bucket": null,
+  "reason": "3 artists share this name",
+  "act": "Stone Angels",
+  "checked": "2026-10-07"
+ },
+ "stone hill collective": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Stone Hill Collective",
+  "checked": "2026-10-07"
+ },
+ "stonks": {
+  "mbid": "c98323ad-8a96-4739-b401-8a1d11c3b2f0",
+  "name": "Stonks",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Stonks",
+  "checked": "2026-10-07"
+ },
  "stop making sense": {
   "mbid": "2dbbfa57-5206-4d7b-a1a8-2049841a0a19",
   "name": "Stop Making Sense",
@@ -4030,6 +7141,48 @@
   "reason": "no genre tags",
   "act": "Storefront Church",
   "checked": "2026-10-06"
+ },
+ "stormo": {
+  "mbid": "3aa10d4b-adcc-42c1-aeb3-4adb8d996686",
+  "name": "Stormo",
+  "genres": [
+   {
+    "name": "black metal",
+    "count": 1
+   },
+   {
+    "name": "hardcore punk",
+    "count": 2
+   },
+   {
+    "name": "metal",
+    "count": 1
+   },
+   {
+    "name": "neocrust",
+    "count": 1
+   },
+   {
+    "name": "post-punk",
+    "count": 1
+   },
+   {
+    "name": "punk",
+    "count": 1
+   },
+   {
+    "name": "screamo",
+    "count": 3
+   },
+   {
+    "name": "sludge metal",
+    "count": 2
+   }
+  ],
+  "bucket": "Punk & Metal",
+  "reason": "tagged",
+  "act": "STORMO",
+  "checked": "2026-10-07"
  },
  "stornoway": {
   "mbid": "04073f0b-a1e5-4cef-9b36-c1978e5d7d23",
@@ -4062,6 +7215,12 @@
   "act": "Stu Larsen",
   "checked": "2026-10-06"
  },
+ "sunami european takeover": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Sunami European Takeover",
+  "checked": "2026-10-07"
+ },
  "sundae club": {
   "mbid": "e896b296-c440-4bdc-99d6-1ea6f511c7ab",
   "name": "Sundae Club",
@@ -4088,6 +7247,12 @@
   "act": "Sundae Club",
   "checked": "2026-10-06"
  },
+ "sunset sounds": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "SUNSET SOUNDS",
+  "checked": "2026-10-07"
+ },
  "swapmeet": {
   "mbid": "4fd7cdc6-d339-48d0-b8be-cf4f4f0a8020",
   "name": "Swapmeet",
@@ -4102,6 +7267,34 @@
   "reason": "7 artists share this name",
   "act": "SWEAT",
   "checked": "2026-10-06"
+ },
+ "sweet jonny": {
+  "mbid": "34f13881-c8be-4746-be42-9493a45b8470",
+  "name": "Sweet Jonny",
+  "genres": [
+   {
+    "name": "punk",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   },
+   {
+    "name": "rock and roll",
+    "count": 1
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "SWEET JONNY",
+  "checked": "2026-10-07"
+ },
+ "t4t": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "T4T",
+  "checked": "2026-10-07"
  },
  "talk": {
   "mbid": "b8b3d675-a685-4709-8219-4052435f770b",
@@ -4128,6 +7321,15 @@
   "reason": "tagged",
   "act": "Talk",
   "checked": "2026-10-06"
+ },
+ "tallulah rendall": {
+  "mbid": "1701c521-1d1a-4d11-89cd-0c3008f512d5",
+  "name": "Tallulah Rendall",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Tallulah Rendall",
+  "checked": "2026-10-07"
  },
  "tchotchke": {
   "bucket": null,
@@ -4169,6 +7371,12 @@
   "act": "Teenage Fanclub",
   "checked": "2026-10-06"
  },
+ "the 32nd air guitar championship final": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The 32nd Air Guitar Championship Final",
+  "checked": "2026-10-07"
+ },
  "the allergies": {
   "mbid": "7f9c97b9-03d6-4f31-9cfe-59f5b8c5b42d",
   "name": "The Allergies",
@@ -4182,6 +7390,12 @@
   "reason": "tagged",
   "act": "The Allergies",
   "checked": "2026-10-06"
+ },
+ "the almost elvis band": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Almost Elvis Band",
+  "checked": "2026-10-07"
  },
  "the amazons": {
   "bucket": null,
@@ -4212,6 +7426,12 @@
   "reason": "tagged",
   "act": "The Australian Pink Floyd Show",
   "checked": "2026-10-06"
+ },
+ "the big christmas singalong": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Big Christmas Singalong!",
+  "checked": "2026-10-07"
  },
  "the big indie fest": {
   "bucket": null,
@@ -4337,6 +7557,12 @@
   "act": "The Bootleg Beatles",
   "checked": "2026-10-06"
  },
+ "the buoys": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "The Buoys",
+  "checked": "2026-10-07"
+ },
  "the chicago blues brothers": {
   "mbid": "e61757fb-54fb-461b-a64f-669e87c39559",
   "name": "The Chicago Blues Brothers",
@@ -4355,11 +7581,41 @@
   "act": "The Cureheads",
   "checked": "2026-10-06"
  },
+ "the damned": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "The Damned",
+  "checked": "2026-10-07"
+ },
  "the darkness brothers osborne": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "The Darkness Brothers Osborne",
   "checked": "2026-10-06"
+ },
+ "the darts": {
+  "bucket": null,
+  "reason": "8 artists share this name",
+  "act": "THE DARTS",
+  "checked": "2026-10-07"
+ },
+ "the dualers": {
+  "mbid": "1d8d6669-a832-4a0e-9d56-a9df212babb2",
+  "name": "The Dualers",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "The Dualers",
+  "checked": "2026-10-07"
+ },
+ "the dunwells": {
+  "mbid": "ef5d6144-cdda-40e2-b70a-ca39015121ab",
+  "name": "The Dunwells",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "The Dunwells",
+  "checked": "2026-10-07"
  },
  "the entitled sons": {
   "mbid": "05b922bf-cfe1-43b4-8cde-43bf3e4af15d",
@@ -4369,6 +7625,33 @@
   "reason": "no genre tags",
   "act": "The Entitled Sons",
   "checked": "2026-10-06"
+ },
+ "the evening sons": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Evening Sons",
+  "checked": "2026-10-07"
+ },
+ "the flex": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "The Flex",
+  "checked": "2026-10-07"
+ },
+ "the gate x safehouse x ceremonial laptop x chocolate monk special matinee": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Gate X Safehouse X Ceremonial Laptop X Chocolate Monk special matinee",
+  "checked": "2026-10-07"
+ },
+ "the hanging stars": {
+  "mbid": "58448cfe-1b07-4516-883a-a664326110e7",
+  "name": "The Hanging Stars",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "The Hanging Stars",
+  "checked": "2026-10-07"
  },
  "the hoosiers": {
   "mbid": "52fe888b-112f-4023-adc9-f8287f177f7a",
@@ -4444,6 +7727,12 @@
   "act": "The House of Love",
   "checked": "2026-10-06"
  },
+ "the humbuckers": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "THE HUMBUCKERS",
+  "checked": "2026-10-07"
+ },
  "the jack cades": {
   "mbid": "a5ea8800-05fa-4bfa-906f-ce835d2e4cdb",
   "name": "The Jack Cades",
@@ -4452,6 +7741,12 @@
   "reason": "no genre tags",
   "act": "The Jack Cades",
   "checked": "2026-10-06"
+ },
+ "the jack cades live at the prince albert": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Jack Cades live at The Prince Albert",
+  "checked": "2026-10-07"
  },
  "the jam uk": {
   "bucket": null,
@@ -4474,6 +7769,84 @@
   "act": "The Lilacs",
   "checked": "2026-10-06"
  },
+ "the love buzz": {
+  "mbid": "8f1ff72b-9ec3-419c-8334-f6cf6dece5ae",
+  "name": "The Love Buzz",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "grunge",
+    "count": 1
+   },
+   {
+    "name": "indie pop",
+    "count": 1
+   },
+   {
+    "name": "punk",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "The Love Buzz",
+  "checked": "2026-10-07"
+ },
+ "the mehfil space in collaboration": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Mehfil Space in collaboration",
+  "checked": "2026-10-07"
+ },
+ "the miramars and the space agency": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Miramars & The Space Agency",
+  "checked": "2026-10-07"
+ },
+ "the mouse outfit": {
+  "mbid": "8e09a2d5-cd91-4b33-8477-4aba2221b250",
+  "name": "The Mouse Outfit",
+  "genres": [
+   {
+    "name": "funk",
+    "count": 1
+   },
+   {
+    "name": "hip hop",
+    "count": 1
+   },
+   {
+    "name": "jazz",
+    "count": 1
+   },
+   {
+    "name": "reggae",
+    "count": 1
+   },
+   {
+    "name": "soul",
+    "count": 1
+   }
+  ],
+  "bucket": "Jazz, Soul & Funk",
+  "reason": "tagged",
+  "act": "The Mouse Outfit",
+  "checked": "2026-10-07"
+ },
+ "the noisy women present": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Noisy Women Present",
+  "checked": "2026-10-07"
+ },
  "the ordinary boys": {
   "mbid": "69b50aed-f122-4c45-aba9-863043f5b513",
   "name": "The Ordinary Boys",
@@ -4487,6 +7860,36 @@
   "reason": "tagged",
   "act": "The Ordinary Boys",
   "checked": "2026-10-06"
+ },
+ "the pink pound": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "THE PINK POUND",
+  "checked": "2026-10-07"
+ },
+ "the proclaimers": {
+  "bucket": null,
+  "reason": "3 artists share this name",
+  "act": "The Proclaimers",
+  "checked": "2026-10-07"
+ },
+ "the purcell singers": {
+  "mbid": "c76368d4-12f5-4f84-99b3-fa6dccc81a63",
+  "name": "The Purcell Singers",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "The Purcell Singers",
+  "checked": "2026-10-07"
+ },
+ "the rabbitts": {
+  "mbid": "8bd7406b-e2d1-41e9-b702-48c3e49a9378",
+  "name": "The Rabbitts",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "The Rabbitts",
+  "checked": "2026-10-07"
  },
  "the rasmus skarlett riot": {
   "bucket": null,
@@ -4509,11 +7912,47 @@
   "act": "The Roebucks",
   "checked": "2026-10-06"
  },
+ "the rose hill is ten festival": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "THE ROSE HILL IS TEN FESTIVAL",
+  "checked": "2026-10-07"
+ },
  "the running joke": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "The Running Joke",
   "checked": "2026-10-06"
+ },
+ "the ruts": {
+  "mbid": "a2f938aa-1aa3-474b-a070-762067274eab",
+  "name": "The Ruts",
+  "genres": [
+   {
+    "name": "dub",
+    "count": 1
+   },
+   {
+    "name": "post-punk",
+    "count": 1
+   },
+   {
+    "name": "punk",
+    "count": 1
+   },
+   {
+    "name": "punk rock",
+    "count": 1
+   },
+   {
+    "name": "reggae",
+    "count": 1
+   }
+  ],
+  "bucket": "Punk & Metal",
+  "reason": "tagged",
+  "act": "The Ruts",
+  "checked": "2026-10-07"
  },
  "the sassy cabaret club presents a christmas cracker": {
   "bucket": null,
@@ -4557,6 +7996,52 @@
   "act": "THE SCRIPT",
   "checked": "2026-10-06"
  },
+ "the shires": {
+  "mbid": "7a98818a-28d2-4856-a183-1df6f0984c21",
+  "name": "The Shires",
+  "genres": [
+   {
+    "name": "country",
+    "count": 2
+   }
+  ],
+  "bucket": "Folk & Country",
+  "reason": "tagged",
+  "act": "The Shires",
+  "checked": "2026-10-07"
+ },
+ "the shoreham allstars": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Shoreham Allstars",
+  "checked": "2026-10-07"
+ },
+ "the sick man of europe": {
+  "mbid": "638caa4f-af2c-4e08-b7f6-d632b328d6f4",
+  "name": "The Sick Man of Europe",
+  "genres": [
+   {
+    "name": "art rock",
+    "count": 1
+   },
+   {
+    "name": "experimental electronic",
+    "count": 1
+   },
+   {
+    "name": "krautrock",
+    "count": 1
+   },
+   {
+    "name": "post-punk",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "The Sick Man Of Europe",
+  "checked": "2026-10-07"
+ },
  "the simpsons ultimate quiz": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -4598,6 +8083,18 @@
   "act": "The Smyths",
   "checked": "2026-10-06"
  },
+ "the snowman": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "The Snowman",
+  "checked": "2026-10-07"
+ },
+ "the southern syncopated orchestra": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Southern Syncopated Orchestra",
+  "checked": "2026-10-07"
+ },
  "the specials ltd": {
   "mbid": "b1f485fc-89bd-4934-bf7a-3e6a0037ed60",
   "name": "The Specials Ltd",
@@ -4619,11 +8116,23 @@
   "act": "The Spitfires",
   "checked": "2026-10-06"
  },
+ "the station": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "The Station",
+  "checked": "2026-10-07"
+ },
  "the stravinsky connection": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "The Stravinsky Connection",
   "checked": "2026-10-06"
+ },
+ "the terrorvision song contest 3": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "THE TERRORVISION SONG CONTEST 3",
+  "checked": "2026-10-07"
  },
  "the tumbling paddies": {
   "mbid": "4d0f7344-02a4-476b-b2bf-d8e8d8374e20",
@@ -4640,6 +8149,21 @@
   "act": "The Undertones",
   "checked": "2026-10-06"
  },
+ "the velveteers": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "The Velveteers",
+  "checked": "2026-10-07"
+ },
+ "the wameki": {
+  "mbid": "560cd84c-4d40-4fff-bb3b-626222c3acf4",
+  "name": "THE WAMEKI",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "The Wameki",
+  "checked": "2026-10-07"
+ },
  "the wanted 2 0": {
   "mbid": "283f9f80-05ac-46eb-a0d1-8b27eebb18d5",
   "name": "The Wanted 2.0",
@@ -4654,6 +8178,12 @@
   "reason": "not in MusicBrainz",
   "act": "The Witchcraft and Vagrancy Act Halloween Party",
   "checked": "2026-10-06"
+ },
+ "the worst kept secret": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Worst Kept Secret",
+  "checked": "2026-10-07"
  },
  "the xcerts": {
   "mbid": "f0468734-9ae8-4701-bb18-42c4a162115a",
@@ -4678,6 +8208,15 @@
   "act": "The Yummy Fur",
   "checked": "2026-10-06"
  },
+ "the zac schulze gang": {
+  "mbid": "3832cf78-555c-4078-b3f4-c085fff92368",
+  "name": "The Zac Schulze Gang",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "The Zac Schulze Gang",
+  "checked": "2026-10-07"
+ },
  "these new south whales": {
   "mbid": "2cce5e90-577c-4a12-a903-cc5c2bc301c4",
   "name": "These New South Whales",
@@ -4686,6 +8225,12 @@
   "reason": "no genre tags",
   "act": "These New South Whales",
   "checked": "2026-10-06"
+ },
+ "thimble": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Thimble",
+  "checked": "2026-10-07"
  },
  "this is lorelei": {
   "mbid": "a2d140d8-ae17-4d72-b680-b89c77f1ed52",
@@ -4696,11 +8241,23 @@
   "act": "This Is Lorelei",
   "checked": "2026-10-06"
  },
+ "this machine kills wasps": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "This Machine Kills Wasps",
+  "checked": "2026-10-07"
+ },
  "thistle": {
   "bucket": null,
   "reason": "7 artists share this name",
   "act": "THISTLE.",
   "checked": "2026-10-06"
+ },
+ "tickets moonpunx 19 albertween halloween all dayer": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Tickets MoonPunx #19 ALBERTWEEN! Halloween ALL DAYER",
+  "checked": "2026-10-07"
  },
  "tigercub": {
   "mbid": "f99aa6eb-c17d-480f-bcfb-1a6d95895524",
@@ -4710,6 +8267,20 @@
   "reason": "no genre tags",
   "act": "Tigercub",
   "checked": "2026-10-06"
+ },
+ "tinie tempah": {
+  "mbid": "3cce3d37-d44f-46a2-b1e3-cd7247d5015c",
+  "name": "Tinie Tempah",
+  "genres": [
+   {
+    "name": "grime",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Tinie Tempah",
+  "checked": "2026-10-07"
  },
  "toast club": {
   "mbid": "9b061794-1dfe-4d43-aa10-50a20ea3100f",
@@ -4749,6 +8320,12 @@
   "act": "Tom A Smith",
   "checked": "2026-10-06"
  },
+ "tom high": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "TOM HIGH",
+  "checked": "2026-10-07"
+ },
  "tom mcrae": {
   "mbid": "9f5a87ec-0201-45ba-8b03-3b9e0b50a112",
   "name": "Tom McRae",
@@ -4774,6 +8351,45 @@
   "reason": "genres unclear",
   "act": "Tom McRae",
   "checked": "2026-10-06"
+ },
+ "tommy wa": {
+  "mbid": "deaed6d9-3d9e-41e0-8369-a1cee3674030",
+  "name": "Tommy WÁ",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Tommy WÁ",
+  "checked": "2026-10-07"
+ },
+ "too many zooz": {
+  "mbid": "e44ef539-1ec9-4cb2-bee7-852e84618308",
+  "name": "Too Many Zooz",
+  "genres": [
+   {
+    "name": "brass band",
+    "count": 2
+   },
+   {
+    "name": "instrumental",
+    "count": 1
+   },
+   {
+    "name": "jazz",
+    "count": 1
+   },
+   {
+    "name": "jazz fusion",
+    "count": 1
+   },
+   {
+    "name": "nu jazz",
+    "count": 1
+   }
+  ],
+  "bucket": "Jazz, Soul & Funk",
+  "reason": "tagged",
+  "act": "Too Many Zooz",
+  "checked": "2026-10-07"
  },
  "tooth": {
   "bucket": null,
@@ -4803,6 +8419,41 @@
   "act": "Toploader",
   "checked": "2026-10-06"
  },
+ "toria wooff": {
+  "mbid": "2076da9a-2437-4694-815a-f58057628115",
+  "name": "Toria Wooff",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Toria Wooff",
+  "checked": "2026-10-07"
+ },
+ "track dogs": {
+  "mbid": "f90064fc-ead2-493d-aa83-4ba2d59d5c64",
+  "name": "Track Dogs",
+  "genres": [
+   {
+    "name": "americana",
+    "count": 1
+   },
+   {
+    "name": "folk",
+    "count": 1
+   },
+   {
+    "name": "latin",
+    "count": 1
+   },
+   {
+    "name": "singer-songwriter",
+    "count": 1
+   }
+  ],
+  "bucket": "Folk & Country",
+  "reason": "tagged",
+  "act": "Track Dogs",
+  "checked": "2026-10-07"
+ },
  "trancecoda presents j00f editions": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -4818,11 +8469,26 @@
   "act": "Transvision Vamp",
   "checked": "2026-10-06"
  },
+ "triple a": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "TRIPLE A",
+  "checked": "2026-10-07"
+ },
  "tropical f ck storm": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Tropical F*ck Storm",
   "checked": "2026-10-06"
+ },
+ "turbobier": {
+  "mbid": "250ace3f-af5a-4d1c-b161-79ccd0a78d8a",
+  "name": "TURBOBIER",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "TURBOBIER",
+  "checked": "2026-10-07"
  },
  "tv priest": {
   "mbid": "cfcfb26e-91c2-4404-b01f-ae3daa01cc20",
@@ -4915,6 +8581,15 @@
   "act": "Ulrika Spacek",
   "checked": "2026-10-06"
  },
+ "unbelievable truth": {
+  "mbid": "69012395-346c-425a-960a-531beb661398",
+  "name": "Unbelievable Truth",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Unbelievable Truth",
+  "checked": "2026-10-07"
+ },
  "uncle acid and the deadbeats": {
   "mbid": "e5edd3b8-2a81-42c4-93a4-c19a10713295",
   "name": "Uncle Acid & The Deadbeats",
@@ -4977,6 +8652,15 @@
   "act": "Vigilantes",
   "checked": "2026-10-06"
  },
+ "villagerrr": {
+  "mbid": "b9739f4d-8eae-4aa7-a7a0-d7e9797af4a6",
+  "name": "villagerrr",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "villagerrr",
+  "checked": "2026-10-07"
+ },
  "violet grohl": {
   "mbid": "c17f32b5-66fc-4d73-99c9-2085201ff9a6",
   "name": "Violet Grohl",
@@ -4991,6 +8675,52 @@
   "reason": "not in MusicBrainz",
   "act": "Vive Le XMESS",
   "checked": "2026-10-06"
+ },
+ "wasabi": {
+  "bucket": null,
+  "reason": "10 artists share this name",
+  "act": "Wasabi",
+  "checked": "2026-10-07"
+ },
+ "we are your friends": {
+  "mbid": "473da56d-a972-4710-adf9-8bc248224523",
+  "name": "We Are Your Friends",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "WE ARE YOUR FRIENDS",
+  "checked": "2026-10-07"
+ },
+ "welly": {
+  "mbid": "b2f5b24f-4146-417f-b6e0-e8e9cc4a495a",
+  "name": "Welly",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Welly",
+  "checked": "2026-10-07"
+ },
+ "werkha": {
+  "mbid": "ce38cf00-f7f7-4664-84e1-a6830b7b1442",
+  "name": "Werkha",
+  "genres": [
+   {
+    "name": "electronic",
+    "count": 1
+   },
+   {
+    "name": "house",
+    "count": 1
+   },
+   {
+    "name": "jazz",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "WERKHA",
+  "checked": "2026-10-07"
  },
  "westlife": {
   "mbid": "5f000e69-3cfd-4871-8f1b-faa7f0d4bcbc",
@@ -5035,6 +8765,89 @@
   "reason": "genres unclear",
   "act": "Westside Cowboy",
   "checked": "2026-10-06"
+ },
+ "will samson": {
+  "mbid": "192ada29-19c9-45dc-8d85-36434a80068c",
+  "name": "Will Samson",
+  "genres": [
+   {
+    "name": "ambient",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Will Samson",
+  "checked": "2026-10-07"
+ },
+ "william jack": {
+  "mbid": "c389fa4b-11e5-4cb6-b0b0-a887cc2308fe",
+  "name": "William Jack",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "William Jack",
+  "checked": "2026-10-07"
+ },
+ "willkommen records presents": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Willkommen Records presents",
+  "checked": "2026-10-07"
+ },
+ "wilswood buoys poisoning your mind": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Wilswood Buoys Poisoning Your Mind",
+  "checked": "2026-10-07"
+ },
+ "winter assault": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Winter Assault",
+  "checked": "2026-10-07"
+ },
+ "witchrot": {
+  "mbid": "b20b9925-52f1-4b3f-9fd3-811197c5a6f4",
+  "name": "Witchrot",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "WITCHROT",
+  "checked": "2026-10-07"
+ },
+ "withpaperwings": {
+  "mbid": "90462677-b4b4-4b6b-9985-758b93e1374c",
+  "name": "withpaperwings",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Withpaperwings",
+  "checked": "2026-10-07"
+ },
+ "women against the far right": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "WOMEN AGAINST THE FAR RIGHT",
+  "checked": "2026-10-07"
+ },
+ "xlnt bhvr": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "XLNT BHVR",
+  "checked": "2026-10-07"
+ },
+ "yesca": {
+  "bucket": null,
+  "reason": "5 artists share this name",
+  "act": "YESCA",
+  "checked": "2026-10-07"
+ },
+ "yoko miura viv corringham lawrence casserley gus garside james parsons": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Yoko Miura, Viv Corringham, Lawrence Casserley, Gus Garside, James Parsons",
+  "checked": "2026-10-07"
  },
  "yonaka": {
   "mbid": "3ae6f3b9-0cb7-4083-ab23-34847f5fcda9",
