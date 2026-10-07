@@ -25,7 +25,13 @@ VENUE_ALIASES={
  "old albion":"Old Albion","the old albion":"Old Albion","the brighton centre":"Brighton Centre",
  "the pipeline":"The Pipeline","pipeline brighton":"The Pipeline","volks club":"Volks","the volks":"Volks",
  "patterns brighton":"Patterns","dust brighton":"DUST","alphabet":"A L P H A B E T","alphabet brighton":"A L P H A B E T","hope & ruin":"The Hope & Ruin","the hope & ruin":"The Hope & Ruin",
+ "prince albert":"The Prince Albert","folklore rooms":"The Folklore Rooms","cowley club":"The Cowley Club","rose hill brighton":"The Rose Hill",
+ "bees mouth":"The Bee's Mouth","bee's mouth":"The Bee's Mouth","waterbear venue":"The Waterbear","the waterbear":"The Waterbear","daltons bar":"Daltons",
+ "caroline of brunswick":"Caroline of Brunswick","resident music":"Resident",
 }
+# Names too ordinary to find inside other text ('resident DJs'): matched only
+# when a source gives the venue on its own, as Rival Cults does.
+EXACT_ONLY_VENUES={"Resident"}
 SOURCES=[
  "https://www.visitbrighton.com/whats-on/Brighton",
  "https://www.eventbrite.co.uk/d/united-kingdom--brighton/events/",
@@ -33,6 +39,7 @@ SOURCES=[
  "https://www.skiddle.com/whats-on/Brighton/",
  "https://www.joyconcerts.com/listings",  # JOY. Concerts, promoter: gigs at Concorde 2, Volks, Hope & Ruin, Green Door Store and more
  "https://www.tickettailor.com/events/beatdown",  # Beat Down Promotions (hip-hop), sells through Ticket Tailor
+ "https://www.rivalcults.com/gigs",  # Rival Cults: one big table of Brighton gigs across ~25 venues
 ]
 # Promoters whose own listings we read: their gigs get the promoter's sticker in the app
 # (PROMOTER_STICKERS in index.html), also when a venue's listing of the same gig is the one kept.
@@ -101,12 +108,15 @@ def parse_date(s):
    except ValueError:d=d.replace(year=d.year+1,day=28)
   return d.date()
  except Exception:return None
+def has_name(name,low):
+ # whole words only, so 'dust' doesn't match 'industry'
+ return re.search(r'(?<![a-z0-9])'+re.escape(name)+r'(?![a-z0-9])',low) is not None
 def venue_from_text(text):
- low=clean(text).lower()
+ low=clean(text).lower().replace('\u2019',"'")
  for alias,venue in sorted(VENUE_ALIASES.items(),key=lambda x:len(x[0]),reverse=True):
-  if alias in low and venue in VENUES:return venue
+  if venue in VENUES and venue not in EXACT_ONLY_VENUES and has_name(alias,low):return venue
  for v in sorted(VENUES,key=len,reverse=True):
-  if v.lower() in low:return v
+  if v not in EXACT_ONLY_VENUES and has_name(v.lower(),low):return v
  return None
 def category(title,text):
  h=(title+' '+text).lower()
@@ -167,10 +177,58 @@ def tickettailor_cards(soup,page_url):
    if e['category']=='Other':e['category']='Music'
    out.append(e)
  return out
+# Rival Cults lists each venue under its own short name. Every name it uses
+# maps to one Brighton Weekend venue, so the same place is never added twice
+# (Alphabet = A L P H A B E T, Chalk = CHALK, every Dome room = Brighton Dome).
+RIVALCULTS_VENUES={
+ "alphabet":"A L P H A B E T","brighton centre":"Brighton Centre","chalk":"CHALK","concorde 2":"Concorde 2",
+ "dust":"DUST","green door store":"Green Door Store","hope & ruin":"The Hope & Ruin","hope and ruin":"The Hope & Ruin",
+ "komedia":"Komedia","patterns":"Patterns","prince albert":"The Prince Albert","the prince albert":"The Prince Albert",
+ "quarters":"Quarters","the old market":"The Old Market","old market":"The Old Market","the pipeline":"The Pipeline",
+ "pipeline":"The Pipeline","volks":"Volks","the brunswick":"The Brunswick","brunswick":"The Brunswick",
+ "caroline of brunswick":"Caroline of Brunswick","cowley club":"The Cowley Club","the cowley club":"The Cowley Club",
+ "daltons":"Daltons","folklore rooms":"The Folklore Rooms","the folklore rooms":"The Folklore Rooms",
+ "fortune of war":"Fortune of War","resident":"Resident","rose hill":"The Rose Hill","the rose hill":"The Rose Hill",
+ "rossi bar":"Rossi Bar","the bee's mouth":"The Bee's Mouth","bee's mouth":"The Bee's Mouth",
+ "waterbear venue":"The Waterbear","waterbear":"The Waterbear","the waterbear":"The Waterbear",
+}
+RIVALCULTS_UNKNOWN=set()  # venue names it lists that we don't map yet (printed, and kept in discovery_report)
+def rivalcults_venue(name):
+ low=clean(name).lower().replace('’',"'")
+ if low.startswith('brighton dome'):return 'Brighton Dome'  # 'Brighton Dome - Corn Exchange' etc.
+ v=RIVALCULTS_VENUES.get(low)
+ return v if v in VENUES else None
+def rivalcults_rows(soup,page_url):
+ """Rival Cults gig list: a table with Date ('06 Oct', no year), Title,
+ Location and Link columns. Unknown venue names are reported, not guessed."""
+ out=[]
+ for table in soup.find_all('table'):
+  rows=table.find_all('tr')
+  if not rows:continue
+  head=[clean(c.get_text(' ',strip=True)).lower() for c in rows[0].find_all(['th','td'])]
+  col=lambda *names,default=None:next((i for i,h in enumerate(head) if any(n in h for n in names)),default)
+  di,ti,vi=col('date',default=0),col('title','artist','event',default=1),col('location','venue',default=2)
+  for row in rows:
+   cells=row.find_all(['td','th'])
+   if len(cells)<=max(di,ti,vi):continue
+   d=parse_date(cells[di].get_text(' ',strip=True)) if DATE_RE.search(cells[di].get_text(' ',strip=True)) else None
+   if not d:continue  # header or blank row
+   place=clean(cells[vi].get_text(' ',strip=True));venue=rivalcults_venue(place)
+   if not venue:
+    if place:RIVALCULTS_UNKNOWN.add(place)
+    continue
+   title=clean(cells[ti].get_text(' ',strip=True))
+   link=next((a['href'] for a in row.find_all('a',href=True) if 'rivalcults.com' not in a['href']),None)
+   e=make_event(title,d,'',urljoin(page_url,link or page_url),venue,'')
+   if e:
+    if e['category']=='Other' and not re.search(r'wrestling|quiz|market|talk|cabaret|burlesque|drag|film',title,re.I):e['category']='Music'
+    out.append(e)
+ return out
 def extract_cards(html,page_url):
  soup=BeautifulSoup(html,'html.parser');out=[]
  if 'joyconcerts.com' in page_url:return joy_cards(soup,page_url)
  if 'tickettailor.com/events/' in page_url:return tickettailor_cards(soup,page_url)
+ if 'rivalcults.com' in page_url:return rivalcults_rows(soup,page_url)
  for tag in soup.find_all('script',attrs={'type':re.compile('ld\\+json',re.I)}):
   try:data=json.loads(tag.string or tag.get_text())
   except Exception:continue
@@ -253,7 +311,8 @@ async def main():
  for k,e in list(merged.items()):
   if healthy and e.get('source')=='discovery' and id(e) not in matched and str(e.get('last_seen',today))<=stale_before:
    del merged[k];removed_stale+=1
- data['discovery_report']={'calendars_loaded':ok_sources,'calendars':len(SOURCES),'events_found':len(all_events)}
+ data['discovery_report']={'calendars_loaded':ok_sources,'calendars':len(SOURCES),'events_found':len(all_events),'rivalcults_unknown_venues':sorted(RIVALCULTS_UNKNOWN)}
+ if RIVALCULTS_UNKNOWN:print('Rival Cults venues not in Brighton Weekend yet (add to event-sources.json, index.html and scrape-discovery.py):',', '.join(sorted(RIVALCULTS_UNKNOWN)))
  # Keep ids unique: an existing record keeps its id (saved choices); a new one gets a suffix.
  used=set()
  for e in sorted(merged.values(),key=lambda x:id(x) in brand_new):  # existing records first

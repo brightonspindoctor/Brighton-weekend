@@ -24,6 +24,10 @@ VENUE_TITLE_NAMES = {
     "green door store": ["the green door store", "greendoorstore"],
     "the old market": ["old market", "tom"],
     "brighton centre": ["the brighton centre"],
+    "the folklore rooms": ["folklore rooms"],
+    "the rose hill": ["rose hill"],
+    "the cowley club": ["cowley club"],
+    "the waterbear": ["waterbear", "waterbear venue"],
 }
 
 CITY = r"(?:brighton(?:\s*(?:&|and)\s*hove)?|hove)"

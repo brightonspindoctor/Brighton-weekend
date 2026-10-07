@@ -22,7 +22,7 @@ Listings are refreshed every day at 07:17 (Europe/London) by
    | `"note"` | Why the entry is set up this way. |
 
 2. **Discovery calendars** (Visit Brighton, Eventbrite, Ticketmaster, Skiddle,
-   and the promoters JOY. Concerts and Beat Down Promotions),
+   the Rival Cults gig list, and the promoters JOY. Concerts and Beat Down Promotions),
    read by `scripts/scrape-discovery.py`. Events are kept only when they are at
    a venue in `event-sources.json` (or the Amex Stadium).
 
@@ -70,6 +70,16 @@ Tailor reader in `scrape-discovery.py`, which suits any promoter selling on
 Ticket Tailor: add its page to `SOURCES` and `PROMOTERS`, and its sticker to
 `PROMOTER_STICKERS` in `index.html`. Only Brighton & Hove postcodes are kept.
 
+Rival Cults (`rivalcults.com/gigs`) is one table of Brighton gigs (Date, Title,
+Location, Link) read by `rivalcults_rows` in `scrape-discovery.py`. Its venue
+names are mapped to ours in `RIVALCULTS_VENUES` (Alphabet = A L P H A B E T,
+Chalk = CHALK, every Dome room = Brighton Dome), so no venue appears twice. A
+name it lists that isn't mapped is never guessed: it is printed in the
+"Discover events" step and kept in `discovery_report.rivalcults_unknown_venues`.
+To add one, put it in `event-sources.json`, `VENUES` in `index.html`,
+`RIVALCULTS_VENUES`, and the venue check in the latest `supabase/` file. Its
+dates have no year; gigs in January onwards roll into next year.
+
 JOY. Concerts (`joyconcerts.com/listings`) is read by its own card reader in
 `scrape-discovery.py`: only gigs whose town is Brighton or Hove, at a venue in
 `event-sources.json`, are kept. Its listing has no start times; the venue's own
@@ -84,3 +94,4 @@ listing supplies the time when there is one.
 | The Hope & Ruin | Moved to hope.pub |
 | A L P H A B E T | Own listings switched off: its JOY. Concerts gigs come via joyconcerts.com |
 | Babble, Old Albion | Switched off: no listings found anywhere |
+| The Brunswick, Caroline of Brunswick, The Cowley Club, Daltons, The Folklore Rooms, Fortune of War, Resident, The Rose Hill, Rossi Bar, The Bee's Mouth, The Waterbear | Added 7 October 2026: listings via Rival Cults only |

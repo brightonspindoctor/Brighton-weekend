@@ -127,5 +127,71 @@
   {
     "venue": "Brighton Dome",
     "url": "https://brightondome.org/whats-on/LgN-paddy-young-will-sir-be-laughing-alone/"
+  },
+  {
+    "venue": "The Brunswick",
+    "url": "https://www.rivalcults.com/gigs",
+    "disabled": true,
+    "note": "Listed via Rival Cults (scrape-discovery.py); no own listings page read yet"
+  },
+  {
+    "venue": "Caroline of Brunswick",
+    "url": "https://www.rivalcults.com/gigs",
+    "disabled": true,
+    "note": "Listed via Rival Cults (scrape-discovery.py); no own listings page read yet"
+  },
+  {
+    "venue": "The Cowley Club",
+    "url": "https://www.rivalcults.com/gigs",
+    "disabled": true,
+    "note": "Listed via Rival Cults (scrape-discovery.py); no own listings page read yet"
+  },
+  {
+    "venue": "Daltons",
+    "url": "https://www.rivalcults.com/gigs",
+    "disabled": true,
+    "note": "Listed via Rival Cults (scrape-discovery.py); no own listings page read yet"
+  },
+  {
+    "venue": "The Folklore Rooms",
+    "url": "https://www.rivalcults.com/gigs",
+    "disabled": true,
+    "note": "Listed via Rival Cults (scrape-discovery.py); no own listings page read yet"
+  },
+  {
+    "venue": "Fortune of War",
+    "url": "https://www.rivalcults.com/gigs",
+    "disabled": true,
+    "note": "Listed via Rival Cults (scrape-discovery.py); no own listings page read yet"
+  },
+  {
+    "venue": "Resident",
+    "url": "https://www.rivalcults.com/gigs",
+    "disabled": true,
+    "note": "Listed via Rival Cults (scrape-discovery.py); no own listings page read yet"
+  },
+  {
+    "venue": "The Rose Hill",
+    "url": "https://www.rivalcults.com/gigs",
+    "disabled": true,
+    "note": "Listed via Rival Cults (scrape-discovery.py); no own listings page read yet"
+  },
+  {
+    "venue": "Rossi Bar",
+    "url": "https://www.rivalcults.com/gigs",
+    "disabled": true,
+    "note": "Listed via Rival Cults (scrape-discovery.py); no own listings page read yet"
+  },
+  {
+    "venue": "The Bee's Mouth",
+    "url": "https://www.rivalcults.com/gigs",
+    "disabled": true,
+    "note": "Listed via Rival Cults (scrape-discovery.py); no own listings page read yet"
+  },
+  {
+    "venue": "The Waterbear",
+    "url": "https://www.rivalcults.com/gigs",
+    "disabled": true,
+    "note": "Listed via Rival Cults (scrape-discovery.py); no own listings page read yet"
   }
 ]
