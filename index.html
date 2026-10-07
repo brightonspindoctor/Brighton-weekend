@@ -309,8 +309,11 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .magic-link-divider::before,.magic-link-divider::after{content:"";flex:1;height:1px;background:var(--bw-line)}
 #authMessage{margin-top:12px;min-height:1em}
 .auth-success{color:var(--bw-interested-fg)}.auth-error{color:var(--bw-pass-fg)}
-.welcome-info{margin-top:18px;padding-top:16px;border-top:1px solid var(--bw-line)}
-.welcome-info p{margin:0 0 9px;font-size:var(--bw-text-sm);color:var(--bw-muted)}
+#authStep h2{margin-bottom:20px}
+.welcome-info{margin:6px 0 0;font-size:var(--bw-text-sm);color:var(--bw-subtle)}
+/* While the saved session is checked on load, show only the background so
+   signed-in people never see the sign-in card flash up. */
+#welcome.checking .welcome-card{visibility:hidden}
 .welcome-info a{color:var(--bw-interested-fg);text-decoration:none}
 .welcome-info a:hover{text-decoration:underline}
 #groupStep .group-panel{text-align:left}
@@ -363,12 +366,11 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <title>Brighton Weekend</title>
 </head>
 <body>
-<section id="welcome">
+<section id="welcome" class="checking">
   <div class="welcome-card">
     <div id="authStep">
       <img class="auth-logo" src="icons/icon-192.png?v=70" alt="Brighton Weekend logo">
-      <h2>Welcome to Brighton Weekend</h2>
-      <p class="slogan">Make the most of yours</p>
+      <h2>Sign in to Brighton Weekend</h2>
       <button type="button" id="googleSignInBtn" class="btn google-btn">Continue with Google</button>
       <div class="magic-link-divider"><span>or</span></div>
       <form id="magicLinkForm" class="magic-link-form">
@@ -381,11 +383,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
         <button type="button" id="otpRestart" class="btn btn-ghost">Use a different email</button>
       </form>
       <p id="authMessage" class="group-meta"></p>
-      <button type="button" id="welcomeInstallApp" class="btn btn-primary welcome-install hidden">↓ Download the app</button>
-      <div class="welcome-info">
-        <p><strong>Brighton Weekend</strong> helps you discover gigs, comedy, theatre and nightlife in Brighton &amp; Hove, then make plans with your groups.</p>
-        <p><a href="about.html" target="_blank" rel="noopener">About</a> · <a href="privacy.html" target="_blank" rel="noopener">Privacy</a> · <a href="terms.html" target="_blank" rel="noopener">Terms</a></p>
-      </div>
+      <p class="welcome-info"><a href="about.html" target="_blank" rel="noopener">About</a> · <a href="privacy.html" target="_blank" rel="noopener">Privacy</a> · <a href="terms.html" target="_blank" rel="noopener">Terms</a></p>
     </div>
     <div id="nameStep" class="hidden">
       <h2>Nearly there</h2>
@@ -674,6 +672,7 @@ async function initAuth(){
  if(authUser) await bootstrapAuthed(); else showWelcome('auth');
 }
 async function bootstrapAuthed(){
+ if($('authStep'))hide('authStep'); // already signed in: never show the sign-in step
  if($('otpCodeForm')&&!$('otpCodeForm').classList.contains('hidden'))resetCodeStep(); // signed in (by code or link): reset the email step
  const hasProfile=await loadProfile();
  if($('authStep'))hide('authStep');
@@ -889,7 +888,7 @@ async function openGroupStep(){
  await handleGroupInvite();
 }
 function showWelcome(mode='auth'){
- show('welcome');
+ show('welcome');$('welcome').classList.remove('checking');
  $('nameInput').value=name();
  hide('authStep');hide('nameStep');hide('groupStep');hide('createGroupPanel');hide('joinGroupPanel');
  if(mode==='auth' || !authUser){show('authStep');showPendingInviteHint();return}
