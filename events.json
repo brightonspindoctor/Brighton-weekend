@@ -547,26 +547,26 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/whats-on/",
-      "events": 103,
+      "events": 107,
       "error": "",
       "sample": [
         {
-          "title": "Film & Visual Arts",
-          "date": "2026-10-07",
+          "title": "The Wonder Stuff & Inspiral Carpets",
+          "date": "2026-10-08",
           "time": "",
-          "link": "https://brightondome.org/whats-on/L8Q-ocean-film-festival-world-tour/"
+          "link": "https://brightondome.org/whats-on/L80-the-wonder-stuff-inspiral-carpets/"
         },
         {
-          "title": "Film & Visual Arts",
-          "date": "2026-10-07",
+          "title": "The Wonder Stuff & Inspiral Carpets",
+          "date": "2026-10-08",
           "time": "",
-          "link": "https://brightondome.org/whats-on/L8Q-ocean-film-festival-world-tour/"
+          "link": "https://brightondome.org/whats-on/L80-the-wonder-stuff-inspiral-carpets/"
         },
         {
-          "title": "Ocean Film Festival World Tour",
-          "date": "2026-10-07",
+          "title": "The Wonder Stuff & Inspiral Carpets",
+          "date": "2026-10-08",
           "time": "",
-          "link": "https://brightondome.org/whats-on/L8Q-ocean-film-festival-world-tour/"
+          "link": "https://brightondome.org/whats-on/L80-the-wonder-stuff-inspiral-carpets/"
         }
       ]
     },
@@ -634,10 +634,13 @@
       "finish_time": "22:00",
       "category": "Club",
       "ticket_url": "https://www.hope.pub/event/hh-winter-gardens-opal-mag-lucy-darke-tears-at-the-table/",
-      "last_seen": "2026-10-07"
+      "last_seen": "2026-10-07",
+      "also_ids": [
+        "2026-10-07-the-hope-ruin-hh-winter-gardens-opal-mag-lucy-darke-tears-at-the-table-2"
+      ]
     },
     {
-      "id": "2026-10-07-brighton-dome-ocean-film-festival-world-tour-2",
+      "id": "2026-10-07-brighton-dome-ocean-film-festival-world-tour",
       "title": "Ocean Film Festival World Tour",
       "date": "2026-10-07",
       "venue": "Brighton Dome",
@@ -650,7 +653,7 @@
       "also_ids": [
         "2026-10-07-brighton-dome-film-visual-arts",
         "2026-10-07-brighton-dome-film-visual-arts-ocean-film-festival-world-tour-banff-wed-7-oct-concert-hall-from-19-50-find-out-more",
-        "2026-10-07-brighton-dome-ocean-film-festival-world-tour"
+        "2026-10-07-brighton-dome-ocean-film-festival-world-tour-2"
       ]
     },
     {
@@ -666,19 +669,7 @@
       "last_seen": "2026-10-07"
     },
     {
-      "id": "2026-10-07-the-hope-ruin-hh-winter-gardens-opal-mag-lucy-darke-tears-at-the-table-2",
-      "title": "HH: Winter Gardens + Opal Mag + Lucy Darke + Tears At The Table",
-      "date": "2026-10-07",
-      "venue": "The Hope & Ruin",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.hope.pub/event/hh-winter-gardens-opal-mag-lucy-darke-tears-at-the-table/",
-      "last_seen": "2026-10-07"
-    },
-    {
-      "id": "2026-10-07-brighton-dome-man-or-bear-2",
+      "id": "2026-10-07-brighton-dome-man-or-bear",
       "title": "Man or Bear",
       "date": "2026-10-07",
       "venue": "Brighton Dome",
@@ -689,7 +680,7 @@
       "ticket_url": "https://brightondome.org/whats-on/L1o-man-or-bear/",
       "last_seen": "2026-10-07",
       "also_ids": [
-        "2026-10-07-brighton-dome-man-or-bear",
+        "2026-10-07-brighton-dome-man-or-bear-2",
         "2026-10-07-brighton-dome-theatre-man-or-bear-a-funny-fierce-play-inspired-by-the-viral-question-wed-7-oct-studio-theatre-from-10-find-out-more"
       ]
     },
@@ -879,6 +870,9 @@
       "category": "Music",
       "ticket_url": "https://www.hope.pub/event/ulrika-spacek/",
       "last_seen": "2026-10-07",
+      "also_ids": [
+        "2026-10-08-the-hope-ruin-ulrika-spacek-2"
+      ],
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:b4e8e5f4-be91-473f-af73-de332ecd8f20"
     },
@@ -944,31 +938,10 @@
       "finish_time": "00:00",
       "category": "Club",
       "ticket_url": "https://www.hope.pub/event/dj-freaking-out-the-neighbourhood-36/",
-      "last_seen": "2026-10-07"
-    },
-    {
-      "id": "2026-10-08-the-hope-ruin-ulrika-spacek-2",
-      "title": "Ulrika Spacek",
-      "date": "2026-10-08",
-      "venue": "The Hope & Ruin",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.hope.pub/event/ulrika-spacek/",
-      "last_seen": "2026-10-07"
-    },
-    {
-      "id": "2026-10-08-the-hope-ruin-dj-freaking-out-the-neighbourhood-2",
-      "title": "DJ FREAKING OUT THE NEIGHBOURHOOD",
-      "date": "2026-10-08",
-      "venue": "The Hope & Ruin",
-      "source": "venue",
-      "time": "21:00",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.hope.pub/event/dj-freaking-out-the-neighbourhood-36/",
-      "last_seen": "2026-10-07"
+      "last_seen": "2026-10-07",
+      "also_ids": [
+        "2026-10-08-the-hope-ruin-dj-freaking-out-the-neighbourhood-2"
+      ]
     },
     {
       "id": "2026-10-08-volks-sabotage-thursdays",
@@ -1177,7 +1150,10 @@
       "category": "Theatre",
       "ticket_url": "https://www.hope.pub/event/wasuremono/",
       "last_seen": "2026-10-07",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "also_ids": [
+        "2026-10-09-the-hope-ruin-wasuremono-2"
+      ]
     },
     {
       "id": "2026-10-09-brighton-dome-dr-xand-van-tulleken-2",
@@ -1191,7 +1167,8 @@
       "ticket_url": "https://brightondome.org/whats-on/LOw-dr-xand-van-tulleken/",
       "last_seen": "2026-10-07",
       "also_ids": [
-        "2026-10-09-brighton-dome-dr-xand-van-tulleken"
+        "2026-10-09-brighton-dome-dr-xand-van-tulleken",
+        "2026-10-09-brighton-dome-literature-poetry-spoken-word-dr-xand-van-tulleken-in-conversation-with-katie-popperwell-fri-9-oct-studio-theatre-from-18-find-out-more"
       ]
     },
     {
@@ -1247,18 +1224,6 @@
       "last_seen": "2026-10-07"
     },
     {
-      "id": "2026-10-09-the-hope-ruin-wasuremono-2",
-      "title": "Wasuremono",
-      "date": "2026-10-09",
-      "venue": "The Hope & Ruin",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.hope.pub/event/wasuremono/",
-      "last_seen": "2026-10-07"
-    },
-    {
       "id": "2026-10-09-komedia-komedia-comedy-club",
       "title": "Komedia Comedy Club",
       "date": "2026-10-09",
@@ -1308,19 +1273,10 @@
       "finish_time": "01:00",
       "category": "Other",
       "ticket_url": "https://www.hope.pub/event/jacks-back-and-its-his-birthday/",
-      "last_seen": "2026-10-07"
-    },
-    {
-      "id": "2026-10-09-the-hope-ruin-jack-s-back-and-it-s-his-birthday-2",
-      "title": "Jack’s Back And It’s His BIRTHDAY!",
-      "date": "2026-10-09",
-      "venue": "The Hope & Ruin",
-      "source": "venue",
-      "time": "21:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.hope.pub/event/jacks-back-and-its-his-birthday/",
-      "last_seen": "2026-10-07"
+      "last_seen": "2026-10-07",
+      "also_ids": [
+        "2026-10-09-the-hope-ruin-jack-s-back-and-it-s-his-birthday-2"
+      ]
     },
     {
       "id": "2026-10-09-concorde-2-kepler",
@@ -1591,7 +1547,10 @@
       "finish_time": "22:00",
       "category": "Music",
       "ticket_url": "https://www.hope.pub/event/hr-ones-2-watch-flavours-ponceau-autofiction/",
-      "last_seen": "2026-10-07"
+      "last_seen": "2026-10-07",
+      "also_ids": [
+        "2026-10-10-the-hope-ruin-h-r-one-s-2-watch-flavours-ponceau-autofiction"
+      ]
     },
     {
       "id": "2026-10-10-brighton-dome-alison-moyet-2",
@@ -1662,18 +1621,6 @@
       "last_seen": "2026-10-07"
     },
     {
-      "id": "2026-10-10-the-hope-ruin-h-r-one-s-2-watch-flavours-ponceau-autofiction",
-      "title": "H&R ONE’S 2 WATCH: Flavours + Ponceau + Autofiction",
-      "date": "2026-10-10",
-      "venue": "The Hope & Ruin",
-      "source": "venue",
-      "time": "19:30",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.hope.pub/event/hr-ones-2-watch-flavours-ponceau-autofiction/",
-      "last_seen": "2026-10-07"
-    },
-    {
       "id": "2026-10-10-komedia-komedia-comedy-club-sat-10-oct-2026-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2026-10-10",
@@ -1726,19 +1673,10 @@
       "finish_time": "01:00",
       "category": "Other",
       "ticket_url": "https://www.hope.pub/event/this-is-the-90s-20/",
-      "last_seen": "2026-10-07"
-    },
-    {
-      "id": "2026-10-10-the-hope-ruin-this-is-the-90s-2",
-      "title": "This is the 90s",
-      "date": "2026-10-10",
-      "venue": "The Hope & Ruin",
-      "source": "venue",
-      "time": "21:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.hope.pub/event/this-is-the-90s-20/",
-      "last_seen": "2026-10-07"
+      "last_seen": "2026-10-07",
+      "also_ids": [
+        "2026-10-10-the-hope-ruin-this-is-the-90s-2"
+      ]
     },
     {
       "id": "2026-10-10-concorde-2-scruffest",
@@ -1808,9 +1746,12 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Other",
+      "category": "Theatre",
       "ticket_url": "https://brightondome.org/whats-on/L0U-woodhill/",
-      "last_seen": "2026-10-07"
+      "last_seen": "2026-10-07",
+      "also_ids": [
+        "2026-10-10-brighton-dome-accessible-events-theatre-woodhill-presented-by-lung-fri-9-sat-10-oct-corn-exchange-from-10-find-out-more"
+      ]
     },
     {
       "id": "2026-10-10-chalk-devotchka",
@@ -2172,7 +2113,11 @@
       "category": "Music",
       "ticket_url": "https://www.hope.pub/event/tchotchke-support/",
       "last_seen": "2026-10-07",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "also_ids": [
+        "2026-10-11-the-hope-ruin-tchotchke-support-2",
+        "2026-10-11-the-hope-ruin-tchotchke-usa"
+      ]
     },
     {
       "id": "2026-10-11-concorde2-hed-pe-cold",
@@ -2208,18 +2153,6 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/harriet-kemsley-floozy-tickets-1852111478289",
-      "last_seen": "2026-10-07"
-    },
-    {
-      "id": "2026-10-11-the-hope-ruin-tchotchke-support-2",
-      "title": "TCHOTCHKE + support",
-      "date": "2026-10-11",
-      "venue": "The Hope & Ruin",
-      "source": "venue",
-      "time": "20:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.hope.pub/event/tchotchke-support/",
       "last_seen": "2026-10-07"
     },
     {
@@ -2329,20 +2262,6 @@
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/elanor-moss/the-folklore-rooms/3654915",
       "last_seen": "2026-10-07"
-    },
-    {
-      "id": "2026-10-11-the-hope-ruin-tchotchke-usa",
-      "title": "TCHOTCHKE (USA)",
-      "date": "2026-10-11",
-      "venue": "The Hope & Ruin",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "price": null,
-      "status": "",
-      "ticket_url": "https://www.ents24.com/brighton-events/the-hope-and-ruin",
-      "last_seen": "2026-10-06",
-      "promoter": "JOY. Concerts"
     },
     {
       "id": "2026-11-10-the-old-market-dr-fola-yahaya-dominic-kos-ai-threat-tool-or-transformation",
@@ -2575,6 +2494,21 @@
       ]
     },
     {
+      "id": "2026-10-13-brighton-dome-natural-behaviour-by-thick-tight-2",
+      "title": "Natural Behaviour by Thick & Tight",
+      "date": "2026-10-13",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Theatre",
+      "ticket_url": "https://brightondome.org/whats-on/L02-natural-behaviour-by-thick-tight/",
+      "last_seen": "2026-10-07",
+      "also_ids": [
+        "2026-10-13-brighton-dome-natural-behaviour-by-thick-tight"
+      ]
+    },
+    {
       "id": "2026-10-13-concorde2-jake-xerxes-fussell",
       "title": "Jake Xerxes Fussell",
       "date": "2026-10-13",
@@ -2611,6 +2545,18 @@
       "last_seen": "2026-10-07",
       "genre": "Pop",
       "genre_source": "musicbrainz:5f000e69-3cfd-4871-8f1b-faa7f0d4bcbc"
+    },
+    {
+      "id": "2026-10-13-brighton-dome-accessible-events-dance",
+      "title": "Accessible Events Dance",
+      "date": "2026-10-13",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Dance",
+      "ticket_url": "https://brightondome.org/whats-on/L02-natural-behaviour-by-thick-tight/",
+      "last_seen": "2026-10-07"
     },
     {
       "id": "2026-10-13-brighton-dome-workshops",
@@ -3097,19 +3043,10 @@
       "finish_time": "00:00",
       "category": "Club",
       "ticket_url": "https://www.hope.pub/event/dj-freaking-out-the-neighbourhood-37/",
-      "last_seen": "2026-10-07"
-    },
-    {
-      "id": "2026-10-15-the-hope-ruin-dj-freaking-out-the-neighbourhood-2",
-      "title": "DJ FREAKING OUT THE NEIGHBOURHOOD",
-      "date": "2026-10-15",
-      "venue": "The Hope & Ruin",
-      "source": "venue",
-      "time": "21:00",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.hope.pub/event/dj-freaking-out-the-neighbourhood-37/",
-      "last_seen": "2026-10-07"
+      "last_seen": "2026-10-07",
+      "also_ids": [
+        "2026-10-15-the-hope-ruin-dj-freaking-out-the-neighbourhood-2"
+      ]
     },
     {
       "id": "2026-10-15-volks-sabotage-thursdays",
@@ -3496,7 +3433,10 @@
       "finish_time": "01:00",
       "category": "Theatre",
       "ticket_url": "https://www.hope.pub/event/cool-feeling-60/",
-      "last_seen": "2026-10-07"
+      "last_seen": "2026-10-07",
+      "also_ids": [
+        "2026-10-16-the-hope-ruin-cool-feeling-2"
+      ]
     },
     {
       "id": "2026-10-16-brighton-dome-catherine-bohart-borrowing-trouble-2",
@@ -3523,18 +3463,6 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LET-komedia-comedy-club/",
-      "last_seen": "2026-10-07"
-    },
-    {
-      "id": "2026-10-16-the-hope-ruin-cool-feeling-2",
-      "title": "Cool Feeling",
-      "date": "2026-10-16",
-      "venue": "The Hope & Ruin",
-      "source": "venue",
-      "time": "21:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.hope.pub/event/cool-feeling-60/",
       "last_seen": "2026-10-07"
     },
     {
@@ -4010,19 +3938,10 @@
       "finish_time": "01:00",
       "category": "Other",
       "ticket_url": "https://www.hope.pub/event/dad-rock-53/",
-      "last_seen": "2026-10-07"
-    },
-    {
-      "id": "2026-10-17-the-hope-ruin-dad-rock-2",
-      "title": "Dad Rock",
-      "date": "2026-10-17",
-      "venue": "The Hope & Ruin",
-      "source": "venue",
-      "time": "21:00",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.hope.pub/event/dad-rock-53/",
-      "last_seen": "2026-10-07"
+      "last_seen": "2026-10-07",
+      "also_ids": [
+        "2026-10-17-the-hope-ruin-dad-rock-2"
+      ]
     },
     {
       "id": "2026-10-17-concorde-2-kanine",
@@ -5725,7 +5644,7 @@
       "time": "",
       "finish_time": "",
       "category": "Comedy",
-      "ticket_url": "https://brightondome.org/comedyfestival/",
+      "ticket_url": "https://brightondome.org/whats-on/L8q-finding-your-funny-workshop/",
       "last_seen": "2026-10-07"
     },
     {
