@@ -198,7 +198,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .panel>.btn-ghost{margin-top:var(--bw-space-4);width:100%}
 
 /* Segmented control (Search mode) */
-.segmented{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;margin-bottom:var(--bw-space-4);border-radius:var(--bw-radius-pill);background:var(--bw-navy);border:1px solid var(--bw-line)}.search-segmented{grid-template-columns:repeat(3,minmax(0,1fr))}
+.segmented{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;margin-bottom:var(--bw-space-4);border-radius:var(--bw-radius-pill);background:var(--bw-navy);border:1px solid var(--bw-line)}.search-segmented{grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr) minmax(0,1.1fr) minmax(0,1fr)}.search-segmented button{padding:8px 4px;line-height:1.2}
 .segmented button{border:0;background:transparent;color:var(--bw-muted);padding:9px 10px;border-radius:var(--bw-radius-pill);font-size:var(--bw-text-sm);font-weight:700}
 .segmented button.active{background:var(--bw-interested-bg);color:var(--bw-interested-fg)}
 
@@ -453,7 +453,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <main id="searchTab" class="wrap app-main hidden">
 <div class="section-head"><h2>Search</h2></div>
 <div class="panel">
-  <div class="segmented search-segmented" role="group" aria-label="Search by"><button type="button" class="active" data-search-mode="venue" aria-pressed="true">Dates and venues</button><button type="button" data-search-mode="artist" aria-pressed="false">Artist</button><button type="button" data-search-mode="festival" aria-pressed="false">Festivals</button></div>
+  <div class="segmented search-segmented" role="group" aria-label="Search by"><button type="button" class="active" data-search-mode="venue" aria-pressed="true">Dates and venues</button><button type="button" data-search-mode="artist" aria-pressed="false">Artist</button><button type="button" data-search-mode="promoter" aria-pressed="false">Promoter</button><button type="button" data-search-mode="festival" aria-pressed="false">Festivals</button></div>
   <div id="searchVenueMode" class="form-stack">
     <div class="form-row"><label>From<input id="searchFrom" type="date"></label><label>To<input id="searchTo" type="date"></label></div>
     <label>Venues<input id="searchVenueFilter" type="search" placeholder="Filter the venue list" autocomplete="off"></label>
@@ -463,6 +463,9 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
   </div>
   <div id="searchArtistMode" class="form-stack hidden">
     <label>Artist or show<input id="searchArtist" type="search" placeholder="e.g. Ben Folds" autocomplete="off"></label>
+  </div>
+  <div id="searchPromoterMode" class="form-stack hidden">
+    <label>Promoter<select id="searchPromoterSelect"><option value="">Choose a promoter</option></select></label>
   </div>
   <div id="searchFestivalMode" class="form-stack hidden">
     <label>Festival<input id="searchFestival" type="search" placeholder="e.g. Brighton Festival" autocomplete="off"></label>
@@ -1082,7 +1085,7 @@ document.addEventListener('click',e=>{
  const g=e.target.closest('[data-genre-chip]');if(g){discoverGenre=g.dataset.genreChip;render();return}
  if(e.target.closest('[data-clear-promoter]')){discoverPromoter=null;render();return}
  const p=e.target.closest('[data-promoter]');if(!p)return;
- if(p.closest('#searchTab')){searchPromoters.add(p.dataset.promoter);populateSearchFilters();renderSearch();return}
+ if(p.closest('#searchTab')){populateSearchFilters();$('searchPromoterSelect').value=p.dataset.promoter;setSearchMode('promoter');return}
  discoverPromoter=p.dataset.promoter;
  if(!$('discover').classList.contains('hidden'))render();else openTab('discover');
  window.scrollTo({top:0,behavior:'smooth'});
@@ -1271,6 +1274,7 @@ function populateSearchFilters(){
  gl.innerHTML=genres.map(g=>`<button type="button" class="genre-chip${g==='Untagged'?' untagged':''}" data-search-genre="${esc(g)}" aria-pressed="${searchGenres.has(g)}">${esc(g)}</button>`).join('')||'<div class="note">No genres yet.</div>';
  const promoters=[...new Set(events.map(e=>e.promoter).filter(Boolean))].sort();
  $('searchPromoterBox').classList.toggle('hidden',!promoters.length);
+ const sel=$('searchPromoterSelect');if(sel){const cur=sel.value;sel.innerHTML='<option value="">Choose a promoter</option>'+promoters.map(p=>`<option value="${esc(p)}">${esc(p)}</option>`).join('');sel.value=promoters.includes(cur)?cur:''}
  pl.innerHTML=promoters.map(p=>{const s=PROMOTER_STICKERS[p];return `<button type="button" class="genre-chip" data-search-promoter="${esc(p)}" aria-pressed="${searchPromoters.has(p)}">${s?`<span class="promoter-sticker ${s.cls}" aria-hidden="true">${esc(s.label)}</span>`:''}${esc(p)}</button>`}).join('');
 }
 document.addEventListener('click',e=>{
@@ -1288,7 +1292,7 @@ function populateSearchVenues(){
 function setSearchMode(mode){
  searchMode=mode;
  document.querySelectorAll('[data-search-mode]').forEach(b=>{const on=b.dataset.searchMode===mode;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on)});
- $('searchVenueMode').classList.toggle('hidden',mode!=='venue');$('searchArtistMode').classList.toggle('hidden',mode!=='artist');$('searchFestivalMode').classList.toggle('hidden',mode!=='festival');
+ $('searchVenueMode').classList.toggle('hidden',mode!=='venue');$('searchArtistMode').classList.toggle('hidden',mode!=='artist');$('searchPromoterMode').classList.toggle('hidden',mode!=='promoter');$('searchFestivalMode').classList.toggle('hidden',mode!=='festival');
  renderSearch();
 }
 function renderSearch(){
@@ -1297,6 +1301,9 @@ function renderSearch(){
  if(searchMode==='artist'){
   const q=$('searchArtist').value.trim().toLowerCase();
   if(q)out=events.filter(e=>[e.title,e.description,e.artist].filter(Boolean).join(' ').toLowerCase().includes(q));
+ }else if(searchMode==='promoter'){
+  const p=$('searchPromoterSelect').value;
+  if(p)out=events.filter(e=>e.promoter===p);
  }else if(searchMode==='festival'){
   const q=$('searchFestival').value.trim().toLowerCase();
   if(q)out=festivals.filter(f=>[f.title,f.location,f.location_display,f.category,f.description].filter(Boolean).join(' ').toLowerCase().includes(q));
@@ -1311,14 +1318,14 @@ function renderSearch(){
  if(searchMode==='festival')out=out.filter(f=>f.date>=today&&(f.date_end||f.date)>=today);else out=out.filter(e=>e.date>=today);
  out.sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
  $('searchCount').textContent=out.length+' '+(searchMode==='festival'?'festival':'event')+(out.length===1?'':'s');
- const empty=searchMode==='artist'?'Type an artist or show name to search every date.':searchMode==='festival'?'Type a festival name, location or category to search the festival listings.':'Choose a date range, then venues, genres or a promoter.';
+ const empty=searchMode==='artist'?'Type an artist or show name to search every date.':searchMode==='promoter'?'Choose a promoter to see all their upcoming gigs, at any venue.':searchMode==='festival'?'Type a festival name, location or category to search the festival listings.':'Choose a date range, then venues, genres or a promoter.';
  box.innerHTML=out.length?(searchMode==='festival'?out.slice(0,200).map(festivalCard).join(''):out.slice(0,200).map(e=>eventCard(e,{showDate:true})).join('')):`<div class="empty">${empty}</div>`;
 }
 function setupSearch(){
  document.querySelectorAll('[data-search-mode]').forEach(b=>b.onclick=()=>setSearchMode(b.dataset.searchMode));
  ['searchFrom','searchTo'].forEach(id=>$(id).onchange=renderSearch);
- $('searchArtist').oninput=renderSearch;$('searchVenueFilter').oninput=populateSearchVenues;$('searchFestival').oninput=renderSearch;
- $('searchClear').onclick=()=>{searchVenues.clear();searchGenres.clear();searchPromoters.clear();populateSearchFilters();['searchFrom','searchTo','searchVenueFilter','searchArtist','searchFestival'].forEach(id=>$(id).value='');populateSearchVenues();setSearchMode('venue')};
+ $('searchArtist').oninput=renderSearch;$('searchVenueFilter').oninput=populateSearchVenues;$('searchFestival').oninput=renderSearch;$('searchPromoterSelect').onchange=renderSearch;
+ $('searchClear').onclick=()=>{searchVenues.clear();searchGenres.clear();searchPromoters.clear();populateSearchFilters();['searchFrom','searchTo','searchVenueFilter','searchArtist','searchFestival','searchPromoterSelect'].forEach(id=>$(id).value='');populateSearchVenues();setSearchMode('venue')};
 }
 setupSearch();
 
