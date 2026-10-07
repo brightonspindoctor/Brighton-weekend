@@ -12,12 +12,12 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#0B1D2F">
 <link rel="manifest" href="manifest.webmanifest?v=58">
-<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png?v=62">
-<link rel="apple-touch-icon-precomposed" sizes="180x180" href="icons/apple-touch-icon.png?v=62">
-<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png?v=62">
-<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png?v=62">
-<link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png?v=62">
-<link rel="shortcut icon" href="favicon.ico?v=62">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png?v=70">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="icons/apple-touch-icon.png?v=70">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png?v=70">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png?v=70">
+<link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png?v=70">
+<link rel="shortcut icon" href="favicon.ico?v=70">
 
 <style id="bw-styles">
 /* ==========================================================================
@@ -366,7 +366,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <section id="welcome">
   <div class="welcome-card">
     <div id="authStep">
-      <img class="auth-logo" src="icons/icon-192.png?v=62" alt="Brighton Weekend logo">
+      <img class="auth-logo" src="icons/icon-192.png?v=70" alt="Brighton Weekend logo">
       <h2>Welcome to Brighton Weekend</h2>
       <p class="slogan">Make the most of yours</p>
       <button type="button" id="googleSignInBtn" class="btn google-btn">Continue with Google</button>
@@ -435,7 +435,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 </section>
 
 <header><div class="wrap">
-  <div class="app-brand"><img src="icons/icon-192.png?v=62" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
+  <div class="app-brand"><img src="icons/icon-192.png?v=70" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
   <div class="sub" id="subtitle">Make the most of yours</div></div></div>
   <div class="controls hidden">
     <button id="prev" aria-label="Previous week">‹</button><button id="week" class="week" aria-live="polite"></button><button id="next" aria-label="Next week">›</button>
@@ -514,7 +514,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <main id="venuesTab" class="wrap app-main hidden">
 <h2>Settings</h2>
 <div class="settings-section"><div class="section-head venue-settings-head"><div><h3>Venues</h3></div><div class="venue-actions"><button type="button" class="btn btn-chip" id="selectComedyVenues">Comedy venues</button><button type="button" class="btn btn-chip" id="selectAllVenues">Select all</button><button type="button" class="btn btn-chip" id="unselectAllVenues">Unselect all</button></div></div><div id="venueList"></div><div class="day-preferences"><h4>Days</h4><div id="dayGrid" class="day-grid"></div></div></div>
-<div class="settings-card"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" class="avatar" src="profile-icons/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div><div class="settings-card settings-groups"><h3>Groups</h3><div id="groupManager"></div><button id="manageGroups" class="btn btn-secondary">Manage groups</button></div>
+<div class="settings-card"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" class="avatar" src="profile-icons/standardized/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div><div class="settings-card settings-groups"><h3>Groups</h3><div id="groupManager"></div><button id="manageGroups" class="btn btn-secondary">Manage groups</button></div>
 <div class="settings-card"><h3>Support Brighton Weekend</h3><p class="note">If you enjoy using the app, you can buy me a coffee to help keep it running and improving.</p><a class="support-btn" href="https://www.buymeacoffee.com/jonnysadler" target="_blank" rel="noopener">☕ Buy me a coffee ↗</a></div>
 <div class="settings-card"><h3>Account</h3><button id="changeName" class="btn btn-secondary">Change my name</button> <button id="signOut" class="btn btn-ghost">Sign out</button><div id="accountEmail" class="group-meta"></div><div class="danger-zone"><h4>Delete my account</h4><p class="note">Permanently deletes your profile, your Interested and Going choices, your group memberships and any events you added. This can't be undone.</p><button id="deleteAccount" type="button" class="btn btn-danger">Delete my account</button></div></div>
 <div class="settings-card install-area"><h3>Install the app</h3><button id="installApp" class="btn btn-primary install-btn">↓ Add to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
@@ -709,6 +709,9 @@ function show(el){$(el).classList.remove('hidden')}
 function hide(el){$(el).classList.add('hidden')}
 
 async function api(method,path,body,extraHeaders={}){
+ // Phones pause timers in the background, so the stored token can be stale on
+ // return; getSession() refreshes it first when it has expired.
+ if(authSession){try{const {data}=await supabase.auth.getSession();if(data?.session)authSession=data.session}catch(e){}}
  const r=await fetch(SUPABASE_URL+'/rest/v1/'+path,{
   method,
   headers:{apikey:SUPABASE_KEY,Authorization:'Bearer '+(authSession?.access_token||SUPABASE_KEY),'Content-Type':'application/json','Prefer':'return=representation',...extraHeaders},
@@ -866,9 +869,13 @@ async function handleGroupInvite(){
  const link=readPendingLink(),groupId=link?.group_invite;
  if(!groupId||!authUser||!name())return false;
  clearPendingLink('group_invite'); // cleared first, so the prompt is only shown once
- const groupName=link.group_name||'this group';
- if(groups.some(g=>String(g.id)===String(groupId))){if(!link.event)alert(`You're already in ${groupName}.`);return false}
- if(!confirm(`Join ${groupName}?`))return false;
+ const known=groups.find(g=>String(g.id)===String(groupId));
+ if(known){if(!link.event)alert(`You're already in ${known.name}.`);return false}
+ // Use the group's real name from the database, never the one written in the link.
+ let real=null;
+ try{const r=await rpc('bw_invite_preview',{p_group_id:groupId,p_pin:link.group_pin||null});real=Array.isArray(r)?r[0]:r}catch(e){console.warn('Invite check failed',e)}
+ if(!real?.name){alert('This invite link isn\'t valid. Ask your friend to send a new one.');return false}
+ if(!confirm(`Join ${real.name}? (${real.member_count}/${GROUP_LIMIT} members)`))return false;
  await joinGroup(groupId,link.group_pin||null,null);
  return true;
 }
@@ -1149,7 +1156,7 @@ function renderPeople(){
  groupMembers.forEach(m=>{if(!memberGroups.has(m.group_id))memberGroups.set(m.group_id,{name:m.group_name,members:[]});memberGroups.get(m.group_id).members.push(m)});
  const roster=[...memberGroups.values()].map(g=>{
    const members=[...new Map(g.members.map(m=>[m.user_id,m])).values()].sort((a,b)=>(a.user_name||'').localeCompare(b.user_name||''));
-   return `<div class="member-group"><div class="group-heading">${esc(g.name)} <span class="member-count">${members.length}</span></div><div class="people">${members.map(m=>`<span class="social-chip profile-chip"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(m.user_id))}" alt=""></i>${esc(m.user_name)}</span>`).join('')}</div></div>`;
+   return `<div class="member-group"><div class="group-heading">${esc(g.name)} <span class="member-count">${members.length}</span></div><div class="people">${members.map(m=>`<span class="social-chip profile-chip"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(m.user_id))}" alt="" loading="lazy" decoding="async"></i>${esc(m.user_name)}</span>`).join('')}</div></div>`;
  }).join('');
  let html=`<section class="group-roster"><div class="section-head"><h3>People in your groups</h3></div>${roster}</section>`;
 
@@ -1179,7 +1186,7 @@ function renderPeople(){
   rows.forEach(x=>{if(!byGroup.has(x.group_id))byGroup.set(x.group_id,{name:x.group_name,people:new Map()});const g=byGroup.get(x.group_id),o=g.people.get(x.user_id);if(!o||STATUS_RANK[x.status]<STATUS_RANK[o.status])g.people.set(x.user_id,x)});
   const sections=[...byGroup.values()].sort((a,b)=>(a.name||'').localeCompare(b.name||'')).map(g=>{
    const people=[...g.people.values()].sort((a,b)=>STATUS_RANK[a.status]-STATUS_RANK[b.status]||(a.user_name||'').localeCompare(b.user_name||''));
-   return `<div class="happening-group"><div class="group-heading">${esc(g.name)}</div><div class="happening-people">${people.map(x=>`<div class="happening-person"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(x.user_id))}" alt=""></i><span class="happening-person-name">${esc(x.user_name)}</span>${statusPill(x.status)}</div>`).join('')}</div></div>`;
+   return `<div class="happening-group"><div class="group-heading">${esc(g.name)}</div><div class="happening-people">${people.map(x=>`<div class="happening-person"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(x.user_id))}" alt="" loading="lazy" decoding="async"></i><span class="happening-person-name">${esc(x.user_name)}</span>${statusPill(x.status)}</div>`).join('')}</div></div>`;
   }).join('');
   const you=mine?`<div class="happening-you"><span class="happening-person-name">You</span>${statusPill(mine)}</div>`:'';
   const quiet=!sections?'<div class="note happening-quiet">No one in your groups has responded yet.</div>':'';
@@ -1310,7 +1317,8 @@ function renderSearch(){
   const q=$('searchFestival').value.trim().toLowerCase();
   if(q)out=festivals.filter(f=>[f.title,f.location,f.location_display,f.category,f.description].filter(Boolean).join(' ').toLowerCase().includes(q));
  }else{
-  const from=$('searchFrom').value,to=$('searchTo').value;
+  let from=$('searchFrom').value,to=$('searchTo').value;
+  if(from&&to&&from>to)[from,to]=[to,from]; // dates entered the wrong way round
   if(from&&to&&(searchVenues.size||searchGenres.size||searchPromoters.size))out=events.filter(e=>e.date>=from&&e.date<=to
    &&(!searchVenues.size||searchVenues.has(String(e.venue_display||e.venue||'').trim()))
    &&(!searchGenres.size||searchGenres.has(genreOf(e)))

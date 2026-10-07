@@ -97,7 +97,8 @@ for (const icon of icons) {
     const small = await sharp(art).resize(d, d).composite([{ input: circle(d, FEATHER), blend: 'dest-in' }]).png().toBuffer();
     const out = await sharp({ create: { width: SIZE, height: SIZE, channels: 4, background: await backgroundOf(art) } })
       .composite([{ input: small, left: o, top: o }, { input: mask, blend: 'dest-in' }])
-      .png({ compressionLevel: 9 })
+      // Palette PNG: about a quarter of the size, no visible change at avatar sizes on phones.
+      .png({ compressionLevel: 9, palette: true, quality: 90, effort: 10, dither: 0.6 })
       .toBuffer();
     fs.writeFileSync(path.join(outDir, icon + '.png'), out);
   } catch (err) {

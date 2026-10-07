@@ -53,6 +53,10 @@ RANGE_RE=re.compile(rf"\b\d{{1,2}}(?:st|nd|rd|th)?(?:\s*[–-]\s*\d{{1,2}}(?:st|
 GENERIC={"festival","details","tickets","buy tickets","2027 tickets","check tickets","more","show more festivals","source checked","source check pending","read more","read less","places to stay","next","previous","list view","map view","grid view","plan your visit","things to do","what's on","work with us","submit event","site map","skip to main content","sign up for e-newsletter","translate","media","contact us","accommodation"}
 
 def clean(s): return re.sub(r"\s+"," ",str(s or "")).strip()
+def display_location(s):
+    # Some listings put contact details in the address; show only the place.
+    s=re.sub(r"\S+@\S+|https?://\S+|www\.\S+|\+?44 ?\(?0?\)? ?\d[\d ]{8,}\d|\b0\d{3,4} ?\d{3} ?\d{3,4}\b","",str(s or ""))
+    return clean(re.sub(r"\s*,\s*(,\s*)+",", ",s)).strip(" ,")
 def norm(s):
     s=re.sub(r"\b(?:19|20)\d{2}\b","",clean(s).lower())
     return re.sub(r"[^a-z0-9]+"," ",s).strip()
@@ -396,7 +400,7 @@ def merge(items):
             e["id"]=f"festival:{slug}-{n}:{e['date']}"; n+=1
         used.add(e["id"])
         e.setdefault("detail_url",e["ticket_url"])
-        e["location_display"]=e["location"]
+        e["location_display"]=display_location(e["location"])
         result.append(e)
     return result
 async def fetch_page(browser,url):
