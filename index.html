@@ -315,6 +315,10 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
    signed-in people never see the sign-in card flash up. */
 #welcome.checking .welcome-card{visibility:hidden}
 .welcome-info a{color:var(--bw-interested-fg);text-decoration:none}
+.auth-prompt{color:var(--bw-muted);font-size:var(--bw-text-md);line-height:1.45;margin:0 0 18px}
+.auth-close{width:100%;margin-top:4px}
+/* Guest mode: browsing without a login. */
+body.guest .member-only,body:not(.guest) .guest-only{display:none}
 .welcome-info a:hover{text-decoration:underline}
 #groupStep .group-panel{text-align:left}
 #partyOnBtn{margin-top:6px;width:100%}
@@ -370,7 +374,8 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
   <div class="welcome-card">
     <div id="authStep">
       <img class="auth-logo" src="icons/icon-192.png?v=70" alt="Brighton Weekend logo">
-      <h2>Sign in to Brighton Weekend</h2>
+      <h2 id="authTitle">Sign in to Brighton Weekend</h2>
+      <p id="authPrompt" class="auth-prompt hidden"></p>
       <button type="button" id="googleSignInBtn" class="btn google-btn">Continue with Google</button>
       <div class="magic-link-divider"><span>or</span></div>
       <form id="magicLinkForm" class="magic-link-form">
@@ -383,6 +388,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
         <button type="button" id="otpRestart" class="btn btn-ghost">Use a different email</button>
       </form>
       <p id="authMessage" class="group-meta"></p>
+      <button type="button" id="authClose" class="btn btn-ghost auth-close hidden">Not now</button>
       <p class="welcome-info"><a href="about.html" target="_blank" rel="noopener">About</a> · <a href="privacy.html" target="_blank" rel="noopener">Privacy</a> · <a href="terms.html" target="_blank" rel="noopener">Terms</a></p>
     </div>
     <div id="nameStep" class="hidden">
@@ -512,9 +518,10 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <main id="venuesTab" class="wrap app-main hidden">
 <h2>Settings</h2>
 <div class="settings-section"><div class="section-head venue-settings-head"><div><h3>Venues</h3></div><div class="venue-actions"><button type="button" class="btn btn-chip" id="selectComedyVenues">Comedy venues</button><button type="button" class="btn btn-chip" id="selectAllVenues">Select all</button><button type="button" class="btn btn-chip" id="unselectAllVenues">Unselect all</button></div></div><div id="venueList"></div><div class="day-preferences"><h4>Days</h4><div id="dayGrid" class="day-grid"></div></div></div>
-<div class="settings-card"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" class="avatar" src="profile-icons/standardized/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div><div class="settings-card settings-groups"><h3>Groups</h3><div id="groupManager"></div><button id="manageGroups" class="btn btn-secondary">Manage groups</button></div>
+<div class="settings-card member-only"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" class="avatar" src="profile-icons/standardized/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div><div class="settings-card settings-groups member-only"><h3>Groups</h3><div id="groupManager"></div><button id="manageGroups" class="btn btn-secondary">Manage groups</button></div>
+<div class="settings-card guest-only"><h3>Account</h3><p class="note">Create a free login to mark events, join groups and see what your friends are planning.</p><button id="guestSignIn" type="button" class="btn btn-primary">Create a free login</button></div>
 <div class="settings-card"><h3>Support Brighton Weekend</h3><p class="note">If you enjoy using the app, you can buy me a coffee to help keep it running and improving.</p><a class="support-btn" href="https://www.buymeacoffee.com/jonnysadler" target="_blank" rel="noopener">☕ Buy me a coffee ↗</a></div>
-<div class="settings-card"><h3>Account</h3><button id="changeName" class="btn btn-secondary">Change my name</button> <button id="signOut" class="btn btn-ghost">Sign out</button><div id="accountEmail" class="group-meta"></div><div class="danger-zone"><h4>Delete my account</h4><p class="note">Permanently deletes your profile, your Interested and Going choices, your group memberships and any events you added. This can't be undone.</p><button id="deleteAccount" type="button" class="btn btn-danger">Delete my account</button></div></div>
+<div class="settings-card member-only"><h3>Account</h3><button id="changeName" class="btn btn-secondary">Change my name</button> <button id="signOut" class="btn btn-ghost">Sign out</button><div id="accountEmail" class="group-meta"></div><div class="danger-zone"><h4>Delete my account</h4><p class="note">Permanently deletes your profile, your Interested and Going choices, your group memberships and any events you added. This can't be undone.</p><button id="deleteAccount" type="button" class="btn btn-danger">Delete my account</button></div></div>
 <div class="settings-card install-area"><h3>Install the app</h3><button id="installApp" class="btn btn-primary install-btn">↓ Add to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
 <div class="settings-links"><a href="about.html" target="_blank" rel="noopener">About</a><a href="privacy.html" target="_blank" rel="noopener">Privacy</a><a href="terms.html" target="_blank" rel="noopener">Terms</a></div>
 </main>
@@ -664,14 +671,15 @@ async function initAuth(){
   const previousId=authUser?.id||'';
   authSession=session||null;authUser=session?.user||null;
   // TOKEN_REFRESHED / INITIAL_SESSION / USER_UPDATED only refresh the stored session.
-  if(event==='SIGNED_OUT'){setTimeout(()=>showWelcome('auth'),0);return}
+  if(event==='SIGNED_OUT'){setTimeout(enterGuestMode,0);return}
   if(event==='SIGNED_IN'&&authUser&&authUser.id!==previousId){
    setTimeout(()=>bootstrapAuthed().then(loadUserData).catch(console.warn),0);
   }
  });
- if(authUser) await bootstrapAuthed(); else showWelcome('auth');
+ if(authUser) await bootstrapAuthed(); else enterGuestMode();
 }
 async function bootstrapAuthed(){
+ document.body.classList.remove('guest');
  if($('authStep'))hide('authStep'); // already signed in: never show the sign-in step
  if($('otpCodeForm')&&!$('otpCodeForm').classList.contains('hidden'))resetCodeStep(); // signed in (by code or link): reset the email step
  const hasProfile=await loadProfile();
@@ -762,6 +770,7 @@ function mergeEvents(base){
  return merged;
 }
 async function addCustomEvent(){
+ if(!authUser){promptSignIn('addEvent',{type:'addEvent'});return}
  if(!name()){showWelcome('name');return}
  const title=$('customTitle').value.trim(), date=$('customDate').value, venue=$('customVenue').value, venueDetail=$('customVenueDetail').value.trim(), time=$('customTime').value, finish=$('customFinish').value, price=$('customPrice').value.trim(), ticket=$('customTicket').value.trim(), category=$('customCategory').value, description=$('customDescription').value.trim();
  if(!title||!date||!venue)return alert('Please add a title, date and venue.');
@@ -887,8 +896,63 @@ async function openGroupStep(){
  await loadGroups(); renderOnboardingGroups();
  await handleGroupInvite();
 }
+// ---- Guest mode ----
+// Without a login people can browse events, comedy, festivals and search.
+// Marking Interested or Going, the Happenings page and adding events need a
+// free login. The database already refuses those for anyone not signed in;
+// this only decides what guests are shown. The action that prompted sign-up is
+// remembered (it survives the Google redirect) and carried out afterwards.
+const GUEST_ACTION_KEY='bw_guest_action';
+const GATE_COPY={
+ act:'It\'s free, and lets you mark events Interested or Going and see who else is going.',
+ happenings:'It\'s free, and lets you see what your groups are planning.',
+ addEvent:'It\'s free, and lets you add events for everyone to see.',
+ account:'It\'s free, and lets you mark events, join groups and see what your friends are planning.'
+};
+function enterGuestMode(){
+ document.body.classList.add('guest');
+ if(!$('peopleTab').classList.contains('hidden'))openTab('discover');
+ hide('welcome');$('welcome').classList.remove('checking');
+ renderAll();
+ // An invite link needs an account, so ask straight away (they can still say Not now).
+ if(readPendingLink()?.group_invite)showWelcome('auth');
+}
+function promptSignIn(reason,action){
+ try{if(action)localStorage.setItem(GUEST_ACTION_KEY,JSON.stringify({...action,at:Date.now()}));else localStorage.removeItem(GUEST_ACTION_KEY)}catch(e){}
+ showWelcome('auth');
+ $('authTitle').textContent='Create a free login';
+ $('authPrompt').textContent=GATE_COPY[reason]||GATE_COPY.account;
+ show('authPrompt');
+}
+function closeSignIn(){
+ if(authUser)return;
+ try{localStorage.removeItem(GUEST_ACTION_KEY)}catch(e){}
+ hide('welcome');
+}
+function readGuestAction(){
+ try{const x=JSON.parse(localStorage.getItem(GUEST_ACTION_KEY)||'null');if(x&&x.at&&Date.now()-x.at<36e5)return x;localStorage.removeItem(GUEST_ACTION_KEY)}catch(e){}
+ return null;
+}
+// Carries out what a guest tried just before signing up. Waits while the
+// welcome screens (name, groups) are still open; finishWelcome calls it again.
+async function resumeGuestAction(){
+ if(!authUser||!name()||!$('welcome').classList.contains('hidden'))return;
+ const x=readGuestAction();if(!x)return;
+ try{localStorage.removeItem(GUEST_ACTION_KEY)}catch(e){}
+ if(x.type==='act'&&x.eventId&&STATUS_LABEL[x.status]){
+  const mine=attendance.find(a=>a.event_id===x.eventId&&a.user_id===uid());
+  if(mine?.status!==x.status)await act(x.eventId,x.status); // act() toggles, so skip if it is already set
+  openTab(groups.length?'peopleTab':'discover');
+ }else if(x.type==='tab'){
+  openTab(x.tab);
+ }else if(x.type==='addEvent'){
+  openTab('peopleTab');
+  if($('customEventPanel').classList.contains('collapsed'))$('toggleCustomEvent').click();
+ }
+}
 function showWelcome(mode='auth'){
  show('welcome');$('welcome').classList.remove('checking');
+ $('authTitle').textContent='Sign in to Brighton Weekend';hide('authPrompt');$('authClose').classList.toggle('hidden',!!authUser);
  $('nameInput').value=name();
  hide('authStep');hide('nameStep');hide('groupStep');hide('createGroupPanel');hide('joinGroupPanel');
  if(mode==='auth' || !authUser){show('authStep');showPendingInviteHint();return}
@@ -898,6 +962,7 @@ function showWelcome(mode='auth'){
 function finishWelcome(){
  hide('welcome'); homeShown=true; saveSeen(); trackVisitor(); renderAll(); renderGroupManager();
  showSharedEvent(); // an event link opened before sign-up shows now, after Discover is redrawn
+ resumeGuestAction();
 }
 async function createGroup(){
  const n=$('newGroupName').value.trim();
@@ -957,6 +1022,7 @@ function renderGroupManager(){
 }
 
 async function act(id,status){
+ if(!authUser){promptSignIn('act',{type:'act',eventId:id,status});return}
  if(!name()){showWelcome('name');return}
  const mine=attendance.find(x=>x.event_id===id&&x.user_id===uid());
  const targetStatus=(mine&&mine.status===status)?null:status;
@@ -1391,6 +1457,8 @@ $('otpCodeForm').addEventListener('submit',async e=>{
  }
 });
 $('otpRestart').onclick=resetCodeStep;
+$('authClose').onclick=closeSignIn;
+$('guestSignIn').onclick=()=>promptSignIn('account',null);
 $('nameForm').addEventListener('submit',async e=>{e.preventDefault();const n=$('nameInput').value.trim();if(!n)return;try{await saveProfile(n);await openGroupStep()}catch(err){alert('Could not save your profile. '+(err.message||err))}});
 $('deleteAccount').onclick=async()=>{
  const typed=prompt('This permanently deletes your Brighton Weekend account, your plans, your group memberships and any events you added. It can\'t be undone.\n\nType DELETE to confirm.');
@@ -1405,12 +1473,12 @@ $('deleteAccount').onclick=async()=>{
   Object.keys(localStorage).filter(k=>k.startsWith('bw_')||k.startsWith('sb-')).forEach(k=>localStorage.removeItem(k));
   try{await supabase.auth.signOut()}catch(e){}
   authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';customEvents=[];festivals=[];
-  events=events.filter(e=>!e.is_custom);$('accountEmail').textContent='';renderAll();showWelcome('auth');
-  const msg=$('authMessage');msg.className='auth-success';msg.textContent='Your account and data have been deleted.';
+  $('accountEmail').textContent='';enterGuestMode();
+  alert('Your account and data have been deleted.');
  }catch(err){alert('Sorry, your account could not be deleted: '+(err.message||err)+'\nPlease try again, or email us using the address in the Privacy Policy.')}
  finally{btn.disabled=false;btn.textContent='Delete my account'}
 };
-$('signOut').onclick=async()=>{await supabase.auth.signOut();authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';festivals=[];localStorage.removeItem('bw_name');$('accountEmail').textContent='';renderAll();showWelcome('auth')};
+$('signOut').onclick=async()=>{await supabase.auth.signOut();authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';festivals=[];localStorage.removeItem('bw_name');$('accountEmail').textContent='';enterGuestMode()};
 $('partyOnBtn').onclick=finishWelcome;
 $('showCreateGroup').onclick=()=>{hide('joinGroupPanel');$('createGroupPanel').classList.toggle('hidden')};
 $('showJoinGroup').onclick=()=>{hide('createGroupPanel');$('joinGroupPanel').classList.toggle('hidden')};
@@ -1431,10 +1499,11 @@ $('customVenue').innerHTML='<option value="">Choose a venue…</option>'+VENUES.
 $('customVenue').onchange=toggleOtherVenue;
 function setCustomDateLimits(){const d=$('customDate');if(!d)return;const t=new Date();d.min=dateKey(t);t.setDate(t.getDate()+730);d.max=dateKey(t)}
 setCustomDateLimits();
-$('toggleCustomEvent').onclick=()=>{setCustomDateLimits();const panel=$('customEventPanel');const open=panel.classList.toggle('collapsed')===false;$('toggleCustomEvent').textContent=open?'− Hide form':'＋ Add event';if(open) setTimeout(()=>$('customTitle').focus(),50)};
+$('toggleCustomEvent').onclick=()=>{if(!authUser){promptSignIn('addEvent',{type:'addEvent'});return}setCustomDateLimits();const panel=$('customEventPanel');const open=panel.classList.toggle('collapsed')===false;$('toggleCustomEvent').textContent=open?'− Hide form':'＋ Add event';if(open) setTimeout(()=>$('customTitle').focus(),50)};
 $('addCustomEventBtn').onclick=addCustomEvent;
 const TABS=['discover','comedyTab','festivalsTab','searchTab','peopleTab','venuesTab'];
 document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{
+ if(b.dataset.tab==='peopleTab'&&!authUser){promptSignIn('happenings',{type:'tab',tab:'peopleTab'});return}
  document.querySelectorAll('.nav button').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-current',x===b?'page':'false')});
  TABS.forEach(id=>$(id).classList.toggle('hidden',id!==b.dataset.tab));
  document.querySelector('header .controls').classList.toggle('hidden',['festivalsTab','searchTab','venuesTab','peopleTab'].includes(b.dataset.tab));
@@ -1522,17 +1591,18 @@ function newPanelHtml(){
 document.addEventListener('click',e=>{if(e.target.closest('#closeNewPanel')){showNewPanel=false;render()}});
 
 async function loadUserData(){
- if(!authUser)return;
+ if(!authUser){await loadCustomEvents();events=mergeEvents(events.filter(e=>!e.is_custom));rebuildEventIdAliases();renderAll();showSharedEvent();return}
  await Promise.all([loadAttendance(),loadCustomEvents(),loadFestivals()]);
  events=mergeEvents(events.filter(e=>!e.is_custom));
  await loadGroupHappenings(); await loadProfileIcons();
  renderProfileIconSettings(); renderAll(); renderGroupManager();
  showHome(); showSharedEvent();
+ await resumeGuestAction();
 }
 (async()=>{
  renderVenues(); renderAll();
  const eventsLoaded=Promise.all([refresh(),loadFestivals()]);
- try{await initAuth();}catch(e){console.error('Auth init failed',e);showWelcome('auth')}
+ try{await initAuth();}catch(e){console.error('Auth init failed',e);enterGuestMode()}
  await eventsLoaded;
  await loadUserData();
 })();
