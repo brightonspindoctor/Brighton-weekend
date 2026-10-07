@@ -16,6 +16,7 @@
 <section id="dashboard" class="hidden">
 <div class="card"><div class="muted">Unique app users</div><div class="stat" id="count">—</div><div class="small">Unique browser/app IDs seen by Brighton Weekend</div></div>
 <div class="card"><h2>Last 30 days</h2><div class="stat" id="recent">—</div><div class="small">Unique IDs with a visit in the last 30 days</div></div>
+<div class="card"><h2>Guests</h2><div class="stat" id="guests30">—</div><div class="small">Guest devices with a visit in the last 30 days</div><div style="margin-top:12px" id="guestDetail" class="muted">—</div></div>
 <div class="card"><div class="muted">Latest tracked activity</div><div id="last" style="margin-top:8px">—</div></div>
 <button id="signout">Sign out</button>
 </section>
@@ -33,6 +34,8 @@ async function load(){
  if(error){$('loginError').textContent=error.message;$('login').classList.remove('hidden');$('dashboard').classList.add('hidden');return}
  $('count').textContent=data?.total_users ?? '0';
  $('recent').textContent=data?.recent_users ?? '0';
+ $('guests30').textContent=data?.recent_guests ?? '0';
+ {const g=Number(data?.total_guests)||0,c=Number(data?.converted_guests)||0;$('guestDetail').textContent=`${g} guest device${g===1?'':'s'} seen in total · ${c} signed up${g?` (${Math.round(c/g*100)}%)`:''}`;}
  $('last').textContent=data?.last_seen ? new Date(data.last_seen).toLocaleString('en-GB') : 'No activity yet';
 }
 $('loginBtn').onclick=async()=>{ $('loginError').textContent=''; const {error}=await db.auth.signInWithPassword({email:$('email').value.trim(),password:$('password').value}); if(error){$('loginError').textContent=error.message;return} await load()};

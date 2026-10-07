@@ -680,6 +680,7 @@ async function initAuth(){
 }
 async function bootstrapAuthed(){
  document.body.classList.remove('guest');
+ linkGuest(); // a guest who has just signed up counts as converted
  if($('authStep'))hide('authStep'); // already signed in: never show the sign-in step
  if($('otpCodeForm')&&!$('otpCodeForm').classList.contains('hidden'))resetCodeStep(); // signed in (by code or link): reset the email step
  const hasProfile=await loadProfile();
@@ -909,8 +910,21 @@ const GATE_COPY={
  addEvent:'It\'s free, and lets you add events for everyone to see.',
  account:'It\'s free, and lets you mark events, join groups and see what your friends are planning.'
 };
+// Guests get a random ID on this device (no personal details) so the admin
+// page can count guest visits and how many guests go on to sign up (v72).
+const GUEST_ID_KEY='bw_guest_id';
+function guestId(create){
+ try{
+  let id=localStorage.getItem(GUEST_ID_KEY);
+  if(!id&&create){id=(crypto.randomUUID?crypto.randomUUID():'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,c=>{const r=crypto.getRandomValues(new Uint8Array(1))[0]&15;return (c==='x'?r:(r&3|8)).toString(16)}));localStorage.setItem(GUEST_ID_KEY,id)}
+  return id||'';
+ }catch(e){return ''}
+}
+function trackGuest(){const id=guestId(true);if(id)rpc('bw_track_guest',{p_guest_id:id}).catch(()=>{})}
+function linkGuest(){const id=guestId(false);if(id)rpc('bw_link_guest',{p_guest_id:id}).catch(()=>{})}
 function enterGuestMode(){
  document.body.classList.add('guest');
+ trackGuest();
  if(!$('peopleTab').classList.contains('hidden'))openTab('discover');
  hide('welcome');$('welcome').classList.remove('checking');
  renderAll();
