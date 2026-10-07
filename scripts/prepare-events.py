@@ -186,7 +186,22 @@ def can_merge(kept_event, event):
         return False
     if not t1 or not t2 or t1 == t2:
         return True
+    # One site listing a show twice with the same ticket link, the second start
+    # inside the first one's running time ("19:00-21:00" and "20:00": doors and
+    # stage times), is one show. A matinee and an evening, or 10:00 and 11:00
+    # sessions, don't overlap like that, so they stay separate.
+    if (kept_event.get("source") == event.get("source") and kept_event.get("ticket_url")
+            and kept_event.get("ticket_url") == event.get("ticket_url") and starts_during(kept_event, event)):
+        return True
     return kept_event.get("source") != event.get("source") and "discovery" in (kept_event.get("source"), event.get("source"))
+
+def starts_during(a, b):
+    """True when one listing starts while the other, which has a finish time, is running."""
+    for x, y in ((a, b), (b, a)):
+        start, finish, other = x.get("time") or "", x.get("finish_time") or "", y.get("time") or ""
+        if start and finish and other and (start < other < finish or (finish < start and (other > start or other < finish))):
+            return True
+    return False
 
 def absorb(kept_event, event):
     for field in ("time", "finish_time", "ticket_url", "promoter"):

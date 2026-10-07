@@ -30,6 +30,14 @@ VENUE_TITLE_NAMES = {
     "the waterbear": ["waterbear", "waterbear venue"],
 }
 
+# An act's home country in brackets, as promoters write it: "(USA)", "[UK]", "(Can)".
+COUNTRY_TAG = re.compile(
+    r"\s*[(\[]\s*(?:usa|us|uk|gb|ire|irl|ireland|can|canada|aus|australia|nz|fr|fra|france|de|ger|germany|"
+    r"nl|be|bel|es|esp|spain|it|ita|italy|se|swe|sweden|no|nor|norway|dk|den|fi|fin|is|ice|iceland|"
+    r"jp|jpn|japan|kr|kor|br|bra|mx|mex|za|rsa|pl|pol|pt|por|ch|sui|at|aut|il|isr)\s*[)\]]",
+    re.I,
+)
+
 CITY = r"(?:brighton(?:\s*(?:&|and)\s*hove)?|hove)"
 SEP = r"[\s\-–—|:,·/(\[]+"
 
@@ -59,7 +67,8 @@ def core_title(title, venue=""):
     Used only for matching; the published title is left as the source wrote it
     (apart from display_title below).
     """
-    k = _key(_plain(title))
+    # "TCHOTCHKE (USA)" (a promoter's listing) is the venue's "TCHOTCHKE + support".
+    k = _key(_plain(COUNTRY_TAG.sub(" ", str(title or ""))))
     names = _venue_names(venue)
     venue_re = "|".join(re.escape(n) for n in names) if names else r"(?!x)x"
     patterns = [
@@ -149,6 +158,8 @@ def _self_test():
         ("Kepler", "Keplter", "Concorde 2"),
         ("$layyyter", "Slayyyter", "CHALK"),
         ("The Forge Comedy Club", "Forge Comedy Club", "The Forge Comedy Club"),
+        ("TCHOTCHKE + support", "TCHOTCHKE (USA)", "The Hope & Ruin"),
+        ("Kepler (UK) + supports", "Kepler", "Concorde 2"),
     ]
     cases_different = [
         ("Brighton v Crystal Palace", "Brighton v Everton", "Amex Stadium"),
@@ -157,6 +168,7 @@ def _self_test():
         ("Funny Women Volume 1", "Funny Women Volume 2", "Komedia"),
         ("Jazz Night", "Jazz Light", "Komedia"),
         ("Sergi Polo – LIVE in Brighton (in English)", "Sergi Polo – LIVE in Brighton (in Spanish)", "Komedia"),
+        ("Made in the UK", "Made in the USA", "Komedia"),  # country words outside brackets are kept
     ]
     for a, b, v in cases_same:
         assert same_show(a, b, v), f"should match: {a!r} / {b!r} ({core_title(a, v)!r} / {core_title(b, v)!r})"
