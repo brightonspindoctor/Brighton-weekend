@@ -6,6 +6,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="application-name" content="Brighton Weekend">
 <meta name="description" content="Brighton Weekend: make the most of yours. Gigs, comedy, clubs and theatre in Brighton &amp; Hove, planned with your groups.">
+<link rel="canonical" href="https://brightonweekend.co.uk/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Brighton Weekend">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://brightonweekend.co.uk/">
+<meta property="og:title" content="Brighton Weekend: make the most of yours">
+<meta property="og:description" content="Gigs, comedy, clubs and theatre in Brighton &amp; Hove, planned with your groups.">
+<meta property="og:image" content="https://brightonweekend.co.uk/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Brighton Weekend">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="Brighton Weekend">
@@ -538,6 +550,8 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
 // survive Google or email-link sign-in (which return to the plain app address).
 // Only our own parameters are removed from the address bar; sign-in ones stay.
 const PENDING_LINK_KEY='bw_pending_link';
+// Ids from events.json, which each have a shareable page at e/<id>/.
+let staticEventIds=new Set();
 (function capturePendingLink(){
  try{
   const q=new URLSearchParams(location.search);
@@ -1115,11 +1129,17 @@ function shareGroupFor(e){
 }
 // A shared event link also invites the friend into one of your groups, with
 // the group name and PIN built in, so they never have to type them.
+// Listed events have their own page (e/<id>/, built by scripts/build-event-pages.py)
+// so WhatsApp, Instagram and Facebook show the event's title and date in the preview.
+// That page sends people straight on into the app. Community events and
+// festivals have no page yet, so they keep the plain ?event= link.
 function eventShareUrl(e,g=shareGroupFor(e)){
  const base=window.location.href.split("#")[0].split("?")[0];
- const params=new URLSearchParams();params.set('event',e.id);
+ const params=new URLSearchParams();
+ const hasPage=staticEventIds.has(String(e.id))&&/^[a-z0-9-]+$/.test(String(e.id));
+ if(hasPage)params.set('share','1');else params.set('event',e.id);
  if(g){params.set('group_invite',g.id);if(g.name)params.set('group_name',g.name);if(g.join_pin)params.set('group_pin',g.join_pin)}
- return base+"?"+params.toString();
+ return (hasPage?new URL('e/'+e.id+'/',base).href:base)+"?"+params.toString();
 }
 async function shareEvent(e){const g=shareGroupFor(e),url=eventShareUrl(e,g),title=e.title||"Brighton Weekend event",text=[e.title,e.date?new Date(e.date+"T12:00:00").toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"}):"",e.venue_display||e.venue||""].filter(Boolean).join(" · ")+(g?`\nJoin me in ${g.name} on Brighton Weekend.`:"");try{if(navigator.share){await navigator.share({title,text,url});return}if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);alert("Event link copied to your clipboard.");return}window.prompt("Copy this event link:",url)}catch(err){if(err?.name==="AbortError")return;try{window.prompt("Copy this event link:",url)}catch(_){alert(url)}}}
 const SHARE_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="12" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="19" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 11l7.8-4.4M8 13l7.8 4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
@@ -1340,6 +1360,7 @@ async function refresh(){
    if(!parseEventDate(e.date))continue;
    cleaned.push(e);
   }
+  staticEventIds=new Set(cleaned.map(e=>String(e.id)));
   events=mergeEvents(cleaned);
   rebuildEventIdAliases();attendance=canonicalRows(attendance);groupHappenings=canonicalRows(groupHappenings);
   $('subtitle').textContent='Make the most of yours';

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Not found | Brighton Weekend</title>
+<script>
+// An event page that no longer exists (the event has passed, or its listing
+// changed) still opens in the app, which knows merged and older event ids.
+(function(){var m=location.pathname.match(/^\/e\/([a-z0-9-]+)\/?$/);if(!m)return;var q=new URLSearchParams(location.search);q.delete('share');q.set('event',m[1]);location.replace('/?'+q.toString());})();
+</script>
+<style>
+@font-face{font-family:"Plus Jakarta Sans";font-weight:400 800;font-display:swap;src:url("/fonts/plus-jakarta-sans-latin.woff2") format("woff2")}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#08141F;color:#F3E4C9;font-family:"Plus Jakarta Sans",system-ui,sans-serif;text-align:center;padding:16px}
+a{display:inline-block;margin-top:14px;background:#FF7767;color:#0B1D2F;font-weight:700;text-decoration:none;border-radius:12px;padding:12px 18px}
+</style>
+</head>
+<body><div><h1>That page isn’t here</h1><p>It may be an event that has already happened.</p><a href="/">See what’s on</a></div></body>
+</html>

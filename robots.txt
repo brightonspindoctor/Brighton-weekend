@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin.html
+Disallow: /design-system.html
+Allow: /
+
+Sitemap: https://brightonweekend.co.uk/sitemap.xml

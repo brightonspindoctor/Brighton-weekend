@@ -1,0 +1,29 @@
+@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:400 800;font-display:swap;src:url("/fonts/plus-jakarta-sans-latin.woff2") format("woff2")}
+:root{--abyss:#08141F;--navy:#0B1D2F;--card:#102536;--raised:#173347;--line:#294657;--cream:#F3E4C9;--muted:#A7B5BE;--subtle:#8095A3;--coral:#FF7767;--coral-ink:#0B1D2F;--teal:#4DB6AC}
+*{box-sizing:border-box}
+body{margin:0;background:var(--abyss);color:var(--cream);font-family:"Plus Jakarta Sans",system-ui,sans-serif;line-height:1.55}
+a{color:var(--teal)}
+.bar{background:var(--navy);border-bottom:1px solid var(--line);padding:12px 16px}
+.bar a{display:flex;align-items:center;gap:12px;max-width:760px;margin:auto;color:var(--cream);text-decoration:none;font-weight:800;letter-spacing:.02em}
+.bar img{width:40px;height:40px;border-radius:11px}
+main{max-width:760px;margin:24px auto 48px;padding:0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.pill{display:inline-block;font-size:13px;font-weight:700;color:var(--muted);background:var(--raised);border-radius:999px;padding:3px 11px;margin:0 6px 10px 0}
+.pill.sold{color:#FFB5B0;background:#351F24}
+h1{font-size:30px;line-height:1.2;margin:0 0 14px;overflow-wrap:anywhere}
+h2{font-size:19px;margin:30px 0 10px}
+.facts{margin:0;padding:0;list-style:none;color:var(--muted)}
+.facts li{margin:3px 0}.facts strong{color:var(--cream)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{display:inline-block;border-radius:12px;padding:12px 18px;font-weight:700;text-decoration:none}
+.btn.go{background:var(--coral);color:var(--coral-ink)}
+.btn.alt{border:1px solid var(--line);color:var(--cream)}
+.list{list-style:none;margin:0;padding:0}
+.list li{display:flex;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
+.list .t{flex:0 0 48px;color:var(--subtle);font-variant-numeric:tabular-nums}
+.list a{color:var(--cream);font-weight:700;text-decoration:none}.list a:hover{text-decoration:underline}
+.list .v{display:block;color:var(--muted);font-size:14px}
+.lede{color:var(--muted);margin:-6px 0 18px}
+footer{max-width:760px;margin:0 auto 40px;padding:0 16px;color:var(--subtle);font-size:14px}
+footer a{color:var(--subtle);margin-right:14px}
+@media(max-width:600px){h1{font-size:25px}.card{padding:18px}}
