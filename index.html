@@ -124,6 +124,8 @@ h4{font-size:var(--bw-text-md);font-weight:700}
 
 .note,.group-meta,.custom-event-help,.profile-icon-note{font-size:var(--bw-text-sm);line-height:1.45;color:var(--bw-muted);margin:0}
 .empty{font-size:var(--bw-text-sm);color:var(--bw-subtle);padding:var(--bw-space-3) 0}
+.venue-nudge{margin-top:var(--bw-space-4);padding:var(--bw-space-4);background:var(--bw-card);border:1px solid var(--bw-coral-line);border-radius:var(--bw-radius-lg);text-align:center}
+.venue-nudge p{margin:0 0 var(--bw-space-3);color:var(--bw-muted);font-size:var(--bw-text-md)}
 
 /* ---------- 3. Layout ---------- */
 .wrap{width:100%;max-width:780px;margin:0 auto;padding:0 15px}
@@ -615,7 +617,12 @@ let events=[], festivals=[], attendance=[], groupHappenings=[], groups=[], group
 let savedVenues=null;
 try{savedVenues=JSON.parse(localStorage.getItem('bw_venues')||'null')}catch(e){localStorage.removeItem('bw_venues')}
 // Persist venue preferences exactly as the user selected them. Do not merge newly added venues into an existing saved list.
-let enabled=Array.isArray(savedVenues)?Array.from(new Set(savedVenues.filter(v=>VENUES.includes(v)))):VENUES.slice();
+// First visit on this device: start with no venues and nudge people to pick theirs in Settings.
+// Anyone who has used the app before (any earlier bw_ or Supabase sign-in key) but never saved
+// venues keeps the old default of every venue, so their lists don't suddenly go empty.
+function hasVisitedBefore(){try{for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i)||'';if(k!=='bw_venues'&&(k.startsWith('bw_')||k.startsWith('sb-')))return true}}catch(e){}return false}
+let enabled=Array.isArray(savedVenues)?Array.from(new Set(savedVenues.filter(v=>VENUES.includes(v)))):(hasVisitedBefore()?VENUES.slice():[]);
+if(!Array.isArray(savedVenues)&&enabled.length){try{localStorage.setItem('bw_venues',JSON.stringify(enabled))}catch(e){}}
 function uid(){return authUser?.id||''}
 function name(){return profileName||localStorage.getItem('bw_name')||''}
 async function loadProfile(){
@@ -1215,12 +1222,17 @@ document.addEventListener('click',e=>{
  if(!$('discover').classList.contains('hidden'))render();else openTab('discover');
  window.scrollTo({top:0,behavior:'smooth'});
 });
+function venueNudgeHtml(text){
+ return `<div class="venue-nudge"><p>${esc(text||'Choose the venues you go to and we\'ll show what\'s on there.')}</p><button type="button" class="btn btn-primary" data-open-venues>Choose venues</button></div>`;
+}
+document.addEventListener('click',e=>{if(e.target.closest('[data-open-venues]'))openTab('venuesTab')});
 function render(){
  const end=new Date(weekStart);end.setDate(end.getDate()+6);
  $('week').textContent=weekStart.toLocaleDateString('en-GB',{day:'numeric',month:'short'})+' – '+end.toLocaleDateString('en-GB',{day:'numeric',month:'short'});
  $('prev').disabled=weekStart<=getMonday();
  const days=weekDays();
  if(!days.length){$('discover').innerHTML=newPanelHtml()+'<div class="empty">None of your chosen days are left this week. Tap › for next week, or change your days in Settings.</div>';return}
+ if(!enabled.length){$('discover').innerHTML=venueNudgeHtml();return}
  const weekList=events.filter(e=>days.some(d=>d.key===e.date)&&venueVisible(e)&&!isComedy(e));
  const promoterList=discoverPromoter?weekList.filter(e=>e.promoter===discoverPromoter):weekList;
  const matched=promoterList.filter(e=>matchesGenre(e,discoverGenre)).length;
@@ -1259,6 +1271,7 @@ function renderComedy(){
   const list=events.filter(e=>e.date===day.key&&isComedy(e)&&venueVisible(e));
   return list.length?dayHeading(day)+list.map(e=>eventCard(e)).join(''):'';
  }).join('');
+ if(!enabled.length){$('comedyList').innerHTML=venueNudgeHtml('Pick the comedy venues you go to above, or choose venues in Settings.');return}
  $('comedyList').innerHTML=html||'<div class="empty">No comedy this week at your selected venues. Try another week or turn on more venues above.</div>';
 }
 const STATUS_LABEL={ticket_bought:'Going',interested:'Interested',not_interested:'Not for me'};
