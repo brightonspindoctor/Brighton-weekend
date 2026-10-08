@@ -59,6 +59,31 @@ and the person's status label, so people learn it once.
 
 All foreground/background pairs meet WCAG AA for small text (measured: Interested 8.0:1, Going 9.2:1, Not for me 9.1:1). Across the palette the lowest pair is `--bw-subtle` on `--bw-navy` at 5.5:1; cream on card is 12.5:1 and text on coral is 6.6:1.
 
+### Secondary tints and shadows
+
+These cover the smaller pieces. With them, every colour in the app's styles
+comes from a token, so a new colour scheme only needs a new set of token
+values. The one exception is the Google sign-in button, which stays fixed to
+Google's branding.
+
+| Token | Value | Use |
+|---|---|---|
+| `--bw-mist` | `#D9E7E7` | Light text on tags, chips and Happenings names |
+| `--bw-tag-bg` / `--bw-tag-line` | `#153443` / `#285365` | Genre tags, social chips |
+| `--bw-commit-fg` / `--bw-commit-line` | `#C3D0D6` / `#345468` | Commitment buttons before one is chosen |
+| `--bw-happen-bg` / `--bw-happen-line` | `#0F2A31` / `#285A5C` | Happenings add-event panel |
+| `--bw-coral-hover` | `#FF8B7D` | Primary button hover |
+| `--bw-coral-bg` / `--bw-coral-line` | `#251A1A` / `#71463F` | Coral-tinted wells (Today, events icon) |
+| `--bw-coral-wash` | `#1A1719` | New-since-last-visit panel |
+| `--bw-coral-glow` | coral at 16% | Halo on a shared event |
+| `--bw-sold-bg` / `--bw-sold-line` | `#382022` / `#704047` | Sold out badge |
+| `--bw-sticker-joy` / `--bw-sticker-beatdown` / `--bw-sticker-ink` | `#FFE14D` / `#B69CFF` / `#0B1D2F` | Promoter stickers |
+| `--bw-shadow-logo`, `-logo-lg`, `-sticker`, `-nav`, `-dialog` | black shadows | Logo, sticker, bottom nav and dialog shadows |
+
+The event pages and This weekend page use `pages.css`, which is written by
+`scripts/build-event-pages.py`. It has its own short token names (`--navy`,
+`--coral`, `--pass-fg` and so on); change them in the script, not the file.
+
 ## Type
 
 One family: **Plus Jakarta Sans** (400–800), falling back to the system UI

@@ -128,7 +128,7 @@ def event_json_ld(e: dict, d: date) -> str:
 
 STYLE = """
 @font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:400 800;font-display:swap;src:url("/fonts/plus-jakarta-sans-latin.woff2") format("woff2")}
-:root{--abyss:#08141F;--navy:#0B1D2F;--card:#102536;--raised:#173347;--line:#294657;--cream:#F3E4C9;--muted:#A7B5BE;--subtle:#8095A3;--coral:#FF7767;--coral-ink:#0B1D2F;--teal:#4DB6AC}
+:root{--abyss:#08141F;--navy:#0B1D2F;--card:#102536;--raised:#173347;--line:#294657;--cream:#F3E4C9;--muted:#A7B5BE;--subtle:#8095A3;--coral:#FF7767;--coral-ink:#0B1D2F;--teal:#4DB6AC;--pass-fg:#FFB5B0;--pass-bg:#351F24}
 *{box-sizing:border-box}
 body{margin:0;background:var(--abyss);color:var(--cream);font-family:"Plus Jakarta Sans",system-ui,sans-serif;line-height:1.55}
 a{color:var(--teal)}
@@ -138,7 +138,7 @@ a{color:var(--teal)}
 main{max-width:760px;margin:24px auto 48px;padding:0 16px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
 .pill{display:inline-block;font-size:13px;font-weight:700;color:var(--muted);background:var(--raised);border-radius:999px;padding:3px 11px;margin:0 6px 10px 0}
-.pill.sold{color:#FFB5B0;background:#351F24}
+.pill.sold{color:var(--pass-fg);background:var(--pass-bg)}
 h1{font-size:30px;line-height:1.2;margin:0 0 14px;overflow-wrap:anywhere}
 h2{font-size:19px;margin:30px 0 10px}
 .facts{margin:0;padding:0;list-style:none;color:var(--muted)}
