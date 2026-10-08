@@ -80,6 +80,17 @@ Google's branding.
 | `--bw-sticker-joy` / `--bw-sticker-beatdown` / `--bw-sticker-ink` | `#FFE14D` / `#B69CFF` / `#0B1D2F` | Promoter stickers |
 | `--bw-shadow-logo`, `-logo-lg`, `-sticker`, `-nav`, `-dialog` | black shadows | Logo, sticker, bottom nav and dialog shadows |
 
+### Light scheme: Seafront by day
+
+People can switch to a light scheme in Settings → Colour scheme. The choice is
+saved on the device as `bw_theme` and applied before the page draws, so there
+is no flash. The light values live in the `:root[data-theme="light"]` block
+straight after the main tokens, and override the same token names; it also
+sets `color-scheme: light` so checkboxes and date pickers turn light. Coral
+and teal are deeper (`#C9402F`, `#1F7A72`) so they pass contrast on a light
+background, and text on coral is white. Any new colour needs a value in both
+blocks.
+
 The event pages and This weekend page use `pages.css`, which is written by
 `scripts/build-event-pages.py`. It has its own short token names (`--navy`,
 `--coral`, `--pass-fg` and so on); change them in the script, not the file.
