@@ -1162,30 +1162,19 @@ function gcalUrl(e){
  return 'https://calendar.google.com/calendar/render?'+q.toString();
 }
 function calendarLink(e){const u=gcalUrl(e);return u?`<a class="cal-link" href="${esc(u)}" target="_blank" rel="noopener" aria-label="Add ${esc(e.title)} to Google Calendar">${CAL_ICON}<span>Add to calendar</span></a>`:''}
-// Picks the group to bring along with a shared event: the one where most
-// members have marked this event, otherwise the first group.
-function shareGroupFor(e){
- if(!groups.length)return null;
- const keen=new Set(groupHappenings.filter(x=>x.event_id===e.id&&(x.status==='interested'||x.status==='ticket_bought')).map(x=>x.user_id));
- let best=groups[0],bestScore=-1;
- groups.forEach(g=>{const score=groupMembers.filter(m=>String(m.group_id)===String(g.id)&&keen.has(m.user_id)).length;if(score>bestScore){best=g;bestScore=score}});
- return best;
-}
-// A shared event link also invites the friend into one of your groups, with
-// the group name and PIN built in, so they never have to type them.
+// A shared event link shares only the event: it never carries a group invite.
 // Listed events have their own page (e/<id>/, built by scripts/build-event-pages.py)
 // so WhatsApp, Instagram and Facebook show the event's title and date in the preview.
 // That page sends people straight on into the app. Community events and
 // festivals have no page yet, so they keep the plain ?event= link.
-function eventShareUrl(e,g=shareGroupFor(e)){
+function eventShareUrl(e){
  const base=window.location.href.split("#")[0].split("?")[0];
  const params=new URLSearchParams();
  const hasPage=staticEventIds.has(String(e.id))&&/^[a-z0-9-]+$/.test(String(e.id));
  if(hasPage)params.set('share','1');else params.set('event',e.id);
- if(g){params.set('group_invite',g.id);if(g.name)params.set('group_name',g.name);if(g.join_pin)params.set('group_pin',g.join_pin)}
  return (hasPage?new URL('e/'+e.id+'/',base).href:base)+"?"+params.toString();
 }
-async function shareEvent(e){const g=shareGroupFor(e),url=eventShareUrl(e,g),title=e.title||"Brighton Weekend event",text=[e.title,e.date?new Date(e.date+"T12:00:00").toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"}):"",e.venue_display||e.venue||""].filter(Boolean).join(" · ")+(g?`\nJoin me in ${g.name} on Brighton Weekend.`:"");try{if(navigator.share){await navigator.share({title,text,url});return}if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);alert("Event link copied to your clipboard.");return}window.prompt("Copy this event link:",url)}catch(err){if(err?.name==="AbortError")return;try{window.prompt("Copy this event link:",url)}catch(_){alert(url)}}}
+async function shareEvent(e){const url=eventShareUrl(e),title=e.title||"Brighton Weekend event",text=[e.title,e.date?new Date(e.date+"T12:00:00").toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"}):"",e.venue_display||e.venue||""].filter(Boolean).join(" · ");try{if(navigator.share){await navigator.share({title,text,url});return}if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);alert("Event link copied to your clipboard.");return}window.prompt("Copy this event link:",url)}catch(err){if(err?.name==="AbortError")return;try{window.prompt("Copy this event link:",url)}catch(_){alert(url)}}}
 const SHARE_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="12" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="19" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 11l7.8-4.4M8 13l7.8 4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 function shareLink(e){return `<button type="button" class="cal-link share-link" title="Share this event" data-share-event="${esc(e.id)}" aria-label="Share ${esc(e.title)}">${SHARE_ICON}<span>Share</span></button>`}
 const CAL_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 13v4M10 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
