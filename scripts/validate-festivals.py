@@ -11,7 +11,7 @@ MIN_FESTIVALS = 20
 # More than this many festivals on the same date at the same place means the
 # scraper has copied one listing's date and address onto its neighbours.
 MAX_SAME_DATE_AND_PLACE = 3
-CATEGORIES = {"Music", "Arts & Culture", "Food & Drink", "Family", "Wellness", "Comedy", "Film", "Sport & Outdoor", "Other"}
+CATEGORIES = {"Music", "Arts & Culture", "Food & Drink", "Family", "Wellness", "Comedy", "Film", "Other"}
 BAD_TITLES = {
     "read more", "read less", "places to stay", "places to stay in brighton", "next", "previous", "list view",
     "map view", "grid view", "plan your visit", "things to do", "what's on", "work with us", "submit event",

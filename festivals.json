@@ -22,18 +22,6 @@
       "location_display": "Ashby de la Zouch"
     },
     {
-      "title": "Kent Downs 50 Ultra Challenge",
-      "date": "2026-10-10",
-      "date_end": "2026-10-10",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/kent-downs-50-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/kent-downs-50-ultra-challenge/",
-      "id": "festival:kent-downs-50-ultra-challenge:2026-10-10",
-      "location_display": "UK"
-    },
-    {
       "title": "Wilde Realms Event 4: The Sacrifices We Make",
       "date": "2026-10-23",
       "date_end": "2026-10-25",
@@ -44,18 +32,6 @@
       "detail_url": "https://fezzy.uk/festival/wilde-realms-event-4-the-sacrifices-we-make/",
       "id": "festival:wilde-realms-event-4-the-sacrifices-we-make:2026-10-23",
       "location_display": "Herne Bay"
-    },
-    {
-      "title": "Tetworth Horse Trials",
-      "date": "2026-10-24",
-      "date_end": "2026-10-25",
-      "location": "Sandy, Cambridgeshire",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/tetworth-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/tetworth-horse-trials/",
-      "id": "festival:tetworth-horse-trials:2026-10-24",
-      "location_display": "Sandy, Cambridgeshire"
     },
     {
       "title": "Damnation Festival",
@@ -182,24 +158,12 @@
       "date": "2027-03-12",
       "date_end": "2027-03-14",
       "location": "UK",
-      "category": "Sport & Outdoor",
+      "category": "Other",
       "ticket_url": "https://fezzy.uk/festival/frost-and-flame/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/frost-and-flame/",
       "id": "festival:frost-and-flame:2027-03-12",
       "location_display": "UK"
-    },
-    {
-      "title": "Lincolnshire Horse Trials",
-      "date": "2027-03-20",
-      "date_end": "2027-03-22",
-      "location": "Lincoln",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/lincolnshire-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/lincolnshire-horse-trials/",
-      "id": "festival:lincolnshire-horse-trials:2027-03-20",
-      "location_display": "Lincoln"
     },
     {
       "title": "Manchester Punk Festival",
@@ -236,30 +200,6 @@
       "detail_url": "https://fezzy.uk/festival/taste-cheshire-food-drink-festival/",
       "id": "festival:taste-cheshire-food-drink-festival:2027-04-03",
       "location_display": "North West"
-    },
-    {
-      "title": "Butcombe Trail Ultra",
-      "date": "2027-04-17",
-      "date_end": "2027-04-17",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/butcombe-trail-ultra/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/butcombe-trail-ultra/",
-      "id": "festival:butcombe-trail-ultra:2027-04-17",
-      "location_display": "UK"
-    },
-    {
-      "title": "Btcc Donington Park April 2026",
-      "date": "2027-04-18",
-      "date_end": "2027-04-19",
-      "location": "Derby",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/btcc-donington-park-april-2026/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/btcc-donington-park-april-2026/",
-      "id": "festival:btcc-donington-park-april:2027-04-18",
-      "location_display": "Derby"
     },
     {
       "title": "Brick Lane Jazz Festival",
@@ -319,18 +259,6 @@
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/offset-show/",
       "id": "festival:offset-show:2027-04-24",
-      "location_display": "UK"
-    },
-    {
-      "title": "Three Peaks Race",
-      "date": "2027-04-24",
-      "date_end": "2027-04-24",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/three-peaks-race/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/three-peaks-race/",
-      "id": "festival:three-peaks-race:2027-04-24",
       "location_display": "UK"
     },
     {
@@ -404,18 +332,6 @@
       "detail_url": "https://fezzy.uk/festival/girvan-traditional-folk-festival/",
       "id": "festival:girvan-traditional-folk-festival:2027-05-01",
       "location_display": "Girvan"
-    },
-    {
-      "title": "Isle of Wight Ultra Challenge",
-      "date": "2027-05-01",
-      "date_end": "2027-05-02",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/isle-of-wight-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/isle-of-wight-ultra-challenge/",
-      "id": "festival:isle-of-wight-ultra-challenge:2027-05-01",
-      "location_display": "UK"
     },
     {
       "title": "Liverpool Sound City",
@@ -514,30 +430,6 @@
       "location_display": "UK"
     },
     {
-      "title": "Belsay International Horse Trials",
-      "date": "2027-05-15",
-      "date_end": "2027-05-17",
-      "location": "Belsay",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/belsay-international-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/belsay-international-horse-trials/",
-      "id": "festival:belsay-international-horse-trials:2027-05-15",
-      "location_display": "Belsay"
-    },
-    {
-      "title": "Jurassic Coast Ultra Challenge",
-      "date": "2027-05-15",
-      "date_end": "2027-05-16",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/jurassic-coast-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/jurassic-coast-ultra-challenge/",
-      "id": "festival:jurassic-coast-ultra-challenge:2027-05-15",
-      "location_display": "UK"
-    },
-    {
       "title": "Keswick Mountain Festival",
       "date": "2027-05-21",
       "date_end": "2027-05-23",
@@ -562,30 +454,6 @@
       "location_display": "Wallingford"
     },
     {
-      "title": "British Gt Championship Oulton Park",
-      "date": "2027-05-22",
-      "date_end": "2027-05-25",
-      "location": "Little Budworth",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/british-gt-championship-oulton-park/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/british-gt-championship-oulton-park/",
-      "id": "festival:british-gt-championship-oulton-park:2027-05-22",
-      "location_display": "Little Budworth"
-    },
-    {
-      "title": "Goring Gap Trails Festival",
-      "date": "2027-05-22",
-      "date_end": "2027-05-23",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/goring-gap-trails-festival/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/goring-gap-trails-festival/",
-      "id": "festival:goring-gap-trails-festival:2027-05-22",
-      "location_display": "UK"
-    },
-    {
       "title": "In It Together Festival",
       "date": "2027-05-22",
       "date_end": "2027-05-22",
@@ -602,7 +470,7 @@
       "date": "2027-05-22",
       "date_end": "2027-05-25",
       "location": "Chepstow",
-      "category": "Sport & Outdoor",
+      "category": "Music",
       "ticket_url": "https://fezzy.uk/festival/jungle-syndicate-weekender/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/jungle-syndicate-weekender/",
@@ -710,7 +578,7 @@
       "date": "2027-05-28",
       "date_end": "2027-06-01",
       "location": "UK",
-      "category": "Sport & Outdoor",
+      "category": "Other",
       "ticket_url": "https://fezzy.uk/festival/clubfest/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/clubfest/",
@@ -872,18 +740,6 @@
       "detail_url": "https://fezzy.uk/festival/field-day/",
       "id": "festival:field-day:2027-05-29",
       "location_display": "London"
-    },
-    {
-      "title": "London 2 Brighton Ultra Challenge",
-      "date": "2027-05-29",
-      "date_end": "2027-05-30",
-      "location": "UK",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/london-2-brighton-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/london-2-brighton-ultra-challenge/",
-      "id": "festival:london-2-brighton-ultra-challenge:2027-05-29",
-      "location_display": "UK"
     },
     {
       "title": "Love Saves the Day",
@@ -1078,23 +934,11 @@
       "source": "https://gloriousdayfestival.co.uk/"
     },
     {
-      "title": "Lake District Ultra Challenge",
-      "date": "2027-06-05",
-      "date_end": "2027-06-06",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/lake-district-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/lake-district-ultra-challenge/",
-      "id": "festival:lake-district-ultra-challenge:2027-06-05",
-      "location_display": "UK"
-    },
-    {
       "title": "Live on the Wye",
       "date": "2027-06-05",
       "date_end": "2027-06-05",
       "location": "Wales",
-      "category": "Sport & Outdoor",
+      "category": "Music",
       "ticket_url": "https://fezzy.uk/festival/live-on-the-wye/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/live-on-the-wye/",
@@ -1148,18 +992,6 @@
       "detail_url": "https://fezzy.uk/festival/download-festival/",
       "id": "festival:download-festival:2027-06-09",
       "location_display": "Castle Donington"
-    },
-    {
-      "title": "Bramham International Horse Trials",
-      "date": "2027-06-10",
-      "date_end": "2027-06-13",
-      "location": "Wetherby",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/bramham-international-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/bramham-international-horse-trials/",
-      "id": "festival:bramham-international-horse-trials:2027-06-10",
-      "location_display": "Wetherby"
     },
     {
       "title": "Hampton Court Palace Festival",
@@ -1280,18 +1112,6 @@
       "detail_url": "https://fezzy.uk/festival/solas-festival/",
       "id": "festival:solas-festival:2027-06-11",
       "location_display": "Errol"
-    },
-    {
-      "title": "Cotswold Way Ultra Challenge",
-      "date": "2027-06-12",
-      "date_end": "2027-06-13",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/cotswold-way-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/cotswold-way-ultra-challenge/",
-      "id": "festival:cotswold-way-ultra-challenge:2027-06-12",
-      "location_display": "UK"
     },
     {
       "title": "Beardy Folk Festival",
@@ -1462,18 +1282,6 @@
       "location_display": "Inverurie"
     },
     {
-      "title": "North Norfolk 50 Ultra Challenge",
-      "date": "2027-06-19",
-      "date_end": "2027-06-19",
-      "location": "UK",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/north-norfolk-50-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/north-norfolk-50-ultra-challenge/",
-      "id": "festival:north-norfolk-50-ultra-challenge:2027-06-19",
-      "location_display": "UK"
-    },
-    {
       "title": "Test Fest",
       "date": "2027-06-19",
       "date_end": "2027-06-19",
@@ -1606,18 +1414,6 @@
       "location_display": "UK"
     },
     {
-      "title": "Bloxham Rally",
-      "date": "2027-06-26",
-      "date_end": "2027-06-27",
-      "location": "Banbury",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/bloxham-rally/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/bloxham-rally/",
-      "id": "festival:bloxham-rally:2027-06-26",
-      "location_display": "Banbury"
-    },
-    {
       "title": "Chester-Le-Street Steam & Vintage Fair",
       "date": "2027-06-26",
       "date_end": "2027-06-27",
@@ -1639,18 +1435,6 @@
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/headcorn-international-airshow/",
       "id": "festival:headcorn-international-airshow:2027-06-26",
-      "location_display": "UK"
-    },
-    {
-      "title": "North Yorkshire Ultra Challenge",
-      "date": "2027-06-26",
-      "date_end": "2027-06-27",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/north-yorkshire-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/north-yorkshire-ultra-challenge/",
-      "id": "festival:north-yorkshire-ultra-challenge:2027-06-26",
       "location_display": "UK"
     },
     {
@@ -1676,18 +1460,6 @@
       "detail_url": "https://fezzy.uk/festival/british-summer-time/",
       "id": "festival:british-summer-time:2027-06-27",
       "location_display": "London"
-    },
-    {
-      "title": "Henley Royal Regatta",
-      "date": "2027-06-29",
-      "date_end": "2027-07-04",
-      "location": "UK",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/henley-royal-regatta/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/henley-royal-regatta/",
-      "id": "festival:henley-royal-regatta:2027-06-29",
-      "location_display": "UK"
     },
     {
       "title": "Lytham Festival",
@@ -1778,24 +1550,12 @@
       "date": "2027-07-02",
       "date_end": "2027-07-03",
       "location": "Tring",
-      "category": "Sport & Outdoor",
+      "category": "Music",
       "ticket_url": "https://fezzy.uk/festival/chilfest/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/chilfest/",
       "id": "festival:chilfest:2027-07-02",
       "location_display": "Tring"
-    },
-    {
-      "title": "Formula 1 Pirelli British Grand Prix",
-      "date": "2027-07-02",
-      "date_end": "2027-07-05",
-      "location": "Silverstone",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/formula-1-pirelli-british-grand-prix/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/formula-1-pirelli-british-grand-prix/",
-      "id": "festival:formula-1-pirelli-british-grand-prix:2027-07-02",
-      "location_display": "Silverstone"
     },
     {
       "title": "Gate To Southwell Festival",
@@ -1846,42 +1606,6 @@
       "location_display": "UK"
     },
     {
-      "title": "Duncombe Park Steam & Vintage Rally",
-      "date": "2027-07-03",
-      "date_end": "2027-07-04",
-      "location": "Helmsley",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/duncombe-park-steam-vintage-rally/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/duncombe-park-steam-vintage-rally/",
-      "id": "festival:duncombe-park-steam-vintage-rally:2027-07-03",
-      "location_display": "Helmsley"
-    },
-    {
-      "title": "Elvaston Steam Rally",
-      "date": "2027-07-03",
-      "date_end": "2027-07-04",
-      "location": "Elvaston",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/elvaston-steam-rally/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/elvaston-steam-rally/",
-      "id": "festival:elvaston-steam-rally:2027-07-03",
-      "location_display": "Elvaston"
-    },
-    {
-      "title": "Peak District Ultra Challenge",
-      "date": "2027-07-03",
-      "date_end": "2027-07-04",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/peak-district-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/peak-district-ultra-challenge/",
-      "id": "festival:peak-district-ultra-challenge:2027-07-03",
-      "location_display": "UK"
-    },
-    {
       "title": "Nudefest",
       "date": "2027-07-06",
       "date_end": "2027-07-11",
@@ -1928,18 +1652,6 @@
       "detail_url": "https://fezzy.uk/festival/bures-music-festival/",
       "id": "festival:bures-music-festival:2027-07-08",
       "location_display": "East of England"
-    },
-    {
-      "title": "Love Trails",
-      "date": "2027-07-08",
-      "date_end": "2027-07-12",
-      "location": "Wales",
-      "category": "Wellness",
-      "ticket_url": "https://fezzy.uk/festival/love-trails/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/love-trails/",
-      "id": "festival:love-trails:2027-07-08",
-      "location_display": "Wales"
     },
     {
       "title": "Cedarwood Festival",
@@ -2002,23 +1714,11 @@
       "location_display": "Chepstow"
     },
     {
-      "title": "Kent County Show",
-      "date": "2027-07-09",
-      "date_end": "2027-07-11",
-      "location": "Detling, Maidstone",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/kent-county-show/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/kent-county-show/",
-      "id": "festival:kent-county-show:2027-07-09",
-      "location_display": "Detling, Maidstone"
-    },
-    {
       "title": "Mostly Jazz",
       "date": "2027-07-09",
       "date_end": "2027-07-11",
       "location": "Birmingham",
-      "category": "Sport & Outdoor",
+      "category": "Music",
       "ticket_url": "https://fezzy.uk/festival/mostly-jazz/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/mostly-jazz/",
@@ -2072,18 +1772,6 @@
       "detail_url": "https://fezzy.uk/festival/unity-fest/",
       "id": "festival:unity-fest:2027-07-09",
       "location_display": "Shrewsbury"
-    },
-    {
-      "title": "Aston Le Walls International Horse Trials",
-      "date": "2027-07-10",
-      "date_end": "2027-07-12",
-      "location": "Daventry",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/aston-le-walls-international-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/aston-le-walls-international-horse-trials/",
-      "id": "festival:aston-le-walls-international-horse-trials:2027-07-10",
-      "location_display": "Daventry"
     },
     {
       "title": "Boogietown",
@@ -2290,18 +1978,6 @@
       "location_display": "Glastonbury"
     },
     {
-      "title": "Weeting Steam Engine Rally & Country Show",
-      "date": "2027-07-16",
-      "date_end": "2027-07-18",
-      "location": "UK",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/weeting-steam-engine-rally-country-show/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/weeting-steam-engine-rally-country-show/",
-      "id": "festival:weeting-steam-engine-rally-country-show:2027-07-16",
-      "location_display": "UK"
-    },
-    {
       "title": "Wild in the Woods",
       "date": "2027-07-16",
       "date_end": "2027-07-19",
@@ -2336,18 +2012,6 @@
       "detail_url": "https://fezzy.uk/festival/curious-pastimes-event-3/",
       "id": "festival:curious-pastimes-event-3:2027-07-17",
       "location_display": "Chalfont St Peter"
-    },
-    {
-      "title": "Gower Peninsula Ultra Challenge",
-      "date": "2027-07-17",
-      "date_end": "2027-07-18",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/gower-peninsula-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/gower-peninsula-ultra-challenge/",
-      "id": "festival:gower-peninsula-ultra-challenge:2027-07-17",
-      "location_display": "UK"
     },
     {
       "title": "History in Action",
@@ -2396,18 +2060,6 @@
       "detail_url": "https://fezzy.uk/festival/folk-by-the-oak/",
       "id": "festival:folk-by-the-oak:2027-07-18",
       "location_display": "Hatfield"
-    },
-    {
-      "title": "Agria Royal International Horse Show",
-      "date": "2027-07-21",
-      "date_end": "2027-07-26",
-      "location": "Hickstead",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/agria-royal-international-horse-show/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/agria-royal-international-horse-show/",
-      "id": "festival:agria-royal-international-horse-show:2027-07-21",
-      "location_display": "Hickstead"
     },
     {
       "title": "Ecstatic Dance Festival UK",
@@ -2510,7 +2162,7 @@
       "date": "2027-07-23",
       "date_end": "2027-07-25",
       "location": "Workington, Cumbria",
-      "category": "Sport & Outdoor",
+      "category": "Music",
       "ticket_url": "https://fezzy.uk/festival/cumberlandia/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/cumberlandia/",
@@ -2575,18 +2227,6 @@
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/lazydays-festival/",
       "id": "festival:lazydays-festival:2027-07-23",
-      "location_display": "UK"
-    },
-    {
-      "title": "Montane Lakeland 50 & 100",
-      "date": "2027-07-23",
-      "date_end": "2027-07-25",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/montane-lakeland-50-100/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/montane-lakeland-50-100/",
-      "id": "festival:montane-lakeland-50-100:2027-07-23",
       "location_display": "UK"
     },
     {
@@ -2702,23 +2342,11 @@
       "date": "2027-07-24",
       "date_end": "2027-07-30",
       "location": "UK",
-      "category": "Sport & Outdoor",
+      "category": "Music",
       "ticket_url": "https://fezzy.uk/festival/nijam/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/nijam/",
       "id": "festival:nijam:2027-07-24",
-      "location_display": "UK"
-    },
-    {
-      "title": "South West Coast 50 Ultra Challenge",
-      "date": "2027-07-24",
-      "date_end": "2027-07-24",
-      "location": "UK",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/south-west-coast-50-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/south-west-coast-50-ultra-challenge/",
-      "id": "festival:south-west-coast-50-ultra-challenge:2027-07-24",
       "location_display": "UK"
     },
     {
@@ -2816,18 +2444,6 @@
       "detail_url": "https://fezzy.uk/festival/world-yoga-festival/",
       "id": "festival:world-yoga-festival:2027-07-29",
       "location_display": "UK"
-    },
-    {
-      "title": "Burgham International Horse Trials",
-      "date": "2027-07-30",
-      "date_end": "2027-08-02",
-      "location": "Morpeth",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/burgham-international-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/burgham-international-horse-trials/",
-      "id": "festival:burgham-international-horse-trials:2027-07-30",
-      "location_display": "Morpeth"
     },
     {
       "title": "Camp Bestival Dorset",
@@ -2954,23 +2570,11 @@
       "date": "2027-07-31",
       "date_end": "2027-08-07",
       "location": "UK",
-      "category": "Sport & Outdoor",
+      "category": "Music",
       "ticket_url": "https://fezzy.uk/festival/camjam/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/camjam/",
       "id": "festival:camjam:2027-07-31",
-      "location_display": "UK"
-    },
-    {
-      "title": "Cromford Steam Rally",
-      "date": "2027-07-31",
-      "date_end": "2027-08-01",
-      "location": "UK",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/cromford-steam-rally/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/cromford-steam-rally/",
-      "id": "festival:cromford-steam-rally:2027-07-31",
       "location_display": "UK"
     },
     {
@@ -3007,18 +2611,6 @@
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/hog-n-bog/",
       "id": "festival:hog-n-bog:2027-07-31",
-      "location_display": "UK"
-    },
-    {
-      "title": "North Downs 50 Ultra Challenge",
-      "date": "2027-07-31",
-      "date_end": "2027-07-31",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/north-downs-50-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/north-downs-50-ultra-challenge/",
-      "id": "festival:north-downs-50-ultra-challenge:2027-07-31",
       "location_display": "UK"
     },
     {
@@ -3074,24 +2666,12 @@
       "date": "2027-08-04",
       "date_end": "2027-08-08",
       "location": "Newquay",
-      "category": "Sport & Outdoor",
+      "category": "Music",
       "ticket_url": "https://fezzy.uk/festival/boardmasters/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/boardmasters/",
       "id": "festival:boardmasters:2027-08-04",
       "location_display": "Newquay"
-    },
-    {
-      "title": "Equifest",
-      "date": "2027-08-04",
-      "date_end": "2027-08-07",
-      "location": "Grantham",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/equifest/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/equifest/",
-      "id": "festival:equifest:2027-08-04",
-      "location_display": "Grantham"
     },
     {
       "title": "Bloodstock",
@@ -3214,30 +2794,6 @@
       "location_display": "Warminster"
     },
     {
-      "title": "ATW First To Full Triathlon Festival",
-      "date": "2027-08-07",
-      "date_end": "2027-08-07",
-      "location": "UK",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/atw-first-to-full-triathlon-festival/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/atw-first-to-full-triathlon-festival/",
-      "id": "festival:atw-first-to-full-triathlon-festival:2027-08-07",
-      "location_display": "UK"
-    },
-    {
-      "title": "British Grand Prix Motogp",
-      "date": "2027-08-07",
-      "date_end": "2027-08-09",
-      "location": "Towcester",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/british-grand-prix-motogp/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/british-grand-prix-motogp/",
-      "id": "festival:british-grand-prix-motogp:2027-08-07",
-      "location_display": "Towcester"
-    },
-    {
       "title": "Edinburgh International Festival",
       "date": "2027-08-07",
       "date_end": "2027-08-30",
@@ -3248,18 +2804,6 @@
       "detail_url": "https://fezzy.uk/festival/edinburgh-international-festival/",
       "id": "festival:edinburgh-international-festival:2027-08-07",
       "location_display": "Edinburgh"
-    },
-    {
-      "title": "Kwik Fit British Touring Car Championship - Knockhill",
-      "date": "2027-08-07",
-      "date_end": "2027-08-08",
-      "location": "UK",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/kwik-fit-british-touring-car-championship-knockhill/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/kwik-fit-british-touring-car-championship-knockhill/",
-      "id": "festival:kwik-fit-british-touring-car-championship-knockhill:2027-08-07",
-      "location_display": "UK"
     },
     {
       "title": "Let’s Rock – Party at the Palace",
@@ -3574,18 +3118,6 @@
       "location_display": "London · Multi-genre"
     },
     {
-      "title": "Btcc Donington Park August 2026",
-      "date": "2027-08-22",
-      "date_end": "2027-08-23",
-      "location": "Castle Donington",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/btcc-donington-park-august-2026/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/btcc-donington-park-august-2026/",
-      "id": "festival:btcc-donington-park-august:2027-08-22",
-      "location_display": "Castle Donington"
-    },
-    {
       "title": "Lincs Summer Sounds",
       "date": "2027-08-23",
       "date_end": "2027-08-29",
@@ -3620,18 +3152,6 @@
       "detail_url": "https://fezzy.uk/festival/creamfields/",
       "id": "festival:creamfields:2027-08-26",
       "location_display": "Daresbury"
-    },
-    {
-      "title": "Malverns Classic",
-      "date": "2027-08-26",
-      "date_end": "2027-08-29",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/malverns-classic/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/malverns-classic/",
-      "id": "festival:malverns-classic:2027-08-26",
-      "location_display": "UK"
     },
     {
       "title": "Reading & Leeds",
@@ -3910,18 +3430,6 @@
       "location_display": "East Midlands"
     },
     {
-      "title": "The Borders Ultra Challenge",
-      "date": "2027-08-28",
-      "date_end": "2027-08-29",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/the-borders-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/the-borders-ultra-challenge/",
-      "id": "festival:the-borders-ultra-challenge:2027-08-28",
-      "location_display": "UK"
-    },
-    {
       "title": "Emerge Belfast",
       "date": "2027-08-29",
       "date_end": "2027-08-30",
@@ -3968,18 +3476,6 @@
       "detail_url": "https://fezzy.uk/festival/lindisfarne-festival/",
       "id": "festival:lindisfarne-festival:2027-09-02",
       "location_display": "Berwick-upon-Tweed"
-    },
-    {
-      "title": "Burghley Horse Trials",
-      "date": "2027-09-03",
-      "date_end": "2027-09-06",
-      "location": "Stamford",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/burghley-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/burghley-horse-trials/",
-      "id": "festival:burghley-horse-trials:2027-09-03",
-      "location_display": "Stamford"
     },
     {
       "title": "Didmarton Bluegrass Festival",
@@ -4078,18 +3574,6 @@
       "location_display": "Scarborough"
     },
     {
-      "title": "South Coast Ultra Challenge",
-      "date": "2027-09-04",
-      "date_end": "2027-09-05",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/south-coast-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/south-coast-ultra-challenge/",
-      "id": "festival:south-coast-ultra-challenge:2027-09-04",
-      "location_display": "UK"
-    },
-    {
       "title": "Lancashire Steam Vintage Festival",
       "date": "2027-09-05",
       "date_end": "2027-09-06",
@@ -4162,18 +3646,6 @@
       "location_display": "Winchester"
     },
     {
-      "title": "Overland Discovery Expo",
-      "date": "2027-09-10",
-      "date_end": "2027-09-12",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/overland-discovery-expo/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/overland-discovery-expo/",
-      "id": "festival:overland-discovery-expo:2027-09-10",
-      "location_display": "UK"
-    },
-    {
       "title": "Swanage Folk Festival",
       "date": "2027-09-10",
       "date_end": "2027-09-12",
@@ -4222,30 +3694,6 @@
       "location_display": "Scotland"
     },
     {
-      "title": "Thames Path Ultra Challenge",
-      "date": "2027-09-11",
-      "date_end": "2027-09-12",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/thames-path-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/thames-path-ultra-challenge/",
-      "id": "festival:thames-path-ultra-challenge:2027-09-11",
-      "location_display": "UK"
-    },
-    {
-      "title": "Lanlivery Vintage Rally and Country Fair",
-      "date": "2027-09-12",
-      "date_end": "2027-09-13",
-      "location": "Bodmin",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/lanlivery-vintage-rally-and-country-fair/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/lanlivery-vintage-rally-and-country-fair/",
-      "id": "festival:lanlivery-vintage-rally-and-country-fair:2027-09-12",
-      "location_display": "Bodmin"
-    },
-    {
       "title": "Origin Festival at Pealies Barn",
       "date": "2027-09-12",
       "date_end": "2027-09-13",
@@ -4270,18 +3718,6 @@
       "location_display": "Walton-on-Thames"
     },
     {
-      "title": "Blenheim Palace International Horse Trials",
-      "date": "2027-09-16",
-      "date_end": "2027-09-19",
-      "location": "Woodstock",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/blenheim-palace-international-horse-trials/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/blenheim-palace-international-horse-trials/",
-      "id": "festival:blenheim-palace-international-horse-trials:2027-09-16",
-      "location_display": "Woodstock"
-    },
-    {
       "title": "Wonderment in the Woods",
       "date": "2027-09-16",
       "date_end": "2027-09-19",
@@ -4292,18 +3728,6 @@
       "detail_url": "https://fezzy.uk/festival/wonderment-in-the-woods/",
       "id": "festival:wonderment-in-the-woods:2027-09-16",
       "location_display": "UK"
-    },
-    {
-      "title": "Goodwood Revival",
-      "date": "2027-09-17",
-      "date_end": "2027-09-19",
-      "location": "Chichester",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/goodwood-revival/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/goodwood-revival/",
-      "id": "festival:goodwood-revival:2027-09-17",
-      "location_display": "Chichester"
     },
     {
       "title": "Archaeus Larp Midsomer Knights Scream",
@@ -4330,30 +3754,6 @@
       "location_display": "UK"
     },
     {
-      "title": "Shropshire Hills 50 Ultra Challenge",
-      "date": "2027-09-18",
-      "date_end": "2027-09-18",
-      "location": "UK",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/shropshire-hills-50-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/shropshire-hills-50-ultra-challenge/",
-      "id": "festival:shropshire-hills-50-ultra-challenge:2027-09-18",
-      "location_display": "UK"
-    },
-    {
-      "title": "Ultra X England",
-      "date": "2027-09-18",
-      "date_end": "2027-09-19",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/ultra-x-england/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/ultra-x-england/",
-      "id": "festival:ultra-x-england:2027-09-18",
-      "location_display": "UK"
-    },
-    {
       "title": "Woofstock UK",
       "date": "2027-09-24",
       "date_end": "2027-09-26",
@@ -4364,30 +3764,6 @@
       "detail_url": "https://fezzy.uk/festival/woofstock-uk/",
       "id": "festival:woofstock-uk:2027-09-24",
       "location_display": "UK"
-    },
-    {
-      "title": "Chiltern 50 Ultra Challenge",
-      "date": "2027-09-25",
-      "date_end": "2027-09-25",
-      "location": "UK",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/chiltern-50-ultra-challenge/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/chiltern-50-ultra-challenge/",
-      "id": "festival:chiltern-50-ultra-challenge:2027-09-25",
-      "location_display": "UK"
-    },
-    {
-      "title": "Kwik Fit British Touring Car Championship Silverstone",
-      "date": "2027-09-26",
-      "date_end": "2027-09-27",
-      "location": "Silverstone",
-      "category": "Sport & Outdoor",
-      "ticket_url": "https://fezzy.uk/festival/kwik-fit-british-touring-car-championship-silverstone/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/kwik-fit-british-touring-car-championship-silverstone/",
-      "id": "festival:kwik-fit-british-touring-car-championship-silverstone:2027-09-26",
-      "location_display": "Silverstone"
     }
   ]
 }

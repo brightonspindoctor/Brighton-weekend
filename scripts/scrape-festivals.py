@@ -118,6 +118,13 @@ def location_key(s):
     s=norm(s)
     aliases={"brighton and hove":"brighton","brighton & hove":"brighton","east sussex":"east sussex"}
     return aliases.get(s,s)
+# Sport and outdoor events (ultras, horse trials, motor racing, shows) don't fit
+# the app, so they are left out. This is judged on the title only: festival
+# listing pages often mention "outdoor" or "camping", which used to push real
+# music festivals into a "Sport & Outdoor" category.
+SPORT_TITLE_RE=re.compile(r"\b(?:ultra|ultras|trail|trails|marathon|triathlon|duathlon|sportive|cycl\w*|race|races|racing|horse trials?|horse show|equestrian|equifest|grand prix|motogp|btcc|touring car|gt championship|formula 1|f1|rally|motorsport|regatta|county show|overland discovery|lakeland 50|goodwood revival|malverns classic)\b",re.I)
+def is_sport_event(title):
+    return bool(SPORT_TITLE_RE.search(clean(title or "")))
 def classify(text):
     h=clean(text).lower()
     if any(k in h for k in ("wellness","wellbeing","yoga","meditation","holistic","self-care","spiritual")): return "Wellness"
@@ -126,7 +133,6 @@ def classify(text):
     if any(k in h for k in ("film","cinema","documentary")): return "Film"
     if any(k in h for k in ("comedy","stand-up","stand up","comedian")): return "Comedy"
     if any(k in h for k in ("arts","art","theatre","theater","literature","poetry","culture","performance","ideas","reenactment","larp")): return "Arts & Culture"
-    if any(k in h for k in ("running","trail","cycling","equestrian","horse trials","motorsport","sport","outdoor","adventure","surf")): return "Sport & Outdoor"
     if any(k in h for k in ("music","rock","pop","indie","electronic","folk","jazz","blues","metal","dance","dj","house","techno","punk","ska","soul","r&b")): return "Music"
     return "Other"
 # Text that is part of the page layout, not a festival name: month/day group
@@ -461,6 +467,7 @@ async def main():
             checked_items=await asyncio.gather(*(checked(e) for e in items))
             validated=[e for e in checked_items if e]
             print(f"Validated {len(validated)} of {len(items)} scraped candidates.")
+            validated=[e for e in validated if not is_sport_event(e.get("title"))]
             festivals=add_curated(merge(validated))
             existing=0
             try: existing=len(json.loads(OUT.read_text()).get("festivals",[]))
