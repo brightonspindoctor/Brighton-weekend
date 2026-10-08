@@ -201,7 +201,7 @@ header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1
 .actions:empty{display:none}
 .actions>.ticket,.actions>.cal-link:not(.share-link){flex:1 1 auto;justify-content:center;padding-left:10px;padding-right:10px;white-space:nowrap}
 .ticket{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:9px 13px;border-radius:var(--bw-radius-sm);background:var(--bw-coral);color:var(--bw-coral-ink);font-size:var(--bw-text-sm);font-weight:800;text-decoration:none}
-.ticket::before{content:"🎟";font-size:13px}
+.ticket .ticket-glyph{width:15px;height:15px;flex:none}
 
 
 /* Social summary chips */
@@ -1189,7 +1189,7 @@ async function shareEvent(e){const g=shareGroupFor(e),url=eventShareUrl(e,g),tit
 const SHARE_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="12" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="19" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 11l7.8-4.4M8 13l7.8 4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 function shareLink(e){return `<button type="button" class="cal-link share-link" title="Share this event" data-share-event="${esc(e.id)}" aria-label="Share ${esc(e.title)}">${SHARE_ICON}<span>Share</span></button>`}
 const CAL_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 13v4M10 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
-function ticketLink(e){const u=safeUrl(e.ticket_url);return u?`<a class="ticket" href="${esc(u)}" target="_blank" rel="noopener">Tickets ↗</a>`:''}
+function ticketLink(e){const u=safeUrl(e.ticket_url);return u?`<a class="ticket" href="${esc(u)}" target="_blank" rel="noopener" aria-label="Get tickets for ${esc(e.title)} (opens in a new tab)">${TICKET_ICON}Get tickets</a>`:''}
 // Stickers for promoters whose gigs we read (scripts/scrape-discovery.py sets e.promoter).
 const PROMOTER_STICKERS={'JOY. Concerts':{label:'JOY.',cls:'joy'},'Beat Down Promotions':{label:'BEAT DOWN',cls:'beatdown'}};
 function cardFlags(e){
