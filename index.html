@@ -515,7 +515,6 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
     <div class="form-row"><label>From<input id="searchFrom" type="date"></label><label>To<input id="searchTo" type="date"></label></div>
     <label>Venues<input id="searchVenueFilter" type="search" placeholder="Filter the venue list" autocomplete="off"></label>
     <div id="searchVenueList" class="choice-grid"></div>
-    <div class="search-filter" id="searchPromoterBox"><div class="label-text">Promoter</div><div id="searchPromoterList" class="pill-wrap"></div></div>
   </div>
   <div id="searchArtistMode" class="form-stack hidden">
     <label>Artist or show<input id="searchArtist" type="search" placeholder="e.g. Ben Folds" autocomplete="off"></label>
@@ -1427,11 +1426,9 @@ async function refresh(){
 // ---- Search ----
 let searchMode='venue';const searchVenues=new Set(),searchGenres=new Set(),searchPromoters=new Set();
 function populateSearchFilters(){
- const pl=$('searchPromoterList');if(!pl)return;
+ // Promoters are searched from their own tab, not from Dates and venues.
  const promoters=[...new Set(events.map(e=>e.promoter).filter(Boolean))].sort();
- $('searchPromoterBox').classList.toggle('hidden',!promoters.length);
  const sel=$('searchPromoterSelect');if(sel){const cur=sel.value;sel.innerHTML='<option value="">Choose a promoter</option>'+promoters.map(p=>`<option value="${esc(p)}">${esc(p)}</option>`).join('');sel.value=promoters.includes(cur)?cur:''}
- pl.innerHTML=promoters.map(p=>{const s=PROMOTER_STICKERS[p];return `<button type="button" class="genre-chip" data-search-promoter="${esc(p)}" aria-pressed="${searchPromoters.has(p)}">${s?`<span class="promoter-sticker ${s.cls}" aria-hidden="true">${esc(s.label)}</span>`:''}${esc(p)}</button>`}).join('');
 }
 document.addEventListener('click',e=>{
  const g=e.target.closest('[data-search-genre]'),p=e.target.closest('[data-search-promoter]');if(!g&&!p)return;
