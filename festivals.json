@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-08",
-  "range_start": "2026-10-08",
+  "updated": "2026-10-09",
+  "range_start": "2026-10-09",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -112,7 +112,7 @@
       "location": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton",
       "category": "Arts & Culture",
       "ticket_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
       "detail_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
       "id": "festival:artist-open-houses-winter:2026-11-28",
       "location_display": "Various venues across the city, Brighton, East Sussex, BN1 1EE Brighton"
@@ -382,6 +382,18 @@
       "source": "https://www.brightonfringe.org/"
     },
     {
+      "title": "Holmfirth Festival of Folk",
+      "date": "2027-05-07",
+      "date_end": "2027-05-09",
+      "location": "Oldham",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/holmfirth-festival-of-folk/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/holmfirth-festival-of-folk/",
+      "id": "festival:holmfirth-festival-of-folk:2027-05-07",
+      "location_display": "Oldham"
+    },
+    {
       "title": "Herofest",
       "date": "2027-05-08",
       "date_end": "2027-05-08",
@@ -416,6 +428,18 @@
       "detail_url": "https://fezzy.uk/festival/the-great-escape/",
       "id": "festival:the-great-escape:2027-05-12",
       "location_display": "Brighton"
+    },
+    {
+      "title": "Pub in the Park",
+      "date": "2027-05-14",
+      "date_end": "2027-05-16",
+      "location": "Various towns",
+      "category": "Food & Drink",
+      "ticket_url": "https://fezzy.uk/festival/pub-in-the-park/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/pub-in-the-park/",
+      "id": "festival:pub-in-the-park:2027-05-14",
+      "location_display": "Various towns"
     },
     {
       "title": "The Gralloch",
@@ -976,7 +1000,7 @@
       "location": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove",
       "category": "Family",
       "ticket_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
       "detail_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
       "id": "festival:rotary-family-festival-big-help-out:2027-06-06",
       "location_display": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove"
@@ -3418,6 +3442,18 @@
       "location_display": "UK"
     },
     {
+      "title": "Notting Hill Carnival",
+      "date": "2027-08-28",
+      "date_end": "2027-08-30",
+      "location": "London",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/notting-hill-carnival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/notting-hill-carnival/",
+      "id": "festival:notting-hill-carnival:2027-08-28",
+      "location_display": "London"
+    },
+    {
       "title": "Stonedead Festival",
       "date": "2027-08-28",
       "date_end": "2027-08-28",
@@ -3598,6 +3634,18 @@
       "location_display": "Hickstead"
     },
     {
+      "title": "Ideas Fest",
+      "date": "2027-09-08",
+      "date_end": "2027-09-09",
+      "location": "Tring",
+      "category": "Wellness",
+      "ticket_url": "https://fezzy.uk/festival/ideas-fest/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/ideas-fest/",
+      "id": "festival:ideas-fest:2027-09-08",
+      "location_display": "Tring"
+    },
+    {
       "title": "Bromyard Folk Festival",
       "date": "2027-09-09",
       "date_end": "2027-09-12",
@@ -3608,18 +3656,6 @@
       "detail_url": "https://fezzy.uk/festival/bromyard-folk-festival/",
       "id": "festival:bromyard-folk-festival:2027-09-09",
       "location_display": "Bromyard"
-    },
-    {
-      "title": "Ideas Fest",
-      "date": "2027-09-09",
-      "date_end": "2027-09-10",
-      "location": "Tring",
-      "category": "Wellness",
-      "ticket_url": "https://fezzy.uk/festival/ideas-fest/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/ideas-fest/",
-      "id": "festival:ideas-fest:2027-09-09",
-      "location_display": "Tring"
     },
     {
       "title": "Busfest",
