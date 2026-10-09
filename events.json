@@ -1523,9 +1523,12 @@
       "source": "venue",
       "time": "15:00",
       "finish_time": "",
-      "category": "Other",
+      "category": "Music",
       "ticket_url": "https://thegreendoorstore.co.uk/events/psychedelic-sundae/",
-      "last_seen": "2026-10-09"
+      "last_seen": "2026-10-09",
+      "also_ids": [
+        "2026-10-11-greendoorstore-psychedelic-autumn-sundae"
+      ]
     },
     {
       "id": "2026-10-11-the-forge-comedy-club-harriet-kemsley-floozy-extra-matinee-show",
@@ -1631,18 +1634,6 @@
       "category": "Music",
       "ticket_url": "https://www.daltonsbrighton.com/event-details/hi-jinx-promotions-presents-free-entry-2",
       "last_seen": "2026-10-09"
-    },
-    {
-      "id": "2026-10-11-greendoorstore-psychedelic-autumn-sundae",
-      "title": "Psychedelic Autumn Sundae",
-      "date": "2026-10-11",
-      "venue": "Green Door Store",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://thegreendoorstore.co.uk/events/",
-      "source_url": "https://thegreendoorstore.co.uk/events/",
-      "finish_time": "",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-11-10-komedia-deviants-market-sun-11-oct-2026-doors-10-30-am",
@@ -3716,19 +3707,10 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.universe.com/events/annie-claude-deschenes-support-tickets-1NM3QT",
-      "last_seen": "2026-10-09"
-    },
-    {
-      "id": "2026-10-17-the-prince-albert-annie-claude-desch-nes-support",
-      "title": "Annie-Claude Deschênes + support",
-      "date": "2026-10-17",
-      "venue": "The Prince Albert",
-      "source": "discovery",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://www.universe.com/events/annie-claude-deschenes-support-tickets-1NM3QT",
-      "last_seen": "2026-10-09"
+      "last_seen": "2026-10-09",
+      "also_ids": [
+        "2026-10-17-the-prince-albert-annie-claude-desch-nes-support"
+      ]
     },
     {
       "id": "2026-10-17-the-prince-albert-the-32nd-air-guitar-championship-final",
@@ -6976,7 +6958,7 @@
     },
     {
       "id": "2026-10-30-patterns-brighton-dansu-discs-lucas-alexander-rtk-tarantino-more",
-      "title": "Brighton | Dansu Discs: Lucas Alexander, RTK Tarantino & more",
+      "title": "Dansu Discs: Lucas Alexander, RTK Tarantino & more",
       "date": "2026-10-30",
       "venue": "Patterns",
       "source": "venue",
@@ -6984,19 +6966,10 @@
       "finish_time": "04:00",
       "category": "Other",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Brighton--Dansu-Discs-Lucas-Alexander-RTK-Tarantino--more/42737316/",
-      "last_seen": "2026-10-09"
-    },
-    {
-      "id": "2026-10-30-patterns-dansu-discs-with-lucas-alexander-rtk-tarantino",
-      "title": "Dansu Discs with Lucas Alexander & RTK Tarantino",
-      "date": "2026-10-30",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "23:00",
-      "finish_time": "04:00",
-      "category": "Other",
-      "ticket_url": "https://dice.fm/event/dansu-discs-with-lucas-alexander-rtk-tarantino-30th-oct-patterns-brighton-tickets",
-      "last_seen": "2026-10-09"
+      "last_seen": "2026-10-09",
+      "also_ids": [
+        "2026-10-30-patterns-dansu-discs-with-lucas-alexander-rtk-tarantino"
+      ]
     },
     {
       "id": "2026-10-30-concorde-2-born-on-road",
@@ -7346,7 +7319,10 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.concorde2.co.uk/event/moody-disco-obskur",
-      "last_seen": "2026-10-09"
+      "last_seen": "2026-10-09",
+      "also_ids": [
+        "2026-10-31-concorde-2-moody-disco-halloween-rave-w-obsk-r"
+      ]
     },
     {
       "id": "2026-10-31-patterns-carnevil-presents-rtrn-ii-ukgrave",
@@ -7422,17 +7398,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://carolineofbrunswick.co.uk/events/terrorvision2-313/",
-      "last_seen": "2026-10-09"
-    },
-    {
-      "id": "2026-10-31-concorde-2-moody-disco-halloween-rave-w-obsk-r",
-      "title": "Moody Disco Halloween Rave w/ Obskür",
-      "date": "2026-10-31",
-      "venue": "Concorde 2",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Concorde-2/Moody-Disco-Halloween-Rave-w-Obskr/42622726/",
       "last_seen": "2026-10-09"
     },
     {
@@ -7614,21 +7579,12 @@
       "venue": "The Prince Albert",
       "time": "",
       "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/moonpunx-19-albertween-halloween-at-the-prince-albert-p2928481",
-      "last_seen": "2026-10-09"
-    },
-    {
-      "id": "2026-10-31-the-prince-albert-tickets-moonpunx-19-albertween-halloween-all-dayer",
-      "title": "Tickets MoonPunx #19 ALBERTWEEN! Halloween ALL DAYER",
-      "date": "2026-10-31",
-      "venue": "The Prince Albert",
-      "source": "discovery",
-      "time": "",
-      "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://wegottickets.com/f/26267",
-      "last_seen": "2026-10-09"
+      "ticket_url": "https://www.visitbrighton.com/whats-on/moonpunx-19-albertween-halloween-at-the-prince-albert-p2928481",
+      "last_seen": "2026-10-09",
+      "also_ids": [
+        "2026-10-31-the-prince-albert-tickets-moonpunx-19-albertween-halloween-all-dayer"
+      ]
     },
     {
       "id": "2026-10-31-theatreroyalbrighton-horrible-histories-awful-egyptians",
@@ -12384,19 +12340,10 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.ticketmaster.co.uk/event/3E00635F7AFC2BB6",
-      "last_seen": "2026-10-09"
-    },
-    {
-      "id": "2026-11-26-brightoncentre-interpol-bloc-party",
-      "title": "Interpol, Bloc Party",
-      "date": "2026-11-26",
-      "venue": "Brighton Centre",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://brightoncentre.co.uk/",
-      "source_url": "https://brightoncentre.co.uk/",
-      "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-09",
+      "also_ids": [
+        "2026-11-26-brightoncentre-interpol-bloc-party"
+      ]
     },
     {
       "id": "2026-11-26-dust-fukushima-dolphin",
@@ -13846,20 +13793,8 @@
       "genre_source": "musicbrainz:492b0368-e6c6-4578-bf37-3b01a59cfd97"
     },
     {
-      "id": "2026-12-04-quarters-free-the-rave-w-anais",
-      "title": "Free The Rave W Anais",
-      "date": "2026-12-04",
-      "venue": "Quarters",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.quartersbrighton.co.uk/whatson/free-the-rave-w-anais",
-      "last_seen": "2026-10-09"
-    },
-    {
       "id": "2026-12-04-quarters-free-tickets-free-the-rave-w-ana-s",
-      "title": "Free Tickets Free The Rave w/ Particle + Anaïs",
+      "title": "Free The Rave w/ Particle + Anaïs",
       "date": "2026-12-04",
       "venue": "Quarters",
       "source": "venue",
@@ -13867,7 +13802,10 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://quarters.seetickets.com/event/free-the-rave-w-anais/quarters/3734970",
-      "last_seen": "2026-10-09"
+      "last_seen": "2026-10-09",
+      "also_ids": [
+        "2026-12-04-quarters-free-the-rave-w-anais"
+      ]
     },
     {
       "id": "2026-12-04-quarters-live-events-quantic-dj-set",
@@ -14020,19 +13958,10 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-05-brighton-centre-squeeze-plus-very-special-guest-billy-bragg",
-      "title": "Squeeze Plus Very Special Guest Billy Bragg",
-      "date": "2026-12-05",
-      "venue": "Brighton Centre",
-      "source": "discovery",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://brightoncentre.co.uk/whats-on/2026/squeeze/",
-      "last_seen": "2026-10-09"
+      "last_seen": "2026-10-09",
+      "also_ids": [
+        "2026-12-05-brighton-centre-squeeze-plus-very-special-guest-billy-bragg"
+      ]
     },
     {
       "id": "2026-12-05-brighton-racecourse-simply-christmas-party-nights-at-brighton-racecourse-the-opener",
@@ -14332,7 +14261,10 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-12-07-brightoncentre-the-holiday-in-concert-the-film-with-live-orchestra"
+      ]
     },
     {
       "id": "2026-12-07-komedia-solve-along-a-murder-she-wrote",
@@ -14345,18 +14277,6 @@
       "category": "Other",
       "ticket_url": "https://www.komedia.co.uk/shows/solve-along-a-murder-she-wrote/?eid=19740",
       "last_seen": "2026-10-09"
-    },
-    {
-      "id": "2026-12-07-brightoncentre-the-holiday-in-concert-the-film-with-live-orchestra",
-      "title": "The Holiday In Concert - The Film with Live Orchestra",
-      "date": "2026-12-07",
-      "venue": "Brighton Centre",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://brightoncentre.co.uk/",
-      "source_url": "https://brightoncentre.co.uk/",
-      "finish_time": "",
-      "last_seen": "2026-10-06"
     },
     {
       "id": "2026-12-07-the-brunswick-anna-katarina",
@@ -14733,21 +14653,12 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-10-06",
+      "last_seen": "2026-10-09",
       "genre": "Reggae & Ska",
-      "genre_source": "musicbrainz:7113aab7-628f-4050-ae49-dbecac110ca8"
-    },
-    {
-      "id": "2026-12-11-brighton-centre-ub40-ft-ali-campbell",
-      "title": "UB40 ft. Ali Campbell",
-      "date": "2026-12-11",
-      "venue": "Brighton Centre",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Other",
-      "ticket_url": "https://www.ticketmaster.co.uk/event/3E00645AB2BF3C22",
-      "last_seen": "2026-10-09"
+      "genre_source": "musicbrainz:7113aab7-628f-4050-ae49-dbecac110ca8",
+      "also_ids": [
+        "2026-12-11-brighton-centre-ub40-ft-ali-campbell"
+      ]
     },
     {
       "id": "2026-12-11-brighton-dome-gaudete",
@@ -15102,19 +15013,10 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://brightoncentre.co.uk/",
-      "last_seen": "2026-10-06"
-    },
-    {
-      "id": "2026-12-13-brightoncentre-the-muppet-christmas-carol-in-concert",
-      "title": "The Muppet Christmas Carol in Concert",
-      "date": "2026-12-13",
-      "venue": "Brighton Centre",
-      "category": "Music",
-      "time": "",
-      "ticket_url": "https://brightoncentre.co.uk/",
-      "source_url": "https://brightoncentre.co.uk/",
-      "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "also_ids": [
+        "2026-12-13-brightoncentre-the-muppet-christmas-carol-in-concert"
+      ]
     },
     {
       "id": "2026-12-13-brighton-dome-christmas-with-the-royal-philharmonic-orchestra",

@@ -101,12 +101,66 @@ def is_venue_name(title, venue):
     return bool(k) and (k in names or (k.startswith("the ") and k[4:] in names))
 
 
+# Words that join or decorate a line-up rather than name anyone in it:
+# "Dansu Discs with Lucas Alexander & RTK Tarantino" and "Brighton | Dansu
+# Discs: Lucas Alexander, RTK Tarantino & more" have the same names.
+FILLER = {
+    "and", "with", "w", "plus", "ft", "feat", "featuring", "presents", "present", "pres",
+    "the", "a", "an", "of", "by", "in", "at", "more", "many", "friends", "support", "supports",
+    "special", "very", "guest", "guests", "tickets", "ticket", "live", "s", "brighton", "hove",
+}
+# Words that mark one session or ticket type of a show. Two titles that differ
+# by one of these are different listings (matinee and evening, ages 9-12 and
+# 13-17, workshop and combined tickets), so the line-up rule leaves them apart.
+SESSION_WORDS = re.compile(
+    r"^(?:matinee|evening|early|late|afternoon|morning|daytime|night|show|shows|ages?|years?|workshop|combined|"
+    r"weekend|day|friday|saturday|sunday|monday|tuesday|wednesday|thursday|session|part|vol|volume|"
+    r"relaxed|signed|bsl|captioned|sold|out|\d+(?:am|pm)|\d+)$"
+)
+
+
+# Everyday event words. A title made only of these ("Komedia Christmas Party")
+# names no one, so it can't be matched by line-up.
+GENERIC_WORDS = {
+    "christmas", "xmas", "halloween", "party", "rave", "disco", "club", "comedy", "festival", "fest",
+    "concert", "music", "night", "nights", "special", "launch", "album", "tour", "celebration", "quiz",
+    "karaoke", "open", "mic", "jazz", "jam", "dj", "djs", "all", "dayer", "nighter", "year", "years", "new",
+    "eve", "showcase", "gig", "orchestra", "film", "festive", "spooky", "summer", "winter", "autumn",
+    "spring", "edition", "anniversary", "birthday", "tribute", "experience", "classics", "hits",
+}
+
+
+def _names(core, venue):
+    venue_words = {w for n in _venue_names(venue) for w in n.split()}
+    return {w for w in core.split() if w not in FILLER and w not in venue_words}
+
+
+def _same_lineup(ka, kb, venue):
+    """True when one title's names are all in the other, with only acts added.
+
+    "UB40 ft. Ali Campbell" / "UB40 Featuring Ali Campbell", "Bloc Party &
+    Interpol" / "Interpol, Bloc Party", "Annie-Claude Deschenes + support" /
+    "Annie-Claude Deschenes + Solid Pleasure + Everyday Saints".
+    """
+    na, nb = _names(ka, venue), _names(kb, venue)
+    small, large = sorted((na, nb), key=len)
+    if (len(small) < 2 or not any(len(w) >= 4 and w not in GENERIC_WORDS for w in small)
+            or not small <= large):
+        return False
+    extra = large - small
+    # Added words must be names, not a session or ticket type.
+    if any(SESSION_WORDS.match(w) for w in extra):
+        return False
+    # Don't let a short name swallow a long, different title.
+    return len(extra) <= max(4, 2 * len(small))
+
+
 def same_show(a, b, venue=""):
     """True when two titles at the same venue on the same day are one show."""
     ka, kb = core_title(a, venue), core_title(b, venue)
     if not ka or not kb:
         return False
-    if ka == kb:
+    if ka == kb or _same_lineup(ka, kb, venue):
         return True
     short, long_ = sorted((ka, kb), key=len)
     # "Mr Cutts" / "Cutts", "Kepler" / "Kepler support tba": one is a whole-word
@@ -139,6 +193,10 @@ def display_title(title, venue=""):
         rf"\s*[(\[]\s*(?:{CITY})\s*[)\]]\s*$",
     ]
     cleaned = raw
+    for p in (r"^(?:free\s+)?tickets\s+(?=\S)", rf"^{CITY}\s*[|:\-–—]\s*"):
+        shorter = re.sub(p, "", cleaned, flags=re.I).strip()
+        if len(shorter) >= 3:
+            cleaned = shorter
     for p in patterns:
         shorter = re.sub(p, "", cleaned, flags=re.I).strip(" -–|·,")
         if len(shorter) >= 3:
@@ -160,6 +218,14 @@ def _self_test():
         ("The Forge Comedy Club", "Forge Comedy Club", "The Forge Comedy Club"),
         ("TCHOTCHKE + support", "TCHOTCHKE (USA)", "The Hope & Ruin"),
         ("Kepler (UK) + supports", "Kepler", "Concorde 2"),
+        ("Brighton | Dansu Discs: Lucas Alexander, RTK Tarantino & more", "Dansu Discs with Lucas Alexander & RTK Tarantino", "Patterns"),
+        ("UB40 Featuring Ali Campbell", "UB40 ft. Ali Campbell", "Brighton Centre"),
+        ("Bloc Party & Interpol", "Interpol, Bloc Party", "Brighton Centre"),
+        ("Squeeze Billy Bragg", "Squeeze Plus Very Special Guest Billy Bragg", "Brighton Centre"),
+        ("Moody Disco - Obskur", "Moody Disco Halloween Rave w/ Obskür", "Concorde 2"),
+        ("Moonpunx #19 Albertween! Halloween", "Tickets MoonPunx #19 ALBERTWEEN! Halloween ALL DAYER", "The Prince Albert"),
+        ("Annie-Claude Deschênes + support", "Annie-Claude Deschênes + Solid Pleasure + Everyday Saints", "The Prince Albert"),
+        ("Disney's The Muppet Christmas Carol in concert live to film", "The Muppet Christmas Carol in Concert", "Brighton Centre"),
     ]
     cases_different = [
         ("Brighton v Crystal Palace", "Brighton v Everton", "Amex Stadium"),
@@ -169,6 +235,15 @@ def _self_test():
         ("Jazz Night", "Jazz Light", "Komedia"),
         ("Sergi Polo – LIVE in Brighton (in English)", "Sergi Polo – LIVE in Brighton (in Spanish)", "Komedia"),
         ("Made in the UK", "Made in the USA", "Komedia"),  # country words outside brackets are kept
+        ("Penelope Isles - Evening Show", "Penelope Isles - Matinee Show", "The Hope & Ruin"),
+        ("Paul Heaton: Album Launch Show (5pm)", "Paul Heaton: Album Launch Show (8pm show)", "CHALK"),
+        ("Musical Theatre Masterclass - Six (Ages 13-17 years)", "Musical Theatre Masterclass - Six (Ages 9-12 years)", "Theatre Royal Brighton"),
+        ("THE ROSE HILL IS TEN FESTIVAL ( FRIDAY TICKETS)", "THE ROSE HILL IS TEN FESTIVAL (WEEKEND TICKET)", "The Rose Hill"),
+        ("The Zac Schulze Gang *Matinee*", "The Zac Schulze Gang *SOLD OUT*", "The Hope & Ruin"),
+        ("30 Years of Volks Presents - AFU-RA", "30 Years of Volks presents: Todd Edwards", "Volks"),
+        ("Spice Girls Experience", "The Spice Girls - The Theatre Show", "Theatre Royal Brighton"),
+        ("Christian Jegard’s Christmas Bedsit Party", "Komedia Christmas Party", "Komedia"),
+        ("Varna International Ballet - Snow White", "Varna International Ballet - Swan Lake", "Theatre Royal Brighton"),
     ]
     for a, b, v in cases_same:
         assert same_show(a, b, v), f"should match: {a!r} / {b!r} ({core_title(a, v)!r} / {core_title(b, v)!r})"
@@ -186,6 +261,9 @@ def _self_test():
     assert display_title("Brighton Soul Club", "Komedia") == "Brighton Soul Club"
     assert display_title("Bring Your Own Baby Comedy Brighton", "Komedia") == "Bring Your Own Baby Comedy Brighton"
     assert display_title("Lafs + Supports @ the Pipleline, Brighton", "The Pipeline") == "Lafs + Supports"
+    assert display_title("Brighton | Dansu Discs: Lucas Alexander, RTK Tarantino & more", "Patterns") == "Dansu Discs: Lucas Alexander, RTK Tarantino & more"
+    assert display_title("Tickets MoonPunx #19 ALBERTWEEN!", "The Prince Albert") == "MoonPunx #19 ALBERTWEEN!"
+    assert display_title("Brighton Soul Club", "Komedia") == "Brighton Soul Club"
     return True
 
 
