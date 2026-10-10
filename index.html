@@ -324,6 +324,15 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .custom-event-panel.collapsed{display:none}
 .group-roster{margin:0 0 var(--bw-space-5);padding:var(--bw-space-1) 0;border-bottom:1px solid var(--bw-line)}
 .group-roster .section-head,.happenings-events-head{margin:var(--bw-space-4) 0 var(--bw-space-2)}
+.group-roster-bottom{margin:var(--bw-space-5) 0 0;border-bottom:0;border-top:1px solid var(--bw-line)}
+/* You might like (v74) */
+.recs .section-head{margin:var(--bw-space-4) 0 var(--bw-space-2)}
+.rec-reason{font-size:var(--bw-text-xs);font-weight:700;color:var(--bw-muted);margin-bottom:var(--bw-space-1)}
+/* Community genres (v74): a quiet dashed chip where a music or club night has no genre */
+button.genre-tag{font-family:inherit;cursor:pointer}
+.genre-tag.genre-add{background:transparent;color:var(--bw-muted);border-style:dashed;border-color:var(--bw-line-strong)}
+.genre-picker{display:grid;gap:var(--bw-space-2);margin-top:var(--bw-space-2)}
+.genre-picker-actions{display:flex;flex-wrap:wrap;gap:var(--bw-space-2)}
 .people-card h3{margin:0}
 .happening-summary{display:flex;flex-wrap:wrap;gap:var(--bw-space-2);margin:var(--bw-space-3) 0 var(--bw-space-1)}
 .happening-summary-pill,.happening-status{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:var(--bw-radius-pill);font-size:var(--bw-text-xs);font-weight:800;border:1px solid;white-space:nowrap}
@@ -817,12 +826,34 @@ function canonicalRows(rows){
  }
  return out;
 }
+// Genres people have added (v74). They only fill a gap: a genre from the
+// listings or the tagger always wins. Kept on e.genre so cards, Search and
+// recommendations all see it; genre_source 'community' marks where it came from.
+let communityGenres={}, myGenres={}, communityGenresReady=false; // ready once the v74 database is reachable
+function applyCommunityGenre(e){
+ if(e.genre_source==='community'){delete e.genre;delete e.genre_source}
+ const g=communityGenres[e.id];
+ if(!e.genre&&g){e.genre=g;e.genre_source='community'}
+}
+async function loadCommunityGenres(){
+ try{
+  const rows=await rpc('bw_community_genres',{});
+  communityGenres={};myGenres={};
+  (Array.isArray(rows)?rows:[]).forEach(r=>{
+   if(!r||!r.event_id||!GENRE_ORDER.includes(r.genre))return;
+   communityGenres[r.event_id]=r.genre;
+   if(r.my_genre)myGenres[r.event_id]=r.my_genre;
+  });
+  communityGenresReady=true;
+ }catch(e){console.warn('Community genres unavailable',e)}
+}
 function mergeEvents(base){
  const seen=new Set(), merged=[];
  [...base,...customEvents.map(e=>({...e,source:'community',is_custom:true}))].forEach(e=>{
   if(!e||!e.id||seen.has(e.id)||!parseEventDate(e.date)||!e.title||!e.venue)return;
   seen.add(e.id);
   if(e.venue==='Other' && e.venue_detail)e.venue_display='Other · '+e.venue_detail; else e.venue_display=canonicalVenue(e.venue);
+  applyCommunityGenre(e);
   merged.push(e);
  });
  return merged;
@@ -868,7 +899,13 @@ function toggleOtherVenue(){
 }
 async function loadAttendance(){
  if(!uid()){attendance=[];return}
- try{attendance=canonicalRows(await api('GET','event_interest?select=event_id,user_name,status,user_id&user_id=eq.'+encodeURIComponent(uid())))}catch(e){console.warn('Social layer unavailable',e)}
+ try{
+  const q='&user_id=eq.'+encodeURIComponent(uid());
+  let rows;
+  try{rows=await api('GET','event_interest?select=event_id,user_name,status,user_id,event_title,event_genre'+q)}
+  catch(e){rows=await api('GET','event_interest?select=event_id,user_name,status,user_id'+q)} // before v74
+  attendance=canonicalRows(rows);
+ }catch(e){console.warn('Social layer unavailable',e)}
 }
 async function loadGroups(){
  if(!name()) return;
@@ -965,6 +1002,7 @@ const GATE_COPY={
  act:'It\'s free, and lets you mark events Interested or Going and see who else is going.',
  happenings:'It\'s free, and lets you see what your groups are planning.',
  addEvent:'It\'s free, and lets you add events for everyone to see.',
+ genre:'It\'s free, and lets you add a genre to events that don\'t have one.',
  account:'It\'s free, and lets you mark events, join groups and see what your friends are planning.'
 };
 // Guests get a random ID on this device (no personal details) so the admin
@@ -1092,6 +1130,13 @@ function renderGroupManager(){
  el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>🔒 ${esc(g.name)}</strong><div class="group-meta">${memberCount(g)}${g.join_pin?` · <span class="nowrap">PIN <span class="pin-display">${esc(g.join_pin)}</span></span>`:''}</div></div><div class="row-actions"><button type="button" class="btn btn-chip" data-invite-group="${esc(g.id)}" data-invite-name="${esc(g.name)}" data-invite-private="${g.is_private?'1':'0'}" data-invite-pin="${esc(g.join_pin||'')}">Invite link</button><button type="button" class="btn btn-chip" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button></div></div>`).join(''):'<div class="group-meta">No groups yet.</div>';
 }
 
+// The title and genre are kept with each choice, so recommendations still know
+// what it was once the event has dropped out of the listings (v74). Falls back
+// to a plain save if the database hasn't had v74 yet.
+async function saveInterest(params,ev){
+ try{return await rpc('bw_set_event_interest',{...params,p_event_title:ev?.title||null,p_event_genre:ev?.genre||null})}
+ catch(e){console.warn('Saving the choice without its title and genre',e);return rpc('bw_set_event_interest',params)}
+}
 async function act(id,status){
  if(!authUser){promptSignIn('act',{type:'act',eventId:id,status});return}
  if(!name()){showWelcome('name');return}
@@ -1103,12 +1148,12 @@ async function act(id,status){
  if(buttons.some(b=>b.disabled))return;
  buttons.forEach(b=>{const on=b.dataset.act===targetStatus;b.classList.toggle('selected',on);b.setAttribute('aria-pressed',on);b.disabled=true});
  try{
-  const result=await rpc('bw_set_event_interest',{
+  const result=await saveInterest({
    p_user_id:uid(),
    p_user_name:name(),
    p_event_id:id,
    p_status:targetStatus
-  });
+  },[...events,...festivals].find(x=>x.id===id));
   if(!Array.isArray(result)) throw new Error('Unexpected response from Supabase.');
   // Move any choice saved under a merged duplicate's id onto this event's id.
   const aliases=(events.find(e=>e.id===id)?.also_ids)||[];
@@ -1186,12 +1231,56 @@ function cardFlags(e){
  const sold=e.status==='SOLD OUT'?'<span class="badge sold">Sold out</span>':'';
  return sticker||sold?`<div class="card-flags">${sold}${sticker}</div>`:'';
 }
-function eventCard(e,{showDate=false}={}){
+// Genre on a card (v74). A known genre shows as a tag. A music or club night
+// with none gets a quiet "+ Add genre" chip, so people who know can fill the
+// gap from GENRE_ORDER; the genre most people pick is shown to everyone.
+// A genre people added can be changed by tapping it.
+let genrePickerFor=null;
+function canTagGenre(e){return communityGenresReady&&!!e&&GENRE_TAGGABLE.has(e.category)&&!String(e.id||'').startsWith('festival:')}
+function genreHtml(e){
+ const editable=canTagGenre(e)&&(!e.genre||e.genre_source==='community');
+ if(editable&&genrePickerFor===e.id){
+  const mine=myGenres[e.id];
+  return `<div class="genre-picker" role="group" aria-label="Choose a genre for ${esc(e.title)}"><div class="pill-wrap">${GENRE_ORDER.map(g=>`<button type="button" class="genre-chip" data-set-genre="${esc(g)}" data-event-id="${esc(e.id)}" aria-pressed="${mine===g}">${esc(g)}</button>`).join('')}</div><div class="genre-picker-actions">${mine?`<button type="button" class="btn btn-chip" data-set-genre="" data-event-id="${esc(e.id)}">Remove my pick</button>`:''}<button type="button" class="btn btn-chip" data-genre-cancel>Cancel</button></div></div>`;
+ }
+ if(e.genre)return editable?`<button type="button" class="genre-tag" data-genre-edit="${esc(e.id)}" aria-label="${esc(e.genre)}. Added by people using the app. Tap to change">${esc(e.genre)}</button>`:`<span class="genre-tag">${esc(e.genre)}</span>`;
+ return editable?`<button type="button" class="genre-tag genre-add" data-genre-edit="${esc(e.id)}">+ Add genre</button>`:'';
+}
+async function setCommunityGenre(id,genre,btn){
+ if(!authUser){promptSignIn('genre');return}
+ const box=btn.closest('.genre-picker'),btns=box?[...box.querySelectorAll('button')]:[btn];
+ if(btns.some(b=>b.disabled))return;
+ btns.forEach(b=>b.disabled=true);
+ try{
+  await rpc('bw_set_event_genre',{p_event_id:id,p_genre:GENRE_ORDER.includes(genre)?genre:null});
+  await loadCommunityGenres();
+  genrePickerFor=null;
+  events=mergeEvents(events.filter(x=>!x.is_custom));
+  // If I've already marked it Interested or Going, keep the genre with that choice too.
+  const mine=attendance.find(x=>x.event_id===id&&x.user_id===uid()), ev=events.find(x=>x.id===id);
+  if(ev?.genre&&(mine?.status==='interested'||mine?.status==='ticket_bought')){
+   try{await saveInterest({p_user_id:uid(),p_user_name:name(),p_event_id:id,p_status:mine.status},ev);await loadAttendance()}
+   catch(err){console.warn('Could not add the genre to the saved choice',err)}
+  }
+  renderAll();
+ }catch(err){
+  console.error('[Brighton Weekend] genre save failed',err);
+  alert('Could not save that genre yet. '+(err.message||err));
+  btns.forEach(b=>{if(b.isConnected)b.disabled=false});
+ }
+}
+document.addEventListener('click',e=>{
+ const ed=e.target.closest('[data-genre-edit]');
+ if(ed){if(!authUser){promptSignIn('genre');return}genrePickerFor=genrePickerFor===ed.dataset.genreEdit?null:ed.dataset.genreEdit;renderAll();return}
+ if(e.target.closest('[data-genre-cancel]')){genrePickerFor=null;renderAll();return}
+ const s=e.target.closest('[data-set-genre]');if(s)setCommunityGenre(s.dataset.eventId,s.dataset.setGenre,s);
+});
+function eventCard(e,{showDate=false,reason=''}={}){
  const mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
  const a=uniqueGroupPeopleCount(e.id,'interested'), t=uniqueGroupPeopleCount(e.id,'ticket_bought');
  const d=showDate?parseEventDate(e.date):null;
  const when=[esc(e.venue_display||e.venue),timeRange(e)].filter(Boolean).join(' · ');
- return `<article class="card" data-event-id="${esc(e.id)}">${d?`<div class="card-date">${esc(d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}))}</div>`:''}<div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="added-by">added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${when}</div></div>${cardFlags(e)}</div>${e.genre?`<span class="genre-tag">${esc(e.genre)}</span>`:''}
+ return `<article class="card" data-event-id="${esc(e.id)}">${reason?`<div class="rec-reason">${esc(reason)}</div>`:''}${d?`<div class="card-date">${esc(d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}))}</div>`:''}<div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="added-by">added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${when}</div></div>${cardFlags(e)}</div>${genreHtml(e)}
  ${e.price?`<div class="price">${esc(e.price)}</div>`:''}
  ${e.is_custom&&e.description?`<div class="note event-description">${esc(e.description)}</div>`:''}
  <div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>${a} interested</span><span class="social-chip"><i class="social-icon going">${TICKET_ICON}</i>${t} going</span></div>
@@ -1285,8 +1374,82 @@ const STATUS_LABEL={ticket_bought:'Going',interested:'Interested',not_interested
 const STATUS_CLASS={ticket_bought:'going',interested:'interested',not_interested:'pass'};
 const STATUS_RANK={ticket_bought:0,interested:1,not_interested:2};
 function statusPill(status){return `<span class="happening-status ${STATUS_CLASS[status]}">${status==='ticket_bought'?TICKET_ICON:status==='interested'?'♡':'×'} ${STATUS_LABEL[status]}</span>`}
+// ---- You might like (v74) ----
+// Up to three upcoming events in the next six months that share a band, or a
+// known genre, with something I've marked Interested or Going. Genres are never
+// guessed: an event only matches on genre when it has one. Anything I've
+// already responded to is left out, and "Not for me" on a suggestion stops that
+// act being suggested again (other dates included). The order is shuffled each
+// time the app is opened.
+const REC_LIMIT=3, REC_MONTHS=6, REC_RESHUFFLE_MS=30*60*1000;
+let recShuffle=new Map(), recHiddenAt=0;
+function recRank(id){if(!recShuffle.has(id))recShuffle.set(id,Math.random());return recShuffle.get(id)}
+// Coming back to the app after a while counts as opening it again.
+document.addEventListener('visibilitychange',()=>{
+ if(document.hidden){recHiddenAt=Date.now();return}
+ if(recHiddenAt&&Date.now()-recHiddenAt>=REC_RESHUFFLE_MS){recShuffle=new Map();renderPeople()}
+});
+// A title reduced to the act: lower case, no accents or punctuation, without
+// "X presents" or a leading "The".
+function actKey(title){
+ let k=String(title||'').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/&/g,' and ').replace(/[^a-z0-9]+/g,' ').trim();
+ const p=k.replace(/^.*?\bpresents?\b\s*/,'');
+ if(p&&p!==k)k=p;
+ return k.replace(/^the /,'');
+}
+// Same act: identical, or one title is the other plus extra words
+// ("Shed Seven" and "Shed Seven: live + signing"). Short names must match exactly.
+function sameAct(a,b){
+ if(!a||!b)return false;
+ if(a===b)return true;
+ const [s,l]=a.length<=b.length?[a,b]:[b,a];
+ const longEnough=s.includes(' ')?s.length>=8:s.length>=7;
+ return longEnough&&l.startsWith(s+' ');
+}
+function recommendations(){
+ const me=uid();if(!me)return [];
+ const keen=s=>s==='interested'||s==='ticket_bought';
+ const byId=new Map([...events,...festivals].map(e=>[e.id,e]));
+ const liked=[],notForMe=[];
+ attendance.forEach(r=>{
+  if(r.user_id!==me)return;
+  const ev=byId.get(r.event_id), title=ev?.title||r.event_title||'', genre=ev?.genre||r.event_genre||'';
+  if(r.status==='not_interested'){if(title)notForMe.push(actKey(title));return}
+  if(keen(r.status)&&(title||genre))liked.push({title,key:actKey(title),genre});
+ });
+ if(!liked.length)return [];
+ const responded=new Set();
+ attendance.forEach(r=>{if(r.user_id!==me)return;responded.add(r.event_id);if(r.saved_event_id)responded.add(r.saved_event_id)});
+ const likedGenres=new Set(liked.map(x=>x.genre).filter(Boolean));
+ const likedActs=liked.filter(x=>x.key&&!notForMe.some(n=>sameAct(x.key,n)));
+ const now=new Date(), today=todayKey(), nowTime=String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0');
+ const until=new Date();until.setMonth(until.getMonth()+REC_MONTHS);const untilKey=dateKey(until);
+ const picks=[];
+ events.forEach(e=>{
+  if(!e.date||e.date<today||e.date>untilKey||e.status==='SOLD OUT'||responded.has(e.id))return;
+  if(e.date===today&&e.time&&e.time<nowTime)return; // already started
+  if((Array.isArray(e.also_ids)?e.also_ids:[]).some(a=>responded.has(a)))return;
+  const k=actKey(e.title);
+  if(notForMe.some(n=>sameAct(n,k)))return;
+  const band=likedActs.find(x=>sameAct(x.key,k));
+  if(band)picks.push({e,k,from:'act:'+band.key,tier:0,reason:'Because you liked '+band.title});
+  else if(e.genre&&likedGenres.has(e.genre))picks.push({e,k,from:'act:'+k,tier:1,reason:'Because you like '+e.genre});
+ });
+ // Band matches first, then genre matches; shuffled within each. At most one
+ // pick per band I liked and one per act, so a weekly night can't fill the box.
+ picks.sort((a,b)=>a.tier-b.tier||recRank(a.e.id)-recRank(b.e.id));
+ const out=[],used=new Set();
+ for(const p of picks){if(used.has(p.from)||used.has('act:'+p.k))continue;used.add(p.from);used.add('act:'+p.k);out.push(p);if(out.length===REC_LIMIT)break}
+ return out;
+}
+function recommendationsHtml(){
+ const recs=recommendations();
+ if(!recs.length)return '';
+ return `<section class="recs"><div class="section-head"><h3>You might like</h3></div>${recs.map(p=>eventCard(p.e,{showDate:true,reason:p.reason})).join('')}</section>`;
+}
 function renderPeople(){
- if(!groups.length){$('peopleList').innerHTML='<div class="empty">Join or create a group to see what your people are planning.</div>';return}
+ const recs=recommendationsHtml();
+ if(!groups.length){$('peopleList').innerHTML=recs+'<div class="empty">Join or create a group to see what your people are planning.</div>';return}
  const me=uid(), today=todayKey();
  const memberGroups=new Map();
  groupMembers.forEach(m=>{if(!memberGroups.has(m.group_id))memberGroups.set(m.group_id,{name:m.group_name,members:[]});memberGroups.get(m.group_id).members.push(m)});
@@ -1294,7 +1457,8 @@ function renderPeople(){
    const members=[...new Map(g.members.map(m=>[m.user_id,m])).values()].sort((a,b)=>(a.user_name||'').localeCompare(b.user_name||''));
    return `<div class="member-group"><div class="group-heading">${esc(g.name)} <span class="member-count">${members.length}</span></div><div class="people">${members.map(m=>`<span class="social-chip profile-chip"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(m.user_id))}" alt="" loading="lazy" decoding="async"></i>${esc(m.user_name)}</span>`).join('')}</div></div>`;
  }).join('');
- let html=`<section class="group-roster"><div class="section-head"><h3>People in your groups</h3></div>${roster}</section>`;
+ const rosterHtml=`<section class="group-roster group-roster-bottom"><div class="section-head"><h3>People in your groups</h3></div>${roster}</section>`;
+ let html=recs;
 
  // Other people's responses, grouped by event. My own rows are left out here:
  // my status is shown once per card from my own commitments instead.
@@ -1305,7 +1469,7 @@ function renderPeople(){
  const keen=s=>s==='interested'||s==='ticket_bought';
  const active=[...events,...festivals].filter(e=>e.date>=today&&(keen(myStatus(e.id))||(others.get(e.id)||[]).some(x=>keen(x.status))))
   .sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
- if(!active.length){$('peopleList').innerHTML=html+'<div class="empty happenings-empty">No plans yet. Mark an event Interested or Going and it will show here for your groups.</div>';return}
+ if(!active.length){$('peopleList').innerHTML=html+'<div class="empty happenings-empty">No plans yet. Mark an event Interested or Going and it will show here for your groups.</div>'+rosterHtml;return}
 
  html+='<div class="section-head happenings-events-head"><h3>What\'s happening</h3></div>';
  html+=active.map(e=>{
@@ -1328,7 +1492,7 @@ function renderPeople(){
   const quiet=!sections?'<div class="note happening-quiet">No one in your groups has responded yet.</div>':'';
   return `<div class="people-card card"><div class="top"><div><h3>${esc(e.title)}${e.is_custom?` <span class="added-by">community added</span>`:''}</h3><div class="meta">${String(e.id||'').startsWith('festival:')?esc((e.location_display||e.location||'UK')+' · '+festivalDateLabel(e)):[esc(e.venue_display||e.venue),esc((parseEventDate(e.date)||new Date()).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})),timeRange(e)].filter(Boolean).join(' · ')}</div></div>${cardFlags(e)}</div>${you}${summary.length?`<div class="happening-summary">${summary.join('')}</div>`:''}${sections}${quiet}${commitmentButtons(e,mine?{status:mine}:null)}<div class="actions">${ticketLink(e)}${calendarLink(e)}${shareLink(e)}</div></div>`;
  }).join('');
- $('peopleList').innerHTML=html;
+ $('peopleList').innerHTML=html+rosterHtml;
 }
 function renderVenues(){
  $('venueList').innerHTML=VENUES.map(v=>`<label class="venue-row"><span>${esc(v)}</span><input type="checkbox" data-v="${esc(v)}" ${enabled.includes(v)?'checked':''}></label>`).join('');
@@ -1658,8 +1822,8 @@ function newPanelHtml(){
 document.addEventListener('click',e=>{if(e.target.closest('#closeNewPanel')){showNewPanel=false;render()}});
 
 async function loadUserData(){
- if(!authUser){await loadCustomEvents();events=mergeEvents(events.filter(e=>!e.is_custom));rebuildEventIdAliases();renderAll();showSharedEvent();return}
- await Promise.all([loadAttendance(),loadCustomEvents(),loadFestivals()]);
+ if(!authUser){await Promise.all([loadCustomEvents(),loadCommunityGenres()]);events=mergeEvents(events.filter(e=>!e.is_custom));rebuildEventIdAliases();renderAll();showSharedEvent();return}
+ await Promise.all([loadAttendance(),loadCustomEvents(),loadFestivals(),loadCommunityGenres()]);
  events=mergeEvents(events.filter(e=>!e.is_custom));
  await loadGroupHappenings(); await loadProfileIcons();
  renderProfileIconSettings(); renderAll(); renderGroupManager();

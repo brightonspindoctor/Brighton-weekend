@@ -1,6 +1,8 @@
 -- ============================================================================
 -- Brighton Weekend — live database schema (public schema)
 -- Exported from the live Supabase project on 2026-10-05, after v58 and v59; v60 (avatar ids) applied on top.
+-- v74 (recommendations and community genres) is folded in. v70, v72 and v73 are
+-- not reflected here yet: see their numbered files.
 --
 -- This file is the reference for what is actually running. The numbered
 -- files (v48, v49, v58) are the change history. When you change the database,
@@ -79,7 +81,24 @@ create table if not exists public.event_interest (
   status text not null,
   created_at timestamp with time zone not null default now(),
   user_id text,
-  plus_one integer not null default 0
+  plus_one integer not null default 0,
+  event_title text,  -- v74: kept so recommendations know what it was after it has passed
+  event_genre text   -- v74
+);
+
+-- v74: genres people add to music and club nights that have none.
+create table if not exists public.bw_event_genres (
+  event_id text not null,
+  user_id uuid not null references auth.users(id) on delete cascade,
+  genre text not null,
+  created_at timestamptz not null default now(),
+  primary key (event_id, user_id),
+  constraint bw_event_genres_event_id_length check (char_length(event_id) <= 300),
+  -- Must match GENRE_ORDER in index.html.
+  constraint bw_event_genres_genre_allowed check (genre in (
+    'Indie & Rock','Pop','Electronic','House & Disco','Techno & Trance','Drum & Bass',
+    'Garage & Bass','Hip-hop & R&B','Latin & Afrobeats','Jazz, Soul & Funk',
+    'Folk & Country','Punk & Metal','Reggae & Ska','Classical'))
 );
 
 create table if not exists public.user_roles (
@@ -94,6 +113,7 @@ alter table public.bw_groups        enable row level security;
 alter table public.bw_join_attempts enable row level security;
 alter table public.bw_profiles      enable row level security;
 alter table public.event_interest   enable row level security;
+alter table public.bw_event_genres  enable row level security;
 alter table public.user_roles       enable row level security;
 
 -- ---------------------------------------------------------------------------
@@ -146,6 +166,8 @@ alter table public.event_interest add constraint event_interest_event_id_length 
 alter table public.event_interest add constraint event_interest_plus_one_check CHECK (((plus_one >= 0) AND (plus_one <= 1)));
 alter table public.event_interest add constraint event_interest_status_check CHECK ((status = ANY (ARRAY['not_interested'::text, 'interested'::text, 'ticket_bought'::text])));
 alter table public.event_interest add constraint event_interest_user_name_length CHECK ((char_length(user_name) <= 60)) NOT VALID;
+alter table public.event_interest add constraint event_interest_event_title_length check (event_title is null or char_length(event_title) <= 200);
+alter table public.event_interest add constraint event_interest_event_genre_length check (event_genre is null or char_length(event_genre) <= 40);
 
 alter table public.user_roles add constraint user_roles_pkey PRIMARY KEY (user_id);
 alter table public.user_roles add constraint user_roles_role_check CHECK ((role = 'admin'::text));
@@ -414,13 +436,16 @@ begin
   return query select p.user_id,p.profile_icon from public.bw_profiles p where p.user_id=auth.uid();
 end; $function$;
 
-CREATE OR REPLACE FUNCTION public.bw_set_event_interest(p_user_id text, p_user_name text, p_event_id text, p_status text)
- RETURNS TABLE(event_id text, user_id text, user_name text, status text)
- LANGUAGE plpgsql
- SECURITY DEFINER
- SET search_path TO 'public'
-AS $function$
-declare nm text;
+-- v74: also keeps the event's title and genre (the two extra arguments are optional).
+create or replace function public.bw_set_event_interest(
+  p_user_id text, p_user_name text, p_event_id text, p_status text,
+  p_event_title text default null, p_event_genre text default null)
+ returns table(event_id text, user_id text, user_name text, status text, event_title text, event_genre text)
+ language plpgsql
+ security definer
+ set search_path to 'public'
+as $function$
+declare nm text; t text; g text;
 begin
   perform public.bw_require_caller(p_user_id);
   if p_event_id is null or btrim(p_event_id) = '' then
@@ -430,25 +455,74 @@ begin
     raise exception 'Invalid commitment status';
   end if;
   nm := public.bw_caller_name(p_user_name);
+  t := nullif(left(btrim(coalesce(p_event_title,'')),200),'');
+  g := nullif(left(btrim(coalesce(p_event_genre,'')),40),'');
 
   if p_status is null then
     delete from public.event_interest as ei
     where ei.event_id = p_event_id and ei.user_id = p_user_id;
   else
     update public.event_interest as ei
-       set user_name = nm, status = p_status
+       set user_name = nm, status = p_status,
+           event_title = coalesce(t, ei.event_title),
+           event_genre = coalesce(g, ei.event_genre)
      where ei.event_id = p_event_id and ei.user_id = p_user_id;
     if not found then
-      insert into public.event_interest as ei (event_id, user_id, user_name, status)
-      values (p_event_id, p_user_id, nm, p_status);
+      insert into public.event_interest as ei (event_id, user_id, user_name, status, event_title, event_genre)
+      values (p_event_id, p_user_id, nm, p_status, t, g);
     end if;
   end if;
 
   return query
-  select ei.event_id, ei.user_id, ei.user_name, ei.status
+  select ei.event_id, ei.user_id, ei.user_name, ei.status, ei.event_title, ei.event_genre
   from public.event_interest as ei
   where ei.event_id = p_event_id and ei.user_id = p_user_id;
 end;
+$function$;
+
+-- v74: set, change or (p_genre null) remove my genre for an event.
+create or replace function public.bw_set_event_genre(p_event_id text, p_genre text)
+ returns void
+ language plpgsql
+ security definer
+ set search_path to 'public'
+as $function$
+begin
+  if auth.uid() is null then raise exception 'Not authorised'; end if;
+  if p_event_id is null or btrim(p_event_id) = '' or char_length(p_event_id) > 300 then
+    raise exception 'Event ID is required';
+  end if;
+  if p_genre is null then
+    delete from public.bw_event_genres where event_id = p_event_id and user_id = auth.uid();
+    return;
+  end if;
+  insert into public.bw_event_genres (event_id, user_id, genre)
+  values (p_event_id, auth.uid(), p_genre)
+  on conflict (event_id, user_id) do update set genre = excluded.genre, created_at = now();
+end;
+$function$;
+
+-- v74: the most-picked genre per event, plus the caller's own pick. Guests can call it.
+create or replace function public.bw_community_genres()
+ returns table(event_id text, genre text, my_genre text)
+ language sql
+ stable
+ security definer
+ set search_path to 'public'
+as $function$
+  with counts as (
+    select g.event_id, g.genre, count(*) as n, min(g.created_at) as first_at
+    from public.bw_event_genres g
+    group by g.event_id, g.genre
+  ), ranked as (
+    select c.event_id, c.genre,
+           row_number() over (partition by c.event_id order by c.n desc, c.first_at asc) as rk
+    from counts c
+  )
+  select r.event_id, r.genre,
+         (select m.genre from public.bw_event_genres m where m.event_id = r.event_id and m.user_id = auth.uid())
+  from ranked r
+  where r.rk = 1;
 $function$;
 
 CREATE OR REPLACE FUNCTION public.bw_shared_happenings(p_user_id text)
@@ -627,7 +701,7 @@ begin
     if f.proname in ('admin_usage_stats','bw_create_group','bw_delete_my_account','bw_group_members_for_user',
                      'bw_join_group','bw_leave_group','bw_my_groups','bw_profile_icons_for_user','bw_public_groups',
                      'bw_require_caller','bw_set_event_interest','bw_set_profile_icon','bw_shared_happenings',
-                     'bw_track_visit') then
+                     'bw_track_visit','bw_set_event_genre','bw_community_genres') then
       execute format('grant execute on function %s to authenticated', f.sig);
     else
       execute format('revoke all on function %s from authenticated', f.sig);
@@ -635,3 +709,5 @@ begin
   end loop;
 end;
 $$;
+-- Guests can read community genres (v74).
+grant execute on function public.bw_community_genres() to anon;

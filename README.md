@@ -15,7 +15,18 @@ to a phone's home screen.
 - **Search:** find events by artist, or by a date range and venues.
 - **Commitments:** mark any event *Not for me*, *Interested* or *Going*.
 - **Groups and Happenings:** join open groups or private ones (3-digit PIN).
-  Happenings shows what people in your groups are interested in or going to.
+  Happenings shows what people in your groups are interested in or going to,
+  with the list of people in your groups at the bottom.
+- **You might like:** the top of Happenings suggests up to three events in the
+  next six months by the same bands, or in the same genres, as things you've
+  marked Interested or Going. Bands are matched on the title; genres only when
+  both events have a known genre. *Not for me* on a suggestion stops that act
+  being suggested again. Shuffled each time the app is opened; hidden when
+  nothing matches. Shown even if you're not in a group.
+- **Community genres:** a music or club night with no genre has a small
+  *+ Add genre* chip. Signed-in users pick from the fixed genre list
+  (`GENRE_ORDER`); the most-picked genre shows for everyone. Genres from the
+  listings or the tagger always win.
 - **Community events:** signed-in users can add events that are missing.
 - **Settings:** choose venues and days, pick a profile icon, manage groups,
   install the app.
