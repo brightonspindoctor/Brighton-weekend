@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-09",
-  "range_start": "2026-10-09",
+  "updated": "2026-10-10",
+  "range_start": "2026-10-10",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -9,18 +9,6 @@
     "eFestivals"
   ],
   "festivals": [
-    {
-      "title": "Orion Sphere Event 16 - Domino",
-      "date": "2026-10-09",
-      "date_end": "2026-10-11",
-      "location": "Ashby de la Zouch",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/orion-sphere-event-16-domino/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/orion-sphere-event-16-domino/",
-      "id": "festival:orion-sphere-event-16-domino:2026-10-09",
-      "location_display": "Ashby de la Zouch"
-    },
     {
       "title": "Wilde Realms Event 4: The Sacrifices We Make",
       "date": "2026-10-23",
@@ -112,7 +100,7 @@
       "location": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton",
       "category": "Arts & Culture",
       "ticket_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
       "detail_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
       "id": "festival:artist-open-houses-winter:2026-11-28",
       "location_display": "Various venues across the city, Brighton, East Sussex, BN1 1EE Brighton"
@@ -340,7 +328,7 @@
       "location": "Liverpool",
       "category": "Music",
       "ticket_url": "https://fezzy.uk/festival/liverpool-sound-city/",
-      "source": "https://fezzy.uk/search/",
+      "source": "https://fezzy.uk/collections/pop-festivals-uk-2026/",
       "detail_url": "https://fezzy.uk/festival/liverpool-sound-city/",
       "id": "festival:liverpool-sound-city:2027-05-01",
       "location_display": "Liverpool"
@@ -956,18 +944,6 @@
       "ticket_url": "https://gloriousdayfestival.co.uk/",
       "detail_url": "https://gloriousdayfestival.co.uk/",
       "source": "https://gloriousdayfestival.co.uk/"
-    },
-    {
-      "title": "Live on the Wye",
-      "date": "2027-06-05",
-      "date_end": "2027-06-05",
-      "location": "Wales",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/live-on-the-wye/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/live-on-the-wye/",
-      "id": "festival:live-on-the-wye:2027-06-05",
-      "location_display": "Wales"
     },
     {
       "title": "Mighty Hoopla",
@@ -3452,6 +3428,18 @@
       "detail_url": "https://fezzy.uk/festival/notting-hill-carnival/",
       "id": "festival:notting-hill-carnival:2027-08-28",
       "location_display": "London"
+    },
+    {
+      "title": "Southport Se7ens Hockey Festival (Adult)",
+      "date": "2027-08-28",
+      "date_end": "2027-08-29",
+      "location": "Southport",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/southport-se7ens-hockey-festival-adult/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/southport-se7ens-hockey-festival-adult/",
+      "id": "festival:southport-se7ens-hockey-festival-adult:2027-08-28",
+      "location_display": "Southport"
     },
     {
       "title": "Stonedead Festival",
