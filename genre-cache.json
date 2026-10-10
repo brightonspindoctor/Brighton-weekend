@@ -5470,6 +5470,12 @@
   "act": "Moon Walker",
   "checked": "2026-10-06"
  },
+ "moonpunx 19 albertween halloween all dayer": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "MoonPunx #19 ALBERTWEEN! Halloween ALL DAYER",
+  "checked": "2026-10-10"
+ },
  "morrissey": {
   "bucket": null,
   "reason": "2 artists share this name",
@@ -8573,6 +8579,15 @@
   "reason": "not in MusicBrainz",
   "act": "The Witchcraft and Vagrancy Act Halloween Party",
   "checked": "2026-10-06"
+ },
+ "the wolfgang press": {
+  "mbid": "84e4c923-0b83-49d3-9a89-a71a3339edcb",
+  "name": "The Wolfgang Press",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "The Wolfgang Press",
+  "checked": "2026-10-10"
  },
  "the worst kept secret": {
   "bucket": null,
