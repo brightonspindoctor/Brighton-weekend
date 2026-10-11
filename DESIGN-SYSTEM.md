@@ -102,7 +102,7 @@ font. Headings use tighter letter-spacing (−0.03em); body text uses −0.01em.
 
 | Token | Size | Use |
 |---|---|---|
-| `--bw-text-xl` | 1.45rem | Tab headings (Comedy, Search, Settings) |
+| `--bw-text-xl` | 1.45rem | Tab headings (Not music, Search, Settings) |
 | `--bw-text-lg` | 1.0625rem | Event titles, card headings |
 | `--bw-text-md` | 0.9375rem | Body, buttons, inputs |
 | `--bw-text-sm` | 0.78rem | Venue and time, notes, day headings |
@@ -125,7 +125,7 @@ everywhere, including buttons and badges ("Sold out", "Tickets").
 | Component | Classes | Notes |
 |---|---|---|
 | Button | `.btn` + `.btn-primary` / `.btn-secondary` / `.btn-ghost` / `.btn-chip` | Use one primary per panel. Chip is the small size for row actions. |
-| Event card | `.card` › `.top`, `.title`, `.meta`, `.price`, `.people`, `.commitment`, `.actions` | Built by `eventCard()` in `js/app.js`. Discover, Comedy and Search all use it. |
+| Event card | `.card` › `.top`, `.title`, `.meta`, `.price`, `.people`, `.commitment`, `.actions` | Built by `eventCard()` in `js/app.js`. Discover, Not music and Search all use it. |
 | Commitment control | `.commitment` › `.commit-btn.no/.yes/.bought` (+ `.selected`) | Three equal columns that never wrap. Icons hide below 360px wide. |
 | Social chip | `.social-chip` › `.social-icon.heart/.going/.profile` | Counts on cards and names in the group roster. Don't use the class `ticket` here: that's the coral Tickets link. |
 | Genre chips | `.genre-chips` › `.genre-chip` (`aria-pressed`, `.untagged`) | Discover filter row and Search pickers. Selected uses the teal "you picked this" colours; Untagged is dashed. Counts in `.n`. |

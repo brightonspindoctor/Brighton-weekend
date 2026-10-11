@@ -8,7 +8,7 @@ to a phone's home screen.
 ## What it does
 
 - **Discover:** this week's events (Monday–Sunday) at the venues you follow,
-  day by day. Comedy has its own tab.
+  day by day. Comedy and talks are on their own tab, **Not music**.
 - **Festivals:** a separate UK festival feed through the end of the next calendar year,
   with a Brighton location filter and festival-type filters. Festivals never enter the
   normal event feed, but can still be marked Interested or Going and appear in Happenings.
@@ -59,7 +59,9 @@ on manual dispatch, and whenever a scraper file changes on `main`. It runs:
 3. `scripts/prepare-events.py`: cleans titles, normalises times to HH:MM,
    drops doors times posing as finish times, removes duplicates, and applies
    the publication rules (Brighton Dome only for the Ben Folds date; Patterns
-   recurring nights excluded).
+   recurring nights excluded). Talks the listing filed as something else are
+   filed as Talk when the title says so ("In Conversation", "Q&A",
+   "Interview", "Podcast", "Book Tour"), so they show on the Not music tab.
 4. `scripts/validate-events.py`: refuses to publish a small or malformed file.
 
 An event's identity is **venue + date + title + start time**, so separate

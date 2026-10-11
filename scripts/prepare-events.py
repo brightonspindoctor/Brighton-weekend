@@ -13,6 +13,29 @@ DATA = ROOT / "events.json"
 EXCLUDED = [dict(r, venue=str(r.get("venue", "")).strip().lower(), title_contains=str(r.get("title_contains", "")).strip().lower())
             for r in (json.loads((ROOT / "excluded-events.json").read_text()) if (ROOT / "excluded-events.json").exists() else [])]
 
+# Talks whose listing filed them as something else: the title says so ("In
+# Conversation", "Q&A", "Interview", "Podcast", "Book Tour"), or it's a
+# professor's tour (not Professor Green or Professor Elemental, who are
+# musicians). They are filed as Talk, which puts them on the app's Not music
+# tab and keeps them out of genre tagging. Comedy is left as it is (it's on the
+# same tab). Keep in step with TALK_TITLE in index.html.
+TALK_TITLE = re.compile(r"\b(?:in\s+conversation|q\s*&\s*a|interview|podcast|lecture|spoken\s+word|book\s+(?:tour|signing|launch|reading|talk))\b"
+                        r"|^(?:professor|prof\.?)\s+(?!green\b|elemental\b)", re.I)
+
+def is_talk_title(title):
+    return bool(TALK_TITLE.search(str(title or "")))
+
+assert is_talk_title("PETER SERAFINOWICZ & DOON MACKICHAN (INTERVIEW / Q&A)")
+assert is_talk_title("The Wow! Scenario (James Acaster): Q&A + Signing")
+assert is_talk_title("Nick Heyward: In Conversation + Book Signing")
+assert is_talk_title("The Blindboy Podcast LIVE")
+assert is_talk_title("Alice Cooper's 'Devil on my Shoulder' Book Tour")
+assert is_talk_title("Professor Brian Cox: Emergence World Tour")
+assert not is_talk_title("Professor Green")
+assert not is_talk_title("Scarlet Reading")
+assert not is_talk_title("Shed Seven: Live + Signing")
+assert not is_talk_title("The Holiday in Concert - Film with Live Orchestra")
+
 def is_excluded(event):
     venue, title = str(event.get("venue") or "").strip().lower(), str(event.get("title") or "").lower()
     return any(r["title_contains"] and r["title_contains"] in title and (not r["venue"] or r["venue"] == venue) for r in EXCLUDED)
@@ -263,8 +286,12 @@ for e in final:
     dropped_aliases += len(e["also_ids"]) - len(keep)
     if keep: e["also_ids"] = keep
     else: e.pop("also_ids")
+recategorised = 0
 for event in final:
     event.pop("_card_text", None)
+    if event.get("category") not in ("Talk", "Comedy") and is_talk_title(event.get("title")):
+        event["category"] = "Talk"; recategorised += 1
+print(f"Filed as talks from their titles: {recategorised}")
 data["events"] = final
 data["venues"] = sorted({str(e["venue"]) for e in final if e.get("venue")})
 DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
