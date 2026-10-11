@@ -6,14 +6,17 @@ the week or a loose name match):
 
 1. The listing names the genre: "Drum & Bass Classics", "Reggaeton Party",
    "Indie Rock Night", "Brighton Big Band". This is how most club nights get one.
-2. MusicBrainz knows the act: exactly one artist has this exact name (or alias),
+2. MusicBrainz knows the act: exactly one artist has this exact name (or an
+   alias MusicBrainz records as a name it performs under; not for one-word names),
    the MusicBrainz community has tagged it, and one genre has a clear majority
    of at least two votes. Two artists with the same name, a tribute act, a
    single vote or a split vote means no genre. Club nights are named events,
    not artists, so they are only looked up when the listing names a DJ.
 3. Wikidata knows the act: when MusicBrainz has found the one artist but isn't
    sure of the genre, the genres on the artist's Wikidata entry (the ones
-   Wikipedia shows) are used if one genre has a clear majority.
+   Wikipedia shows) are used if one genre has a clear majority. Wikidata can
+   break a tie or fill a gap but can't overrule MusicBrainz: if MusicBrainz has
+   any genre votes, Wikidata's genre must be one of them.
 
 The act is the headliner: support acts, promoters ("X presents:"), tour names,
 "live at ..." and similar are stripped from the title first. When that name
@@ -37,7 +40,7 @@ DATA = ROOT / "events.json"
 CACHE = ROOT / "genre-cache.json"
 USER_AGENT = "BrightonWeekend/1.0 ( https://brightonweekend.co.uk )"  # MusicBrainz and Wikidata ask for a contact
 RECHECK_FOUND, RECHECK_MISS = 120, 30  # days before looking an act up again
-RULES_VERSION = 2  # bump when matching changes, so untagged acts are looked up again
+RULES_VERSION = 3  # stored with each lookup; see stale() for what each version changed
 MAX_LOOKUPS = 1500  # per run; anything left is looked up on the next run
 TAGGABLE = {"Music", "Club", "Music/Club"}
 
@@ -208,8 +211,8 @@ def act_name(title):
     return names[0] if names else None
 
 
-def bucket_for(genres, min_votes=MIN_VOTES):
-    """Map genres [{name, count}] to one bucket, or None if unclear."""
+def bucket_votes(genres):
+    """Votes per bucket for genres [{name, count}]."""
     votes = {}
     for g in genres or []:
         name, count = norm(g.get("name")), int(g.get("count") or 0)
@@ -221,6 +224,12 @@ def bucket_for(genres, min_votes=MIN_VOTES):
             bucket = next((b for w, b in WORD_RULES if w in words), None)
         if bucket:
             votes[bucket] = votes.get(bucket, 0) + count
+    return votes
+
+
+def bucket_for(genres, min_votes=MIN_VOTES):
+    """Map genres [{name, count}] to one bucket, or None if unclear."""
+    votes = bucket_votes(genres)
     if not votes:
         return None
     best, best_votes = max(votes.items(), key=lambda kv: kv[1])
@@ -246,7 +255,8 @@ def decide(hit):
     if bucket:
         return bucket, "musicbrainz:" + hit["mbid"]
     bucket = bucket_for_labels(hit.get("wd_genres"))
-    if bucket and hit.get("wikidata"):
+    mb_buckets = bucket_votes(hit.get("genres"))
+    if bucket and hit.get("wikidata") and (not mb_buckets or bucket in mb_buckets):
         return bucket, "wikidata:" + hit["wikidata"]
     return None, None
 
@@ -282,7 +292,13 @@ def lookup(name):
     """{"mbid","name","genres","wikidata","wd_genres","bucket","reason"} for an act name."""
     q = name.replace("\\", " ").replace('"', " ")
     found = mb_get("artist?fmt=json&limit=25&query=" + quote(f'artist:"{q}" OR alias:"{q}"'))
-    names_of = lambda a: [a.get("name")] + [x.get("name") for x in (a.get("aliases") or [])]
+    # An alias counts only when MusicBrainz records it as a name the artist
+    # performs under ("Artist name"), not a search hint: Pierre Henry has the
+    # search hint "Henry", which isn't the band HENRY. One-word names are too
+    # common to match through an alias at all.
+    one_word = len(norm(name).split()) < 2
+    names_of = lambda a: [a.get("name")] + ([] if one_word else
+        [x.get("name") for x in (a.get("aliases") or []) if str(x.get("type") or "").lower() == "artist name"])
     exact = [a for a in found.get("artists", []) if any(same_name(n, name) for n in names_of(a))]
     if not exact:
         return {"bucket": None, "reason": "not in MusicBrainz"}
@@ -312,7 +328,10 @@ def stale(hit, today):
         return True
     if hit.get("wd_error"):
         return True
-    if hit.get("v", 1) < RULES_VERSION and not hit.get("bucket"):  # looked up under older matching rules
+    v = hit.get("v", 1)
+    if v < 2 and not hit.get("bucket"):  # v2: better act names, apostrophes, "The", aliases, Wikidata
+        return True
+    if v < 3 and hit.get("mbid") and not same_name(hit.get("name"), hit.get("act")):  # v3: matched through an alias
         return True
     days = RECHECK_FOUND if hit.get("bucket") else RECHECK_MISS
     return date.fromisoformat(hit["checked"]) < today - timedelta(days=days)
@@ -447,6 +466,12 @@ def _self_test():
     assert decide({"mbid": "m", "genres": [{"name": "folk", "count": 1}], "wikidata": "Q1", "wd_genres": ["folk music"]}) == ("Folk & Country", "wikidata:Q1")
     assert decide({"mbid": "m", "genres": [{"name": "folk", "count": 2}]}) == ("Folk & Country", "musicbrainz:m")
     assert decide({"bucket": None, "reason": "not in MusicBrainz"}) == (None, None)
+    # Wikidata can't overrule MusicBrainz (Tom McRae: rock/folk votes, Wikidata says pop)
+    assert decide({"mbid": "m", "wikidata": "Q1", "wd_genres": ["pop music", "pop rock"],
+                   "genres": [{"name": "alternative rock", "count": 1}, {"name": "indie folk", "count": 1}]}) == (None, None)
+    assert decide({"mbid": "m", "wikidata": "Q1", "wd_genres": ["alternative rock"], "genres": []}) == ("Indie & Rock", "wikidata:Q1")
+    assert stale({"mbid": "x", "name": "Pierre Henry", "act": "HENRY", "bucket": "Classical", "v": 2, "checked": "2099-01-01"}, date(2099, 1, 1))
+    assert not stale({"mbid": "x", "name": "The Mekons", "act": "Mekons", "bucket": "Indie & Rock", "v": 2, "checked": "2099-01-01"}, date(2099, 1, 1))
     print("tag-genres self-test passed")
 
 
