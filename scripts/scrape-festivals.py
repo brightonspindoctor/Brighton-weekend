@@ -375,7 +375,9 @@ def merge(items):
     items=list(by_page.values())
     for e in items: e.pop("_derived",None)
     for e in sorted(items,key=lambda x:(x["date"],x["title"])):
-        if not (TODAY<=date.fromisoformat(e["date"])<=END): continue
+        # Kept while it's still on: a festival that started before today but
+        # hasn't finished stays listed (Brighton Festival runs for three weeks).
+        if date.fromisoformat(e.get("date_end") or e["date"])<TODAY or date.fromisoformat(e["date"])>END: continue
         en=norm(e["title"]); el=location_key(e["location"])
         duplicate=False
         for old in chosen:

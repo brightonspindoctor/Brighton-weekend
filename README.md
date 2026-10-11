@@ -12,6 +12,7 @@ to a phone's home screen.
 - **Festivals:** a separate UK festival feed through the end of the next calendar year,
   with a Brighton location filter and festival-type filters. Festivals never enter the
   normal event feed, but can still be marked Interested or Going and appear in Happenings.
+  A festival stays listed until its last day, so multi-week ones show while they're on.
 - **Search:** find events by artist, or by a date range and venues.
 - **Commitments:** mark any event *Not for me*, *Interested* or *Going*.
 - **Groups and Happenings:** join open groups or private ones (3-digit PIN).

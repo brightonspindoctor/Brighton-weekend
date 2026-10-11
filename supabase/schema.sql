@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Brighton Weekend — live database schema (public schema)
 -- Exported from the live Supabase project on 2026-10-05, after v58 and v59; v60 (avatar ids) applied on top.
--- v74 (recommendations and community genres) is folded in. v70, v72 and v73 are
+-- v74 (recommendations and community genres) and v75 (limits) are folded in. v70, v72 and v73 are
 -- not reflected here yet: see their numbered files.
 --
 -- This file is the reference for what is actually running. The numbered
@@ -454,6 +454,11 @@ begin
   if p_status is not null and p_status not in ('not_interested','interested','ticket_bought') then
     raise exception 'Invalid commitment status';
   end if;
+  -- Removing a choice works for any id (so old ones can be tidied); saving one
+  -- needs a real-looking event id.
+  if p_status is not null and not public.bw_valid_event_id(p_event_id) then
+    raise exception 'That event isn''t recognised.';
+  end if;
   nm := public.bw_caller_name(p_user_name);
   t := nullif(left(btrim(coalesce(p_event_title,'')),200),'');
   g := nullif(left(btrim(coalesce(p_event_genre,'')),40),'');
@@ -468,6 +473,9 @@ begin
            event_genre = coalesce(g, ei.event_genre)
      where ei.event_id = p_event_id and ei.user_id = p_user_id;
     if not found then
+      if (select count(*) from public.event_interest e2 where e2.user_id = p_user_id) >= 3000 then
+        raise exception 'You''ve saved a lot of choices. Please remove some old ones first.';
+      end if;
       insert into public.event_interest as ei (event_id, user_id, user_name, status, event_title, event_genre)
       values (p_event_id, p_user_id, nm, p_status, t, g);
     end if;
@@ -481,6 +489,19 @@ end;
 $function$;
 
 -- v74: set, change or (p_genre null) remove my genre for an event.
+-- v75: what a real event id looks like (listed event, community event uuid, festival).
+create or replace function public.bw_valid_event_id(p_event_id text, p_allow_festival boolean default true)
+ returns boolean
+ language sql
+ immutable
+ set search_path to 'public'
+as $function$
+  select coalesce(
+       p_event_id ~ '^[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+$'
+    or p_event_id ~ '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$'
+    or (p_allow_festival and p_event_id ~ '^festival:[a-z0-9:-]+$'), false);
+$function$;
+
 create or replace function public.bw_set_event_genre(p_event_id text, p_genre text)
  returns void
  language plpgsql
@@ -489,12 +510,16 @@ create or replace function public.bw_set_event_genre(p_event_id text, p_genre te
 as $function$
 begin
   if auth.uid() is null then raise exception 'Not authorised'; end if;
-  if p_event_id is null or btrim(p_event_id) = '' or char_length(p_event_id) > 300 then
-    raise exception 'Event ID is required';
+  if p_event_id is null or not public.bw_valid_event_id(p_event_id, false) then
+    raise exception 'That event can''t have a genre.';
   end if;
   if p_genre is null then
     delete from public.bw_event_genres where event_id = p_event_id and user_id = auth.uid();
     return;
+  end if;
+  if (select count(*) from public.bw_event_genres g
+       where g.user_id = auth.uid() and g.created_at > now() - interval '1 day') >= 100 then
+    raise exception 'You''ve added a lot of genres today. Please try again tomorrow.';
   end if;
   insert into public.bw_event_genres (event_id, user_id, genre)
   values (p_event_id, auth.uid(), p_genre)
@@ -510,9 +535,13 @@ create or replace function public.bw_community_genres()
  security definer
  set search_path to 'public'
 as $function$
-  with counts as (
+  with since as (
+    select to_char((now() at time zone 'Europe/London')::date - 1, 'YYYY-MM-DD') as d
+  ), counts as (
     select g.event_id, g.genre, count(*) as n, min(g.created_at) as first_at
-    from public.bw_event_genres g
+    from public.bw_event_genres g, since
+    where (g.event_id ~ '^[0-9]{4}-[0-9]{2}-[0-9]{2}-' and left(g.event_id, 10) >= since.d)
+       or exists (select 1 from public.bw_custom_events c where c.id::text = g.event_id and c.date >= since.d)
     group by g.event_id, g.genre
   ), ranked as (
     select c.event_id, c.genre,

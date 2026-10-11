@@ -330,6 +330,10 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .rec-reason{font-size:var(--bw-text-xs);font-weight:700;color:var(--bw-muted);margin-bottom:var(--bw-space-1)}
 /* Community genres (v74): a quiet dashed chip where a music or club night has no genre */
 button.genre-tag{font-family:inherit;cursor:pointer}
+/* Small chips keep their look but get a finger-sized tap area */
+button.genre-tag,button.promoter-sticker{position:relative}
+button.genre-tag::after,button.promoter-sticker::after{content:'';position:absolute;inset:-9px -6px}
+#prev,#next{min-width:40px}
 .genre-tag.genre-add{background:transparent;color:var(--bw-muted);border-style:dashed;border-color:var(--bw-line-strong)}
 .genre-picker{display:grid;gap:var(--bw-space-2);margin-top:var(--bw-space-2)}
 .genre-picker-actions{display:flex;flex-wrap:wrap;gap:var(--bw-space-2)}
@@ -456,7 +460,7 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
       <h2>Nearly there</h2>
       <p>What should we call you?</p>
       <form id="nameForm">
-        <input id="nameInput" type="text" maxlength="40" placeholder="Your name" autocomplete="name" required>
+        <input id="nameInput" type="text" maxlength="40" placeholder="Your name" aria-label="Your name" autocomplete="name" required>
         <button type="submit" class="btn btn-primary">Continue</button>
       </form>
     </div>
@@ -584,7 +588,7 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
 <div class="settings-card install-area"><h3>Install the app</h3><button id="installApp" class="btn btn-primary install-btn">↓ Add to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
 <div class="settings-links"><a href="about.html" target="_blank" rel="noopener">About</a><a href="privacy.html" target="_blank" rel="noopener">Privacy</a><a href="terms.html" target="_blank" rel="noopener">Terms</a></div>
 </main>
-<nav class="nav" aria-label="Main"><button class="active" data-tab="peopleTab" aria-current="page"><span class="nav-icon">♡</span> Happenings</button><button data-tab="discover"><span class="nav-icon">♬</span> Discover</button><button data-tab="comedyTab"><span class="nav-icon">☻</span> Not music</button><button data-tab="festivalsTab"><span class="nav-icon">⌂</span> Festivals</button><button data-tab="searchTab"><span class="nav-icon">⌕</span> Search</button><button data-tab="venuesTab"><span class="nav-icon">⚙</span> Settings</button></nav>
+<nav class="nav" aria-label="Main"><button class="active" data-tab="peopleTab" aria-current="page"><span class="nav-icon" aria-hidden="true">♡</span> Happenings</button><button data-tab="discover"><span class="nav-icon" aria-hidden="true">♬</span> Discover</button><button data-tab="comedyTab"><span class="nav-icon" aria-hidden="true">☻</span> Not music</button><button data-tab="festivalsTab"><span class="nav-icon" aria-hidden="true">⌂</span> Festivals</button><button data-tab="searchTab"><span class="nav-icon" aria-hidden="true">⌕</span> Search</button><button data-tab="venuesTab"><span class="nav-icon" aria-hidden="true">⚙</span> Settings</button></nav>
 
 <!-- supabase-js is served from this site (pinned copy, see vendor/) rather than a CDN. -->
 <script src="vendor/supabase-js-2.117.2.js"></script>
@@ -805,7 +809,10 @@ async function rpc(fn,body){
 
 async function loadCustomEvents(){
  try{
-  const rows=await api('GET','bw_custom_events?select=id,title,date,venue,venue_detail,time,finish_time,price,status,ticket_url,category,description,created_by,created_by_name,created_at&order=date.asc,time.asc');
+  // Guests may not read who added an event (created_by, created_by_name), and
+  // asking for those columns makes the whole request fail, so they leave them out.
+  const cols='id,title,date,venue,venue_detail,time,finish_time,price,status,ticket_url,category,description,created_at'+(authUser?',created_by,created_by_name':'');
+  const rows=await api('GET','bw_custom_events?select='+cols+'&order=date.asc,time.asc');
   customEvents=Array.isArray(rows)?rows:[];
  }catch(e){console.warn('Custom events unavailable',e);customEvents=[]}
 }
@@ -1456,7 +1463,9 @@ function recommendationsHtml(){
 }
 function renderPeople(){
  const recs=recommendationsHtml();
- if(!groups.length){$('peopleList').innerHTML=recs+'<div class="empty">Join or create a group to see what your people are planning.</div>';return}
+ // Not in a group yet: their own plans still show here, with a nudge to join one.
+ const inGroups=groups.length>0;
+ const joinPrompt='<div class="empty">Join or create a group to see what your people are planning.</div>';
  const me=uid(), today=todayKey();
  const memberGroups=new Map();
  groupMembers.forEach(m=>{if(!memberGroups.has(m.group_id))memberGroups.set(m.group_id,{name:m.group_name,members:[]});memberGroups.get(m.group_id).members.push(m)});
@@ -1464,7 +1473,7 @@ function renderPeople(){
    const members=[...new Map(g.members.map(m=>[m.user_id,m])).values()].sort((a,b)=>(a.user_name||'').localeCompare(b.user_name||''));
    return `<div class="member-group"><div class="group-heading">${esc(g.name)} <span class="member-count">${members.length}</span></div><div class="people">${members.map(m=>`<span class="social-chip profile-chip"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(m.user_id))}" alt="" loading="lazy" decoding="async"></i>${esc(m.user_name)}</span>`).join('')}</div></div>`;
  }).join('');
- const rosterHtml=`<section class="group-roster group-roster-bottom"><div class="section-head"><h3>People in your groups</h3></div>${roster}</section>`;
+ const rosterHtml=inGroups?`<section class="group-roster group-roster-bottom"><div class="section-head"><h3>People in your groups</h3></div>${roster}</section>`:joinPrompt;
  let html=recs;
 
  // Other people's responses, grouped by event. My own rows are left out here:
@@ -1474,11 +1483,11 @@ function renderPeople(){
  const myStatus=id=>attendance.find(x=>x.event_id===id&&x.user_id===me)?.status||null;
  // An event is listed when I, or someone in my groups, is Interested or Going.
  const keen=s=>s==='interested'||s==='ticket_bought';
- const active=[...events,...festivals].filter(e=>e.date>=today&&(keen(myStatus(e.id))||(others.get(e.id)||[]).some(x=>keen(x.status))))
+ const active=[...events,...festivals].filter(e=>(e.date_end||e.date)>=today&&(keen(myStatus(e.id))||(others.get(e.id)||[]).some(x=>keen(x.status))))
   .sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
- if(!active.length){$('peopleList').innerHTML=html+'<div class="empty happenings-empty">No plans yet. Mark an event Interested or Going and it will show here for your groups.</div>'+rosterHtml;return}
+ if(!active.length){$('peopleList').innerHTML=html+(inGroups?'<div class="empty happenings-empty">No plans yet. Mark an event Interested or Going and it will show here for your groups.</div>':'')+rosterHtml;return}
 
- html+='<div class="section-head happenings-events-head"><h3>What\'s happening</h3></div>';
+ html+=`<div class="section-head happenings-events-head"><h3>${inGroups?'What\'s happening':'Your plans'}</h3></div>`;
  html+=active.map(e=>{
   const rows=others.get(e.id)||[], mine=myStatus(e.id);
   // Friend totals count each person once, using their strongest response.
@@ -1496,7 +1505,7 @@ function renderPeople(){
    return `<div class="happening-group"><div class="group-heading">${esc(g.name)}</div><div class="happening-people">${people.map(x=>`<div class="happening-person"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(x.user_id))}" alt="" loading="lazy" decoding="async"></i><span class="happening-person-name">${esc(x.user_name)}</span>${statusPill(x.status)}</div>`).join('')}</div></div>`;
   }).join('');
   const you=mine?`<div class="happening-you"><span class="happening-person-name">You</span>${statusPill(mine)}</div>`:'';
-  const quiet=!sections?'<div class="note happening-quiet">No one in your groups has responded yet.</div>':'';
+  const quiet=!sections&&inGroups?'<div class="note happening-quiet">No one in your groups has responded yet.</div>':'';
   return `<div class="people-card card"><div class="top"><div><h3>${esc(e.title)}${e.is_custom?` <span class="added-by">community added</span>`:''}</h3><div class="meta">${String(e.id||'').startsWith('festival:')?esc((e.location_display||e.location||'UK')+' · '+festivalDateLabel(e)):[esc(e.venue_display||e.venue),esc((parseEventDate(e.date)||new Date()).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})),timeRange(e)].filter(Boolean).join(' · ')}</div></div>${cardFlags(e)}</div>${you}${summary.length?`<div class="happening-summary">${summary.join('')}</div>`:''}${sections}${quiet}${commitmentButtons(e,mine?{status:mine}:null)}<div class="actions">${ticketLink(e)}${calendarLink(e)}${shareLink(e)}</div></div>`;
  }).join('');
  $('peopleList').innerHTML=html+rosterHtml;
@@ -1536,12 +1545,12 @@ function festivalTicketLink(f){const u=safeUrl(f.ticket_url);return u?'<a class=
 function festivalCard(f){
  const mine=attendance.find(x=>x.event_id===f.id&&x.user_id===uid());
  const a=uniqueGroupPeopleCount(f.id,'interested'),t=uniqueGroupPeopleCount(f.id,'ticket_bought');
- return '<article class="card festival-card"><div class="festival-date">'+esc(festivalDateLabel(f))+'</div><div class="top"><div><div class="title">'+esc(f.title)+'</div><div class="festival-location">📍 '+esc(f.location_display||f.location||'UK')+'</div></div></div><span class="festival-type">'+esc(f.category||'Other')+'</span><div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>'+a+' interested</span><span class="social-chip"><i class="social-icon going">'+TICKET_ICON+'</i>'+t+' going</span></div>'+commitmentButtons(f,mine)+'<div class="actions">'+festivalTicketLink(f)+'</div></article>';
+ return '<article class="card festival-card" data-event-id="'+esc(f.id)+'"><div class="festival-date">'+esc(festivalDateLabel(f))+'</div><div class="top"><div><div class="title">'+esc(f.title)+'</div><div class="festival-location">📍 '+esc(f.location_display||f.location||'UK')+'</div></div></div><span class="festival-type">'+esc(f.category||'Other')+'</span><div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>'+a+' interested</span><span class="social-chip"><i class="social-icon going">'+TICKET_ICON+'</i>'+t+' going</span></div>'+commitmentButtons(f,mine)+'<div class="actions">'+festivalTicketLink(f)+'</div></article>';
 }
 function renderFestivals(){
  const box=$('festivalList');if(!box)return;
  const today=todayKey(),end=dateKey(new Date(new Date().getFullYear()+1,11,31));
- let list=festivals.filter(f=>f.date>=today&&f.date<=end&&(f.date_end||f.date)>=today);
+ let list=festivals.filter(f=>f.date<=end&&(f.date_end||f.date)>=today); // still on, even if it started before today
  if(festivalFilter==='Brighton')list=list.filter(festivalIsBrighton);else list=list.filter(f=>f.category===festivalFilter);
  list.sort((a,b)=>(a.date+(a.title||'')).localeCompare(b.date+(b.title||'')));
  document.querySelectorAll('[data-festival-filter]').forEach(b=>{const on=b.dataset.festivalFilter===festivalFilter;b.classList.toggle('active',on);b.setAttribute('aria-selected',on)});
@@ -1628,11 +1637,12 @@ function renderSearch(){
    &&(!searchPromoters.size||searchPromoters.has(e.promoter)));
  }
  const today=todayKey();
- if(searchMode==='festival')out=out.filter(f=>f.date>=today&&(f.date_end||f.date)>=today);else out=out.filter(e=>e.date>=today);
+ if(searchMode==='festival')out=out.filter(f=>(f.date_end||f.date)>=today);else out=out.filter(e=>e.date>=today);
  out.sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
  $('searchCount').textContent=out.length+' '+(searchMode==='festival'?'festival':'event')+(out.length===1?'':'s');
- const empty=searchMode==='artist'?'Type an artist or show name to search every date.':searchMode==='promoter'?'Choose a promoter to see all their upcoming gigs, at any venue.':searchMode==='festival'?'Type a festival name, location or category to search the festival listings.':'Choose a date range, then venues, genres or a promoter.';
- box.innerHTML=out.length?(searchMode==='festival'?out.slice(0,200).map(festivalCard).join(''):out.slice(0,200).map(e=>eventCard(e,{showDate:true})).join('')):`<div class="empty">${empty}</div>`;
+ const empty=searchMode==='artist'?'Type an artist or show name to search every date.':searchMode==='promoter'?'Choose a promoter to see all their upcoming gigs, at any venue.':searchMode==='festival'?'Type a festival name, location or category to search the festival listings.':'Choose a date range and at least one venue.';
+ const capped=out.length>200?`<div class="note">Showing the first 200 of ${out.length}. Narrow the search to see the rest.</div>`:'';
+ box.innerHTML=out.length?(searchMode==='festival'?out.slice(0,200).map(festivalCard).join(''):out.slice(0,200).map(e=>eventCard(e,{showDate:true})).join(''))+capped:`<div class="empty">${empty}</div>`;
 }
 function setupSearch(){
  document.querySelectorAll('[data-search-mode]').forEach(b=>b.onclick=()=>setSearchMode(b.dataset.searchMode));
@@ -1710,13 +1720,13 @@ $('deleteAccount').onclick=async()=>{
   // Remove everything this app stored on the device, including the sign-in session.
   Object.keys(localStorage).filter(k=>k.startsWith('bw_')||k.startsWith('sb-')).forEach(k=>localStorage.removeItem(k));
   try{await supabase.auth.signOut()}catch(e){}
-  authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';customEvents=[];festivals=[];
+  authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';customEvents=[];homeShown=false;
   $('accountEmail').textContent='';enterGuestMode();
   alert('Your account and data have been deleted.');
  }catch(err){alert('Sorry, your account could not be deleted: '+(err.message||err)+'\nPlease try again, or email us using the address in the Privacy Policy.')}
  finally{btn.disabled=false;btn.textContent='Delete my account'}
 };
-$('signOut').onclick=async()=>{await supabase.auth.signOut();authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';festivals=[];localStorage.removeItem('bw_name');$('accountEmail').textContent='';enterGuestMode()};
+$('signOut').onclick=async()=>{await supabase.auth.signOut();authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';homeShown=false;localStorage.removeItem('bw_name');$('accountEmail').textContent='';enterGuestMode()};
 $('partyOnBtn').onclick=finishWelcome;
 $('showCreateGroup').onclick=()=>{hide('joinGroupPanel');$('createGroupPanel').classList.toggle('hidden')};
 $('showJoinGroup').onclick=()=>{hide('createGroupPanel');$('joinGroupPanel').classList.toggle('hidden')};
@@ -1766,11 +1776,11 @@ function showSharedEvent(){const pendingSharedEventId=readPendingLink()?.event;i
  if(!events.length&&!festivals.length)return;
  // New users are still on the welcome screens; keep the link until they finish (see finishWelcome).
  if(!$('welcome').classList.contains('hidden'))return;
- const e=[...events,...festivals].find(x=>String(x.id)===String(pendingSharedEventId));clearPendingLink('event');if(!e){alert('That shared event has passed or is no longer listed.');return}openTab("discover");const box=$('discover');const existing=box.querySelector('[data-event-id="'+CSS.escape(String(e.id))+'"]');if(existing){existing.scrollIntoView({behavior:"smooth",block:"center"});existing.classList.add("shared-target");setTimeout(()=>existing.classList.remove("shared-target"),3000);return}box.innerHTML='<section class="shared-event-panel"><div class="section-head"><h2>Shared event</h2><div class="note">Someone shared this event with you.</div></div>'+eventCard(e,{showDate:true})+'</section>'+box.innerHTML;const card=box.querySelector(".shared-event-panel [data-event-id]");if(card){card.classList.add("shared-target");setTimeout(()=>card.classList.remove("shared-target"),3000)}}
+ const e=[...events,...festivals].find(x=>String(x.id)===String(pendingSharedEventId));clearPendingLink('event');if(!e){alert('That shared event has passed or is no longer listed.');return}const isFestival=String(e.id).startsWith('festival:');openTab(isFestival?"festivalsTab":"discover");const box=$(isFestival?'festivalList':'discover');const existing=box.querySelector('[data-event-id="'+CSS.escape(String(e.id))+'"]');if(existing){existing.scrollIntoView({behavior:"smooth",block:"center"});existing.classList.add("shared-target");setTimeout(()=>existing.classList.remove("shared-target"),3000);return}box.innerHTML='<section class="shared-event-panel"><div class="section-head"><h2>Shared '+(isFestival?'festival':'event')+'</h2><div class="note">Someone shared this '+(isFestival?'festival':'event')+' with you.</div></div>'+(isFestival?festivalCard(e):eventCard(e,{showDate:true}))+'</section>'+box.innerHTML;const card=box.querySelector(".shared-event-panel [data-event-id]");if(card){card.classList.add("shared-target");setTimeout(()=>card.classList.remove("shared-target"),3000)}}
 const seenKey=()=>'bw_seen_'+uid();
 let newSinceVisit=[], showNewPanel=false, homeShown=false;
 function readSeen(){try{return JSON.parse(localStorage.getItem(seenKey())||'null')}catch(e){return null}}
-function friendPlanKeys(){const me=uid(),today=todayKey(),ids=new Set([...events,...festivals].filter(e=>e.date>=today).map(e=>e.id));return [...new Set(groupHappenings.filter(x=>x.user_id&&x.user_id!==me&&(x.status==='interested'||x.status==='ticket_bought')&&ids.has(x.event_id)).map(x=>x.user_id+':'+x.event_id+':'+x.status))]}
+function friendPlanKeys(){const me=uid(),today=todayKey(),ids=new Set([...events,...festivals].filter(e=>(e.date_end||e.date)>=today).map(e=>e.id));return [...new Set(groupHappenings.filter(x=>x.user_id&&x.user_id!==me&&(x.status==='interested'||x.status==='ticket_bought')&&ids.has(x.event_id)).map(x=>x.user_id+':'+x.event_id+':'+x.status))]}
 function memberMap(){const m={};groupMembers.forEach(x=>{(m[x.group_id]=m[x.group_id]||[]).push(x.user_id)});return m}
 function saveSeen(){
  try{const today=todayKey();localStorage.setItem(seenKey(),JSON.stringify({at:new Date().toISOString(),events:events.filter(e=>e.date>=today).map(e=>e.id),plans:friendPlanKeys(),members:memberMap()}))}

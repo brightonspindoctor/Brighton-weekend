@@ -41,7 +41,8 @@ for i, f in enumerate(festivals):
     if missing: errors.append(f"{label}: missing {', '.join(missing)}"); continue
     try: d = date.fromisoformat(str(f["date"])); de = date.fromisoformat(str(f["date_end"]))
     except ValueError: errors.append(f"{label}: invalid date or date_end"); continue
-    if not (start <= d <= de <= end): errors.append(f"{label}: dates {d} to {de} are out of order or outside {start} to {end}")
+    # A festival that is on now may have started before the range: it only has to finish within it.
+    if not (d <= de <= end and de >= start): errors.append(f"{label}: dates {d} to {de} are out of order or outside {start} to {end}")
     if not str(f["id"]).startswith("festival:"): errors.append(f"{label}: id is not festival-scoped")
     if f["id"] in ids: errors.append(f"duplicate id {f['id']}")
     ids.add(f["id"])
