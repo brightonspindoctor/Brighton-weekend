@@ -52,7 +52,7 @@ jobs:
         run: python scripts/scrape-discovery.py
       - name: Prepare event data
         run: python scripts/prepare-events.py
-      - name: Tag genres (listing names it, or a confident MusicBrainz match)
+      - name: Tag genres (listing names it, or a confident MusicBrainz or Wikidata match)
         run: |
           python scripts/tag-genres.py --self-test
           python scripts/tag-genres.py
