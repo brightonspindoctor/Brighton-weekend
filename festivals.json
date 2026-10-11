@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-10",
-  "range_start": "2026-10-10",
+  "updated": "2026-10-11",
+  "range_start": "2026-10-11",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -976,7 +976,7 @@
       "location": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove",
       "category": "Family",
       "ticket_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
-      "source": "https://www.visitbrighton.com/whats-on/festivals?p=2",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
       "detail_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
       "id": "festival:rotary-family-festival-big-help-out:2027-06-06",
       "location_display": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove"
