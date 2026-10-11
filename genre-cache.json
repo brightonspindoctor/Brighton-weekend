@@ -4165,24 +4165,11 @@
   "v": 2
  },
  "hed p e": {
-  "mbid": "19516266-e5d9-4774-b749-812bb76a6559",
-  "name": "(həd) p.e.",
-  "genres": [
-   {
-    "name": "nu metal",
-    "count": 2
-   },
-   {
-    "name": "rapcore",
-    "count": 1
-   }
-  ],
-  "wikidata": "Q158599",
-  "bucket": "Punk & Metal",
-  "reason": "tagged",
+  "bucket": null,
+  "reason": "not in MusicBrainz",
   "act": "Hed P.E.",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 3
  },
  "hed p e cold": {
   "bucket": null,
@@ -4227,44 +4214,11 @@
   "v": 2
  },
  "henry": {
-  "mbid": "24e0aaa1-7961-4ab8-865e-e736226e41c9",
-  "name": "Pierre Henry",
-  "genres": [
-   {
-    "name": "avant-garde",
-    "count": 2
-   },
-   {
-    "name": "classical",
-    "count": 2
-   },
-   {
-    "name": "contemporary classical",
-    "count": 2
-   },
-   {
-    "name": "electroacoustic",
-    "count": 2
-   },
-   {
-    "name": "experimental",
-    "count": 1
-   },
-   {
-    "name": "experimental electronic",
-    "count": 1
-   },
-   {
-    "name": "musique concrète",
-    "count": 3
-   }
-  ],
-  "wikidata": "Q544469",
-  "bucket": "Classical",
-  "reason": "tagged",
+  "bucket": null,
+  "reason": "not in MusicBrainz",
   "act": "HENRY",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 3
  },
  "heritage and tours": {
   "bucket": null,
