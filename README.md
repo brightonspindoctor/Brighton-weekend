@@ -73,7 +73,18 @@ on manual dispatch, and whenever a scraper file changes on `main`. It runs:
    recurring nights excluded). Talks the listing filed as something else are
    filed as Talk when the title says so ("In Conversation", "Q&A",
    "Interview", "Podcast", "Book Tour"), so they show on the Not music tab.
-4. `scripts/validate-events.py`: refuses to publish a small or malformed file.
+4. `scripts/check-tickets.py`: follows each event's ticket link as close to
+   buying as it can (a listing page → the event's card → its booking button →
+   the seller, at most three steps) and marks shows **Sold out** only when a
+   page says so: the seller's structured data gives every ticket type as sold
+   out (on DICE, every type on the waiting list), or the event's page or its
+   card on the venue's listings has a "Sold out" / "Fully booked" label and no
+   live booking button. Seller data saying tickets are on sale wins over a
+   label. Results are kept in `ticket-cache.json`: events in the next three
+   weeks are rechecked daily, later ones every four days, within a 20-minute
+   limit. Pages that can't be read leave the event as it was. If this step
+   fails, the day's listings are still published.
+5. `scripts/validate-events.py`: refuses to publish a small or malformed file.
 
 An event's identity is **venue + date + title + start time**, so separate
 sessions of the same show on one day are kept. Event `id`s are never

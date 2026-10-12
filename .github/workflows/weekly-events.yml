@@ -11,6 +11,7 @@ on:
       - 'scripts/prepare-events.py'
       - 'scripts/event_matching.py'
       - 'scripts/tag-genres.py'
+      - 'scripts/check-tickets.py'
       - 'excluded-events.json'
       - 'scripts/validate-events.py'
       - 'scripts/build-event-pages.py'
@@ -52,6 +53,10 @@ jobs:
         run: python scripts/scrape-discovery.py
       - name: Prepare event data
         run: python scripts/prepare-events.py
+      - name: Follow ticket links to the seller and mark sold-out shows
+        run: python scripts/check-tickets.py
+        timeout-minutes: 35
+        continue-on-error: true  # a problem here must never stop the day's listings
       - name: Tag genres (listing names it, or a confident MusicBrainz or Wikidata match)
         run: |
           python scripts/tag-genres.py --self-test
@@ -69,15 +74,18 @@ jobs:
           # (Merging failed whenever events.json changed on main during a run.)
           cp events.json "$RUNNER_TEMP/events.json"
           cp genre-cache.json "$RUNNER_TEMP/genre-cache.json"
+          if [ -f ticket-cache.json ]; then cp ticket-cache.json "$RUNNER_TEMP/ticket-cache.json"; fi
           git fetch origin main
           git reset --hard origin/main
           cp "$RUNNER_TEMP/events.json" events.json
           cp "$RUNNER_TEMP/genre-cache.json" genre-cache.json
+          if [ -f "$RUNNER_TEMP/ticket-cache.json" ]; then cp "$RUNNER_TEMP/ticket-cache.json" ticket-cache.json; fi
           # Shareable event pages, the this-weekend page and the sitemap are
           # built from the fresh events.json (see scripts/build-event-pages.py).
           python scripts/build-event-pages.py
           git add events.json genre-cache.json sitemap.xml this-weekend pages.css
           git add -A e
+          if [ -f ticket-cache.json ]; then git add ticket-cache.json; fi
           if git diff --cached --quiet; then
             echo 'No event data changes this run.'
             exit 0
