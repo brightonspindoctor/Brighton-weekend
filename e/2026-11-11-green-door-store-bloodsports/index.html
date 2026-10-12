@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src https://zqvccsnfrkrtcsitfwcd.supabase.co; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bloodsports – Green Door Store, Brighton, Wed 11 Nov | Brighton Weekend</title>
 <meta name="description" content="Wed 11 Nov · Green Door Store, Brighton. Plan it with your mates on Brighton Weekend.">
@@ -59,12 +59,13 @@
 <div><span class="pill">Music</span></div>
 <h1>Bloodsports</h1>
 <ul class="facts"><li><strong>Wednesday 11 November 2026</strong></li><li>Green Door Store, Brighton</li></ul>
-<div class="actions"><a class="btn go" href="/?event=2026-11-11-green-door-store-bloodsports">Plan it with friends</a><a class="btn alt" href="https://thegreendoorstore.co.uk/events/bloodsports/" rel="noopener">Tickets ↗</a></div>
+<div class="actions"><a class="btn go" href="/?event=2026-11-11-green-door-store-bloodsports">Plan it with friends</a><a class="btn alt" href="https://thegreendoorstore.co.uk/events/bloodsports/" rel="noopener" data-ticket-event="2026-11-11-green-door-store-bloodsports">Tickets ↗</a></div>
 <h2>Also on Wednesday</h2><ul class="list"><li><span class="t">19:00</span><span><a href="/e/2026-11-11-patterns-tom-a-smith/">Tom A Smith</a><span class="v">Patterns · Music</span></span></li><li><span class="t">19:30</span><span><a href="/e/2026-11-11-komedia-the-march-violets-wed-11-nov-2026-7-30-pm-doors-7-00-pm/">The March Violets</a><span class="v">Komedia</span></span></li><li><span class="t"></span><span><a href="/e/2026-11-11-the-hope-ruin-an-dannsa-dub/">An Dannsa Dub</a><span class="v">The Hope &amp; Ruin · Music</span></span></li><li><span class="t"></span><span><a href="/e/2026-11-11-the-prince-albert-big-brave/">Big|Brave</a><span class="v">The Prince Albert · Music</span></span></li><li><span class="t"></span><span><a href="/e/2026-11-11-chalk-cassia/">Cassia</a><span class="v">CHALK · Music</span></span></li><li><span class="t"></span><span><a href="/e/2026-11-11-theatreroyalbrighton-cody-dahler/">Cody Dahler: The State of This</a><span class="v">Theatre Royal Brighton · Theatre</span></span></li><li><span class="t"></span><span><a href="/e/2026-11-11-volks-gone-fishin-dumbhead/">Gone Fishin&#x27;: Dumbhead</a><span class="v">Volks · Music</span></span></li><li><span class="t"></span><span><a href="/e/2026-11-11-the-folklore-rooms-possessed-by-paul-james/">Possessed by Paul James</a><span class="v">The Folklore Rooms · Music</span></span></li></ul>
 <p style="margin-top:26px"><a href="/this-weekend/">See everything on in Brighton this weekend →</a></p>
 </article>
 </main>
 <footer><a href="/">Open the app</a><a href="/this-weekend/">This weekend</a><a href="/about.html">About</a><a href="/privacy.html">Privacy</a></footer>
 <script>(function(){var q=new URLSearchParams(location.search);if(!q.has('share')&&!q.has('group_invite'))return;q.delete('share');q.set('event',"2026-11-11-green-door-store-bloodsports");location.replace('/?'+q.toString());})();</script>
+<script>(function(){function t(ev){var a=ev.target.closest&&ev.target.closest('a[data-ticket-event]');if(!a)return;var g=null;try{g=localStorage.getItem('bw_guest_id')}catch(x){}try{fetch("https://zqvccsnfrkrtcsitfwcd.supabase.co/rest/v1/rpc/bw_track_ticket_click",{method:'POST',keepalive:true,headers:{apikey:"sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1",Authorization:'Bearer '+"sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1",'Content-Type':'application/json'},body:JSON.stringify({p_event_id:a.getAttribute('data-ticket-event'),p_source:'event_page',p_guest_id:g||null})}).catch(function(){})}catch(x){}}document.addEventListener('click',t);document.addEventListener('auxclick',t);})();</script>
 </body>
 </html>

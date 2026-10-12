@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src https://zqvccsnfrkrtcsitfwcd.supabase.co; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Six - The Musical – Theatre Royal Brighton, Brighton, Fri 4 Dec | Brighton Weekend</title>
 <meta name="description" content="Fri 4 Dec · Theatre Royal Brighton, Brighton. Plan it with your mates on Brighton Weekend.">
@@ -59,12 +59,13 @@
 <div><span class="pill">Theatre</span></div>
 <h1>Six - The Musical</h1>
 <ul class="facts"><li><strong>Friday 4 December 2026</strong></li><li>Theatre Royal Brighton, Brighton</li></ul>
-<div class="actions"><a class="btn go" href="/?event=2026-12-04-theatreroyalbrighton-six-the-musical">Plan it with friends</a><a class="btn alt" href="https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/" rel="noopener">Tickets ↗</a></div>
+<div class="actions"><a class="btn go" href="/?event=2026-12-04-theatreroyalbrighton-six-the-musical">Plan it with friends</a><a class="btn alt" href="https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/" rel="noopener" data-ticket-event="2026-12-04-theatreroyalbrighton-six-the-musical">Tickets ↗</a></div>
 <h2>Also on Friday</h2><ul class="list"><li><span class="t">18:30</span><span><a href="/e/2026-12-04-brighton-centre-royal-blood/">Royal Blood</a><span class="v">Brighton Centre · Music</span></span></li><li><span class="t">19:00</span><span><a href="/e/2026-12-04-volks-guns-2-roses/">Guns 2 Roses</a><span class="v">Volks</span></span></li><li><span class="t">19:00</span><span><a href="/e/2026-12-04-concorde-2-martin-kemp-back-to-the-80s-xmas-special/">Martin Kemp - Back To The 80s Xmas Special</a><span class="v">Concorde 2 · Club</span></span></li><li><span class="t">19:30</span><span><a href="/e/2026-12-04-komedia-the-maydays-confessions/">The Maydays: Confessions!</a><span class="v">Komedia</span></span></li><li><span class="t">20:00</span><span><a href="/e/2026-12-04-the-forge-comedy-club-forge-comedy-club/">The Forge Comedy Club</a><span class="v">The Forge Comedy Club · Comedy</span></span></li><li><span class="t">23:00</span><span><a href="/e/2026-12-04-volks-size-chris-liberator-aaron-liberator-julian-liberator/">SiZE - Chris Liberator//Aaron Liberator//Julian Liberator</a><span class="v">Volks · Club</span></span></li><li><span class="t"></span><span><a href="/e/2026-12-04-chalk-alborosie/">Alborosie</a><span class="v">CHALK · Music</span></span></li><li><span class="t"></span><span><a href="/e/2026-12-04-greendoorstore-danalogue/">Danalogue</a><span class="v">Green Door Store · Music</span></span></li></ul>
 <p style="margin-top:26px"><a href="/this-weekend/">See everything on in Brighton this weekend →</a></p>
 </article>
 </main>
 <footer><a href="/">Open the app</a><a href="/this-weekend/">This weekend</a><a href="/about.html">About</a><a href="/privacy.html">Privacy</a></footer>
 <script>(function(){var q=new URLSearchParams(location.search);if(!q.has('share')&&!q.has('group_invite'))return;q.delete('share');q.set('event',"2026-12-04-theatreroyalbrighton-six-the-musical");location.replace('/?'+q.toString());})();</script>
+<script>(function(){function t(ev){var a=ev.target.closest&&ev.target.closest('a[data-ticket-event]');if(!a)return;var g=null;try{g=localStorage.getItem('bw_guest_id')}catch(x){}try{fetch("https://zqvccsnfrkrtcsitfwcd.supabase.co/rest/v1/rpc/bw_track_ticket_click",{method:'POST',keepalive:true,headers:{apikey:"sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1",Authorization:'Bearer '+"sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1",'Content-Type':'application/json'},body:JSON.stringify({p_event_id:a.getAttribute('data-ticket-event'),p_source:'event_page',p_guest_id:g||null})}).catch(function(){})}catch(x){}}document.addEventListener('click',t);document.addEventListener('auxclick',t);})();</script>
 </body>
 </html>

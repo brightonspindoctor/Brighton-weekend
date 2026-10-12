@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src https://zqvccsnfrkrtcsitfwcd.supabase.co; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Caleb Caudle – The Folklore Rooms, Brighton, Wed 13 Jan | Brighton Weekend</title>
 <meta name="description" content="Wed 13 Jan · The Folklore Rooms, Brighton. Plan it with your mates on Brighton Weekend.">
@@ -59,12 +59,13 @@
 <div><span class="pill">Music</span></div>
 <h1>Caleb Caudle</h1>
 <ul class="facts"><li><strong>Wednesday 13 January 2027</strong></li><li>The Folklore Rooms, Brighton</li></ul>
-<div class="actions"><a class="btn go" href="/?event=2027-01-13-the-folklore-rooms-caleb-caudle">Plan it with friends</a><a class="btn alt" href="https://www.seetickets.com/event/caleb-caudle/the-folklore-rooms/3731725" rel="noopener">Tickets ↗</a></div>
+<div class="actions"><a class="btn go" href="/?event=2027-01-13-the-folklore-rooms-caleb-caudle">Plan it with friends</a><a class="btn alt" href="https://www.seetickets.com/event/caleb-caudle/the-folklore-rooms/3731725" rel="noopener" data-ticket-event="2027-01-13-the-folklore-rooms-caleb-caudle">Tickets ↗</a></div>
 <h2>Also on Wednesday</h2><ul class="list"><li><span class="t"></span><span><a href="/e/2027-01-13-the-prince-albert-hit-like-a-girl-guests/">Hit Like A Girl + guests</a><span class="v">The Prince Albert · Music</span></span></li><li><span class="t"></span><span><a href="/e/2027-01-13-theatreroyalbrighton-it-s-a-beautiful-noise-the-definitive-tribute-to-neil-diamond/">It&#x27;s A Beautiful Noise - The Definitive Tribute To Neil Diamond</a><span class="v">Theatre Royal Brighton · Music</span></span></li></ul>
 <p style="margin-top:26px"><a href="/this-weekend/">See everything on in Brighton this weekend →</a></p>
 </article>
 </main>
 <footer><a href="/">Open the app</a><a href="/this-weekend/">This weekend</a><a href="/about.html">About</a><a href="/privacy.html">Privacy</a></footer>
 <script>(function(){var q=new URLSearchParams(location.search);if(!q.has('share')&&!q.has('group_invite'))return;q.delete('share');q.set('event',"2027-01-13-the-folklore-rooms-caleb-caudle");location.replace('/?'+q.toString());})();</script>
+<script>(function(){function t(ev){var a=ev.target.closest&&ev.target.closest('a[data-ticket-event]');if(!a)return;var g=null;try{g=localStorage.getItem('bw_guest_id')}catch(x){}try{fetch("https://zqvccsnfrkrtcsitfwcd.supabase.co/rest/v1/rpc/bw_track_ticket_click",{method:'POST',keepalive:true,headers:{apikey:"sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1",Authorization:'Bearer '+"sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1",'Content-Type':'application/json'},body:JSON.stringify({p_event_id:a.getAttribute('data-ticket-event'),p_source:'event_page',p_guest_id:g||null})}).catch(function(){})}catch(x){}}document.addEventListener('click',t);document.addEventListener('auxclick',t);})();</script>
 </body>
 </html>

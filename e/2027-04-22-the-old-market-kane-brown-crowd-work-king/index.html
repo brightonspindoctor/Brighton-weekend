@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src https://zqvccsnfrkrtcsitfwcd.supabase.co; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kane Brown: Crowd Work King – The Old Market, Brighton, Thu 22 Apr | Brighton Weekend</title>
 <meta name="description" content="Thu 22 Apr · The Old Market, Brighton. Plan it with your mates on Brighton Weekend.">
@@ -59,12 +59,13 @@
 <div><span class="pill">Comedy</span></div>
 <h1>Kane Brown: Crowd Work King</h1>
 <ul class="facts"><li><strong>Thursday 22 April 2027</strong></li><li>The Old Market, Brighton</li></ul>
-<div class="actions"><a class="btn go" href="/?event=2027-04-22-the-old-market-kane-brown-crowd-work-king">Plan it with friends</a><a class="btn alt" href="https://www.theoldmarket.com/shows/kane-brown-crowd-work-king" rel="noopener">Tickets ↗</a></div>
+<div class="actions"><a class="btn go" href="/?event=2027-04-22-the-old-market-kane-brown-crowd-work-king">Plan it with friends</a><a class="btn alt" href="https://www.theoldmarket.com/shows/kane-brown-crowd-work-king" rel="noopener" data-ticket-event="2027-04-22-the-old-market-kane-brown-crowd-work-king">Tickets ↗</a></div>
 
 <p style="margin-top:26px"><a href="/this-weekend/">See everything on in Brighton this weekend →</a></p>
 </article>
 </main>
 <footer><a href="/">Open the app</a><a href="/this-weekend/">This weekend</a><a href="/about.html">About</a><a href="/privacy.html">Privacy</a></footer>
 <script>(function(){var q=new URLSearchParams(location.search);if(!q.has('share')&&!q.has('group_invite'))return;q.delete('share');q.set('event',"2027-04-22-the-old-market-kane-brown-crowd-work-king");location.replace('/?'+q.toString());})();</script>
+<script>(function(){function t(ev){var a=ev.target.closest&&ev.target.closest('a[data-ticket-event]');if(!a)return;var g=null;try{g=localStorage.getItem('bw_guest_id')}catch(x){}try{fetch("https://zqvccsnfrkrtcsitfwcd.supabase.co/rest/v1/rpc/bw_track_ticket_click",{method:'POST',keepalive:true,headers:{apikey:"sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1",Authorization:'Bearer '+"sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1",'Content-Type':'application/json'},body:JSON.stringify({p_event_id:a.getAttribute('data-ticket-event'),p_source:'event_page',p_guest_id:g||null})}).catch(function(){})}catch(x){}}document.addEventListener('click',t);document.addEventListener('auxclick',t);})();</script>
 </body>
 </html>

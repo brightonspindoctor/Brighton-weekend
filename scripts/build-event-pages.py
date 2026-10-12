@@ -160,8 +160,12 @@ footer a{color:var(--subtle);margin-right:14px}
 
 STYLE_VERSION = __import__('hashlib').sha1(STYLE.encode()).hexdigest()[:8]
 
+SUPABASE_URL = 'https://zqvccsnfrkrtcsitfwcd.supabase.co'
+SUPABASE_KEY = 'sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1'  # public key, same as index.html
+
 CSP = ("default-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline'; "
-       "img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'")
+       f"img-src 'self'; font-src 'self'; connect-src {SUPABASE_URL}; "
+       "base-uri 'none'; form-action 'none'; object-src 'none'")
 
 
 def page(*, title: str, description: str, url: str, og_title: str, body: str,
@@ -233,7 +237,7 @@ def event_page(e: dict, d: date, same_day: list[tuple[dict, date]]) -> str:
         facts.append(f'<li>{esc(e["price"])}</li>')
     if e.get('promoter'):
         facts.append(f'<li>Promoted by {esc(e["promoter"])}</li>')
-    tickets = f'<a class="btn alt" href="{esc(ticket_url(e))}" rel="noopener">Tickets ↗</a>' if ticket_url(e) else ''
+    tickets = f'<a class="btn alt" href="{esc(ticket_url(e))}" rel="noopener" data-ticket-event="{esc(e['id'])}">Tickets ↗</a>' if ticket_url(e) else ''
     app_link = f'/?event={e["id"]}'
     others = [x for x in same_day if x[0]['id'] != e['id']][:8]
     more = f'<h2>Also on {d:%A}</h2>{listing(others)}' if others else ''
@@ -248,6 +252,7 @@ def event_page(e: dict, d: date, same_day: list[tuple[dict, date]]) -> str:
     # People arriving from a shared link go straight into the app (with any
     # group invite). Crawlers don't run this, so they read the page above.
     script = f"""<script>(function(){{var q=new URLSearchParams(location.search);if(!q.has('share')&&!q.has('group_invite'))return;q.delete('share');q.set('event',{json.dumps(e['id'])});location.replace('/?'+q.toString());}})();</script>
+<script>(function(){{function t(ev){{var a=ev.target.closest&&ev.target.closest('a[data-ticket-event]');if(!a)return;var g=null;try{{g=localStorage.getItem('bw_guest_id')}}catch(x){{}}try{{fetch({json.dumps(SUPABASE_URL + '/rest/v1/rpc/bw_track_ticket_click')},{{method:'POST',keepalive:true,headers:{{apikey:{json.dumps(SUPABASE_KEY)},Authorization:'Bearer '+{json.dumps(SUPABASE_KEY)},'Content-Type':'application/json'}},body:JSON.stringify({{p_event_id:a.getAttribute('data-ticket-event'),p_source:'event_page',p_guest_id:g||null}})}}).catch(function(){{}})}}catch(x){{}}}}document.addEventListener('click',t);document.addEventListener('auxclick',t);}})();</script>
 """
     title = f'{e["title"]} – {e["venue"]}, Brighton, {short_date(d)} | Brighton Weekend'
     return page(title=title, description=summary(e, d), url=event_url(e), og_title=e['title'], body=body,

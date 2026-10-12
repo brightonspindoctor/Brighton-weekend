@@ -17,6 +17,8 @@
 <div class="card"><div class="muted">Unique app users</div><div class="stat" id="count">—</div><div class="small">Unique browser/app IDs seen by Brighton Weekend</div></div>
 <div class="card"><h2>Last 30 days</h2><div class="stat" id="recent">—</div><div class="small">Unique IDs with a visit in the last 30 days</div></div>
 <div class="card"><h2>Guests</h2><div class="stat" id="guests30">—</div><div class="small">Guest devices with a visit in the last 30 days</div><div style="margin-top:12px" id="guestDetail" class="muted">—</div></div>
+<div class="card"><h2>Avatar switches</h2><div class="stat" id="avatarPeople">—</div><div class="small">People who have changed their avatar at least once (out of <span id="avatarProfiles">—</span> accounts)</div><div style="margin-top:12px" id="avatarDetail" class="muted">—</div></div>
+<div class="card"><h2>Get tickets taps</h2><div class="stat" id="tickets30">—</div><div class="small">Taps on a ticket link in the last 30 days</div><div style="margin-top:12px" id="ticketDetail" class="muted">—</div><ol id="ticketTop" class="muted"></ol></div>
 <div class="card"><div class="muted">Latest tracked activity</div><div id="last" style="margin-top:8px">—</div></div>
 <button id="signout">Sign out</button>
 </section>
@@ -36,6 +38,13 @@ async function load(){
  $('recent').textContent=data?.recent_users ?? '0';
  $('guests30').textContent=data?.recent_guests ?? '0';
  {const g=Number(data?.total_guests)||0,c=Number(data?.converted_guests)||0;$('guestDetail').textContent=`${g} guest device${g===1?'':'s'} seen in total · ${c} signed up${g?` (${Math.round(c/g*100)}%)`:''}`;}
+ {const a=data?.avatars||{},n=x=>Number(x)||0,since=d=>d?' · counting since '+new Date(d).toLocaleDateString('en-GB'):' · nothing recorded yet';
+  $('avatarPeople').textContent=n(a.people);$('avatarProfiles').textContent=n(a.profiles);
+  $('avatarDetail').textContent=`${n(a.total)} switch${n(a.total)===1?'':'es'} in total, ${n(a.recent)} in the last 30 days`+((a.popular||[]).length?' · most chosen: '+a.popular.map(p=>`${p.icon} (${p.n})`).join(', '):'')+since(a.since);
+  const t=data?.tickets||{};
+  $('tickets30').textContent=n(t.recent);
+  $('ticketDetail').textContent=`${n(t.recent_people)} different people or devices · ${n(t.recent_users)} by signed-in users · ${n(t.recent_pages)} from shared event pages · ${n(t.total)} in total`+since(t.since);
+  const ol=$('ticketTop');ol.textContent='';(t.top||[]).forEach(r=>{const li=document.createElement('li');li.textContent=`${r.event_id} (${r.n})`;ol.appendChild(li)});}
  $('last').textContent=data?.last_seen ? new Date(data.last_seen).toLocaleString('en-GB') : 'No activity yet';
 }
 $('loginBtn').onclick=async()=>{ $('loginError').textContent=''; const {error}=await db.auth.signInWithPassword({email:$('email').value.trim(),password:$('password').value}); if(error){$('loginError').textContent=error.message;return} await load()};

@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src https://zqvccsnfrkrtcsitfwcd.supabase.co; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gaudete! – Brighton Dome, Brighton, Fri 11 Dec | Brighton Weekend</title>
 <meta name="description" content="Fri 11 Dec · Brighton Dome, Brighton. Plan it with your mates on Brighton Weekend.">
@@ -59,12 +59,13 @@
 <div><span class="pill">Music</span></div>
 <h1>Gaudete!</h1>
 <ul class="facts"><li><strong>Friday 11 December 2026</strong></li><li>Brighton Dome, Brighton</li></ul>
-<div class="actions"><a class="btn go" href="/?event=2026-12-11-brighton-dome-gaudete">Plan it with friends</a><a class="btn alt" href="https://brightondome.org/whats-on/#genre=85&amp;calendar=false,false&amp;top_filter=all&amp;page=3&amp;view=list" rel="noopener">Tickets ↗</a></div>
+<div class="actions"><a class="btn go" href="/?event=2026-12-11-brighton-dome-gaudete">Plan it with friends</a><a class="btn alt" href="https://brightondome.org/whats-on/#genre=85&amp;calendar=false,false&amp;top_filter=all&amp;page=3&amp;view=list" rel="noopener" data-ticket-event="2026-12-11-brighton-dome-gaudete">Tickets ↗</a></div>
 <h2>Also on Friday</h2><ul class="list"><li><span class="t">18:30</span><span><a href="/e/2026-12-11-concorde-2-elvana/">Elvana</a><span class="v">Concorde 2 · Music</span></span></li><li><span class="t">19:30</span><span><a href="/e/2026-11-12-komedia-adam-riches-is-sean-bean-in-how-the-bean-saved-christmas-fri-11-dec-2026-7-30-pm-doors-7-00-pm/">Adam Riches IS Sean Bean IN ‘How the Bean Saved Christmas’</a><span class="v">Komedia</span></span></li><li><span class="t">20:00</span><span><a href="/e/2026-11-12-the-forge-comedy-club-festive-forge-comedy-club/">Festive Forge Comedy Club</a><span class="v">The Forge Comedy Club · Comedy</span></span></li><li><span class="t">23:00</span><span><a href="/e/2026-12-11-volks-critical-sound-kasra-qzb-spectral/">Critical Sound: Kasra, QZB, Spectral</a><span class="v">Volks · Dance</span></span></li><li><span class="t"></span><span><a href="/e/2026-12-11-theatreroyalbrighton-christmas-comedy-crackers/">Christmas Comedy Crackers</a><span class="v">Theatre Royal Brighton · Comedy</span></span></li><li><span class="t"></span><span><a href="/e/2026-12-11-quarters-club-events-city-wall-x-mark-broom/">City Wall x Mark Broom</a><span class="v">Quarters · Club</span></span></li><li><span class="t"></span><span><a href="/e/2026-12-11-caroline-of-brunswick-creatures/">Creatures</a><span class="v">Caroline of Brunswick · Music</span></span></li><li><span class="t"></span><span><a href="/e/2026-12-11-quarters-live-events-daddy-g-massive-attack/">DADDY G (Massive Attack)</a><span class="v">Quarters · Club</span></span></li></ul>
 <p style="margin-top:26px"><a href="/this-weekend/">See everything on in Brighton this weekend →</a></p>
 </article>
 </main>
 <footer><a href="/">Open the app</a><a href="/this-weekend/">This weekend</a><a href="/about.html">About</a><a href="/privacy.html">Privacy</a></footer>
 <script>(function(){var q=new URLSearchParams(location.search);if(!q.has('share')&&!q.has('group_invite'))return;q.delete('share');q.set('event',"2026-12-11-brighton-dome-gaudete");location.replace('/?'+q.toString());})();</script>
+<script>(function(){function t(ev){var a=ev.target.closest&&ev.target.closest('a[data-ticket-event]');if(!a)return;var g=null;try{g=localStorage.getItem('bw_guest_id')}catch(x){}try{fetch("https://zqvccsnfrkrtcsitfwcd.supabase.co/rest/v1/rpc/bw_track_ticket_click",{method:'POST',keepalive:true,headers:{apikey:"sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1",Authorization:'Bearer '+"sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1",'Content-Type':'application/json'},body:JSON.stringify({p_event_id:a.getAttribute('data-ticket-event'),p_source:'event_page',p_guest_id:g||null})}).catch(function(){})}catch(x){}}document.addEventListener('click',t);document.addEventListener('auxclick',t);})();</script>
 </body>
 </html>

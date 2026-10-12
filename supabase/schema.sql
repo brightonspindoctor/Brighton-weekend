@@ -1,7 +1,7 @@
 -- ============================================================================
 -- Brighton Weekend — live database schema (public schema)
 -- Exported from the live Supabase project on 2026-10-05, after v58 and v59; v60 (avatar ids) applied on top.
--- v74 (recommendations and community genres) and v75 (limits) are folded in. v70, v72 and v73 are
+-- v74 (recommendations and community genres) and v75 (limits) are folded in. v70, v72, v73 and v76 are
 -- not reflected here yet: see their numbered files.
 --
 -- This file is the reference for what is actually running. The numbered

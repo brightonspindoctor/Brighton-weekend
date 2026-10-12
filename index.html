@@ -1113,6 +1113,15 @@ function guestId(create){
   return id||'';
  }catch(e){return ''}
 }
+// Counts taps on Get tickets for the admin dashboard (v76). keepalive lets the
+// request finish while the ticket site opens; failures are ignored.
+function trackTicketClick(eventId,source){
+ if(!eventId)return;
+ try{fetch(SUPABASE_URL+'/rest/v1/rpc/bw_track_ticket_click',{method:'POST',keepalive:true,
+  headers:{apikey:SUPABASE_KEY,Authorization:'Bearer '+(authSession?.access_token||SUPABASE_KEY),'Content-Type':'application/json'},
+  body:JSON.stringify({p_event_id:eventId,p_source:source||'app',p_guest_id:authUser?null:(guestId(false)||null)})}).catch(()=>{})}catch(e){}
+}
+['click','auxclick'].forEach(t=>document.addEventListener(t,e=>{const a=e.target.closest('a[data-ticket-event]');if(a)trackTicketClick(a.dataset.ticketEvent,a.dataset.ticketSource)}));
 function trackGuest(){const id=guestId(true);if(id)rpc('bw_track_guest',{p_guest_id:id}).catch(()=>{})}
 function linkGuest(){const id=guestId(false);if(id)rpc('bw_link_guest',{p_guest_id:id}).catch(()=>{})}
 function enterGuestMode(){
@@ -1318,7 +1327,7 @@ function eventShareUrl(e){
 async function shareEvent(e){const url=eventShareUrl(e),title=e.title||"Brighton Weekend event",text=[e.title,e.date?new Date(e.date+"T12:00:00").toLocaleDateString("en-GB",{weekday:"long",day:"numeric",month:"long"}):"",e.venue_display||e.venue||""].filter(Boolean).join(" · ");try{if(navigator.share){await navigator.share({title,text,url});return}if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);toast("Event link copied.","success");return}copyLinkDialog("Event link",url)}catch(err){if(err?.name==="AbortError")return;copyLinkDialog("Event link",url)}}
 const SHARE_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="12" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="19" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 11l7.8-4.4M8 13l7.8 4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 const CAL_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 13v4M10 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
-function ticketLink(e){const u=safeUrl(e.ticket_url);return u?`<a class="ticket" href="${esc(u)}" target="_blank" rel="noopener" aria-label="Get tickets for ${esc(e.title)} (opens in a new tab)">${TICKET_ICON}Get tickets</a>`:''}
+function ticketLink(e){const u=safeUrl(e.ticket_url);return u?`<a class="ticket" href="${esc(u)}" target="_blank" rel="noopener" data-ticket-event="${esc(e.id)}" data-ticket-source="${String(e.id||'').startsWith('festival:')?'festival':'app'}" aria-label="Get tickets for ${esc(e.title)} (opens in a new tab)">${TICKET_ICON}Get tickets</a>`:''}
 // Stickers for promoters whose gigs we read (scripts/scrape-discovery.py sets e.promoter).
 const PROMOTER_STICKERS={'JOY. Concerts':{label:'JOY.',cls:'joy'},'Beat Down Promotions':{label:'BEAT DOWN',cls:'beatdown'}};
 function cardFlags(e){
@@ -1697,7 +1706,7 @@ function festivalDateLabel(f){
  if(a.getFullYear()===b.getFullYear()&&a.getMonth()===b.getMonth())return a.getDate()+'–'+b.getDate()+' '+a.toLocaleDateString('en-GB',{month:'short',year:'numeric'});
  return a.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})+'–'+b.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
 }
-function festivalTicketLink(f){const u=safeUrl(f.ticket_url);return u?'<a class="ticket" href="'+esc(u)+'" target="_blank" rel="noopener">Website / tickets ↗</a>':''}
+function festivalTicketLink(f){const u=safeUrl(f.ticket_url);return u?'<a class="ticket" href="'+esc(u)+'" target="_blank" rel="noopener" data-ticket-event="'+esc(f.id)+'" data-ticket-source="festival">Website / tickets ↗</a>':''}
 function festivalCard(f){
  const mine=attendance.find(x=>x.event_id===f.id&&x.user_id===uid());
  return '<article class="card festival-card" data-event-id="'+esc(f.id)+'"><div class="festival-date">'+esc(festivalDateLabel(f))+'</div><div class="top"><div><div class="title">'+esc(f.title)+'</div><div class="festival-location">📍 '+esc(f.location_display||f.location||'UK')+'</div></div></div><span class="festival-type">'+esc(f.category||'Other')+'</span>'+friendsHtml(f.id)+commitmentButtons(f,mine)+'<div class="actions">'+festivalTicketLink(f)+'</div></article>';
@@ -2034,7 +2043,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=58', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=78', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>

@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src https://zqvccsnfrkrtcsitfwcd.supabase.co; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gotts Street Park – Concorde 2, Brighton, Sun 29 Nov | Brighton Weekend</title>
 <meta name="description" content="Sun 29 Nov · 19:30 · Concorde 2, Brighton. Plan it with your mates on Brighton Weekend.">
@@ -63,12 +63,13 @@
 <div><span class="pill">Music</span></div>
 <h1>Gotts Street Park</h1>
 <ul class="facts"><li><strong>Sunday 29 November 2026</strong></li><li>19:30</li><li>Concorde 2, Brighton</li><li>Promoted by JOY. Concerts</li></ul>
-<div class="actions"><a class="btn go" href="/?event=2026-11-29-concorde-2-gotts-street-park">Plan it with friends</a><a class="btn alt" href="https://www.concorde2.co.uk/event/gotts-street-park" rel="noopener">Tickets ↗</a></div>
+<div class="actions"><a class="btn go" href="/?event=2026-11-29-concorde-2-gotts-street-park">Plan it with friends</a><a class="btn alt" href="https://www.concorde2.co.uk/event/gotts-street-park" rel="noopener" data-ticket-event="2026-11-29-concorde-2-gotts-street-park">Tickets ↗</a></div>
 <h2>Also on Sunday</h2><ul class="list"><li><span class="t">19:30</span><span><a href="/e/2026-11-29-komedia-ciao-italy-stand-up-in-italian-sun-29-nov-2026-7-30-pm-doors-7-00-pm/">Ciao, Italy ! (Stand up in Italian)</a><span class="v">Komedia · Comedy</span></span></li><li><span class="t"></span><span><a href="/e/2026-11-29-brighton-racecourse-antiques-vintage-fair-by-love-fairs/">Antiques &amp; Vintage Fair by Love Fairs</a><span class="v">Brighton Racecourse</span></span></li><li><span class="t"></span><span><a href="/e/2026-11-29-komedia-brighton-soul-club-sun-29-nov-2026-doors-6-00-pm/">Brighton Soul Club</a><span class="v">Komedia · Club</span></span></li><li><span class="t"></span><span><a href="/e/2026-11-29-komedia-deviants-market-sun-29-nov-2026-doors-10-30-am/">Deviants Market</a><span class="v">Komedia</span></span></li><li><span class="t"></span><span><a href="/e/2026-11-29-a-l-p-h-a-b-e-t-dylan-leblanc/">Dylan LeBlanc</a><span class="v">A L P H A B E T · Music</span></span></li><li><span class="t"></span><span><a href="/e/2026-11-29-the-brunswick-fleetwood-mac-the-greatest-hits/">Fleetwood Mac: The Greatest Hits</a><span class="v">The Brunswick · Music</span></span></li><li><span class="t"></span><span><a href="/e/2026-11-29-the-folklore-rooms-matinee-pink-moon-rising/">Matinee: Pink Moon Rising</a><span class="v">The Folklore Rooms · Music</span></span></li><li><span class="t"></span><span><a href="/e/2026-11-29-daltons-rock-n-pole/">Rock &#x27;N&#x27; Pole</a><span class="v">Daltons · Music</span></span></li></ul>
 <p style="margin-top:26px"><a href="/this-weekend/">See everything on in Brighton this weekend →</a></p>
 </article>
 </main>
 <footer><a href="/">Open the app</a><a href="/this-weekend/">This weekend</a><a href="/about.html">About</a><a href="/privacy.html">Privacy</a></footer>
 <script>(function(){var q=new URLSearchParams(location.search);if(!q.has('share')&&!q.has('group_invite'))return;q.delete('share');q.set('event',"2026-11-29-concorde-2-gotts-street-park");location.replace('/?'+q.toString());})();</script>
+<script>(function(){function t(ev){var a=ev.target.closest&&ev.target.closest('a[data-ticket-event]');if(!a)return;var g=null;try{g=localStorage.getItem('bw_guest_id')}catch(x){}try{fetch("https://zqvccsnfrkrtcsitfwcd.supabase.co/rest/v1/rpc/bw_track_ticket_click",{method:'POST',keepalive:true,headers:{apikey:"sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1",Authorization:'Bearer '+"sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1",'Content-Type':'application/json'},body:JSON.stringify({p_event_id:a.getAttribute('data-ticket-event'),p_source:'event_page',p_guest_id:g||null})}).catch(function(){})}catch(x){}}document.addEventListener('click',t);document.addEventListener('auxclick',t);})();</script>
 </body>
 </html>
