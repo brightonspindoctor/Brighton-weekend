@@ -28,6 +28,7 @@ Pages that can't be read (some sites block automated visits) leave the event
 as it was.
 """
 import asyncio, importlib.util, json, re, sys, time
+from collections import OrderedDict
 from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import urljoin, urlparse, parse_qs, unquote
@@ -197,10 +198,32 @@ def own_text(el):
     return se.clean(el.get_text(' ', strip=True))
 
 
+def small(el, limit=40):
+    """An element with few descendants (a label, a title or a button), not a page section."""
+    return len(el.find_all(True, limit=limit)) < limit
+
+
+CARD_TAGS = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'a', 'span', 'div', 'p', 'strong', 'li']
+
+
+def text_index(root):
+    """Every short piece of text on a page, read once: [(element, text, title key)]."""
+    out = []
+    for el in root.find_all(CARD_TAGS):
+        if not small(el):
+            continue
+        t = own_text(el)
+        if t and len(t) <= 200:
+            out.append((el, t, se.title_key(t)))
+    return out
+
+
 def sold_labels(root):
     """Elements in root that are a sold-out label of their own."""
     found = []
     for el in root.find_all(True):
+        if not small(el, 15):
+            continue
         t = own_text(el)
         if not t or len(t) > 60:
             continue
@@ -261,17 +284,16 @@ def booking_link(root, page_url, event):
     return seen[0]
 
 
-def cards_for(root, event, other_keys):
+def cards_for(root, event, other_keys, index=None):
     """Smallest blocks on a listing page that are this event's card."""
     key = se.title_key(event['title'])
     if len(key) < 3:
         return []
+    words = {w for w in key.split() if len(w) >= 3} or set(key.split())
     cards = []
-    for el in root.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'a', 'span', 'div', 'p', 'strong']):
-        t = own_text(el)
-        if not t or len(t) > 200:
-            continue
-        tk = se.title_key(t)
+    for el, t, tk in (index if index is not None else text_index(root)):
+        if not words & set(tk.split()):
+            continue  # shares no word with the title (quick test before the slower comparison)
         if not (tk == key or tk.startswith(key + ' ') or (len(key) > 12 and key in tk) or se.same_show(t, event['title'], event.get('venue', ''))):
             continue
         if any(el in c.descendants for c in cards):
@@ -353,107 +375,156 @@ def card_link(card, page_url, event):
     return best
 
 
+UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36'
+# Sites that build their pages in the browser: a plain request misses their
+# booking buttons or ticket availability. Everything else is fetched with a
+# plain request first (much quicker), and with the browser if that fails.
+# (Checked against browser and plain copies of 147 real event pages.)
+BROWSER_HOSTS = ('brightondome.org', 'dice.fm', 'ents24.com')
+# Ticketing sites whose plain pages carry the same availability data as the
+# browser's. On other ticketing sites a page that says nothing is retried in
+# the browser before giving up.
+PLAIN_OK = ('eventbrite.', 'skiddle.', 'tickettailor.', 'wegottickets.', 'songkick.', 'gigantic.')
+PAGE_TIMEOUT = 90
+
+
 class Fetcher:
-    def __init__(self, browser):
-        self.browser = browser; self.mem = {}; self.sem = asyncio.Semaphore(8); self.hosts = {}
-        self.started = time.monotonic(); self.count = 0; self.fails = 0; self.pending = {}
+    def __init__(self, browser=None):
+        self.browser = browser; self.ctx = None
+        self.mem = OrderedDict(); self.pending = {}
+        self.sem = asyncio.Semaphore(10); self.hosts = {}
+        self.started = time.monotonic(); self.count = 0; self.fails = 0; self.browser_count = 0
 
     def out_of_time(self):
         return time.monotonic() - self.started > TIME_BUDGET
 
-    async def get(self, url):
-        if url in self.mem:
-            return self.mem[url]
-        if url in self.pending:
-            return await self.pending[url]
-        fut = asyncio.get_running_loop().create_future(); self.pending[url] = fut
-        result = ('', url)
+    async def get(self, url, browser=False):
+        """(html, final url, came from the browser). '' when the page couldn't be read."""
+        key = (url, browser)
+        if key in self.mem:
+            self.mem.move_to_end(key)
+            return self.mem[key]
+        if key in self.pending:
+            return await asyncio.shield(self.pending[key])
+        fut = asyncio.get_running_loop().create_future(); self.pending[key] = fut
+        result = ('', url, False)
         try:
-            hs = self.hosts.setdefault(host_of(url), asyncio.Semaphore(2))
-            async with hs:              # at most 2 at a time per site (polite), then
-                async with self.sem:    # at most 8 overall
-                    if not self.out_of_time():
-                        result = await asyncio.wait_for(self._fetch(url), timeout=75)
+            if not self.out_of_time():
+                hs = self.hosts.setdefault(host_of(url), asyncio.Semaphore(3))
+                async with hs:            # at most 3 at a time per site, and
+                    async with self.sem:  # 10 overall
+                        result = await asyncio.wait_for(self._fetch(url, browser), timeout=PAGE_TIMEOUT)
         except Exception:
             self.fails += 1
         finally:
-            self.mem[url] = result; fut.set_result(result); del self.pending[url]
+            if not fut.done():
+                fut.set_result(result)
+            self.pending.pop(key, None)
+            self.mem[key] = result
+            while len(self.mem) > 300:
+                self.mem.popitem(last=False)
         return result
 
-    async def _fetch(self, url):
-        html, final, err = await se.get_html(self.browser, url)
-        if err or len(html) < 5000 or 'Just a moment' in html[:3000]:
+    async def _fetch(self, url, force_browser):
+        html, final, via = '', url, False
+        if not force_browser and not any(h in host_of(url) for h in BROWSER_HOSTS):
             try:
-                h2, f2 = await asyncio.wait_for(asyncio.to_thread(se.fetch_plain, url), timeout=40)
-                if len(h2) > len(html):
-                    html, final, err = h2, f2, None
+                html, final = await asyncio.wait_for(asyncio.to_thread(se.fetch_plain, url), timeout=40)
+            except Exception:
+                html = ''
+            if any(h in host_of(final) for h in BROWSER_HOSTS):
+                html = ''  # redirected (link.dice.fm -> dice.fm) to a site that needs the browser
+        if len(html) < 5000 or 'Just a moment' in html[:3000]:
+            h2, f2 = await self._browser_get(url)
+            if len(h2) > len(html):
+                html, final, via = h2, f2, True
+        self.count += 1
+        if len(html) < 3000:
+            self.fails += 1; html = ''
+        return html, final, via
+
+    async def _browser_get(self, url):
+        if self.browser is None:
+            return '', url
+        if self.ctx is None:
+            self.ctx = await self.browser.new_context(user_agent=UA, locale='en-GB')
+        page = await self.ctx.new_page()
+        try:
+            await page.goto(url, wait_until='domcontentloaded', timeout=30000)
+            try:
+                await page.wait_for_load_state('networkidle', timeout=10000)
             except Exception:
                 pass
-        self.count += 1
-        if not html or len(html) < 3000:
-            self.fails += 1; html = ''
-        return html, final
+            await page.wait_for_timeout(1200)
+            self.browser_count += 1
+            return await page.content(), page.url
+        except Exception:
+            return '', url
+        finally:
+            try:
+                await page.close()
+            except Exception:
+                pass
 
 
-async def check_event(fx, event, start_url, generic, other_keys, listing_hints):
-    """(closest url, sold_out or None) for one event."""
-    url = start_url; sold = None; label_sold = False; steps = []
-    # 1. A listings page or homepage: find the event's card.
-    if generic:
-        pages = [url] + [u for u in listing_hints if u != url]
-        if not urlparse(url).path.strip('/'):
-            pages += [urljoin(url, '/whats-on/'), urljoin(url, '/events/')]  # a homepage shows only some events
-        for lu in pages:
-            html, final = await fx.get(lu)
-            if not html:
-                continue
-            root = strip_chrome(soup_of(html))
-            cards = cards_for(root, event, other_keys)
-            if len(cards) != 1:
-                continue
-            if sold_labels(cards[0]):
-                label_sold = True
-            nxt = card_link(cards[0], final, event)
-            if nxt:
-                url = nxt; steps.append(nxt); break
+# ---- Reading pages (these run in worker threads, so one big page being read
+# doesn't hold up the others, and each page's parsed copy is dropped as soon
+# as it has been read) --------------------------------------------------------
+
+def analyse_listing(html, final, items):
+    """For each (event, other titles at its venue): (cards found, card says sold out, card's link)."""
+    root = strip_chrome(soup_of(html))
+    index = text_index(root)
+    out = {}
+    for event, other_keys in items:
+        cards = cards_for(root, event, other_keys, index)
+        if len(cards) != 1:
+            out[event['id']] = (len(cards), False, None)
         else:
-            return (None if url == start_url else url), (True if label_sold else None)
-    # 2–3. Follow the booking button to the seller.
+            out[event['id']] = (1, bool(sold_labels(cards[0])), card_link(cards[0], final, event))
+    return out
+
+
+def analyse_page(html, final, event):
+    """(schema.org verdict, the page labels the show sold out, the next link towards the seller)."""
+    raw = soup_of(html)
+    verdict = ld_verdict(raw, event, final)
+    root = strip_chrome(raw)
+    label = False
+    if verdict is None:
+        labels = sold_labels(root)
+        if any(l.name in ('h1', 'h2', 'h3') and SOLD_IN_HEADING.search(own_text(l)) for l in labels):
+            label = True  # the venue put it in the show's name: "Band *SOLD OUT*"
+        elif labels and not [c for c in live_ctas(root, final) if c[1] != final or c[0].name == 'button']:
+            label = True
+    nxt = None
+    if not (is_ticket_site(final) and verdict is not None):
+        nxt = booking_link(root, final, event)
+    return verdict, label, nxt
+
+
+async def follow(fx, event, url, steps):
+    """Follow the booking button towards the seller: (steps taken, verdict, label)."""
+    start = url; sold = None; label_sold = False
     for _ in range(MAX_HOPS):
-        html, final = await fx.get(url)
+        html, final, via = await fx.get(url)
         if not html:
             break
-        raw = soup_of(html)
-        verdict = ld_verdict(raw, event, final)
-        root = strip_chrome(raw)
+        verdict, label, nxt = await asyncio.to_thread(analyse_page, html, final, event)
+        del html
+        if verdict is None and not via and is_ticket_site(final) and not any(h in host_of(final) for h in PLAIN_OK):
+            # A ticketing site's plain page said nothing: its browser page may.
+            h2, f2, v2 = await fx.get(url, browser=True)
+            if h2:
+                verdict, label, nxt = await asyncio.to_thread(analyse_page, h2, f2, event)
+            del h2
         if verdict is not None:
             sold = verdict
-        else:
-            labels = sold_labels(root)
-            if any(l.name in ('h1', 'h2', 'h3') and SOLD_IN_HEADING.search(own_text(l)) for l in labels):
-                label_sold = True  # the venue put it in the show's name: "Band *SOLD OUT*"
-            elif labels and not [c for c in live_ctas(root, final) if c[1] != final or c[0].name == 'button']:
-                label_sold = True
-        if is_ticket_site(final) and verdict is not None:
-            break
-        nxt = booking_link(root, final, event)
-        if not nxt or nxt in steps or nxt == start_url:
+        label_sold = label_sold or label
+        if not nxt or nxt in steps or nxt == start:
             break
         url = nxt; steps.append(nxt)
-    if sold is None and not label_sold and not generic:
-        # The seller's page didn't say: the venue's own listing may label the show (ATG, Quarters).
-        for lu in listing_hints:
-            html, final = await fx.get(lu)
-            if not html:
-                continue
-            cards = cards_for(strip_chrome(soup_of(html)), event, other_keys)
-            if len(cards) == 1 and sold_labels(cards[0]):
-                label_sold = True
-                break
-    if sold is None and label_sold:
-        sold = True
-    closest = steps[-1] if steps else None
-    return closest, sold
+    return steps, sold, label_sold
 
 
 def cache_key(e, url):
@@ -478,6 +549,15 @@ async def main():
         if not s.get('disabled'):
             hints.setdefault(se.canonical_venue(s['venue']), []).append(s['url'])
 
+    def venue_of(e):
+        return se.canonical_venue(e.get('venue', ''))
+
+    def others_for(e):
+        return {se.title_key(x['title']) for x in by_venue.get(venue_of(e), [])} - {se.title_key(e['title'])}
+
+    def is_generic(e):
+        return generic_url(e['ticket_url']) or len(url_titles.get(e['ticket_url'], ())) > 1
+
     def due(e):
         c = cache.get(cache_key(e, e['ticket_url']))
         if not c:
@@ -487,37 +567,113 @@ async def main():
         return age >= (1 if near else RECHECK_DAYS)
 
     todo = sorted([e for e in upcoming if due(e)], key=lambda e: e['date'])
-    print(f'{len(upcoming)} upcoming events with a ticket link; {len(todo)} to check this run')
-    async with se.async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        fx = Fetcher(browser)
-
-        async def one(e):
-            url = e['ticket_url']; venue = se.canonical_venue(e.get('venue', ''))
-            generic = generic_url(url) or len(url_titles.get(url, ())) > 1
-            others = {se.title_key(x['title']) for x in by_venue.get(venue, [])} - {se.title_key(e['title'])}
+    print(f'{len(upcoming)} upcoming events with a ticket link; {len(todo)} to check this run', flush=True)
+    card = {}           # event id -> (link from its card on a listings page, card says sold out)
+    listing_sold = set()  # events whose card on the venue's own listings says sold out
+    results = {}
+    fx = Fetcher()
+    try:
+        async with se.async_playwright() as p:
+            browser = await p.chromium.launch(headless=True)
+            fx = Fetcher(browser)
             try:
-                closest, sold = await check_event(fx, e, url, generic, others, hints.get(venue, []))
-            except Exception as exc:
-                print(f'  ! {e["id"]}: {exc}', file=sys.stderr); return
-            if fx.out_of_time() and closest is None and sold is None:
-                return  # not reached in time: try again next run
-            cache[cache_key(e, url)] = {'url': closest, 'sold': sold, 'checked': TODAY.isoformat()}
+                # 1. Listings pages, each read once for all the events on it.
+                async def resolve_group(url, evs):
+                    pending = list(evs); pages = [url]
+                    for e in evs:
+                        pages += [u for u in hints.get(venue_of(e), []) if u not in pages]
+                    if not urlparse(url).path.strip('/'):
+                        pages += [urljoin(url, '/whats-on/'), urljoin(url, '/events/')]  # a homepage shows only some events
+                    for lu in pages:
+                        if not pending:
+                            break
+                        html, final, _ = await fx.get(lu)
+                        if not html:
+                            continue
+                        res = await asyncio.to_thread(analyse_listing, html, final, [(e, others_for(e)) for e in pending])
+                        del html
+                        still = []
+                        for e in pending:
+                            n, sold_label, link = res[e['id']]
+                            old_link, old_sold = card.get(e['id'], (None, False))
+                            if n == 1:
+                                card[e['id']] = (link, old_sold or sold_label)
+                            if not (n == 1 and link):
+                                still.append(e)
+                        pending = still
 
-        done = 0
-        async def counted(e):
-            nonlocal done
-            await one(e); done += 1
-            if done % 200 == 0:
-                print(f'  {done}/{len(todo)} checked, {fx.count} pages, {int(time.monotonic() - fx.started)}s', flush=True)
-        tasks = [asyncio.create_task(counted(e)) for e in todo]
-        _, late = await asyncio.wait(tasks, timeout=TIME_BUDGET + 240)
-        for t in late:
-            t.cancel()  # anything still going is checked next run
-        if late:
-            print(f'  {len(late)} events left for the next run')
-        await browser.close()
-    print(f'Fetched {fx.count} pages ({fx.fails} unreadable) in {int(time.monotonic() - fx.started)}s')
+                async def venue_labels(venue, evs):
+                    for lu in hints.get(venue, []):
+                        html, final, _ = await fx.get(lu)
+                        if not html:
+                            continue
+                        res = await asyncio.to_thread(analyse_listing, html, final, [(e, others_for(e)) for e in evs])
+                        del html
+                        listing_sold.update(i for i, (n, sold_label, _) in res.items() if n == 1 and sold_label)
+
+                groups = {}
+                for e in todo:
+                    if is_generic(e):
+                        groups.setdefault(e['ticket_url'], []).append(e)
+                plain = {}
+                for e in todo:
+                    if not is_generic(e):
+                        plain.setdefault(venue_of(e), []).append(e)
+                await asyncio.gather(*(resolve_group(u, evs) for u, evs in groups.items()),
+                                     *(venue_labels(v, evs) for v, evs in plain.items()))
+                print(f'  listings read: {fx.count} pages, {int(time.monotonic() - fx.started)}s', flush=True)
+
+                # 2. Each event's own page, then on to the seller: a dozen events at a time, soonest first.
+                lanes = asyncio.Semaphore(12); done = 0
+
+                async def one(e):
+                    nonlocal done
+                    async with lanes:
+                        steps = []; label_sold = False
+                        try:
+                            if is_generic(e):
+                                link, label_sold = card.get(e['id'], (None, False))
+                                if link:
+                                    steps.append(link)
+                                    steps, sold, label = await follow(fx, e, link, steps)
+                                    label_sold = label_sold or label
+                                else:
+                                    sold = None
+                            else:
+                                steps, sold, label_sold = await follow(fx, e, e['ticket_url'], steps)
+                        except Exception as exc:
+                            print(f'  ! {e["id"]}: {exc}', file=sys.stderr); return
+                        if sold is None and (label_sold or e['id'] in listing_sold):
+                            sold = True
+                        closest = steps[-1] if steps else None
+                        if not (fx.out_of_time() and closest is None and sold is None):
+                            results[e['id']] = (closest, sold)
+                        done += 1
+                        if done % 200 == 0:
+                            print(f'  {done}/{len(todo)} checked, {fx.count} pages, {int(time.monotonic() - fx.started)}s', flush=True)
+
+                tasks = [asyncio.create_task(one(e)) for e in todo]
+                left = max(60, TIME_BUDGET + 240 - (time.monotonic() - fx.started))
+                _, late = await asyncio.wait(tasks, timeout=left)
+                for t in late:
+                    t.cancel()  # anything still going is checked next run
+                if late:
+                    await asyncio.gather(*late, return_exceptions=True)
+                    print(f'  {len(late)} events left for the next run', flush=True)
+            finally:
+                try:
+                    await browser.close()
+                except Exception:
+                    pass
+    except Exception as exc:
+        # Whatever went wrong, keep what was found so far and leave the rest as it was.
+        print(f'Ticket check stopped early: {exc}', file=sys.stderr)
+    print(f'Fetched {fx.count} pages ({fx.browser_count} in the browser, {fx.fails} unreadable) in {int(time.monotonic() - fx.started)}s')
+
+    for e in todo:
+        if e['id'] in results:
+            closest, sold = results[e['id']]
+            cache[cache_key(e, e['ticket_url'])] = {'url': closest, 'sold': sold, 'checked': TODAY.isoformat()}
 
     # A link that several different shows would now share is a venue-wide page
     # (a table booking, a promo), not any one show's tickets: don't use it.
