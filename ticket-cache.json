@@ -5027,6 +5027,11 @@
   "sold": null,
   "checked": "2026-10-12"
  },
+ "https://www.hope.pub/event/brighton-cat-tour-purrb-quiz/|2026-10-18|brighton cat tour purrb quiz": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
  "https://www.hope.pub/event/burglar-2/|2027-03-22|burglar": {
   "url": "https://www.fatsoma.com/e/31mf2594/burglar",
   "sold": null,
@@ -6921,6 +6926,11 @@
   "sold": null,
   "checked": "2026-10-12"
  },
+ "https://www.skiddle.com/whats-on/Brighton/Brighton-Dome-Studio-Theatre/Nation/42643567/|2026-11-12|nation": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
  "https://www.skiddle.com/whats-on/Brighton/Caroline-Of-Brunswick/Cabaret-of-Horrors-by-ARCANIC-EVENTS/42801582/|2026-10-23|cabaret of horrors by arcanic events": {
   "url": null,
   "sold": false,
@@ -7012,6 +7022,11 @@
   "checked": "2026-10-12"
  },
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Return-To-UKGrave-Halloween-Special/42826271/|2026-10-31|return to ukgrave halloween special": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Return-to-Brighton/43017518/|2026-11-14|return to brighton": {
   "url": null,
   "sold": false,
   "checked": "2026-10-12"

@@ -1339,6 +1339,13 @@
   "act": "Brighton Big Band",
   "checked": "2026-10-07"
  },
+ "brighton cat": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Brighton Cat",
+  "checked": "2026-10-12",
+  "v": 3
+ },
  "brighton day of death 3": {
   "bucket": null,
   "reason": "not in MusicBrainz",
