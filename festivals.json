@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-11",
-  "range_start": "2026-10-11",
+  "updated": "2026-10-12",
+  "range_start": "2026-10-12",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -9,18 +9,6 @@
     "eFestivals"
   ],
   "festivals": [
-    {
-      "title": "Orion Sphere Event 16 - Domino",
-      "date": "2026-10-09",
-      "date_end": "2026-10-11",
-      "location": "Ashby de la Zouch",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/orion-sphere-event-16-domino/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/orion-sphere-event-16-domino/",
-      "id": "festival:orion-sphere-event-16-domino:2026-10-09",
-      "location_display": "Ashby de la Zouch"
-    },
     {
       "title": "Wilde Realms Event 4: The Sacrifices We Make",
       "date": "2026-10-23",
@@ -115,7 +103,7 @@
       "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
       "detail_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
       "id": "festival:artist-open-houses-winter:2026-11-28",
-      "location_display": "Various venues across the city, Brighton, East Sussex, BN1 1EE Brighton"
+      "location_display": "Various venues, Brighton"
     },
     {
       "title": "Celtic Connections",
@@ -991,7 +979,7 @@
       "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
       "detail_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
       "id": "festival:rotary-family-festival-big-help-out:2027-06-06",
-      "location_display": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove"
+      "location_display": "Hove Park, Hove"
     },
     {
       "title": "Download Festival",
@@ -1981,13 +1969,13 @@
       "title": "The Godney Gathering",
       "date": "2027-07-16",
       "date_end": "2027-07-17",
-      "location": "Glastonbury",
+      "location": "Wells",
       "category": "Other",
       "ticket_url": "https://fezzy.uk/festival/the-godney-gathering/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/the-godney-gathering/",
       "id": "festival:the-godney-gathering:2027-07-16",
-      "location_display": "Glastonbury"
+      "location_display": "Wells"
     },
     {
       "title": "Wild in the Woods",
