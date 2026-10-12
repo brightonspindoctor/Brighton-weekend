@@ -10,6 +10,7 @@ on:
       - 'scripts/scrape-discovery.py'
       - 'scripts/prepare-events.py'
       - 'scripts/event_matching.py'
+      - 'scripts/listing_rules.py'
       - 'scripts/tag-genres.py'
       - 'scripts/check-tickets.py'
       - 'excluded-events.json'

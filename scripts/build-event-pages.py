@@ -11,9 +11,12 @@ to index per event. This script writes plain HTML that needs no JavaScript:
                             like "gigs in Brighton this weekend"
   sitemap.xml               every page above, for Google Search Console
 
-A shared event link carries ?share=1 (and any group invite). Someone who taps
-it is sent straight on into the app; crawlers and Google never run that
-script, so they read the page itself.
+A shared event link carries ?share=1. Someone who taps it is sent straight on
+into the app; crawlers and Google never run that script, so they read the page
+itself.
+
+pages.css, written here too, is the stylesheet for these pages and for the
+About, Privacy, Terms and 404 pages (which are kept by hand in the same layout).
 
 The e/ folder is rebuilt from scratch each run, so pages for events that have
 dropped out of events.json disappear. 404.html sends those old links into the
@@ -155,6 +158,17 @@ h2{font-size:19px;margin:30px 0 10px}
 .lede{color:var(--muted);margin:-6px 0 18px}
 footer{max-width:760px;margin:0 auto 40px;padding:0 16px;color:var(--subtle);font-size:14px}
 footer a{color:var(--subtle);margin-right:14px}
+.actions.first{margin:0 0 6px}
+.more-link{margin-top:26px}
+button.btn{border:0;font-family:inherit;font-size:inherit;cursor:pointer}
+.note{color:var(--muted);font-size:14px;margin:8px 0 0}
+/* About, Privacy and Terms */
+.meta{color:var(--muted);font-size:14px;margin:0 0 18px}
+.notice{background:var(--raised);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:15px;margin:12px 0}
+th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{background:var(--raised)}
 @media(max-width:600px){h1{font-size:25px}.card{padding:18px}}
 """
 
@@ -200,7 +214,7 @@ def page(*, title: str, description: str, url: str, og_title: str, body: str,
 <main>
 {body}
 </main>
-<footer><a href="/">Open the app</a><a href="/this-weekend/">This weekend</a><a href="/about.html">About</a><a href="/privacy.html">Privacy</a></footer>
+<footer><a href="/">Open the app</a><a href="/this-weekend/">This weekend</a><a href="/about.html">About</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></footer>
 {script}</body>
 </html>
 """
@@ -247,11 +261,11 @@ def event_page(e: dict, d: date, same_day: list[tuple[dict, date]]) -> str:
 <ul class="facts">{''.join(facts)}</ul>
 <div class="actions"><a class="btn go" href="{esc(app_link)}">Plan it with friends</a>{tickets}</div>
 {more}
-<p style="margin-top:26px"><a href="/this-weekend/">See everything on in Brighton this weekend →</a></p>
+<p class="more-link"><a href="/this-weekend/">See everything on in Brighton this weekend →</a></p>
 </article>"""
-    # People arriving from a shared link go straight into the app (with any
-    # group invite). Crawlers don't run this, so they read the page above.
-    script = f"""<script>(function(){{var q=new URLSearchParams(location.search);if(!q.has('share')&&!q.has('group_invite'))return;q.delete('share');q.set('event',{json.dumps(e['id'])});location.replace('/?'+q.toString());}})();</script>
+    # People arriving from a shared link go straight into the app. Crawlers
+    # don't run this, so they read the page above.
+    script = f"""<script>(function(){{var q=new URLSearchParams(location.search);if(!q.has('share'))return;q.delete('share');q.set('event',{json.dumps(e['id'])});location.replace('/?'+q.toString());}})();</script>
 <script>(function(){{function t(ev){{var a=ev.target.closest&&ev.target.closest('a[data-ticket-event]');if(!a)return;var g=null;try{{g=localStorage.getItem('bw_guest_id')}}catch(x){{}}try{{fetch({json.dumps(SUPABASE_URL + '/rest/v1/rpc/bw_track_ticket_click')},{{method:'POST',keepalive:true,headers:{{apikey:{json.dumps(SUPABASE_KEY)},Authorization:'Bearer '+{json.dumps(SUPABASE_KEY)},'Content-Type':'application/json'}},body:JSON.stringify({{p_event_id:a.getAttribute('data-ticket-event'),p_source:'event_page',p_guest_id:g||null}})}}).catch(function(){{}})}}catch(x){{}}}}document.addEventListener('click',t);document.addEventListener('auxclick',t);}})();</script>
 """
     title = f'{e["title"]} – {e["venue"]}, Brighton, {short_date(d)} | Brighton Weekend'
@@ -294,7 +308,7 @@ def weekend_page(items: list[tuple[dict, date]], start: date, end: date) -> str:
     body = f"""<article class="card">
 <h1>What’s on in Brighton this weekend</h1>
 <p class="lede">{esc(span)} · gigs, comedy, club nights and theatre across Brighton &amp; Hove</p>
-<div class="actions" style="margin:0 0 6px"><a class="btn go" href="/">Plan your weekend with friends</a></div>
+<div class="actions first"><a class="btn go" href="/">Plan your weekend with friends</a></div>
 {''.join(days)}
 </article>"""
     return page(title=f'What’s on in Brighton this weekend: gigs, comedy & club nights ({short_date(start)}–{short_date(end)}) | Brighton Weekend',

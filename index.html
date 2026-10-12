@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://zqvccsnfrkrtcsitfwcd.supabase.co wss://zqvccsnfrkrtcsitfwcd.supabase.co; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
@@ -26,18 +26,14 @@
 <script>try{if(localStorage.getItem('bw_theme')==='light'){document.documentElement.dataset.theme='light';document.querySelector('meta[name="theme-color"]').content='#FFFFFF'}}catch(e){}</script>
 <link rel="manifest" href="manifest.webmanifest?v=58">
 <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png?v=70">
-<link rel="apple-touch-icon-precomposed" sizes="180x180" href="icons/apple-touch-icon.png?v=70">
 <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png?v=70">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png?v=70">
-<link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png?v=70">
 <link rel="shortcut icon" href="favicon.ico?v=70">
 
 <style id="bw-styles">
 /* ==========================================================================
    Brighton Weekend — app stylesheet
    One stylesheet, driven by the tokens below. See DESIGN-SYSTEM.md.
-   Replaces the eight stacked <style> blocks (v11 → v41) that overrode each
-   other with !important.
    ========================================================================== */
 
 /* ---------- 0. Font (self-hosted: no requests to Google) ---------- */
@@ -85,7 +81,7 @@
   --bw-focus:0 0 0 3px rgba(77,182,172,.35);
   --bw-nav-height:64px;
 
-  /* Secondary tints: tags, chips, panels (added for theming) */
+  /* Secondary tints and shadows: tags, chips, panels, stickers */
   --bw-mist:#D9E7E7;       /* light text on tag and chip backgrounds */
   --bw-tag-bg:#153443;     --bw-tag-line:#285365;       /* genre tags, social chips */
   --bw-commit-fg:#C3D0D6;  --bw-commit-line:#345468;    /* resting commitment buttons */
@@ -101,6 +97,7 @@
   --bw-shadow-sticker:0 2px 0 rgba(0,0,0,.35);
   --bw-shadow-nav:0 -6px 22px rgba(0,0,0,.3);
   --bw-shadow-dialog:0 20px 60px rgba(0,0,0,.45);
+  --bw-scrim:rgba(3,10,18,.62); /* behind dialogs, both schemes */
 }
 /* Light colour scheme, "Seafront by day": chosen in Settings, stored as bw_theme */
 :root[data-theme="light"]{
@@ -139,7 +136,7 @@ h4{font-size:var(--bw-text-md);font-weight:700}
 :focus-visible{outline:none;box-shadow:var(--bw-focus)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
-.note,.group-meta,.custom-event-help,.profile-icon-note{font-size:var(--bw-text-sm);line-height:1.45;color:var(--bw-muted);margin:0}
+.note,.group-meta,.custom-event-help{font-size:var(--bw-text-sm);line-height:1.45;color:var(--bw-muted);margin:0}
 .empty{font-size:var(--bw-text-sm);color:var(--bw-subtle);padding:var(--bw-space-3) 0}
 .venue-nudge{margin-top:var(--bw-space-4);padding:var(--bw-space-4);background:var(--bw-card);border:1px solid var(--bw-coral-line);border-radius:var(--bw-radius-lg);text-align:center}
 .venue-nudge p{margin:0 0 var(--bw-space-3);color:var(--bw-muted);font-size:var(--bw-text-md)}
@@ -153,7 +150,7 @@ h4{font-size:var(--bw-text-md);font-weight:700}
 .results-head{display:flex;justify-content:space-between;align-items:baseline;margin:var(--bw-space-5) 0 var(--bw-space-2)}
 
 /* ---------- 4. Header ---------- */
-header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1px solid var(--bw-line);box-shadow:var(--bw-shadow-bar);padding:12px 0 calc(12px);padding-top:max(12px,env(safe-area-inset-top))}
+header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1px solid var(--bw-line);box-shadow:var(--bw-shadow-bar);padding:max(12px,env(safe-area-inset-top)) 0 12px}
 .app-brand{display:flex;align-items:center;gap:11px;min-height:48px}
 .app-brand img{width:46px;height:46px;border-radius:13px;object-fit:cover;box-shadow:var(--bw-shadow-logo)}
 .brand{font-size:1.28rem;line-height:1;font-weight:800;letter-spacing:-.045em}
@@ -164,6 +161,7 @@ header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1
 .controls button:hover{background:var(--bw-raised);border-color:var(--bw-line-strong)}
 .controls .week{flex:1}
 .controls .today{margin-left:5px;color:var(--bw-coral);background:var(--bw-coral-bg);border-color:var(--bw-coral-line)}
+#prev,#next{min-width:40px}
 @media (max-width:600px){.app-brand img{width:42px;height:42px}.brand{font-size:1.14rem}}
 @media (max-width:430px){.controls{gap:5px}.controls button{min-height:40px;padding:8px}.controls .week{font-size:var(--bw-text-sm)}}
 @media (max-width:360px){.controls .week,.controls .today{white-space:nowrap;font-size:var(--bw-text-xs);padding:8px 6px}.controls .today{margin-left:0}}
@@ -193,16 +191,29 @@ header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1
 .title{font-size:var(--bw-text-lg);line-height:1.25;font-weight:700;letter-spacing:-.025em;overflow-wrap:anywhere}
 .added-by{font-size:var(--bw-text-xs);font-weight:500;color:var(--bw-muted);letter-spacing:0}
 .meta{font-size:var(--bw-text-sm);line-height:1.4;font-weight:500;color:var(--bw-muted);margin-top:var(--bw-space-1)}
-.price{font-size:var(--bw-text-sm);font-weight:700;margin-top:var(--bw-space-2)}
 .event-description{margin-top:var(--bw-space-2);white-space:pre-line;overflow-wrap:anywhere}
 .badge{font-size:var(--bw-text-xs);font-weight:800;padding:5px 8px;border-radius:var(--bw-radius-pill);white-space:nowrap}
-.badge.sold{background:var(--bw-sold-bg);color:var(--bw-pass-fg);border:1px solid var(--bw-sold-line)}.card-flags{display:flex;align-items:center;gap:var(--bw-space-2);flex-shrink:0}.promoter-sticker{display:inline-block;font-size:var(--bw-text-xs);font-weight:800;letter-spacing:.02em;line-height:1;padding:5px 7px;border-radius:4px;transform:rotate(6deg);box-shadow:var(--bw-shadow-sticker);white-space:nowrap;user-select:none}.promoter-sticker.joy{background:var(--bw-sticker-joy);color:var(--bw-sticker-ink)}.promoter-sticker.beatdown{background:var(--bw-sticker-beatdown);color:var(--bw-sticker-ink)}button.promoter-sticker{border:0;cursor:pointer;font-family:inherit}.genre-chips{display:flex;gap:8px;overflow-x:auto;padding:12px 0 4px;scrollbar-width:none}.genre-chips::-webkit-scrollbar{display:none}.pill-wrap{display:flex;flex-wrap:wrap;gap:8px}.search-filter{display:grid;gap:8px}.search-filter .label-text{font-size:var(--bw-text-sm);color:var(--bw-muted)}.genre-chip{flex:none;display:inline-flex;align-items:center;min-height:36px;padding:6px 13px;border-radius:var(--bw-radius-pill);background:var(--bw-deep);border:1px solid var(--bw-line);color:var(--bw-cream);font:inherit;font-size:var(--bw-text-xs);font-weight:700;white-space:nowrap;cursor:pointer}.genre-chip .n{opacity:.65;font-weight:600;margin-left:5px}.genre-chip.untagged{background:transparent;color:var(--bw-muted);border-style:dashed;border-color:var(--bw-line-strong)}.genre-chip[aria-pressed="true"]{background:var(--bw-interested-bg);color:var(--bw-interested-fg);border:1px solid var(--bw-teal)}.genre-chip .promoter-sticker{margin-right:8px;font-size:10.5px;padding:4px 6px}.genre-tag{display:inline-block;margin-top:8px;font-size:11px;font-weight:700;color:var(--bw-mist);background:var(--bw-tag-bg);border:1px solid var(--bw-tag-line);border-radius:var(--bw-radius-pill);padding:4px 9px}.promoter-filter{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;padding:8px 8px 8px 12px;background:var(--bw-interested-bg);border:1px solid var(--bw-teal);border-radius:var(--bw-radius-md);color:var(--bw-interested-fg);font-size:var(--bw-text-sm);font-weight:700}.promoter-filter .count{font-weight:500;opacity:.8}.promoter-filter .btn-chip{flex:none}
+.badge.sold{background:var(--bw-sold-bg);color:var(--bw-pass-fg);border:1px solid var(--bw-sold-line)}
+.card-flags{display:flex;align-items:center;gap:var(--bw-space-2);flex-shrink:0}
+/* Promoter sticker: a label (tilted, square-ish), never styled as a button */
+.promoter-sticker{display:inline-block;font-size:var(--bw-text-xs);font-weight:800;letter-spacing:.02em;line-height:1;padding:5px 7px;border-radius:4px;transform:rotate(6deg);box-shadow:var(--bw-shadow-sticker);white-space:nowrap;user-select:none}
+.promoter-sticker.joy{background:var(--bw-sticker-joy);color:var(--bw-sticker-ink)}
+.promoter-sticker.beatdown{background:var(--bw-sticker-beatdown);color:var(--bw-sticker-ink)}
+button.promoter-sticker{border:0;cursor:pointer;font-family:inherit}
+.promoter-filter{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;padding:8px 8px 8px 12px;background:var(--bw-interested-bg);border:1px solid var(--bw-teal);border-radius:var(--bw-radius-md);color:var(--bw-interested-fg);font-size:var(--bw-text-sm);font-weight:700}
+.promoter-filter-label{flex:1;min-width:0}
+.promoter-filter .count{font-weight:500;opacity:.8}
+.promoter-filter .btn-chip{flex:none}
+/* Genre: the tag on a card, and the chips in the Add a genre picker */
+.genre-tag{display:inline-block;font-size:var(--bw-text-xs);font-weight:700;color:var(--bw-mist);background:var(--bw-tag-bg);border:1px solid var(--bw-tag-line);border-radius:var(--bw-radius-pill);padding:4px 9px}
+.pill-wrap{display:flex;flex-wrap:wrap;gap:8px}
+.genre-chip{flex:none;display:inline-flex;align-items:center;min-height:36px;padding:6px 13px;border-radius:var(--bw-radius-pill);background:var(--bw-deep);border:1px solid var(--bw-line);color:var(--bw-cream);font:inherit;font-size:var(--bw-text-xs);font-weight:700;white-space:nowrap;cursor:pointer}
+.genre-chip[aria-pressed="true"]{background:var(--bw-interested-bg);color:var(--bw-interested-fg);border:1px solid var(--bw-teal)}
 .actions{display:flex;gap:var(--bw-space-2);flex-wrap:wrap;align-items:center;margin-top:var(--bw-space-3)}
 .actions:empty{display:none}
-.actions>.ticket,.actions>.cal-link:not(.share-link){flex:1 1 auto;justify-content:center;padding-left:10px;padding-right:10px;white-space:nowrap}
+.actions>.ticket{flex:1 1 auto;justify-content:center;padding-left:10px;padding-right:10px;white-space:nowrap}
 .ticket{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:9px 13px;border-radius:var(--bw-radius-sm);background:var(--bw-coral);color:var(--bw-coral-ink);font-size:var(--bw-text-sm);font-weight:800;text-decoration:none}
 .ticket .ticket-glyph{width:15px;height:15px;flex:none}
-
 
 /* Social summary chips */
 .people{display:flex;gap:var(--bw-space-2);flex-wrap:wrap;align-items:center;margin-top:var(--bw-space-3)}
@@ -237,7 +248,14 @@ header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1
 .theme-choices{display:grid;gap:var(--bw-space-2);margin-top:var(--bw-space-3)}
 .theme-choice{display:flex;align-items:center;gap:var(--bw-space-3);min-height:52px;padding:0 var(--bw-space-4);border-radius:var(--bw-radius-md);border:1px solid var(--bw-line);background:var(--bw-deep);color:var(--bw-cream);font:inherit;font-size:var(--bw-text-md);font-weight:700;text-align:left;cursor:pointer}
 .theme-choice[aria-checked="true"]{border-color:var(--bw-teal);background:var(--bw-interested-bg);color:var(--bw-interested-fg)}
-.theme-dots{display:flex;gap:4px}.theme-dots i{width:18px;height:18px;border-radius:999px;border:1px solid var(--bw-line)}
+.theme-dots{display:flex;gap:4px}.theme-dots i{width:18px;height:18px;border-radius:var(--bw-radius-pill);border:1px solid var(--bw-line)}
+/* Each choice previews its own scheme, so these swatches are fixed values, not tokens */
+[data-theme-choice="dark"] .theme-dots i:nth-child(1){background:#08141F}
+[data-theme-choice="dark"] .theme-dots i:nth-child(2){background:#FF7767}
+[data-theme-choice="dark"] .theme-dots i:nth-child(3){background:#4DB6AC}
+[data-theme-choice="light"] .theme-dots i:nth-child(1){background:#F4EFE6}
+[data-theme-choice="light"] .theme-dots i:nth-child(2){background:#C9402F}
+[data-theme-choice="light"] .theme-dots i:nth-child(3){background:#1F7A72}
 label{display:grid;gap:6px;font-size:var(--bw-text-sm);color:var(--bw-muted)}
 input:not([type=checkbox]):not([type=radio]),select,textarea{width:100%;padding:12px 14px;border-radius:var(--bw-radius-md);border:1px solid var(--bw-line);background:var(--bw-navy);color:var(--bw-cream);font-size:16px;outline:none}
 input:focus,select:focus,textarea:focus{border-color:var(--bw-teal);box-shadow:var(--bw-focus)}
@@ -307,7 +325,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .member-count{font-size:var(--bw-text-xs);border:1px solid var(--bw-line);border-radius:var(--bw-radius-pill);padding:2px 7px}
 
 /* ---------- Festivals ---------- */
-.festival-filters{display:flex;gap:var(--bw-space-2);overflow-x:auto;padding:2px 1px var(--bw-space-2);margin:0 -2px var(--bw-space-2);scrollbar-width:none;position:sticky;top:72px;z-index:4;background:var(--bw-abyss)}
+.festival-filters{display:flex;gap:var(--bw-space-2);overflow-x:auto;padding:2px 1px var(--bw-space-2);margin:0 -2px var(--bw-space-2);scrollbar-width:none;position:sticky;top:calc(60px + max(12px,env(safe-area-inset-top)));z-index:4;background:var(--bw-abyss)}
 .festival-filters::-webkit-scrollbar{display:none}
 .festival-filter{flex:none;min-height:38px;padding:8px 14px;border-radius:var(--bw-radius-pill);border:1px solid var(--bw-line);background:var(--bw-deep);color:var(--bw-muted);font-size:var(--bw-text-sm);font-weight:800;white-space:nowrap}
 .comedy-venues{position:static;flex-wrap:wrap;overflow:visible}
@@ -315,7 +333,6 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .festival-card .festival-date{font-size:var(--bw-text-sm);font-weight:800;color:var(--bw-interested-fg);margin-bottom:var(--bw-space-1)}
 .festival-card .festival-location{font-size:var(--bw-text-sm);color:var(--bw-muted);margin-top:var(--bw-space-1)}
 .festival-card .festival-type{display:inline-flex;margin-top:var(--bw-space-2);padding:4px 8px;border-radius:var(--bw-radius-pill);background:var(--bw-deep);border:1px solid var(--bw-line);font-size:var(--bw-text-xs);font-weight:700;color:var(--bw-muted)}
-.festival-card .actions{margin-top:12px}
 
 /* ---------- 10. Happenings ---------- */
 .custom-event-launch{display:flex;justify-content:space-between;align-items:center;gap:var(--bw-space-3);margin:var(--bw-space-3) 0 var(--bw-space-4);padding:var(--bw-space-3) var(--bw-space-4);border:1px solid var(--bw-happen-line);border-radius:var(--bw-radius-lg);background:var(--bw-happen-bg)}
@@ -328,13 +345,11 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 /* You might like (v74) */
 .recs .section-head{margin:var(--bw-space-4) 0 var(--bw-space-2)}
 .rec-reason{font-size:var(--bw-text-xs);font-weight:700;color:var(--bw-muted);margin-bottom:var(--bw-space-1)}
-/* Community genres (v74): a quiet dashed chip where a music or club night has no genre */
+/* A genre people added: tap it to change it */
 button.genre-tag{font-family:inherit;cursor:pointer}
 /* Small chips keep their look but get a finger-sized tap area */
 button.genre-tag,button.promoter-sticker{position:relative}
 button.genre-tag::after,button.promoter-sticker::after{content:'';position:absolute;inset:-9px -6px}
-#prev,#next{min-width:40px}
-.genre-tag.genre-add{background:transparent;color:var(--bw-muted);border-style:dashed;border-color:var(--bw-line-strong)}
 .genre-picker{display:grid;gap:var(--bw-space-2);margin-top:var(--bw-space-2)}
 .genre-picker-actions{display:flex;flex-wrap:wrap;gap:var(--bw-space-2)}
 .people-card h3{margin:0}
@@ -365,10 +380,9 @@ button.genre-tag::after,button.promoter-sticker::after{content:'';position:absol
 #welcome{position:fixed;inset:0;z-index:20;height:100dvh;overflow:hidden;display:grid;place-items:center;padding:max(12px,env(safe-area-inset-top)) 12px max(12px,env(safe-area-inset-bottom));background:var(--bw-abyss)}
 .welcome-card{width:min(420px,92vw);max-height:calc(100dvh - 24px);overflow:auto;background:var(--bw-card);border:1px solid var(--bw-line);border-radius:var(--bw-radius-xl);padding:24px 22px;box-shadow:var(--bw-shadow-dialog);text-align:center}
 .welcome-card h2{font-size:1.9rem;margin-bottom:9px}
-.slogan{font-weight:700;font-size:1.08rem;letter-spacing:-.01em;color:var(--bw-interested-fg)}
 .welcome-card>div>p{color:var(--bw-muted);font-size:var(--bw-text-md);line-height:1.45;margin:0 0 20px}
 .welcome-card form{display:grid;gap:10px}
-.welcome-card .btn{width:100%}.welcome-card .btn-chip,.home-card .btn-chip{width:auto}
+.welcome-card .btn{width:100%}.welcome-card .btn-chip{width:auto}
 .auth-logo{width:76px;height:76px;border-radius:20px;display:block;margin:0 auto 12px;box-shadow:var(--bw-shadow-logo-lg)}
 .magic-link-divider{display:flex;align-items:center;gap:10px;margin:16px 0;color:var(--bw-subtle);font-size:var(--bw-text-sm)}
 .magic-link-divider::before,.magic-link-divider::after{content:"";flex:1;height:1px;background:var(--bw-line)}
@@ -408,16 +422,7 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
 .home-chevron{color:var(--bw-subtle);font-size:22px;line-height:1}
 .home-card .btn{width:100%}
 
-/* New-since-last-visit panel at the top of Discover */
-.new-panel{margin-top:var(--bw-space-4);padding:var(--bw-space-3);border:1px solid var(--bw-coral-line);border-radius:var(--bw-radius-lg);background:var(--bw-coral-wash)}
-.new-panel .card{padding:var(--bw-space-3)}
-.new-panel-head{display:flex;justify-content:space-between;align-items:center;gap:var(--bw-space-3);padding:var(--bw-space-1) var(--bw-space-1) 0}
-.new-panel-head h3{display:flex;align-items:center;gap:8px}
-
-.welcome-install{width:100%;margin:0 0 12px}
 .shared-target{outline:2px solid var(--bw-coral);box-shadow:0 0 0 5px var(--bw-coral-glow),var(--bw-shadow-card)}
-.share-link{appearance:none;cursor:pointer;position:relative;flex:none;width:40px;height:38px;min-height:38px;padding:0;justify-content:center}
-.share-link span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 
 /* Add to calendar */
 .cal-link{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:8px 12px;border-radius:var(--bw-radius-sm);border:1px solid var(--bw-line);background:var(--bw-deep);color:var(--bw-cream);font-size:var(--bw-text-sm);font-weight:700;text-decoration:none}
@@ -434,8 +439,7 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
 
 /* ---------- Slimmer cards: tags row, friends line, the ⋯ menu ---------- */
 .card-tags{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:var(--bw-space-2)}
-.card-tags .genre-tag{margin-top:0}
-.badge.info{background:var(--bw-interested-bg);color:var(--bw-interested-fg);border:1px solid var(--bw-interested-line);padding:4px 9px;font-size:11px}
+.badge.info{background:var(--bw-interested-bg);color:var(--bw-interested-fg);border:1px solid var(--bw-interested-line);padding:4px 9px}
 .actions .more{margin-left:auto}
 .more{position:relative}
 .more>summary{list-style:none;cursor:pointer;width:42px;height:38px;min-height:38px;padding:0;justify-content:center;font-size:20px;font-weight:800;line-height:1;letter-spacing:1px}
@@ -467,7 +471,7 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
 .bw-toast.success{background:var(--bw-interested-bg);border-color:var(--bw-interested-line);color:var(--bw-interested-fg)}
 .bw-toast.error{background:var(--bw-pass-bg);border-color:var(--bw-pass-line);color:var(--bw-pass-fg)}
 .bw-dialog{border:0;padding:0;background:transparent;color:inherit;width:min(420px,calc(100vw - 32px));max-width:none}
-.bw-dialog::backdrop{background:rgba(3,10,18,.62)}
+.bw-dialog::backdrop{background:var(--bw-scrim)}
 .bw-dialog-card{margin:0;background:var(--bw-card);color:var(--bw-cream);border:1px solid var(--bw-line);border-radius:var(--bw-radius-xl);padding:22px 20px 18px;box-shadow:var(--bw-shadow-dialog);text-align:left}
 .bw-dialog-card h3{margin:0 0 8px;font-size:var(--bw-text-lg);line-height:1.3}
 .bw-dialog-card p{margin:0 0 16px;color:var(--bw-muted);font-size:var(--bw-text-sm);line-height:1.5;white-space:pre-line}
@@ -487,11 +491,11 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
       <p id="authPrompt" class="auth-prompt hidden"></p>
       <button type="button" id="googleSignInBtn" class="btn google-btn">Continue with Google</button>
       <div class="magic-link-divider"><span>or</span></div>
-      <form id="magicLinkForm" class="magic-link-form">
+      <form id="magicLinkForm">
         <input id="magicLinkEmail" type="email" autocomplete="email" inputmode="email" placeholder="Your email address" aria-label="Email address" required>
         <button type="submit" id="magicLinkBtn" class="btn btn-secondary">Email me a sign-in link</button>
       </form>
-      <form id="otpCodeForm" class="magic-link-form hidden">
+      <form id="otpCodeForm" class="hidden">
         <input id="otpCode" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6,10}" maxlength="10" placeholder="Code from the email" aria-label="Sign-in code from the email" required>
         <button type="submit" id="otpCodeBtn" class="btn btn-primary">Sign in with code</button>
         <button type="button" id="otpRestart" class="btn btn-ghost">Use a different email</button>
@@ -548,7 +552,7 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
 </section>
 
 <header><div class="wrap">
-  <div class="app-brand"><img src="icons/icon-192.png?v=70" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON <span>WEEKEND</span></div>
+  <div class="app-brand"><img src="icons/icon-192.png?v=70" alt="Brighton Weekend logo"><div><div class="brand">BRIGHTON WEEKEND</div>
   <div class="sub" id="subtitle">Make the most of yours</div></div></div>
   <div class="controls hidden">
     <button id="prev" aria-label="Previous week">‹</button><button id="week" class="week" aria-live="polite"></button><button id="next" aria-label="Next week">›</button>
@@ -591,7 +595,7 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
 </main>
 <main id="festivalsTab" class="wrap app-main hidden">
   <div class="section-head"><h2>Festivals</h2></div>
-  <div id="festivalFilters" class="festival-filters" role="tablist" aria-label="Festival type">
+  <div class="festival-filters" role="tablist" aria-label="Festival type">
     <button type="button" class="festival-filter active" data-festival-filter="Brighton" role="tab" aria-selected="true">Brighton</button>
     <button type="button" class="festival-filter" data-festival-filter="Music" role="tab" aria-selected="false">Music</button>
     <button type="button" class="festival-filter" data-festival-filter="Arts & Culture" role="tab" aria-selected="false">Arts & Culture</button>
@@ -628,7 +632,7 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
 <div class="settings-section"><div class="section-head venue-settings-head"><div><h3>Venues</h3></div><div class="venue-actions"><button type="button" class="btn btn-chip" id="selectComedyVenues">Comedy venues</button><button type="button" class="btn btn-chip" id="selectPubVenues">Pubs</button><button type="button" class="btn btn-chip" id="selectAllVenues">Select all</button><button type="button" class="btn btn-chip" id="unselectAllVenues">Unselect all</button></div></div><div id="venueList"></div><div class="day-preferences"><h4>Days</h4><div id="dayGrid" class="day-grid"></div></div></div>
 <div class="settings-card member-only"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" class="avatar" src="profile-icons/standardized/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div><div class="settings-card settings-groups member-only"><h3>Groups</h3><div id="groupManager"></div><button id="manageGroups" class="btn btn-secondary">Manage groups</button></div>
 <div class="settings-card guest-only"><h3>Account</h3><p class="note">Create a free login to mark events, join groups and see what your friends are planning.</p><button id="guestSignIn" type="button" class="btn btn-primary">Create a free login</button></div>
-<div class="settings-card"><h3>Colour scheme</h3><div class="theme-choices" role="radiogroup" aria-label="Colour scheme"><button type="button" class="theme-choice" role="radio" data-theme-choice="dark"><span class="theme-dots" aria-hidden="true"><i style="background:#08141F"></i><i style="background:#FF7767"></i><i style="background:#4DB6AC"></i></span>Seafront after dark</button><button type="button" class="theme-choice" role="radio" data-theme-choice="light"><span class="theme-dots" aria-hidden="true"><i style="background:#F4EFE6"></i><i style="background:#C9402F"></i><i style="background:#1F7A72"></i></span>Seafront by day</button></div></div>
+<div class="settings-card"><h3>Colour scheme</h3><div class="theme-choices" role="radiogroup" aria-label="Colour scheme"><button type="button" class="theme-choice" role="radio" data-theme-choice="dark"><span class="theme-dots" aria-hidden="true"><i></i><i></i><i></i></span>Seafront after dark</button><button type="button" class="theme-choice" role="radio" data-theme-choice="light"><span class="theme-dots" aria-hidden="true"><i></i><i></i><i></i></span>Seafront by day</button></div></div>
 <div class="settings-card"><h3>Support Brighton Weekend</h3><p class="note">If you enjoy using the app, you can buy me a coffee to help keep it running and improving.</p><a class="support-btn" href="https://www.buymeacoffee.com/jonnysadler" target="_blank" rel="noopener">☕ Buy me a coffee ↗</a></div>
 <div class="settings-card member-only"><h3>Account</h3><button id="changeName" class="btn btn-secondary">Change my name</button> <button id="signOut" class="btn btn-ghost">Sign out</button><div id="accountEmail" class="group-meta"></div><div class="danger-zone"><h4>Delete my account</h4><p class="note">Permanently deletes your profile, your Interested and Going choices, your group memberships and any events you added. This can't be undone.</p><button id="deleteAccount" type="button" class="btn btn-danger">Delete my account</button></div></div>
 <div class="settings-card install-area"><h3>Install the app</h3><button id="installApp" class="btn btn-primary install-btn">↓ Add to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
@@ -689,7 +693,7 @@ let profileIcon='';
 let profileIconsByUser={};
 const PROFILE_ICONS=['fox','badger','otter','hedgehog','squirrel','rabbit','deer','seagull','pigeon','kingfisher','owl','raven','cat','dog','dolphin','shark','whale','octopus','crab','starfish','butterfly','dragonfly','ladybird','moth','beetle','spider','praying-mantis','grasshopper','firefly','snail','ant','wasp','fly','cicada','caterpillar','stick-insect','shield-bug','moth-pink','mushroom','clover','fern','sunflower','lavender','oak-leaf','cherry-blossom','holly','pine-tree','bonsai','starling','peregrine-falcon','seahorse','jellyfish','hare','puffin','fairy','dragon','unicorn','phoenix','water-dragon','griffin'];
 const PROFILE_LABELS={'fox':'Fox','badger':'Badger','otter':'Otter','hedgehog':'Hedgehog','squirrel':'Squirrel','rabbit':'Rabbit','deer':'Deer','seagull':'Seagull','pigeon':'Pigeon','kingfisher':'Kingfisher','owl':'Owl','raven':'Raven','cat':'Cat','dog':'Dog','dolphin':'Dolphin','shark':'Shark','whale':'Whale','octopus':'Octopus','crab':'Crab','starfish':'Starfish','butterfly':'Butterfly','dragonfly':'Dragonfly','ladybird':'Ladybird','moth':'Moth','beetle':'Beetle','spider':'Spider','praying-mantis':'Praying Mantis','grasshopper':'Grasshopper','firefly':'Firefly','snail':'Snail','ant':'Ant','wasp':'Wasp','fly':'Fly','cicada':'Cicada','caterpillar':'Caterpillar','stick-insect':'Stick Insect','shield-bug':'Shield Bug','moth-pink':'Moth','mushroom':'Mushroom','clover':'Clover','fern':'Fern','sunflower':'Sunflower','lavender':'Lavender','oak-leaf':'Oak Leaf','cherry-blossom':'Cherry Blossom','holly':'Holly','pine-tree':'Pine Tree','bonsai':'Bonsai','starling':'Starling','peregrine-falcon':'Peregrine Falcon','seahorse':'Seahorse','jellyfish':'Jellyfish','hare':'Hare','puffin':'Puffin','fairy':'Fairy','dragon':'Dragon','unicorn':'Unicorn','phoenix':'Phoenix','water-dragon':'Water Dragon','griffin':'Griffin'};
-const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","The Hope & Ruin","The Prince Albert","A L P H A B E T","The Pipeline","Brighton Racecourse","The Gladstone","Babble","Old Albion","Amex Stadium","Shelter Hall","The Brunswick","Caroline of Brunswick","The Cowley Club","Daltons","The Folklore Rooms","Fortune of War","Resident","The Rose Hill","Rossi Bar","The Bee's Mouth","The Waterbear","Other"];const COMEDY_VENUES=["Brighton Centre","Brighton Dome","The Old Market","Komedia","The Forge Comedy Club","Theatre Royal Brighton"];const PUB_VENUES=["The Hope & Ruin","The Prince Albert","The Pipeline","The Gladstone","Old Albion","The Brunswick","Caroline of Brunswick","Fortune of War","The Bee's Mouth"];const VENUE_ALIASES={"Brighton Dome - Concert Hall":"Brighton Dome"};
+const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","The Hope & Ruin","The Prince Albert","A L P H A B E T","The Pipeline","Brighton Racecourse","The Gladstone","Babble","Old Albion","Amex Stadium","Shelter Hall","The Brunswick","Caroline of Brunswick","The Cowley Club","Daltons","The Folklore Rooms","Fortune of War","Resident","The Rose Hill","Rossi Bar","The Bee's Mouth","The Waterbear","Other"];const COMEDY_VENUES=["Brighton Centre","Brighton Dome","The Old Market","Komedia","The Forge Comedy Club","Theatre Royal Brighton"];const PUB_VENUES=["The Hope & Ruin","The Prince Albert","The Pipeline","The Gladstone","Old Albion","The Brunswick","Caroline of Brunswick","Fortune of War","The Bee's Mouth"];
 const $=id=>document.getElementById(id);
 // ---- In-app messages ----
 // A toast for confirmations and errors, and a small dialog for questions, in
@@ -705,13 +709,6 @@ function toast(message,tone='info'){
 // until that word is typed; copy shows a link with a Copy button.
 function dialog({title='',message='',ok='OK',cancel='',danger=false,typeToConfirm='',copy=''}={}){
  return new Promise(resolve=>{
-  if(typeof HTMLDialogElement!=='function'){ // very old browsers keep the built-in boxes
-   const text=[title,message].filter(Boolean).join('\n\n');
-   if(typeToConfirm){const v=window.prompt(text+'\n\nType '+typeToConfirm+' to confirm.');resolve(v!==null&&v.trim().toUpperCase()===typeToConfirm);return}
-   if(copy){window.prompt(text,copy);resolve(true);return}
-   if(cancel){resolve(window.confirm(text));return}
-   window.alert(text);resolve(true);return;
-  }
   const d=document.createElement('dialog');d.className='bw-dialog';
   if(title)d.setAttribute('aria-label',title);
   d.innerHTML=`<form method="dialog" class="bw-dialog-card">${title?`<h3>${esc(title)}</h3>`:''}${message?`<p>${esc(message)}</p>`:''}`
@@ -747,9 +744,7 @@ function name(){return profileName||localStorage.getItem('bw_name')||''}
 async function loadProfile(){
  if(!authUser){profileName='';profileIcon='';return false}
  try{
-  let rows;
-  try{rows=await api('GET','bw_profiles?select=display_name,email,profile_icon&user_id=eq.'+encodeURIComponent(authUser.id));}
-  catch(e){rows=await api('GET','bw_profiles?select=display_name,email&user_id=eq.'+encodeURIComponent(authUser.id));}
+  const rows=await api('GET','bw_profiles?select=display_name,email,profile_icon&user_id=eq.'+encodeURIComponent(authUser.id));
   if(Array.isArray(rows)&&rows[0]){
    profileName=rows[0].display_name||'';
    profileIcon=PROFILE_ICONS.includes(rows[0].profile_icon)?rows[0].profile_icon:'';
@@ -768,11 +763,8 @@ async function loadProfile(){
  return false;
 }
 function randomProfileIcon(){return PROFILE_ICONS[Math.floor(Math.random()*PROFILE_ICONS.length)]}
-const PROFILE_ICON_FILES={"fox":"standardized/fox.png","badger":"standardized/badger.png","otter":"standardized/otter.png","hedgehog":"standardized/hedgehog.png","squirrel":"standardized/squirrel.png","rabbit":"standardized/rabbit.png","deer":"standardized/deer.png","seagull":"standardized/seagull.png","pigeon":"standardized/pigeon.png","kingfisher":"standardized/kingfisher.png","owl":"standardized/owl.png","raven":"standardized/raven.png","cat":"standardized/cat.png","dog":"standardized/dog.png","dolphin":"standardized/dolphin.png","shark":"standardized/shark.png","whale":"standardized/whale.png","octopus":"standardized/octopus.png","crab":"standardized/crab.png","starfish":"standardized/starfish.png","butterfly":"standardized/butterfly.png","dragonfly":"standardized/dragonfly.png","ladybird":"standardized/ladybird.png","moth":"standardized/moth.png","beetle":"standardized/beetle.png","spider":"standardized/spider.png","praying-mantis":"standardized/praying-mantis.png","grasshopper":"standardized/grasshopper.png","firefly":"standardized/firefly.png","snail":"standardized/snail.png","ant":"standardized/ant.png","wasp":"standardized/wasp.png","fly":"standardized/fly.png","cicada":"standardized/cicada.png","caterpillar":"standardized/caterpillar.png","stick-insect":"standardized/stick-insect.png","shield-bug":"standardized/shield-bug.png","moth-pink":"standardized/moth-pink.png","mushroom":"standardized/mushroom.png","clover":"standardized/clover.png","fern":"standardized/fern.png","sunflower":"standardized/sunflower.png","lavender":"standardized/lavender.png","oak-leaf":"standardized/oak-leaf.png","cherry-blossom":"standardized/cherry-blossom.png","holly":"standardized/holly.png","pine-tree":"standardized/pine-tree.png","bonsai":"standardized/bonsai.png","starling":"standardized/starling.png","peregrine-falcon":"standardized/peregrine-falcon.png","seahorse":"standardized/seahorse.png","jellyfish":"standardized/jellyfish.png","hare":"standardized/hare.png","puffin":"standardized/puffin.png","fairy":"standardized/fairy.png","dragon":"standardized/dragon.png","unicorn":"standardized/unicorn.png","phoenix":"standardized/phoenix.png","water-dragon":"standardized/water-dragon.png","griffin":"standardized/griffin.png"};
-function iconSrc(icon){
-  const file=PROFILE_ICON_FILES[icon]||(icon+'.png');
-  return 'profile-icons/'+file.split('/').map(encodeURIComponent).join('/');
-}
+// Every avatar is shown from its standardised circle (scripts/standardize-avatars.mjs).
+function iconSrc(icon){return 'profile-icons/standardized/'+encodeURIComponent(icon)+'.png'}
 function userIcon(iconUserId){const icon=profileIconsByUser[iconUserId]||((iconUserId===uid())?profileIcon:'');return icon||'fox'}
 async function saveProfileIcon(icon){
  if(!authUser||!PROFILE_ICONS.includes(icon))return;
@@ -838,10 +830,9 @@ async function initAuth(){
 async function bootstrapAuthed(){
  document.body.classList.remove('guest');
  linkGuest(); // a guest who has just signed up counts as converted
- if($('authStep'))hide('authStep'); // already signed in: never show the sign-in step
- if($('otpCodeForm')&&!$('otpCodeForm').classList.contains('hidden'))resetCodeStep(); // signed in (by code or link): reset the email step
+ hide('authStep'); // already signed in: never show the sign-in step
+ if(!$('otpCodeForm').classList.contains('hidden'))resetCodeStep(); // signed in (by code or link): reset the email step
  const hasProfile=await loadProfile();
- if($('authStep'))hide('authStep');
  if(!hasProfile){showWelcome('name');return;}
  await loadGroups();
  // An invite link is handled here, whether or not they're already in a group.
@@ -865,10 +856,9 @@ function dayHeading(day){return `<h3 class="day">${day.label} <span>${day.date.t
 function todayKey(){return dateKey(new Date())}
 function esc(s){const d=document.createElement('div');d.textContent=s==null?'':String(s);return d.innerHTML.replace(/"/g,'&quot;').replace(/'/g,'&#39;')}
 function safeUrl(u){try{const x=new URL(String(u||''),location.href);return (x.protocol==='https:'||x.protocol==='http:')?x.href:''}catch(e){return ''}}
-function people(id,status){return attendance.filter(x=>x.event_id===id&&x.status===status)}
 function groupPeople(id,status){return groupHappenings.filter(x=>x.event_id===id&&x.status===status)}
-function canonicalVenue(v){return VENUE_ALIASES[v]||v}
-function venueVisible(e){const venue=canonicalVenue(e.venue);return venue==='Other'||enabled.includes(venue)}
+// Venue names in events.json are already the app's own (scripts/prepare-events.py).
+function venueVisible(e){return e.venue==='Other'||enabled.includes(e.venue)}
 function show(el){$(el).classList.remove('hidden')}
 function hide(el){$(el).classList.add('hidden')}
 
@@ -945,7 +935,7 @@ function mergeEvents(base){
  [...base,...customEvents.map(e=>({...e,source:'community',is_custom:true}))].forEach(e=>{
   if(!e||!e.id||seen.has(e.id)||!parseEventDate(e.date)||!e.title||!e.venue)return;
   seen.add(e.id);
-  if(e.venue==='Other' && e.venue_detail)e.venue_display='Other · '+e.venue_detail; else e.venue_display=canonicalVenue(e.venue);
+  if(e.venue==='Other' && e.venue_detail)e.venue_display='Other · '+e.venue_detail; else e.venue_display=e.venue;
   applyCommunityGenre(e);
   merged.push(e);
  });
@@ -993,10 +983,7 @@ function toggleOtherVenue(){
 async function loadAttendance(){
  if(!uid()){attendance=[];return}
  try{
-  const q='&user_id=eq.'+encodeURIComponent(uid());
-  let rows;
-  try{rows=await api('GET','event_interest?select=event_id,user_name,status,user_id,event_title,event_genre'+q)}
-  catch(e){rows=await api('GET','event_interest?select=event_id,user_name,status,user_id'+q)} // before v74
+  const rows=await api('GET','event_interest?select=event_id,user_name,status,user_id,event_title,event_genre&user_id=eq.'+encodeURIComponent(uid()));
   attendance=canonicalRows(rows);
  }catch(e){console.warn('Social layer unavailable',e)}
 }
@@ -1109,7 +1096,7 @@ const GUEST_ID_KEY='bw_guest_id';
 function guestId(create){
  try{
   let id=localStorage.getItem(GUEST_ID_KEY);
-  if(!id&&create){id=(crypto.randomUUID?crypto.randomUUID():'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,c=>{const r=crypto.getRandomValues(new Uint8Array(1))[0]&15;return (c==='x'?r:(r&3|8)).toString(16)}));localStorage.setItem(GUEST_ID_KEY,id)}
+  if(!id&&create){id=crypto.randomUUID();localStorage.setItem(GUEST_ID_KEY,id)}
   return id||'';
  }catch(e){return ''}
 }
@@ -1238,12 +1225,8 @@ function renderGroupManager(){
 }
 
 // The title and genre are kept with each choice, so recommendations still know
-// what it was once the event has dropped out of the listings (v74). Falls back
-// to a plain save if the database hasn't had v74 yet.
-async function saveInterest(params,ev){
- try{return await rpc('bw_set_event_interest',{...params,p_event_title:ev?.title||null,p_event_genre:ev?.genre||null})}
- catch(e){console.warn('Saving the choice without its title and genre',e);return rpc('bw_set_event_interest',params)}
-}
+// what it was once the event has dropped out of the listings (v74).
+function saveInterest(params,ev){return rpc('bw_set_event_interest',{...params,p_event_title:ev?.title||null,p_event_genre:ev?.genre||null})}
 async function act(id,status){
  if(!authUser){promptSignIn('act',{type:'act',eventId:id,status});return}
  if(!name()){showWelcome('name');return}
@@ -1423,22 +1406,21 @@ function eventCard(e,{showDate=false,reason=''}={}){
  ${commitmentButtons(e,mine)}
  <div class="actions">${ticketLink(e)}${moreMenu(e)}</div></article>`;
 }
-// ---- Genre and promoter filters ----
+// ---- Genres and the promoter filter ----
 // Genres come from scripts/tag-genres.py and are only set when a listing names
-// the genre or MusicBrainz confidently knows the act; everything else is
-// "Untagged" (music and club events only).
+// the genre or MusicBrainz or Wikidata confidently knows the act. GENRE_ORDER
+// is also the list people pick from to add a genre.
 const GENRE_ORDER=["Indie & Rock","Pop","Electronic","House & Disco","Techno & Trance","Drum & Bass","Garage & Bass","Hip-hop & R&B","Latin & Afrobeats","Jazz, Soul & Funk","Folk & Country","Punk & Metal","Reggae & Ska","Classical"];
 const GENRE_TAGGABLE=new Set(['Music','Club','Music/Club']);
-let discoverGenre='All',discoverPromoter=null;
-function genreOf(e){return e.genre||(GENRE_TAGGABLE.has(e.category)?'Untagged':null)}
-function matchesGenre(e,g){return g==='All'||genreOf(e)===g}
+// Tapping a promoter's sticker shows only their gigs on Discover (in Search,
+// it switches to the Promoter search instead).
+let discoverPromoter=null;
 function promoterBannerHtml(count){
  if(!discoverPromoter)return '';
  const p=PROMOTER_STICKERS[discoverPromoter];
- return `<div class="promoter-filter">${p?`<span class="promoter-sticker ${p.cls}" aria-hidden="true">${esc(p.label)}</span>`:''}<span style="flex:1;min-width:0">${esc(discoverPromoter)} gigs <span class="count">· ${count} this week</span></span><button type="button" class="btn btn-chip" data-clear-promoter>Show all</button></div>`;
+ return `<div class="promoter-filter">${p?`<span class="promoter-sticker ${p.cls}" aria-hidden="true">${esc(p.label)}</span>`:''}<span class="promoter-filter-label">${esc(discoverPromoter)} gigs <span class="count">· ${count} ${rangePhrase()}</span></span><button type="button" class="btn btn-chip" data-clear-promoter>Show all</button></div>`;
 }
 document.addEventListener('click',e=>{
- const g=e.target.closest('[data-genre-chip]');if(g){discoverGenre=g.dataset.genreChip;render();return}
  if(e.target.closest('[data-clear-promoter]')){discoverPromoter=null;render();return}
  const p=e.target.closest('[data-promoter]');if(!p)return;
  if(p.closest('#searchTab')){populateSearchFilters();$('searchPromoterSelect').value=p.dataset.promoter;setSearchMode('promoter');return}
@@ -1489,6 +1471,7 @@ function rangeLabel(){
  if(discoverRange==='next7'){const e=new Date();e.setDate(e.getDate()+6);return span(new Date(),e)}
  const end=new Date(weekStart);end.setDate(end.getDate()+6);return short(weekStart)+' – '+short(end);
 }
+function rangePhrase(){return {tonight:'tonight',weekend:'this weekend',next7:'in the next 7 days'}[discoverRange]||'this week'}
 function rangeChipsHtml(){
  const chip=(v,label)=>`<button type="button" class="festival-filter${discoverRange===v?' active':''}" data-range="${v}" aria-pressed="${discoverRange===v}">${label}</button>`;
  return `<div class="range-chips" role="group" aria-label="When">${chip('tonight','Tonight')}${chip('weekend','This weekend')}${chip('next7','Next 7 days')}</div>`;
@@ -1501,31 +1484,28 @@ function render(){
  const days=rangeDays();
  if(!days.length){$('discover').innerHTML=rangeChipsHtml()+newPanelHtml()+'<div class="empty">None of your chosen days are left this week. Tap › for next week, or change your days in Settings.</div>';return}
  if(!enabled.length){$('discover').innerHTML=venueNudgeHtml();return}
- const weekList=events.filter(e=>days.some(d=>d.key===e.date)&&venueVisible(e)&&!isNotMusic(e)&&inRange(e));
- const promoterList=discoverPromoter?weekList.filter(e=>e.promoter===discoverPromoter):weekList;
- const matched=promoterList.filter(e=>matchesGenre(e,discoverGenre)).length;
- const filtering=discoverGenre!=='All'||!!discoverPromoter;
- $('discover').innerHTML=rangeChipsHtml()+newPanelHtml()+promoterBannerHtml(promoterList.length)+days.map(day=>{
-  const list=events.filter(e=>e.date===day.key&&venueVisible(e)&&!isNotMusic(e)&&inRange(e));
-  const shown=list.filter(e=>matchesGenre(e,discoverGenre)&&(!discoverPromoter||e.promoter===discoverPromoter));
-  if(filtering&&!shown.length)return '';
-  return dayHeading(day)+(shown.length?shown.map(e=>eventCard(e)).join(''):`<div class="empty">${discoverRange==='tonight'?'Nothing on tonight at your venues.':'No events at your selected venues.'}</div>`);
- }).join('')+(filtering&&!matched?'<div class="empty">Nothing this week matches this filter. <button type="button" class="btn btn-chip" data-genre-chip="All">Show everything</button></div>':'');
+ const shown=e=>venueVisible(e)&&!isNotMusic(e)&&inRange(e)&&(!discoverPromoter||e.promoter===discoverPromoter);
+ const byDay=days.map(day=>({day,list:events.filter(e=>e.date===day.key&&shown(e))}));
+ const total=byDay.reduce((n,d)=>n+d.list.length,0);
+ // With a promoter chosen, only the days with their gigs are listed.
+ $('discover').innerHTML=rangeChipsHtml()+newPanelHtml()+promoterBannerHtml(total)+byDay.map(({day,list})=>{
+  if(discoverPromoter&&!list.length)return '';
+  return dayHeading(day)+(list.length?list.map(e=>eventCard(e)).join(''):`<div class="empty">${discoverRange==='tonight'?'Nothing on tonight at your venues.':'No events at your selected venues.'}</div>`);
+ }).join('')+(discoverPromoter&&!total?`<div class="empty">No ${esc(discoverPromoter)} gigs ${rangePhrase()} at your selected venues. <button type="button" class="btn btn-chip" data-clear-promoter>Show everything</button></div>`:'');
 }
 function isComedy(e){
  const hay=[e.category,e.type,e.genre,e.tags,e.title,e.description].filter(Boolean).join(' ').toLowerCase();
  return /\b(comedy|comedian|stand.?up|standup|improv|improvisation|sketch|open mic comedy)\b/.test(hay);
 }
-// Talks: filed as Talk, or a title that says so ("In Conversation", "Q&A",
-// "Interview", "Podcast", "Book Tour"). Keep in step with TALK_TITLE in
-// scripts/prepare-events.py, which files these as Talk in events.json.
-const TALK_TITLE=/\b(?:in\s+conversation|q\s*&\s*a|interview|podcast|lecture|spoken\s+word|book\s+(?:tour|signing|launch|reading|talk))\b|^(?:professor|prof\.?)\s+(?!green\b|elemental\b)/i;
-function isTalk(e){return e.category==='Talk'||TALK_TITLE.test(String(e.title||''))}
+// Talks: scripts/prepare-events.py files a listing as Talk when its title says
+// so ("In Conversation", "Q&A", "Podcast", "Book Tour"); people adding an event
+// choose Talk themselves.
+function isTalk(e){return e.category==='Talk'}
 // The Not music tab (its id is still comedyTab): comedy and talks.
 function isNotMusic(e){return isComedy(e)||isTalk(e)}
 // Venue toggles on the Not music tab: the same venue setting as Settings → Venues.
 function comedyVenueNames(){
- const withComedy=events.filter(isNotMusic).map(e=>canonicalVenue(e.venue)).filter(v=>v&&v!=='Other');
+ const withComedy=events.filter(isNotMusic).map(e=>e.venue).filter(v=>v&&v!=='Other');
  return [...new Set([...COMEDY_VENUES,...withComedy])].filter(v=>VENUES.includes(v)).sort((a,b)=>a.localeCompare(b));
 }
 function renderComedyVenues(){
@@ -1547,7 +1527,7 @@ function renderComedy(){
   return list.length?dayHeading(day)+list.map(e=>eventCard(e)).join(''):'';
  }).join('');
  if(!enabled.length){$('comedyList').innerHTML=venueNudgeHtml('Pick the venues you go to above, or choose venues in Settings.');return}
- $('comedyList').innerHTML=rangeChipsHtml()+(html||`<div class="empty">No comedy or talks ${discoverRange==='tonight'?'tonight':discoverRange==='weekend'?'this weekend':discoverRange==='next7'?'in the next 7 days':'this week'} at your selected venues. Try another time or turn on more venues above.</div>`);
+ $('comedyList').innerHTML=rangeChipsHtml()+(html||`<div class="empty">No comedy or talks ${rangePhrase()} at your selected venues. Try another time or turn on more venues above.</div>`);
 }
 const STATUS_LABEL={ticket_bought:'Going',interested:'Interested',not_interested:'Not for me'};
 const STATUS_CLASS={ticket_bought:'going',interested:'interested',not_interested:'pass'};
@@ -1636,7 +1616,7 @@ function renderPeople(){
  groupMembers.forEach(m=>{if(!memberGroups.has(m.group_id))memberGroups.set(m.group_id,{name:m.group_name,members:[]});memberGroups.get(m.group_id).members.push(m)});
  const roster=[...memberGroups.values()].map(g=>{
    const members=[...new Map(g.members.map(m=>[m.user_id,m])).values()].sort((a,b)=>(a.user_name||'').localeCompare(b.user_name||''));
-   return `<div class="member-group"><div class="group-heading">${esc(g.name)} <span class="member-count">${members.length}</span></div><div class="people">${members.map(m=>`<span class="social-chip profile-chip"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(m.user_id))}" alt="" loading="lazy" decoding="async"></i>${esc(m.user_name)}</span>`).join('')}</div></div>`;
+   return `<div><div class="group-heading">${esc(g.name)} <span class="member-count">${members.length}</span></div><div class="people">${members.map(m=>`<span class="social-chip"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(m.user_id))}" alt="" loading="lazy" decoding="async"></i>${esc(m.user_name)}</span>`).join('')}</div></div>`;
  }).join('');
  const rosterHtml=inGroups?`<section class="group-roster group-roster-bottom"><div class="section-head"><h3>People in your groups</h3></div>${roster}</section>`:joinPrompt;
  let html=recs;
@@ -1650,7 +1630,7 @@ function renderPeople(){
  const keen=s=>s==='interested'||s==='ticket_bought';
  const active=[...events,...festivals].filter(e=>(e.date_end||e.date)>=today&&(keen(myStatus(e.id))||(others.get(e.id)||[]).some(x=>keen(x.status))))
   .sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
- if(!active.length){$('peopleList').innerHTML=html+(inGroups?'<div class="empty happenings-empty">No plans yet. Mark an event Interested or Going and it will show here for your groups.</div>':'')+rosterHtml;return}
+ if(!active.length){$('peopleList').innerHTML=html+(inGroups?'<div class="empty">No plans yet. Mark an event Interested or Going and it will show here for your groups.</div>':'')+rosterHtml;return}
 
  html+=`<div class="section-head happenings-events-head"><h3>${inGroups?'What\'s happening':'Your plans'}</h3></div>`;
  html+=active.map(e=>{
@@ -1691,14 +1671,6 @@ function renderDayPreferences(){
  const grid=$('dayGrid');if(!grid)return;const s=selectedDays();
  grid.innerHTML=DAY_NAMES.map((d,i)=>`<label class="day-choice"><input type="checkbox" data-day="${i}" ${s.has(i)?'checked':''}><span>${d}</span></label>`).join('');
  grid.querySelectorAll('[data-day]').forEach(c=>c.onchange=()=>{const vals=[...grid.querySelectorAll('[data-day]:checked')].map(x=>Number(x.dataset.day));localStorage.setItem(DAYS_KEY,JSON.stringify(vals.length?vals:[0,1,2,3,4,5,6]));if(!vals.length)renderDayPreferences();renderAll()});
-}
-function debugData(){
- const ids=new Set(), duplicates=[];
- for(const e of events){if(ids.has(e.id))duplicates.push(e.id);ids.add(e.id)}
- const bad=events.filter(e=>!e.id||!parseEventDate(e.date)||!e.venue||!e.title);
- console.info('[Brighton Weekend] diagnostics',{events:events.length,duplicateIds:duplicates.length,invalidEvents:bad.length,venues:[...new Set(events.map(e=>e.venue))].length});
- if(duplicates.length)console.warn('[Brighton Weekend] duplicate event IDs',duplicates);
- if(bad.length)console.warn('[Brighton Weekend] invalid events',bad);
 }
 
 let festivalFilter='Brighton';
@@ -1748,7 +1720,6 @@ async function refresh(){
   events=mergeEvents(cleaned);
   rebuildEventIdAliases();attendance=canonicalRows(attendance);groupHappenings=canonicalRows(groupHappenings);
   $('subtitle').textContent='Make the most of yours';
-  debugData();
   renderAll();
   return {ok:true,count:events.length};
  }catch(e){
@@ -1759,17 +1730,12 @@ async function refresh(){
 }
 
 // ---- Search ----
-let searchMode='venue';const searchVenues=new Set(),searchGenres=new Set(),searchPromoters=new Set();
+let searchMode='venue';const searchVenues=new Set();
+// Promoters are searched from their own tab, not from Dates and venues.
 function populateSearchFilters(){
- // Promoters are searched from their own tab, not from Dates and venues.
  const promoters=[...new Set(events.map(e=>e.promoter).filter(Boolean))].sort();
  const sel=$('searchPromoterSelect');if(sel){const cur=sel.value;sel.innerHTML='<option value="">Choose a promoter</option>'+promoters.map(p=>`<option value="${esc(p)}">${esc(p)}</option>`).join('');sel.value=promoters.includes(cur)?cur:''}
 }
-document.addEventListener('click',e=>{
- const g=e.target.closest('[data-search-genre]'),p=e.target.closest('[data-search-promoter]');if(!g&&!p)return;
- const set=g?searchGenres:searchPromoters,val=g?g.dataset.searchGenre:p.dataset.searchPromoter;
- set.has(val)?set.delete(val):set.add(val);populateSearchFilters();renderSearch();
-});
 function populateSearchVenues(){
  const list=$('searchVenueList');if(!list)return;
  const q=($('searchVenueFilter').value||'').trim().toLowerCase();
@@ -1809,10 +1775,7 @@ function renderSearch(){
   const atVenue=searchVenues.size?(e=>searchVenues.has(String(e.venue_display||e.venue||'').trim())):(enabled.length?venueVisible:()=>true);
   const hint=$('searchVenueHint');if(hint)hint.textContent=searchVenues.size?`${searchVenues.size} venue${searchVenues.size===1?'':'s'} ticked.`:(enabled.length?'None ticked, so showing the venues you follow.':'None ticked, so showing every venue.');
   document.querySelectorAll('[data-search-range]').forEach(b=>{const [f,t]=searchRange(b.dataset.searchRange),on=$('searchFrom').value===f&&$('searchTo').value===t;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on)});
-  if(from&&to)out=events.filter(e=>e.date>=from&&e.date<=to
-   &&atVenue(e)
-   &&(!searchGenres.size||searchGenres.has(genreOf(e)))
-   &&(!searchPromoters.size||searchPromoters.has(e.promoter)));
+  if(from&&to)out=events.filter(e=>e.date>=from&&e.date<=to&&atVenue(e));
  }
  const today=todayKey();
  if(searchMode==='festival')out=out.filter(f=>(f.date_end||f.date)>=today);else out=out.filter(e=>e.date>=today);
@@ -1826,21 +1789,22 @@ function setupSearch(){
  document.querySelectorAll('[data-search-mode]').forEach(b=>b.onclick=()=>setSearchMode(b.dataset.searchMode));
  ['searchFrom','searchTo'].forEach(id=>$(id).onchange=renderSearch);
  $('searchArtist').oninput=renderSearch;$('searchVenueFilter').oninput=populateSearchVenues;$('searchFestival').oninput=renderSearch;$('searchPromoterSelect').onchange=renderSearch;
- $('searchClear').onclick=()=>{searchVenues.clear();searchGenres.clear();searchPromoters.clear();populateSearchFilters();['searchFrom','searchTo','searchVenueFilter','searchArtist','searchFestival','searchPromoterSelect'].forEach(id=>$(id).value='');setSearchDefaults();populateSearchVenues();setSearchMode('venue')};
+ $('searchClear').onclick=()=>{searchVenues.clear();populateSearchFilters();['searchFrom','searchTo','searchVenueFilter','searchArtist','searchFestival','searchPromoterSelect'].forEach(id=>$(id).value='');setSearchDefaults();populateSearchVenues();setSearchMode('venue')};
 }
 setupSearch();
 
 let deferredInstallPrompt=null;
-function setupInstallButton(){const btn=$('installApp'),welcomeBtn=$('welcomeInstallApp'),hint=$('installHint');const buttons=[btn,welcomeBtn].filter(Boolean);if(!buttons.length)return;
-const standalone=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone;
-if(standalone){buttons.forEach(b=>b.classList.add('hidden'));if(hint)hint.textContent='Brighton Weekend is already installed.';return;}
-window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstallPrompt=e;if(welcomeBtn)welcomeBtn.classList.remove('hidden');});
-window.addEventListener('appinstalled',()=>{deferredInstallPrompt=null;buttons.forEach(b=>b.classList.add('hidden'));if(hint)hint.textContent='Brighton Weekend is installed on your home screen.'});
-const isiOS=/iPad|iPhone|iPod/.test(navigator.userAgent)&&!window.MSStream;
-if(isiOS&&welcomeBtn)welcomeBtn.classList.remove('hidden');
-const install=async()=>{if(deferredInstallPrompt){deferredInstallPrompt.prompt();await deferredInstallPrompt.userChoice;deferredInstallPrompt=null;return;}
-dialog({title:'Add to your Home Screen',message:isiOS?'In Safari, tap Share, choose “Add to Home Screen”, then tap Add.':'In Chrome, tap the three-dot menu, then choose “Install app” or “Add to Home screen”.',ok:'Got it'});};
-buttons.forEach(b=>b.onclick=install);
+function setupInstallButton(){
+ const btn=$('installApp'),hint=$('installHint');
+ if(window.matchMedia('(display-mode: standalone)').matches||navigator.standalone){btn.classList.add('hidden');hint.textContent='Brighton Weekend is already installed.';return}
+ window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstallPrompt=e});
+ window.addEventListener('appinstalled',()=>{deferredInstallPrompt=null;btn.classList.add('hidden');hint.textContent='Brighton Weekend is installed on your home screen.'});
+ // iPads report themselves as Macs; a touch screen gives them away.
+ const isiOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(/Macintosh/.test(navigator.userAgent)&&navigator.maxTouchPoints>1);
+ btn.onclick=async()=>{
+  if(deferredInstallPrompt){deferredInstallPrompt.prompt();await deferredInstallPrompt.userChoice;deferredInstallPrompt=null;return}
+  dialog({title:'Add to your Home Screen',message:isiOS?'In Safari, tap Share, choose “Add to Home Screen”, then tap Add.':'In Chrome, tap the three-dot menu, then choose “Install app” or “Add to Home screen”.',ok:'Got it'});
+ };
 }
 setupInstallButton();
 
@@ -1915,7 +1879,7 @@ $('next').onclick=()=>{if(discoverRange!=='week'){discoverRange='week';weekStart
 $('today').onclick=()=>{discoverRange='week';weekStart=getMonday();renderAll()};
 $('refresh').onclick=async()=>{
  const btn=$('refresh');btn.disabled=true;
- try{await loadCustomEvents();await refresh();await loadFestivals();await loadAttendance();await loadGroups();await loadGroupHappenings();renderAll();}
+ try{await Promise.all([loadCustomEvents(),loadCommunityGenres()]);await refresh();await loadFestivals();await loadAttendance();await loadGroups();await loadGroupHappenings();renderAll();}
  finally{btn.disabled=false;}
 };
 $('changeName').onclick=()=>showWelcome('name');
@@ -1949,7 +1913,7 @@ document.addEventListener('click',ev=>{const b=ev.target.closest('[data-share-ev
 // Remembers, per user on this device, what was on screen at the last visit and
 // reports what is new since then.
 // Opens an event someone shared via a ?event= link (remembered across sign-in by capturePendingLink)
-function showSharedEvent(){const pendingSharedEventId=readPendingLink()?.event;if(!pendingSharedEventId)return;
+function showSharedEvent(){const shared=readPendingLink()?.event;if(!shared)return;const pendingSharedEventId=eventIdAlias[shared]||shared;
  // If the listings didn't load (offline, say), keep the link and try again on the next load.
  if(!events.length&&!festivals.length)return;
  // New users are still on the welcome screens; keep the link until they finish (see finishWelcome).
@@ -2026,8 +1990,8 @@ document.addEventListener('click',e=>{if(e.target.closest('[data-new-toggle]')){
 document.addEventListener('click',e=>{if(e.target.closest('#closeNewPanel')){showNewPanel=false;render()}});
 
 async function loadUserData(){
- if(!authUser){await Promise.all([loadCustomEvents(),loadCommunityGenres()]);events=mergeEvents(events.filter(e=>!e.is_custom));rebuildEventIdAliases();renderAll();showSharedEvent();return}
- await Promise.all([loadAttendance(),loadCustomEvents(),loadFestivals(),loadCommunityGenres()]);
+ if(!authUser){await Promise.all([loadCustomEvents(),loadCommunityGenres()]);events=mergeEvents(events.filter(e=>!e.is_custom));renderAll();showSharedEvent();return}
+ await Promise.all([loadAttendance(),loadCustomEvents(),loadCommunityGenres()]);
  events=mergeEvents(events.filter(e=>!e.is_custom));
  await loadGroupHappenings(); await loadProfileIcons();
  renderProfileIconSettings(); renderAll(); renderGroupManager();
@@ -2046,7 +2010,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=80', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=81', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>

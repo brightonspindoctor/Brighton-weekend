@@ -5,6 +5,7 @@ name: Standardise Brighton Weekend avatars
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
       - 'profile-icons/**'
       - 'scripts/standardize-avatars.mjs'
@@ -43,7 +44,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile-icons/standardized profile-icons/avatar-manifest.json index.html
+          git add profile-icons/standardized profile-icons/avatar-manifest.json
           if git diff --cached --quiet; then
             echo "No avatar changes to commit."
             exit 0

@@ -1,48 +1,32 @@
+// Checks every avatar in PROFILE_ICONS (index.html): the app shows
+// profile-icons/standardized/<id>.png, and both it and the selected artwork
+// must still match the fingerprints recorded in avatar-manifest.json.
 import fs from 'node:fs';
 import crypto from 'node:crypto';
 
 const source = fs.readFileSync('index.html', 'utf8');
 const iconsMatch = source.match(/PROFILE_ICONS\s*=\s*\[([^\]]+)\]/s);
 if (!iconsMatch) throw new Error('PROFILE_ICONS registry not found');
-const names = [...iconsMatch[1].matchAll(/['\"]([^'\"]+)['\"]/g)].map((m) => m[1]);
-
-const filesMatch = source.match(/PROFILE_ICON_FILES\s*=\s*\{([^}]*)\}/s);
-const files = {};
-if (filesMatch) {
-  for (const m of filesMatch[1].matchAll(/['\"]([^'\"]+)['\"]\s*:\s*['\"]([^'\"]+)['\"]/g)) files[m[1]] = m[2];
-}
+const names = [...iconsMatch[1].matchAll(/['"]([^'"]+)['"]/g)].map((m) => m[1]);
 
 const manifestPath = 'profile-icons/avatar-manifest.json';
 const manifest = fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, 'utf8')) : {};
+const sha = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 
 for (const id of names) {
-  const file = files[id] || `${id}.png`;
+  const file = `standardized/${id}.png`;
   const assetPath = `profile-icons/${file}`;
-  if (!fs.existsSync(assetPath)) throw new Error(`Missing avatar asset: ${id} -> ${file}`);
-
-  // Existing legacy avatars may be SVGs. New selected-artwork entries in the
-  // manifest must be raster and must retain the exact selected file bytes.
-  if (manifest[id]) {
-    const ext = file.slice(file.lastIndexOf('.')).toLowerCase();
-    if (!['.png', '.jpg', '.jpeg', '.webp'].includes(ext)) {
-      throw new Error(`Avatar ${id} uses unsupported/non-raster selected artwork: ${file}`);
-    }
-    if (manifest[id].file !== file) throw new Error(`Avatar manifest mismatch: ${id} -> ${file}`);
-    const actualSha256 = crypto.createHash('sha256').update(fs.readFileSync(assetPath)).digest('hex');
-    if (manifest[id].sha256 !== actualSha256) {
-      throw new Error(`Avatar artwork changed after selection: ${id} -> ${file}`);
-    }
-    // The selected source artwork must still be the exact file that was chosen.
-    if (manifest[id].source) {
-      const sourcePath = `profile-icons/${manifest[id].source}`;
-      if (!fs.existsSync(sourcePath)) throw new Error(`Avatar ${id}: selected artwork ${sourcePath} is missing`);
-      const sourceSha = crypto.createHash('sha256').update(fs.readFileSync(sourcePath)).digest('hex');
-      if (manifest[id].source_sha256 && manifest[id].source_sha256 !== sourceSha) {
-        throw new Error(`Avatar ${id}: selected artwork ${sourcePath} changed after selection`);
-      }
-    }
-  }
+  if (!fs.existsSync(assetPath)) throw new Error(`Missing avatar: ${id} -> ${assetPath} (run scripts/standardize-avatars.mjs)`);
+  const entry = manifest[id];
+  if (!entry) throw new Error(`Avatar ${id} is not in ${manifestPath}`);
+  if (entry.file !== file) throw new Error(`Avatar manifest mismatch: ${id} -> ${entry.file}, expected ${file}`);
+  if (entry.sha256 !== sha(assetPath)) throw new Error(`Avatar ${id}: ${assetPath} changed without the manifest being updated`);
+  // The selected artwork must still be the exact file that was chosen, and raster.
+  const art = `profile-icons/${entry.source || ''}`;
+  if (!entry.source || !fs.existsSync(art)) throw new Error(`Avatar ${id}: selected artwork ${art} is missing`);
+  if (!/\.(png|jpe?g|webp)$/i.test(entry.source)) throw new Error(`Avatar ${id}: selected artwork must be PNG, JPG or WebP, not ${entry.source}`);
+  if (entry.source_sha256 !== sha(art)) throw new Error(`Avatar ${id}: selected artwork ${art} changed after selection`);
 }
 
 if (names.includes('bee') || names.includes('bumblebee')) throw new Error('Legacy bee avatar still registered');
-console.log(`Validated ${names.length} avatar assets; selected-artwork fingerprints checked for ${Object.keys(manifest).length} registered raster avatars.`);
+console.log(`Validated ${names.length} avatars: standardised files and selected artwork fingerprints all match.`);

@@ -58,9 +58,9 @@ commit `index.html` and `profile-icons/` on a branch and open a pull request.
 
 | Script | Job |
 |---|---|
-| `add-avatar.mjs` | Checks the id, label, file type and size; stores the artwork as `profile-icons/<id>.<ext>` (same bytes); adds the avatar to `PROFILE_ICONS`, `PROFILE_LABELS` and `PROFILE_ICON_FILES` in index.html and to `avatar-manifest.json`. Changes nothing if a check fails. |
-| `standardize-avatars.mjs` | Makes `profile-icons/standardized/<id>.png` (192px, circular, transparent outside) for every avatar and points the app at those files. The manifest keeps `source` and `source_sha256` (the selected artwork) and `file` and `sha256` (what the app shows). |
-| `validate-avatars.mjs` | Fails if any avatar's file is missing or either fingerprint has changed. |
+| `add-avatar.mjs` | Checks the id, label, file type and size; stores the artwork as `profile-icons/<id>.<ext>` (same bytes); adds the avatar to `PROFILE_ICONS` and `PROFILE_LABELS` in index.html and to `avatar-manifest.json`. Changes nothing if a check fails. |
+| `standardize-avatars.mjs` | Makes `profile-icons/standardized/<id>.png` (192px, circular, transparent outside) for every avatar: the app always shows that file. The manifest keeps `source` and `source_sha256` (the selected artwork) and `file` and `sha256` (what the app shows). |
+| `validate-avatars.mjs` | Fails if any avatar's standardised file or artwork is missing, or either fingerprint has changed. |
 
 ## Database
 

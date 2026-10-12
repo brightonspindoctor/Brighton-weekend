@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
 from event_matching import same_show as same_show_at_venue
+from listing_rules import GENERIC_TITLES, NOT_A_TITLE
 
 ROOT=Path(__file__).resolve().parents[1]
 # Sources marked "disabled" stay listed (the discovery scraper still recognises
@@ -24,24 +25,9 @@ MONTHS=r'Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)
 DATE_RE=re.compile(rf'\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\.?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s*(?:\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?|\d{{1,2}}/\d{{1,2}}/(?:\d{{4}}|\d{{2}}))\b',re.I)
 TIME_RE=re.compile(r'\b(\d{1,2}(?::\d{2})?\s*(?:am|pm))\b',re.I)
 CATEGORIES={'Comedy':['comedy','comedian','stand-up','stand up','laughs'],'Club':['club','dj','dnb','drum & bass','rave','techno','house night','party'],'Theatre':['theatre','theater','play','musical','west end'],'Dance':['dance','ballet','contemporary dance'],'Family':['family','kids','children','storytelling','baby'],'Talk':['talk','in conversation','lecture','spoken word','author'],'Sport':['football','boxing','wrestling','sport','racecourse'],'Music':['gig','live','band','concert','tour','festival','dj set','orchestra','singer']}
-GENERIC_TITLES={'club','live','event','film','gig','gigs','sport','other','late','night','music & club','comedy','classical music','music','talks & debate','talks and debate','dance','theatre','family',"what's on",'events','upcoming events','get tickets','buy tickets','book tickets','learn more','more info','more info & tickets','find out more','event details','sold out','on sale','on sale today','tickets','read more','view event'}
 CTA_PREFIXES=('get tickets','get ticket','buy tickets','buy ticket','book tickets','book ticket','book now','learn more','more info','more details','find out more','event details','on sale','sold out','sign up','subscribe','join our','join the mailing','newsletter','mailing list')
 
 def clean(s): return re.sub(r'\s+',' ',s or '').strip()
-# Text that sits in an event card but is not its name: door/start times and
-# page section labels.
-NOT_A_TITLE = re.compile(r"""(?:
-   doors?(?:\s*open)?\s*[:\-]?\s*\d.*                 # Doors: 7:00 PM
-  |starts?(?:\s*at)?\s*[:\-]?\s*\d.*                  # Starts 8pm
-  |(?:start\s*)?times?\s*[:\-]\s*\d.*                 # Time: 8pm
-  |on\s+sale(?:\s+now)?|on\s+sale\s+\d.*
-  |tickets?\s+from\s+\W?\d.*|from\s+\W?\d[\d.,]*      # Tickets from £10
-  |ages?\s*\d+\+?.*|\d{1,2}\+                         # Age 18+, 18+
-  |\d{1,2}(?::\d{2})?\s*(?:am|pm)(?:\s*[-–]\s*\d{1,2}(?::\d{2})?\s*(?:am|pm))?   # 8pm, 8pm-11pm
-  |limited\s+(?:free\s+)?tickets?\b.*|early\s*bird(?:\s+tickets?)?|bu[yt]\s+tickets?\b.*
-  |pub\s+events|top\s+picks|next\s+up(?:\s+in\s+the\s+venue)?|this\s+week|coming\s+(?:up|soon)|upcoming
-  |featured|free\s+tickets?|all\s+events|whats?\s+on|more\s+events|more\s+.+\s+events|you\s+might\s+also\s+like|edition
-)""", re.I | re.X)
 def valid_title(title):
     t=clean(title); low=t.lower()
     if not t or low in GENERIC_TITLES or NOT_A_TITLE.fullmatch(low):return False

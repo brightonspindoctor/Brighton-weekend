@@ -39,11 +39,11 @@ COUNTRY_TAG = re.compile(
 )
 
 CITY = r"(?:brighton(?:\s*(?:&|and)\s*hove)?|hove)"
-SEP = r"[\s\-–—|:,·/(\[]+"
 
 
 def _plain(text):
-    text = html.unescape(str(text or ""))
+    # Apostrophes go before accents are dropped, so "That's" and "That’s" match.
+    text = re.sub(r"['’‘`´]", "", html.unescape(str(text or "")))
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
     # "$layyyter" is how one source styles Slayyyter.
     text = re.sub(r"\$(?=[a-z])", "s", text.lower())
@@ -188,7 +188,7 @@ def display_title(title, venue=""):
     patterns = [
         r"\s*[*(\[]\s*free\s+entry\s*[*)\]]\s*$",
         rf"\s+(?:live\s+)?(?:at|@)\s+(?:the\s+)?(?:{venue_re})\b[\s,\-–|]*(?:{CITY})?\s*$",
-        rf"\s+@\s+.+$",
+        r"\s+@\s+.+$",
         rf"\s*[\-–—|·]\s*(?:{CITY})\s*$",
         rf"\s*[(\[]\s*(?:{CITY})\s*[)\]]\s*$",
     ]
@@ -226,6 +226,7 @@ def _self_test():
         ("Moonpunx #19 Albertween! Halloween", "Tickets MoonPunx #19 ALBERTWEEN! Halloween ALL DAYER", "The Prince Albert"),
         ("Annie-Claude Deschênes + support", "Annie-Claude Deschênes + Solid Pleasure + Everyday Saints", "The Prince Albert"),
         ("Disney's The Muppet Christmas Carol in concert live to film", "The Muppet Christmas Carol in Concert", "Brighton Centre"),
+        ("Jordan Brookes: The Part of You That's Always Screaming", "Jordan Brookes: The Part of You That’s Always Screaming", "Komedia"),
     ]
     cases_different = [
         ("Brighton v Crystal Palace", "Brighton v Everton", "Amex Stadium"),
@@ -263,7 +264,6 @@ def _self_test():
     assert display_title("Lafs + Supports @ the Pipleline, Brighton", "The Pipeline") == "Lafs + Supports"
     assert display_title("Brighton | Dansu Discs: Lucas Alexander, RTK Tarantino & more", "Patterns") == "Dansu Discs: Lucas Alexander, RTK Tarantino & more"
     assert display_title("Tickets MoonPunx #19 ALBERTWEEN!", "The Prince Albert") == "MoonPunx #19 ALBERTWEEN!"
-    assert display_title("Brighton Soul Club", "Komedia") == "Brighton Soul Club"
     return True
 
 

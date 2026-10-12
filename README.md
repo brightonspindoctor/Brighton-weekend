@@ -1,16 +1,17 @@
 # Brighton Weekend
 
 A mobile web app for finding gigs, comedy, club nights and theatre in Brighton
-& Hove, and making plans with friends. It's hosted on GitHub Pages at
-<https://brightonspindoctor.github.io/Brighton-weekend/> and can be installed
-to a phone's home screen.
+& Hove, and making plans with friends. It lives at
+<https://brightonweekend.co.uk> (GitHub Pages) and can be installed to a
+phone's home screen.
 
 ## What it does
 
 - **Discover:** this week's events (Monday–Sunday) at the venues you follow,
   day by day, with quick chips for *Tonight* (from 5pm), *This weekend* (Friday to
   Sunday) and *Next 7 days*. New events since your last visit show as a one-line
-  summary you can open. Comedy and talks are on their own tab, **Not music**.
+  summary you can open. Tapping a promoter's sticker shows only their gigs.
+  Comedy and talks are on their own tab, **Not music**.
 - **Event cards:** Get tickets up front; Add to calendar, Share and Add a genre
   sit behind the ⋯ button. Friends' counts show only when someone's interested or
   going. Listing markers such as "\*\*FREE ENTRY\*\*" become badges ("Free",
@@ -19,14 +20,14 @@ to a phone's home screen.
   with a Brighton location filter and festival-type filters. Festivals never enter the
   normal event feed, but can still be marked Interested or Going and appear in Happenings.
   A festival stays listed until its last day, so multi-week ones show while they're on.
-- **Search:** find events by artist, or by dates and venues. Dates and venues
-  starts on this weekend at the venues you follow; quick chips set other ranges.
+- **Search:** by dates and venues (starting on this weekend at the venues you
+  follow), artist, promoter or festival.
 - **Commitments:** mark any event *Not for me*, *Interested* or *Going*.
-- **Messages:** confirmations and errors use in-app toasts and dialogs, not the
-  browser's pop-ups. The Welcome back screen only appears when friends have new
-  plans or someone joined a group; the groups step is shown once at sign-up.
-- **Groups and Happenings:** join open groups or private ones (3-digit PIN).
-  Happenings shows what people in your groups are interested in or going to,
+- **Guests:** anyone can browse without a login. Marking events, Happenings and
+  adding events ask for a free login, and the app carries out what they tried
+  once they've signed up.
+- **Groups and Happenings:** every group has a 3-digit PIN; invite links carry
+  it. Happenings shows what people in your groups are interested in or going to,
   with the list of people in your groups at the bottom.
 - **You might like:** the top of Happenings suggests up to three events in the
   next six months by the same bands, or in the same genres, as things you've
@@ -39,24 +40,28 @@ to a phone's home screen.
   (`GENRE_ORDER`); the most-picked genre shows for everyone. Genres from the
   listings or the tagger always win.
 - **Community events:** signed-in users can add events that are missing.
-- **Settings:** choose venues and days, pick a profile icon, manage groups,
-  install the app.
+- **Settings:** venues and days, colour scheme (*Seafront after dark* or
+  *Seafront by day*), profile icon, groups, account, install the app.
+- **Messages:** confirmations and errors use in-app toasts and dialogs, not the
+  browser's pop-ups. The Welcome back screen only appears when friends have new
+  plans or someone joined a group; the groups step is shown once at sign-up.
 
 ## How it's built
 
 | Part | Where |
 |---|---|
 | The app | `index.html`, one self-contained file: markup, styles (`<style id="bw-styles">`) and logic (`<script id="bw-app">`) |
-| Design system | `DESIGN-SYSTEM.md`, with a visual reference in `design-system.html` |
-| Avatars | `profile-icons/` (source art) → `profile-icons/standardized/` built by `scripts/standardize-avatars.mjs` (runs automatically when `profile-icons/` changes) |
+| Design system | `DESIGN-SYSTEM.md`; `design-system.html` renders every token and component with the app's live stylesheet |
+| Event and other pages | `e/<id>/`, `this-weekend/` and `sitemap.xml`, built daily by `scripts/build-event-pages.py`, which also writes `pages.css`. `about.html`, `privacy.html`, `terms.html` and `404.html` use the same stylesheet |
+| Avatars | `profile-icons/` (the chosen artwork) → `profile-icons/standardized/` (what the app shows), built by `scripts/standardize-avatars.mjs`. See `AVATAR_CREATION.md` |
 | Offline caching | `sw.js` (caching only; it doesn't change the page) |
-| Sign-in, groups, commitments | Supabase (Google OAuth or email link) |
-| Database definition | `supabase/schema.sql` is what is live. Numbered files (`v48`, `v49`, `v58`, …) are the change history: when you change the database, add a new numbered file and update `schema.sql` |
+| Sign-in, groups, commitments | Supabase (Google, or an email link and code). Setup: `GOOGLE-SIGN-IN.md` |
+| Database definition | `supabase/` (see below) |
 | Supabase client library | `vendor/supabase-js-2.117.2.js`, a pinned copy served from this site (no CDN). To upgrade, replace the file and update the filename in `index.html`, `admin.html` and `sw.js` |
+| Font | `fonts/plus-jakarta-sans-latin.woff2`, served from this site |
 | Event listings | `events.json`, generated by the scrapers below |
 | Festival listings | `festivals.json`, generated daily from Fezzy with eFestivals as a secondary discovery source |
-| Legal/branding pages | `about.html`, `privacy.html`, `terms.html` |
-| Usage dashboard | `admin.html`: users, guests, avatar switches and Get tickets taps (`bw_usage_events`, v76) |
+| Usage dashboard | `admin.html`: users, guests, avatar switches and Get tickets taps |
 
 ## Event data
 
@@ -65,14 +70,17 @@ on manual dispatch, and whenever a scraper file changes on `main`. It runs:
 
 1. `scripts/scrape-events.py`: the venue websites in `event-sources.json`
    (structured Event data first, visible event cards as a fallback).
-2. `scripts/scrape-discovery.py`: Visit Brighton and Eventbrite, filtered back
-   to known venues.
+2. `scripts/scrape-discovery.py`: Visit Brighton, Eventbrite, Ticketmaster,
+   Skiddle, Rival Cults and the promoters, filtered back to known venues.
 3. `scripts/prepare-events.py`: cleans titles, normalises times to HH:MM,
-   drops doors times posing as finish times, removes duplicates, and applies
-   the publication rules (Brighton Dome only for the Ben Folds date; Patterns
-   recurring nights excluded). Talks the listing filed as something else are
-   filed as Talk when the title says so ("In Conversation", "Q&A",
-   "Interview", "Podcast", "Book Tour"), so they show on the Not music tab.
+   drops doors times posing as finish times, removes headings and buttons read
+   as events (`scripts/listing_rules.py`, shared with the scrapers and the
+   validator), applies `excluded-events.json`, leaves out Patterns' recurring
+   nights and merges duplicates: the same show from two sources, and Brighton
+   Dome's comedy festival listings of shows that are on at Komedia. Talks the
+   listing filed as something else are filed as Talk when the title says so
+   ("In Conversation", "Q&A", "Interview", "Podcast", "Book Tour"), so they
+   show on the Not music tab.
 4. `scripts/check-tickets.py`: follows each event's ticket link as close to
    buying as it can (a listing page → the event's card → its booking button →
    the seller, at most three steps) and marks shows **Sold out** only when a
@@ -84,46 +92,48 @@ on manual dispatch, and whenever a scraper file changes on `main`. It runs:
    weeks are rechecked daily, later ones every four days, within a 20-minute
    limit. Pages that can't be read leave the event as it was. If this step
    fails, the day's listings are still published.
-5. `scripts/validate-events.py`: refuses to publish a small or malformed file.
+5. `scripts/tag-genres.py`: a genre only when the listing names it or
+   MusicBrainz or Wikidata confidently knows the act (cached in `genre-cache.json`).
+6. `scripts/validate-events.py` and `scripts/validate-required-events.py`:
+   refuse to publish a small or malformed file, or one missing the events in
+   `required-events.json`.
+7. `scripts/build-event-pages.py`: the shareable event pages, This weekend and
+   the sitemap.
 
 An event's identity is **venue + date + title + start time**, so separate
 sessions of the same show on one day are kept. Event `id`s are never
 regenerated for existing listings, because saved Interested/Going choices
-reference them.
+reference them; a merged duplicate's id is kept in `also_ids`.
 
-Source notes: `docs/EVENT-DATA-SOURCES.md`.
+Source notes: `EVENT-DATA-SOURCES.md`.
+
+### Festival data
+
+`.github/workflows/festivals.yml` refreshes `festivals.json` daily. The scraper
+uses Fezzy as the primary discovery source and eFestivals as a music-festival
+cross-check, deduplicating by festival name, date and location; sport and
+outdoor events are left out by their title. Hand-confirmed Brighton festivals
+are in `brighton-festivals.json`. The published window runs from today to 31
+December of the following year. Festival ids start with `festival:`, so their
+Interested/Going choices use the same `event_interest` table without mixing
+festivals into `events.json`.
 
 ## Database (Supabase)
 
-Run these in the Supabase SQL Editor:
-
-1. `supabase/v48-security-hardening.sql`. **Required.** It makes every
-   function act only for the signed-in user, removes anonymous access, limits
-   `event_interest` reads to your own rows, and tightens community event
-   inserts. The header of the file explains each change and what to test.
-
-2. `supabase/v49-happenings-responses.sql`: lets Happenings show "Not for
-   me" responses from your groups.
-
-Earlier migrations are kept in `supabase/archive/` for reference. The live
-database also contains objects whose SQL isn't in this repo:
-`bw_leave_group`, `bw_profile_icons_for_user`, `bw_profiles.profile_icon`,
-`app_visitors` and `admin_usage_stats`. Exporting them into `supabase/` would
-let the database be rebuilt from the repo.
-
-Google sign-in setup: `docs/GOOGLE-SETUP.md`. Google branding verification:
-`docs/GOOGLE-BRANDING.md`.
+- `supabase/schema.sql` is the reference for what is running (exported on
+  5 October 2026, with v74 and v75 folded in).
+- The numbered files are the change history. `v70` (invite previews), `v72`
+  (guest visits), `v73` (venue list) and `v76` (usage counts) are live but not
+  yet folded into `schema.sql`.
+- When you change the database, add a new numbered file, run it in the
+  Supabase SQL Editor and update `schema.sql`. When a venue is added, update the
+  venue list in the database along with `VENUES` in `index.html`.
 
 ## Making changes
 
 - When you change `index.html`, bump `VERSION` in `sw.js` and the matching
-  `sw.js?v=` number at the bottom of `index.html`, so installed copies drop
+  `sw.js?v=` number at the end of `index.html`, so installed copies drop
   their old cache.
 - Follow the rules at the end of `DESIGN-SYSTEM.md`: tokens not hex values,
   no `!important`, no inline styles, and reuse `eventCard()`.
-- Old changelogs, test reports and notes are in `docs/archive/`.
-
-
-### Festival data
-
-`.github/workflows/festivals.yml` refreshes the separate `festivals.json` dataset daily. The scraper uses Fezzy as the primary discovery source and eFestivals as a music-festival cross-check, deduplicating by festival name/date/location. The published window is dynamically set from today through 31 December of the following calendar year. Festival IDs are prefixed `festival:` so their Interested/Going commitments can use the existing Supabase `event_interest` table without mixing festival records into `events.json`.
+- Earlier changelogs and notes are in the git history.

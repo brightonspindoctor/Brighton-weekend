@@ -684,7 +684,7 @@ async def follow(fx, event, url, steps):
         verdict, label, nxt = await asyncio.to_thread(analyse_page, html, final, event)
         if verdict is None and not via and is_ticket_site(final) and not any(h in host_of(final) for h in PLAIN_OK):
             # A ticketing site's plain page said nothing: its browser page may.
-            h2, f2, v2 = await fx.get(url, browser=True)
+            h2, f2, _ = await fx.get(url, browser=True)
             if h2:
                 html, final = h2, f2
                 verdict, label, nxt = await asyncio.to_thread(analyse_page, html, final, event)
@@ -772,7 +772,7 @@ async def main():
                         still = []
                         for e in pending:
                             n, sold_label, link = res[e['id']]
-                            old_link, old_why = card.get(e['id'], (None, ''))
+                            _, old_why = card.get(e['id'], (None, ''))
                             if n == 1:
                                 card[e['id']] = (link, old_why or (f'{sold_label} ({host_of(final)})' if sold_label else ''))
                                 if sold_label:
