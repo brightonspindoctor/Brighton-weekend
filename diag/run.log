@@ -1,0 +1,34 @@
+1450 upcoming events with a ticket link; 1450 to check this run
+  listings read: 47 pages, 130s
+  200/1450 checked, 339 pages, 288s
+  400/1450 checked, 603 pages, 467s
+  600/1450 checked, 865 pages, 583s
+  800/1450 checked, 1108 pages, 688s
+  1000/1450 checked, 1362 pages, 792s
+  1200/1450 checked, 1662 pages, 938s
+  1400/1450 checked, 2013 pages, 1095s
+Fetched 2115 pages (865 in the browser, 97 unreadable) in 1166s
+Ticket links moved closer to the seller: 571; newly marked sold out: 51; sold out in total: 54
+	Command being timed: "python scripts/check-tickets.py"
+	User time (seconds): 489.16
+	System time (seconds): 96.63
+	Percent of CPU this job got: 50%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 19:27.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 379128
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 67034
+	Minor (reclaiming a frame) page faults: 4006664
+	Voluntary context switches: 2309020
+	Involuntary context switches: 853074
+	Swaps: 0
+	File system inputs: 85488
+	File system outputs: 16135672
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
