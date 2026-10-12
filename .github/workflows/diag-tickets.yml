@@ -13,7 +13,8 @@ jobs:
       - uses: actions/setup-python@v7
         with: {python-version: '3.12'}
       - run: python -m pip install -r requirements-events.txt && python -m playwright install --with-deps chromium
-      - run: cp events.json diag/before.json && python scripts/check-tickets.py 2>&1 | tee diag/run.log
+      - timeout-minutes: 35
+        run: cp events.json diag/before.json && python scripts/check-tickets.py 2>&1 | tee diag/run.log
       - run: |
           python diag/report.py
           git config user.name diag; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

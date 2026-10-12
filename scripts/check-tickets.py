@@ -45,7 +45,7 @@ SOURCES = json.loads((ROOT / 'event-sources.json').read_text())
 TODAY = se.NOW.date()
 NEAR_DAYS = 21          # events this close are rechecked every run
 RECHECK_DAYS = 4        # others when their result is this old
-TIME_BUDGET = 25 * 60   # seconds of fetching per run
+TIME_BUDGET = 20 * 60   # seconds of fetching per run
 MAX_HOPS = 3
 
 TICKET_HOSTS = se.TICKET_HOSTS + ('axs.com', 'shotgun.live', 'ticketsolve', 'link.dice.fm', 'tickets.', 'myshopify.com',
@@ -356,7 +356,7 @@ def card_link(card, page_url, event):
 class Fetcher:
     def __init__(self, browser):
         self.browser = browser; self.mem = {}; self.sem = asyncio.Semaphore(8); self.hosts = {}
-        self.started = time.monotonic(); self.count = 0; self.fails = 0
+        self.started = time.monotonic(); self.count = 0; self.fails = 0; self.pending = {}
 
     def out_of_time(self):
         return time.monotonic() - self.started > TIME_BUDGET
@@ -364,22 +364,34 @@ class Fetcher:
     async def get(self, url):
         if url in self.mem:
             return self.mem[url]
-        if self.out_of_time():
-            return '', url
-        hs = self.hosts.setdefault(host_of(url), asyncio.Semaphore(2))
-        async with self.sem, hs:
-            html, final, err = await se.get_html(self.browser, url)
-            if err or len(html) < 5000 or 'Just a moment' in html[:3000]:
-                try:
-                    h2, f2 = await asyncio.to_thread(se.fetch_plain, url)
-                    if len(h2) > len(html):
-                        html, final, err = h2, f2, None
-                except Exception:
-                    pass
-            self.count += 1
-            if not html or len(html) < 3000:
-                self.fails += 1; html = ''
-        self.mem[url] = (html, final)
+        if url in self.pending:
+            return await self.pending[url]
+        fut = asyncio.get_running_loop().create_future(); self.pending[url] = fut
+        result = ('', url)
+        try:
+            hs = self.hosts.setdefault(host_of(url), asyncio.Semaphore(2))
+            async with hs:              # at most 2 at a time per site (polite), then
+                async with self.sem:    # at most 8 overall
+                    if not self.out_of_time():
+                        result = await asyncio.wait_for(self._fetch(url), timeout=75)
+        except Exception:
+            self.fails += 1
+        finally:
+            self.mem[url] = result; fut.set_result(result); del self.pending[url]
+        return result
+
+    async def _fetch(self, url):
+        html, final, err = await se.get_html(self.browser, url)
+        if err or len(html) < 5000 or 'Just a moment' in html[:3000]:
+            try:
+                h2, f2 = await asyncio.wait_for(asyncio.to_thread(se.fetch_plain, url), timeout=40)
+                if len(h2) > len(html):
+                    html, final, err = h2, f2, None
+            except Exception:
+                pass
+        self.count += 1
+        if not html or len(html) < 3000:
+            self.fails += 1; html = ''
         return html, final
 
 
@@ -492,7 +504,18 @@ async def main():
                 return  # not reached in time: try again next run
             cache[cache_key(e, url)] = {'url': closest, 'sold': sold, 'checked': TODAY.isoformat()}
 
-        await asyncio.gather(*(one(e) for e in todo))
+        done = 0
+        async def counted(e):
+            nonlocal done
+            await one(e); done += 1
+            if done % 200 == 0:
+                print(f'  {done}/{len(todo)} checked, {fx.count} pages, {int(time.monotonic() - fx.started)}s', flush=True)
+        tasks = [asyncio.create_task(counted(e)) for e in todo]
+        _, late = await asyncio.wait(tasks, timeout=TIME_BUDGET + 240)
+        for t in late:
+            t.cancel()  # anything still going is checked next run
+        if late:
+            print(f'  {len(late)} events left for the next run')
         await browser.close()
     print(f'Fetched {fx.count} pages ({fx.fails} unreadable) in {int(time.monotonic() - fx.started)}s')
 
