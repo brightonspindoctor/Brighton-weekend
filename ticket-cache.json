@@ -695,6 +695,11 @@
   "sold": null,
   "checked": "2026-10-12"
  },
+ "https://brightondome.org/whats-on/LpY-exploring-the-whole-story/|2026-10-13|workshops exploring the whole story a creative writing workshop with dulani kulasinghe": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
  "https://brightondome.org/whats-on/LrI-the-blindboy-podcast-live/|2026-10-18|the blindboy podcast live": {
   "url": null,
   "sold": null,
@@ -1615,7 +1620,18 @@
   "sold": null,
   "checked": "2026-10-12"
  },
+ "https://link.dice.fm/J45bd4da6861|2026-10-14|antony szmierek": {
+  "url": null,
+  "sold": true,
+  "checked": "2026-10-12",
+  "why": "seller data says sold out (dice.fm)"
+ },
  "https://link.dice.fm/J580a98a7728|2026-11-27|cowboyy": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://link.dice.fm/J62eae886d78|2026-10-13|cancer bats": {
   "url": null,
   "sold": false,
   "checked": "2026-10-12"
@@ -1656,6 +1672,16 @@
   "checked": "2026-10-12"
  },
  "https://link.dice.fm/na16a23c3b4d|2026-10-29|chem sex party ruckus the clubheads": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://link.dice.fm/u46918b12258|2026-10-16|the hoosiers": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://link.dice.fm/v8dc0c080752|2026-10-17|the tumbling paddies": {
   "url": null,
   "sold": false,
   "checked": "2026-10-12"
@@ -2376,6 +2402,11 @@
   "sold": null,
   "checked": "2026-10-12"
  },
+ "https://www.atgtickets.com/shows/horrible-histories-brighton/|2026-10-31|horrible histories awful egyptians": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
  "https://www.atgtickets.com/shows/kiell-smith-bynoes-kool-story-bro/theatre-royal-brighton/calendar/|2026-10-18|kiell smith bynoe s kool story bro": {
   "url": null,
   "sold": null,
@@ -2426,12 +2457,22 @@
   "sold": null,
   "checked": "2026-10-12"
  },
+ "https://www.atgtickets.com/shows/the-brown-suite/theatre-royal-brighton/calendar/|2026-11-04|the brown suite": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
  "https://www.atgtickets.com/shows/the-chicago-blues-brothers-live-at-the-country-bunker/theatre-royal-brighton/calendar/|2026-11-12|the chicago blues brothers live at the country bunker": {
   "url": null,
   "sold": null,
   "checked": "2026-10-12"
  },
  "https://www.atgtickets.com/shows/the-haunting-of-hill-house/theatre-royal-brighton/calendar/|2026-10-20|the haunting of hill house": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://www.atgtickets.com/shows/the-haunting-of-hill-house/theatre-royal-brighton/calendar/|2026-10-24|the haunting of hill house": {
   "url": null,
   "sold": false,
   "checked": "2026-10-12"
@@ -4404,6 +4445,156 @@
   "sold": null,
   "checked": "2026-10-12"
  },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRtYXN0ZXIuZXZ5eS5uZXQvYy8xMzAwOTY4LzIwMzg3NTgvMjQwMjM_dT1odHRwcyUzQSUyRiUyRnd3dy50aWNrZXRtYXN0ZXIuY28udWslMkZkeWxhbi1mbHlubi1hbmQtdGhlLWRlYWQtcG9ldHMtYnJpZ2h0b24tMTItMTAtMjAyNiUyRmV2ZW50JTJGMUYwMDY0RUZFQzE4ODMwMiUzRmJyYW5kJTNEdWtfZW50czI0JnV0bV9tZWRpdW09YWZmaWxpYXRl/supplier/Ticketmaster/suppliedid/RzV2SFpfQ1Rpa0ZHZQ/ticketid/8116541/checksum/c9bb4cdf26692e5c607fdc83e95f7e98/track/true?title=Dylan+Flynn+and+the+Dead+Poets&badge=&venueId=24967|2026-10-12|dylan flynn the dead poets": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRtYXN0ZXIuZXZ5eS5uZXQvYy8xMzAwOTY4LzIwMzg3NTgvMjQwMjM_dT1odHRwcyUzQSUyRiUyRnd3dy50aWNrZXRtYXN0ZXIuY28udWslMkZyaWthcy1icmlnaHRvbi0yOS0xMC0yMDI2JTJGZXZlbnQlMkYxRjAwNjRDMTFEQTFENTU3JTNGYnJhbmQlM0R1a19lbnRzMjQmdXRtX21lZGl1bT1hZmZpbGlhdGU/supplier/Ticketmaster/suppliedid/RzV2SFpfRzdxSXE0OQ/ticketid/8071537/checksum/3f91566fe659dbf2bd13514767e564f1/track/true?title=Rikas&badge=&venueId=34826|2026-10-29|rikas": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRtYXN0ZXIuZXZ5eS5uZXQvYy8xMzAwOTY4LzIwMzg3NTgvMjQwMjM_dT1odHRwcyUzQSUyRiUyRnd3dy51bml2ZXJzZS5jb20lMkZldmVudHMlMkZ0b20tbWNyYWUtdGlja2V0cy1aOVQ3UU0lM0ZyZWYlM0R0aWNrZXRtYXN0ZXImdXRtX21lZGl1bT1hZmZpbGlhdGU/supplier/Universe/suppliedid/THZaMThRUWhST2dMdy1PWkhzZnE2/ticketid/8009218/checksum/9ddf9ec93cb15dc80dbfc3fc3b141358/track/true?title=TOM+MCRAE&badge=&venueId=34826|2026-10-18|tom mcrae": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRtYXN0ZXIuZXZ5eS5uZXQvYy8xMzAwOTY4LzIwMzg3NTgvMjQwMjM_dT1odHRwcyUzQSUyRiUyRnd3dy51bml2ZXJzZS5jb20lMkZldmVudHMlMkZ2aWdpbGFudGVzLWJyaWdodG9uLTE0LTExLTI2LXRpY2tldHMtOUZKOEJQJTNGcmVmJTNEdGlja2V0bWFzdGVyJnV0bV9tZWRpdW09YWZmaWxpYXRl/supplier/Universe/suppliedid/THZaMThRMG5zZURKMWVzekdSMjlT/ticketid/8098467/checksum/7b17ff6d5fe437f0ae3dbfec477dc855/track/true?title=Vigilantes+-+Brighton+-+14%2F11%2F26&badge=&venueId=57176|2026-11-14|vigilantes": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRtYXN0ZXIuZXZ5eS5uZXQvYy8xMzAwOTY4LzIwMzg3NTgvMjQwMjM_dT1odHRwcyUzQSUyRiUyRnd3dy51bml2ZXJzZS5jb20lMkZldmVudHMlMkZnbGVubi1yaWNoYXJkcy10aGUtdmVudXMtbGFrZXMtdmVyeS1zcGVjaWFsLWd1ZXN0cy10aWNrZXRzLUw2MlJQVCUzRnJlZiUzRHRpY2tldG1hc3RlciZ1dG1fbWVkaXVtPWFmZmlsaWF0ZQ/supplier/Universe/suppliedid/THZaMThRdEpuNndhY1YxSlFmakhh/ticketid/8140030/checksum/d24b7ff4055b263e6cc069414c135a12/track/true?title=Glenn+Richards+%26+The+Venus+Lakes+%2B+very+special+guests&badge=&venueId=24967|2026-10-16|glenn richards the venus lakes": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRtYXN0ZXIuZXZ5eS5uZXQvYy8xMzAwOTY4LzIwMzg3NTgvMjQwMjM_dT1odHRwcyUzQSUyRiUyRnd3dy51bml2ZXJzZS5jb20lMkZldmVudHMlMkZtZWtvbnMtYWNvdXN0aWMtc2hvdy10aWNrZXRzLTJHM1NGSiUzRnJlZiUzRHRpY2tldG1hc3RlciZ1dG1fbWVkaXVtPWFmZmlsaWF0ZQ/supplier/Universe/suppliedid/THZaMThRLURpQzB0YUhaWnpCRDdW/ticketid/8072572/checksum/19dfd5a58860dac68e77c0f891680d7b/track/true?title=Mekons+Acoustic+show&badge=&venueId=24967|2026-10-22|mekons": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvY3Etd3Jlc3RsaW5nL2EtbC1wLWgtYS1iLWUtdC8zNzI2MDcz/supplier/SeeTickets/suppliedid/MzcyNjA3Mw/ticketid/8151332/checksum/412b2b7d99955a1676faadec5fad8da3/track/true?title=CQ+Wrestling&badge=&venueId=50186|2026-12-10|cq wrestling": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvYmxvb2QtcmVkLXNob2VzL2EtbC1wLWgtYS1iLWUtdC8zNzA1Mjc3/supplier/SeeTickets/suppliedid/MzcwNTI3Nw/ticketid/8138230/checksum/7e9ae526939dfdd538e654711e55cb3f/track/true?title=Blood+Red+Shoes&badge=&venueId=50186|2026-10-31|blood red shoes": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvYnV0Y2gta2Fzc2lkeS9hLWwtcC1oLWEtYi1lLXQvMzYxNTE4NQ/supplier/SeeTickets/suppliedid/MzYxNTE4NQ/ticketid/8094842/checksum/5241c2f1975754abc605010fecf59143/track/true?title=Butch+Kassidy&badge=&venueId=50186|2026-11-14|butch kassidy": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvZ29sZC1wYW5kYS9hbHBoYWJldC8zNjY3NjM1/supplier/SeeTickets/suppliedid/MzY2NzYzNQ/ticketid/8085229/checksum/d264f30efa5cf70a07e5dbd3249b57fd/track/true?title=Gold+Panda&badge=&venueId=50186|2026-11-19|gold panda": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvZGVyYWRvb3JpYW4vdGhlLWhvcGUtcnVpbi8zNjYzMTgx/supplier/SeeTickets/suppliedid/MzY2MzE4MQ/ticketid/8082812/checksum/73b71f61011b7b9d2b293809fa02f10e/track/true?title=Deradoorian&badge=&venueId=34826|2026-10-28|deradoorian": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvZHlsYW4tbGVibGFuYy9hbHBoYWJldC8zNjM2NjIx/supplier/SeeTickets/suppliedid/MzYzNjYyMQ/ticketid/8054699/checksum/4eccfda99afcc8a7346f54961f75deea/track/true?title=Dylan+LeBlanc&badge=&venueId=50186|2026-11-29|dylan leblanc": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvZmlyZWZyaWVuZC1ici1wZXRlLWJhc3NtYW4tc3BhY2VtZW4tMy1tb3JlL2EtbC1wLWgtYS1iLWUtdC8zNjM5NzYz/supplier/SeeTickets/suppliedid/MzYzOTc2Mw/ticketid/8052131/checksum/bd84fe1490e084eca48a2c635901ca71/track/true?title=Firefriend+%28BR%29+%2B+Pete+Bassman+%28Spacemen+3%29+%26+more&badge=&venueId=50186|2026-10-15|firefriend": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQva2FjeS1jbGF5dG9uL3RoZS1wcmluY2UtYWxiZXJ0LzM2MzMyNzk/supplier/SeeTickets/suppliedid/MzYzMzI3OQ/ticketid/8039306/checksum/60d4ab4781f4b40c5cf50411808d0bc8/track/true?title=Kacy+%26+Clayton&badge=&venueId=24967|2026-10-18|kacy clayton": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvaG9sbG93LWhhbmQvYWxwaGFiZXQvMzYzNzgyOA/supplier/SeeTickets/suppliedid/MzYzNzgyOA/ticketid/8046869/checksum/d0c21f68184601ac8b84611ea2f86cc8/track/true?title=Hollow+Hand&badge=&venueId=50186|2026-10-30|hollow hand": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvam9obi1jcmFpZ2llLXNwZWNpYWwtZ3Vlc3Qtam9iaS1yaWNjaW8vYWxwaGFiZXQvMzYzNTg0NQ/supplier/SeeTickets/suppliedid/MzYzNTg0NQ/ticketid/8046520/checksum/ccc9da02b193f1dccfe04b154d630c44/track/true?title=John+Craigie+%2B+special+guest+Jobi+Riccio&badge=&venueId=50186|2026-10-17|john craigie": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvamV0c3RyZWFtLXBvbnktZmlyZXN0YXRpb25zL2EtbC1wLWgtYS1iLWUtdC8zNjYxMDA2/supplier/SeeTickets/suppliedid/MzY2MTAwNg/ticketid/8078024/checksum/f7b04fc15fbe15aa4ddb1256034824c1/track/true?title=Jetstream+Pony+%26+Firestations&badge=&venueId=50186|2026-11-27|jetstream pony firestations": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvbGVuZS1sb3ZpY2gtdWstMjAyNi10b3VyL3RoZS1wcmluY2UtYWxiZXJ0LzM2NjgzNDk/supplier/SeeTickets/suppliedid/MzY2ODM0OQ/ticketid/8084675/checksum/6d581c1d7e3ff4d626f2d66267037763/track/true?title=Lene+Lovich+UK+2026+Tour&badge=&venueId=24967|2026-10-25|lene lovich": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvc2NodXIvdGhlLWhvcGUtcnVpbi8zNjM2Mjc5/supplier/SeeTickets/suppliedid/MzYzNjI3OQ/ticketid/8064500/checksum/aef74155576bc0a7564b12a7e22f4ffc/track/true?title=Schur&badge=&venueId=34826|2026-10-26|schur": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvcGVhcmwtdGhlLW95c3RlcnMvYS1sLXAtaC1hLWItZS10LzM2NjQwODI/supplier/SeeTickets/suppliedid/MzY2NDA4Mg/ticketid/8084617/checksum/bacf7c9eeb10239a79f8d765a2dc4337/track/true?title=Pearl+%26+The+Oysters&badge=&venueId=50186|2026-11-21|pearl the oysters": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvcGluYS1wYWxhdS90aGUtcHJpbmNlLWFsYmVydC8zNjM4ODQz/supplier/SeeTickets/suppliedid/MzYzODg0Mw/ticketid/8052101/checksum/c368b7dc1fbb2e441f33250017f31184/track/true?title=Pina+Palau&badge=&venueId=24967|2026-10-20|pina palau": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvcmlvZ2huYWNoLWNvbm5vbGx5LWhvbmV5ZmVldC9hbHBoYWJldC8zNjU3MzQ1/supplier/SeeTickets/suppliedid/MzY1NzM0NQ/ticketid/8075820/checksum/40c374701398e50540c51fac6ef364d2/track/true?title=Rioghnach+Connolly+%26+Honeyfeet&badge=&venueId=50186|2026-12-04|r oghnach connolly honeyfeet": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvdGhlLXJvZWJ1Y2tzL2EtbC1wLWgtYS1iLWUtdC8zNzA3OTc4/supplier/SeeTickets/suppliedid/MzcwNzk3OA/ticketid/8133726/checksum/a2ba28a0870c94563969c0e042aaf47a/track/true?title=The+Roebucks&badge=&venueId=50186|2026-12-12|the roebucks": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93ZWdvdHRpY2tldHMuY29tL2FmLzY3L2YvMjEzMDI/supplier/WeGotTickets/suppliedid/MTU4NjQ1Nzg/ticketid/8059237/checksum/ea11c2d30783d17122b579b61d4c0c61/track/true?title=Killer+Tone+Jones&badge=&venueId=57176|2026-10-30|killer tone jones the noir mates the bad breed": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93ZWdvdHRpY2tldHMuY29tL2FmLzY3L2YvMjIwNjQ/supplier/WeGotTickets/suppliedid/MTU4NjgwMDQ/ticketid/8085119/checksum/43d7f7352c810c7a06e138b6544103d3/track/true?title=Captain+Accident+%26+the+Disasters&badge=&venueId=24967|2026-10-30|captain accident the disasters": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93ZWdvdHRpY2tldHMuY29tL2FmLzY3L2YvMjYxNTU/supplier/WeGotTickets/suppliedid/MTU4ODQ2Mjk/ticketid/8126783/checksum/2a2260ad2b2e653c6db7f35a2a825352/track/true?title=LoVeDoGz&badge=&venueId=57176|2026-10-23|lovedogz hekate heads the dolarhydes charmian devi and the raven": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93ZWdvdHRpY2tldHMuY29tL2FmLzY3L2YvMjYzMDY/supplier/WeGotTickets/suppliedid/MTU4ODUwNjI/ticketid/8127835/checksum/afb69cf583fc98a502edf5be718e7eb5/track/true?title=IO+-+Girl+Band&badge=&venueId=57176|2026-11-21|io playing alice spooky huge dateless wonder club": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly9heHMtdWsuc2p2LmlvL2MvMTMwMDk2OC8xODcyMzA4LzIyNDM5P3U9aHR0cHMlM0ElMkYlMkZ3d3cuYXhzLmNvbSUyRnVrJTJGZXZlbnRzJTJGMTQ5MzgxMiUyRmR1dGNoLWNyaW1pbmFsLXJlY29yZC10aWNrZXRz/supplier/AXS/suppliedid/MTQ5MzgxMg/ticketid/8095886/checksum/255648222caffbbceb16541fa3c2b2ae/track/true?title=Dutch+Criminal+Record&badge=&venueId=50186|2026-11-12|dutch criminal record": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly9heHMtdWsuc2p2LmlvL2MvMTMwMDk2OC8xODcyMzA4LzIyNDM5P3U9aHR0cHMlM0ElMkYlMkZ3d3cuYXhzLmNvbSUyRnVrJTJGZXZlbnRzJTJGMTU0MjY5MCUyRnNoYWRvd21hbi10aWNrZXRz/supplier/AXS/suppliedid/MTU0MjY5MA/ticketid/8120849/checksum/a384935afed465148494bb3893847d09/track/true?title=Shadowman&badge=&venueId=50186|2026-10-21|shadowman": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly9nb29kLXNob3cuY28udWsvZXZlbnRzLzQxOTg/supplier/Miscellaneous/suppliedid/NUJCQTVBQjg3Njk1MkRGQTI5OUU2MDRENDYwQzFCRDA/ticketid/8120347/checksum/e920d8fa7b8bffdaa1b8f4661838e7ea/track/true?title=Hurly+Burly&badge=&venueId=57176|2026-12-04|hurly burly": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
  "https://www.eventbrite.co.uk/e/abi-clarke-just-tell-me-when-its-over-tickets-2002911500214|2027-02-25|abi clarke just tell me when it s over": {
   "url": null,
   "sold": false,
@@ -4711,6 +4902,11 @@
   "sold": false,
   "checked": "2026-10-12"
  },
+ "https://www.fatsoma.com/e/ueuk05py/keywest|2027-01-28|keywest": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
  "https://www.fatsoma.com/e/ui12ybdj/hit-like-a-girl-guests?utm_source=social_share&utm_medium=social&utm_campaign=social_share|2027-01-13|hit like a girl guests": {
   "url": null,
   "sold": false,
@@ -4724,6 +4920,46 @@
  "https://www.fortuneofwar.pub/events-2/2023/4/1/ben-gc-pnse3-3s7ba-9sfpg-j9ax6-tr75p-csgmh-l9hb8-dpdxx-6kt6f-2x44m-wn2cj-7n76a-6smfj-9fmcx-ld9y5-ha72n-lbmw7-3h559-hg9ad-p44n2|2026-10-16|think twice w dj barry dust friends": {
   "url": null,
   "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.gigantic.com/barbara-tickets/brighton-dust/2026-12-12-19-00|2026-12-12|barbara": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://www.gigantic.com/disgusting-sisters-tickets/brighton-dust/2026-11-28-19-00|2026-11-28|disgusting sisters": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://www.gigantic.com/every-hell-tickets/brighton-dust/2026-10-22-19-00|2026-10-22|every hell": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://www.gigantic.com/grace-cummings-tickets/brighton-dust/2026-11-13-19-00|2026-11-13|grace cummings special guests": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://www.gigantic.com/lots-of-hands-sundots-tickets/brighton-dust/2026-11-06-19-00|2026-11-06|lots of hands sundots special guests": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://www.gigantic.com/the-black-queen-tickets/brighton-dust/2026-12-10-19-00|2026-12-10|the black queen": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.gigantic.com/tokyo-tea-room-tickets/brighton-dust/2026-11-19-19-00|2026-11-19|tokyo tea room special guests": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://www.gigantic.com/tooth-tickets/brighton-dust/2026-10-31-17-00|2026-10-31|tooth special guests": {
+  "url": null,
+  "sold": false,
   "checked": "2026-10-12"
  },
  "https://www.gigantic.com/venue/brighton/dust|2026-10-22|every hell": {
@@ -6670,6 +6906,11 @@
   "sold": null,
   "checked": "2026-10-12"
  },
+ "https://www.skiddle.com/whats-on/Brighton/BRIGHTON%2C-CHALK/Ghostface-Killah-Wu-Tang-Clan--Sat-5th-Dec--Chalk--Brighton/42829245/|2026-12-05|ghostface killah wu tang clan sat 5th dec chalk brighton": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
  "https://www.skiddle.com/whats-on/Brighton/Brighton-Dome-Corn-Exchange/Once-Upon-a-Time-in-Sokoto/42643578/|2026-11-19|once upon a time in sokoto": {
   "url": null,
   "sold": null,
@@ -6715,6 +6956,16 @@
   "sold": false,
   "checked": "2026-10-12"
  },
+ "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Brighton-Sundae-w-Marcia-Carr/42597331/|2026-11-01|brighton sundae w marcia carr": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Dusky---All-Day-Long---Signals-Tour/42542341/|2026-10-31|dusky all day long signals tour": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/EFANExtended-Brighton/42832560/|2026-11-27|efan extended": {
   "url": null,
   "sold": false,
@@ -6751,6 +7002,11 @@
   "checked": "2026-10-12"
  },
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Nic-Cage-Against-The-Machine/42643044/|2027-03-12|nic cage against the machine": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-12"
+ },
+ "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/P-rallel-Nevermind-UK-Tour/42669942/|2026-10-24|p rallel nevermind uk tour": {
   "url": null,
   "sold": false,
   "checked": "2026-10-12"
@@ -7222,6 +7478,11 @@
   "checked": "2026-10-12"
  },
  "https://www.ticketmaster.co.uk/event/3E00653C94F332DE|2027-05-11|erasure": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-12"
+ },
+ "https://www.ticketmaster.co.uk/event/3E006542CBCF6874|2027-06-25|roger waters presents legacy": {
   "url": null,
   "sold": null,
   "checked": "2026-10-12"
