@@ -1675,8 +1675,10 @@ function renderPeople(){
  }).join('');
  $('peopleList').innerHTML=html+rosterHtml;
 }
+// Settings lists venues A–Z, ignoring a leading "The"; Other stays last.
+function venueSortKey(v){return String(v).replace(/^the\s+/i,'')}
 function renderVenues(){
- $('venueList').innerHTML=VENUES.map(v=>`<label class="venue-row"><span>${esc(v)}</span><input type="checkbox" data-v="${esc(v)}" ${enabled.includes(v)?'checked':''}></label>`).join('');
+ $('venueList').innerHTML=[...VENUES].sort((x,y)=>(x==='Other')-(y==='Other')||venueSortKey(x).localeCompare(venueSortKey(y),'en-GB',{sensitivity:'base'})).map(v=>`<label class="venue-row"><span>${esc(v)}</span><input type="checkbox" data-v="${esc(v)}" ${enabled.includes(v)?'checked':''}></label>`).join('');
  renderDayPreferences();
  document.querySelectorAll('[data-v]').forEach(x=>x.onchange=()=>{enabled=x.checked?[...new Set([...enabled,x.dataset.v])]:enabled.filter(v=>v!==x.dataset.v);localStorage.setItem('bw_venues',JSON.stringify(enabled));renderAll()});
  const comedy=$('selectComedyVenues'),pubs=$('selectPubVenues'),all=$('selectAllVenues'),none=$('unselectAllVenues');
@@ -2044,7 +2046,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=79', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=80', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
