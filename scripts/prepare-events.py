@@ -36,6 +36,123 @@ assert not is_talk_title("Scarlet Reading")
 assert not is_talk_title("Shed Seven: Live + Signing")
 assert not is_talk_title("The Holiday in Concert - Film with Live Orchestra")
 
+# ---- Tidy titles for display ----
+# Listing markers such as "**FREE ENTRY**", "(FREE!)" or "(EXTRA SHOW)" become
+# badges on the event ("Free", "Extra show"); "(SOLD OUT)" sets the status.
+# Parts of a title written entirely in capitals are put in title case
+# ("LENNA BAHULE" -> "Lenna Bahule"), keeping acronyms such as DJ, UK and Q&A.
+# Ids are never changed, so saved choices still match.
+BADGE_RULES = [
+    (re.compile(r"^free(?:\s+(?:entry|event|gig|show|admission))?!?$", re.I), "Free"),
+    (re.compile(r"^extra\s+(?:matinee\s+|evening\s+|late\s+)?(?:show|date|night|performance)!?$", re.I), "Extra show"),
+    (re.compile(r"^new\s+date!?$", re.I), "New date"),
+    (re.compile(r"^(?:last\s+(?:few\s+)?tickets|few\s+tickets\s+left|selling\s+fast)!?$", re.I), "Last tickets"),
+]
+MARKER = re.compile(r"\s*(?:\*+\s*([^*]{2,40}?)\s*\*+|\(\s*([^()]{2,40}?)\s*\)|\[\s*([^\[\]]{2,40}?)\s*\])")
+TRAILING_FREE = re.compile(r"\s*[-–—|:]\s*free\s+entry(?:\s+tickets?\s+available)?\s*$", re.I)
+NAME_ABBR = {"DR": "Dr", "MR": "Mr", "MRS": "Mrs", "MS": "Ms", "ST": "St", "JR": "Jr", "SR": "Sr", "MT": "Mt"}
+SMALL_WORDS = {"a", "an", "and", "as", "at", "by", "for", "from", "in", "into", "of", "on", "or", "the", "to", "vs", "vs.", "v", "with", "feat", "feat.", "ft", "ft."}
+KEEP_UPPER = {"DJ", "DJS", "MC", "MCS", "UK", "US", "USA", "NYE", "BBC", "EP", "LP", "TV", "AI", "Q&A", "B2B", "UKG", "DNB", "D&B", "R&B", "RNB",
+              "NYC", "ABBA", "AC/DC", "BBQ", "VIP", "EDM", "IDM", "EBM", "II", "III", "IV", "VI", "VII", "VIII", "IX", "XI", "XII", "XL", "AV",
+              "TBA", "TBC", "RNLI", "BHAFC", "AKT", "LGBT", "LGBTQ", "LGBTQ+", "LGBTQIA+", "NHS", "HMV", "UNKLE", "KISS", "YMCA", "ATP", "AOH", "CBE", "MBE", "OBE"}
+
+
+def _title_word(word, first):
+    core = word.strip("()[]{}\"'‘’“”!?.,:;")
+    if not core or not re.search(r"[A-Z]", core):
+        return word
+    if core.upper() in NAME_ABBR:  # DR -> Dr, ST -> St
+        return word.replace(core, NAME_ABBR[core.upper()])
+    if core.upper() in KEEP_UPPER or not re.search(r"[AEIOUY]", core) or re.search(r"[./]", core.strip(".")):
+        return word  # acronyms, initials and things like A.M.C or P.E.
+    if re.search(r"\d", core):
+        return re.sub(r"(?<=\d)(ST|ND|RD|TH|S|AM|PM)\b", lambda m: m.group(1).lower(), word)  # 25TH, 90S, 4AM
+    if not first and core.lower() in SMALL_WORDS:
+        return word.lower()
+
+    def cap(part):
+        part = part.lower()
+        m = re.match(r"^(mc)([a-z])(.*)$", part)
+        if m and len(part) > 3:
+            return "Mc" + m.group(2).upper() + m.group(3)
+        m = re.match(r"^([o])(['’])([a-z])(.*)$", part)
+        if m:
+            return "O" + m.group(2) + m.group(3).upper() + m.group(4)
+        return part[:1].upper() + part[1:]
+    lead = re.match(r"^[^A-Za-z0-9]*", word).group(0)
+    body = word[len(lead):]
+    return lead + "-".join(cap(x) for x in body.split("-"))
+
+
+def calm_caps(title):
+    """Title case for parts of a title written entirely in capitals."""
+    parts = re.split(r"(\s+(?:[+∙•|/&x–—-])\s+|:\s+|,\s+)", str(title or ""))
+    one_word_title = len(re.findall(r"[A-Za-z][A-Za-z'’]*", str(title or ""))) == 1
+    out = []
+    for part in parts:
+        # Small joining words ("vs", "x", "and") may already be lower case.
+        words = [w for w in re.findall(r"[A-Za-z][A-Za-z'’]*", part) if w.lower() not in SMALL_WORDS]
+        letters = re.sub(r"[^A-Za-z]", "", "".join(words))
+        short_name = one_word_title and len(letters) <= 4  # a title that is just MNEK or KEG: styled that way
+        if len(letters) >= 4 and letters.isupper() and not short_name and part.strip().upper() not in KEEP_UPPER:
+            words = part.split(" ")
+            seen_first = False
+            fixed = []
+            for w in words:
+                fixed.append(_title_word(w, not seen_first) if w else w)
+                if w.strip():
+                    seen_first = True
+            part = " ".join(fixed)
+        out.append(part)
+    return "".join(out)
+
+
+def tidy_title(title):
+    """(title, badges, sold_out) for display: markers out, capitals calmed."""
+    t = str(title or "")
+    badges, sold_out = [], False
+
+    def marker(m):
+        nonlocal sold_out
+        text = next(g for g in m.groups() if g)
+        if re.fullmatch(r"sold\s+out!?", text.strip(), re.I):
+            sold_out = True
+            return ""
+        for rx, label in BADGE_RULES:
+            if rx.match(text.strip()):
+                if label not in badges:
+                    badges.append(label)
+                return ""
+        return m.group(0)
+    t = MARKER.sub(marker, t)
+    if TRAILING_FREE.search(t):
+        t = TRAILING_FREE.sub("", t)
+        if "Free" not in badges:
+            badges.append("Free")
+    t = re.sub(r"\s{2,}", " ", t).strip(" -–—|:·,")
+    if len(t) < 2:
+        return str(title or ""), [], False
+    return calm_caps(t), badges, sold_out
+
+
+assert tidy_title("HI JINX PROMOTIONS PRESENTS **FREE ENTRY**") == ("Hi Jinx Promotions Presents", ["Free"], False)
+assert tidy_title("Harriet Kemsley: Floozy **EXTRA MATINEE SHOW**") == ("Harriet Kemsley: Floozy", ["Extra show"], False)
+assert tidy_title("GET YOUR ROCKS OFF KARAOKE (FREE!)") == ("Get Your Rocks Off Karaoke", ["Free"], False)
+assert tidy_title("Rough times Party - CALYX - Free Entry tickets available")[1] == ["Free"]
+assert tidy_title("Some Band (SOLD OUT)") == ("Some Band", [], True)
+assert tidy_title("PETER SERAFINOWICZ & DOON MACKICHAN (INTERVIEW / Q&A)")[0] == "Peter Serafinowicz & Doon Mackichan (Interview / Q&A)"
+assert tidy_title("DJ FREAKING OUT THE NEIGHBOURHOOD")[0] == "DJ Freaking Out the Neighbourhood"
+assert tidy_title("Indie Rock Night ∙ OASIS vs ARCTIC MONKEYS")[0] == "Indie Rock Night ∙ Oasis vs Arctic Monkeys"
+assert tidy_title("TCHOTCHKE + support")[0] == "Tchotchke + support"
+assert tidy_title("999 + SUPPORTS TBA")[0] == "999 + Supports TBA"
+assert tidy_title("MUTATIONS 26 - MIKE D 5D (BEASTIE BOYS) + MORE")[0] == "Mutations 26 - Mike D 5D (Beastie Boys) + More"
+assert tidy_title("PAUL MCGANN & BEN WHEATLEY")[0] == "Paul McGann & Ben Wheatley"
+assert tidy_title("DR RAZZU + MARGAUX'S STAR CHART")[0] == "Dr Razzu + Margaux's Star Chart"
+assert tidy_title("ABBA")[0] == "ABBA" and tidy_title("MNEK")[0] == "MNEK" and tidy_title("DMAs")[0] == "DMAs"
+assert tidy_title("Michael Kiwanuka: 'FUDGE' Listening Gathering")[0] == "Michael Kiwanuka: 'FUDGE' Listening Gathering"
+assert tidy_title("Noisy Women Present: Whispers and Waves (Matinee show only)")[0] == "Noisy Women Present: Whispers and Waves (Matinee show only)"
+assert tidy_title("THE ROSE HILL IS TEN FESTIVAL ( FRIDAY TICKETS)")[0] == "The Rose Hill Is Ten Festival ( Friday Tickets)"
+
 def is_excluded(event):
     venue, title = str(event.get("venue") or "").strip().lower(), str(event.get("title") or "").lower()
     return any(r["title_contains"] and r["title_contains"] in title and (not r["venue"] or r["venue"] == venue) for r in EXCLUDED)
@@ -292,6 +409,24 @@ for event in final:
     if event.get("category") not in ("Talk", "Comedy") and is_talk_title(event.get("title")):
         event["category"] = "Talk"; recategorised += 1
 print(f"Filed as talks from their titles: {recategorised}")
+# Display titles last, after duplicates are merged. A tidy that would make two
+# listings at the same venue and time look identical is skipped.
+taken = {(e.get("venue"), e.get("date"), e.get("time"), title_key(e.get("title"))) for e in final}
+tidied = badged = 0
+for event in final:
+    new_title, badges, sold_out = tidy_title(event.get("title"))
+    key = (event.get("venue"), event.get("date"), event.get("time"), title_key(new_title))
+    if new_title != event.get("title"):
+        if title_key(new_title) != title_key(event.get("title")) and key in taken:
+            continue
+        taken.add(key); event["title"] = new_title; tidied += 1
+    if badges:
+        event["badges"] = badges; badged += 1
+    else:
+        event.pop("badges", None)
+    if sold_out:
+        event["status"] = "SOLD OUT"
+print(f"Tidied titles: {tidied}; badges added: {badged}")
 data["events"] = final
 data["venues"] = sorted({str(e["venue"]) for e in final if e.get("venue")})
 DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")

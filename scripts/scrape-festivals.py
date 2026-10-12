@@ -53,10 +53,26 @@ RANGE_RE=re.compile(rf"\b\d{{1,2}}(?:st|nd|rd|th)?(?:\s*[–-]\s*\d{{1,2}}(?:st|
 GENERIC={"festival","details","tickets","buy tickets","2027 tickets","check tickets","more","show more festivals","source checked","source check pending","read more","read less","places to stay","next","previous","list view","map view","grid view","plan your visit","things to do","what's on","work with us","submit event","site map","skip to main content","sign up for e-newsletter","translate","media","contact us","accommodation"}
 
 def clean(s): return re.sub(r"\s+"," ",str(s or "")).strip()
+POSTCODE=re.compile(r"\b[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}\b",re.I)
+COUNTY=re.compile(r"(?:east|west)\s+sussex|sussex|kent|surrey|hampshire",re.I)
+STREET=re.compile(r"\b(?:road|rd|street|lane|avenue|ave|crescent|drive|terrace|gardens|close|parade|way)\.?$",re.I)
 def display_location(s):
     # Some listings put contact details in the address; show only the place.
     s=re.sub(r"\S+@\S+|https?://\S+|www\.\S+|\+?44 ?\(?0?\)? ?\d[\d ]{8,}\d|\b0\d{3,4} ?\d{3} ?\d{3,4}\b","",str(s or ""))
-    return clean(re.sub(r"\s*,\s*(,\s*)+",", ",s)).strip(" ,")
+    # No postcodes, counties, repeats or street names: "Hove Park, Goldstone
+    # Crescent, Hove, BN3 6PJ Hove" reads "Hove Park, Hove".
+    s=re.sub(r"\s+across\s+the\s+city\b","",POSTCODE.sub(",",s),flags=re.I)
+    parts=[]
+    for part in (clean(x).strip(" ,") for x in s.split(",")):
+        if part and not COUNTY.fullmatch(part) and part.lower() not in (x.lower() for x in parts):
+            parts.append(part)
+    if len(parts)>=3:
+        parts=[x for i,x in enumerate(parts) if i==0 or not STREET.search(x)]
+    return ", ".join(parts)
+assert display_location("Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton")=="Various venues, Brighton"
+assert display_location("Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove")=="Hove Park, Hove"
+assert display_location("Hove Lawns, Brighton & Hove")=="Hove Lawns, Brighton & Hove"
+assert display_location("Stockton-on-Tees")=="Stockton-on-Tees"
 def norm(s):
     s=re.sub(r"\b(?:19|20)\d{2}\b","",clean(s).lower())
     return re.sub(r"[^a-z0-9]+"," ",s).strip()

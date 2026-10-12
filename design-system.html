@@ -269,6 +269,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .nav{position:fixed;left:0;right:0;bottom:0;z-index:10;display:flex;justify-content:center;gap:2px;background:var(--bw-navy);border-top:1px solid var(--bw-line);box-shadow:var(--bw-shadow-nav);padding:8px max(6px,env(safe-area-inset-left)) calc(8px + env(safe-area-inset-bottom))}
 .nav button{flex:1;max-width:150px;display:flex;flex-direction:column;align-items:center;gap:3px;border:0;background:none;padding:6px 2px;color:var(--bw-subtle);font-size:var(--bw-text-xs);font-weight:700;border-radius:var(--bw-radius-md)}
 .nav-icon{font-size:17px;line-height:1}
+.nav-svg{display:block;width:18px;height:18px}
 .nav button.active,.nav button.has-new{color:var(--bw-coral)}
 .nav button.has-new .nav-icon::after{content:"";display:inline-block;width:6px;height:6px;margin-left:2px;border-radius:50%;background:var(--bw-coral);vertical-align:top}
 
@@ -391,7 +392,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 <div class="choice-grid"><label class="choice"><input type="checkbox" checked><span>CHALK</span></label><label class="choice"><input type="checkbox"><span>Komedia</span></label></div></div></div>
 
 <h2>Bottom navigation</h2>
-<nav class="nav demo"><button class="active"><span class="nav-icon">♬</span> Discover</button><button><span class="nav-icon">☻</span> Not music</button><button><span class="nav-icon">⌕</span> Search</button><button class="has-new"><span class="nav-icon">♡</span> Happenings</button><button><span class="nav-icon">⚙</span> Settings</button></nav>
+<nav class="nav demo"><button class="active"><span class="nav-icon">♬</span> Discover</button><button><span class="nav-icon">☻</span> Not music</button><button><span class="nav-icon"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7.6V2.6"/><path d="M12 2.7l4.3 1.45L12 5.6z" fill="currentColor" stroke-width="1.1"/><path d="M3.3 20.4 12 7.6l8.7 12.8z"/><path d="M9.4 20.4 12 15.4l2.6 5"/><path d="M1.8 20.4h20.4"/></svg></span> Festivals</button><button><span class="nav-icon">⌕</span> Search</button><button class="has-new"><span class="nav-icon">♡</span> Happenings</button><button><span class="nav-icon">⚙</span> Settings</button></nav>
 </main>
 <script>
 const groups={

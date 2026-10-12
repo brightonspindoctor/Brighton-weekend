@@ -8,13 +8,23 @@ to a phone's home screen.
 ## What it does
 
 - **Discover:** this week's events (Monday–Sunday) at the venues you follow,
-  day by day. Comedy and talks are on their own tab, **Not music**.
+  day by day, with quick chips for *Tonight* (from 5pm), *This weekend* (Friday to
+  Sunday) and *Next 7 days*. New events since your last visit show as a one-line
+  summary you can open. Comedy and talks are on their own tab, **Not music**.
+- **Event cards:** Get tickets up front; Add to calendar, Share and Add a genre
+  sit behind the ⋯ button. Friends' counts show only when someone's interested or
+  going. Listing markers such as "\*\*FREE ENTRY\*\*" become badges ("Free",
+  "Extra show") and titles written in capitals are tidied (`scripts/prepare-events.py`).
 - **Festivals:** a separate UK festival feed through the end of the next calendar year,
   with a Brighton location filter and festival-type filters. Festivals never enter the
   normal event feed, but can still be marked Interested or Going and appear in Happenings.
   A festival stays listed until its last day, so multi-week ones show while they're on.
-- **Search:** find events by artist, or by a date range and venues.
+- **Search:** find events by artist, or by dates and venues. Dates and venues
+  starts on this weekend at the venues you follow; quick chips set other ranges.
 - **Commitments:** mark any event *Not for me*, *Interested* or *Going*.
+- **Messages:** confirmations and errors use in-app toasts and dialogs, not the
+  browser's pop-ups. The Welcome back screen only appears when friends have new
+  plans or someone joined a group; the groups step is shown once at sign-up.
 - **Groups and Happenings:** join open groups or private ones (3-digit PIN).
   Happenings shows what people in your groups are interested in or going to,
   with the list of people in your groups at the bottom.
@@ -24,8 +34,8 @@ to a phone's home screen.
   both events have a known genre. *Not for me* on a suggestion stops that act
   being suggested again. Shuffled each time the app is opened; hidden when
   nothing matches. Shown even if you're not in a group.
-- **Community genres:** a music or club night with no genre has a small
-  *+ Add genre* chip. Signed-in users pick from the fixed genre list
+- **Community genres:** a music or club night with no genre has *Add a genre*
+  in its ⋯ menu. Signed-in users pick from the fixed genre list
   (`GENRE_ORDER`); the most-picked genre shows for everyone. Genres from the
   listings or the tagger always win.
 - **Community events:** signed-in users can add events that are missing.
