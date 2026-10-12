@@ -7262,6 +7262,45 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "quinn oulton": {
+  "mbid": "38c5ab7c-12b2-4f37-8f59-a042baf61a27",
+  "name": "Quinn Oulton",
+  "genres": [
+   {
+    "name": "chillwave",
+    "count": 1
+   },
+   {
+    "name": "downtempo",
+    "count": 1
+   },
+   {
+    "name": "hip hop",
+    "count": 1
+   },
+   {
+    "name": "instrumental",
+    "count": 1
+   },
+   {
+    "name": "instrumental hip hop",
+    "count": 1
+   },
+   {
+    "name": "lo-fi",
+    "count": 1
+   },
+   {
+    "name": "lo-fi hip hop",
+    "count": 1
+   }
+  ],
+  "bucket": "Hip-hop & R&B",
+  "reason": "tagged",
+  "act": "Quinn Oulton",
+  "checked": "2026-10-12",
+  "v": 3
+ },
  "radiator": {
   "bucket": null,
   "reason": "4 artists share this name",
