@@ -19,12 +19,13 @@ jobs:
         run: |
           set -o pipefail
           cp events.json diag/before.json
-          ( /usr/bin/time -v python scripts/check-tickets.py ) 2>&1 | tee diag/run.log
+          ( TICKET_EVIDENCE=diag/evidence /usr/bin/time -v python scripts/check-tickets.py ) 2>&1 | tee diag/run.log
       - name: Save results
         if: always()
         shell: bash
         run: |
           python diag/report.py || true
+          tar czf diag/evidence.tgz -C diag evidence 2>/dev/null || true
           git config user.name diag; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f diag/run.log diag/report.json ticket-cache.json 2>/dev/null || git add -f diag/run.log
+          git add -f diag/run.log diag/report.json ticket-cache.json diag/evidence.tgz 2>/dev/null || git add -f diag/run.log
           git commit -m "diag dry run" && git push

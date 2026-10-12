@@ -27,7 +27,7 @@ are rechecked every few days and nearer ones daily, within a time limit.
 Pages that can't be read (some sites block automated visits) leave the event
 as it was.
 """
-import asyncio, importlib.util, json, re, sys, time
+import asyncio, importlib.util, json, os, re, sys, time
 from collections import OrderedDict
 from datetime import date, timedelta
 from pathlib import Path
@@ -237,6 +237,52 @@ def sold_labels(root):
     return found
 
 
+DOORS = re.compile(r'doors?\s*(?:open)?\s*[:\-]?\s*\d{1,2}(?::\d{2})?\s*(?:am|pm)', re.I)
+
+
+# "On sale 20 Feb 2026 10:00", "Announced 3 March": dates that aren't the show's.
+ON_SALE = re.compile(r'\b(?:(?:general\s+|pre-?)?(?:on\s*)?sale|announced|released|published|added|updated)\s*(?:date)?\s*[:\-]?\s*(?:on\s+|from\s+)?(?:(?:mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?,?\s*)?\d{1,2}(?:st|nd|rd|th)?\s+[a-z]+\.?(?:\s+\d{4})?(?:,?\s*(?:at\s*)?\d{1,2}(?::\d{2})?\s*(?:am|pm)?)?', re.I)
+
+
+def hhmm(t):
+    m = re.match(r'(\d{1,2})(?::(\d{2}))?\s*(am|pm)', t.strip(), re.I)
+    if not m:
+        return ''
+    h = int(m.group(1)) % 12 + (12 if m.group(3).lower() == 'pm' else 0)
+    return f'{h:02d}:{int(m.group(2) or 0):02d}'
+
+
+def when_near(el):
+    """(dates, start times) written in the smallest block around el that shows a
+    date: a performance row on a page listing several. Empty when el isn't in
+    such a row, or the nearest dated block covers several dates."""
+    blk = el
+    for _ in range(7):
+        blk = blk.parent
+        if blk is None or blk.name in ('body', 'html', '[document]') or not small(blk, 150):
+            break
+        text = ON_SALE.sub(' ', own_text(blk))
+        dates = set()
+        for m in se.DATE_RE.finditer(text):
+            d = se.parse_dt(m.group(1))
+            if d and d.date() >= TODAY:  # a past date is an on-sale or announcement date, not a performance
+                dates.add(d.date().isoformat())
+        if dates:
+            if len(dates) > 1:
+                return set(), set()
+            times = {hhmm(t) for t in se.TIME_RE.findall(DOORS.sub(' ', text))} - {''}
+            return dates, times
+    return set(), set()
+
+
+def for_this_show(dates, times, event):
+    """True/False when a row's date says whether it is this event's; None when it doesn't say.
+    (Times aren't compared here: listings give doors or stage times inconsistently.)"""
+    if not dates:
+        return None
+    return event['date'] in dates
+
+
 def live_ctas(root, page_url):
     """Booking links/buttons that still work and are specific to an event (not a venue-wide page)."""
     out = []
@@ -265,7 +311,7 @@ def live_ctas(root, page_url):
 def booking_link(root, page_url, event):
     """The one link on an event's page that goes on to where tickets are sold, or None."""
     here = page_url.split('#')[0].rstrip('/')
-    cands = []
+    cands = {}
     for el, u, t in live_ctas(root, page_url):
         if el.name != 'a' or u.rstrip('/') == here:
             continue
@@ -273,15 +319,25 @@ def booking_link(root, page_url, event):
             continue  # another page on the same site ("Booking info"), not the seller
         if any(n in host_of(u) for n in NOT_SELLERS) or 'queue-it.net' in host_of(el.get('href') or ''):
             continue  # a listings site, or a queue in front of the venue's own booking (the page is the place to book)
-        cands.append(u)
-    seen = []
-    for u in cands:
-        if u not in seen:
-            seen.append(u)
-    if not seen:
+        if u not in cands:
+            dates, times = when_near(el)
+            cands[u] = (for_this_show(dates, times, event), times)
+    if not cands:
         return None
-    # Several sellers for one show (Hope & Ruin: Fatsoma, DICE, Gigantic): the venue lists its main one first.
-    return seen[0]
+    mine = [u for u, (ok, _) in cands.items() if ok]
+    if len(mine) > 1 and len({host_of(u) for u in mine}) == 1:
+        # Two performances on the same day with one seller (a 7pm and a 9pm show): go by the time.
+        timed = [u for u in mine if event.get('time') and event['time'] in cands[u][1]]
+        return timed[0] if len(timed) == 1 else None
+    if mine:
+        # This date's button(s). Several here are different sellers for the same
+        # performance (Hope & Ruin: Fatsoma, DICE, Gigantic): the venue lists its main one first.
+        return mine[0]
+    if any(ok is False for ok, _ in cands.values()):
+        return None  # the buttons are for other dates (or times): this one has none, or it's sold out
+    if len(cands) > 1 and len({host_of(u) for u in cands}) == 1:
+        return None  # several bookings with one seller and nothing to tell which is this event's
+    return next(iter(cands))
 
 
 def cards_for(root, event, other_keys, index=None):
@@ -479,52 +535,87 @@ def analyse_listing(html, final, items):
     for event, other_keys in items:
         cards = cards_for(root, event, other_keys, index)
         if len(cards) != 1:
-            out[event['id']] = (len(cards), False, None)
+            out[event['id']] = (len(cards), '', None)
         else:
-            out[event['id']] = (1, bool(sold_labels(cards[0])), card_link(cards[0], final, event))
+            labels = sold_labels(cards[0])
+            out[event['id']] = (1, ('card label: ' + own_text(labels[0])[:40]) if labels else '', card_link(cards[0], final, event))
     return out
 
 
+def page_label(root, final, event, ld_dates):
+    """Why the page says this event is sold out ('' if it doesn't)."""
+    if ld_dates and event['date'] not in ld_dates:
+        return ''  # the page is about another performance
+    labels = sold_labels(root)
+    if not labels:
+        return ''
+    rows = [(l, for_this_show(*when_near(l), event)) for l in labels]
+    if any(ok for _, ok in rows):
+        return 'label next to this date: ' + own_text(next(l for l, ok in rows if ok))[:40]
+    undated = [l for l, ok in rows if ok is None]
+    if any(l.name in ('h1', 'h2', 'h3') and SOLD_IN_HEADING.search(own_text(l)) for l in undated):
+        return 'in the title: ' + own_text(next(l for l in undated if SOLD_IN_HEADING.search(own_text(l))))[:60]
+    if undated and not [c for c in live_ctas(root, final) if c[1] != final or c[0].name == 'button']:
+        return 'label, no live booking button: ' + own_text(undated[0])[:40]
+    return ''
+
+
 def analyse_page(html, final, event):
-    """(schema.org verdict, the page labels the show sold out, the next link towards the seller)."""
+    """(schema.org verdict, why the page labels the show sold out, the next link towards the seller)."""
     raw = soup_of(html)
     verdict = ld_verdict(raw, event, final)
+    ld_dates = {str(o.get('startDate', ''))[:10] for o in ld_events(raw)} - {''}
     root = strip_chrome(raw)
-    label = False
-    if verdict is None:
-        labels = sold_labels(root)
-        if any(l.name in ('h1', 'h2', 'h3') and SOLD_IN_HEADING.search(own_text(l)) for l in labels):
-            label = True  # the venue put it in the show's name: "Band *SOLD OUT*"
-        elif labels and not [c for c in live_ctas(root, final) if c[1] != final or c[0].name == 'button']:
-            label = True
+    label = '' if verdict is not None else page_label(root, final, event, ld_dates)
     nxt = None
     if not (is_ticket_site(final) and verdict is not None):
         nxt = booking_link(root, final, event)
     return verdict, label, nxt
 
 
+EVIDENCE = Path(os.environ['TICKET_EVIDENCE']) if os.environ.get('TICKET_EVIDENCE') else None
+
+
+def keep_evidence(event, final, html, why):
+    """For checking the checker: save the page behind a sold-out decision (TICKET_EVIDENCE=dir)."""
+    if EVIDENCE is None or not html:
+        return
+    EVIDENCE.mkdir(parents=True, exist_ok=True)
+    n = len(list(EVIDENCE.glob(f"{event['id'][:120]}-*.html")))
+    (EVIDENCE / f"{event['id'][:120]}-{n}.html").write_text(html)
+    with open(EVIDENCE / 'why.jsonl', 'a') as f:
+        f.write(json.dumps({'id': event['id'], 'title': event['title'], 'date': event['date'], 'page': final, 'why': why, 'file': f"{event['id'][:120]}-{n}.html"}) + '\n')
+
+
 async def follow(fx, event, url, steps):
-    """Follow the booking button towards the seller: (steps taken, verdict, label)."""
-    start = url; sold = None; label_sold = False
+    """Follow the booking button towards the seller: (steps taken, verdict, why).
+    The verdict is True/False when the seller's data says, else None; why
+    explains a sold-out verdict or label."""
+    start = url; sold = None; why = ''
     for _ in range(MAX_HOPS):
         html, final, via = await fx.get(url)
         if not html:
             break
         verdict, label, nxt = await asyncio.to_thread(analyse_page, html, final, event)
-        del html
         if verdict is None and not via and is_ticket_site(final) and not any(h in host_of(final) for h in PLAIN_OK):
             # A ticketing site's plain page said nothing: its browser page may.
             h2, f2, v2 = await fx.get(url, browser=True)
             if h2:
-                verdict, label, nxt = await asyncio.to_thread(analyse_page, h2, f2, event)
-            del h2
+                html, final = h2, f2
+                verdict, label, nxt = await asyncio.to_thread(analyse_page, html, final, event)
         if verdict is not None:
             sold = verdict
-        label_sold = label_sold or label
+            if verdict:
+                why = f'seller data says sold out ({host_of(final)})'
+                keep_evidence(event, final, html, why)
+        elif label and not why:
+            why = f'{label} ({host_of(final)})'
+            keep_evidence(event, final, html, why)
+        del html
         if not nxt or nxt in steps or nxt == start:
             break
         url = nxt; steps.append(nxt)
-    return steps, sold, label_sold
+    return steps, sold, why
 
 
 def cache_key(e, url):
@@ -568,8 +659,8 @@ async def main():
 
     todo = sorted([e for e in upcoming if due(e)], key=lambda e: e['date'])
     print(f'{len(upcoming)} upcoming events with a ticket link; {len(todo)} to check this run', flush=True)
-    card = {}           # event id -> (link from its card on a listings page, card says sold out)
-    listing_sold = set()  # events whose card on the venue's own listings says sold out
+    card = {}           # event id -> (link from its card on a listings page, why the card says sold out)
+    listing_sold = {}   # event id -> why its card on the venue's own listings says sold out
     results = {}
     fx = Fetcher()
     try:
@@ -591,16 +682,18 @@ async def main():
                         if not html:
                             continue
                         res = await asyncio.to_thread(analyse_listing, html, final, [(e, others_for(e)) for e in pending])
-                        del html
                         still = []
                         for e in pending:
                             n, sold_label, link = res[e['id']]
-                            old_link, old_sold = card.get(e['id'], (None, False))
+                            old_link, old_why = card.get(e['id'], (None, ''))
                             if n == 1:
-                                card[e['id']] = (link, old_sold or sold_label)
+                                card[e['id']] = (link, old_why or (f'{sold_label} ({host_of(final)})' if sold_label else ''))
+                                if sold_label:
+                                    keep_evidence(e, final, html, card[e['id']][1])
                             if not (n == 1 and link):
                                 still.append(e)
                         pending = still
+                        del html
 
                 async def venue_labels(venue, evs):
                     for lu in hints.get(venue, []):
@@ -608,8 +701,12 @@ async def main():
                         if not html:
                             continue
                         res = await asyncio.to_thread(analyse_listing, html, final, [(e, others_for(e)) for e in evs])
+                        for e in evs:
+                            n, sold_label, _ = res[e['id']]
+                            if n == 1 and sold_label and e['id'] not in listing_sold:
+                                listing_sold[e['id']] = f'{sold_label} on the venue listing ({host_of(final)})'
+                                keep_evidence(e, final, html, listing_sold[e['id']])
                         del html
-                        listing_sold.update(i for i, (n, sold_label, _) in res.items() if n == 1 and sold_label)
 
                 groups = {}
                 for e in todo:
@@ -629,25 +726,26 @@ async def main():
                 async def one(e):
                     nonlocal done
                     async with lanes:
-                        steps = []; label_sold = False
+                        steps = []; why = ''; sold = None
                         try:
                             if is_generic(e):
-                                link, label_sold = card.get(e['id'], (None, False))
+                                link, why = card.get(e['id'], (None, ''))
                                 if link:
                                     steps.append(link)
-                                    steps, sold, label = await follow(fx, e, link, steps)
-                                    label_sold = label_sold or label
-                                else:
-                                    sold = None
+                                    steps, sold, why2 = await follow(fx, e, link, steps)
+                                    why = why2 if sold is not None else (why or why2)
                             else:
-                                steps, sold, label_sold = await follow(fx, e, e['ticket_url'], steps)
+                                steps, sold, why = await follow(fx, e, e['ticket_url'], steps)
                         except Exception as exc:
                             print(f'  ! {e["id"]}: {exc}', file=sys.stderr); return
-                        if sold is None and (label_sold or e['id'] in listing_sold):
-                            sold = True
+                        if sold is None:
+                            why = why or listing_sold.get(e['id'], '')
+                            sold = True if why else None
+                        if sold is False:
+                            why = ''  # the seller says tickets are on sale: that wins over any label
                         closest = steps[-1] if steps else None
                         if not (fx.out_of_time() and closest is None and sold is None):
-                            results[e['id']] = (closest, sold)
+                            results[e['id']] = (closest, sold, why)
                         done += 1
                         if done % 200 == 0:
                             print(f'  {done}/{len(todo)} checked, {fx.count} pages, {int(time.monotonic() - fx.started)}s', flush=True)
@@ -672,8 +770,11 @@ async def main():
 
     for e in todo:
         if e['id'] in results:
-            closest, sold = results[e['id']]
-            cache[cache_key(e, e['ticket_url'])] = {'url': closest, 'sold': sold, 'checked': TODAY.isoformat()}
+            closest, sold, why = results[e['id']]
+            entry = {'url': closest, 'sold': sold, 'checked': TODAY.isoformat()}
+            if sold:
+                entry['why'] = why
+            cache[cache_key(e, e['ticket_url'])] = entry
 
     # A link that several different shows would now share is a venue-wide page
     # (a table booking, a promo), not any one show's tickets: don't use it.
