@@ -400,6 +400,8 @@ def main(argv):
 
 
 def _self_test():
+    # Every rule files into one of the BUCKETS (GENRE_ORDER in index.html lists the same ones).
+    assert {b for b in GENRE_MAP.values()} | {b for _, b in WORD_RULES} | {b for _, b in TITLE_RULES} <= set(BUCKETS)
     assert genre_from_title("Drum & Bass Classics Brighton - Halloween All Dayer") == "Drum & Bass"
     assert genre_from_title("Reggaeton Halloween Party (Brighton) 2026") == "Latin & Afrobeats"
     assert genre_from_title("Grandmas House") is None          # a band, not a house night

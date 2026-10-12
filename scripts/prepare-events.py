@@ -6,19 +6,17 @@ import re
 from pathlib import Path
 
 from event_matching import display_title, is_venue_name, same_show
+from listing_rules import is_excluded, is_generic_title, is_patterns_recurring, title_key
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "events.json"
-# Events hidden on request: {"venue", "title_contains", "note"} in excluded-events.json.
-EXCLUDED = [dict(r, venue=str(r.get("venue", "")).strip().lower(), title_contains=str(r.get("title_contains", "")).strip().lower())
-            for r in (json.loads((ROOT / "excluded-events.json").read_text()) if (ROOT / "excluded-events.json").exists() else [])]
 
 # Talks whose listing filed them as something else: the title says so ("In
 # Conversation", "Q&A", "Interview", "Podcast", "Book Tour"), or it's a
 # professor's tour (not Professor Green or Professor Elemental, who are
 # musicians). They are filed as Talk, which puts them on the app's Not music
 # tab and keeps them out of genre tagging. Comedy is left as it is (it's on the
-# same tab). Keep in step with TALK_TITLE in index.html.
+# same tab).
 TALK_TITLE = re.compile(r"\b(?:in\s+conversation|q\s*&\s*a|interview|podcast|lecture|spoken\s+word|book\s+(?:tour|signing|launch|reading|talk))\b"
                         r"|^(?:professor|prof\.?)\s+(?!green\b|elemental\b)", re.I)
 
@@ -153,46 +151,13 @@ assert tidy_title("Michael Kiwanuka: 'FUDGE' Listening Gathering")[0] == "Michae
 assert tidy_title("Noisy Women Present: Whispers and Waves (Matinee show only)")[0] == "Noisy Women Present: Whispers and Waves (Matinee show only)"
 assert tidy_title("THE ROSE HILL IS TEN FESTIVAL ( FRIDAY TICKETS)")[0] == "The Rose Hill Is Ten Festival ( Friday Tickets)"
 
-def is_excluded(event):
-    venue, title = str(event.get("venue") or "").strip().lower(), str(event.get("title") or "").lower()
-    return any(r["title_contains"] and r["title_contains"] in title and (not r["venue"] or r["venue"] == venue) for r in EXCLUDED)
-
-PATTERNS_RECURRING = (
-    "foundations",
-    "fnky frdy",
-    "fnky friday",
-    "bottomless brunch",
-)
-GENERIC_TITLES = {
-    "event", "club", "live", "this week", "film",
-    "comedy", "classical music", "music", "talks & debate", "talks and debate",
-    "dance", "theatre", "family", "what's on", "events", "upcoming events",
-    "get tickets", "buy tickets", "book tickets", "learn more", "more info",
-    "more info & tickets", "find out more", "event details", "sold out",
-    "on sale", "on sale today", "tickets", "read more", "view event", "openings",
-    # Page sections and category labels scraped from venue sites (seen on Brighton Dome pages).
-    "buy ticket", "book ticket", "get ticket", "book now", "more details", "sign up", "subscribe", "newsletter",
-    "you might also like", "accessible events", "accessible events theatre", "contemporary music",
-    "literature, poetry & spoken word", "literature poetry and spoken word", "spoken word",
-    "related events", "similar events", "more events", "whats on", "coming soon",
-    # Website buttons, section headings and marketing lines read as events (6 Oct 2026 review).
-    "select a date", "select date", "choose a date", "select a time", "choose a time", "select a performance",
-    "exhibitions and workshops", "exhibitions & workshops", "heritage & tours", "heritage and tours",
-    "for the kids", "podcast", "podcasts", "talk", "talks", "secure your spot", "book your spot",
-}
-
-def title_key(title):
-    return re.sub(r"[^a-z0-9]+", " ", str(title or "").lower()).strip()
-
-GENERIC_KEYS = {re.sub(r"[^a-z0-9]+", " ", t).strip() for t in GENERIC_TITLES}
-
 # Reject venue placeholders such as “Mon 21 Sep 26” rather than publishing them as events.
 def is_date_only_title(title):
     value = str(title or "").strip()
     return bool(re.fullmatch(r"(?:mon|tue|wed|thu|fri|sat|sun)(?:day)?\s+\d{1,2}\s+[a-z]{3,9}\s+\d{2,4}", value, re.I))
 
 # Some venue sites list one hall under a longer name. Publish one venue name so
-# the same show isn't listed twice (matches VENUE_ALIASES in index.html).
+# the same show isn't listed twice, and the app only ever sees its own names.
 VENUE_ALIASES = {"Brighton Dome - Concert Hall": "Brighton Dome"}
 
 # Venue sites sometimes append the listing date/time/doors to the title, e.g.
@@ -213,19 +178,6 @@ def card_title(title):
     return t if len(t) >= 3 else str(title)
 
 LEADING_LABEL = re.compile(r"^(?:\*+\s*sold\s+out\s*\*+|(?:club|live|comedy|music|theatre|family|special|featured|free)\s+events?|limited\s+(?:free\s+)?tickets?|sold\s+out|on\s+sale\s+now|just\s+announced)\s*[-:–|]?\s+", re.I)
-# Same rule as scrape-events.py: door/start times and page section labels are not event names.
-NOT_A_TITLE = re.compile(r"""(?:
-   doors?(?:\s*open)?\s*[:\-]?\s*\d.*                 # Doors: 7:00 PM
-  |starts?(?:\s*at)?\s*[:\-]?\s*\d.*                  # Starts 8pm
-  |(?:start\s*)?times?\s*[:\-]\s*\d.*                 # Time: 8pm
-  |on\s+sale(?:\s+now)?|on\s+sale\s+\d.*
-  |tickets?\s+from\s+\W?\d.*|from\s+\W?\d[\d.,]*      # Tickets from £10
-  |ages?\s*\d+\+?.*|\d{1,2}\+                         # Age 18+, 18+
-  |\d{1,2}(?::\d{2})?\s*(?:am|pm)(?:\s*[-–]\s*\d{1,2}(?::\d{2})?\s*(?:am|pm))?   # 8pm, 8pm-11pm
-  |limited\s+(?:free\s+)?tickets?\b.*|early\s*bird(?:\s+tickets?)?|bu[yt]\s+tickets?\b.*
-  |pub\s+events|top\s+picks|next\s+up(?:\s+in\s+the\s+venue)?|this\s+week|coming\s+(?:up|soon)|upcoming
-  |featured|free\s+tickets?|all\s+events|whats?\s+on|more\s+events|more\s+.+\s+events|you\s+might\s+also\s+like|edition
-)""", re.I | re.X)
 
 
 def clean_title(title):
@@ -287,14 +239,11 @@ events = data.get("events", [])
 kept = []
 removed = {"patterns_recurring": 0, "excluded": 0, "generic": 0, "duplicates": 0}
 for event in events:
-    venue = str(event.get("venue") or "").strip().lower()
-    title = str(event.get("title") or "").strip()
-    low = title.lower()
-    if venue == "patterns" and any(marker in low for marker in PATTERNS_RECURRING):
+    if is_patterns_recurring(event):
         removed["patterns_recurring"] += 1; continue
     if is_excluded(event):
         removed["excluded"] += 1; continue
-    if low in GENERIC_TITLES or title_key(title) in GENERIC_KEYS or NOT_A_TITLE.fullmatch(low) or not re.search(r"[^\W\d_]{2}", low) or is_date_only_title(title) or not title:
+    if is_generic_title(event.get("title")) or is_date_only_title(str(event.get("title") or "").strip()):
         removed["generic"] += 1; continue
     kept.append(event)
 
@@ -343,8 +292,8 @@ def starts_during(a, b):
             return True
     return False
 
-def absorb(kept_event, event):
-    for field in ("time", "finish_time", "ticket_url", "promoter"):
+def absorb(kept_event, event, fields=("time", "finish_time", "ticket_url", "promoter")):
+    for field in fields:
         if not kept_event.get(field) and event.get(field):
             kept_event[field] = event[field]
     if kept_event.get("category") in (None, "", "Other") and event.get("category") not in (None, "", "Other"):
@@ -369,6 +318,47 @@ for day_events in by_day.values():
         removed["duplicates"] += 1
         merged_report.append(f"{match['date']} {match['venue']}: kept {match['title']!r}, merged {event['title']!r}")
     final.extend(chosen)
+
+# Brighton Dome's comedy festival pages also list the festival's shows at
+# Komedia, which lists them itself. A Dome listing of a show Komedia has the
+# same day, at the same time (or with no time on one of them, or the same
+# ticket link), is Komedia's show: it is merged into Komedia's listing, which
+# keeps its id and gains the Dome one in also_ids. A title naming Komedia is
+# its show whatever the time, when Komedia has just one listing of it that day.
+ALSO_LISTED_BY = {"Brighton Dome": "Komedia"}
+
+def listed_elsewhere(event, candidates, host):
+    """The host venue's own listing of this show that day, or None."""
+    same = [c for c in candidates if same_show(c.get("title"), event.get("title"), host)]
+    t = event.get("time") or ""
+    for c in same:
+        ct = c.get("time") or ""
+        if not t or not ct or t == ct or (event.get("ticket_url") and event.get("ticket_url") == c.get("ticket_url")):
+            return c
+    if len(same) == 1 and re.search(rf"\b{re.escape(host.lower())}\b", str(event.get("title") or "").lower()):
+        return same[0]
+    return None
+
+host_day = {}
+for event in final:
+    if event.get("venue") in ALSO_LISTED_BY.values():
+        host_day.setdefault((event["venue"], event.get("date")), []).append(event)
+cross_listed = set()
+for event in final:
+    host = ALSO_LISTED_BY.get(event.get("venue"))
+    match = host and listed_elsewhere(event, host_day.get((host, event.get("date")), []), host)
+    if match:
+        # Not the Dome's finish time or link: its pages give most shows 23:00,
+        # and Komedia's own link is the one closest to buying.
+        absorb(match, event, fields=("time", "promoter"))
+        # The festival's pages say it's comedy; Komedia's listing often doesn't
+        # say, and a title with "live" or "rave" in it reads as music.
+        if event.get("category") == "Comedy":
+            match["category"] = "Comedy"
+        cross_listed.add(id(event))
+        removed["duplicates"] += 1
+        merged_report.append(f"{match['date']} {match['venue']}: kept {match['title']!r}, merged {event['venue']}'s {event['title']!r}")
+final = [e for e in final if id(e) not in cross_listed]
 
 final.sort(key=lambda e: (e.get("date", ""), e.get("time") or "99:99", e.get("venue", ""), e.get("title", "")))
 # Safety net: ids must be unique (they are what saved Interested/Going choices

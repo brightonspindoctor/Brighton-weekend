@@ -24,12 +24,11 @@ const ZOOM = 0.88; // artwork diameter as a fraction of the avatar (smaller = mo
 const FEATHER = 0.14; // soft edge on the artwork, as a fraction of its radius
 fs.mkdirSync(outDir, { recursive: true });
 
-// The icon list lives in the app code: inline in index.html (js/app.js in a split build).
-const codeFile = ['index.html', 'js/app.js'].map(f => path.join(root, f))
-  .find(f => fs.existsSync(f) && /const PROFILE_ICONS=\[/.test(fs.readFileSync(f, 'utf8')));
-if (!codeFile) throw new Error('PROFILE_ICONS not found in index.html or js/app.js');
-const code = fs.readFileSync(codeFile, 'utf8');
-const icons = [...code.match(/const PROFILE_ICONS=\[(.*?)\];/s)[1].matchAll(/'([^']+)'/g)].map(m => m[1]);
+// The avatar list (PROFILE_ICONS) and names (PROFILE_LABELS) live in index.html.
+const code = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const listed = code.match(/const PROFILE_ICONS=\[(.*?)\];/s);
+if (!listed) throw new Error('PROFILE_ICONS not found in index.html');
+const icons = [...listed[1].matchAll(/'([^']+)'/g)].map(m => m[1]);
 
 const manifestPath = path.join(dir, 'avatar-manifest.json');
 const previous = fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, 'utf8')) : {};
@@ -107,11 +106,6 @@ for (const icon of icons) {
 }
 if (failures.length) throw new Error('Could not read avatar artwork:\n' + failures.join('\n'));
 
-// Point every icon at its standardised file.
-const map = Object.fromEntries(icons.map(icon => [icon, 'standardized/' + icon + '.png']));
-const updated = code.replace(/const PROFILE_ICON_FILES\s*=\s*\{.*?\};/s, 'const PROFILE_ICON_FILES=' + JSON.stringify(map) + ';');
-fs.writeFileSync(codeFile, updated);
-
 const labels = Object.fromEntries([...(code.match(/const PROFILE_LABELS=\{(.*?)\};/s)?.[1] || '').matchAll(/'([^']+)':'([^']+)'/g)].map(m => [m[1], m[2]]));
 const manifest = {};
 for (const icon of icons) {
@@ -130,4 +124,4 @@ for (const icon of icons) {
   };
 }
 fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
-console.log(`Standardised ${icons.length} avatars to ${SIZE}px circular PNGs (updated ${path.relative(root, codeFile)}).`);
+console.log(`Standardised ${icons.length} avatars to ${SIZE}px circular PNGs.`);

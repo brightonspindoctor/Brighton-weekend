@@ -1,28 +1,22 @@
-/* Brighton Weekend service worker.
- * Caching only. Earlier versions rewrote index.html here to inject the Search
- * tab and day filters; those features now live in index.html.
+/* Brighton Weekend service worker: caching only, it never changes a page.
  *
- * Strategy:
- *  - Pages, CSS, JS and data files: network first, fall back to cache offline.
- *  - Images and icons: cache first (they are versioned by filename or ?v=).
- * Bump VERSION whenever you want every installed copy to drop old caches.
+ *  - Pages, CSS, JS and data files: network first, the cached copy offline.
+ *  - Images, icons and the font: cache first (versioned by file name or ?v=).
+ *
+ * Bump VERSION (and the sw.js?v= number at the end of index.html) whenever
+ * index.html changes, so every installed copy drops its old cache.
  */
-const VERSION = 'bw-v80';
+const VERSION = 'bw-v81';
+// The app shell, exactly as index.html requests it, so it opens offline.
 const CORE = [
   './',
-  './index.html',
   './manifest.webmanifest',
-  './favicon.ico',
   './vendor/supabase-js-2.117.2.js',
-  './icons/icon-32.png',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/icon-192-maskable.png',
-  './icons/icon-512-maskable.png',
-  './icons/apple-touch-icon.png',
-  './about.html',
-  './privacy.html',
-  './terms.html'
+  './fonts/plus-jakarta-sans-latin.woff2',
+  './icons/icon-192.png?v=70',
+  './icons/icon-32.png?v=70',
+  './favicon.ico?v=70',
+  './profile-icons/standardized/fox.png'
 ];
 
 self.addEventListener('install', event => {
@@ -62,7 +56,7 @@ function networkFirst(request) {
     })
     .catch(() => caches.match(key)
       .then(hit => hit || caches.match(request, {ignoreSearch: true}))
-      .then(hit => hit || (request.mode === 'navigate' ? caches.match('./index.html') : undefined))
+      .then(hit => hit || (request.mode === 'navigate' ? caches.match('./') : undefined))
       .then(hit => hit || Response.error()));
 }
 

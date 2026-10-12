@@ -42,6 +42,15 @@ Listings are refreshed every day at 07:17 (Europe/London) by
   source at different times are separate sessions and both stay. Each run prints
   the merges it made (`merged duplicate: ...`) in the "Prepare event data" step.
   To teach it a venue's other names in titles, add them to `VENUE_TITLE_NAMES`.
+- Brighton Dome's comedy festival pages also list the festival's shows at
+  Komedia. When Komedia lists the same show that day (at the same time, with no
+  time on one of them, or with the same ticket link), the Dome's listing is
+  merged into Komedia's, so the show appears once, at Komedia, filed as Comedy.
+  Another venue that lists a partner's shows can be added to `ALSO_LISTED_BY`
+  in `prepare-events.py`.
+- Headings, buttons and labels read as events ("Select a date", "Book now",
+  "Podcasts") are dropped. The list is in `scripts/listing_rules.py`, which the
+  scrapers, the prepare step and the validator all use.
 - An event is removed only after its venue has not listed it for **3 days in a
   row** while the venue's own page was loading properly (`last_seen`).
 - If a venue's page fails, or returns less than half its usual number of

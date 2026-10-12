@@ -1,10 +1,14 @@
 # Brighton Weekend design system
 
-This describes the look the app already has and fixes it in one place. The
-app is a single file: the source of truth is the token block at the top of the
-`<style id="bw-styles">` element in `index.html`. The page
-`design-system.html` renders every token and component with a copy of the same
-stylesheet, so update it alongside any style change and open it to check.
+The source of truth is the token block at the top of `<style id="bw-styles">`
+in `index.html`, the app's only stylesheet. `design-system.html` loads that
+stylesheet straight from `index.html` when it opens, so it can't drift: it shows
+every token in both colour schemes, measures text contrast, and renders each
+component below. Open it (from the site or a local web server) after any style
+change.
+
+The shareable event pages, This weekend, About, Privacy, Terms and 404 use a
+smaller stylesheet, `pages.css` (see [Pages outside the app](#pages-outside-the-app)).
 
 ## Idea
 
@@ -13,149 +17,235 @@ navy. The accents are the pier lights: coral for anything you can act on, and
 teal for anything you have chosen. Everything else stays quiet so that event
 titles and the three commitment buttons carry the screen.
 
+*Seafront by day* is the same design in daylight: warm sand surfaces, navy
+text, and deeper coral and teal so they still read on a light background.
+
 ## Colour
 
-### Surfaces (darkest to lightest)
+Every colour in the app's styles comes from a token, and every colour token has
+a value in both schemes. The light values live in `:root[data-theme="light"]`,
+straight after the main block, under the same names.
 
-| Token | Hex | Use |
-|---|---|---|
-| `--bw-abyss` | `#08141F` | Page background |
-| `--bw-navy` | `#0B1D2F` | Header, bottom nav, text inputs |
-| `--bw-deep` | `#0F2231` | Recessed controls (commitment buttons, chips) |
-| `--bw-card` | `#102536` | Cards and panels |
-| `--bw-raised` | `#173347` | Icon wells, hover state |
-| `--bw-line` | `#294657` | Default borders and dividers |
-| `--bw-line-strong` | `#3B6074` | Hover and emphasised borders |
+### Surfaces, darkest to lightest (in the dark scheme)
+
+| Token | After dark | By day | Use |
+|---|---|---|---|
+| `--bw-abyss` | `#08141F` | `#F4EFE6` | Page background |
+| `--bw-navy` | `#0B1D2F` | `#FFFFFF` | Header, bottom nav, text inputs |
+| `--bw-deep` | `#0F2231` | `#EFE8DC` | Recessed controls: commitment buttons, chips, tiles |
+| `--bw-card` | `#102536` | `#FFFFFF` | Cards, panels, dialogs |
+| `--bw-raised` | `#173347` | `#E8DFD0` | Icon wells, hover, toasts |
+| `--bw-line` | `#294657` | `#D9CFBF` | Borders and dividers |
+| `--bw-line-strong` | `#3B6074` | `#B9AC97` | Hover and emphasised borders |
 
 ### Text
 
-| Token | Hex | Use |
-|---|---|---|
-| `--bw-cream` | `#F3E4C9` | Primary text |
-| `--bw-muted` | `#A7B5BE` | Secondary text: venue, time, notes |
-| `--bw-subtle` | `#8095A3` | Tertiary text, inactive nav, empty states |
+| Token | After dark | By day | Use |
+|---|---|---|---|
+| `--bw-cream` | `#F3E4C9` | `#0B1D2F` | Primary text |
+| `--bw-muted` | `#A7B5BE` | `#4A5B68` | Secondary text: venue, time, notes |
+| `--bw-subtle` | `#8095A3` | `#5F6E79` | Tertiary text, inactive nav, empty states |
 
 ### Accents
 
-| Token | Hex | Use |
-|---|---|---|
-| `--bw-coral` | `#FF7767` | Primary buttons, ticket links, active nav tab |
-| `--bw-coral-ink` | `#0B1D2F` | Text on coral |
-| `--bw-teal` | `#4DB6AC` | Focus ring, checkboxes, selected tiles |
+| Token | After dark | By day | Use |
+|---|---|---|---|
+| `--bw-coral` | `#FF7767` | `#C9402F` | Primary buttons, Get tickets, active nav tab, This week |
+| `--bw-coral-ink` | `#0B1D2F` | `#FFFFFF` | Text on coral |
+| `--bw-teal` | `#4DB6AC` | `#1F7A72` | Focus ring, checkboxes, chosen tiles and chips |
 
 Coral means "do something". Teal means "you picked this". Don't use coral for
 selection or teal for actions.
 
 ### Commitment states
 
-Each status has one colour family, used for the button, the Happenings pill,
-and the person's status label, so people learn it once.
+Each status has one colour family, used for its button, the Happenings pill and
+the person's status label, so people learn it once.
 
 | Status | Foreground | Background | Border |
 |---|---|---|---|
-| Interested | `#8FE0D5` | `#153B39` | `#397A72` |
-| Going (ticket bought) | `#FFD982` | `#40321A` | `#856A29` |
-| Not for me | `#FFB5B0` | `#351F24` | `#7A454D` |
+| Interested `--bw-interested-*` | `#8FE0D5` / `#0F5B54` | `#153B39` / `#DCF1EC` | `#397A72` / `#7FC4B9` |
+| Going (ticket bought) `--bw-going-*` | `#FFD982` / `#6A4700` | `#40321A` / `#FFF0C4` | `#856A29` / `#D9B24A` |
+| Not for me `--bw-pass-*` | `#FFB5B0` / `#8E2B34` | `#351F24` / `#FBE4E3` | `#7A454D` / `#E2A2A6` |
 
-All foreground/background pairs meet WCAG AA for small text (measured: Interested 8.0:1, Going 9.2:1, Not for me 9.1:1). Across the palette the lowest pair is `--bw-subtle` on `--bw-navy` at 5.5:1; cream on card is 12.5:1 and text on coral is 6.6:1.
+(After dark / By day.) The Interested colours double as the "you picked this"
+fill for chosen chips, tabs and the promoter filter bar.
 
-### Secondary tints and shadows
+### Secondary tints
 
-These cover the smaller pieces. With them, every colour in the app's styles
-comes from a token, so a new colour scheme only needs a new set of token
-values. The one exception is the Google sign-in button, which stays fixed to
-Google's branding.
+| Token | After dark | By day | Use |
+|---|---|---|---|
+| `--bw-mist` | `#D9E7E7` | `#173347` | Text on tags, chips and Happenings names |
+| `--bw-tag-bg` / `--bw-tag-line` | `#153443` / `#285365` | `#E6EEF1` / `#B8CAD2` | Genre tags, social chips |
+| `--bw-commit-fg` / `--bw-commit-line` | `#C3D0D6` / `#345468` | `#3B4D5A` / `#C9BEAD` | Commitment buttons before one is chosen |
+| `--bw-happen-bg` / `--bw-happen-line` | `#0F2A31` / `#285A5C` | `#E5F2EF` / `#9CCFC5` | Add an event panel on Happenings |
+| `--bw-coral-hover` | `#FF8B7D` | `#B23525` | Primary button hover |
+| `--bw-coral-bg` / `--bw-coral-line` | `#251A1A` / `#71463F` | `#FBE7E2` / `#E9AFA4` | Coral wells: This week, the events icon, the venue nudge border |
+| `--bw-coral-wash` | `#1A1719` | `#FDF1EC` | New since your last visit |
+| `--bw-coral-glow` | coral at 16% | coral at 18% | Halo on a shared event |
+| `--bw-sold-bg` / `--bw-sold-line` | `#382022` / `#704047` | `#FBE4E3` / `#E2A2A6` | Sold out badge |
+| `--bw-sticker-joy` / `-beatdown` / `-ink` | `#FFE14D` / `#B69CFF` / `#0B1D2F` | same | Promoter stickers |
+| `--bw-scrim` | navy at 62% | same | Behind dialogs |
 
-| Token | Value | Use |
+Shadows are tokens too, softer and navy-tinted by day: `--bw-shadow-card`
+(cards), `--bw-shadow-bar` (header), `--bw-shadow-nav` (bottom nav),
+`--bw-shadow-dialog` (dialogs, ⋯ menu, welcome cards), `--bw-shadow-logo` and
+`-logo-lg` (app logo), `--bw-shadow-sticker` (promoter stickers). Panels inside
+cards don't get a shadow.
+
+Two places use fixed colours on purpose, and only these two: the Google sign-in
+button (Google's brand), and the swatches on the two Colour scheme choices, which
+preview each scheme whichever one is on.
+
+### Choosing the scheme
+
+Settings → Colour scheme saves the choice on the device as `bw_theme` (absent
+means after dark). A one-line script in `<head>` applies it before the page
+draws, so there is no flash, and sets the browser's theme colour to `#FFFFFF`
+by day or `#0B1D2F` after dark. The light block also sets `color-scheme: light`,
+so checkboxes and date pickers turn light.
+
+### Contrast
+
+Measured in `design-system.html` (WCAG AA for small text is 4.5:1):
+
+| Pair | After dark | By day |
 |---|---|---|
-| `--bw-mist` | `#D9E7E7` | Light text on tags, chips and Happenings names |
-| `--bw-tag-bg` / `--bw-tag-line` | `#153443` / `#285365` | Genre tags, social chips |
-| `--bw-commit-fg` / `--bw-commit-line` | `#C3D0D6` / `#345468` | Commitment buttons before one is chosen |
-| `--bw-happen-bg` / `--bw-happen-line` | `#0F2A31` / `#285A5C` | Happenings add-event panel |
-| `--bw-coral-hover` | `#FF8B7D` | Primary button hover |
-| `--bw-coral-bg` / `--bw-coral-line` | `#251A1A` / `#71463F` | Coral-tinted wells (Today, events icon) |
-| `--bw-coral-wash` | `#1A1719` | New-since-last-visit panel |
-| `--bw-coral-glow` | coral at 16% | Halo on a shared event |
-| `--bw-sold-bg` / `--bw-sold-line` | `#382022` / `#704047` | Sold out badge |
-| `--bw-sticker-joy` / `--bw-sticker-beatdown` / `--bw-sticker-ink` | `#FFE14D` / `#B69CFF` / `#0B1D2F` | Promoter stickers |
-| `--bw-shadow-logo`, `-logo-lg`, `-sticker`, `-nav`, `-dialog` | black shadows | Logo, sticker, bottom nav and dialog shadows |
+| Primary text on cards | 12.5:1 | 17.1:1 |
+| Secondary text on cards | 7.5:1 | 7.0:1 |
+| Tertiary text on the nav | 5.5:1 | 5.3:1 |
+| Text on coral | 6.6:1 | 4.9:1 |
+| Teal on cards | 6.4:1 | 5.1:1 |
+| Interested / Going / Not for me | 8.0 / 9.2 / 9.1:1 | 6.7 / 7.4 / 6.8:1 |
+| Text on tags | 10.3:1 | 11.2:1 |
 
-### Light scheme: Seafront by day
-
-People can switch to a light scheme in Settings → Colour scheme. The choice is
-saved on the device as `bw_theme` and applied before the page draws, so there
-is no flash. The light values live in the `:root[data-theme="light"]` block
-straight after the main tokens, and override the same token names; it also
-sets `color-scheme: light` so checkboxes and date pickers turn light. Coral
-and teal are deeper (`#C9402F`, `#1F7A72`) so they pass contrast on a light
-background, and text on coral is white. Any new colour needs a value in both
-blocks.
-
-The event pages and This weekend page use `pages.css`, which is written by
-`scripts/build-event-pages.py`. It has its own short token names (`--navy`,
-`--coral`, `--pass-fg` and so on); change them in the script, not the file.
+The lowest pairs are text on coral and coral on navy by day (4.9:1). A new
+colour pair must clear 4.5:1 in both schemes.
 
 ## Type
 
-One family: **Plus Jakarta Sans** (400–800), falling back to the system UI
-font. Headings use tighter letter-spacing (−0.03em); body text uses −0.01em.
+One family: **Plus Jakarta Sans** (400–800, served from `fonts/`), falling back
+to the system UI font. Headings use tighter letter-spacing (−0.03em); body text
+uses −0.01em.
 
 | Token | Size | Use |
 |---|---|---|
-| `--bw-text-xl` | 1.45rem | Tab headings (Not music, Search, Settings) |
-| `--bw-text-lg` | 1.0625rem | Event titles, card headings |
+| `--bw-text-xl` | 1.45rem | Tab headings (Happenings, Not music, Festivals, Search, Settings) |
+| `--bw-text-lg` | 1.0625rem | Event titles, card and dialog headings |
 | `--bw-text-md` | 0.9375rem | Body, buttons, inputs |
-| `--bw-text-sm` | 0.78rem | Venue and time, notes, day headings |
-| `--bw-text-xs` | 0.6875rem | Chips, status labels, nav labels |
+| `--bw-text-sm` | 0.78rem | Venue and time, notes, day headings, ticket link |
+| `--bw-text-xs` | 0.6875rem | Chips, tags, badges, status labels, nav labels |
 
-Inputs are always 16px so iOS doesn't zoom on focus. Use sentence case
-everywhere, including buttons and badges ("Sold out", "Tickets").
+Apart from icon glyphs, the only other sizes are the wordmark in the header
+(1.28rem, 1.14rem on phones) and the welcome headings (1.9rem sign-in, 1.75rem
+Welcome back).
+Inputs are always at least 16px so iPhones don't zoom on focus.
 
 ## Shape, space, depth
 
-- Radius: `sm` 10px (ticket link), `md` 12px (inputs, tiles), `lg` 16px
-  (cards, panels), `xl` 24px (welcome card), `pill` for buttons and chips.
+- Radius: `--bw-radius-sm` 10px (Get tickets, ⋯ menu items), `-md` 12px
+  (inputs, tiles, header buttons, toasts), `-lg` 16px (cards, panels), `-xl`
+  24px (welcome cards, dialogs), `-pill` for buttons, chips and tags. Promoter
+  stickers keep 4px corners: they're labels.
 - Spacing steps: 4, 8, 12, 16, 24px (`--bw-space-1` … `--bw-space-5`).
-- Shadows: `--bw-shadow-card` under cards, `--bw-shadow-bar` under the header.
-  Panels inside cards don't get a shadow.
-- Focus: `--bw-focus` (a 3px teal ring) on every interactive element.
+- Focus: `--bw-focus`, a 3px teal ring, on every interactive element through
+  `:focus-visible`.
+- Motion: short colour and border transitions (0.15s) and a slight press on
+  commitment buttons; all of it is switched off under `prefers-reduced-motion`.
+
+## Layout
+
+- Content sits in `.wrap`: up to 780px wide with a 15px gutter.
+- The header is sticky; the week controls in it show only on Discover and Not
+  music. The bottom nav is fixed, and `.app-main` leaves room for it
+  (`--bw-nav-height`) and the phone's safe areas.
+- Built for phones first. Breakpoints: 360px (commitment icons hide, two-up
+  grids go to one column), 430px and 600px (tighter header), 520px (day tiles
+  go four across).
+- Nothing may widen the page past the screen (`overflow-x: clip`), and
+  double-tap zoom is off.
 
 ## Components
 
 | Component | Classes | Notes |
 |---|---|---|
-| Button | `.btn` + `.btn-primary` / `.btn-secondary` / `.btn-ghost` / `.btn-chip` | Use one primary per panel. Chip is the small size for row actions. |
-| Event card | `.card` › `.top`, `.title`, `.meta`, `.card-tags`, `.people`, `.commitment`, `.actions` | Built by `eventCard()` in the app script. Discover, Not music and Search all use it. Price sits in `.meta`; `.card-tags` holds the genre tag and listing badges; `.people` only appears when friends are interested or going. |
-| ⋯ menu | `details.more` › `summary`, `.more-pop` › `.more-item` (`.danger`) | Secondary card actions (calendar, share, add a genre, remove). One open at a time; opens upwards near the bottom of the screen. |
-| Listing badge | `.badge.info` | "Free", "Extra show" and similar, from `e.badges`. Teal, beside the genre tag. "Sold out" stays `.badge.sold` in `.card-flags`. |
-| Quick-time chips | `.range-chips` › `.festival-filter` (`.active`) | Tonight / This weekend / Next 7 days on Discover and Not music; This weekend / Next 7 / Next 30 days in Search. |
-| Toast | `.bw-toasts` › `.bw-toast` (`.success` / `.error`) | `toast(message, tone)`. Above the bottom nav, gone after a few seconds. Never use `alert()`. |
-| Dialog | `dialog.bw-dialog` › `.bw-dialog-card` | `dialog({...})` / `confirmDialog({...})`. For questions and copy-a-link; `typeToConfirm` for account deletion. Never use `confirm()` or `prompt()`. |
+| Button | `.btn` + `.btn-primary` / `.btn-secondary` / `.btn-ghost` / `.btn-chip` / `.btn-danger` | One primary per panel. Chip is the small size for row actions; danger is for removing and deleting. `.google-btn` and `.support-btn` are one-offs. |
+| Event card | `.card` › `.top` (`.title`, `.added-by`, `.meta`), `.card-flags`, `.card-tags`, `.people`, `.commitment`, `.actions` | Built by `eventCard(e, {showDate, reason})`. Discover, Not music, Search, the new-events list and You might like all use it. `showDate` adds `.card-date`; `reason` adds `.rec-reason`. Price sits in `.meta`. |
+| ⋯ menu | `details.more` › `summary.cal-link`, `.more-pop` › `.more-item` (`.danger`) | Add to calendar, Share, Add a genre, Remove this event. One open at a time; opens upwards near the bottom of the screen. |
 | Commitment control | `.commitment` › `.commit-btn.no/.yes/.bought` (+ `.selected`) | Three equal columns that never wrap. Icons hide below 360px wide. |
-| Social chip | `.social-chip` › `.social-icon.heart/.going/.profile` | Counts on cards and names in the group roster. Don't use the class `ticket` here: that's the coral Tickets link. |
-| Genre chips | `.genre-chips` › `.genre-chip` (`aria-pressed`, `.untagged`) | Discover filter row and Search pickers. Selected uses the teal "you picked this" colours; Untagged is dashed. Counts in `.n`. |
-| Genre tag | `.genre-tag` | In `.card-tags` under the venue, only when the event has a genre. |
-| Promoter filter | `.promoter-filter` | Teal bar on Discover after tapping a promoter sticker; "Show all" clears it. |
-| Promoter sticker | `.card-flags` › `.promoter-sticker.joy` | Top right of an event card for gigs by a promoter we read (`e.promoter`, mapped in `PROMOTER_STICKERS`). Tilted 6°, square-ish corners, its own colour (JOY. yellow `#FFE14D`, Beat Down violet `#B69CFF`, both with navy text): it is a label, never a button. Sits after "Sold out". |
-| Ticket icon | `TICKET_ICON` in the app script (`.ticket-glyph`) | A vector ticket drawn in `currentColor`, used for Going everywhere so it looks the same on every phone. |
-| Avatar | `img.avatar` | The artwork file is already a circle; CSS adds exactly one 1px outline (2px teal when selected). No boxes, rings or per-avatar variants. |
-| Status pill | `.happening-summary-pill` / `.happening-status` + `.going` / `.interested` / `.pass` | Happenings only. Your own status appears once per event in `.happening-you`. |
-| Panel | `.panel`, `.settings-card`, `.settings-section` | Card-coloured container for forms and settings. |
-| Segmented control | `.segmented` | Two-way mode switch (Search). |
-| Checkbox tile | `.choice`, `.day-choice` in `.choice-grid` / `.day-grid` | Multi-select lists. |
-| Day heading | `.day` with a `<span>` for the date | "Friday 25 September". |
-| Bottom nav | `.nav` › `button` (`.active`, `.has-new`) | Five tabs; `.has-new` adds a coral dot to Happenings. |
+| Get tickets | `a.ticket` with `TICKET_ICON` | Coral, as wide as the row allows. Taps are counted (`data-ticket-event`). |
+| Ticket icon | `TICKET_ICON` (`.ticket-glyph`) | A vector ticket in `currentColor`, used for Going everywhere so it looks the same on every phone. The calendar and share icons are drawn the same way. |
+| Listing badge | `.badge.info` | "Free", "Extra show" and similar, from `e.badges`, beside the genre tag. "Sold out" is `.badge.sold` in `.card-flags`. |
+| Genre tag | `.genre-tag` | Only when the event has a genre. A genre people added is a `button.genre-tag` they can tap to change. |
+| Genre picker | `.genre-picker` › `.pill-wrap` › `.genre-chip` (`aria-pressed`) | Opens in the card from Add a genre. Your pick uses the "you picked this" colours. |
+| Promoter sticker | `.card-flags` › `.promoter-sticker.joy` / `.beatdown` | Top right of a card for a promoter we read (`e.promoter`, mapped in `PROMOTER_STICKERS`). Tilted 6°, its own colour, navy text. Tapping it shows only that promoter's gigs (in Search, it opens the Promoter search). |
+| Promoter filter bar | `.promoter-filter` › `.promoter-filter-label`, `.btn-chip` | Teal bar on Discover with the count for the chosen days; Show all clears it. |
+| Friends line | `.people` › `.social-chip` › `.social-icon.going/.heart/.profile` | Only when friends are interested or going. Also the group roster's name chips. |
+| Day heading | `h3.day` with a `<span>` for the date | "Friday 16 October". |
+| Quick-time chips | `.range-chips` › `.festival-filter` (`.active`) | Tonight / This weekend / Next 7 days on Discover and Not music, where tapping the chosen chip goes back to the week; This weekend / Next 7 days / Next 30 days in Search. |
+| Filter chips | `.festival-filters` › `.festival-filter` (`.active`) | Festival types (sticky under the header) and, with `.comedy-venues`, the venue toggles on Not music. |
+| New since your last visit | `.new-summary`, `.new-list` | One line on Discover until opened. |
+| Venue nudge | `.venue-nudge` | Shown instead of listings when no venues are chosen. |
+| Empty state | `.empty` | Short and specific: what's missing, and what to try. |
+| Happenings card | `.people-card.card` › `.happening-you`, `.happening-summary` › `.happening-summary-pill`, `.happening-group` › `.happening-person` › `.happening-status` | Your own status appears once per event, then friends by group, strongest response first. |
+| Group roster | `.group-roster.group-roster-bottom` | People in your groups, at the bottom of Happenings. |
+| Add an event | `.custom-event-launch`, `.custom-event-panel` (`.collapsed`) | The teal-tinted panel at the top of Happenings. |
+| Festival card | `.card.festival-card` › `.festival-date`, `.festival-location`, `.festival-type` | Built by `festivalCard()`; same commitment buttons and Tickets link as events. |
+| Panel | `.panel`, `.settings-card`, `.settings-section` | Card-coloured containers for forms and settings. |
+| Segmented control | `.segmented` (`.search-segmented` for four) | The Search modes. |
+| Checkbox tiles | `.choice` in `.choice-grid`, `.day-choice` in `.day-grid`, `.venue-row` | Multi-select lists: Search venues, days, Settings venues. |
+| Colour scheme choice | `.theme-choices` › `.theme-choice` (`aria-checked`) › `.theme-dots` | Two rows with a three-dot preview each. |
+| Avatar | `img.avatar` | The artwork is already a circle (`profile-icons/standardized/`); CSS adds exactly one 1px outline, 2px teal when selected. No boxes, rings or per-avatar variants. `.profile-icon-grid` › `.profile-icon-option` in Settings. |
+| Group rows | `.group-manager-row`, `.group-choice`, `.pin-display`, `.member-count` | Settings and the sign-up groups step. |
+| Toast | `.bw-toasts` › `.bw-toast` (`.success` / `.error`) | `toast(message, tone)`. Above the bottom nav, gone after a few seconds. Never `alert()`. |
+| Dialog | `dialog.bw-dialog` › `.bw-dialog-card` | `dialog({...})` / `confirmDialog({...})`, for questions and copy-a-link; `typeToConfirm` for account deletion. OK comes first in the markup (so Enter means OK) and shows last. Never `confirm()` or `prompt()`. |
+| Sign-in and setup | `#welcome` › `.welcome-card` (`#authStep`, `#nameStep`, `#groupStep`) | Full screen over the app. `.checking` hides the card while a saved session is checked, so signed-in people never see it flash. |
+| Welcome back | `#home` › `.home-card` › `.home-row` › `.home-icon.events/.plans/.people` | Only when friends have new plans or someone joined a group. |
+| Header | `.app-brand`, `.controls` (`#prev`, `#week`, `#next`, `#today`, `#refresh`) | Logo, wordmark and slogan; the week controls below. |
+| Bottom nav | `.nav` › `button` (`.active`, `.has-new`) | Six tabs: Happenings, Discover, Not music, Festivals, Search, Settings. `.has-new` adds a coral dot to Happenings. Text glyphs for icons, except the festival tent (`.nav-svg`). |
+| Utilities | `.hidden`, `.note`, `.group-meta`, `.nowrap`; `body.guest` with `.member-only` / `.guest-only` | What guests and members see is switched by the class on `body`. |
+
+## Pages outside the app
+
+`pages.css` styles the shareable event pages (`e/<id>/`), This weekend, About,
+Privacy, Terms and 404. It is written by `scripts/build-event-pages.py` from
+its `STYLE` string, so change it there, not in the file. It is dark only, with
+its own short token names taken from the app's dark values (`--navy`, `--card`,
+`--cream`, `--coral`, `--teal`, `--pass-fg` and so on), and a few parts:
+`.bar` (the header), `.card`, `.pill`, `.facts`, `.actions` with `.btn.go`
+(coral) and `.btn.alt` (outline), `.list` (time, title and venue rows),
+`.lede`, `.note`, `.meta`, `.notice` and tables. About, Privacy, Terms and 404
+are written by hand with the same header and footer as the generated pages.
+
+`admin.html` is a private dashboard with its own small stylesheet.
+
+## Words
+
+- The slogan is **Make the most of yours**.
+- Sentence case everywhere, buttons and badges included ("Get tickets",
+  "Sold out", "Not for me").
+- Few descriptive subheadings: the content and its labels carry the screen.
+- Only say what's known. A genre shows when the listing or a confident match
+  gives one, never a guess and never "Untagged"; Sold out only when a ticket
+  page says so.
+- Empty states and errors say what happened and what to do next, in one short
+  sentence.
 
 ## Rules
 
-1. **Change tokens, not components.** A new colour means a new token in
-   `:root`. No hex values in component rules unless they're one-offs, like
-   the Google button, which must follow Google's brand.
-2. **No `!important`** and no second stylesheet that overrides the first.
-   That's how v11–v41 ended up with eight stacked layers.
-3. **No inline styles** in HTML or in JS templates. Add a class.
-4. **Reuse `eventCard()`** for any new event list, so cards stay identical.
-5. **Avatars come from `scripts/standardize-avatars.mjs`.** Add new artwork
-   to `profile-icons/`, add the name to `PROFILE_ICONS`, and let the workflow
-   build the circular file. Never paint frames into the artwork.
-6. **Check `design-system.html`** and a 390px-wide phone view after changes.
+1. **Change tokens, not components.** A new colour is a new token in `:root`
+   with a value in the light block too. No hex or rgba in component rules,
+   apart from the Google button and the scheme swatches.
+2. **No `!important`**, except `.hidden` and the reduced-motion switch, and no
+   second stylesheet that overrides the first.
+3. **No inline styles** in HTML or in JS templates. Add a class. (Only
+   `design-system.html` sets colours from script, to paint its swatches.)
+4. **Reuse `eventCard()`** for any new list of events, so cards stay identical.
+   Festivals use `festivalCard()`.
+5. **Avatars come from the scripts.** Add artwork with
+   `scripts/add-avatar.mjs` (or the Add avatar workflow) and let
+   `scripts/standardize-avatars.mjs` make the circle. Never paint frames into
+   the artwork. See `AVATAR_CREATION.md`.
+6. **Check `design-system.html`** in both schemes, and the app at 390px wide,
+   after a change. Then bump `VERSION` in `sw.js` and the `sw.js?v=` number
+   in `index.html`.

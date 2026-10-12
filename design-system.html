@@ -1,409 +1,265 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Brighton Weekend · Design system</title>
+<!-- The app's own stylesheet is copied in from index.html when this page opens
+     (see the script at the end), so this page can never drift from the app. -->
+<style id="bw-styles"></style>
 <style>
-/* ==========================================================================
-   Brighton Weekend — app stylesheet
-   One stylesheet, driven by the tokens below. See DESIGN-SYSTEM.md.
-   Replaces the eight stacked <style> blocks (v11 → v41) that overrode each
-   other with !important.
-   ========================================================================== */
-
-/* ---------- 0. Font (self-hosted: no requests to Google) ---------- */
-@font-face{font-family:"Plus Jakarta Sans";font-style:normal;font-weight:400 800;font-display:swap;src:url("fonts/plus-jakarta-sans-latin.woff2") format("woff2")}
-
-/* ---------- 1. Tokens ---------- */
-:root{
-  /* Sea at night: surfaces, darkest to lightest */
-  --bw-abyss:#08141F;      /* page background */
-  --bw-navy:#0B1D2F;       /* header, nav, inputs */
-  --bw-deep:#0F2231;       /* recessed controls */
-  --bw-card:#102536;       /* cards and panels */
-  --bw-raised:#173347;     /* icon wells, hover */
-  --bw-line:#294657;       /* default borders */
-  --bw-line-strong:#3B6074;/* hover / emphasised borders */
-
-  /* Text */
-  --bw-cream:#F3E4C9;      /* primary text */
-  --bw-muted:#A7B5BE;      /* secondary text */
-  --bw-subtle:#8095A3;     /* tertiary text, inactive nav */
-
-  /* Accents: pier lights */
-  --bw-coral:#FF7767;      /* primary action, active nav, ticket links */
-  --bw-coral-ink:#0B1D2F;  /* text on coral */
-  --bw-teal:#4DB6AC;       /* focus, selection, checkboxes */
-
-  /* Commitment states: one colour family per status */
-  --bw-interested-fg:#8FE0D5; --bw-interested-bg:#153B39; --bw-interested-line:#397A72;
-  --bw-going-fg:#FFD982;      --bw-going-bg:#40321A;      --bw-going-line:#856A29;
-  --bw-pass-fg:#FFB5B0;       --bw-pass-bg:#351F24;       --bw-pass-line:#7A454D;
-
-  /* Type */
-  --bw-font:"Plus Jakarta Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  --bw-text-xs:.6875rem;   /* 11px: chips, status labels */
-  --bw-text-sm:.78rem;     /* meta, notes */
-  --bw-text-md:.9375rem;   /* body, controls */
-  --bw-text-lg:1.0625rem;  /* card titles */
-  --bw-text-xl:1.45rem;    /* section headings */
-
-  /* Shape and space */
-  --bw-radius-sm:10px; --bw-radius-md:12px; --bw-radius-lg:16px; --bw-radius-xl:24px; --bw-radius-pill:999px;
-  --bw-space-1:4px; --bw-space-2:8px; --bw-space-3:12px; --bw-space-4:16px; --bw-space-5:24px;
-  --bw-shadow-card:0 8px 22px rgba(0,0,0,.22);
-  --bw-shadow-bar:0 4px 18px rgba(0,0,0,.28);
-  --bw-focus:0 0 0 3px rgba(77,182,172,.35);
-  --bw-nav-height:64px;
-
-  /* Secondary tints: tags, chips, panels (added for theming) */
-  --bw-mist:#D9E7E7;       /* light text on tag and chip backgrounds */
-  --bw-tag-bg:#153443;     --bw-tag-line:#285365;       /* genre tags, social chips */
-  --bw-commit-fg:#C3D0D6;  --bw-commit-line:#345468;    /* resting commitment buttons */
-  --bw-happen-bg:#0F2A31;  --bw-happen-line:#285A5C;    /* Happenings add-event panel */
-  --bw-coral-hover:#FF8B7D;/* primary button hover */
-  --bw-coral-bg:#251A1A;   --bw-coral-line:#71463F;     /* coral-tinted wells */
-  --bw-coral-wash:#1A1719; /* new-since-last-visit panel */
-  --bw-coral-glow:rgba(255,119,103,.16);               /* shared-event halo */
-  --bw-sold-bg:#382022;    --bw-sold-line:#704047;      /* Sold out badge */
-  --bw-sticker-joy:#FFE14D; --bw-sticker-beatdown:#B69CFF; --bw-sticker-ink:#0B1D2F; /* promoter stickers */
-  --bw-shadow-logo:0 4px 16px rgba(0,0,0,.35);
-  --bw-shadow-logo-lg:0 8px 24px rgba(0,0,0,.45);
-  --bw-shadow-sticker:0 2px 0 rgba(0,0,0,.35);
-  --bw-shadow-nav:0 -6px 22px rgba(0,0,0,.3);
-  --bw-shadow-dialog:0 20px 60px rgba(0,0,0,.45);
-}
-
-/* ---------- 2. Base ---------- */
-*{box-sizing:border-box}
-html{background:var(--bw-abyss);color-scheme:dark}
-body{margin:0;min-height:100%;background:var(--bw-abyss);color:var(--bw-cream);font-family:var(--bw-font);font-size:var(--bw-text-md);letter-spacing:-.01em;-webkit-tap-highlight-color:transparent;overscroll-behavior-y:none}
-button,input,select,textarea{font:inherit;color:inherit}
-button{cursor:pointer}
-a{color:inherit}
-h1,h2,h3,h4{margin:0;letter-spacing:-.03em;line-height:1.2}
-h2{font-size:var(--bw-text-xl);font-weight:800}
-h3{font-size:var(--bw-text-lg);font-weight:700}
-h4{font-size:var(--bw-text-md);font-weight:700}
-.hidden{display:none!important}
-:focus-visible{outline:none;box-shadow:var(--bw-focus)}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
-
-.note,.group-meta,.custom-event-help,.profile-icon-note{font-size:var(--bw-text-sm);line-height:1.45;color:var(--bw-muted);margin:0}
-.empty{font-size:var(--bw-text-sm);color:var(--bw-subtle);padding:var(--bw-space-3) 0}
-
-/* ---------- 3. Layout ---------- */
-.wrap{width:100%;max-width:780px;margin:0 auto;padding:0 15px}
-.app-main{padding-top:var(--bw-space-2);padding-bottom:calc(var(--bw-nav-height) + 48px + env(safe-area-inset-bottom))}
-.section-head{margin:var(--bw-space-5) 0 var(--bw-space-3)}
-.section-head h2{margin-bottom:var(--bw-space-1)}
-.app-main>h2{margin:var(--bw-space-5) 0 var(--bw-space-2)}
-.results-head{display:flex;justify-content:space-between;align-items:baseline;margin:var(--bw-space-5) 0 var(--bw-space-2)}
-
-/* ---------- 4. Header ---------- */
-header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1px solid var(--bw-line);box-shadow:var(--bw-shadow-bar);padding:12px 0 calc(12px);padding-top:max(12px,env(safe-area-inset-top))}
-.app-brand{display:flex;align-items:center;gap:11px;min-height:48px}
-.app-brand img{width:46px;height:46px;border-radius:13px;object-fit:cover;box-shadow:var(--bw-shadow-logo)}
-.brand{font-size:1.28rem;line-height:1;font-weight:800;letter-spacing:-.045em}
-.sub{font-size:var(--bw-text-xs);color:var(--bw-muted);margin-top:4px}
-.controls{display:flex;gap:7px;margin-top:10px}
-.controls>*{min-width:0}
-.controls button{display:flex;align-items:center;justify-content:center;min-height:42px;padding:9px 12px;background:var(--bw-card);color:var(--bw-cream);border:1px solid var(--bw-line);border-radius:var(--bw-radius-md);font-weight:700}
-.controls button:hover{background:var(--bw-raised);border-color:var(--bw-line-strong)}
-.controls .week{flex:1}
-.controls .today{margin-left:5px;color:var(--bw-coral);background:var(--bw-coral-bg);border-color:var(--bw-coral-line)}
-@media (max-width:600px){.app-brand img{width:42px;height:42px}.brand{font-size:1.14rem}}
-@media (max-width:430px){.controls{gap:5px}.controls button{min-height:40px;padding:8px}.controls .week{font-size:var(--bw-text-sm)}}
-
-/* ---------- 5. Day headings ---------- */
-.day{margin:var(--bw-space-5) 0 var(--bw-space-2);font-size:var(--bw-text-sm);font-weight:800;letter-spacing:.01em;color:var(--bw-cream)}
-.day span{font-weight:500;color:var(--bw-muted);margin-left:4px}
-
-/* ---------- 6. Buttons ---------- */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:42px;padding:10px 16px;border-radius:var(--bw-radius-pill);border:1px solid transparent;font-weight:700;font-size:var(--bw-text-md);text-decoration:none;transition:background .15s,border-color .15s}
-.btn:disabled{opacity:.6;cursor:wait}
-.btn-primary{background:var(--bw-coral);border-color:var(--bw-coral);color:var(--bw-coral-ink);font-weight:800}
-.btn-primary:hover{background:var(--bw-coral-hover)}
-.btn-secondary{background:var(--bw-card);border-color:var(--bw-line);color:var(--bw-cream)}
-.btn-secondary:hover{background:var(--bw-raised);border-color:var(--bw-line-strong)}
-.btn-ghost{background:transparent;border-color:var(--bw-line);color:var(--bw-muted)}
-.btn-ghost:hover{color:var(--bw-cream);border-color:var(--bw-line-strong)}
-.btn-chip{min-height:32px;padding:6px 11px;font-size:var(--bw-text-xs);background:var(--bw-deep);border-color:var(--bw-line);color:var(--bw-cream)}
-.btn-chip:hover{border-color:var(--bw-line-strong)}
-.google-btn{background:#fff;color:#202124;border-color:#dadce0;width:100%}
-.google-btn::before{content:"G";font:800 18px Arial,sans-serif;color:#4285f4}
-
-/* ---------- 7. Event card ---------- */
-.card{background:var(--bw-card);border:1px solid var(--bw-line);border-radius:var(--bw-radius-lg);padding:15px 15px 14px;margin:9px 0;box-shadow:var(--bw-shadow-card)}
-.card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
-.card-date{font-size:var(--bw-text-xs);font-weight:800;color:var(--bw-interested-fg);margin-bottom:5px}
-.title{font-size:var(--bw-text-lg);line-height:1.25;font-weight:700;letter-spacing:-.025em;overflow-wrap:anywhere}
-.added-by{font-size:var(--bw-text-xs);font-weight:500;color:var(--bw-muted);letter-spacing:0}
-.meta{font-size:var(--bw-text-sm);line-height:1.4;font-weight:500;color:var(--bw-muted);margin-top:5px}
-.price{font-size:var(--bw-text-sm);font-weight:700;margin-top:6px}
-.badge{font-size:var(--bw-text-xs);font-weight:800;padding:5px 8px;border-radius:var(--bw-radius-pill);white-space:nowrap}
-.badge.sold{background:var(--bw-sold-bg);color:var(--bw-pass-fg);border:1px solid var(--bw-sold-line)}
-.actions{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-top:12px}
-.actions:empty{display:none}
-.ticket{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:9px 13px;border-radius:var(--bw-radius-sm);background:var(--bw-coral);color:var(--bw-coral-ink);font-size:var(--bw-text-sm);font-weight:800;text-decoration:none}
-.ticket .ticket-glyph{width:15px;height:15px;flex:none}
-
-/* Social summary chips */
-.people{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:11px}
-.social-chip{display:inline-flex;align-items:center;gap:5px;padding:4px 8px 4px 4px;border-radius:var(--bw-radius-pill);background:var(--bw-tag-bg);border:1px solid var(--bw-tag-line);color:var(--bw-mist);font-size:var(--bw-text-xs);font-weight:500;line-height:1}
-.social-icon{display:inline-grid;place-items:center;width:20px;height:20px;aspect-ratio:1;flex:none;border-radius:50%;font-size:10px;line-height:1;overflow:hidden;font-style:normal;border:1px solid var(--bw-line-strong);background:var(--bw-raised)}
-.social-icon.heart{color:var(--bw-interested-fg);border-color:var(--bw-interested-line)}
-.social-icon.going{color:var(--bw-going-fg);border-color:var(--bw-going-line)}
-.ticket-glyph{width:62%;height:62%;display:block}
-.social-icon.profile{width:24px;height:24px;border:0;background:none;overflow:visible}
-.social-icon.profile img{width:24px;height:24px}
-
-/* Commitment control: three equal segments that never wrap */
-.commitment{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:13px}
-.commit-btn{appearance:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:38px;padding:5px 6px;border-radius:var(--bw-radius-pill);border:1px solid var(--bw-commit-line);background:var(--bw-deep);color:var(--bw-commit-fg);font-size:var(--bw-text-xs);font-weight:700;letter-spacing:-.015em;white-space:nowrap;transition:background .15s,border-color .15s,color .15s,transform .12s}
-.commit-btn:hover{border-color:var(--bw-line-strong)}
-.commit-btn:active{transform:scale(.97)}
-.commit-btn:disabled{cursor:progress}
-.commit-icon{display:inline-grid;place-items:center;width:24px;height:24px;aspect-ratio:1;flex:none;border-radius:50%;border:1px solid var(--bw-line-strong);background:var(--bw-raised);font-size:14px;line-height:1}
-.commit-btn.no .commit-icon{color:var(--bw-pass-fg);border-color:var(--bw-pass-line)}
-.commit-btn.yes .commit-icon{color:var(--bw-interested-fg);border-color:var(--bw-interested-line)}
-.commit-btn.bought .commit-icon{color:var(--bw-going-fg);border-color:var(--bw-going-line)}
-.commit-btn.selected.no{background:var(--bw-pass-bg);border-color:var(--bw-pass-line);color:var(--bw-pass-fg)}
-.commit-btn.selected.yes{background:var(--bw-interested-bg);border-color:var(--bw-interested-line);color:var(--bw-interested-fg)}
-.commit-btn.selected.bought{background:var(--bw-going-bg);border-color:var(--bw-going-line);color:var(--bw-going-fg)}
-@media (max-width:360px){.commit-icon{display:none}}
-
-/* ---------- 8. Panels and forms ---------- */
-.panel,.settings-section,.settings-card,.custom-event-panel{background:var(--bw-card);border:1px solid var(--bw-line);border-radius:var(--bw-radius-lg);padding:var(--bw-space-4);margin:0 0 18px}
-.settings-card h3,.settings-section h3,.custom-event-panel h3{margin-bottom:6px}
-.settings-card .note{margin-bottom:12px}
-label{display:grid;gap:6px;font-size:var(--bw-text-sm);color:var(--bw-muted)}
-input:not([type=checkbox]):not([type=radio]),select,textarea{width:100%;padding:12px 14px;border-radius:var(--bw-radius-md);border:1px solid var(--bw-line);background:var(--bw-navy);color:var(--bw-cream);font-size:16px;outline:none}
-input:focus,select:focus,textarea:focus{border-color:var(--bw-teal);box-shadow:var(--bw-focus)}
-textarea{min-height:70px;resize:vertical}
-input[type=checkbox]{accent-color:var(--bw-teal);width:20px;height:20px;margin:0}
-.form-stack,.group-form,.custom-event-form{display:grid;gap:12px}
-.form-row,.custom-event-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px}
-.form-row>label,.custom-event-row>label{min-width:0}
-input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance:none;min-height:46px}
-.custom-event-form{margin-top:12px}
-.panel>.btn-ghost{margin-top:14px;width:100%}
-
-/* Segmented control (Search mode) */
-.segmented{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;margin-bottom:14px;border-radius:var(--bw-radius-pill);background:var(--bw-navy);border:1px solid var(--bw-line)}
-.segmented button{border:0;background:transparent;color:var(--bw-muted);padding:9px 10px;border-radius:var(--bw-radius-pill);font-size:var(--bw-text-sm);font-weight:700}
-.segmented button.active{background:var(--bw-interested-bg);color:var(--bw-interested-fg)}
-
-/* Checkbox tiles: search venues, days */
-.choice-grid,.day-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;max-height:310px;overflow:auto}
-.choice,.day-choice{display:flex;align-items:center;gap:8px;padding:10px 11px;border:1px solid var(--bw-line);border-radius:var(--bw-radius-md);background:var(--bw-deep);color:var(--bw-cream);font-size:var(--bw-text-sm);font-weight:600}
-.choice input:checked+span,.day-choice input:checked+span{color:var(--bw-interested-fg)}
-@media (min-width:520px){.day-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
-@media (max-width:360px){.choice-grid,.form-row,.custom-event-row{grid-template-columns:1fr}}
-
-/* ---------- 9. Settings ---------- */
-.venue-settings-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin:0}
-.venue-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
-#venueList{margin-top:4px}
-.venue-row{display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:14px 2px;border-bottom:1px solid var(--bw-line);font-size:var(--bw-text-md);font-weight:600;color:var(--bw-cream)}
-.day-preferences{margin-top:14px;padding-top:14px;border-top:1px solid var(--bw-line)}
-.day-preferences .note{margin:4px 0 10px}
-.settings-card .btn+.btn{margin-left:6px}
-#accountEmail{margin-top:10px}
-.install-area{text-align:center}.install-btn{width:100%}
-.support-btn{display:inline-flex;align-items:center;gap:6px;padding:11px 15px;border-radius:var(--bw-radius-md);background:var(--bw-coral);color:var(--bw-coral-ink);font-weight:800;text-decoration:none}
-.settings-links{display:flex;gap:16px;flex-wrap:wrap;padding:4px 2px 18px}
-.settings-links a{color:var(--bw-muted)}
-/* Avatars: the artwork is already a circle (see scripts/standardize-avatars.mjs).
-   CSS adds exactly one outline. Every avatar is treated the same way. */
-.avatar{display:block;border-radius:50%;object-fit:cover;background:var(--bw-deep);box-shadow:0 0 0 1px var(--bw-line)}
-.profile-current{display:flex;align-items:center;gap:12px;padding:10px 0 14px}
-.profile-current img{width:56px;height:56px;flex:none}
-.profile-current strong{display:block}
-.profile-icon-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(48px,1fr));gap:10px;margin-top:12px}
-.profile-icon-option{position:relative;display:block;width:100%;aspect-ratio:1;padding:0;border:0;border-radius:50%;background:none}
-.profile-icon-option img{width:100%;height:100%}
-.profile-icon-option:hover img{box-shadow:0 0 0 1px var(--bw-line-strong)}
-.profile-icon-option.selected img{box-shadow:0 0 0 2px var(--bw-teal)}
-.profile-icon-option.selected::after{content:"✓";position:absolute;right:-2px;bottom:-2px;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;background:var(--bw-teal);color:var(--bw-abyss);font-size:11px;font-weight:800;box-shadow:0 0 0 2px var(--bw-card)}
-
-/* Groups */
-.group-panel{margin-top:10px;padding-top:12px;border-top:1px solid var(--bw-line)}
-.group-panel h3{margin-bottom:4px}
-.group-list{display:grid;gap:8px;max-height:230px;overflow:auto;text-align:left}
-.group-choice{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid var(--bw-line);border-radius:var(--bw-radius-lg);background:var(--bw-navy)}
-.group-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0 14px}
-.group-manager-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--bw-line)}
-.row-actions{display:flex;gap:6px;flex-shrink:0}
-.pin-display{font-weight:800;letter-spacing:.15em;color:var(--bw-going-fg)}
-.group-heading{display:flex;align-items:center;gap:8px;margin:16px 0 7px;font-size:var(--bw-text-sm);font-weight:700;color:var(--bw-muted)}
-.member-count{font-size:var(--bw-text-xs);border:1px solid var(--bw-line);border-radius:var(--bw-radius-pill);padding:2px 7px}
-
-/* ---------- 10. Happenings ---------- */
-.custom-event-launch{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0 14px;padding:12px 14px;border:1px solid var(--bw-happen-line);border-radius:14px;background:var(--bw-happen-bg)}
-.custom-event-launch .btn{white-space:nowrap;min-height:38px;padding:8px 14px}
-.custom-event-panel{background:var(--bw-happen-bg);border-color:var(--bw-happen-line)}
-.custom-event-panel.collapsed{display:none}
-.group-roster{margin:0 0 20px;padding:4px 0;border-bottom:1px solid var(--bw-line)}
-.group-roster .section-head,.happenings-events-head{margin:14px 0 8px}
-.people-card h3{margin:0}
-.happening-summary{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 4px}
-.happening-summary-pill,.happening-status{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:var(--bw-radius-pill);font-size:var(--bw-text-xs);font-weight:800;border:1px solid;white-space:nowrap}
-.happening-summary-pill.going,.happening-status.going{color:var(--bw-going-fg);background:var(--bw-going-bg);border-color:var(--bw-going-line)}
-.happening-summary-pill.interested,.happening-status.interested{color:var(--bw-interested-fg);background:var(--bw-interested-bg);border-color:var(--bw-interested-line)}
-.happening-summary-pill .ticket-glyph,.happening-status .ticket-glyph{width:13px;height:13px;display:inline-block;vertical-align:-2px}
-.happening-status.pass{color:var(--bw-pass-fg);background:var(--bw-pass-bg);border-color:var(--bw-pass-line)}
-.happening-you{display:flex;align-items:center;gap:8px;margin-top:12px;padding:8px 10px;border-radius:var(--bw-radius-md);background:var(--bw-deep);border:1px solid var(--bw-line)}
-.happening-quiet{margin-top:10px}
-.happening-group{margin-top:12px}
-.happening-group+.happening-group{padding-top:10px;border-top:1px solid var(--bw-line)}
-.happening-group .group-heading{margin:0 0 6px}
-.happening-people{display:grid;gap:7px}
-.happening-person{display:flex;align-items:center;gap:8px;min-height:30px}
-.happening-person .social-icon.profile,.happening-person .social-icon.profile img{flex:0 0 28px;width:28px;height:28px}
-.happening-person-name{flex:1;min-width:0;font-size:var(--bw-text-sm);font-weight:600;color:var(--bw-mist)}
-
-/* ---------- 11. Bottom navigation ---------- */
-.nav{position:fixed;left:0;right:0;bottom:0;z-index:10;display:flex;justify-content:center;gap:2px;background:var(--bw-navy);border-top:1px solid var(--bw-line);box-shadow:var(--bw-shadow-nav);padding:8px max(6px,env(safe-area-inset-left)) calc(8px + env(safe-area-inset-bottom))}
-.nav button{flex:1;max-width:150px;display:flex;flex-direction:column;align-items:center;gap:3px;border:0;background:none;padding:6px 2px;color:var(--bw-subtle);font-size:var(--bw-text-xs);font-weight:700;border-radius:var(--bw-radius-md)}
-.nav-icon{font-size:17px;line-height:1}
-.nav-svg{display:block;width:18px;height:18px}
-.nav button.active,.nav button.has-new{color:var(--bw-coral)}
-.nav button.has-new .nav-icon::after{content:"";display:inline-block;width:6px;height:6px;margin-left:2px;border-radius:50%;background:var(--bw-coral);vertical-align:top}
-
-/* ---------- 12. Welcome / sign-in ---------- */
-#welcome{position:fixed;inset:0;z-index:20;min-height:100dvh;overflow:auto;display:grid;place-items:center;padding:20px;background:var(--bw-abyss)}
-.welcome-card{width:min(420px,92vw);background:var(--bw-card);border:1px solid var(--bw-line);border-radius:var(--bw-radius-xl);padding:30px 26px;box-shadow:var(--bw-shadow-dialog);text-align:center}
-.welcome-card h2{font-size:1.9rem;margin-bottom:9px}
-.welcome-card>div>p{color:var(--bw-muted);font-size:var(--bw-text-md);line-height:1.45;margin:0 0 20px}
-.welcome-card form{display:grid;gap:10px}
-.welcome-card .btn{width:100%}
-.auth-logo{width:88px;height:88px;border-radius:22px;display:block;margin:0 auto 16px;box-shadow:var(--bw-shadow-logo-lg)}
-.magic-link-divider{display:flex;align-items:center;gap:10px;margin:16px 0;color:var(--bw-subtle);font-size:var(--bw-text-sm)}
-.magic-link-divider::before,.magic-link-divider::after{content:"";flex:1;height:1px;background:var(--bw-line)}
-#authMessage{margin-top:12px;min-height:1em}
-.auth-success{color:var(--bw-interested-fg)}.auth-error{color:var(--bw-pass-fg)}
-.welcome-info{margin-top:18px;padding-top:16px;border-top:1px solid var(--bw-line)}
-.welcome-info p{margin:0 0 9px;font-size:var(--bw-text-sm);color:var(--bw-muted)}
-.welcome-info a{color:var(--bw-interested-fg);text-decoration:none}
-.welcome-info a:hover{text-decoration:underline}
-#groupStep .group-panel{text-align:left}
-#partyOnBtn{margin-top:6px;width:100%}
-
-/* ---------- 13. Landing page ---------- */
-#home{position:fixed;inset:0;z-index:15;overflow:auto;display:grid;place-items:center;padding:20px;padding-top:max(20px,env(safe-area-inset-top));background:var(--bw-abyss)}
-.home-card{width:min(440px,100%);background:var(--bw-card);border:1px solid var(--bw-line);border-radius:var(--bw-radius-xl);padding:26px 20px 20px;box-shadow:var(--bw-shadow-dialog);text-align:center}
-.home-avatar{width:72px;height:72px;margin:0 auto 14px}
-.home-card h2{font-size:1.75rem;margin-bottom:6px}
-.home-card>.note{font-size:var(--bw-text-md);margin-bottom:18px}
-.home-rows{display:grid;gap:8px;margin-bottom:18px;text-align:left}
-.home-row{display:flex;align-items:center;gap:12px;width:100%;padding:12px;border:1px solid var(--bw-line);border-radius:var(--bw-radius-lg);background:var(--bw-deep);color:var(--bw-cream);text-align:left}
-.home-row:hover{border-color:var(--bw-line-strong);background:var(--bw-raised)}
-.home-icon{display:grid;place-items:center;width:40px;height:40px;flex:none;border-radius:50%;border:1px solid;font-size:18px}
-.home-icon .ticket-glyph{width:20px;height:20px}
-.home-icon.events{color:var(--bw-coral);background:var(--bw-coral-bg);border-color:var(--bw-coral-line)}
-.home-icon.plans{color:var(--bw-going-fg);background:var(--bw-going-bg);border-color:var(--bw-going-line)}
-.home-icon.people{color:var(--bw-interested-fg);background:var(--bw-interested-bg);border-color:var(--bw-interested-line)}
-.home-text{flex:1;min-width:0;display:grid;gap:2px}
-.home-text strong{font-size:var(--bw-text-md);font-weight:700;line-height:1.3}
-.home-text span{font-size:var(--bw-text-sm);color:var(--bw-muted);line-height:1.35}
-.home-chevron{color:var(--bw-subtle);font-size:22px;line-height:1}
-.home-card .btn{width:100%}
-
-/* New-since-last-visit panel at the top of Discover */
-.new-panel{margin-top:var(--bw-space-4);padding:14px;border:1px solid var(--bw-coral-line);border-radius:var(--bw-radius-lg);background:var(--bw-coral-wash)}
-.new-panel-head{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.new-panel-head h3{display:flex;align-items:center;gap:8px}
-
-/* Add to calendar */
-.cal-link{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:8px 12px;border-radius:var(--bw-radius-sm);border:1px solid var(--bw-line);background:var(--bw-deep);color:var(--bw-cream);font-size:var(--bw-text-sm);font-weight:700;text-decoration:none}
-.cal-link:hover{border-color:var(--bw-line-strong)}
-.cal-glyph{width:16px;height:16px}
-
-/* Account deletion */
-.danger-zone{margin-top:18px;padding-top:14px;border-top:1px solid var(--bw-line)}
-.danger-zone h4{color:var(--bw-pass-fg);margin-bottom:4px}
-.danger-zone .note{margin-bottom:10px}
-.btn-danger{background:var(--bw-pass-bg);border-color:var(--bw-pass-line);color:var(--bw-pass-fg)}
-.btn-danger:hover{border-color:var(--bw-pass-fg)}
-
-</style>
-<style>
-/* Page-only layout for the reference sheet. Components below use app.css unchanged. */
+/* Layout for this reference page only */
 .ds{padding-bottom:60px}
-.ds h2{margin:40px 0 6px}
-.ds>p.note{max-width:60ch}
-.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:12px}
+.ds-section{margin-top:40px}
+.ds-section>h2{margin-bottom:6px}
+.ds-section>p.note{max-width:62ch;margin-bottom:12px}
+.ds-scheme{display:flex;gap:8px;margin-top:10px}
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:8px 0 18px}
 .swatch{border:1px solid var(--bw-line);border-radius:var(--bw-radius-md);overflow:hidden;background:var(--bw-card)}
-.swatch i{display:block;height:56px}
-.swatch div{padding:8px 10px;font-size:var(--bw-text-xs);line-height:1.5}
-.swatch code{color:var(--bw-muted)}
-.type-row{display:flex;align-items:baseline;gap:16px;padding:10px 0;border-bottom:1px solid var(--bw-line)}
-.type-row code{flex:0 0 120px;font-size:var(--bw-text-xs);color:var(--bw-muted)}
-.demo-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px}
-.ds-xl{font-size:var(--bw-text-xl);font-weight:800}.ds-flush{margin:0}
-.nav.demo{position:static;margin-top:12px;border-radius:var(--bw-radius-lg)}
+.swatch i{display:block;height:48px;border-bottom:1px solid var(--bw-line)}
+.swatch div{padding:8px 10px;font-size:var(--bw-text-xs);line-height:1.5;overflow-wrap:anywhere}
+.swatch code,.ds-table code{color:var(--bw-muted)}
+.ds-group{margin:18px 0 0;font-size:var(--bw-text-sm);color:var(--bw-muted)}
+.ds-table{width:100%;border-collapse:collapse;font-size:var(--bw-text-sm);margin-top:8px}
+.ds-table th,.ds-table td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--bw-line);vertical-align:middle}
+.ds-table th{color:var(--bw-muted);font-weight:700}
+.ds-sample{display:inline-block;padding:3px 8px;border-radius:var(--bw-radius-sm)}
+.ds-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:12px}
+.ds-box{width:56px;height:40px;background:var(--bw-raised);border:1px solid var(--bw-line)}
+.nav.ds-fixed-reset{position:static;border-radius:var(--bw-radius-lg);margin-top:12px}
+.ds-menu .more-pop{position:static;width:230px}
+.ds-dialog{max-width:420px}
+.ds-toasts{display:grid;gap:8px;justify-items:start}
+.ds-error{padding:16px;border:1px solid var(--bw-pass-line);border-radius:var(--bw-radius-md);color:var(--bw-pass-fg)}
 </style>
 </head>
 <body>
-<header><div class="wrap"><div class="app-brand"><img src="icons/icon-192.png?v=70" alt=""><div><div class="brand">BRIGHTON WEEKEND</div><div class="sub">Design system reference · rendered with the app's own stylesheet</div></div></div></div></header>
+<header><div class="wrap">
+  <div class="app-brand"><img src="icons/icon-192.png?v=70" alt=""><div><div class="brand">BRIGHTON WEEKEND</div><div class="sub">Design system reference: the app's own stylesheet, live</div></div></div>
+  <div class="ds-scheme" role="radiogroup" aria-label="Colour scheme">
+    <button type="button" class="btn btn-chip" data-ds-theme="dark" aria-checked="true">Seafront after dark</button>
+    <button type="button" class="btn btn-chip" data-ds-theme="light" aria-checked="false">Seafront by day</button>
+  </div>
+</div></header>
+
 <main class="wrap ds">
+<div id="dsError" class="ds-error hidden">Couldn't load the app's stylesheet from index.html. Open this page from the site or a local web server, not as a file.</div>
 
-<h2>Surfaces</h2>
-<p class="note">The sea at night, darkest to lightest. See DESIGN-SYSTEM.md for when to use each.</p>
-<div class="swatches" id="surfaces"></div>
+<section class="ds-section">
+  <h2>Colour</h2>
+  <p class="note">Every token in the app's <code>:root</code> block, read live, so switching the scheme above shows the light values. Coral means “do something”; teal means “you picked this”.</p>
+  <div id="colourTokens"></div>
+</section>
 
-<h2>Text and accents</h2>
-<p class="note">Coral means “do something”. Teal means “you picked this”.</p>
-<div class="swatches" id="accents"></div>
+<section class="ds-section">
+  <h2>Contrast</h2>
+  <p class="note">Text pairs the app relies on, measured in the current scheme. WCAG AA needs 4.5:1 for small text.</p>
+  <table class="ds-table" id="contrast"><thead><tr><th>Pair</th><th>Sample</th><th>Ratio</th></tr></thead><tbody></tbody></table>
+</section>
 
-<h2>Commitment states</h2>
-<p class="note">One colour family per status, used on buttons, pills and labels.</p>
-<div class="swatches" id="states"></div>
+<section class="ds-section">
+  <h2>Type</h2>
+  <p class="note">Plus Jakarta Sans throughout. Sentence case everywhere, buttons and badges included.</p>
+  <table class="ds-table">
+    <tr><td><code>--bw-text-xl</code></td><td><h2>Not music</h2></td></tr>
+    <tr><td><code>--bw-text-lg</code></td><td><span class="title">Milo Edwards: Catamaran</span></td></tr>
+    <tr><td><code>--bw-text-md</code></td><td>Choose the venues you go to and we'll show what's on there.</td></tr>
+    <tr><td><code>--bw-text-sm</code></td><td><span class="meta">Komedia · 20:00–22:00 · £16</span></td></tr>
+    <tr><td><code>--bw-text-xs</code></td><td><span class="social-chip"><i class="social-icon heart">♡</i>3 friends interested</span></td></tr>
+  </table>
+</section>
 
-<h2>Type</h2>
-<p class="note">Plus Jakarta Sans, one family throughout.</p>
-<div class="type-row"><code>--bw-text-xl</code><span class="ds-xl">Not music</span></div>
-<div class="type-row"><code>--bw-text-lg</code><span class="title">Milo Edwards: Catamaran</span></div>
-<div class="type-row"><code>--bw-text-md</code><span>Sign in to keep your plans across devices.</span></div>
-<div class="type-row"><code>--bw-text-sm</code><span class="meta ds-flush">Komedia · 20:00–22:00</span></div>
-<div class="type-row"><code>--bw-text-xs</code><span class="social-chip">3 interested</span></div>
+<section class="ds-section">
+  <h2>Shape, space and depth</h2>
+  <div id="shapeTokens"></div>
+</section>
 
-<h2>Buttons</h2>
-<div class="demo-row"><button class="btn btn-primary">Add event</button><button class="btn btn-secondary">Change my name</button><button class="btn btn-ghost">Sign out</button><button class="btn btn-chip">Invite link</button></div>
+<section class="ds-section">
+  <h2>Buttons</h2>
+  <p class="note">One primary per panel. Chips are the small size for row actions.</p>
+  <div class="ds-row"><button class="btn btn-primary">＋ Add event</button><button class="btn btn-secondary">Change my name</button><button class="btn btn-ghost">Sign out</button><button class="btn btn-chip">Invite link</button><button class="btn btn-danger">Delete my account</button></div>
+  <div class="ds-row"><button class="btn google-btn">Continue with Google</button></div>
+  <div class="ds-row"><a class="support-btn" href="#">☕ Buy me a coffee ↗</a></div>
+</section>
 
-<h2>Event card</h2>
-<p class="note">Built by eventCard() in js/app.js. Discover, Not music and Search all use it.</p>
-<article class="card"><div class="top"><div><div class="title">Milo Edwards: Catamaran</div><div class="meta">Komedia · 20:00–22:00</div></div><span class="badge sold">Sold out</span></div>
-<div class="price">£16</div>
-<div class="people"><span class="social-chip"><i class="social-icon heart">♡</i>3 interested</span><span class="social-chip"><i class="social-icon going"><svg class="ticket-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16a1 1 0 0 1 1 1v3a2 2 0 0 0 0 4v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a2 2 0 0 0 0-4V7a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 7.5v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1.5 2"/></svg></i>1 going</span></div>
-<div class="commitment"><button type="button" class="commit-btn no"><span class="commit-icon">×</span><span>Not for me</span></button><button type="button" class="commit-btn yes selected"><span class="commit-icon">♡</span><span>Interested</span></button><button type="button" class="commit-btn bought"><span class="commit-icon"><svg class="ticket-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16a1 1 0 0 1 1 1v3a2 2 0 0 0 0 4v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a2 2 0 0 0 0-4V7a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 7.5v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1.5 2"/></svg></span><span>Going</span></button></div>
-<div class="actions"><a class="ticket" href="#"><svg class="ticket-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16a1 1 0 0 1 1 1v3a2 2 0 0 0 0 4v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a2 2 0 0 0 0-4V7a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 7.5v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1.5 2"/></svg>Get tickets</a></div></article>
+<section class="ds-section">
+  <h2>Event card</h2>
+  <p class="note">Built by <code>eventCard()</code>: Discover, Not music, Search, the new-events list and You might like all use it.</p>
+  <article class="card">
+    <div class="top"><div><div class="title">Beth Orton</div><div class="meta">Concorde 2 · 19:30–23:00 · £28.50</div></div><div class="card-flags"><span class="badge sold">Sold out</span><button type="button" class="promoter-sticker joy">JOY.</button></div></div>
+    <div class="card-tags"><span class="genre-tag">Folk &amp; Country</span><span class="badge info">Extra show</span></div>
+    <div class="people"><span class="social-chip"><i class="social-icon going" data-icon="ticket"></i>2 friends going</span><span class="social-chip"><i class="social-icon heart">♡</i>1 friend interested</span></div>
+    <div class="commitment"><button type="button" class="commit-btn no"><span class="commit-icon">×</span><span>Not for me</span></button><button type="button" class="commit-btn yes selected" aria-pressed="true"><span class="commit-icon">♡</span><span>Interested</span></button><button type="button" class="commit-btn bought"><span class="commit-icon" data-icon="ticket"></span><span>Going</span></button></div>
+    <div class="actions"><a class="ticket" href="#"><span data-icon="ticket"></span>Get tickets</a><details class="more"><summary class="cal-link" aria-label="More options"><span aria-hidden="true">⋯</span></summary><div class="more-pop"><a class="more-item" href="#"><span data-icon="cal"></span><span>Add to calendar</span></a><button type="button" class="more-item"><span data-icon="share"></span><span>Share</span></button></div></details></div>
+  </article>
+  <article class="card">
+    <div class="rec-reason">Because you liked The Big Indie Fest</div>
+    <div class="card-date">Friday 16 October</div>
+    <div class="top"><div><div class="title">The Hoosiers <span class="added-by">added by Sam</span></div><div class="meta">CHALK · 19:00</div></div></div>
+    <div class="genre-picker" role="group" aria-label="Choose a genre"><div class="pill-wrap"><button type="button" class="genre-chip" aria-pressed="true">Indie &amp; Rock</button><button type="button" class="genre-chip">Pop</button><button type="button" class="genre-chip">Punk &amp; Metal</button></div><div class="genre-picker-actions"><button type="button" class="btn btn-chip">Remove my pick</button><button type="button" class="btn btn-chip">Cancel</button></div></div>
+    <div class="commitment"><button type="button" class="commit-btn no selected"><span class="commit-icon">×</span><span>Not for me</span></button><button type="button" class="commit-btn yes"><span class="commit-icon">♡</span><span>Interested</span></button><button type="button" class="commit-btn bought selected"><span class="commit-icon" data-icon="ticket"></span><span>Going</span></button></div>
+  </article>
+  <h3 class="ds-group">The ⋯ menu, open</h3>
+  <div class="ds-menu"><div class="more-pop"><a class="more-item" href="#"><span data-icon="cal"></span><span>Add to calendar</span></a><button type="button" class="more-item"><span data-icon="share"></span><span>Share</span></button><button type="button" class="more-item"><span class="more-glyph" aria-hidden="true">＋</span><span>Add a genre</span></button><button type="button" class="more-item danger"><span class="more-glyph" aria-hidden="true">×</span><span>Remove this event</span></button></div></div>
+</section>
 
-<h2>Status pills</h2>
-<div class="demo-row"><span class="happening-summary-pill going">🎟 2 friends going</span><span class="happening-summary-pill interested">♡ 3 interested</span><span class="happening-status going">🎟 GOING</span><span class="happening-status interested">♡ INTERESTED</span></div>
+<section class="ds-section">
+  <h2>Discover furniture</h2>
+  <div class="range-chips"><button type="button" class="festival-filter">Tonight</button><button type="button" class="festival-filter active">This weekend</button><button type="button" class="festival-filter">Next 7 days</button></div>
+  <div class="new-summary"><span><strong>12 new events</strong> since your last visit</span><span class="new-summary-actions"><button type="button" class="btn btn-chip">Show</button><button type="button" class="btn btn-chip">✕</button></span></div>
+  <div class="promoter-filter"><span class="promoter-sticker beatdown" aria-hidden="true">BEAT DOWN</span><span class="promoter-filter-label">Beat Down Promotions gigs <span class="count">· 1 this weekend</span></span><button type="button" class="btn btn-chip">Show all</button></div>
+  <h3 class="day">Friday <span>16 October</span></h3>
+  <div class="empty">No events at your selected venues.</div>
+  <div class="venue-nudge"><p>Choose the venues you go to and we'll show what's on there.</p><button type="button" class="btn btn-primary">Choose venues</button></div>
+</section>
 
-<h2>Forms</h2>
-<div class="panel"><div class="segmented"><button class="active">Dates and venues</button><button>Artist</button></div>
-<div class="form-stack"><div class="form-row"><label>From<input type="date"></label><label>To<input type="date"></label></div>
-<label>Venue<select><option>Concorde 2</option></select></label>
-<div class="choice-grid"><label class="choice"><input type="checkbox" checked><span>CHALK</span></label><label class="choice"><input type="checkbox"><span>Komedia</span></label></div></div></div>
+<section class="ds-section">
+  <h2>Happenings</h2>
+  <div class="people-card card">
+    <div class="top"><div><h3>Westlife</h3><div class="meta">Brighton Centre · Tue 13 Oct · 19:30</div></div></div>
+    <div class="happening-you"><span class="happening-person-name">You</span><span class="happening-status interested">♡ Interested</span></div>
+    <div class="happening-summary"><span class="happening-summary-pill going"><span data-icon="ticket"></span> 1 friend going</span><span class="happening-summary-pill interested">♡ 1 interested</span></div>
+    <div class="happening-group"><div class="group-heading">Great Friday</div><div class="happening-people">
+      <div class="happening-person"><i class="social-icon profile"><img class="avatar" src="profile-icons/standardized/puffin.png" alt=""></i><span class="happening-person-name">Sam</span><span class="happening-status going"><span data-icon="ticket"></span> Going</span></div>
+      <div class="happening-person"><i class="social-icon profile"><img class="avatar" src="profile-icons/standardized/raven.png" alt=""></i><span class="happening-person-name">Alex</span><span class="happening-status pass">× Not for me</span></div>
+    </div></div>
+  </div>
+  <div class="custom-event-launch"><div><strong>Add something missing?</strong></div><button class="btn btn-primary" type="button">＋ Add event</button></div>
+  <section class="group-roster group-roster-bottom"><div class="section-head"><h3>People in your groups</h3></div><div class="group-heading">Great Friday <span class="member-count">3</span></div><div class="people"><span class="social-chip"><i class="social-icon profile"><img class="avatar" src="profile-icons/standardized/otter.png" alt=""></i>Jonny</span><span class="social-chip"><i class="social-icon profile"><img class="avatar" src="profile-icons/standardized/puffin.png" alt=""></i>Sam</span></div></section>
+</section>
 
-<h2>Bottom navigation</h2>
-<nav class="nav demo"><button class="active"><span class="nav-icon">♬</span> Discover</button><button><span class="nav-icon">☻</span> Not music</button><button><span class="nav-icon"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7.6V2.6"/><path d="M12 2.7l4.3 1.45L12 5.6z" fill="currentColor" stroke-width="1.1"/><path d="M3.3 20.4 12 7.6l8.7 12.8z"/><path d="M9.4 20.4 12 15.4l2.6 5"/><path d="M1.8 20.4h20.4"/></svg></span> Festivals</button><button><span class="nav-icon">⌕</span> Search</button><button class="has-new"><span class="nav-icon">♡</span> Happenings</button><button><span class="nav-icon">⚙</span> Settings</button></nav>
+<section class="ds-section">
+  <h2>Festival card</h2>
+  <p class="note">Festivals have their own card (no times or venue), but the same commitment buttons and Tickets link.</p>
+  <article class="card festival-card"><div class="festival-date">1–23 May 2027</div><div class="top"><div><div class="title">Brighton Festival</div><div class="festival-location">📍 Brighton &amp; Hove</div></div></div><span class="festival-type">Arts &amp; Culture</span><div class="commitment"><button type="button" class="commit-btn no"><span class="commit-icon">×</span><span>Not for me</span></button><button type="button" class="commit-btn yes"><span class="commit-icon">♡</span><span>Interested</span></button><button type="button" class="commit-btn bought"><span class="commit-icon" data-icon="ticket"></span><span>Going</span></button></div><div class="actions"><a class="ticket" href="#">Website / tickets ↗</a></div></article>
+</section>
+
+<section class="ds-section">
+  <h2>Forms and settings</h2>
+  <div class="panel">
+    <div class="segmented search-segmented"><button type="button" class="active">Dates and venues</button><button type="button">Artist</button><button type="button">Promoter</button><button type="button">Festivals</button></div>
+    <div class="form-stack">
+      <div class="form-row"><label>From<input type="date" value="2026-10-16"></label><label>To<input type="date" value="2026-10-18"></label></div>
+      <label>Venues<input type="search" placeholder="Filter the venue list"></label>
+      <div class="choice-grid"><label class="choice"><input type="checkbox" checked><span>CHALK</span></label><label class="choice"><input type="checkbox"><span>Komedia</span></label></div>
+    </div>
+    <button type="button" class="btn btn-ghost">Clear search</button>
+  </div>
+  <div class="settings-section"><div class="section-head venue-settings-head"><div><h3>Venues</h3></div><div class="venue-actions"><button type="button" class="btn btn-chip">Comedy venues</button><button type="button" class="btn btn-chip">Pubs</button></div></div><label class="venue-row"><span>Concorde 2</span><input type="checkbox" checked></label><div class="day-preferences"><h4>Days</h4><div class="day-grid"><label class="day-choice"><input type="checkbox" checked><span>Friday</span></label><label class="day-choice"><input type="checkbox"><span>Monday</span></label></div></div></div>
+  <div class="settings-card"><h3>Colour scheme</h3><div class="theme-choices"><button type="button" class="theme-choice" data-theme-choice="dark" aria-checked="true"><span class="theme-dots" aria-hidden="true"><i></i><i></i><i></i></span>Seafront after dark</button><button type="button" class="theme-choice" data-theme-choice="light" aria-checked="false"><span class="theme-dots" aria-hidden="true"><i></i><i></i><i></i></span>Seafront by day</button></div></div>
+  <div class="settings-card"><h3>Your icon</h3><div class="profile-current"><img class="avatar" src="profile-icons/standardized/otter.png" alt=""><div><strong>Otter</strong></div></div><div class="profile-icon-grid"><button type="button" class="profile-icon-option selected"><img class="avatar" src="profile-icons/standardized/otter.png" alt=""></button><button type="button" class="profile-icon-option"><img class="avatar" src="profile-icons/standardized/fox.png" alt=""></button><button type="button" class="profile-icon-option"><img class="avatar" src="profile-icons/standardized/kingfisher.png" alt=""></button><button type="button" class="profile-icon-option"><img class="avatar" src="profile-icons/standardized/mushroom.png" alt=""></button></div></div>
+  <div class="settings-card"><h3>Groups</h3><div class="group-manager-row"><div><strong>🔒 Great Friday</strong><div class="group-meta">3/25 members · <span class="nowrap">PIN <span class="pin-display">527</span></span></div></div><div class="row-actions"><button type="button" class="btn btn-chip">Invite link</button><button type="button" class="btn btn-chip">Leave</button></div></div><div class="danger-zone"><h4>Delete my account</h4><p class="note">Permanently deletes your profile.</p><button type="button" class="btn btn-danger">Delete my account</button></div></div>
+</section>
+
+<section class="ds-section">
+  <h2>Messages</h2>
+  <p class="note"><code>toast(message, tone)</code> for confirmations and errors, <code>dialog()</code> / <code>confirmDialog()</code> for questions. Never the browser's own boxes.</p>
+  <div class="ds-toasts"><div class="bw-toast show">That shared event has passed or is no longer listed.</div><div class="bw-toast show success">Invite link copied.</div><div class="bw-toast show error">Could not save that yet.</div></div>
+  <form class="bw-dialog-card ds-dialog" onsubmit="return false"><h3>Leave Great Friday?</h3><p>You can join it again later.</p><div class="bw-dialog-actions"><button type="button" class="btn btn-danger">Leave</button><button type="button" class="btn btn-ghost">Cancel</button></div></form>
+</section>
+
+<section class="ds-section">
+  <h2>Welcome back</h2>
+  <div class="home-card"><img class="avatar home-avatar" src="profile-icons/standardized/otter.png" alt=""><h2>Welcome back, Jonny</h2><p class="note">Here's what's changed since your last visit on Sunday 11 October.</p><div class="home-rows">
+    <button type="button" class="home-row"><span class="home-icon events" aria-hidden="true">♬</span><span class="home-text"><strong>12 new events</strong><span>Added since your last visit</span></span><span class="home-chevron" aria-hidden="true">›</span></button>
+    <button type="button" class="home-row"><span class="home-icon plans" aria-hidden="true" data-icon="ticket"></span><span class="home-text"><strong>2 new plans from your groups</strong><span>Friends who are interested or going</span></span><span class="home-chevron" aria-hidden="true">›</span></button>
+    <button type="button" class="home-row"><span class="home-icon people" aria-hidden="true">☺</span><span class="home-text"><strong>Sam joined Great Friday</strong><span>See who is in your groups</span></span><span class="home-chevron" aria-hidden="true">›</span></button>
+  </div><button type="button" class="btn btn-primary">See this week</button></div>
+</section>
+
+<section class="ds-section">
+  <h2>Bottom navigation</h2>
+  <p class="note">Six tabs, in this order. <code>.has-new</code> adds the coral dot to Happenings.</p>
+  <nav class="nav ds-fixed-reset" aria-label="Example"><button class="has-new"><span class="nav-icon">♡</span> Happenings</button><button class="active"><span class="nav-icon">♬</span> Discover</button><button><span class="nav-icon">☻</span> Not music</button><button><span class="nav-icon"><svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7.6V2.6"/><path d="M12 2.7l4.3 1.45L12 5.6z" fill="currentColor" stroke-width="1.1"/><path d="M3.3 20.4 12 7.6l8.7 12.8z"/><path d="M9.4 20.4 12 15.4l2.6 5"/><path d="M1.8 20.4h20.4"/></svg></span> Festivals</button><button><span class="nav-icon">⌕</span> Search</button><button><span class="nav-icon">⚙</span> Settings</button></nav>
+</section>
 </main>
+
 <script>
-const groups={
- surfaces:['abyss','navy','deep','card','raised','line','line-strong'],
- accents:['cream','muted','subtle','coral','coral-ink','teal'],
- states:['interested-fg','interested-bg','interested-line','going-fg','going-bg','going-line','pass-fg','pass-bg','pass-line']
-};
-const css=getComputedStyle(document.documentElement);
-for(const [id,names] of Object.entries(groups)){
- document.getElementById(id).innerHTML=names.map(n=>{const v=css.getPropertyValue('--bw-'+n).trim();return `<div class="swatch"><i style="background:${v}"></i><div><strong>--bw-${n}</strong><br><code>${v}</code></div></div>`}).join('');
-}
+(async () => {
+  // The drawn icons, as in index.html (TICKET_ICON, CAL_ICON, SHARE_ICON).
+  const ICONS = {
+    ticket: '<svg class="ticket-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16a1 1 0 0 1 1 1v3a2 2 0 0 0 0 4v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a2 2 0 0 0 0-4V7a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 7.5v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1.5 2"/></svg>',
+    cal: '<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 13v4M10 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
+    share: '<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="6" cy="12" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="18" cy="19" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 11l7.8-4.4M8 13l7.8 4.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>'
+  };
+  document.querySelectorAll('[data-icon]').forEach(el => { el.insertAdjacentHTML('afterbegin', ICONS[el.dataset.icon]); });
+
+  let css = '';
+  try {
+    const html = await (await fetch('index.html', { cache: 'no-store' })).text();
+    css = html.match(/<style id="bw-styles">([\s\S]*?)<\/style>/)[1];
+    document.getElementById('bw-styles').textContent = css;
+  } catch (e) {
+    document.getElementById('dsError').classList.remove('hidden');
+    return;
+  }
+
+  // Tokens in the order they're written in :root, grouped by the comment above them.
+  const root = css.match(/:root\{([\s\S]*?)\n\}/)[1];
+  const groups = [];
+  let current = null;
+  for (const line of root.split('\n')) {
+    const heading = line.match(/^\s*\/\*\s*(.*?)\s*\*\/\s*$/);
+    if (heading) { current = { title: heading[1], tokens: [] }; groups.push(current); continue; }
+    const note = (line.match(/\/\*\s*(.*?)\s*\*\//) || [])[1] || '';
+    for (const m of line.matchAll(/(--bw-[\w-]+)\s*:/g)) {
+      if (!current) { current = { title: 'Tokens', tokens: [] }; groups.push(current); }
+      current.tokens.push({ name: m[1], note });
+    }
+  }
+  const isColour = v => /^(#|rgb|hsl)/i.test(v);
+  const value = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+  function drawTokens() {
+    const colour = document.getElementById('colourTokens'), shape = document.getElementById('shapeTokens');
+    colour.innerHTML = ''; shape.innerHTML = '';
+    for (const g of groups) {
+      const colours = g.tokens.filter(t => isColour(value(t.name)));
+      const others = g.tokens.filter(t => !isColour(value(t.name)) && !/font|text-/.test(t.name));
+      if (colours.length) {
+        colour.insertAdjacentHTML('beforeend', `<h3 class="ds-group">${esc(g.title)}</h3><div class="swatches">${colours.map(t => `<div class="swatch"><i data-token="${t.name}"></i><div><strong>${t.name}</strong><br><code>${esc(value(t.name))}</code>${t.note ? `<br>${esc(t.note)}` : ''}</div></div>`).join('')}</div>`);
+      }
+      if (others.length) {
+        shape.insertAdjacentHTML('beforeend', `<h3 class="ds-group">${esc(g.title)}</h3><table class="ds-table">${others.map(t => `<tr><td><code>${t.name}</code></td><td><code>${esc(value(t.name))}</code></td><td>${/radius/.test(t.name) ? `<span class="ds-box" data-radius="${t.name}"></span>` : /shadow|focus/.test(t.name) ? `<span class="ds-box" data-shadow="${t.name}"></span>` : ''}</td></tr>`).join('')}</table>`);
+      }
+    }
+    document.querySelectorAll('[data-token]').forEach(el => { el.style.background = `var(${el.dataset.token})`; });
+    document.querySelectorAll('[data-radius]').forEach(el => { el.style.borderRadius = `var(${el.dataset.radius})`; el.style.display = 'inline-block'; });
+    document.querySelectorAll('[data-shadow]').forEach(el => { el.style.boxShadow = `var(${el.dataset.shadow})`; el.style.display = 'inline-block'; el.style.borderRadius = 'var(--bw-radius-md)'; });
+    drawContrast();
+  }
+
+  // WCAG contrast between two token colours.
+  function rgb(c) {
+    const probe = document.createElement('i'); probe.style.color = c; document.body.appendChild(probe);
+    const m = getComputedStyle(probe).color.match(/[\d.]+/g).map(Number); probe.remove(); return m;
+  }
+  function lum([r, g, b]) { return [r, g, b].map(v => { v /= 255; return v <= .03928 ? v / 12.92 : ((v + .055) / 1.055) ** 2.4; }).reduce((a, v, i) => a + v * [.2126, .7152, .0722][i], 0); }
+  function ratio(fg, bg) { const a = lum(rgb(fg)), b = lum(rgb(bg)); return (Math.max(a, b) + .05) / (Math.min(a, b) + .05); }
+  const PAIRS = [
+    ['--bw-cream', '--bw-card'], ['--bw-cream', '--bw-abyss'], ['--bw-muted', '--bw-card'], ['--bw-subtle', '--bw-navy'], ['--bw-subtle', '--bw-card'],
+    ['--bw-coral-ink', '--bw-coral'], ['--bw-coral', '--bw-navy'], ['--bw-teal', '--bw-card'], ['--bw-mist', '--bw-tag-bg'], ['--bw-commit-fg', '--bw-deep'],
+    ['--bw-interested-fg', '--bw-interested-bg'], ['--bw-going-fg', '--bw-going-bg'], ['--bw-pass-fg', '--bw-pass-bg'], ['--bw-pass-fg', '--bw-sold-bg'],
+    ['--bw-sticker-ink', '--bw-sticker-joy'], ['--bw-sticker-ink', '--bw-sticker-beatdown']
+  ];
+  function drawContrast() {
+    document.querySelector('#contrast tbody').innerHTML = PAIRS.map(([f, b]) => {
+      const r = ratio(value(f), value(b));
+      return `<tr><td><code>${f}</code> on <code>${b}</code></td><td><span class="ds-sample" data-fg="${f}" data-bg="${b}">Get tickets</span></td><td>${r.toFixed(1)}:1${r < 4.5 ? ' ⚠' : ''}</td></tr>`;
+    }).join('');
+    document.querySelectorAll('[data-fg]').forEach(el => { el.style.color = `var(${el.dataset.fg})`; el.style.background = `var(${el.dataset.bg})`; });
+  }
+
+  function setScheme(t) {
+    if (t === 'light') document.documentElement.dataset.theme = 'light'; else delete document.documentElement.dataset.theme;
+    document.querySelectorAll('[data-ds-theme]').forEach(b => b.setAttribute('aria-checked', String(b.dataset.dsTheme === t)));
+    drawTokens();
+  }
+  document.querySelectorAll('[data-ds-theme]').forEach(b => b.onclick = () => setScheme(b.dataset.dsTheme));
+  drawTokens();
+})();
 </script>
 </body>
 </html>

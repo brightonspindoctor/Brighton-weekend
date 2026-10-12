@@ -1,6 +1,7 @@
 name: Add avatar
-# One run does everything: registers the selected artwork, makes the standard
-# 192px circle the app shows, validates, and commits it all to main.
+# One run does everything: registers the selected artwork (PROFILE_ICONS and
+# PROFILE_LABELS in index.html), makes the standard 192px circle the app shows,
+# validates, and commits it all to main.
 # (A push made by a workflow does not start other workflows, so the
 # standardise step runs here rather than relying on standardize-avatars.yml.)
 #

@@ -88,23 +88,14 @@ source = source.replace(/const PROFILE_LABELS\s*=\s*\{([^}]*)\}/s, (full, body) 
   return `const PROFILE_LABELS={${next}}`;
 });
 
-const filesMatch = source.match(/const PROFILE_ICON_FILES\s*=\s*\{([^}]*)\}/s);
-if (filesMatch) {
-  source = source.replace(/const PROFILE_ICON_FILES\s*=\s*\{([^}]*)\}/s, (full, body) => {
-    const trimmed = body.trim();
-    const next = trimmed ? `${trimmed},'${id}':'${sourceFile}'` : `'${id}':'${sourceFile}'`;
-    return `const PROFILE_ICON_FILES={${next}}`;
-  });
-}
-
 fs.writeFileSync(path, source);
 
 const manifestPath = 'profile-icons/avatar-manifest.json';
 let manifest = {};
 if (fs.existsSync(manifestPath)) manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
-// file/sha256 describe the file the app shows; the standardise step replaces
-// them with the cropped circle and keeps source/source_sha256 as the record of
-// the selected artwork.
+// file/sha256 describe the file the app shows. Until the standardise step
+// makes standardized/<id>.png they point at the artwork itself; after it, at
+// the circle. source/source_sha256 stay as the record of the selected artwork.
 manifest[id] = { label, source: sourceFile, source_sha256: sha256, file: sourceFile, sha256 };
 fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
 

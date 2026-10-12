@@ -26,4 +26,15 @@ h2{font-size:19px;margin:30px 0 10px}
 .lede{color:var(--muted);margin:-6px 0 18px}
 footer{max-width:760px;margin:0 auto 40px;padding:0 16px;color:var(--subtle);font-size:14px}
 footer a{color:var(--subtle);margin-right:14px}
+.actions.first{margin:0 0 6px}
+.more-link{margin-top:26px}
+button.btn{border:0;font-family:inherit;font-size:inherit;cursor:pointer}
+.note{color:var(--muted);font-size:14px;margin:8px 0 0}
+/* About, Privacy and Terms */
+.meta{color:var(--muted);font-size:14px;margin:0 0 18px}
+.notice{background:var(--raised);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:15px;margin:12px 0}
+th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{background:var(--raised)}
 @media(max-width:600px){h1{font-size:25px}.card{padding:18px}}
