@@ -1602,7 +1602,7 @@
     },
     {
       "id": "2026-10-16-quarters-4am-kru-jolie-p-more-tba",
-      "title": "4Am Kru",
+      "title": "4am Kru",
       "date": "2026-10-16",
       "venue": "Quarters",
       "source": "venue",
@@ -1799,6 +1799,21 @@
       "ticket_url": "https://www.atgtickets.com/shows/flo-and-joan/theatre-royal-brighton/",
       "last_seen": "2026-10-13",
       "status": "SOLD OUT"
+    },
+    {
+      "id": "2026-10-17-patterns-sexy-lady-massive-presents-the-massive-tour-2",
+      "title": "Sexy Lady Massive Presents: The Massive Tour",
+      "date": "2026-10-17",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "11:00",
+      "finish_time": "04:00",
+      "category": "Music",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Sexy-Lady-Massive-Presents-The-Massive-Tour/42643780/",
+      "last_seen": "2026-10-13",
+      "also_ids": [
+        "2026-10-17-patterns-sexy-lady-massive-presents-the-massive-tour"
+      ]
     },
     {
       "id": "2026-10-17-the-hope-ruin-brighton-cat-tour-art-day",
@@ -2061,21 +2076,6 @@
       "category": "Other",
       "ticket_url": "https://thegreendoorstore.co.uk/events/it-is-still-1985-3/",
       "last_seen": "2026-10-13"
-    },
-    {
-      "id": "2026-10-17-patterns-sexy-lady-massive-presents-the-massive-tour-2",
-      "title": "Sexy Lady Massive Presents: The Massive Tour",
-      "date": "2026-10-17",
-      "venue": "Patterns",
-      "source": "venue",
-      "time": "23:00",
-      "finish_time": "04:00",
-      "category": "Music",
-      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Sexy-Lady-Massive-Presents-The-Massive-Tour/42643780/",
-      "last_seen": "2026-10-13",
-      "also_ids": [
-        "2026-10-17-patterns-sexy-lady-massive-presents-the-massive-tour"
-      ]
     },
     {
       "id": "2026-10-17-quarters-club-events-notion",
@@ -5469,7 +5469,7 @@
     },
     {
       "id": "2026-10-30-komedia-black-parade-00s-emo-anthems-halloween-party-fri-30-oct-2026-doors-11-00-pm",
-      "title": "Black Parade – 00S Emo Anthems Halloween Party",
+      "title": "Black Parade – 00s Emo Anthems Halloween Party",
       "date": "2026-10-30",
       "venue": "Komedia",
       "source": "venue",
@@ -7023,7 +7023,7 @@
     },
     {
       "id": "2026-11-07-quarters-club-events-andy-c",
-      "title": "Andy C Zc45V",
+      "title": "Andy C Zc45v",
       "date": "2026-11-07",
       "venue": "Quarters",
       "source": "venue",
@@ -16437,10 +16437,10 @@
       "category": "Music",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873667763/events/128665492",
       "last_seen": "2026-10-13",
-      "promoter": "JOY. Concerts",
       "also_ids": [
         "2027-02-24-komedia-hudson-freeman-support-2"
-      ]
+      ],
+      "promoter": "JOY. Concerts"
     },
     {
       "id": "2027-02-24-theatre-royal-brighton-vanessa-williams-live-in-concert",
