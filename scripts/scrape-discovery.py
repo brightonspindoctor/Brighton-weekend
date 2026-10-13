@@ -13,7 +13,7 @@ from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
-from event_matching import same_session, same_show as same_show_at_venue
+from event_matching import evening_time, same_session, same_show as same_show_at_venue
 from listing_rules import GENERIC_TITLES
 
 ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'events.json'; TZ=ZoneInfo('Europe/London'); NOW=datetime.now(TZ); START=NOW.date(); END=(NOW+timedelta(days=280)).date()
@@ -307,7 +307,7 @@ async def main():
   if old.get('source')=='discovery':
    # Found again: keep the id and take today's link and details, but not the
    # gaps in them (a calendar without the start time doesn't remove it).
-   new=dict(e,id=old['id'],last_seen=today)
+   new=dict(e,id=old['id'],last_seen=today,time=evening_time(old.get('time'),e.get('time')))
    for field in ('time','finish_time','ticket_url','promoter','also_ids'):
     if not new.get(field) and old.get(field):new[field]=old[field]
    if new.get('category') in (None,'','Other') and old.get('category'):new['category']=old['category']

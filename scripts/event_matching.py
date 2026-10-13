@@ -186,6 +186,16 @@ def same_session(a, b, same_time=False):
     return bool(ta and ta == tb) or session_marker(a.get("title")) == session_marker(b.get("title"))
 
 
+def evening_time(old, new):
+    """The start time to keep when a listing found again gives a new one. 11:00
+    against 23:00 means one source dropped the "pm" (Skiddle lists Patterns'
+    club nights at 11:00), so the evening time is kept."""
+    ok = all(re.fullmatch(r"\d\d:\d\d", t or "") for t in (old, new))
+    if ok and abs((int(old[:2]) * 60 + int(old[3:])) - (int(new[:2]) * 60 + int(new[3:]))) == 720:
+        return max(old, new)
+    return new or old or ""
+
+
 def same_show(a, b, venue=""):
     """True when two titles at the same venue on the same day are one show."""
     ka, kb = core_title(a, venue), core_title(b, venue)
@@ -309,6 +319,8 @@ def _self_test():
     assert same_session(dict(matinee, time="14:00"), dict(plain, time="14:00"))
     assert not same_session(dict(plain, time="19:30"), plain, same_time=True)
     assert same_session(dict(plain, time="19:30"), plain)
+    assert evening_time("23:00", "11:00") == "23:00" and evening_time("11:00", "23:00") == "23:00"
+    assert evening_time("19:30", "20:00") == "20:00" and evening_time("19:30", "") == "19:30" and evening_time("", "") == ""
     return True
 
 
