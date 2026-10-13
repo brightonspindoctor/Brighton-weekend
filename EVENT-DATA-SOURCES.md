@@ -1,7 +1,10 @@
 # Event data sources
 
-Listings are refreshed every day at 07:17 (Europe/London) by
-`.github/workflows/weekly-events.yml`, and whenever a scraper file changes.
+Listings are refreshed once a day by `.github/workflows/weekly-events.yml`,
+normally soon after 01:17 (Europe/London), and whenever a scraper file changes.
+GitHub sometimes starts scheduled runs hours late or skips them, so the
+workflow also starts at 05:17, 09:17 and 13:17; those runs stop straight away
+if the day's refresh has already happened.
 
 ## Where events come from
 
@@ -18,6 +21,7 @@ Listings are refreshed every day at 07:17 (Europe/London) by
    |---|---|
    | `"jsonld_only": true` | Read only the page's structured event data (schema.org), never its layout. Used for ticketing-site pages (Skiddle, Songkick) that also show other venues' events. |
    | `"match_location": "pipeline"` | Keep only events whose stated location contains this text. Use with `jsonld_only`. |
+   | `"ticketsolve": "<feed>"` | The venue's Ticketsolve feed (`<venue>.ticketsolve.com/shows.xml`). Each listing is matched to its show (by the ticket link, or by name and date) and filed under the venue's own category (comedy, music, club, kids' show, spoken word); a start time the listing leaves out is filled in. Used for Komedia. |
    | `"disabled": true` | Don't fetch this page. The venue stays known to the discovery scraper. |
    | `"note"` | Why the entry is set up this way. |
 
@@ -32,7 +36,23 @@ Listings are refreshed every day at 07:17 (Europe/London) by
 
 - An event found again keeps its id, even if its time or the wording of its
   title changed, so people's Interested/Going choices stay attached. It takes
-  the newest details and ticket link.
+  the newest details and ticket link (a calendar that leaves out the time or
+  link doesn't remove them). Today's listings are matched to stored events in
+  three passes: same title and time, then a similar title at the same time,
+  then a similar title at any time. So when a venue lists a show twice (Brighton
+  Dome's comedy festival pages list each show once with a time and once
+  without), the copy that matches best keeps the event's id.
+- An id never changes once published. When two listings are merged, the kept
+  one takes the id the app already knows (from the last published
+  `events.json`, read from git). A changed id would show the event as new
+  since someone's last visit and break its shared link's preview.
+- A matinee, early or late show is never merged with the plain listing of the
+  same show ("Phoebe Bridgers (Matinee)" and "Phoebe Bridgers", "Jake Bugg
+  (Later Set)" and "Jake Bugg") unless both give the same start time
+  (`session_marker` in `scripts/event_matching.py`).
+- A calendar's listing of a venue's show fills the gaps in the venue's own
+  listing (its start time, finish time, ticket link, and a category when the
+  venue gave none, such as Music from JOY) but never replaces its details.
 - The same show from two sources is published once. `scripts/event_matching.py`
   compares titles at the same venue on the same day after removing decoration
   ticketing sites add ("Kepler **at Concorde 2 - Brighton**", "**| Brighton**",
@@ -48,13 +68,29 @@ Listings are refreshed every day at 07:17 (Europe/London) by
   merged into Komedia's, so the show appears once, at Komedia, filed as Comedy.
   Another venue that lists a partner's shows can be added to `ALSO_LISTED_BY`
   in `prepare-events.py`.
+- Two listings at a venue on the same day that share a ticket link used for
+  nothing else (the show's own page) are one show, whatever their titles say.
+  Two listings of one show 12 hours apart (11:00 and 23:00) are one show too:
+  a source dropped the "pm", and the evening time is kept.
 - Headings, buttons and labels read as events ("Select a date", "Book now",
-  "Podcasts") are dropped. The list is in `scripts/listing_rules.py`, which the
+  "Podcasts", "Workshops") are dropped. The list is in `scripts/listing_rules.py`, which the
   scrapers, the prepare step and the validator all use.
+- Dates on the end of titles are removed: "Story Magic Fri 25 Sep 2026",
+  "Mutations Unkle Sounds 2026 10 24", and Skiddle's "Ghostface Killah
+  (Wu-Tang Clan) / Sat 5th Dec / Chalk / Brighton".
 - An event is removed only after its venue has not listed it for **3 days in a
   row** while the venue's own page was loading properly (`last_seen`).
 - If a venue's page fails, or returns less than half its usual number of
   events, none of its events are removed that day.
+- Some events come from an earlier import and have no `source`. A discovery
+  calendar that lists them keeps them up to date; otherwise they stay until
+  their date. Several venues' own pages show only part of their programme
+  (Theatre Royal's first page of shows, Brighton Centre's highlights, CHALK's
+  homepage), so a show missing from them may still be on: those venues count
+  as not healthy, and nothing of theirs is removed for being missing.
+- A time on a listing card is read from "7:30pm" or "19:30" (two-digit hours),
+  never from a doors, running or last-entry time, and a time in the act's name
+  ("4am Kru") only when the card gives no other.
 - Ticket links: a ticketing site or "Tickets"/"Book" button in the event's card
   first, then the event's own page; never a listings page, homepage or social
   media.

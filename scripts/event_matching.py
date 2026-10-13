@@ -155,6 +155,37 @@ def _same_lineup(ka, kb, venue):
     return len(extra) <= max(4, 2 * len(small))
 
 
+# A title naming one session of a show: "Phoebe Bridgers (Matinee)", "Jake
+# Bugg: Solo Acoustic Performance (Later Set)", "Devilman - Early show". It and
+# the plain "Phoebe Bridgers" are two listings unless both give the same start
+# time, so the scrapers and prepare-events.py compare these before merging.
+# "An Evening with ..." names no session. "**EXTRA MATINEE SHOW**" doesn't count
+# either: prepare-events.py turns it into an "Extra show" badge and drops it
+# from the published title.
+SESSION_MARKER = re.compile(
+    r"\b(matinee)\b"
+    r"|\b(early|earlier|late|later|evening|afternoon|morning|lunchtime)\s+(?:show|set|performance|session|sitting)s?\b"
+    r"|[(\[\-:]\s*(early|earlier|late|later|evening|afternoon|morning|lunchtime)\s*[)\]]?\s*$")
+
+
+def session_marker(title):
+    t = _plain(re.sub(r"[–—]", "-", str(title or "")))
+    t = re.sub(r"\bextra\s+(?:matinee|evening|late)\s+(?:show|date|night|performance)\b", " ", t)
+    m = SESSION_MARKER.search(t)
+    word = next((g for g in m.groups() if g), "") if m else ""
+    return {"earlier": "early", "later": "late"}.get(word, word)
+
+
+def same_session(a, b, same_time=False):
+    """Could listings a and b (dicts with "title" and "time") be the same session
+    of a show? Not a matinee and a plain listing, unless both give one start
+    time. With same_time, only listings that start at the same time."""
+    ta, tb = a.get("time") or "", b.get("time") or ""
+    if same_time and ta != tb:
+        return False
+    return bool(ta and ta == tb) or session_marker(a.get("title")) == session_marker(b.get("title"))
+
+
 def same_show(a, b, venue=""):
     """True when two titles at the same venue on the same day are one show."""
     ka, kb = core_title(a, venue), core_title(b, venue)
@@ -264,6 +295,20 @@ def _self_test():
     assert display_title("Lafs + Supports @ the Pipleline, Brighton", "The Pipeline") == "Lafs + Supports"
     assert display_title("Brighton | Dansu Discs: Lucas Alexander, RTK Tarantino & more", "Patterns") == "Dansu Discs: Lucas Alexander, RTK Tarantino & more"
     assert display_title("Tickets MoonPunx #19 ALBERTWEEN!", "The Prince Albert") == "MoonPunx #19 ALBERTWEEN!"
+    sessions = {
+        "Phoebe Bridgers (Matinee)": "matinee", "The Zac Schulze Gang *Matinee*": "matinee",
+        "Jake Bugg: Solo Acoustic Performance (Later Set)": "late", "Devilman - Early show": "early",
+        "Penelope Isles - Evening Show": "evening", "Penelope Isles – Evening": "evening",
+        "Phoebe Bridgers": "", "An Evening with Ed Byrne": "", "Late Night Laughs": "",
+        "Harriet Kemsley: Floozy **EXTRA MATINEE SHOW**": "", "Peter Antoniou: Pretty Psychic **EXTRA SHOW**": "",
+    }
+    for title, marker in sessions.items():
+        assert session_marker(title) == marker, f"{title!r}: {session_marker(title)!r}"
+    matinee, plain = {"title": "Phoebe Bridgers (Matinee)", "time": ""}, {"title": "Phoebe Bridgers", "time": ""}
+    assert not same_session(matinee, plain)
+    assert same_session(dict(matinee, time="14:00"), dict(plain, time="14:00"))
+    assert not same_session(dict(plain, time="19:30"), plain, same_time=True)
+    assert same_session(dict(plain, time="19:30"), plain)
     return True
 
 

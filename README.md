@@ -65,19 +65,25 @@ phone's home screen.
 
 ## Event data
 
-`.github/workflows/weekly-events.yml` runs **every day at 07:17 (Europe/London)**,
-on manual dispatch, and whenever a scraper file changes on `main`. It runs:
+`.github/workflows/weekly-events.yml` refreshes the listings **once a day**,
+normally soon after 01:17 (Europe/London), with backup start times at 05:17,
+09:17 and 13:17 because GitHub sometimes starts scheduled runs hours late (a
+backup run stops straight away if the day's refresh is done). It also runs on
+manual dispatch and whenever a scraper file changes on `main`. It runs:
 
 1. `scripts/scrape-events.py`: the venue websites in `event-sources.json`
-   (structured Event data first, visible event cards as a fallback).
+   (structured Event data first, visible event cards as a fallback). Komedia's
+   listings are filed by Komedia's own booking feed (Ticketsolve), which says
+   whether each show is comedy, music, a club night or a kids' show.
 2. `scripts/scrape-discovery.py`: Visit Brighton, Eventbrite, Ticketmaster,
    Skiddle, Rival Cults and the promoters, filtered back to known venues.
 3. `scripts/prepare-events.py`: cleans titles, normalises times to HH:MM,
    drops doors times posing as finish times, removes headings and buttons read
    as events (`scripts/listing_rules.py`, shared with the scrapers and the
    validator), applies `excluded-events.json`, leaves out Patterns' recurring
-   nights and merges duplicates: the same show from two sources, and Brighton
-   Dome's comedy festival listings of shows that are on at Komedia. Talks the
+   nights and merges duplicates: the same show from two sources, two listings
+   sharing one show's ticket link, and Brighton Dome's comedy festival listings
+   of shows that are on at Komedia. Talks the
    listing filed as something else are filed as Talk when the title says so
    ("In Conversation", "Q&A", "Interview", "Podcast", "Book Tour"), so they
    show on the Not music tab.
@@ -101,15 +107,20 @@ on manual dispatch, and whenever a scraper file changes on `main`. It runs:
    the sitemap.
 
 An event's identity is **venue + date + title + start time**, so separate
-sessions of the same show on one day are kept. Event `id`s are never
-regenerated for existing listings, because saved Interested/Going choices
-reference them; a merged duplicate's id is kept in `also_ids`.
+sessions of the same show on one day are kept (a "Matinee" or "Later Set"
+listing is never merged into the plain one unless both give the same time).
+Event `id`s never change once published, because saved Interested/Going
+choices, the "new since your last visit" summary and shared links use them:
+a merged duplicate's id is kept in `also_ids`, and the kept listing takes the
+id from the last published `events.json` (`prepare-events.py` reads it from
+git).
 
 Source notes: `EVENT-DATA-SOURCES.md`.
 
 ### Festival data
 
-`.github/workflows/festivals.yml` refreshes `festivals.json` daily. The scraper
+`.github/workflows/festivals.yml` refreshes `festivals.json` daily (soon after
+02:37, with a backup at 10:37). The scraper
 uses Fezzy as the primary discovery source and eFestivals as a music-festival
 cross-check, deduplicating by festival name, date and location; sport and
 outdoor events are left out by their title. Hand-confirmed Brighton festivals

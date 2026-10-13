@@ -49,7 +49,9 @@
   },
   {
     "venue": "Komedia",
-    "url": "https://www.komedia.co.uk/whats-on/"
+    "url": "https://www.komedia.co.uk/whats-on/",
+    "ticketsolve": "https://komediabrighton.ticketsolve.com/shows.xml",
+    "note": "Komedia's booking feed files each show (comedy, music, club, kids) and gives start times its listings leave out"
   },
   {
     "venue": "The Forge Comedy Club",

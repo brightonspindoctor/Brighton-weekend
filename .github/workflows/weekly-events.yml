@@ -18,8 +18,17 @@ on:
       - 'scripts/build-event-pages.py'
       - 'requirements-events.txt'
       - '.github/workflows/weekly-events.yml'
+  # GitHub can start scheduled runs hours late, or drop them when it's busy, so
+  # there are several start times. The first to run refreshes the listings; the
+  # others see that today's refresh is done and stop straight away.
   schedule:
-    - cron: '17 7 * * *'
+    - cron: '17 1 * * *'
+      timezone: 'Europe/London'
+    - cron: '17 5 * * *'
+      timezone: 'Europe/London'
+    - cron: '17 9 * * *'
+      timezone: 'Europe/London'
+    - cron: '17 13 * * *'
       timezone: 'Europe/London'
 
 permissions:
@@ -30,7 +39,33 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  due:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.due.outputs.run }}
+    steps:
+      - name: Check out events.json
+        uses: actions/checkout@v5
+        with:
+          sparse-checkout: events.json
+          sparse-checkout-cone-mode: false
+      - name: Has today's refresh already run?
+        id: due
+        env:
+          EVENT: ${{ github.event_name }}
+        run: |
+          today=$(TZ=Europe/London date +%F)
+          updated=$(python3 -c "import json; print(json.load(open('events.json')).get('updated', ''))")
+          if [ "$EVENT" = "schedule" ] && [ "$updated" = "$today" ]; then
+            echo "Listings already refreshed today ($today)."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
   refresh-events:
+    needs: due
+    if: needs.due.outputs.run == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Check out Brighton Weekend
@@ -72,24 +107,32 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           # events.json is regenerated in full on every run, so the fresh file
           # replaces whatever is on main rather than being merged line by line.
-          # (Merging failed whenever events.json changed on main during a run.)
+          # If something else reaches main while this runs (the festival refresh,
+          # an avatar), the push is refused: start again from the new main.
           cp events.json "$RUNNER_TEMP/events.json"
           cp genre-cache.json "$RUNNER_TEMP/genre-cache.json"
           if [ -f ticket-cache.json ]; then cp ticket-cache.json "$RUNNER_TEMP/ticket-cache.json"; fi
-          git fetch origin main
-          git reset --hard origin/main
-          cp "$RUNNER_TEMP/events.json" events.json
-          cp "$RUNNER_TEMP/genre-cache.json" genre-cache.json
-          if [ -f "$RUNNER_TEMP/ticket-cache.json" ]; then cp "$RUNNER_TEMP/ticket-cache.json" ticket-cache.json; fi
-          # Shareable event pages, the this-weekend page and the sitemap are
-          # built from the fresh events.json (see scripts/build-event-pages.py).
-          python scripts/build-event-pages.py
-          git add events.json genre-cache.json sitemap.xml this-weekend pages.css
-          git add -A e
-          if [ -f ticket-cache.json ]; then git add ticket-cache.json; fi
-          if git diff --cached --quiet; then
-            echo 'No event data changes this run.'
-            exit 0
-          fi
-          git commit -m 'Refresh event data and event pages'
-          git push origin HEAD:main
+          for attempt in 1 2 3; do
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            cp "$RUNNER_TEMP/events.json" events.json
+            cp "$RUNNER_TEMP/genre-cache.json" genre-cache.json
+            if [ -f "$RUNNER_TEMP/ticket-cache.json" ]; then cp "$RUNNER_TEMP/ticket-cache.json" ticket-cache.json; fi
+            # Shareable event pages, the this-weekend page and the sitemap are
+            # built from the fresh events.json (see scripts/build-event-pages.py).
+            python scripts/build-event-pages.py
+            git add events.json genre-cache.json sitemap.xml this-weekend pages.css
+            git add -A e
+            if [ -f ticket-cache.json ]; then git add ticket-cache.json; fi
+            if git diff --cached --quiet; then
+              echo 'No event data changes this run.'
+              exit 0
+            fi
+            git commit -q -m 'Refresh event data and event pages'
+            if git push -q origin HEAD:main; then
+              exit 0
+            fi
+            echo "main moved on while this ran; trying again ($attempt)."
+            sleep $((attempt * 20))
+          done
+          exit 1

@@ -13,7 +13,7 @@ from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
-from event_matching import same_show as same_show_at_venue
+from event_matching import same_session, same_show as same_show_at_venue
 from listing_rules import GENERIC_TITLES
 
 ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'events.json'; TZ=ZoneInfo('Europe/London'); NOW=datetime.now(TZ); START=NOW.date(); END=(NOW+timedelta(days=280)).date()
@@ -86,7 +86,7 @@ def prefer_fuller_titles(events):
   group=sorted(group,key=lambda e:len(title_key(e.get('title',''))),reverse=True);chosen=[]
   for e in group:
    if not valid_title(e.get('title','')):continue
-   if not any(fuller_title(x.get('title',''),e.get('title','')) for x in chosen):chosen.append(e)
+   if not any(fuller_title(x.get('title',''),e.get('title','')) and same_session(x,e) for x in chosen):chosen.append(e)
   kept.extend(chosen)
  return kept
 STALE_DAYS=3  # same rule as scrape-events.py
@@ -296,18 +296,48 @@ async def main():
   if not valid_title(e.get('title','')):continue
   e.setdefault('last_seen',today)
   key=key_of(e)
-  if key not in merged:merged[key]=e
- for e in all_events:
-  key=key_of(e);old=merged.get(key)
-  if old is None:
-   old=next((x for x in merged.values() if (x.get('venue','').lower(),x.get('date',''))==(e.get('venue','').lower(),e.get('date','')) and id(x) not in matched and same_show(x.get('title',''),e.get('title',''),e.get('venue',''))),None)
-  if old is None:merged[key]=dict(e,last_seen=today);matched.add(id(merged[key]));brand_new.add(id(merged[key]));continue
-  matched.add(id(old));old['last_seen']=today
-  if e.get('promoter'):old['promoter']=e['promoter']  # a venue's listing of a Joy gig gets the Joy sticker
-  if not old.get('time') and e.get('time'):old['time']=e['time']  # e.g. Beat Down gives the start the venue page lacks
+  merged[key if key not in merged else key+(e.get('id'),)]=e  # two records worded alike both stay
+ # A record found again is updated where it is. (Replacing it with a copy left
+ # the old record behind with the same id, so one of them took a suffix, and
+ # the show's id grew by "-2" on every run.) The key of each listing matched
+ # is remembered, so another calendar's copy of it finds the same record.
+ known={}
+ def refresh(old,e):
+  matched.add(id(old));old['last_seen']=today;known.setdefault(key_of(e),old)
   if old.get('source')=='discovery':
-   # Found again: keep the id, take today's link and details.
-   k=key_of(old);merged[k]=dict(e,id=old['id'],last_seen=today,**({'also_ids':old['also_ids']} if old.get('also_ids') else {}),**({'promoter':e.get('promoter') or old['promoter']} if (e.get('promoter') or old.get('promoter')) else {}));matched.add(id(merged[k]))
+   # Found again: keep the id and take today's link and details, but not the
+   # gaps in them (a calendar without the start time doesn't remove it).
+   new=dict(e,id=old['id'],last_seen=today)
+   for field in ('time','finish_time','ticket_url','promoter','also_ids'):
+    if not new.get(field) and old.get(field):new[field]=old[field]
+   if new.get('category') in (None,'','Other') and old.get('category'):new['category']=old['category']
+   old.clear();old.update(new);return
+  # A venue's own listing keeps its details; the calendar fills its gaps (e.g.
+  # Beat Down gives the start the venue page lacks, JOY says it's a gig) and a
+  # Joy gig gets the Joy sticker.
+  if e.get('promoter'):old['promoter']=e['promoter']
+  for field in ('time','finish_time','ticket_url'):
+   if not old.get(field) and e.get(field):old[field]=e[field]
+  if old.get('category') in (None,'','Other') and e.get('category') not in (None,'','Other'):old['category']=e['category']
+ # Three passes, as in scrape-events.py: the same title and time, then a similar
+ # title at the same time, then a similar title at any time. A matinee or later
+ # set is never taken for the plain listing (same_session): "Phoebe Bridgers"
+ # and "Phoebe Bridgers (Matinee)" are both listed.
+ pending=all_events
+ for same_time in (None,True,False):
+  rest=[]
+  for e in pending:
+   if same_time is None:old=merged.get(key_of(e)) or known.get(key_of(e))
+   else:old=next((x for x in merged.values() if (x.get('venue','').lower(),x.get('date',''))==(e.get('venue','').lower(),e.get('date',''))
+                  and id(x) not in matched and same_session(x,e,same_time)
+                  and same_show(x.get('title',''),e.get('title',''),e.get('venue',''))),None)
+   if old is None:rest.append(e)
+   else:refresh(old,e)
+  pending=rest
+ for e in pending:  # new listings; a second calendar's copy of one updates it
+  key=key_of(e)
+  if key in known:refresh(known[key],e);continue
+  merged[key]=dict(e,last_seen=today);matched.add(id(merged[key]));brand_new.add(id(merged[key]));known[key]=merged[key]
  for k,e in list(merged.items()):
   if healthy and e.get('source')=='discovery' and id(e) not in matched and str(e.get('last_seen',today))<=stale_before:
    del merged[k];removed_stale+=1
