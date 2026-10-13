@@ -71,7 +71,9 @@ if the day's refresh has already happened.
 - Two listings at a venue on the same day that share a ticket link used for
   nothing else (the show's own page) are one show, whatever their titles say.
   Two listings of one show 12 hours apart (11:00 and 23:00) are one show too:
-  a source dropped the "pm", and the evening time is kept.
+  a source dropped the "pm", and the evening time is kept. The same goes for an
+  event found again 12 hours off (Skiddle's 11:00 for a Patterns club night on
+  a day Patterns' own page doesn't load).
 - Headings, buttons and labels read as events ("Select a date", "Book now",
   "Podcasts", "Workshops") are dropped. The list is in `scripts/listing_rules.py`, which the
   scrapers, the prepare step and the validator all use.

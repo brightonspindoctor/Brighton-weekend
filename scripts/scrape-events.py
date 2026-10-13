@@ -10,7 +10,7 @@ from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
-from event_matching import same_session, same_show as same_show_at_venue
+from event_matching import evening_time, same_session, same_show as same_show_at_venue
 from listing_rules import GENERIC_TITLES, NOT_A_TITLE
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -502,6 +502,7 @@ async def main():
     matched=set();new=[];redated=0
     def adopt(old,e):
         fresh=dict(e,id=old['id'],last_seen=today)
+        if fresh.get('time'):fresh['time']=evening_time(old.get('time'),fresh['time'])  # 11:00 for a 23:00 club night: a missing "pm"
         if old.get('also_ids'):fresh['also_ids']=old['also_ids']  # ids merged into this one (saved choices)
         if old.get('promoter'):fresh['promoter']=old['promoter']  # set by scrape-discovery.py (e.g. JOY. Concerts)
         if is_listing_or_home(fresh.get('ticket_url',''),'') and not is_listing_or_home(old.get('ticket_url',''),''):
