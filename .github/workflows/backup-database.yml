@@ -1,0 +1,90 @@
+name: Nightly database backup
+
+# An encrypted copy of the Supabase database every night, kept for 30 days as
+# a workflow artifact (the Free plan has no backups of its own). It needs two
+# repository secrets (Settings → Secrets and variables → Actions):
+#   SUPABASE_DB_URL    the Session pooler connection string from the Supabase
+#                      dashboard (Connect → Session pooler), with the database
+#                      password filled in
+#   BACKUP_PASSPHRASE  a long random passphrase. Keep a copy somewhere safe:
+#                      without it the backups can't be opened.
+# Until both are set, each run stops with a warning and saves nothing.
+# The files are encrypted (AES-256) before they leave the runner, because
+# anyone signed in to GitHub can download a public repository's artifacts.
+# How to open and restore a backup: BACKUPS.md.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 3 * * *'
+      timezone: 'Europe/London'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: database-backup
+  cancel-in-progress: false
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check the secrets are set
+        id: ready
+        env:
+          DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          PASSPHRASE: ${{ secrets.BACKUP_PASSPHRASE }}
+        run: |
+          if [ -z "$DB_URL" ] || [ -z "$PASSPHRASE" ]; then
+            echo "::warning::Backups aren't set up yet: add the SUPABASE_DB_URL and BACKUP_PASSPHRASE secrets (see BACKUPS.md)."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Set up the Supabase CLI
+        if: steps.ready.outputs.ready == 'true'
+        uses: supabase/setup-cli@v1
+        with:
+          version: latest
+      - name: Dump the database, then compress and encrypt it
+        if: steps.ready.outputs.ready == 'true'
+        env:
+          DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          PASSPHRASE: ${{ secrets.BACKUP_PASSPHRASE }}
+        run: |
+          set -euo pipefail
+          umask 077
+          work=$(mktemp -d)
+          trap 'rm -rf "$work"' EXIT
+          # Roles, schema and data as three files, as Supabase's own backup and
+          # restore guide makes them.
+          supabase db dump --db-url "$DB_URL" -f "$work/roles.sql" --role-only
+          supabase db dump --db-url "$DB_URL" -f "$work/schema.sql"
+          supabase db dump --db-url "$DB_URL" -f "$work/data.sql" --use-copy --data-only \
+            -x "storage.buckets_vectors" -x "storage.vector_indexes"
+          stamp=$(TZ=Europe/London date +%Y-%m-%d)
+          mkdir -p backup
+          out="backup/brighton-weekend-$stamp.tar.gz.gpg"
+          tar -C "$work" -czf - roles.sql schema.sql data.sql \
+            | gpg --batch --yes --pinentry-mode loopback --passphrase-fd 3 \
+                  --symmetric --cipher-algo AES256 --output "$out" 3<<<"$PASSPHRASE"
+          # Check the copy opens with the passphrase and holds the app's data.
+          gpg --batch --quiet --pinentry-mode loopback --passphrase-fd 3 --decrypt "$out" 3<<<"$PASSPHRASE" \
+            | tar -xzOf - data.sql > "$work/check.sql"
+          tables=$(grep -c '^COPY "public"\.' "$work/check.sql" || true)
+          users=$(grep -c '^COPY "auth"\."users"' "$work/check.sql" || true)
+          echo "Saved $out ($(stat -c %s "$out") bytes): $tables public tables, auth users included: $users"
+          if [ "$tables" -lt 5 ] || [ "$users" -lt 1 ]; then
+            echo "::error::The backup looks incomplete."
+            exit 1
+          fi
+      - name: Keep it for 30 days
+        if: steps.ready.outputs.ready == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: database-backup
+          path: backup/*.gpg
+          retention-days: 30
+          if-no-files-found: error

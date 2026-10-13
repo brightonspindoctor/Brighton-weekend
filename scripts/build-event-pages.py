@@ -144,6 +144,7 @@ main{max-width:760px;margin:24px auto 48px;padding:0 16px}
 .pill.sold{color:var(--pass-fg);background:var(--pass-bg)}
 h1{font-size:30px;line-height:1.2;margin:0 0 14px;overflow-wrap:anywhere}
 h2{font-size:19px;margin:30px 0 10px}
+h3{font-size:16px;margin:22px 0 6px}
 .facts{margin:0;padding:0;list-style:none;color:var(--muted)}
 .facts li{margin:3px 0}.facts strong{color:var(--cream)}
 .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}

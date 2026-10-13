@@ -479,6 +479,13 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
 /* OK comes first in the form (so Enter means OK) and shows last */
 .bw-dialog-actions{display:flex;flex-direction:row-reverse;justify-content:flex-start;gap:8px;flex-wrap:wrap}
 .bw-dialog-actions .btn{margin:0;width:auto}
+/* Report a community event: the reasons as one column of choice tiles */
+.report-reasons{display:grid;gap:var(--bw-space-2);margin:0 0 var(--bw-space-3);padding:0;border:0;min-width:0}
+.bw-dialog-card .report-reasons input{display:inline-block;width:20px;height:20px;margin:0;accent-color:var(--bw-teal)}
+.bw-dialog-card .report-details{margin:0 0 var(--bw-space-4)}
+.bw-dialog-card .report-alt{margin:var(--bw-space-3) 0 0}
+.bw-dialog-card a{color:var(--bw-teal)}
+.count-visits{border-bottom:0;padding-top:var(--bw-space-1)}
 </style>
 <title>Brighton Weekend</title>
 </head>
@@ -633,6 +640,7 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
 <div class="settings-card member-only"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" class="avatar" src="profile-icons/standardized/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div><div class="settings-card settings-groups member-only"><h3>Groups</h3><div id="groupManager"></div><button id="manageGroups" class="btn btn-secondary">Manage groups</button></div>
 <div class="settings-card guest-only"><h3>Account</h3><p class="note">Create a free login to mark events, join groups and see what your friends are planning.</p><button id="guestSignIn" type="button" class="btn btn-primary">Create a free login</button></div>
 <div class="settings-card"><h3>Colour scheme</h3><div class="theme-choices" role="radiogroup" aria-label="Colour scheme"><button type="button" class="theme-choice" role="radio" data-theme-choice="dark"><span class="theme-dots" aria-hidden="true"><i></i><i></i><i></i></span>Seafront after dark</button><button type="button" class="theme-choice" role="radio" data-theme-choice="light"><span class="theme-dots" aria-hidden="true"><i></i><i></i><i></i></span>Seafront by day</button></div></div>
+<div class="settings-card"><h3>Privacy</h3><label class="venue-row count-visits"><span>Count my visits</span><input type="checkbox" id="countVisits" checked></label><p class="note">Counts visits and Get tickets taps from this device, so we can see how the app is used. Switch it off and this device stops being counted. <a href="privacy.html" target="_blank" rel="noopener">Privacy policy</a></p></div>
 <div class="settings-card"><h3>Support Brighton Weekend</h3><p class="note">If you enjoy using the app, you can buy me a coffee to help keep it running and improving.</p><a class="support-btn" href="https://www.buymeacoffee.com/jonnysadler" target="_blank" rel="noopener">☕ Buy me a coffee ↗</a></div>
 <div class="settings-card member-only"><h3>Account</h3><button id="changeName" class="btn btn-secondary">Change my name</button> <button id="signOut" class="btn btn-ghost">Sign out</button><div id="accountEmail" class="group-meta"></div><div class="danger-zone"><h4>Delete my account</h4><p class="note">Permanently deletes your profile, your Interested and Going choices, your group memberships and any events you added. This can't be undone.</p><button id="deleteAccount" type="button" class="btn btn-danger">Delete my account</button></div></div>
 <div class="settings-card install-area"><h3>Install the app</h3><button id="installApp" class="btn btn-primary install-btn">↓ Add to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
@@ -976,6 +984,51 @@ async function deleteCustomEvent(id,btn){
   renderAll();
  }catch(err){if(btn)btn.disabled=false;toast('Could not remove that event. '+(err.message||err),'error')}
 }
+// ---- Reporting community events (Online Safety Act) ----
+// Anyone can report an event someone added; reports go to the admin page
+// (bw_report_event, v77). If reports aren't set up in the database yet, the
+// report opens in an email instead.
+const REPORT_EMAIL='privacy@brightonweekend.co.uk';
+const REPORT_REASONS=[['illegal','It\u2019s illegal'],['scam','It\u2019s a scam or a fake event'],['harmful','It\u2019s hateful, abusive or harassing'],['spam','It\u2019s spam'],['wrong','The details are wrong'],['other','Something else']];
+function reportDialog(title){
+ return new Promise(resolve=>{
+  const d=document.createElement('dialog');d.className='bw-dialog';d.setAttribute('aria-label','Report this event');
+  d.innerHTML=`<form method="dialog" class="bw-dialog-card"><h3>Report this event</h3><p>What\u2019s wrong with \u201c${esc(title)}\u201d? We aim to look at every report within two days.</p>`
+   +`<fieldset class="report-reasons" aria-label="Reason">${REPORT_REASONS.map(([v,l])=>`<label class="choice"><input type="radio" name="reason" value="${v}"><span>${esc(l)}</span></label>`).join('')}</fieldset>`
+   +`<label class="report-details">Anything we should know? (optional)<textarea name="details" maxlength="1000" rows="3"></textarea></label>`
+   +`<div class="bw-dialog-actions"><button type="submit" value="ok" class="btn btn-primary" disabled>Send report</button><button type="submit" value="cancel" class="btn btn-ghost">Cancel</button></div>`
+   +`<p class="report-alt">Or email <a href="mailto:${REPORT_EMAIL}">${REPORT_EMAIL}</a>.</p></form>`;
+  document.body.appendChild(d);
+  const okBtn=d.querySelector('button[value="ok"]'),form=d.querySelector('form');
+  form.addEventListener('change',()=>{okBtn.disabled=!form.querySelector('input[name="reason"]:checked')});
+  d.addEventListener('close',()=>{
+   const reason=form.querySelector('input[name="reason"]:checked')?.value||'',details=form.querySelector('textarea').value.trim();
+   const ok=d.returnValue==='ok'&&reason;d.remove();resolve(ok?{reason,details}:null);
+  });
+  d.showModal();
+  setTimeout(()=>d.querySelector('input[name="reason"]')?.focus(),30);
+ });
+}
+function reportMailto(ev,r){
+ const reason=(REPORT_REASONS.find(x=>x[0]===r.reason)||['',''])[1];
+ const body=`Event: ${ev.title}\nDate: ${ev.date}\nVenue: ${ev.venue_display||ev.venue}\nEvent ID: ${ev.id}\nReason: ${reason}\n\n${r.details||''}`;
+ return `mailto:${REPORT_EMAIL}?subject=${encodeURIComponent('Report: '+ev.title)}&body=${encodeURIComponent(body)}`;
+}
+async function reportEvent(id){
+ const ev=events.find(x=>x.is_custom&&String(x.id)===String(id));
+ if(!ev)return;
+ const r=await reportDialog(ev.title);
+ if(!r)return;
+ try{
+  await rpc('bw_report_event',{p_event_id:ev.id,p_reason:r.reason,p_details:r.details||null});
+  toast('Thanks for telling us. We\u2019ll look at it within two days.','success');
+ }catch(err){
+  const msg=String(err?.message||err);
+  if(/could not find the function/i.test(msg)){location.href=reportMailto(ev,r);return}
+  toast('Could not send that report. '+msg,'error');
+ }
+}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-report-event]');if(b)reportEvent(b.dataset.reportEvent)});
 function toggleOtherVenue(){
  const other=$('customVenue')?.value==='Other';
  $('customVenueDetailWrap')?.classList.toggle('hidden',!other);
@@ -1036,6 +1089,7 @@ async function loadGroupHappenings(){
  if(!$('peopleTab').classList.contains('hidden'))markHappeningsSeen(); else updateHappeningsBadge();
 }
 function trackVisitor(){
+ if(!countingOn())return;
  api('POST','rpc/bw_track_visit',{}).catch(()=>{}); // records this visit for the admin dashboard (v53)
 }
 
@@ -1093,7 +1147,16 @@ const GATE_COPY={
 // Guests get a random ID on this device (no personal details) so the admin
 // page can count guest visits and how many guests go on to sign up (v72).
 const GUEST_ID_KEY='bw_guest_id';
+// Settings → Privacy → Count my visits. Off: no guest ID on this device, and
+// no visit or Get tickets counting from it (the statistics exemption needs a
+// simple way to object). Remembered on this device only.
+const NO_COUNT_KEY='bw_no_count';
+function countingOn(){try{return localStorage.getItem(NO_COUNT_KEY)!=='1'}catch(e){return true}}
+function setCounting(on){
+ try{if(on)localStorage.removeItem(NO_COUNT_KEY);else{localStorage.setItem(NO_COUNT_KEY,'1');localStorage.removeItem(GUEST_ID_KEY)}}catch(e){}
+}
 function guestId(create){
+ if(!countingOn())return '';
  try{
   let id=localStorage.getItem(GUEST_ID_KEY);
   if(!id&&create){id=crypto.randomUUID();localStorage.setItem(GUEST_ID_KEY,id)}
@@ -1103,7 +1166,7 @@ function guestId(create){
 // Counts taps on Get tickets for the admin dashboard (v76). keepalive lets the
 // request finish while the ticket site opens; failures are ignored.
 function trackTicketClick(eventId,source){
- if(!eventId)return;
+ if(!eventId||!countingOn())return;
  try{fetch(SUPABASE_URL+'/rest/v1/rpc/bw_track_ticket_click',{method:'POST',keepalive:true,
   headers:{apikey:SUPABASE_KEY,Authorization:'Bearer '+(authSession?.access_token||SUPABASE_KEY),'Content-Type':'application/json'},
   body:JSON.stringify({p_event_id:eventId,p_source:source||'app',p_guest_id:authUser?null:(guestId(false)||null)})}).catch(()=>{})}catch(e){}
@@ -1348,13 +1411,15 @@ function friendsHtml(id){
  if(!going&&!keen)return '';
  return `<div class="people">${going?`<span class="social-chip"><i class="social-icon going">${TICKET_ICON}</i>${going} friend${going===1?'':'s'} going</span>`:''}${keen?`<span class="social-chip"><i class="social-icon heart">♡</i>${keen} friend${keen===1?'':'s'} interested</span>`:''}</div>`;
 }
-// The ⋯ menu: calendar, share, add a genre, remove (your own community event).
+// The ⋯ menu: calendar, share, add a genre, remove (your own community event)
+// or report (anyone else's).
 function moreMenu(e,{genre=true}={}){
  const items=[],cal=gcalUrl(e);
  if(cal)items.push(`<a class="more-item" href="${esc(cal)}" target="_blank" rel="noopener">${CAL_ICON}<span>Add to calendar</span></a>`);
  items.push(`<button type="button" class="more-item" data-share-event="${esc(e.id)}">${SHARE_ICON}<span>Share</span></button>`);
  if(genre&&genreEditable(e)&&!e.genre)items.push(`<button type="button" class="more-item" data-genre-edit="${esc(e.id)}"><span class="more-glyph" aria-hidden="true">＋</span><span>Add a genre</span></button>`);
  if(e.is_custom&&e.created_by&&e.created_by===uid())items.push(`<button type="button" class="more-item danger" data-delete-event="${esc(e.id)}"><span class="more-glyph" aria-hidden="true">×</span><span>Remove this event</span></button>`);
+ else if(e.is_custom)items.push(`<button type="button" class="more-item" data-report-event="${esc(e.id)}"><span class="more-glyph" aria-hidden="true">⚑</span><span>Report this event</span></button>`);
  return `<details class="more"><summary class="cal-link" aria-label="More options for ${esc(e.title)}" title="More"><span aria-hidden="true">⋯</span></summary><div class="more-pop">${items.join('')}</div></details>`;
 }
 // One ⋯ menu open at a time; a tap elsewhere, Escape or choosing an item closes it.
@@ -1436,6 +1501,8 @@ function applyTheme(t){
 }
 document.addEventListener('click',e=>{const b=e.target.closest('[data-theme-choice]');if(!b)return;const t=b.dataset.themeChoice;try{t==='light'?localStorage.setItem('bw_theme','light'):localStorage.removeItem('bw_theme')}catch(_){}applyTheme(t)});
 applyTheme(currentTheme());
+(()=>{const box=$('countVisits');if(!box)return;box.checked=countingOn();
+ box.addEventListener('change',()=>{setCounting(box.checked);toast(box.checked?'Visits from this device will be counted.':'Visits from this device won\'t be counted.','success')})})();
 function venueNudgeHtml(text){
  return `<div class="venue-nudge"><p>${esc(text||'Choose the venues you go to and we\'ll show what\'s on there.')}</p><button type="button" class="btn btn-primary" data-open-venues>Choose venues</button></div>`;
 }
@@ -2010,7 +2077,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=81', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=82', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
