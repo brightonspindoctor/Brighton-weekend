@@ -40,8 +40,13 @@ phone's home screen.
   (`GENRE_ORDER`); the most-picked genre shows for everyone. Genres from the
   listings or the tagger always win.
 - **Community events:** signed-in users can add events that are missing.
+  Anyone can report one from its ⋯ menu; reports go to the admin page, where
+  the event can be removed (Online Safety Act; records and review dates are in
+  the online safety records doc in the project).
 - **Settings:** venues and days, colour scheme (*Seafront after dark* or
-  *Seafront by day*), profile icon, groups, account, install the app.
+  *Seafront by day*), profile icon, groups, privacy (*Count my visits*: off
+  means no guest ID and no visit or ticket-tap counting from that device),
+  account, install the app.
 - **Messages:** confirmations and errors use in-app toasts and dialogs, not the
   browser's pop-ups. The Welcome back screen only appears when friends have new
   plans or someone joined a group; the groups step is shown once at sign-up.
@@ -135,7 +140,10 @@ festivals into `events.json`.
   5 October 2026, with v74 and v75 folded in).
 - The numbered files are the change history. `v70` (invite previews), `v72`
   (guest visits), `v73` (venue list) and `v76` (usage counts) are live but not
-  yet folded into `schema.sql`.
+  yet folded into `schema.sql`. `v77` (reports of community events and an
+  hourly pg_cron clean-up) is new: run it in the SQL Editor if it isn't live.
+- Backups: an encrypted copy every night once two secrets are set; see
+  `BACKUPS.md`.
 - When you change the database, add a new numbered file, run it in the
   Supabase SQL Editor and update `schema.sql`. When a venue is added, update the
   venue list in the database along with `VENUES` in `index.html`.

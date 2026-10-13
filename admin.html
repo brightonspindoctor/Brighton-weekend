@@ -7,13 +7,14 @@
 <title>Brighton Weekend · Admin</title>
 <style>
 :root{--bg:#101114;--card:#1a2c3b;--line:#42576a;--cream:#f3e4c9;--sage:#d8e59e;--muted:#aeb9bf}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--cream);font-family:"Plus Jakarta Sans",system-ui,sans-serif}main{max-width:720px;margin:0 auto;padding:24px 18px}h1{font-size:28px;margin:0 0 4px}h2{font-size:19px}.muted{color:var(--muted);font-size:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin:14px 0}.stat{font-size:56px;font-weight:800;color:var(--sage);letter-spacing:-3px}.small{font-size:12px;color:var(--muted)}input{width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:#101114;color:white;margin:6px 0;font:inherit}button{padding:11px 15px;border-radius:999px;border:1px solid #566874;background:#20384a;color:var(--cream);font-weight:700;cursor:pointer}button.primary{background:var(--sage);color:#172335;border-color:var(--sage)}.error{color:#ffb3ba}.hidden{display:none!important}.link{color:var(--sage);text-decoration:none}.row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--cream);font-family:"Plus Jakarta Sans",system-ui,sans-serif}main{max-width:720px;margin:0 auto;padding:24px 18px}h1{font-size:28px;margin:0 0 4px}h2{font-size:19px}.muted{color:var(--muted);font-size:13px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin:14px 0}.stat{font-size:56px;font-weight:800;color:var(--sage);letter-spacing:-3px}.small{font-size:12px;color:var(--muted)}input{width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:#101114;color:white;margin:6px 0;font:inherit}button{padding:11px 15px;border-radius:999px;border:1px solid #566874;background:#20384a;color:var(--cream);font-weight:700;cursor:pointer}button.primary{background:var(--sage);color:#172335;border-color:var(--sage)}.error{color:#ffb3ba}.hidden{display:none!important}.link{color:var(--sage);text-decoration:none}.row{display:flex;justify-content:space-between;align-items:center;gap:12px}.report{border-top:1px solid var(--line);padding:12px 0}.report:first-child{border-top:0}.report h3{font-size:15px;margin:0 0 4px}.report p{margin:6px 0;white-space:pre-wrap}.report-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.open{color:var(--sage)}
 </style>
 </head>
 <body><main>
 <div class="row"><div><h1>Brighton Weekend · Admin</h1><div class="muted">Private usage dashboard</div></div><a class="link" href="./">Back to app</a></div>
 <section id="login" class="card"><h2>Admin sign in</h2><input id="email" type="email" placeholder="Admin email" autocomplete="username"><input id="password" type="password" placeholder="Password" autocomplete="current-password"><button class="primary" id="loginBtn">Sign in</button><div id="loginError" class="error"></div></section>
 <section id="dashboard" class="hidden">
+<div class="card"><h2>Reports <span id="reportCount" class="muted"></span></h2><div class="small">Community events people have reported in the app. Look at each within two days: remove anything illegal or against the terms, and keep the rest. Log what you decided in the online safety records.</div><div id="reports" class="muted" style="margin-top:12px">—</div></div>
 <div class="card"><div class="muted">Unique app users</div><div class="stat" id="count">—</div><div class="small">Unique browser/app IDs seen by Brighton Weekend</div></div>
 <div class="card"><h2>Last 30 days</h2><div class="stat" id="recent">—</div><div class="small">Unique IDs with a visit in the last 30 days</div></div>
 <div class="card"><h2>Guests</h2><div class="stat" id="guests30">—</div><div class="small">Guest devices with a visit in the last 30 days</div><div style="margin-top:12px" id="guestDetail" class="muted">—</div></div>
@@ -46,6 +47,43 @@ async function load(){
   $('ticketDetail').textContent=`${n(t.recent_people)} different people or devices · ${n(t.recent_users)} by signed-in users · ${n(t.recent_pages)} from shared event pages · ${n(t.total)} in total`+since(t.since);
   const ol=$('ticketTop');ol.textContent='';(t.top||[]).forEach(r=>{const li=document.createElement('li');li.textContent=`${r.event_id} (${r.n})`;ol.appendChild(li)});}
  $('last').textContent=data?.last_seen ? new Date(data.last_seen).toLocaleString('en-GB') : 'No activity yet';
+ await loadReports();
+}
+// Reports of community events (v77). Report text is typed by users, so it is
+// only ever set as textContent.
+const REASONS={illegal:'Illegal',scam:'Scam or fake event',harmful:'Hateful, abusive or harassing',spam:'Spam',wrong:'Wrong details',other:'Something else'};
+function el(tag,text,cls){const e=document.createElement(tag);if(text!=null)e.textContent=text;if(cls)e.className=cls;return e}
+async function loadReports(){
+ const box=$('reports');
+ const {data,error}=await db.rpc('admin_reports');
+ if(error){box.textContent=/could not find the function/i.test(error.message)?'Reports aren\'t set up yet: run supabase/v77-reports-and-cleanup.sql in the Supabase SQL Editor.':error.message;return}
+ const list=Array.isArray(data)?data:[],open=list.filter(r=>r.status==='open').length;
+ $('reportCount').textContent=open?`· ${open} open`:'· none open';
+ box.textContent='';
+ if(!list.length){box.textContent='No reports yet.';return}
+ list.forEach(r=>{
+  const item=el('div',null,'report');
+  item.appendChild(el('h3',`${r.event_title}${r.event_date?' · '+r.event_date:''}`));
+  const when=new Date(r.created_at).toLocaleString('en-GB');
+  item.appendChild(el('div',`${REASONS[r.reason]||r.reason} · reported ${when} by ${r.from_guest?'a guest':'a signed-in user'}${Number(r.reports_for_event)>1?` · ${r.reports_for_event} reports on this event`:''}${r.author_name?` · added by ${r.author_name}`:''}`,'small'));
+  if(r.details)item.appendChild(el('p',r.details));
+  if(r.status==='open'){
+   const actions=el('div',null,'report-actions');
+   if(r.event_live){const rm=el('button','Remove event','primary');rm.onclick=()=>resolveReport(r,true,rm);actions.appendChild(rm)}
+   const keep=el('button',r.event_live?'Keep it':'Close report');keep.onclick=()=>resolveReport(r,false,keep);actions.appendChild(keep);
+   item.appendChild(el('div','Open','small open'));item.appendChild(actions);
+  }else{
+   item.appendChild(el('div',`${r.status==='removed'?'Event removed':'Kept'} ${r.resolved_at?new Date(r.resolved_at).toLocaleString('en-GB'):''}`,'small'));
+  }
+  box.appendChild(item);
+ });
+}
+async function resolveReport(r,remove,btn){
+ if(remove&&!confirm(`Remove "${r.event_title}" for everyone? This can't be undone.`))return;
+ btn.disabled=true;
+ const {error}=await db.rpc('admin_resolve_report',{p_report_id:r.id,p_remove_event:remove});
+ if(error){btn.disabled=false;alert('Could not update the report: '+error.message);return}
+ await loadReports();
 }
 $('loginBtn').onclick=async()=>{ $('loginError').textContent=''; const {error}=await db.auth.signInWithPassword({email:$('email').value.trim(),password:$('password').value}); if(error){$('loginError').textContent=error.message;return} await load()};
 $('signout').onclick=async()=>{await db.auth.signOut();location.reload()};
