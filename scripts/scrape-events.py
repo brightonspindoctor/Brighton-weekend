@@ -216,7 +216,7 @@ def slug_title(url):
     slug=re.sub(r'(?<=[a-z])-\d{1,2}$','',slug)  # 'cancer-bats-1': a site's suffix for a repeated name (not 'the-wanted-2-0')
     slug=re.sub(r'[-_]+',' ',slug).strip()
     if not slug:return ''
-    return clean(slug.title())
+    return clean(' '.join(w[:1].upper()+w[1:] for w in slug.split()))  # not .title(): '4am-kru' is '4am Kru', not '4Am Kru'
 
 def category(title,text=''):
     hay=clean(f'{title} {text}').lower()

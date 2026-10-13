@@ -62,10 +62,10 @@ def _title_word(word, first):
         return word
     if core.upper() in NAME_ABBR:  # DR -> Dr, ST -> St
         return word.replace(core, NAME_ABBR[core.upper()])
+    if re.search(r"\d", core):
+        return re.sub(r"(?<=\d)(ST|ND|RD|TH|S|AM|PM)\b", lambda m: m.group(1).lower(), word)  # 25TH, 90S, 00S, 4AM
     if core.upper() in KEEP_UPPER or not re.search(r"[AEIOUY]", core) or re.search(r"[./]", core.strip(".")):
         return word  # acronyms, initials and things like A.M.C or P.E.
-    if re.search(r"\d", core):
-        return re.sub(r"(?<=\d)(ST|ND|RD|TH|S|AM|PM)\b", lambda m: m.group(1).lower(), word)  # 25TH, 90S, 4AM
     if not first and core.lower() in SMALL_WORDS:
         return word.lower()
 
@@ -135,6 +135,7 @@ def tidy_title(title):
 
 
 assert tidy_title("HI JINX PROMOTIONS PRESENTS **FREE ENTRY**") == ("Hi Jinx Promotions Presents", ["Free"], False)
+assert tidy_title("BLACK PARADE – 00S EMO ANTHEMS HALLOWEEN PARTY")[0] == "Black Parade – 00s Emo Anthems Halloween Party"
 assert tidy_title("Harriet Kemsley: Floozy **EXTRA MATINEE SHOW**") == ("Harriet Kemsley: Floozy", ["Extra show"], False)
 assert tidy_title("GET YOUR ROCKS OFF KARAOKE (FREE!)") == ("Get Your Rocks Off Karaoke", ["Free"], False)
 assert tidy_title("Rough times Party - CALYX - Free Entry tickets available")[1] == ["Free"]
