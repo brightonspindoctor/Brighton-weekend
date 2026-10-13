@@ -47,6 +47,7 @@ NOT_A_TITLE = re.compile(r"""(?:
   |limited\s+(?:free\s+)?tickets?\b.*|early\s*bird(?:\s+tickets?)?|bu[yt]\s+tickets?\b.*
   |pub\s+events|top\s+picks|next\s+up(?:\s+in\s+the\s+venue)?|this\s+week|coming\s+(?:up|soon)|upcoming
   |featured|free\s+tickets?|all\s+events|whats?\s+on|more\s+events|more\s+.+\s+events|you\s+might\s+also\s+like|edition
+  |workshops?|accessible\s+events(?:\s+[a-z&]+)?                  # Brighton Dome's section labels
 )""", re.I | re.X)
 
 

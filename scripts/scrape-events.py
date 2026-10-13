@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Refresh Brighton Weekend events from configured venue sites."""
 import asyncio, html, json, re, sys
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -9,7 +10,7 @@ from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
-from event_matching import same_show as same_show_at_venue
+from event_matching import same_session, same_show as same_show_at_venue
 from listing_rules import GENERIC_TITLES, NOT_A_TITLE
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -20,10 +21,19 @@ OUT=ROOT/'events.json'
 TZ=ZoneInfo('Europe/London')
 NOW=datetime.now(TZ)
 RANGE_START=NOW.date(); RANGE_END=(NOW+timedelta(days=280)).date()
+# A day's name, whole or short ('Fri', 'Friday'), but not 'Friends' or 'Sunset'.
+WEEKDAY=r'(?:Mon(?:day)?|Tue(?:s(?:day)?)?|Wed(?:nesday)?|Thu(?:r(?:s(?:day)?)?)?|Fri(?:day)?|Sat(?:urday)?|Sun(?:day)?)\b'
 MONTHS=r'Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?'
 # '10 Oct 2026', 'October 10th, 2026' and UK numeric dates such as '10/10/26'.
 DATE_RE=re.compile(rf'\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\.?\s*(\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\s*(?:\d{{4}})?|(?:{MONTHS})\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s*\d{{4}})?|\d{{1,2}}/\d{{1,2}}/(?:\d{{4}}|\d{{2}}))\b',re.I)
 TIME_RE=re.compile(r'\b(\d{1,2}(?::\d{2})?\s*(?:am|pm))\b',re.I)
+# '19:30', '23:00-04:00': 24-hour times, read only when a card has no am/pm times.
+# Two-digit hours only, as '7:30' alone could be morning or evening.
+TIME24_RE=re.compile(r'(?<![\d:£$€.])([01]\d|2[0-3]):([0-5]\d)(?![\d:])')
+# Times that aren't when the event starts or ends.
+NOT_START=re.compile(r'(?:doors?(?:\s*open)?|running\s+time|duration|last\s+entry|curfew)\s*(?:at|from|approx\.?)?\s*[:\-]?\s*\d{1,2}(?:[:.]\d{2})?\s*(?:am|pm)?',re.I)
+def card_times(text):
+    return TIME_RE.findall(text) or [f'{h}:{m}' for h,m in TIME24_RE.findall(text)]
 CATEGORIES={'Comedy':['comedy','comedian','stand-up','stand up','laughs'],'Club':['club','dj','dnb','drum & bass','rave','techno','house night','party'],'Theatre':['theatre','theater','play','musical','west end'],'Dance':['dance','ballet','contemporary dance'],'Family':['family','kids','children','storytelling','baby'],'Talk':['talk','in conversation','lecture','spoken word','author'],'Sport':['football','boxing','wrestling','sport','racecourse'],'Music':['gig','live','band','concert','tour','festival','dj set','orchestra','singer']}
 CTA_PREFIXES=('get tickets','get ticket','buy tickets','buy ticket','book tickets','book ticket','book now','learn more','more info','more details','find out more','event details','on sale','sold out','sign up','subscribe','join our','join the mailing','newsletter','mailing list')
 
@@ -35,13 +45,13 @@ def valid_title(title):
     if len(t)<3 or len(t)>180:return False
     if not re.search(r'[^\W\d_]{2}',low):return False  # a year or number on its own, e.g. "2026"
     # Only a date ('Mon 12 Oct 26', 'Friday October 9th'): nothing is left once it is removed.
-    rest=re.sub(r'\b(?:mon|tue|wed|thu|fri|sat|sun)[a-z]*\b','',DATE_RE.sub('',low))
+    rest=re.sub(rf'\b{WEEKDAY}','',DATE_RE.sub('',low),flags=re.I)
     if not re.search(r'[^\W\d_]{2}',rest):return False
     return True
 
 def title_key(title): return re.sub(r'[^a-z0-9]+',' ',clean(title).lower()).strip()
 # A listing date appended to a title: '... Fri 25 Sep 2026 8:00 PM' or '... October 9, 2026'.
-TRAILING_DATE=re.compile(rf'\s*(?:(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*\.?,?\s+)?(?:(?:\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\.?|(?:{MONTHS})\.?\s+\d{{1,2}}(?:st|nd|rd|th)?,?)\s+\d{{4}}\b|\d{{1,2}}/\d{{1,2}}/\d{{2,4}}\b).*$',re.I)
+TRAILING_DATE=re.compile(rf'\s*(?:{WEEKDAY}\.?,?\s+)?(?:(?:\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTHS})\.?|(?:{MONTHS})\.?\s+\d{{1,2}}(?:st|nd|rd|th)?,?)\s+\d{{4}}\b|\d{{1,2}}/\d{{1,2}}/\d{{2,4}}\b).*$',re.I)
 # Labels some venues put before the name in the same link: 'Club Events ZERO 7',
 # 'Limited Free Tickets Fully Local', 'Sold Out: ...'.
 LEADING_LABEL=re.compile(r'^(?:(?:club|live|comedy|music|theatre|family|special|featured|free)\s+events?|limited\s+(?:free\s+)?tickets?|sold\s+out|on\s+sale\s+now|just\s+announced)\s*[-:–|]?\s+',re.I)
@@ -95,7 +105,7 @@ def prefer_fuller_titles(events):
         for e in group:
             duplicate=False
             for existing in chosen:
-                if fuller_title(existing.get('title',''),e.get('title','')):
+                if fuller_title(existing.get('title',''),e.get('title','')) and same_session(existing,e):
                     duplicate=True;break
             if not duplicate:chosen.append(e)
         kept.extend(chosen)
@@ -202,6 +212,7 @@ def slug_title(url):
     # Brighton Dome prefixes its addresses with a short mixed-case id ('LiM-ben-folds').
     m=re.match(r'^([A-Za-z0-9]{2,5})-(.+)$',slug)
     if m and re.search(r'[A-Z]',m.group(1)) and re.search(r'[a-z]',m.group(1)):slug=m.group(2)
+    slug=re.sub(r'-(?:20\d\d-\d{1,2}-\d{1,2}|\d{1,2}-\d{1,2}-20\d\d)$','',slug)  # '...-2026-10-24': the date, shown on the card anyway
     slug=re.sub(r'(?<=[a-z])-\d{1,2}$','',slug)  # 'cancer-bats-1': a site's suffix for a repeated name (not 'the-wanted-2-0')
     slug=re.sub(r'[-_]+',' ',slug).strip()
     if not slug:return ''
@@ -323,9 +334,11 @@ def dom_events(html,venue,page_url,detail_only=False):
         if not valid_title(title):continue
         if href==page_url and not detail_only:
             href=best_link(node,page_url,title) or page_url
-        # Ignore "Doors: 7pm" style times; they are not start or finish times.
-        timed_text=re.sub(r'doors?\s*(?:open)?\s*[:\-]?\s*\d{1,2}(?::\d{2})?\s*(?:am|pm)',' ',text,flags=re.I)
-        times=TIME_RE.findall(timed_text);tm=times[0] if times else None;end_tm=times[-1] if len(times)>1 else None
+        # Start and finish from the card. "Doors: 7pm" isn't either. A time in the
+        # act's name ("4am Kru ... 23:00-04:00") is used only if the card has no other.
+        timed_text=NOT_START.sub(' ',text)
+        outside=re.sub(re.escape(title),' ',timed_text,flags=re.I) if title else timed_text
+        times=card_times(outside) or card_times(timed_text);tm=times[0] if times else None;end_tm=times[-1] if len(times)>1 else None
         raw={'name':title,'startDate':f'{dt.date().isoformat()}T{tm or "00:00"}','url':href,'description':text}
         if end_tm:raw['endDate']=f'{dt.date().isoformat()}T{end_tm}'
         e=normalise(raw,venue,page_url)
@@ -361,12 +374,59 @@ async def scrape_detail_urls(browser,venue,urls):
         out.extend(ev)
     return out,fails
 
-def fetch_plain(url):
+def fetch_plain(url,accept='text/html'):
     """Plain request, for ticketing sites that show automated browsers a
     security check ("Just a moment...") but serve the page itself to this."""
     from urllib.request import Request,urlopen
-    req=Request(url,headers={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36','Accept':'text/html'})
+    req=Request(url,headers={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36','Accept':accept})
     with urlopen(req,timeout=30) as r:return r.read().decode('utf-8','replace'),r.geturl()
+# ---- Ticketsolve feeds ------------------------------------------------------
+# Venues that sell through Ticketsolve publish a feed (<venue>.ticketsolve.com/shows.xml)
+# with the venue's own category for each show and the start of each performance.
+# A source with "ticketsolve" in event-sources.json uses it to file its events
+# (Komedia's listings rarely say whether a show is comedy or a gig) and to fill
+# in a start time the listing leaves out.
+TICKETSOLVE_CATEGORIES={'comedy':'Comedy','music':'Music','club':'Club','kids shows':'Family','spoken word':'Talk'}
+# Labels that say less ("Workshop", "Event"): the title decides, as for any listing,
+# and a cabaret or drag show the title doesn't place is filed as Theatre.
+TICKETSOLVE_FALLBACK={'cabaret':'Theatre','drag':'Theatre'}
+def ticketsolve_performances(feed_url):
+    text,_=fetch_plain(feed_url,accept='application/xml,text/xml')
+    out=[]
+    for show in ET.fromstring(text).iter('show'):
+        label=clean(show.findtext('event_category') or '').lower()
+        cat=TICKETSOLVE_CATEGORIES.get(label) or ('Comedy' if 'comedy' in label else None)
+        name=html.unescape(clean(show.findtext('name') or ''))
+        for ev in show.iter('event'):
+            try:start=datetime.fromisoformat(clean(ev.findtext('date_time_iso') or '')).astimezone(TZ)
+            except ValueError:continue
+            out.append({'show':show.get('id'),'event':ev.get('id'),'name':name,'category':cat,'label':label,
+                        'date':start.date().isoformat(),'time':start.strftime('%H:%M')})
+    return out
+
+def apply_ticketsolve(events,source):
+    """File the source's events by the venue's own categories and fill missing start times."""
+    try:perfs=ticketsolve_performances(source['ticketsolve'])
+    except Exception as exc:
+        print(f"{source['venue']}: Ticketsolve feed unavailable ({str(exc)[:120]})");return
+    by_event={p['event']:p for p in perfs};by_date={}
+    for p in perfs:by_date.setdefault(p['date'],[]).append(p)
+    matched=0
+    for e in events:
+        m=re.search(r'ticketsolve\.com/(?:ticketbooth/)?shows/\d+/events/(\d+)',e.get('ticket_url') or '')
+        p=by_event.get(m.group(1)) if m else None
+        if p is None:
+            # The listing links to the venue's own page: the same show that day, by its name.
+            cands=[x for x in by_date.get(e['date'],[]) if same_show_at_venue(x['name'],e['title'],source['venue'])]
+            if e.get('time'):cands=[x for x in cands if x['time']==e['time']] or cands
+            if len({x['show'] for x in cands})!=1:continue
+            p=cands[0] if len(cands)==1 or e.get('time') else {**cands[0],'time':''}  # two performances that day: no time guessed
+        matched+=1
+        e['category']=p['category'] or category(e['title'])
+        if e['category']=='Other':e['category']=TICKETSOLVE_FALLBACK.get(p['label'],'Other')
+        if not e.get('time') and p['time']:e['time']=p['time']
+    print(f"{source['venue']}: Ticketsolve feed filed {matched} of {len(events)} listings")
+
 async def scrape_source(browser,source):
     html,final,err=await get_html(browser,source['url'])
     venue=source['venue'];is_dome_search='brightondome.org' in source['url']
@@ -374,7 +434,7 @@ async def scrape_source(browser,source):
     if source.get('jsonld_only') and not events:
         # Skiddle/Songkick blocked the browser, or it rendered no event data: try a plain request.
         try:
-            html,final=fetch_plain(source['url']);err=None
+            html,final=await asyncio.to_thread(fetch_plain,source['url']);err=None
             events=jsonld_events(html,venue,final,source.get('match_location'))
         except Exception as exc:
             err=err or str(exc)
@@ -390,6 +450,7 @@ async def scrape_source(browser,source):
             if 'brightondome.org' in parsed.netloc and '/whats-on/' in parsed.path:urls.add(u.split('#')[0])
         detail,failed=await scrape_detail_urls(browser,venue,sorted(urls));events.extend(detail)
         print(f'Brighton Dome detail crawl: {len(urls)} pages, {len(detail)} events, {failed} failures')
+    if source.get('ticketsolve'):await asyncio.to_thread(apply_ticketsolve,events,source)  # a plain request: off the event loop
     return events,None
 
 async def main():
@@ -412,6 +473,10 @@ async def main():
     # A venue is "healthy" when every one of its sources loaded and it returned at
     # least half as many upcoming events as last time. Only for healthy venues are
     # missing events counted towards removal, so a site outage can't empty the app.
+    # Records from an earlier import (no "source") count towards "last time" too,
+    # so a venue whose page shows only part of its programme (Theatre Royal's
+    # first page, Brighton Centre's highlights) stays "unhealthy" and keeps them
+    # until their date: a show missing from a partial page may still be on.
     def future(evs):return [e for e in evs if RANGE_START.isoformat()<=str(e.get('date',''))<=RANGE_END.isoformat()]
     before={};now_count={}
     for e in future(existing.get('events',[])):
@@ -434,7 +499,7 @@ async def main():
     # Match today's results to existing events. A match keeps the existing id (so
     # saved Interested/Going choices still match) even if the time or the wording
     # of the title has changed, and takes today's details and ticket link.
-    matched=set();new=[];pending=[];redated=0
+    matched=set();new=[];redated=0
     def adopt(old,e):
         fresh=dict(e,id=old['id'],last_seen=today)
         if old.get('also_ids'):fresh['also_ids']=old['also_ids']  # ids merged into this one (saved choices)
@@ -442,13 +507,26 @@ async def main():
         if is_listing_or_home(fresh.get('ticket_url',''),'') and not is_listing_or_home(old.get('ticket_url',''),''):
             fresh['ticket_url']=old['ticket_url']
         kept[old['id']]=fresh;matched.add(old['id'])
-    for e in scraped:
-        old=by_exact.get(event_key(e))
-        if old is None or old['id'] in matched:
-            old=next((c for c in by_day.get(day_key(e),[]) if c['id'] not in matched and same_show(c['title'],e['title'],c.get('venue',''))),None)
-        if old is None:pending.append(e)
-        else:adopt(old,e)
-    # Second pass, only for events still unmatched: an earlier version saved
+    # Three passes, so a looser match can't take an event before the listing that
+    # matches it best is reached: the same title and time, then a similar title
+    # at the same time, then a similar title at any time. (Brighton Dome lists
+    # each comedy festival show twice, once without a time. When the untimed copy
+    # took the event, the timed one was added as new and kept by prepare-events.py,
+    # so the show's id changed on every run.)
+    pending=list(scraped)
+    for same_time in (None,True,False):
+        rest=[]
+        for e in pending:
+            if same_time is None:
+                old=by_exact.get(event_key(e))
+                if old is not None and old['id'] in matched:old=None
+            else:
+                old=next((c for c in by_day.get(day_key(e),[]) if c['id'] not in matched
+                          and same_session(c,e,same_time) and same_show(c['title'],e['title'],c.get('venue',''))),None)
+            if old is None:rest.append(e)
+            else:adopt(old,e)
+        pending=rest
+    # Last, for events still unmatched: an earlier version saved
     # some dates with day and month swapped (10 Nov for 11 Oct). If the same show
     # is stored, unmatched, on the swapped date, it is this event: move it to the
     # right date and keep its id, so saved choices follow it.

@@ -3,9 +3,10 @@
 import html
 import json
 import re
+import subprocess
 from pathlib import Path
 
-from event_matching import display_title, is_venue_name, same_show
+from event_matching import display_title, is_venue_name, same_session, same_show
 from listing_rules import is_excluded, is_generic_title, is_patterns_recurring, title_key
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -163,15 +164,25 @@ VENUE_ALIASES = {"Brighton Dome - Concert Hall": "Brighton Dome"}
 # Venue sites sometimes append the listing date/time/doors to the title, e.g.
 # "Story Magic Fri 25 Sep 2026 10:00 AM ( Doors: 9:50 AM )". Strip that tail.
 _MON = r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?"
+# A day's name, whole or short ("Fri", "Friday"), but not "Friends" or "Sunset".
+_DAY = r"(?:mon(?:day)?|tue(?:s(?:day)?)?|wed(?:nesday)?|thu(?:r(?:s(?:day)?)?)?|fri(?:day)?|sat(?:urday)?|sun(?:day)?)\b"
 TRAILING_DATE = re.compile(
-    r"\s*(?:(?:mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?,?\s+)?"
+    rf"\s*(?:{_DAY}\.?,?\s+)?"
     rf"(?:(?:\d{{1,2}}(?:st|nd|rd|th)?\s+{_MON}|{_MON}\s+\d{{1,2}}(?:st|nd|rd|th)?,?)\s+\d{{4}}\b|\d{{1,2}}/\d{{1,2}}/\d{{2,4}}\b).*$", re.I)
 # A whole listing card read as a title: "Music Katherine Jenkins ... Tue 6 Oct
 # Concert Hall From £39.75 Find out more" (Brighton Dome). Its show name is
 # recovered and a cleaner listing of the same show is preferred.
 CARD_TEXT = re.compile(r"(?:\bfind\s+out\s+more|\bfind\s+tickets|\bbook\s+now|\bfrom\s+£\s?\d)\s*$", re.I)
 CARD_LABELS = re.compile(r"^(?:(?:new\s+on\s+sale|accessible\s+events|just\s+announced|music|comedy|theatre|dance|family|film\s*&\s*visual\s+arts|talks?\s*(?:&|and)\s*debate|classical\s+music|literature,?\s+poetry\s*&\s*spoken\s+word)\s+)+", re.I)
-CARD_TAIL = re.compile(r"\s+(?:(?:mon|tue|wed|thu|fri|sat|sun)[a-z]*\s+\d{1,2}\s+[a-z]{3,9}\b|brighton\s+dome\s+comedy\s+festival\b|presented\s+by\b).*$", re.I)
+CARD_TAIL = re.compile(rf"\s+(?:{_DAY}\s+\d{{1,2}}\s+[a-z]{{3,9}}\b|brighton\s+dome\s+comedy\s+festival\b|presented\s+by\b).*$", re.I)
+
+# "Mutations Unkle Sounds 2026 10 24": a date in numbers on the end of a title
+# made from the event page's address.
+TRAILING_NUMERIC_DATE = re.compile(r"\s+(?:20\d\d[\s./-]\d{1,2}[\s./-]\d{1,2}|\d{1,2}[\s./-]\d{1,2}[\s./-]20\d\d)\s*$")
+# Skiddle's "Ghostface Killah (Wu-Tang Clan) / Sat 5th Dec / Chalk / Brighton":
+# the date, venue and town after the name.
+SLASHED_DATE_TAIL = re.compile(
+    rf"\s+/\s+{_DAY}\.?\s+\d{{1,2}}(?:st|nd|rd|th)?\s+{_MON}(?:\s+\d{{4}})?(?:\s+/.*)?$", re.I)
 
 def card_title(title):
     t = CARD_TAIL.sub("", CARD_LABELS.sub("", str(title).strip())).strip(" -–|·")
@@ -182,13 +193,17 @@ LEADING_LABEL = re.compile(r"^(?:\*+\s*sold\s+out\s*\*+|(?:club|live|comedy|musi
 
 def clean_title(title):
     raw = html.unescape(str(title or ""))
-    cleaned = TRAILING_DATE.sub("", raw).strip(" -–|·")
+    cleaned = TRAILING_NUMERIC_DATE.sub("", TRAILING_DATE.sub("", SLASHED_DATE_TAIL.sub("", raw))).strip(" -–|·")
     while True:
         shorter = LEADING_LABEL.sub("", cleaned, count=1)
         if shorter == cleaned or len(shorter) < 3:
             break
         cleaned = shorter
     return cleaned if len(cleaned) >= 3 else raw.strip()
+
+assert clean_title("Ghostface Killah (Wu-Tang Clan) / Sat 5th Dec / Chalk / Brighton") == "Ghostface Killah (Wu-Tang Clan)"
+assert clean_title("Mutations Unkle Sounds 2026 10 24") == "Mutations Unkle Sounds"
+assert clean_title("IO / Playing Alice / Spooky Huge / Dateless Wonder Club") == "IO / Playing Alice / Spooky Huge / Dateless Wonder Club"
 
 def normalise_time(value):
     """Return HH:MM for values like '19:30', '7:30pm', '11pm'; '' if unreadable."""
@@ -264,8 +279,26 @@ def preference(event):
     return (bool(event.get("_card_text")), is_venue_name(event.get("title"), event.get("venue")), event.get("source") == "discovery",
             not event.get("time"), -len(title_key(event.get("title"))))
 
+# A ticket link that only this venue's listings on one day use is that show's
+# own page: two listings there are one show, however each source words it
+# ("Groundwork 002: Halloween w/ Soul Mass Transit System" and a title made from
+# the page's address). Listings pages (any page in event-sources.json, or one
+# ending /whats-on/, /events/...) never count.
+SOURCE_PAGES = {str(s.get("url") or "").rstrip("/") for s in json.loads((ROOT / "event-sources.json").read_text())}
+LISTING_ENDS = re.compile(r"/(?:whats-?on|events?|shows|listings|calendar|gigs|tickets|comedy(?:festival)?|music|programme)/?$", re.I)
+link_days = {}
+def own_link(url):
+    return (bool(url) and url.rstrip("/") not in SOURCE_PAGES and not LISTING_ENDS.search(url.split("?")[0])
+            and len(link_days.get(url, ())) == 1)
+
+def minutes(t):
+    return int(t[:2]) * 60 + int(t[3:5])
+
 def can_merge(kept_event, event):
     t1, t2 = kept_event.get("time") or "", event.get("time") or ""
+    u = kept_event.get("ticket_url")
+    if u and u == event.get("ticket_url") and own_link(u) and (not t1 or not t2 or t1 == t2):
+        return True
     # Some venue pages give each show a second card titled only with the venue's
     # name ("The Forge Comedy Club" beside "Tom Ward: ..."). At the same time
     # (or with no time) it is that show.
@@ -273,7 +306,14 @@ def can_merge(kept_event, event):
         return True
     if not same_show(kept_event.get("title"), event.get("title"), kept_event.get("venue")):
         return False
+    # "Phoebe Bridgers" and "Phoebe Bridgers (Matinee)": two sessions, unless
+    # both give the same start time.
+    if not same_session(kept_event, event):
+        return False
     if not t1 or not t2 or t1 == t2:
+        return True
+    # 11:00 and 23:00: one source read "11" without its "pm". The evening time is kept.
+    if abs(minutes(t1) - minutes(t2)) == 720:
         return True
     # One site listing a show twice with the same ticket link, the second start
     # inside the first one's running time ("19:00-21:00" and "20:00": doors and
@@ -292,7 +332,28 @@ def starts_during(a, b):
             return True
     return False
 
+# The ids the app already knows: those in the last published events.json (git's
+# copy, as the scrapers have rewritten the file since), and the ids merged into
+# them. When two listings of a show are merged, the kept one takes the id the app
+# knows, so the show's id doesn't change between runs. A changed id shows the
+# event as new since someone's last visit and breaks its shared link's preview.
+def published_ids():
+    try:
+        r = subprocess.run(["git", "show", "HEAD:events.json"], cwd=ROOT, capture_output=True, text=True, timeout=60)
+        events = json.loads(r.stdout).get("events", []) if r.returncode == 0 else []
+    except (OSError, ValueError, subprocess.SubprocessError):
+        events = []
+    return {e.get("id") for e in events}, {a for e in events for a in e.get("also_ids") or []}
+
+PUBLISHED, PUBLISHED_ALIASES = published_ids()
+
+def keep_known_id(kept_event, event):
+    rank = lambda i: 2 if i in PUBLISHED else 1 if i in PUBLISHED_ALIASES else 0
+    if rank(event.get("id")) > rank(kept_event.get("id")):
+        kept_event["id"], event["id"] = event["id"], kept_event["id"]
+
 def absorb(kept_event, event, fields=("time", "finish_time", "ticket_url", "promoter")):
+    keep_known_id(kept_event, event)
     for field in fields:
         if not kept_event.get(field) and event.get(field):
             kept_event[field] = event[field]
@@ -305,6 +366,9 @@ def absorb(kept_event, event, fields=("time", "finish_time", "ticket_url", "prom
 merged_report = []
 by_day = {}
 for event in kept:
+    if event.get("ticket_url"):
+        link_days.setdefault(event["ticket_url"], set()).add((event.get("venue"), event.get("date")))
+for event in kept:
     by_day.setdefault(base_key(event)[:2], []).append(event)
 final = []
 for day_events in by_day.values():
@@ -314,6 +378,9 @@ for day_events in by_day.values():
         if match is None:
             chosen.append(event)
             continue
+        t1, t2 = match.get("time") or "", event.get("time") or ""
+        if t1 and t2 and abs(minutes(t1) - minutes(t2)) == 720:
+            match["time"] = max(t1, t2)
         absorb(match, event)
         removed["duplicates"] += 1
         merged_report.append(f"{match['date']} {match['venue']}: kept {match['title']!r}, merged {event['title']!r}")
@@ -323,8 +390,10 @@ for day_events in by_day.values():
 # Komedia, which lists them itself. A Dome listing of a show Komedia has the
 # same day, at the same time (or with no time on one of them, or the same
 # ticket link), is Komedia's show: it is merged into Komedia's listing, which
-# keeps its id and gains the Dome one in also_ids. A title naming Komedia is
-# its show whatever the time, when Komedia has just one listing of it that day.
+# keeps its category (from Komedia's own booking feed) and its id (unless only
+# the Dome one's was published; see keep_known_id) and lists the other in
+# also_ids. A title naming Komedia is its show whatever the time, when Komedia
+# has just one listing of it that day.
 ALSO_LISTED_BY = {"Brighton Dome": "Komedia"}
 
 def listed_elsewhere(event, candidates, host):
@@ -351,10 +420,6 @@ for event in final:
         # Not the Dome's finish time or link: its pages give most shows 23:00,
         # and Komedia's own link is the one closest to buying.
         absorb(match, event, fields=("time", "promoter"))
-        # The festival's pages say it's comedy; Komedia's listing often doesn't
-        # say, and a title with "live" or "rave" in it reads as music.
-        if event.get("category") == "Comedy":
-            match["category"] = "Comedy"
         cross_listed.add(id(event))
         removed["duplicates"] += 1
         merged_report.append(f"{match['date']} {match['venue']}: kept {match['title']!r}, merged {event['venue']}'s {event['title']!r}")
@@ -410,10 +475,11 @@ for event in final:
         if title_key(new_title) != title_key(event.get("title")) and key in taken:
             continue
         taken.add(key); event["title"] = new_title; tidied += 1
+    # A listing found again today comes with its raw title, so its badges are
+    # worked out afresh. One that wasn't (its venue's page failed today) keeps
+    # its published title, already without the markers, and its badges.
     if badges:
         event["badges"] = badges; badged += 1
-    else:
-        event.pop("badges", None)
     if sold_out:
         event["status"] = "SOLD OUT"
 print(f"Tidied titles: {tidied}; badges added: {badged}")

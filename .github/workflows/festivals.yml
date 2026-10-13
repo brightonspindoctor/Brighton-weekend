@@ -10,8 +10,12 @@ on:
       - 'scripts/validate-festivals.py'
       - 'requirements-events.txt'
       - '.github/workflows/festivals.yml'
+  # GitHub can start scheduled runs hours late or drop them, so there's a second
+  # start time; it stops straight away if today's refresh has already run.
   schedule:
-    - cron: '37 7 * * *'
+    - cron: '37 2 * * *'
+      timezone: 'Europe/London'
+    - cron: '37 10 * * *'
       timezone: 'Europe/London'
 
 permissions:
@@ -22,7 +26,33 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  due:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.due.outputs.run }}
+    steps:
+      - name: Check out festivals.json
+        uses: actions/checkout@v5
+        with:
+          sparse-checkout: festivals.json
+          sparse-checkout-cone-mode: false
+      - name: Has today's refresh already run?
+        id: due
+        env:
+          EVENT: ${{ github.event_name }}
+        run: |
+          today=$(TZ=Europe/London date +%F)
+          updated=$(python3 -c "import json; print(json.load(open('festivals.json')).get('updated', ''))")
+          if [ "$EVENT" = "schedule" ] && [ "$updated" = "$today" ]; then
+            echo "Festivals already refreshed today ($today)."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
   refresh-festivals:
+    needs: due
+    if: needs.due.outputs.run == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Check out Brighton Weekend
@@ -50,13 +80,20 @@ jobs:
           # the latest main (the event refresh or an avatar upload may have pushed
           # while this ran) instead of pushing a stale branch that gets rejected.
           cp festivals.json "$RUNNER_TEMP/festivals.json"
-          git fetch origin main
-          git reset --hard origin/main
-          cp "$RUNNER_TEMP/festivals.json" festivals.json
-          git add festivals.json
-          if git diff --cached --quiet; then
-            echo 'No festival data changes this run.'
-            exit 0
-          fi
-          git commit -m 'Refresh festival data'
-          git push origin HEAD:main
+          for attempt in 1 2 3; do
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            cp "$RUNNER_TEMP/festivals.json" festivals.json
+            git add festivals.json
+            if git diff --cached --quiet; then
+              echo 'No festival data changes this run.'
+              exit 0
+            fi
+            git commit -q -m 'Refresh festival data'
+            if git push -q origin HEAD:main; then
+              exit 0
+            fi
+            echo "main moved on while this ran; trying again ($attempt)."
+            sleep $((attempt * 20))
+          done
+          exit 1
