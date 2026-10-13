@@ -244,16 +244,6 @@
   "sold": null,
   "checked": "2026-10-12"
  },
- "https://brightondome.org/comedyfestival/|2026-10-17|stevie martin clout": {
-  "url": "https://brightondome.org/whats-on/Ltk-stevie-martin-clout/",
-  "sold": null,
-  "checked": "2026-10-13"
- },
- "https://brightondome.org/comedyfestival/|2026-10-18|the blindboy podcast live": {
-  "url": "https://brightondome.org/whats-on/LrI-the-blindboy-podcast-live/",
-  "sold": null,
-  "checked": "2026-10-13"
- },
  "https://brightondome.org/comedyfestival/|2026-10-24|komedia comedy club": {
   "url": null,
   "sold": null,
@@ -615,6 +605,11 @@
   "url": null,
   "sold": null,
   "checked": "2026-10-12"
+ },
+ "https://brightondome.org/whats-on/LGF-make-a-fly-workshop/|2026-10-17|make a fly workshop": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-13"
  },
  "https://brightondome.org/whats-on/LGj-john-crace-what-the-hell-just-happened/|2026-10-18|john crace what the hell just happened": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873652599/events/128652251",

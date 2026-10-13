@@ -306,16 +306,54 @@
     {
       "venue": "The Forge Comedy Club",
       "url": "https://forgecomedyclub.com/",
-      "events": 0,
+      "events": 199,
       "error": "",
-      "sample": []
+      "sample": [
+        {
+          "title": "Charlie Baker: Go Get It",
+          "date": "2026-10-14",
+          "time": "19:30",
+          "link": "https://www.eventbrite.co.uk/e/charlie-baker-go-get-it-tickets-1982964482146"
+        },
+        {
+          "title": "Charlie Baker: Go Get It",
+          "date": "2026-10-14",
+          "time": "19:30",
+          "link": "https://www.eventbrite.co.uk/e/charlie-baker-go-get-it-tickets-1982964482146"
+        },
+        {
+          "title": "Charlie Baker: Go Get It",
+          "date": "2026-10-14",
+          "time": "",
+          "link": "https://www.eventbrite.co.uk/e/charlie-baker-go-get-it-tickets-1982964482146"
+        }
+      ]
     },
     {
       "venue": "The Forge Comedy Club",
       "url": "https://forgecomedyclub.co.uk/",
-      "events": 0,
+      "events": 199,
       "error": "",
-      "sample": []
+      "sample": [
+        {
+          "title": "Charlie Baker: Go Get It",
+          "date": "2026-10-14",
+          "time": "19:30",
+          "link": "https://www.eventbrite.co.uk/e/charlie-baker-go-get-it-tickets-1982964482146"
+        },
+        {
+          "title": "Charlie Baker: Go Get It",
+          "date": "2026-10-14",
+          "time": "19:30",
+          "link": "https://www.eventbrite.co.uk/e/charlie-baker-go-get-it-tickets-1982964482146"
+        },
+        {
+          "title": "Charlie Baker: Go Get It",
+          "date": "2026-10-14",
+          "time": "",
+          "link": "https://www.eventbrite.co.uk/e/charlie-baker-go-get-it-tickets-1982964482146"
+        }
+      ]
     },
     {
       "venue": "Theatre Royal Brighton",
@@ -346,7 +384,7 @@
     {
       "venue": "The Hope & Ruin",
       "url": "https://www.hope.pub/",
-      "events": 78,
+      "events": 69,
       "error": "",
       "sample": [
         {
@@ -372,9 +410,28 @@
     {
       "venue": "The Prince Albert",
       "url": "https://princealbertbrighton.co.uk/",
-      "events": 0,
+      "events": 5,
       "error": "",
-      "sample": []
+      "sample": [
+        {
+          "title": "Superbloom Tickets",
+          "date": "2026-10-21",
+          "time": "19:30",
+          "link": "https://cutflowers.band/pages/superbloom-tickets"
+        },
+        {
+          "title": "Superbloom Tickets",
+          "date": "2026-10-21",
+          "time": "19:30",
+          "link": "https://cutflowers.band/pages/superbloom-tickets"
+        },
+        {
+          "title": "Superbloom Tickets",
+          "date": "2026-10-21",
+          "time": "19:30",
+          "link": "https://cutflowers.band/pages/superbloom-tickets"
+        }
+      ]
     },
     {
       "venue": "The Pipeline",
@@ -490,7 +547,7 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/whats-on/",
-      "events": 88,
+      "events": 66,
       "error": "",
       "sample": [
         {
@@ -516,7 +573,7 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/comedyfestival/",
-      "events": 162,
+      "events": 164,
       "error": "",
       "sample": [
         {
@@ -610,7 +667,6 @@
       "ticket_url": "https://brightondome.org/whats-on/L02-natural-behaviour-by-thick-tight/",
       "last_seen": "2026-10-13",
       "also_ids": [
-        "2026-10-13-brighton-dome-accessible-events-dance-natural-behaviour-by-thick-tight-a-wildly-imaginative-world-of-queer-dance-tue-13-oct-corn-exchange-from-10-find-out-more",
         "2026-10-13-brighton-dome-natural-behaviour-by-thick-tight"
       ]
     },
@@ -814,7 +870,6 @@
       "ticket_url": "https://brightondome.org/whats-on/Lp9-the-southern-syncopated-orchestra/",
       "last_seen": "2026-10-13",
       "also_ids": [
-        "2026-10-14-brighton-dome-heritage-tours-the-southern-syncopated-orchestra-brighton-dome-heritage-talks-wed-14-oct-brighton-dome-founders-room-from-10-find-out-more",
         "2026-10-14-brighton-dome-the-southern-syncopated-orchestra-2"
       ]
     },
@@ -846,8 +901,7 @@
       "ticket_url": "https://brightondome.org/whats-on/L26-alice-coopers-devil-on-my-shoulder-book-tour/",
       "last_seen": "2026-10-13",
       "also_ids": [
-        "2026-10-14-brighton-dome-alice-cooper-s-devil-on-my-shoulder-book-tour-2",
-        "2026-10-14-brighton-dome-talks-debate-alice-cooper-s-devil-on-my-shoulder-book-tour-wed-14-oct-brighton-dome-concert-hall-from-59-find-out-more"
+        "2026-10-14-brighton-dome-alice-cooper-s-devil-on-my-shoulder-book-tour-2"
       ]
     },
     {
@@ -1828,6 +1882,18 @@
       "status": "SOLD OUT"
     },
     {
+      "id": "2026-10-17-brighton-dome-make-a-fly-workshop",
+      "title": "Make a Fly Workshop",
+      "date": "2026-10-17",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "11:00",
+      "finish_time": "13:00",
+      "category": "Other",
+      "ticket_url": "https://brightondome.org/whats-on/LGF-make-a-fly-workshop/",
+      "last_seen": "2026-10-13"
+    },
+    {
       "id": "2026-10-17-the-hope-ruin-brighton-cat-tour-art-day",
       "title": "Brighton Cat Tour: Art Day",
       "date": "2026-10-17",
@@ -1948,6 +2014,21 @@
         "2026-10-17-the-hope-ruin-toast-club-2"
       ],
       "promoter": "JOY. Concerts"
+    },
+    {
+      "id": "2026-10-17-brighton-dome-stevie-martin-clout-2",
+      "title": "Stevie Martin: Clout",
+      "date": "2026-10-17",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "23:00",
+      "category": "Comedy",
+      "ticket_url": "https://brightondome.org/whats-on/Ltk-stevie-martin-clout/",
+      "last_seen": "2026-10-13",
+      "also_ids": [
+        "2026-10-17-brighton-dome-stevie-martin-clout"
+      ]
     },
     {
       "id": "2026-10-17-concorde-2-reef",
@@ -2178,21 +2259,6 @@
       "last_seen": "2026-10-13",
       "genre": "Folk & Country",
       "genre_source": "musicbrainz:d9b2b9f5-9deb-46f0-a023-a5a6e2a294d8"
-    },
-    {
-      "id": "2026-10-17-brighton-dome-stevie-martin-clout-2",
-      "title": "Stevie Martin: Clout",
-      "date": "2026-10-17",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://brightondome.org/whats-on/Ltk-stevie-martin-clout/",
-      "last_seen": "2026-10-13",
-      "also_ids": [
-        "2026-10-17-brighton-dome-stevie-martin-clout"
-      ]
     },
     {
       "id": "2026-10-17-chalk-brainrot",
@@ -2526,6 +2592,21 @@
       ]
     },
     {
+      "id": "2026-10-18-brighton-dome-the-blindboy-podcast-live-2",
+      "title": "The Blindboy Podcast LIVE",
+      "date": "2026-10-18",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Talk",
+      "ticket_url": "https://brightondome.org/whats-on/LrI-the-blindboy-podcast-live/",
+      "last_seen": "2026-10-13",
+      "also_ids": [
+        "2026-10-18-brighton-dome-the-blindboy-podcast-live"
+      ]
+    },
+    {
       "id": "2026-10-18-komedia-robin-ince-joanna-neary-sun-18-oct-2026-7-30-pm-doors-7-00-pm",
       "title": "Robin Ince & Joanna Neary",
       "date": "2026-10-18",
@@ -2570,21 +2651,6 @@
       "last_seen": "2026-10-13",
       "genre": "Folk & Country",
       "genre_source": "musicbrainz:9a0d554a-4939-45aa-9e1c-746ab9a976bf"
-    },
-    {
-      "id": "2026-10-18-brighton-dome-the-blindboy-podcast-live-2",
-      "title": "The Blindboy Podcast LIVE",
-      "date": "2026-10-18",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Comedy",
-      "ticket_url": "https://brightondome.org/whats-on/LrI-the-blindboy-podcast-live/",
-      "last_seen": "2026-10-13",
-      "also_ids": [
-        "2026-10-18-brighton-dome-the-blindboy-podcast-live"
-      ]
     },
     {
       "id": "2026-10-18-brighton-racecourse-antiques-vintage-fair-by-love-fairs-sunday-18th-october-2026-sunday-18-october-2026",
@@ -19503,7 +19569,7 @@
   "discovery_report": {
     "calendars_loaded": 7,
     "calendars": 7,
-    "events_found": 977,
+    "events_found": 976,
     "rivalcults_unknown_venues": [
       "Brighton Playhouse",
       "The Yellow Book"

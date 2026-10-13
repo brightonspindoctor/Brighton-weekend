@@ -5495,10 +5495,13 @@
   "checked": "2026-10-13",
   "v": 3
  },
- "joe little matisse": {
+ "joel paterson": {
+  "mbid": "af9338af-37a7-460f-b961-650482ad4569",
+  "name": "Joel Paterson",
+  "genres": [],
   "bucket": null,
-  "reason": "not in MusicBrainz",
-  "act": "Joe Little +Matisse",
+  "reason": "no genre tags",
+  "act": "Joel Paterson",
   "checked": "2026-10-13",
   "v": 3
  },
@@ -9680,6 +9683,20 @@
   "reason": "tagged",
   "act": "The Australian Pink Floyd Show",
   "checked": "2026-10-06"
+ },
+ "the best of mike oldfields tubular bells i": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Best of Mike Oldfield's Tubular Bells I",
+  "checked": "2026-10-13",
+  "v": 3
+ },
+ "the best of mike oldfields tubular bells i ii and iii": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Best of Mike Oldfield's Tubular Bells I, II & III",
+  "checked": "2026-10-13",
+  "v": 3
  },
  "the big christmas singalong": {
   "bucket": null,
