@@ -5495,6 +5495,13 @@
   "checked": "2026-10-13",
   "v": 3
  },
+ "joe little matisse": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Joe Little +Matisse",
+  "checked": "2026-10-14",
+  "v": 3
+ },
  "joel paterson": {
   "mbid": "af9338af-37a7-460f-b961-650482ad4569",
   "name": "Joel Paterson",
