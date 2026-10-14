@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-13",
-  "range_start": "2026-10-13",
+  "updated": "2026-10-14",
+  "range_start": "2026-10-14",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -418,6 +418,18 @@
       "location_display": "Brighton"
     },
     {
+      "title": "Jungle Syndicate Weekender",
+      "date": "2027-05-14",
+      "date_end": "2027-05-17",
+      "location": "Chepstow",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/jungle-syndicate-weekender/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/jungle-syndicate-weekender/",
+      "id": "festival:jungle-syndicate-weekender:2027-05-14",
+      "location_display": "Chepstow"
+    },
+    {
       "title": "Pub in the Park",
       "date": "2027-05-14",
       "date_end": "2027-05-16",
@@ -476,18 +488,6 @@
       "detail_url": "https://fezzy.uk/festival/in-it-together-festival/",
       "id": "festival:in-it-together-festival:2027-05-22",
       "location_display": "Wales"
-    },
-    {
-      "title": "Jungle Syndicate Weekender",
-      "date": "2027-05-22",
-      "date_end": "2027-05-25",
-      "location": "Chepstow",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/jungle-syndicate-weekender/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/jungle-syndicate-weekender/",
-      "id": "festival:jungle-syndicate-weekender:2027-05-22",
-      "location_display": "Chepstow"
     },
     {
       "title": "Burning Nest",
@@ -1412,6 +1412,18 @@
       "detail_url": "https://fezzy.uk/festival/the-gathering-for-men/",
       "id": "festival:the-gathering-for-men:2027-06-25",
       "location_display": "UK"
+    },
+    {
+      "title": "Wildfire Festival",
+      "date": "2027-06-25",
+      "date_end": "2027-06-27",
+      "location": "Wanlockhead",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/wildfire-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/wildfire-festival/",
+      "id": "festival:wildfire-festival:2027-06-25",
+      "location_display": "Wanlockhead"
     },
     {
       "title": "Chester-Le-Street Steam & Vintage Fair",
