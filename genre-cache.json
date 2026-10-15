@@ -8990,6 +8990,16 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "snayx": {
+  "mbid": "c772c0d5-421e-4119-8719-66831012c148",
+  "name": "SNAYX",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Snayx",
+  "checked": "2026-10-15",
+  "v": 3
+ },
  "sodomise pauline parker": {
   "bucket": null,
   "reason": "not in MusicBrainz",
