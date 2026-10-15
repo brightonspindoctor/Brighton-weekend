@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-05-dust-brighton-age-against-the-machine-over-30s-xmas-daytime-
+ party@brightonweekend.co.uk
+DTSTAMP:20261205T000000Z
+DTSTART:20261205T150000Z
+DTEND:20261205T190000Z
+SUMMARY:BRIGHTON Age Against The Machine - Over 30s Xmas Daytime Party
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Dust/BRIGHTO
+ N-Age-Against-The-Machine---Over-30s-Xmas-Daytime-Party/42510562/\nMore: h
+ ttps://brightonweekend.co.uk/e/2026-12-05-dust-brighton-age-against-the-ma
+ chine-over-30s-xmas-daytime-party/
+URL:https://brightonweekend.co.uk/e/2026-12-05-dust-brighton-age-against-th
+ e-machine-over-30s-xmas-daytime-party/
+END:VEVENT
+END:VCALENDAR

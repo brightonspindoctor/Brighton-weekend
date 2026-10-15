@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-29-concorde-2-jo-whiley-s-90s-anthems@brightonweekend.co.uk
+DTSTAMP:20270129T000000Z
+DTSTART:20270129T180000Z
+DTEND:20270129T210000Z
+SUMMARY:Jo Whiley's 90s Anthems
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1505956/jo-whiley-ticket
+ s\nMore: https://brightonweekend.co.uk/e/2027-01-29-concorde-2-jo-whiley-s
+ -90s-anthems/
+URL:https://brightonweekend.co.uk/e/2027-01-29-concorde-2-jo-whiley-s-90s-a
+ nthems/
+END:VEVENT
+END:VCALENDAR

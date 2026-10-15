@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-03-the-brunswick-balls-deep-with-laughter@brightonweekend.co.uk
+DTSTAMP:20261103T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Balls Deep ... With Laughter
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/balls-dee
+ p-with-laughter-4\nMore: https://brightonweekend.co.uk/e/2026-11-03-the-br
+ unswick-balls-deep-with-laughter/
+URL:https://brightonweekend.co.uk/e/2026-11-03-the-brunswick-balls-deep-wit
+ h-laughter/
+END:VEVENT
+END:VCALENDAR

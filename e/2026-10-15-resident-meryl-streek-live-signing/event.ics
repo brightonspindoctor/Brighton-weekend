@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-15-resident-meryl-streek-live-signing@brightonweekend.co.uk
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:Meryl Streek: Live + Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6a1d91bfd2fad700014d665f\nMore: 
+ https://brightonweekend.co.uk/e/2026-10-15-resident-meryl-streek-live-sign
+ ing/
+URL:https://brightonweekend.co.uk/e/2026-10-15-resident-meryl-streek-live-s
+ igning/
+END:VEVENT
+END:VCALENDAR

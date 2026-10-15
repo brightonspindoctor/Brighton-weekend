@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-10-a-l-p-h-a-b-e-t-cq-wrestling@brightonweekend.co.uk
+DTSTAMP:20261210T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:CQ Wrestling
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvY3Etd3Jlc3RsaW5nL2EtbC1wLWgtYS1iLWUtdC8zNzI2MD
+ cz/supplier/SeeTickets/suppliedid/MzcyNjA3Mw/ticketid/8151332/checksum/412
+ b2b7d99955a1676faadec5fad8da3/track/true?title=CQ+Wrestling&badge=&venueId
+ =50186\nMore: https://brightonweekend.co.uk/e/2026-12-10-a-l-p-h-a-b-e-t-c
+ q-wrestling/
+URL:https://brightonweekend.co.uk/e/2026-12-10-a-l-p-h-a-b-e-t-cq-wrestling
+ /
+END:VEVENT
+END:VCALENDAR

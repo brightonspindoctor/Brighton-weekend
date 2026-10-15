@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-quarters-club-events-notion@brightonweekend.co.uk
+DTSTAMP:20261017T000000Z
+DTSTART:20261017T220000Z
+DTEND:20261018T030000Z
+SUMMARY:Notion
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/notion/quarters/
+ 3706964\nMore: https://brightonweekend.co.uk/e/2026-10-17-quarters-club-ev
+ ents-notion/
+URL:https://brightonweekend.co.uk/e/2026-10-17-quarters-club-events-notion/
+END:VEVENT
+END:VCALENDAR

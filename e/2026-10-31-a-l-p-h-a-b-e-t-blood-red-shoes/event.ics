@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-a-l-p-h-a-b-e-t-blood-red-shoes@brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Blood Red Shoes
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvYmxvb2QtcmVkLXNob2VzL2EtbC1wLWgtYS1iLWUtdC8zNz
+ A1Mjc3/supplier/SeeTickets/suppliedid/MzcwNTI3Nw/ticketid/8138230/checksum
+ /7e9ae526939dfdd538e654711e55cb3f/track/true?title=Blood+Red+Shoes&badge=&
+ venueId=50186\nMore: https://brightonweekend.co.uk/e/2026-10-31-a-l-p-h-a-
+ b-e-t-blood-red-shoes/
+URL:https://brightonweekend.co.uk/e/2026-10-31-a-l-p-h-a-b-e-t-blood-red-sh
+ oes/
+END:VEVENT
+END:VCALENDAR

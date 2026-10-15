@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-28-komedia-ted-hill-110-weird-sun-28-feb-2027-7-30-pm-doors-7-0
+ 0-pm@brightonweekend.co.uk
+DTSTAMP:20270228T000000Z
+DTSTART:20270228T193000Z
+DTEND:20270228T223000Z
+SUMMARY:Ted Hill: 110% Weird
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366579
+ 9/events/128655181\nMore: https://brightonweekend.co.uk/e/2027-02-28-komed
+ ia-ted-hill-110-weird-sun-28-feb-2027-7-30-pm-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2027-02-28-komedia-ted-hill-110-weird-s
+ un-28-feb-2027-7-30-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

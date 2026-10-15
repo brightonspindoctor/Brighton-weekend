@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-volks-aba-shanti-ras-kayleb-easy-skankin-djs@brightonweekend
+ .co.uk
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Aba Shanti // Ras Kayleb // Easy Skankin DJs
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1566208/aba-shanti-ras-k
+ ayleb-easy-skankin-djs-tickets?skin=volks\nMore: https://brightonweekend.c
+ o.uk/e/2026-11-14-volks-aba-shanti-ras-kayleb-easy-skankin-djs/
+URL:https://brightonweekend.co.uk/e/2026-11-14-volks-aba-shanti-ras-kayleb-
+ easy-skankin-djs/
+END:VEVENT
+END:VCALENDAR

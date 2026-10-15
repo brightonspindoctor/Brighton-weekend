@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-the-folklore-rooms-slow-leaves@brightonweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Slow Leaves
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/slow-leaves/the-folkl
+ ore-rooms/3673311\nMore: https://brightonweekend.co.uk/e/2026-11-14-the-fo
+ lklore-rooms-slow-leaves/
+URL:https://brightonweekend.co.uk/e/2026-11-14-the-folklore-rooms-slow-leav
+ es/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-patterns-dusky-all-day-long-signals-tour@brightonweekend.co.
+ uk
+DTSTAMP:20261031T000000Z
+DTSTART:20261031T170000Z
+DTEND:20261031T220000Z
+SUMMARY:Dusky - All Day Long - Signals Tour
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/dusky-all-day-long-signals-tour-
+ 31st-oct-patterns-brighton-tickets\nMore: https://brightonweekend.co.uk/e/
+ 2026-10-31-patterns-dusky-all-day-long-signals-tour/
+URL:https://brightonweekend.co.uk/e/2026-10-31-patterns-dusky-all-day-long-
+ signals-tour/
+END:VEVENT
+END:VCALENDAR

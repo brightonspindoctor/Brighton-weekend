@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-volks-cowboyy@brightonweekend.co.uk
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Cowboyy
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/J580a98a7728\nMore: https://brigh
+ tonweekend.co.uk/e/2026-11-27-volks-cowboyy/
+URL:https://brightonweekend.co.uk/e/2026-11-27-volks-cowboyy/
+END:VEVENT
+END:VCALENDAR

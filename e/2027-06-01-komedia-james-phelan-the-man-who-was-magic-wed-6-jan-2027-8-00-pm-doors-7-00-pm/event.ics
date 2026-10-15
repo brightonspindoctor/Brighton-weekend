@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-01-komedia-james-phelan-the-man-who-was-magic-wed-6-jan-2027-8-
+ 00-pm-doors-7-00-pm@brightonweekend.co.uk
+DTSTAMP:20270106T000000Z
+DTSTART:20270106T200000Z
+DTEND:20270106T230000Z
+SUMMARY:James Phelan: The Man Who Was Magic
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87365609
+ 2/events/128652829\nMore: https://brightonweekend.co.uk/e/2027-06-01-komed
+ ia-james-phelan-the-man-who-was-magic-wed-6-jan-2027-8-00-pm-doors-7-00-pm
+ /
+URL:https://brightonweekend.co.uk/e/2027-06-01-komedia-james-phelan-the-man
+ -who-was-magic-wed-6-jan-2027-8-00-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

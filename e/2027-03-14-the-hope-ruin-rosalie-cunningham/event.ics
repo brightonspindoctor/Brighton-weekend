@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-14-the-hope-ruin-rosalie-cunningham@brightonweekend.co.uk
+DTSTAMP:20270314T000000Z
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+SUMMARY:Rosalie Cunningham
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/18kro412/rosalie-cunningham\
+ nMore: https://brightonweekend.co.uk/e/2027-03-14-the-hope-ruin-rosalie-cu
+ nningham/
+URL:https://brightonweekend.co.uk/e/2027-03-14-the-hope-ruin-rosalie-cunnin
+ gham/
+END:VEVENT
+END:VCALENDAR

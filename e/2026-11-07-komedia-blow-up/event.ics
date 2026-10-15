@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-komedia-blow-up@brightonweekend.co.uk
+DTSTAMP:20261107T000000Z
+DTSTART:20261107T190000Z
+DTEND:20261107T220000Z
+SUMMARY:Blow Up
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87364834
+ 1/events/128647688\nMore: https://brightonweekend.co.uk/e/2026-11-07-komed
+ ia-blow-up/
+URL:https://brightonweekend.co.uk/e/2026-11-07-komedia-blow-up/
+END:VEVENT
+END:VCALENDAR

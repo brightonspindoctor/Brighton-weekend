@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-15-daltons-henry-single-release-show-maxwelltheband-mulch-point
+ less-waste-of-dopamine@brightonweekend.co.uk
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:Henry (Single Release Show) + Maxwelltheband + Mulch + Pointless Wa
+ ste of Dopamine
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/henry-si
+ ngle-release-show-maxwelltheband-mulch-pointless-waste-of-dopamine\nMore: 
+ https://brightonweekend.co.uk/e/2026-10-15-daltons-henry-single-release-sh
+ ow-maxwelltheband-mulch-pointless-waste-of-dopamine/
+URL:https://brightonweekend.co.uk/e/2026-10-15-daltons-henry-single-release
+ -show-maxwelltheband-mulch-pointless-waste-of-dopamine/
+END:VEVENT
+END:VCALENDAR

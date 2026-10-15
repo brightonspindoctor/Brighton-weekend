@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-amex-stadium-brighton-women-v-liverpool@brightonweekend.co.u
+ k
+DTSTAMP:20261115T000000Z
+DTSTART:20261115T140000Z
+DTEND:20261115T170000Z
+SUMMARY:Brighton Women v Liverpool
+LOCATION:Amex Stadium\, Brighton
+DESCRIPTION:Tickets: https://www.brightonandhovealbion.com/tickets\nMore: h
+ ttps://brightonweekend.co.uk/e/2026-11-15-amex-stadium-brighton-women-v-li
+ verpool/
+URL:https://brightonweekend.co.uk/e/2026-11-15-amex-stadium-brighton-women-
+ v-liverpool/
+END:VEVENT
+END:VCALENDAR

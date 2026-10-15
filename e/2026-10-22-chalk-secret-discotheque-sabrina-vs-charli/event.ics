@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-22-chalk-secret-discotheque-sabrina-vs-charli@brightonweekend.c
+ o.uk
+DTSTAMP:20261022T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Secret Discotheque Sabrina Vs Charli
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/event/secret-discotheque-sabrin
+ a-vs-charli\nMore: https://brightonweekend.co.uk/e/2026-10-22-chalk-secret
+ -discotheque-sabrina-vs-charli/
+URL:https://brightonweekend.co.uk/e/2026-10-22-chalk-secret-discotheque-sab
+ rina-vs-charli/
+END:VEVENT
+END:VCALENDAR

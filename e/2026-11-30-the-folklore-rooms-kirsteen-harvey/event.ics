@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-30-the-folklore-rooms-kirsteen-harvey@brightonweekend.co.uk
+DTSTAMP:20261130T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Kirsteen Harvey
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/kirsteen-harvey/the-f
+ olklore-rooms/3727563\nMore: https://brightonweekend.co.uk/e/2026-11-30-th
+ e-folklore-rooms-kirsteen-harvey/
+URL:https://brightonweekend.co.uk/e/2026-11-30-the-folklore-rooms-kirsteen-
+ harvey/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-16-daltons-had-sandy-sworn-truth-spiltting-gums-halcyon@brighto
+ nweekend.co.uk
+DTSTAMP:20261016T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Had Sandy + Sworn Truth + Spiltting Gums + Halcyon
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/hwmhm4h5/deadletter-presents
+ -had-sandy-sworn-truth-splitting-gums-halcyon?utm_campaign=prom_ss&utm_med
+ ium=social&utm_source=dynamic\nMore: https://brightonweekend.co.uk/e/2026-
+ 10-16-daltons-had-sandy-sworn-truth-spiltting-gums-halcyon/
+URL:https://brightonweekend.co.uk/e/2026-10-16-daltons-had-sandy-sworn-trut
+ h-spiltting-gums-halcyon/
+END:VEVENT
+END:VCALENDAR

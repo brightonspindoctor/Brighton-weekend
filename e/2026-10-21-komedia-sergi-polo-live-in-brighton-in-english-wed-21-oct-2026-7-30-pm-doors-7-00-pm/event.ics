@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-21-komedia-sergi-polo-live-in-brighton-in-english-wed-21-oct-20
+ 26-7-30-pm-doors-7-00-pm@brightonweekend.co.uk
+DTSTAMP:20261021T000000Z
+DTSTART:20261021T183000Z
+DTEND:20261021T213000Z
+SUMMARY:Sergi Polo – LIVE in Brighton (in English)
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87365909
+ 2/events/128640163\nMore: https://brightonweekend.co.uk/e/2026-10-21-komed
+ ia-sergi-polo-live-in-brighton-in-english-wed-21-oct-2026-7-30-pm-doors-7-
+ 00-pm/
+URL:https://brightonweekend.co.uk/e/2026-10-21-komedia-sergi-polo-live-in-b
+ righton-in-english-wed-21-oct-2026-7-30-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

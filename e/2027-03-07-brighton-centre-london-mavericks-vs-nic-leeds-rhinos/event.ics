@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-07-brighton-centre-london-mavericks-vs-nic-leeds-rhinos@brighto
+ nweekend.co.uk
+DTSTAMP:20270307T000000Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:London Mavericks vs NIC Leeds Rhinos
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://www.ticketmaster.co.uk/event/3E006519D3AC48CF\
+ nMore: https://brightonweekend.co.uk/e/2027-03-07-brighton-centre-london-m
+ avericks-vs-nic-leeds-rhinos/
+URL:https://brightonweekend.co.uk/e/2027-03-07-brighton-centre-london-maver
+ icks-vs-nic-leeds-rhinos/
+END:VEVENT
+END:VCALENDAR

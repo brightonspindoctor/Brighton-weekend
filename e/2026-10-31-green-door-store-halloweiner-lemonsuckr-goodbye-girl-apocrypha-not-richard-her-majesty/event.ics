@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-green-door-store-halloweiner-lemonsuckr-goodbye-girl-apocryp
+ ha-not-richard-her-majesty@brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Halloweiner – Lemonsuckr / Goodbye / Girl Apocrypha / Not Richard
+  & Her Majesty
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/halloweiner/\nM
+ ore: https://brightonweekend.co.uk/e/2026-10-31-green-door-store-hallowein
+ er-lemonsuckr-goodbye-girl-apocrypha-not-richard-her-majesty/
+URL:https://brightonweekend.co.uk/e/2026-10-31-green-door-store-halloweiner
+ -lemonsuckr-goodbye-girl-apocrypha-not-richard-her-majesty/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-02-komedia-lost-voice-guy-the-cerebral-palsy-puppet@brightonwee
+ kend.co.uk
+DTSTAMP:20270204T000000Z
+DTSTART:20270204T200000Z
+DTEND:20270204T230000Z
+SUMMARY:Lost Voice Guy – ‘The Cerebral Palsy Puppet’
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366748
+ 4/events/128664821\nMore: https://brightonweekend.co.uk/e/2027-04-02-komed
+ ia-lost-voice-guy-the-cerebral-palsy-puppet/
+URL:https://brightonweekend.co.uk/e/2027-04-02-komedia-lost-voice-guy-the-c
+ erebral-palsy-puppet/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-24-volks-the-cost-of-raving-presents-monrroe-duskee@brightonwee
+ kend.co.uk
+DTSTAMP:20261024T000000Z
+DTSTART:20261024T210000Z
+DTEND:20261025T000000Z
+SUMMARY:The Cost of Raving presents: Monrroe + Duskee
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/The-Cost-of-Raving-presents-Monrroe--Duskee/42820962/\nMore: https
+ ://brightonweekend.co.uk/e/2026-10-24-volks-the-cost-of-raving-presents-mo
+ nrroe-duskee/
+URL:https://brightonweekend.co.uk/e/2026-10-24-volks-the-cost-of-raving-pre
+ sents-monrroe-duskee/
+END:VEVENT
+END:VCALENDAR

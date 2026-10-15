@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-22-komedia-sam-browne-you-ll-miss-the-sunset-sun-22-nov-2026-8-
+ 00-pm-doors-7-30-pm@brightonweekend.co.uk
+DTSTAMP:20261122T000000Z
+DTSTART:20261122T200000Z
+DTEND:20261122T230000Z
+SUMMARY:Sam Browne: You’ll Miss The Sunset
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://www.komedia.co.uk/shows/sam-browne-youll-miss-
+ the-sunset/?eid=20329\nMore: https://brightonweekend.co.uk/e/2026-11-22-ko
+ media-sam-browne-you-ll-miss-the-sunset-sun-22-nov-2026-8-00-pm-doors-7-30
+ -pm/
+URL:https://brightonweekend.co.uk/e/2026-11-22-komedia-sam-browne-you-ll-mi
+ ss-the-sunset-sun-22-nov-2026-8-00-pm-doors-7-30-pm/
+END:VEVENT
+END:VCALENDAR

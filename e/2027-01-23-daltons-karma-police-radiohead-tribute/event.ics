@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-23-daltons-karma-police-radiohead-tribute@brightonweekend.co.uk
+DTSTAMP:20270123T000000Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Karma Police (Radiohead Tribute)
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/karma-po
+ lice-radiohead-tribute-1\nMore: https://brightonweekend.co.uk/e/2027-01-23
+ -daltons-karma-police-radiohead-tribute/
+URL:https://brightonweekend.co.uk/e/2027-01-23-daltons-karma-police-radiohe
+ ad-tribute/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-theatre-royal-brighton-women-in-tech-course@brightonweekend.
+ co.uk
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Women in Tech Course
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/women-in-tech-course/
+ theatre-royal-brighton/\nMore: https://brightonweekend.co.uk/e/2026-11-07-
+ theatre-royal-brighton-women-in-tech-course/
+URL:https://brightonweekend.co.uk/e/2026-11-07-theatre-royal-brighton-women
+ -in-tech-course/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-24-chalk-mutations-26-mike-d-5d-beastie-boys-more@brightonweeke
+ nd.co.uk
+DTSTAMP:20261024T000000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Mutations 26 Mike D Beastie Boys More
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/event/mutations-26-mike-d-beast
+ ie-boys-more\nMore: https://brightonweekend.co.uk/e/2026-10-24-chalk-mutat
+ ions-26-mike-d-5d-beastie-boys-more/
+URL:https://brightonweekend.co.uk/e/2026-10-24-chalk-mutations-26-mike-d-5d
+ -beastie-boys-more/
+END:VEVENT
+END:VCALENDAR

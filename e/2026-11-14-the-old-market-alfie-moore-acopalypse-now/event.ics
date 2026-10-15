@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-the-old-market-alfie-moore-acopalypse-now@brightonweekend.co
+ .uk
+DTSTAMP:20261114T000000Z
+DTSTART:20261114T200000Z
+DTEND:20261114T213000Z
+SUMMARY:Alfie Moore: Acopalypse Now
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://theoldmarket.ticketsolve.com/ticketbooth/shows
+ /1173664713\nMore: https://brightonweekend.co.uk/e/2026-11-14-the-old-mark
+ et-alfie-moore-acopalypse-now/
+URL:https://brightonweekend.co.uk/e/2026-11-14-the-old-market-alfie-moore-a
+ copalypse-now/
+END:VEVENT
+END:VCALENDAR

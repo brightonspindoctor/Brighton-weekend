@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-theatre-royal-brighton-stories-with-skip-autumn-leaves@brigh
+ tonweekend.co.uk
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Stories with Skip - Autumn Leaves
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/stories-with-skip-aut
+ umn-leaves/theatre-royal-brighton/calendar/\nMore: https://brightonweekend
+ .co.uk/e/2026-11-07-theatre-royal-brighton-stories-with-skip-autumn-leaves
+ /
+URL:https://brightonweekend.co.uk/e/2026-11-07-theatre-royal-brighton-stori
+ es-with-skip-autumn-leaves/
+END:VEVENT
+END:VCALENDAR

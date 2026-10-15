@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-30-komedia-joe-avati-good-old-days-sun-30-may-2027-7-00-pm-door
+ s-6-00-pm@brightonweekend.co.uk
+DTSTAMP:20270530T000000Z
+DTSTART:20270530T180000Z
+DTEND:20270530T210000Z
+SUMMARY:Joe Avati – Good Old Days
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366463
+ 7/events/128651977\nMore: https://brightonweekend.co.uk/e/2027-05-30-komed
+ ia-joe-avati-good-old-days-sun-30-may-2027-7-00-pm-doors-6-00-pm/
+URL:https://brightonweekend.co.uk/e/2027-05-30-komedia-joe-avati-good-old-d
+ ays-sun-30-may-2027-7-00-pm-doors-6-00-pm/
+END:VEVENT
+END:VCALENDAR

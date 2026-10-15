@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-the-rose-hill-monster-mash-100@brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Monster Mash 100
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/monster-mash-100/\nMor
+ e: https://brightonweekend.co.uk/e/2026-10-31-the-rose-hill-monster-mash-1
+ 00/
+URL:https://brightonweekend.co.uk/e/2026-10-31-the-rose-hill-monster-mash-1
+ 00/
+END:VEVENT
+END:VCALENDAR

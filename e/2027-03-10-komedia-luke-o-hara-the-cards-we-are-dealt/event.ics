@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-10-komedia-luke-o-hara-the-cards-we-are-dealt@brightonweekend.c
+ o.uk
+DTSTAMP:20270310T000000Z
+DTSTART:20270310T193000Z
+DTEND:20270310T223000Z
+SUMMARY:Luke O’Hara: The Cards We Are Dealt
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366690
+ 1/events/128661927\nMore: https://brightonweekend.co.uk/e/2027-03-10-komed
+ ia-luke-o-hara-the-cards-we-are-dealt/
+URL:https://brightonweekend.co.uk/e/2027-03-10-komedia-luke-o-hara-the-card
+ s-we-are-dealt/
+END:VEVENT
+END:VCALENDAR

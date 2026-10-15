@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-24-brighton-dome-shelf-the-kids-show-2-2@brightonweekend.co.uk
+DTSTAMP:20261024T000000Z
+DTSTART:20261024T130000Z
+DTEND:20261024T160000Z
+SUMMARY:Shelf: The Kids Show 2
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/L1m-shelf-the-kids-s
+ how-2/\nMore: https://brightonweekend.co.uk/e/2026-10-24-brighton-dome-she
+ lf-the-kids-show-2-2/
+URL:https://brightonweekend.co.uk/e/2026-10-24-brighton-dome-shelf-the-kids
+ -show-2-2/
+END:VEVENT
+END:VCALENDAR

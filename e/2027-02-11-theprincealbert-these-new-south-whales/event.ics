@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-11-theprincealbert-these-new-south-whales@brightonweekend.co.uk
+DTSTAMP:20270211T000000Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:These New South Whales
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/brighton-events/the-prince-albe
+ rt\nMore: https://brightonweekend.co.uk/e/2027-02-11-theprincealbert-these
+ -new-south-whales/
+URL:https://brightonweekend.co.uk/e/2027-02-11-theprincealbert-these-new-so
+ uth-whales/
+END:VEVENT
+END:VCALENDAR

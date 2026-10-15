@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-the-old-market-on-your-bike-baffo@brightonweekend.co.uk
+DTSTAMP:20261115T000000Z
+DTSTART:20261115T113000Z
+DTEND:20261115T140000Z
+SUMMARY:On Your Bike Baffo
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/on-your-bike-baffo\
+ nMore: https://brightonweekend.co.uk/e/2026-11-15-the-old-market-on-your-b
+ ike-baffo/
+URL:https://brightonweekend.co.uk/e/2026-11-15-the-old-market-on-your-bike-
+ baffo/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-babble-lo-fidelity-allstars-dj-set@brightonweekend.co.uk
+DTSTAMP:20261107T000000Z
+DTSTART:20261107T210000Z
+DTEND:20261107T230000Z
+SUMMARY:Lo Fidelity Allstars DJ Set
+LOCATION:Babble\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/lo-fidelity-allstars-dj
+ -set-tickets-1989385749329\nPrice: £13 early bird / £15 general\nMore: h
+ ttps://brightonweekend.co.uk/e/2026-11-07-babble-lo-fidelity-allstars-dj-s
+ et/
+URL:https://brightonweekend.co.uk/e/2026-11-07-babble-lo-fidelity-allstars-
+ dj-set/
+END:VEVENT
+END:VCALENDAR

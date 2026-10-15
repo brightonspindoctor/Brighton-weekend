@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-08-concorde-2-pigeon@brightonweekend.co.uk
+DTSTAMP:20270108T000000Z
+DTSTART:20270108T190000Z
+DTEND:20270108T220000Z
+SUMMARY:Pigeon
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1559577/pigeon-tickets\n
+ More: https://brightonweekend.co.uk/e/2027-01-08-concorde-2-pigeon/
+URL:https://brightonweekend.co.uk/e/2027-01-08-concorde-2-pigeon/
+END:VEVENT
+END:VCALENDAR

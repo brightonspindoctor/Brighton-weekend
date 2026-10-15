@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-concorde-2-moody-disco-obskur@brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART:20261031T230000Z
+DTEND:20261101T020000Z
+SUMMARY:Moody Disco - Obskur
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Concorde-2/M
+ oody-Disco-Halloween-Rave-w-Obskr/42622726/\nMore: https://brightonweekend
+ .co.uk/e/2026-10-31-concorde-2-moody-disco-obskur/
+URL:https://brightonweekend.co.uk/e/2026-10-31-concorde-2-moody-disco-obsku
+ r/
+END:VEVENT
+END:VCALENDAR

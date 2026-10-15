@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-10-the-folklore-rooms-calvin-love@brightonweekend.co.uk
+DTSTAMP:20261110T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Calvin Love
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.realsounds.uk/event-details/353\nMore: htt
+ ps://brightonweekend.co.uk/e/2026-11-10-the-folklore-rooms-calvin-love/
+URL:https://brightonweekend.co.uk/e/2026-11-10-the-folklore-rooms-calvin-lo
+ ve/
+END:VEVENT
+END:VCALENDAR

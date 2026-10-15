@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-05-brightoncentre-squeeze-billy-bragg@brightonweekend.co.uk
+DTSTAMP:20261205T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Squeeze Billy Bragg
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/\nMore: https://brightonw
+ eekend.co.uk/e/2026-12-05-brightoncentre-squeeze-billy-bragg/
+URL:https://brightonweekend.co.uk/e/2026-12-05-brightoncentre-squeeze-billy
+ -bragg/
+END:VEVENT
+END:VCALENDAR

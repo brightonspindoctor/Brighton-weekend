@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-04-the-old-market-derek-vs-derek-18@brightonweekend.co.uk
+DTSTAMP:20261104T000000Z
+DTSTART:20261104T190000Z
+DTEND:20261104T220000Z
+SUMMARY:Derek Vs Derek (15)
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/derek-vs-derek\nMor
+ e: https://brightonweekend.co.uk/e/2026-11-04-the-old-market-derek-vs-dere
+ k-18/
+URL:https://brightonweekend.co.uk/e/2026-11-04-the-old-market-derek-vs-dere
+ k-18/
+END:VEVENT
+END:VCALENDAR

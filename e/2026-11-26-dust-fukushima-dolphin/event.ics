@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-26-dust-fukushima-dolphin@brightonweekend.co.uk
+DTSTAMP:20261126T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Fukushima Dolphin
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6aa2cfbf2d406a00011da076\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-26-dust-fukushima-dolphin/
+URL:https://brightonweekend.co.uk/e/2026-11-26-dust-fukushima-dolphin/
+END:VEVENT
+END:VCALENDAR

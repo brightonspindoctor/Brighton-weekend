@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-26-komedia-comic-boom-comedy-club-thu-26-nov-2026-7-30-pm-doors
+ -6-30-pm@brightonweekend.co.uk
+DTSTAMP:20261126T000000Z
+DTSTART:20261126T193000Z
+DTEND:20261126T223000Z
+SUMMARY:Comic Boom Comedy Club
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/700425/e
+ vents/128635542\nMore: https://brightonweekend.co.uk/e/2026-11-26-komedia-
+ comic-boom-comedy-club-thu-26-nov-2026-7-30-pm-doors-6-30-pm/
+URL:https://brightonweekend.co.uk/e/2026-11-26-komedia-comic-boom-comedy-cl
+ ub-thu-26-nov-2026-7-30-pm-doors-6-30-pm/
+END:VEVENT
+END:VCALENDAR

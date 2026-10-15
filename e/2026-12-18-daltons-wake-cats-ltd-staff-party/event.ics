@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-18-daltons-wake-cats-ltd-staff-party@brightonweekend.co.uk
+DTSTAMP:20261218T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Wake & Cats LTD Staff Party
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://ticketpass.org/event/EDHAZD/wake-cats-staff-pa
+ rty-at-daltons-brighton-town-of-cats-buffos-wake-brassic-parpbassie-gracie
+ \nMore: https://brightonweekend.co.uk/e/2026-12-18-daltons-wake-cats-ltd-s
+ taff-party/
+URL:https://brightonweekend.co.uk/e/2026-12-18-daltons-wake-cats-ltd-staff-
+ party/
+END:VEVENT
+END:VCALENDAR

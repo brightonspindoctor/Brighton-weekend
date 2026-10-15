@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-26-brighton-centre-bloc-party-interpol@brightonweekend.co.uk
+DTSTAMP:20261126T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Bloc Party & Interpol
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://www.ticketmaster.co.uk/event/3E00635F7AFC2BB6\
+ nMore: https://brightonweekend.co.uk/e/2026-11-26-brighton-centre-bloc-par
+ ty-interpol/
+URL:https://brightonweekend.co.uk/e/2026-11-26-brighton-centre-bloc-party-i
+ nterpol/
+END:VEVENT
+END:VCALENDAR

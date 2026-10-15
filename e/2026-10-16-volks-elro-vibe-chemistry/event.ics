@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-16-volks-elro-vibe-chemistry@brightonweekend.co.uk
+DTSTAMP:20261016T000000Z
+DTSTART:20261016T170000Z
+DTEND:20261016T210000Z
+SUMMARY:Elro & Vibe Chemistry
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Elro--Vibe-Chemistry/42748835/\nMore: https://brightonweekend.co.u
+ k/e/2026-10-16-volks-elro-vibe-chemistry/
+URL:https://brightonweekend.co.uk/e/2026-10-16-volks-elro-vibe-chemistry/
+END:VEVENT
+END:VCALENDAR

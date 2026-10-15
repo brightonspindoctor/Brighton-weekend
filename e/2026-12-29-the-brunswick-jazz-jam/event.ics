@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-29-the-brunswick-jazz-jam@brightonweekend.co.uk
+DTSTAMP:20261229T000000Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:Jazz Jam
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/jazz-jam-
+ 223\nMore: https://brightonweekend.co.uk/e/2026-12-29-the-brunswick-jazz-j
+ am/
+URL:https://brightonweekend.co.uk/e/2026-12-29-the-brunswick-jazz-jam/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-15-brighton-dome-lulu@brightonweekend.co.uk
+DTSTAMP:20261015T000000Z
+DTSTART:20261015T180000Z
+DTEND:20261015T220000Z
+SUMMARY:Lulu
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/L3A-lulu/\nMore: htt
+ ps://brightonweekend.co.uk/e/2026-10-15-brighton-dome-lulu/
+URL:https://brightonweekend.co.uk/e/2026-10-15-brighton-dome-lulu/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-20-komedia-the-zangwills-cinnabar-fri-20-nov-2026-doors-7-00-pm
+ @brightonweekend.co.uk
+DTSTAMP:20261120T000000Z
+DTSTART:20261120T190000Z
+DTEND:20261120T220000Z
+SUMMARY:The Zangwills + Cinnabar
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366544
+ 0/events/128654298\nMore: https://brightonweekend.co.uk/e/2026-11-20-komed
+ ia-the-zangwills-cinnabar-fri-20-nov-2026-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-11-20-komedia-the-zangwills-cinnab
+ ar-fri-20-nov-2026-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

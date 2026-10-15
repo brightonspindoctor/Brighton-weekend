@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-24-theatreroyalbrighton-henry-paker@brightonweekend.co.uk
+DTSTAMP:20270324T000000Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:Henry Paker
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/venues/theatre-royal-bright
+ on/whats-on/\nMore: https://brightonweekend.co.uk/e/2027-03-24-theatreroya
+ lbrighton-henry-paker/
+URL:https://brightonweekend.co.uk/e/2027-03-24-theatreroyalbrighton-henry-p
+ aker/
+END:VEVENT
+END:VCALENDAR

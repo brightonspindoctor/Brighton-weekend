@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-the-old-market-ballet-brighton-clara-s-dream@brightonweekend
+ .co.uk
+DTSTAMP:20261121T000000Z
+DTSTART:20261121T190000Z
+DTEND:20261121T220000Z
+SUMMARY:Ballet Brighton: Clara’s Dream
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/ballet-brighton-cla
+ ras-dream\nMore: https://brightonweekend.co.uk/e/2026-11-21-the-old-market
+ -ballet-brighton-clara-s-dream/
+URL:https://brightonweekend.co.uk/e/2026-11-21-the-old-market-ballet-bright
+ on-clara-s-dream/
+END:VEVENT
+END:VCALENDAR

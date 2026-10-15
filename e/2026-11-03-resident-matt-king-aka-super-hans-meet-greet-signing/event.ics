@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-03-resident-matt-king-aka-super-hans-meet-greet-signing@brighto
+ nweekend.co.uk
+DTSTAMP:20261103T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Matt King AKA Super Hans: Meet & Greet + Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6a7b04fdb257eb0001d27c3f\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-03-resident-matt-king-aka-super-ha
+ ns-meet-greet-signing/
+URL:https://brightonweekend.co.uk/e/2026-11-03-resident-matt-king-aka-super
+ -hans-meet-greet-signing/
+END:VEVENT
+END:VCALENDAR

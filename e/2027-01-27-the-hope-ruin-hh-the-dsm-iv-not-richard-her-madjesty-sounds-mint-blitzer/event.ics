@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-27-the-hope-ruin-hh-the-dsm-iv-not-richard-her-madjesty-sounds-
+ mint-blitzer@brightonweekend.co.uk
+DTSTAMP:20270127T000000Z
+DTSTART;VALUE=DATE:20270127
+DTEND;VALUE=DATE:20270128
+SUMMARY:HH: The DSM IV + Not Richard & Her Madjesty + sounds mint + Blitzer
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/e7q92w4r/hh-the-dsm-iv-not-r
+ ichard-her-madjesty-sounds-mint-blitzer\nMore: https://brightonweekend.co.
+ uk/e/2027-01-27-the-hope-ruin-hh-the-dsm-iv-not-richard-her-madjesty-sound
+ s-mint-blitzer/
+URL:https://brightonweekend.co.uk/e/2027-01-27-the-hope-ruin-hh-the-dsm-iv-
+ not-richard-her-madjesty-sounds-mint-blitzer/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-patterns-employed-to-serve-cabal@brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART:20261106T190000Z
+DTEND:20261106T220000Z
+SUMMARY:Employed To Serve
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/employed-to-serve-6th-nov-patter
+ ns-brighton-tickets\nMore: https://brightonweekend.co.uk/e/2026-11-06-patt
+ erns-employed-to-serve-cabal/
+URL:https://brightonweekend.co.uk/e/2026-11-06-patterns-employed-to-serve-c
+ abal/
+END:VEVENT
+END:VCALENDAR

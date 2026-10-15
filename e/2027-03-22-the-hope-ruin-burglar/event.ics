@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-22-the-hope-ruin-burglar@brightonweekend.co.uk
+DTSTAMP:20270322T000000Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:Burglar
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/31mf2594/burglar\nMore: http
+ s://brightonweekend.co.uk/e/2027-03-22-the-hope-ruin-burglar/
+URL:https://brightonweekend.co.uk/e/2027-03-22-the-hope-ruin-burglar/
+END:VEVENT
+END:VCALENDAR

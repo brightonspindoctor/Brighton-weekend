@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-16-brighton-dome-jazz-emu-the-pleasure-is-all-yours-2@brightonw
+ eekend.co.uk
+DTSTAMP:20261016T000000Z
+DTSTART:20261016T170000Z
+DTEND:20261016T220000Z
+SUMMARY:Jazz Emu: The Pleasure Is All Yours
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/Ljb-jazz-emu-the-ple
+ asure-is-all-yours/\nMore: https://brightonweekend.co.uk/e/2026-10-16-brig
+ hton-dome-jazz-emu-the-pleasure-is-all-yours-2/
+URL:https://brightonweekend.co.uk/e/2026-10-16-brighton-dome-jazz-emu-the-p
+ leasure-is-all-yours-2/
+END:VEVENT
+END:VCALENDAR

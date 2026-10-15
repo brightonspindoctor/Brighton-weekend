@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-volks-rnli-shoreham-fundraiser-live-show-halloween-special@b
+ rightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART:20261031T140000Z
+DTEND:20261031T213000Z
+SUMMARY:RNLI - Shoreham Fundraiser - Live show - Halloween Special
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/RNLI---Shoreham-Fundraiser---Live-show---Halloween-Special/4266841
+ 0/\nMore: https://brightonweekend.co.uk/e/2026-10-31-volks-rnli-shoreham-f
+ undraiser-live-show-halloween-special/
+URL:https://brightonweekend.co.uk/e/2026-10-31-volks-rnli-shoreham-fundrais
+ er-live-show-halloween-special/
+END:VEVENT
+END:VCALENDAR

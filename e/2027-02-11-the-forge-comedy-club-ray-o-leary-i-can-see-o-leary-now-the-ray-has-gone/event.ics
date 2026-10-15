@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-11-the-forge-comedy-club-ray-o-leary-i-can-see-o-leary-now-the-
+ ray-has-gone@brightonweekend.co.uk
+DTSTAMP:20270211T000000Z
+DTSTART:20270211T193000Z
+DTEND:20270211T213000Z
+SUMMARY:Ray O’Leary: I Can See O’Leary Now The Ray Has Gone
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/ray-oleary-i-can-see-ol
+ eary-now-the-ray-has-gone-tickets-2002383895133\nMore: https://brightonwee
+ kend.co.uk/e/2027-02-11-the-forge-comedy-club-ray-o-leary-i-can-see-o-lear
+ y-now-the-ray-has-gone/
+URL:https://brightonweekend.co.uk/e/2027-02-11-the-forge-comedy-club-ray-o-
+ leary-i-can-see-o-leary-now-the-ray-has-gone/
+END:VEVENT
+END:VCALENDAR

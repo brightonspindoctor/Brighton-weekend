@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-01-patterns-brighton-sundae-w-marcia-carr@brightonweekend.co.uk
+DTSTAMP:20261101T000000Z
+DTSTART:20261101T133000Z
+DTEND:20261101T200000Z
+SUMMARY:Brighton Sundae w/ Marcia Carr
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/brighton-sundae-w-marcia-carr-1s
+ t-nov-patterns-brighton-tickets\nMore: https://brightonweekend.co.uk/e/202
+ 6-11-01-patterns-brighton-sundae-w-marcia-carr/
+URL:https://brightonweekend.co.uk/e/2026-11-01-patterns-brighton-sundae-w-m
+ arcia-carr/
+END:VEVENT
+END:VCALENDAR

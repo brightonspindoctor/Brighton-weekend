@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-06-komedia-jill-edwards-comedy-workshops-sat-5-jun-2027-doors-1
+ 1-00-am@brightonweekend.co.uk
+DTSTAMP:20270605T000000Z
+DTSTART:20270605T100000Z
+DTEND:20270605T130000Z
+SUMMARY:Jill Edwards Comedy Workshops
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://www.komedia.co.uk/shows/jill-edwards-comedy-wo
+ rkshops-at-komedia-brighton/?eid=19332\nMore: https://brightonweekend.co.u
+ k/e/2027-05-06-komedia-jill-edwards-comedy-workshops-sat-5-jun-2027-doors-
+ 11-00-am/
+URL:https://brightonweekend.co.uk/e/2027-05-06-komedia-jill-edwards-comedy-
+ workshops-sat-5-jun-2027-doors-11-00-am/
+END:VEVENT
+END:VCALENDAR

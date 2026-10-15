@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-17-a-l-p-h-a-b-e-t-1000-rabbits@brightonweekend.co.uk
+DTSTAMP:20261217T000000Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:1000 Rabbits
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/brighton-events/a-l-p-h-a-b-e-t
+ \nMore: https://brightonweekend.co.uk/e/2026-12-17-a-l-p-h-a-b-e-t-1000-ra
+ bbits/
+URL:https://brightonweekend.co.uk/e/2026-12-17-a-l-p-h-a-b-e-t-1000-rabbits
+ /
+END:VEVENT
+END:VCALENDAR

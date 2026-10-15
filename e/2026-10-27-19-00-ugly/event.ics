@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-27-19-00-ugly@brightonweekend.co.uk
+DTSTAMP:20261027T000000Z
+DTSTART:20261027T190000Z
+DTEND:20261027T220000Z
+SUMMARY:Ugly
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/ugly-27th-oct-patterns-brighton-
+ tickets\nMore: https://brightonweekend.co.uk/e/2026-10-27-19-00-ugly/
+URL:https://brightonweekend.co.uk/e/2026-10-27-19-00-ugly/
+END:VEVENT
+END:VCALENDAR

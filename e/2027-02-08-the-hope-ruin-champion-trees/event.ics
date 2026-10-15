@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-08-the-hope-ruin-champion-trees@brightonweekend.co.uk
+DTSTAMP:20270208T000000Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+SUMMARY:Champion Trees
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/4ku0p6pq/champion-trees\nMor
+ e: https://brightonweekend.co.uk/e/2027-02-08-the-hope-ruin-champion-trees
+ /
+URL:https://brightonweekend.co.uk/e/2027-02-08-the-hope-ruin-champion-trees
+ /
+END:VEVENT
+END:VCALENDAR

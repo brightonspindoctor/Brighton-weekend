@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-25-the-prince-albert-lene-lovich@brightonweekend.co.uk
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Lene Lovich
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvbGVuZS1sb3ZpY2gtdWstMjAyNi10b3VyL3RoZS1wcmluY2
+ UtYWxiZXJ0LzM2NjgzNDk/supplier/SeeTickets/suppliedid/MzY2ODM0OQ/ticketid/8
+ 084675/checksum/6d581c1d7e3ff4d626f2d66267037763/track/true?title=Lene+Lov
+ ich+UK+2026+Tour&badge=&venueId=24967\nMore: https://brightonweekend.co.uk
+ /e/2026-10-25-the-prince-albert-lene-lovich/
+URL:https://brightonweekend.co.uk/e/2026-10-25-the-prince-albert-lene-lovic
+ h/
+END:VEVENT
+END:VCALENDAR

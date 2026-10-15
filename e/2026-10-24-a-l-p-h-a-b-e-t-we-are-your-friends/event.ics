@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-24-a-l-p-h-a-b-e-t-we-are-your-friends@brightonweekend.co.uk
+DTSTAMP:20261024T000000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:We Are Your Friends
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.alphabetbrighton.com/listings/oct-24-late-
+ we-are-your-friends\nMore: https://brightonweekend.co.uk/e/2026-10-24-a-l-
+ p-h-a-b-e-t-we-are-your-friends/
+URL:https://brightonweekend.co.uk/e/2026-10-24-a-l-p-h-a-b-e-t-we-are-your-
+ friends/
+END:VEVENT
+END:VCALENDAR

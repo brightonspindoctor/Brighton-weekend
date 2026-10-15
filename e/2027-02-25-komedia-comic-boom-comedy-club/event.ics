@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-25-komedia-comic-boom-comedy-club@brightonweekend.co.uk
+DTSTAMP:20270225T000000Z
+DTSTART:20270225T193000Z
+DTEND:20270225T223000Z
+SUMMARY:Comic Boom Comedy Club
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/700425/e
+ vents/128665188\nMore: https://brightonweekend.co.uk/e/2027-02-25-komedia-
+ comic-boom-comedy-club/
+URL:https://brightonweekend.co.uk/e/2027-02-25-komedia-comic-boom-comedy-cl
+ ub/
+END:VEVENT
+END:VCALENDAR

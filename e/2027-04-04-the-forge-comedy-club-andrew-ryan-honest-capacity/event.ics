@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-04-the-forge-comedy-club-andrew-ryan-honest-capacity@brightonwe
+ ekend.co.uk
+DTSTAMP:20270404T000000Z
+DTSTART:20270404T170000Z
+DTEND:20270404T190000Z
+SUMMARY:Andrew Ryan: Honest Capacity
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/andrew-ryan-honest-capa
+ city-tickets-1982966467083\nMore: https://brightonweekend.co.uk/e/2027-04-
+ 04-the-forge-comedy-club-andrew-ryan-honest-capacity/
+URL:https://brightonweekend.co.uk/e/2027-04-04-the-forge-comedy-club-andrew
+ -ryan-honest-capacity/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-19-the-folklore-rooms-carolina-cury@brightonweekend.co.uk
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Carolina Cury
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ac8cd729c184b0001fa9a4f\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-19-the-folklore-rooms-carolina-cur
+ y/
+URL:https://brightonweekend.co.uk/e/2026-11-19-the-folklore-rooms-carolina-
+ cury/
+END:VEVENT
+END:VCALENDAR

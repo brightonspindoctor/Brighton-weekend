@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-27-concorde-2-grandmaster-flash@brightonweekend.co.uk
+DTSTAMP:20261027T000000Z
+DTSTART:20261027T193000Z
+DTEND:20261027T223000Z
+SUMMARY:Grandmaster Flash
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1463152/grandmaster-flas
+ h-tickets\nMore: https://brightonweekend.co.uk/e/2026-10-27-concorde-2-gra
+ ndmaster-flash/
+URL:https://brightonweekend.co.uk/e/2026-10-27-concorde-2-grandmaster-flash
+ /
+END:VEVENT
+END:VCALENDAR

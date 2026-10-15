@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-12-the-folklore-rooms-sonny-tennet@brightonweekend.co.uk
+DTSTAMP:20270212T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:Sonny Tennet
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.tickettailor.com/events/theqworkzltd\nMore
+ : https://brightonweekend.co.uk/e/2027-02-12-the-folklore-rooms-sonny-tenn
+ et/
+URL:https://brightonweekend.co.uk/e/2027-02-12-the-folklore-rooms-sonny-ten
+ net/
+END:VEVENT
+END:VCALENDAR

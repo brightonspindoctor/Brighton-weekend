@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-03-daltons-witchrot-support@brightonweekend.co.uk
+DTSTAMP:20261103T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Witchrot + Support
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/2waxwa-witchrot-3rd-nov-daltons-
+ brighton-brighton-tickets?click_id=psTZ0UurR6erDohvhYiTww&pid=530cb286&_br
+ anch_match_id=1618195161676191414&utm_medium=partners_api&_branch_referrer
+ =H4sIAAAAAAAAAwXBSw6DIBQF0N04FLRKTBPSQV2BsYM6MREe5cUP5GLLzLX3HH%2BeMd2F2Ph
+ YS8uGSrcL1G3VVMrKTrmH2disM1sd0zjJ1xeDIvTB%2F%2Fybx5yLyFa3N2mWulPFBXIE8PGZF
+ 4ScCPrpEXb6A3ZVOBRoAAAA\nMore: https://brightonweekend.co.uk/e/2026-11-03-
+ daltons-witchrot-support/
+URL:https://brightonweekend.co.uk/e/2026-11-03-daltons-witchrot-support/
+END:VEVENT
+END:VCALENDAR

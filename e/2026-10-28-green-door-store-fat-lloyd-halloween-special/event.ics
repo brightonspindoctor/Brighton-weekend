@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-28-green-door-store-fat-lloyd-halloween-special@brightonweekend
+ .co.uk
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Fat Lloyd – Halloween Special
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/fat-lloyd-headline-gree
+ n-door-store-halloween-special-tickets-2002468555354?aff=oddtdtcreator&_gl
+ =1*pd2n7x*_up*MQ..*_ga*OTYzNDkzODE3LjE3OTA2MjU4OTY.*_ga_TQVES5V6SH*czE3OTA
+ 2MjU4OTUkbzEkZzAkdDE3OTA2MjU4OTUkajYwJGwwJGgw&utm_id=97760_v0_s00_e0_tv4&f
+ bclid=PAVERFWAUnqK1leHRuA2FlbQIxMABwZG9mAmZkaWQWUPQRldzicLWuEbgLlzINRq851_
+ HwhHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp9RKPdIvC27b6Tv_iT5xl9NYiyYR4zr0
+ s3UEQr4FaEYZCM4UkGyiekvAogx4_aem_NjWzdAQAvqh3p3DKpSXpqg\nMore: https://bri
+ ghtonweekend.co.uk/e/2026-10-28-green-door-store-fat-lloyd-halloween-speci
+ al/
+URL:https://brightonweekend.co.uk/e/2026-10-28-green-door-store-fat-lloyd-h
+ alloween-special/
+END:VEVENT
+END:VCALENDAR

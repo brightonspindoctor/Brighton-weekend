@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-02-the-old-market-pierre-novellie-okay-one-more-then-bedtime@br
+ ightonweekend.co.uk
+DTSTAMP:20270205T000000Z
+DTSTART:20270205T193000Z
+DTEND:20270205T220000Z
+SUMMARY:Pierre Novellie: Okay\, One More Then Bedtime
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/pierre-novellie\nMo
+ re: https://brightonweekend.co.uk/e/2027-05-02-the-old-market-pierre-novel
+ lie-okay-one-more-then-bedtime/
+URL:https://brightonweekend.co.uk/e/2027-05-02-the-old-market-pierre-novell
+ ie-okay-one-more-then-bedtime/
+END:VEVENT
+END:VCALENDAR

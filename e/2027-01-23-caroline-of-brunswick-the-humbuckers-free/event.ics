@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-23-caroline-of-brunswick-the-humbuckers-free@brightonweekend.co
+ .uk
+DTSTAMP:20270123T000000Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:The Humbuckers
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://carolineofbrunswick.co.uk/events/humbuckers-88
+ 1/\nMore: https://brightonweekend.co.uk/e/2027-01-23-caroline-of-brunswick
+ -the-humbuckers-free/
+URL:https://brightonweekend.co.uk/e/2027-01-23-caroline-of-brunswick-the-hu
+ mbuckers-free/
+END:VEVENT
+END:VCALENDAR

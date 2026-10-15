@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-the-brunswick-go-kid-music-club-spooky-party@brightonweekend
+ .co.uk
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Go Kid Music Club - Spooky Party!
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/go-kid-mu
+ sic-club-spooky-party-1\nMore: https://brightonweekend.co.uk/e/2026-11-07-
+ the-brunswick-go-kid-music-club-spooky-party/
+URL:https://brightonweekend.co.uk/e/2026-11-07-the-brunswick-go-kid-music-c
+ lub-spooky-party/
+END:VEVENT
+END:VCALENDAR

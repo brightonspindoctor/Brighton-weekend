@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-25-komedia-patrick-monahan-i-m-not-a-terrorist-i-m-freddie-merc
+ ury@brightonweekend.co.uk
+DTSTAMP:20270225T000000Z
+DTSTART:20270225T200000Z
+DTEND:20270225T230000Z
+SUMMARY:Patrick Monahan: I’m Not a Terrorist – I’m Freddie Mercury
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366596
+ 5/events/128655590\nMore: https://brightonweekend.co.uk/e/2027-02-25-komed
+ ia-patrick-monahan-i-m-not-a-terrorist-i-m-freddie-mercury/
+URL:https://brightonweekend.co.uk/e/2027-02-25-komedia-patrick-monahan-i-m-
+ not-a-terrorist-i-m-freddie-mercury/
+END:VEVENT
+END:VCALENDAR

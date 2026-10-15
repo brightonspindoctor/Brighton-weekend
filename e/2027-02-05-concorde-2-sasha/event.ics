@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-05-concorde-2-sasha@brightonweekend.co.uk
+DTSTAMP:20270205T000000Z
+DTSTART:20270205T190000Z
+DTEND:20270205T220000Z
+SUMMARY:Sasha
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1655868/sasha-tickets\nM
+ ore: https://brightonweekend.co.uk/e/2027-02-05-concorde-2-sasha/
+URL:https://brightonweekend.co.uk/e/2027-02-05-concorde-2-sasha/
+END:VEVENT
+END:VCALENDAR

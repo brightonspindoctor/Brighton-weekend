@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-the-hope-ruin-swapmeet-special-guests-2-2-2-2-2-2-2-2-2-2-2-
+ 2-2-2@brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Swapmeet + Special Guests
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/f8tkxhcy/swapmeet-special-gu
+ ests\nMore: https://brightonweekend.co.uk/e/2026-11-06-the-hope-ruin-swapm
+ eet-special-guests-2-2-2-2-2-2-2-2-2-2-2-2-2-2/
+URL:https://brightonweekend.co.uk/e/2026-11-06-the-hope-ruin-swapmeet-speci
+ al-guests-2-2-2-2-2-2-2-2-2-2-2-2-2-2/
+END:VEVENT
+END:VCALENDAR

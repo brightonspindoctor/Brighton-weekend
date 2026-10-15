@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-03-komedia-down-the-hatch-comedy-club@brightonweekend.co.uk
+DTSTAMP:20270307T000000Z
+DTSTART:20270307T190000Z
+DTEND:20270307T220000Z
+SUMMARY:Down the Hatch Comedy Club
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87362458
+ 6/events/128665660\nMore: https://brightonweekend.co.uk/e/2027-07-03-komed
+ ia-down-the-hatch-comedy-club/
+URL:https://brightonweekend.co.uk/e/2027-07-03-komedia-down-the-hatch-comed
+ y-club/
+END:VEVENT
+END:VCALENDAR

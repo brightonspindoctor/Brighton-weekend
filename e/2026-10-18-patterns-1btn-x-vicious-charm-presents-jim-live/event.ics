@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-18-patterns-1btn-x-vicious-charm-presents-jim-live@brightonweek
+ end.co.uk
+DTSTAMP:20261018T000000Z
+DTSTART:20261018T140000Z
+DTEND:20261018T190000Z
+SUMMARY:1BTN X Vicious Charm. Presents JIM live!
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/1btn-x-vicious-charm-presents-ji
+ m-live-18th-oct-patterns-brighton-tickets\nMore: https://brightonweekend.c
+ o.uk/e/2026-10-18-patterns-1btn-x-vicious-charm-presents-jim-live/
+URL:https://brightonweekend.co.uk/e/2026-10-18-patterns-1btn-x-vicious-char
+ m-presents-jim-live/
+END:VEVENT
+END:VCALENDAR

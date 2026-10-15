@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-19-concorde-2-the-dolly-parton-and-kenny-rogers-experience@brig
+ htonweekend.co.uk
+DTSTAMP:20270119T000000Z
+DTSTART:20270119T193000Z
+DTEND:20270119T223000Z
+SUMMARY:The Dolly Parton and Kenny Rogers Experience
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1626522/the-dolly-parton
+ -experience-tickets\nMore: https://brightonweekend.co.uk/e/2027-01-19-conc
+ orde-2-the-dolly-parton-and-kenny-rogers-experience/
+URL:https://brightonweekend.co.uk/e/2027-01-19-concorde-2-the-dolly-parton-
+ and-kenny-rogers-experience/
+END:VEVENT
+END:VCALENDAR

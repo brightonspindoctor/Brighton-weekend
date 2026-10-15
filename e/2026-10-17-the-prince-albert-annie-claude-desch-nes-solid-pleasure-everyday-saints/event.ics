@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-the-prince-albert-annie-claude-desch-nes-solid-pleasure-ever
+ yday-saints@brightonweekend.co.uk
+DTSTAMP:20261017T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Annie-Claude Deschênes + Solid Pleasure + Everyday Saints
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/annie-claude-deschenes
+ -support-tickets-1NM3QT\nMore: https://brightonweekend.co.uk/e/2026-10-17-
+ the-prince-albert-annie-claude-desch-nes-solid-pleasure-everyday-saints/
+URL:https://brightonweekend.co.uk/e/2026-10-17-the-prince-albert-annie-clau
+ de-desch-nes-solid-pleasure-everyday-saints/
+END:VEVENT
+END:VCALENDAR

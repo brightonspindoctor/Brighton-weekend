@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-31-komedia-disco-kidz-new-year-s-eve-special@brightonweekend.co
+ .uk
+DTSTAMP:20261231T000000Z
+DTSTART:20261231T130000Z
+DTEND:20261231T160000Z
+SUMMARY:Disco Kidz – New Year’s Eve Special
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366784
+ 2/events/128665787\nMore: https://brightonweekend.co.uk/e/2026-12-31-komed
+ ia-disco-kidz-new-year-s-eve-special/
+URL:https://brightonweekend.co.uk/e/2026-12-31-komedia-disco-kidz-new-year-
+ s-eve-special/
+END:VEVENT
+END:VCALENDAR

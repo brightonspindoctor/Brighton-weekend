@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-18-the-brunswick-stella-goes-to-mars-ep-launch-party@brightonwe
+ ekend.co.uk
+DTSTAMP:20261018T000000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:Stella Goes to Mars Ep Launch Party
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/stella-go
+ es-to-mars-ep-launch-party\nMore: https://brightonweekend.co.uk/e/2026-10-
+ 18-the-brunswick-stella-goes-to-mars-ep-launch-party/
+URL:https://brightonweekend.co.uk/e/2026-10-18-the-brunswick-stella-goes-to
+ -mars-ep-launch-party/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-13-the-pipeline-spiral-skies@brightonweekend.co.uk
+DTSTAMP:20261113T000000Z
+DTSTART:20261113T200000Z
+DTEND:20261114T000000Z
+SUMMARY:Spiral Skies
+LOCATION:The Pipeline\, Brighton
+DESCRIPTION:Tickets: https://www.songkick.com/concerts/43408859-spiral-skie
+ s-at-pipeline?utm_medium=organic&utm_source=microformat\nMore: https://bri
+ ghtonweekend.co.uk/e/2026-11-13-the-pipeline-spiral-skies/
+URL:https://brightonweekend.co.uk/e/2026-11-13-the-pipeline-spiral-skies/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-27-concorde-2-fujiya-miyagi@brightonweekend.co.uk
+DTSTAMP:20270127T000000Z
+DTSTART:20270127T193000Z
+DTEND:20270127T223000Z
+SUMMARY:Fujiya & Miyagi
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1644648/fujiya-miyagi-ti
+ ckets/promos/1216815\nMore: https://brightonweekend.co.uk/e/2027-01-27-con
+ corde-2-fujiya-miyagi/
+URL:https://brightonweekend.co.uk/e/2027-01-27-concorde-2-fujiya-miyagi/
+END:VEVENT
+END:VCALENDAR

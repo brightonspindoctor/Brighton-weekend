@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-16-dust-just-like-heaven-alt-80s-party-brighton@brightonweekend
+ .co.uk
+DTSTAMP:20261016T000000Z
+DTSTART:20261016T220000Z
+DTEND:20261017T020000Z
+SUMMARY:Just Like Heaven: Alt 80s Party
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Dust/Just-Li
+ ke-Heaven-Alt-80s-Party-Brighton/42630681/\nMore: https://brightonweekend.
+ co.uk/e/2026-10-16-dust-just-like-heaven-alt-80s-party-brighton/
+URL:https://brightonweekend.co.uk/e/2026-10-16-dust-just-like-heaven-alt-80
+ s-party-brighton/
+END:VEVENT
+END:VCALENDAR

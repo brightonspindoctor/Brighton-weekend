@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-resident-knats-live-signing@brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Knats: Live + Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ac766afc6e54500011e87df\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-06-resident-knats-live-signing/
+URL:https://brightonweekend.co.uk/e/2026-11-06-resident-knats-live-signing/
+END:VEVENT
+END:VCALENDAR

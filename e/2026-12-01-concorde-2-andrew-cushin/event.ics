@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-01-concorde-2-andrew-cushin@brightonweekend.co.uk
+DTSTAMP:20261201T000000Z
+DTSTART:20261201T193000Z
+DTEND:20261201T223000Z
+SUMMARY:Andrew Cushin
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1464762/andrew-cushin-ti
+ ckets/promos/1149132\nMore: https://brightonweekend.co.uk/e/2026-12-01-con
+ corde-2-andrew-cushin/
+URL:https://brightonweekend.co.uk/e/2026-12-01-concorde-2-andrew-cushin/
+END:VEVENT
+END:VCALENDAR

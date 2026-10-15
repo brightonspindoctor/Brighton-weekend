@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-28-daltons-beyond-extinction-salem-trials-devilhusk@brightonwee
+ kend.co.uk
+DTSTAMP:20270328T000000Z
+DTSTART;VALUE=DATE:20270328
+DTEND;VALUE=DATE:20270329
+SUMMARY:Beyond Extinction + Salem Trials + Devilhusk
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/beyond-e
+ xtinction-salem-trials-devilhusk\nMore: https://brightonweekend.co.uk/e/20
+ 27-03-28-daltons-beyond-extinction-salem-trials-devilhusk/
+URL:https://brightonweekend.co.uk/e/2027-03-28-daltons-beyond-extinction-sa
+ lem-trials-devilhusk/
+END:VEVENT
+END:VCALENDAR

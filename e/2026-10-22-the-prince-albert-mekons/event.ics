@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-22-the-prince-albert-mekons@brightonweekend.co.uk
+DTSTAMP:20261022T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Mekons
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRtYXN0ZXIuZXZ5eS5uZXQvYy8xMzAwOTY4LzIwMzg3NTgvMjQwMjM_dT1odHRwcyUzQSUyRi
+ UyRnd3dy51bml2ZXJzZS5jb20lMkZldmVudHMlMkZtZWtvbnMtYWNvdXN0aWMtc2hvdy10aWNr
+ ZXRzLTJHM1NGSiUzRnJlZiUzRHRpY2tldG1hc3RlciZ1dG1fbWVkaXVtPWFmZmlsaWF0ZQ/sup
+ plier/Universe/suppliedid/THZaMThRLURpQzB0YUhaWnpCRDdW/ticketid/8072572/ch
+ ecksum/19dfd5a58860dac68e77c0f891680d7b/track/true?title=Mekons+Acoustic+s
+ how&badge=&venueId=24967\nMore: https://brightonweekend.co.uk/e/2026-10-22
+ -the-prince-albert-mekons/
+URL:https://brightonweekend.co.uk/e/2026-10-22-the-prince-albert-mekons/
+END:VEVENT
+END:VCALENDAR

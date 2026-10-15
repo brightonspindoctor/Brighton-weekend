@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-concorde-2-rhythm-of-the-90s@brightonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART:20261212T190000Z
+DTEND:20261212T220000Z
+SUMMARY:Rhythm Of The 90s
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.concorde2.co.uk/event/rhythm-of-the-90s\nM
+ ore: https://brightonweekend.co.uk/e/2026-12-12-concorde-2-rhythm-of-the-9
+ 0s/
+URL:https://brightonweekend.co.uk/e/2026-12-12-concorde-2-rhythm-of-the-90s
+ /
+END:VEVENT
+END:VCALENDAR

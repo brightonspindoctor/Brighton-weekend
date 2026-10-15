@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-quarters-club-events-k-motionz@brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART:20261106T230000Z
+DTEND:20261107T040000Z
+SUMMARY:K Motionz
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/k-motionz/quarte
+ rs/3676957\nMore: https://brightonweekend.co.uk/e/2026-11-06-quarters-club
+ -events-k-motionz/
+URL:https://brightonweekend.co.uk/e/2026-11-06-quarters-club-events-k-motio
+ nz/
+END:VEVENT
+END:VCALENDAR

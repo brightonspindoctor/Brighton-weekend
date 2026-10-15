@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-05-rossi-bar-spirit-of-gravity@brightonweekend.co.uk
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Spirit of Gravity
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://therossibar.co.uk/events/spirit-of-gravity/\nM
+ ore: https://brightonweekend.co.uk/e/2026-11-05-rossi-bar-spirit-of-gravit
+ y/
+URL:https://brightonweekend.co.uk/e/2026-11-05-rossi-bar-spirit-of-gravity/
+END:VEVENT
+END:VCALENDAR

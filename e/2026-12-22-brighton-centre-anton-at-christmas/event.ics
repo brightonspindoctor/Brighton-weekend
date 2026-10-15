@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-22-brighton-centre-anton-at-christmas@brightonweekend.co.uk
+DTSTAMP:20261222T000000Z
+DTSTART:20261222T183000Z
+DTEND:20261222T213000Z
+SUMMARY:Anton at Christmas
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/\nMore: https://brightonw
+ eekend.co.uk/e/2026-12-22-brighton-centre-anton-at-christmas/
+URL:https://brightonweekend.co.uk/e/2026-12-22-brighton-centre-anton-at-chr
+ istmas/
+END:VEVENT
+END:VCALENDAR

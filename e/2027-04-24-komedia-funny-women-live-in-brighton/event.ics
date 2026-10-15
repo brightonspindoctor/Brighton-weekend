@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-24-komedia-funny-women-live-in-brighton@brightonweekend.co.uk
+DTSTAMP:20270424T000000Z
+DTSTART:20270424T190000Z
+DTEND:20270424T220000Z
+SUMMARY:Funny Women Live in Brighton
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87349211
+ 1/events/128666080\nMore: https://brightonweekend.co.uk/e/2027-04-24-komed
+ ia-funny-women-live-in-brighton/
+URL:https://brightonweekend.co.uk/e/2027-04-24-komedia-funny-women-live-in-
+ brighton/
+END:VEVENT
+END:VCALENDAR

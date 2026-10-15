@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-14-theatreroyalbrighton-hand-made-man-with-patrick-grant@bright
+ onweekend.co.uk
+DTSTAMP:20270314T000000Z
+DTSTART;VALUE=DATE:20270314
+DTEND;VALUE=DATE:20270315
+SUMMARY:Hand Made Man with Patrick Grant
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/venues/theatre-royal-bright
+ on/whats-on/\nMore: https://brightonweekend.co.uk/e/2027-03-14-theatreroya
+ lbrighton-hand-made-man-with-patrick-grant/
+URL:https://brightonweekend.co.uk/e/2027-03-14-theatreroyalbrighton-hand-ma
+ de-man-with-patrick-grant/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-18-the-brunswick-let-s-meet-tommy-romero-tour-gentleman-of-rock
+ -n-roll@brightonweekend.co.uk
+DTSTAMP:20261118T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Let's Meet Tommy Romero Tour - Gentleman of Rock'n'Roll
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/lets-meet
+ -tommy-romero-tour-gentleman-of-rocknroll\nMore: https://brightonweekend.c
+ o.uk/e/2026-11-18-the-brunswick-let-s-meet-tommy-romero-tour-gentleman-of-
+ rock-n-roll/
+URL:https://brightonweekend.co.uk/e/2026-11-18-the-brunswick-let-s-meet-tom
+ my-romero-tour-gentleman-of-rock-n-roll/
+END:VEVENT
+END:VCALENDAR

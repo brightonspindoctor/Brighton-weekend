@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-16-the-rose-hill-willkommen-records-presents-kristin-mcclement-
+ album-launch-chris-cundy@brightonweekend.co.uk
+DTSTAMP:20261016T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Willkommen Records presents: Kristin McClement Album Launch + Chris
+  Cundy
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/willkommen-records-pre
+ sents-kristin-mcclement-album-launch/\nMore: https://brightonweekend.co.uk
+ /e/2026-10-16-the-rose-hill-willkommen-records-presents-kristin-mcclement-
+ album-launch-chris-cundy/
+URL:https://brightonweekend.co.uk/e/2026-10-16-the-rose-hill-willkommen-rec
+ ords-presents-kristin-mcclement-album-launch-chris-cundy/
+END:VEVENT
+END:VCALENDAR

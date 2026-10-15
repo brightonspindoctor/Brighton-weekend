@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-21-brighton-dome-spring-awakening-birtwistle-satie-and-the-fire
+ bird@brightonweekend.co.uk
+DTSTAMP:20270321T000000Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:Spring Awakening: Birtwistle\, Satie and The Firebird
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
+ alse\,false&top_filter=all&page=5&view=list\nMore: https://brightonweekend
+ .co.uk/e/2027-03-21-brighton-dome-spring-awakening-birtwistle-satie-and-th
+ e-firebird/
+URL:https://brightonweekend.co.uk/e/2027-03-21-brighton-dome-spring-awakeni
+ ng-birtwistle-satie-and-the-firebird/
+END:VEVENT
+END:VCALENDAR

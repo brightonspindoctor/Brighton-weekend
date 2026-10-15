@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-24-the-old-market-coram-shakespeare-schools-festival@brightonwe
+ ekend.co.uk
+DTSTAMP:20261124T000000Z
+DTSTART:20261124T190000Z
+DTEND:20261124T220000Z
+SUMMARY:Coram Shakespeare Schools Festival
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/coram-shakespeare-s
+ chools-festival\nMore: https://brightonweekend.co.uk/e/2026-11-24-the-old-
+ market-coram-shakespeare-schools-festival/
+URL:https://brightonweekend.co.uk/e/2026-11-24-the-old-market-coram-shakesp
+ eare-schools-festival/
+END:VEVENT
+END:VCALENDAR

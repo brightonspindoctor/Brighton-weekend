@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-11-patterns-tom-a-smith@brightonweekend.co.uk
+DTSTAMP:20261111T000000Z
+DTSTART:20261111T190000Z
+DTEND:20261111T220000Z
+SUMMARY:Tom A Smith
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/tom-a-smith-11th-nov-patterns-br
+ ighton-tickets\nMore: https://brightonweekend.co.uk/e/2026-11-11-patterns-
+ tom-a-smith/
+URL:https://brightonweekend.co.uk/e/2026-11-11-patterns-tom-a-smith/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-22-komedia-do-all-the-christmas-things-tue-22-dec-2026-8-00-pm-
+ doors-7-00-pm@brightonweekend.co.uk
+DTSTAMP:20261222T000000Z
+DTSTART:20261222T200000Z
+DTEND:20261222T230000Z
+SUMMARY:Do All The Christmas Things
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366567
+ 3/events/128654844\nMore: https://brightonweekend.co.uk/e/2026-12-22-komed
+ ia-do-all-the-christmas-things-tue-22-dec-2026-8-00-pm-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-12-22-komedia-do-all-the-christmas
+ -things-tue-22-dec-2026-8-00-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

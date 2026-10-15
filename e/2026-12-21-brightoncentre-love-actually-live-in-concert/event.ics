@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-21-brightoncentre-love-actually-live-in-concert@brightonweekend
+ .co.uk
+DTSTAMP:20261221T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:Love Actually - Live in Concert
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/\nMore: https://brightonw
+ eekend.co.uk/e/2026-12-21-brightoncentre-love-actually-live-in-concert/
+URL:https://brightonweekend.co.uk/e/2026-12-21-brightoncentre-love-actually
+ -live-in-concert/
+END:VEVENT
+END:VCALENDAR

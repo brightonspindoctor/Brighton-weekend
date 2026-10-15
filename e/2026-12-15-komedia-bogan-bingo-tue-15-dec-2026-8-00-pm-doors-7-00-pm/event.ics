@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-15-komedia-bogan-bingo-tue-15-dec-2026-8-00-pm-doors-7-00-pm@br
+ ightonweekend.co.uk
+DTSTAMP:20261215T000000Z
+DTSTART:20261215T200000Z
+DTEND:20261215T230000Z
+SUMMARY:Bogan Bingo
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87352193
+ 7/events/128644686\nMore: https://brightonweekend.co.uk/e/2026-12-15-komed
+ ia-bogan-bingo-tue-15-dec-2026-8-00-pm-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-12-15-komedia-bogan-bingo-tue-15-d
+ ec-2026-8-00-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

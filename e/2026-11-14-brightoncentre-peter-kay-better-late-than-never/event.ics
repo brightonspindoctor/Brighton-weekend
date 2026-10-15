@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-brightoncentre-peter-kay-better-late-than-never@brightonweek
+ end.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Peter Kay - Better Late Than Never
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/\nMore: https://brightonw
+ eekend.co.uk/e/2026-11-14-brightoncentre-peter-kay-better-late-than-never/
+URL:https://brightonweekend.co.uk/e/2026-11-14-brightoncentre-peter-kay-bet
+ ter-late-than-never/
+END:VEVENT
+END:VCALENDAR

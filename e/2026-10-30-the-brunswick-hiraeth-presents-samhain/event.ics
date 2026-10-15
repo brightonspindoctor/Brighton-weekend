@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-30-the-brunswick-hiraeth-presents-samhain@brightonweekend.co.uk
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Hiraeth presents: Samhain
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/hiraeth-p
+ resents-samhain\nMore: https://brightonweekend.co.uk/e/2026-10-30-the-brun
+ swick-hiraeth-presents-samhain/
+URL:https://brightonweekend.co.uk/e/2026-10-30-the-brunswick-hiraeth-presen
+ ts-samhain/
+END:VEVENT
+END:VCALENDAR

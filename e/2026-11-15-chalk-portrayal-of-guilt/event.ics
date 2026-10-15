@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-chalk-portrayal-of-guilt@brightonweekend.co.uk
+DTSTAMP:20261115T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Portrayal of Guilt
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1644840/portrayal-of-gui
+ lt-tickets\nMore: https://brightonweekend.co.uk/e/2026-11-15-chalk-portray
+ al-of-guilt/
+URL:https://brightonweekend.co.uk/e/2026-11-15-chalk-portrayal-of-guilt/
+END:VEVENT
+END:VCALENDAR

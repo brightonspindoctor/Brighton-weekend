@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-komedia-the-maydays-confessions@brightonweekend.co.uk
+DTSTAMP:20261204T000000Z
+DTSTART:20261204T193000Z
+DTEND:20261204T223000Z
+SUMMARY:The Maydays: Confessions!
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87348576
+ 2/events/128632336\nMore: https://brightonweekend.co.uk/e/2026-12-04-komed
+ ia-the-maydays-confessions/
+URL:https://brightonweekend.co.uk/e/2026-12-04-komedia-the-maydays-confessi
+ ons/
+END:VEVENT
+END:VCALENDAR

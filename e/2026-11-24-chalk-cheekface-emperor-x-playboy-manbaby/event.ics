@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-24-chalk-cheekface-emperor-x-playboy-manbaby@brightonweekend.co
+ .uk
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Cheekface Emperor X\, Playboy Manbaby
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/\nMore: https://brightonweekend
+ .co.uk/e/2026-11-24-chalk-cheekface-emperor-x-playboy-manbaby/
+URL:https://brightonweekend.co.uk/e/2026-11-24-chalk-cheekface-emperor-x-pl
+ ayboy-manbaby/
+END:VEVENT
+END:VCALENDAR

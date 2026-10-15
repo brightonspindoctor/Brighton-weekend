@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-caroline-of-brunswick-the-terrorvision-song-contest-3-demons
+ -of-d-sney@brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:The Terrorvision Song Contest 3: Demons of D*sney
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://carolineofbrunswick.co.uk/events/terrorvision2
+ -313/\nMore: https://brightonweekend.co.uk/e/2026-10-31-caroline-of-brunsw
+ ick-the-terrorvision-song-contest-3-demons-of-d-sney/
+URL:https://brightonweekend.co.uk/e/2026-10-31-caroline-of-brunswick-the-te
+ rrorvision-song-contest-3-demons-of-d-sney/
+END:VEVENT
+END:VCALENDAR

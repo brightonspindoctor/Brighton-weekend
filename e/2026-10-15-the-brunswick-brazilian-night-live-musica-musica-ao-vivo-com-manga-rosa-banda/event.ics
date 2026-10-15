@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-15-the-brunswick-brazilian-night-live-musica-musica-ao-vivo-com
+ -manga-rosa-banda@brightonweekend.co.uk
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:Brazilian Night Live Musica (Musica Ao Vivo Com "Manga Rosa” Band
+ a)
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/brazilian
+ -night-live-musica-musica-ao-vivo-com-manga-rosa-banda\nMore: https://brig
+ htonweekend.co.uk/e/2026-10-15-the-brunswick-brazilian-night-live-musica-m
+ usica-ao-vivo-com-manga-rosa-banda/
+URL:https://brightonweekend.co.uk/e/2026-10-15-the-brunswick-brazilian-nigh
+ t-live-musica-musica-ao-vivo-com-manga-rosa-banda/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-a-l-p-h-a-b-e-t-excellent-behaviour-with-djs-kelvin-andrews-
+ joey-t@brightonweekend.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:EXCELLENT BEHAVIOUR WITH DJs KELVIN ANDREWS & Joey T
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Alphabet-Bri
+ ghton/LiTM-presents-EXCELLENT-BEHAVIOUR/42801473/\nMore: https://brightonw
+ eekend.co.uk/e/2026-11-28-a-l-p-h-a-b-e-t-excellent-behaviour-with-djs-kel
+ vin-andrews-joey-t/
+URL:https://brightonweekend.co.uk/e/2026-11-28-a-l-p-h-a-b-e-t-excellent-be
+ haviour-with-djs-kelvin-andrews-joey-t/
+END:VEVENT
+END:VCALENDAR

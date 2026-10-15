@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-volks-size-chris-liberator-aaron-liberator-julian-liberator@
+ brightonweekend.co.uk
+DTSTAMP:20261204T000000Z
+DTSTART:20261204T230000Z
+DTEND:20261205T020000Z
+SUMMARY:SiZE - Chris Liberator//Aaron Liberator//Julian Liberator
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/SiZE---Chris-LiberatorAaron-LiberatorJulian-Liberator/42820159/\nM
+ ore: https://brightonweekend.co.uk/e/2026-12-04-volks-size-chris-liberator
+ -aaron-liberator-julian-liberator/
+URL:https://brightonweekend.co.uk/e/2026-12-04-volks-size-chris-liberator-a
+ aron-liberator-julian-liberator/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-18-the-rose-hill-brighton-early-music-festival-instrumental-wor
+ kshop@brightonweekend.co.uk
+DTSTAMP:20261018T000000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:Brighton Early Music Festival : Instrumental Workshop
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://www.bremf.org.uk/event/a415-instrumental-works
+ hop/\nMore: https://brightonweekend.co.uk/e/2026-10-18-the-rose-hill-brigh
+ ton-early-music-festival-instrumental-workshop/
+URL:https://brightonweekend.co.uk/e/2026-10-18-the-rose-hill-brighton-early
+ -music-festival-instrumental-workshop/
+END:VEVENT
+END:VCALENDAR

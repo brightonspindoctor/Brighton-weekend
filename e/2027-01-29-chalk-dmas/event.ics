@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-29-chalk-dmas@brightonweekend.co.uk
+DTSTAMP:20270129T000000Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+SUMMARY:DMAs
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6a8eff1015bab800015b0307\nMore: 
+ https://brightonweekend.co.uk/e/2027-01-29-chalk-dmas/
+URL:https://brightonweekend.co.uk/e/2027-01-29-chalk-dmas/
+END:VEVENT
+END:VCALENDAR

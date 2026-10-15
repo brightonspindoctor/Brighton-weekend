@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-20-concorde-2-lebanon-hanover@brightonweekend.co.uk
+DTSTAMP:20270320T000000Z
+DTSTART:20270320T190000Z
+DTEND:20270320T220000Z
+SUMMARY:Lebanon Hanover
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1492398/lebanon-hanover-
+ tickets/promos/1161630\nMore: https://brightonweekend.co.uk/e/2027-03-20-c
+ oncorde-2-lebanon-hanover/
+URL:https://brightonweekend.co.uk/e/2027-03-20-concorde-2-lebanon-hanover/
+END:VEVENT
+END:VCALENDAR

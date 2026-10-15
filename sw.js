@@ -6,7 +6,7 @@
  * Bump VERSION (and the sw.js?v= number at the end of index.html) whenever
  * index.html changes, so every installed copy drops its old cache.
  */
-const VERSION = 'bw-v82';
+const VERSION = 'bw-v83';
 // The app shell, exactly as index.html requests it, so it opens offline.
 const CORE = [
   './',
@@ -75,6 +75,6 @@ self.addEventListener('fetch', event => {
   if (request.method !== 'GET') return;
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return; // Supabase, fonts: straight to network
-  const isFresh = request.mode === 'navigate' || /\.(html|css|js|json|webmanifest)$/.test(url.pathname) || url.pathname.endsWith('/');
+  const isFresh = request.mode === 'navigate' || /\.(html|css|js|json|webmanifest|ics)$/.test(url.pathname) || url.pathname.endsWith('/');
   event.respondWith(isFresh ? networkFirst(request) : cacheFirst(request));
 });

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-17-brighton-dome-rick-wakeman-the-wizard-of-prog@brightonweeken
+ d.co.uk
+DTSTAMP:20270217T000000Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:Rick Wakeman: The Wizard of Prog
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
+ alse\,false&top_filter=all&page=4&view=list\nMore: https://brightonweekend
+ .co.uk/e/2027-02-17-brighton-dome-rick-wakeman-the-wizard-of-prog/
+URL:https://brightonweekend.co.uk/e/2027-02-17-brighton-dome-rick-wakeman-t
+ he-wizard-of-prog/
+END:VEVENT
+END:VCALENDAR

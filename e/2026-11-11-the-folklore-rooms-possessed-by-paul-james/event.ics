@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-11-the-folklore-rooms-possessed-by-paul-james@brightonweekend.c
+ o.uk
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Possessed by Paul James
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/possessed-by-paul-jam
+ es/the-folklore-rooms/3709606\nMore: https://brightonweekend.co.uk/e/2026-
+ 11-11-the-folklore-rooms-possessed-by-paul-james/
+URL:https://brightonweekend.co.uk/e/2026-11-11-the-folklore-rooms-possessed
+ -by-paul-james/
+END:VEVENT
+END:VCALENDAR

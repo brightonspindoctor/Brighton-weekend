@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-24-theatre-royal-brighton-vanessa-williams-live-in-concert@brig
+ htonweekend.co.uk
+DTSTAMP:20270224T000000Z
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270225
+SUMMARY:Vanessa Williams: Live in Concert
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/venues/theatre-royal-bright
+ on/whats-on/\nMore: https://brightonweekend.co.uk/e/2027-02-24-theatre-roy
+ al-brighton-vanessa-williams-live-in-concert/
+URL:https://brightonweekend.co.uk/e/2027-02-24-theatre-royal-brighton-vanes
+ sa-williams-live-in-concert/
+END:VEVENT
+END:VCALENDAR

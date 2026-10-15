@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-29-the-old-market-max-cooper-3d-av-live@brightonweekend.co.uk
+DTSTAMP:20261029T000000Z
+DTSTART:20261029T184500Z
+DTEND:20261029T214500Z
+SUMMARY:Max Cooper: 3D/AV Live
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/max-cooper\nMore: https:/
+ /brightonweekend.co.uk/e/2026-10-29-the-old-market-max-cooper-3d-av-live/
+URL:https://brightonweekend.co.uk/e/2026-10-29-the-old-market-max-cooper-3d
+ -av-live/
+END:VEVENT
+END:VCALENDAR

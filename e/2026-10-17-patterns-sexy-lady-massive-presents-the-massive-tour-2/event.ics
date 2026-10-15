@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-patterns-sexy-lady-massive-presents-the-massive-tour-2@brigh
+ tonweekend.co.uk
+DTSTAMP:20261017T000000Z
+DTSTART:20261017T220000Z
+DTEND:20261018T030000Z
+SUMMARY:Sexy Lady Massive Presents: The Massive Tour
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Patterns-Bri
+ ghton/Sexy-Lady-Massive-Presents-The-Massive-Tour/42643780/\nMore: https:/
+ /brightonweekend.co.uk/e/2026-10-17-patterns-sexy-lady-massive-presents-th
+ e-massive-tour-2/
+URL:https://brightonweekend.co.uk/e/2026-10-17-patterns-sexy-lady-massive-p
+ resents-the-massive-tour-2/
+END:VEVENT
+END:VCALENDAR

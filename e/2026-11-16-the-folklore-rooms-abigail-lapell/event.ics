@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-16-the-folklore-rooms-abigail-lapell@brightonweekend.co.uk
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Abigail Lapell
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/abigail-lapell/the-fo
+ lklore-rooms/3626188\nMore: https://brightonweekend.co.uk/e/2026-11-16-the
+ -folklore-rooms-abigail-lapell/
+URL:https://brightonweekend.co.uk/e/2026-11-16-the-folklore-rooms-abigail-l
+ apell/
+END:VEVENT
+END:VCALENDAR

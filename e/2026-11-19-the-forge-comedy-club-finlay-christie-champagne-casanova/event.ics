@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-19-the-forge-comedy-club-finlay-christie-champagne-casanova@bri
+ ghtonweekend.co.uk
+DTSTAMP:20261119T000000Z
+DTSTART:20261119T193000Z
+DTEND:20261119T213000Z
+SUMMARY:Finlay Christie: Champagne Casanova
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/finlay-christie-champag
+ ne-casanova-tickets-1978398612507\nMore: https://brightonweekend.co.uk/e/2
+ 026-11-19-the-forge-comedy-club-finlay-christie-champagne-casanova/
+URL:https://brightonweekend.co.uk/e/2026-11-19-the-forge-comedy-club-finlay
+ -christie-champagne-casanova/
+END:VEVENT
+END:VCALENDAR

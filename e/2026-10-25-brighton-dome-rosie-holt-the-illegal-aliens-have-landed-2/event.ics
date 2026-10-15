@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-25-brighton-dome-rosie-holt-the-illegal-aliens-have-landed-2@br
+ ightonweekend.co.uk
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T193000Z
+DTEND:20261025T230000Z
+SUMMARY:Rosie Holt: The Illegal Aliens Have Landed!
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LEk-rosie-holt-the-i
+ llegal-aliens-have-landed/\nMore: https://brightonweekend.co.uk/e/2026-10-
+ 25-brighton-dome-rosie-holt-the-illegal-aliens-have-landed-2/
+URL:https://brightonweekend.co.uk/e/2026-10-25-brighton-dome-rosie-holt-the
+ -illegal-aliens-have-landed-2/
+END:VEVENT
+END:VCALENDAR

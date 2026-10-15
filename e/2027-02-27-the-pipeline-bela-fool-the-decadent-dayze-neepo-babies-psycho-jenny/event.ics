@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-27-the-pipeline-bela-fool-the-decadent-dayze-neepo-babies-psych
+ o-jenny@brightonweekend.co.uk
+DTSTAMP:20270227T000000Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:Bela Fool The Decadent Dayze\, Neepo Babies\, Psycho Jenny
+LOCATION:The Pipeline\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93ZWdv
+ dHRpY2tldHMuY29tL2FmLzY3L2YvMjgyMzY/supplier/WeGotTickets/suppliedid/MTU4O
+ TMwNDY/ticketid/8151517/checksum/8b97af753cfb10a8b767df71b71114e0/track/tr
+ ue?title=Bela+Fool&badge=&venueId=57176\nMore: https://brightonweekend.co.
+ uk/e/2027-02-27-the-pipeline-bela-fool-the-decadent-dayze-neepo-babies-psy
+ cho-jenny/
+URL:https://brightonweekend.co.uk/e/2027-02-27-the-pipeline-bela-fool-the-d
+ ecadent-dayze-neepo-babies-psycho-jenny/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-25-brighton-centre-roger-waters-presents-legacy@brightonweekend
+ .co.uk
+DTSTAMP:20270625T000000Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+SUMMARY:Roger Waters Presents Legacy
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://www.ticketmaster.co.uk/event/3E006542CBCF6874\
+ nMore: https://brightonweekend.co.uk/e/2027-06-25-brighton-centre-roger-wa
+ ters-presents-legacy/
+URL:https://brightonweekend.co.uk/e/2027-06-25-brighton-centre-roger-waters
+ -presents-legacy/
+END:VEVENT
+END:VCALENDAR

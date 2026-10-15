@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-the-hope-ruin-toast-club@brightonweekend.co.uk
+DTSTAMP:20261017T000000Z
+DTSTART:20261017T173000Z
+DTEND:20261017T210000Z
+SUMMARY:Toast Club
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/vwwd00xp/toast-club\nMore: h
+ ttps://brightonweekend.co.uk/e/2026-10-17-the-hope-ruin-toast-club/
+URL:https://brightonweekend.co.uk/e/2026-10-17-the-hope-ruin-toast-club/
+END:VEVENT
+END:VCALENDAR

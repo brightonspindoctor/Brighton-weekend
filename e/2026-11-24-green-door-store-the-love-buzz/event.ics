@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-24-green-door-store-the-love-buzz@brightonweekend.co.uk
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:The Love Buzz
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/mxnqov-the-love-buzz-carne-kanuk
+ ai-24th-nov-green-door-store-brighton-tickets?dice_id=k16ff14cc582&utm_sou
+ rce=web&utm_campaign=google_youtube&utm_medium=google_youtube&source=ea&_b
+ ranch_match_id=1503109823552414038&_branch_referrer=H4sIAAAAAAAAA8soKSkott
+ LXz8nMy9ZLyUxO1UvL1c82NEtLMzRJTja1MLIvzi8tSk61TU1UA0nHZ6bYIkur1RWlpqUWFWXm
+ pccnFeWXF6cW2TpnFOXnpgIAYk94VVoAAAA%3D\nMore: https://brightonweekend.co.u
+ k/e/2026-11-24-green-door-store-the-love-buzz/
+URL:https://brightonweekend.co.uk/e/2026-11-24-green-door-store-the-love-bu
+ zz/
+END:VEVENT
+END:VCALENDAR

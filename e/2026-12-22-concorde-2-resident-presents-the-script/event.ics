@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-22-concorde-2-resident-presents-the-script@brightonweekend.co.u
+ k
+DTSTAMP:20261222T000000Z
+DTSTART:20261222T170000Z
+DTEND:20261222T200000Z
+SUMMARY:Resident Presents The Script
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/a81c41010a22\nMore: https://brigh
+ tonweekend.co.uk/e/2026-12-22-concorde-2-resident-presents-the-script/
+URL:https://brightonweekend.co.uk/e/2026-12-22-concorde-2-resident-presents
+ -the-script/
+END:VEVENT
+END:VCALENDAR

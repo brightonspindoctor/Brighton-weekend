@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-concorde-2-mnek@brightonweekend.co.uk
+DTSTAMP:20261115T000000Z
+DTSTART:20261115T193000Z
+DTEND:20261115T223000Z
+SUMMARY:MNEK
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1510024/mnek-tickets\nMo
+ re: https://brightonweekend.co.uk/e/2026-11-15-concorde-2-mnek/
+URL:https://brightonweekend.co.uk/e/2026-11-15-concorde-2-mnek/
+END:VEVENT
+END:VCALENDAR

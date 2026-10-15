@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-18-brighton-dome-jimeoin-ballyhoo-2@brightonweekend.co.uk
+DTSTAMP:20261018T000000Z
+DTSTART:20261018T183000Z
+DTEND:20261018T220000Z
+SUMMARY:Jimeoin: Ballyhoo!
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LZj-jimeoin-ballyhoo
+ /\nMore: https://brightonweekend.co.uk/e/2026-10-18-brighton-dome-jimeoin-
+ ballyhoo-2/
+URL:https://brightonweekend.co.uk/e/2026-10-18-brighton-dome-jimeoin-ballyh
+ oo-2/
+END:VEVENT
+END:VCALENDAR

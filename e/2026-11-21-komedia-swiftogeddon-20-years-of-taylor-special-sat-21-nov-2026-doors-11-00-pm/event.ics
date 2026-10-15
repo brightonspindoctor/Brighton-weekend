@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-komedia-swiftogeddon-20-years-of-taylor-special-sat-21-nov-2
+ 026-doors-11-00-pm@brightonweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Swiftogeddon: 20 Years of Taylor Special
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87361074
+ 5/events/128655016\nMore: https://brightonweekend.co.uk/e/2026-11-21-komed
+ ia-swiftogeddon-20-years-of-taylor-special-sat-21-nov-2026-doors-11-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-11-21-komedia-swiftogeddon-20-year
+ s-of-taylor-special-sat-21-nov-2026-doors-11-00-pm/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-18-komedia-red-richardson-premium-economy-tour-thu-18-feb-2027-
+ 8-00-pm-doors-7-00-pm@brightonweekend.co.uk
+DTSTAMP:20270218T000000Z
+DTSTART:20270218T200000Z
+DTEND:20270218T230000Z
+SUMMARY:Red Richardson Premium Economy Tour
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://www.ticketmaster.co.uk/red-richardson-brighton
+ -18-02-2027/event/370064E6096AE745\nMore: https://brightonweekend.co.uk/e/
+ 2027-02-18-komedia-red-richardson-premium-economy-tour-thu-18-feb-2027-8-0
+ 0-pm-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2027-02-18-komedia-red-richardson-premi
+ um-economy-tour-thu-18-feb-2027-8-00-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

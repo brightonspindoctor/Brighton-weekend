@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-21-komedia-sam-eley-is-basil-crumbwick-soul-sewage@brightonweek
+ end.co.uk
+DTSTAMP:20270121T000000Z
+DTSTART:20270121T193000Z
+DTEND:20270121T223000Z
+SUMMARY:Sam Eley is Basil Crumbwick: Soul Sewage
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366765
+ 1/events/128665149\nMore: https://brightonweekend.co.uk/e/2027-01-21-komed
+ ia-sam-eley-is-basil-crumbwick-soul-sewage/
+URL:https://brightonweekend.co.uk/e/2027-01-21-komedia-sam-eley-is-basil-cr
+ umbwick-soul-sewage/
+END:VEVENT
+END:VCALENDAR

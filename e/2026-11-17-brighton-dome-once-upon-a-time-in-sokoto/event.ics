@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-17-brighton-dome-once-upon-a-time-in-sokoto@brightonweekend.co.
+ uk
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Once Upon a Time in Sokoto
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Brighton-Dom
+ e-Corn-Exchange/Once-Upon-a-Time-in-Sokoto/42643576/\nMore: https://bright
+ onweekend.co.uk/e/2026-11-17-brighton-dome-once-upon-a-time-in-sokoto/
+URL:https://brightonweekend.co.uk/e/2026-11-17-brighton-dome-once-upon-a-ti
+ me-in-sokoto/
+END:VEVENT
+END:VCALENDAR

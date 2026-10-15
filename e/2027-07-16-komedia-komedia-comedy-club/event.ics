@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-16-komedia-komedia-comedy-club@brightonweekend.co.uk
+DTSTAMP:20270716T000000Z
+DTSTART:20270716T190000Z
+DTEND:20270716T220000Z
+SUMMARY:Komedia Comedy Club
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87362274
+ 0/events/128665287\nMore: https://brightonweekend.co.uk/e/2027-07-16-komed
+ ia-komedia-comedy-club/
+URL:https://brightonweekend.co.uk/e/2027-07-16-komedia-komedia-comedy-club/
+END:VEVENT
+END:VCALENDAR

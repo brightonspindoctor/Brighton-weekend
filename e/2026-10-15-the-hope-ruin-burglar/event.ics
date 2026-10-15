@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-15-the-hope-ruin-burglar@brightonweekend.co.uk
+DTSTAMP:20261015T000000Z
+DTSTART:20261015T180000Z
+DTEND:20261015T210000Z
+SUMMARY:Burglar *RSCHEDULED*
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/burglar/\nMore: https://bri
+ ghtonweekend.co.uk/e/2026-10-15-the-hope-ruin-burglar/
+URL:https://brightonweekend.co.uk/e/2026-10-15-the-hope-ruin-burglar/
+END:VEVENT
+END:VCALENDAR

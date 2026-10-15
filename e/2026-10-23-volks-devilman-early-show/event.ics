@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-23-volks-devilman-early-show@brightonweekend.co.uk
+DTSTAMP:20261023T000000Z
+DTSTART:20261023T170000Z
+DTEND:20261023T210000Z
+SUMMARY:Devilman - Early show
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Devilman---Early-show/42751058/\nMore: https://brightonweekend.co.
+ uk/e/2026-10-23-volks-devilman-early-show/
+URL:https://brightonweekend.co.uk/e/2026-10-23-volks-devilman-early-show/
+END:VEVENT
+END:VCALENDAR

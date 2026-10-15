@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-10-the-prince-albert-charleen-no-empire-seadog@brightonweekend.
+ co.uk
+DTSTAMP:20261110T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Charleen + No Empire + Seadog
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/eonpm6-charleen-no-empire-seadog
+ -10th-nov-the-prince-albert-brighton-brighton-tickets?dice_id=Le76c40cc59c
+ &_branch_match_id=1602684765670371472&utm_source=dice.fm&utm_campaign=even
+ t_share&utm_medium=event_share&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8
+ nMy9ZLyUxO1UvL1fdJNTdLNjFITja1TLYHCcZnptgiC6rVFaWmpRYVZealxycV5ZcXpxbZBiem
+ JRZlAgAqpRxzUAAAAA%3D%3D\nMore: https://brightonweekend.co.uk/e/2026-11-10
+ -the-prince-albert-charleen-no-empire-seadog/
+URL:https://brightonweekend.co.uk/e/2026-11-10-the-prince-albert-charleen-n
+ o-empire-seadog/
+END:VEVENT
+END:VCALENDAR

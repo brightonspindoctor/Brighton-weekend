@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-patterns-utah-saints@brightonweekend.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Utah Saints
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/brighton-events/patterns\nMore:
+  https://brightonweekend.co.uk/e/2026-11-28-patterns-utah-saints/
+URL:https://brightonweekend.co.uk/e/2026-11-28-patterns-utah-saints/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-concorde-2-it-s-a-jungle-out-there-coco-bryce-and-j-kenzo@br
+ ightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART:20261106T230000Z
+DTEND:20261107T020000Z
+SUMMARY:It's A Jungle Out There - Coco Bryce & J:Kenzo
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Concorde
+ -2/Its-A-Jungle-Out-There---Coco-Bryce--JKenzo/42604156/\nMore: https://br
+ ightonweekend.co.uk/e/2026-11-06-concorde-2-it-s-a-jungle-out-there-coco-b
+ ryce-and-j-kenzo/
+URL:https://brightonweekend.co.uk/e/2026-11-06-concorde-2-it-s-a-jungle-out
+ -there-coco-bryce-and-j-kenzo/
+END:VEVENT
+END:VCALENDAR

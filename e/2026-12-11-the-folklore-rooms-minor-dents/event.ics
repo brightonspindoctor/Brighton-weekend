@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-11-the-folklore-rooms-minor-dents@brightonweekend.co.uk
+DTSTAMP:20261211T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Minor Dents
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.ticketsource.com/lost-property-arts-collec
+ tive-cic/minor-dents-album-launch-sons-of-viljems-hand-of-glory/e-xmperz\n
+ More: https://brightonweekend.co.uk/e/2026-12-11-the-folklore-rooms-minor-
+ dents/
+URL:https://brightonweekend.co.uk/e/2026-12-11-the-folklore-rooms-minor-den
+ ts/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-25-amex-stadium-brighton-women-v-west-ham-united@brightonweeken
+ d.co.uk
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T140000Z
+DTEND:20261025T170000Z
+SUMMARY:Brighton Women v West Ham United
+LOCATION:Amex Stadium\, Brighton
+DESCRIPTION:Tickets: https://www.brightonandhovealbion.com/tickets\nMore: h
+ ttps://brightonweekend.co.uk/e/2026-10-25-amex-stadium-brighton-women-v-we
+ st-ham-united/
+URL:https://brightonweekend.co.uk/e/2026-10-25-amex-stadium-brighton-women-
+ v-west-ham-united/
+END:VEVENT
+END:VCALENDAR

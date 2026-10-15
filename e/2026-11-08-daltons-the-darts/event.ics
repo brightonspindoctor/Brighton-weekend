@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-08-daltons-the-darts@brightonweekend.co.uk
+DTSTAMP:20261108T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:The Darts
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/the-darts-at-daltons-br
+ ighton-81126-tickets-1997796389781?fbclid=IwY2xjawTqnWFwZG9mAWV4dG4DYWVtAj
+ EwAGJyaWQRMVF2NDc4eENjNHRma2tOdXFzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEe
+ wnu-11itQ4CmCvqRN0F6Dg1OGZH-02J6rmxosyvqK0yV1yYbvzECclqkcB8_aem_R_TfpX0gfE
+ 42WzzfI6Ek7Q\nMore: https://brightonweekend.co.uk/e/2026-11-08-daltons-the
+ -darts/
+URL:https://brightonweekend.co.uk/e/2026-11-08-daltons-the-darts/
+END:VEVENT
+END:VCALENDAR

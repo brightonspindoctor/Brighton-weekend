@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-dust-intercourse@brightonweekend.co.uk
+DTSTAMP:20261115T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Intercourse
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6a3bbbae3c1b710001ef8291\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-15-dust-intercourse/
+URL:https://brightonweekend.co.uk/e/2026-11-15-dust-intercourse/
+END:VEVENT
+END:VCALENDAR

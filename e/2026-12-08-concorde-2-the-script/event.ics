@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-08-concorde-2-the-script@brightonweekend.co.uk
+DTSTAMP:20261208T000000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:The Script
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/N0cca79179e9\nMore: https://brigh
+ tonweekend.co.uk/e/2026-12-08-concorde-2-the-script/
+URL:https://brightonweekend.co.uk/e/2026-12-08-concorde-2-the-script/
+END:VEVENT
+END:VCALENDAR

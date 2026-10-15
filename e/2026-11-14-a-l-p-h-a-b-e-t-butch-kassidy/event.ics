@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-a-l-p-h-a-b-e-t-butch-kassidy@brightonweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Butch Kassidy
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvYnV0Y2gta2Fzc2lkeS9hLWwtcC1oLWEtYi1lLXQvMzYxNT
+ E4NQ/supplier/SeeTickets/suppliedid/MzYxNTE4NQ/ticketid/8094842/checksum/5
+ 241c2f1975754abc605010fecf59143/track/true?title=Butch+Kassidy&badge=&venu
+ eId=50186\nMore: https://brightonweekend.co.uk/e/2026-11-14-a-l-p-h-a-b-e-
+ t-butch-kassidy/
+URL:https://brightonweekend.co.uk/e/2026-11-14-a-l-p-h-a-b-e-t-butch-kassid
+ y/
+END:VEVENT
+END:VCALENDAR

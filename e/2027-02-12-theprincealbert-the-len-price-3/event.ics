@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-12-theprincealbert-the-len-price-3@brightonweekend.co.uk
+DTSTAMP:20270212T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:The Len Price 3
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/brighton-events/the-prince-albe
+ rt\nMore: https://brightonweekend.co.uk/e/2027-02-12-theprincealbert-the-l
+ en-price-3/
+URL:https://brightonweekend.co.uk/e/2027-02-12-theprincealbert-the-len-pric
+ e-3/
+END:VEVENT
+END:VCALENDAR

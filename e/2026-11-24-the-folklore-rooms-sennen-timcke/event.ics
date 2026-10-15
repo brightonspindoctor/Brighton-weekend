@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-24-the-folklore-rooms-sennen-timcke@brightonweekend.co.uk
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Sennen Timcke
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/sennen-timcke-album-l
+ aunch/the-folklore-rooms/3712454\nMore: https://brightonweekend.co.uk/e/20
+ 26-11-24-the-folklore-rooms-sennen-timcke/
+URL:https://brightonweekend.co.uk/e/2026-11-24-the-folklore-rooms-sennen-ti
+ mcke/
+END:VEVENT
+END:VCALENDAR

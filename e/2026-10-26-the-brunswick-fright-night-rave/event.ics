@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-26-the-brunswick-fright-night-rave@brightonweekend.co.uk
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Fright Night Rave
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/fright-ni
+ ght-rave\nMore: https://brightonweekend.co.uk/e/2026-10-26-the-brunswick-f
+ right-night-rave/
+URL:https://brightonweekend.co.uk/e/2026-10-26-the-brunswick-fright-night-r
+ ave/
+END:VEVENT
+END:VCALENDAR

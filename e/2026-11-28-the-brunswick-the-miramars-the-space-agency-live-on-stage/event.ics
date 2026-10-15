@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-the-brunswick-the-miramars-the-space-agency-live-on-stage@br
+ ightonweekend.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:The Miramars & The Space Agency - Live On Stage
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/the-miram
+ ars-the-space-agency-live-on-stage\nMore: https://brightonweekend.co.uk/e/
+ 2026-11-28-the-brunswick-the-miramars-the-space-agency-live-on-stage/
+URL:https://brightonweekend.co.uk/e/2026-11-28-the-brunswick-the-miramars-t
+ he-space-agency-live-on-stage/
+END:VEVENT
+END:VCALENDAR

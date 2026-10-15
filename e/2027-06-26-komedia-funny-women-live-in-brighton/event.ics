@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-26-komedia-funny-women-live-in-brighton@brightonweekend.co.uk
+DTSTAMP:20270626T000000Z
+DTSTART:20270626T190000Z
+DTEND:20270626T220000Z
+SUMMARY:Funny Women Live in Brighton
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87349211
+ 1/events/128666081\nMore: https://brightonweekend.co.uk/e/2027-06-26-komed
+ ia-funny-women-live-in-brighton/
+URL:https://brightonweekend.co.uk/e/2027-06-26-komedia-funny-women-live-in-
+ brighton/
+END:VEVENT
+END:VCALENDAR

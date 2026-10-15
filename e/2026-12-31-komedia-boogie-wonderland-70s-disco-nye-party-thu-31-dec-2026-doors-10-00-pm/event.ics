@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-31-komedia-boogie-wonderland-70s-disco-nye-party-thu-31-dec-202
+ 6-doors-10-00-pm@brightonweekend.co.uk
+DTSTAMP:20261231T000000Z
+DTSTART:20261231T220000Z
+DTEND:20270101T010000Z
+SUMMARY:Boogie Wonderland – 70s Disco NYE party!
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87359377
+ 0/events/128665041\nMore: https://brightonweekend.co.uk/e/2026-12-31-komed
+ ia-boogie-wonderland-70s-disco-nye-party-thu-31-dec-2026-doors-10-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-12-31-komedia-boogie-wonderland-70
+ s-disco-nye-party-thu-31-dec-2026-doors-10-00-pm/
+END:VEVENT
+END:VCALENDAR

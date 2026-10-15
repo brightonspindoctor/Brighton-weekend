@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-17-the-brunswick-soma-dolls-higher-state-radio@brightonweekend.
+ co.uk
+DTSTAMP:20270417T000000Z
+DTSTART;VALUE=DATE:20270417
+DTEND;VALUE=DATE:20270418
+SUMMARY:Soma Dolls + Higher State Radio
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/soma-doll
+ s-higher-state-radio-2\nMore: https://brightonweekend.co.uk/e/2027-04-17-t
+ he-brunswick-soma-dolls-higher-state-radio/
+URL:https://brightonweekend.co.uk/e/2027-04-17-the-brunswick-soma-dolls-hig
+ her-state-radio/
+END:VEVENT
+END:VCALENDAR

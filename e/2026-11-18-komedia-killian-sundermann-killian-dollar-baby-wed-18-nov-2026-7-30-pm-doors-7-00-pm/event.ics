@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-18-komedia-killian-sundermann-killian-dollar-baby-wed-18-nov-20
+ 26-7-30-pm-doors-7-00-pm@brightonweekend.co.uk
+DTSTAMP:20261118T000000Z
+DTSTART:20261118T193000Z
+DTEND:20261118T223000Z
+SUMMARY:Killian Sundermann: Killian Dollar Baby
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366580
+ 3/events/128655213\nMore: https://brightonweekend.co.uk/e/2026-11-18-komed
+ ia-killian-sundermann-killian-dollar-baby-wed-18-nov-2026-7-30-pm-doors-7-
+ 00-pm/
+URL:https://brightonweekend.co.uk/e/2026-11-18-komedia-killian-sundermann-k
+ illian-dollar-baby-wed-18-nov-2026-7-30-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

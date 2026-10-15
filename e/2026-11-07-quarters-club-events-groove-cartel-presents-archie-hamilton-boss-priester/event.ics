@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-quarters-club-events-groove-cartel-presents-archie-hamilton-
+ boss-priester@brightonweekend.co.uk
+DTSTAMP:20261107T000000Z
+DTSTART:20261107T230000Z
+DTEND:20261108T040000Z
+SUMMARY:Groove Cartel Presents Archie Hamilton & Boss Priester
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/groove-cartel-w-
+ archie-hamilton-boss-priester/quarters/3731800\nMore: https://brightonweek
+ end.co.uk/e/2026-11-07-quarters-club-events-groove-cartel-presents-archie-
+ hamilton-boss-priester/
+URL:https://brightonweekend.co.uk/e/2026-11-07-quarters-club-events-groove-
+ cartel-presents-archie-hamilton-boss-priester/
+END:VEVENT
+END:VCALENDAR

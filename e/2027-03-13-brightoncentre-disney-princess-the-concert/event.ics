@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-13-brightoncentre-disney-princess-the-concert@brightonweekend.c
+ o.uk
+DTSTAMP:20270313T000000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Disney Princess: The Concert
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/\nMore: https://brightonw
+ eekend.co.uk/e/2027-03-13-brightoncentre-disney-princess-the-concert/
+URL:https://brightonweekend.co.uk/e/2027-03-13-brightoncentre-disney-prince
+ ss-the-concert/
+END:VEVENT
+END:VCALENDAR

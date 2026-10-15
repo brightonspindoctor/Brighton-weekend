@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-15-a-l-p-h-a-b-e-t-firefriend@brightonweekend.co.uk
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:Firefriend
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvZmlyZWZyaWVuZC1ici1wZXRlLWJhc3NtYW4tc3BhY2VtZW
+ 4tMy1tb3JlL2EtbC1wLWgtYS1iLWUtdC8zNjM5NzYz/supplier/SeeTickets/suppliedid/
+ MzYzOTc2Mw/ticketid/8052131/checksum/bd84fe1490e084eca48a2c635901ca71/trac
+ k/true?title=Firefriend+%28BR%29+%2B+Pete+Bassman+%28Spacemen+3%29+%26+mor
+ e&badge=&venueId=50186\nMore: https://brightonweekend.co.uk/e/2026-10-15-a
+ -l-p-h-a-b-e-t-firefriend/
+URL:https://brightonweekend.co.uk/e/2026-10-15-a-l-p-h-a-b-e-t-firefriend/
+END:VEVENT
+END:VCALENDAR

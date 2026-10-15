@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-31-concorde-2-moses-boyd@brightonweekend.co.uk
+DTSTAMP:20270331T000000Z
+DTSTART:20270331T183000Z
+DTEND:20270331T213000Z
+SUMMARY:Moses Boyd
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1596390/moses-boyd-ticke
+ ts/promos/1195792\nMore: https://brightonweekend.co.uk/e/2027-03-31-concor
+ de-2-moses-boyd/
+URL:https://brightonweekend.co.uk/e/2027-03-31-concorde-2-moses-boyd/
+END:VEVENT
+END:VCALENDAR

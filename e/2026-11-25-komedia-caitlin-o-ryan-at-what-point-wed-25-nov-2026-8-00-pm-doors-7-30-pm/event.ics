@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-25-komedia-caitlin-o-ryan-at-what-point-wed-25-nov-2026-8-00-pm
+ -doors-7-30-pm@brightonweekend.co.uk
+DTSTAMP:20261125T000000Z
+DTSTART:20261125T200000Z
+DTEND:20261125T230000Z
+SUMMARY:Caitlin O’Ryan: At What Point
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366637
+ 3/events/128661037\nMore: https://brightonweekend.co.uk/e/2026-11-25-komed
+ ia-caitlin-o-ryan-at-what-point-wed-25-nov-2026-8-00-pm-doors-7-30-pm/
+URL:https://brightonweekend.co.uk/e/2026-11-25-komedia-caitlin-o-ryan-at-wh
+ at-point-wed-25-nov-2026-8-00-pm-doors-7-30-pm/
+END:VEVENT
+END:VCALENDAR

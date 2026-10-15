@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-29-daltons-rock-n-pole@brightonweekend.co.uk
+DTSTAMP:20261129T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Rock 'N' Pole
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/rock-n-pole/daltons/3
+ 668529?aff=id1bandsintown\nMore: https://brightonweekend.co.uk/e/2026-11-2
+ 9-daltons-rock-n-pole/
+URL:https://brightonweekend.co.uk/e/2026-11-29-daltons-rock-n-pole/
+END:VEVENT
+END:VCALENDAR

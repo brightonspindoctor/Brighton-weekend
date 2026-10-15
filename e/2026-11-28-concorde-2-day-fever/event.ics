@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-concorde-2-day-fever@brightonweekend.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART:20261128T150000Z
+DTEND:20261128T180000Z
+SUMMARY:Day Fever
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1608481/day-fever-ticket
+ s\nMore: https://brightonweekend.co.uk/e/2026-11-28-concorde-2-day-fever/
+URL:https://brightonweekend.co.uk/e/2026-11-28-concorde-2-day-fever/
+END:VEVENT
+END:VCALENDAR

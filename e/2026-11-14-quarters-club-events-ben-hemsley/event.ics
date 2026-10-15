@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-quarters-club-events-ben-hemsley@brightonweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART:20261114T230000Z
+DTEND:20261115T040000Z
+SUMMARY:Ben Hemsley
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/ben-hemsley/quar
+ ters/3731925\nMore: https://brightonweekend.co.uk/e/2026-11-14-quarters-cl
+ ub-events-ben-hemsley/
+URL:https://brightonweekend.co.uk/e/2026-11-14-quarters-club-events-ben-hem
+ sley/
+END:VEVENT
+END:VCALENDAR

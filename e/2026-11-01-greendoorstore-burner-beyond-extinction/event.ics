@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-01-greendoorstore-burner-beyond-extinction@brightonweekend.co.u
+ k
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Burner Beyond Extinction
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/\nMore: https:/
+ /brightonweekend.co.uk/e/2026-11-01-greendoorstore-burner-beyond-extinctio
+ n/
+URL:https://brightonweekend.co.uk/e/2026-11-01-greendoorstore-burner-beyond
+ -extinction/
+END:VEVENT
+END:VCALENDAR

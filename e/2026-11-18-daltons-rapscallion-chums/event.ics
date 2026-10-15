@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-18-daltons-rapscallion-chums@brightonweekend.co.uk
+DTSTAMP:20261118T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Rapscallion & Chums
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/rapscall
+ ion-chums\nMore: https://brightonweekend.co.uk/e/2026-11-18-daltons-rapsca
+ llion-chums/
+URL:https://brightonweekend.co.uk/e/2026-11-18-daltons-rapscallion-chums/
+END:VEVENT
+END:VCALENDAR

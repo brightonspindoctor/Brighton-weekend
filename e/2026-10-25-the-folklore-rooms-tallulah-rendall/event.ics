@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-25-the-folklore-rooms-tallulah-rendall@brightonweekend.co.uk
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Tallulah Rendall
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/only-human-uk-tour-brig
+ hton-tickets-1989777523135?aff=oddtdtcreator&keep_tld=true\nMore: https://
+ brightonweekend.co.uk/e/2026-10-25-the-folklore-rooms-tallulah-rendall/
+URL:https://brightonweekend.co.uk/e/2026-10-25-the-folklore-rooms-tallulah-
+ rendall/
+END:VEVENT
+END:VCALENDAR

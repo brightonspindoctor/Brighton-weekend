@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-14-brighton-dome-bad-girls-and-heartbreakers-carmen-and-kurt-we
+ ill@brightonweekend.co.uk
+DTSTAMP:20270214T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Bad Girls and Heartbreakers: Carmen and Kurt Weill
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
+ alse\,false&top_filter=all&page=4&view=list\nMore: https://brightonweekend
+ .co.uk/e/2027-02-14-brighton-dome-bad-girls-and-heartbreakers-carmen-and-k
+ urt-weill/
+URL:https://brightonweekend.co.uk/e/2027-02-14-brighton-dome-bad-girls-and-
+ heartbreakers-carmen-and-kurt-weill/
+END:VEVENT
+END:VCALENDAR

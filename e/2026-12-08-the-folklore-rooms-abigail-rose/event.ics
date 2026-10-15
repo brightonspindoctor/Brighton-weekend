@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-08-the-folklore-rooms-abigail-rose@brightonweekend.co.uk
+DTSTAMP:20261208T000000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Abigail Rose
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/abigail-rose/the-folk
+ lore-rooms/3724865\nMore: https://brightonweekend.co.uk/e/2026-12-08-the-f
+ olklore-rooms-abigail-rose/
+URL:https://brightonweekend.co.uk/e/2026-12-08-the-folklore-rooms-abigail-r
+ ose/
+END:VEVENT
+END:VCALENDAR

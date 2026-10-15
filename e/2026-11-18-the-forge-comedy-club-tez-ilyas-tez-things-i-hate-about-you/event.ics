@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-18-the-forge-comedy-club-tez-ilyas-tez-things-i-hate-about-you@
+ brightonweekend.co.uk
+DTSTAMP:20261118T000000Z
+DTSTART:20261118T200000Z
+DTEND:20261118T220000Z
+SUMMARY:Tez Ilyas: Tez Things I Hate About You
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/tez-ilyas-tez-things-i-
+ hate-about-you-tickets-1972463816372\nMore: https://brightonweekend.co.uk/
+ e/2026-11-18-the-forge-comedy-club-tez-ilyas-tez-things-i-hate-about-you/
+URL:https://brightonweekend.co.uk/e/2026-11-18-the-forge-comedy-club-tez-il
+ yas-tez-things-i-hate-about-you/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-12-the-rose-hill-jos-almarcha-trio-night-2-2@brightonweekend.co
+ .uk
+DTSTAMP:20261112T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:José Almarcha Trio (night 2/2)
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/jose-almarcha-trio-12-
+ nov-2026/\nMore: https://brightonweekend.co.uk/e/2026-11-12-the-rose-hill-
+ jos-almarcha-trio-night-2-2/
+URL:https://brightonweekend.co.uk/e/2026-11-12-the-rose-hill-jos-almarcha-t
+ rio-night-2-2/
+END:VEVENT
+END:VCALENDAR

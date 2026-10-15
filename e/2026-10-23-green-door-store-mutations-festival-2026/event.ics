@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-23-green-door-store-mutations-festival-2026@brightonweekend.co.
+ uk
+DTSTAMP:20261023T000000Z
+DTSTART:20261023T140000Z
+DTEND:20261023T170000Z
+SUMMARY:Mutations Festival 2026
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/mutations-festi
+ val-2026/\nMore: https://brightonweekend.co.uk/e/2026-10-23-green-door-sto
+ re-mutations-festival-2026/
+URL:https://brightonweekend.co.uk/e/2026-10-23-green-door-store-mutations-f
+ estival-2026/
+END:VEVENT
+END:VCALENDAR

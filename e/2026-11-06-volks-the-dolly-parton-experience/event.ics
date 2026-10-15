@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-volks-the-dolly-parton-experience@brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART:20261106T190000Z
+DTEND:20261106T220000Z
+SUMMARY:The Dolly Parton Experience
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/The-Dolly-Parton-Experience/42726144/\nMore: https://brightonweeke
+ nd.co.uk/e/2026-11-06-volks-the-dolly-parton-experience/
+URL:https://brightonweekend.co.uk/e/2026-11-06-volks-the-dolly-parton-exper
+ ience/
+END:VEVENT
+END:VCALENDAR

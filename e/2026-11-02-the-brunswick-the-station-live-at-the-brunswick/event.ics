@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-02-the-brunswick-the-station-live-at-the-brunswick@brightonweek
+ end.co.uk
+DTSTAMP:20261102T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:The Station
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/the-stati
+ on-live-at-the-brunswick\nMore: https://brightonweekend.co.uk/e/2026-11-02
+ -the-brunswick-the-station-live-at-the-brunswick/
+URL:https://brightonweekend.co.uk/e/2026-11-02-the-brunswick-the-station-li
+ ve-at-the-brunswick/
+END:VEVENT
+END:VCALENDAR

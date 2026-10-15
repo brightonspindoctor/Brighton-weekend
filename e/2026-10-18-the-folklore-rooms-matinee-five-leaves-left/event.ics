@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-18-the-folklore-rooms-matinee-five-leaves-left@brightonweekend.
+ co.uk
+DTSTAMP:20261018T000000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:Matinee: Five Leaves Left
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/five-leaves-left/the-
+ folklore-rooms/3698694\nMore: https://brightonweekend.co.uk/e/2026-10-18-t
+ he-folklore-rooms-matinee-five-leaves-left/
+URL:https://brightonweekend.co.uk/e/2026-10-18-the-folklore-rooms-matinee-f
+ ive-leaves-left/
+END:VEVENT
+END:VCALENDAR

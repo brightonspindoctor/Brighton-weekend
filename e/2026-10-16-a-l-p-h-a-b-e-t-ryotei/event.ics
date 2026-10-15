@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-16-a-l-p-h-a-b-e-t-ryotei@brightonweekend.co.uk
+DTSTAMP:20261016T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Ryotei
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Alphabet-Bri
+ ghton/Ryotei/42713757/\nMore: https://brightonweekend.co.uk/e/2026-10-16-a
+ -l-p-h-a-b-e-t-ryotei/
+URL:https://brightonweekend.co.uk/e/2026-10-16-a-l-p-h-a-b-e-t-ryotei/
+END:VEVENT
+END:VCALENDAR

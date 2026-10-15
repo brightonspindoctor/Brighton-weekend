@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-21-green-door-store-tabi-gervis-ep-release-party@brightonweeken
+ d.co.uk
+DTSTAMP:20261021T000000Z
+DTSTART:20261021T180000Z
+DTEND:20261021T210000Z
+SUMMARY:Tabi Gervis – EP Release Party
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/tabi-gervis-ep-
+ release-party/\nMore: https://brightonweekend.co.uk/e/2026-10-21-green-doo
+ r-store-tabi-gervis-ep-release-party/
+URL:https://brightonweekend.co.uk/e/2026-10-21-green-door-store-tabi-gervis
+ -ep-release-party/
+END:VEVENT
+END:VCALENDAR

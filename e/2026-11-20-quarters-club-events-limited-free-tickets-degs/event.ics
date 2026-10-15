@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-20-quarters-club-events-limited-free-tickets-degs@brightonweeke
+ nd.co.uk
+DTSTAMP:20261120T000000Z
+DTSTART:20261120T230000Z
+DTEND:20261121T040000Z
+SUMMARY:Degs Friends
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/degs-friends/qua
+ rters/3732774\nMore: https://brightonweekend.co.uk/e/2026-11-20-quarters-c
+ lub-events-limited-free-tickets-degs/
+URL:https://brightonweekend.co.uk/e/2026-11-20-quarters-club-events-limited
+ -free-tickets-degs/
+END:VEVENT
+END:VCALENDAR

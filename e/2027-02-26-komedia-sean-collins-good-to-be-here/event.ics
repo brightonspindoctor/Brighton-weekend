@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-26-komedia-sean-collins-good-to-be-here@brightonweekend.co.uk
+DTSTAMP:20270226T000000Z
+DTSTART:20270226T200000Z
+DTEND:20270226T230000Z
+SUMMARY:Sean Collins – Good To Be Here
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366767
+ 2/events/128665227\nMore: https://brightonweekend.co.uk/e/2027-02-26-komed
+ ia-sean-collins-good-to-be-here/
+URL:https://brightonweekend.co.uk/e/2027-02-26-komedia-sean-collins-good-to
+ -be-here/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-03-dust-liam-c@brightonweekend.co.uk
+DTSTAMP:20261203T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Liam C
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ab633798bc23f0001098c28\nMore: 
+ https://brightonweekend.co.uk/e/2026-12-03-dust-liam-c/
+URL:https://brightonweekend.co.uk/e/2026-12-03-dust-liam-c/
+END:VEVENT
+END:VCALENDAR

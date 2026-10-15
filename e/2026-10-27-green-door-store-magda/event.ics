@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-27-green-door-store-magda@brightonweekend.co.uk
+DTSTAMP:20261027T000000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Magda
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/92vb3o-magda-27th-oct-green-door
+ -store-brighton-tickets\nMore: https://brightonweekend.co.uk/e/2026-10-27-
+ green-door-store-magda/
+URL:https://brightonweekend.co.uk/e/2026-10-27-green-door-store-magda/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-15-the-forge-comedy-club-dan-nightingale-friends@brightonweeken
+ d.co.uk
+DTSTAMP:20261015T000000Z
+DTSTART:20261015T183000Z
+DTEND:20261015T203000Z
+SUMMARY:Dan Nightingale & Friends
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/dan-nightingale-friends
+ -tickets-1985442982407\nMore: https://brightonweekend.co.uk/e/2026-10-15-t
+ he-forge-comedy-club-dan-nightingale-friends/
+URL:https://brightonweekend.co.uk/e/2026-10-15-the-forge-comedy-club-dan-ni
+ ghtingale-friends/
+END:VEVENT
+END:VCALENDAR

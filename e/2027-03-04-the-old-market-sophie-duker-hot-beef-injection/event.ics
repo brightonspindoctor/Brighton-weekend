@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-04-the-old-market-sophie-duker-hot-beef-injection@brightonweeke
+ nd.co.uk
+DTSTAMP:20270403T000000Z
+DTSTART:20270403T183000Z
+DTEND:20270403T203000Z
+SUMMARY:Sophie Duker: Hot Beef Injection
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/sophie-duker-hot-be
+ ef-injection\nMore: https://brightonweekend.co.uk/e/2027-03-04-the-old-mar
+ ket-sophie-duker-hot-beef-injection/
+URL:https://brightonweekend.co.uk/e/2027-03-04-the-old-market-sophie-duker-
+ hot-beef-injection/
+END:VEVENT
+END:VCALENDAR

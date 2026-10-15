@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-19-00-omega-nebula@brightonweekend.co.uk
+DTSTAMP:20261017T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Omega Nebula
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/venues/134040/volks-club-bright
+ on-tickets\nMore: https://brightonweekend.co.uk/e/2026-10-17-19-00-omega-n
+ ebula/
+URL:https://brightonweekend.co.uk/e/2026-10-17-19-00-omega-nebula/
+END:VEVENT
+END:VCALENDAR

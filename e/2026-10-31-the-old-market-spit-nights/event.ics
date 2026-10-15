@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-the-old-market-spit-nights@brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART:20261031T193000Z
+DTEND:20261031T223000Z
+SUMMARY:Spit Nights
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/spit-nights-hallowe
+ en\nMore: https://brightonweekend.co.uk/e/2026-10-31-the-old-market-spit-n
+ ights/
+URL:https://brightonweekend.co.uk/e/2026-10-31-the-old-market-spit-nights/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-29-a-l-p-h-a-b-e-t-dylan-leblanc@brightonweekend.co.uk
+DTSTAMP:20261129T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Dylan LeBlanc
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvZHlsYW4tbGVibGFuYy9hbHBoYWJldC8zNjM2NjIx/suppl
+ ier/SeeTickets/suppliedid/MzYzNjYyMQ/ticketid/8054699/checksum/4eccfda99af
+ cc8a7346f54961f75deea/track/true?title=Dylan+LeBlanc&badge=&venueId=50186\
+ nMore: https://brightonweekend.co.uk/e/2026-11-29-a-l-p-h-a-b-e-t-dylan-le
+ blanc/
+URL:https://brightonweekend.co.uk/e/2026-11-29-a-l-p-h-a-b-e-t-dylan-leblan
+ c/
+END:VEVENT
+END:VCALENDAR

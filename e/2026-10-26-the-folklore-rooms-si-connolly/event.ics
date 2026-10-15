@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-26-the-folklore-rooms-si-connolly@brightonweekend.co.uk
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Si Connolly
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.tickettailor.com/events/deadrabbit/2360652
+ \nMore: https://brightonweekend.co.uk/e/2026-10-26-the-folklore-rooms-si-c
+ onnolly/
+URL:https://brightonweekend.co.uk/e/2026-10-26-the-folklore-rooms-si-connol
+ ly/
+END:VEVENT
+END:VCALENDAR

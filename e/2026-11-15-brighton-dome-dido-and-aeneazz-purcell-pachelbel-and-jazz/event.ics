@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-brighton-dome-dido-and-aeneazz-purcell-pachelbel-and-jazz@br
+ ightonweekend.co.uk
+DTSTAMP:20261115T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Dido and Aeneazz: Purcell\, Pachelbel and Jazz
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/Lz1-kian-soltani-pla
+ ys-dvok/\nMore: https://brightonweekend.co.uk/e/2026-11-15-brighton-dome-d
+ ido-and-aeneazz-purcell-pachelbel-and-jazz/
+URL:https://brightonweekend.co.uk/e/2026-11-15-brighton-dome-dido-and-aenea
+ zz-purcell-pachelbel-and-jazz/
+END:VEVENT
+END:VCALENDAR

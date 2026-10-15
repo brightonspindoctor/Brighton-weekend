@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-29-komedia-deviants-market-sun-29-nov-2026-doors-10-30-am@brigh
+ tonweekend.co.uk
+DTSTAMP:20261129T000000Z
+DTSTART:20261129T103000Z
+DTEND:20261129T133000Z
+SUMMARY:Deviants Market
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://www.komedia.co.uk/shows/deviants-market/?eid=1
+ 8718\nMore: https://brightonweekend.co.uk/e/2026-11-29-komedia-deviants-ma
+ rket-sun-29-nov-2026-doors-10-30-am/
+URL:https://brightonweekend.co.uk/e/2026-11-29-komedia-deviants-market-sun-
+ 29-nov-2026-doors-10-30-am/
+END:VEVENT
+END:VCALENDAR

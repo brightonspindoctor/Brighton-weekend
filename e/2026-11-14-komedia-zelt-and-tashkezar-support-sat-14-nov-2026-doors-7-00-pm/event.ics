@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-komedia-zelt-and-tashkezar-support-sat-14-nov-2026-doors-7-0
+ 0-pm@brightonweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART:20261114T190000Z
+DTEND:20261114T220000Z
+SUMMARY:Zelt and Tashkezar + Support
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366596
+ 6/events/128655592\nMore: https://brightonweekend.co.uk/e/2026-11-14-komed
+ ia-zelt-and-tashkezar-support-sat-14-nov-2026-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-11-14-komedia-zelt-and-tashkezar-s
+ upport-sat-14-nov-2026-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-18-the-brunswick-noah-derksen-live-in-hove@brightonweekend.co.u
+ k
+DTSTAMP:20261118T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Noah Derksen live in Hove
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/noah-derk
+ sen-live-in-hove\nMore: https://brightonweekend.co.uk/e/2026-11-18-the-bru
+ nswick-noah-derksen-live-in-hove/
+URL:https://brightonweekend.co.uk/e/2026-11-18-the-brunswick-noah-derksen-l
+ ive-in-hove/
+END:VEVENT
+END:VCALENDAR

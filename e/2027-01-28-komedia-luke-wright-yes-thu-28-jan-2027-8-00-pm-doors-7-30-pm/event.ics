@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-28-komedia-luke-wright-yes-thu-28-jan-2027-8-00-pm-doors-7-30-p
+ m@brightonweekend.co.uk
+DTSTAMP:20270128T000000Z
+DTSTART:20270128T200000Z
+DTEND:20270128T230000Z
+SUMMARY:Luke Wright: Yes.
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366741
+ 5/events/128664577\nMore: https://brightonweekend.co.uk/e/2027-01-28-komed
+ ia-luke-wright-yes-thu-28-jan-2027-8-00-pm-doors-7-30-pm/
+URL:https://brightonweekend.co.uk/e/2027-01-28-komedia-luke-wright-yes-thu-
+ 28-jan-2027-8-00-pm-doors-7-30-pm/
+END:VEVENT
+END:VCALENDAR

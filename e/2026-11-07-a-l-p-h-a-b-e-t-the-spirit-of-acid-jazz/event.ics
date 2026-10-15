@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-a-l-p-h-a-b-e-t-the-spirit-of-acid-jazz@brightonweekend.co.u
+ k
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:The Spirit of Acid Jazz
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/the-spirit-of-acid-jazz
+ -tickets-1999016970571?aff=ebdssbdestsearch\nMore: https://brightonweekend
+ .co.uk/e/2026-11-07-a-l-p-h-a-b-e-t-the-spirit-of-acid-jazz/
+URL:https://brightonweekend.co.uk/e/2026-11-07-a-l-p-h-a-b-e-t-the-spirit-o
+ f-acid-jazz/
+END:VEVENT
+END:VCALENDAR

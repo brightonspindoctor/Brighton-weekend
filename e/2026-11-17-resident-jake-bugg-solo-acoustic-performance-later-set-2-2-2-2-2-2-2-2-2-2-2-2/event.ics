@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-17-resident-jake-bugg-solo-acoustic-performance-later-set-2-2-2
+ -2-2-2-2-2-2-2-2-2@brightonweekend.co.uk
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Jake Bugg: Solo Acoustic Performance (Later Set)
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ab67c42cd3c2b000152ae91\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-17-resident-jake-bugg-solo-acousti
+ c-performance-later-set-2-2-2-2-2-2-2-2-2-2-2-2/
+URL:https://brightonweekend.co.uk/e/2026-11-17-resident-jake-bugg-solo-acou
+ stic-performance-later-set-2-2-2-2-2-2-2-2-2-2-2-2/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-29-komedia-james-lavelle-unkle-mo-wax-tue-29-dec-2026-doors-8-0
+ 0-pm@brightonweekend.co.uk
+DTSTAMP:20261229T000000Z
+DTSTART:20261229T200000Z
+DTEND:20261229T230000Z
+SUMMARY:James Lavelle (Unkle / Mo’Wax)
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366729
+ 7/events/128663998\nMore: https://brightonweekend.co.uk/e/2026-12-29-komed
+ ia-james-lavelle-unkle-mo-wax-tue-29-dec-2026-doors-8-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-12-29-komedia-james-lavelle-unkle-
+ mo-wax-tue-29-dec-2026-doors-8-00-pm/
+END:VEVENT
+END:VCALENDAR

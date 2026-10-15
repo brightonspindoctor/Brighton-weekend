@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-04-komedia-kemah-bob-love-child-sat-3-apr-2027-8-00-pm-doors-7-
+ 30-pm@brightonweekend.co.uk
+DTSTAMP:20270403T000000Z
+DTSTART:20270403T190000Z
+DTEND:20270403T220000Z
+SUMMARY:Kemah Bob: Love Child
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366539
+ 2/events/128654206\nMore: https://brightonweekend.co.uk/e/2027-03-04-komed
+ ia-kemah-bob-love-child-sat-3-apr-2027-8-00-pm-doors-7-30-pm/
+URL:https://brightonweekend.co.uk/e/2027-03-04-komedia-kemah-bob-love-child
+ -sat-3-apr-2027-8-00-pm-doors-7-30-pm/
+END:VEVENT
+END:VCALENDAR

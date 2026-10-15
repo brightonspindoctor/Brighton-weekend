@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-20-rossi-bar-evie-s-post-op-party@brightonweekend.co.uk
+DTSTAMP:20261020T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Evie’s Post-Op Party!
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://www.ticketsource.com/half-blind-promotions/evi
+ e-s-post-op-party/2026-10-20/19:00/t-vxjgalv\nMore: https://brightonweeken
+ d.co.uk/e/2026-10-20-rossi-bar-evie-s-post-op-party/
+URL:https://brightonweekend.co.uk/e/2026-10-20-rossi-bar-evie-s-post-op-par
+ ty/
+END:VEVENT
+END:VCALENDAR

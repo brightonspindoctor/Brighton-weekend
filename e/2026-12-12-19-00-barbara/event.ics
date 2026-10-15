@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-19-00-barbara@brightonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Barbara
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://www.gigantic.com/barbara-tickets/brighton-dust
+ /2026-12-12-19-00\nMore: https://brightonweekend.co.uk/e/2026-12-12-19-00-
+ barbara/
+URL:https://brightonweekend.co.uk/e/2026-12-12-19-00-barbara/
+END:VEVENT
+END:VCALENDAR

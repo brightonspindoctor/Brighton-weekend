@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-10-the-brunswick-crosby-stills-nash-young-an-evening-in-laurel-
+ canyon@brightonweekend.co.uk
+DTSTAMP:20270210T000000Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:Crosby\, Stills\, Nash & Young: An Evening in Laurel Canyon
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/crosby-st
+ ills-nash-young-an-evening-in-laurel-canyon\nMore: https://brightonweekend
+ .co.uk/e/2027-02-10-the-brunswick-crosby-stills-nash-young-an-evening-in-l
+ aurel-canyon/
+URL:https://brightonweekend.co.uk/e/2027-02-10-the-brunswick-crosby-stills-
+ nash-young-an-evening-in-laurel-canyon/
+END:VEVENT
+END:VCALENDAR

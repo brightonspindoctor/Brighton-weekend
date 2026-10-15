@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-16-quarters-live-events-damian-lewis@brightonweekend.co.uk
+DTSTAMP:20261016T000000Z
+DTSTART:20261016T180000Z
+DTEND:20261016T210000Z
+SUMMARY:Damian Lewis
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://pinkdot.seetickets.com/event/damian-lewis/quar
+ ters/3644752\nMore: https://brightonweekend.co.uk/e/2026-10-16-quarters-li
+ ve-events-damian-lewis/
+URL:https://brightonweekend.co.uk/e/2026-10-16-quarters-live-events-damian-
+ lewis/
+END:VEVENT
+END:VCALENDAR

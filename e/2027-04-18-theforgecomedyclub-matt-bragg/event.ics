@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-18-theforgecomedyclub-matt-bragg@brightonweekend.co.uk
+DTSTAMP:20270418T000000Z
+DTSTART:20270418T183000Z
+DTEND:20270418T203000Z
+SUMMARY:Matt Bragg: Stand Up Comic
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/matt-bragg-stand-up-com
+ ic-tickets-1986058834437\nMore: https://brightonweekend.co.uk/e/2027-04-18
+ -theforgecomedyclub-matt-bragg/
+URL:https://brightonweekend.co.uk/e/2027-04-18-theforgecomedyclub-matt-brag
+ g/
+END:VEVENT
+END:VCALENDAR

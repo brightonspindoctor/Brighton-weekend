@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-dust-indie-rock-night-christmas-party@brightonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Indie Rock Night ∙ Christmas Party
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ac7813ce2347800015ce85c\nMore: 
+ https://brightonweekend.co.uk/e/2026-12-12-dust-indie-rock-night-christmas
+ -party/
+URL:https://brightonweekend.co.uk/e/2026-12-12-dust-indie-rock-night-christ
+ mas-party/
+END:VEVENT
+END:VCALENDAR

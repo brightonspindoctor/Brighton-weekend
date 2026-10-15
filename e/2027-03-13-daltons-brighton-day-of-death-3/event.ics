@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-13-daltons-brighton-day-of-death-3@brightonweekend.co.uk
+DTSTAMP:20270313T000000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Brighton Day of Death 3
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.com/e/brighton-day-of-death-tic
+ kets-2000411184703?aff=oddtdtcreator\nMore: https://brightonweekend.co.uk/
+ e/2027-03-13-daltons-brighton-day-of-death-3/
+URL:https://brightonweekend.co.uk/e/2027-03-13-daltons-brighton-day-of-deat
+ h-3/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-11-komedia-steve-knightley-the-winter-yards-band-megan-henwood-
+ wed-11-nov-2026-doors-7-30-pm@brightonweekend.co.uk
+DTSTAMP:20261111T000000Z
+DTSTART:20261111T193000Z
+DTEND:20261111T223000Z
+SUMMARY:Steve Knightley & The Winter Yards Band + Megan Henwood
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366361
+ 9/events/128648965\nMore: https://brightonweekend.co.uk/e/2026-11-11-komed
+ ia-steve-knightley-the-winter-yards-band-megan-henwood-wed-11-nov-2026-doo
+ rs-7-30-pm/
+URL:https://brightonweekend.co.uk/e/2026-11-11-komedia-steve-knightley-the-
+ winter-yards-band-megan-henwood-wed-11-nov-2026-doors-7-30-pm/
+END:VEVENT
+END:VCALENDAR

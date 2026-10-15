@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-07-komedia-solve-along-a-murder-she-wrote@brightonweekend.co.uk
+DTSTAMP:20261207T000000Z
+DTSTART:20261207T200000Z
+DTEND:20261207T230000Z
+SUMMARY:Solve-Along-A-Murder-She-Wrote
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87360884
+ 0/events/128648222\nMore: https://brightonweekend.co.uk/e/2026-12-07-komed
+ ia-solve-along-a-murder-she-wrote/
+URL:https://brightonweekend.co.uk/e/2026-12-07-komedia-solve-along-a-murder
+ -she-wrote/
+END:VEVENT
+END:VCALENDAR

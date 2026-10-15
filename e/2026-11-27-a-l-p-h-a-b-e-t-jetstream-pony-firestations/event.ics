@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-a-l-p-h-a-b-e-t-jetstream-pony-firestations@brightonweekend.
+ co.uk
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Jetstream Pony / Firestations
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvamV0c3RyZWFtLXBvbnktZmlyZXN0YXRpb25zL2EtbC1wLW
+ gtYS1iLWUtdC8zNjYxMDA2/supplier/SeeTickets/suppliedid/MzY2MTAwNg/ticketid/
+ 8078024/checksum/f7b04fc15fbe15aa4ddb1256034824c1/track/true?title=Jetstre
+ am+Pony+%26+Firestations&badge=&venueId=50186\nMore: https://brightonweeke
+ nd.co.uk/e/2026-11-27-a-l-p-h-a-b-e-t-jetstream-pony-firestations/
+URL:https://brightonweekend.co.uk/e/2026-11-27-a-l-p-h-a-b-e-t-jetstream-po
+ ny-firestations/
+END:VEVENT
+END:VCALENDAR

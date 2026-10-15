@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-daltons-resurrection-club-night@brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Resurrection Club Night
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/resurrec
+ tion-club-night-2026-11-06-23-00\nMore: https://brightonweekend.co.uk/e/20
+ 26-11-06-daltons-resurrection-club-night/
+URL:https://brightonweekend.co.uk/e/2026-11-06-daltons-resurrection-club-ni
+ ght/
+END:VEVENT
+END:VCALENDAR

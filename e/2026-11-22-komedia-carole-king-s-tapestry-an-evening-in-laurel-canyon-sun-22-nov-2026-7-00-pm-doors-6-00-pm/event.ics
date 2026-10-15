@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-22-komedia-carole-king-s-tapestry-an-evening-in-laurel-canyon-s
+ un-22-nov-2026-7-00-pm-doors-6-00-pm@brightonweekend.co.uk
+DTSTAMP:20261122T000000Z
+DTSTART:20261122T190000Z
+DTEND:20261122T220000Z
+SUMMARY:Carole King’s Tapestry: An Evening in Laurel Canyon
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366711
+ 9/events/128663499\nMore: https://brightonweekend.co.uk/e/2026-11-22-komed
+ ia-carole-king-s-tapestry-an-evening-in-laurel-canyon-sun-22-nov-2026-7-00
+ -pm-doors-6-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-11-22-komedia-carole-king-s-tapest
+ ry-an-evening-in-laurel-canyon-sun-22-nov-2026-7-00-pm-doors-6-00-pm/
+END:VEVENT
+END:VCALENDAR

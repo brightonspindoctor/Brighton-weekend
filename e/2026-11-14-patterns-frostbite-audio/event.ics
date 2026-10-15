@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-patterns-frostbite-audio@brightonweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART:20261114T230000Z
+DTEND:20261115T040000Z
+SUMMARY:Frostbite Audio
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/frostbite-audio-14th-nov-pattern
+ s-brighton-tickets\nMore: https://brightonweekend.co.uk/e/2026-11-14-patte
+ rns-frostbite-audio/
+URL:https://brightonweekend.co.uk/e/2026-11-14-patterns-frostbite-audio/
+END:VEVENT
+END:VCALENDAR

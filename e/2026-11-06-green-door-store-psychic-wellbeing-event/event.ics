@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-green-door-store-psychic-wellbeing-event@brightonweekend.co.
+ uk
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Psychic & Wellbeing Event
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/psychic-wellbei
+ ng-event/\nMore: https://brightonweekend.co.uk/e/2026-11-06-green-door-sto
+ re-psychic-wellbeing-event/
+URL:https://brightonweekend.co.uk/e/2026-11-06-green-door-store-psychic-wel
+ lbeing-event/
+END:VEVENT
+END:VCALENDAR

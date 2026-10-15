@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-the-folklore-rooms-abigail-lapell-show-2@brightonweekend.co.
+ uk
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Abigail Lapell Show #2
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/abigail-lapell-show-2
+ /the-folklore-rooms/3661400\nMore: https://brightonweekend.co.uk/e/2026-11
+ -21-the-folklore-rooms-abigail-lapell-show-2/
+URL:https://brightonweekend.co.uk/e/2026-11-21-the-folklore-rooms-abigail-l
+ apell-show-2/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-27-the-old-market-paul-foot-the-future@brightonweekend.co.uk
+DTSTAMP:20270227T000000Z
+DTSTART:20270227T193000Z
+DTEND:20270227T213000Z
+SUMMARY:Paul Foot: The Future
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://theoldmarket.ticketsolve.com/ticketbooth/shows
+ /1173668259\nMore: https://brightonweekend.co.uk/e/2027-02-27-the-old-mark
+ et-paul-foot-the-future/
+URL:https://brightonweekend.co.uk/e/2027-02-27-the-old-market-paul-foot-the
+ -future/
+END:VEVENT
+END:VCALENDAR

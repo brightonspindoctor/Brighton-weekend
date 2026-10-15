@@ -57,7 +57,7 @@ phone's home screen.
 |---|---|
 | The app | `index.html`, one self-contained file: markup, styles (`<style id="bw-styles">`) and logic (`<script id="bw-app">`) |
 | Design system | `DESIGN-SYSTEM.md`; `design-system.html` renders every token and component with the app's live stylesheet |
-| Event and other pages | `e/<id>/`, `this-weekend/` and `sitemap.xml`, built daily by `scripts/build-event-pages.py`, which also writes `pages.css`. `about.html`, `privacy.html`, `terms.html` and `404.html` use the same stylesheet |
+| Event and other pages | `e/<id>/` (with `event.ics`), `this-weekend/`, `tonight/`, `gigs/`, `comedy/`, `club-nights/`, `theatre/`, `venues/` and `sitemap.xml`, built daily by `scripts/build-event-pages.py`, which also writes `pages.css`. `about.html`, `privacy.html`, `terms.html` and `404.html` use the same stylesheet |
 | Avatars | `profile-icons/` (the chosen artwork) → `profile-icons/standardized/` (what the app shows), built by `scripts/standardize-avatars.mjs`. See `AVATAR_CREATION.md` |
 | Offline caching | `sw.js` (caching only; it doesn't change the page) |
 | Sign-in, groups, commitments | Supabase (Google, or an email link and code). Setup: `GOOGLE-SIGN-IN.md` |
@@ -108,8 +108,11 @@ manual dispatch and whenever a scraper file changes on `main`. It runs:
 6. `scripts/validate-events.py` and `scripts/validate-required-events.py`:
    refuse to publish a small or malformed file, or one missing the events in
    `required-events.json`.
-7. `scripts/build-event-pages.py`: the shareable event pages, This weekend and
-   the sitemap.
+7. `scripts/build-event-pages.py`: the shareable event pages and their
+   calendar files, This weekend, Tonight, the Gigs, Comedy, Club nights and
+   Theatre guides, a page per venue, and the sitemap.
+8. `scripts/indexnow.py`: after the push, tells Bing (IndexNow) about new
+   pages. The key is the `<32 hex characters>.txt` file in the repo root.
 
 An event's identity is **venue + date + title + start time**, so separate
 sessions of the same show on one day are kept (a "Matinee" or "Later Set"

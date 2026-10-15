@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-20-daltons-electron-chvpters-unb4rred@brightonweekend.co.uk
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Electron + Chvpters + UNB4RRED
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/electron
+ -chvpters-unb4rred\nMore: https://brightonweekend.co.uk/e/2026-11-20-dalto
+ ns-electron-chvpters-unb4rred/
+URL:https://brightonweekend.co.uk/e/2026-11-20-daltons-electron-chvpters-un
+ b4rred/
+END:VEVENT
+END:VCALENDAR

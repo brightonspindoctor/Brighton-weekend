@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-quarters-club-events-andy-c@brightonweekend.co.uk
+DTSTAMP:20261107T000000Z
+DTSTART:20261107T150000Z
+DTEND:20261107T220000Z
+SUMMARY:Andy C Zc45v
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/andy-c-day-party
+ -/quarters/3706966\nMore: https://brightonweekend.co.uk/e/2026-11-07-quart
+ ers-club-events-andy-c/
+URL:https://brightonweekend.co.uk/e/2026-11-07-quarters-club-events-andy-c/
+END:VEVENT
+END:VCALENDAR

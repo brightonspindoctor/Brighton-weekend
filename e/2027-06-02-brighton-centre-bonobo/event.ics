@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-02-brighton-centre-bonobo@brightonweekend.co.uk
+DTSTAMP:20270602T000000Z
+DTSTART:20270602T180000Z
+DTEND:20270602T210000Z
+SUMMARY:Bonobo
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/\nMore: https://brightonw
+ eekend.co.uk/e/2027-06-02-brighton-centre-bonobo/
+URL:https://brightonweekend.co.uk/e/2027-06-02-brighton-centre-bonobo/
+END:VEVENT
+END:VCALENDAR

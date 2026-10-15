@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-the-hope-ruin-steve-white-trio@brightonweekend.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Steve White Trio
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/aqhvee0j/steve-white-trio\nM
+ ore: https://brightonweekend.co.uk/e/2026-11-28-the-hope-ruin-steve-white-
+ trio/
+URL:https://brightonweekend.co.uk/e/2026-11-28-the-hope-ruin-steve-white-tr
+ io/
+END:VEVENT
+END:VCALENDAR

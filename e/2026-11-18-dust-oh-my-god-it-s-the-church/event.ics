@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-18-dust-oh-my-god-it-s-the-church@brightonweekend.co.uk
+DTSTAMP:20261118T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Oh My God! It’s The Church
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://www.visitbrighton.com/whats-on/oh-my-god-its-t
+ he-church-p2656111\nMore: https://brightonweekend.co.uk/e/2026-11-18-dust-
+ oh-my-god-it-s-the-church/
+URL:https://brightonweekend.co.uk/e/2026-11-18-dust-oh-my-god-it-s-the-chur
+ ch/
+END:VEVENT
+END:VCALENDAR

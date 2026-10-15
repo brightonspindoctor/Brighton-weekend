@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-dust-indie-rock-night-indieween-halloween-special@brightonwe
+ ekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Indie Rock Night ∙ INDIEWEEN (halloween special)
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6aad8f183ea59f00014b05f7\nMore: 
+ https://brightonweekend.co.uk/e/2026-10-31-dust-indie-rock-night-indieween
+ -halloween-special/
+URL:https://brightonweekend.co.uk/e/2026-10-31-dust-indie-rock-night-indiew
+ een-halloween-special/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-29-the-prince-albert-playroom-presents@brightonweekend.co.uk
+DTSTAMP:20261029T000000Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Playroom Presents
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.visitbrighton.com/whats-on/playroom-presen
+ ts-p2969071\nMore: https://brightonweekend.co.uk/e/2026-10-29-the-prince-a
+ lbert-playroom-presents/
+URL:https://brightonweekend.co.uk/e/2026-10-29-the-prince-albert-playroom-p
+ resents/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-05-theatreroyalbrighton-meat-loaf-by-candlelight@brightonweeken
+ d.co.uk
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Meat Loaf by Candlelight
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/meat-loaf-by-candleli
+ ght/theatre-royal-brighton/calendar/\nMore: https://brightonweekend.co.uk/
+ e/2026-11-05-theatreroyalbrighton-meat-loaf-by-candlelight/
+URL:https://brightonweekend.co.uk/e/2026-11-05-theatreroyalbrighton-meat-lo
+ af-by-candlelight/
+END:VEVENT
+END:VCALENDAR

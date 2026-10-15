@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-03-concorde-2-stop-making-sense-live@brightonweekend.co.uk
+DTSTAMP:20270403T000000Z
+DTSTART:20270403T180000Z
+DTEND:20270403T210000Z
+SUMMARY:Stop Making Sense Live
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1520082/stop-making-sens
+ e-live-tickets\nMore: https://brightonweekend.co.uk/e/2027-04-03-concorde-
+ 2-stop-making-sense-live/
+URL:https://brightonweekend.co.uk/e/2027-04-03-concorde-2-stop-making-sense
+ -live/
+END:VEVENT
+END:VCALENDAR

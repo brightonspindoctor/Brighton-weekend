@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-19-resident-tinie-tempah-album-launch-show@brightonweekend.co.u
+ k
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:Tinie Tempah: Album Launch Show
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ab3ed2ee572ab0001bd2de3\nMore: 
+ https://brightonweekend.co.uk/e/2026-10-19-resident-tinie-tempah-album-lau
+ nch-show/
+URL:https://brightonweekend.co.uk/e/2026-10-19-resident-tinie-tempah-album-
+ launch-show/
+END:VEVENT
+END:VCALENDAR

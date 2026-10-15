@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-05-concorde-2-craig-charles-funk-soul-house-party@brightonweeke
+ nd.co.uk
+DTSTAMP:20270305T000000Z
+DTSTART:20270305T190000Z
+DTEND:20270305T220000Z
+SUMMARY:Craig Charles Funk & Soul House Party
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1644634/craig-charles-fu
+ nk-soul-house-party-tickets\nMore: https://brightonweekend.co.uk/e/2027-03
+ -05-concorde-2-craig-charles-funk-soul-house-party/
+URL:https://brightonweekend.co.uk/e/2027-03-05-concorde-2-craig-charles-fun
+ k-soul-house-party/
+END:VEVENT
+END:VCALENDAR

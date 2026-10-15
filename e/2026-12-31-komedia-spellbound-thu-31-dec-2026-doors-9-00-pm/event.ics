@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-31-komedia-spellbound-thu-31-dec-2026-doors-9-00-pm@brightonwee
+ kend.co.uk
+DTSTAMP:20261231T000000Z
+DTSTART:20261231T210000Z
+DTEND:20270101T000000Z
+SUMMARY:Spellbound
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/702647/e
+ vents/128652106\nMore: https://brightonweekend.co.uk/e/2026-12-31-komedia-
+ spellbound-thu-31-dec-2026-doors-9-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-12-31-komedia-spellbound-thu-31-de
+ c-2026-doors-9-00-pm/
+END:VEVENT
+END:VCALENDAR

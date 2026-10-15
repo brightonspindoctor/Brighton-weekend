@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-quarters-club-events-trancecoda-presents-j00f-editions@brigh
+ tonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART:20261212T160000Z
+DTEND:20261212T220000Z
+SUMMARY:Trancecoda Presents J00F Editions
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/trancecoda-prese
+ nt-j00f-editions/quarters/3635408\nMore: https://brightonweekend.co.uk/e/2
+ 026-12-12-quarters-club-events-trancecoda-presents-j00f-editions/
+URL:https://brightonweekend.co.uk/e/2026-12-12-quarters-club-events-trancec
+ oda-presents-j00f-editions/
+END:VEVENT
+END:VCALENDAR

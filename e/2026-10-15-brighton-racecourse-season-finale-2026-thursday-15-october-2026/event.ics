@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-15-brighton-racecourse-season-finale-2026-thursday-15-october-2
+ 026@brightonweekend.co.uk
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:Season Finale 2026
+LOCATION:Brighton Racecourse\, Brighton
+DESCRIPTION:Tickets: https://www.brighton-racecourse.co.uk/whats-on/season-
+ finale-2026\nMore: https://brightonweekend.co.uk/e/2026-10-15-brighton-rac
+ ecourse-season-finale-2026-thursday-15-october-2026/
+URL:https://brightonweekend.co.uk/e/2026-10-15-brighton-racecourse-season-f
+ inale-2026-thursday-15-october-2026/
+END:VEVENT
+END:VCALENDAR

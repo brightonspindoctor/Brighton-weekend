@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-19-amex-stadium-brighton-v-ipswich-town@brightonweekend.co.uk
+DTSTAMP:20261219T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Brighton v Ipswich Town
+LOCATION:Amex Stadium\, Brighton
+DESCRIPTION:Tickets: https://www.brightonandhovealbion.com/tickets\nMore: h
+ ttps://brightonweekend.co.uk/e/2026-12-19-amex-stadium-brighton-v-ipswich-
+ town/
+URL:https://brightonweekend.co.uk/e/2026-12-19-amex-stadium-brighton-v-ipsw
+ ich-town/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-theatreroyalbrighton-xmas-on-the-dancefloor-with-gorka-marqu
+ ez@brightonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Xmas On The Dancefloor with Gorka Marquez
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/venues/theatre-royal-bright
+ on/whats-on/\nMore: https://brightonweekend.co.uk/e/2026-12-12-theatreroya
+ lbrighton-xmas-on-the-dancefloor-with-gorka-marquez/
+URL:https://brightonweekend.co.uk/e/2026-12-12-theatreroyalbrighton-xmas-on
+ -the-dancefloor-with-gorka-marquez/
+END:VEVENT
+END:VCALENDAR

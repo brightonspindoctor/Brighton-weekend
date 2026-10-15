@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-daltons-acid-box-presents-delivery@brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Acid Box Presents Delivery
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/3o7wxg-delivery-support-6th-nov-
+ daltons-brighton-brighton-tickets\nMore: https://brightonweekend.co.uk/e/2
+ 026-11-06-daltons-acid-box-presents-delivery/
+URL:https://brightonweekend.co.uk/e/2026-11-06-daltons-acid-box-presents-de
+ livery/
+END:VEVENT
+END:VCALENDAR

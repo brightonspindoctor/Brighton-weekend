@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-28-the-brunswick-catbandcat-support@brightonweekend.co.uk
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:catbandcat + support
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/catbandca
+ t-support-2\nMore: https://brightonweekend.co.uk/e/2026-10-28-the-brunswic
+ k-catbandcat-support/
+URL:https://brightonweekend.co.uk/e/2026-10-28-the-brunswick-catbandcat-sup
+ port/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-09-theatreroyalbrighton-ballet-nights@brightonweekend.co.uk
+DTSTAMP:20261209T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Ballet Nights
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/venues/theatre-royal-bright
+ on/whats-on/\nMore: https://brightonweekend.co.uk/e/2026-12-09-theatreroya
+ lbrighton-ballet-nights/
+URL:https://brightonweekend.co.uk/e/2026-12-09-theatreroyalbrighton-ballet-
+ nights/
+END:VEVENT
+END:VCALENDAR

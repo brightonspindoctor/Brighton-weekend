@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-11-theatreroyalbrighton-christmas-comedy-crackers@brightonweeke
+ nd.co.uk
+DTSTAMP:20261211T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Christmas Comedy Crackers
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/venues/theatre-royal-bright
+ on/whats-on/\nMore: https://brightonweekend.co.uk/e/2026-12-11-theatreroya
+ lbrighton-christmas-comedy-crackers/
+URL:https://brightonweekend.co.uk/e/2026-12-11-theatreroyalbrighton-christm
+ as-comedy-crackers/
+END:VEVENT
+END:VCALENDAR

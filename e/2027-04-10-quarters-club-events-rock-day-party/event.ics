@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-10-quarters-club-events-rock-day-party@brightonweekend.co.uk
+DTSTAMP:20270410T000000Z
+DTSTART:20270410T150000Z
+DTEND:20270410T190000Z
+SUMMARY:Rock Day Party
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/rock-day-party/q
+ uarters/3704427\nMore: https://brightonweekend.co.uk/e/2027-04-10-quarters
+ -club-events-rock-day-party/
+URL:https://brightonweekend.co.uk/e/2027-04-10-quarters-club-events-rock-da
+ y-party/
+END:VEVENT
+END:VCALENDAR

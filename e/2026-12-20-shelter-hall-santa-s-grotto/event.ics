@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-20-shelter-hall-santa-s-grotto@brightonweekend.co.uk
+DTSTAMP:20261220T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Santa’s Grotto
+LOCATION:Shelter Hall\, Brighton
+DESCRIPTION:Tickets: https://bookings.designmynight.com/book?venue_id=695bd
+ baf9586224e31671d00&source=partner&type=6ac8c873d1a27c4ad858f571&date=2026
+ -12-13\nMore: https://brightonweekend.co.uk/e/2026-12-20-shelter-hall-sant
+ a-s-grotto/
+URL:https://brightonweekend.co.uk/e/2026-12-20-shelter-hall-santa-s-grotto/
+END:VEVENT
+END:VCALENDAR

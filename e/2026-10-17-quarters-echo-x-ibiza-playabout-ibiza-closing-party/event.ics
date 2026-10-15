@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-quarters-echo-x-ibiza-playabout-ibiza-closing-party@brighton
+ weekend.co.uk
+DTSTAMP:20261017T000000Z
+DTSTART:20261017T130000Z
+DTEND:20261017T210000Z
+SUMMARY:Echo x Ibiza Playabout - Ibiza Closing Party
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/echo-ibiza-closi
+ ng-party-energy/quarters/3707754\nMore: https://brightonweekend.co.uk/e/20
+ 26-10-17-quarters-echo-x-ibiza-playabout-ibiza-closing-party/
+URL:https://brightonweekend.co.uk/e/2026-10-17-quarters-echo-x-ibiza-playab
+ out-ibiza-closing-party/
+END:VEVENT
+END:VCALENDAR

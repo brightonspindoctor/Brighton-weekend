@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-06-komedia-britallica-britney-spears-metal-tribute-support@brig
+ htonweekend.co.uk
+DTSTAMP:20261206T000000Z
+DTSTART:20261206T140000Z
+DTEND:20261206T170000Z
+SUMMARY:Britallica (Britney Spears Metal Tribute) + Support
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366446
+ 6/events/128650742\nMore: https://brightonweekend.co.uk/e/2026-12-06-komed
+ ia-britallica-britney-spears-metal-tribute-support/
+URL:https://brightonweekend.co.uk/e/2026-12-06-komedia-britallica-britney-s
+ pears-metal-tribute-support/
+END:VEVENT
+END:VCALENDAR

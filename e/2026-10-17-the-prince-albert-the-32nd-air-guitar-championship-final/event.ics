@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-the-prince-albert-the-32nd-air-guitar-championship-final@bri
+ ghtonweekend.co.uk
+DTSTAMP:20261017T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:The 32nd Air Guitar Championship Final
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.facebook.com/pg/ThePrinceAlbert/events/?re
+ f=page_internal\nMore: https://brightonweekend.co.uk/e/2026-10-17-the-prin
+ ce-albert-the-32nd-air-guitar-championship-final/
+URL:https://brightonweekend.co.uk/e/2026-10-17-the-prince-albert-the-32nd-a
+ ir-guitar-championship-final/
+END:VEVENT
+END:VCALENDAR

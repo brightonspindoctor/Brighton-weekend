@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-03-the-forge-comedy-club-ian-stone-looking-for-the-wow-extra-sh
+ ow@brightonweekend.co.uk
+DTSTAMP:20261203T000000Z
+DTSTART:20261203T200000Z
+DTEND:20261203T220000Z
+SUMMARY:Ian Stone: Looking for the Wow
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/ian-stone-looking-for-t
+ he-wow-extra-show-tickets-1982765100791\nMore: https://brightonweekend.co.
+ uk/e/2026-12-03-the-forge-comedy-club-ian-stone-looking-for-the-wow-extra-
+ show/
+URL:https://brightonweekend.co.uk/e/2026-12-03-the-forge-comedy-club-ian-st
+ one-looking-for-the-wow-extra-show/
+END:VEVENT
+END:VCALENDAR

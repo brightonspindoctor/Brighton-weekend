@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-02-the-folklore-rooms-the-woodgies@brightonweekend.co.uk
+DTSTAMP:20270202T000000Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270203
+SUMMARY:The Woodgies
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/the-woodgies/the-folk
+ lore-rooms/3737772\nMore: https://brightonweekend.co.uk/e/2027-02-02-the-f
+ olklore-rooms-the-woodgies/
+URL:https://brightonweekend.co.uk/e/2027-02-02-the-folklore-rooms-the-woodg
+ ies/
+END:VEVENT
+END:VCALENDAR

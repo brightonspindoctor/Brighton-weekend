@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-11-theatreroyalbrighton-cody-dahler@brightonweekend.co.uk
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Cody Dahler: The State of This
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/cody-dahler-the-state
+ -of-this/theatre-royal-brighton/calendar/\nMore: https://brightonweekend.c
+ o.uk/e/2026-11-11-theatreroyalbrighton-cody-dahler/
+URL:https://brightonweekend.co.uk/e/2026-11-11-theatreroyalbrighton-cody-da
+ hler/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-01-the-brunswick-and-now-we-re-all-doomed-luzz-pocket-lint-sund
+ ay-sesh@brightonweekend.co.uk
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:And Now We're All Doomed/Luzz/Pocket Lint - Sunday Sesh
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/and-now-w
+ ere-all-doomed-luzz-pocket-lint-sunday-sesh\nMore: https://brightonweekend
+ .co.uk/e/2026-11-01-the-brunswick-and-now-we-re-all-doomed-luzz-pocket-lin
+ t-sunday-sesh/
+URL:https://brightonweekend.co.uk/e/2026-11-01-the-brunswick-and-now-we-re-
+ all-doomed-luzz-pocket-lint-sunday-sesh/
+END:VEVENT
+END:VCALENDAR

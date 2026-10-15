@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-01-komedia-disco-kidz-halloween-special@brightonweekend.co.uk
+DTSTAMP:20261101T000000Z
+DTSTART:20261101T130000Z
+DTEND:20261101T160000Z
+SUMMARY:Disco Kidz – Halloween Special
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366783
+ 5/events/128665728\nMore: https://brightonweekend.co.uk/e/2026-11-01-komed
+ ia-disco-kidz-halloween-special/
+URL:https://brightonweekend.co.uk/e/2026-11-01-komedia-disco-kidz-halloween
+ -special/
+END:VEVENT
+END:VCALENDAR

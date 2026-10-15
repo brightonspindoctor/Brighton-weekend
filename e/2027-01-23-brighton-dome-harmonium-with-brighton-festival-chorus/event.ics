@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-23-brighton-dome-harmonium-with-brighton-festival-chorus@bright
+ onweekend.co.uk
+DTSTAMP:20270123T000000Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Harmonium: With Brighton Festival Chorus
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
+ alse\,false&top_filter=all&page=4&view=list\nMore: https://brightonweekend
+ .co.uk/e/2027-01-23-brighton-dome-harmonium-with-brighton-festival-chorus/
+URL:https://brightonweekend.co.uk/e/2027-01-23-brighton-dome-harmonium-with
+ -brighton-festival-chorus/
+END:VEVENT
+END:VCALENDAR

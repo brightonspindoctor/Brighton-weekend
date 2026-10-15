@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-05-volks-metalheadz-brighton-w-benny-l-doc-scott-cleveland-watk
+ iss@brightonweekend.co.uk
+DTSTAMP:20261205T000000Z
+DTSTART:20261205T220000Z
+DTEND:20261206T010000Z
+SUMMARY:Metalheadz - Brighton w/ Benny L\, Doc Scott\, Cleveland Watkiss
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Metalheadz---Brighton-w-Benny-L-Doc-Scott-Cleveland-Watkiss/428333
+ 81/\nMore: https://brightonweekend.co.uk/e/2026-12-05-volks-metalheadz-bri
+ ghton-w-benny-l-doc-scott-cleveland-watkiss/
+URL:https://brightonweekend.co.uk/e/2026-12-05-volks-metalheadz-brighton-w-
+ benny-l-doc-scott-cleveland-watkiss/
+END:VEVENT
+END:VCALENDAR

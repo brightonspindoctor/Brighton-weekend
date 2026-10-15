@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-19-patterns-ajj@brightonweekend.co.uk
+DTSTAMP:20270319T000000Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:AJJ
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6a69f1da5850a800015d860d\nMore: 
+ https://brightonweekend.co.uk/e/2027-03-19-patterns-ajj/
+URL:https://brightonweekend.co.uk/e/2027-03-19-patterns-ajj/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-23-caroline-of-brunswick-cabaret-of-horrors-by-arcanic-events@b
+ rightonweekend.co.uk
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Cabaret of Horrors by ARCANIC EVENTS!
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Caroline-Of-
+ Brunswick/Cabaret-of-Horrors-by-ARCANIC-EVENTS/42801582/\nMore: https://br
+ ightonweekend.co.uk/e/2026-10-23-caroline-of-brunswick-cabaret-of-horrors-
+ by-arcanic-events/
+URL:https://brightonweekend.co.uk/e/2026-10-23-caroline-of-brunswick-cabare
+ t-of-horrors-by-arcanic-events/
+END:VEVENT
+END:VCALENDAR

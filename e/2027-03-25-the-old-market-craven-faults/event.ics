@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-25-the-old-market-craven-faults@brightonweekend.co.uk
+DTSTAMP:20270325T000000Z
+DTSTART:20270325T193000Z
+DTEND:20270325T220000Z
+SUMMARY:Craven Faults
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/craven-faults\nMore: http
+ s://brightonweekend.co.uk/e/2027-03-25-the-old-market-craven-faults/
+URL:https://brightonweekend.co.uk/e/2027-03-25-the-old-market-craven-faults
+ /
+END:VEVENT
+END:VCALENDAR

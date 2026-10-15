@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-21-the-forge-comedy-club-tom-stade-rules@brightonweekend.co.uk
+DTSTAMP:20270421T000000Z
+DTSTART:20270421T183000Z
+DTEND:20270421T201500Z
+SUMMARY:Tom Stade: Rules
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/tom-stade-rules-tickets
+ -1991700020376\nMore: https://brightonweekend.co.uk/e/2027-04-21-the-forge
+ -comedy-club-tom-stade-rules/
+URL:https://brightonweekend.co.uk/e/2027-04-21-the-forge-comedy-club-tom-st
+ ade-rules/
+END:VEVENT
+END:VCALENDAR

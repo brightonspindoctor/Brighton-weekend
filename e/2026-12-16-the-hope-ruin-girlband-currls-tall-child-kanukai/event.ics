@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-16-the-hope-ruin-girlband-currls-tall-child-kanukai@brightonwee
+ kend.co.uk
+DTSTAMP:20261216T000000Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Girlband! + Currls + tall child + Kanukai
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/brighton-events/the-hope-and-ru
+ in\nMore: https://brightonweekend.co.uk/e/2026-12-16-the-hope-ruin-girlban
+ d-currls-tall-child-kanukai/
+URL:https://brightonweekend.co.uk/e/2026-12-16-the-hope-ruin-girlband-currl
+ s-tall-child-kanukai/
+END:VEVENT
+END:VCALENDAR

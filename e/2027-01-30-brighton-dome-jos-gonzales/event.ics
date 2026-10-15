@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-30-brighton-dome-jos-gonzales@brightonweekend.co.uk
+DTSTAMP:20270130T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:José Gonzales
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://formpresents.seetickets.com/event/jose-gonzale
+ z/brighton-dome-concert-hall/3631553\nMore: https://brightonweekend.co.uk/
+ e/2027-01-30-brighton-dome-jos-gonzales/
+URL:https://brightonweekend.co.uk/e/2027-01-30-brighton-dome-jos-gonzales/
+END:VEVENT
+END:VCALENDAR

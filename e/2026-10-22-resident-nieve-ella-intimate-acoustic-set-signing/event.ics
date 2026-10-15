@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-22-resident-nieve-ella-intimate-acoustic-set-signing@brightonwe
+ ekend.co.uk
+DTSTAMP:20261022T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Nieve Ella: Intimate Acoustic Set + Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6abb959b5811a10001acdff4\nMore: 
+ https://brightonweekend.co.uk/e/2026-10-22-resident-nieve-ella-intimate-ac
+ oustic-set-signing/
+URL:https://brightonweekend.co.uk/e/2026-10-22-resident-nieve-ella-intimate
+ -acoustic-set-signing/
+END:VEVENT
+END:VCALENDAR

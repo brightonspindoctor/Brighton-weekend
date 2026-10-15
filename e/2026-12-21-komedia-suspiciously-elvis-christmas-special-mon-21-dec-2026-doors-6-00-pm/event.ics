@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-21-komedia-suspiciously-elvis-christmas-special-mon-21-dec-2026
+ -doors-6-00-pm@brightonweekend.co.uk
+DTSTAMP:20261221T000000Z
+DTSTART:20261221T180000Z
+DTEND:20261221T210000Z
+SUMMARY:Suspiciously Elvis Christmas Special
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87364790
+ 8/events/128660442\nMore: https://brightonweekend.co.uk/e/2026-12-21-komed
+ ia-suspiciously-elvis-christmas-special-mon-21-dec-2026-doors-6-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-12-21-komedia-suspiciously-elvis-c
+ hristmas-special-mon-21-dec-2026-doors-6-00-pm/
+END:VEVENT
+END:VCALENDAR

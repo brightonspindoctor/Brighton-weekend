@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-patterns-reggaeton-rave-coffee-tequila-edition-brighton@brig
+ htonweekend.co.uk
+DTSTAMP:20261115T000000Z
+DTSTART:20261115T130000Z
+DTEND:20261115T170000Z
+SUMMARY:Reggaeton Rave: Coffee Tequila Edition
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/reggaeton-rave-coffee-tequila-ed
+ ition-brighton-15th-nov-patterns-upstairs-brighton-tickets\nMore: https://
+ brightonweekend.co.uk/e/2026-11-15-patterns-reggaeton-rave-coffee-tequila-
+ edition-brighton/
+URL:https://brightonweekend.co.uk/e/2026-11-15-patterns-reggaeton-rave-coff
+ ee-tequila-edition-brighton/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-13-green-door-store-flat-moon@brightonweekend.co.uk
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Flat Moon
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/flat-moon/\nMor
+ e: https://brightonweekend.co.uk/e/2026-11-13-green-door-store-flat-moon/
+URL:https://brightonweekend.co.uk/e/2026-11-13-green-door-store-flat-moon/
+END:VEVENT
+END:VCALENDAR

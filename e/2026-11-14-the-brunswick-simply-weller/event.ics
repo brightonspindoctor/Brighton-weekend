@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-the-brunswick-simply-weller@brightonweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Simply Weller
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/simply-we
+ ller\nMore: https://brightonweekend.co.uk/e/2026-11-14-the-brunswick-simpl
+ y-weller/
+URL:https://brightonweekend.co.uk/e/2026-11-14-the-brunswick-simply-weller/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-03-a-l-p-h-a-b-e-t-blind-yeo@brightonweekend.co.uk
+DTSTAMP:20261103T000000Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Blind Yeo
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/Obd25e9dc315?dice_id=Obd25e9dc315
+ \nMore: https://brightonweekend.co.uk/e/2026-11-03-a-l-p-h-a-b-e-t-blind-y
+ eo/
+URL:https://brightonweekend.co.uk/e/2026-11-03-a-l-p-h-a-b-e-t-blind-yeo/
+END:VEVENT
+END:VCALENDAR

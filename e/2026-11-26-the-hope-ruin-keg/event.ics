@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-26-the-hope-ruin-keg@brightonweekend.co.uk
+DTSTAMP:20261126T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:KEG
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/cwfnb9ih/keg\nMore: https://
+ brightonweekend.co.uk/e/2026-11-26-the-hope-ruin-keg/
+URL:https://brightonweekend.co.uk/e/2026-11-26-the-hope-ruin-keg/
+END:VEVENT
+END:VCALENDAR

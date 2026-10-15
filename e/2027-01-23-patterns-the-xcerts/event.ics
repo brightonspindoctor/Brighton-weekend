@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-23-patterns-the-xcerts@brightonweekend.co.uk
+DTSTAMP:20270123T000000Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:The Xcerts
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6abf9e55716a330001b699b4\nMore: 
+ https://brightonweekend.co.uk/e/2027-01-23-patterns-the-xcerts/
+URL:https://brightonweekend.co.uk/e/2027-01-23-patterns-the-xcerts/
+END:VEVENT
+END:VCALENDAR

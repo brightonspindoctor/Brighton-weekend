@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-22-the-old-market-kane-brown-crowd-work-king@brightonweekend.co
+ .uk
+DTSTAMP:20270422T000000Z
+DTSTART:20270422T181500Z
+DTEND:20270422T210000Z
+SUMMARY:Kane Brown: Crowd Work King
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/kane-brown-crowd-wo
+ rk-king\nMore: https://brightonweekend.co.uk/e/2027-04-22-the-old-market-k
+ ane-brown-crowd-work-king/
+URL:https://brightonweekend.co.uk/e/2027-04-22-the-old-market-kane-brown-cr
+ owd-work-king/
+END:VEVENT
+END:VCALENDAR

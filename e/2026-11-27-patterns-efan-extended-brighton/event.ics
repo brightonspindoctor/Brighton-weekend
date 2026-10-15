@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-patterns-efan-extended-brighton@brightonweekend.co.uk
+DTSTAMP:20261127T000000Z
+DTSTART:20261127T230000Z
+DTEND:20261128T040000Z
+SUMMARY:EFAN:Extended
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Patterns-Bri
+ ghton/EFANExtended-Brighton/42832560/\nMore: https://brightonweekend.co.uk
+ /e/2026-11-27-patterns-efan-extended-brighton/
+URL:https://brightonweekend.co.uk/e/2026-11-27-patterns-efan-extended-brigh
+ ton/
+END:VEVENT
+END:VCALENDAR

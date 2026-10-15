@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-14-theatreroyalbrighton-legally-blonde-the-musical@brightonweek
+ end.co.uk
+DTSTAMP:20261214T000000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Legally Blonde - The Musical
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/venues/theatre-royal-bright
+ on/whats-on/\nMore: https://brightonweekend.co.uk/e/2026-12-14-theatreroya
+ lbrighton-legally-blonde-the-musical/
+URL:https://brightonweekend.co.uk/e/2026-12-14-theatreroyalbrighton-legally
+ -blonde-the-musical/
+END:VEVENT
+END:VCALENDAR
