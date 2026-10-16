@@ -7,12 +7,12 @@ BEGIN:VEVENT
 UID:2026-10-16-patterns-club-2010@brightonweekend.co.uk
 DTSTAMP:20261016T000000Z
 DTSTART:20261016T220000Z
-DTEND:20261017T020000Z
-SUMMARY:Club 2010: Bieber Party
+DTEND:20261017T023000Z
+SUMMARY:Club 2010 - Bieber Party
 LOCATION:Patterns\, Brighton
-DESCRIPTION:Tickets: https://dice.fm/event/club-2010-bieber-party-16th-oct-
- patterns-brighton-tickets\nMore: https://brightonweekend.co.uk/e/2026-10-1
- 6-patterns-club-2010/
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Patterns-Bri
+ ghton/CLUB-2010---Bieber-Party-16102026/43016714/\nMore: https://brightonw
+ eekend.co.uk/e/2026-10-16-patterns-club-2010/
 URL:https://brightonweekend.co.uk/e/2026-10-16-patterns-club-2010/
 END:VEVENT
 END:VCALENDAR

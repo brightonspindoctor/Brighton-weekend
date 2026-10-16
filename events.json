@@ -202,28 +202,9 @@
     {
       "venue": "Patterns",
       "url": "https://patternsbrighton.com/club/",
-      "events": 120,
+      "events": 0,
       "error": "",
-      "sample": [
-        {
-          "title": "CLUB 2010: BIEBER PARTY",
-          "date": "2026-10-16",
-          "time": "23:00",
-          "link": "https://dice.fm/event/club-2010-bieber-party-16th-oct-patterns-brighton-tickets"
-        },
-        {
-          "title": "James Zabiela @ Memory Box",
-          "date": "2026-10-17",
-          "time": "17:00",
-          "link": "https://dice.fm/event/james-zabiela-memory-box-17th-oct-patterns-brighton-tickets"
-        },
-        {
-          "title": "Sexy Lady Massive Presents: The Massive Tour",
-          "date": "2026-10-17",
-          "time": "23:00",
-          "link": "https://dice.fm/event/sexy-lady-massive-presents-the-massive-tour-17th-oct-patterns-brighton-tickets"
-        }
-      ]
+      "sample": []
     },
     {
       "venue": "Patterns",
@@ -306,54 +287,16 @@
     {
       "venue": "The Forge Comedy Club",
       "url": "https://forgecomedyclub.com/",
-      "events": 191,
+      "events": 0,
       "error": "",
-      "sample": [
-        {
-          "title": "Forge Comedy Club",
-          "date": "2026-10-16",
-          "time": "20:00",
-          "link": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540921318"
-        },
-        {
-          "title": "Forge Comedy Club",
-          "date": "2026-10-16",
-          "time": "20:00",
-          "link": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540921318"
-        },
-        {
-          "title": "Forge Comedy Club",
-          "date": "2026-10-16",
-          "time": "",
-          "link": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540921318"
-        }
-      ]
+      "sample": []
     },
     {
       "venue": "The Forge Comedy Club",
       "url": "https://forgecomedyclub.co.uk/",
-      "events": 191,
+      "events": 0,
       "error": "",
-      "sample": [
-        {
-          "title": "Forge Comedy Club",
-          "date": "2026-10-16",
-          "time": "20:00",
-          "link": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540921318"
-        },
-        {
-          "title": "Forge Comedy Club",
-          "date": "2026-10-16",
-          "time": "20:00",
-          "link": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540921318"
-        },
-        {
-          "title": "Forge Comedy Club",
-          "date": "2026-10-16",
-          "time": "",
-          "link": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540921318"
-        }
-      ]
+      "sample": []
     },
     {
       "venue": "Theatre Royal Brighton",
@@ -410,28 +353,9 @@
     {
       "venue": "The Prince Albert",
       "url": "https://princealbertbrighton.co.uk/",
-      "events": 5,
+      "events": 0,
       "error": "",
-      "sample": [
-        {
-          "title": "Superbloom Tickets",
-          "date": "2026-10-21",
-          "time": "19:30",
-          "link": "https://cutflowers.band/pages/superbloom-tickets"
-        },
-        {
-          "title": "Superbloom Tickets",
-          "date": "2026-10-21",
-          "time": "19:30",
-          "link": "https://cutflowers.band/pages/superbloom-tickets"
-        },
-        {
-          "title": "Superbloom Tickets",
-          "date": "2026-10-21",
-          "time": "19:30",
-          "link": "https://cutflowers.band/pages/superbloom-tickets"
-        }
-      ]
+      "sample": []
     },
     {
       "venue": "The Pipeline",
@@ -547,7 +471,7 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/whats-on/",
-      "events": 72,
+      "events": 81,
       "error": "",
       "sample": [
         {
@@ -880,14 +804,14 @@
     },
     {
       "id": "2026-10-16-patterns-club-2010",
-      "title": "Club 2010: Bieber Party",
+      "title": "Club 2010 - Bieber Party",
       "date": "2026-10-16",
       "venue": "Patterns",
       "source": "venue",
       "time": "23:00",
-      "finish_time": "03:00",
+      "finish_time": "03:30",
       "category": "Club",
-      "ticket_url": "https://dice.fm/event/club-2010-bieber-party-16th-oct-patterns-brighton-tickets",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/CLUB-2010---Bieber-Party-16102026/43016714/",
       "last_seen": "2026-10-16"
     },
     {
@@ -1212,7 +1136,7 @@
       "source": "venue",
       "time": "17:00",
       "finish_time": "22:00",
-      "category": "Club",
+      "category": "Music",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Memory-Box-w-James-Zabiela/42656859/",
       "last_seen": "2026-10-16",
       "also_ids": [
@@ -3465,7 +3389,7 @@
       "time": "23:00",
       "finish_time": "04:00",
       "category": "Music",
-      "ticket_url": "https://dice.fm/event/p-rallel-nevermind-uk-tour-24th-oct-patterns-brighton-tickets",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/P-rallel-Nevermind-UK-Tour/42669942/",
       "last_seen": "2026-10-16",
       "also_ids": [
         "2026-10-24-patterns-p-rallel-nevermind-uk-tour-2"
@@ -4933,14 +4857,14 @@
     },
     {
       "id": "2026-10-30-patterns-brighton-dansu-discs-lucas-alexander-rtk-tarantino-more",
-      "title": "Dansu Discs with Lucas Alexander & RTK Tarantino",
+      "title": "Dansu Discs: Lucas Alexander & RTK Tarantino",
       "date": "2026-10-30",
       "venue": "Patterns",
       "source": "venue",
       "time": "23:00",
       "finish_time": "04:00",
       "category": "Music",
-      "ticket_url": "https://dice.fm/event/dansu-discs-with-lucas-alexander-rtk-tarantino-30th-oct-patterns-brighton-tickets",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Dansu-Discs-Lucas-Alexander--RTK-Tarantino---Brighton/42737316/",
       "last_seen": "2026-10-16",
       "also_ids": [
         "2026-10-30-patterns-dansu-discs-lucas-alexander-rtk-tarantino-brighton",
@@ -5254,7 +5178,7 @@
       "time": "17:00",
       "finish_time": "22:00",
       "category": "Club",
-      "ticket_url": "https://dice.fm/event/dusky-all-day-long-signals-tour-31st-oct-patterns-brighton-tickets",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Dusky---All-Day-Long---Signals-Tour/42542341/",
       "last_seen": "2026-10-16"
     },
     {
@@ -5697,8 +5621,8 @@
       "source": "venue",
       "time": "13:30",
       "finish_time": "20:00",
-      "category": "Club",
-      "ticket_url": "https://dice.fm/event/brighton-sundae-w-marcia-carr-1st-nov-patterns-brighton-tickets",
+      "category": "Dance",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Brighton-Sundae-w-Marcia-Carr/42597331/",
       "last_seen": "2026-10-16",
       "also_ids": [
         "2026-11-01-patterns-brighton-sundae-w-marcia-carr-2"
@@ -8388,7 +8312,7 @@
       "time": "23:00",
       "finish_time": "04:00",
       "category": "Music",
-      "ticket_url": "https://dice.fm/event/frostbite-audio-14th-nov-patterns-brighton-tickets",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Frostbite-Audio/43017946/",
       "last_seen": "2026-10-16",
       "also_ids": [
         "2026-11-14-patterns-return-to-brighton"
@@ -10978,6 +10902,21 @@
       "last_seen": "2026-10-16"
     },
     {
+      "id": "2026-11-27-brighton-dome-brighton-dome-backstage-tours",
+      "title": "Brighton Dome Backstage Tours",
+      "date": "2026-11-27",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "11:00",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/L17-brighton-dome-backstage-tours/",
+      "last_seen": "2026-10-16",
+      "also_ids": [
+        "2026-11-27-brighton-dome-brighton-dome-backstage-tours-2"
+      ]
+    },
+    {
       "id": "2026-11-27-quarters-carnival-collective",
       "title": "Carnival Collective",
       "date": "2026-11-27",
@@ -11120,18 +11059,6 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-10-16"
-    },
-    {
-      "id": "2026-11-27-brighton-dome-brighton-dome-backstage-tours",
-      "title": "Brighton Dome Backstage Tours",
-      "date": "2026-11-27",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/L17-brighton-dome-backstage-tours/",
       "last_seen": "2026-10-16"
     },
     {
@@ -19114,8 +19041,8 @@
     }
   ],
   "discovery_report": {
-    "calendars_loaded": 7,
-    "calendars": 7,
+    "calendars_loaded": 8,
+    "calendars": 8,
     "events_found": 915,
     "rivalcults_unknown_venues": [
       "Brighton Playhouse",
