@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-caroline-of-brunswick-get-your-rocks-off-karaoke-free@bright
+ onweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Get Your Rocks Off Karaoke
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://carolineofbrunswick.co.uk/events/rock-karaoke-
+ brighton/\nMore: https://brightonweekend.co.uk/e/2026-11-21-caroline-of-br
+ unswick-get-your-rocks-off-karaoke-free/
+URL:https://brightonweekend.co.uk/e/2026-11-21-caroline-of-brunswick-get-yo
+ ur-rocks-off-karaoke-free/
+END:VEVENT
+END:VCALENDAR

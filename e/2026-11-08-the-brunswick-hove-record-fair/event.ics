@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-08-the-brunswick-hove-record-fair@brightonweekend.co.uk
+DTSTAMP:20261108T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Hove Record Fair
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.keyringrecords.co.uk/hove\nMore: https://b
+ rightonweekend.co.uk/e/2026-11-08-the-brunswick-hove-record-fair/
+URL:https://brightonweekend.co.uk/e/2026-11-08-the-brunswick-hove-record-fa
+ ir/
+END:VEVENT
+END:VCALENDAR

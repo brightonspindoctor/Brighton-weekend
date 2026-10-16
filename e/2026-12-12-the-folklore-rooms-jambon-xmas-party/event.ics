@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-the-folklore-rooms-jambon-xmas-party@brightonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:JAMBON Xmas Party
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/jambon-xmas-party/the
+ -folklore-rooms/3715369\nMore: https://brightonweekend.co.uk/e/2026-12-12-
+ the-folklore-rooms-jambon-xmas-party/
+URL:https://brightonweekend.co.uk/e/2026-12-12-the-folklore-rooms-jambon-xm
+ as-party/
+END:VEVENT
+END:VCALENDAR

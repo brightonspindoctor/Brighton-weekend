@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-25-resident-the-wow-scenario-james-acaster-q-a-signing@brighton
+ weekend.co.uk
+DTSTAMP:20261025T000000Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:The Wow! Scenario (James Acaster): Q&A + Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6abfd8672f95f800010fe684\nMore: 
+ https://brightonweekend.co.uk/e/2026-10-25-resident-the-wow-scenario-james
+ -acaster-q-a-signing/
+URL:https://brightonweekend.co.uk/e/2026-10-25-resident-the-wow-scenario-ja
+ mes-acaster-q-a-signing/
+END:VEVENT
+END:VCALENDAR

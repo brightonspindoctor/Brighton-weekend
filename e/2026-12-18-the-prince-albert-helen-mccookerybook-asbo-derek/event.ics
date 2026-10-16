@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-18-the-prince-albert-helen-mccookerybook-asbo-derek@brightonwee
+ kend.co.uk
+DTSTAMP:20261218T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Helen McCookerybook / ASBO Derek
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/brighton-events/the-prince-albe
+ rt\nMore: https://brightonweekend.co.uk/e/2026-12-18-the-prince-albert-hel
+ en-mccookerybook-asbo-derek/
+URL:https://brightonweekend.co.uk/e/2026-12-18-the-prince-albert-helen-mcco
+ okerybook-asbo-derek/
+END:VEVENT
+END:VCALENDAR

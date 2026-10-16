@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-20-theoldmarket-inside-the-world-of-the-beatles-with-gary-kemp-
+ and-simon-halfon@brightonweekend.co.uk
+DTSTAMP:20261020T000000Z
+DTSTART:20261020T180000Z
+DTEND:20261020T192500Z
+SUMMARY:Inside the World of The Beatles with Gary Kemp and Simon Halfon
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/inside-the-world-of
+ -the-beatles-with-gary-kemp-and-simon-halfon\nMore: https://brightonweeken
+ d.co.uk/e/2026-10-20-theoldmarket-inside-the-world-of-the-beatles-with-gar
+ y-kemp-and-simon-halfon/
+URL:https://brightonweekend.co.uk/e/2026-10-20-theoldmarket-inside-the-worl
+ d-of-the-beatles-with-gary-kemp-and-simon-halfon/
+END:VEVENT
+END:VCALENDAR

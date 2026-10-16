@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-18-brighton-dome-the-blindboy-podcast-live-2@brightonweekend.co
+ .uk
+DTSTAMP:20261018T000000Z
+DTSTART:20261018T183000Z
+DTEND:20261018T220000Z
+SUMMARY:The Blindboy Podcast LIVE
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LrI-the-blindboy-pod
+ cast-live/\nMore: https://brightonweekend.co.uk/e/2026-10-18-brighton-dome
+ -the-blindboy-podcast-live-2/
+URL:https://brightonweekend.co.uk/e/2026-10-18-brighton-dome-the-blindboy-p
+ odcast-live-2/
+END:VEVENT
+END:VCALENDAR

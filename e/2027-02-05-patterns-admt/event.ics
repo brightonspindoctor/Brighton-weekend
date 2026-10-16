@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-05-patterns-admt@brightonweekend.co.uk
+DTSTAMP:20270205T000000Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270206
+SUMMARY:ADMT
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/69fa1b55d9d315000186a7b6\nMore: 
+ https://brightonweekend.co.uk/e/2027-02-05-patterns-admt/
+URL:https://brightonweekend.co.uk/e/2027-02-05-patterns-admt/
+END:VEVENT
+END:VCALENDAR

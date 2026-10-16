@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-13-theprincealbert-lenna-and-the-snakemen@brightonweekend.co.uk
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Lenna and the Snakemen
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/brighton-events/the-prince-albe
+ rt\nMore: https://brightonweekend.co.uk/e/2026-11-13-theprincealbert-lenna
+ -and-the-snakemen/
+URL:https://brightonweekend.co.uk/e/2026-11-13-theprincealbert-lenna-and-th
+ e-snakemen/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-the-brunswick-brighton-beach-boys-bob-dylan-w-pete-howells@b
+ rightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Brighton Beach Boys: Bob Dylan w/ Pete Howells
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/brighton-
+ beach-boys-bob-dylan-w-pete-howells\nMore: https://brightonweekend.co.uk/e
+ /2026-11-06-the-brunswick-brighton-beach-boys-bob-dylan-w-pete-howells/
+URL:https://brightonweekend.co.uk/e/2026-11-06-the-brunswick-brighton-beach
+ -boys-bob-dylan-w-pete-howells/
+END:VEVENT
+END:VCALENDAR

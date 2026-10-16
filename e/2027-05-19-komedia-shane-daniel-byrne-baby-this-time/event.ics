@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-19-komedia-shane-daniel-byrne-baby-this-time@brightonweekend.co
+ .uk
+DTSTAMP:20270519T000000Z
+DTSTART:20270519T183000Z
+DTEND:20270519T213000Z
+SUMMARY:Shane Daniel Byrne: Baby This Time
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366792
+ 3/events/128665867\nMore: https://brightonweekend.co.uk/e/2027-05-19-komed
+ ia-shane-daniel-byrne-baby-this-time/
+URL:https://brightonweekend.co.uk/e/2027-05-19-komedia-shane-daniel-byrne-b
+ aby-this-time/
+END:VEVENT
+END:VCALENDAR

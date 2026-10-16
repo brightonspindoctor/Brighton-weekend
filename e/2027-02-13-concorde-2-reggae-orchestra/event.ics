@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-13-concorde-2-reggae-orchestra@brightonweekend.co.uk
+DTSTAMP:20270213T000000Z
+DTSTART:20270213T190000Z
+DTEND:20270213T220000Z
+SUMMARY:Reggae Orchestra
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1541710/the-reggae-orche
+ stra-comes-to-brighton-tickets\nMore: https://brightonweekend.co.uk/e/2027
+ -02-13-concorde-2-reggae-orchestra/
+URL:https://brightonweekend.co.uk/e/2027-02-13-concorde-2-reggae-orchestra/
+END:VEVENT
+END:VCALENDAR

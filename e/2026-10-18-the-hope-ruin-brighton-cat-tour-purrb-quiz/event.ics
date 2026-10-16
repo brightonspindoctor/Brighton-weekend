@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-18-the-hope-ruin-brighton-cat-tour-purrb-quiz@brightonweekend.c
+ o.uk
+DTSTAMP:20261018T000000Z
+DTSTART:20261018T153000Z
+DTEND:20261018T180000Z
+SUMMARY:Brighton Cat Tour: Purrb Quiz
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/brighton-cat-tour-purrb-qui
+ z/\nMore: https://brightonweekend.co.uk/e/2026-10-18-the-hope-ruin-brighto
+ n-cat-tour-purrb-quiz/
+URL:https://brightonweekend.co.uk/e/2026-10-18-the-hope-ruin-brighton-cat-t
+ our-purrb-quiz/
+END:VEVENT
+END:VCALENDAR

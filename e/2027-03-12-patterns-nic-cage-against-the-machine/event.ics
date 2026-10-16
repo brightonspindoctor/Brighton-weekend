@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-12-patterns-nic-cage-against-the-machine@brightonweekend.co.uk
+DTSTAMP:20270312T000000Z
+DTSTART:20270312T190000Z
+DTEND:20270312T230000Z
+SUMMARY:Nic Cage Against The Machine
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Patterns-Bri
+ ghton/Nic-Cage-Against-The-Machine/42643044/\nMore: https://brightonweeken
+ d.co.uk/e/2027-03-12-patterns-nic-cage-against-the-machine/
+URL:https://brightonweekend.co.uk/e/2027-03-12-patterns-nic-cage-against-th
+ e-machine/
+END:VEVENT
+END:VCALENDAR

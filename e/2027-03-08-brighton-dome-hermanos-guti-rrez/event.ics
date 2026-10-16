@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-08-brighton-dome-hermanos-guti-rrez@brightonweekend.co.uk
+DTSTAMP:20270308T000000Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+SUMMARY:Hermanos Gutiérrez
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
+ alse\,false&top_filter=all&page=5&view=list\nMore: https://brightonweekend
+ .co.uk/e/2027-03-08-brighton-dome-hermanos-guti-rrez/
+URL:https://brightonweekend.co.uk/e/2027-03-08-brighton-dome-hermanos-guti-
+ rrez/
+END:VEVENT
+END:VCALENDAR

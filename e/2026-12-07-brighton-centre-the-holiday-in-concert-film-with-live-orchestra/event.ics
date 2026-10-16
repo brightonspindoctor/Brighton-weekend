@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-07-brighton-centre-the-holiday-in-concert-film-with-live-orches
+ tra@brightonweekend.co.uk
+DTSTAMP:20261207T000000Z
+DTSTART:20261207T183000Z
+DTEND:20261207T213000Z
+SUMMARY:The Holiday in Concert - Film with Live Orchestra
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/\nMore: https://brightonw
+ eekend.co.uk/e/2026-12-07-brighton-centre-the-holiday-in-concert-film-with
+ -live-orchestra/
+URL:https://brightonweekend.co.uk/e/2026-12-07-brighton-centre-the-holiday-
+ in-concert-film-with-live-orchestra/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-21-theatreroyalbrighton-varna-international-ballet-the-nutcrack
+ er@brightonweekend.co.uk
+DTSTAMP:20270121T000000Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:Varna International Ballet - The Nutcracker
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/venues/theatre-royal-bright
+ on/whats-on/\nMore: https://brightonweekend.co.uk/e/2027-01-21-theatreroya
+ lbrighton-varna-international-ballet-the-nutcracker/
+URL:https://brightonweekend.co.uk/e/2027-01-21-theatreroyalbrighton-varna-i
+ nternational-ballet-the-nutcracker/
+END:VEVENT
+END:VCALENDAR

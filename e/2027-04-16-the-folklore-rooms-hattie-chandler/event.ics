@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-16-the-folklore-rooms-hattie-chandler@brightonweekend.co.uk
+DTSTAMP:20270416T000000Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+SUMMARY:Hattie Chandler
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/hattie-chandler-at-the-
+ folklore-rooms-special-guests-mookie-and-wytch-tickets-2001544647922?aff=o
+ ddtdtcreator\nMore: https://brightonweekend.co.uk/e/2027-04-16-the-folklor
+ e-rooms-hattie-chandler/
+URL:https://brightonweekend.co.uk/e/2027-04-16-the-folklore-rooms-hattie-ch
+ andler/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-25-the-old-market-salvador-sobral@brightonweekend.co.uk
+DTSTAMP:20270425T000000Z
+DTSTART:20270425T170000Z
+DTEND:20270425T200000Z
+SUMMARY:Salvador Sobral
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/salvador-sobral\nMo
+ re: https://brightonweekend.co.uk/e/2027-04-25-the-old-market-salvador-sob
+ ral/
+URL:https://brightonweekend.co.uk/e/2027-04-25-the-old-market-salvador-sobr
+ al/
+END:VEVENT
+END:VCALENDAR

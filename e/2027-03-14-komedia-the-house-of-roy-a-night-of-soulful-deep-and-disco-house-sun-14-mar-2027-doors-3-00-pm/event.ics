@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-14-komedia-the-house-of-roy-a-night-of-soulful-deep-and-disco-h
+ ouse-sun-14-mar-2027-doors-3-00-pm@brightonweekend.co.uk
+DTSTAMP:20270314T000000Z
+DTSTART:20270314T150000Z
+DTEND:20270314T180000Z
+SUMMARY:The House of Roy – A Night of Soulful\, Deep and Disco House
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366317
+ 9/events/128647713\nMore: https://brightonweekend.co.uk/e/2027-03-14-komed
+ ia-the-house-of-roy-a-night-of-soulful-deep-and-disco-house-sun-14-mar-202
+ 7-doors-3-00-pm/
+URL:https://brightonweekend.co.uk/e/2027-03-14-komedia-the-house-of-roy-a-n
+ ight-of-soulful-deep-and-disco-house-sun-14-mar-2027-doors-3-00-pm/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-caroline-of-brunswick-men-don-t-get-lost-at-sea-like-they-us
+ ed-to@brightonweekend.co.uk
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:(men don’t get) LOST AT SEA (like they used to)
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://carolineofbrunswick.co.uk/events/indieacoustic
+ -888-295-552-975-568/\nMore: https://brightonweekend.co.uk/e/2026-11-07-ca
+ roline-of-brunswick-men-don-t-get-lost-at-sea-like-they-used-to/
+URL:https://brightonweekend.co.uk/e/2026-11-07-caroline-of-brunswick-men-do
+ n-t-get-lost-at-sea-like-they-used-to/
+END:VEVENT
+END:VCALENDAR

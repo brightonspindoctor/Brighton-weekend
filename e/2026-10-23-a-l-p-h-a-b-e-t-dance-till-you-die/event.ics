@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-23-a-l-p-h-a-b-e-t-dance-till-you-die@brightonweekend.co.uk
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Dance Till You Die
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.com/e/dance-till-you-die-ticket
+ s-2000272348440?aff=ebdssbdestsearch\nMore: https://brightonweekend.co.uk/
+ e/2026-10-23-a-l-p-h-a-b-e-t-dance-till-you-die/
+URL:https://brightonweekend.co.uk/e/2026-10-23-a-l-p-h-a-b-e-t-dance-till-y
+ ou-die/
+END:VEVENT
+END:VCALENDAR

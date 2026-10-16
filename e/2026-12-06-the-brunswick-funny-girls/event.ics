@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-06-the-brunswick-funny-girls@brightonweekend.co.uk
+DTSTAMP:20261206T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Funny Girls
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/funny-gir
+ ls\nMore: https://brightonweekend.co.uk/e/2026-12-06-the-brunswick-funny-g
+ irls/
+URL:https://brightonweekend.co.uk/e/2026-12-06-the-brunswick-funny-girls/
+END:VEVENT
+END:VCALENDAR

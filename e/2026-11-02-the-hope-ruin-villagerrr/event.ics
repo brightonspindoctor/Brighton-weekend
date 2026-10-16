@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-02-the-hope-ruin-villagerrr@brightonweekend.co.uk
+DTSTAMP:20261102T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:villagerrr
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/85g49qo6/villagerrr\nMore: h
+ ttps://brightonweekend.co.uk/e/2026-11-02-the-hope-ruin-villagerrr/
+URL:https://brightonweekend.co.uk/e/2026-11-02-the-hope-ruin-villagerrr/
+END:VEVENT
+END:VCALENDAR

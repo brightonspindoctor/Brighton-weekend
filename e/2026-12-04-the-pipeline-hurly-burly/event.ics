@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-the-pipeline-hurly-burly@brightonweekend.co.uk
+DTSTAMP:20261204T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Hurly Burly
+LOCATION:The Pipeline\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly9nb29k
+ LXNob3cuY28udWsvZXZlbnRzLzQxOTg/supplier/Miscellaneous/suppliedid/NUJCQTVB
+ Qjg3Njk1MkRGQTI5OUU2MDRENDYwQzFCRDA/ticketid/8120347/checksum/e920d8fa7b8b
+ ffdaa1b8f4661838e7ea/track/true?title=Hurly+Burly&badge=&venueId=57176\nMo
+ re: https://brightonweekend.co.uk/e/2026-12-04-the-pipeline-hurly-burly/
+URL:https://brightonweekend.co.uk/e/2026-12-04-the-pipeline-hurly-burly/
+END:VEVENT
+END:VCALENDAR

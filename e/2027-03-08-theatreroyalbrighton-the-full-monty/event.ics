@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-08-theatreroyalbrighton-the-full-monty@brightonweekend.co.uk
+DTSTAMP:20270308T000000Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+SUMMARY:The Full Monty
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/venues/theatre-royal-bright
+ on/whats-on/\nMore: https://brightonweekend.co.uk/e/2027-03-08-theatreroya
+ lbrighton-the-full-monty/
+URL:https://brightonweekend.co.uk/e/2027-03-08-theatreroyalbrighton-the-ful
+ l-monty/
+END:VEVENT
+END:VCALENDAR

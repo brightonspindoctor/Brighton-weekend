@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-11-brighton-centre-erasure@brightonweekend.co.uk
+DTSTAMP:20270511T000000Z
+DTSTART;VALUE=DATE:20270511
+DTEND;VALUE=DATE:20270512
+SUMMARY:Erasure
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://www.ticketmaster.co.uk/event/3E00653C94F332DE\
+ nMore: https://brightonweekend.co.uk/e/2027-05-11-brighton-centre-erasure/
+URL:https://brightonweekend.co.uk/e/2027-05-11-brighton-centre-erasure/
+END:VEVENT
+END:VCALENDAR

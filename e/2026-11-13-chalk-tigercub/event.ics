@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-13-chalk-tigercub@brightonweekend.co.uk
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Tigercub
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/\nMore: https://brightonweekend
+ .co.uk/e/2026-11-13-chalk-tigercub/
+URL:https://brightonweekend.co.uk/e/2026-11-13-chalk-tigercub/
+END:VEVENT
+END:VCALENDAR

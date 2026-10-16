@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-31-the-brunswick-nye-family-daytime-disco@brightonweekend.co.uk
+DTSTAMP:20261231T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:NYE Family Daytime Disco
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/nye-famil
+ y-daytime-disco-4\nMore: https://brightonweekend.co.uk/e/2026-12-31-the-br
+ unswick-nye-family-daytime-disco/
+URL:https://brightonweekend.co.uk/e/2026-12-31-the-brunswick-nye-family-day
+ time-disco/
+END:VEVENT
+END:VCALENDAR

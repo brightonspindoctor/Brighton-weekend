@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-11-the-old-market-philosophy-of-the-world@brightonweekend.co.uk
+DTSTAMP:20261112T000000Z
+DTSTART:20261112T193000Z
+DTEND:20261112T213000Z
+SUMMARY:Philosophy of the World
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/philosophy-of-the-w
+ orld\nMore: https://brightonweekend.co.uk/e/2026-12-11-the-old-market-phil
+ osophy-of-the-world/
+URL:https://brightonweekend.co.uk/e/2026-12-11-the-old-market-philosophy-of
+ -the-world/
+END:VEVENT
+END:VCALENDAR

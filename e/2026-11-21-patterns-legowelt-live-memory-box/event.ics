@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-patterns-legowelt-live-memory-box@brightonweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART:20261121T170000Z
+DTEND:20261121T220000Z
+SUMMARY:Legowelt Live
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Patterns-Bri
+ ghton/Legowelt-Live--Memory-Box/42734065/\nMore: https://brightonweekend.c
+ o.uk/e/2026-11-21-patterns-legowelt-live-memory-box/
+URL:https://brightonweekend.co.uk/e/2026-11-21-patterns-legowelt-live-memor
+ y-box/
+END:VEVENT
+END:VCALENDAR

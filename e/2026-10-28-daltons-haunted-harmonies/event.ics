@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-28-daltons-haunted-harmonies@brightonweekend.co.uk
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Haunted Harmonies
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/haunted-
+ harmonies\nMore: https://brightonweekend.co.uk/e/2026-10-28-daltons-haunte
+ d-harmonies/
+URL:https://brightonweekend.co.uk/e/2026-10-28-daltons-haunted-harmonies/
+END:VEVENT
+END:VCALENDAR

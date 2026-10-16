@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-18-concorde-2-oh-my-god-it-s-the-church@brightonweekend.co.uk
+DTSTAMP:20261118T000000Z
+DTSTART:20261118T193000Z
+DTEND:20261118T223000Z
+SUMMARY:Oh My God! It's The Church
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1078920/oh-my-god-it-s-t
+ he-church-tickets\nMore: https://brightonweekend.co.uk/e/2026-11-18-concor
+ de-2-oh-my-god-it-s-the-church/
+URL:https://brightonweekend.co.uk/e/2026-11-18-concorde-2-oh-my-god-it-s-th
+ e-church/
+END:VEVENT
+END:VCALENDAR

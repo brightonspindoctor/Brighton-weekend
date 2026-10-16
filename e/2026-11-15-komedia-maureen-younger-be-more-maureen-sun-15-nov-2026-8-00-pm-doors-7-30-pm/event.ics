@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-komedia-maureen-younger-be-more-maureen-sun-15-nov-2026-8-00
+ -pm-doors-7-30-pm@brightonweekend.co.uk
+DTSTAMP:20261115T000000Z
+DTSTART:20261115T200000Z
+DTEND:20261115T230000Z
+SUMMARY:Maureen Younger: Be More Maureen
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87365598
+ 7/events/128598679\nMore: https://brightonweekend.co.uk/e/2026-11-15-komed
+ ia-maureen-younger-be-more-maureen-sun-15-nov-2026-8-00-pm-doors-7-30-pm/
+URL:https://brightonweekend.co.uk/e/2026-11-15-komedia-maureen-younger-be-m
+ ore-maureen-sun-15-nov-2026-8-00-pm-doors-7-30-pm/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-02-komedia-jill-edwards-comedy-workshops-sat-6-feb-2027-doors-1
+ 1-00-am@brightonweekend.co.uk
+DTSTAMP:20270206T000000Z
+DTSTART:20270206T110000Z
+DTEND:20270206T140000Z
+SUMMARY:Jill Edwards Comedy Workshops
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://jill-edwards.co.uk/courses-workshops/weekend-c
+ omedy-courses/\nMore: https://brightonweekend.co.uk/e/2027-06-02-komedia-j
+ ill-edwards-comedy-workshops-sat-6-feb-2027-doors-11-00-am/
+URL:https://brightonweekend.co.uk/e/2027-06-02-komedia-jill-edwards-comedy-
+ workshops-sat-6-feb-2027-doors-11-00-am/
+END:VEVENT
+END:VCALENDAR

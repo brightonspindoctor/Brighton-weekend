@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-dust-indie-rock-night@brightonweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Indie Rock Night
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6aad91d9113b770001637970\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-21-dust-indie-rock-night/
+URL:https://brightonweekend.co.uk/e/2026-11-21-dust-indie-rock-night/
+END:VEVENT
+END:VCALENDAR

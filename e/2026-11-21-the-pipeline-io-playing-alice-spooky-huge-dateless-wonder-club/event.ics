@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-the-pipeline-io-playing-alice-spooky-huge-dateless-wonder-cl
+ ub@brightonweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:IO / Playing Alice / Spooky Huge / Dateless Wonder Club
+LOCATION:The Pipeline\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93ZWdv
+ dHRpY2tldHMuY29tL2FmLzY3L2YvMjYzMDY/supplier/WeGotTickets/suppliedid/MTU4O
+ DUwNjI/ticketid/8127835/checksum/afb69cf583fc98a502edf5be718e7eb5/track/tr
+ ue?title=IO+-+Girl+Band&badge=&venueId=57176\nMore: https://brightonweeken
+ d.co.uk/e/2026-11-21-the-pipeline-io-playing-alice-spooky-huge-dateless-wo
+ nder-club/
+URL:https://brightonweekend.co.uk/e/2026-11-21-the-pipeline-io-playing-alic
+ e-spooky-huge-dateless-wonder-club/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-27-the-forge-comedy-club-romesh-ranganathan-work-in-progress@br
+ ightonweekend.co.uk
+DTSTAMP:20261027T000000Z
+DTSTART:20261027T200000Z
+DTEND:20261027T220000Z
+SUMMARY:Romesh Ranganathan: Work in Progress
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/romesh-ranganathan-work
+ -in-progress-tickets-1988927648136\nMore: https://brightonweekend.co.uk/e/
+ 2026-10-27-the-forge-comedy-club-romesh-ranganathan-work-in-progress/
+URL:https://brightonweekend.co.uk/e/2026-10-27-the-forge-comedy-club-romesh
+ -ranganathan-work-in-progress/
+END:VEVENT
+END:VCALENDAR

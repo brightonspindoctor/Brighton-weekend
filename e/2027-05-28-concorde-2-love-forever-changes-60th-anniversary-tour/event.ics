@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-28-concorde-2-love-forever-changes-60th-anniversary-tour@bright
+ onweekend.co.uk
+DTSTAMP:20270528T000000Z
+DTSTART:20270528T180000Z
+DTEND:20270528T210000Z
+SUMMARY:Love - Forever Changes 60th Anniversary Tour
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1626529/love-forever-cha
+ nges-60th-anniversary-tour-tickets\nMore: https://brightonweekend.co.uk/e/
+ 2027-05-28-concorde-2-love-forever-changes-60th-anniversary-tour/
+URL:https://brightonweekend.co.uk/e/2027-05-28-concorde-2-love-forever-chan
+ ges-60th-anniversary-tour/
+END:VEVENT
+END:VCALENDAR

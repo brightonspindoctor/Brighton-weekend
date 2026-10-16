@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-11-chalk-uk-subs-knock-off-the-guitar-gangsters@brightonweekend
+ .co.uk
+DTSTAMP:20261211T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:UK Subs Knock Off\, The Guitar Gangsters
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/\nMore: https://brightonweekend
+ .co.uk/e/2026-12-11-chalk-uk-subs-knock-off-the-guitar-gangsters/
+URL:https://brightonweekend.co.uk/e/2026-12-11-chalk-uk-subs-knock-off-the-
+ guitar-gangsters/
+END:VEVENT
+END:VCALENDAR

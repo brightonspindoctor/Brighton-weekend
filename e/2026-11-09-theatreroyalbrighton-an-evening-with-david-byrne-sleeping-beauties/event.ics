@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-09-theatreroyalbrighton-an-evening-with-david-byrne-sleeping-be
+ auties@brightonweekend.co.uk
+DTSTAMP:20261109T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:An Evening With David Byrne: Sleeping Beauties
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/an-evening-with-david
+ -byrne-sleeping-beauties/theatre-royal-brighton/\nMore: https://brightonwe
+ ekend.co.uk/e/2026-11-09-theatreroyalbrighton-an-evening-with-david-byrne-
+ sleeping-beauties/
+URL:https://brightonweekend.co.uk/e/2026-11-09-theatreroyalbrighton-an-even
+ ing-with-david-byrne-sleeping-beauties/
+END:VEVENT
+END:VCALENDAR

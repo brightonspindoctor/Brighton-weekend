@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-20-the-prince-albert-pina-palau@brightonweekend.co.uk
+DTSTAMP:20261020T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:Pina Palau
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvcGluYS1wYWxhdS90aGUtcHJpbmNlLWFsYmVydC8zNjM4OD
+ Qz/supplier/SeeTickets/suppliedid/MzYzODg0Mw/ticketid/8052101/checksum/c36
+ 8b7dc1fbb2e441f33250017f31184/track/true?title=Pina+Palau&badge=&venueId=2
+ 4967\nMore: https://brightonweekend.co.uk/e/2026-10-20-the-prince-albert-p
+ ina-palau/
+URL:https://brightonweekend.co.uk/e/2026-10-20-the-prince-albert-pina-palau
+ /
+END:VEVENT
+END:VCALENDAR

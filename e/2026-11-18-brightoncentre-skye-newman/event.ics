@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-18-brightoncentre-skye-newman@brightonweekend.co.uk
+DTSTAMP:20261118T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Skye Newman
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/\nMore: https://brightonw
+ eekend.co.uk/e/2026-11-18-brightoncentre-skye-newman/
+URL:https://brightonweekend.co.uk/e/2026-11-18-brightoncentre-skye-newman/
+END:VEVENT
+END:VCALENDAR

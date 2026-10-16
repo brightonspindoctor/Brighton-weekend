@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-26-greendoorstore-pyncher@brightonweekend.co.uk
+DTSTAMP:20261126T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Pyncher
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/\nMore: https:/
+ /brightonweekend.co.uk/e/2026-11-26-greendoorstore-pyncher/
+URL:https://brightonweekend.co.uk/e/2026-11-26-greendoorstore-pyncher/
+END:VEVENT
+END:VCALENDAR

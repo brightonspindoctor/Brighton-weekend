@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-theatre-royal-brighton-musical-theatre-masterclass-legally-b
+ londe-ages-9-12-years@brightonweekend.co.uk
+DTSTAMP:20261017T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Musical Theatre Masterclass - Legally Blonde (Ages 9-12 years)
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/musical-theatre-maste
+ rclass-legally-blonde-ages-9-12-years/theatre-royal-brighton/\nMore: https
+ ://brightonweekend.co.uk/e/2026-10-17-theatre-royal-brighton-musical-theat
+ re-masterclass-legally-blonde-ages-9-12-years/
+URL:https://brightonweekend.co.uk/e/2026-10-17-theatre-royal-brighton-music
+ al-theatre-masterclass-legally-blonde-ages-9-12-years/
+END:VEVENT
+END:VCALENDAR

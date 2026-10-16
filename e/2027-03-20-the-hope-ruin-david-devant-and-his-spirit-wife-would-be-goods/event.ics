@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-20-the-hope-ruin-david-devant-and-his-spirit-wife-would-be-good
+ s@brightonweekend.co.uk
+DTSTAMP:20270320T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:David Devant and His Spirit Wife + Would-Be-Goods
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/david-devant-and-his-spirit
+ -wife-would-be-goods/\nMore: https://brightonweekend.co.uk/e/2027-03-20-th
+ e-hope-ruin-david-devant-and-his-spirit-wife-would-be-goods/
+URL:https://brightonweekend.co.uk/e/2027-03-20-the-hope-ruin-david-devant-a
+ nd-his-spirit-wife-would-be-goods/
+END:VEVENT
+END:VCALENDAR

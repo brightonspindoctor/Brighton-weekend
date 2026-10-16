@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-10-the-old-market-nouvelle-vague-a-date-with-depeche-mode-tour@
+ brightonweekend.co.uk
+DTSTAMP:20270310T000000Z
+DTSTART:20270310T190000Z
+DTEND:20270310T230000Z
+SUMMARY:Nouvelle Vague - A Date with Depeche Mode Tour
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/nouvelle-vague\nMor
+ e: https://brightonweekend.co.uk/e/2027-03-10-the-old-market-nouvelle-vagu
+ e-a-date-with-depeche-mode-tour/
+URL:https://brightonweekend.co.uk/e/2027-03-10-the-old-market-nouvelle-vagu
+ e-a-date-with-depeche-mode-tour/
+END:VEVENT
+END:VCALENDAR

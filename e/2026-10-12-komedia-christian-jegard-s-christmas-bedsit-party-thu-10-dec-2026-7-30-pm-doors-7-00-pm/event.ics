@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-12-komedia-christian-jegard-s-christmas-bedsit-party-thu-10-dec
+ -2026-7-30-pm-doors-7-00-pm@brightonweekend.co.uk
+DTSTAMP:20261210T000000Z
+DTSTART:20261210T193000Z
+DTEND:20261210T223000Z
+SUMMARY:Christian Jegard’s Christmas Bedsit Party
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366696
+ 3/events/128662125\nMore: https://brightonweekend.co.uk/e/2026-10-12-komed
+ ia-christian-jegard-s-christmas-bedsit-party-thu-10-dec-2026-7-30-pm-doors
+ -7-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-10-12-komedia-christian-jegard-s-c
+ hristmas-bedsit-party-thu-10-dec-2026-7-30-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

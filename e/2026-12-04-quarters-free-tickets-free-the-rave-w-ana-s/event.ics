@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-quarters-free-tickets-free-the-rave-w-ana-s@brightonweekend.
+ co.uk
+DTSTAMP:20261204T000000Z
+DTSTART:20261204T230000Z
+DTEND:20261205T040000Z
+SUMMARY:Free The Rave w/ Particle + Anaïs
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/free-the-rave-w-
+ anais/quarters/3734970\nMore: https://brightonweekend.co.uk/e/2026-12-04-q
+ uarters-free-tickets-free-the-rave-w-ana-s/
+URL:https://brightonweekend.co.uk/e/2026-12-04-quarters-free-tickets-free-t
+ he-rave-w-ana-s/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-30-the-waterbear-elements-of-groove@brightonweekend.co.uk
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Elements of Groove
+LOCATION:The Waterbear\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-WaterBea
+ r-Venue/Elements-of-Groove/42715243/\nMore: https://brightonweekend.co.uk/
+ e/2026-10-30-the-waterbear-elements-of-groove/
+URL:https://brightonweekend.co.uk/e/2026-10-30-the-waterbear-elements-of-gr
+ oove/
+END:VEVENT
+END:VCALENDAR

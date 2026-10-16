@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-30-chalk-the-house-garage-orchestra@brightonweekend.co.uk
+DTSTAMP:20270530T000000Z
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+SUMMARY:The House & Garage Orchestra
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/\nMore: https://brightonweekend
+ .co.uk/e/2027-05-30-chalk-the-house-garage-orchestra/
+URL:https://brightonweekend.co.uk/e/2027-05-30-chalk-the-house-garage-orche
+ stra/
+END:VEVENT
+END:VCALENDAR

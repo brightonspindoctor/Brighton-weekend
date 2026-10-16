@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-theatreroyalbrighton-what-s-love-got-to-do-with-it@brightonw
+ eekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:What's Love Got To Do With It? A Tribute To Tina Turner
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/whats-love-got-to-do-
+ with-it-a-tribute-to-tina-turner/theatre-royal-brighton/calendar/\nMore: h
+ ttps://brightonweekend.co.uk/e/2026-11-06-theatreroyalbrighton-what-s-love
+ -got-to-do-with-it/
+URL:https://brightonweekend.co.uk/e/2026-11-06-theatreroyalbrighton-what-s-
+ love-got-to-do-with-it/
+END:VEVENT
+END:VCALENDAR

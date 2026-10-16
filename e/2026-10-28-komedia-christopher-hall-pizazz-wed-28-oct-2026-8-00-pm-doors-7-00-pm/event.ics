@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-28-komedia-christopher-hall-pizazz-wed-28-oct-2026-8-00-pm-door
+ s-7-00-pm@brightonweekend.co.uk
+DTSTAMP:20261028T000000Z
+DTSTART:20261028T200000Z
+DTEND:20261028T230000Z
+SUMMARY:Christopher Hall – Pizazz
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366034
+ 8/events/128630516\nMore: https://brightonweekend.co.uk/e/2026-10-28-komed
+ ia-christopher-hall-pizazz-wed-28-oct-2026-8-00-pm-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-10-28-komedia-christopher-hall-piz
+ azz-wed-28-oct-2026-8-00-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-the-folklore-rooms-murdock-themortals-halloween@brightonweek
+ end.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Murdock&TheMortals Halloween!
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.ticketsource.com/murdock-and-the-mortals/t
+ -njdemya\nMore: https://brightonweekend.co.uk/e/2026-10-31-the-folklore-ro
+ oms-murdock-themortals-halloween/
+URL:https://brightonweekend.co.uk/e/2026-10-31-the-folklore-rooms-murdock-t
+ hemortals-halloween/
+END:VEVENT
+END:VCALENDAR

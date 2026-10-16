@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-quarters-club-events-kings-of-the-rollers@brightonweekend.co
+ .uk
+DTSTAMP:20261127T000000Z
+DTSTART:20261127T230000Z
+DTEND:20261128T040000Z
+SUMMARY:Kings Of The Rollers
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/kings-of-the-rol
+ lers-the-holy-grail-uk-tour/quarters/3727410\nMore: https://brightonweeken
+ d.co.uk/e/2026-11-27-quarters-club-events-kings-of-the-rollers/
+URL:https://brightonweekend.co.uk/e/2026-11-27-quarters-club-events-kings-o
+ f-the-rollers/
+END:VEVENT
+END:VCALENDAR

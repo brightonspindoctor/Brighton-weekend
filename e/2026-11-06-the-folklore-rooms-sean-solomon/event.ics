@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-the-folklore-rooms-sean-solomon@brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Sean Solomon
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/2wqvk7-sean-solomon-6th-nov-the-
+ folklore-rooms-brighton-tickets\nMore: https://brightonweekend.co.uk/e/202
+ 6-11-06-the-folklore-rooms-sean-solomon/
+URL:https://brightonweekend.co.uk/e/2026-11-06-the-folklore-rooms-sean-solo
+ mon/
+END:VEVENT
+END:VCALENDAR

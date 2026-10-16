@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-a-l-p-h-a-b-e-t-rioghnach-connolly-honeyfeet@brightonweekend
+ .co.uk
+DTSTAMP:20261204T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Ríoghnach Connolly / Honeyfeet
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvcmlvZ2huYWNoLWNvbm5vbGx5LWhvbmV5ZmVldC9hbHBoYW
+ JldC8zNjU3MzQ1/supplier/SeeTickets/suppliedid/MzY1NzM0NQ/ticketid/8075820/
+ checksum/40c374701398e50540c51fac6ef364d2/track/true?title=Rioghnach+Conno
+ lly+%26+Honeyfeet&badge=&venueId=50186\nMore: https://brightonweekend.co.u
+ k/e/2026-12-04-a-l-p-h-a-b-e-t-rioghnach-connolly-honeyfeet/
+URL:https://brightonweekend.co.uk/e/2026-12-04-a-l-p-h-a-b-e-t-rioghnach-co
+ nnolly-honeyfeet/
+END:VEVENT
+END:VCALENDAR

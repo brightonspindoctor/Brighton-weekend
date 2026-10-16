@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-dust-portrayal-of-guilt@brightonweekend.co.uk
+DTSTAMP:20261115T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Portrayal Of Guilt
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6a6b6eb84fa3ff000121ea8e\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-15-dust-portrayal-of-guilt/
+URL:https://brightonweekend.co.uk/e/2026-11-15-dust-portrayal-of-guilt/
+END:VEVENT
+END:VCALENDAR

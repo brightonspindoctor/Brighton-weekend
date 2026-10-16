@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-13-the-folklore-rooms-caleb-caudle@brightonweekend.co.uk
+DTSTAMP:20270113T000000Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+SUMMARY:Caleb Caudle
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/caleb-caudle/the-folk
+ lore-rooms/3731725\nMore: https://brightonweekend.co.uk/e/2027-01-13-the-f
+ olklore-rooms-caleb-caudle/
+URL:https://brightonweekend.co.uk/e/2027-01-13-the-folklore-rooms-caleb-cau
+ dle/
+END:VEVENT
+END:VCALENDAR

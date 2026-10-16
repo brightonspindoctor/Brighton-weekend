@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-28-komedia-lawrence-chaney-weight-a-minute-sun-28-mar-2027-8-00
+ -pm-doors-7-00-pm@brightonweekend.co.uk
+DTSTAMP:20270328T000000Z
+DTSTART:20270328T190000Z
+DTEND:20270328T220000Z
+SUMMARY:Lawrence Chaney – Weight A Minute
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366517
+ 2/events/128653742\nMore: https://brightonweekend.co.uk/e/2027-03-28-komed
+ ia-lawrence-chaney-weight-a-minute-sun-28-mar-2027-8-00-pm-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2027-03-28-komedia-lawrence-chaney-weig
+ ht-a-minute-sun-28-mar-2027-8-00-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

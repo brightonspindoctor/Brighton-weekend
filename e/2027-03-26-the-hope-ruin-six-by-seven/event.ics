@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-26-the-hope-ruin-six-by-seven@brightonweekend.co.uk
+DTSTAMP:20270326T000000Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:Six By Seven
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/f63fefl9/six-by-seven\nMore:
+  https://brightonweekend.co.uk/e/2027-03-26-the-hope-ruin-six-by-seven/
+URL:https://brightonweekend.co.uk/e/2027-03-26-the-hope-ruin-six-by-seven/
+END:VEVENT
+END:VCALENDAR

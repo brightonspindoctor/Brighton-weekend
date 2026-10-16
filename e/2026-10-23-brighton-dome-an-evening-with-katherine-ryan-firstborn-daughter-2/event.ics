@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-23-brighton-dome-an-evening-with-katherine-ryan-firstborn-daugh
+ ter-2@brightonweekend.co.uk
+DTSTAMP:20261023T000000Z
+DTSTART:20261023T183000Z
+DTEND:20261023T220000Z
+SUMMARY:An Evening with Katherine Ryan: Firstborn Daughter
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LGr-an-evening-with-
+ katherine-ryan-firstborn-daughter/\nMore: https://brightonweekend.co.uk/e/
+ 2026-10-23-brighton-dome-an-evening-with-katherine-ryan-firstborn-daughter
+ -2/
+URL:https://brightonweekend.co.uk/e/2026-10-23-brighton-dome-an-evening-wit
+ h-katherine-ryan-firstborn-daughter-2/
+END:VEVENT
+END:VCALENDAR

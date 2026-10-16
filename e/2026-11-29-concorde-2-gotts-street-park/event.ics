@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-29-concorde-2-gotts-street-park@brightonweekend.co.uk
+DTSTAMP:20261129T000000Z
+DTSTART:20261129T193000Z
+DTEND:20261129T223000Z
+SUMMARY:Gotts Street Park
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1444135/gotts-street-par
+ k-tickets/promos/1140180\nMore: https://brightonweekend.co.uk/e/2026-11-29
+ -concorde-2-gotts-street-park/
+URL:https://brightonweekend.co.uk/e/2026-11-29-concorde-2-gotts-street-park
+ /
+END:VEVENT
+END:VCALENDAR

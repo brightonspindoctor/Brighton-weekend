@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-resident-ex-re-live-signing@brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Ex:Re: Live + Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6aa7b47a12c0b80001050cd0\nMore: 
+ https://brightonweekend.co.uk/e/2026-10-31-resident-ex-re-live-signing/
+URL:https://brightonweekend.co.uk/e/2026-10-31-resident-ex-re-live-signing/
+END:VEVENT
+END:VCALENDAR

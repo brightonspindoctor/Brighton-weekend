@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-16-komedia-abba-re-bjorn-at-christmas-wed-16-dec-2026-doors-6-0
+ 0-pm@brightonweekend.co.uk
+DTSTAMP:20261216T000000Z
+DTSTART:20261216T180000Z
+DTEND:20261216T210000Z
+SUMMARY:ABBA Re-Bjorn at Christmas
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366623
+ 2/events/128660460\nMore: https://brightonweekend.co.uk/e/2026-12-16-komed
+ ia-abba-re-bjorn-at-christmas-wed-16-dec-2026-doors-6-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-12-16-komedia-abba-re-bjorn-at-chr
+ istmas-wed-16-dec-2026-doors-6-00-pm/
+END:VEVENT
+END:VCALENDAR

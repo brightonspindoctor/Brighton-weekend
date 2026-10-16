@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-16-dust-grommet@brightonweekend.co.uk
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Grommet
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://www.ticketmaster.co.uk/dust-tickets-brighton/v
+ enue/415678\nMore: https://brightonweekend.co.uk/e/2026-11-16-dust-grommet
+ /
+URL:https://brightonweekend.co.uk/e/2026-11-16-dust-grommet/
+END:VEVENT
+END:VCALENDAR

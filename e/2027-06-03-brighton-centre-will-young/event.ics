@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-03-brighton-centre-will-young@brightonweekend.co.uk
+DTSTAMP:20270306T000000Z
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+SUMMARY:Will Young
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://www.ticketmaster.co.uk/event/3E006537D56D4238\
+ nMore: https://brightonweekend.co.uk/e/2027-06-03-brighton-centre-will-you
+ ng/
+URL:https://brightonweekend.co.uk/e/2027-06-03-brighton-centre-will-young/
+END:VEVENT
+END:VCALENDAR

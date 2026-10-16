@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-28-the-brunswick-shaun-kirk-aus-live-at-the-brunswick-hove@brig
+ htonweekend.co.uk
+DTSTAMP:20270328T000000Z
+DTSTART;VALUE=DATE:20270328
+DTEND;VALUE=DATE:20270329
+SUMMARY:Shaun Kirk (AUS)
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/shaun-kir
+ k-aus-live-at-the-brunswick-hove\nMore: https://brightonweekend.co.uk/e/20
+ 27-03-28-the-brunswick-shaun-kirk-aus-live-at-the-brunswick-hove/
+URL:https://brightonweekend.co.uk/e/2027-03-28-the-brunswick-shaun-kirk-aus
+ -live-at-the-brunswick-hove/
+END:VEVENT
+END:VCALENDAR

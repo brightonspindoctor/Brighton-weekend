@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-10-theforgecomedyclub-jacob-hawley@brightonweekend.co.uk
+DTSTAMP:20261110T000000Z
+DTSTART:20261110T200000Z
+DTEND:20261110T214500Z
+SUMMARY:Jacob Hawley: Fighting Age Man
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/jacob-hawley-fighting-a
+ ge-man-tickets-1982785697396\nMore: https://brightonweekend.co.uk/e/2026-1
+ 1-10-theforgecomedyclub-jacob-hawley/
+URL:https://brightonweekend.co.uk/e/2026-11-10-theforgecomedyclub-jacob-haw
+ ley/
+END:VEVENT
+END:VCALENDAR

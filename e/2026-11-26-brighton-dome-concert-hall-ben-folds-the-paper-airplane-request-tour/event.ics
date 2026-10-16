@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-26-brighton-dome-concert-hall-ben-folds-the-paper-airplane-requ
+ est-tour@brightonweekend.co.uk
+DTSTAMP:20261126T000000Z
+DTSTART:20261126T191500Z
+DTEND:20261126T230000Z
+SUMMARY:Ben Folds: The Paper Airplane Request Tour
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LiM-ben-folds-the-pa
+ per-airplane-request-tour/\nMore: https://brightonweekend.co.uk/e/2026-11-
+ 26-brighton-dome-concert-hall-ben-folds-the-paper-airplane-request-tour/
+URL:https://brightonweekend.co.uk/e/2026-11-26-brighton-dome-concert-hall-b
+ en-folds-the-paper-airplane-request-tour/
+END:VEVENT
+END:VCALENDAR

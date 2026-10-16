@@ -121,8 +121,8 @@ jobs:
             # Shareable event pages, the this-weekend page and the sitemap are
             # built from the fresh events.json (see scripts/build-event-pages.py).
             python scripts/build-event-pages.py
-            git add events.json genre-cache.json sitemap.xml this-weekend pages.css
-            git add -A e
+            git add events.json genre-cache.json sitemap.xml pages.css
+            git add -A e this-weekend tonight gigs comedy club-nights theatre venues
             if [ -f ticket-cache.json ]; then git add ticket-cache.json; fi
             if git diff --cached --quiet; then
               echo 'No event data changes this run.'
@@ -130,9 +130,16 @@ jobs:
             fi
             git commit -q -m 'Refresh event data and event pages'
             if git push -q origin HEAD:main; then
+              touch "$RUNNER_TEMP/pushed"
               exit 0
             fi
             echo "main moved on while this ran; trying again ($attempt)."
             sleep $((attempt * 20))
           done
           exit 1
+      - name: Tell Bing about new pages (IndexNow)
+        # Only after a push, so the pages are on their way to the live site.
+        # Never fails the run (see scripts/indexnow.py).
+        run: |
+          if [ -f "$RUNNER_TEMP/pushed" ]; then python scripts/indexnow.py; else echo 'Nothing pushed, nothing to send.'; fi
+        continue-on-error: true

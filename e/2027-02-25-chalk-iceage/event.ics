@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-25-chalk-iceage@brightonweekend.co.uk
+DTSTAMP:20270225T000000Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:Iceage
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/\nMore: https://brightonweekend
+ .co.uk/e/2027-02-25-chalk-iceage/
+URL:https://brightonweekend.co.uk/e/2027-02-25-chalk-iceage/
+END:VEVENT
+END:VCALENDAR

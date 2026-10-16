@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-22-the-forge-comedy-club-scott-bennett-blood-sugar-baby@brighto
+ nweekend.co.uk
+DTSTAMP:20261122T000000Z
+DTSTART:20261122T193000Z
+DTEND:20261122T213000Z
+SUMMARY:Scott Bennett: Blood Sugar Baby
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/scott-bennett-blood-sug
+ ar-baby-tickets-1693326197239\nMore: https://brightonweekend.co.uk/e/2026-
+ 11-22-the-forge-comedy-club-scott-bennett-blood-sugar-baby/
+URL:https://brightonweekend.co.uk/e/2026-11-22-the-forge-comedy-club-scott-
+ bennett-blood-sugar-baby/
+END:VEVENT
+END:VCALENDAR

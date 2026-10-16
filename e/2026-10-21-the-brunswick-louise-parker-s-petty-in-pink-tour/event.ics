@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-21-the-brunswick-louise-parker-s-petty-in-pink-tour@brightonwee
+ kend.co.uk
+DTSTAMP:20261021T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Louise Parker’s Petty in Pink Tour
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/louise-pa
+ rkers-petty-in-pink-tour\nMore: https://brightonweekend.co.uk/e/2026-10-21
+ -the-brunswick-louise-parker-s-petty-in-pink-tour/
+URL:https://brightonweekend.co.uk/e/2026-10-21-the-brunswick-louise-parker-
+ s-petty-in-pink-tour/
+END:VEVENT
+END:VCALENDAR

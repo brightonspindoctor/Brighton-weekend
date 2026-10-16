@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-brightoncentre-jools-holland-his-rhythm-blues-orchestra-roac
+ hford-joe-webb@brightonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Jools Holland & His Rhythm & Blues Orchestra Roachford\, Joe Webb
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/\nMore: https://brightonw
+ eekend.co.uk/e/2026-12-12-brightoncentre-jools-holland-his-rhythm-blues-or
+ chestra-roachford-joe-webb/
+URL:https://brightonweekend.co.uk/e/2026-12-12-brightoncentre-jools-holland
+ -his-rhythm-blues-orchestra-roachford-joe-webb/
+END:VEVENT
+END:VCALENDAR

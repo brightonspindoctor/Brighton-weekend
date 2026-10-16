@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-26-the-old-market-a-night-for-the-mandem@brightonweekend.co.uk
+DTSTAMP:20261126T000000Z
+DTSTART:20261126T193000Z
+DTEND:20261126T223000Z
+SUMMARY:A Night for the Mandem
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/a-night-for-the-man
+ dem\nMore: https://brightonweekend.co.uk/e/2026-11-26-the-old-market-a-nig
+ ht-for-the-mandem/
+URL:https://brightonweekend.co.uk/e/2026-11-26-the-old-market-a-night-for-t
+ he-mandem/
+END:VEVENT
+END:VCALENDAR

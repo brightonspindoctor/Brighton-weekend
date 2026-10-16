@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-17-the-hope-ruin-the-buoys@brightonweekend.co.uk
+DTSTAMP:20270217T000000Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:The Buoys
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/kiaa84hi/the-buoys\nMore: ht
+ tps://brightonweekend.co.uk/e/2027-02-17-the-hope-ruin-the-buoys/
+URL:https://brightonweekend.co.uk/e/2027-02-17-the-hope-ruin-the-buoys/
+END:VEVENT
+END:VCALENDAR

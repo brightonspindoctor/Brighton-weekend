@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-caroline-of-brunswick-release-the-bats-free@brightonweekend.
+ co.uk
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Release the Bats
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://carolineofbrunswick.co.uk/events/release-the-b
+ ats-free-790/\nMore: https://brightonweekend.co.uk/e/2026-11-28-caroline-o
+ f-brunswick-release-the-bats-free/
+URL:https://brightonweekend.co.uk/e/2026-11-28-caroline-of-brunswick-releas
+ e-the-bats-free/
+END:VEVENT
+END:VCALENDAR

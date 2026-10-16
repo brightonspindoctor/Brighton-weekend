@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-25-the-forge-comedy-club-peter-antoniou-pretty-psychic-2@bright
+ onweekend.co.uk
+DTSTAMP:20261125T000000Z
+DTSTART:20261125T200000Z
+DTEND:20261125T214500Z
+SUMMARY:Peter Antoniou: Pretty Psychic
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/peter-antoniou-pretty-p
+ sychic-tickets-1985109985404\nMore: https://brightonweekend.co.uk/e/2026-1
+ 1-25-the-forge-comedy-club-peter-antoniou-pretty-psychic-2/
+URL:https://brightonweekend.co.uk/e/2026-11-25-the-forge-comedy-club-peter-
+ antoniou-pretty-psychic-2/
+END:VEVENT
+END:VCALENDAR

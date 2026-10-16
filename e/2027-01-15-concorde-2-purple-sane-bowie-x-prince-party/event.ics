@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-15-concorde-2-purple-sane-bowie-x-prince-party@brightonweekend.
+ co.uk
+DTSTAMP:20270115T000000Z
+DTSTART:20270115T210000Z
+DTEND:20270116T000000Z
+SUMMARY:Purple Sane: Bowie x Prince Party
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1645155/purple-sane-bowi
+ e-x-prince-party-tickets\nMore: https://brightonweekend.co.uk/e/2027-01-15
+ -concorde-2-purple-sane-bowie-x-prince-party/
+URL:https://brightonweekend.co.uk/e/2027-01-15-concorde-2-purple-sane-bowie
+ -x-prince-party/
+END:VEVENT
+END:VCALENDAR

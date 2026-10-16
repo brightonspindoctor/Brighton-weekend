@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-13-komedia-komedia-christmas-party-sun-13-dec-2026-doors-6-30-p
+ m@brightonweekend.co.uk
+DTSTAMP:20261213T000000Z
+DTSTART:20261213T183000Z
+DTEND:20261213T213000Z
+SUMMARY:Komedia Christmas Party
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87364732
+ 2/events/128660391\nMore: https://brightonweekend.co.uk/e/2026-12-13-komed
+ ia-komedia-christmas-party-sun-13-dec-2026-doors-6-30-pm/
+URL:https://brightonweekend.co.uk/e/2026-12-13-komedia-komedia-christmas-pa
+ rty-sun-13-dec-2026-doors-6-30-pm/
+END:VEVENT
+END:VCALENDAR

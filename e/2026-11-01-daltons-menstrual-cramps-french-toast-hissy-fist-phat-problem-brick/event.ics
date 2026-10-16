@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-01-daltons-menstrual-cramps-french-toast-hissy-fist-phat-proble
+ m-brick@brightonweekend.co.uk
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Menstrual Cramps + French Toast + Hissy Fist + Phat Problem + [Bric
+ k]
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/partner/tickets/event/l8mxvr-garagelan
+ d-and-daltons-present-the-menstrual-cramps-french-toast-hissy-fist-phat-pr
+ oblem-brick-1st-nov-daltons-brighton-brighton-tickets?dice_id=10515240&dic
+ e_channel=web&dice_tags=organic&dice_campaign=Garageland+Brighton&dice_fea
+ ture=mio_marketing&_branch_match_id=1618195161676191414&utm_source=web&utm
+ _campaign=Garageland+Brighton&utm_medium=mio_marketing&_branch_referrer=H4
+ sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1c9OMU0xNTJKTUtLMrKvK0pNSy0qysxLj08q
+ yi8vTi2ydc4oys9NBQA4186eOwAAAA%3D%3D\nMore: https://brightonweekend.co.uk/
+ e/2026-11-01-daltons-menstrual-cramps-french-toast-hissy-fist-phat-problem
+ -brick/
+URL:https://brightonweekend.co.uk/e/2026-11-01-daltons-menstrual-cramps-fre
+ nch-toast-hissy-fist-phat-problem-brick/
+END:VEVENT
+END:VCALENDAR

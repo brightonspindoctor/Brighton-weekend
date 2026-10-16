@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-27-the-hope-ruin-withpaperwings-crowquill@brightonweekend.co.uk
+DTSTAMP:20261027T000000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Withpaperwings + Crowquill
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/na80zlsb/withpaperwings-crow
+ quill\nMore: https://brightonweekend.co.uk/e/2026-10-27-the-hope-ruin-with
+ paperwings-crowquill/
+URL:https://brightonweekend.co.uk/e/2026-10-27-the-hope-ruin-withpaperwings
+ -crowquill/
+END:VEVENT
+END:VCALENDAR

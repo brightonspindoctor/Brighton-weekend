@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-25-komedia-sooz-kempner-sun-25-oct-2026-7-30-pm-doors-7-00-pm@b
+ rightonweekend.co.uk
+DTSTAMP:20261025T000000Z
+DTSTART:20261025T193000Z
+DTEND:20261025T223000Z
+SUMMARY:Sooz Kempner: Imposter
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366128
+ 9/events/128637989\nMore: https://brightonweekend.co.uk/e/2026-10-25-komed
+ ia-sooz-kempner-sun-25-oct-2026-7-30-pm-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-10-25-komedia-sooz-kempner-sun-25-
+ oct-2026-7-30-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

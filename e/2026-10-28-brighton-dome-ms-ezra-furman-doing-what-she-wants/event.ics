@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-28-brighton-dome-ms-ezra-furman-doing-what-she-wants@brightonwe
+ ekend.co.uk
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Ms. Ezra Furman: Doing what she wants
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LZf-ms-ezra-furman-d
+ oing-what-she-wants/\nMore: https://brightonweekend.co.uk/e/2026-10-28-bri
+ ghton-dome-ms-ezra-furman-doing-what-she-wants/
+URL:https://brightonweekend.co.uk/e/2026-10-28-brighton-dome-ms-ezra-furman
+ -doing-what-she-wants/
+END:VEVENT
+END:VCALENDAR

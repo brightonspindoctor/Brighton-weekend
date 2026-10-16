@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-25-the-old-market-turin-brakes-songs-stories@brightonweekend.co
+ .uk
+DTSTAMP:20261125T000000Z
+DTSTART:20261125T193000Z
+DTEND:20261125T222000Z
+SUMMARY:Turin Brakes: Songs & Stories
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/turin-brakes-songs-
+ stories\nMore: https://brightonweekend.co.uk/e/2026-11-25-the-old-market-t
+ urin-brakes-songs-stories/
+URL:https://brightonweekend.co.uk/e/2026-11-25-the-old-market-turin-brakes-
+ songs-stories/
+END:VEVENT
+END:VCALENDAR

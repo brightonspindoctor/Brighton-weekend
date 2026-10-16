@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-05-komedia-the-sassy-cabaret-club-presents-a-christmas-cracker@
+ brightonweekend.co.uk
+DTSTAMP:20261205T000000Z
+DTSTART:20261205T193000Z
+DTEND:20261205T223000Z
+SUMMARY:The Sassy Cabaret Club Presents…A Christmas Cracker!
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366557
+ 0/events/128654595\nMore: https://brightonweekend.co.uk/e/2026-12-05-komed
+ ia-the-sassy-cabaret-club-presents-a-christmas-cracker/
+URL:https://brightonweekend.co.uk/e/2026-12-05-komedia-the-sassy-cabaret-cl
+ ub-presents-a-christmas-cracker/
+END:VEVENT
+END:VCALENDAR

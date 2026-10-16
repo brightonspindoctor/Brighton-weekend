@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-30-patterns-lady-leshurr-10-years-of-the-queen-s-speech-tour@br
+ ightonweekend.co.uk
+DTSTAMP:20261030T000000Z
+DTSTART:20261030T190000Z
+DTEND:20261030T220000Z
+SUMMARY:Lady Leshurr - 10 Years of The Queen's Speech Tour
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/lady-leshurr-10-years-of-the-que
+ ens-speech-tour-30th-oct-patterns-brighton-tickets\nMore: https://brighton
+ weekend.co.uk/e/2026-10-30-patterns-lady-leshurr-10-years-of-the-queen-s-s
+ peech-tour/
+URL:https://brightonweekend.co.uk/e/2026-10-30-patterns-lady-leshurr-10-yea
+ rs-of-the-queen-s-speech-tour/
+END:VEVENT
+END:VCALENDAR

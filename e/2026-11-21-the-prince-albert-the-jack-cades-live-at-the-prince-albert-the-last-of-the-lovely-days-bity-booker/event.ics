@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-the-prince-albert-the-jack-cades-live-at-the-prince-albert-t
+ he-last-of-the-lovely-days-bity-booker@brightonweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:The Jack Cades live at The Prince Albert + The Last of The Lovely D
+ ays + Bity Booker
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://wegottickets.com/f/26549?fbclid=IwY2xjawUOOopw
+ ZG9mAWV4dG4DYWVtAjEwAGJyaWQRMGFJcUZFSlJoVE9XSmtmdzNzcnRjBmFwcF9pZBAyMjIwMz
+ kxNzg4MjAwODkyAAEenhA3eHx521vKQ76cD9RneLfdHztfdVkpTB0Br0CczDx1WKlmpMSinXQp
+ 6F0_aem_nJYfpM1azhRdJUWOY7Vypw\nMore: https://brightonweekend.co.uk/e/2026
+ -11-21-the-prince-albert-the-jack-cades-live-at-the-prince-albert-the-last
+ -of-the-lovely-days-bity-booker/
+URL:https://brightonweekend.co.uk/e/2026-11-21-the-prince-albert-the-jack-c
+ ades-live-at-the-prince-albert-the-last-of-the-lovely-days-bity-booker/
+END:VEVENT
+END:VCALENDAR

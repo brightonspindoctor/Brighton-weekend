@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-05-daltons-fighting-for-unity@brightonweekend.co.uk
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Fighting for Unity
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/fighting
+ -for-unity-2026-11-05-18-00\nMore: https://brightonweekend.co.uk/e/2026-11
+ -05-daltons-fighting-for-unity/
+URL:https://brightonweekend.co.uk/e/2026-11-05-daltons-fighting-for-unity/
+END:VEVENT
+END:VCALENDAR

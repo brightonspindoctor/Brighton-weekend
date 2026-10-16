@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-30-chalk-the-devout-depeche-mode-tribute-band@brightonweekend.c
+ o.uk
+DTSTAMP:20270130T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:The Devout - Depeche Mode Tribute Band
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/\nMore: https://brightonweekend
+ .co.uk/e/2027-01-30-chalk-the-devout-depeche-mode-tribute-band/
+URL:https://brightonweekend.co.uk/e/2027-01-30-chalk-the-devout-depeche-mod
+ e-tribute-band/
+END:VEVENT
+END:VCALENDAR

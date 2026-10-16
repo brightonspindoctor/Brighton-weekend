@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-06-daltons-an-interview-with-david-morrissey-audience-q-a@brigh
+ tonweekend.co.uk
+DTSTAMP:20270106T000000Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+SUMMARY:An Interview with David Morrissey (& Audience Q&A)
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/an-inter
+ view-with-david-morrissey-audience-q-a\nMore: https://brightonweekend.co.u
+ k/e/2027-01-06-daltons-an-interview-with-david-morrissey-audience-q-a/
+URL:https://brightonweekend.co.uk/e/2027-01-06-daltons-an-interview-with-da
+ vid-morrissey-audience-q-a/
+END:VEVENT
+END:VCALENDAR

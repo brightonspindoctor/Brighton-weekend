@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-18-the-brunswick-martin-mcaloon-of-prefab-sprout-steve-mcqueen-
+ slight-return@brightonweekend.co.uk
+DTSTAMP:20261018T000000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:Martin McAloon of Prefab Sprout Steve McQueen - Slight Return.
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/martin-mc
+ aloon-of-prefab-sprout-steve-mcqueen-slight-return\nMore: https://brighton
+ weekend.co.uk/e/2026-10-18-the-brunswick-martin-mcaloon-of-prefab-sprout-s
+ teve-mcqueen-slight-return/
+URL:https://brightonweekend.co.uk/e/2026-10-18-the-brunswick-martin-mcaloon
+ -of-prefab-sprout-steve-mcqueen-slight-return/
+END:VEVENT
+END:VCALENDAR

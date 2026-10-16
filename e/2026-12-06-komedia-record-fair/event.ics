@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-06-komedia-record-fair@brightonweekend.co.uk
+DTSTAMP:20261206T000000Z
+DTSTART:20261206T100000Z
+DTEND:20261206T130000Z
+SUMMARY:Record Fair
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://www.komedia.co.uk/shows/record-fair/?eid=17780
+ \nMore: https://brightonweekend.co.uk/e/2026-12-06-komedia-record-fair/
+URL:https://brightonweekend.co.uk/e/2026-12-06-komedia-record-fair/
+END:VEVENT
+END:VCALENDAR

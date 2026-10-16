@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-03-resident-hamish-hawk-live-signing@brightonweekend.co.uk
+DTSTAMP:20270403T000000Z
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270404
+SUMMARY:Hamish Hawk: Live + Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ab6a1ee48c0e100016eebc1\nMore: 
+ https://brightonweekend.co.uk/e/2027-04-03-resident-hamish-hawk-live-signi
+ ng/
+URL:https://brightonweekend.co.uk/e/2027-04-03-resident-hamish-hawk-live-si
+ gning/
+END:VEVENT
+END:VCALENDAR

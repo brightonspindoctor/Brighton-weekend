@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-16-the-hope-ruin-60-juno@brightonweekend.co.uk
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:60 Juno
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/ild5onwo/60-juno\nMore: http
+ s://brightonweekend.co.uk/e/2026-11-16-the-hope-ruin-60-juno/
+URL:https://brightonweekend.co.uk/e/2026-11-16-the-hope-ruin-60-juno/
+END:VEVENT
+END:VCALENDAR

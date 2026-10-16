@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-concorde-2-hybrid-minds-brighton@brightonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART:20261212T230000Z
+DTEND:20261213T020000Z
+SUMMARY:Hybrid Minds
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1644637/hybrid-minds-tic
+ kets\nMore: https://brightonweekend.co.uk/e/2026-12-12-concorde-2-hybrid-m
+ inds-brighton/
+URL:https://brightonweekend.co.uk/e/2026-12-12-concorde-2-hybrid-minds-brig
+ hton/
+END:VEVENT
+END:VCALENDAR

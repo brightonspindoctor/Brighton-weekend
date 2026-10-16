@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-22-caroline-of-brunswick-cabaret-lab-boo-lesque-spooktacular-fr
+ ee@brightonweekend.co.uk
+DTSTAMP:20261022T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Cabaret Lab: Boo-Lesque Spooktacular
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://carolineofbrunswick.co.uk/events/cabaret-lab-f
+ ree-250-976-227-595-366-596-875-857/\nMore: https://brightonweekend.co.uk/
+ e/2026-10-22-caroline-of-brunswick-cabaret-lab-boo-lesque-spooktacular-fre
+ e/
+URL:https://brightonweekend.co.uk/e/2026-10-22-caroline-of-brunswick-cabare
+ t-lab-boo-lesque-spooktacular-free/
+END:VEVENT
+END:VCALENDAR

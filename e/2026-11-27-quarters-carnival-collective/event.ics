@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-quarters-carnival-collective@brightonweekend.co.uk
+DTSTAMP:20261127T000000Z
+DTSTART:20261127T183000Z
+DTEND:20261127T214500Z
+SUMMARY:Carnival Collective
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/carnival-collective/q
+ uarters/3733588\nMore: https://brightonweekend.co.uk/e/2026-11-27-quarters
+ -carnival-collective/
+URL:https://brightonweekend.co.uk/e/2026-11-27-quarters-carnival-collective
+ /
+END:VEVENT
+END:VCALENDAR

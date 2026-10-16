@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-29-dust-take-this-album-get-off-my-property-launch-party@bright
+ onweekend.co.uk
+DTSTAMP:20261129T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Take This Album & Get Off My Property LAUNCH PARTY
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ace317869cfd50001def485\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-29-dust-take-this-album-get-off-my
+ -property-launch-party/
+URL:https://brightonweekend.co.uk/e/2026-11-29-dust-take-this-album-get-off
+ -my-property-launch-party/
+END:VEVENT
+END:VCALENDAR

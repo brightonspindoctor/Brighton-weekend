@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-18-the-forge-comedy-club-festive-forge-comedy-club@brightonweek
+ end.co.uk
+DTSTAMP:20261218T000000Z
+DTSTART:20261218T200000Z
+DTEND:20261218T235900Z
+SUMMARY:Festive Forge Comedy Club!
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/festive-forge-comedy-cl
+ ub-tickets-1998456252448\nMore: https://brightonweekend.co.uk/e/2026-12-18
+ -the-forge-comedy-club-festive-forge-comedy-club/
+URL:https://brightonweekend.co.uk/e/2026-12-18-the-forge-comedy-club-festiv
+ e-forge-comedy-club/
+END:VEVENT
+END:VCALENDAR

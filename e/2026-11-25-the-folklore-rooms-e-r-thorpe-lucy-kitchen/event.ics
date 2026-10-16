@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-25-the-folklore-rooms-e-r-thorpe-lucy-kitchen@brightonweekend.c
+ o.uk
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:E.R Thorpe + Lucy Kitchen
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/lucy-kitchen-e-r-thor
+ pe/the-folklore-rooms/3714999\nMore: https://brightonweekend.co.uk/e/2026-
+ 11-25-the-folklore-rooms-e-r-thorpe-lucy-kitchen/
+URL:https://brightonweekend.co.uk/e/2026-11-25-the-folklore-rooms-e-r-thorp
+ e-lucy-kitchen/
+END:VEVENT
+END:VCALENDAR

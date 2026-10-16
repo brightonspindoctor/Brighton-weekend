@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-29-volks-chem-sex-party-ruckus-the-clubheads-free-entry@brighto
+ nweekend.co.uk
+DTSTAMP:20261029T000000Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Chem Sex Party + Ruckus + The Clubheads
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/na16a23c3b4d\nMore: https://brigh
+ tonweekend.co.uk/e/2026-10-29-volks-chem-sex-party-ruckus-the-clubheads-fr
+ ee-entry/
+URL:https://brightonweekend.co.uk/e/2026-10-29-volks-chem-sex-party-ruckus-
+ the-clubheads-free-entry/
+END:VEVENT
+END:VCALENDAR

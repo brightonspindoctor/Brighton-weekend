@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-20-theatreroyalbrighton-killer-queen@brightonweekend.co.uk
+DTSTAMP:20270120T000000Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+SUMMARY:Killer Queen
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/venues/theatre-royal-bright
+ on/whats-on/\nMore: https://brightonweekend.co.uk/e/2027-01-20-theatreroya
+ lbrighton-killer-queen/
+URL:https://brightonweekend.co.uk/e/2027-01-20-theatreroyalbrighton-killer-
+ queen/
+END:VEVENT
+END:VCALENDAR

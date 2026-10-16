@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-brighton-dome-all-my-friends-day-disco-2@brightonweekend.co.
+ uk
+DTSTAMP:20261017T000000Z
+DTSTART:20261017T140000Z
+DTEND:20261017T190000Z
+SUMMARY:All My Friends Day Disco
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LGl-all-my-friends-d
+ ay-disco/\nMore: https://brightonweekend.co.uk/e/2026-10-17-brighton-dome-
+ all-my-friends-day-disco-2/
+URL:https://brightonweekend.co.uk/e/2026-10-17-brighton-dome-all-my-friends
+ -day-disco-2/
+END:VEVENT
+END:VCALENDAR

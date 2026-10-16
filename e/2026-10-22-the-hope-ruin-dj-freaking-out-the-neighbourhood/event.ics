@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-22-the-hope-ruin-dj-freaking-out-the-neighbourhood@brightonweek
+ end.co.uk
+DTSTAMP:20261022T000000Z
+DTSTART:20261022T190000Z
+DTEND:20261022T230000Z
+SUMMARY:DJ Freaking Out the Neighbourhood
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/dj-freaking-out-the-neighbo
+ urhood-38/\nMore: https://brightonweekend.co.uk/e/2026-10-22-the-hope-ruin
+ -dj-freaking-out-the-neighbourhood/
+URL:https://brightonweekend.co.uk/e/2026-10-22-the-hope-ruin-dj-freaking-ou
+ t-the-neighbourhood/
+END:VEVENT
+END:VCALENDAR

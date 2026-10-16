@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-18-daltons-gen-the-degenerates@brightonweekend.co.uk
+DTSTAMP:20270418T000000Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:GEN & The Degenerates
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://crosstownconcerts.seetickets.com/event/gen-the
+ -degenerates/daltons/3711622\nMore: https://brightonweekend.co.uk/e/2027-0
+ 4-18-daltons-gen-the-degenerates/
+URL:https://brightonweekend.co.uk/e/2027-04-18-daltons-gen-the-degenerates/
+END:VEVENT
+END:VCALENDAR

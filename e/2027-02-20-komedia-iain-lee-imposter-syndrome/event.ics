@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-20-komedia-iain-lee-imposter-syndrome@brightonweekend.co.uk
+DTSTAMP:20270220T000000Z
+DTSTART:20270220T173000Z
+DTEND:20270220T203000Z
+SUMMARY:Iain Lee: Imposter Syndrome
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366779
+ 4/events/128665576\nMore: https://brightonweekend.co.uk/e/2027-02-20-komed
+ ia-iain-lee-imposter-syndrome/
+URL:https://brightonweekend.co.uk/e/2027-02-20-komedia-iain-lee-imposter-sy
+ ndrome/
+END:VEVENT
+END:VCALENDAR

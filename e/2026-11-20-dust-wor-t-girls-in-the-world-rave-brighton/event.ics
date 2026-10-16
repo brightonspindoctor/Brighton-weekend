@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-20-dust-wor-t-girls-in-the-world-rave-brighton@brightonweekend.
+ co.uk
+DTSTAMP:20261120T000000Z
+DTSTART:20261120T230000Z
+DTEND:20261121T030000Z
+SUMMARY:Wor$t Girls in the World Rave
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Dust/WORT-GI
+ RLS-IN-THE-WORLD-RAVE-Brighton/42778264/\nMore: https://brightonweekend.co
+ .uk/e/2026-11-20-dust-wor-t-girls-in-the-world-rave-brighton/
+URL:https://brightonweekend.co.uk/e/2026-11-20-dust-wor-t-girls-in-the-worl
+ d-rave-brighton/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-volks-rough-times-party-calyx-free-entry-tickets-available@b
+ rightonweekend.co.uk
+DTSTAMP:20261107T000000Z
+DTSTART:20261107T230000Z
+DTEND:20261108T020000Z
+SUMMARY:Rough times Party - Calyx
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Rough-times-Party---CALYX---Free-Entry-tickets-available/42839766/
+ \nMore: https://brightonweekend.co.uk/e/2026-11-07-volks-rough-times-party
+ -calyx-free-entry-tickets-available/
+URL:https://brightonweekend.co.uk/e/2026-11-07-volks-rough-times-party-caly
+ x-free-entry-tickets-available/
+END:VEVENT
+END:VCALENDAR

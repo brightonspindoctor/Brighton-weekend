@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-17-dust-charlie-noordewier@brightonweekend.co.uk
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Charlie Noordewier
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ab0f1484c55e1000197b86f\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-17-dust-charlie-noordewier/
+URL:https://brightonweekend.co.uk/e/2026-11-17-dust-charlie-noordewier/
+END:VEVENT
+END:VCALENDAR

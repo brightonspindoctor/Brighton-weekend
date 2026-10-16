@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-01-greendoorstore-mustbejohn@brightonweekend.co.uk
+DTSTAMP:20261201T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:mustbejohn
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/\nMore: https:/
+ /brightonweekend.co.uk/e/2026-12-01-greendoorstore-mustbejohn/
+URL:https://brightonweekend.co.uk/e/2026-12-01-greendoorstore-mustbejohn/
+END:VEVENT
+END:VCALENDAR

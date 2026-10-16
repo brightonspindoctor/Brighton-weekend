@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-the-hope-ruin-brighton-cat-tour-art-day@brightonweekend.co.u
+ k
+DTSTAMP:20261017T000000Z
+DTSTART:20261017T100000Z
+DTEND:20261017T150000Z
+SUMMARY:Brighton Cat Tour: Art Day
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/brighton-cat-tour-art-day/\
+ nMore: https://brightonweekend.co.uk/e/2026-10-17-the-hope-ruin-brighton-c
+ at-tour-art-day/
+URL:https://brightonweekend.co.uk/e/2026-10-17-the-hope-ruin-brighton-cat-t
+ our-art-day/
+END:VEVENT
+END:VCALENDAR

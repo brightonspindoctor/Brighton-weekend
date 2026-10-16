@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-02-komedia-lee-peart-it-s-not-you-it-s-lee@brightonweekend.co.u
+ k
+DTSTAMP:20270502T000000Z
+DTSTART:20270502T183000Z
+DTEND:20270502T213000Z
+SUMMARY:Lee Peart: It’s Not You\, It’s Lee
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366798
+ 2/events/128665986\nMore: https://brightonweekend.co.uk/e/2027-05-02-komed
+ ia-lee-peart-it-s-not-you-it-s-lee/
+URL:https://brightonweekend.co.uk/e/2027-05-02-komedia-lee-peart-it-s-not-y
+ ou-it-s-lee/
+END:VEVENT
+END:VCALENDAR

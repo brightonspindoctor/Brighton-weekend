@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-green-door-store-winter-assault-2026-hail-spirit-noir-uk-exc
+ lusive@brightonweekend.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Winter Assault 2026 – Hail Spirit Noir UK Exclusive
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/winter-assault-2026-tic
+ kets-1963870223705?aff=oddtdtcreator&fbclid=IwY2xjawUPh-NwZG9mAWV4dG4DYWVt
+ AjEwAGJyaWQRMWl5dzhIanQzRGt5ald6ZlRzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAA
+ Ee6qwm0gOd_RFb1KIdDQZzZW56D-pGBk_FbSiP6f3a3C8rznuk0ccYlqvkN10_aem_66tE33Ay
+ czabzQ6XED3YKw\nMore: https://brightonweekend.co.uk/e/2026-11-28-green-doo
+ r-store-winter-assault-2026-hail-spirit-noir-uk-exclusive/
+URL:https://brightonweekend.co.uk/e/2026-11-28-green-door-store-winter-assa
+ ult-2026-hail-spirit-noir-uk-exclusive/
+END:VEVENT
+END:VCALENDAR

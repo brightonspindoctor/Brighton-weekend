@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-rossi-bar-brian-sex-house-orchestra@brightonweekend.co.uk
+DTSTAMP:20261017T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Brian Sex House Orchestra
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://therossibar.co.uk/events/brian-sex-house-orche
+ stra/\nMore: https://brightonweekend.co.uk/e/2026-10-17-rossi-bar-brian-se
+ x-house-orchestra/
+URL:https://brightonweekend.co.uk/e/2026-10-17-rossi-bar-brian-sex-house-or
+ chestra/
+END:VEVENT
+END:VCALENDAR

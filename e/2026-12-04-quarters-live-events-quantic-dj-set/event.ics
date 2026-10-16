@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-quarters-live-events-quantic-dj-set@brightonweekend.co.uk
+DTSTAMP:20261204T000000Z
+DTSTART:20261204T180000Z
+DTEND:20261204T220000Z
+SUMMARY:Quantic (DJ Set)
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/quantic-dj-set-/quart
+ ers/3709389\nMore: https://brightonweekend.co.uk/e/2026-12-04-quarters-liv
+ e-events-quantic-dj-set/
+URL:https://brightonweekend.co.uk/e/2026-12-04-quarters-live-events-quantic
+ -dj-set/
+END:VEVENT
+END:VCALENDAR

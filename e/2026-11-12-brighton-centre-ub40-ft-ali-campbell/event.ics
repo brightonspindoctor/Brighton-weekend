@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-12-brighton-centre-ub40-ft-ali-campbell@brightonweekend.co.uk
+DTSTAMP:20261112T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:UB40 ft. Ali Campbell
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://www.ticketmaster.co.uk/event/3E00645AB2BF3C22\
+ nMore: https://brightonweekend.co.uk/e/2026-11-12-brighton-centre-ub40-ft-
+ ali-campbell/
+URL:https://brightonweekend.co.uk/e/2026-11-12-brighton-centre-ub40-ft-ali-
+ campbell/
+END:VEVENT
+END:VCALENDAR

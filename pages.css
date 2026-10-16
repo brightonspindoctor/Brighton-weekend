@@ -38,4 +38,10 @@ button.btn{border:0;font-family:inherit;font-size:inherit;cursor:pointer}
 table{width:100%;border-collapse:collapse;font-size:15px;margin:12px 0}
 th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
 th{background:var(--raised)}
+footer a{display:inline-block;margin-bottom:6px}
+.crumbs{font-size:14px;color:var(--subtle);margin:0 0 10px}.crumbs a{color:var(--muted)}
+.list.dated .t{flex-basis:86px}
+.hubs{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.hubs a{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:6px 13px;color:var(--cream);text-decoration:none;font-size:14px;font-weight:700}
+.hubs a[aria-current]{background:var(--raised)}
 @media(max-width:600px){h1{font-size:25px}.card{padding:18px}}

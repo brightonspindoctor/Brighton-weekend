@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-04-komedia-cardiac-comedy-13@brightonweekend.co.uk
+DTSTAMP:20261104T000000Z
+DTSTART:20261104T200000Z
+DTEND:20261104T230000Z
+SUMMARY:Cardiac Comedy 13
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366666
+ 0/events/128661524\nMore: https://brightonweekend.co.uk/e/2026-11-04-komed
+ ia-cardiac-comedy-13/
+URL:https://brightonweekend.co.uk/e/2026-11-04-komedia-cardiac-comedy-13/
+END:VEVENT
+END:VCALENDAR

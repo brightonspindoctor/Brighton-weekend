@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-26-the-hope-ruin-schur@brightonweekend.co.uk
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Schur
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvc2NodXIvdGhlLWhvcGUtcnVpbi8zNjM2Mjc5/supplier/
+ SeeTickets/suppliedid/MzYzNjI3OQ/ticketid/8064500/checksum/aef74155576bc0a
+ 7564b12a7e22f4ffc/track/true?title=Schur&badge=&venueId=34826\nMore: https
+ ://brightonweekend.co.uk/e/2026-10-26-the-hope-ruin-schur/
+URL:https://brightonweekend.co.uk/e/2026-10-26-the-hope-ruin-schur/
+END:VEVENT
+END:VCALENDAR

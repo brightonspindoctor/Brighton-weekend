@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-20-komedia-sweat-queer-hyperpop-party-presents-gupi@brightonwee
+ kend.co.uk
+DTSTAMP:20261120T000000Z
+DTSTART:20261120T230000Z
+DTEND:20261121T020000Z
+SUMMARY:Sweat: Queer Hyperpop Party Presents Gupi
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366806
+ 0/events/128666126\nMore: https://brightonweekend.co.uk/e/2026-11-20-komed
+ ia-sweat-queer-hyperpop-party-presents-gupi/
+URL:https://brightonweekend.co.uk/e/2026-11-20-komedia-sweat-queer-hyperpop
+ -party-presents-gupi/
+END:VEVENT
+END:VCALENDAR

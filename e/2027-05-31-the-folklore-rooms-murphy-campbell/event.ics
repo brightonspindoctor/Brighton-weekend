@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-31-the-folklore-rooms-murphy-campbell@brightonweekend.co.uk
+DTSTAMP:20270531T000000Z
+DTSTART;VALUE=DATE:20270531
+DTEND;VALUE=DATE:20270601
+SUMMARY:Murphy Campbell
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/murphy-campbell/the-f
+ olklore-rooms/3733554\nMore: https://brightonweekend.co.uk/e/2027-05-31-th
+ e-folklore-rooms-murphy-campbell/
+URL:https://brightonweekend.co.uk/e/2027-05-31-the-folklore-rooms-murphy-ca
+ mpbell/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-19-chalk-ktam-unleashed@brightonweekend.co.uk
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Ktam Unleashed
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://www.visitbrighton.com/whats-on/ktam-unleashed-
+ p2950571\nMore: https://brightonweekend.co.uk/e/2026-11-19-chalk-ktam-unle
+ ashed/
+URL:https://brightonweekend.co.uk/e/2026-11-19-chalk-ktam-unleashed/
+END:VEVENT
+END:VCALENDAR

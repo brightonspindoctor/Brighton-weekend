@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-09-concorde-2-cardinals@brightonweekend.co.uk
+DTSTAMP:20261109T000000Z
+DTSTART:20261109T193000Z
+DTEND:20261109T223000Z
+SUMMARY:Cardinals
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1377082/cardinals-ticket
+ s\nMore: https://brightonweekend.co.uk/e/2026-11-09-concorde-2-cardinals/
+URL:https://brightonweekend.co.uk/e/2026-11-09-concorde-2-cardinals/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-03-komedia-coldplace-the-world-s-leading-tribute-to-coldplay-th
+ u-4-mar-2027-7-30-pm-doors-7-00-pm@brightonweekend.co.uk
+DTSTAMP:20270304T000000Z
+DTSTART:20270304T193000Z
+DTEND:20270304T223000Z
+SUMMARY:Coldplace – The World’s Leading Tribute to Coldplay
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366713
+ 7/events/128663529\nMore: https://brightonweekend.co.uk/e/2027-04-03-komed
+ ia-coldplace-the-world-s-leading-tribute-to-coldplay-thu-4-mar-2027-7-30-p
+ m-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2027-04-03-komedia-coldplace-the-world-
+ s-leading-tribute-to-coldplay-thu-4-mar-2027-7-30-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

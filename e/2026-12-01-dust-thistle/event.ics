@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-01-dust-thistle@brightonweekend.co.uk
+DTSTAMP:20261201T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Thistle
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ab14ef353141a00019171eb\nMore: 
+ https://brightonweekend.co.uk/e/2026-12-01-dust-thistle/
+URL:https://brightonweekend.co.uk/e/2026-12-01-dust-thistle/
+END:VEVENT
+END:VCALENDAR

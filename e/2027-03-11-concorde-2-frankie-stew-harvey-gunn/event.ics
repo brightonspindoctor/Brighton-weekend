@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-11-concorde-2-frankie-stew-harvey-gunn@brightonweekend.co.uk
+DTSTAMP:20270311T000000Z
+DTSTART:20270311T193000Z
+DTEND:20270311T223000Z
+SUMMARY:Frankie Stew & Harvey Gunn
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1626526/frankie-stew-har
+ vey-gunn-tickets\nMore: https://brightonweekend.co.uk/e/2027-03-11-concord
+ e-2-frankie-stew-harvey-gunn/
+URL:https://brightonweekend.co.uk/e/2027-03-11-concorde-2-frankie-stew-harv
+ ey-gunn/
+END:VEVENT
+END:VCALENDAR

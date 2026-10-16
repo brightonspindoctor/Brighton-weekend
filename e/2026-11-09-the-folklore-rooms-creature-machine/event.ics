@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-09-the-folklore-rooms-creature-machine@brightonweekend.co.uk
+DTSTAMP:20261109T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Creature & Machine
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/partner/tickets/event/8edw97-creature-
+ machine-biscuit-club-special-guests-9th-nov-the-folklore-rooms-brighton-ti
+ ckets?dice_id=10672731&dice_channel=web&dice_tags=organic&dice_campaign=La
+ rkspur+Records&dice_feature=mio_marketing&_branch_match_id=124552125948584
+ 5231&utm_source=web&utm_campaign=Larkspur+Records&utm_medium=mio_marketing
+ &_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1S8zSTQ2tzS3tEgx
+ T7avK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQAyAiuWOwAAAA%3D%3D\nMore: https://br
+ ightonweekend.co.uk/e/2026-11-09-the-folklore-rooms-creature-machine/
+URL:https://brightonweekend.co.uk/e/2026-11-09-the-folklore-rooms-creature-
+ machine/
+END:VEVENT
+END:VCALENDAR

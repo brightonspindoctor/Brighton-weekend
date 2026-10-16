@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-volks-jungle-cakes-12-hour-rave-360@brightonweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART:20261114T180000Z
+DTEND:20261114T210000Z
+SUMMARY:Jungle Cakes - 12 hour Rave - 360
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Jungle-Cakes---12-hour-Rave---360/42840358/\nMore: https://brighto
+ nweekend.co.uk/e/2026-11-14-volks-jungle-cakes-12-hour-rave-360/
+URL:https://brightonweekend.co.uk/e/2026-11-14-volks-jungle-cakes-12-hour-r
+ ave-360/
+END:VEVENT
+END:VCALENDAR

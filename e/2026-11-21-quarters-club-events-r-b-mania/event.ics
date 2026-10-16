@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-quarters-club-events-r-b-mania@brightonweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART:20261121T150000Z
+DTEND:20261121T220000Z
+SUMMARY:R&B Mania
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/rnb-mania-bright
+ on-s-r-b-festival/quarters/3705590\nMore: https://brightonweekend.co.uk/e/
+ 2026-11-21-quarters-club-events-r-b-mania/
+URL:https://brightonweekend.co.uk/e/2026-11-21-quarters-club-events-r-b-man
+ ia/
+END:VEVENT
+END:VCALENDAR

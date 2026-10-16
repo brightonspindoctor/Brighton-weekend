@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-11-rossi-bar-s-wt@brightonweekend.co.uk
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:SØWT
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/k62dr9-swt-11th-nov-the-rossi-ba
+ r-brighton-tickets\nMore: https://brightonweekend.co.uk/e/2026-11-11-rossi
+ -bar-s-wt/
+URL:https://brightonweekend.co.uk/e/2026-11-11-rossi-bar-s-wt/
+END:VEVENT
+END:VCALENDAR

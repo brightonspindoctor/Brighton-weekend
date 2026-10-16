@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-concorde-2-dj-yoda@brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART:20261106T190000Z
+DTEND:20261106T220000Z
+SUMMARY:DJ Yoda
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1352891/dj-yoda-80s-mixt
+ ape-live-tickets\nMore: https://brightonweekend.co.uk/e/2026-11-06-concord
+ e-2-dj-yoda/
+URL:https://brightonweekend.co.uk/e/2026-11-06-concorde-2-dj-yoda/
+END:VEVENT
+END:VCALENDAR

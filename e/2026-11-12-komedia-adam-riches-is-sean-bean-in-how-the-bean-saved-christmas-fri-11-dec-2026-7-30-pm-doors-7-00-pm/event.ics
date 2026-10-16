@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-12-komedia-adam-riches-is-sean-bean-in-how-the-bean-saved-chris
+ tmas-fri-11-dec-2026-7-30-pm-doors-7-00-pm@brightonweekend.co.uk
+DTSTAMP:20261211T000000Z
+DTSTART:20261211T193000Z
+DTEND:20261211T223000Z
+SUMMARY:Adam Riches IS Sean Bean IN ‘How the Bean Saved Christmas’
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366491
+ 1/events/128652438\nMore: https://brightonweekend.co.uk/e/2026-11-12-komed
+ ia-adam-riches-is-sean-bean-in-how-the-bean-saved-christmas-fri-11-dec-202
+ 6-7-30-pm-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-11-12-komedia-adam-riches-is-sean-
+ bean-in-how-the-bean-saved-christmas-fri-11-dec-2026-7-30-pm-doors-7-00-pm
+ /
+END:VEVENT
+END:VCALENDAR

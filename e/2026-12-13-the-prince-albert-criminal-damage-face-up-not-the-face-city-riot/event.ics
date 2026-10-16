@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-13-the-prince-albert-criminal-damage-face-up-not-the-face-city-
+ riot@brightonweekend.co.uk
+DTSTAMP:20261213T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Criminal Damage / Face Up! / Not The Face / City Riot
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/brighton-events/the-prince-albe
+ rt\nMore: https://brightonweekend.co.uk/e/2026-12-13-the-prince-albert-cri
+ minal-damage-face-up-not-the-face-city-riot/
+URL:https://brightonweekend.co.uk/e/2026-12-13-the-prince-albert-criminal-d
+ amage-face-up-not-the-face-city-riot/
+END:VEVENT
+END:VCALENDAR

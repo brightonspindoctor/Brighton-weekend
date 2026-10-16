@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-shelter-hall-day-of-the-dead-celebrations@brightonweekend.co
+ .uk
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Day Of The Dead Celebrations
+LOCATION:Shelter Hall\, Brighton
+DESCRIPTION:Tickets: https://bookings.designmynight.com/book?venue_id=695bd
+ baf9586224e31671d00&source=partner&type=6ac77a6138cf7c46ec57dc53&date=2026
+ -11-06\nMore: https://brightonweekend.co.uk/e/2026-11-06-shelter-hall-day-
+ of-the-dead-celebrations/
+URL:https://brightonweekend.co.uk/e/2026-11-06-shelter-hall-day-of-the-dead
+ -celebrations/
+END:VEVENT
+END:VCALENDAR

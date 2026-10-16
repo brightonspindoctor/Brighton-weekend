@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-25-the-forge-comedy-club-hatty-preston-unapproachable-2@brighto
+ nweekend.co.uk
+DTSTAMP:20261125T000000Z
+DTSTART:20261125T193000Z
+DTEND:20261125T211500Z
+SUMMARY:Hatty Preston: Unapproachable
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/hatty-preston-unapproac
+ hable-tickets-1999088219679\nMore: https://brightonweekend.co.uk/e/2026-11
+ -25-the-forge-comedy-club-hatty-preston-unapproachable-2/
+URL:https://brightonweekend.co.uk/e/2026-11-25-the-forge-comedy-club-hatty-
+ preston-unapproachable-2/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-06-dust-moscow-death-brigade@brightonweekend.co.uk
+DTSTAMP:20270206T000000Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Moscow Death Brigade
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6aba8f415371c20001d9ca53\nMore: 
+ https://brightonweekend.co.uk/e/2027-02-06-dust-moscow-death-brigade/
+URL:https://brightonweekend.co.uk/e/2027-02-06-dust-moscow-death-brigade/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-30-resident-the-big-moon-album-launch-show-acoustic@brightonwee
+ kend.co.uk
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:The Big Moon: Album Launch Show (Acoustic)
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6abbbbd60265e60001174a6a\nMore: 
+ https://brightonweekend.co.uk/e/2026-10-30-resident-the-big-moon-album-lau
+ nch-show-acoustic/
+URL:https://brightonweekend.co.uk/e/2026-10-30-resident-the-big-moon-album-
+ launch-show-acoustic/
+END:VEVENT
+END:VCALENDAR

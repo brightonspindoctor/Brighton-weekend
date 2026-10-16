@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-19-the-folklore-rooms-steve-ashley@brightonweekend.co.uk
+DTSTAMP:20270719T000000Z
+DTSTART;VALUE=DATE:20270719
+DTEND;VALUE=DATE:20270720
+SUMMARY:Steve Ashley
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/steve-ashley/the-folk
+ lore-rooms/3732360\nMore: https://brightonweekend.co.uk/e/2027-07-19-the-f
+ olklore-rooms-steve-ashley/
+URL:https://brightonweekend.co.uk/e/2027-07-19-the-folklore-rooms-steve-ash
+ ley/
+END:VEVENT
+END:VCALENDAR

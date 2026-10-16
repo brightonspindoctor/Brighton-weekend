@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-09-brighton-centre-bill-bailey@brightonweekend.co.uk
+DTSTAMP:20261209T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Bill Bailey
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://www.ticketmaster.co.uk/venue/507978?attraction
+ Id=1021758\nMore: https://brightonweekend.co.uk/e/2026-12-09-brighton-cent
+ re-bill-bailey/
+URL:https://brightonweekend.co.uk/e/2026-12-09-brighton-centre-bill-bailey/
+END:VEVENT
+END:VCALENDAR

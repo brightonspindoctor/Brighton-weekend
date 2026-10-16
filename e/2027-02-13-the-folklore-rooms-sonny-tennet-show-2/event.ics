@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-13-the-folklore-rooms-sonny-tennet-show-2@brightonweekend.co.uk
+DTSTAMP:20270213T000000Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:Sonny Tennet Show #2
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.tickettailor.com/checkout/view-event/id/90
+ 77794/chk/da2eff5f5835c2b5a01449220d6fa29f/?modal_widget=true&widget=true\
+ nMore: https://brightonweekend.co.uk/e/2027-02-13-the-folklore-rooms-sonny
+ -tennet-show-2/
+URL:https://brightonweekend.co.uk/e/2027-02-13-the-folklore-rooms-sonny-ten
+ net-show-2/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-brighton-dome-lara-ricote-inkling-2@brightonweekend.co.uk
+DTSTAMP:20261017T000000Z
+DTSTART:20261017T183000Z
+DTEND:20261017T220000Z
+SUMMARY:Lara Ricote: Inkling
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LSn-lara-ricote-inkl
+ ing/\nMore: https://brightonweekend.co.uk/e/2026-10-17-brighton-dome-lara-
+ ricote-inkling-2/
+URL:https://brightonweekend.co.uk/e/2026-10-17-brighton-dome-lara-ricote-in
+ kling-2/
+END:VEVENT
+END:VCALENDAR

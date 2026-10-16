@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-concorde-2-reef@brightonweekend.co.uk
+DTSTAMP:20261017T000000Z
+DTSTART:20261017T180000Z
+DTEND:20261017T210000Z
+SUMMARY:Reef
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1442810/reef-tickets\nMo
+ re: https://brightonweekend.co.uk/e/2026-10-17-concorde-2-reef/
+URL:https://brightonweekend.co.uk/e/2026-10-17-concorde-2-reef/
+END:VEVENT
+END:VCALENDAR

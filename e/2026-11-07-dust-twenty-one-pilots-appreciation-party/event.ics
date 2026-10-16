@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-dust-twenty-one-pilots-appreciation-party@brightonweekend.co
+ .uk
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Twenty One Pilots Appreciation Party
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6a74d60427195800013339d2\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-07-dust-twenty-one-pilots-apprecia
+ tion-party/
+URL:https://brightonweekend.co.uk/e/2026-11-07-dust-twenty-one-pilots-appre
+ ciation-party/
+END:VEVENT
+END:VCALENDAR

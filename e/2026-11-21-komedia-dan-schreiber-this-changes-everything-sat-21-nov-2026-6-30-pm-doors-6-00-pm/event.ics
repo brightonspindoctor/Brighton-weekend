@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-komedia-dan-schreiber-this-changes-everything-sat-21-nov-202
+ 6-6-30-pm-doors-6-00-pm@brightonweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART:20261121T183000Z
+DTEND:20261121T213000Z
+SUMMARY:Dan Schreiber – This Changes Everything
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366292
+ 9/events/128647111\nMore: https://brightonweekend.co.uk/e/2026-11-21-komed
+ ia-dan-schreiber-this-changes-everything-sat-21-nov-2026-6-30-pm-doors-6-0
+ 0-pm/
+URL:https://brightonweekend.co.uk/e/2026-11-21-komedia-dan-schreiber-this-c
+ hanges-everything-sat-21-nov-2026-6-30-pm-doors-6-00-pm/
+END:VEVENT
+END:VCALENDAR

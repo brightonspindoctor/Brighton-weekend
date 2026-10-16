@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-08-the-brunswick-adam-otmar-yellow-bellied-sapsucker-tour@brigh
+ tonweekend.co.uk
+DTSTAMP:20270408T000000Z
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+SUMMARY:Adam Otmar - Yellow-Bellied Sapsucker Tour
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/adam-otma
+ r-yellow-bellied-sapsucker-tour\nMore: https://brightonweekend.co.uk/e/202
+ 7-04-08-the-brunswick-adam-otmar-yellow-bellied-sapsucker-tour/
+URL:https://brightonweekend.co.uk/e/2027-04-08-the-brunswick-adam-otmar-yel
+ low-bellied-sapsucker-tour/
+END:VEVENT
+END:VCALENDAR

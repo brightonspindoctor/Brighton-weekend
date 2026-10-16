@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-dust-indie-rock-night-big-wig-energy@brightonweekend.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Indie Rock Night ∙ Big Wig Energy
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6aad92d74b19510001694b1c\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-28-dust-indie-rock-night-big-wig-e
+ nergy/
+URL:https://brightonweekend.co.uk/e/2026-11-28-dust-indie-rock-night-big-wi
+ g-energy/
+END:VEVENT
+END:VCALENDAR

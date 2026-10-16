@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-16-the-folklore-rooms-richard-walters@brightonweekend.co.uk
+DTSTAMP:20261216T000000Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Richard Walters
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/richard-walters/the-f
+ olklore-rooms/3713718\nMore: https://brightonweekend.co.uk/e/2026-12-16-th
+ e-folklore-rooms-richard-walters/
+URL:https://brightonweekend.co.uk/e/2026-12-16-the-folklore-rooms-richard-w
+ alters/
+END:VEVENT
+END:VCALENDAR

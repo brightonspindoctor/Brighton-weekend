@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-30-komedia-komedia-comedy-club-sat-30-jan-2027-8-00-pm-doors-7-
+ 00-pm@brightonweekend.co.uk
+DTSTAMP:20270130T000000Z
+DTSTART:20270130T200000Z
+DTEND:20270130T230000Z
+SUMMARY:Komedia Comedy Club
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87362274
+ 0/events/128665297\nMore: https://brightonweekend.co.uk/e/2027-01-30-komed
+ ia-komedia-comedy-club-sat-30-jan-2027-8-00-pm-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2027-01-30-komedia-komedia-comedy-club-
+ sat-30-jan-2027-8-00-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

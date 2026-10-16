@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-a-l-p-h-a-b-e-t-pearl-the-oysters@brightonweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Pearl & The Oysters
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvcGVhcmwtdGhlLW95c3RlcnMvYS1sLXAtaC1hLWItZS10Lz
+ M2NjQwODI/supplier/SeeTickets/suppliedid/MzY2NDA4Mg/ticketid/8084617/check
+ sum/bacf7c9eeb10239a79f8d765a2dc4337/track/true?title=Pearl+%26+The+Oyster
+ s&badge=&venueId=50186\nMore: https://brightonweekend.co.uk/e/2026-11-21-a
+ -l-p-h-a-b-e-t-pearl-the-oysters/
+URL:https://brightonweekend.co.uk/e/2026-11-21-a-l-p-h-a-b-e-t-pearl-the-oy
+ sters/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-22-the-prince-albert-mildred@brightonweekend.co.uk
+DTSTAMP:20261122T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Mildred
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/brighton-events/the-prince-albe
+ rt\nMore: https://brightonweekend.co.uk/e/2026-11-22-the-prince-albert-mil
+ dred/
+URL:https://brightonweekend.co.uk/e/2026-11-22-the-prince-albert-mildred/
+END:VEVENT
+END:VCALENDAR

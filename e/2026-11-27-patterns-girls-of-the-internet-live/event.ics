@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-patterns-girls-of-the-internet-live@brightonweekend.co.uk
+DTSTAMP:20261127T000000Z
+DTSTART:20261127T190000Z
+DTEND:20261127T220000Z
+SUMMARY:Girls of the Internet (Live)
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Patterns-Bri
+ ghton/Girls-of-the-Internet-Live/42682504/\nMore: https://brightonweekend.
+ co.uk/e/2026-11-27-patterns-girls-of-the-internet-live/
+URL:https://brightonweekend.co.uk/e/2026-11-27-patterns-girls-of-the-intern
+ et-live/
+END:VEVENT
+END:VCALENDAR

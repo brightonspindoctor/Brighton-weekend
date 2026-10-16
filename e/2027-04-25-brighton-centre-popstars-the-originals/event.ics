@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-25-brighton-centre-popstars-the-originals@brightonweekend.co.uk
+DTSTAMP:20270425T000000Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:Popstars The Originals
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/whats-on/2027/popstars-th
+ e-originals/\nMore: https://brightonweekend.co.uk/e/2027-04-25-brighton-ce
+ ntre-popstars-the-originals/
+URL:https://brightonweekend.co.uk/e/2027-04-25-brighton-centre-popstars-the
+ -originals/
+END:VEVENT
+END:VCALENDAR

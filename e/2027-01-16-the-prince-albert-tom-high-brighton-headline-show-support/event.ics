@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-16-the-prince-albert-tom-high-brighton-headline-show-support@br
+ ightonweekend.co.uk
+DTSTAMP:20270116T000000Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:Tom High | Brighton Headline Show + support
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://tickets.openstage.live/boxOffice/TomHighTour/T
+ omHighBrightonHeadlineShow160127\nMore: https://brightonweekend.co.uk/e/20
+ 27-01-16-the-prince-albert-tom-high-brighton-headline-show-support/
+URL:https://brightonweekend.co.uk/e/2027-01-16-the-prince-albert-tom-high-b
+ righton-headline-show-support/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-16-brighton-dome-tom-davis-spudgun-2@brightonweekend.co.uk
+DTSTAMP:20261016T000000Z
+DTSTART:20261016T183000Z
+DTEND:20261016T220000Z
+SUMMARY:Tom Davis: Spudgun
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/Le9-tom-davis-spudgu
+ n/\nMore: https://brightonweekend.co.uk/e/2026-10-16-brighton-dome-tom-dav
+ is-spudgun-2/
+URL:https://brightonweekend.co.uk/e/2026-10-16-brighton-dome-tom-davis-spud
+ gun-2/
+END:VEVENT
+END:VCALENDAR

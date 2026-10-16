@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-30-the-brunswick-faberg-falls-lizzie-hill-blush-live-at-the-bru
+ nswick-s-cellar@brightonweekend.co.uk
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Fabergé Falls + Lizzie Hill + Blush - Live at the Brunswick’s Ce
+ llar
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/faberge-f
+ alls-lizzie-hill-blush-live-at-the-brunswicks-cellar\nMore: https://bright
+ onweekend.co.uk/e/2026-10-30-the-brunswick-faberg-falls-lizzie-hill-blush-
+ live-at-the-brunswick-s-cellar/
+URL:https://brightonweekend.co.uk/e/2026-10-30-the-brunswick-faberg-falls-l
+ izzie-hill-blush-live-at-the-brunswick-s-cellar/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-volks-cost-of-raving-altern-8-dom-and-roland-free-tickets-av
+ ailable@brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART:20261106T230000Z
+DTEND:20261107T020000Z
+SUMMARY:Cost of Raving- Altern-8 \,Dom and Roland. Free tickets available
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Cost-of-Raving--Altern-8-Dom-and-Roland-Free-tickets-available/430
+ 19227/\nMore: https://brightonweekend.co.uk/e/2026-11-06-volks-cost-of-rav
+ ing-altern-8-dom-and-roland-free-tickets-available/
+URL:https://brightonweekend.co.uk/e/2026-11-06-volks-cost-of-raving-altern-
+ 8-dom-and-roland-free-tickets-available/
+END:VEVENT
+END:VCALENDAR

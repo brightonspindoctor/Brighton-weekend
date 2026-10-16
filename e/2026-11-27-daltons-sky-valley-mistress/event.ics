@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-daltons-sky-valley-mistress@brightonweekend.co.uk
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Sky Valley Mistress
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/sky-vall
+ ey-mistress\nMore: https://brightonweekend.co.uk/e/2026-11-27-daltons-sky-
+ valley-mistress/
+URL:https://brightonweekend.co.uk/e/2026-11-27-daltons-sky-valley-mistress/
+END:VEVENT
+END:VCALENDAR

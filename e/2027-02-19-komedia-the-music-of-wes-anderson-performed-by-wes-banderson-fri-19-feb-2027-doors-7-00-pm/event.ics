@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-19-komedia-the-music-of-wes-anderson-performed-by-wes-banderson
+ -fri-19-feb-2027-doors-7-00-pm@brightonweekend.co.uk
+DTSTAMP:20270219T000000Z
+DTSTART:20270219T190000Z
+DTEND:20270219T220000Z
+SUMMARY:The Music of Wes Anderson Performed by Wes Banderson
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366624
+ 9/events/128660529\nMore: https://brightonweekend.co.uk/e/2027-02-19-komed
+ ia-the-music-of-wes-anderson-performed-by-wes-banderson-fri-19-feb-2027-do
+ ors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2027-02-19-komedia-the-music-of-wes-and
+ erson-performed-by-wes-banderson-fri-19-feb-2027-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-30-concorde2-halloween-with-simon-pegg@brightonweekend.co.uk
+DTSTAMP:20261030T000000Z
+DTSTART:20261030T190000Z
+DTEND:20261030T220000Z
+SUMMARY:Halloween With Simon Pegg
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1600668/halloween-with-s
+ imon-pegg-tickets\nMore: https://brightonweekend.co.uk/e/2026-10-30-concor
+ de2-halloween-with-simon-pegg/
+URL:https://brightonweekend.co.uk/e/2026-10-30-concorde2-halloween-with-sim
+ on-pegg/
+END:VEVENT
+END:VCALENDAR

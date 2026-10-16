@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-concorde-2-gal-pals-presents-logic1000@brightonweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART:20261114T230000Z
+DTEND:20261115T020000Z
+SUMMARY:Gal Pals Presents Logic1000
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1646449/logic1000-ticket
+ s\nMore: https://brightonweekend.co.uk/e/2026-11-14-concorde-2-gal-pals-pr
+ esents-logic1000/
+URL:https://brightonweekend.co.uk/e/2026-11-14-concorde-2-gal-pals-presents
+ -logic1000/
+END:VEVENT
+END:VCALENDAR

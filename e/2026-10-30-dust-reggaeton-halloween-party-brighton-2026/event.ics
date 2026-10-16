@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-30-dust-reggaeton-halloween-party-brighton-2026@brightonweekend
+ .co.uk
+DTSTAMP:20261030T000000Z
+DTSTART:20261030T230000Z
+DTEND:20261031T030000Z
+SUMMARY:Reggaeton Halloween Party (Brighton) 2026
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Dust/Reggaet
+ on-Halloween-Party-Brighton-2026/42647844/\nMore: https://brightonweekend.
+ co.uk/e/2026-10-30-dust-reggaeton-halloween-party-brighton-2026/
+URL:https://brightonweekend.co.uk/e/2026-10-30-dust-reggaeton-halloween-par
+ ty-brighton-2026/
+END:VEVENT
+END:VCALENDAR

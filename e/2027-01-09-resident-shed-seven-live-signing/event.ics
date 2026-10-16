@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-09-resident-shed-seven-live-signing@brightonweekend.co.uk
+DTSTAMP:20270109T000000Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+SUMMARY:Shed Seven: Live + Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ab289f517b1b100012a1a42\nMore: 
+ https://brightonweekend.co.uk/e/2027-01-09-resident-shed-seven-live-signin
+ g/
+URL:https://brightonweekend.co.uk/e/2027-01-09-resident-shed-seven-live-sig
+ ning/
+END:VEVENT
+END:VCALENDAR

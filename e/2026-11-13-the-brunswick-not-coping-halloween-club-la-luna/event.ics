@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-13-the-brunswick-not-coping-halloween-club-la-luna@brightonweek
+ end.co.uk
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Not Coping\, Halloween Club\, La Luna
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/not-copin
+ g-halloween-club-la-luna\nMore: https://brightonweekend.co.uk/e/2026-11-13
+ -the-brunswick-not-coping-halloween-club-la-luna/
+URL:https://brightonweekend.co.uk/e/2026-11-13-the-brunswick-not-coping-hal
+ loween-club-la-luna/
+END:VEVENT
+END:VCALENDAR

@@ -9,6 +9,11 @@ to index per event. This script writes plain HTML that needs no JavaScript:
                             tags (the preview card) and schema.org Event data
   this-weekend/index.html   everything on this Friday to Sunday, for searches
                             like "gigs in Brighton this weekend"
+  tonight/index.html        what's on tonight ("what's on in Brighton tonight")
+  gigs/, comedy/, club-nights/, theatre/
+                            the next 30 days of each kind of night out
+  venues/index.html         every venue, and venues/<venue>/ for each one
+                            ("what's on at CHALK Brighton")
   sitemap.xml               every page above, for Google Search Console
 
 A shared event link carries ?share=1. Someone who taps it is sent straight on
@@ -91,7 +96,20 @@ def summary(e: dict, d: date) -> str:
     line = ' · '.join(bits)
     if (e.get('status') or '').upper() == 'SOLD OUT':
         line += ' · Sold out'
-    return line + '. Plan it with your mates on Brighton Weekend.'
+    return f'{kind_text(e)} · {line}. Tickets, times and who else is going, on Brighton Weekend.'
+
+
+def kind_text(e: dict) -> str:
+    """'Indie & Rock gig', 'Comedy night', or plain 'Event'."""
+    noun = CATEGORY_NOUNS.get(e.get('category') or '')
+    kind = noun[0] if noun else 'event'
+    return f'{e["genre"]} {kind}' if e.get('genre') else kind[:1].upper() + kind[1:]
+
+
+def event_description(e: dict, d: date) -> str:
+    when = long_date(d) + (f' at {e["time"]}' if TIME_OK.match(e.get('time') or '') else '')
+    sold = ' Sold out.' if (e.get('status') or '').upper() == 'SOLD OUT' else ''
+    return f'{kind_text(e)} at {e["venue"]}, Brighton, on {when}.{sold}'
 
 
 def event_json_ld(e: dict, d: date) -> str:
@@ -111,7 +129,7 @@ def event_json_ld(e: dict, d: date) -> str:
                         'addressRegion': 'East Sussex', 'addressCountry': 'GB'},
         },
         'image': [OG_IMAGE],
-        'description': f'{e.get("category") or "Event"} at {e["venue"]}, Brighton, on {long_date(d)}.',
+        'description': event_description(e, d),
         'url': event_url(e),
     }
     end = e.get('finish_time') or ''
@@ -123,10 +141,63 @@ def event_json_ld(e: dict, d: date) -> str:
         if (e.get('status') or '').upper() == 'SOLD OUT':
             offer['availability'] = 'https://schema.org/SoldOut'
         data['offers'] = offer
+    if venue_slug(e['venue']):
+        data['location']['url'] = f'{SITE}/venues/{venue_slug(e["venue"])}/'
     if e.get('promoter'):
         data['organizer'] = {'@type': 'Organization', 'name': e['promoter']}
-    # "</" inside a <script> block would end it early.
-    return json.dumps(data, ensure_ascii=False, indent=1).replace('</', '<\\/')
+    return json_ld(data)
+
+
+def ics_escape(s: str) -> str:
+    return (str(s or '').replace('\\', '\\\\').replace(';', '\\;').replace(',', '\\,')
+            .replace('\r\n', '\\n').replace('\n', '\\n'))
+
+
+def ics_fold(line: str) -> str:
+    """Lines over 75 bytes continue on the next line after a space (RFC 5545)."""
+    if len(line.encode()) <= 75:
+        return line
+    out, cur, n = [], '', 0
+    for ch in line:
+        b = len(ch.encode())
+        if n + b > (74 if out else 75):
+            out.append(cur)
+            cur, n = '', 0
+        cur += ch
+        n += b
+    out.append(cur)
+    return '\r\n '.join(out)
+
+
+def event_ics(e: dict, d: date) -> str:
+    """One event as an .ics file. London times are written as UTC, so the file
+    needs no time-zone block; an event with no start time is all day. DTSTAMP
+    comes from the event's date, not the clock, so a file only changes when
+    the event does (otherwise every daily build would rewrite all of them)."""
+    utc = ZoneInfo('UTC')
+    stamp = lambda t: t.astimezone(utc).strftime('%Y%m%dT%H%M%SZ')
+    start, end = e.get('time') or '', e.get('finish_time') or ''
+    if TIME_OK.match(start):
+        h, m = map(int, start.split(':'))
+        s_dt = datetime(d.year, d.month, d.day, h, m, tzinfo=LONDON)
+        if TIME_OK.match(end):
+            h2, m2 = map(int, end.split(':'))
+            end_day = d + timedelta(days=1) if end <= start else d  # club nights run past midnight
+            e_dt = datetime(end_day.year, end_day.month, end_day.day, h2, m2, tzinfo=LONDON)
+        else:
+            e_dt = s_dt + timedelta(hours=3)  # no published finish: assume three hours
+        when = [f'DTSTART:{stamp(s_dt)}', f'DTEND:{stamp(e_dt)}']
+    else:
+        when = [f'DTSTART;VALUE=DATE:{d:%Y%m%d}', f'DTEND;VALUE=DATE:{d + timedelta(days=1):%Y%m%d}']
+    details = '\n'.join(x for x in (f'Tickets: {ticket_url(e)}' if ticket_url(e) else '',
+                                     f'Price: {e["price"]}' if e.get('price') else '',
+                                     f'More: {event_url(e)}') if x)
+    lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN',
+             'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', 'BEGIN:VEVENT',
+             f'UID:{e["id"]}@brightonweekend.co.uk', f'DTSTAMP:{d:%Y%m%d}T000000Z', *when,
+             f'SUMMARY:{ics_escape(e["title"])}', f'LOCATION:{ics_escape(e["venue"] + ", Brighton")}',
+             f'DESCRIPTION:{ics_escape(details)}', f'URL:{event_url(e)}', 'END:VEVENT', 'END:VCALENDAR']
+    return '\r\n'.join(ics_fold(x) for x in lines) + '\r\n'
 
 
 STYLE = """
@@ -170,6 +241,12 @@ button.btn{border:0;font-family:inherit;font-size:inherit;cursor:pointer}
 table{width:100%;border-collapse:collapse;font-size:15px;margin:12px 0}
 th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
 th{background:var(--raised)}
+footer a{display:inline-block;margin-bottom:6px}
+.crumbs{font-size:14px;color:var(--subtle);margin:0 0 10px}.crumbs a{color:var(--muted)}
+.list.dated .t{flex-basis:86px}
+.hubs{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.hubs a{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:6px 13px;color:var(--cream);text-decoration:none;font-size:14px;font-weight:700}
+.hubs a[aria-current]{background:var(--raised)}
 @media(max-width:600px){h1{font-size:25px}.card{padding:18px}}
 """
 
@@ -181,6 +258,33 @@ SUPABASE_KEY = 'sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1'  # public key, s
 CSP = ("default-src 'self'; script-src 'unsafe-inline'; style-src 'self' 'unsafe-inline'; "
        f"img-src 'self'; font-src 'self'; connect-src {SUPABASE_URL}; "
        "base-uri 'none'; form-action 'none'; object-src 'none'")
+
+
+# Every page links to the guides, so search engines find them all and people
+# can move between them. The hand-kept pages (About, Privacy, Terms, 404) use
+# the same footer.
+FOOTER = ('<footer><a href="/">Open the app</a><a href="/tonight/">Tonight</a><a href="/this-weekend/">This weekend</a>'
+          '<a href="/gigs/">Gigs</a><a href="/comedy/">Comedy</a><a href="/club-nights/">Club nights</a>'
+          '<a href="/theatre/">Theatre</a><a href="/venues/">Venues</a>'
+          '<a href="/about.html">About</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></footer>')
+
+
+def json_ld(data: dict) -> str:
+    # "</" inside a <script> block would end it early.
+    return ('<script type="application/ld+json">\n'
+            + json.dumps(data, ensure_ascii=False, indent=1).replace('</', '<\\/') + '\n</script>\n')
+
+
+def breadcrumbs(trail: list[tuple[str, str]]) -> str:
+    """schema.org BreadcrumbList, so results show "Brighton Weekend › Venues › CHALK"."""
+    return json_ld({'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+        {'@type': 'ListItem', 'position': i + 1, 'name': n, 'item': u} for i, (n, u) in enumerate(trail)]})
+
+
+def crumb_nav(trail: list[tuple[str, str]]) -> str:
+    """The same trail, visible above the heading (the last step is this page)."""
+    links = [f'<a href="{esc(u.removeprefix(SITE))}">{esc(n)}</a>' for n, u in trail[:-1]]
+    return f'<nav class="crumbs" aria-label="Breadcrumb">{" › ".join(links)}</nav>' if links else ''
 
 
 def page(*, title: str, description: str, url: str, og_title: str, body: str,
@@ -215,7 +319,7 @@ def page(*, title: str, description: str, url: str, og_title: str, body: str,
 <main>
 {body}
 </main>
-<footer><a href="/">Open the app</a><a href="/this-weekend/">This weekend</a><a href="/about.html">About</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></footer>
+{FOOTER}
 {script}</body>
 </html>
 """
@@ -230,13 +334,31 @@ def listing(items: list[tuple[dict, date]], show_day: bool = False) -> str:
         when = short_date(d) if show_day else t
         rows.append(f'<li><span class="t">{esc(when)}</span><span><a href="/e/{e["id"]}/">{esc(e["title"])}</a>'
                     f'<span class="v">{esc(venue)}</span></span></li>')
-    return '<ul class="list">' + ''.join(rows) + '</ul>'
+    return f'<ul class="list{" dated" if show_day else ""}">' + ''.join(rows) + '</ul>'
 
 
 def sort_key(item):
     e, d = item
     t = e.get('time') or ''
     return (d, t if TIME_OK.match(t) else '99:99', e['title'].lower())
+
+
+# Venues with their own page. Sport grounds are left out (sport isn't what the
+# app is for), and so is "Other".
+NO_VENUE_PAGE = {'Other', 'Amex Stadium', 'Brighton Racecourse'}
+
+
+def venue_slug(venue: str) -> str:
+    if venue in NO_VENUE_PAGE:
+        return ''
+    return re.sub(r'[^a-z0-9]+', '-', venue.lower().replace('&', ' and ').replace("'", '')).strip('-')
+
+
+def event_trail(e: dict) -> list[tuple[str, str]]:
+    trail = [('Brighton Weekend', f'{SITE}/')]
+    if venue_slug(e['venue']):
+        trail += [('Venues', f'{SITE}/venues/'), (e['venue'], f'{SITE}/venues/{venue_slug(e["venue"])}/')]
+    return trail + [(e['title'], event_url(e))]
 
 
 def event_page(e: dict, d: date, same_day: list[tuple[dict, date]]) -> str:
@@ -247,7 +369,8 @@ def event_page(e: dict, d: date, same_day: list[tuple[dict, date]]) -> str:
     facts = [f'<li><strong>{esc(long_date(d))}</strong></li>']
     if time_text(e):
         facts.append(f'<li>{esc(time_text(e))}</li>')
-    facts.append(f'<li>{esc(e["venue"])}, Brighton</li>')
+    vslug = venue_slug(e['venue'])
+    facts.append(f'<li><a href="/venues/{vslug}/">{esc(e["venue"])}</a>, Brighton</li>' if vslug else f'<li>{esc(e["venue"])}, Brighton</li>')
     if e.get('price'):
         facts.append(f'<li>{esc(e["price"])}</li>')
     if e.get('promoter'):
@@ -256,11 +379,13 @@ def event_page(e: dict, d: date, same_day: list[tuple[dict, date]]) -> str:
     app_link = f'/?event={e["id"]}'
     others = [x for x in same_day if x[0]['id'] != e['id']][:8]
     more = f'<h2>Also on {d:%A}</h2>{listing(others)}' if others else ''
+    trail = event_trail(e)
     body = f"""<article class="card">
+{crumb_nav(trail)}
 {pills and f'<div>{pills}</div>'}
 <h1>{esc(e['title'])}</h1>
 <ul class="facts">{''.join(facts)}</ul>
-<div class="actions"><a class="btn go" href="{esc(app_link)}">Plan it with friends</a>{tickets}</div>
+<div class="actions"><a class="btn go" href="{esc(app_link)}">Plan it with friends</a>{tickets}<a class="btn alt" href="event.ics" type="text/calendar">Add to calendar</a></div>
 {more}
 <p class="more-link"><a href="/this-weekend/">See everything on in Brighton this weekend →</a></p>
 </article>"""
@@ -271,7 +396,7 @@ def event_page(e: dict, d: date, same_day: list[tuple[dict, date]]) -> str:
 """
     title = f'{e["title"]} – {e["venue"]}, Brighton, {short_date(d)} | Brighton Weekend'
     return page(title=title, description=summary(e, d), url=event_url(e), og_title=e['title'], body=body,
-                head_extra=f'<script type="application/ld+json">\n{event_json_ld(e, d)}\n</script>\n', script=script)
+                head_extra=event_json_ld(e, d) + breadcrumbs(trail), script=script)
 
 
 def weekend_window(today: date) -> tuple[date, date]:
@@ -294,6 +419,9 @@ def count_phrase(items: list[tuple[dict, date]]) -> str:
     return parts[0] if len(parts) == 1 else ', '.join(parts[:-1]) + ' and ' + parts[-1]
 
 
+WEEKEND_TRAIL = [('Brighton Weekend', f'{SITE}/'), ('This weekend', f'{SITE}/this-weekend/')]
+
+
 def weekend_page(items: list[tuple[dict, date]], start: date, end: date) -> str:
     span = f'{start:%A} {start.day} – {end:%A} {end.day} {end:%B}' if start != end else long_date(start)
     counts = count_phrase(items)
@@ -307,13 +435,128 @@ def weekend_page(items: list[tuple[dict, date]], start: date, end: date) -> str:
                     (listing(today_items) if today_items else '<p class="lede">Nothing listed yet.</p>'))
         d += timedelta(days=1)
     body = f"""<article class="card">
+{crumb_nav(WEEKEND_TRAIL)}
 <h1>What’s on in Brighton this weekend</h1>
 <p class="lede">{esc(span)} · gigs, comedy, club nights and theatre across Brighton &amp; Hove</p>
 <div class="actions first"><a class="btn go" href="/">Plan your weekend with friends</a></div>
+{hubs_nav('this-weekend')}
 {''.join(days)}
 </article>"""
     return page(title=f'What’s on in Brighton this weekend: gigs, comedy & club nights ({short_date(start)}–{short_date(end)}) | Brighton Weekend',
-                description=desc, url=f'{SITE}/this-weekend/', og_title='What’s on in Brighton this weekend', body=body)
+                description=desc, url=f'{SITE}/this-weekend/', og_title='What’s on in Brighton this weekend', body=body,
+                head_extra=breadcrumbs(WEEKEND_TRAIL))
+
+
+# ---- Guide pages: tonight, each kind of night out, and each venue ----
+# Each answers a search people make ("comedy in Brighton", "what's on at
+# Concorde 2"), lists real upcoming events and links to their pages.
+GUIDES = [  # path, link text, categories shown (None: tonight)
+    ('tonight', 'Tonight', None),
+    ('gigs', 'Gigs', {'Music', 'Music/Club'}),
+    ('comedy', 'Comedy', {'Comedy'}),
+    ('club-nights', 'Club nights', {'Club', 'Music/Club'}),
+    ('theatre', 'Theatre', {'Theatre', 'Dance'}),
+]
+GUIDE_COPY = {
+    'gigs': ('Gigs in Brighton', 'Live music in Brighton & Hove: gigs over the next 30 days',
+             'gigs at Concorde 2, CHALK, the Brighton Dome, the Prince Albert and more'),
+    'comedy': ('Comedy in Brighton', 'Stand-up and comedy nights in Brighton & Hove over the next 30 days',
+               'stand-up at Komedia, the Forge, the Brighton Dome and more'),
+    'club-nights': ('Club nights in Brighton', 'Club nights and DJs in Brighton & Hove over the next 30 days',
+                    'club nights at Patterns, Volks, DUST, CHALK and more'),
+    'theatre': ('Theatre in Brighton', 'Theatre, cabaret and dance in Brighton & Hove over the next 30 days',
+                'shows at the Theatre Royal, the Old Market, the Brighton Dome and more'),
+}
+GUIDE_DAYS = 30
+GUIDE_NOUNS = {'gigs': ('gig', 'gigs'), 'comedy': ('comedy night', 'comedy nights'),
+               'club-nights': ('club night', 'club nights'), 'theatre': ('show', 'shows')}
+TONIGHT_FROM = '17:00'  # same as the app's Tonight chip
+
+
+def hubs_nav(current: str = '') -> str:
+    links = [('this-weekend', 'This weekend')] + [(path, label) for path, label, _ in GUIDES] + [('venues', 'Venues')]
+    return '<ul class="hubs">' + ''.join(
+        f'<li><a href="/{p}/"{" aria-current=\"page\"" if p == current else ""}>{esc(l)}</a></li>' for p, l in links) + '</ul>'
+
+
+def by_day_sections(items: list[tuple[dict, date]], empty: str) -> str:
+    if not items:
+        return f'<p class="lede">{esc(empty)}</p>'
+    out, day = [], None
+    for e, d in items:
+        if d != day:
+            out.append(('</ul>' if day else '') + f'<h2>{esc(long_date(d))}</h2><ul class="list">')
+            day = d
+        out.append(listing([(e, d)])[len('<ul class="list">'):-len('</ul>')])
+    return ''.join(out) + '</ul>'
+
+
+def guide_page(path: str, label: str, items: list[tuple[dict, date]], today: date) -> str:
+    url = f'{SITE}/{path}/'
+    trail = [('Brighton Weekend', f'{SITE}/'), (label, url)]
+    if path == 'tonight':
+        h1, title = 'What’s on in Brighton tonight', f'What’s on in Brighton tonight ({short_date(today)}) | Brighton Weekend'
+        lede = f'{long_date(today)} · gigs, comedy, club nights and theatre across Brighton & Hove'
+        counts = count_phrase(items)
+        desc = (f'{counts} in Brighton & Hove tonight, {long_date(today)}. ' if counts else
+                f'What’s on in Brighton & Hove tonight, {long_date(today)}. ') + 'Updated every morning.'
+        body_list = listing(items) if items else '<p class="lede">Nothing listed for tonight yet.</p>'
+    else:
+        h1, sub, examples = GUIDE_COPY[path]
+        title = f'{h1}: what’s on in the next 30 days | Brighton Weekend'
+        lede = sub
+        n = len(items)
+        one, many = GUIDE_NOUNS[path]
+        desc = (f'{n} upcoming {one if n == 1 else many} in Brighton & Hove, '
+                f'including {examples}. Dates, times and tickets, updated every morning.')
+        body_list = by_day_sections(items, f'Nothing listed in the next {GUIDE_DAYS} days yet.')
+    body = f"""<article class="card">
+{crumb_nav(trail)}
+<h1>{esc(h1)}</h1>
+<p class="lede">{esc(lede)}</p>
+<div class="actions first"><a class="btn go" href="/">Plan it with friends</a></div>
+{hubs_nav(path)}
+{body_list}
+</article>"""
+    return page(title=title, description=desc, url=url, og_title=h1, body=body, head_extra=breadcrumbs(trail))
+
+
+def venue_page(venue: str, slug: str, items: list[tuple[dict, date]]) -> str:
+    url = f'{SITE}/venues/{slug}/'
+    trail = [('Brighton Weekend', f'{SITE}/'), ('Venues', f'{SITE}/venues/'), (venue, url)]
+    counts = count_phrase(items)
+    nxt = ', '.join(e['title'] for e, _ in items[:3])
+    desc = (f'What’s on at {venue}, Brighton: {counts or str(len(items)) + " upcoming events"}'
+            + (f', including {nxt}' if nxt else '') + '. Dates, times and tickets, updated every morning.')
+    shown = items[:150]
+    more = f'<p class="note">Showing the next {len(shown)} of {len(items)}. The app has the rest.</p>' if len(items) > len(shown) else ''
+    body = f"""<article class="card">
+{crumb_nav(trail)}
+<h1>What’s on at {esc(venue)}</h1>
+<p class="lede">Upcoming events at {esc(venue)}, Brighton</p>
+<div class="actions first"><a class="btn go" href="/">Plan it with friends</a></div>
+{listing(shown, show_day=True) if shown else '<p class="lede">Nothing listed here at the moment.</p>'}{more}
+{hubs_nav()}
+</article>"""
+    return page(title=f'What’s on at {venue}, Brighton: upcoming events | Brighton Weekend', description=desc, url=url,
+                og_title=f'What’s on at {venue}', body=body, head_extra=breadcrumbs(trail))
+
+
+def venues_index(venues: list[tuple[str, str, int]]) -> str:
+    url = f'{SITE}/venues/'
+    trail = [('Brighton Weekend', f'{SITE}/'), ('Venues', url)]
+    rows = ''.join(f'<li><span class="t">{n}</span><span><a href="/venues/{slug}/">{esc(v)}</a>'
+                   f'<span class="v">{n} upcoming event{"" if n == 1 else "s"}</span></span></li>' for v, slug, n in venues)
+    body = f"""<article class="card">
+{crumb_nav(trail)}
+<h1>Brighton venues: what’s on where</h1>
+<p class="lede">Gig venues, comedy clubs, theatres and pubs across Brighton & Hove, with everything coming up at each</p>
+<ul class="list">{rows}</ul>
+{hubs_nav('venues')}
+</article>"""
+    return page(title='Brighton venues: gigs, comedy and club nights at each venue | Brighton Weekend',
+                description=f'What’s on at {len(venues)} Brighton & Hove venues, from Concorde 2 and CHALK to Komedia and the Theatre Royal. Updated every morning.',
+                url=url, og_title='Brighton venues: what’s on where', body=body, head_extra=breadcrumbs(trail))
 
 
 def sitemap(urls: list[str], today: date) -> str:
@@ -355,6 +598,8 @@ def main() -> None:
         p = out / e['id']
         p.mkdir(parents=True)
         (p / 'index.html').write_text(event_page(e, d, by_day[d]), encoding='utf-8')
+        # newline='' keeps the CRLF line endings calendar files need.
+        (p / 'event.ics').write_text(event_ics(e, d), encoding='utf-8', newline='')
 
     start, end = weekend_window(today)
     weekend = [x for x in items if start <= x[1] <= end]
@@ -362,10 +607,46 @@ def main() -> None:
     wk.mkdir(exist_ok=True)
     (wk / 'index.html').write_text(weekend_page(weekend, start, end), encoding='utf-8')
 
-    urls = [(f'{SITE}/', True), (f'{SITE}/this-weekend/', True), (f'{SITE}/about.html', False)]
+    urls = [(f'{SITE}/', True), (f'{SITE}/this-weekend/', True)]
+
+    # Guides: tonight, then the next 30 days of each kind of night out.
+    horizon = today + timedelta(days=GUIDE_DAYS - 1)
+    for path, label, cats in GUIDES:
+        if cats is None:
+            chosen = [x for x in items if x[1] == today and (x[0].get('time') or '99:99') >= TONIGHT_FROM]
+        else:
+            chosen = [x for x in items if x[1] <= horizon and x[0].get('category') in cats]
+        folder = ROOT / path
+        if folder.exists():
+            shutil.rmtree(folder)
+        folder.mkdir()
+        (folder / 'index.html').write_text(guide_page(path, label, chosen, today), encoding='utf-8')
+        urls.append((f'{SITE}/{path}/', True))
+
+    # Venues: one page each, and an A to Z of them.
+    by_venue: dict[str, list] = {}
+    for x in items:
+        if venue_slug(x[0]['venue']):
+            by_venue.setdefault(x[0]['venue'], []).append(x)
+    vdir = ROOT / 'venues'
+    if vdir.exists():
+        shutil.rmtree(vdir)
+    vdir.mkdir()
+    venue_rows = []
+    for venue in sorted(by_venue, key=lambda v: re.sub(r'^the\s+', '', v.lower())):
+        slug = venue_slug(venue)
+        (vdir / slug).mkdir()
+        (vdir / slug / 'index.html').write_text(venue_page(venue, slug, by_venue[venue]), encoding='utf-8')
+        venue_rows.append((venue, slug, len(by_venue[venue])))
+        urls.append((f'{SITE}/venues/{slug}/', True))
+    (vdir / 'index.html').write_text(venues_index(venue_rows), encoding='utf-8')
+    urls.append((f'{SITE}/venues/', True))
+
+    urls.append((f'{SITE}/about.html', False))
     urls += [(event_url(e), False) for e, _ in items]
     (ROOT / 'sitemap.xml').write_text(sitemap(urls, today), encoding='utf-8')
-    print(f'Built {len(items)} event pages, this-weekend ({len(weekend)} events, {start}–{end}) and sitemap.xml')
+    print(f'Built {len(items)} event pages, this-weekend ({len(weekend)} events, {start}–{end}), '
+          f'{len(GUIDES)} guides, {len(venue_rows)} venue pages and sitemap.xml')
 
 
 if __name__ == '__main__':

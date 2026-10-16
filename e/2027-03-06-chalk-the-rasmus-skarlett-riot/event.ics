@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-06-chalk-the-rasmus-skarlett-riot@brightonweekend.co.uk
+DTSTAMP:20270306T000000Z
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+SUMMARY:The Rasmus Skarlett Riot
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/\nMore: https://brightonweekend
+ .co.uk/e/2027-03-06-chalk-the-rasmus-skarlett-riot/
+URL:https://brightonweekend.co.uk/e/2027-03-06-chalk-the-rasmus-skarlett-ri
+ ot/
+END:VEVENT
+END:VCALENDAR

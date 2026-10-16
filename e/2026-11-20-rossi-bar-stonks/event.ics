@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-20-rossi-bar-stonks@brightonweekend.co.uk
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Stonks
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/partner/tickets/event/yodq3a-stonks-20
+ th-nov-the-rossi-bar-brighton-tickets?dice_id=10243984&dice_channel=web&di
+ ce_tags=organic&dice_campaign=The+Green+Door+Store&dice_feature=mio_market
+ ing&_branch_match_id=1179729593120726408&utm_source=web&utm_campaign=The+G
+ reen+Door+Store&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8so
+ KSkottLXz8nMy9ZLyUxO1UvL1Q8wNTdNMU4ySgXS9nVFqWmpRUWZeenxSUX55cWpRbbOGUX5ua
+ kANop19zsAAAA%3D\nMore: https://brightonweekend.co.uk/e/2026-11-20-rossi-b
+ ar-stonks/
+URL:https://brightonweekend.co.uk/e/2026-11-20-rossi-bar-stonks/
+END:VEVENT
+END:VCALENDAR

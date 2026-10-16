@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-05-dust-indie-rock-night-oasis-vs-arctic-monkeys@brightonweeken
+ d.co.uk
+DTSTAMP:20261205T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Indie Rock Night ∙ Oasis vs Arctic Monkeys
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ac780709c872000011fd87c\nMore: 
+ https://brightonweekend.co.uk/e/2026-12-05-dust-indie-rock-night-oasis-vs-
+ arctic-monkeys/
+URL:https://brightonweekend.co.uk/e/2026-12-05-dust-indie-rock-night-oasis-
+ vs-arctic-monkeys/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-amex-stadium-brighton-v-brentford@brightonweekend.co.uk
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Brighton v Brentford
+LOCATION:Amex Stadium\, Brighton
+DESCRIPTION:Tickets: https://www.brightonandhovealbion.com/tickets\nMore: h
+ ttps://brightonweekend.co.uk/e/2026-11-07-amex-stadium-brighton-v-brentfor
+ d/
+URL:https://brightonweekend.co.uk/e/2026-11-07-amex-stadium-brighton-v-bren
+ tford/
+END:VEVENT
+END:VCALENDAR

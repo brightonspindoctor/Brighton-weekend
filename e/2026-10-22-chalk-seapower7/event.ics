@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-22-chalk-seapower7@brightonweekend.co.uk
+DTSTAMP:20261022T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Seapower7
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/M816929ae120\nMore: https://brigh
+ tonweekend.co.uk/e/2026-10-22-chalk-seapower7/
+URL:https://brightonweekend.co.uk/e/2026-10-22-chalk-seapower7/
+END:VEVENT
+END:VCALENDAR

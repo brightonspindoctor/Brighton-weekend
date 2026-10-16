@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-the-brunswick-rose-divine-the-d-villes-plus-the-island-giant
+ s@brightonweekend.co.uk
+DTSTAMP:20261017T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Rose Divine & The D'Villes plus The Island Giants
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/rose-divi
+ ne-the-dvilles-plus-the-island-giants\nMore: https://brightonweekend.co.uk
+ /e/2026-10-17-the-brunswick-rose-divine-the-d-villes-plus-the-island-giant
+ s/
+URL:https://brightonweekend.co.uk/e/2026-10-17-the-brunswick-rose-divine-th
+ e-d-villes-plus-the-island-giants/
+END:VEVENT
+END:VCALENDAR

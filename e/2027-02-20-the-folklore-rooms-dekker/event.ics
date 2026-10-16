@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-20-the-folklore-rooms-dekker@brightonweekend.co.uk
+DTSTAMP:20270220T000000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Dekker
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/dekker/the-folklore-r
+ ooms/3722681\nMore: https://brightonweekend.co.uk/e/2027-02-20-the-folklor
+ e-rooms-dekker/
+URL:https://brightonweekend.co.uk/e/2027-02-20-the-folklore-rooms-dekker/
+END:VEVENT
+END:VCALENDAR

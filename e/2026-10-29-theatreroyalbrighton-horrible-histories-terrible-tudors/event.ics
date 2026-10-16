@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-29-theatreroyalbrighton-horrible-histories-terrible-tudors@brig
+ htonweekend.co.uk
+DTSTAMP:20261029T000000Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Horrible Histories Brighton
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/horrible-histories-br
+ ighton/\nMore: https://brightonweekend.co.uk/e/2026-10-29-theatreroyalbrig
+ hton-horrible-histories-terrible-tudors/
+URL:https://brightonweekend.co.uk/e/2026-10-29-theatreroyalbrighton-horribl
+ e-histories-terrible-tudors/
+END:VEVENT
+END:VCALENDAR

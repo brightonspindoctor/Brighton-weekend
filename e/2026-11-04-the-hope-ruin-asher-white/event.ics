@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-04-the-hope-ruin-asher-white@brightonweekend.co.uk
+DTSTAMP:20261104T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Asher White
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/rur4nvzy/asher-white\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-04-the-hope-ruin-asher-white/
+URL:https://brightonweekend.co.uk/e/2026-11-04-the-hope-ruin-asher-white/
+END:VEVENT
+END:VCALENDAR

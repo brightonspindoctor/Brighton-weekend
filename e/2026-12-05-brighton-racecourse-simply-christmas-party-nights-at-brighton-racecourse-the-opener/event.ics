@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-05-brighton-racecourse-simply-christmas-party-nights-at-brighto
+ n-racecourse-the-opener@brightonweekend.co.uk
+DTSTAMP:20261205T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Simply Christmas Party Nights at Brighton Racecourse - The Opener
+LOCATION:Brighton Racecourse\, Brighton
+DESCRIPTION:Tickets: https://www.brighton-racecourse.co.uk/whats-on/simply-
+ christmas-party-night-Saturday-5th-December\nMore: https://brightonweekend
+ .co.uk/e/2026-12-05-brighton-racecourse-simply-christmas-party-nights-at-b
+ righton-racecourse-the-opener/
+URL:https://brightonweekend.co.uk/e/2026-12-05-brighton-racecourse-simply-c
+ hristmas-party-nights-at-brighton-racecourse-the-opener/
+END:VEVENT
+END:VCALENDAR

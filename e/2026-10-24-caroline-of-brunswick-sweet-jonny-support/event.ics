@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-24-caroline-of-brunswick-sweet-jonny-support@brightonweekend.co
+ .uk
+DTSTAMP:20261024T000000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Sweet Jonny + Support
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://carolineofbrunswick.co.uk/events/tbc-844-841-5
+ 38-700-183-304-927-129-549-387-697-491-391/\nMore: https://brightonweekend
+ .co.uk/e/2026-10-24-caroline-of-brunswick-sweet-jonny-support/
+URL:https://brightonweekend.co.uk/e/2026-10-24-caroline-of-brunswick-sweet-
+ jonny-support/
+END:VEVENT
+END:VCALENDAR

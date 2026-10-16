@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-13-the-old-market-angela-barnes-with-anthony-ayton-joe-foster@b
+ rightonweekend.co.uk
+DTSTAMP:20261113T000000Z
+DTSTART:20261113T200000Z
+DTEND:20261113T220000Z
+SUMMARY:Angela Barnes with Anthony Ayton + Joe Foster
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/angela-barnes\nMore
+ : https://brightonweekend.co.uk/e/2026-11-13-the-old-market-angela-barnes-
+ with-anthony-ayton-joe-foster/
+URL:https://brightonweekend.co.uk/e/2026-11-13-the-old-market-angela-barnes
+ -with-anthony-ayton-joe-foster/
+END:VEVENT
+END:VCALENDAR

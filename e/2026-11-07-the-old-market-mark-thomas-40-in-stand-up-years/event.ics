@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-the-old-market-mark-thomas-40-in-stand-up-years@brightonweek
+ end.co.uk
+DTSTAMP:20261107T000000Z
+DTSTART:20261107T200000Z
+DTEND:20261107T213000Z
+SUMMARY:Mark Thomas: 40 in Stand-Up Years
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://theoldmarket.ticketsolve.com/ticketbooth/shows
+ /1173666375\nMore: https://brightonweekend.co.uk/e/2026-11-07-the-old-mark
+ et-mark-thomas-40-in-stand-up-years/
+URL:https://brightonweekend.co.uk/e/2026-11-07-the-old-market-mark-thomas-4
+ 0-in-stand-up-years/
+END:VEVENT
+END:VCALENDAR

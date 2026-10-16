@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-the-hope-ruin-desperate-journalist@brightonweekend.co.uk
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Desperate Journalist
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/r63araae/desperate-journalis
+ t\nMore: https://brightonweekend.co.uk/e/2026-11-07-the-hope-ruin-desperat
+ e-journalist/
+URL:https://brightonweekend.co.uk/e/2026-11-07-the-hope-ruin-desperate-jour
+ nalist/
+END:VEVENT
+END:VCALENDAR

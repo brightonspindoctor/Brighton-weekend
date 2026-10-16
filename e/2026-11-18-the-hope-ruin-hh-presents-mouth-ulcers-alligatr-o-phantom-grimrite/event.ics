@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-18-the-hope-ruin-hh-presents-mouth-ulcers-alligatr-o-phantom-gr
+ imrite@brightonweekend.co.uk
+DTSTAMP:20261118T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:HH Presents: Mouth Ulcers + alligatr + O’Phantom + Grimrite
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/ung9j1wo/hh-presents-mouth-u
+ lcers-alligatr-o-phantom-grimrite\nMore: https://brightonweekend.co.uk/e/2
+ 026-11-18-the-hope-ruin-hh-presents-mouth-ulcers-alligatr-o-phantom-grimri
+ te/
+URL:https://brightonweekend.co.uk/e/2026-11-18-the-hope-ruin-hh-presents-mo
+ uth-ulcers-alligatr-o-phantom-grimrite/
+END:VEVENT
+END:VCALENDAR

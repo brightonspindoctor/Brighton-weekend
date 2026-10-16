@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-23-the-folklore-rooms-the-rabbitts@brightonweekend.co.uk
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:The Rabbitts
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/partner/tickets/event/mxdvar-the-rabbi
+ tts-album-release-tour-23rd-nov-the-folklore-rooms-brighton-tickets?dice_i
+ d=8982575&dice_channel=web&dice_tags=organic&dice_campaign=DICE&dice_featu
+ re=mio_marketing&_branch_match_id=1245521259485845231&utm_source=web&utm_c
+ ampaign=DICE&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSk
+ ottLXz8nMy9ZLyUxO1UvL1Q83SUtOtkg1MksyMrCvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NB
+ QDhw2oXOwAAAA%3D%3D\nMore: https://brightonweekend.co.uk/e/2026-11-23-the-
+ folklore-rooms-the-rabbitts/
+URL:https://brightonweekend.co.uk/e/2026-11-23-the-folklore-rooms-the-rabbi
+ tts/
+END:VEVENT
+END:VCALENDAR

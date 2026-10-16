@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-18-patterns-hyperreal-presents-the-carnival-of-light@brightonwe
+ ekend.co.uk
+DTSTAMP:20261018T000000Z
+DTSTART:20261018T180000Z
+DTEND:20261018T210000Z
+SUMMARY:Hyperreal presents: The Carnival of Light
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/hyperreal-presents-the-carnival-
+ of-light-18th-oct-patterns-brighton-tickets\nMore: https://brightonweekend
+ .co.uk/e/2026-10-18-patterns-hyperreal-presents-the-carnival-of-light/
+URL:https://brightonweekend.co.uk/e/2026-10-18-patterns-hyperreal-presents-
+ the-carnival-of-light/
+END:VEVENT
+END:VCALENDAR

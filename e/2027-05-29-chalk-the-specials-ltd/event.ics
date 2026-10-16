@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-29-chalk-the-specials-ltd@brightonweekend.co.uk
+DTSTAMP:20270529T000000Z
+DTSTART;VALUE=DATE:20270529
+DTEND;VALUE=DATE:20270530
+SUMMARY:The Specials Ltd
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/\nMore: https://brightonweekend
+ .co.uk/e/2027-05-29-chalk-the-specials-ltd/
+URL:https://brightonweekend.co.uk/e/2027-05-29-chalk-the-specials-ltd/
+END:VEVENT
+END:VCALENDAR

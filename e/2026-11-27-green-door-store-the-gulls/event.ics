@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-green-door-store-the-gulls@brightonweekend.co.uk
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:The Gulls
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Green-Do
+ or-Store/The-Gulls--The-Green-Door-Store/42813479/\nMore: https://brighton
+ weekend.co.uk/e/2026-11-27-green-door-store-the-gulls/
+URL:https://brightonweekend.co.uk/e/2026-11-27-green-door-store-the-gulls/
+END:VEVENT
+END:VCALENDAR

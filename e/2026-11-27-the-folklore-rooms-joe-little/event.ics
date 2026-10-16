@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-the-folklore-rooms-joe-little@brightonweekend.co.uk
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Joe Little
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/joe-little-heartache-
+ single-release-show-/the-folklore-rooms/3739658\nMore: https://brightonwee
+ kend.co.uk/e/2026-11-27-the-folklore-rooms-joe-little/
+URL:https://brightonweekend.co.uk/e/2026-11-27-the-folklore-rooms-joe-littl
+ e/
+END:VEVENT
+END:VCALENDAR

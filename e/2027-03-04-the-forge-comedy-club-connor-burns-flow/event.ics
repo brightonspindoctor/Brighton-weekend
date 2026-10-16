@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-04-the-forge-comedy-club-connor-burns-flow@brightonweekend.co.u
+ k
+DTSTAMP:20270304T000000Z
+DTSTART:20270304T193000Z
+DTEND:20270304T213000Z
+SUMMARY:Connor Burns: Flow
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/connor-burns-flow-ticke
+ ts-2003210257806\nMore: https://brightonweekend.co.uk/e/2027-03-04-the-for
+ ge-comedy-club-connor-burns-flow/
+URL:https://brightonweekend.co.uk/e/2027-03-04-the-forge-comedy-club-connor
+ -burns-flow/
+END:VEVENT
+END:VCALENDAR

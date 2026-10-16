@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-15-komedia-myndstate-deep-breath-fri-15-jan-2027-7-30-pm-doors-
+ 7-00-pm@brightonweekend.co.uk
+DTSTAMP:20270115T000000Z
+DTSTART:20270115T193000Z
+DTEND:20270115T223000Z
+SUMMARY:myndstate: deep breath
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366515
+ 2/events/128653707\nMore: https://brightonweekend.co.uk/e/2027-01-15-komed
+ ia-myndstate-deep-breath-fri-15-jan-2027-7-30-pm-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2027-01-15-komedia-myndstate-deep-breat
+ h-fri-15-jan-2027-7-30-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-a-l-p-h-a-b-e-t-reek0@brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:REEK0
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6a988a1d73d6c90001a458a2\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-06-a-l-p-h-a-b-e-t-reek0/
+URL:https://brightonweekend.co.uk/e/2026-11-06-a-l-p-h-a-b-e-t-reek0/
+END:VEVENT
+END:VCALENDAR

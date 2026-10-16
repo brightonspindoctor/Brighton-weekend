@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-28-the-folklore-rooms-wednesday-s-child@brightonweekend.co.uk
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Wednesday's Child
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/wednesday-s-child/the
+ -folklore-rooms/3739403\nMore: https://brightonweekend.co.uk/e/2026-10-28-
+ the-folklore-rooms-wednesday-s-child/
+URL:https://brightonweekend.co.uk/e/2026-10-28-the-folklore-rooms-wednesday
+ -s-child/
+END:VEVENT
+END:VCALENDAR

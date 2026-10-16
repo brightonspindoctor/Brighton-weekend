@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-theoldmarket-rival-consoles@brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART:20261106T190000Z
+DTEND:20261106T230000Z
+SUMMARY:Rival Consoles
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/rival-consoles\nMore: htt
+ ps://brightonweekend.co.uk/e/2026-11-06-theoldmarket-rival-consoles/
+URL:https://brightonweekend.co.uk/e/2026-11-06-theoldmarket-rival-consoles/
+END:VEVENT
+END:VCALENDAR

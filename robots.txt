@@ -1,6 +1,7 @@
+# Google, Bing and other search engines may read everything public. The admin
+# and design-system pages carry <meta name="robots" content="noindex"> instead
+# of being blocked here, because a blocked page can't be read to see the noindex.
 User-agent: *
-Disallow: /admin.html
-Disallow: /design-system.html
 Allow: /
 
 Sitemap: https://brightonweekend.co.uk/sitemap.xml

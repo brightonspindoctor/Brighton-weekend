@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-19-a-l-p-h-a-b-e-t-gold-panda@brightonweekend.co.uk
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Gold Panda
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvZ29sZC1wYW5kYS9hbHBoYWJldC8zNjY3NjM1/supplier/
+ SeeTickets/suppliedid/MzY2NzYzNQ/ticketid/8085229/checksum/d264f30efa5cf70
+ a07e5dbd3249b57fd/track/true?title=Gold+Panda&badge=&venueId=50186\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-19-a-l-p-h-a-b-e-t-gold-panda/
+URL:https://brightonweekend.co.uk/e/2026-11-19-a-l-p-h-a-b-e-t-gold-panda/
+END:VEVENT
+END:VCALENDAR

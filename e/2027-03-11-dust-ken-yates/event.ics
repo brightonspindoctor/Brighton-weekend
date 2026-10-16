@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-11-dust-ken-yates@brightonweekend.co.uk
+DTSTAMP:20270311T000000Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270312
+SUMMARY:Ken Yates
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ab159b2da43eb000161f005\nMore: 
+ https://brightonweekend.co.uk/e/2027-03-11-dust-ken-yates/
+URL:https://brightonweekend.co.uk/e/2027-03-11-dust-ken-yates/
+END:VEVENT
+END:VCALENDAR

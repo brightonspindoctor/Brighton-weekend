@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-20-the-old-market-sh-t-faced-shakespeare-romeo-and-juliet@brigh
+ tonweekend.co.uk
+DTSTAMP:20261120T000000Z
+DTSTART:20261120T193000Z
+DTEND:20261120T213000Z
+SUMMARY:Sh!t-faced Shakespeare: Romeo and Juliet
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/sht-faced-shakespea
+ re-romeo-and-juliet\nMore: https://brightonweekend.co.uk/e/2026-11-20-the-
+ old-market-sh-t-faced-shakespeare-romeo-and-juliet/
+URL:https://brightonweekend.co.uk/e/2026-11-20-the-old-market-sh-t-faced-sh
+ akespeare-romeo-and-juliet/
+END:VEVENT
+END:VCALENDAR

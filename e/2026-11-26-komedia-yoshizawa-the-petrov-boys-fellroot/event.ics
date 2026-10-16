@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-26-komedia-yoshizawa-the-petrov-boys-fellroot@brightonweekend.c
+ o.uk
+DTSTAMP:20261126T000000Z
+DTSTART:20261126T193000Z
+DTEND:20261126T223000Z
+SUMMARY:Yoshizawa + The Petrov Boys + Fellroot
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366815
+ 5/events/128667120\nMore: https://brightonweekend.co.uk/e/2026-11-26-komed
+ ia-yoshizawa-the-petrov-boys-fellroot/
+URL:https://brightonweekend.co.uk/e/2026-11-26-komedia-yoshizawa-the-petrov
+ -boys-fellroot/
+END:VEVENT
+END:VCALENDAR

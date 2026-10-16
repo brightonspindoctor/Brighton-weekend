@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-16-patterns-the-jam-uk-the-definitive-tribute-to-the-jam@bright
+ onweekend.co.uk
+DTSTAMP:20261016T000000Z
+DTSTART:20261016T180000Z
+DTEND:20261016T210000Z
+SUMMARY:The Jam UK
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/the-jam-uk-16th-oct-patterns-bri
+ ghton-tickets\nMore: https://brightonweekend.co.uk/e/2026-10-16-patterns-t
+ he-jam-uk-the-definitive-tribute-to-the-jam/
+URL:https://brightonweekend.co.uk/e/2026-10-16-patterns-the-jam-uk-the-defi
+ nitive-tribute-to-the-jam/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-16-the-prince-albert-glenn-richards-the-venus-lakes@brightonwee
+ kend.co.uk
+DTSTAMP:20261016T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Glenn Richards & The Venus Lakes
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRtYXN0ZXIuZXZ5eS5uZXQvYy8xMzAwOTY4LzIwMzg3NTgvMjQwMjM_dT1odHRwcyUzQSUyRi
+ UyRnd3dy51bml2ZXJzZS5jb20lMkZldmVudHMlMkZnbGVubi1yaWNoYXJkcy10aGUtdmVudXMt
+ bGFrZXMtdmVyeS1zcGVjaWFsLWd1ZXN0cy10aWNrZXRzLUw2MlJQVCUzRnJlZiUzRHRpY2tldG
+ 1hc3RlciZ1dG1fbWVkaXVtPWFmZmlsaWF0ZQ/supplier/Universe/suppliedid/THZaMThR
+ dEpuNndhY1YxSlFmakhh/ticketid/8140030/checksum/d24b7ff4055b263e6cc069414c1
+ 35a12/track/true?title=Glenn+Richards+%26+The+Venus+Lakes+%2B+very+special
+ +guests&badge=&venueId=24967\nMore: https://brightonweekend.co.uk/e/2026-1
+ 0-16-the-prince-albert-glenn-richards-the-venus-lakes/
+URL:https://brightonweekend.co.uk/e/2026-10-16-the-prince-albert-glenn-rich
+ ards-the-venus-lakes/
+END:VEVENT
+END:VCALENDAR

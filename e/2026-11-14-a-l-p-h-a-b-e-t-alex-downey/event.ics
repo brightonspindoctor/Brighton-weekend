@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-a-l-p-h-a-b-e-t-alex-downey@brightonweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Alex Downey
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Alphabet-Bri
+ ghton/Headroom-presents-Alex-Downey/42673728/?fbclid=PAdGRleAUjhYdleHRuA2F
+ lbQIxMQBwZG9mAmZkaWQWUPEBq-sfQ9Jv7FrYDC6gZjUlyrFz0HNydGMGYXBwX2lkDzEyNDAyN
+ DU3NDI4NzQxNAABp2ujEF0TkFRH6WZAS7QttuM5LGlHynOLulbpy2bJ5D9YN2QnKA03geg8F4F
+ T_aem_FdPpuqjrnG3P1HZszTTTfA&utm_source=ig&utm_medium=social&utm_content=l
+ ink_in_bio&utm_id=97760_v0_s00_e0_tv3\nMore: https://brightonweekend.co.uk
+ /e/2026-11-14-a-l-p-h-a-b-e-t-alex-downey/
+URL:https://brightonweekend.co.uk/e/2026-11-14-a-l-p-h-a-b-e-t-alex-downey/
+END:VEVENT
+END:VCALENDAR

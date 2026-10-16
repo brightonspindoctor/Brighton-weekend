@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-18-komedia-robert-white-that-gay-autistic-keyboard-tanktop-come
+ dy-guy-wed-18-nov-2026-8-00-pm-doors-7-00-pm@brightonweekend.co.uk
+DTSTAMP:20261118T000000Z
+DTSTART:20261118T200000Z
+DTEND:20261118T230000Z
+SUMMARY:Robert White: ‘THAT’ Gay Autistic Keyboard Tanktop Comedy Guy!
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87363270
+ 4/events/128642547\nMore: https://brightonweekend.co.uk/e/2026-11-18-komed
+ ia-robert-white-that-gay-autistic-keyboard-tanktop-comedy-guy-wed-18-nov-2
+ 026-8-00-pm-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-11-18-komedia-robert-white-that-ga
+ y-autistic-keyboard-tanktop-comedy-guy-wed-18-nov-2026-8-00-pm-doors-7-00-
+ pm/
+END:VEVENT
+END:VCALENDAR

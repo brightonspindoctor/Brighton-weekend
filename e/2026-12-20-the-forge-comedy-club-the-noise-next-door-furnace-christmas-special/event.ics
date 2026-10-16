@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-20-the-forge-comedy-club-the-noise-next-door-furnace-christmas-
+ special@brightonweekend.co.uk
+DTSTAMP:20261220T000000Z
+DTSTART:20261220T190000Z
+DTEND:20261220T210000Z
+SUMMARY:The Noise Next Door: Furnace – Christmas Special
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/the-noise-next-door-fur
+ nace-christmas-special-tickets-1952130828859\nMore: https://brightonweeken
+ d.co.uk/e/2026-12-20-the-forge-comedy-club-the-noise-next-door-furnace-chr
+ istmas-special/
+URL:https://brightonweekend.co.uk/e/2026-12-20-the-forge-comedy-club-the-no
+ ise-next-door-furnace-christmas-special/
+END:VEVENT
+END:VCALENDAR

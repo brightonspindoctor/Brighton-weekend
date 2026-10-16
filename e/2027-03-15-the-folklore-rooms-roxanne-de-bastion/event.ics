@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-15-the-folklore-rooms-roxanne-de-bastion@brightonweekend.co.uk
+DTSTAMP:20270315T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Roxanne de Bastion
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/partner/tickets/event/mxwagw-roxanne-d
+ e-bastion-15th-mar-the-folklore-rooms-brighton-tickets?dice_id=10713702&di
+ ce_channel=web&dice_tags=organic&dice_campaign=FORM&dice_feature=mio_marke
+ ting&_branch_match_id=1245521259485845231&utm_source=web&utm_campaign=FORM
+ &utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9Z
+ LyUxO1UvL1a8wTzFPNbcwSUtNMrCvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQDi%2BDh4OwA
+ AAA%3D%3D\nMore: https://brightonweekend.co.uk/e/2027-03-15-the-folklore-r
+ ooms-roxanne-de-bastion/
+URL:https://brightonweekend.co.uk/e/2027-03-15-the-folklore-rooms-roxanne-d
+ e-bastion/
+END:VEVENT
+END:VCALENDAR

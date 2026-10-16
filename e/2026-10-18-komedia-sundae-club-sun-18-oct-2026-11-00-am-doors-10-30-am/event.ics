@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-18-komedia-sundae-club-sun-18-oct-2026-11-00-am-doors-10-30-am@
+ brightonweekend.co.uk
+DTSTAMP:20261018T000000Z
+DTSTART:20261018T100000Z
+DTEND:20261018T130000Z
+SUMMARY:Sundae Club
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87355893
+ 1/events/128660290\nMore: https://brightonweekend.co.uk/e/2026-10-18-komed
+ ia-sundae-club-sun-18-oct-2026-11-00-am-doors-10-30-am/
+URL:https://brightonweekend.co.uk/e/2026-10-18-komedia-sundae-club-sun-18-o
+ ct-2026-11-00-am-doors-10-30-am/
+END:VEVENT
+END:VCALENDAR

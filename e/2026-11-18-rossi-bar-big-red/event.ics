@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-18-rossi-bar-big-red@brightonweekend.co.uk
+DTSTAMP:20261118T000000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Big Red
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/3orrwv-big-red-18th-nov-the-ross
+ i-bar-brighton-tickets\nMore: https://brightonweekend.co.uk/e/2026-11-18-r
+ ossi-bar-big-red/
+URL:https://brightonweekend.co.uk/e/2026-11-18-rossi-bar-big-red/
+END:VEVENT
+END:VCALENDAR

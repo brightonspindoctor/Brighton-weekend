@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-12-a-l-p-h-a-b-e-t-dutch-criminal-record@brightonweekend.co.uk
+DTSTAMP:20261112T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Dutch Criminal Record
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly9heHMt
+ dWsuc2p2LmlvL2MvMTMwMDk2OC8xODcyMzA4LzIyNDM5P3U9aHR0cHMlM0ElMkYlMkZ3d3cuYX
+ hzLmNvbSUyRnVrJTJGZXZlbnRzJTJGMTQ5MzgxMiUyRmR1dGNoLWNyaW1pbmFsLXJlY29yZC10
+ aWNrZXRz/supplier/AXS/suppliedid/MTQ5MzgxMg/ticketid/8095886/checksum/2556
+ 48222caffbbceb16541fa3c2b2ae/track/true?title=Dutch+Criminal+Record&badge=
+ &venueId=50186\nMore: https://brightonweekend.co.uk/e/2026-11-12-a-l-p-h-a
+ -b-e-t-dutch-criminal-record/
+URL:https://brightonweekend.co.uk/e/2026-11-12-a-l-p-h-a-b-e-t-dutch-crimin
+ al-record/
+END:VEVENT
+END:VCALENDAR

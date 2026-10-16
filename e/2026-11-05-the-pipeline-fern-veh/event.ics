@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-05-the-pipeline-fern-veh@brightonweekend.co.uk
+DTSTAMP:20261105T000000Z
+DTSTART:20261105T190000Z
+DTEND:20261106T000000Z
+SUMMARY:Fern Veh
+LOCATION:The Pipeline\, Brighton
+DESCRIPTION:Tickets: https://www.songkick.com/concerts/43376266-fern-veh-at
+ -pipeline?utm_medium=organic&utm_source=microformat\nMore: https://brighto
+ nweekend.co.uk/e/2026-11-05-the-pipeline-fern-veh/
+URL:https://brightonweekend.co.uk/e/2026-11-05-the-pipeline-fern-veh/
+END:VEVENT
+END:VCALENDAR

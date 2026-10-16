@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-02-concorde-2-the-big-indie-fest@brightonweekend.co.uk
+DTSTAMP:20270402T000000Z
+DTSTART:20270402T170000Z
+DTEND:20270402T200000Z
+SUMMARY:The Big Indie Fest
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1317814/the-big-indie-fe
+ stival-tickets\nMore: https://brightonweekend.co.uk/e/2027-04-02-concorde-
+ 2-the-big-indie-fest/
+URL:https://brightonweekend.co.uk/e/2027-04-02-concorde-2-the-big-indie-fes
+ t/
+END:VEVENT
+END:VCALENDAR

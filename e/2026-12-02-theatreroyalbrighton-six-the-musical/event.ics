@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-02-theatreroyalbrighton-six-the-musical@brightonweekend.co.uk
+DTSTAMP:20261202T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Six - The Musical
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/venues/theatre-royal-bright
+ on/whats-on/\nMore: https://brightonweekend.co.uk/e/2026-12-02-theatreroya
+ lbrighton-six-the-musical/
+URL:https://brightonweekend.co.uk/e/2026-12-02-theatreroyalbrighton-six-the
+ -musical/
+END:VEVENT
+END:VCALENDAR

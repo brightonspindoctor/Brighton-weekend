@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-09-resident-jamie-webster-live-signing@brightonweekend.co.uk
+DTSTAMP:20261109T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Jamie Webster: Live + Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6a678be9a3bb5200011a5614\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-09-resident-jamie-webster-live-sig
+ ning/
+URL:https://brightonweekend.co.uk/e/2026-11-09-resident-jamie-webster-live-
+ signing/
+END:VEVENT
+END:VCALENDAR

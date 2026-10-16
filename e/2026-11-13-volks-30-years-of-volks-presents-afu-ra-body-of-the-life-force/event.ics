@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-13-volks-30-years-of-volks-presents-afu-ra-body-of-the-life-for
+ ce@brightonweekend.co.uk
+DTSTAMP:20261113T000000Z
+DTSTART:20261113T183000Z
+DTEND:20261113T220000Z
+SUMMARY:30 Years of Volks Presents - Afu-Ra - Body of the life force
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/30-Years-of-Volks-Presents---AFU-RA---Body-of-the-life-force/42833
+ 379/\nMore: https://brightonweekend.co.uk/e/2026-11-13-volks-30-years-of-v
+ olks-presents-afu-ra-body-of-the-life-force/
+URL:https://brightonweekend.co.uk/e/2026-11-13-volks-30-years-of-volks-pres
+ ents-afu-ra-body-of-the-life-force/
+END:VEVENT
+END:VCALENDAR

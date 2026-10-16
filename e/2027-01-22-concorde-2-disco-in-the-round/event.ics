@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-22-concorde-2-disco-in-the-round@brightonweekend.co.uk
+DTSTAMP:20270122T000000Z
+DTSTART:20270122T200000Z
+DTEND:20270122T230000Z
+SUMMARY:Disco In The Round
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/e/42838110\nMore: https://brig
+ htonweekend.co.uk/e/2027-01-22-concorde-2-disco-in-the-round/
+URL:https://brightonweekend.co.uk/e/2027-01-22-concorde-2-disco-in-the-roun
+ d/
+END:VEVENT
+END:VCALENDAR

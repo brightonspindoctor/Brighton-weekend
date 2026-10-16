@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-daltons-ghouls-club@brightonweekend.co.uk
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Ghouls Club
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://ra.co/events/2540347\nMore: https://brightonwe
+ ekend.co.uk/e/2026-11-07-daltons-ghouls-club/
+URL:https://brightonweekend.co.uk/e/2026-11-07-daltons-ghouls-club/
+END:VEVENT
+END:VCALENDAR

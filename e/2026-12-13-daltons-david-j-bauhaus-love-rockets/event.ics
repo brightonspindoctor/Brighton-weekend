@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-13-daltons-david-j-bauhaus-love-rockets@brightonweekend.co.uk
+DTSTAMP:20261213T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:DAVID J (Bauhaus\, Love & Rockets)
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/david-j-
+ bauhaus-love-rockets\nMore: https://brightonweekend.co.uk/e/2026-12-13-dal
+ tons-david-j-bauhaus-love-rockets/
+URL:https://brightonweekend.co.uk/e/2026-12-13-daltons-david-j-bauhaus-love
+ -rockets/
+END:VEVENT
+END:VCALENDAR

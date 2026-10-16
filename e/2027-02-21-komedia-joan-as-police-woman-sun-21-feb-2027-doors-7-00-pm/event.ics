@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-21-komedia-joan-as-police-woman-sun-21-feb-2027-doors-7-00-pm@b
+ rightonweekend.co.uk
+DTSTAMP:20270221T000000Z
+DTSTART:20270221T190000Z
+DTEND:20270221T220000Z
+SUMMARY:Joan as Police Woman
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366333
+ 9/events/128647960\nMore: https://brightonweekend.co.uk/e/2027-02-21-komed
+ ia-joan-as-police-woman-sun-21-feb-2027-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2027-02-21-komedia-joan-as-police-woman
+ -sun-21-feb-2027-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

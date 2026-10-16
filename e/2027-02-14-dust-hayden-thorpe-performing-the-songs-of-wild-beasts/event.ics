@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-14-dust-hayden-thorpe-performing-the-songs-of-wild-beasts@brigh
+ tonweekend.co.uk
+DTSTAMP:20270214T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Hayden Thorpe Performing the Songs of Wild Beasts
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://www.ticketmaster.co.uk/dust-tickets-brighton/v
+ enue/415678\nMore: https://brightonweekend.co.uk/e/2027-02-14-dust-hayden-
+ thorpe-performing-the-songs-of-wild-beasts/
+URL:https://brightonweekend.co.uk/e/2027-02-14-dust-hayden-thorpe-performin
+ g-the-songs-of-wild-beasts/
+END:VEVENT
+END:VCALENDAR

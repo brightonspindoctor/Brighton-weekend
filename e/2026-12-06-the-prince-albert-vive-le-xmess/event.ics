@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-06-the-prince-albert-vive-le-xmess@brightonweekend.co.uk
+DTSTAMP:20261206T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Vive Le XMESS
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/brighton-events/the-prince-albe
+ rt\nMore: https://brightonweekend.co.uk/e/2026-12-06-the-prince-albert-viv
+ e-le-xmess/
+URL:https://brightonweekend.co.uk/e/2026-12-06-the-prince-albert-vive-le-xm
+ ess/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-17-daltons-an-interview-with-zoe-wanamaker-audience-q-a@brighto
+ nweekend.co.uk
+DTSTAMP:20270217T000000Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:An Interview with Zoe Wanamaker (& Audience Q&A)
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/an-inter
+ view-with-zoe-wanamaker-audience-q-a\nMore: https://brightonweekend.co.uk/
+ e/2027-02-17-daltons-an-interview-with-zoe-wanamaker-audience-q-a/
+URL:https://brightonweekend.co.uk/e/2027-02-17-daltons-an-interview-with-zo
+ e-wanamaker-audience-q-a/
+END:VEVENT
+END:VCALENDAR

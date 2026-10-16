@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-quarters-locklead-julian-anthony-more-tba@brightonweekend.co
+ .uk
+DTSTAMP:20261121T000000Z
+DTSTART:20261121T230000Z
+DTEND:20261122T040000Z
+SUMMARY:Locklead + Julian Anthony
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/locklead-julian-
+ anthony-more-tba/quarters/3708218\nMore: https://brightonweekend.co.uk/e/2
+ 026-11-21-quarters-locklead-julian-anthony-more-tba/
+URL:https://brightonweekend.co.uk/e/2026-11-21-quarters-locklead-julian-ant
+ hony-more-tba/
+END:VEVENT
+END:VCALENDAR

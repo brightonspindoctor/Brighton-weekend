@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-dust-indie-rock-night-footy-shirts@brightonweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Indie Rock Night ∙ Footy Shirts
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6aad91253ea59f000108a731\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-14-dust-indie-rock-night-footy-shi
+ rts/
+URL:https://brightonweekend.co.uk/e/2026-11-14-dust-indie-rock-night-footy-
+ shirts/
+END:VEVENT
+END:VCALENDAR

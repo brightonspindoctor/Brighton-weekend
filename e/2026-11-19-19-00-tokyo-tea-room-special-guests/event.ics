@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-19-19-00-tokyo-tea-room-special-guests@brightonweekend.co.uk
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Tokyo Tea Room + Special Guests
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://www.gigantic.com/tokyo-tea-room-tickets/bright
+ on-dust/2026-11-19-19-00\nMore: https://brightonweekend.co.uk/e/2026-11-19
+ -19-00-tokyo-tea-room-special-guests/
+URL:https://brightonweekend.co.uk/e/2026-11-19-19-00-tokyo-tea-room-special
+ -guests/
+END:VEVENT
+END:VCALENDAR

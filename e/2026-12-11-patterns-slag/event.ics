@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-11-patterns-slag@brightonweekend.co.uk
+DTSTAMP:20261211T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Slag
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6a9edd12b4211f0001e83894\nMore: 
+ https://brightonweekend.co.uk/e/2026-12-11-patterns-slag/
+URL:https://brightonweekend.co.uk/e/2026-12-11-patterns-slag/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-brightoncentre-ministry-of-sound-classical@brightonweekend.c
+ o.uk
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Ministry Of Sound Classical
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/\nMore: https://brightonw
+ eekend.co.uk/e/2026-10-31-brightoncentre-ministry-of-sound-classical/
+URL:https://brightonweekend.co.uk/e/2026-10-31-brightoncentre-ministry-of-s
+ ound-classical/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-16-brighton-dome-concert-hall-david-bowie-you-re-not-alone@brig
+ htonweekend.co.uk
+DTSTAMP:20270716T000000Z
+DTSTART;VALUE=DATE:20270716
+DTEND;VALUE=DATE:20270717
+SUMMARY:David Bowie: You’re Not Alone
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LIb-david-bowie-your
+ e-not-alone/\nMore: https://brightonweekend.co.uk/e/2027-07-16-brighton-do
+ me-concert-hall-david-bowie-you-re-not-alone/
+URL:https://brightonweekend.co.uk/e/2027-07-16-brighton-dome-concert-hall-d
+ avid-bowie-you-re-not-alone/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-18-dust-no-scrubs-90s-00s-r-b-xmas-party-brighton@brightonweeke
+ nd.co.uk
+DTSTAMP:20261218T000000Z
+DTSTART:20261218T230000Z
+DTEND:20261219T030000Z
+SUMMARY:No Scrubs: 90s & 00s R&B Xmas Party
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Dust/No-Scru
+ bs-90s--00s-RB-Xmas-Party-Brighton/43022495/\nMore: https://brightonweeken
+ d.co.uk/e/2026-12-18-dust-no-scrubs-90s-00s-r-b-xmas-party-brighton/
+URL:https://brightonweekend.co.uk/e/2026-12-18-dust-no-scrubs-90s-00s-r-b-x
+ mas-party-brighton/
+END:VEVENT
+END:VCALENDAR

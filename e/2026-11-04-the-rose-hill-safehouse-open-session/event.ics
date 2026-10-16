@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-04-the-rose-hill-safehouse-open-session@brightonweekend.co.uk
+DTSTAMP:20261104T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Safehouse Open Session
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/safehouse-open-session
+ -november-2026/\nMore: https://brightonweekend.co.uk/e/2026-11-04-the-rose
+ -hill-safehouse-open-session/
+URL:https://brightonweekend.co.uk/e/2026-11-04-the-rose-hill-safehouse-open
+ -session/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-08-daltons-kavus-torabi-the-witching-tale-arch-garrison-very-sp
+ ecial-guest-dj-richard-norris@brightonweekend.co.uk
+DTSTAMP:20270408T000000Z
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+SUMMARY:Kavus Torabi + The Witching Tale + Arch Garrison + Very Special Gue
+ st DJ Richard Norris
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/kavus-to
+ rabi-the-witching-tale-arch-garrison-very-special-guest-dj-richard-norris\
+ nMore: https://brightonweekend.co.uk/e/2027-04-08-daltons-kavus-torabi-the
+ -witching-tale-arch-garrison-very-special-guest-dj-richard-norris/
+URL:https://brightonweekend.co.uk/e/2027-04-08-daltons-kavus-torabi-the-wit
+ ching-tale-arch-garrison-very-special-guest-dj-richard-norris/
+END:VEVENT
+END:VCALENDAR

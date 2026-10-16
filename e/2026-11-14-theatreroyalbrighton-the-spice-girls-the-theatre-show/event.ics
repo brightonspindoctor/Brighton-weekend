@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-theatreroyalbrighton-the-spice-girls-the-theatre-show@bright
+ onweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Spice Girls - The Theatre Show
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/spice-girls-the-theat
+ re-show/theatre-royal-brighton/calendar/\nMore: https://brightonweekend.co
+ .uk/e/2026-11-14-theatreroyalbrighton-the-spice-girls-the-theatre-show/
+URL:https://brightonweekend.co.uk/e/2026-11-14-theatreroyalbrighton-the-spi
+ ce-girls-the-theatre-show/
+END:VEVENT
+END:VCALENDAR

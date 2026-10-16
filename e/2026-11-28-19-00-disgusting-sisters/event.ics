@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-19-00-disgusting-sisters@brightonweekend.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Disgusting Sisters
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://www.gigantic.com/disgusting-sisters-tickets/br
+ ighton-dust/2026-11-28-19-00\nMore: https://brightonweekend.co.uk/e/2026-1
+ 1-28-19-00-disgusting-sisters/
+URL:https://brightonweekend.co.uk/e/2026-11-28-19-00-disgusting-sisters/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-05-komedia-jill-edwards-comedy-workshops-sun-2-may-2027-doors-1
+ -00-pm@brightonweekend.co.uk
+DTSTAMP:20270502T000000Z
+DTSTART:20270502T120000Z
+DTEND:20270502T150000Z
+SUMMARY:Jill Edwards Comedy Workshops
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://jill-edwards.co.uk/courses-workshops/short-com
+ edy-courses-and-tasters/\nMore: https://brightonweekend.co.uk/e/2027-02-05
+ -komedia-jill-edwards-comedy-workshops-sun-2-may-2027-doors-1-00-pm/
+URL:https://brightonweekend.co.uk/e/2027-02-05-komedia-jill-edwards-comedy-
+ workshops-sun-2-may-2027-doors-1-00-pm/
+END:VEVENT
+END:VCALENDAR

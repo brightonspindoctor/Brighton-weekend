@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-16-concorde-2-boris-pink-20th-anniversary-uk-tour@brightonweeke
+ nd.co.uk
+DTSTAMP:20261016T000000Z
+DTSTART:20261016T180000Z
+DTEND:20261016T210000Z
+SUMMARY:Boris - Pink 20th Anniversary UK Tour
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/events/1467276/boris-tickets\nMore
+ : https://brightonweekend.co.uk/e/2026-10-16-concorde-2-boris-pink-20th-an
+ niversary-uk-tour/
+URL:https://brightonweekend.co.uk/e/2026-10-16-concorde-2-boris-pink-20th-a
+ nniversary-uk-tour/
+END:VEVENT
+END:VCALENDAR

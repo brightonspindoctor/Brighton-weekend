@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-01-komedia-new-act-night@brightonweekend.co.uk
+DTSTAMP:20261201T000000Z
+DTSTART:20261201T200000Z
+DTEND:20261201T230000Z
+SUMMARY:New Act Night
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87358411
+ 9/events/128625070\nMore: https://brightonweekend.co.uk/e/2026-12-01-komed
+ ia-new-act-night/
+URL:https://brightonweekend.co.uk/e/2026-12-01-komedia-new-act-night/
+END:VEVENT
+END:VCALENDAR

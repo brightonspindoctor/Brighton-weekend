@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-the-hope-ruin-penelope-isles-evening-show@brightonweekend.co
+ .uk
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Penelope Isles - Evening Show
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvcGVuZWxvcGUtaXNsZXMtZXZlbmluZy1zaG93L3RoZS1ob3
+ BlLXJ1aW4vMzY0MTc0OQ/supplier/SeeTickets/suppliedid/MzY0MTc0OQ/ticketid/80
+ 58347/checksum/a4efdaf934503e5bac48664ee5eb3631/track/true?title=PENELOPE+
+ ISLES+-+EVENING+SHOW&badge=&venueId=34826\nMore: https://brightonweekend.c
+ o.uk/e/2026-10-31-the-hope-ruin-penelope-isles-evening-show/
+URL:https://brightonweekend.co.uk/e/2026-10-31-the-hope-ruin-penelope-isles
+ -evening-show/
+END:VEVENT
+END:VCALENDAR

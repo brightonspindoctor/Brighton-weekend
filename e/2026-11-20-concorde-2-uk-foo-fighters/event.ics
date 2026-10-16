@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-20-concorde-2-uk-foo-fighters@brightonweekend.co.uk
+DTSTAMP:20261120T000000Z
+DTSTART:20261120T190000Z
+DTEND:20261120T220000Z
+SUMMARY:UK Foo Fighters
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1378866/uk-foo-fighters-
+ tickets\nMore: https://brightonweekend.co.uk/e/2026-11-20-concorde-2-uk-fo
+ o-fighters/
+URL:https://brightonweekend.co.uk/e/2026-11-20-concorde-2-uk-foo-fighters/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-concorde-2-junebabies-john-digweed-afterparty@brightonweeken
+ d.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART:20261114T000000Z
+DTEND:20261114T030000Z
+SUMMARY:Junebabies - John Digweed Afterparty
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Concorde
+ -2/Junebabies---John-Digweed-Afterparty/42801811/\nMore: https://brightonw
+ eekend.co.uk/e/2026-11-14-concorde-2-junebabies-john-digweed-afterparty/
+URL:https://brightonweekend.co.uk/e/2026-11-14-concorde-2-junebabies-john-d
+ igweed-afterparty/
+END:VEVENT
+END:VCALENDAR

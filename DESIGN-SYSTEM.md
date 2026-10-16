@@ -82,6 +82,7 @@ fill for chosen chips, tabs and the promoter filter bar.
 | `--bw-coral-hover` | `#FF8B7D` | `#B23525` | Primary button hover |
 | `--bw-coral-bg` / `--bw-coral-line` | `#251A1A` / `#71463F` | `#FBE7E2` / `#E9AFA4` | Coral wells: This week, the events icon, the venue nudge border |
 | `--bw-coral-wash` | `#1A1719` | `#FDF1EC` | New since your last visit |
+| `--bw-suggest-bg` / `-line` / `-fg` | `#191C38` / `#4A4F8C` / `#C4C8FF` | `#EEEEFB` / `#B7B9E8` / `#3C3F8F` | "You might like" suggestion cards and their Suggested badge |
 | `--bw-coral-glow` | coral at 16% | coral at 18% | Halo on a shared event |
 | `--bw-sold-bg` / `--bw-sold-line` | `#382022` / `#704047` | `#FBE4E3` / `#E2A2A6` | Sold out badge |
 | `--bw-sticker-joy` / `-beatdown` / `-ink` | `#FFE14D` / `#B69CFF` / `#0B1D2F` | same | Promoter stickers |

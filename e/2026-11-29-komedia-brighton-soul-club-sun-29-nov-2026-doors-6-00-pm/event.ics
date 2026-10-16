@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-29-komedia-brighton-soul-club-sun-29-nov-2026-doors-6-00-pm@bri
+ ghtonweekend.co.uk
+DTSTAMP:20261129T000000Z
+DTSTART:20261129T180000Z
+DTEND:20261129T210000Z
+SUMMARY:Brighton Soul Club
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87365654
+ 5/events/128664859\nMore: https://brightonweekend.co.uk/e/2026-11-29-komed
+ ia-brighton-soul-club-sun-29-nov-2026-doors-6-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-11-29-komedia-brighton-soul-club-s
+ un-29-nov-2026-doors-6-00-pm/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-21-brighton-centre-michael-starring-ben@brightonweekend.co.uk
+DTSTAMP:20270221T000000Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Michael Starring Ben
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://www.ticketmaster.co.uk/event/3E00647EA4812926\
+ nMore: https://brightonweekend.co.uk/e/2027-02-21-brighton-centre-michael-
+ starring-ben/
+URL:https://brightonweekend.co.uk/e/2027-02-21-brighton-centre-michael-star
+ ring-ben/
+END:VEVENT
+END:VCALENDAR

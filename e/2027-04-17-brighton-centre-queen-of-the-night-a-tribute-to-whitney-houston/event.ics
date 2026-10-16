@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-17-brighton-centre-queen-of-the-night-a-tribute-to-whitney-hous
+ ton@brightonweekend.co.uk
+DTSTAMP:20270417T000000Z
+DTSTART:20270417T173000Z
+DTEND:20270417T203000Z
+SUMMARY:Queen of the Night – A Tribute to Whitney Houston
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/\nMore: https://brightonw
+ eekend.co.uk/e/2027-04-17-brighton-centre-queen-of-the-night-a-tribute-to-
+ whitney-houston/
+URL:https://brightonweekend.co.uk/e/2027-04-17-brighton-centre-queen-of-the
+ -night-a-tribute-to-whitney-houston/
+END:VEVENT
+END:VCALENDAR

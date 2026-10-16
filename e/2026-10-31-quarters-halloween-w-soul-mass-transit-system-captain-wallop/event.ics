@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-quarters-halloween-w-soul-mass-transit-system-captain-wallop
+ @brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART:20261031T230000Z
+DTEND:20261101T040000Z
+SUMMARY:Halloween W Soul Mass Transit System Captain Wallop
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/halloween-w-soul
+ -mass-transit-system-captain-wallop/quarters/3643030\nMore: https://bright
+ onweekend.co.uk/e/2026-10-31-quarters-halloween-w-soul-mass-transit-system
+ -captain-wallop/
+URL:https://brightonweekend.co.uk/e/2026-10-31-quarters-halloween-w-soul-ma
+ ss-transit-system-captain-wallop/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-the-brunswick-the-shoreham-allstars@brightonweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:The Shoreham Allstars
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/the-shore
+ ham-allstars-6\nMore: https://brightonweekend.co.uk/e/2026-11-14-the-bruns
+ wick-the-shoreham-allstars/
+URL:https://brightonweekend.co.uk/e/2026-11-14-the-brunswick-the-shoreham-a
+ llstars/
+END:VEVENT
+END:VCALENDAR

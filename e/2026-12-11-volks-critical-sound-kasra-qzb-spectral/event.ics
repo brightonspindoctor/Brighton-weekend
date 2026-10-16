@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-11-volks-critical-sound-kasra-qzb-spectral@brightonweekend.co.u
+ k
+DTSTAMP:20261211T000000Z
+DTSTART:20261211T230000Z
+DTEND:20261212T020000Z
+SUMMARY:Critical Sound: Kasra\, QZB\, Spectral
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Critical-Sound-Kasra-QZB-Spectral/42727022/\nMore: https://brighto
+ nweekend.co.uk/e/2026-12-11-volks-critical-sound-kasra-qzb-spectral/
+URL:https://brightonweekend.co.uk/e/2026-12-11-volks-critical-sound-kasra-q
+ zb-spectral/
+END:VEVENT
+END:VCALENDAR

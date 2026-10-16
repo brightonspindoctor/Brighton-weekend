@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-06-komedia-will-wilde@brightonweekend.co.uk
+DTSTAMP:20261206T000000Z
+DTSTART:20261206T190000Z
+DTEND:20261206T220000Z
+SUMMARY:Will Wilde
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366407
+ 2/events/128650079\nMore: https://brightonweekend.co.uk/e/2026-12-06-komed
+ ia-will-wilde/
+URL:https://brightonweekend.co.uk/e/2026-12-06-komedia-will-wilde/
+END:VEVENT
+END:VCALENDAR

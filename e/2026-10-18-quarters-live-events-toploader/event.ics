@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-18-quarters-live-events-toploader@brightonweekend.co.uk
+DTSTAMP:20261018T000000Z
+DTSTART:20261018T170000Z
+DTEND:20261018T210000Z
+SUMMARY:Toploader
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://pinkdot.seetickets.com/event/toploader/quarter
+ s/3535253\nMore: https://brightonweekend.co.uk/e/2026-10-18-quarters-live-
+ events-toploader/
+URL:https://brightonweekend.co.uk/e/2026-10-18-quarters-live-events-topload
+ er/
+END:VEVENT
+END:VCALENDAR

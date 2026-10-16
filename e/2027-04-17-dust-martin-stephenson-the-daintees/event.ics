@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-17-dust-martin-stephenson-the-daintees@brightonweekend.co.uk
+DTSTAMP:20270417T000000Z
+DTSTART:20270417T180000Z
+DTEND:20270417T210000Z
+SUMMARY:Martin Stephenson & The Daintees
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Dust/Martin-
+ Stephenson--The-Daintees/42491694/\nMore: https://brightonweekend.co.uk/e/
+ 2027-04-17-dust-martin-stephenson-the-daintees/
+URL:https://brightonweekend.co.uk/e/2027-04-17-dust-martin-stephenson-the-d
+ aintees/
+END:VEVENT
+END:VCALENDAR

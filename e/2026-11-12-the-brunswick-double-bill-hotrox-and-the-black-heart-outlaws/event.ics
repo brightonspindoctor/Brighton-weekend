@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-12-the-brunswick-double-bill-hotrox-and-the-black-heart-outlaws
+ @brightonweekend.co.uk
+DTSTAMP:20261112T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Double Bill: Hotrox and the Black Heart Outlaws
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/double-bi
+ ll-hotrox-and-the-black-heart-outlaws\nMore: https://brightonweekend.co.uk
+ /e/2026-11-12-the-brunswick-double-bill-hotrox-and-the-black-heart-outlaws
+ /
+URL:https://brightonweekend.co.uk/e/2026-11-12-the-brunswick-double-bill-ho
+ trox-and-the-black-heart-outlaws/
+END:VEVENT
+END:VCALENDAR

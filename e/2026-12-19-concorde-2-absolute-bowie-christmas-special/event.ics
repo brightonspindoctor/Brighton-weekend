@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-19-concorde-2-absolute-bowie-christmas-special@brightonweekend.
+ co.uk
+DTSTAMP:20261219T000000Z
+DTSTART:20261219T190000Z
+DTEND:20261219T220000Z
+SUMMARY:Absolute Bowie Christmas Special
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1286604/absolute-bowie-t
+ ickets\nMore: https://brightonweekend.co.uk/e/2026-12-19-concorde-2-absolu
+ te-bowie-christmas-special/
+URL:https://brightonweekend.co.uk/e/2026-12-19-concorde-2-absolute-bowie-ch
+ ristmas-special/
+END:VEVENT
+END:VCALENDAR

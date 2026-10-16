@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-20-volks-sub-liminal-recordings-wiley-brockie-funsta-heist@brig
+ htonweekend.co.uk
+DTSTAMP:20261120T000000Z
+DTSTART:20261120T230000Z
+DTEND:20261121T020000Z
+SUMMARY:Sub-liminal Recordings: Wiley\, Brockie\, Funsta\, Heist
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Sub-liminal-Recordings-Wiley-Brockie-Funsta-Heist/42815860/\nMore:
+  https://brightonweekend.co.uk/e/2026-11-20-volks-sub-liminal-recordings-w
+ iley-brockie-funsta-heist/
+URL:https://brightonweekend.co.uk/e/2026-11-20-volks-sub-liminal-recordings
+ -wiley-brockie-funsta-heist/
+END:VEVENT
+END:VCALENDAR

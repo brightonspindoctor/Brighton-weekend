@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-15-brightoncentre-the-darkness-brothers-osborne@brightonweekend
+ .co.uk
+DTSTAMP:20261215T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:The Darkness Brothers Osborne
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/\nMore: https://brightonw
+ eekend.co.uk/e/2026-12-15-brightoncentre-the-darkness-brothers-osborne/
+URL:https://brightonweekend.co.uk/e/2026-12-15-brightoncentre-the-darkness-
+ brothers-osborne/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-26-the-forge-comedy-club-james-barr-sorry-i-hurt-your-son-said-
+ my-ex-to-my-mum@brightonweekend.co.uk
+DTSTAMP:20261126T000000Z
+DTSTART:20261126T193000Z
+DTEND:20261126T210000Z
+SUMMARY:James Barr: Sorry I Hurt Your Son (Said My Ex To My Mum)
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/james-barr-sorry-i-hurt
+ -your-son-said-my-ex-to-my-mum-tickets-1982735129145\nMore: https://bright
+ onweekend.co.uk/e/2026-11-26-the-forge-comedy-club-james-barr-sorry-i-hurt
+ -your-son-said-my-ex-to-my-mum/
+URL:https://brightonweekend.co.uk/e/2026-11-26-the-forge-comedy-club-james-
+ barr-sorry-i-hurt-your-son-said-my-ex-to-my-mum/
+END:VEVENT
+END:VCALENDAR

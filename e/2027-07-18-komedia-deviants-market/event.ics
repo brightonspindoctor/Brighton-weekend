@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-18-komedia-deviants-market@brightonweekend.co.uk
+DTSTAMP:20270718T000000Z
+DTSTART:20270718T090000Z
+DTEND:20270718T120000Z
+SUMMARY:Deviants Market
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://www.komedia.co.uk/shows/deviants-market/?eid=2
+ 0882\nMore: https://brightonweekend.co.uk/e/2027-07-18-komedia-deviants-ma
+ rket/
+URL:https://brightonweekend.co.uk/e/2027-07-18-komedia-deviants-market/
+END:VEVENT
+END:VCALENDAR

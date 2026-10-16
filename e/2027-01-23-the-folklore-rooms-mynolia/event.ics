@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-23-the-folklore-rooms-mynolia@brightonweekend.co.uk
+DTSTAMP:20270123T000000Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Mynolia
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://lovethyneighbour.seetickets.com/event/mynolia/
+ the-folklore-rooms/3735638\nMore: https://brightonweekend.co.uk/e/2027-01-
+ 23-the-folklore-rooms-mynolia/
+URL:https://brightonweekend.co.uk/e/2027-01-23-the-folklore-rooms-mynolia/
+END:VEVENT
+END:VCALENDAR

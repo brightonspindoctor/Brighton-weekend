@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-the-rose-hill-at-ecomusicology-plot-in-stanmer-threshold-doo
+ rways-into-nature-and-psyche@brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:( at Ecomusicology Plot in Stanmer) Threshold: Doorways into Nature
+  and Psyche
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/threshold-doorways-int
+ o-nature-and-psyche/\nMore: https://brightonweekend.co.uk/e/2026-10-31-the
+ -rose-hill-at-ecomusicology-plot-in-stanmer-threshold-doorways-into-nature
+ -and-psyche/
+URL:https://brightonweekend.co.uk/e/2026-10-31-the-rose-hill-at-ecomusicolo
+ gy-plot-in-stanmer-threshold-doorways-into-nature-and-psyche/
+END:VEVENT
+END:VCALENDAR

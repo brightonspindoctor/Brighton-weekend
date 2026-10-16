@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-31-the-forge-comedy-club-forge-comedy-club-new-years-eve-specia
+ l@brightonweekend.co.uk
+DTSTAMP:20261231T000000Z
+DTSTART:20261231T200000Z
+DTEND:20261231T230000Z
+SUMMARY:Forge Comedy Club New Years Eve Special
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/forge-comedy-club-new-y
+ ears-eve-special-tickets-1998456550339\nMore: https://brightonweekend.co.u
+ k/e/2026-12-31-the-forge-comedy-club-forge-comedy-club-new-years-eve-speci
+ al/
+URL:https://brightonweekend.co.uk/e/2026-12-31-the-forge-comedy-club-forge-
+ comedy-club-new-years-eve-special/
+END:VEVENT
+END:VCALENDAR

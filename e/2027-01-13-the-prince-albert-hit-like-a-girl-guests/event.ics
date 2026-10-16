@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-13-the-prince-albert-hit-like-a-girl-guests@brightonweekend.co.
+ uk
+DTSTAMP:20270113T000000Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+SUMMARY:Hit Like A Girl + guests
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/ui12ybdj/hit-like-a-girl-gue
+ sts?utm_source=social_share&utm_medium=social&utm_campaign=social_share\nM
+ ore: https://brightonweekend.co.uk/e/2027-01-13-the-prince-albert-hit-like
+ -a-girl-guests/
+URL:https://brightonweekend.co.uk/e/2027-01-13-the-prince-albert-hit-like-a
+ -girl-guests/
+END:VEVENT
+END:VCALENDAR

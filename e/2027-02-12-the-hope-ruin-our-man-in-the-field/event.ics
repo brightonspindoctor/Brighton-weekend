@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-12-the-hope-ruin-our-man-in-the-field@brightonweekend.co.uk
+DTSTAMP:20270212T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:Our Man in the Field
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/gwe42orm/our-man-in-the-fiel
+ d\nMore: https://brightonweekend.co.uk/e/2027-02-12-the-hope-ruin-our-man-
+ in-the-field/
+URL:https://brightonweekend.co.uk/e/2027-02-12-the-hope-ruin-our-man-in-the
+ -field/
+END:VEVENT
+END:VCALENDAR

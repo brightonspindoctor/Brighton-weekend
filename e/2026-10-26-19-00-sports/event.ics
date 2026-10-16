@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-26-19-00-sports@brightonweekend.co.uk
+DTSTAMP:20261026T000000Z
+DTSTART:20261026T190000Z
+DTEND:20261026T220000Z
+SUMMARY:Sports
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/sports-26th-oct-patterns-brighto
+ n-tickets\nMore: https://brightonweekend.co.uk/e/2026-10-26-19-00-sports/
+URL:https://brightonweekend.co.uk/e/2026-10-26-19-00-sports/
+END:VEVENT
+END:VCALENDAR

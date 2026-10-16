@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-17-theatre-royal-brighton-fin-taylor-the-pre-emptive-comeback-s
+ pecial@brightonweekend.co.uk
+DTSTAMP:20261017T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Fin Taylor: The Pre-emptive Comeback Special
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/fin-taylor-the-pre-em
+ ptive-comeback-special/theatre-royal-brighton/\nMore: https://brightonweek
+ end.co.uk/e/2026-10-17-theatre-royal-brighton-fin-taylor-the-pre-emptive-c
+ omeback-special/
+URL:https://brightonweekend.co.uk/e/2026-10-17-theatre-royal-brighton-fin-t
+ aylor-the-pre-emptive-comeback-special/
+END:VEVENT
+END:VCALENDAR

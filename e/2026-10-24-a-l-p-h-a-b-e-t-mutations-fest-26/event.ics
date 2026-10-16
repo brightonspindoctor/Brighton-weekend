@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-24-a-l-p-h-a-b-e-t-mutations-fest-26@brightonweekend.co.uk
+DTSTAMP:20261024T000000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Mutations Fest ‘26
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.alphabetbrighton.com/listings/oct-24-mutat
+ ions-festival-26\nMore: https://brightonweekend.co.uk/e/2026-10-24-a-l-p-h
+ -a-b-e-t-mutations-fest-26/
+URL:https://brightonweekend.co.uk/e/2026-10-24-a-l-p-h-a-b-e-t-mutations-fe
+ st-26/
+END:VEVENT
+END:VCALENDAR

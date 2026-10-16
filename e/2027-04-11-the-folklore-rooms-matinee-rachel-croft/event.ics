@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-11-the-folklore-rooms-matinee-rachel-croft@brightonweekend.co.u
+ k
+DTSTAMP:20270411T000000Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Matinee: Rachel Croft
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/rachel-croft/the-folk
+ lore-rooms/3737775\nMore: https://brightonweekend.co.uk/e/2027-04-11-the-f
+ olklore-rooms-matinee-rachel-croft/
+URL:https://brightonweekend.co.uk/e/2027-04-11-the-folklore-rooms-matinee-r
+ achel-croft/
+END:VEVENT
+END:VCALENDAR

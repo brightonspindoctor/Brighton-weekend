@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-28-patterns-first-time-flyers@brightonweekend.co.uk
+DTSTAMP:20270428T000000Z
+DTSTART;VALUE=DATE:20270428
+DTEND;VALUE=DATE:20270429
+SUMMARY:First Time Flyers
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6aaaa6814ecd190001a2e4f8\nMore: 
+ https://brightonweekend.co.uk/e/2027-04-28-patterns-first-time-flyers/
+URL:https://brightonweekend.co.uk/e/2027-04-28-patterns-first-time-flyers/
+END:VEVENT
+END:VCALENDAR

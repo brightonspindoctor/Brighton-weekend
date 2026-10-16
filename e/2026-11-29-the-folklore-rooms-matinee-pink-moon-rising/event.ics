@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-29-the-folklore-rooms-matinee-pink-moon-rising@brightonweekend.
+ co.uk
+DTSTAMP:20261129T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Matinee: Pink Moon Rising
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/pink-moon-rising/the-
+ folklore-rooms/3698565\nMore: https://brightonweekend.co.uk/e/2026-11-29-t
+ he-folklore-rooms-matinee-pink-moon-rising/
+URL:https://brightonweekend.co.uk/e/2026-11-29-the-folklore-rooms-matinee-p
+ ink-moon-rising/
+END:VEVENT
+END:VCALENDAR

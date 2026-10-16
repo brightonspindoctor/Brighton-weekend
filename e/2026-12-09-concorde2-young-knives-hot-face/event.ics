@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-09-concorde2-young-knives-hot-face@brightonweekend.co.uk
+DTSTAMP:20261209T000000Z
+DTSTART:20261209T193000Z
+DTEND:20261209T223000Z
+SUMMARY:Young Knives
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1346958/young-knives-tic
+ kets\nMore: https://brightonweekend.co.uk/e/2026-12-09-concorde2-young-kni
+ ves-hot-face/
+URL:https://brightonweekend.co.uk/e/2026-12-09-concorde2-young-knives-hot-f
+ ace/
+END:VEVENT
+END:VCALENDAR

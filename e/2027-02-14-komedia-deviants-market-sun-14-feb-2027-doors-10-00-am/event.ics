@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-14-komedia-deviants-market-sun-14-feb-2027-doors-10-00-am@brigh
+ tonweekend.co.uk
+DTSTAMP:20270214T000000Z
+DTSTART:20270214T100000Z
+DTEND:20270214T130000Z
+SUMMARY:Deviants Market
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://www.komedia.co.uk/shows/deviants-market/?eid=2
+ 0881\nMore: https://brightonweekend.co.uk/e/2027-02-14-komedia-deviants-ma
+ rket-sun-14-feb-2027-doors-10-00-am/
+URL:https://brightonweekend.co.uk/e/2027-02-14-komedia-deviants-market-sun-
+ 14-feb-2027-doors-10-00-am/
+END:VEVENT
+END:VCALENDAR

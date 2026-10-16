@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-08-the-old-market-come-alive-echo-performing-arts-cic@brightonw
+ eekend.co.uk
+DTSTAMP:20261108T000000Z
+DTSTART:20261108T160000Z
+DTEND:20261108T183000Z
+SUMMARY:Come Alive: Echo Performing Arts CIC
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/come-alive-echo-per
+ forming-arts-cic\nMore: https://brightonweekend.co.uk/e/2026-11-08-the-old
+ -market-come-alive-echo-performing-arts-cic/
+URL:https://brightonweekend.co.uk/e/2026-11-08-the-old-market-come-alive-ec
+ ho-performing-arts-cic/
+END:VEVENT
+END:VCALENDAR

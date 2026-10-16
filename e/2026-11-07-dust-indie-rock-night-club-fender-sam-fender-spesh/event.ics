@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-dust-indie-rock-night-club-fender-sam-fender-spesh@brightonw
+ eekend.co.uk
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Indie Rock Night ∙ CLUB FENDER (sam fender spesh)
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6aad8fba444a3800013c419c\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-07-dust-indie-rock-night-club-fend
+ er-sam-fender-spesh/
+URL:https://brightonweekend.co.uk/e/2026-11-07-dust-indie-rock-night-club-f
+ ender-sam-fender-spesh/
+END:VEVENT
+END:VCALENDAR

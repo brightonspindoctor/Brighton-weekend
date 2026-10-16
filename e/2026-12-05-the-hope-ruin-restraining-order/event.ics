@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-05-the-hope-ruin-restraining-order@brightonweekend.co.uk
+DTSTAMP:20261205T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Restraining Order
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/5m4lwqxa/restraining-order\n
+ More: https://brightonweekend.co.uk/e/2026-12-05-the-hope-ruin-restraining
+ -order/
+URL:https://brightonweekend.co.uk/e/2026-12-05-the-hope-ruin-restraining-or
+ der/
+END:VEVENT
+END:VCALENDAR

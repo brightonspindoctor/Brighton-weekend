@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-21-komedia-sundae-club-sun-21-mar-2027-11-00-am-doors-10-30-am@
+ brightonweekend.co.uk
+DTSTAMP:20270321T000000Z
+DTSTART:20270321T110000Z
+DTEND:20270321T140000Z
+SUMMARY:Sundae Club
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87355893
+ 1/events/128660330\nMore: https://brightonweekend.co.uk/e/2027-03-21-komed
+ ia-sundae-club-sun-21-mar-2027-11-00-am-doors-10-30-am/
+URL:https://brightonweekend.co.uk/e/2027-03-21-komedia-sundae-club-sun-21-m
+ ar-2027-11-00-am-doors-10-30-am/
+END:VEVENT
+END:VCALENDAR

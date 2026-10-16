@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-21-chalk-bleech-9-3@brightonweekend.co.uk
+DTSTAMP:20270421T000000Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:Bleech 9:3
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://www.metropolismusic.com/all-events/bleech-9-3-
+ tickets-ae1647841\nMore: https://brightonweekend.co.uk/e/2027-04-21-chalk-
+ bleech-9-3/
+URL:https://brightonweekend.co.uk/e/2027-04-21-chalk-bleech-9-3/
+END:VEVENT
+END:VCALENDAR

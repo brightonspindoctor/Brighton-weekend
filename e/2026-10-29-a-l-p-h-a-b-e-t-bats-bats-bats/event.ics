@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-29-a-l-p-h-a-b-e-t-bats-bats-bats@brightonweekend.co.uk
+DTSTAMP:20261029T000000Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Bats Bats Bats
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.com/e/bats-bats-bats-single-rel
+ ease-halloween-show-a-l-p-h-a-b-e-t-brighton-tickets-1996329705890?aff=odd
+ tdtcreator&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=
+ PAdGRleATgau9wZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAAB
+ p_tmOjwgzHp_VsI20-KynlkSfMIrWoSnor7IpRKlCKeNjIDEDBGHSImuT0We_aem_MgnzeSj5k
+ JUDDKN1kabNCA\nMore: https://brightonweekend.co.uk/e/2026-10-29-a-l-p-h-a-
+ b-e-t-bats-bats-bats/
+URL:https://brightonweekend.co.uk/e/2026-10-29-a-l-p-h-a-b-e-t-bats-bats-ba
+ ts/
+END:VEVENT
+END:VCALENDAR

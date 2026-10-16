@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-11-komedia-the-march-violets-wed-11-nov-2026-7-30-pm-doors-7-00
+ -pm@brightonweekend.co.uk
+DTSTAMP:20261111T000000Z
+DTSTART:20261111T193000Z
+DTEND:20261111T223000Z
+SUMMARY:The March Violets
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366722
+ 4/events/128663783\nMore: https://brightonweekend.co.uk/e/2026-11-11-komed
+ ia-the-march-violets-wed-11-nov-2026-7-30-pm-doors-7-00-pm/
+URL:https://brightonweekend.co.uk/e/2026-11-11-komedia-the-march-violets-we
+ d-11-nov-2026-7-30-pm-doors-7-00-pm/
+END:VEVENT
+END:VCALENDAR

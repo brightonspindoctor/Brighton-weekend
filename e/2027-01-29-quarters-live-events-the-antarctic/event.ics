@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-29-quarters-live-events-the-antarctic@brightonweekend.co.uk
+DTSTAMP:20270129T000000Z
+DTSTART:20270129T183000Z
+DTEND:20270129T220000Z
+SUMMARY:The Antarctic Monkeys
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://pinkdot.seetickets.com/event/the-antarctic-mon
+ keys/quarters/3614681\nMore: https://brightonweekend.co.uk/e/2027-01-29-qu
+ arters-live-events-the-antarctic/
+URL:https://brightonweekend.co.uk/e/2027-01-29-quarters-live-events-the-ant
+ arctic/
+END:VEVENT
+END:VCALENDAR

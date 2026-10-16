@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-the-pipeline-king-effers-not-the-face-the-glitterbombs@brigh
+ tonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:King Effers
+LOCATION:The Pipeline\, Brighton
+DESCRIPTION:Tickets: https://www.songkick.com/concerts/43076697-king-effers
+ -at-pipeline?utm_medium=organic&utm_source=microformat\nMore: https://brig
+ htonweekend.co.uk/e/2026-11-06-the-pipeline-king-effers-not-the-face-the-g
+ litterbombs/
+URL:https://brightonweekend.co.uk/e/2026-11-06-the-pipeline-king-effers-not
+ -the-face-the-glitterbombs/
+END:VEVENT
+END:VCALENDAR

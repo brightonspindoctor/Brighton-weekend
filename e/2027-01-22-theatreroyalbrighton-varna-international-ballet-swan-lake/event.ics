@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-22-theatreroyalbrighton-varna-international-ballet-swan-lake@br
+ ightonweekend.co.uk
+DTSTAMP:20270122T000000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:Varna International Ballet - Swan Lake
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/venues/theatre-royal-bright
+ on/whats-on/\nMore: https://brightonweekend.co.uk/e/2027-01-22-theatreroya
+ lbrighton-varna-international-ballet-swan-lake/
+URL:https://brightonweekend.co.uk/e/2027-01-22-theatreroyalbrighton-varna-i
+ nternational-ballet-swan-lake/
+END:VEVENT
+END:VCALENDAR

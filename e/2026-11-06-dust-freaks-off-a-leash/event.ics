@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-dust-freaks-off-a-leash@brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Freaks Off A Leash
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ac8cd89c2c59500011e278f\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-06-dust-freaks-off-a-leash/
+URL:https://brightonweekend.co.uk/e/2026-11-06-dust-freaks-off-a-leash/
+END:VEVENT
+END:VCALENDAR

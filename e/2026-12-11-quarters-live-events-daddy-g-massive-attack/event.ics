@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-11-quarters-live-events-daddy-g-massive-attack@brightonweekend.
+ co.uk
+DTSTAMP:20261211T000000Z
+DTSTART:20261211T180000Z
+DTEND:20261211T220000Z
+SUMMARY:DADDY G (Massive Attack)
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/daddy-g/quarters/3707
+ 646\nMore: https://brightonweekend.co.uk/e/2026-12-11-quarters-live-events
+ -daddy-g-massive-attack/
+URL:https://brightonweekend.co.uk/e/2026-12-11-quarters-live-events-daddy-g
+ -massive-attack/
+END:VEVENT
+END:VCALENDAR

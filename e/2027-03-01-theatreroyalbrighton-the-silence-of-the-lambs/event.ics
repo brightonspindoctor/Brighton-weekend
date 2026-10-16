@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-01-theatreroyalbrighton-the-silence-of-the-lambs@brightonweeken
+ d.co.uk
+DTSTAMP:20270301T000000Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:The Silence Of The Lambs
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/venues/theatre-royal-bright
+ on/whats-on/\nMore: https://brightonweekend.co.uk/e/2027-03-01-theatreroya
+ lbrighton-the-silence-of-the-lambs/
+URL:https://brightonweekend.co.uk/e/2027-03-01-theatreroyalbrighton-the-sil
+ ence-of-the-lambs/
+END:VEVENT
+END:VCALENDAR

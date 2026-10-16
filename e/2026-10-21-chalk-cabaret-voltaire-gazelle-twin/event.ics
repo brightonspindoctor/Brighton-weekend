@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-21-chalk-cabaret-voltaire-gazelle-twin@brightonweekend.co.uk
+DTSTAMP:20261021T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Cabaret Voltaire
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/M7f761854158\nMore: https://brigh
+ tonweekend.co.uk/e/2026-10-21-chalk-cabaret-voltaire-gazelle-twin/
+URL:https://brightonweekend.co.uk/e/2026-10-21-chalk-cabaret-voltaire-gazel
+ le-twin/
+END:VEVENT
+END:VCALENDAR

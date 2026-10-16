@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-28-the-prince-albert-hitman-sheela-supports@brightonweekend.co.
+ uk
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Hitman Sheela + supports
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/zt4cjyxj/hitman-sheela-live-
+ at-prince-albert?utm_campaign=prom_ss&utm_medium=social&utm_source=dynamic
+ \nMore: https://brightonweekend.co.uk/e/2026-10-28-the-prince-albert-hitma
+ n-sheela-supports/
+URL:https://brightonweekend.co.uk/e/2026-10-28-the-prince-albert-hitman-she
+ ela-supports/
+END:VEVENT
+END:VCALENDAR

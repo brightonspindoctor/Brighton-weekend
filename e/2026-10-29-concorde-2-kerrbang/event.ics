@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-29-concorde-2-kerrbang@brightonweekend.co.uk
+DTSTAMP:20261029T000000Z
+DTSTART:20261029T193000Z
+DTEND:20261029T223000Z
+SUMMARY:Kerrbang!
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/e/42502172\nMore: https://brig
+ htonweekend.co.uk/e/2026-10-29-concorde-2-kerrbang/
+URL:https://brightonweekend.co.uk/e/2026-10-29-concorde-2-kerrbang/
+END:VEVENT
+END:VCALENDAR

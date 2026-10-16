@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-24-brighton-dome-shed-seven@brightonweekend.co.uk
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Shed Seven
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
+ alse\,false&top_filter=all&page=3&view=list\nMore: https://brightonweekend
+ .co.uk/e/2026-11-24-brighton-dome-shed-seven/
+URL:https://brightonweekend.co.uk/e/2026-11-24-brighton-dome-shed-seven/
+END:VEVENT
+END:VCALENDAR

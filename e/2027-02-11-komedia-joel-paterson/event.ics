@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-11-komedia-joel-paterson@brightonweekend.co.uk
+DTSTAMP:20270211T000000Z
+DTSTART:20270211T200000Z
+DTEND:20270211T230000Z
+SUMMARY:Joel Paterson
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366823
+ 9/events/128667288\nMore: https://brightonweekend.co.uk/e/2027-02-11-komed
+ ia-joel-paterson/
+URL:https://brightonweekend.co.uk/e/2027-02-11-komedia-joel-paterson/
+END:VEVENT
+END:VCALENDAR

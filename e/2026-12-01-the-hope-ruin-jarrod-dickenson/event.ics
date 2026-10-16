@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-01-the-hope-ruin-jarrod-dickenson@brightonweekend.co.uk
+DTSTAMP:20261201T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Jarrod Dickenson
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/b17v27gw/jarrod-dickenson\nM
+ ore: https://brightonweekend.co.uk/e/2026-12-01-the-hope-ruin-jarrod-dicke
+ nson/
+URL:https://brightonweekend.co.uk/e/2026-12-01-the-hope-ruin-jarrod-dickens
+ on/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-16-concorde-2-noasis@brightonweekend.co.uk
+DTSTAMP:20270416T000000Z
+DTSTART:20270416T180000Z
+DTEND:20270416T210000Z
+SUMMARY:Noasis
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1608480/noasis-tickets\n
+ More: https://brightonweekend.co.uk/e/2027-04-16-concorde-2-noasis/
+URL:https://brightonweekend.co.uk/e/2027-04-16-concorde-2-noasis/
+END:VEVENT
+END:VCALENDAR

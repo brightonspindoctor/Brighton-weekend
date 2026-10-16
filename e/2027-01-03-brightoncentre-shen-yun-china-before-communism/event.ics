@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-03-brightoncentre-shen-yun-china-before-communism@brightonweeke
+ nd.co.uk
+DTSTAMP:20270103T000000Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:Shen Yun - China Before Communism
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/\nMore: https://brightonw
+ eekend.co.uk/e/2027-01-03-brightoncentre-shen-yun-china-before-communism/
+URL:https://brightonweekend.co.uk/e/2027-01-03-brightoncentre-shen-yun-chin
+ a-before-communism/
+END:VEVENT
+END:VCALENDAR

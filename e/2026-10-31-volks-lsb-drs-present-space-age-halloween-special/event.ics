@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-volks-lsb-drs-present-space-age-halloween-special@brightonwe
+ ekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART:20261031T223000Z
+DTEND:20261101T013000Z
+SUMMARY:LSB + DRS present: Space Age Halloween Special
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/LSB--DRS-present-Space-Age-Halloween-Special/42709727/\nMore: http
+ s://brightonweekend.co.uk/e/2026-10-31-volks-lsb-drs-present-space-age-hal
+ loween-special/
+URL:https://brightonweekend.co.uk/e/2026-10-31-volks-lsb-drs-present-space-
+ age-halloween-special/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-29-theprincealbert-meow-meows-hakuna-pesa-family-of-strangers@b
+ rightonweekend.co.uk
+DTSTAMP:20270529T000000Z
+DTSTART;VALUE=DATE:20270529
+DTEND;VALUE=DATE:20270530
+SUMMARY:Meow Meows Hakuna Pesa\, Family of Strangers
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/brighton-events/the-prince-albe
+ rt\nMore: https://brightonweekend.co.uk/e/2027-05-29-theprincealbert-meow-
+ meows-hakuna-pesa-family-of-strangers/
+URL:https://brightonweekend.co.uk/e/2027-05-29-theprincealbert-meow-meows-h
+ akuna-pesa-family-of-strangers/
+END:VEVENT
+END:VCALENDAR

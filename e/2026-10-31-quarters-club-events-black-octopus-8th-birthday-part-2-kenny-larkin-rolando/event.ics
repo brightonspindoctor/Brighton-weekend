@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-quarters-club-events-black-octopus-8th-birthday-part-2-kenny
+ -larkin-rolando@brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART:20261031T160000Z
+DTEND:20261031T220000Z
+SUMMARY:Black Octopus 8th Birthday Part 2: Kenny Larkin & Rolando
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/black-octopus-8t
+ h-birthday/quarters/3724738\nMore: https://brightonweekend.co.uk/e/2026-10
+ -31-quarters-club-events-black-octopus-8th-birthday-part-2-kenny-larkin-ro
+ lando/
+URL:https://brightonweekend.co.uk/e/2026-10-31-quarters-club-events-black-o
+ ctopus-8th-birthday-part-2-kenny-larkin-rolando/
+END:VEVENT
+END:VCALENDAR

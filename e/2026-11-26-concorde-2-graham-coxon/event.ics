@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-26-concorde-2-graham-coxon@brightonweekend.co.uk
+DTSTAMP:20261126T000000Z
+DTSTART:20261126T193000Z
+DTEND:20261126T223000Z
+SUMMARY:Graham Coxon
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1467261/graham-coxon-tic
+ kets/promos/1149770\nMore: https://brightonweekend.co.uk/e/2026-11-26-conc
+ orde-2-graham-coxon/
+URL:https://brightonweekend.co.uk/e/2026-11-26-concorde-2-graham-coxon/
+END:VEVENT
+END:VCALENDAR

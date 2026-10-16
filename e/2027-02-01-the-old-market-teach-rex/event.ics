@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-01-the-old-market-teach-rex@brightonweekend.co.uk
+DTSTAMP:20270102T000000Z
+DTSTART:20270102T091500Z
+DTEND:20270102T180000Z
+SUMMARY:Teach Rex
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/teach-rex\nMore: ht
+ tps://brightonweekend.co.uk/e/2027-02-01-the-old-market-teach-rex/
+URL:https://brightonweekend.co.uk/e/2027-02-01-the-old-market-teach-rex/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-17-the-old-market-kendal-mountain-festival-live-tour-2027@brigh
+ tonweekend.co.uk
+DTSTAMP:20270317T000000Z
+DTSTART:20270317T190000Z
+DTEND:20270317T214500Z
+SUMMARY:Kendal Mountain Festival Live tour 2027
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/kendal-mountain-fes
+ tival-live-tour-2027\nMore: https://brightonweekend.co.uk/e/2027-03-17-the
+ -old-market-kendal-mountain-festival-live-tour-2027/
+URL:https://brightonweekend.co.uk/e/2027-03-17-the-old-market-kendal-mounta
+ in-festival-live-tour-2027/
+END:VEVENT
+END:VCALENDAR
