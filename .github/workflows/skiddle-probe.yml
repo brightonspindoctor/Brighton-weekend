@@ -4,12 +4,12 @@ name: Skiddle API check
 # it goes into the app. It runs when this file or the script changes on this
 # branch (re-run it from the Actions tab once the SKIDDLE_API_KEY secret is
 # added), and saves skiddle-report.json on the branch. It never touches main
-# and is removed before the pull request is merged.
+# and is never merged: it lives on this branch only.
 
 on:
   workflow_dispatch:
   push:
-    branches: ['claude/not-music-event-types']
+    branches: ['claude/skiddle-check']
     paths:
       - 'scripts/skiddle-probe.py'
       - '.github/workflows/skiddle-probe.yml'
