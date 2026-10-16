@@ -40,11 +40,17 @@ SOURCES=[
  "https://www.skiddle.com/whats-on/Brighton/",
  "https://www.joyconcerts.com/listings",  # JOY. Concerts, promoter: gigs at Concorde 2, Volks, Hope & Ruin, Green Door Store and more
  "https://www.tickettailor.com/events/beatdown",  # Beat Down Promotions (hip-hop), sells through Ticket Tailor
+ "https://www.tickettailor.com/events/thedicemeeple",  # The Dice & Meeple: hosted board game nights in pubs, on Ticket Tailor
  "https://www.rivalcults.com/gigs",  # Rival Cults: one big table of Brighton gigs across ~25 venues
 ]
 # Promoters whose own listings we read: their gigs get the promoter's sticker in the app
 # (PROMOTER_STICKERS in index.html), also when a venue's listing of the same gig is the one kept.
-PROMOTERS={'joyconcerts.com':'JOY. Concerts','tickettailor.com/events/beatdown':'Beat Down Promotions'}
+PROMOTERS={'joyconcerts.com':'JOY. Concerts','tickettailor.com/events/beatdown':'Beat Down Promotions',
+ 'tickettailor.com/events/thedicemeeple':'The Dice & Meeple'}
+# Games nights move from pub to pub, so these promoters' listings are kept at
+# any Brighton & Hove venue, under the name Ticket Tailor gives it, and stay
+# filed as Other: the app lists them under Not music → Board games.
+ANY_VENUE_PROMOTERS={'The Dice & Meeple'}
 # Ticket Tailor shows automated browsers a security check ("Just a moment...",
 # HTTP 403) but serves its static listing pages to a plain request.
 PLAIN_FETCH=('tickettailor.com/',)
@@ -158,8 +164,10 @@ def tickettailor_cards(soup,page_url):
  """A promoter's Ticket Tailor page: one <li class="events-listing__item"> per
  gig, titled 'ACT // DATE // VENUE // TOWN', with the date in
  .event-meta__date ('Mon 26 Oct 2026 6:30 PM - 10:00 PM') and the place in
- .event-meta__location ('Chalk, BN1 1NJ'). Only Brighton & Hove postcodes at
- venues Brighton Weekend knows are kept."""
+ .event-meta__location ('Chalk, BN1 1NJ'). Only Brighton & Hove postcodes are
+ kept, at venues Brighton Weekend knows, or at any venue for the promoters in
+ ANY_VENUE_PROMOTERS."""
+ promoter=promoter_for(page_url)
  out=[]
  for card in soup.select('li.events-listing__item'):
   link=card.select_one('a.event__link');when=card.select_one('.event-meta__date');where=card.select_one('.event-meta__location')
@@ -167,14 +175,16 @@ def tickettailor_cards(soup,page_url):
   place=clean(where.get_text(' ',strip=True))
   if not BRIGHTON_POSTCODE.search(place):continue
   venue=venue_from_text(place.split(',')[0])
+  if not venue and promoter in ANY_VENUE_PROMOTERS:venue=clean(place.split(',')[0])
   if not venue:continue
   title=clean(link.get_text(' ',strip=True).split('//')[0])
   stamp=clean(when.get_text(' ',strip=True))
   tm=TIME_RE.search(stamp)
   e=make_event(title,parse_date(re.sub(r'\d{1,2}(?::\d{2})?\s*(?:am|pm).*$','',stamp,flags=re.I)),tm.group(1) if tm else '',urljoin(page_url,link.get('href')),venue,'')
   if e:
-   e['promoter']=promoter_for(page_url)
-   if e['category']=='Other':e['category']='Music'
+   e['promoter']=promoter
+   if promoter in ANY_VENUE_PROMOTERS:e['category']='Other'  # a games night, even when the title says 'Play'
+   elif e['category']=='Other':e['category']='Music'
    out.append(e)
  return out
 # Rival Cults lists each venue under its own short name. Every name it uses

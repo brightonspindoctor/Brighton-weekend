@@ -1672,6 +1672,7 @@ const MUSIC_CATEGORIES=new Set(['Music','Club','Music/Club']);
 const GAMES_RE=/\b(?:board ?games?|boardgam\w*|tabletop|games? nights?|dungeons (?:&|and) dragons|d&d|magic:? the gathering|commander night|warhammer|scrabble|backgammon|mahjong|chess (?:club|night|social))\b/i;
 const WEREWOLF_RE=/\bwerewolf\b/i; // the party game, but also a band's name, so never on a music listing
 const QUIZ_RE=/\b(?:quiz(?:zes)?|trivia)\b/i;
+const GAMES_PROMOTERS=new Set(['The Dice & Meeple']); // every listing is a games night (ANY_VENUE_PROMOTERS in scripts/scrape-discovery.py)
 const NIGHT_OUT_RE=/\b(?:bingo|cabaret|burlesque|drag|karaoke|poetry|spoken word|storytelling|workshops?|masterclass|life drawing|drink (?:&|and) draw|crafts?|clothes swap|market|fair|film|cinema|screening|tarot|speed dating|murder mystery|magic show|puppets?|talks?|lecture|in conversation|q ?& ?a|podcast|book (?:club|launch|signing)|line dancing|ceilidh|tasting|supper club)\b/i;
 const NOT_MUSIC_LEFT_OUT=/\bghost (?:walk|tour)s?\b/i;
 const OWN_PROGRAMME_VENUES=new Set(['Theatre Royal Brighton','Komedia']); // they file each show by type themselves
@@ -1687,7 +1688,7 @@ function findNotMusicKind(e){
  const t=String(e.title||''), cat=e.category||'Other';
  if(String(e.id||'').startsWith('festival:')||cat==='Sport'||e.venue==='Amex Stadium'||NOT_MUSIC_LEFT_OUT.test(t))return '';
  const music=MUSIC_CATEGORIES.has(cat);
- if(GAMES_RE.test(t)||(!music&&WEREWOLF_RE.test(t)))return 'Board games';
+ if(GAMES_PROMOTERS.has(e.promoter)||GAMES_RE.test(t)||(!music&&WEREWOLF_RE.test(t)))return 'Board games';
  if(QUIZ_RE.test(t))return 'Pub quizzes';
  if(isComedy(e))return 'Comedy';
  if(music)return '';
@@ -2219,7 +2220,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=84', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=85', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>

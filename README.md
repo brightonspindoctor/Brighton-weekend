@@ -16,7 +16,8 @@ phone's home screen.
   order at any venue (the venues in Settings only shape Discover). Anything
   listed here is left off Discover. Outside Theatre Royal's and Komedia's own
   programmes, an event needs a clear sign in its title that it isn't a gig
-  (`notMusicKind` in `index.html`). Ghost walks and ghost tours are left out.
+  (`notMusicKind` in `index.html`). Board games also takes every listing from
+  The Dice & Meeple. Ghost walks and ghost tours are left out.
 - **Event cards:** Get tickets up front; Add to calendar, Share and Add a genre
   sit behind the ⋯ button. Friends' counts show only when someone's interested or
   going. Listing markers such as "\*\*FREE ENTRY\*\*" become badges ("Free",
