@@ -1,0 +1,102 @@
+{
+ "length": 61812,
+ "title": "Buy tickets – The Dice & Meeple",
+ "items": 6,
+ "cards": [
+  {
+   "link": "/events/thedicemeeple/2449781",
+   "name": "TD&M: Meet Play Laugh (BeerBelly)",
+   "date": "Wed 21 Oct 2026 19:00 - 22:00 BST",
+   "location": "BeerBelly Micropub & Bottleshop, BN3 2WB"
+  },
+  {
+   "link": "/events/thedicemeeple/2464855",
+   "name": "Happy Birthday - The Dice & Meeple is turning 1!",
+   "date": "Mon 26 Oct 2026 14:00 - 17:00 GMT",
+   "location": "The Palmeira, BN3 3ES"
+  },
+  {
+   "link": "/events/thedicemeeple/2449782",
+   "name": "TD&M: Meet Play Laugh (BeerBelly)",
+   "date": "Wed 28 Oct 2026 19:00 - 22:00 GMT",
+   "location": "BeerBelly Micropub & Bottleshop, BN3 2WB"
+  },
+  {
+   "link": "/events/thedicemeeple/2449801",
+   "name": "TD&M: Meet Play Laugh (Palmeira)",
+   "date": "Thu 5 Nov 2026 19:00 - 22:00 GMT",
+   "location": "The Palmeira, BN3 3ES"
+  },
+  {
+   "link": "/events/thedicemeeple/2449807",
+   "name": "TD&M: Meet Play Laugh (Palmeira)",
+   "date": "Thu 12 Nov 2026 19:00 - 22:00 GMT",
+   "location": "The Palmeira, BN3 3ES"
+  },
+  {
+   "link": "/events/thedicemeeple/2449808",
+   "name": "TD&M: Meet Play Laugh (Palmeira)",
+   "date": "Thu 19 Nov 2026 19:00 - 22:00 GMT",
+   "location": "The Palmeira, BN3 3ES"
+  }
+ ],
+ "parsed": [],
+ "classes": [
+  "checkout_type-multi_event",
+  "event",
+  "event-meta",
+  "event-meta__date",
+  "event-meta__location",
+  "event-page-description",
+  "event__buttons",
+  "event__content",
+  "event__content__titles",
+  "event__cta",
+  "event__cta--book",
+  "event__cta--view",
+  "event__image",
+  "event__image__container",
+  "event__link",
+  "event__meta",
+  "event__title",
+  "events-filter",
+  "events-filter__control",
+  "events-filter__control--date",
+  "events-filter__control--search",
+  "events-filter__control--venue",
+  "events-filter__display-option",
+  "events-filter__label",
+  "events-filter__label--display",
+  "events-filter__label--wrapped",
+  "events-filter__wrapper",
+  "events-listing",
+  "events-listing__item",
+  "fa-location-dot",
+  "listing-hero",
+  "listings",
+  "listings_filters_wrapper",
+  "listings_filters_wrapper--hidden",
+  "main-event-page-container",
+  "main-events-listing",
+  "main-events-listing__calendar-embed",
+  "main-events-listing__event",
+  "main-events-listing__events",
+  "main-events-listing__title",
+  "venue_filter"
+ ],
+ "event_page": {
+  "url": "https://www.tickettailor.com/events/thedicemeeple/2449781",
+  "jsonld": [
+   " {\"@context\":\"https:\\/\\/schema.org\",\"@type\":\"Event\",\"name\":\"TD\\u0026M: Meet Play Laugh (BeerBelly)\",\"description\":\"\\n        \\n            THE DICE \\u0026amp; MEEPLE\\n        \\n        \\n            Meet. Play. Laugh.\\n        \\n        \\n            Hosted Board Game\",\"image\":[\"https:\\/\\/uploads.tickettailorassets.com\\/c_scale,w_1920\\/v1\\/production\\/userfiles\\/zpkogs9f4oc9oc0qgu5t.jpg?_a=BAAHWXDQ\",\"https:\\/\\/uploads.tickettailorassets.com\\/c_scale,w_720\\/v1\\/production\\/userfiles\\/clf47fpcg8xc2k5as0ns.jpg?_a=BAAHWXDQ\"],\"organizer\":{\"@type\":\"Organization\",\"name\":\"The Dice \\u0026 Meeple\",\"url\":\"https:\\/\\/www.tickettailor.com\\/events\\/thedicemeeple\"},\"eventStatus\":\"https:\\/\\/schema.org\\/EventScheduled\",\"eventAttendanceMode\":\"https:\\/\\/schema.org\\/OfflineEventAttendanceMode\",\"location\":{\"@type\":\"Place\",\"name\":\"BeerBelly Micropub \\u0026 Bottleshop\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"BeerBelly Micropub \\u0026 Bottleshop\",\"postalCode\":\"BN3 2WB\",\"addressCountry\":\"GB\"}},\"startDate\":\"2026-10-21T19:00:00+01:00\",\"endDate\":\"2026-10-21T22:00:00+01:00\",\"offers\":[{\"@type\":\"Offer\",\"name\":\"TD\\u0026M: Meet Play Laugh - EARLY BIRD\",\"url\":\"https:\\/\\/www.tickettailor.com\\/events\\/thedicemeeple\\/2449781\",\"price\":7,\"availability\":\"https:\\/\\/schema.org\\/InStock\",\"priceCurrency\":\"GBP\"},{\"@type\":\"Offer\",\"name\":\"TD\\u0026M: Meet Play Laugh - STANDARD\",\"url\":\"https:\\/\\/www.tickettailor.com\\/events\\/thedicemeeple\\/2449781\",\"price\":10,\"availability\":\"https:\\/\\/schema.org\\/InStock\",\"priceCurrency\":\"GBP\"}]} "
+  ],
+  "venue_text": [
+   "BeerBelly Micropub & Bottleshop, BN3 2WB",
+   "",
+   "BeerBelly Micropub & Bottleshop, BN3 2WB",
+   "",
+   "BeerBelly Micropub & Bottleshop, BN3 2WB",
+   "",
+   "Location BeerBelly Micropub & Bottleshop, BN3 2WB"
+  ]
+ }
+}
