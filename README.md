@@ -11,7 +11,12 @@ phone's home screen.
   day by day, with quick chips for *Tonight* (from 5pm), *This weekend* (Friday to
   Sunday) and *Next 7 days*. New events since your last visit show as a one-line
   summary you can open. Tapping a promoter's sticker shows only their gigs.
-  Comedy and talks are on their own tab, **Not music**.
+- **Not music:** works like Festivals: choose Comedy, Board games, Pub quizzes,
+  Pub events or Other, and every upcoming event of that type is listed in date
+  order at any venue (the venues in Settings only shape Discover). Anything
+  listed here is left off Discover. Outside Theatre Royal's and Komedia's own
+  programmes, an event needs a clear sign in its title that it isn't a gig
+  (`notMusicKind` in `index.html`). Ghost walks and ghost tours are left out.
 - **Event cards:** Get tickets up front; Add to calendar, Share and Add a genre
   sit behind the ⋯ button. Friends' counts show only when someone's interested or
   going. Listing markers such as "\*\*FREE ENTRY\*\*" become badges ("Free",
@@ -91,7 +96,7 @@ manual dispatch and whenever a scraper file changes on `main`. It runs:
    of shows that are on at Komedia. Talks the
    listing filed as something else are filed as Talk when the title says so
    ("In Conversation", "Q&A", "Interview", "Podcast", "Book Tour"), so they
-   show on the Not music tab.
+   show under Not music → Other (or Pub events at a pub).
 4. `scripts/check-tickets.py`: follows each event's ticket link as close to
    buying as it can (a listing page → the event's card → its booking button →
    the seller, at most three steps) and marks shows **Sold out** only when a
