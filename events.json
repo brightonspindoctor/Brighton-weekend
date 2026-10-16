@@ -6,6 +6,7 @@
     "A L P H A B E T",
     "Amex Stadium",
     "Babble",
+    "BeerBelly Micropub & Bottleshop",
     "Brighton Centre",
     "Brighton Dome",
     "Brighton Racecourse",
@@ -28,6 +29,7 @@
     "The Forge Comedy Club",
     "The Hope & Ruin",
     "The Old Market",
+    "The Palmeira",
     "The Pipeline",
     "The Prince Albert",
     "The Rose Hill",
@@ -203,7 +205,7 @@
       "venue": "Patterns",
       "url": "https://patternsbrighton.com/club/",
       "events": 0,
-      "error": "",
+      "error": "Page.content: Unable to retrieve content because the page is navigating and changing the content.",
       "sample": []
     },
     {
@@ -471,7 +473,7 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/whats-on/",
-      "events": 81,
+      "events": 72,
       "error": "",
       "sample": [
         {
@@ -2248,6 +2250,19 @@
       "promoter": "JOY. Concerts"
     },
     {
+      "id": "2026-10-21-beerbelly-micropub-bottleshop-td-m-meet-play-laugh-beerbelly",
+      "title": "TD&M: Meet Play Laugh (BeerBelly)",
+      "date": "2026-10-21",
+      "venue": "BeerBelly Micropub & Bottleshop",
+      "source": "discovery",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.tickettailor.com/events/thedicemeeple/2449781",
+      "promoter": "The Dice & Meeple",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2026-10-21-green-door-store-tabi-gervis-ep-release-party",
       "title": "Tabi Gervis – EP Release Party",
       "date": "2026-10-21",
@@ -3887,13 +3902,26 @@
       "last_seen": "2026-10-16"
     },
     {
+      "id": "2026-10-26-the-palmeira-happy-birthday-the-dice-meeple-is-turning-1",
+      "title": "Happy Birthday - The Dice & Meeple is turning 1!",
+      "date": "2026-10-26",
+      "venue": "The Palmeira",
+      "source": "discovery",
+      "time": "14:00",
+      "finish_time": "17:00",
+      "category": "Other",
+      "ticket_url": "https://www.tickettailor.com/events/thedicemeeple/2464855",
+      "promoter": "The Dice & Meeple",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2026-10-26-chalk-conway-the-machine",
       "title": "Conway The Machine",
       "date": "2026-10-26",
       "venue": "CHALK",
       "source": "venue",
       "time": "19:00",
-      "finish_time": "",
+      "finish_time": "22:00",
       "category": "Music",
       "ticket_url": "https://link.dice.fm/Y703d3c3ec21",
       "last_seen": "2026-10-16",
@@ -4301,6 +4329,19 @@
       "finish_time": "",
       "category": "Theatre",
       "ticket_url": "https://www.atgtickets.com/shows/elif-shafak-in-one-brief-moment-all-eternity/theatre-royal-brighton/calendar/",
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-10-28-beerbelly-micropub-bottleshop-td-m-meet-play-laugh-beerbelly",
+      "title": "TD&M: Meet Play Laugh (BeerBelly)",
+      "date": "2026-10-28",
+      "venue": "BeerBelly Micropub & Bottleshop",
+      "source": "discovery",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.tickettailor.com/events/thedicemeeple/2449782",
+      "promoter": "The Dice & Meeple",
       "last_seen": "2026-10-16"
     },
     {
@@ -6156,6 +6197,19 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-05-the-palmeira-td-m-meet-play-laugh-palmeira",
+      "title": "TD&M: Meet Play Laugh (Palmeira)",
+      "date": "2026-11-05",
+      "venue": "The Palmeira",
+      "source": "discovery",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.tickettailor.com/events/thedicemeeple/2449801",
+      "promoter": "The Dice & Meeple",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2026-11-05-the-pipeline-fern-veh",
       "title": "Fern Veh",
       "date": "2026-11-05",
@@ -7674,6 +7728,19 @@
       "category": "Music",
       "ticket_url": "https://link.dice.fm/a453e0649efc",
       "promoter": "JOY. Concerts",
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-11-12-the-palmeira-td-m-meet-play-laugh-palmeira",
+      "title": "TD&M: Meet Play Laugh (Palmeira)",
+      "date": "2026-11-12",
+      "venue": "The Palmeira",
+      "source": "discovery",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.tickettailor.com/events/thedicemeeple/2449807",
+      "promoter": "The Dice & Meeple",
       "last_seen": "2026-10-16"
     },
     {
@@ -9262,6 +9329,19 @@
       "category": "Music",
       "ticket_url": "https://dice.fm/partner/tickets/event/92356d-poison-ruin-18th-nov-volks-brighton-tickets",
       "promoter": "JOY. Concerts",
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-11-19-the-palmeira-td-m-meet-play-laugh-palmeira",
+      "title": "TD&M: Meet Play Laugh (Palmeira)",
+      "date": "2026-11-19",
+      "venue": "The Palmeira",
+      "source": "discovery",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.tickettailor.com/events/thedicemeeple/2449808",
+      "promoter": "The Dice & Meeple",
       "last_seen": "2026-10-16"
     },
     {
@@ -10902,21 +10982,6 @@
       "last_seen": "2026-10-16"
     },
     {
-      "id": "2026-11-27-brighton-dome-brighton-dome-backstage-tours",
-      "title": "Brighton Dome Backstage Tours",
-      "date": "2026-11-27",
-      "venue": "Brighton Dome",
-      "source": "venue",
-      "time": "11:00",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/L17-brighton-dome-backstage-tours/",
-      "last_seen": "2026-10-16",
-      "also_ids": [
-        "2026-11-27-brighton-dome-brighton-dome-backstage-tours-2"
-      ]
-    },
-    {
       "id": "2026-11-27-quarters-carnival-collective",
       "title": "Carnival Collective",
       "date": "2026-11-27",
@@ -11060,6 +11125,21 @@
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
       "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-11-27-brighton-dome-brighton-dome-backstage-tours",
+      "title": "Brighton Dome Backstage Tours",
+      "date": "2026-11-27",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/L17-brighton-dome-backstage-tours/",
+      "last_seen": "2026-10-16",
+      "also_ids": [
+        "2026-11-27-brighton-dome-brighton-dome-backstage-tours-2"
+      ]
     },
     {
       "id": "2026-11-27-caroline-of-brunswick-80s-re-mix",
@@ -12360,7 +12440,7 @@
       "venue": "CHALK",
       "source": "discovery",
       "time": "18:30",
-      "finish_time": "",
+      "finish_time": "22:00",
       "category": "Music",
       "ticket_url": "https://www.tickettailor.com/events/beatdown/2452268",
       "promoter": "Beat Down Promotions",
@@ -19043,7 +19123,7 @@
   "discovery_report": {
     "calendars_loaded": 8,
     "calendars": 8,
-    "events_found": 915,
+    "events_found": 921,
     "rivalcults_unknown_venues": [
       "Brighton Playhouse",
       "The Yellow Book"

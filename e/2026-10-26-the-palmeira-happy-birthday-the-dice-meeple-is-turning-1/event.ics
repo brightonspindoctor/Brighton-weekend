@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-26-the-palmeira-happy-birthday-the-dice-meeple-is-turning-1@bri
+ ghtonweekend.co.uk
+DTSTAMP:20261026T000000Z
+DTSTART:20261026T140000Z
+DTEND:20261026T170000Z
+SUMMARY:Happy Birthday - The Dice & Meeple is turning 1!
+LOCATION:The Palmeira\, Brighton
+DESCRIPTION:Tickets: https://www.tickettailor.com/events/thedicemeeple/2464
+ 855\nMore: https://brightonweekend.co.uk/e/2026-10-26-the-palmeira-happy-b
+ irthday-the-dice-meeple-is-turning-1/
+URL:https://brightonweekend.co.uk/e/2026-10-26-the-palmeira-happy-birthday-
+ the-dice-meeple-is-turning-1/
+END:VEVENT
+END:VCALENDAR
