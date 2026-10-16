@@ -160,10 +160,14 @@ def joy_cards(soup,page_url):
    if e['category']=='Other' and not re.search(r'wrestling|quiz|market|talk',title,re.I):e['category']='Music'
    out.append(e)
  return out
+TT_TIME_TEXT=r'\d{1,2}(?::\d{2})?\s*(?:am|pm)|(?:[01]?\d|2[0-3]):[0-5]\d'  # 6:30 PM or 19:00
+TT_TIME=re.compile(rf'\b({TT_TIME_TEXT})\b',re.I)
 def tickettailor_cards(soup,page_url):
  """A promoter's Ticket Tailor page: one <li class="events-listing__item"> per
  gig, titled 'ACT // DATE // VENUE // TOWN', with the date in
- .event-meta__date ('Mon 26 Oct 2026 6:30 PM - 10:00 PM') and the place in
+ .event-meta__date ('Mon 26 Oct 2026 6:30 PM - 10:00 PM', or 'Wed 21 Oct 2026
+ 19:00 - 22:00 BST' on a page set to the 24-hour clock; the end time becomes
+ the finish time) and the place in
  .event-meta__location ('Chalk, BN1 1NJ'). Only Brighton & Hove postcodes are
  kept, at venues Brighton Weekend knows, or at any venue for the promoters in
  ANY_VENUE_PROMOTERS."""
@@ -179,8 +183,11 @@ def tickettailor_cards(soup,page_url):
   if not venue:continue
   title=clean(link.get_text(' ',strip=True).split('//')[0])
   stamp=clean(when.get_text(' ',strip=True))
-  tm=TIME_RE.search(stamp)
-  e=make_event(title,parse_date(re.sub(r'\d{1,2}(?::\d{2})?\s*(?:am|pm).*$','',stamp,flags=re.I)),tm.group(1) if tm else '',urljoin(page_url,link.get('href')),venue,'')
+  # 'Mon 26 Oct 2026 6:30 PM - 10:00 PM' on some pages, 'Wed 21 Oct 2026 19:00 - 22:00 BST' on others
+  times=TT_TIME.findall(stamp)
+  day=re.split(rf'\s(?:{TT_TIME_TEXT})\b',stamp,maxsplit=1,flags=re.I)[0]
+  e=make_event(title,parse_date(day),times[0] if times else '',urljoin(page_url,link.get('href')),venue,'')
+  if e and len(times)>1:e['finish_time']=to_hhmm(times[1])
   if e:
    e['promoter']=promoter
    if promoter in ANY_VENUE_PROMOTERS:e['category']='Other'  # a games night, even when the title says 'Play'
