@@ -1,0 +1,81 @@
+name: Ticket Tailor check
+
+# A one-off look at how The Dice & Meeple's Ticket Tailor page lists its
+# events, read with main's Ticket Tailor reader. Results are saved in diag/ on
+# this branch, which is never merged.
+
+on:
+  push:
+    branches: ['claude/skiddle-check']
+    paths:
+      - '.github/workflows/tickettailor-check.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out this branch
+        uses: actions/checkout@v5
+      - name: Check out main
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          path: live
+      - name: Install the scraper's packages
+        run: python3 -m pip install -q -r live/requirements-events.txt
+      - name: Fetch and parse the page
+        run: |
+          mkdir -p diag
+          cd live
+          python3 - <<'PY'
+          import importlib.util, json, re, sys
+          sys.path.insert(0, 'scripts')
+          spec = importlib.util.spec_from_file_location('disc', 'scripts/scrape-discovery.py')
+          m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+          from bs4 import BeautifulSoup
+          out = {}
+          url = 'https://www.tickettailor.com/events/thedicemeeple'
+          try:
+              html = m.fetch_plain(url)
+          except Exception as exc:
+              html = ''; out['fetch_error'] = str(exc)
+          soup = BeautifulSoup(html, 'html.parser')
+          items = soup.select('li.events-listing__item')
+          out['length'] = len(html)
+          out['title'] = soup.title.get_text(strip=True) if soup.title else ''
+          out['items'] = len(items)
+          out['cards'] = [{'link': (c.select_one('a.event__link') or {}).get('href') if c.select_one('a.event__link') else None,
+                           'name': c.select_one('a.event__link').get_text(' ', strip=True) if c.select_one('a.event__link') else None,
+                           'date': c.select_one('.event-meta__date').get_text(' ', strip=True) if c.select_one('.event-meta__date') else None,
+                           'location': c.select_one('.event-meta__location').get_text(' ', strip=True) if c.select_one('.event-meta__location') else None}
+                          for c in items]
+          out['parsed'] = m.tickettailor_cards(soup, url)
+          classes = sorted({cl for t in soup.find_all(class_=True) for cl in t.get('class', []) if re.search(r'event|listing|venue|location', cl)})
+          out['classes'] = classes[:80]
+          # One event page, to see how the venue and address are given there.
+          links = [c['link'] for c in out['cards'] if c.get('link')]
+          if links:
+              ev_url = links[0] if links[0].startswith('http') else 'https://www.tickettailor.com' + links[0]
+              try:
+                  ev = BeautifulSoup(m.fetch_plain(ev_url), 'html.parser')
+                  out['event_page'] = {'url': ev_url,
+                      'jsonld': [t.get_text()[:3000] for t in ev.find_all('script', attrs={'type': re.compile('ld\\+json', re.I)})],
+                      'venue_text': [t.get_text(' ', strip=True)[:300] for t in ev.find_all(class_=re.compile('venue|location|address', re.I))][:10]}
+              except Exception as exc:
+                  out['event_page_error'] = str(exc)
+          json.dump(out, open('../diag/tickettailor.json', 'w'), indent=1, ensure_ascii=False)
+          open('../diag/tickettailor.html', 'w').write(html[:300000])
+          print(json.dumps({k: out[k] for k in ('length', 'title', 'items')}, indent=1))
+          PY
+      - name: Save the results on this branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add diag
+          git commit -q -m 'Ticket Tailor check results' || exit 0
+          git pull -q --rebase origin claude/skiddle-check
+          git push -q origin HEAD:claude/skiddle-check
