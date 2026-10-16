@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-17-quarters-carl-cox@brightonweekend.co.uk
+DTSTAMP:20270417T000000Z
+DTSTART:20270417T150000Z
+DTEND:20270417T210000Z
+SUMMARY:Carl Cox
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/carl-cox/quarter
+ s/3741398\nMore: https://brightonweekend.co.uk/e/2027-04-17-quarters-carl-
+ cox/
+URL:https://brightonweekend.co.uk/e/2027-04-17-quarters-carl-cox/
+END:VEVENT
+END:VCALENDAR

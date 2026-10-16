@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-brighton-dome-concert-hall-van-morrison@brightonweekend.co.u
+ k
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Van Morrison
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LXZ-van-morrison/\nM
+ ore: https://brightonweekend.co.uk/e/2026-10-31-brighton-dome-concert-hall
+ -van-morrison/
+URL:https://brightonweekend.co.uk/e/2026-10-31-brighton-dome-concert-hall-v
+ an-morrison/
+END:VEVENT
+END:VCALENDAR

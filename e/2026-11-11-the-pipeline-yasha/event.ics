@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-11-the-pipeline-yasha@brightonweekend.co.uk
+DTSTAMP:20261111T000000Z
+DTSTART:20261111T193000Z
+DTEND:20261112T000000Z
+SUMMARY:Yasha
+LOCATION:The Pipeline\, Brighton
+DESCRIPTION:Tickets: https://www.songkick.com/concerts/43467318-yasha-at-pi
+ peline?utm_medium=organic&utm_source=microformat\nMore: https://brightonwe
+ ekend.co.uk/e/2026-11-11-the-pipeline-yasha/
+URL:https://brightonweekend.co.uk/e/2026-11-11-the-pipeline-yasha/
+END:VEVENT
+END:VCALENDAR

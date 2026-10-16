@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-21-shelter-hall-brighton-gay-men-s-chorus-live-at-shelter-hall@
+ brightonweekend.co.uk
+DTSTAMP:20261221T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:Brighton Gay Men’s Chorus
+LOCATION:Shelter Hall\, Brighton
+DESCRIPTION:Tickets: https://bookings.designmynight.com/book?venue_id=695bd
+ baf9586224e31671d00&source=partner&type=6ace66292b925c45bc311055&date=2026
+ -12-21\nMore: https://brightonweekend.co.uk/e/2026-12-21-shelter-hall-brig
+ hton-gay-men-s-chorus-live-at-shelter-hall/
+URL:https://brightonweekend.co.uk/e/2026-12-21-shelter-hall-brighton-gay-me
+ n-s-chorus-live-at-shelter-hall/
+END:VEVENT
+END:VCALENDAR

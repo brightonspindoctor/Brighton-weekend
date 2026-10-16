@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-07-shelter-hall-city-of-stars-choir-live-performance@brightonwe
+ ekend.co.uk
+DTSTAMP:20261207T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:City of Stars Choir live performance
+LOCATION:Shelter Hall\, Brighton
+DESCRIPTION:Tickets: https://bookings.designmynight.com/book?venue_id=695bd
+ baf9586224e31671d00&source=partner&type=6ace66292b925c45bc311053\nMore: ht
+ tps://brightonweekend.co.uk/e/2026-12-07-shelter-hall-city-of-stars-choir-
+ live-performance/
+URL:https://brightonweekend.co.uk/e/2026-12-07-shelter-hall-city-of-stars-c
+ hoir-live-performance/
+END:VEVENT
+END:VCALENDAR

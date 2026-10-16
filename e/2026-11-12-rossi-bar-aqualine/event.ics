@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-12-rossi-bar-aqualine@brightonweekend.co.uk
+DTSTAMP:20261112T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Aqualine
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/dk7bv6-aqualine-12th-nov-the-ros
+ si-bar-brighton-tickets\nMore: https://brightonweekend.co.uk/e/2026-11-12-
+ rossi-bar-aqualine/
+URL:https://brightonweekend.co.uk/e/2026-11-12-rossi-bar-aqualine/
+END:VEVENT
+END:VCALENDAR

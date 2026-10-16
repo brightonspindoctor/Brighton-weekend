@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-24-the-folklore-rooms-daniel-kimbro@brightonweekend.co.uk
+DTSTAMP:20270424T000000Z
+DTSTART;VALUE=DATE:20270424
+DTEND;VALUE=DATE:20270425
+SUMMARY:Daniel Kimbro
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/daniel-kimbro/the-fol
+ klore-rooms/3741235\nMore: https://brightonweekend.co.uk/e/2027-04-24-the-
+ folklore-rooms-daniel-kimbro/
+URL:https://brightonweekend.co.uk/e/2027-04-24-the-folklore-rooms-daniel-ki
+ mbro/
+END:VEVENT
+END:VCALENDAR

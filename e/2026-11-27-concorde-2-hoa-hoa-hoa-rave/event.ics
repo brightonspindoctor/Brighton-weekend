@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-concorde-2-hoa-hoa-hoa-rave@brightonweekend.co.uk
+DTSTAMP:20261127T000000Z
+DTSTART:20261127T230000Z
+DTEND:20261128T020000Z
+SUMMARY:Hoa Hoa Hoa Rave
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/9lybswge/hoa-hoa-hoa-rave-br
+ ighton\nMore: https://brightonweekend.co.uk/e/2026-11-27-concorde-2-hoa-ho
+ a-hoa-rave/
+URL:https://brightonweekend.co.uk/e/2026-11-27-concorde-2-hoa-hoa-hoa-rave/
+END:VEVENT
+END:VCALENDAR

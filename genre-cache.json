@@ -339,6 +339,16 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "alexander painter": {
+  "mbid": "62bed307-df49-4071-9135-9f974cd99a39",
+  "name": "Alexander Painter",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Alexander Painter",
+  "checked": "2026-10-16",
+  "v": 3
+ },
  "alien boy": {
   "mbid": "428d1741-14b0-4afe-9706-572ffe7b719c",
   "name": "Alien Boy",
@@ -606,6 +616,29 @@
   "act": "Antony Szmierek",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "aqualine": {
+  "mbid": "e2e5b0d0-f92d-4187-b3e9-24d5da1816e8",
+  "name": "Aqualine",
+  "genres": [
+   {
+    "name": "alternative pop",
+    "count": 1
+   },
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "pop",
+    "count": 1
+   }
+  ],
+  "bucket": "Pop",
+  "reason": "tagged",
+  "act": "Aqualine",
+  "checked": "2026-10-16",
+  "v": 3
  },
  "arkayla raynor": {
   "bucket": null,
@@ -1408,6 +1441,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "bright soul gospel choir live performance": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Bright Soul Gospel Choir Live Performance",
+  "checked": "2026-10-16",
+  "v": 3
+ },
  "brighton beach boys": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -1447,6 +1487,13 @@
   "reason": "not in MusicBrainz",
   "act": "Brighton Early Music Festival",
   "checked": "2026-10-07"
+ },
+ "brighton gay mens chorus": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Brighton Gay Men’s Chorus",
+  "checked": "2026-10-16",
+  "v": 3
  },
  "brighton gay mens chorus presents a merry murder mystery": {
   "bucket": null,
@@ -2272,6 +2319,16 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "daniel kimbro": {
+  "mbid": "fea4c956-4543-4d1f-b270-1f7f127f8c0e",
+  "name": "Daniel Kimbro",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Daniel Kimbro",
+  "checked": "2026-10-16",
+  "v": 3
+ },
  "daniel martinez flamenco company": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -2653,6 +2710,13 @@
   "act": "Delta Goodrem",
   "checked": "2026-10-09"
  },
+ "demonstrations of power": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Demonstrations Of Power",
+  "checked": "2026-10-16",
+  "v": 3
+ },
  "deradoorian": {
   "mbid": "d609e858-c033-4cfb-8441-6736e23b291c",
   "name": "Deradoorian",
@@ -2879,6 +2943,13 @@
   "act": "Ditch Hustle Culture To Build Career Longevity",
   "checked": "2026-10-06"
  },
+ "dj and live sax": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "DJ & Live Sax",
+  "checked": "2026-10-16",
+  "v": 3
+ },
  "dj freaking out the neighbourhood": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -3032,6 +3103,42 @@
   "act": "Ed Blunt",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "editors": {
+  "mbid": "0efe858c-89e5-4e47-906a-356fa953fd6e",
+  "name": "Editors",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 6
+   },
+   {
+    "name": "indie rock",
+    "count": 5
+   },
+   {
+    "name": "pop rock",
+    "count": 1
+   },
+   {
+    "name": "post-punk revival",
+    "count": 2
+   },
+   {
+    "name": "rock",
+    "count": 1
+   },
+   {
+    "name": "synth-pop",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q570393",
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Editors",
+  "checked": "2026-10-16",
+  "v": 3
  },
  "elanor moss": {
   "mbid": "35f96e44-0f8c-495b-979a-55de67ff3b4f",
@@ -3371,6 +3478,29 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "fascinating aida": {
+  "mbid": "96fd736f-dfab-4d95-89ef-9214aa902775",
+  "name": "Fascinating Aïda",
+  "genres": [
+   {
+    "name": "cabaret",
+    "count": 1
+   },
+   {
+    "name": "comedy",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q5436647",
+  "wd_genres": [
+   "satire"
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Fascinating Aïda",
+  "checked": "2026-10-16",
+  "v": 3
+ },
  "fat lloyd": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -3389,6 +3519,13 @@
   "reason": "not in MusicBrainz",
   "act": "Fat Poppadaddys Societies",
   "checked": "2026-10-06"
+ },
+ "feel": {
+  "bucket": null,
+  "reason": "19 artists share this name",
+  "act": "Feel",
+  "checked": "2026-10-16",
+  "v": 3
  },
  "field trip": {
   "bucket": null,
@@ -4008,6 +4145,16 @@
   "act": "‘Girl",
   "checked": "2026-10-09"
  },
+ "girl apocrypha": {
+  "mbid": "942f614d-e614-4a34-ae96-55d4176f8317",
+  "name": "Girl Apocrypha",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Girl Apocrypha",
+  "checked": "2026-10-16",
+  "v": 3
+ },
  "girl in the year above": {
   "mbid": "e115f2cd-e4d3-465d-bcca-5d4f568e654f",
   "name": "Girl in the Year Above",
@@ -4084,6 +4231,13 @@
   "act": "Glenn Richards & The Venus Lakes",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "gloomy sunday 6": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Gloomy Sunday 6",
+  "checked": "2026-10-16",
+  "v": 3
  },
  "go your own way": {
   "mbid": "6579d915-1c03-4330-b8ac-3a56a910af6b",
@@ -5868,6 +6022,42 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "kim wilde": {
+  "mbid": "4b462375-c508-432a-8c88-ceeec38b16ae",
+  "name": "Kim Wilde",
+  "genres": [
+   {
+    "name": "dance-pop",
+    "count": 2
+   },
+   {
+    "name": "hi-nrg",
+    "count": 2
+   },
+   {
+    "name": "new wave",
+    "count": 2
+   },
+   {
+    "name": "pop",
+    "count": 7
+   },
+   {
+    "name": "pop rock",
+    "count": 2
+   },
+   {
+    "name": "synth-pop",
+    "count": 3
+   }
+  ],
+  "wikidata": "Q1790",
+  "bucket": "Pop",
+  "reason": "tagged",
+  "act": "Kim Wilde",
+  "checked": "2026-10-16",
+  "v": 3
+ },
  "king awesome": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -7008,6 +7198,13 @@
   "checked": "2026-10-13",
   "v": 3
  },
+ "mumfest": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Mumfest",
+  "checked": "2026-10-16",
+  "v": 3
+ },
  "murdock and themortals halloween": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -7447,6 +7644,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "novo speed": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Novo Speed",
+  "checked": "2026-10-16",
+  "v": 3
+ },
  "nye family daytime disco": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -7466,6 +7670,13 @@
   "reason": "not in MusicBrainz",
   "act": "Ocean Film Festival World",
   "checked": "2026-10-06"
+ },
+ "offie mag social halloween": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Offie Mag Social Halloween",
+  "checked": "2026-10-16",
+  "v": 3
  },
  "oh my god it s the church": {
   "mbid": "5b3493ca-19cf-4592-9506-17b5b487fece",
@@ -8592,6 +8803,16 @@
   "reason": "tagged",
   "act": "Saul Williams",
   "checked": "2026-10-06"
+ },
+ "scared little toaster": {
+  "mbid": "034009c7-19a1-419c-8547-a93c2d581bad",
+  "name": "Scared Little Toaster",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Scared Little Toaster",
+  "checked": "2026-10-16",
+  "v": 3
  },
  "scarlet reading": {
   "bucket": null,
@@ -11800,6 +12021,13 @@
   "reason": "not in MusicBrainz",
   "act": "XLNT BHVR",
   "checked": "2026-10-07"
+ },
+ "ye ye fever": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Ye Ye Fever",
+  "checked": "2026-10-16",
+  "v": 3
  },
  "yesca": {
   "bucket": null,

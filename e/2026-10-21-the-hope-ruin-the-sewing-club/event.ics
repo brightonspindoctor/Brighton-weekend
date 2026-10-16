@@ -6,8 +6,8 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-10-21-the-hope-ruin-the-sewing-club@brightonweekend.co.uk
 DTSTAMP:20261021T000000Z
-DTSTART;VALUE=DATE:20261021
-DTEND;VALUE=DATE:20261022
+DTSTART:20261021T180000Z
+DTEND:20261021T210000Z
 SUMMARY:The Sewing Club
 LOCATION:The Hope & Ruin\, Brighton
 DESCRIPTION:Tickets: https://www.fatsoma.com/e/ca6dd2xt/the-sewing-club\nMo

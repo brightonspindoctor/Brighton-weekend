@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-01-a-l-p-h-a-b-e-t-patchworks-eoy-party@brightonweekend.co.uk
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Patchworks Eoy Party
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.tickettailor.com/events/patchworks/2458000
+ \nMore: https://brightonweekend.co.uk/e/2026-11-01-a-l-p-h-a-b-e-t-patchwo
+ rks-eoy-party/
+URL:https://brightonweekend.co.uk/e/2026-11-01-a-l-p-h-a-b-e-t-patchworks-e
+ oy-party/
+END:VEVENT
+END:VCALENDAR

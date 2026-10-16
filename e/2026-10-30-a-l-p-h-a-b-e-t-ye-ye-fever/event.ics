@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-30-a-l-p-h-a-b-e-t-ye-ye-fever@brightonweekend.co.uk
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Ye Ye Fever
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.alphabetbrighton.com/listings/oct-30-y-ye-
+ fever\nMore: https://brightonweekend.co.uk/e/2026-10-30-a-l-p-h-a-b-e-t-ye
+ -ye-fever/
+URL:https://brightonweekend.co.uk/e/2026-10-30-a-l-p-h-a-b-e-t-ye-ye-fever/
+END:VEVENT
+END:VCALENDAR

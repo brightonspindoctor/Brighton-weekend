@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-13-a-l-p-h-a-b-e-t-novo-speed@brightonweekend.co.uk
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Novo Speed
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://ra.co/events/2553671\nMore: https://brightonwe
+ ekend.co.uk/e/2026-11-13-a-l-p-h-a-b-e-t-novo-speed/
+URL:https://brightonweekend.co.uk/e/2026-11-13-a-l-p-h-a-b-e-t-novo-speed/
+END:VEVENT
+END:VCALENDAR

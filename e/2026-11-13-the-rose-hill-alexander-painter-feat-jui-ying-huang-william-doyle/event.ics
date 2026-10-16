@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-13-the-rose-hill-alexander-painter-feat-jui-ying-huang-william-
+ doyle@brightonweekend.co.uk
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Alexander Painter feat Jui-Ying Huang + William Doyle
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/alexander-painter-feat
+ -jui-ying-huang-william-doyle/\nMore: https://brightonweekend.co.uk/e/2026
+ -11-13-the-rose-hill-alexander-painter-feat-jui-ying-huang-william-doyle/
+URL:https://brightonweekend.co.uk/e/2026-11-13-the-rose-hill-alexander-pain
+ ter-feat-jui-ying-huang-william-doyle/
+END:VEVENT
+END:VCALENDAR

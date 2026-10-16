@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-24-the-hope-ruin-demonstrations-of-power-imposter-exit-life-vio
+ laine@brightonweekend.co.uk
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Demonstrations Of Power + Imposter + Exit Life + Violaine
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/klcab2li/demonstrations-of-p
+ ower-imposter-exit-life-violaine\nMore: https://brightonweekend.co.uk/e/20
+ 26-11-24-the-hope-ruin-demonstrations-of-power-imposter-exit-life-violaine
+ /
+URL:https://brightonweekend.co.uk/e/2026-11-24-the-hope-ruin-demonstrations
+ -of-power-imposter-exit-life-violaine/
+END:VEVENT
+END:VCALENDAR

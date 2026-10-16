@@ -46,19 +46,19 @@
           "title": "The Original Harlem Globetrotters",
           "date": "2027-02-24",
           "time": "",
-          "link": "https://brightoncentre.co.uk/whats-on/2027/the-original-harlem-globetrotters/"
+          "link": "https://www.ticketmaster.co.uk/event/3E00654C902B20B9"
         },
         {
           "title": "The Original Harlem Globetrotters",
           "date": "2027-02-24",
           "time": "",
-          "link": "https://brightoncentre.co.uk/whats-on/2027/the-original-harlem-globetrotters/"
+          "link": "https://www.ticketmaster.co.uk/event/3E00654C902B20B9"
         },
         {
           "title": "The Original Harlem Globetrotters",
           "date": "2027-02-24",
           "time": "",
-          "link": "https://brightoncentre.co.uk/whats-on/2027/the-original-harlem-globetrotters/"
+          "link": "https://www.ticketmaster.co.uk/event/3E00654C902B20B9"
         }
       ]
     },
@@ -91,7 +91,7 @@
     {
       "venue": "Concorde 2",
       "url": "https://www.concorde2.co.uk/whats-on",
-      "events": 183,
+      "events": 185,
       "error": "",
       "sample": [
         {
@@ -143,28 +143,9 @@
     {
       "venue": "Green Door Store",
       "url": "https://thegreendoorstore.co.uk/events/",
-      "events": 48,
-      "error": "",
-      "sample": [
-        {
-          "title": "Mould",
-          "date": "2026-10-16",
-          "time": "19:00",
-          "link": "https://thegreendoorstore.co.uk/events/mould/"
-        },
-        {
-          "title": "Mould",
-          "date": "2026-10-16",
-          "time": "19:00",
-          "link": "https://thegreendoorstore.co.uk/events/mould/"
-        },
-        {
-          "title": "Mould",
-          "date": "2026-10-16",
-          "time": "19:00",
-          "link": "https://thegreendoorstore.co.uk/events/mould/"
-        }
-      ]
+      "events": 0,
+      "error": "Page.goto: Timeout 30000ms exceeded.",
+      "sample": []
     },
     {
       "venue": "Volks",
@@ -195,7 +176,7 @@
     {
       "venue": "Quarters",
       "url": "https://www.quartersbrighton.co.uk/whatson",
-      "events": 112,
+      "events": 120,
       "error": "",
       "sample": [
         {
@@ -225,12 +206,6 @@
       "error": "",
       "sample": [
         {
-          "title": "The Jam UK",
-          "date": "2026-10-16",
-          "time": "19:00",
-          "link": "https://dice.fm/event/the-jam-uk-16th-oct-patterns-brighton-tickets"
-        },
-        {
           "title": "CLUB 2010: BIEBER PARTY",
           "date": "2026-10-16",
           "time": "23:00",
@@ -241,6 +216,12 @@
           "date": "2026-10-17",
           "time": "17:00",
           "link": "https://dice.fm/event/james-zabiela-memory-box-17th-oct-patterns-brighton-tickets"
+        },
+        {
+          "title": "Sexy Lady Massive Presents: The Massive Tour",
+          "date": "2026-10-17",
+          "time": "23:00",
+          "link": "https://dice.fm/event/sexy-lady-massive-presents-the-massive-tour-17th-oct-patterns-brighton-tickets"
         }
       ]
     },
@@ -299,7 +280,7 @@
     {
       "venue": "Komedia",
       "url": "https://www.komedia.co.uk/whats-on/",
-      "events": 912,
+      "events": 921,
       "error": "",
       "sample": [
         {
@@ -381,22 +362,22 @@
       "error": "",
       "sample": [
         {
-          "title": "Age is a Stage",
-          "date": "2026-10-16",
+          "title": "Musical Theatre Masterclass - Legally Blonde (Ages 13-17 years)",
+          "date": "2026-10-17",
           "time": "",
-          "link": "https://www.atgtickets.com/shows/age-is-a-stage/theatre-royal-brighton/calendar/"
+          "link": "https://www.atgtickets.com/shows/musical-theatre-masterclass-legally-blonde-ages-13-17-years/theatre-royal-brighton/calendar/"
         },
         {
-          "title": "Age is a Stage",
-          "date": "2026-10-16",
+          "title": "Musical Theatre Masterclass - Legally Blonde (Ages 13-17 years)",
+          "date": "2026-10-17",
           "time": "",
-          "link": "https://www.atgtickets.com/shows/age-is-a-stage/theatre-royal-brighton/calendar/"
+          "link": "https://www.atgtickets.com/shows/musical-theatre-masterclass-legally-blonde-ages-13-17-years/theatre-royal-brighton/calendar/"
         },
         {
-          "title": "Age is a Stage",
-          "date": "2026-10-16",
+          "title": "Musical Theatre Masterclass - Legally Blonde (Ages 13-17 years)",
+          "date": "2026-10-17",
           "time": "",
-          "link": "https://www.atgtickets.com/shows/age-is-a-stage/theatre-royal-brighton/calendar/"
+          "link": "https://www.atgtickets.com/shows/musical-theatre-masterclass-legally-blonde-ages-13-17-years/theatre-royal-brighton/calendar/"
         }
       ]
     },
@@ -419,10 +400,10 @@
           "link": "https://www.hope.pub/event/toast-club/"
         },
         {
-          "title": "Northcote",
-          "date": "2026-10-20",
+          "title": "The Sewing Club",
+          "date": "2026-10-21",
           "time": "19:00",
-          "link": "https://www.hope.pub/event/northcote/"
+          "link": "https://www.hope.pub/event/the-sewing-club/"
         }
       ]
     },
@@ -514,7 +495,7 @@
     {
       "venue": "Shelter Hall",
       "url": "https://shelterhall.co.uk/whats-on/",
-      "events": 16,
+      "events": 28,
       "error": "",
       "sample": [
         {
@@ -566,33 +547,33 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/whats-on/",
-      "events": 80,
+      "events": 72,
       "error": "",
       "sample": [
         {
-          "title": "Jazz Emu: The Pleasure Is All Yours",
-          "date": "2026-10-16",
+          "title": "Komedia Comedy Club",
+          "date": "2026-10-24",
           "time": "",
-          "link": "https://brightondome.org/whats-on/Ljb-jazz-emu-the-pleasure-is-all-yours/"
+          "link": "https://brightondome.org/whats-on/LET-komedia-comedy-club/"
         },
         {
-          "title": "Jazz Emu: The Pleasure Is All Yours",
-          "date": "2026-10-16",
+          "title": "Komedia Comedy Club",
+          "date": "2026-10-24",
           "time": "",
-          "link": "https://brightondome.org/whats-on/Ljb-jazz-emu-the-pleasure-is-all-yours/"
+          "link": "https://brightondome.org/whats-on/LET-komedia-comedy-club/"
         },
         {
-          "title": "Jazz Emu: The Pleasure Is All Yours",
-          "date": "2026-10-16",
+          "title": "Komedia Comedy Club",
+          "date": "2026-10-24",
           "time": "",
-          "link": "https://brightondome.org/whats-on/Ljb-jazz-emu-the-pleasure-is-all-yours/"
+          "link": "https://brightondome.org/whats-on/LET-komedia-comedy-club/"
         }
       ]
     },
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/comedyfestival/",
-      "events": 172,
+      "events": 169,
       "error": "",
       "sample": [
         {
@@ -618,7 +599,7 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/whats-on/LgN-paddy-young-will-sir-be-laughing-alone/",
-      "events": 46,
+      "events": 44,
       "error": "",
       "sample": [
         {
@@ -727,7 +708,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://link.dice.fm/P27b9984b240",
-      "last_seen": "2026-10-16"
+      "last_seen": "2026-10-16",
+      "status": "SOLD OUT"
     },
     {
       "id": "2026-10-16-komedia-alfie-brown-the-entertainer-fri-16-oct-2026-7-00-pm-doors-6-30-pm",
@@ -1154,7 +1136,7 @@
       "time": "11:00",
       "finish_time": "16:00",
       "category": "Music",
-      "ticket_url": "https://www.hope.pub/event/brighton-cat-tour-art-day/",
+      "ticket_url": "https://www.hope.pub/event/brighton-cat-tour-art-day-2/",
       "last_seen": "2026-10-16",
       "also_ids": [
         "2026-10-17-the-hope-ruin-brighton-cat-tour-art-day-2"
@@ -1186,6 +1168,7 @@
       "also_ids": [
         "2026-10-17-brighton-dome-comedy-club-4-kids",
         "2026-10-17-brighton-dome-comedy-club-4-kids-2",
+        "2026-10-17-brighton-dome-comedy-club-4-kids-brighton-dome-comedy-festival-in-cahoots-with-komedia-2026-sat-17-oct-find-out-more",
         "2026-10-17-brighton-dome-comedy-club-4-kids-brighton-dome-comedy-festival-in-cahoots-with-komedia-2026-sat-17-oct-find-tickets"
       ],
       "status": "SOLD OUT"
@@ -2057,7 +2040,7 @@
     },
     {
       "id": "2026-10-19-komedia-siblings-dreamweavers-mon-19-oct-2026-7-30-pm-doors-7-00-pm",
-      "title": "Siblings: Dreamweavers",
+      "title": "Siblings: Dreamweavers & Dan Wye",
       "date": "2026-10-19",
       "venue": "Komedia",
       "source": "venue",
@@ -2353,6 +2336,21 @@
       "last_seen": "2026-10-16"
     },
     {
+      "id": "2026-10-21-the-hope-ruin-the-sewing-club",
+      "title": "The Sewing Club",
+      "date": "2026-10-21",
+      "venue": "The Hope & Ruin",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Club",
+      "ticket_url": "https://www.fatsoma.com/e/ca6dd2xt/the-sewing-club",
+      "last_seen": "2026-10-16",
+      "also_ids": [
+        "2026-10-21-the-hope-ruin-the-sewing-club-2"
+      ]
+    },
+    {
       "id": "2026-10-21-brighton-dome-maisie-adam-whatsherface-2",
       "title": "Maisie Adam: Whatsherface",
       "date": "2026-10-21",
@@ -2511,18 +2509,6 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/ed-blunt/the-folklore-rooms/3615290",
-      "last_seen": "2026-10-16"
-    },
-    {
-      "id": "2026-10-21-the-hope-ruin-the-sewing-club",
-      "title": "The Sewing Club",
-      "date": "2026-10-21",
-      "venue": "The Hope & Ruin",
-      "source": "discovery",
-      "time": "",
-      "finish_time": "",
-      "category": "Club",
-      "ticket_url": "https://www.fatsoma.com/e/ca6dd2xt/the-sewing-club",
       "last_seen": "2026-10-16"
     },
     {
@@ -3247,6 +3233,30 @@
       "last_seen": "2026-10-16"
     },
     {
+      "id": "2026-10-23-the-rose-hill-the-rose-hill-is-ten-festival-weekend-ticket",
+      "title": "The Rose Hill Is Ten Festival (Weekend Ticket)",
+      "date": "2026-10-23",
+      "venue": "The Rose Hill",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://therosehill.co.uk/event/%f0%9f%8e%88-the-rose-hill-is-ten-festival-%f0%9f%8e%88-weekend-ticket/",
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-10-23-theatre-royal-brighton-age-is-a-stage",
+      "title": "Age is a Stage",
+      "date": "2026-10-23",
+      "venue": "Theatre Royal Brighton",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://www.atgtickets.com/shows/age-is-a-stage/theatre-royal-brighton/calendar/",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2026-10-23-theatre-royal-brighton-the-haunting-of-hill-house",
       "title": "The Haunting of Hill House",
       "date": "2026-10-23",
@@ -3375,7 +3385,8 @@
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873622740/events/128642403",
       "last_seen": "2026-10-16",
       "also_ids": [
-        "2026-10-24-brighton-dome-komedia-comedy-club"
+        "2026-10-24-brighton-dome-komedia-comedy-club",
+        "2026-10-24-brighton-dome-komedia-comedy-club-brighton-dome-comedy-festival-in-cahoots-with-komedia-2026-fri-16-sat-24-oct-find-out-more"
       ]
     },
     {
@@ -4962,6 +4973,18 @@
       "last_seen": "2026-10-16"
     },
     {
+      "id": "2026-10-30-a-l-p-h-a-b-e-t-ye-ye-fever",
+      "title": "Ye Ye Fever",
+      "date": "2026-10-30",
+      "venue": "A L P H A B E T",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.alphabetbrighton.com/listings/oct-30-y-ye-fever",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2026-10-30-brightoncentre-the-rock-orchestra",
       "title": "The Rock Orchestra",
       "date": "2026-10-30",
@@ -5409,6 +5432,18 @@
       "genre_source": "musicbrainz:cd830a8f-89d2-4e96-96cb-7a497e51d437"
     },
     {
+      "id": "2026-10-31-a-l-p-h-a-b-e-t-offie-mag-social-halloween",
+      "title": "Offie Mag Social Halloween",
+      "date": "2026-10-31",
+      "venue": "A L P H A B E T",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://dice.fm/event/6ac3f8837577c3000148270a",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2026-10-31-brightoncentre-ministry-of-sound-classical",
       "title": "Ministry Of Sound Classical",
       "date": "2026-10-31",
@@ -5707,6 +5742,18 @@
       "last_seen": "2026-10-16",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:024bea6e-e250-4348-9e69-2dfcad38442e"
+    },
+    {
+      "id": "2026-11-01-a-l-p-h-a-b-e-t-patchworks-eoy-party",
+      "title": "Patchworks Eoy Party",
+      "date": "2026-11-01",
+      "venue": "A L P H A B E T",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://www.tickettailor.com/events/patchworks/2458000",
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-11-01-brighton-dome-dexys-midnight-runners",
@@ -6072,7 +6119,7 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-13"
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-11-04-daltons-no-tits-just-hits",
@@ -6241,7 +6288,7 @@
       "time": "",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list",
+      "ticket_url": "https://brightondome.org/whats-on/L2O-joshua-idehen/",
       "last_seen": "2026-10-16"
     },
     {
@@ -6254,6 +6301,18 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.daltonsbrighton.com/event-details/fighting-for-unity-2026-11-05-18-00",
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-11-05-green-door-store-triple-drain-otherside-release-party",
+      "title": "Triple Drain – ‘Otherside’ Release Party",
+      "date": "2026-11-05",
+      "venue": "Green Door Store",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/triple-drain-otherside-release-party/",
       "last_seen": "2026-10-16"
     },
     {
@@ -6377,7 +6436,7 @@
       "source": "venue",
       "time": "19:00",
       "finish_time": "22:00",
-      "category": "Music",
+      "category": "Other",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/The-Dolly-Parton-Experience/42726144/",
       "last_seen": "2026-10-16"
     },
@@ -6494,7 +6553,7 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-13"
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-11-06-dust-freaks-off-a-leash",
@@ -6872,7 +6931,7 @@
       "time": "",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list",
+      "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=1&view=list",
       "last_seen": "2026-10-16"
     },
     {
@@ -6885,7 +6944,7 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-13"
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-11-07-caroline-of-brunswick-men-don-t-get-lost-at-sea-like-they-used-to",
@@ -7159,6 +7218,18 @@
       ]
     },
     {
+      "id": "2026-11-08-chalk-culture-feat-kenyatta-hill-congo-s-cedric-myton",
+      "title": "Culture feat Kenyatta Hill & Congo's Cedric Myton",
+      "date": "2026-11-08",
+      "venue": "CHALK",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://link.dice.fm/E0ef04bab7ea",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2026-11-08-daltons-the-darts",
       "title": "The Darts",
       "date": "2026-11-08",
@@ -7206,6 +7277,18 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.eventbrite.com/e/isla-collective-leo-nathan-tickets-2002876922792",
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-11-08-the-folklore-rooms-matinee-solo-project",
+      "title": "Matinee: Solo Project",
+      "date": "2026-11-08",
+      "venue": "The Folklore Rooms",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://dice.fm/partner/tickets/event/k67k2q-solo-project-and-the-layabouts-8th-nov-the-folklore-rooms-brighton-tickets?dice_id=10766956&dice_channel=web&dice_tags=organic&dice_campaign=Magical+Majesty&dice_feature=mio_marketing&_branch_match_id=1245521259485845231&utm_source=web&utm_campaign=Magical+Majesty&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1S80T040SzRITDQwTrWvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQDIaqHbOwAAAA%3D%3D",
       "last_seen": "2026-10-16"
     },
     {
@@ -7554,7 +7637,7 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-13"
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-11-11-green-door-store-bloodsports",
@@ -7765,6 +7848,18 @@
       "genre_source": "musicbrainz:7a98818a-28d2-4856-a183-1df6f0984c21"
     },
     {
+      "id": "2026-11-12-chalk-goldie-live-with-full-band",
+      "title": "Goldie - Live with Full Band",
+      "date": "2026-11-12",
+      "venue": "CHALK",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://link.dice.fm/J6c5f26b814c",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2026-11-12-chalk-goldie-mbe",
       "title": "Goldie MBE",
       "date": "2026-11-12",
@@ -7787,6 +7882,20 @@
       "category": "Music",
       "ticket_url": "https://www.daltonsbrighton.com/event-details/grace-hayhurst-evi-vine-dea-velata",
       "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-11-12-rossi-bar-aqualine",
+      "title": "Aqualine",
+      "date": "2026-11-12",
+      "venue": "Rossi Bar",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://dice.fm/event/dk7bv6-aqualine-12th-nov-the-rossi-bar-brighton-tickets",
+      "last_seen": "2026-10-16",
+      "genre": "Pop",
+      "genre_source": "musicbrainz:e2e5b0d0-f92d-4187-b3e9-24d5da1816e8"
     },
     {
       "id": "2026-11-12-the-brunswick-double-bill-hotrox-and-the-black-heart-outlaws",
@@ -7857,11 +7966,9 @@
       "source": "venue",
       "time": "18:30",
       "finish_time": "22:00",
-      "category": "Music",
+      "category": "Other",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/30-Years-of-Volks-Presents---AFU-RA---Body-of-the-life-force/42833379/",
-      "last_seen": "2026-10-16",
-      "genre": "Hip-hop & R&B",
-      "genre_source": "musicbrainz:04c464f3-cdae-4b43-9d0e-e972316f6b1e"
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-11-13-concorde-2-john-digweed",
@@ -7975,11 +8082,21 @@
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
-      "category": "Music",
+      "category": "Other",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/30-Years-of-Volks-presents-Todd-Edwards/42723175/",
-      "last_seen": "2026-10-16",
-      "genre": "House & Disco",
-      "genre_source": "wikidata:Q7812349"
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-11-13-a-l-p-h-a-b-e-t-novo-speed",
+      "title": "Novo Speed",
+      "date": "2026-11-13",
+      "venue": "A L P H A B E T",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://ra.co/events/2553671",
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-11-13-brightoncentre-peter-kay-better-late-than-never",
@@ -8015,7 +8132,7 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-13"
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-11-13-caroline-of-brunswick-creatures",
@@ -8112,6 +8229,18 @@
       "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert",
       "source_url": "https://www.ents24.com/brighton-events/the-prince-albert",
       "finish_time": "",
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-11-13-the-rose-hill-alexander-painter-feat-jui-ying-huang-william-doyle",
+      "title": "Alexander Painter feat Jui-Ying Huang + William Doyle",
+      "date": "2026-11-13",
+      "venue": "The Rose Hill",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://therosehill.co.uk/event/alexander-painter-feat-jui-ying-huang-william-doyle/",
       "last_seen": "2026-10-16"
     },
     {
@@ -8336,7 +8465,7 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-13"
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-11-14-caroline-of-brunswick-battle-hymns-free",
@@ -8620,16 +8749,16 @@
     },
     {
       "id": "2026-11-15-chalk-portrayal-of-guilt",
-      "title": "Portrayal of Guilt",
+      "title": "Portrayal Of Guilt",
       "date": "2026-11-15",
       "venue": "CHALK",
       "source": "discovery",
       "time": "",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.axs.com/uk/events/1644840/portrayal-of-guilt-tickets",
+      "ticket_url": "https://link.dice.fm/Ya9127838feb",
+      "last_seen": "2026-10-16",
       "promoter": "JOY. Concerts",
-      "last_seen": "2026-10-15",
       "genre": "Punk & Metal",
       "genre_source": "musicbrainz:0f3f7357-73d3-42a3-81a5-b359bc4e8a56"
     },
@@ -8661,6 +8790,18 @@
       "last_seen": "2026-10-16",
       "genre": "Punk & Metal",
       "genre_source": "musicbrainz:10ad2ae2-1845-463d-a185-61eb0ba6f9c0"
+    },
+    {
+      "id": "2026-11-15-daltons-hijinx-promotions-present-gloomy-sunday-6",
+      "title": "Hijinx Promotions Present Gloomy Sunday 6",
+      "date": "2026-11-15",
+      "venue": "Daltons",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.daltonsbrighton.com/event-details/hijinx-promotions-present-gloomy-sunday-6-1",
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-11-15-the-folklore-rooms-track-dogs",
@@ -8737,6 +8878,21 @@
       "source_url": "https://www.ticketmaster.co.uk/dust-tickets-brighton/venue/415678",
       "finish_time": "",
       "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-11-16-resident-editors-acoustic-performance-signing",
+      "title": "Editors: Acoustic Performance + Signing",
+      "date": "2026-11-16",
+      "venue": "Resident",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://dice.fm/event/6ad0f0f93621320001744f6a",
+      "last_seen": "2026-10-16",
+      "status": "SOLD OUT",
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:0efe858c-89e5-4e47-906a-356fa953fd6e"
     },
     {
       "id": "2026-11-16-the-brunswick-open-mic-night",
@@ -9161,15 +9317,15 @@
     },
     {
       "id": "2026-11-18-theatreroyalbrighton-man-in-the-mirror-a-tribute-to-michael-jackson",
-      "title": "Man In The Mirror - A Tribute To Michael Jackson",
+      "title": "Man In The Mirror - A Tribute to Michael Jackson",
       "date": "2026-11-18",
       "venue": "Theatre Royal Brighton",
-      "category": "Music",
+      "source": "venue",
       "time": "",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "category": "Theatre",
+      "ticket_url": "https://www.atgtickets.com/shows/man-in-the-mirror-a-tribute-to-michael-jackson/theatre-royal-brighton/calendar/",
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-11-18-volks-poison-ru-n",
@@ -9286,6 +9442,18 @@
       "last_seen": "2026-10-16"
     },
     {
+      "id": "2026-11-19-shelter-hall-christmas-light-switch-on",
+      "title": "Christmas Light Switch On",
+      "date": "2026-11-19",
+      "venue": "Shelter Hall",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://bookings.designmynight.com/book?venue_id=695bdbaf9586224e31671d00&source=partner&type=6ace59b02345708ad84b3f00",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2026-11-19-the-folklore-rooms-carolina-cury",
       "title": "Carolina Cury",
       "date": "2026-11-19",
@@ -9327,12 +9495,12 @@
       "title": "The Yacht Rock Experience",
       "date": "2026-11-19",
       "venue": "Theatre Royal Brighton",
-      "category": "Music",
+      "source": "venue",
       "time": "",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "category": "Theatre",
+      "ticket_url": "https://www.atgtickets.com/shows/the-yacht-rock-experience/theatre-royal-brighton/calendar/",
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-11-20-concorde-2-uk-foo-fighters",
@@ -9470,7 +9638,7 @@
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
-      "category": "Music",
+      "category": "Other",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Sub-liminal-Recordings-Wiley-Brockie-Funsta-Heist/42815860/",
       "last_seen": "2026-10-16"
     },
@@ -9616,6 +9784,18 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.brunswickpub.co.uk/event-details/dissent",
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-11-20-the-folklore-rooms-girl-apocrypha",
+      "title": "Girl Apocrypha",
+      "date": "2026-11-20",
+      "venue": "The Folklore Rooms",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.eventbrite.co.uk/e/girl-apocrypha-brighton-headline-tickets-2003365024718",
       "last_seen": "2026-10-16"
     },
     {
@@ -9811,7 +9991,7 @@
       "source": "venue",
       "time": "23:00",
       "finish_time": "",
-      "category": "Music",
+      "category": "Other",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Delirium-X-The-Final-Show-w-Loxy-Seba-HLZ--more/42702061/",
       "last_seen": "2026-10-16"
     },
@@ -10263,7 +10443,7 @@
       "time": "",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=3&view=list",
+      "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list",
       "last_seen": "2026-10-16",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:4d8650ba-b4ed-4307-a6c8-368eb646210b"
@@ -10330,6 +10510,18 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/sennen-timcke-album-launch/the-folklore-rooms/3712454",
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-11-24-the-hope-ruin-demonstrations-of-power-imposter-exit-life-violaine",
+      "title": "Demonstrations Of Power + Imposter + Exit Life + Violaine",
+      "date": "2026-11-24",
+      "venue": "The Hope & Ruin",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.fatsoma.com/e/klcab2li/demonstrations-of-power-imposter-exit-life-violaine",
       "last_seen": "2026-10-16"
     },
     {
@@ -10481,7 +10673,7 @@
       "time": "",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=3&view=list",
+      "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list",
       "last_seen": "2026-10-16"
     },
     {
@@ -10870,6 +11062,18 @@
       "status": "SOLD OUT"
     },
     {
+      "id": "2026-11-27-concorde-2-hoa-hoa-hoa-rave",
+      "title": "Hoa Hoa Hoa Rave",
+      "date": "2026-11-27",
+      "venue": "Concorde 2",
+      "source": "venue",
+      "time": "23:00",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://www.fatsoma.com/e/9lybswge/hoa-hoa-hoa-rave-brighton",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2026-11-27-patterns-efan-extended-brighton",
       "title": "EFAN:Extended",
       "date": "2026-11-27",
@@ -10928,7 +11132,7 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/L17-brighton-dome-backstage-tours/",
-      "last_seen": "2026-10-15"
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-11-27-caroline-of-brunswick-80s-re-mix",
@@ -11053,7 +11257,7 @@
       "source": "venue",
       "time": "14:00",
       "finish_time": "20:00",
-      "category": "Music",
+      "category": "Other",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Dusk-before-Dark/42631044/",
       "last_seen": "2026-10-16"
     },
@@ -11179,7 +11383,10 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Alphabet-Brighton/LiTM-presents-EXCELLENT-BEHAVIOUR/42801473/",
-      "last_seen": "2026-10-16"
+      "last_seen": "2026-10-16",
+      "also_ids": [
+        "2026-11-28-a-l-p-h-a-b-e-t-excellent-behaviour-with-kelvin-andrews-and-joey-t"
+      ]
     },
     {
       "id": "2026-11-28-a-l-p-h-a-b-e-t-dreamcastmoe-offie-mag-djs",
@@ -12020,7 +12227,7 @@
       "source": "venue",
       "time": "19:00",
       "finish_time": "22:00",
-      "category": "Music",
+      "category": "Other",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Guns-2-Roses/42308132/",
       "last_seen": "2026-10-16"
     },
@@ -12381,6 +12588,30 @@
       "last_seen": "2026-10-16",
       "genre": "Indie & Rock",
       "genre_source": "title"
+    },
+    {
+      "id": "2026-12-05-daltons-xmas-melt-your-brains-party",
+      "title": "Xmas Melt Your Brains Party",
+      "date": "2026-12-05",
+      "venue": "Daltons",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://wegottickets.com/f/27044",
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-12-05-green-door-store-mumfest-2026",
+      "title": "Mumfest 2026",
+      "date": "2026-12-05",
+      "venue": "Green Door Store",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://thegreendoorstore.co.uk/events/mumfest-2026/",
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-12-05-the-brunswick-90s-grunge-tribute-ghosts-of-seattle",
@@ -13482,6 +13713,18 @@
       "genre_source": "musicbrainz:321eaf5a-be21-4faf-a7a0-0a4e59e5ee29"
     },
     {
+      "id": "2026-12-14-shelter-hall-bright-soul-gospel-choir-live-performance",
+      "title": "Bright Soul Gospel Choir Live Performance",
+      "date": "2026-12-14",
+      "venue": "Shelter Hall",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://bookings.designmynight.com/book?venue_id=695bdbaf9586224e31671d00&source=partner&type=6ace66292b925c45bc311054",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2026-12-14-the-brunswick-open-mic-night",
       "title": "Open Mic Night",
       "date": "2026-12-14",
@@ -13715,6 +13958,18 @@
       "promoter": "JOY. Concerts"
     },
     {
+      "id": "2026-12-17-rossi-bar-scared-little-toaster",
+      "title": "Scared Little Toaster",
+      "date": "2026-12-17",
+      "venue": "Rossi Bar",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://wegottickets.com/f/27697",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2026-12-18-komedia-komedia-christmas-party-fri-18-dec-2026-doors-6-30-pm",
       "title": "Komedia Christmas Party",
       "date": "2026-12-18",
@@ -13789,7 +14044,7 @@
       "time": "",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=4&view=list",
+      "ticket_url": "https://brightondome.org/whats-on/LGD-organoke/",
       "last_seen": "2026-10-16"
     },
     {
@@ -13965,6 +14220,18 @@
       "finish_time": "",
       "category": "Other",
       "ticket_url": "https://www.daltonsbrighton.com/event-details/the-big-gay-market-13",
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2026-12-19-shelter-hall-dj-live-sax-at-shelter-hall",
+      "title": "DJ & Live Sax",
+      "date": "2026-12-19",
+      "venue": "Shelter Hall",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://bookings.designmynight.com/book?venue_id=695bdbaf9586224e31671d00&source=partner",
       "last_seen": "2026-10-16"
     },
     {
@@ -14196,6 +14463,18 @@
       "finish_time": "",
       "last_seen": "2026-10-16",
       "promoter": "JOY. Concerts"
+    },
+    {
+      "id": "2026-12-21-shelter-hall-brighton-gay-men-s-chorus-live-at-shelter-hall",
+      "title": "Brighton Gay Men’s Chorus",
+      "date": "2026-12-21",
+      "venue": "Shelter Hall",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://bookings.designmynight.com/book?venue_id=695bdbaf9586224e31671d00&source=partner&type=6ace66292b925c45bc311055&date=2026-12-21",
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2026-12-21-the-brunswick-open-mic-night",
@@ -14814,6 +15093,18 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.axs.com/uk/events/1645155/purple-sane-bowie-x-prince-party-tickets",
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2027-01-16-komedia-lovers-ii-friends-90s-00s-day-party",
+      "title": "Lovers II Friends – 90s/00s Day Party",
+      "date": "2027-01-16",
+      "venue": "Komedia",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873649219/events/128667725",
       "last_seen": "2026-10-16"
     },
     {
@@ -16077,7 +16368,7 @@
       "time": "",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=5&view=list",
+      "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=4&view=list",
       "last_seen": "2026-10-16",
       "genre": "Pop",
       "genre_source": "musicbrainz:8c5755b4-2de6-4158-bca9-e354cbf07437"
@@ -16091,7 +16382,7 @@
       "time": "",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=5&view=list",
+      "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=4&view=list",
       "last_seen": "2026-10-16"
     },
     {
@@ -16225,7 +16516,7 @@
       "time": "",
       "finish_time": "",
       "category": "Other",
-      "ticket_url": "https://brightoncentre.co.uk/whats-on/2027/the-original-harlem-globetrotters/",
+      "ticket_url": "https://www.ticketmaster.co.uk/event/3E00654C902B20B9",
       "last_seen": "2026-10-16"
     },
     {
@@ -16757,6 +17048,18 @@
       ]
     },
     {
+      "id": "2027-03-11-komedia-adam-flood-life-and-death-of-the-party",
+      "title": "Adam Flood: Life and Death Of The Party",
+      "date": "2027-03-11",
+      "venue": "Komedia",
+      "source": "venue",
+      "time": "20:00",
+      "finish_time": "",
+      "category": "Comedy",
+      "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873668304/events/128667585",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2027-03-11-komedia-tape-face-20",
       "title": "Tape Face: 20",
       "date": "2027-03-11",
@@ -16828,6 +17131,18 @@
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873666838/events/128664602",
       "last_seen": "2026-10-16",
       "status": "SOLD OUT"
+    },
+    {
+      "id": "2027-03-13-quarters-saul-williams",
+      "title": "Saul Williams",
+      "date": "2027-03-13",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "18:00",
+      "finish_time": "22:00",
+      "category": "Talk",
+      "ticket_url": "https://www.seetickets.com/event/saul-williams/quarters/3743115",
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2027-03-13-the-old-market-emma-doran-emmaculate",
@@ -17226,6 +17541,32 @@
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
       "last_seen": "2026-10-09"
+    },
+    {
+      "id": "2027-03-23-brighton-dome-kim-wilde-the-singles-tour",
+      "title": "Kim Wilde: The Singles Tour",
+      "date": "2027-03-23",
+      "venue": "Brighton Dome",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=5&view=list",
+      "last_seen": "2026-10-16",
+      "genre": "Pop",
+      "genre_source": "musicbrainz:4b462375-c508-432a-8c88-ceeec38b16ae"
+    },
+    {
+      "id": "2027-03-24-brighton-dome-fascinating-a-da-bawdacious",
+      "title": "Fascinating Aïda: Bawdacious!",
+      "date": "2027-03-24",
+      "venue": "Brighton Dome",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=5&view=list",
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2027-03-24-theatreroyalbrighton-henry-paker",
@@ -17782,6 +18123,30 @@
       "last_seen": "2026-10-16"
     },
     {
+      "id": "2027-04-17-komedia-lovers-ii-friends-90s-00s-day-party",
+      "title": "Lovers II Friends – 90s/00s Day Party",
+      "date": "2027-04-17",
+      "venue": "Komedia",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Club",
+      "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873649219/events/128667726",
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2027-04-17-quarters-carl-cox",
+      "title": "Carl Cox",
+      "date": "2027-04-17",
+      "venue": "Quarters",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "22:00",
+      "category": "Club",
+      "ticket_url": "https://quarters.seetickets.com/event/carl-cox/quarters/3741398",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2027-04-17-brighton-centre-queen-of-the-night-a-tribute-to-whitney-houston",
       "title": "Queen of the Night – A Tribute to Whitney Houston",
       "date": "2027-04-17",
@@ -17950,6 +18315,18 @@
       "last_seen": "2026-10-16"
     },
     {
+      "id": "2027-04-24-the-folklore-rooms-daniel-kimbro",
+      "title": "Daniel Kimbro",
+      "date": "2027-04-24",
+      "venue": "The Folklore Rooms",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.seetickets.com/event/daniel-kimbro/the-folklore-rooms/3741235",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2027-04-25-the-old-market-salvador-sobral",
       "title": "Salvador Sobral",
       "date": "2027-04-25",
@@ -17984,9 +18361,9 @@
       "time": "",
       "finish_time": "",
       "category": "Music",
-      "ticket_url": "https://www.axs.com/uk/events/1588124/sadness-tickets?skin=volks",
-      "last_seen": "2026-10-16",
-      "promoter": "JOY. Concerts"
+      "ticket_url": "https://link.dice.fm/K1ac5f57986a",
+      "promoter": "JOY. Concerts",
+      "last_seen": "2026-10-16"
     },
     {
       "id": "2027-04-28-patterns-first-time-flyers",
@@ -18257,6 +18634,18 @@
       "last_seen": "2026-10-16"
     },
     {
+      "id": "2027-05-21-chalk-the-gorillaz-experience-in-brighton",
+      "title": "The Gorillaz Experience in Brighton!",
+      "date": "2027-05-21",
+      "venue": "CHALK",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Chalk-Brighton/The-Gorillaz-Experience-in-Brighton/43019922/",
+      "last_seen": "2026-10-16"
+    },
+    {
       "id": "2027-05-22-komedia-komedia-comedy-club-sat-22-may-2027-8-00-pm-doors-7-00-pm",
       "title": "Komedia Comedy Club",
       "date": "2027-05-22",
@@ -18447,6 +18836,18 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873622740/events/128665282",
+      "last_seen": "2026-10-16"
+    },
+    {
+      "id": "2027-06-11-the-hope-ruin-feel-support",
+      "title": "Feel + support",
+      "date": "2027-06-11",
+      "venue": "The Hope & Ruin",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://www.fatsoma.com/e/jzkx86w7/feel-support",
       "last_seen": "2026-10-16"
     },
     {
@@ -18715,7 +19116,7 @@
   "discovery_report": {
     "calendars_loaded": 7,
     "calendars": 7,
-    "events_found": 934,
+    "events_found": 915,
     "rivalcults_unknown_venues": [
       "Brighton Playhouse",
       "The Yellow Book"

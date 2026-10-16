@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-14-shelter-hall-bright-soul-gospel-choir-live-performance@brigh
+ tonweekend.co.uk
+DTSTAMP:20261214T000000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Bright Soul Gospel Choir Live Performance
+LOCATION:Shelter Hall\, Brighton
+DESCRIPTION:Tickets: https://bookings.designmynight.com/book?venue_id=695bd
+ baf9586224e31671d00&source=partner&type=6ace66292b925c45bc311054\nMore: ht
+ tps://brightonweekend.co.uk/e/2026-12-14-shelter-hall-bright-soul-gospel-c
+ hoir-live-performance/
+URL:https://brightonweekend.co.uk/e/2026-12-14-shelter-hall-bright-soul-gos
+ pel-choir-live-performance/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-11-the-hope-ruin-feel-support@brightonweekend.co.uk
+DTSTAMP:20270611T000000Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:Feel + support
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/jzkx86w7/feel-support\nMore:
+  https://brightonweekend.co.uk/e/2027-06-11-the-hope-ruin-feel-support/
+URL:https://brightonweekend.co.uk/e/2027-06-11-the-hope-ruin-feel-support/
+END:VEVENT
+END:VCALENDAR

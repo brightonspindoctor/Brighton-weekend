@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-11-komedia-adam-flood-life-and-death-of-the-party@brightonweeke
+ nd.co.uk
+DTSTAMP:20270311T000000Z
+DTSTART:20270311T200000Z
+DTEND:20270311T230000Z
+SUMMARY:Adam Flood: Life and Death Of The Party
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366830
+ 4/events/128667585\nMore: https://brightonweekend.co.uk/e/2027-03-11-komed
+ ia-adam-flood-life-and-death-of-the-party/
+URL:https://brightonweekend.co.uk/e/2027-03-11-komedia-adam-flood-life-and-
+ death-of-the-party/
+END:VEVENT
+END:VCALENDAR

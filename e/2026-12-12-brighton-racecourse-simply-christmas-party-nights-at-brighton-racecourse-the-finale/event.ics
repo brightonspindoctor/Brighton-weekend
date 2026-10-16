@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-brighton-racecourse-simply-christmas-party-nights-at-brighto
+ n-racecourse-the-finale@brightonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Simply Christmas Party Nights at Brighton Racecourse - The Finale
+LOCATION:Brighton Racecourse\, Brighton
+DESCRIPTION:Tickets: https://www.brighton-racecourse.co.uk/whats-on/simply-
+ christmas-party-night-Saturday-12th-December\nMore: https://brightonweeken
+ d.co.uk/e/2026-12-12-brighton-racecourse-simply-christmas-party-nights-at-
+ brighton-racecourse-the-finale/
+URL:https://brightonweekend.co.uk/e/2026-12-12-brighton-racecourse-simply-c
+ hristmas-party-nights-at-brighton-racecourse-the-finale/
+END:VEVENT
+END:VCALENDAR

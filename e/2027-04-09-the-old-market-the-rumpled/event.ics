@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-09-the-old-market-the-rumpled@brightonweekend.co.uk
+DTSTAMP:20270409T000000Z
+DTSTART:20270409T180000Z
+DTEND:20270409T213000Z
+SUMMARY:The Rumpled
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/the-rumpled\nMore: 
+ https://brightonweekend.co.uk/e/2027-04-09-the-old-market-the-rumpled/
+URL:https://brightonweekend.co.uk/e/2027-04-09-the-old-market-the-rumpled/
+END:VEVENT
+END:VCALENDAR
