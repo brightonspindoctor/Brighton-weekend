@@ -1862,6 +1862,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "city of stars choir live performance": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "City of Stars Choir live performance",
+  "checked": "2026-10-16",
+  "v": 3
+ },
  "city wall x mark broom": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -5402,6 +5409,21 @@
   "act": "JIM",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "jim e brown": {
+  "mbid": "5051e55e-0788-4573-9eef-597f0db3baae",
+  "name": "Jim E. Brown",
+  "genres": [
+   {
+    "name": "comedy",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Jim E. Brown",
+  "checked": "2026-10-16",
+  "v": 3
  },
  "jim jones all stars": {
   "mbid": "bcde87fa-6e35-4132-8e8c-83f8f9b9743e",
@@ -11457,6 +11479,62 @@
   "reason": "genres unclear",
   "act": "Utah Saints",
   "checked": "2026-10-06"
+ },
+ "van morrison": {
+  "mbid": "a41ac10f-0a56-4672-9161-b83f9b223559",
+  "name": "Van Morrison",
+  "genres": [
+   {
+    "name": "blue-eyed soul",
+    "count": 6
+   },
+   {
+    "name": "blues",
+    "count": 1
+   },
+   {
+    "name": "chamber folk",
+    "count": 2
+   },
+   {
+    "name": "classic rock",
+    "count": 1
+   },
+   {
+    "name": "contemporary folk",
+    "count": 1
+   },
+   {
+    "name": "folk",
+    "count": 4
+   },
+   {
+    "name": "folk pop",
+    "count": 1
+   },
+   {
+    "name": "folk rock",
+    "count": 10
+   },
+   {
+    "name": "rock",
+    "count": 6
+   },
+   {
+    "name": "singer-songwriter",
+    "count": 2
+   },
+   {
+    "name": "soft rock",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q272203",
+  "bucket": "Folk & Country",
+  "reason": "tagged",
+  "act": "Van Morrison",
+  "checked": "2026-10-16",
+  "v": 3
  },
  "vigilantes": {
   "bucket": null,
