@@ -331,7 +331,7 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .festival-filters{display:flex;gap:var(--bw-space-2);overflow-x:auto;padding:2px 1px var(--bw-space-2);margin:0 -2px var(--bw-space-2);scrollbar-width:none;position:sticky;top:calc(60px + max(12px,env(safe-area-inset-top)));z-index:4;background:var(--bw-abyss)}
 .festival-filters::-webkit-scrollbar{display:none}
 .festival-filter{flex:none;min-height:38px;padding:8px 14px;border-radius:var(--bw-radius-pill);border:1px solid var(--bw-line);background:var(--bw-deep);color:var(--bw-muted);font-size:var(--bw-text-sm);font-weight:800;white-space:nowrap}
-.comedy-venues{position:static;flex-wrap:wrap;overflow:visible}
+.show-more{display:flex;justify-content:center;margin:var(--bw-space-3) 0 var(--bw-space-4)}
 .festival-filter.active{background:var(--bw-interested-bg);border-color:var(--bw-interested-line);color:var(--bw-interested-fg)}
 .festival-card .festival-date{font-size:var(--bw-text-sm);font-weight:800;color:var(--bw-interested-fg);margin-bottom:var(--bw-space-1)}
 .festival-card .festival-location{font-size:var(--bw-text-sm);color:var(--bw-muted);margin-top:var(--bw-space-1)}
@@ -587,7 +587,13 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
   <div class="section-head">
     <h2>Not music</h2>
   </div>
-  <div id="comedyVenues" class="festival-filters comedy-venues" role="group" aria-label="Venues"></div>
+  <div class="festival-filters" role="tablist" aria-label="Event type">
+    <button type="button" class="festival-filter active" data-not-music-type="Comedy" role="tab" aria-selected="true">Comedy</button>
+    <button type="button" class="festival-filter" data-not-music-type="Board games" role="tab" aria-selected="false">Board games</button>
+    <button type="button" class="festival-filter" data-not-music-type="Pub quizzes" role="tab" aria-selected="false">Pub quizzes</button>
+    <button type="button" class="festival-filter" data-not-music-type="Pub events" role="tab" aria-selected="false">Pub events</button>
+    <button type="button" class="festival-filter" data-not-music-type="Other" role="tab" aria-selected="false">Other</button>
+  </div>
   <div id="comedyList"></div>
 </main>
 <main id="searchTab" class="wrap app-main hidden">
@@ -1651,34 +1657,71 @@ function isComedy(e){
 // so ("In Conversation", "Q&A", "Podcast", "Book Tour"); people adding an event
 // choose Talk themselves.
 function isTalk(e){return e.category==='Talk'}
-// The Not music tab (its id is still comedyTab): comedy and talks.
-function isNotMusic(e){return isComedy(e)||isTalk(e)}
-// Venue toggles on the Not music tab: the same venue setting as Settings → Venues.
-function comedyVenueNames(){
- const withComedy=events.filter(isNotMusic).map(e=>e.venue).filter(v=>v&&v!=='Other');
- return [...new Set([...COMEDY_VENUES,...withComedy])].filter(v=>VENUES.includes(v)).sort((a,b)=>a.localeCompare(b));
+// ---- Not music (its id is still comedyTab) ----
+// Like the Festivals tab: choose a type and every upcoming event of that type
+// is listed in date order, at any venue. The venues chosen in Settings only
+// shape Discover, and anything listed here is left off Discover.
+// A listing's category can't always be trusted (a band with no keyword in its
+// name is filed Other), so apart from the theatres' own programmes an event
+// needs a clear sign in its title that it isn't a gig.
+const NOT_MUSIC_TYPES=['Comedy','Board games','Pub quizzes','Pub events','Other'];
+const NOT_MUSIC_EMPTY={'Comedy':'No comedy listed yet.','Board games':'No board game nights listed yet.','Pub quizzes':'No pub quizzes listed yet.','Pub events':'No other pub events listed yet.','Other':'Nothing else listed yet.'};
+const NOT_MUSIC_PAGE=60;
+let notMusicChoice='Comedy', notMusicShown=NOT_MUSIC_PAGE;
+const MUSIC_CATEGORIES=new Set(['Music','Club','Music/Club']);
+const GAMES_RE=/\b(?:board ?games?|boardgam\w*|tabletop|games? nights?|dungeons (?:&|and) dragons|d&d|magic:? the gathering|commander night|warhammer|scrabble|backgammon|mahjong|chess (?:club|night|social))\b/i;
+const WEREWOLF_RE=/\bwerewolf\b/i; // the party game, but also a band's name, so never on a music listing
+const QUIZ_RE=/\b(?:quiz(?:zes)?|trivia)\b/i;
+const NIGHT_OUT_RE=/\b(?:bingo|cabaret|burlesque|drag|karaoke|poetry|spoken word|storytelling|workshops?|masterclass|life drawing|drink (?:&|and) draw|crafts?|clothes swap|market|fair|film|cinema|screening|tarot|speed dating|murder mystery|magic show|puppets?|talks?|lecture|in conversation|q ?& ?a|podcast|book (?:club|launch|signing)|line dancing|ceilidh|tasting|supper club)\b/i;
+const NOT_MUSIC_LEFT_OUT=/\bghost (?:walk|tour)s?\b/i;
+const OWN_PROGRAMME_VENUES=new Set(['Theatre Royal Brighton','Komedia']); // they file each show by type themselves
+const MIXED_VENUES=new Set(['The Old Market','Brighton Dome','Brighton Centre']);
+const MUSICAL_RE=/\b(?:tour|tribute|orchestra|philharmonic|symphony|quartet|choir|band|concert|gig|album|live|sings|unplugged|acoustic|candlelight)\b/i; // a concert in a theatre's programme
+const notMusicKinds=new WeakMap();
+function notMusicKind(e){
+ if(!e)return '';
+ if(!notMusicKinds.has(e))notMusicKinds.set(e,findNotMusicKind(e));
+ return notMusicKinds.get(e);
 }
-function renderComedyVenues(){
- const box=$('comedyVenues');if(!box)return;
- box.innerHTML=comedyVenueNames().map(v=>{const on=enabled.includes(v);return `<button type="button" class="festival-filter${on?' active':''}" data-comedy-venue="${esc(v)}" aria-pressed="${on}">${esc(v)}</button>`}).join('');
+function findNotMusicKind(e){
+ const t=String(e.title||''), cat=e.category||'Other';
+ if(String(e.id||'').startsWith('festival:')||cat==='Sport'||e.venue==='Amex Stadium'||NOT_MUSIC_LEFT_OUT.test(t))return '';
+ const music=MUSIC_CATEGORIES.has(cat);
+ if(GAMES_RE.test(t)||(!music&&WEREWOLF_RE.test(t)))return 'Board games';
+ if(QUIZ_RE.test(t))return 'Pub quizzes';
+ if(isComedy(e))return 'Comedy';
+ if(music)return '';
+ const pub=PUB_VENUES.includes(e.venue);
+ const sure=e.is_custom||cat==='Talk'||NIGHT_OUT_RE.test(t)
+  ||(!pub&&OWN_PROGRAMME_VENUES.has(e.venue)&&!MUSICAL_RE.test(t))
+  ||(MIXED_VENUES.has(e.venue)&&cat!=='Other'&&!MUSICAL_RE.test(t));
+ return sure?(pub?'Pub events':'Other'):'';
+}
+function isNotMusic(e){return !!notMusicKind(e)}
+function renderComedy(){
+ document.querySelectorAll('[data-not-music-type]').forEach(b=>{const on=b.dataset.notMusicType===notMusicChoice;b.classList.toggle('active',on);b.setAttribute('aria-selected',on)});
+ const box=$('comedyList');if(!box||$('comedyTab').classList.contains('hidden'))return; // drawn when the tab is opened
+ const today=todayKey();
+ const list=events.filter(e=>e.date>=today&&notMusicKind(e)===notMusicChoice).sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
+ if(!list.length){box.innerHTML=`<div class="empty">${esc(NOT_MUSIC_EMPTY[notMusicChoice])} <button type="button" class="btn btn-chip" data-add-missing>Add one</button></div>`;return}
+ // A page at a time, always ending at the end of a day.
+ let n=Math.min(notMusicShown,list.length);while(n<list.length&&list[n].date===list[n-1].date)n++;
+ let html='',day='';
+ for(const e of list.slice(0,n)){if(e.date!==day){day=e.date;html+=dayHeading(dayInfo(parseEventDate(day)))}html+=eventCard(e)}
+ if(n<list.length)html+='<div class="show-more"><button type="button" class="btn btn-ghost" data-not-music-more>Show more</button></div>';
+ box.innerHTML=html;
 }
 document.addEventListener('click',e=>{
- const b=e.target.closest('[data-comedy-venue]');if(!b)return;
- const v=b.dataset.comedyVenue;
- enabled=enabled.includes(v)?enabled.filter(x=>x!==v):[...enabled,v];
- localStorage.setItem('bw_venues',JSON.stringify(enabled));
- renderAll();
+ const type=e.target.closest('[data-not-music-type]');
+ if(type){notMusicChoice=type.dataset.notMusicType;notMusicShown=NOT_MUSIC_PAGE;renderComedy();return}
+ if(e.target.closest('[data-not-music-more]')){notMusicShown+=NOT_MUSIC_PAGE;renderComedy();return}
+ if(e.target.closest('[data-add-missing]')){
+  if(!authUser){promptSignIn('addEvent',{type:'addEvent'});return}
+  openTab('peopleTab');
+  if($('customEventPanel').classList.contains('collapsed'))$('toggleCustomEvent').click();
+  $('customCategory').value=notMusicChoice==='Comedy'?'Comedy':'Other';
+ }
 });
-function renderComedy(){
- renderComedyVenues();
- const days=rangeDays();
- const html=days.map(day=>{
-  const list=events.filter(e=>e.date===day.key&&isNotMusic(e)&&venueVisible(e)&&inRange(e));
-  return list.length?dayHeading(day)+list.map(e=>eventCard(e)).join(''):'';
- }).join('');
- if(!enabled.length){$('comedyList').innerHTML=venueNudgeHtml('Pick the venues you go to above, or choose venues in Settings.');return}
- $('comedyList').innerHTML=rangeChipsHtml()+(html||`<div class="empty">No comedy or talks ${rangePhrase()} at your selected venues. Try another time or turn on more venues above.</div>`);
-}
 const STATUS_LABEL={ticket_bought:'Going',interested:'Interested',not_interested:'Not for me'};
 const STATUS_CLASS={ticket_bought:'going',interested:'interested',not_interested:'pass'};
 const STATUS_RANK={ticket_bought:0,interested:1,not_interested:2};
@@ -2062,7 +2105,7 @@ document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{
  if(b.dataset.tab==='peopleTab'&&!authUser){promptSignIn('happenings',{type:'tab',tab:'peopleTab'});return}
  document.querySelectorAll('.nav button').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-current',x===b?'page':'false')});
  TABS.forEach(id=>$(id).classList.toggle('hidden',id!==b.dataset.tab));
- document.querySelector('header .controls').classList.toggle('hidden',['festivalsTab','searchTab','venuesTab','peopleTab'].includes(b.dataset.tab));
+ document.querySelector('header .controls').classList.toggle('hidden',['comedyTab','festivalsTab','searchTab','venuesTab','peopleTab'].includes(b.dataset.tab));
  window.scrollTo(0,0);
  if(b.dataset.tab==='comedyTab')renderComedy();
  if(b.dataset.tab==='festivalsTab')renderFestivals();
@@ -2176,7 +2219,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=83', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=84', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
