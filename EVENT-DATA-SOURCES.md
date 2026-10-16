@@ -26,9 +26,10 @@ if the day's refresh has already happened.
    | `"note"` | Why the entry is set up this way. |
 
 2. **Discovery calendars** (Visit Brighton, Eventbrite, Ticketmaster, Skiddle,
-   the Rival Cults gig list, and the promoters JOY. Concerts and Beat Down Promotions),
-   read by `scripts/scrape-discovery.py`. Events are kept only when they are at
-   a venue in `event-sources.json` (or the Amex Stadium).
+   the Rival Cults gig list, the promoters JOY. Concerts and Beat Down Promotions,
+   and The Dice & Meeple's board game nights), read by `scripts/scrape-discovery.py`.
+   Events are kept only when they are at a venue in `event-sources.json` (or the
+   Amex Stadium), apart from The Dice & Meeple's (see below).
 
 3. **Community events** added in the app (Supabase `bw_custom_events`).
 
@@ -116,6 +117,16 @@ Beat Down Promotions (`tickettailor.com/events/beatdown`) is read by a Ticket
 Tailor reader in `scrape-discovery.py`, which suits any promoter selling on
 Ticket Tailor: add its page to `SOURCES` and `PROMOTERS`, and its sticker to
 `PROMOTER_STICKERS` in `index.html`. Only Brighton & Hove postcodes are kept.
+
+The Dice & Meeple (`tickettailor.com/events/thedicemeeple`) runs hosted board
+game nights in pubs and is read by the same Ticket Tailor reader. Its nights
+move between pubs, so it is in `ANY_VENUE_PROMOTERS`: a listing with a Brighton
+& Hove postcode is kept at whatever venue Ticket Tailor names, filed as Other,
+and the app lists it under Not music → Board games (`GAMES_PROMOTERS` in
+`index.html`). It has no sticker, since stickers filter Discover's gigs; it
+appears in Search → Promoter. Dice Saloon (`dicesaloon.com`) isn't read: its
+site asks automated tools not to read it (robots.txt). Brighton Pub Boardgamers
+list its Sunday games on Meetup.
 
 Rival Cults (`rivalcults.com/gigs`) is one table of Brighton gigs (Date, Title,
 Location, Link) read by `rivalcults_rows` in `scrape-discovery.py`. Its venue
