@@ -22,6 +22,7 @@ if the day's refresh has already happened.
    | `"jsonld_only": true` | Read only the page's structured event data (schema.org), never its layout. Used for ticketing-site pages (Skiddle, Songkick) that also show other venues' events. |
    | `"match_location": "pipeline"` | Keep only events whose stated location contains this text. Use with `jsonld_only`. |
    | `"ticketsolve": "<feed>"` | The venue's Ticketsolve feed (`<venue>.ticketsolve.com/shows.xml`). Each listing is matched to its show (by the ticket link, or by name and date) and filed under the venue's own category (comedy, music, club, kids' show, spoken word); a start time the listing leaves out is filled in. Used for Komedia. |
+   | `"label_pages": [...]` | More of the venue's pages that only lend their labels (see "The venue's own labels"). Used for Theatre Royal's eight genre lists on ATG, which cover its whole programme. |
    | `"disabled": true` | Don't fetch this page. The venue stays known to the discovery scraper. |
    | `"note"` | Why the entry is set up this way. |
 
@@ -98,6 +99,31 @@ if the day's refresh has already happened.
 - Ticket links: a ticketing site or "Tickets"/"Book" button in the event's card
   first, then the event's own page; never a listings page, homepage or social
   media.
+
+## The venue's own labels
+
+Theatre Royal, The Old Market and Brighton Dome say what kind of show each event
+is, and their word decides its category. A guess from the words on a card can't
+tell a concert from a play when every card says "Theatre Royal".
+
+- **Theatre Royal** (ATG): each card's label line ("Concert", "Plays",
+  "Musicals, Family", "Events"), read from its what's-on page and its eight
+  genre lists (`label_pages`: plays, musicals, dance, concert, comedy, family,
+  talk, events).
+- **The Old Market**: each listing's categories (`.eventlist-cats`: "Music",
+  "Theatre", "Dance, Theatre").
+- **Brighton Dome**: the genre in each event page's title ("Congregational /
+  Theatre / What's On").
+
+`scrape-events.py` collects them into `venue_labels` in `events.json`;
+`prepare-events.py` applies them and drops the list. A show is found by its page
+address, or else by its title (the same, or one the start of the other: "Six"
+and "Six - The Musical"). `listing_rules.LABEL_CATEGORIES` turns labels into
+categories: Plays, Musicals and Theatre → Theatre; Dance → Dance; Concert and
+Music → Music; Talk and Podcast → Talk; Family → Family; Events, Film,
+Exhibition and Workshop → Other. When a show has two labels, the first group in
+that list wins ("Music, Theatre" is Theatre; "Talk, Comedy" is Comedy). The
+label stays on the event as `venue_label`, so the app trusts the category.
 
 ## Hiding an event
 

@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 from dateutil import parser as dateparser
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
 from event_matching import evening_time, same_session, same_show as same_show_at_venue
-from listing_rules import GENERIC_TITLES, NOT_A_TITLE
+from listing_rules import GENERIC_TITLES, NOT_A_TITLE, page_key
 
 ROOT=Path(__file__).resolve().parents[1]
 # Sources marked "disabled" stay listed (the discovery scraper still recognises
@@ -348,6 +348,46 @@ def dom_events(html,venue,page_url,detail_only=False):
             out.append(e)
     return out
 
+# ---- The venue's own labels ---------------------------------------------------
+# Theatre Royal's ATG listings, The Old Market and Brighton Dome say what kind
+# of show each event is. The labels are collected here (venue -> [{key, title,
+# label}]), written to events.json as venue_labels, and applied by
+# prepare-events.py (listing_rules.label_category), which then drops them.
+VENUE_LABELS={}
+def add_labels(venue,items):
+    VENUE_LABELS.setdefault(venue,[]).extend(x for x in items if x.get('label') and (x.get('key') or x.get('title')))
+def atg_labels(page,page_url):
+    """ATG cards: the show's link (a[aria-hidden] to /shows/<slug>/...) with its
+    title, then a label line ('Concert', 'Musicals, Family'), after 'Sold out'
+    when it is, then the venue and dates."""
+    soup=BeautifulSoup(page,'html.parser');out=[]
+    for a in soup.select('a[href*="/shows/"][aria-hidden="true"]'):
+        box=a.find_parent('div');card=box.parent if box else None
+        if card is None:continue
+        lines=[x for x in (clean(p.get_text(' ',strip=True)) for p in card.find_all('p')) if x and x.lower()!='sold out']
+        title=clean(a.get('aria-label') or a.get_text(' ',strip=True))
+        if title.lower()=='sold out':title=''  # a sold-out show's badge link: the address still names the show
+        if lines:out.append({'key':page_key(urljoin(page_url,a['href'])),'title':title,'label':lines[0]})
+    return out
+def eventlist_labels(page,page_url):
+    """A Squarespace events list (The Old Market): each listing's categories
+    ('.eventlist-cats a': 'Music', 'Dance', 'Theatre') beside its title link."""
+    soup=BeautifulSoup(page,'html.parser');out=[]
+    for item in soup.select('.eventlist-column-info'):
+        link=item.select_one('.eventlist-title a[href]')
+        cats=[clean(a.get_text(' ',strip=True)) for a in item.select('.eventlist-cats a')]
+        if link and cats:out.append({'key':page_key(urljoin(page_url,link['href'])),'title':clean(link.get_text(' ',strip=True)),'label':', '.join(cats)})
+    return out
+def dome_page_label(page):
+    """A Brighton Dome event page's title names its genre:
+    'Congregational / Theatre / What's On | Brighton Dome'."""
+    m=re.search(r'<title[^>]*>(.*?)</title>',page,re.I|re.S)
+    parts=[clean(x) for x in html.unescape(m.group(1)).split(' / ')] if m else []
+    return parts[-2] if len(parts)>=3 and parts[-1].lower().startswith('what') else ''
+def collect_labels(venue,page,page_url):
+    if 'atgtickets.com' in page_url:add_labels(venue,atg_labels(page,page_url))
+    elif 'eventlist-column-info' in page:add_labels(venue,eventlist_labels(page,page_url))
+
 async def get_html(browser,url):
     page=await browser.new_page();page.set_default_timeout(25000)
     try:
@@ -367,6 +407,8 @@ async def scrape_detail_urls(browser,venue,urls):
             if err:return [],err
             ev=jsonld_events(html,venue,final)
             if not ev:ev=dom_events(html,venue,final)
+            label=dome_page_label(html) if 'brightondome.org' in final else ''
+            if label:add_labels(venue,[{'key':page_key(final),'title':e['title'],'label':label} for e in ev])
             return ev,None
     results=await asyncio.gather(*(one(u) for u in urls));out=[];fails=0
     for ev,err in results:
@@ -439,6 +481,13 @@ async def scrape_source(browser,source):
         except Exception as exc:
             err=err or str(exc)
     if err:return [],err
+    collect_labels(venue,html,final)
+    # "label_pages": more of the venue's pages that only lend their labels
+    # (Theatre Royal's genre lists on ATG, which cover its whole programme).
+    for lu in source.get('label_pages',[]):
+        lh,lf,lerr=await get_html(browser,lu)
+        if lerr:print(f"{venue}: label page failed {lu}: {lerr[:120]}")
+        else:collect_labels(venue,lh,lf)
     # "jsonld_only" sources are ticketing-site pages (Skiddle, Songkick): only
     # their structured event data is trusted, never the page layout.
     if not source.get('jsonld_only'):
@@ -563,7 +612,8 @@ async def main():
     if existing_future and len(events)<int(existing_future*.70):raise SystemExit('Unexpected loss of future events; refusing to replace events.json')
     # source_report: how each venue's scrape went, so a venue that silently
     # returns nothing is visible in the data (the app ignores this field).
-    OUT.write_text(json.dumps({'updated':NOW.date().isoformat(),'range_start':RANGE_START.isoformat(),'range_end':RANGE_END.isoformat(),'venues':sorted({e['venue'] for e in events}),'source_report':report,'events':events},ensure_ascii=False,indent=2)+'\n')
+    OUT.write_text(json.dumps({'updated':NOW.date().isoformat(),'range_start':RANGE_START.isoformat(),'range_end':RANGE_END.isoformat(),'venues':sorted({e['venue'] for e in events}),'source_report':report,'venue_labels':VENUE_LABELS,'events':events},ensure_ascii=False,indent=2)+'\n')
     print(f'Wrote {OUT} with {len(events)} events')
+    print('Venue labels: '+', '.join(f'{v} {len(x)}' for v,x in sorted(VENUE_LABELS.items())))
 
 if __name__=='__main__':asyncio.run(main())

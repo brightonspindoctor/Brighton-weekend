@@ -7,7 +7,7 @@ import subprocess
 from pathlib import Path
 
 from event_matching import display_title, is_venue_name, same_session, same_show
-from listing_rules import is_excluded, is_generic_title, is_patterns_recurring, title_key
+from listing_rules import is_excluded, is_generic_title, is_patterns_recurring, label_category, page_key, title_key
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "events.json"
@@ -465,6 +465,43 @@ for event in final:
     if event.get("category") not in ("Talk", "Comedy") and is_talk_title(event.get("title")):
         event["category"] = "Talk"; recategorised += 1
 print(f"Filed as talks from their titles: {recategorised}")
+
+
+def apply_venue_labels(events, labels):
+    """File Theatre Royal's, The Old Market's and Brighton Dome's shows by the
+    venue's own label (collected by scrape-events.py; the groups are in
+    listing_rules.LABEL_CATEGORIES). A show is found by its page address, or
+    else by its title: the same, or one the start of the other ('Six' and
+    'Six - The Musical'). A show that would match two labels in different
+    groups is left as it was. The label is kept on the event (venue_label),
+    so the app knows the category is the venue's word, not a guess."""
+    changed = 0
+    for venue, items in (labels or {}).items():
+        by_key, by_title = {}, []
+        for it in items:
+            cat = label_category(it.get("label"))
+            if not cat:
+                continue
+            if it.get("key"):
+                by_key.setdefault(it["key"], set()).add((it["label"], cat))
+            if title_key(it.get("title")):
+                by_title.append((title_key(it.get("title")), it["label"], cat))
+        for e in events:
+            if e.get("venue") != venue:
+                continue
+            hits = by_key.get(page_key(e.get("ticket_url")), set())
+            if len({c for _, c in hits}) != 1:
+                tk = title_key(e.get("title"))
+                hits = {(l, c) for t, l, c in by_title if t == tk or tk.startswith(t + " ") or t.startswith(tk + " ")}
+            if len({c for _, c in hits}) == 1:
+                label, cat = sorted(hits)[0]
+                if (e.get("category"), e.get("venue_label")) != (cat, label):
+                    changed += 1
+                e["category"], e["venue_label"] = cat, label
+    return changed
+
+
+print(f"Filed by the venue's own labels: {apply_venue_labels(final, data.pop('venue_labels', None))} changed")
 # Display titles last, after duplicates are merged. A tidy that would make two
 # listings at the same venue and time look identical is skipped.
 taken = {(e.get("venue"), e.get("date"), e.get("time"), title_key(e.get("title"))) for e in final}

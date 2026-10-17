@@ -589,6 +589,7 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
   </div>
   <div class="festival-filters" role="tablist" aria-label="Event type">
     <button type="button" class="festival-filter active" data-not-music-type="Comedy" role="tab" aria-selected="true">Comedy</button>
+    <button type="button" class="festival-filter" data-not-music-type="Theatre &amp; musicals" role="tab" aria-selected="false">Theatre &amp; musicals</button>
     <button type="button" class="festival-filter" data-not-music-type="Board games" role="tab" aria-selected="false">Board games</button>
     <button type="button" class="festival-filter" data-not-music-type="Pub quizzes" role="tab" aria-selected="false">Pub quizzes</button>
     <button type="button" class="festival-filter" data-not-music-type="Pub events" role="tab" aria-selected="false">Pub events</button>
@@ -1662,10 +1663,13 @@ function isTalk(e){return e.category==='Talk'}
 // is listed in date order, at any venue. The venues chosen in Settings only
 // shape Discover, and anything listed here is left off Discover.
 // A listing's category can't always be trusted (a band with no keyword in its
-// name is filed Other), so apart from the theatres' own programmes an event
-// needs a clear sign in its title that it isn't a gig.
-const NOT_MUSIC_TYPES=['Comedy','Board games','Pub quizzes','Pub events','Other'];
-const NOT_MUSIC_EMPTY={'Comedy':'No comedy listed yet.','Board games':'No board game nights listed yet.','Pub quizzes':'No pub quizzes listed yet.','Pub events':'No other pub events listed yet.','Other':'Nothing else listed yet.'};
+// name is filed Other), so an event needs the venue's own label (venue_label:
+// Theatre Royal, The Old Market and Brighton Dome say what each show is), the
+// theatres' own programmes, or a clear sign in its title that it isn't a gig.
+// Theatre & musicals takes plays, musicals and dance; workshops, courses and
+// kids' shows go under Other.
+const NOT_MUSIC_TYPES=['Comedy','Theatre & musicals','Board games','Pub quizzes','Pub events','Other'];
+const NOT_MUSIC_EMPTY={'Comedy':'No comedy listed yet.','Theatre & musicals':'No theatre or musicals listed yet.','Board games':'No board game nights listed yet.','Pub quizzes':'No pub quizzes listed yet.','Pub events':'No other pub events listed yet.','Other':'Nothing else listed yet.'};
 const NOT_MUSIC_PAGE=60;
 let notMusicChoice='Comedy', notMusicShown=NOT_MUSIC_PAGE;
 const MUSIC_CATEGORIES=new Set(['Music','Club','Music/Club']);
@@ -1678,6 +1682,8 @@ const NOT_MUSIC_LEFT_OUT=/\bghost (?:walk|tour)s?\b/i;
 const OWN_PROGRAMME_VENUES=new Set(['Theatre Royal Brighton','Komedia']); // they file each show by type themselves
 const MIXED_VENUES=new Set(['The Old Market','Brighton Dome','Brighton Centre']);
 const MUSICAL_RE=/\b(?:tour|tribute|orchestra|philharmonic|symphony|quartet|choir|band|concert|gig|album|live|sings|unplugged|acoustic|candlelight)\b/i; // a concert in a theatre's programme
+const STAGE_CATEGORIES=new Set(['Theatre','Dance']);
+const NOT_A_SHOW_RE=/\b(?:workshops?|masterclass(?:es)?|courses?|classes|backstage tours?|open days?|auditions?|summer schools?)\b/i;
 const notMusicKinds=new WeakMap();
 function notMusicKind(e){
  if(!e)return '';
@@ -1687,6 +1693,8 @@ function notMusicKind(e){
 function findNotMusicKind(e){
  const t=String(e.title||''), cat=e.category||'Other';
  if(String(e.id||'').startsWith('festival:')||cat==='Sport'||e.venue==='Amex Stadium'||NOT_MUSIC_LEFT_OUT.test(t))return '';
+ const stage=STAGE_CATEGORIES.has(cat)&&!NOT_A_SHOW_RE.test(t);
+ if(stage&&e.venue_label)return 'Theatre & musicals'; // the venue says it's a play, a musical or dance
  const music=MUSIC_CATEGORIES.has(cat);
  if(GAMES_PROMOTERS.has(e.promoter))return cat==='Family'?'Other':'Board games';
  if(GAMES_RE.test(t)||(!music&&WEREWOLF_RE.test(t)))return 'Board games';
@@ -1694,10 +1702,12 @@ function findNotMusicKind(e){
  if(isComedy(e))return 'Comedy';
  if(music)return '';
  const pub=PUB_VENUES.includes(e.venue);
- const sure=e.is_custom||cat==='Talk'||NIGHT_OUT_RE.test(t)
+ const sure=e.is_custom||cat==='Talk'||!!e.venue_label||NIGHT_OUT_RE.test(t)
   ||(!pub&&OWN_PROGRAMME_VENUES.has(e.venue)&&!MUSICAL_RE.test(t))
   ||(MIXED_VENUES.has(e.venue)&&cat!=='Other'&&!MUSICAL_RE.test(t));
- return sure?(pub?'Pub events':'Other'):'';
+ if(!sure)return '';
+ if(pub)return 'Pub events';
+ return stage?'Theatre & musicals':'Other';
 }
 function isNotMusic(e){return !!notMusicKind(e)}
 function renderComedy(){
@@ -1721,7 +1731,7 @@ document.addEventListener('click',e=>{
   if(!authUser){promptSignIn('addEvent',{type:'addEvent'});return}
   openTab('peopleTab');
   if($('customEventPanel').classList.contains('collapsed'))$('toggleCustomEvent').click();
-  $('customCategory').value=notMusicChoice==='Comedy'?'Comedy':'Other';
+  $('customCategory').value=notMusicChoice==='Comedy'?'Comedy':notMusicChoice==='Theatre & musicals'?'Theatre':'Other';
  }
 });
 const STATUS_LABEL={ticket_bought:'Going',interested:'Interested',not_interested:'Not for me'};
@@ -2221,7 +2231,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=86', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=87', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>

@@ -76,3 +76,46 @@ EXCLUDED = [{"venue": str(r.get("venue", "")).strip().lower(), "title_contains":
 def is_excluded(event):
     venue, title = str(event.get("venue") or "").strip().lower(), str(event.get("title") or "").lower()
     return any(r["title_contains"] and r["title_contains"] in title and (not r["venue"] or r["venue"] == venue) for r in EXCLUDED)
+
+
+# ---- The venue's own word for what a show is ----------------------------------
+# Theatre Royal (its ATG listings), The Old Market and Brighton Dome label each
+# show ("Concert", "Plays", "Musicals, Family", "Music", "Theatre", "Workshop").
+# scrape-events.py collects the labels (venue_labels in events.json) and
+# prepare-events.py files those venues' shows by them, because a guess from the
+# words on a card can't tell a concert from a play when the card says "Theatre
+# Royal". When a show has several labels, the first group here that one of
+# them falls in decides: a show labelled "Music, Theatre" is a theatre show,
+# "Talk, Comedy" a comedy, "Musicals, Family" a musical. A label in none of
+# these groups decides nothing.
+LABEL_CATEGORIES = (
+    ("Theatre", {"play", "plays", "drama", "musical", "musicals", "theatre", "opera", "pantomime", "panto", "cabaret"}),
+    ("Dance", {"dance", "ballet"}),
+    ("Comedy", {"comedy", "stand-up", "stand up"}),
+    ("Music", {"concert", "concerts", "music", "gig", "gigs", "classical", "jazz", "folk", "contemporary music"}),
+    ("Talk", {"talk", "talks", "podcast", "spoken word", "lecture", "lectures", "literature", "in conversation"}),
+    ("Family", {"family", "kids", "children"}),
+    ("Other", {"events", "event", "film", "visual arts", "exhibition", "exhibitions", "workshop", "workshops",
+               "soundbath", "tour", "tours", "course", "courses", "circus", "magic", "festival"}),
+)
+
+
+def label_category(label):
+    parts = {p.strip().lower() for p in re.split(r"[,/&+]|\band\b", str(label or "")) if p.strip()}
+    for category, words in LABEL_CATEGORIES:
+        if parts & words:
+            return category
+    return None
+
+
+def page_key(url):
+    """The part of a show's address that names it: the site and the first two
+    parts of the path ('atgtickets.com/shows/six', 'theoldmarket.com/shows/eddi-reader',
+    'brightondome.org/whats-on/l0h-congregational'), so a show's card link
+    matches its calendar or ticket link on the same site."""
+    from urllib.parse import urlparse
+    p = urlparse(str(url or ""))
+    host = p.netloc.lower()
+    host = host[4:] if host.startswith("www.") else host
+    parts = [s for s in p.path.lower().split("/") if s][:2]
+    return f"{host}/{'/'.join(parts)}" if host and len(parts) == 2 else ""
