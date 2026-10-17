@@ -1,0 +1,96 @@
+{
+ "atg_whatson": {
+  "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
+  "status": 200,
+  "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
+  "length": 950805,
+  "jsonld_event_types": {},
+  "near_titles": {
+   "Gareth Malone": [
+    " for The Chicago Blues Brothers: Live at the Country Bunker Buy tickets More information about The Chicago Blues Brothers: Live at the Country Bunker More info Gareth Malone Gareth Malone Concert Theatre Royal Brighton Fri 13 Nov 2026 Buy tickets for Gareth Malone Buy tickets More information about Gareth Malone More info Spice Gir",
+    "go Blues Brothers: Live at the Country Bunker Buy tickets More information about The Chicago Blues Brothers: Live at the Country Bunker More info Gareth Malone Gareth Malone Concert Theatre Royal Brighton Fri 13 Nov 2026 Buy tickets for Gareth Malone Buy tickets More information about Gareth Malone More info Spice Girls - The Theat"
+   ],
+   "Yacht Rock": [
+    " tickets for Man In The Mirror - A Tribute to Michael Jackson Buy tickets More information about Man In The Mirror - A Tribute to Michael Jackson More info The Yacht Rock Experience The Yacht Rock Experience Concert Theatre Royal Brighton Thu 19 Nov 2026 Buy tickets for The Yacht Rock Experience Buy tickets More information abou",
+    "rror - A Tribute to Michael Jackson Buy tickets More information about Man In The Mirror - A Tribute to Michael Jackson More info The Yacht Rock Experience The Yacht Rock Experience Concert Theatre Royal Brighton Thu 19 Nov 2026 Buy tickets for The Yacht Rock Experience Buy tickets More information about The Yacht Rock Experienc"
+   ]
+  }
+ },
+ "atg_musicals": {
+  "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/musical/",
+  "status": 200,
+  "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/musical/",
+  "length": 684311,
+  "jsonld_event_types": {},
+  "near_titles": {}
+ },
+ "atg_plays": {
+  "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/play/",
+  "status": 200,
+  "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/play/",
+  "length": 684299,
+  "jsonld_event_types": {},
+  "near_titles": {}
+ },
+ "atg_talk": {
+  "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/talk/",
+  "status": 200,
+  "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/talk/",
+  "length": 767246,
+  "jsonld_event_types": {},
+  "near_titles": {}
+ },
+ "atg_show_gareth": {
+  "url": "https://www.atgtickets.com/shows/gareth-malone/theatre-royal-brighton/",
+  "status": 200,
+  "final": "https://www.atgtickets.com/shows/gareth-malone/theatre-royal-brighton/",
+  "length": 358718,
+  "jsonld_event_types": {
+   "TheaterEvent": 1
+  },
+  "near_titles": {
+   "Gareth Malone": [
+    " Gareth Malone Tickets | Theatre Royal Brighton in Brighton | ATG Tickets window.NREUM||(NREUM={});NREUM.info = {\"agent\":\"\",\"beacon\":\"bam.eu01.nr-data.net\",\"errorBeacon\":\"bam",
+    "w.atgtickets.com\",\"isWebView\":false},\"show\":{\"showData\":{\"id\":\"6BXrTdctXayBOLWpLcG0zk\",\"key\":\"gareth-malone-theatre-royal-brighton\",\"layout\":\"default\",\"title\":\"Gareth Malone\",\"browserTitle\":\"\",\"titleDetailsId\":\"4csrszEuWbUEPhqQAK6WeV\",\"venueId\":\"0B555C4E-3CF9-4D07-AE7B-9321AE3A1163\",\"city\":\"Brighton\",\"titleSlug\":\"gareth-malone\",\"ve"
+   ]
+  }
+ },
+ "atg_show_six": {
+  "url": "https://www.atgtickets.com/shows/six/theatre-royal-brighton/",
+  "status": 200,
+  "final": "https://www.atgtickets.com/shows/six/theatre-royal-brighton/",
+  "length": 388815,
+  "jsonld_event_types": {
+   "TheaterEvent": 8
+  },
+  "near_titles": {
+   "Six": [
+    " Six Tickets | Theatre Royal Brighton in Brighton | ATG Tickets window.NREUM||(NREUM={});NREUM.info = {\"agent\":\"\",\"beacon\":\"bam.eu01.nr-data.net\",\"errorBeacon\":\"bam",
+    "tName\":\"www.atgtickets.com\",\"isWebView\":false},\"show\":{\"showData\":{\"id\":\"47ValfNLS8ZarWQJe0GMwi\",\"key\":\"six-theatre-royal-brighton\",\"layout\":\"default\",\"title\":\"Six\",\"browserTitle\":\"\",\"titleDetailsId\":\"1OvEWqfUGIXZJU13pFWfS8\",\"venueId\":\"0B555C4E-3CF9-4D07-AE7B-9321AE3A1163\",\"city\":\"Brighton\",\"titleSlug\":\"six\",\"venueSlug\":\""
+   ]
+  }
+ },
+ "oldmarket_shows": {
+  "url": "https://www.theoldmarket.com/shows",
+  "status": 200,
+  "final": "https://www.theoldmarket.com/shows",
+  "length": 542135,
+  "jsonld_event_types": {},
+  "near_titles": {
+   "Eddi Reader": [
+    "Google Calendar ICS Come and join Nick Cope for a delightful family concert and help him find his beloved hat with the wobbly bobble! View Event → Oct 16 Music Eddi Reader Friday 16 October 2026 20:00 22:30 The Old Market (map) Google Calendar ICS SOLD OUT. Brighthelmstone Promotions are delighted to present a full band show for "
+   ],
+   "Clara": [
+    "T. The smash-hit, internationally acclaimed, award-winning, multi-sell-out phenomenon is back in Brighton! View Event → Nov 21 to 22 Nov Dance Ballet Brighton: Clara’s Dream Sat, 21 Nov 2026 19:00 Sun, 22 Nov 2026 13:00 The Old Market (map) Google Calendar ICS LIMITED AVAILABILITY. Enjoy local dance school Ballet Brighton’s"
+   ]
+  }
+ },
+ "dome_whatson": {
+  "url": "https://brightondome.org/whats-on/",
+  "status": 200,
+  "final": "https://brightondome.org/whats-on/",
+  "length": 323533,
+  "jsonld_event_types": {},
+  "near_titles": {}
+ }
+}
