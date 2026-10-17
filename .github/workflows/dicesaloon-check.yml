@@ -1,0 +1,33 @@
+name: Dice Saloon check
+
+# One-off: can Dice Saloon's events (dicesaloon.co.uk) be read, and what does
+# its robots.txt allow? Results are saved in diag/dicesaloon on this branch,
+# which is never merged.
+
+on:
+  push:
+    branches: ['claude/skiddle-check']
+    paths:
+      - '.github/workflows/dicesaloon-check.yml'
+      - 'diag/dicesaloon_check.py'
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out this branch
+        uses: actions/checkout@v5
+      - name: Fetch Dice Saloon's robots.txt and events
+        run: python3 diag/dicesaloon_check.py
+      - name: Save the results on this branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add diag
+          git commit -q -m 'Dice Saloon check results' || exit 0
+          git pull -q --rebase origin claude/skiddle-check
+          git push -q origin HEAD:claude/skiddle-check
