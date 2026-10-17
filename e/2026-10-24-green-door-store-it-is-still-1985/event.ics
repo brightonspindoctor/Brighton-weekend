@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-24-green-door-store-it-is-still-1985@brightonweekend.co.uk
+DTSTAMP:20261024T000000Z
+DTSTART:20261024T220000Z
+DTEND:20261025T020000Z
+SUMMARY:It Is Still 1985
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/it-is-still-198
+ 5-4/\nMore: https://brightonweekend.co.uk/e/2026-10-24-green-door-store-it
+ -is-still-1985/
+URL:https://brightonweekend.co.uk/e/2026-10-24-green-door-store-it-is-still
+ -1985/
+END:VEVENT
+END:VCALENDAR
