@@ -5,17 +5,14 @@ from pathlib import Path
 from playwright.async_api import async_playwright
 
 OUT = Path('diag/theatre'); OUT.mkdir(parents=True, exist_ok=True)
-PAGES = {
-    'atg_whatson': 'https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/',
-    'atg_musicals': 'https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/musical/',
-    'atg_plays': 'https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/play/',
-    'atg_talk': 'https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/talk/',
-    'atg_show_gareth': 'https://www.atgtickets.com/shows/gareth-malone/theatre-royal-brighton/',
-    'atg_show_six': 'https://www.atgtickets.com/shows/six/theatre-royal-brighton/',
-    'oldmarket_shows': 'https://www.theoldmarket.com/shows',
-    'dome_whatson': 'https://brightondome.org/whats-on/',
-}
-KNOWN = ['Gareth Malone', 'Six', 'The Mousetrap', 'Swan Lake', 'Yacht Rock', 'Popera', 'Eddi Reader', 'Congregational', 'The Gift', 'Clara', 'Signalman']
+PAGES = {f'atg_{g}': f'https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/{g}/'
+         for g in ('plays', 'musicals', 'dance', 'concert', 'comedy', 'family', 'talk', 'events')}
+PAGES.update({
+    'dome_congregational': 'https://brightondome.org/whats-on/L0h-congregational/',
+    'dome_benfolds': 'https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/',
+    'dome_moderntoss': 'https://brightondome.org/whats-on/LGJ-modern-toss-flies/',
+})
+KNOWN = ['Genre', 'genre', 'Gareth Malone', 'Six', 'The Mousetrap', 'Swan Lake', 'Yacht Rock', 'Popera', 'Eddi Reader', 'Congregational', 'The Gift', 'Clara', 'Signalman']
 
 
 async def main():
