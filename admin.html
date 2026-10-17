@@ -20,6 +20,7 @@
 <div class="card"><h2>Guests</h2><div class="stat" id="guests30">—</div><div class="small">Guest devices with a visit in the last 30 days</div><div style="margin-top:12px" id="guestDetail" class="muted">—</div></div>
 <div class="card"><h2>Avatar switches</h2><div class="stat" id="avatarPeople">—</div><div class="small">People who have changed their avatar at least once (out of <span id="avatarProfiles">—</span> accounts)</div><div style="margin-top:12px" id="avatarDetail" class="muted">—</div></div>
 <div class="card"><h2>Get tickets taps</h2><div class="stat" id="tickets30">—</div><div class="small">Taps on a ticket link in the last 30 days</div><div style="margin-top:12px" id="ticketDetail" class="muted">—</div><ol id="ticketTop" class="muted"></ol></div>
+<div class="card"><h2>App installs</h2><div class="stat" id="installs30">—</div><div class="small">Installs in the last 30 days (home screen apps on phones, tablets and computers)</div><div style="margin-top:12px" id="installDetail" class="muted">—</div></div>
 <div class="card"><div class="muted">Latest tracked activity</div><div id="last" style="margin-top:8px">—</div></div>
 <button id="signout">Sign out</button>
 </section>
@@ -45,7 +46,16 @@ async function load(){
   const t=data?.tickets||{};
   $('tickets30').textContent=n(t.recent);
   $('ticketDetail').textContent=`${n(t.recent_people)} different people or devices · ${n(t.recent_users)} by signed-in users · ${n(t.recent_pages)} from shared event pages · ${n(t.total)} in total`+since(t.since);
-  const ol=$('ticketTop');ol.textContent='';(t.top||[]).forEach(r=>{const li=document.createElement('li');li.textContent=`${r.event_id} (${r.n})`;ol.appendChild(li)});}
+  const ol=$('ticketTop');ol.textContent='';(t.top||[]).forEach(r=>{const li=document.createElement('li');li.textContent=`${r.event_id} (${r.n})`;ol.appendChild(li)});
+  // App installs (v78). Android and computers say when the app is installed;
+  // on iPhones and iPads the first open from the home screen counts.
+  const i=data?.installs;
+  if(!i){$('installDetail').textContent='Not set up yet: run supabase/v78-app-installs.sql in the Supabase SQL Editor.'}
+  else{
+   const p=i.platforms||{},plat=[['ios','iPhone/iPad'],['android','Android'],['desktop','computer'],['other','other']].filter(([k])=>n(p[k])).map(([k,l])=>`${n(p[k])} ${l}`).join(', ');
+   $('installs30').textContent=n(i.recent);
+   $('installDetail').textContent=`${n(i.total)} in total${plat?` (${plat})`:''} · ${n(i.today)} today · ${n(i.signed_in)} by signed-in users · opened from the home screen by ${n(i.open_devices)} ${n(i.open_devices)===1?'person or device':'people or devices'} in the last 30 days, ${n(i.open_today)} today`+since(i.since);
+  }}
  $('last').textContent=data?.last_seen ? new Date(data.last_seen).toLocaleString('en-GB') : 'No activity yet';
  await loadReports();
 }
