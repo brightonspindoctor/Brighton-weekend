@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-09-dice-saloon-dnd-season-of-champions-celebration-event-one-sh
+ ot@brightonweekend.co.uk
+DTSTAMP:20261109T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:DnD Season of Champions\, Celebration Event One Shot
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/dnd-season-of-champi
+ ons-celebration-event-one-shot-09-november-2026\nMore: https://brightonwee
+ kend.co.uk/e/2026-11-09-dice-saloon-dnd-season-of-champions-celebration-ev
+ ent-one-shot/
+URL:https://brightonweekend.co.uk/e/2026-11-09-dice-saloon-dnd-season-of-ch
+ ampions-celebration-event-one-shot/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-19-dice-saloon-40k-crusade-beginner-friendly@brightonweekend.co
+ .uk
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:40K Crusade - Beginner Friendly!
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/40k-crusade-beginner
+ -friendly-october-19-2026\nMore: https://brightonweekend.co.uk/e/2026-10-1
+ 9-dice-saloon-40k-crusade-beginner-friendly/
+URL:https://brightonweekend.co.uk/e/2026-10-19-dice-saloon-40k-crusade-begi
+ nner-friendly/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-dice-saloon-star-wars-legion-casual-gaming-day@brightonweeke
+ nd.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Star Wars: Legion Casual Gaming Day
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/star-wars-legion-cas
+ ual-gaming-day-21-november-2026\nMore: https://brightonweekend.co.uk/e/202
+ 6-11-21-dice-saloon-star-wars-legion-casual-gaming-day/
+URL:https://brightonweekend.co.uk/e/2026-11-21-dice-saloon-star-wars-legion
+ -casual-gaming-day/
+END:VEVENT
+END:VCALENDAR

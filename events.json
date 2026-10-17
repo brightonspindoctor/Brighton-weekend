@@ -4,6 +4,7 @@
   "range_end": "2027-07-24",
   "venues": [
     "A L P H A B E T",
+    "Alcampo Lounge",
     "Amex Stadium",
     "Babble",
     "BeerBelly Micropub & Bottleshop",
@@ -12,9 +13,11 @@
     "Brighton Racecourse",
     "CHALK",
     "Caroline of Brunswick",
+    "Caxton Arms",
     "Concorde 2",
     "DUST",
     "Daltons",
+    "Dice Saloon",
     "Green Door Store",
     "Komedia",
     "Patterns",
@@ -30,7 +33,9 @@
     "The Palmeira",
     "The Pipeline",
     "The Prince Albert",
+    "The Railway Inn",
     "The Rose Hill",
+    "The Walrus",
     "The Waterbear",
     "Theatre Royal Brighton",
     "Volks"
@@ -306,16 +311,54 @@
     {
       "venue": "The Forge Comedy Club",
       "url": "https://forgecomedyclub.com/",
-      "events": 0,
+      "events": 187,
       "error": "",
-      "sample": []
+      "sample": [
+        {
+          "title": "Forge Comedy Club",
+          "date": "2026-10-17",
+          "time": "20:00",
+          "link": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094435895"
+        },
+        {
+          "title": "Forge Comedy Club",
+          "date": "2026-10-17",
+          "time": "20:00",
+          "link": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094435895"
+        },
+        {
+          "title": "Forge Comedy Club",
+          "date": "2026-10-17",
+          "time": "",
+          "link": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094435895"
+        }
+      ]
     },
     {
       "venue": "The Forge Comedy Club",
       "url": "https://forgecomedyclub.co.uk/",
-      "events": 0,
+      "events": 187,
       "error": "",
-      "sample": []
+      "sample": [
+        {
+          "title": "Forge Comedy Club",
+          "date": "2026-10-17",
+          "time": "20:00",
+          "link": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094435895"
+        },
+        {
+          "title": "Forge Comedy Club",
+          "date": "2026-10-17",
+          "time": "20:00",
+          "link": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094435895"
+        },
+        {
+          "title": "Forge Comedy Club",
+          "date": "2026-10-17",
+          "time": "",
+          "link": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094435895"
+        }
+      ]
     },
     {
       "venue": "Theatre Royal Brighton",
@@ -818,7 +861,7 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094435895",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-17-the-forge-comedy-club-forge-comedy-club-2",
         "2026-10-17-the-forge-comedy-club-forge-comedy-club-3"
@@ -1058,6 +1101,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-10-17-dice-saloon-destructive-duos-2-the-finale-a-warhammer-the-old-world-2v2-event",
+      "title": "Destructive Duos 2: The Finale—a Warhammer: The Old World 2v2 Event",
+      "date": "2026-10-17",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/destructive-duos-2-the-finale-a-warhammer-the-old-world-2v2-event-17th-october-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-17-rossi-bar-brian-sex-house-orchestra",
       "title": "Brian Sex House Orchestra",
       "date": "2026-10-17",
@@ -1219,6 +1275,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-10-18-dice-saloon-sunday-board-games-dice-saloon",
+      "title": "Sunday Board Games - Dice Saloon",
+      "date": "2026-10-18",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "14:00",
+      "finish_time": "19:00",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/board-gamers-casual-sundays-hosted-by-brighton-pub-board-gamers-october-18-2026",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-18-patterns-1btn-x-vicious-charm-presents-jim-live",
       "title": "1BTN X Vicious Charm. Presents JIM live!",
       "date": "2026-10-18",
@@ -1308,7 +1377,7 @@
       "finish_time": "21:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/the-noise-next-door-furnace-with-deborah-frances-white-tickets-1952116054669",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-18-the-forge-comedy-club-the-forge-comedy-club",
         "2026-10-18-the-forge-comedy-club-the-noise-next-door-furnace-with-deborah-frances-white-2"
@@ -1515,6 +1584,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-10-19-caxton-arms-beginner-advanced-werewolf",
+      "title": "Beginner + Advanced Werewolf",
+      "date": "2026-10-19",
+      "venue": "Caxton Arms",
+      "source": "discovery",
+      "time": "18:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/316766943/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-19-green-door-store-pleasure-hunt",
       "title": "Pleasure Hunt",
       "date": "2026-10-19",
@@ -1584,6 +1666,32 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-10-19-dice-saloon-40k-crusade-beginner-friendly",
+      "title": "40K Crusade - Beginner Friendly!",
+      "date": "2026-10-19",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/40k-crusade-beginner-friendly-october-19-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
+    },
+    {
+      "id": "2026-10-19-dice-saloon-40k-weekly",
+      "title": "40K Weekly",
+      "date": "2026-10-19",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/40k-weekly-october-19-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-19-resident-tinie-tempah-album-launch-show",
       "title": "Tinie Tempah: Album Launch Show",
       "date": "2026-10-19",
@@ -1633,6 +1741,19 @@
       "also_ids": [
         "2026-10-20-the-hope-ruin-cult-milk-collage-club-2"
       ]
+    },
+    {
+      "id": "2026-10-20-the-railway-inn-tuesday-west-hove-portslade-boardgames-meet",
+      "title": "Tuesday West Hove/Portslade Boardgames Meet",
+      "date": "2026-10-20",
+      "venue": "The Railway Inn",
+      "source": "discovery",
+      "time": "18:30",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/315678967/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
     },
     {
       "id": "2026-10-20-19-00-nectar-woode",
@@ -1810,6 +1931,19 @@
       "ticket_url": "https://www.axs.com/uk/events/1599361?skin=volks",
       "last_seen": "2026-10-17",
       "promoter": "JOY. Concerts"
+    },
+    {
+      "id": "2026-10-21-the-walrus-wednesday-night-pub-board-games",
+      "title": "Wednesday Night Pub Board Games",
+      "date": "2026-10-21",
+      "venue": "The Walrus",
+      "source": "discovery",
+      "time": "18:00",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/316592853/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
     },
     {
       "id": "2026-10-21-beerbelly-micropub-bottleshop-td-m-meet-play-laugh-beerbelly",
@@ -2049,6 +2183,19 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-22-alcampo-lounge-thursday-night-pub-boardgames",
+      "title": "Thursday Night Pub Boardgames",
+      "date": "2026-10-22",
+      "venue": "Alcampo Lounge",
+      "source": "discovery",
+      "time": "18:30",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/316993838/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-22-the-hope-ruin-hh-presents-yaang-noon-garden-club-magic-huarinami",
       "title": "HH Presents: Yaang + Noon Garden + Club Magic + Huarinami",
       "date": "2026-10-22",
@@ -2276,6 +2423,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-10-22-dice-saloon-30k-horus-heresy-heresy-at-the-saloon",
+      "title": "30K: Horus Heresy - Heresy at the Saloon",
+      "date": "2026-10-22",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/30k-horus-heresy-heresy-at-the-saloon-october-22-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-22-resident-nieve-ella-intimate-acoustic-set-signing",
       "title": "Nieve Ella: Intimate Acoustic Set + Signing",
       "date": "2026-10-22",
@@ -2405,6 +2565,19 @@
       ]
     },
     {
+      "id": "2026-10-23-dice-saloon-kids-club-adventures-ages-8-15",
+      "title": "Kids Club Adventures ages 8-15",
+      "date": "2026-10-23",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "15:30",
+      "finish_time": "",
+      "category": "Family",
+      "ticket_url": "https://dicesaloon.co.uk/products/kids-club-adventures-ages-8-15-october-23-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-23-volks-devilman-early-show",
       "title": "Devilman - Early show",
       "date": "2026-10-23",
@@ -2526,7 +2699,7 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984540974477",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-23-the-forge-comedy-club-forge-comedy-club-2",
         "2026-10-23-the-forge-comedy-club-forge-comedy-club-3"
@@ -2661,6 +2834,19 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.daltonsbrighton.com/event-details/mutations-festival-2026-2026-10-23-15-00",
+      "last_seen": "2026-10-17"
+    },
+    {
+      "id": "2026-10-23-dice-saloon-blood-bowl-night-sevens-to-elevens",
+      "title": "Blood Bowl Night - Sevens to Elevens",
+      "date": "2026-10-23",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/blood-bowl-night-sevens-to-elevens-october-23-2026",
+      "promoter": "Dice Saloon",
       "last_seen": "2026-10-17"
     },
     {
@@ -2903,7 +3089,7 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094512123",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-24-the-forge-comedy-club-forge-comedy-club-2",
         "2026-10-24-the-forge-comedy-club-forge-comedy-club-3"
@@ -3221,6 +3407,19 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-10-25-dice-saloon-sunday-board-games-dice-saloon",
+      "title": "Sunday Board Games - Dice Saloon",
+      "date": "2026-10-25",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "14:00",
+      "finish_time": "19:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/316853650/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-25-the-old-market-dreamy-place-talking-of-nature",
       "title": "Dreamy Place: Talking Of Nature…",
       "date": "2026-10-25",
@@ -3492,6 +3691,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-10-26-caxton-arms-beginner-advanced-werewolf",
+      "title": "Beginner + Advanced Werewolf",
+      "date": "2026-10-26",
+      "venue": "Caxton Arms",
+      "source": "discovery",
+      "time": "18:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/316871436/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-26-chalk-conway-the-machine",
       "title": "Conway The Machine",
       "date": "2026-10-26",
@@ -3592,6 +3804,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-10-26-dice-saloon-tow-the-old-world-casual-play-night",
+      "title": "TOW - The Old World Casual Play Night",
+      "date": "2026-10-26",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/tow-the-old-world-casual-play-night-october-26-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-26-greendoorstore-my-first-time",
       "title": "My First Time",
       "date": "2026-10-26",
@@ -3665,6 +3890,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-10-27-the-railway-inn-tuesday-west-hove-portslade-boardgames-meet",
+      "title": "Tuesday West Hove/Portslade Boardgames Meet",
+      "date": "2026-10-27",
+      "venue": "The Railway Inn",
+      "source": "discovery",
+      "time": "18:30",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/315678968/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-27-komedia-chaps-straps-queer-line-dancing",
       "title": "Chaps & Straps – Queer Line Dancing",
       "date": "2026-10-27",
@@ -3716,7 +3954,7 @@
       "finish_time": "22:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/romesh-ranganathan-work-in-progress-tickets-1988927648136",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-27-the-forge-comedy-club-romesh-ranganathan-work-in-progress-2",
         "2026-10-27-the-forge-comedy-club-the-forge-comedy-club"
@@ -3797,6 +4035,19 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.outsavvy.com/event/39486/nerd-ball-vampires-new-moon",
+      "last_seen": "2026-10-17"
+    },
+    {
+      "id": "2026-10-27-dice-saloon-kill-team-casual-beginner-friendly-meetup",
+      "title": "Kill Team - Casual & Beginner Friendly Meetup",
+      "date": "2026-10-27",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/kill-team-casual-beginner-friendly-meetup-october-27-2026",
+      "promoter": "Dice Saloon",
       "last_seen": "2026-10-17"
     },
     {
@@ -3910,6 +4161,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-10-28-the-walrus-wednesday-night-pub-board-games",
+      "title": "Wednesday Night Pub Board Games",
+      "date": "2026-10-28",
+      "venue": "The Walrus",
+      "source": "discovery",
+      "time": "18:00",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/316798394/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-28-beerbelly-micropub-bottleshop-td-m-meet-play-laugh-beerbelly",
       "title": "TD&M: Meet Play Laugh (BeerBelly)",
       "date": "2026-10-28",
@@ -3977,7 +4241,7 @@
       "finish_time": "21:15",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/paul-sinha-2-sinha-lifetime-tickets-1985441864062",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-28-the-forge-comedy-club-paul-sinha-2-sinha-lifetime-2",
         "2026-10-28-the-forge-comedy-club-the-forge-comedy-club"
@@ -4132,6 +4396,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-10-29-alcampo-lounge-thursday-night-pub-boardgames",
+      "title": "Thursday Night Pub Boardgames",
+      "date": "2026-10-29",
+      "venue": "Alcampo Lounge",
+      "source": "discovery",
+      "time": "18:30",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/316914144/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-29-the-old-market-max-cooper-3d-av-live",
       "title": "Max Cooper: 3D/AV Live",
       "date": "2026-10-29",
@@ -4243,6 +4520,19 @@
       "last_seen": "2026-10-17",
       "genre": "Punk & Metal",
       "genre_source": "musicbrainz:3aa10d4b-adcc-42c1-aeb3-4adb8d996686"
+    },
+    {
+      "id": "2026-10-29-dice-saloon-warmachine-jack-smash-brawl",
+      "title": "Warmachine - Jack, Smash & Brawl",
+      "date": "2026-10-29",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/warmachine-jack-smash-brawl-october-29-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
     },
     {
       "id": "2026-10-29-green-door-store-jawdropped",
@@ -4371,6 +4661,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-10-30-dice-saloon-kids-club-adventures-ages-8-15",
+      "title": "Kids Club Adventures ages 8-15",
+      "date": "2026-10-30",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "15:30",
+      "finish_time": "",
+      "category": "Family",
+      "ticket_url": "https://dicesaloon.co.uk/products/kids-club-adventures-ages-8-15-october-30-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-30-concorde2-halloween-with-simon-pegg",
       "title": "Halloween With Simon Pegg",
       "date": "2026-10-30",
@@ -4428,7 +4731,7 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541047696",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-30-the-forge-comedy-club-forge-comedy-club-2",
         "2026-10-30-the-forge-comedy-club-forge-comedy-club-3"
@@ -4857,7 +5160,7 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094572303",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-31-the-forge-comedy-club-forge-comedy-club-2",
         "2026-10-31-the-forge-comedy-club-forge-comedy-club-3"
@@ -5079,6 +5382,58 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-10-31-dice-saloon-arkham-horror-card-game-children-of-blood-campaign-blood-money",
+      "title": "Arkham Horror Card Game Children of Blood Campaign - Blood Money",
+      "date": "2026-10-31",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/arkham-horror-card-game-children-of-blood-campaign-blood-money-31-10",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
+    },
+    {
+      "id": "2026-10-31-dice-saloon-blood-bowl-all-hallow-s-eve-cup",
+      "title": "Blood Bowl All Hallow's Eve Cup",
+      "date": "2026-10-31",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/blood-bowl-all-hallows-eve-cup-31-october-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
+    },
+    {
+      "id": "2026-10-31-dice-saloon-dungeons-dragons-beginner-session-the-house-that-ate-halloween",
+      "title": "Dungeons & Dragons Beginner Session -The House That Ate Halloween",
+      "date": "2026-10-31",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/dungeons-dragons-beginner-session-the-house-that-ate-halloween-31st-october-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
+    },
+    {
+      "id": "2026-10-31-dice-saloon-dungeons-dragons-experienced-session-the-house-that-ate-halloween",
+      "title": "Dungeons & Dragons Experienced Session - The House That Ate Halloween",
+      "date": "2026-10-31",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/dungeons-dragons-experienced-session-the-house-that-ate-halloween-31st-october-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-10-31-green-door-store-halloweiner-lemonsuckr-goodbye-girl-apocrypha-not-richard-her-majesty",
       "title": "Halloweiner – Lemonsuckr / Goodbye / Girl Apocrypha / Not Richard & Her Majesty",
       "date": "2026-10-31",
@@ -5248,6 +5603,19 @@
       ]
     },
     {
+      "id": "2026-11-01-dice-saloon-sunday-board-games-dice-saloon",
+      "title": "Sunday Board Games - Dice Saloon",
+      "date": "2026-11-01",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "14:00",
+      "finish_time": "19:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/316947069/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-01-komedia-down-the-hatch-comedy-club",
       "title": "Down the Hatch Comedy Club",
       "date": "2026-11-01",
@@ -5415,6 +5783,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-11-02-caxton-arms-beginner-advanced-werewolf",
+      "title": "Beginner + Advanced Werewolf",
+      "date": "2026-11-02",
+      "venue": "Caxton Arms",
+      "source": "discovery",
+      "time": "18:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/316962391/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-02-daltons-wpc-his-house-2020",
       "title": "WPC 'His House (2020)'",
       "date": "2026-11-02",
@@ -5484,6 +5865,19 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "http://www.byobcomedy.com/brighton",
+      "last_seen": "2026-10-17"
+    },
+    {
+      "id": "2026-11-03-the-railway-inn-tuesday-west-hove-portslade-boardgames-meet",
+      "title": "Tuesday West Hove/Portslade Boardgames Meet",
+      "date": "2026-11-03",
+      "venue": "The Railway Inn",
+      "source": "discovery",
+      "time": "18:30",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/315678970/",
+      "promoter": "Brighton Pub Boardgamers",
       "last_seen": "2026-10-17"
     },
     {
@@ -5629,6 +6023,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-11-04-the-walrus-wednesday-night-pub-board-games",
+      "title": "Wednesday Night Pub Board Games",
+      "date": "2026-11-04",
+      "venue": "The Walrus",
+      "source": "discovery",
+      "time": "18:00",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/316997181/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-04-the-old-market-derek-vs-derek-18",
       "title": "Derek Vs Derek (15)",
       "date": "2026-11-04",
@@ -5674,6 +6081,19 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.outsavvy.com/event/38827/no-tits-just-hits",
+      "last_seen": "2026-10-17"
+    },
+    {
+      "id": "2026-11-04-dice-saloon-midweek-middle-earth",
+      "title": "Midweek Middle Earth",
+      "date": "2026-11-04",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/midweek-middle-earth-04-november-2026",
+      "promoter": "Dice Saloon",
       "last_seen": "2026-10-17"
     },
     {
@@ -5773,6 +6193,19 @@
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
       "last_seen": "2026-10-06"
+    },
+    {
+      "id": "2026-11-05-alcampo-lounge-thursday-night-pub-boardgames",
+      "title": "Thursday Night Pub Boardgames",
+      "date": "2026-11-05",
+      "venue": "Alcampo Lounge",
+      "source": "discovery",
+      "time": "18:30",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/317014730/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
     },
     {
       "id": "2026-11-05-the-palmeira-td-m-meet-play-laugh-palmeira",
@@ -5946,6 +6379,19 @@
       "genre_source": "musicbrainz:5c4c2df9-63ba-4605-a965-5ea11db27cf5"
     },
     {
+      "id": "2026-11-06-dice-saloon-kids-club-adventures-ages-8-15",
+      "title": "Kids Club Adventures ages 8-15",
+      "date": "2026-11-06",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "15:30",
+      "finish_time": "",
+      "category": "Family",
+      "ticket_url": "https://dicesaloon.co.uk/products/kids-club-adventures-ages-8-15-november-06-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-06-concorde-2-dj-yoda",
       "title": "DJ Yoda",
       "date": "2026-11-06",
@@ -6032,7 +6478,7 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541745784",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-06-the-forge-comedy-club-forge-comedy-club-2",
         "2026-11-06-the-forge-comedy-club-forge-comedy-club-3"
@@ -6355,7 +6801,7 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094670597",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-07-the-forge-comedy-club-forge-comedy-club-2",
         "2026-11-07-the-forge-comedy-club-forge-comedy-club-3"
@@ -6690,6 +7136,19 @@
       "status": "SOLD OUT"
     },
     {
+      "id": "2026-11-08-dice-saloon-sunday-board-games-dice-saloon",
+      "title": "Sunday Board Games - Dice Saloon",
+      "date": "2026-11-08",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "14:00",
+      "finish_time": "19:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/nmmpvtyjcpblb/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-08-the-old-market-come-alive-echo-performing-arts-cic",
       "title": "Come Alive: Echo Performing Arts CIC",
       "date": "2026-11-08",
@@ -6767,7 +7226,7 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/marcel-luconts-whine-list-tickets-1986318611437",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-08-the-forge-comedy-club-marcel-lucont-s-whine-list-2",
         "2026-11-08-the-forge-comedy-club-the-forge-comedy-club"
@@ -6874,6 +7333,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-11-09-caxton-arms-beginner-advanced-werewolf",
+      "title": "Beginner + Advanced Werewolf",
+      "date": "2026-11-09",
+      "venue": "Caxton Arms",
+      "source": "discovery",
+      "time": "18:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/ttqswtyjcpbmb/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-09-concorde-2-cardinals",
       "title": "Cardinals",
       "date": "2026-11-09",
@@ -6899,6 +7371,19 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.daltonsbrighton.com/event-details/chailey-rocks",
+      "last_seen": "2026-10-17"
+    },
+    {
+      "id": "2026-11-09-dice-saloon-dnd-season-of-champions-celebration-event-one-shot",
+      "title": "DnD Season of Champions, Celebration Event One Shot",
+      "date": "2026-11-09",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/dnd-season-of-champions-celebration-event-one-shot-09-november-2026",
+      "promoter": "Dice Saloon",
       "last_seen": "2026-10-17"
     },
     {
@@ -6976,6 +7461,19 @@
       "status": "SOLD OUT"
     },
     {
+      "id": "2026-11-10-the-railway-inn-tuesday-west-hove-portslade-boardgames-meet",
+      "title": "Tuesday West Hove/Portslade Boardgames Meet",
+      "date": "2026-11-10",
+      "venue": "The Railway Inn",
+      "source": "discovery",
+      "time": "18:30",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/315678971/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-10-concorde-2-mykki-blanco",
       "title": "Mykki Blanco",
       "date": "2026-11-10",
@@ -7011,7 +7509,7 @@
       "finish_time": "21:45",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/jacob-hawley-fighting-age-man-tickets-1982785697396",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-10-the-forge-comedy-club-jacob-hawley-fighting-age-man",
         "2026-11-10-the-forge-comedy-club-the-forge-comedy-club"
@@ -7116,6 +7614,19 @@
       "finish_time": "",
       "last_seen": "2026-10-17",
       "promoter": "JOY. Concerts"
+    },
+    {
+      "id": "2026-11-11-the-walrus-wednesday-night-pub-board-games",
+      "title": "Wednesday Night Pub Board Games",
+      "date": "2026-11-11",
+      "venue": "The Walrus",
+      "source": "discovery",
+      "time": "18:00",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/xzszvtyjcpbpb/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
     },
     {
       "id": "2026-11-11-patterns-tom-a-smith",
@@ -7309,6 +7820,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-11-12-alcampo-lounge-thursday-night-pub-boardgames",
+      "title": "Thursday Night Pub Boardgames",
+      "date": "2026-11-12",
+      "venue": "Alcampo Lounge",
+      "source": "discovery",
+      "time": "18:30",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/ktgnbvyjcpbqb/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-12-the-palmeira-td-m-meet-play-laugh-palmeira",
       "title": "TD&M: Meet Play Laugh (Palmeira)",
       "date": "2026-11-12",
@@ -7343,7 +7867,7 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/comedy-for-the-clock-tower-tickets-1994137231139",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-12-the-forge-comedy-club-comedy-for-the-clock-tower",
         "2026-11-12-the-forge-comedy-club-the-forge-comedy-club"
@@ -7450,6 +7974,19 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.daltonsbrighton.com/event-details/grace-hayhurst-evi-vine-dea-velata",
+      "last_seen": "2026-10-17"
+    },
+    {
+      "id": "2026-11-12-dice-saloon-hobby-hang",
+      "title": "Hobby & Hang",
+      "date": "2026-11-12",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/hobby-hang-12th-november-2026",
+      "promoter": "Dice Saloon",
       "last_seen": "2026-10-17"
     },
     {
@@ -7601,7 +8138,7 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541599346",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-13-the-forge-comedy-club-forge-comedy-club-2",
         "2026-11-13-the-forge-comedy-club-forge-comedy-club-3"
@@ -7918,7 +8455,7 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094786945",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-14-the-forge-comedy-club-forge-comedy-club-2",
         "2026-11-14-the-forge-comedy-club-forge-comedy-club-3"
@@ -8275,6 +8812,19 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-15-dice-saloon-sunday-board-games-dice-saloon",
+      "title": "Sunday Board Games - Dice Saloon",
+      "date": "2026-11-15",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "14:00",
+      "finish_time": "19:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/nmmpvtyjcpbtb/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-15-patterns-aaron-rowe",
       "title": "Aaron Rowe",
       "date": "2026-11-15",
@@ -8423,6 +8973,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-11-16-caxton-arms-beginner-advanced-werewolf",
+      "title": "Beginner + Advanced Werewolf",
+      "date": "2026-11-16",
+      "venue": "Caxton Arms",
+      "source": "discovery",
+      "time": "18:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/ttqswtyjcpbvb/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-16-brightoncentre-ricky-gervais",
       "title": "Ricky Gervais",
       "date": "2026-11-16",
@@ -8551,6 +9114,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-11-17-the-railway-inn-tuesday-west-hove-portslade-boardgames-meet",
+      "title": "Tuesday West Hove/Portslade Boardgames Meet",
+      "date": "2026-11-17",
+      "venue": "The Railway Inn",
+      "source": "discovery",
+      "time": "18:30",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/315678972/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-17-the-old-market-notes-a-wine-and-music-pairing-night",
       "title": "Notes: A Wine and Music Pairing Night",
       "date": "2026-11-17",
@@ -8598,6 +9174,19 @@
       "ticket_url": "https://dice.fm/event/6ab0f1484c55e1000197b86f",
       "last_seen": "2026-10-17",
       "promoter": "JOY. Concerts"
+    },
+    {
+      "id": "2026-11-17-dice-saloon-necromunda-intro-campaign-session-1",
+      "title": "Necromunda Intro Campaign! Session 1",
+      "date": "2026-11-17",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/necromunda-intro-campaign-session-1-17-november-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
     },
     {
       "id": "2026-11-17-green-door-store-dessie-magee",
@@ -8703,6 +9292,19 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-18-the-walrus-wednesday-night-pub-board-games",
+      "title": "Wednesday Night Pub Board Games",
+      "date": "2026-11-18",
+      "venue": "The Walrus",
+      "source": "discovery",
+      "time": "18:00",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/xzszvtyjcpbxb/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-18-concorde-2-oh-my-god-it-s-the-church",
       "title": "Oh My God! It's The Church",
       "date": "2026-11-18",
@@ -8752,7 +9354,7 @@
       "finish_time": "22:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/tez-ilyas-tez-things-i-hate-about-you-tickets-1972463816372",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-18-the-forge-comedy-club-tez-ilyas-tez-things-i-hate-about-you-2",
         "2026-11-18-the-forge-comedy-club-the-forge-comedy-club"
@@ -8922,6 +9524,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-11-19-alcampo-lounge-thursday-night-pub-boardgames",
+      "title": "Thursday Night Pub Boardgames",
+      "date": "2026-11-19",
+      "venue": "Alcampo Lounge",
+      "source": "discovery",
+      "time": "18:30",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/ktgnbvyjcpbzb/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-19-the-palmeira-td-m-meet-play-laugh-palmeira",
       "title": "TD&M: Meet Play Laugh (Palmeira)",
       "date": "2026-11-19",
@@ -8956,7 +9571,7 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/finlay-christie-champagne-casanova-tickets-1978398612507",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-19-the-forge-comedy-club-finlay-christie-champagne-casanova-2",
         "2026-11-19-the-forge-comedy-club-the-forge-comedy-club"
@@ -9158,7 +9773,7 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541561232",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-20-the-forge-comedy-club-forge-comedy-club-2",
         "2026-11-20-the-forge-comedy-club-forge-comedy-club-3"
@@ -9535,7 +10150,7 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094887245",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-21-the-forge-comedy-club-forge-comedy-club-2",
         "2026-11-21-the-forge-comedy-club-forge-comedy-club-3"
@@ -9575,7 +10190,10 @@
       "finish_time": "04:00",
       "category": "Club",
       "ticket_url": "https://quarters.seetickets.com/event/locklead-julian-anthony-more-tba/quarters/3708218",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "also_ids": [
+        "2026-11-21-quarters-locklead-julian-anthony"
+      ]
     },
     {
       "id": "2026-11-21-volks-delirium-x-the-final-show-w-loxy-seba-hlz-more",
@@ -9684,6 +10302,19 @@
       "genre_source": "title"
     },
     {
+      "id": "2026-11-21-dice-saloon-star-wars-legion-casual-gaming-day",
+      "title": "Star Wars: Legion Casual Gaming Day",
+      "date": "2026-11-21",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/star-wars-legion-casual-gaming-day-21-november-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-21-komedia-swiftogeddon-20-years-of-taylor-special-sat-21-nov-2026-doors-11-00-pm",
       "title": "Swiftogeddon: 20 Years of Taylor Special",
       "date": "2026-11-21",
@@ -9783,6 +10414,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-11-22-dice-saloon-sunday-board-games-dice-saloon",
+      "title": "Sunday Board Games - Dice Saloon",
+      "date": "2026-11-22",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "14:00",
+      "finish_time": "19:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/nmmpvtyjcpbdc/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-22-concorde2-getdown-services",
       "title": "Getdown Services",
       "date": "2026-11-22",
@@ -9820,7 +10464,7 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/scott-bennett-blood-sugar-baby-tickets-1693326197239",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-22-the-forge-comedy-club-scott-bennett-blood-sugar-baby-2",
         "2026-11-22-the-forge-comedy-club-the-forge-comedy-club"
@@ -9934,6 +10578,19 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-11-23-caxton-arms-beginner-advanced-werewolf",
+      "title": "Beginner + Advanced Werewolf",
+      "date": "2026-11-23",
+      "venue": "Caxton Arms",
+      "source": "discovery",
+      "time": "18:00",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/ttqswtyjcpbfc/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-23-concorde-2-the-big-moon",
       "title": "The Big Moon",
       "date": "2026-11-23",
@@ -10014,6 +10671,19 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/partner/tickets/event/mxdvar-the-rabbitts-album-release-tour-23rd-nov-the-folklore-rooms-brighton-tickets?dice_id=8982575&dice_channel=web&dice_tags=organic&dice_campaign=DICE&dice_feature=mio_marketing&_branch_match_id=1245521259485845231&utm_source=web&utm_campaign=DICE&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1Q83SUtOtkg1MksyMrCvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQDhw2oXOwAAAA%3D%3D",
+      "last_seen": "2026-10-17"
+    },
+    {
+      "id": "2026-11-24-the-railway-inn-tuesday-west-hove-portslade-boardgames-meet",
+      "title": "Tuesday West Hove/Portslade Boardgames Meet",
+      "date": "2026-11-24",
+      "venue": "The Railway Inn",
+      "source": "discovery",
+      "time": "18:30",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/hffgztyjcpbgc/",
+      "promoter": "Brighton Pub Boardgamers",
       "last_seen": "2026-10-17"
     },
     {
@@ -10131,6 +10801,19 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2026-11-25-the-walrus-wednesday-night-pub-board-games",
+      "title": "Wednesday Night Pub Board Games",
+      "date": "2026-11-25",
+      "venue": "The Walrus",
+      "source": "discovery",
+      "time": "18:00",
+      "finish_time": "23:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/xzszvtyjcpbhc/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-25-the-forge-comedy-club-peter-antoniou-pretty-psychic-extra-show",
       "title": "Peter Antoniou: Pretty Psychic",
       "date": "2026-11-25",
@@ -10140,7 +10823,7 @@
       "finish_time": "20:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/peter-antoniou-pretty-psychic-extra-show-tickets-1985773598288",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-25-the-forge-comedy-club-peter-antoniou-pretty-psychic-extra-show-2",
         "2026-11-25-the-forge-comedy-club-the-forge-comedy-club"
@@ -10174,7 +10857,7 @@
       "finish_time": "21:15",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/hatty-preston-unapproachable-tickets-1999088219679",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-25-the-forge-comedy-club-hatty-preston-unapproachable"
       ]
@@ -10228,7 +10911,7 @@
       "finish_time": "21:45",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/peter-antoniou-pretty-psychic-tickets-1985109985404",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-25-the-forge-comedy-club-the-forge-comedy-club-2"
       ],
@@ -10355,6 +11038,19 @@
       "last_seen": "2026-10-16"
     },
     {
+      "id": "2026-11-26-alcampo-lounge-thursday-night-pub-boardgames",
+      "title": "Thursday Night Pub Boardgames",
+      "date": "2026-11-26",
+      "venue": "Alcampo Lounge",
+      "source": "discovery",
+      "time": "18:30",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/ktgnbvyjcpbjc/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-26-brighton-dome-concert-hall-ben-folds-the-paper-airplane-request-tour",
       "title": "Ben Folds: The Paper Airplane Request Tour",
       "date": "2026-11-26",
@@ -10422,7 +11118,7 @@
       "finish_time": "21:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/james-barr-sorry-i-hurt-your-son-said-my-ex-to-my-mum-tickets-1982735129145",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-26-the-forge-comedy-club-james-barr-sorry-i-hurt-your-son-said-my-ex-to-my-mum-2",
         "2026-11-26-the-forge-comedy-club-the-forge-comedy-club"
@@ -10450,7 +11146,7 @@
       "finish_time": "21:45",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/laura-lexx-yo-yo-tickets-1475735226789",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-26-the-forge-comedy-club-laura-lexx-yo-yo",
         "2026-11-26-the-forge-comedy-club-the-forge-comedy-club-2"
@@ -10648,7 +11344,7 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541373671",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-27-the-forge-comedy-club-forge-comedy-club-2",
         "2026-11-27-the-forge-comedy-club-forge-comedy-club-3"
@@ -10904,7 +11600,7 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094960464",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-28-the-forge-comedy-club-forge-comedy-club-2",
         "2026-11-28-the-forge-comedy-club-forge-comedy-club-3"
@@ -11708,7 +12404,7 @@
       "finish_time": "22:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/ian-stone-looking-for-the-wow-extra-show-tickets-1982765100791",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-12-03-the-forge-comedy-club-ian-stone-looking-for-the-wow-extra-show-2",
         "2026-12-03-the-forge-comedy-club-the-forge-comedy-club"
@@ -11850,7 +12546,7 @@
       "finish_time": "22:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1998424321943",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-12-04-the-forge-comedy-club-forge-comedy-club-2",
         "2026-12-04-the-forge-comedy-club-forge-comedy-club-3"
@@ -12076,7 +12772,7 @@
       "finish_time": "23:59",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998398743437",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-12-05-the-forge-comedy-club-festive-forge-comedy-club-2",
         "2026-12-05-the-forge-comedy-club-the-forge-comedy-club"
@@ -12196,6 +12892,19 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://wegottickets.com/f/27044",
+      "last_seen": "2026-10-17"
+    },
+    {
+      "id": "2026-12-05-dice-saloon-purge-of-the-sector-tenebris-legions-imperialis-narrative-event",
+      "title": "Purge of the Sector Tenebris – Legions Imperialis Narrative Event",
+      "date": "2026-12-05",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/purge-of-the-sector-tenebris-legions-imperialis-narrative-event-06-december-2026",
+      "promoter": "Dice Saloon",
       "last_seen": "2026-10-17"
     },
     {
@@ -12829,7 +13538,7 @@
       "finish_time": "23:59",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998424637888",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-12-11-the-forge-comedy-club-festive-forge-comedy-club",
         "2026-12-11-the-forge-comedy-club-the-forge-comedy-club"
@@ -13053,7 +13762,7 @@
       "finish_time": "23:59",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998443615651",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-12-12-the-forge-comedy-club-festive-forge-comedy-club-2",
         "2026-12-12-the-forge-comedy-club-the-forge-comedy-club"
@@ -13600,7 +14309,7 @@
       "finish_time": "23:59",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998456252448",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-12-18-the-forge-comedy-club-festive-forge-comedy-club-2",
         "2026-12-18-the-forge-comedy-club-the-forge-comedy-club"
@@ -13739,7 +14448,7 @@
       "finish_time": "23:59",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/festive-forge-comedy-club-tickets-1998456412928",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-12-19-the-forge-comedy-club-festive-forge-comedy-club-2",
         "2026-12-19-the-forge-comedy-club-the-forge-comedy-club"
@@ -13946,7 +14655,7 @@
       "finish_time": "21:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/the-noise-next-door-furnace-christmas-special-tickets-1952130828859",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-12-20-the-forge-comedy-club-the-forge-comedy-club",
         "2026-12-20-the-forge-comedy-club-the-noise-next-door-furnace-christmas-special-2"
@@ -14348,7 +15057,7 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/forge-comedy-club-new-years-eve-special-tickets-1998456550339",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-12-31-the-forge-comedy-club-forge-comedy-club-new-years-eve-special-2",
         "2026-12-31-the-forge-comedy-club-the-forge-comedy-club"
@@ -15606,7 +16315,7 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/ray-oleary-i-can-see-oleary-now-the-ray-has-gone-tickets-2002383895133",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2027-02-11-the-forge-comedy-club-ray-o-leary-i-can-see-o-leary-now-the-ray-has-gone-2",
         "2027-02-11-the-forge-comedy-club-the-forge-comedy-club"
@@ -16162,7 +16871,7 @@
       "finish_time": "21:45",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/abi-clarke-just-tell-me-when-its-over-tickets-2002911500214",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2027-02-25-the-forge-comedy-club-abi-clarke-just-tell-me-when-it-s-over-2",
         "2027-02-25-the-forge-comedy-club-the-forge-comedy-club"
@@ -16288,7 +16997,7 @@
       "finish_time": "20:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/jeff-innocent-leaning-in-tickets-2001873996011",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2027-02-28-the-forge-comedy-club-jeff-innocent-leaning-in-2",
         "2027-02-28-the-forge-comedy-club-the-forge-comedy-club"
@@ -16378,7 +17087,7 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/connor-burns-flow-tickets-2003210257806",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2027-03-04-the-forge-comedy-club-connor-burns-flow-2",
         "2027-03-04-the-forge-comedy-club-the-forge-comedy-club"
@@ -16639,7 +17348,7 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/sean-mcloughlin-halfway-tickets-2001070260015",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2027-03-11-the-forge-comedy-club-sean-mcloughlin-halfway-2",
         "2027-03-11-the-forge-comedy-club-the-forge-comedy-club"
@@ -16828,6 +17537,19 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.eventbrite.com/e/brighton-day-of-death-tickets-2000411184703?aff=oddtdtcreator",
+      "last_seen": "2026-10-17"
+    },
+    {
+      "id": "2027-03-13-dice-saloon-blood-bowl-spring-break",
+      "title": "Blood Bowl Spring Break!",
+      "date": "2027-03-13",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/blood-bowl-spring-break-13-march-2027",
+      "promoter": "Dice Saloon",
       "last_seen": "2026-10-17"
     },
     {
@@ -17200,7 +17922,7 @@
       "finish_time": "21:15",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/andrew-bird-on-edge-tickets-1984672561056",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2027-03-25-the-forge-comedy-club-andrew-bird-on-edge-2",
         "2027-03-25-the-forge-comedy-club-the-forge-comedy-club"
@@ -17490,7 +18212,7 @@
       "finish_time": "20:00",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/andrew-ryan-honest-capacity-tickets-1982966467083",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2027-04-04-the-forge-comedy-club-andrew-ryan-honest-capacity-2",
         "2027-04-04-the-forge-comedy-club-the-forge-comedy-club"
@@ -17678,7 +18400,7 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/carl-hutchinson-fine-whine-tickets-1975741835014",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2027-04-15-the-forge-comedy-club-carl-hutchinson-fine-whine-2",
         "2027-04-15-the-forge-comedy-club-the-forge-comedy-club"
@@ -17803,7 +18525,7 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/matt-bragg-stand-up-comic-tickets-1986058834437",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2027-04-18-the-forge-comedy-club-matt-bragg-stand-up-comic",
         "2027-04-18-the-forge-comedy-club-the-forge-comedy-club"
@@ -17833,7 +18555,7 @@
       "finish_time": "21:15",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/tom-stade-rules-tickets-1991700020376",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2027-04-21-the-forge-comedy-club-the-forge-comedy-club",
         "2027-04-21-the-forge-comedy-club-tom-stade-rules-2"
@@ -18506,7 +19228,7 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.eventbrite.co.uk/e/dom-joly-trigger-happy-tv-live-tickets-1986544766874",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2027-06-20-the-forge-comedy-club-dom-joly-trigger-happy-tv-live-2",
         "2027-06-20-the-forge-comedy-club-the-forge-comedy-club"
@@ -18736,9 +19458,9 @@
     }
   ],
   "discovery_report": {
-    "calendars_loaded": 8,
-    "calendars": 8,
-    "events_found": 897,
+    "calendars_loaded": 10,
+    "calendars": 10,
+    "events_found": 956,
     "rivalcults_unknown_venues": [
       "Brighton Playhouse",
       "The Yellow Book"

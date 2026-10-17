@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-13-dice-saloon-blood-bowl-spring-break@brightonweekend.co.uk
+DTSTAMP:20270313T000000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Blood Bowl Spring Break!
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/blood-bowl-spring-br
+ eak-13-march-2027\nMore: https://brightonweekend.co.uk/e/2027-03-13-dice-s
+ aloon-blood-bowl-spring-break/
+URL:https://brightonweekend.co.uk/e/2027-03-13-dice-saloon-blood-bowl-sprin
+ g-break/
+END:VEVENT
+END:VCALENDAR

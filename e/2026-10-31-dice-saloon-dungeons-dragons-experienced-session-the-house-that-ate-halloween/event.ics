@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-dice-saloon-dungeons-dragons-experienced-session-the-house-t
+ hat-ate-halloween@brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Dungeons & Dragons Experienced Session - The House That Ate Hallowe
+ en
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/dungeons-dragons-exp
+ erienced-session-the-house-that-ate-halloween-31st-october-2026\nMore: htt
+ ps://brightonweekend.co.uk/e/2026-10-31-dice-saloon-dungeons-dragons-exper
+ ienced-session-the-house-that-ate-halloween/
+URL:https://brightonweekend.co.uk/e/2026-10-31-dice-saloon-dungeons-dragons
+ -experienced-session-the-house-that-ate-halloween/
+END:VEVENT
+END:VCALENDAR

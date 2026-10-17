@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-26-dice-saloon-tow-the-old-world-casual-play-night@brightonweek
+ end.co.uk
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:TOW - The Old World Casual Play Night
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/tow-the-old-world-ca
+ sual-play-night-october-26-2026\nMore: https://brightonweekend.co.uk/e/202
+ 6-10-26-dice-saloon-tow-the-old-world-casual-play-night/
+URL:https://brightonweekend.co.uk/e/2026-10-26-dice-saloon-tow-the-old-worl
+ d-casual-play-night/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-18-the-walrus-wednesday-night-pub-board-games@brightonweekend.c
+ o.uk
+DTSTAMP:20261118T000000Z
+DTSTART:20261118T180000Z
+DTEND:20261118T230000Z
+SUMMARY:Wednesday Night Pub Board Games
+LOCATION:The Walrus\, Brighton
+DESCRIPTION:Tickets: https://www.meetup.com/brighton-pub-boardgamers/events
+ /xzszvtyjcpbxb/\nMore: https://brightonweekend.co.uk/e/2026-11-18-the-walr
+ us-wednesday-night-pub-board-games/
+URL:https://brightonweekend.co.uk/e/2026-11-18-the-walrus-wednesday-night-p
+ ub-board-games/
+END:VEVENT
+END:VCALENDAR

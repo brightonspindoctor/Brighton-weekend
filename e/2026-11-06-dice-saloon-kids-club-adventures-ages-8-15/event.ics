@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-dice-saloon-kids-club-adventures-ages-8-15@brightonweekend.c
+ o.uk
+DTSTAMP:20261106T000000Z
+DTSTART:20261106T153000Z
+DTEND:20261106T183000Z
+SUMMARY:Kids Club Adventures ages 8-15
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/kids-club-adventures
+ -ages-8-15-november-06-2026\nMore: https://brightonweekend.co.uk/e/2026-11
+ -06-dice-saloon-kids-club-adventures-ages-8-15/
+URL:https://brightonweekend.co.uk/e/2026-11-06-dice-saloon-kids-club-advent
+ ures-ages-8-15/
+END:VEVENT
+END:VCALENDAR
