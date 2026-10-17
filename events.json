@@ -226,9 +226,28 @@
     {
       "venue": "Patterns",
       "url": "https://patternsbrighton.com/club/",
-      "events": 0,
+      "events": 120,
       "error": "",
-      "sample": []
+      "sample": [
+        {
+          "title": "James Zabiela @ Memory Box",
+          "date": "2026-10-17",
+          "time": "17:00",
+          "link": "https://dice.fm/event/james-zabiela-memory-box-17th-oct-patterns-brighton-tickets"
+        },
+        {
+          "title": "Sexy Lady Massive Presents: The Massive Tour",
+          "date": "2026-10-17",
+          "time": "23:00",
+          "link": "https://dice.fm/event/sexy-lady-massive-presents-the-massive-tour-17th-oct-patterns-brighton-tickets"
+        },
+        {
+          "title": "1BTN X Vicious Charm. Presents JIM live!",
+          "date": "2026-10-18",
+          "time": "15:00",
+          "link": "https://dice.fm/event/1btn-x-vicious-charm-presents-jim-live-18th-oct-patterns-brighton-tickets"
+        }
+      ]
     },
     {
       "venue": "Patterns",
@@ -389,7 +408,7 @@
     {
       "venue": "The Hope & Ruin",
       "url": "https://www.hope.pub/",
-      "events": 78,
+      "events": 69,
       "error": "",
       "sample": [
         {
@@ -639,7 +658,8 @@
       "finish_time": "13:00",
       "category": "Other",
       "ticket_url": "https://brightondome.org/whats-on/LGF-make-a-fly-workshop/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Workshop"
     },
     {
       "id": "2026-10-17-brighton-dome-modern-toss-flies",
@@ -651,7 +671,8 @@
       "finish_time": "13:00",
       "category": "Other",
       "ticket_url": "https://brightondome.org/whats-on/LGJ-modern-toss-flies/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Workshop"
     },
     {
       "id": "2026-10-17-the-hope-ruin-brighton-cat-tour-art-day",
@@ -719,16 +740,15 @@
       "source": "venue",
       "time": "15:00",
       "finish_time": "20:00",
-      "category": "Club",
+      "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LGl-all-my-friends-day-disco/",
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-17-brighton-dome-all-my-friends-day-disco",
         "2026-10-17-brighton-dome-concert-hall-all-my-friends-day-disco"
       ],
-      "status": "SOLD OUT",
-      "genre": "House & Disco",
-      "genre_source": "title"
+      "venue_label": "Comedy",
+      "status": "SOLD OUT"
     },
     {
       "id": "2026-10-17-patterns-james-zabiela-memory-box",
@@ -738,7 +758,7 @@
       "source": "venue",
       "time": "17:00",
       "finish_time": "22:00",
-      "category": "Music",
+      "category": "Club",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Memory-Box-w-James-Zabiela/42656859/",
       "last_seen": "2026-10-17",
       "also_ids": [
@@ -793,7 +813,8 @@
       "also_ids": [
         "2026-10-17-brighton-dome-comedy-stevie-martin-clout-brighton-dome-comedy-festival-in-cahoots-with-komedia-2026-sat-17-oct-corn-exchange-from-24-find-out-more",
         "2026-10-17-brighton-dome-stevie-martin-clout"
-      ]
+      ],
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-17-concorde-2-reef",
@@ -837,7 +858,8 @@
       "also_ids": [
         "2026-10-17-brighton-dome-accessible-events-comedy-lara-ricote-inkling-brighton-dome-comedy-festival-in-cahoots-with-komedia-2026-sat-17-oct-brighton-dome-studio-theatre-from-21-fin",
         "2026-10-17-brighton-dome-lara-ricote-inkling"
-      ]
+      ],
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-17-komedia-komedia-comedy-club-sat-17-oct-2026-8-00-pm-doors-7-00-pm",
@@ -1210,9 +1232,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Other",
       "ticket_url": "https://www.atgtickets.com/shows/backstage-tours/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-15"
+      "last_seen": "2026-10-15",
+      "venue_label": "Events"
     },
     {
       "id": "2026-10-17-theatre-royal-brighton-fin-taylor-the-pre-emptive-comeback-special",
@@ -1225,6 +1248,7 @@
       "category": "Comedy",
       "ticket_url": "https://www.atgtickets.com/shows/fin-taylor-the-pre-emptive-comeback-special/theatre-royal-brighton/",
       "last_seen": "2026-10-17",
+      "venue_label": "Comedy",
       "status": "SOLD OUT"
     },
     {
@@ -1235,9 +1259,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Other",
       "ticket_url": "https://www.atgtickets.com/shows/musical-theatre-masterclass-legally-blonde-ages-13-17-years/theatre-royal-brighton/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Events"
     },
     {
       "id": "2026-10-17-theatre-royal-brighton-musical-theatre-masterclass-legally-blonde-ages-9-12-years",
@@ -1396,7 +1421,8 @@
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-18-brighton-dome-jimeoin-ballyhoo"
-      ]
+      ],
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-18-brighton-dome-the-blindboy-podcast-live-2",
@@ -1406,13 +1432,14 @@
       "source": "venue",
       "time": "19:30",
       "finish_time": "23:00",
-      "category": "Talk",
+      "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LrI-the-blindboy-podcast-live/",
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-18-brighton-dome-accessible-events-comedy-the-blindboy-podcast-live-brighton-dome-comedy-festival-in-cahoots-with-komedia-2026-sun-18-oct-concert-hall-from-34-find-out-more",
         "2026-10-18-brighton-dome-the-blindboy-podcast-live"
-      ]
+      ],
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-18-komedia-robin-ince-joanna-neary-sun-18-oct-2026-7-30-pm-doors-7-00-pm",
@@ -1581,7 +1608,8 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.atgtickets.com/shows/kiell-smith-bynoes-kool-story-bro/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-19-caxton-arms-beginner-advanced-werewolf",
@@ -1634,7 +1662,8 @@
       "finish_time": "21:30",
       "category": "Music",
       "ticket_url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173666173",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Music"
     },
     {
       "id": "2026-10-19-komedia-raising-the-roof-2-a-fundraiser-for-ymca-brighton-mon-19-oct-2026-8-00-pm-doors-7-00-pm",
@@ -1793,7 +1822,8 @@
       "finish_time": "20:25",
       "category": "Talk",
       "ticket_url": "https://www.theoldmarket.com/shows/inside-the-world-of-the-beatles-with-gary-kemp-and-simon-halfon",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Talk"
     },
     {
       "id": "2026-10-20-concorde2-huey-morgan",
@@ -1917,7 +1947,8 @@
       "finish_time": "",
       "category": "Theatre",
       "ticket_url": "https://www.atgtickets.com/shows/the-haunting-of-hill-house/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Plays"
     },
     {
       "id": "2026-10-20-volks-baby-dave",
@@ -1998,7 +2029,8 @@
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-21-brighton-dome-maisie-adam-whatsherface"
-      ]
+      ],
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-21-komedia-sergi-polo-live-in-brighton-in-english-wed-21-oct-2026-7-30-pm-doors-7-00-pm",
@@ -2180,7 +2212,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Plays"
     },
     {
       "id": "2026-10-22-alcampo-lounge-thursday-night-pub-boardgames",
@@ -2235,7 +2268,8 @@
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-22-brighton-dome-simon-amstell-i-love-it-here"
-      ]
+      ],
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-22-concorde2-jake-vaadeland-the-sturgeon-river-boys",
@@ -2279,6 +2313,7 @@
       "also_ids": [
         "2026-10-22-theoldmarket-kristin-hersh"
       ],
+      "venue_label": "Music",
       "genre": "Indie & Rock",
       "genre_source": "wikidata:Q435330"
     },
@@ -2522,7 +2557,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "time": "",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Plays"
     },
     {
       "id": "2026-10-22-volks-lana-death-ray-free-entry",
@@ -2616,7 +2652,8 @@
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-23-brighton-dome-an-evening-with-katherine-ryan-firstborn-daughter"
-      ]
+      ],
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-23-brighton-dome-dan-tiernan-quartz-and-all-2",
@@ -2631,7 +2668,8 @@
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-23-brighton-dome-dan-tiernan-quartz-and-all"
-      ]
+      ],
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-23-brighton-dome-nish-kumar-angry-humour-from-a-really-nice-guy-2",
@@ -2646,7 +2684,8 @@
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-23-brighton-dome-nish-kumar-angry-humour-from-a-really-nice-guy"
-      ]
+      ],
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-23-the-old-market-everybody-scream-new-note-orchestra-and-wham-jam-thank-you-ma-am-choir",
@@ -2658,7 +2697,8 @@
       "finish_time": "21:30",
       "category": "Music",
       "ticket_url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173668357",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Music"
     },
     {
       "id": "2026-10-23-komedia-kim-blythe-puzzle-fri-23-oct-2026-8-00-pm-doors-7-30-pm",
@@ -2942,9 +2982,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Other",
       "ticket_url": "https://www.atgtickets.com/shows/age-is-a-stage/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Events"
     },
     {
       "id": "2026-10-23-theatre-royal-brighton-the-haunting-of-hill-house",
@@ -2955,7 +2996,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "time": "",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Plays"
     },
     {
       "id": "2026-10-24-green-door-store-mutations-festival-2026",
@@ -2994,7 +3036,8 @@
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-24-brighton-dome-shelf-the-kids-show-2"
-      ]
+      ],
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-24-volks-hardcore-unlocked-hixxy-maddy-v-hang-the-djs",
@@ -3045,7 +3088,8 @@
       "finish_time": "23:00",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/whats-on/LTr-sam-campbell-kid-giblet/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-24-komedia-funny-women-live-in-brighton-sat-24-oct-2026-8-00-pm-doors-7-30-pm",
@@ -3105,7 +3149,8 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173663963",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-24-brighton-dome-stamptown-2",
@@ -3120,7 +3165,8 @@
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-24-brighton-dome-stamptown"
-      ]
+      ],
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-24-volks-the-cost-of-raving-presents-monrroe-duskee",
@@ -3167,7 +3213,7 @@
       "time": "23:00",
       "finish_time": "04:00",
       "category": "Music",
-      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/P-rallel-Nevermind-UK-Tour/42669942/",
+      "ticket_url": "https://dice.fm/event/p-rallel-nevermind-uk-tour-24th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-24-patterns-p-rallel-nevermind-uk-tour-2"
@@ -3380,9 +3426,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Other",
       "ticket_url": "https://www.atgtickets.com/shows/backstage-tours/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Events"
     },
     {
       "id": "2026-10-24-theatre-royal-brighton-the-haunting-of-hill-house",
@@ -3393,7 +3440,8 @@
       "ticket_url": "https://www.atgtickets.com/shows/the-haunting-of-hill-house/theatre-royal-brighton/calendar/",
       "time": "",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Plays"
     },
     {
       "id": "2026-10-25-amex-stadium-brighton-women-v-west-ham-united",
@@ -3427,9 +3475,10 @@
       "source": "venue",
       "time": "14:00",
       "finish_time": "16:30",
-      "category": "Talk",
+      "category": "Other",
       "ticket_url": "https://www.theoldmarket.com/shows/dreamy-place-talking-of-nature",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Exhibition"
     },
     {
       "id": "2026-10-25-komedia-rich-wilson-to-the-cradle-from-the-rave-sun-25-oct-2026-3-30-pm-doors-3-00-pm",
@@ -3475,7 +3524,8 @@
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-25-brighton-dome-rosie-holt-the-illegal-aliens-have-landed"
-      ]
+      ],
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-25-concorde-2-gurriers",
@@ -3563,7 +3613,8 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://brightondome.org/comedyfestival/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-10-25-chalk-stornoway",
@@ -3887,7 +3938,8 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://www.atgtickets.com/shows/lenny-henry-still-at-large/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Talk, Comedy"
     },
     {
       "id": "2026-10-27-the-railway-inn-tuesday-west-hove-portslade-boardgames-meet",
@@ -3972,6 +4024,7 @@
       "category": "Talk",
       "ticket_url": "https://www.theoldmarket.com/shows/shut-up-im-talking-live",
       "last_seen": "2026-10-17",
+      "venue_label": "Podcast, Talk",
       "status": "SOLD OUT"
     },
     {
@@ -4144,9 +4197,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Other",
       "ticket_url": "https://www.atgtickets.com/shows/autumn-spells/theatre-royal-brighton/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Events"
     },
     {
       "id": "2026-10-27-theatreroyalbrighton-elif-shafak-in-one-brief-moment-all-eternity",
@@ -4156,9 +4210,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Talk",
       "ticket_url": "https://www.atgtickets.com/shows/elif-shafak-in-one-brief-moment-all-eternity/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Talk"
     },
     {
       "id": "2026-10-28-the-walrus-wednesday-night-pub-board-games",
@@ -4419,6 +4474,7 @@
       "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/max-cooper",
       "last_seen": "2026-10-17",
+      "venue_label": "Music",
       "status": "SOLD OUT"
     },
     {
@@ -4645,7 +4701,8 @@
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-29-theatre-royal-brighton-horrible-histories-brighton"
-      ]
+      ],
+      "venue_label": "Family"
     },
     {
       "id": "2026-10-29-volks-chem-sex-party-ruckus-the-clubheads-free-entry",
@@ -4779,14 +4836,14 @@
     },
     {
       "id": "2026-10-30-patterns-brighton-dansu-discs-lucas-alexander-rtk-tarantino-more",
-      "title": "Dansu Discs: Lucas Alexander & RTK Tarantino",
+      "title": "Dansu Discs with Lucas Alexander & RTK Tarantino",
       "date": "2026-10-30",
       "venue": "Patterns",
       "source": "venue",
       "time": "23:00",
       "finish_time": "04:00",
       "category": "Music",
-      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Dansu-Discs-Lucas-Alexander--RTK-Tarantino---Brighton/42737316/",
+      "ticket_url": "https://dice.fm/event/dansu-discs-with-lucas-alexander-rtk-tarantino-30th-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-10-30-patterns-dansu-discs-lucas-alexander-rtk-tarantino-brighton",
@@ -5100,7 +5157,7 @@
       "time": "17:00",
       "finish_time": "22:00",
       "category": "Club",
-      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Dusky---All-Day-Long---Signals-Tour/42542341/",
+      "ticket_url": "https://dice.fm/event/dusky-all-day-long-signals-tour-31st-oct-patterns-brighton-tickets",
       "last_seen": "2026-10-17"
     },
     {
@@ -5111,9 +5168,10 @@
       "source": "venue",
       "time": "19:30",
       "finish_time": "22:30",
-      "category": "Talk",
+      "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/shows/spit-nights-halloween",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Music, Spoken Word"
     },
     {
       "id": "2026-10-31-17-00-tooth-special-guests",
@@ -5573,7 +5631,8 @@
       "ticket_url": "https://www.atgtickets.com/shows/horrible-histories-brighton/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Family"
     },
     {
       "id": "2026-11-01-komedia-disco-kidz-halloween-special",
@@ -5595,8 +5654,8 @@
       "source": "venue",
       "time": "13:30",
       "finish_time": "20:00",
-      "category": "Dance",
-      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Brighton-Sundae-w-Marcia-Carr/42597331/",
+      "category": "Club",
+      "ticket_url": "https://dice.fm/event/brighton-sundae-w-marcia-carr-1st-nov-patterns-brighton-tickets",
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-01-patterns-brighton-sundae-w-marcia-carr-2"
@@ -6018,9 +6077,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Dance",
       "ticket_url": "https://www.atgtickets.com/shows/the-brown-suite/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Dance"
     },
     {
       "id": "2026-11-04-the-walrus-wednesday-night-pub-board-games",
@@ -6045,7 +6105,8 @@
       "finish_time": "22:00",
       "category": "Other",
       "ticket_url": "https://www.theoldmarket.com/shows/derek-vs-derek",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Film"
     },
     {
       "id": "2026-11-04-komedia-cardiac-comedy-13",
@@ -6178,21 +6239,23 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Other",
       "ticket_url": "https://www.atgtickets.com/shows/school-of-clowns-course/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Events"
     },
     {
       "id": "2026-11-04-theatreroyalbrighton-the-brown-suite",
       "title": "The Brown Suite",
       "date": "2026-11-04",
       "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
+      "category": "Dance",
       "time": "",
       "ticket_url": "https://www.atgtickets.com/shows/the-brown-suite/theatre-royal-brighton/calendar/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Dance"
     },
     {
       "id": "2026-11-05-alcampo-lounge-thursday-night-pub-boardgames",
@@ -6360,9 +6423,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Music",
       "ticket_url": "https://www.atgtickets.com/shows/meat-loaf-by-candlelight/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Concert"
     },
     {
       "id": "2026-11-05-volks-moon-walker",
@@ -6426,6 +6490,7 @@
       "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/rival-consoles",
       "last_seen": "2026-10-17",
+      "venue_label": "Music",
       "status": "SOLD OUT",
       "genre": "Electronic",
       "genre_source": "musicbrainz:803f2853-7e3e-4dff-96a7-9f77b5f56de5"
@@ -6721,9 +6786,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Music",
       "ticket_url": "https://www.atgtickets.com/shows/whats-love-got-to-do-with-it-a-tribute-to-tina-turner/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Concert"
     },
     {
       "id": "2026-11-07-quarters-club-events-andy-c",
@@ -6817,7 +6883,8 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173666375",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-11-07-babble-lo-fidelity-allstars-dj-set",
@@ -7118,9 +7185,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Other",
       "ticket_url": "https://www.atgtickets.com/shows/stories-with-skip-autumn-leaves/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Events"
     },
     {
       "id": "2026-11-07-theatre-royal-brighton-women-in-tech-course",
@@ -7130,9 +7198,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Other",
       "ticket_url": "https://www.atgtickets.com/shows/women-in-tech-course/theatre-royal-brighton/",
       "last_seen": "2026-10-17",
+      "venue_label": "Events",
       "status": "SOLD OUT"
     },
     {
@@ -7158,7 +7227,8 @@
       "finish_time": "18:30",
       "category": "Theatre",
       "ticket_url": "https://www.theoldmarket.com/shows/come-alive-echo-performing-arts-cic",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Dance, Theatre"
     },
     {
       "id": "2026-11-08-komedia-ben-poole",
@@ -7455,9 +7525,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Talk",
       "ticket_url": "https://www.atgtickets.com/shows/an-evening-with-david-byrne-sleeping-beauties/theatre-royal-brighton/",
       "last_seen": "2026-10-17",
+      "venue_label": "Talk",
       "status": "SOLD OUT"
     },
     {
@@ -7802,9 +7873,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Talk",
       "ticket_url": "https://www.atgtickets.com/shows/cody-dahler-the-state-of-this/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Talk"
     },
     {
       "id": "2026-11-11-volks-gone-fishin-dumbhead",
@@ -7883,7 +7955,8 @@
       "finish_time": "21:30",
       "category": "Theatre",
       "ticket_url": "https://www.theoldmarket.com/shows/philosophy-of-the-world",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Music, Theatre"
     },
     {
       "id": "2026-12-11-komedia-reece-kidd-1-irishman-in-brighton-thu-12-nov-2026-8-00-pm-doors-7-30-pm",
@@ -8060,9 +8133,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Music",
       "ticket_url": "https://www.atgtickets.com/shows/the-chicago-blues-brothers-live-at-the-country-bunker/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Concert"
     },
     {
       "id": "2026-11-13-volks-30-years-of-volks-presents-afu-ra-body-of-the-life-force",
@@ -8154,7 +8228,8 @@
       "finish_time": "22:00",
       "category": "Comedy",
       "ticket_url": "https://www.theoldmarket.com/shows/angela-barnes",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-11-13-the-pipeline-spiral-skies",
@@ -8357,9 +8432,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Music",
       "ticket_url": "https://www.atgtickets.com/shows/gareth-malone/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Concert"
     },
     {
       "id": "2026-11-14-concorde-2-junebabies-john-digweed-afterparty",
@@ -8471,7 +8547,8 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173664713",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-11-14-concorde-2-gal-pals-presents-logic1000",
@@ -8494,7 +8571,7 @@
       "time": "23:00",
       "finish_time": "04:00",
       "category": "Music",
-      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Frostbite-Audio/43017946/",
+      "ticket_url": "https://dice.fm/event/frostbite-audio-14th-nov-patterns-brighton-tickets",
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-14-patterns-return-to-brighton"
@@ -8746,9 +8823,12 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Music",
       "ticket_url": "https://www.atgtickets.com/shows/spice-girls-the-theatre-show/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Concert",
+      "genre": "Pop",
+      "genre_source": "musicbrainz:bf0caafc-2b20-4e07-ab85-87e14ff430ce"
     },
     {
       "id": "2026-11-14-theatreroyalbrighton-spice-girls-experience",
@@ -8782,9 +8862,10 @@
       "source": "venue",
       "time": "11:30",
       "finish_time": "14:00",
-      "category": "Comedy",
+      "category": "Family",
       "ticket_url": "https://www.theoldmarket.com/shows/on-your-bike-baffo",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Family"
     },
     {
       "id": "2026-11-15-patterns-reggaeton-rave-coffee-tequila-edition-brighton",
@@ -8796,7 +8877,7 @@
       "finish_time": "17:00",
       "category": "Club",
       "ticket_url": "https://dice.fm/event/reggaeton-rave-coffee-tequila-edition-brighton-15th-nov-patterns-upstairs-brighton-tickets",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "genre": "Latin & Afrobeats",
       "genre_source": "title"
     },
@@ -9109,9 +9190,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Family",
       "ticket_url": "https://www.atgtickets.com/shows/the-gruffalo/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Family"
     },
     {
       "id": "2026-11-17-the-railway-inn-tuesday-west-hove-portslade-boardgames-meet",
@@ -9136,7 +9218,8 @@
       "finish_time": "21:30",
       "category": "Music",
       "ticket_url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173666173",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Music"
     },
     {
       "id": "2026-11-17-brightoncentre-ricky-gervais",
@@ -9289,7 +9372,8 @@
       "ticket_url": "https://www.atgtickets.com/shows/the-gruffalo/theatre-royal-brighton/calendar/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Family"
     },
     {
       "id": "2026-11-18-the-walrus-wednesday-night-pub-board-games",
@@ -9506,9 +9590,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Music",
       "ticket_url": "https://www.atgtickets.com/shows/man-in-the-mirror-a-tribute-to-michael-jackson/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Concert"
     },
     {
       "id": "2026-11-18-volks-poison-ru-n",
@@ -9707,9 +9792,10 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Music",
       "ticket_url": "https://www.atgtickets.com/shows/the-yacht-rock-experience/theatre-royal-brighton/calendar/",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Concert"
     },
     {
       "id": "2026-11-20-concorde-2-uk-foo-fighters",
@@ -9736,6 +9822,18 @@
       "last_seen": "2026-10-17"
     },
     {
+      "id": "2026-11-20-patterns-sametime",
+      "title": "Sametime",
+      "date": "2026-11-20",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Music",
+      "ticket_url": "https://dice.fm/event/sametime-20th-nov-patterns-brighton-tickets",
+      "last_seen": "2026-10-17"
+    },
+    {
       "id": "2026-11-20-the-old-market-sh-t-faced-shakespeare-romeo-and-juliet",
       "title": "Sh!t-faced Shakespeare: Romeo and Juliet",
       "date": "2026-11-20",
@@ -9743,12 +9841,13 @@
       "source": "venue",
       "time": "19:30",
       "finish_time": "21:30",
-      "category": "Comedy",
+      "category": "Theatre",
       "ticket_url": "https://www.theoldmarket.com/shows/sht-faced-shakespeare-romeo-and-juliet",
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-20-theoldmarket-sh-t-faced-shakespeare-romeo-juliet"
       ],
+      "venue_label": "Theatre, Comedy",
       "status": "SOLD OUT"
     },
     {
@@ -9936,18 +10035,6 @@
       "last_seen": "2026-10-17"
     },
     {
-      "id": "2026-11-20-patterns-sametime",
-      "title": "Sametime",
-      "date": "2026-11-20",
-      "venue": "Patterns",
-      "source": "discovery",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://dice.fm/event/6a7b48ce667686000126bf68",
-      "last_seen": "2026-10-17"
-    },
-    {
       "id": "2026-11-20-resident-nick-heyward-in-conversation-book-signing",
       "title": "Nick Heyward: In Conversation + Book Signing",
       "date": "2026-11-20",
@@ -10126,7 +10213,8 @@
       "finish_time": "",
       "category": "Dance",
       "ticket_url": "https://www.theoldmarket.com/shows/ballet-brighton-claras-dream",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Dance"
     },
     {
       "id": "2026-11-21-komedia-komedia-comedy-club-sat-21-nov-2026-8-00-pm-doors-7-00-pm",
@@ -10696,7 +10784,8 @@
       "finish_time": "22:00",
       "category": "Theatre",
       "ticket_url": "https://www.theoldmarket.com/shows/coram-shakespeare-schools-festival",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Dance, Theatre"
     },
     {
       "id": "2026-11-24-brighton-dome-shed-seven",
@@ -10873,6 +10962,7 @@
       "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/shows/turin-brakes-songs-stories",
       "last_seen": "2026-10-17",
+      "venue_label": "Music",
       "status": "SOLD OUT",
       "genre": "Pop",
       "genre_source": "wikidata:Q1759211"
@@ -11132,9 +11222,10 @@
       "source": "venue",
       "time": "19:30",
       "finish_time": "22:30",
-      "category": "Theatre",
+      "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/shows/a-night-for-the-mandem",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Music"
     },
     {
       "id": "2026-11-26-the-forge-comedy-club-laura-lexx-yo-yo-2",
@@ -11422,7 +11513,7 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/L17-brighton-dome-backstage-tours/",
-      "last_seen": "2026-10-16",
+      "last_seen": "2026-10-17",
       "also_ids": [
         "2026-11-27-brighton-dome-brighton-dome-backstage-tours-2"
       ]
@@ -12242,7 +12333,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Musicals, Family"
     },
     {
       "id": "2026-12-02-concorde-2-the-ordinary-boys",
@@ -12270,7 +12362,8 @@
       "finish_time": "",
       "category": "Theatre",
       "ticket_url": "https://www.theoldmarket.com/the-gift",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Theatre"
     },
     {
       "id": "2026-12-02-komedia-boast-in-show",
@@ -12354,7 +12447,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Musicals, Family"
     },
     {
       "id": "2026-12-03-komedia-komedia-christmas-party",
@@ -12462,7 +12556,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Musicals, Family"
     },
     {
       "id": "2026-12-04-quarters-live-events-quantic-dj-set",
@@ -12679,7 +12774,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Musicals, Family"
     },
     {
       "id": "2026-12-05-dust-brighton-age-against-the-machine-over-30s-xmas-daytime-party",
@@ -12986,11 +13082,12 @@
       "title": "Stories with Skip - Moon and Stars",
       "date": "2026-12-05",
       "venue": "Theatre Royal Brighton",
-      "category": "Family",
+      "category": "Other",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "time": "",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Events"
     },
     {
       "id": "2026-12-06-komedia-record-fair",
@@ -13150,7 +13247,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Family"
     },
     {
       "id": "2026-12-07-brighton-centre-the-holiday-in-concert-film-with-live-orchestra",
@@ -13383,12 +13481,13 @@
       "title": "Ballet Nights",
       "date": "2026-12-09",
       "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
+      "category": "Dance",
       "time": "",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Dance"
     },
     {
       "id": "2026-10-12-komedia-komedia-christmas-party-thu-10-dec-2026-doors-6-30-pm",
@@ -13478,7 +13577,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-12-11-quarters-live-events-daddy-g-massive-attack",
@@ -13750,7 +13850,8 @@
       "last_seen": "2026-10-17",
       "also_ids": [
         "2026-12-12-brighton-dome-paddy-young-will-sir-be-laughing-alone-2"
-      ]
+      ],
+      "venue_label": "Comedy"
     },
     {
       "id": "2026-12-12-the-forge-comedy-club-festive-forge-comedy-club",
@@ -14064,7 +14165,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Musicals"
     },
     {
       "id": "2026-12-15-concorde-2-the-simpsons-ultimate-quiz",
@@ -14088,7 +14190,8 @@
       "finish_time": "21:30",
       "category": "Music",
       "ticket_url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173666173",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Music"
     },
     {
       "id": "2026-12-15-komedia-bogan-bingo-tue-15-dec-2026-8-00-pm-doors-7-00-pm",
@@ -14383,12 +14486,13 @@
       "title": "The Christmas Cracker",
       "date": "2026-12-18",
       "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
+      "category": "Family",
       "time": "",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Family"
     },
     {
       "id": "2026-12-19-komedia-longnose-puppets-presents-penguin-sat-19-dec-2026-11-00-am-doors-10-30-am",
@@ -14587,12 +14691,13 @@
       "title": "The Christmas Cracker",
       "date": "2026-12-19",
       "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
+      "category": "Family",
       "time": "",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Family"
     },
     {
       "id": "2026-12-20-komedia-longnose-puppets-presents-penguin-sun-20-dec-2026-11-00-am-doors-10-30-am",
@@ -14714,12 +14819,13 @@
       "title": "The Christmas Cracker",
       "date": "2026-12-20",
       "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
+      "category": "Family",
       "time": "",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Family"
     },
     {
       "id": "2026-12-21-komedia-longnose-puppets-presents-penguin-mon-21-dec-2026-11-00-am-doors-10-30-am",
@@ -14799,12 +14905,13 @@
       "title": "The Christmas Cracker",
       "date": "2026-12-21",
       "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
+      "category": "Family",
       "time": "",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Family"
     },
     {
       "id": "2026-12-22-komedia-longnose-puppets-presents-penguin-tue-22-dec-2026-11-00-am-doors-10-30-am",
@@ -14902,12 +15009,13 @@
       "title": "The Christmas Cracker",
       "date": "2026-12-22",
       "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
+      "category": "Family",
       "time": "",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Family"
     },
     {
       "id": "2026-12-23-komedia-longnose-puppets-presents-penguin-wed-23-dec-2026-11-00-am-doors-10-30-am",
@@ -15109,7 +15217,8 @@
       "finish_time": "18:00",
       "category": "Family",
       "ticket_url": "https://www.theoldmarket.com/shows/teach-rex",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Family"
     },
     {
       "id": "2027-02-01-komedia-komedia-comedy-club-sat-2-jan-2027-8-00-pm-doors-7-00-pm",
@@ -15265,7 +15374,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Concert"
     },
     {
       "id": "2027-01-09-komedia-komedia-comedy-club",
@@ -15311,11 +15421,12 @@
       "title": "Stories with Skip - Dinosaur Day",
       "date": "2027-01-09",
       "venue": "Theatre Royal Brighton",
-      "category": "Family",
+      "category": "Other",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "time": "",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Events"
     },
     {
       "id": "2027-01-12-theatreroyalbrighton-go-your-own-way",
@@ -15327,7 +15438,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Concert"
     },
     {
       "id": "2027-01-13-the-folklore-rooms-caleb-caudle",
@@ -15483,7 +15595,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Concert"
     },
     {
       "id": "2027-01-21-komedia-sam-eley-is-basil-crumbwick-soul-sewage",
@@ -15970,7 +16083,8 @@
       "finish_time": "22:00",
       "category": "Comedy",
       "ticket_url": "https://www.theoldmarket.com/shows/mark-watson",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Comedy"
     },
     {
       "id": "2027-01-30-brighton-dome-jos-gonzales",
@@ -16034,7 +16148,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Plays"
     },
     {
       "id": "2027-02-03-theprincealbert-modern-woman",
@@ -16094,7 +16209,8 @@
       "finish_time": "22:00",
       "category": "Comedy",
       "ticket_url": "https://www.theoldmarket.com/shows/pierre-novellie",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Comedy"
     },
     {
       "id": "2027-05-02-komedia-komedia-comedy-club-fri-5-feb-2027-8-00-pm-doors-7-00-pm",
@@ -16201,11 +16317,12 @@
       "title": "Stories With Skip - Under The Sea",
       "date": "2027-02-06",
       "venue": "Theatre Royal Brighton",
-      "category": "Family",
+      "category": "Other",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "time": "",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Events"
     },
     {
       "id": "2027-07-02-komedia-record-fair",
@@ -16835,7 +16952,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "time": "",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Events, Concert"
     },
     {
       "id": "2027-02-25-komedia-comic-boom-comedy-club",
@@ -16949,7 +17067,8 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173668259",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Comedy"
     },
     {
       "id": "2027-02-27-komedia-funny-women-live-in-brighton",
@@ -17038,7 +17157,8 @@
       "finish_time": "21:30",
       "category": "Music",
       "ticket_url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173666744",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Music"
     },
     {
       "id": "2027-03-01-theatreroyalbrighton-the-silence-of-the-lambs",
@@ -17050,7 +17170,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Plays"
     },
     {
       "id": "2027-03-04-concorde-2-master-peace",
@@ -17222,11 +17343,12 @@
       "title": "Stories with Skip - In Space",
       "date": "2027-03-06",
       "venue": "Theatre Royal Brighton",
-      "category": "Family",
+      "category": "Other",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "time": "",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Events"
     },
     {
       "id": "2027-07-03-komedia-down-the-hatch-comedy-club",
@@ -17274,7 +17396,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Plays"
     },
     {
       "id": "2027-03-09-komedia-jim-e-brown",
@@ -17298,7 +17421,8 @@
       "finish_time": "23:00",
       "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/shows/nouvelle-vague",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Music"
     },
     {
       "id": "2027-03-10-komedia-luke-o-hara-the-cards-we-are-dealt",
@@ -17461,7 +17585,8 @@
       "finish_time": "21:20",
       "category": "Comedy",
       "ticket_url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173665912",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Comedy"
     },
     {
       "id": "2027-03-13-komedia-komedia-comedy-club-sat-13-mar-2027-8-00-pm-doors-7-00-pm",
@@ -17624,7 +17749,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Talk"
     },
     {
       "id": "2027-03-15-the-folklore-rooms-roxanne-de-bastion",
@@ -17648,7 +17774,8 @@
       "finish_time": "21:45",
       "category": "Talk",
       "ticket_url": "https://www.theoldmarket.com/shows/kendal-mountain-festival-live-tour-2027",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Film, Talk"
     },
     {
       "id": "2027-03-19-komedia-john-robertson-excitable-boy",
@@ -17819,12 +17946,13 @@
       "title": "La Voix",
       "date": "2027-03-21",
       "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
+      "category": "Other",
       "time": "",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Events"
     },
     {
       "id": "2027-03-22-brighton-dome-the-best-of-mike-oldfield-s-tubular-bells-i-ii-iii",
@@ -17855,12 +17983,13 @@
       "title": "Phantoms Of The Popera - Starring G4",
       "date": "2027-03-22",
       "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
+      "category": "Music",
       "time": "",
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-09"
+      "last_seen": "2026-10-09",
+      "venue_label": "Concert"
     },
     {
       "id": "2027-03-23-brighton-dome-kim-wilde-the-singles-tour",
@@ -17898,7 +18027,8 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "venue_label": "Comedy"
     },
     {
       "id": "2027-03-25-komedia-comic-boom-comedy-club",
@@ -17936,9 +18066,10 @@
       "source": "venue",
       "time": "19:30",
       "finish_time": "22:00",
-      "category": "Club",
+      "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/craven-faults",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Music"
     },
     {
       "id": "2027-03-26-komedia-komedia-comedy-club-fri-26-mar-2027-8-00-pm-doors-7-00-pm",
@@ -18152,7 +18283,8 @@
       "finish_time": "21:30",
       "category": "Comedy",
       "ticket_url": "https://www.theoldmarket.com/shows/sophie-duker-hot-beef-injection",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Comedy"
     },
     {
       "id": "2027-03-04-komedia-kemah-bob-love-child-sat-3-apr-2027-8-00-pm-doors-7-30-pm",
@@ -18300,9 +18432,10 @@
       "source": "venue",
       "time": "19:00",
       "finish_time": "22:30",
-      "category": "Dance",
+      "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/shows/the-rumpled",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Music"
     },
     {
       "id": "2027-04-09-komedia-komedia-comedy-club",
@@ -18584,7 +18717,8 @@
       "finish_time": "22:00",
       "category": "Comedy",
       "ticket_url": "https://www.theoldmarket.com/shows/kane-brown-crowd-work-king",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Comedy"
     },
     {
       "id": "2027-04-23-komedia-komedia-comedy-club-fri-23-apr-2027-8-00-pm-doors-7-00-pm",
@@ -18657,6 +18791,7 @@
       "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/shows/salvador-sobral",
       "last_seen": "2026-10-17",
+      "venue_label": "Music",
       "genre": "Jazz, Soul & Funk",
       "genre_source": "musicbrainz:ad226273-7870-47d6-a8d0-903ddba3853d"
     },
@@ -18939,7 +19074,8 @@
       "finish_time": "21:10",
       "category": "Comedy",
       "ticket_url": "https://www.theoldmarket.com/shows/luke-kidgell",
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-17",
+      "venue_label": "Comedy"
     },
     {
       "id": "2027-05-21-komedia-komedia-comedy-club-fri-21-may-2027-8-00-pm-doors-7-00-pm",
@@ -19460,7 +19596,7 @@
   "discovery_report": {
     "calendars_loaded": 10,
     "calendars": 10,
-    "events_found": 956,
+    "events_found": 949,
     "rivalcults_unknown_venues": [
       "Brighton Playhouse",
       "The Yellow Book"

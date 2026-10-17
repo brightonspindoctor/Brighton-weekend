@@ -142,6 +142,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "a night for the mandem": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "A Night for the Mandem",
+  "checked": "2026-10-17",
+  "v": 3
+ },
  "aaron rowe": {
   "mbid": "eee8e86c-04d5-464b-addc-939eb6d2f54a",
   "name": "Aaron Rowe",
@@ -2137,6 +2144,21 @@
   "checked": "2026-10-13",
   "v": 3
  },
+ "craven faults": {
+  "mbid": "f738f258-8ec2-444e-8dfa-0e27766274eb",
+  "name": "Craven Faults",
+  "genres": [
+   {
+    "name": "ambient",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Craven Faults",
+  "checked": "2026-10-17",
+  "v": 3
+ },
  "creature and machine": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -3948,6 +3970,18 @@
   "act": "Gallus",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "gareth malone": {
+  "mbid": "0c2ffd64-7437-48ad-9bc4-a5aad0ed60d3",
+  "name": "Gareth Malone",
+  "genres": [],
+  "wikidata": "Q5522902",
+  "wd_genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Gareth Malone",
+  "checked": "2026-10-17",
+  "v": 3
  },
  "gaudete": {
   "bucket": null,
@@ -6759,6 +6793,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "meat loaf by candlelight": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Meat Loaf by Candlelight",
+  "checked": "2026-10-17",
+  "v": 3
+ },
  "mekons": {
   "mbid": "66d2169c-dea5-46d3-b4cb-52ed87b24ab0",
   "name": "The Mekons",
@@ -7960,6 +8001,13 @@
   "act": "PETER SERAFINOWICZ & DOON MACKICHAN",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "phantoms of the popera": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Phantoms Of The Popera",
+  "checked": "2026-10-17",
+  "v": 3
  },
  "phil jones": {
   "bucket": null,
@@ -9434,11 +9482,46 @@
   "act": "SPARTA Hammok",
   "checked": "2026-10-06"
  },
+ "spice girls": {
+  "mbid": "bf0caafc-2b20-4e07-ab85-87e14ff430ce",
+  "name": "Spice Girls",
+  "genres": [
+   {
+    "name": "contemporary r&b",
+    "count": 2
+   },
+   {
+    "name": "dance-pop",
+    "count": 5
+   },
+   {
+    "name": "pop",
+    "count": 5
+   },
+   {
+    "name": "teen pop",
+    "count": 3
+   }
+  ],
+  "wikidata": "Q55641",
+  "bucket": "Pop",
+  "reason": "tagged",
+  "act": "Spice Girls",
+  "checked": "2026-10-17",
+  "v": 3
+ },
  "spirit of gravity": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Spirit of Gravity",
   "checked": "2026-10-13",
+  "v": 3
+ },
+ "spit nights": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Spit Nights",
+  "checked": "2026-10-17",
   "v": 3
  },
  "split dogs": {
@@ -10110,7 +10193,8 @@
   "bucket": null,
   "reason": "no genre tags",
   "act": "The Chicago Blues Brothers",
-  "checked": "2026-10-06"
+  "checked": "2026-10-17",
+  "v": 3
  },
  "the cureheads": {
   "mbid": "c4af4e26-03bd-4672-bc51-224aae94605a",
@@ -10666,6 +10750,16 @@
   "act": "THE ROSE HILL IS TEN FESTIVAL",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "the rumpled": {
+  "mbid": "ea3187c9-b239-4efd-b1b9-b95adfb477ee",
+  "name": "The Rumpled",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "The Rumpled",
+  "checked": "2026-10-17",
+  "v": 3
  },
  "the running joke": {
   "bucket": null,

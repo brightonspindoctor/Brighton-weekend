@@ -6,12 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-20-patterns-sametime@brightonweekend.co.uk
 DTSTAMP:20261120T000000Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
+DTSTART:20261120T190000Z
+DTEND:20261120T220000Z
 SUMMARY:Sametime
 LOCATION:Patterns\, Brighton
-DESCRIPTION:Tickets: https://dice.fm/event/6a7b48ce667686000126bf68\nMore: 
- https://brightonweekend.co.uk/e/2026-11-20-patterns-sametime/
+DESCRIPTION:Tickets: https://dice.fm/event/sametime-20th-nov-patterns-brigh
+ ton-tickets\nMore: https://brightonweekend.co.uk/e/2026-11-20-patterns-sam
+ etime/
 URL:https://brightonweekend.co.uk/e/2026-11-20-patterns-sametime/
 END:VEVENT
 END:VCALENDAR
