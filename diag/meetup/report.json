@@ -1,0 +1,46 @@
+{
+ "meetup_robots": {
+  "status": 200,
+  "length": 3770,
+  "final_url": "https://www.meetup.com/robots.txt"
+ },
+ "dicesaloon_robots": {
+  "status": null,
+  "length": 31,
+  "final_url": "https://www.dicesaloon.com/robots.txt"
+ },
+ "ical": {
+  "status": 200,
+  "final_url": "https://www.meetup.com/brighton-pub-boardgamers/events/ical/",
+  "content_type": "text/calendar",
+  "length": 21079,
+  "vevents": 10
+ },
+ "rss": {
+  "status": 200,
+  "final_url": "https://www.meetup.com/brighton-pub-boardgamers/events/rss/",
+  "content_type": "application/rss+xml",
+  "length": 19607,
+  "items": 10
+ },
+ "events_page": {
+  "status": 200,
+  "final_url": "https://www.meetup.com/brighton-pub-boardgamers/events/",
+  "content_type": "text/html; charset=utf-8",
+  "length": 259564,
+  "next_data": true,
+  "apollo_event_keys": 27,
+  "jsonld_blocks": 3
+ },
+ "events_page_browser": {
+  "length": 1066552,
+  "next_data": true,
+  "event_links": 27
+ },
+ "first_event_url": "https://www.meetup.com/brighton-pub-boardgamers/events/31674",
+ "event_page": {
+  "status": 404,
+  "length": 20000,
+  "jsonld": []
+ }
+}

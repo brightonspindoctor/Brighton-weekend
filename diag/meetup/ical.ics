@@ -1,0 +1,388 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Meetup//Meetup Calendar 1.0//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+NAME:Brighton Pub Boardgamers
+X-WR-CALNAME:Brighton Pub Boardgamers
+BEGIN:VTIMEZONE
+TZID:Europe/London
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+TZNAME:BST
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+TZNAME:GMT
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:event_316748476@meetup.com
+SEQUENCE:1
+DTSTAMP:20261017T063547Z
+DTSTART;TZID=Europe/London:20261018T140000
+DTEND;TZID=Europe/London:20261018T190000
+SUMMARY:Sunday Board Games - Dice Saloon
+DESCRIPTION:Brighton Pub Boardgamers\nNewcomers welcome!\n\nCost is £3 to
+  cover table booking\, no need to sign up on the meet-up\, but you NEED to
+  book a ticket from Dice Saloon for the right date here: https://dicesaloo
+ n.co.uk/collections/events#url\n\nThere are no specific covid rules\, but 
+ please don't come if you're ill!\n\nWe play a variety of games from co-op\
+ , strategy\, social deduction\, deck-building\, dungeon crawlers\, worker 
+ placements\, exploration horror and longer Euro games. If you have somethi
+ ng you specifically want to play it's best to ask in the Discord: [https:/
+ /discord.gg/b43zV4XNjQ](https://discord.gg/b43zV4XNjQ) in the #sun-irl-mee
+ tup channel.\n\nDice Saloon has a large library of games we can use\, but 
+ you can bring your own games too.\n\nFeel free to also join the Brighton P
+ ub Board Gamers [discord channel](https://discord.gg/b43zV4XNjQ) for more 
+ in person and online events!
+URL;VALUE=URI:https://www.meetup.com/brighton-pub-boardgamers/events/31674
+ 8476/
+STATUS:CONFIRMED
+CREATED:20260928T131951Z
+LAST-MODIFIED:20260928T131951Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_316766943@meetup.com
+SEQUENCE:1
+DTSTAMP:20261017T063547Z
+DTSTART;TZID=Europe/London:20261019T180000
+DTEND;TZID=Europe/London:20261019T220000
+SUMMARY:Beginner + Advanced Werewolf
+DESCRIPTION:Brighton Pub Boardgamers\nWerewolf is a type of social deducti
+ on game like Blood on the Clocktower or The Spawn or the Traitors. It's a 
+ social/party game (a bit like a murder mystery)\, you're secretly either a
+  villager or a wolf\, and trying to figure out what everyone else is. Who'
+ s on your team\, and who's not? Deduction\, bluffing\, and lots of feeling
+  confused about who's who. Trying to work out what's going on whilst keepi
+ ng your team from being bitten by wolves or burned at the stake by the vil
+ lage is what beings people back week after week. We'll be running two game
+ s simultaneously\, a base game and an advanced game.\n\nNew players are ve
+ ry welcome! Just RSVP to let us know you are coming. If you've never playe
+ d before\, don't worry\, we will get you started in our beginner friendly 
+ base game! We'll explain the rules\, go through the roles with you and ass
+ ign you a beginner buddy to play with you but we usually have several new 
+ players every week so you won't ever be alone!\n\nEnter the pub using the 
+ entrance door on the right and we will be there straight ahead of you. We 
+ begin arriving around 6pm to set up and brief newbies on the rules. First 
+ game usually starts around 6.30pm and a second game typically kicks off be
+ tween 8 - 8.30pm. If you're going to be late\, please comment on here to l
+ et us know so the moderator knows to add you in to the game. If you arrive
+  after we've started you're able to sit and watch the drama unfold.\n\nBAS
+ E GAME RULES:\n[Click here to learn the rules and see the roles.](https://
+ drive.google.com/file/d/0B_FZ44Cve4qcbHdrRUczbmxscG8/view?usp=sharing&reso
+ urcekey=0-sMA5bPaahVko7C9VF2R22A)\nThese are the rules we use for our begi
+ nner friendly base games. We'll go through these at the start of each sess
+ ion so don't worry about memorising all of the roles and we'll provide you
+  with a sheet you can use during the game to refer back to when needed. Th
+ e best way to learn is definitely just to play so come give it a go!\n\nAD
+ VANCED ROLES:\n[HIDDEN MOTIVES RULES](https://drive.google.com/file/d/0B_F
+ Z44Cve4qcX2ZCVERlSlRJeDQ/view?usp=sharing&resourcekey=0-bt1Uvc6ftuMlG5KB2d
+ KXtA)\n[DARKEST NIGHT RULES](https://drive.google.com/file/d/0B_FZ44Cve4qc
+ Y3FXYVRPaXRvanM/view?usp=sharing&resourcekey=0-sgA01fiWEElZv2H-oo9NvA)\nTh
+ e advanced games may draw roles from either of the above but may also cont
+ ain roles the moderator ahs created themselves! Or roles other mods have m
+ ade previously or even one of the spicy new scenarios the creator has made
+ . Turn up on the day and find out what's being played that day.
+URL;VALUE=URI:https://www.meetup.com/brighton-pub-boardgamers/events/31676
+ 6943/
+STATUS:CONFIRMED
+CREATED:20260929T172408Z
+LAST-MODIFIED:20260929T172408Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_315678967@meetup.com
+SEQUENCE:1
+DTSTAMP:20261017T063547Z
+DTSTART;TZID=Europe/London:20261020T183000
+DTEND;TZID=Europe/London:20261020T230000
+SUMMARY:Tuesday West Hove/Portslade Boardgames Meet
+DESCRIPTION:Brighton Pub Boardgamers\nOur weekly Tuesday evening West Hove
+ /Portslade boardgames meetup at The Railway Inn\, Portslade (just by the t
+ rain station).\n\nWhether this is all new to you\, or you're a veteran of 
+ Twilight Imperium\, come along\, bring a game if you want\, have fun. We p
+ lay modern board games\, anything from quick fillers of Love Letter and Co
+ denames\, to heavier euro games and all sorts. Please RSVP here so we have
+  an idea of numbers.\n\n6:30pm onwards\, expect games to start around 7pm 
+ (you can arrive later\, but you may have to wait for a game). Please buy s
+ ome [food](https://www.therailwayinnportslade.co.uk/menu) or drink to cont
+ ribute to our use of the space\, and don't bring food or drink in from els
+ ewhere. We'll be in the function room or mezzanine area (just ask at the b
+ ar).\n\nCome join our [Discord ](https://discord.gg/b43zV4XNjQ)to chat abo
+ ut games and plan what to play: [https://discord.gg/b43zV4XNjQ](https://di
+ scord.gg/b43zV4XNjQ)\n\nThe pub is close to several Brighton bus routes an
+ d Portslade train station. If you're driving\, resident-only permit restri
+ ctions stop at 7pm (see [zones X and L on this map](https://www.brighton-h
+ ove.gov.uk/parking-zones)).\n\nAccessibility: There are a few steps to nav
+ igate inside the pub (no more than 8). We are usually in the back 'Platfor
+ m' room\, which has flat access via the side gate and ramp. Occasionally t
+ he venue may have another paid event booking\, and if so we may be moved i
+ nto the mezzanine\, which unfortunately is not wheelchair accessible - so 
+ if you need step free access please contact an organiser. The accessible W
+ C is located in the main bar (via the side door) which has a small ramped 
+ access in the threshold.
+URL;VALUE=URI:https://www.meetup.com/brighton-pub-boardgamers/events/31567
+ 8967/
+STATUS:CONFIRMED
+CREATED:20260714T120205Z
+LAST-MODIFIED:20260714T120205Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_316592853@meetup.com
+SEQUENCE:1
+DTSTAMP:20261017T063547Z
+DTSTART;TZID=Europe/London:20261021T180000
+DTEND;TZID=Europe/London:20261021T230000
+SUMMARY:Wednesday Night Pub Board Games
+DESCRIPTION:Brighton Pub Boardgamers\nBoardgames and a pub\, what's not to
+  like? Come along and play some games with a friendly bunch of gamers. New
+  faces and veterans welcome!\n\nKey info\n\n* **Arrive after 6pm** \\-\\- 
+ we start from 6pm\\\, but you're welcome to turn up at any time after that
+  \\(though you may have to wait/spectate for a bit later on\\)\\.\n* **Bri
+ ng ID** \\-\\- the pub can be very keen to check ID for age\\\, so if you'
+ re lucky enough to look under 25 in dim light\\\, please bring some\\!\n* 
+ **Bring games if you can\,** all games are provided by people who attend\,
+  so if you can bring them (and share/teach) that would be much appreciated
+ \, but there will be plenty if not.\n* **RSVP here** please\, so we can ga
+ uge numbers\n* **Buy drinks and/or food to support the pub** please\, as t
+ hey let us use their space for free and means we can keep this event free!
+ \n* **When you arrive\, say hello** and we'll help you find a table to joi
+ n.\n\nBefore you come\, you might want to join our Discord\; we use this f
+ or text chat to arrange beforehand what games to play and so on (we also p
+ lay online board games there). It's also a great place for general chatter
+ .\n\n[Click here to join our Discord](https://discord.gg/b43zV4XNjQ).\n\nI
+ f you'd like to play a game that needs more than one table\, make sure you
+  let us know here or on Discord\, and we'll see what we can do - no guaran
+ tees!\n\nWe look forward to seeing you!
+URL;VALUE=URI:https://www.meetup.com/brighton-pub-boardgamers/events/31659
+ 2853/
+STATUS:CONFIRMED
+CREATED:20260917T072956Z
+LAST-MODIFIED:20260917T072956Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_316993838@meetup.com
+SEQUENCE:1
+DTSTAMP:20261017T063547Z
+DTSTART;TZID=Europe/London:20261022T183000
+DTEND;TZID=Europe/London:20261022T220000
+SUMMARY:Thursday Night Pub Boardgames
+DESCRIPTION:Brighton Pub Boardgamers\nCome and play some games\, with a fr
+ iendly bunch of people. New faces and veteran players very welcome!\n\nNow
+ \, first the public service announcements\;\n\n* Please RSVP if you're pla
+ nning on coming\, so we have a good idea of numbers and can reserve extra 
+ tables if needed.\n* Secondly\, PLEASE don't attend if you are experiencin
+ g symptoms of Covid (or similar infectious conditions\, like a cold or flu
+ ). Playing boardgames does involve sitting at the same table together and 
+ often means touching the same game components\, so we expect attendees to 
+ take suitable precautions.\n\nAnd now on to the good bit!\nWe play all sor
+ ts of games\, so come along and bring your favourite. We're always happy t
+ o teach and we love it if you're up for teaching/leading some games as wel
+ l!\n\nPeople usually trickle in between 6:30 and 7\, so we normally chat/p
+ lay short games until around 7PM\, so if you're going to be later then tha
+ t\, give us a shout on here\, or on our Discord server and we will try to 
+ keep a space in a board game free for you.\n\nOur Discord server: [https:/
+ /discord.gg/d3CSw82MFa](https://discord.gg/d3CSw82MFa)\n\nHope to see you 
+ there!
+URL;VALUE=URI:https://www.meetup.com/brighton-pub-boardgamers/events/31699
+ 3838/
+STATUS:CONFIRMED
+CREATED:20261015T122210Z
+LAST-MODIFIED:20261015T122210Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_316853650@meetup.com
+SEQUENCE:1
+DTSTAMP:20261017T063547Z
+DTSTART;TZID=Europe/London:20261025T140000
+DTEND;TZID=Europe/London:20261025T190000
+SUMMARY:Sunday Board Games - Dice Saloon
+DESCRIPTION:Brighton Pub Boardgamers\nNewcomers welcome!\n\nCost is £3 to
+  cover table booking\, no need to sign up on the meet-up\, but you NEED to
+  book a ticket from Dice Saloon for the right date here: https://dicesaloo
+ n.co.uk/collections/events#url\n\nThere are no specific covid rules\, but 
+ please don't come if you're ill!\n\nWe play a variety of games from co-op\
+ , strategy\, social deduction\, deck-building\, dungeon crawlers\, worker 
+ placements\, exploration horror and longer Euro games. If you have somethi
+ ng you specifically want to play it's best to ask in the Discord: [https:/
+ /discord.gg/b43zV4XNjQ](https://discord.gg/b43zV4XNjQ) in the #sun-irl-mee
+ tup channel.\n\nDice Saloon has a large library of games we can use\, but 
+ you can bring your own games too.\n\nFeel free to also join the Brighton P
+ ub Board Gamers [discord channel](https://discord.gg/b43zV4XNjQ) for more 
+ in person and online events!
+URL;VALUE=URI:https://www.meetup.com/brighton-pub-boardgamers/events/31685
+ 3650/
+STATUS:CONFIRMED
+CREATED:20261005T141935Z
+LAST-MODIFIED:20261005T141935Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_316871436@meetup.com
+SEQUENCE:1
+DTSTAMP:20261017T063547Z
+DTSTART;TZID=Europe/London:20261026T180000
+DTEND;TZID=Europe/London:20261026T220000
+SUMMARY:Beginner + Advanced Werewolf
+DESCRIPTION:Brighton Pub Boardgamers\nWerewolf is a type of social deducti
+ on game like Blood on the Clocktower or The Spawn or the Traitors. It's a 
+ social/party game (a bit like a murder mystery)\, you're secretly either a
+  villager or a wolf\, and trying to figure out what everyone else is. Who'
+ s on your team\, and who's not? Deduction\, bluffing\, and lots of feeling
+  confused about who's who. Trying to work out what's going on whilst keepi
+ ng your team from being bitten by wolves or burned at the stake by the vil
+ lage is what beings people back week after week. We'll be running two game
+ s simultaneously\, a base game and an advanced game.\n\nNew players are ve
+ ry welcome! Just RSVP to let us know you are coming. If you've never playe
+ d before\, don't worry\, we will get you started in our beginner friendly 
+ base game! We'll explain the rules\, go through the roles with you and ass
+ ign you a beginner buddy to play with you but we usually have several new 
+ players every week so you won't ever be alone!\n\nEnter the pub using the 
+ entrance door on the right and we will be there straight ahead of you. We 
+ begin arriving around 6pm to set up and brief newbies on the rules. First 
+ game usually starts around 6.30pm and a second game typically kicks off be
+ tween 8 - 8.30pm. If you're going to be late\, please comment on here to l
+ et us know so the moderator knows to add you in to the game. If you arrive
+  after we've started you're able to sit and watch the drama unfold.\n\nBAS
+ E GAME RULES:\n[Click here to learn the rules and see the roles.](https://
+ drive.google.com/file/d/0B_FZ44Cve4qcbHdrRUczbmxscG8/view?usp=sharing&reso
+ urcekey=0-sMA5bPaahVko7C9VF2R22A)\nThese are the rules we use for our begi
+ nner friendly base games. We'll go through these at the start of each sess
+ ion so don't worry about memorising all of the roles and we'll provide you
+  with a sheet you can use during the game to refer back to when needed. Th
+ e best way to learn is definitely just to play so come give it a go!\n\nAD
+ VANCED ROLES:\n[HIDDEN MOTIVES RULES](https://drive.google.com/file/d/0B_F
+ Z44Cve4qcX2ZCVERlSlRJeDQ/view?usp=sharing&resourcekey=0-bt1Uvc6ftuMlG5KB2d
+ KXtA)\n[DARKEST NIGHT RULES](https://drive.google.com/file/d/0B_FZ44Cve4qc
+ Y3FXYVRPaXRvanM/view?usp=sharing&resourcekey=0-sgA01fiWEElZv2H-oo9NvA)\nTh
+ e advanced games may draw roles from either of the above but may also cont
+ ain roles the moderator ahs created themselves! Or roles other mods have m
+ ade previously or even one of the spicy new scenarios the creator has made
+ . Turn up on the day and find out what's being played that day.
+URL;VALUE=URI:https://www.meetup.com/brighton-pub-boardgamers/events/31687
+ 1436/
+STATUS:CONFIRMED
+CREATED:20261006T181207Z
+LAST-MODIFIED:20261006T181207Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_315678968@meetup.com
+SEQUENCE:1
+DTSTAMP:20261017T063547Z
+DTSTART;TZID=Europe/London:20261027T183000
+DTEND;TZID=Europe/London:20261027T230000
+SUMMARY:Tuesday West Hove/Portslade Boardgames Meet
+DESCRIPTION:Brighton Pub Boardgamers\nOur weekly Tuesday evening West Hove
+ /Portslade boardgames meetup at The Railway Inn\, Portslade (just by the t
+ rain station).\n\nWhether this is all new to you\, or you're a veteran of 
+ Twilight Imperium\, come along\, bring a game if you want\, have fun. We p
+ lay modern board games\, anything from quick fillers of Love Letter and Co
+ denames\, to heavier euro games and all sorts. Please RSVP here so we have
+  an idea of numbers.\n\n6:30pm onwards\, expect games to start around 7pm 
+ (you can arrive later\, but you may have to wait for a game). Please buy s
+ ome [food](https://www.therailwayinnportslade.co.uk/menu) or drink to cont
+ ribute to our use of the space\, and don't bring food or drink in from els
+ ewhere. We'll be in the function room or mezzanine area (just ask at the b
+ ar).\n\nCome join our [Discord ](https://discord.gg/b43zV4XNjQ)to chat abo
+ ut games and plan what to play: [https://discord.gg/b43zV4XNjQ](https://di
+ scord.gg/b43zV4XNjQ)\n\nThe pub is close to several Brighton bus routes an
+ d Portslade train station. If you're driving\, resident-only permit restri
+ ctions stop at 7pm (see [zones X and L on this map](https://www.brighton-h
+ ove.gov.uk/parking-zones)).\n\nAccessibility: There are a few steps to nav
+ igate inside the pub (no more than 8). We are usually in the back 'Platfor
+ m' room\, which has flat access via the side gate and ramp. Occasionally t
+ he venue may have another paid event booking\, and if so we may be moved i
+ nto the mezzanine\, which unfortunately is not wheelchair accessible - so 
+ if you need step free access please contact an organiser. The accessible W
+ C is located in the main bar (via the side door) which has a small ramped 
+ access in the threshold.
+URL;VALUE=URI:https://www.meetup.com/brighton-pub-boardgamers/events/31567
+ 8968/
+STATUS:CONFIRMED
+CREATED:20260714T120210Z
+LAST-MODIFIED:20260714T120210Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_316798394@meetup.com
+SEQUENCE:1
+DTSTAMP:20261017T063547Z
+DTSTART;TZID=Europe/London:20261028T180000
+DTEND;TZID=Europe/London:20261028T230000
+SUMMARY:Wednesday Night Pub Board Games
+DESCRIPTION:Brighton Pub Boardgamers\nBoardgames and a pub\, what's not to
+  like? Come along and play some games with a friendly bunch of gamers. New
+  faces and veterans welcome!\n\nKey info\n\n* **Arrive after 6pm** \\-\\- 
+ we start from 6pm\\\, but you're welcome to turn up at any time after that
+  \\(though you may have to wait/spectate for a bit later on\\)\\.\n* **Bri
+ ng ID** \\-\\- the pub can be very keen to check ID for age\\\, so if you'
+ re lucky enough to look under 25 in dim light\\\, please bring some\\!\n* 
+ **Bring games if you can\,** all games are provided by people who attend\,
+  so if you can bring them (and share/teach) that would be much appreciated
+ \, but there will be plenty if not.\n* **RSVP here** please\, so we can ga
+ uge numbers\n* **Buy drinks and/or food to support the pub** please\, as t
+ hey let us use their space for free and means we can keep this event free!
+ \n* **When you arrive\, say hello** and we'll help you find a table to joi
+ n.\n\nBefore you come\, you might want to join our Discord\; we use this f
+ or text chat to arrange beforehand what games to play and so on (we also p
+ lay online board games there). It's also a great place for general chatter
+ .\n\n[Click here to join our Discord](https://discord.gg/b43zV4XNjQ).\n\nI
+ f you'd like to play a game that needs more than one table\, make sure you
+  let us know here or on Discord\, and we'll see what we can do - no guaran
+ tees!\n\nWe look forward to seeing you!
+URL;VALUE=URI:https://www.meetup.com/brighton-pub-boardgamers/events/31679
+ 8394/
+STATUS:CONFIRMED
+CREATED:20261001T160620Z
+LAST-MODIFIED:20261001T160620Z
+CLASS:PUBLIC
+END:VEVENT
+BEGIN:VEVENT
+UID:event_316914144@meetup.com
+SEQUENCE:1
+DTSTAMP:20261017T063547Z
+DTSTART;TZID=Europe/London:20261029T183000
+DTEND;TZID=Europe/London:20261029T220000
+SUMMARY:Thursday Night Pub Boardgames
+DESCRIPTION:Brighton Pub Boardgamers\nCome and play some games\, with a fr
+ iendly bunch of people. New faces and veteran players very welcome!\n\nNow
+ \, first the public service announcements\;\n\n* Please RSVP if you're pla
+ nning on coming\, so we have a good idea of numbers and can reserve extra 
+ tables if needed.\n* Secondly\, PLEASE don't attend if you are experiencin
+ g symptoms of Covid (or similar infectious conditions\, like a cold or flu
+ ). Playing boardgames does involve sitting at the same table together and 
+ often means touching the same game components\, so we expect attendees to 
+ take suitable precautions.\n\nAnd now on to the good bit!\nWe play all sor
+ ts of games\, so come along and bring your favourite. We're always happy t
+ o teach and we love it if you're up for teaching/leading some games as wel
+ l!\n\nPeople usually trickle in between 6:30 and 7\, so we normally chat/p
+ lay short games until around 7PM\, so if you're going to be later then tha
+ t\, give us a shout on here\, or on our Discord server and we will try to 
+ keep a space in a board game free for you.\n\nOur Discord server: [https:/
+ /discord.gg/d3CSw82MFa](https://discord.gg/d3CSw82MFa)\n\nHope to see you 
+ there!
+URL;VALUE=URI:https://www.meetup.com/brighton-pub-boardgamers/events/31691
+ 4144/
+STATUS:CONFIRMED
+CREATED:20261009T191839Z
+LAST-MODIFIED:20261009T191839Z
+CLASS:PUBLIC
+END:VEVENT
+X-ORIGINAL-URL:https://www.meetup.com/Brighton-Pub-Boardgamers/events/ical
+ /
+X-WR-CALNAME:Brighton Pub Boardgamers
+END:VCALENDAR
