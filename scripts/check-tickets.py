@@ -92,6 +92,16 @@ def host_of(u):
     return urlparse(u).netloc.lower()
 
 
+# Free sign-up pages rather than ticket sales (Brighton Pub Boardgamers' meets
+# on Meetup): nothing to follow and nothing to sell out, so they're never visited.
+NO_CHECK_HOSTS = ('meetup.com',)
+
+
+def checked_link(u):
+    h = host_of(u)
+    return not any(h == x or h.endswith('.' + x) for x in NO_CHECK_HOSTS)
+
+
 def is_ticket_site(u):
     h = host_of(u)
     return any(t in h for t in TICKET_HOSTS)
@@ -713,7 +723,8 @@ async def main():
     cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
     cache = {k: v for k, v in cache.items() if k.split('|')[-2] >= TODAY.isoformat()}
 
-    upcoming = [e for e in events if e.get('date', '') >= TODAY.isoformat() and str(e.get('ticket_url', '')).startswith('http')]
+    upcoming = [e for e in events if e.get('date', '') >= TODAY.isoformat() and str(e.get('ticket_url', '')).startswith('http')
+                and checked_link(e['ticket_url'])]
     by_venue = {}
     for e in events:
         by_venue.setdefault(se.canonical_venue(e.get('venue', '')), []).append(e)

@@ -41,19 +41,25 @@ SOURCES=[
  "https://www.joyconcerts.com/listings",  # JOY. Concerts, promoter: gigs at Concorde 2, Volks, Hope & Ruin, Green Door Store and more
  "https://www.tickettailor.com/events/beatdown",  # Beat Down Promotions (hip-hop), sells through Ticket Tailor
  "https://www.tickettailor.com/events/thedicemeeple",  # The Dice & Meeple: hosted board game nights in pubs, on Ticket Tailor
+ "https://www.meetup.com/brighton-pub-boardgamers/events/",  # Brighton Pub Boardgamers: weekly games nights in pubs (the organisers are happy to be listed)
+ "https://dicesaloon.co.uk/collections/events/products.json?limit=250",  # Dice Saloon (88 London Road): tabletop, wargaming and D&D events, sold as Shopify products
  "https://www.rivalcults.com/gigs",  # Rival Cults: one big table of Brighton gigs across ~25 venues
 ]
 # Promoters whose own listings we read: their gigs get the promoter's sticker in the app
 # (PROMOTER_STICKERS in index.html), also when a venue's listing of the same gig is the one kept.
 PROMOTERS={'joyconcerts.com':'JOY. Concerts','tickettailor.com/events/beatdown':'Beat Down Promotions',
- 'tickettailor.com/events/thedicemeeple':'The Dice & Meeple'}
+ 'tickettailor.com/events/thedicemeeple':'The Dice & Meeple','meetup.com/brighton-pub-boardgamers':'Brighton Pub Boardgamers',
+ 'dicesaloon.co.uk':'Dice Saloon'}
 # Games nights move from pub to pub, so these promoters' listings are kept at
-# any Brighton & Hove venue, under the name Ticket Tailor gives it, and stay
-# filed as Other: the app lists them under Not music → Board games.
-ANY_VENUE_PROMOTERS={'The Dice & Meeple'}
+# any Brighton & Hove venue, under the name their listing gives it, and stay
+# filed as Other: the app lists them under Not music → Board games
+# (GAMES_PROMOTERS in index.html).
+ANY_VENUE_PROMOTERS={'The Dice & Meeple','Brighton Pub Boardgamers','Dice Saloon'}
 # Ticket Tailor shows automated browsers a security check ("Just a moment...",
-# HTTP 403) but serves its static listing pages to a plain request.
-PLAIN_FETCH=('tickettailor.com/',)
+# HTTP 403) but serves its static listing pages to a plain request. Meetup's
+# group events page carries its events as data in the page itself, and Dice
+# Saloon's shop gives its events as JSON.
+PLAIN_FETCH=('tickettailor.com/','meetup.com/','dicesaloon.co.uk/')
 def fetch_plain(url):
  from urllib.request import Request,urlopen
  req=Request(url,headers={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36','Accept':'text/html'})
@@ -194,6 +200,89 @@ def tickettailor_cards(soup,page_url):
    elif e['category']=='Other':e['category']='Music'
    out.append(e)
  return out
+MEETUP_DATA=re.compile(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>',re.S)
+MEETUP_SKIP_STATUS={'PAST','CANCELLED','CANCELLED_PERM','DELETED','DRAFT','PROPOSED'}
+BRIGHTON_AND_HOVE_TOWNS=re.compile(r'\b(?:brighton|hove|portslade|rottingdean|saltdean|woodingdean|ovingdean|patcham|falmer)\b',re.I)
+def meetup_time(value):
+ try:return datetime.fromisoformat(str(value).replace('Z','+00:00')).astimezone(TZ)
+ except (TypeError,ValueError):return None
+def meetup_events(html,page_url):
+ """A Meetup group's events page (meetup.com/<group>/events/). The page holds
+ the group's next few weeks of events as data (__NEXT_DATA__ →
+ props.pageProps.__APOLLO_STATE__): each Event has a title, dateTime and
+ endTime (ISO, with an offset or Z), eventUrl, status, eventType and a
+ reference to its Venue (name, address, city). Online, cancelled and past
+ events, and anything outside Brighton & Hove, are left out. Meetup's
+ robots.txt allows this page but not the /gql and /_next/data addresses the
+ page loads more events from, so only what the page itself holds is read."""
+ m=MEETUP_DATA.search(html)
+ if not m:return []
+ try:state=json.loads(m.group(1))['props']['pageProps']['__APOLLO_STATE__']
+ except (ValueError,KeyError,TypeError):return []
+ promoter=promoter_for(page_url);out=[]
+ for key,ev in state.items():
+  if not key.startswith('Event:') or not isinstance(ev,dict):continue
+  if str(ev.get('status') or '').upper() in MEETUP_SKIP_STATUS:continue
+  if ev.get('isOnline') or str(ev.get('eventType') or '').upper()=='ONLINE':continue
+  ref=(ev.get('venue') or {}).get('__ref');place=state.get(ref) if ref else None
+  if not isinstance(place,dict):continue
+  name=clean(place.get('name'));city=clean(place.get('city'))
+  if not name or not (BRIGHTON_POSTCODE.search(f"{place.get('address') or ''} {city}") or BRIGHTON_AND_HOVE_TOWNS.search(city)):continue
+  start=meetup_time(ev.get('dateTime'));end=meetup_time(ev.get('endTime'))
+  if not start:continue
+  e=make_event(clean(ev.get('title')),start.date(),start.strftime('%H:%M'),ev.get('eventUrl') or page_url,venue_from_text(name) or name,'')
+  if not e:continue
+  if end and start<end<=start+timedelta(hours=16):e['finish_time']=end.strftime('%H:%M')
+  e['promoter']=promoter;e['category']='Other'
+  out.append(e)
+ return out
+# Dice Saloon sells the £3 table tickets for Brighton Pub Boardgamers' Sunday
+# meets ('Board Gamers Casual Sundays (hosted by Brighton Pub Board Gamers)'),
+# which the group also lists on Meetup. The group's listing is kept, with the
+# shop's ticket page for that day, where the ticket is actually bought.
+HOSTED_BY_GROUP=re.compile(r'\bhosted by brighton pub board ?gamers\b',re.I)
+HOSTED_TICKETS={}  # (venue, date) -> the shop's ticket page, filled by dicesaloon_events
+KIDS_RE=re.compile(r"\b(?:kids?|children's|for children|junior|family|ages? \d{1,2} ?(?:-|–|to) ?\d{1,2}|aged \d{1,2})\b",re.I)  # not 'Children of Blood', a campaign
+TRAILING_DAY_MONTH=re.compile(r'\b(\d{1,2})/(\d{1,2})\s*$')  # 'Blood Money 31/10'
+VARIANT_TIME=re.compile(r'\b((?:[01]?\d|2[0-3]):[0-5]\d)\b')
+def dicesaloon_events(text,page_url):
+ """Dice Saloon's events collection as JSON (Shopify's products.json): one
+ product per event, dated in its title ('40K Weekly - October 19, 2026',
+ 'Hobby & Hang - 12th November 2026', 'Blood Money 31/10'); some variants
+ add the start time ('23 October, 2026 15:30 / General Admission'). A product
+ with no date isn't guessed at. The date is taken off the title, and the
+ product page is the ticket link. Kids' sessions are filed as Family; the
+ Sunday meets it hosts for Brighton Pub Boardgamers only lend their ticket
+ page to the group's Meetup listing (HOSTED_TICKETS)."""
+ try:products=json.loads(text).get('products') or []
+ except (ValueError,AttributeError):return []
+ promoter=promoter_for(page_url);venue='Dice Saloon';shop=page_url.split('/collections/')[0];out=[]
+ for p in products:
+  title=clean(p.get('title'));handle=p.get('handle')
+  if not title or not handle:continue
+  found=list(DATE_RE.finditer(title));d=None;cut=None
+  if found:
+   start,end=found[-1].span();year=re.match(r'\s*,\s*\d{4}\b',title[end:])  # '31 October, 2026'
+   if year:end+=year.end()
+   d=parse_date(title[found[-1].start(1):end]);cut=(start,end)
+  elif TRAILING_DAY_MONTH.search(title):
+   m=TRAILING_DAY_MONTH.search(title);d=parse_date(f'{m.group(1)}/{m.group(2)}');cut=m.span()
+  if not d:continue
+  url=f'{shop}/products/{handle}'
+  if HOSTED_BY_GROUP.search(title):
+   HOSTED_TICKETS[(venue,d.isoformat())]=url;continue
+  name=re.sub(r'[\s,:;\-–—]+$','',title[:cut[0]]+title[cut[1]:]).strip() or title
+  times=[m.group(1) for v in p.get('variants') or [] for m in [VARIANT_TIME.search(str(v.get('title') or ''))] if m]
+  e=make_event(name,d,times[0] if times else '',url,venue,'')
+  if not e:continue
+  e['promoter']=promoter;e['category']='Family' if KIDS_RE.search(name) else 'Other'
+  out.append(e)
+ return out
+def use_hosted_tickets(events):
+ for e in events:
+  u=HOSTED_TICKETS.get((e.get('venue'),e.get('date')))
+  if u and e.get('promoter')=='Brighton Pub Boardgamers':e['ticket_url']=u
+ return events
 # Rival Cults lists each venue under its own short name. Every name it uses
 # maps to one Brighton Weekend venue, so the same place is never added twice
 # (Alphabet = A L P H A B E T, Chalk = CHALK, every Dome room = Brighton Dome).
@@ -242,6 +331,8 @@ def rivalcults_rows(soup,page_url):
     out.append(e)
  return out
 def extract_cards(html,page_url):
+ if 'meetup.com/' in page_url:return meetup_events(html,page_url)
+ if 'dicesaloon.co.uk/' in page_url:return dicesaloon_events(html,page_url)
  soup=BeautifulSoup(html,'html.parser');out=[]
  if 'joyconcerts.com' in page_url:return joy_cards(soup,page_url)
  if 'tickettailor.com/events/' in page_url:return tickettailor_cards(soup,page_url)
@@ -301,6 +392,7 @@ async def main():
    except Exception as exc:print(f'Discovery failed {url}: {exc}')
    finally:await page.close()
   await browser.close()
+ use_hosted_tickets(all_events)
  data=json.loads(OUT.read_text());merged={}
  key_of=lambda e:(e.get('venue','').lower(),e.get('date',''),title_key(e.get('title','')),e.get('time') or '')
  today=NOW.date().isoformat();stale_before=(NOW-timedelta(days=STALE_DAYS)).date().isoformat()
