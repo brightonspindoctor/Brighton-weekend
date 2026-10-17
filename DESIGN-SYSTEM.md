@@ -85,7 +85,8 @@ fill for chosen chips, tabs and the promoter filter bar.
 | `--bw-suggest-bg` / `-line` / `-fg` | `#191C38` / `#4A4F8C` / `#C4C8FF` | `#EEEEFB` / `#B7B9E8` / `#3C3F8F` | "You might like" suggestion cards and their Suggested badge |
 | `--bw-coral-glow` | coral at 16% | coral at 18% | Halo on a shared event |
 | `--bw-sold-bg` / `--bw-sold-line` | `#382022` / `#704047` | `#FBE4E3` / `#E2A2A6` | Sold out badge |
-| `--bw-sticker-joy` / `-beatdown` / `-ink` | `#FFE14D` / `#B69CFF` / `#0B1D2F` | same | Promoter stickers |
+| `--bw-sticker-joy` / `-beatdown` / `-dicemeeple` / `-ink` | `#FFE14D` / `#B69CFF` / `#8FE3B0` / `#0B1D2F` | same | Promoter stickers |
+| `--bw-sparkle` / `-line` / `-glow` | `#FFD982` / `#6E5A2C` / gold at 20% | `#C8961E` / `#E3C46A` / gold at 22% | Sparkle cards: stars, edge and glow (ticket gold) |
 | `--bw-scrim` | navy at 62% | same | Behind dialogs |
 
 Shadows are tokens too, softer and navy-tinted by day: `--bw-shadow-card`
@@ -179,7 +180,8 @@ Inputs are always at least 16px so iPhones don't zoom on focus.
 | Listing badge | `.badge.info` | "Free", "Extra show" and similar, from `e.badges`, beside the genre tag. "Sold out" is `.badge.sold` in `.card-flags`. |
 | Genre tag | `.genre-tag` | Only when the event has a genre. A genre people added is a `button.genre-tag` they can tap to change. |
 | Genre picker | `.genre-picker` › `.pill-wrap` › `.genre-chip` (`aria-pressed`) | Opens in the card from Add a genre. Your pick uses the "you picked this" colours. |
-| Promoter sticker | `.card-flags` › `.promoter-sticker.joy` / `.beatdown` | Top right of a card for a promoter we read (`e.promoter`, mapped in `PROMOTER_STICKERS`). Tilted 6°, its own colour, navy text. Tapping it shows only that promoter's gigs (in Search, it opens the Promoter search). |
+| Sparkle card | `.card.sparkle` › `.sparkles` (three star SVGs) | Cards of a promoter in `SPARKLE_PROMOTERS` (The Dice & Meeple): a ticket-gold edge and glow, and three small stars on the edge that twinkle in turn, one every 1.4s. With reduced motion the stars stay still. |
+| Promoter sticker | `.card-flags` › `.promoter-sticker.joy` / `.beatdown` / `.dicemeeple` (with a die, `DIE_ICON`) | Top right of a card for a promoter we read (`e.promoter`, mapped in `PROMOTER_STICKERS`). Tilted 6°, its own colour, navy text. Tapping it shows only that promoter's gigs on Discover; in Search, or for a promoter whose events are all on Not music (The Dice & Meeple), it opens the Promoter search. |
 | Promoter filter bar | `.promoter-filter` › `.promoter-filter-label`, `.btn-chip` | Teal bar on Discover with the count for the chosen days; Show all clears it. |
 | Friends line | `.people` › `.social-chip` › `.social-icon.going/.heart/.profile` | Only when friends are interested or going. Also the group roster's name chips. |
 | Day heading | `h3.day` with a `<span>` for the date | "Friday 16 October". |

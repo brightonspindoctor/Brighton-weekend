@@ -92,7 +92,8 @@
   --bw-suggest-bg:#191C38; --bw-suggest-line:#4A4F8C; --bw-suggest-fg:#C4C8FF; /* "You might like" suggestion cards */
   --bw-coral-glow:rgba(255,119,103,.16);               /* shared-event halo */
   --bw-sold-bg:#382022;    --bw-sold-line:#704047;      /* Sold out badge */
-  --bw-sticker-joy:#FFE14D; --bw-sticker-beatdown:#B69CFF; --bw-sticker-ink:#0B1D2F; /* promoter stickers */
+  --bw-sticker-joy:#FFE14D; --bw-sticker-beatdown:#B69CFF; --bw-sticker-dicemeeple:#8FE3B0; --bw-sticker-ink:#0B1D2F; /* promoter stickers */
+  --bw-sparkle:#FFD982;     --bw-sparkle-line:#6E5A2C;    --bw-sparkle-glow:rgba(255,217,130,.20); /* The Dice & Meeple's cards: ticket gold */
   --bw-shadow-logo:0 4px 16px rgba(0,0,0,.35);
   --bw-shadow-logo-lg:0 8px 24px rgba(0,0,0,.45);
   --bw-shadow-sticker:0 2px 0 rgba(0,0,0,.35);
@@ -113,6 +114,7 @@
   --bw-happen-bg:#E5F2EF; --bw-happen-line:#9CCFC5; --bw-coral-hover:#B23525; --bw-coral-bg:#FBE7E2; --bw-coral-line:#E9AFA4; --bw-coral-wash:#FDF1EC;
   --bw-suggest-bg:#EEEEFB; --bw-suggest-line:#B7B9E8; --bw-suggest-fg:#3C3F8F;
   --bw-coral-glow:rgba(201,64,47,.18); --bw-sold-bg:#FBE4E3; --bw-sold-line:#E2A2A6;
+  --bw-sparkle:#C8961E; --bw-sparkle-line:#E3C46A; --bw-sparkle-glow:rgba(200,150,30,.22);
   --bw-shadow-card:0 6px 18px rgba(11,29,47,.08); --bw-shadow-bar:0 3px 14px rgba(11,29,47,.08); --bw-focus:0 0 0 3px rgba(31,122,114,.30);
   --bw-shadow-logo:0 4px 14px rgba(11,29,47,.18); --bw-shadow-logo-lg:0 8px 22px rgba(11,29,47,.18); --bw-shadow-sticker:0 2px 0 rgba(11,29,47,.25);
   --bw-shadow-nav:0 -4px 16px rgba(11,29,47,.07); --bw-shadow-dialog:0 20px 50px rgba(11,29,47,.18);
@@ -202,6 +204,18 @@ header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1
 .promoter-sticker{display:inline-block;font-size:var(--bw-text-xs);font-weight:800;letter-spacing:.02em;line-height:1;padding:5px 7px;border-radius:4px;transform:rotate(6deg);box-shadow:var(--bw-shadow-sticker);white-space:nowrap;user-select:none}
 .promoter-sticker.joy{background:var(--bw-sticker-joy);color:var(--bw-sticker-ink)}
 .promoter-sticker.beatdown{background:var(--bw-sticker-beatdown);color:var(--bw-sticker-ink)}
+.promoter-sticker.dicemeeple{background:var(--bw-sticker-dicemeeple);color:var(--bw-sticker-ink);display:inline-flex;align-items:center;gap:4px}
+.sticker-die{width:11px;height:11px;flex:none}
+/* The Dice & Meeple's cards sparkle (SPARKLE_PROMOTERS): a ticket-gold edge and
+   three small stars that twinkle in turn. Still when motion is reduced. */
+.card.sparkle{position:relative;border-color:var(--bw-sparkle-line);box-shadow:var(--bw-shadow-card),0 0 22px -6px var(--bw-sparkle-glow)}
+.sparkles{position:absolute;inset:0;pointer-events:none;z-index:1}
+.sparkles svg{position:absolute;width:15px;height:15px;color:var(--bw-sparkle);opacity:0;animation:bw-twinkle 4.2s ease-in-out infinite}
+.sparkles svg:nth-child(1){top:-8px;right:30px}
+.sparkles svg:nth-child(2){top:22px;right:-6px;width:11px;height:11px;animation-delay:1.4s}
+.sparkles svg:nth-child(3){bottom:-7px;left:34px;width:12px;height:12px;animation-delay:2.8s}
+@keyframes bw-twinkle{0%,100%{opacity:0;transform:scale(.3) rotate(0deg)}10%{opacity:1;transform:scale(1) rotate(45deg)}22%{opacity:0;transform:scale(.3) rotate(90deg)}}
+@media (prefers-reduced-motion:reduce){.sparkles svg{animation:none;opacity:.8}}
 button.promoter-sticker{border:0;cursor:pointer;font-family:inherit}
 .promoter-filter{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;padding:8px 8px 8px 12px;background:var(--bw-interested-bg);border:1px solid var(--bw-teal);border-radius:var(--bw-radius-md);color:var(--bw-interested-fg);font-size:var(--bw-text-sm);font-weight:700}
 .promoter-filter-label{flex:1;min-width:0}
@@ -1497,10 +1511,22 @@ const SHARE_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true">
 const CAL_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 13v4M10 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 function ticketLink(e){const u=safeUrl(e.ticket_url);return u?`<a class="ticket" href="${esc(u)}" target="_blank" rel="noopener" data-ticket-event="${esc(e.id)}" data-ticket-source="${String(e.id||'').startsWith('festival:')?'festival':'app'}" aria-label="Get tickets for ${esc(e.title)} (opens in a new tab)">${TICKET_ICON}Get tickets</a>`:''}
 // Stickers for promoters whose gigs we read (scripts/scrape-discovery.py sets e.promoter).
-const PROMOTER_STICKERS={'JOY. Concerts':{label:'JOY.',cls:'joy'},'Beat Down Promotions':{label:'BEAT DOWN',cls:'beatdown'}};
+const DIE_ICON='<svg class="sticker-die" viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="1.5" width="13" height="13" rx="3.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="5.1" cy="5.1" r="1.35" fill="currentColor"/><circle cx="8" cy="8" r="1.35" fill="currentColor"/><circle cx="10.9" cy="10.9" r="1.35" fill="currentColor"/></svg>';
+const PROMOTER_STICKERS={'JOY. Concerts':{label:'JOY.',cls:'joy'},'Beat Down Promotions':{label:'BEAT DOWN',cls:'beatdown'},
+ 'The Dice & Meeple':{label:'DICE & MEEPLE',cls:'dicemeeple',icon:DIE_ICON}};
+function stickerContent(p){return (p.icon||'')+esc(p.label)}
+// A promoter whose events are all listed on Not music (The Dice & Meeple's
+// games nights) has nothing on Discover, so its sticker opens the Promoter
+// search instead, which lists their events at any venue.
+let promoterKinds={list:null,map:{}};
+function promoterNotMusic(name){
+ if(promoterKinds.list!==events)promoterKinds={list:events,map:{}}; // worked out again when the events reload
+ if(!(name in promoterKinds.map)){const own=events.filter(x=>x.promoter===name);promoterKinds.map[name]=own.length>0&&own.every(isNotMusic)}
+ return promoterKinds.map[name];
+}
 function cardFlags(e){
- const p=PROMOTER_STICKERS[e.promoter];
- const sticker=p?`<button type="button" class="promoter-sticker ${p.cls}" data-promoter="${esc(e.promoter)}" title="Show ${esc(e.promoter)} gigs" aria-label="A ${esc(e.promoter)} gig. Show only ${esc(e.promoter)} gigs">${esc(p.label)}</button>`:'';
+ const p=PROMOTER_STICKERS[e.promoter],what=p&&promoterNotMusic(e.promoter)?'events':'gigs',one=what==='events'?'An event':'A gig';
+ const sticker=p?`<button type="button" class="promoter-sticker ${p.cls}" data-promoter="${esc(e.promoter)}" title="Show ${esc(e.promoter)} ${what}" aria-label="${one} by ${esc(e.promoter)}. Show only ${esc(e.promoter)} ${what}">${stickerContent(p)}</button>`:'';
  const sold=e.status==='SOLD OUT'?'<span class="badge sold">Sold out</span>':'';
  return sticker||sold?`<div class="card-flags">${sold}${sticker}</div>`:'';
 }
@@ -1583,12 +1609,16 @@ document.addEventListener('click',e=>{
  if(e.target.closest('[data-genre-cancel]')){genrePickerFor=null;renderAll();return}
  const s=e.target.closest('[data-set-genre]');if(s)setCommunityGenre(s.dataset.eventId,s.dataset.setGenre,s);
 });
+// Cards that sparkle: a ticket-gold edge and three twinkling stars.
+const SPARKLE_PROMOTERS=new Set(['The Dice & Meeple']);
+const STAR_ICON='<svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c.9 6.6 5.4 11.1 12 12-6.6.9-11.1 5.4-12 12-.9-6.6-5.4-11.1-12-12C6.6 11.1 11.1 6.6 12 0z"/></svg>';
 function eventCard(e,{showDate=false,reason=''}={}){
  const mine=attendance.find(x=>x.event_id===e.id&&x.user_id===uid());
+ const sparkle=SPARKLE_PROMOTERS.has(e.promoter);
  const d=showDate?parseEventDate(e.date):null;
  const when=[esc(e.venue_display||e.venue),timeRange(e),e.price?esc(e.price):''].filter(Boolean).join(' · ');
  const tags=genreTagHtml(e)+badgesHtml(e);
- return `<article class="card${reason?' rec-card':''}" data-event-id="${esc(e.id)}">${reason?`<div class="rec-reason"><span class="rec-badge">Suggested</span>${esc(reason)}</div>`:''}${d?`<div class="card-date">${esc(d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}))}</div>`:''}<div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="added-by">added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${when}</div></div>${cardFlags(e)}</div>${tags?`<div class="card-tags">${tags}</div>`:''}${genrePickerHtml(e)}
+ return `<article class="card${reason?' rec-card':''}${sparkle?' sparkle':''}" data-event-id="${esc(e.id)}">${sparkle?`<span class="sparkles" aria-hidden="true">${STAR_ICON.repeat(3)}</span>`:''}${reason?`<div class="rec-reason"><span class="rec-badge">Suggested</span>${esc(reason)}</div>`:''}${d?`<div class="card-date">${esc(d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}))}</div>`:''}<div class="top"><div><div class="title">${esc(e.title)}${e.is_custom?` <span class="added-by">added by ${esc(e.created_by_name||'community')}</span>`:''}</div><div class="meta">${when}</div></div>${cardFlags(e)}</div>${tags?`<div class="card-tags">${tags}</div>`:''}${genrePickerHtml(e)}
  ${e.is_custom&&e.description?`<div class="note event-description">${esc(e.description)}</div>`:''}
  ${friendsHtml(e.id)}
  ${commitmentButtons(e,mine)}
@@ -1606,12 +1636,13 @@ let discoverPromoter=null;
 function promoterBannerHtml(count){
  if(!discoverPromoter)return '';
  const p=PROMOTER_STICKERS[discoverPromoter];
- return `<div class="promoter-filter">${p?`<span class="promoter-sticker ${p.cls}" aria-hidden="true">${esc(p.label)}</span>`:''}<span class="promoter-filter-label">${esc(discoverPromoter)} gigs <span class="count">· ${count} ${rangePhrase()}</span></span><button type="button" class="btn btn-chip" data-clear-promoter>Show all</button></div>`;
+ return `<div class="promoter-filter">${p?`<span class="promoter-sticker ${p.cls}" aria-hidden="true">${stickerContent(p)}</span>`:''}<span class="promoter-filter-label">${esc(discoverPromoter)} gigs <span class="count">· ${count} ${rangePhrase()}</span></span><button type="button" class="btn btn-chip" data-clear-promoter>Show all</button></div>`;
 }
 document.addEventListener('click',e=>{
  if(e.target.closest('[data-clear-promoter]')){discoverPromoter=null;render();return}
  const p=e.target.closest('[data-promoter]');if(!p)return;
  if(p.closest('#searchTab')){populateSearchFilters();$('searchPromoterSelect').value=p.dataset.promoter;setSearchMode('promoter');return}
+ if(promoterNotMusic(p.dataset.promoter)){openTab('searchTab');populateSearchFilters();$('searchPromoterSelect').value=p.dataset.promoter;setSearchMode('promoter');window.scrollTo(0,0);return}
  discoverPromoter=p.dataset.promoter;
  if(!$('discover').classList.contains('hidden'))render();else openTab('discover');
  window.scrollTo({top:0,behavior:'smooth'});
@@ -2264,7 +2295,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=88', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=89', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>

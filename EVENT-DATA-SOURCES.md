@@ -150,8 +150,9 @@ game nights in pubs and is read by the same Ticket Tailor reader. Its nights
 move between pubs, so it is in `ANY_VENUE_PROMOTERS`: a listing with a Brighton
 & Hove postcode is kept at whatever venue Ticket Tailor names, filed as Other,
 and the app lists it under Not music → Board games (`GAMES_PROMOTERS` in
-`index.html`). It has no sticker, since stickers filter Discover's gigs; it
-appears in Search → Promoter.
+`index.html`). Its cards carry a DICE & MEEPLE sticker and sparkle
+(`SPARKLE_PROMOTERS`); as its events aren't on Discover, tapping the sticker
+opens Search → Promoter.
 
 Brighton Pub Boardgamers (`meetup.com/brighton-pub-boardgamers/events/`; the
 organisers are happy to be listed) is read by `meetup_events`: the group's
