@@ -1,0 +1,37 @@
+name: Meetup check
+
+# One-off: how Meetup publishes Brighton Pub Boardgamers' events, and what
+# Meetup's and Dice Saloon's robots.txt allow. Results are saved in diag/meetup
+# on this branch, which is never merged.
+
+on:
+  push:
+    branches: ['claude/skiddle-check']
+    paths:
+      - '.github/workflows/meetup-check.yml'
+      - 'diag/meetup_check.py'
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out this branch
+        uses: actions/checkout@v5
+      - name: Install Playwright
+        run: |
+          python3 -m pip install -q playwright==1.63.0
+          python3 -m playwright install --with-deps chromium
+      - name: Fetch Meetup's feeds and pages
+        run: python3 diag/meetup_check.py
+      - name: Save the results on this branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add diag
+          git commit -q -m 'Meetup check results' || exit 0
+          git pull -q --rebase origin claude/skiddle-check
+          git push -q origin HEAD:claude/skiddle-check
