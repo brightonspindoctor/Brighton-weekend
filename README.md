@@ -11,11 +11,14 @@ phone's home screen.
   day by day, with quick chips for *Tonight* (from 5pm), *This weekend* (Friday to
   Sunday) and *Next 7 days*. New events since your last visit show as a one-line
   summary you can open. Tapping a promoter's sticker shows only their gigs.
-- **Not music:** works like Festivals: choose Comedy, Board games, Pub quizzes,
-  Pub events or Other, and every upcoming event of that type is listed in date
-  order at any venue (the venues in Settings only shape Discover). Anything
-  listed here is left off Discover. Outside Theatre Royal's and Komedia's own
-  programmes, an event needs a clear sign in its title that it isn't a gig
+- **Not music:** works like Festivals: choose Comedy, Theatre & musicals, Board
+  games, Pub quizzes, Pub events or Other, and every upcoming event of that type
+  is listed in date order at any venue (the venues in Settings only shape
+  Discover). Anything listed here is left off Discover. Theatre & musicals takes
+  plays, musicals and dance; workshops, courses and kids' shows go under Other.
+  Theatre Royal, The Old Market and Brighton Dome label each show themselves, and
+  their label decides (`venue_label`). Elsewhere, outside Theatre Royal's and
+  Komedia's own programmes, an event needs a clear sign in its title that it isn't a gig
   (`notMusicKind` in `index.html`). Board games also takes every listing from
   The Dice & Meeple, Brighton Pub Boardgamers and Dice Saloon (Dice Saloon's
   kids' club goes under Other). Ghost walks and ghost tours are left out.

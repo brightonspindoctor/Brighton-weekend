@@ -64,7 +64,18 @@
   },
   {
     "venue": "Theatre Royal Brighton",
-    "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/"
+    "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
+    "label_pages": [
+      "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/plays/",
+      "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/musicals/",
+      "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/dance/",
+      "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/concert/",
+      "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/comedy/",
+      "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/family/",
+      "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/talk/",
+      "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/events/"
+    ],
+    "note": "ATG's genre lists cover the whole programme, so every show gets Theatre Royal's own label (Plays, Musicals, Concert...), not only the first page's"
   },
   {
     "venue": "The Hope & Ruin",

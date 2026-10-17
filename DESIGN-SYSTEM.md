@@ -184,7 +184,7 @@ Inputs are always at least 16px so iPhones don't zoom on focus.
 | Friends line | `.people` › `.social-chip` › `.social-icon.going/.heart/.profile` | Only when friends are interested or going. Also the group roster's name chips. |
 | Day heading | `h3.day` with a `<span>` for the date | "Friday 16 October". |
 | Quick-time chips | `.range-chips` › `.festival-filter` (`.active`) | Tonight / This weekend / Next 7 days on Discover, where tapping the chosen chip goes back to the week; This weekend / Next 7 days / Next 30 days in Search. |
-| Filter chips | `.festival-filters` › `.festival-filter` (`.active`) | Festival types and Not music's event types (Comedy, Board games, Pub quizzes, Pub events, Other), sticky under the header. A long Not music list ends with a `.show-more` button that adds the next page. |
+| Filter chips | `.festival-filters` › `.festival-filter` (`.active`) | Festival types and Not music's event types (Comedy, Theatre & musicals, Board games, Pub quizzes, Pub events, Other), sticky under the header. A long Not music list ends with a `.show-more` button that adds the next page. |
 | New since your last visit | `.new-summary`, `.new-list` | One line on Discover until opened. |
 | Venue nudge | `.venue-nudge` | Shown instead of listings when no venues are chosen. |
 | Empty state | `.empty` | Short and specific: what's missing, and what to try. |
