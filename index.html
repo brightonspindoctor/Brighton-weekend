@@ -662,7 +662,7 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
 <div class="settings-card member-only"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" class="avatar" src="profile-icons/standardized/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div><div class="settings-card settings-groups member-only"><h3>Groups</h3><div id="groupManager"></div><button id="manageGroups" class="btn btn-secondary">Manage groups</button></div>
 <div class="settings-card guest-only"><h3>Account</h3><p class="note">Create a free login to mark events, join groups and see what your friends are planning.</p><button id="guestSignIn" type="button" class="btn btn-primary">Create a free login</button></div>
 <div class="settings-card"><h3>Colour scheme</h3><div class="theme-choices" role="radiogroup" aria-label="Colour scheme"><button type="button" class="theme-choice" role="radio" data-theme-choice="dark"><span class="theme-dots" aria-hidden="true"><i></i><i></i><i></i></span>Seafront after dark</button><button type="button" class="theme-choice" role="radio" data-theme-choice="light"><span class="theme-dots" aria-hidden="true"><i></i><i></i><i></i></span>Seafront by day</button></div></div>
-<div class="settings-card"><h3>Privacy</h3><label class="venue-row count-visits"><span>Count my visits</span><input type="checkbox" id="countVisits" checked></label><p class="note">Counts visits and Get tickets taps from this device, so we can see how the app is used. Switch it off and this device stops being counted. <a href="privacy.html" target="_blank" rel="noopener">Privacy policy</a></p></div>
+<div class="settings-card"><h3>Privacy</h3><label class="venue-row count-visits"><span>Count my visits</span><input type="checkbox" id="countVisits" checked></label><p class="note">Counts visits, Get tickets taps and app installs from this device, so we can see how the app is used. Switch it off and this device stops being counted. <a href="privacy.html" target="_blank" rel="noopener">Privacy policy</a></p></div>
 <div class="settings-card"><h3>Support Brighton Weekend</h3><p class="note">If you enjoy using the app, you can buy me a coffee to help keep it running and improving.</p><a class="support-btn" href="https://www.buymeacoffee.com/jonnysadler" target="_blank" rel="noopener">☕ Buy me a coffee ↗</a></div>
 <div class="settings-card member-only"><h3>Account</h3><button id="changeName" class="btn btn-secondary">Change my name</button> <button id="signOut" class="btn btn-ghost">Sign out</button><div id="accountEmail" class="group-meta"></div><div class="danger-zone"><h4>Delete my account</h4><p class="note">Permanently deletes your profile, your Interested and Going choices, your group memberships and any events you added. This can't be undone.</p><button id="deleteAccount" type="button" class="btn btn-danger">Delete my account</button></div></div>
 <div class="settings-card install-area"><h3>Install the app</h3><button id="installApp" class="btn btn-primary install-btn">↓ Add to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
@@ -1114,6 +1114,7 @@ async function loadGroupHappenings(){
 function trackVisitor(){
  if(!countingOn())return;
  api('POST','rpc/bw_track_visit',{}).catch(()=>{}); // records this visit for the admin dashboard (v53)
+ trackInstalledUse();
 }
 
 function renderOnboardingGroups(){
@@ -1197,9 +1198,41 @@ function trackTicketClick(eventId,source){
 ['click','auxclick'].forEach(t=>document.addEventListener(t,e=>{const a=e.target.closest('a[data-ticket-event]');if(a)trackTicketClick(a.dataset.ticketEvent,a.dataset.ticketSource)}));
 function trackGuest(){const id=guestId(true);if(id)rpc('bw_track_guest',{p_guest_id:id}).catch(()=>{})}
 function linkGuest(){const id=guestId(false);if(id)rpc('bw_link_guest',{p_guest_id:id}).catch(()=>{})}
+// ---- Installs (v78) ----
+// Counts installs of the app and opens of the installed app for the admin
+// dashboard, only while Count my visits is on. Android and desktop Chrome/Edge
+// say when the app is installed (appinstalled); iPhones and iPads don't, so the
+// first time the app opens from the home screen on a device counts as its
+// install. A device's install is counted once (the server also allows only one
+// per person or device and platform), and opens from the home screen at most
+// once a day. The marks below are only set once the server has the count, so a
+// failed request is tried again next time.
+const INSTALL_COUNTED_KEY='bw_install_counted', APP_OPEN_DAY_KEY='bw_app_open_day';
+function runningInstalled(){try{return window.matchMedia('(display-mode: standalone)').matches||navigator.standalone===true}catch(e){return false}}
+function devicePlatform(){
+ const ua=navigator.userAgent||'';
+ if(/iPhone|iPad|iPod/.test(ua)||(/Macintosh/.test(ua)&&navigator.maxTouchPoints>1))return 'ios';
+ return /Android/i.test(ua)?'android':'desktop';
+}
+function readMark(key){try{return localStorage.getItem(key)}catch(e){return null}}
+function setMark(key,value){try{localStorage.setItem(key,value)}catch(e){}}
+function trackApp(kind){
+ if(!countingOn())return Promise.resolve(false);
+ return rpc('bw_track_app',{p_kind:kind,p_platform:devicePlatform(),p_guest_id:authUser?null:(guestId(true)||null)}).then(()=>true,()=>false);
+}
+function trackInstall(){if(!readMark(INSTALL_COUNTED_KEY))trackApp('app_install').then(ok=>{if(ok)setMark(INSTALL_COUNTED_KEY,'1')})}
+// Called once the app knows whether someone is signed in (signed in, or a guest).
+function trackInstalledUse(){
+ if(!runningInstalled()||!countingOn())return;
+ trackInstall();
+ const today=todayKey();
+ if(readMark(APP_OPEN_DAY_KEY)!==today)trackApp('app_open').then(ok=>{if(ok)setMark(APP_OPEN_DAY_KEY,today)});
+}
+window.addEventListener('appinstalled',trackInstall);
 function enterGuestMode(){
  document.body.classList.add('guest');
  trackGuest();
+ trackInstalledUse();
  if(!$('peopleTab').classList.contains('hidden'))openTab('discover');
  hide('welcome');$('welcome').classList.remove('checking');
  renderAll();
@@ -2231,7 +2264,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=87', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=88', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
