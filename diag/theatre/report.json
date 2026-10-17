@@ -1,11 +1,74 @@
 {
- "atg_whatson": {
-  "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
+ "atg_plays": {
+  "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/plays/",
   "status": 200,
-  "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-  "length": 950805,
+  "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/plays/",
+  "length": 792353,
   "jsonld_event_types": {},
   "near_titles": {
+   "Genre": [
+    "ly\\\",\\\"count\\\":8},\\\"talk\\\":{\\\"label\\\":\\\"Talk\\\",\\\"count\\\":7},\\\"dance\\\":{\\\"label\\\":\\\"Dance\\\",\\\"count\\\":7},\\\"musicals\\\":{\\\"label\\\":\\\"Musicals\\\",\\\"count\\\":6}},\\\"subGenres\\\":{\\\"concert\\u003etribute\\\":{\\\"label\\\":\\\"Concert \\u003e Tribute\\\",\\\"count\\\":12},\\\"events\\u003ecreative-learning\\\":{\\\"label\\\":\\\"Events \\u003e Creative Learning",
+    "ns\\\":{\\\"brighton\\\":{\\\"label\\\":\\\"Brighton\\\",\\\"count\\\":9}}},\\\"currentPage\\\":1,\\\"totalPages\\\":1,\\\"parsedFilters\\\":{\\\"locations\\\":[\\\"uk\\\"],\\\"genre\\\":\\\"plays\\\",\\\"subGenres\\\":\\\"$undefined\\\",\\\"accessTypes\\\":\\\"$undefined\\\",\\\"date\\\":{\\\"option\\\":\\\"anyDate\\\",\\\"range\\\":\\\"$undefined\\\"},\\\"timeOfDay\\\":[]},\\\"currentSortBy\\\":\\\"upcoming\\\",\\\""
+   ],
+   "genre": [
+    "m-ui,sans-serif;color:#0d0d0d;}}@layer mui{.mui-uju0mh{-webkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;wh",
+    "ebkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;w"
+   ]
+  }
+ },
+ "atg_musicals": {
+  "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/musicals/",
+  "status": 200,
+  "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/musicals/",
+  "length": 750736,
+  "jsonld_event_types": {},
+  "near_titles": {
+   "Genre": [
+    "ly\\\",\\\"count\\\":8},\\\"talk\\\":{\\\"label\\\":\\\"Talk\\\",\\\"count\\\":7},\\\"dance\\\":{\\\"label\\\":\\\"Dance\\\",\\\"count\\\":7},\\\"musicals\\\":{\\\"label\\\":\\\"Musicals\\\",\\\"count\\\":6}},\\\"subGenres\\\":{\\\"concert\\u003etribute\\\":{\\\"label\\\":\\\"Concert \\u003e Tribute\\\",\\\"count\\\":12},\\\"events\\u003ecreative-learning\\\":{\\\"label\\\":\\\"Events \\u003e Creative Learning",
+    "\":{\\\"brighton\\\":{\\\"label\\\":\\\"Brighton\\\",\\\"count\\\":6}}},\\\"currentPage\\\":1,\\\"totalPages\\\":1,\\\"parsedFilters\\\":{\\\"locations\\\":[\\\"uk\\\"],\\\"genre\\\":\\\"musicals\\\",\\\"subGenres\\\":\\\"$undefined\\\",\\\"accessTypes\\\":\\\"$undefined\\\",\\\"date\\\":{\\\"option\\\":\\\"anyDate\\\",\\\"range\\\":\\\"$undefined\\\"},\\\"timeOfDay\\\":[]},\\\"currentSortBy\\\":\\\"upcoming\\\",\\\""
+   ],
+   "genre": [
+    "m-ui,sans-serif;color:#0d0d0d;}}@layer mui{.mui-uju0mh{-webkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;wh",
+    "ebkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;w"
+   ],
+   "Six": [
+    " times ​ All access types ​ Date/Time Accessibility All Musicals Plays Comedy Concert Dance Family Events Talk 6 shows Sort by Upcoming Newest Onsale A-Z Z-A ​ Six Six Musicals, Family Theatre Royal Brighton Tue 1 Dec - Sat 5 Dec 2026 Buy tickets for Six Buy tickets More information about Six More info Legally Blonde Lega",
+    "es ​ All access types ​ Date/Time Accessibility All Musicals Plays Comedy Concert Dance Family Events Talk 6 shows Sort by Upcoming Newest Onsale A-Z Z-A ​ Six Six Musicals, Family Theatre Royal Brighton Tue 1 Dec - Sat 5 Dec 2026 Buy tickets for Six Buy tickets More information about Six More info Legally Blonde Legally "
+   ]
+  }
+ },
+ "atg_dance": {
+  "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/dance/",
+  "status": 200,
+  "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/dance/",
+  "length": 747687,
+  "jsonld_event_types": {},
+  "near_titles": {
+   "Genre": [
+    "ly\\\",\\\"count\\\":8},\\\"talk\\\":{\\\"label\\\":\\\"Talk\\\",\\\"count\\\":7},\\\"dance\\\":{\\\"label\\\":\\\"Dance\\\",\\\"count\\\":7},\\\"musicals\\\":{\\\"label\\\":\\\"Musicals\\\",\\\"count\\\":6}},\\\"subGenres\\\":{\\\"concert\\u003etribute\\\":{\\\"label\\\":\\\"Concert \\u003e Tribute\\\",\\\"count\\\":12},\\\"events\\u003ecreative-learning\\\":{\\\"label\\\":\\\"Events \\u003e Creative Learning",
+    "ns\\\":{\\\"brighton\\\":{\\\"label\\\":\\\"Brighton\\\",\\\"count\\\":7}}},\\\"currentPage\\\":1,\\\"totalPages\\\":1,\\\"parsedFilters\\\":{\\\"locations\\\":[\\\"uk\\\"],\\\"genre\\\":\\\"dance\\\",\\\"subGenres\\\":\\\"$undefined\\\",\\\"accessTypes\\\":\\\"$undefined\\\",\\\"date\\\":{\\\"option\\\":\\\"anyDate\\\",\\\"range\\\":\\\"$undefined\\\"},\\\"timeOfDay\\\":[]},\\\"currentSortBy\\\":\\\"upcoming\\\",\\\""
+   ],
+   "genre": [
+    "m-ui,sans-serif;color:#0d0d0d;}}@layer mui{.mui-uju0mh{-webkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;wh",
+    "ebkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;w"
+   ]
+  }
+ },
+ "atg_concert": {
+  "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/concert/",
+  "status": 200,
+  "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/concert/",
+  "length": 898774,
+  "jsonld_event_types": {},
+  "near_titles": {
+   "Genre": [
+    "ly\\\",\\\"count\\\":8},\\\"talk\\\":{\\\"label\\\":\\\"Talk\\\",\\\"count\\\":7},\\\"dance\\\":{\\\"label\\\":\\\"Dance\\\",\\\"count\\\":7},\\\"musicals\\\":{\\\"label\\\":\\\"Musicals\\\",\\\"count\\\":6}},\\\"subGenres\\\":{\\\"concert\\u003etribute\\\":{\\\"label\\\":\\\"Concert \\u003e Tribute\\\",\\\"count\\\":12},\\\"events\\u003ecreative-learning\\\":{\\\"label\\\":\\\"Events \\u003e Creative Learning",
+    "\":{\\\"brighton\\\":{\\\"label\\\":\\\"Brighton\\\",\\\"count\\\":19}}},\\\"currentPage\\\":1,\\\"totalPages\\\":1,\\\"parsedFilters\\\":{\\\"locations\\\":[\\\"uk\\\"],\\\"genre\\\":\\\"concert\\\",\\\"subGenres\\\":\\\"$undefined\\\",\\\"accessTypes\\\":\\\"$undefined\\\",\\\"date\\\":{\\\"option\\\":\\\"anyDate\\\",\\\"range\\\":\\\"$undefined\\\"},\\\"timeOfDay\\\":[]},\\\"currentSortBy\\\":\\\"upcoming\\\",\\\""
+   ],
+   "genre": [
+    "m-ui,sans-serif;color:#0d0d0d;}}@layer mui{.mui-uju0mh{-webkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;wh",
+    "ebkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;w"
+   ],
    "Gareth Malone": [
     " for The Chicago Blues Brothers: Live at the Country Bunker Buy tickets More information about The Chicago Blues Brothers: Live at the Country Bunker More info Gareth Malone Gareth Malone Concert Theatre Royal Brighton Fri 13 Nov 2026 Buy tickets for Gareth Malone Buy tickets More information about Gareth Malone More info Spice Gir",
     "go Blues Brothers: Live at the Country Bunker Buy tickets More information about The Chicago Blues Brothers: Live at the Country Bunker More info Gareth Malone Gareth Malone Concert Theatre Royal Brighton Fri 13 Nov 2026 Buy tickets for Gareth Malone Buy tickets More information about Gareth Malone More info Spice Girls - The Theat"
@@ -13,83 +76,119 @@
    "Yacht Rock": [
     " tickets for Man In The Mirror - A Tribute to Michael Jackson Buy tickets More information about Man In The Mirror - A Tribute to Michael Jackson More info The Yacht Rock Experience The Yacht Rock Experience Concert Theatre Royal Brighton Thu 19 Nov 2026 Buy tickets for The Yacht Rock Experience Buy tickets More information abou",
     "rror - A Tribute to Michael Jackson Buy tickets More information about Man In The Mirror - A Tribute to Michael Jackson More info The Yacht Rock Experience The Yacht Rock Experience Concert Theatre Royal Brighton Thu 19 Nov 2026 Buy tickets for The Yacht Rock Experience Buy tickets More information about The Yacht Rock Experienc"
+   ],
+   "Popera": [
+    "d 24 Feb 2027 Buy tickets for Vanessa Williams: Live in Concert Buy tickets More information about Vanessa Williams: Live in Concert More info 'Phantoms of the Popera' starring G4 'Phantoms of the Popera' starring G4 Concert Theatre Royal Brighton Mon 22 Mar 2027 Buy tickets for 'Phantoms of the Popera' starring G4 Buy ticke",
+    " Williams: Live in Concert Buy tickets More information about Vanessa Williams: Live in Concert More info 'Phantoms of the Popera' starring G4 'Phantoms of the Popera' starring G4 Concert Theatre Royal Brighton Mon 22 Mar 2027 Buy tickets for 'Phantoms of the Popera' starring G4 Buy tickets More information about 'Phantoms o"
    ]
   }
  },
- "atg_musicals": {
-  "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/musical/",
+ "atg_comedy": {
+  "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/comedy/",
   "status": 200,
-  "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/musical/",
-  "length": 684311,
+  "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/comedy/",
+  "length": 806406,
   "jsonld_event_types": {},
-  "near_titles": {}
+  "near_titles": {
+   "Genre": [
+    "ly\\\",\\\"count\\\":8},\\\"talk\\\":{\\\"label\\\":\\\"Talk\\\",\\\"count\\\":7},\\\"dance\\\":{\\\"label\\\":\\\"Dance\\\",\\\"count\\\":7},\\\"musicals\\\":{\\\"label\\\":\\\"Musicals\\\",\\\"count\\\":6}},\\\"subGenres\\\":{\\\"concert\\u003etribute\\\":{\\\"label\\\":\\\"Concert \\u003e Tribute\\\",\\\"count\\\":12},\\\"events\\u003ecreative-learning\\\":{\\\"label\\\":\\\"Events \\u003e Creative Learning",
+    "\\\":{\\\"brighton\\\":{\\\"label\\\":\\\"Brighton\\\",\\\"count\\\":11}}},\\\"currentPage\\\":1,\\\"totalPages\\\":1,\\\"parsedFilters\\\":{\\\"locations\\\":[\\\"uk\\\"],\\\"genre\\\":\\\"comedy\\\",\\\"subGenres\\\":\\\"$undefined\\\",\\\"accessTypes\\\":\\\"$undefined\\\",\\\"date\\\":{\\\"option\\\":\\\"anyDate\\\",\\\"range\\\":\\\"$undefined\\\"},\\\"timeOfDay\\\":[]},\\\"currentSortBy\\\":\\\"upcoming\\\",\\\""
+   ],
+   "genre": [
+    "m-ui,sans-serif;color:#0d0d0d;}}@layer mui{.mui-uju0mh{-webkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;wh",
+    "ebkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;w"
+   ]
+  }
  },
- "atg_plays": {
-  "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/play/",
+ "atg_family": {
+  "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/family/",
   "status": 200,
-  "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/play/",
-  "length": 684299,
+  "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/family/",
+  "length": 766570,
   "jsonld_event_types": {},
-  "near_titles": {}
+  "near_titles": {
+   "Genre": [
+    "ly\\\",\\\"count\\\":8},\\\"talk\\\":{\\\"label\\\":\\\"Talk\\\",\\\"count\\\":7},\\\"dance\\\":{\\\"label\\\":\\\"Dance\\\",\\\"count\\\":7},\\\"musicals\\\":{\\\"label\\\":\\\"Musicals\\\",\\\"count\\\":6}},\\\"subGenres\\\":{\\\"concert\\u003etribute\\\":{\\\"label\\\":\\\"Concert \\u003e Tribute\\\",\\\"count\\\":12},\\\"events\\u003ecreative-learning\\\":{\\\"label\\\":\\\"Events \\u003e Creative Learning",
+    "s\\\":{\\\"brighton\\\":{\\\"label\\\":\\\"Brighton\\\",\\\"count\\\":8}}},\\\"currentPage\\\":1,\\\"totalPages\\\":1,\\\"parsedFilters\\\":{\\\"locations\\\":[\\\"uk\\\"],\\\"genre\\\":\\\"family\\\",\\\"subGenres\\\":\\\"$undefined\\\",\\\"accessTypes\\\":\\\"$undefined\\\",\\\"date\\\":{\\\"option\\\":\\\"anyDate\\\",\\\"range\\\":\\\"$undefined\\\"},\\\"timeOfDay\\\":[]},\\\"currentSortBy\\\":\\\"upcoming\\\",\\\""
+   ],
+   "genre": [
+    "m-ui,sans-serif;color:#0d0d0d;}}@layer mui{.mui-uju0mh{-webkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;wh",
+    "ebkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;w"
+   ],
+   "Six": [
+    " The Gruffalo Family Theatre Royal Brighton Mon 16 Nov - Tue 17 Nov 2026 Buy tickets for The Gruffalo Buy tickets More information about The Gruffalo More info Six Six Musicals, Family Theatre Royal Brighton Tue 1 Dec - Sat 5 Dec 2026 Buy tickets for Six Buy tickets More information about Six More info James B Partridge -",
+    " Gruffalo Family Theatre Royal Brighton Mon 16 Nov - Tue 17 Nov 2026 Buy tickets for The Gruffalo Buy tickets More information about The Gruffalo More info Six Six Musicals, Family Theatre Royal Brighton Tue 1 Dec - Sat 5 Dec 2026 Buy tickets for Six Buy tickets More information about Six More info James B Partridge - The"
+   ]
+  }
  },
  "atg_talk": {
   "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/talk/",
   "status": 200,
   "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/talk/",
-  "length": 767246,
-  "jsonld_event_types": {},
-  "near_titles": {}
- },
- "atg_show_gareth": {
-  "url": "https://www.atgtickets.com/shows/gareth-malone/theatre-royal-brighton/",
-  "status": 200,
-  "final": "https://www.atgtickets.com/shows/gareth-malone/theatre-royal-brighton/",
-  "length": 358718,
-  "jsonld_event_types": {
-   "TheaterEvent": 1
-  },
-  "near_titles": {
-   "Gareth Malone": [
-    " Gareth Malone Tickets | Theatre Royal Brighton in Brighton | ATG Tickets window.NREUM||(NREUM={});NREUM.info = {\"agent\":\"\",\"beacon\":\"bam.eu01.nr-data.net\",\"errorBeacon\":\"bam",
-    "w.atgtickets.com\",\"isWebView\":false},\"show\":{\"showData\":{\"id\":\"6BXrTdctXayBOLWpLcG0zk\",\"key\":\"gareth-malone-theatre-royal-brighton\",\"layout\":\"default\",\"title\":\"Gareth Malone\",\"browserTitle\":\"\",\"titleDetailsId\":\"4csrszEuWbUEPhqQAK6WeV\",\"venueId\":\"0B555C4E-3CF9-4D07-AE7B-9321AE3A1163\",\"city\":\"Brighton\",\"titleSlug\":\"gareth-malone\",\"ve"
-   ]
-  }
- },
- "atg_show_six": {
-  "url": "https://www.atgtickets.com/shows/six/theatre-royal-brighton/",
-  "status": 200,
-  "final": "https://www.atgtickets.com/shows/six/theatre-royal-brighton/",
-  "length": 388815,
-  "jsonld_event_types": {
-   "TheaterEvent": 8
-  },
-  "near_titles": {
-   "Six": [
-    " Six Tickets | Theatre Royal Brighton in Brighton | ATG Tickets window.NREUM||(NREUM={});NREUM.info = {\"agent\":\"\",\"beacon\":\"bam.eu01.nr-data.net\",\"errorBeacon\":\"bam",
-    "tName\":\"www.atgtickets.com\",\"isWebView\":false},\"show\":{\"showData\":{\"id\":\"47ValfNLS8ZarWQJe0GMwi\",\"key\":\"six-theatre-royal-brighton\",\"layout\":\"default\",\"title\":\"Six\",\"browserTitle\":\"\",\"titleDetailsId\":\"1OvEWqfUGIXZJU13pFWfS8\",\"venueId\":\"0B555C4E-3CF9-4D07-AE7B-9321AE3A1163\",\"city\":\"Brighton\",\"titleSlug\":\"six\",\"venueSlug\":\""
-   ]
-  }
- },
- "oldmarket_shows": {
-  "url": "https://www.theoldmarket.com/shows",
-  "status": 200,
-  "final": "https://www.theoldmarket.com/shows",
-  "length": 542135,
+  "length": 767249,
   "jsonld_event_types": {},
   "near_titles": {
-   "Eddi Reader": [
-    "Google Calendar ICS Come and join Nick Cope for a delightful family concert and help him find his beloved hat with the wobbly bobble! View Event → Oct 16 Music Eddi Reader Friday 16 October 2026 20:00 22:30 The Old Market (map) Google Calendar ICS SOLD OUT. Brighthelmstone Promotions are delighted to present a full band show for "
+   "Genre": [
+    "ly\\\",\\\"count\\\":8},\\\"talk\\\":{\\\"label\\\":\\\"Talk\\\",\\\"count\\\":7},\\\"dance\\\":{\\\"label\\\":\\\"Dance\\\",\\\"count\\\":7},\\\"musicals\\\":{\\\"label\\\":\\\"Musicals\\\",\\\"count\\\":6}},\\\"subGenres\\\":{\\\"concert\\u003etribute\\\":{\\\"label\\\":\\\"Concert \\u003e Tribute\\\",\\\"count\\\":12},\\\"events\\u003ecreative-learning\\\":{\\\"label\\\":\\\"Events \\u003e Creative Learning",
+    "ons\\\":{\\\"brighton\\\":{\\\"label\\\":\\\"Brighton\\\",\\\"count\\\":7}}},\\\"currentPage\\\":1,\\\"totalPages\\\":1,\\\"parsedFilters\\\":{\\\"locations\\\":[\\\"uk\\\"],\\\"genre\\\":\\\"talk\\\",\\\"subGenres\\\":\\\"$undefined\\\",\\\"accessTypes\\\":\\\"$undefined\\\",\\\"date\\\":{\\\"option\\\":\\\"anyDate\\\",\\\"range\\\":\\\"$undefined\\\"},\\\"timeOfDay\\\":[]},\\\"currentSortBy\\\":\\\"upcoming\\\",\\\""
    ],
-   "Clara": [
-    "T. The smash-hit, internationally acclaimed, award-winning, multi-sell-out phenomenon is back in Brighton! View Event → Nov 21 to 22 Nov Dance Ballet Brighton: Clara’s Dream Sat, 21 Nov 2026 19:00 Sun, 22 Nov 2026 13:00 The Old Market (map) Google Calendar ICS LIMITED AVAILABILITY. Enjoy local dance school Ballet Brighton’s"
+   "genre": [
+    "m-ui,sans-serif;color:#0d0d0d;}}@layer mui{.mui-uju0mh{-webkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;wh",
+    "ebkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;w"
    ]
   }
  },
- "dome_whatson": {
-  "url": "https://brightondome.org/whats-on/",
+ "atg_events": {
+  "url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/events/",
   "status": 200,
-  "final": "https://brightondome.org/whats-on/",
-  "length": 323533,
+  "final": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/uk/events/",
+  "length": 896755,
+  "jsonld_event_types": {},
+  "near_titles": {
+   "Genre": [
+    "ly\\\",\\\"count\\\":8},\\\"talk\\\":{\\\"label\\\":\\\"Talk\\\",\\\"count\\\":7},\\\"dance\\\":{\\\"label\\\":\\\"Dance\\\",\\\"count\\\":7},\\\"musicals\\\":{\\\"label\\\":\\\"Musicals\\\",\\\"count\\\":6}},\\\"subGenres\\\":{\\\"concert\\u003etribute\\\":{\\\"label\\\":\\\"Concert \\u003e Tribute\\\",\\\"count\\\":12},\\\"events\\u003ecreative-learning\\\":{\\\"label\\\":\\\"Events \\u003e Creative Learning",
+    "\\\":{\\\"brighton\\\":{\\\"label\\\":\\\"Brighton\\\",\\\"count\\\":19}}},\\\"currentPage\\\":1,\\\"totalPages\\\":1,\\\"parsedFilters\\\":{\\\"locations\\\":[\\\"uk\\\"],\\\"genre\\\":\\\"events\\\",\\\"subGenres\\\":\\\"$undefined\\\",\\\"accessTypes\\\":\\\"$undefined\\\",\\\"date\\\":{\\\"option\\\":\\\"anyDate\\\",\\\"range\\\":\\\"$undefined\\\"},\\\"timeOfDay\\\":[]},\\\"currentSortBy\\\":\\\"upcoming\\\",\\\""
+   ],
+   "genre": [
+    "m-ui,sans-serif;color:#0d0d0d;}}@layer mui{.mui-uju0mh{-webkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;wh",
+    "ebkit-order:1;-ms-flex-order:1;order:1;display:grid;grid-template-columns:1fr 1fr;grid-template-areas:\"genre accessibility\";}}@layer mui{.mui-15in9ab{grid-area:genre;}}@layer mui{.mui-1fe2tqb{margin:0;font:400 1rem/1.5rem 'Fellix',system-ui,sans-serif;color:#0d0d0d;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;w"
+   ]
+  }
+ },
+ "dome_congregational": {
+  "url": "https://brightondome.org/whats-on/L0h-congregational/",
+  "status": 200,
+  "final": "https://brightondome.org/whats-on/L0h-congregational/",
+  "length": 220159,
+  "jsonld_event_types": {},
+  "near_titles": {
+   "genre": [
+    " - https://brightondome.org/whats-on/L8e-juliet-romeo/ undefined - https://brightondome.org/whats-on/LXh-nation/ undefined - https://brightondome.org/whats-on/#genre=179 undefined - https://brightondome.org/our-mission-and-purpose/ undefined - https://brightondome.org/board-and-staff/ undefined - https://brightondome.org/ho"
+   ],
+   "Congregational": [
+    " Congregational / Theatre / What's On | Brighton Dome { \"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"url\": \"https://brightondome.org/\", \"logo\": \"https://brighto",
+    "\"url\": \"https://brightondome.org/\", \"logo\": \"https://brightondome.org/assets/img/oglogos/dome.png\" } {\"@context\":\"https:\\/\\/schema.org\",\"@type\":\"Event\",\"name\":\"Congregational\",\"description\":\"Written by Fatt Butcher in collaboration with Nicky Harris & Tobre, presented by Brighton Dome & Marlborough Productions The nightclubs are clo"
+   ]
+  }
+ },
+ "dome_benfolds": {
+  "url": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/",
+  "status": 200,
+  "final": "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/",
+  "length": 193874,
+  "jsonld_event_types": {},
+  "near_titles": {
+   "genre": [
+    "\"@type\":\"Event\",\"name\":\"Ben Folds: The Paper Airplane Request Tour\",\"description\":\"Emmy-nominated singer-songwriter Ben Folds, celebrated for his wide-ranging, genre-bending catalogue, returns to Brighton Dome! He currently tours as a pop artist, while also performing for over two decades with some of the world\\u2019s great",
+    " to wishlist Add to wishlist View Wishlist Find and book tickets from &nbsp;£32.00 Emmy-nominated singer-songwriter Ben Folds, celebrated for his wide-ranging, genre-bending catalogue, returns to Brighton Dome! He currently tours as a pop artist, while also performing for over two decades with some of the world’s greatest s"
+   ]
+  }
+ },
+ "dome_moderntoss": {
+  "url": "https://brightondome.org/whats-on/LGJ-modern-toss-flies/",
+  "status": 200,
+  "final": "https://brightondome.org/whats-on/LGJ-modern-toss-flies/",
+  "length": 173545,
   "jsonld_event_types": {},
   "near_titles": {}
  }
