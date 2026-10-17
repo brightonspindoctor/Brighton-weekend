@@ -92,7 +92,8 @@
   --bw-suggest-bg:#191C38; --bw-suggest-line:#4A4F8C; --bw-suggest-fg:#C4C8FF; /* "You might like" suggestion cards */
   --bw-coral-glow:rgba(255,119,103,.16);               /* shared-event halo */
   --bw-sold-bg:#382022;    --bw-sold-line:#704047;      /* Sold out badge */
-  --bw-sticker-joy:#FFE14D; --bw-sticker-beatdown:#B69CFF; --bw-sticker-dicemeeple:#8FE3B0; --bw-sticker-ink:#0B1D2F; /* promoter stickers */
+  --bw-sticker-joy:#FFE14D; --bw-sticker-beatdown:#B69CFF; --bw-sticker-ink:#0B1D2F; /* promoter stickers */
+  --bw-sticker-dicemeeple:#14275F; --bw-sticker-dicemeeple-ink:#C59B22; /* The Dice & Meeple's own navy and gold */
   --bw-sparkle:#FFD982;     --bw-sparkle-line:#6E5A2C;    --bw-sparkle-glow:rgba(255,217,130,.20); /* The Dice & Meeple's cards: ticket gold */
   --bw-shadow-logo:0 4px 16px rgba(0,0,0,.35);
   --bw-shadow-logo-lg:0 8px 24px rgba(0,0,0,.45);
@@ -204,8 +205,8 @@ header{position:sticky;top:0;z-index:5;background:var(--bw-navy);border-bottom:1
 .promoter-sticker{display:inline-block;font-size:var(--bw-text-xs);font-weight:800;letter-spacing:.02em;line-height:1;padding:5px 7px;border-radius:4px;transform:rotate(6deg);box-shadow:var(--bw-shadow-sticker);white-space:nowrap;user-select:none}
 .promoter-sticker.joy{background:var(--bw-sticker-joy);color:var(--bw-sticker-ink)}
 .promoter-sticker.beatdown{background:var(--bw-sticker-beatdown);color:var(--bw-sticker-ink)}
-.promoter-sticker.dicemeeple{background:var(--bw-sticker-dicemeeple);color:var(--bw-sticker-ink);display:inline-flex;align-items:center;gap:4px}
-.sticker-die{width:11px;height:11px;flex:none}
+.promoter-sticker.dicemeeple{background:var(--bw-sticker-dicemeeple);color:var(--bw-sticker-dicemeeple-ink);display:inline-flex;align-items:center;gap:4px;padding:2px 8px 2px 2px;border:1px solid rgba(197,155,34,.6)}
+.sticker-logo{width:22px;height:22px;border-radius:3px;flex:none;display:block} /* their logo on their navy, so it blends into the sticker */
 /* The Dice & Meeple's cards sparkle (SPARKLE_PROMOTERS): a ticket-gold edge and
    three small stars that twinkle in turn. Still when motion is reduced. */
 .card.sparkle{position:relative;border-color:var(--bw-sparkle-line);box-shadow:var(--bw-shadow-card),0 0 22px -6px var(--bw-sparkle-glow)}
@@ -1511,9 +1512,10 @@ const SHARE_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true">
 const CAL_ICON='<svg class="cal-glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 13v4M10 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 function ticketLink(e){const u=safeUrl(e.ticket_url);return u?`<a class="ticket" href="${esc(u)}" target="_blank" rel="noopener" data-ticket-event="${esc(e.id)}" data-ticket-source="${String(e.id||'').startsWith('festival:')?'festival':'app'}" aria-label="Get tickets for ${esc(e.title)} (opens in a new tab)">${TICKET_ICON}Get tickets</a>`:''}
 // Stickers for promoters whose gigs we read (scripts/scrape-discovery.py sets e.promoter).
-const DIE_ICON='<svg class="sticker-die" viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="1.5" width="13" height="13" rx="3.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="5.1" cy="5.1" r="1.35" fill="currentColor"/><circle cx="8" cy="8" r="1.35" fill="currentColor"/><circle cx="10.9" cy="10.9" r="1.35" fill="currentColor"/></svg>';
+// The Dice & Meeple's own logo, used with their agreement.
+const TDM_LOGO='<img class="sticker-logo" src="icons/promoters/the-dice-and-meeple.png?v=2" alt="" width="22" height="22">';
 const PROMOTER_STICKERS={'JOY. Concerts':{label:'JOY.',cls:'joy'},'Beat Down Promotions':{label:'BEAT DOWN',cls:'beatdown'},
- 'The Dice & Meeple':{label:'DICE & MEEPLE',cls:'dicemeeple',icon:DIE_ICON}};
+ 'The Dice & Meeple':{label:'DICE & MEEPLE',cls:'dicemeeple',icon:TDM_LOGO}};
 function stickerContent(p){return (p.icon||'')+esc(p.label)}
 // A promoter whose events are all listed on Not music (The Dice & Meeple's
 // games nights) has nothing on Discover, so its sticker opens the Promoter
@@ -2295,7 +2297,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=89', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=90', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>

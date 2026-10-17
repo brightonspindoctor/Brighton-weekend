@@ -6,7 +6,7 @@
  * Bump VERSION (and the sw.js?v= number at the end of index.html) whenever
  * index.html changes, so every installed copy drops its old cache.
  */
-const VERSION = 'bw-v89';
+const VERSION = 'bw-v90';
 // The app shell, exactly as index.html requests it, so it opens offline.
 const CORE = [
   './',
