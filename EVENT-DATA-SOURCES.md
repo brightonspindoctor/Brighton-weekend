@@ -27,9 +27,10 @@ if the day's refresh has already happened.
 
 2. **Discovery calendars** (Visit Brighton, Eventbrite, Ticketmaster, Skiddle,
    the Rival Cults gig list, the promoters JOY. Concerts and Beat Down Promotions,
-   and The Dice & Meeple's board game nights), read by `scripts/scrape-discovery.py`.
-   Events are kept only when they are at a venue in `event-sources.json` (or the
-   Amex Stadium), apart from The Dice & Meeple's (see below).
+   and the games nights of The Dice & Meeple, Brighton Pub Boardgamers and Dice
+   Saloon), read by `scripts/scrape-discovery.py`. Events are kept only when they
+   are at a venue in `event-sources.json` (or the Amex Stadium), apart from the
+   games nights (see below).
 
 3. **Community events** added in the app (Supabase `bw_custom_events`).
 
@@ -124,9 +125,29 @@ move between pubs, so it is in `ANY_VENUE_PROMOTERS`: a listing with a Brighton
 & Hove postcode is kept at whatever venue Ticket Tailor names, filed as Other,
 and the app lists it under Not music → Board games (`GAMES_PROMOTERS` in
 `index.html`). It has no sticker, since stickers filter Discover's gigs; it
-appears in Search → Promoter. Dice Saloon (`dicesaloon.com`) isn't read: its
-site asks automated tools not to read it (robots.txt). Brighton Pub Boardgamers
-list its Sunday games on Meetup.
+appears in Search → Promoter.
+
+Brighton Pub Boardgamers (`meetup.com/brighton-pub-boardgamers/events/`; the
+organisers are happy to be listed) is read by `meetup_events`: the group's
+events page holds its next six weeks or so of meets as data (`__NEXT_DATA__`).
+Online, cancelled and past meets, and anything outside Brighton & Hove, are left
+out. Meetup's robots.txt allows that page but not the `/gql` and `/_next/data`
+addresses the page loads more from, so only what the page holds is read. Meetup
+pages are free sign-ups, not ticket sales, so `check-tickets.py` never visits
+them (`NO_CHECK_HOSTS`).
+
+Dice Saloon (88 London Road; its shop is `dicesaloon.co.uk`, not `.com`) is read
+by `dicesaloon_events` from its Shopify events collection as JSON
+(`/collections/events/products.json`, allowed by its robots.txt). Each product is
+one event, dated in its title, which is taken off; a product with no date is
+left out, and a start time is only taken from a ticket option that gives one.
+Kids' sessions are filed as Family, so they show under Not music → Other. The
+Sunday meets it hosts for Brighton Pub Boardgamers aren't listed twice: the
+group's Meetup listing is kept, with Dice Saloon's £3 ticket page for that day as
+its ticket link (`HOSTED_TICKETS`).
+
+All three are in `ANY_VENUE_PROMOTERS` and `GAMES_PROMOTERS`, so their venues
+need no setting up, and every listing goes under Board games.
 
 Rival Cults (`rivalcults.com/gigs`) is one table of Brighton gigs (Date, Title,
 Location, Link) read by `rivalcults_rows` in `scrape-discovery.py`. Its venue
