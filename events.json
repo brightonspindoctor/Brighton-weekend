@@ -645,6 +645,13 @@
           "link": "https://brightondome.org/whats-on/LgN-paddy-young-will-sir-be-laughing-alone/"
         }
       ]
+    },
+    {
+      "venue": "Glyndebourne",
+      "url": "https://www.glyndebourne.com/whats-on/",
+      "events": 0,
+      "error": "",
+      "sample": []
     }
   ],
   "events": [
@@ -1393,6 +1400,7 @@
       "ticket_url": "https://brightondome.org/whats-on/LlA-maisie-adam-whatsherface/",
       "last_seen": "2026-10-18",
       "also_ids": [
+        "2026-10-21-brighton-dome-accessible-events-comedy-maisie-adam-whatsherface-brighton-dome-comedy-festival-in-cahoots-with-komedia-2026-wed-21-oct-concert-hall-from-29-50-find-out-mo",
         "2026-10-21-brighton-dome-accessible-events-comedy-maisie-adam-whatsherface-brighton-dome-comedy-festival-in-cahoots-with-komedia-2026-wed-21-oct-concert-hall-from-29-50-limited-ava",
         "2026-10-21-brighton-dome-maisie-adam-whatsherface"
       ],
@@ -2258,6 +2266,19 @@
       "last_seen": "2026-10-18"
     },
     {
+      "id": "2026-10-23-dice-saloon-aos-age-of-sigmar-weekly",
+      "title": "AOS - Age Of Sigmar Weekly",
+      "date": "2026-10-23",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/aos-age-of-sigmar-weekly-october-23-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-18"
+    },
+    {
       "id": "2026-10-23-dice-saloon-blood-bowl-night-sevens-to-elevens",
       "title": "Blood Bowl Night - Sevens to Elevens",
       "date": "2026-10-23",
@@ -2292,7 +2313,10 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.brunswickpub.co.uk/event-details/ian-prowse-amsterdam-brighton-hove",
-      "last_seen": "2026-10-18"
+      "last_seen": "2026-10-18",
+      "also_ids": [
+        "2026-10-23-the-brunswick-ian-prowse-amsterdam-alex-francis-brighton"
+      ]
     },
     {
       "id": "2026-10-23-the-pipeline-lovedogz-hekate-heads-the-dolarhydes-charmian-devi-and-the-raven",
@@ -5191,6 +5215,19 @@
       "last_seen": "2026-10-18"
     },
     {
+      "id": "2026-11-01-dice-saloon-spearhead-sunday",
+      "title": "Spearhead Sunday",
+      "date": "2026-11-01",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/spearhead-sunday-01-november-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-18"
+    },
+    {
       "id": "2026-11-01-greendoorstore-burner-beyond-extinction",
       "title": "Burner Beyond Extinction",
       "date": "2026-11-01",
@@ -7574,6 +7611,19 @@
       "ticket_url": "https://www.atgtickets.com/shows/the-chicago-blues-brothers-live-at-the-country-bunker/theatre-royal-brighton/calendar/",
       "last_seen": "2026-10-18",
       "venue_label": "Concert"
+    },
+    {
+      "id": "2026-11-13-dice-saloon-kids-club-adventures-ages-8-15",
+      "title": "Kids Club Adventures ages 8-15",
+      "date": "2026-11-13",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "15:30",
+      "finish_time": "",
+      "category": "Family",
+      "ticket_url": "https://dicesaloon.co.uk/products/kids-club-adventures-ages-8-15-november-13-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-18"
     },
     {
       "id": "2026-11-13-volks-30-years-of-volks-presents-afu-ra-body-of-the-life-force",
@@ -12564,7 +12614,7 @@
       "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "time": "",
       "finish_time": "",
-      "last_seen": "2026-10-06",
+      "last_seen": "2026-10-18",
       "venue_label": "Events"
     },
     {
@@ -19063,7 +19113,7 @@
   "discovery_report": {
     "calendars_loaded": 10,
     "calendars": 10,
-    "events_found": 933,
+    "events_found": 927,
     "rivalcults_unknown_venues": [
       "Brighton Playhouse",
       "The Yellow Book"

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-01-dice-saloon-spearhead-sunday@brightonweekend.co.uk
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Spearhead Sunday
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/spearhead-sunday-01-
+ november-2026\nMore: https://brightonweekend.co.uk/e/2026-11-01-dice-saloo
+ n-spearhead-sunday/
+URL:https://brightonweekend.co.uk/e/2026-11-01-dice-saloon-spearhead-sunday
+ /
+END:VEVENT
+END:VCALENDAR
