@@ -469,6 +469,57 @@ def apply_ticketsolve(events,source):
         if not e.get('time') and p['time']:e['time']=p['time']
     print(f"{source['venue']}: Ticketsolve feed filed {matched} of {len(events)} listings")
 
+# ---- Glyndebourne -------------------------------------------------------------
+# Its season page (/autumn/, /festival/) has one card per production with only a
+# date range. Each production's page lists its performances as booking links
+# ("19 Mon, Oct 2026 4:00pm On Sale", "30 Fri, Oct 2026 Limited"), and its timings
+# say what it is ("Opera starts: 4.00pm", "Concert starts: 7.00pm"); that word
+# files it (listing_rules.LABEL_CATEGORIES: Opera is Theatre, Concert is Music).
+# A booking link without a time takes the page's start time only when the page
+# gives one start time; with several (an evening and a matinee) none is guessed.
+GLYNDE_PERF=re.compile(r'(\d{1,2})\s+(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)[a-z]*,?\s+([A-Za-z]{3,9})\s+(\d{4})(?:\s+(\d{1,2}:\d{2})\s*([ap]m))?',re.I)
+GLYNDE_STARTS=re.compile(r'\b(Opera|Concert|Recital|Masterclass|Performance|Show|Talk)\s+starts:?\s*(\d{1,2})[.:](\d{2})\s*([ap]m)',re.I)
+def to24(h,m,ap):return f'{int(h)%12+(12 if ap.lower()=="pm" else 0):02d}:{m}'
+def glyndebourne_production(page,page_url,fallback_title=''):
+    soup=BeautifulSoup(page,'html.parser')
+    h1=soup.find('h1')
+    title=strip_listing_date(clean(h1.get_text(' ',strip=True)) if h1 else '') or fallback_title or slug_title(page_url)
+    starts=GLYNDE_STARTS.findall(clean(soup.get_text(' ',strip=True)))
+    kind=starts[0][0].title() if starts else ''
+    page_times={to24(h,m,ap) for _,h,m,ap in starts}
+    out=[];seen=set()
+    for a in soup.find_all('a',href=True):
+        link=urljoin(page_url,a['href'])
+        if 'tickets.glyndebourne.com' not in link or '/performance/' not in link or link in seen:continue
+        text=clean(a.get_text(' ',strip=True));m=GLYNDE_PERF.search(text)
+        if not m:continue
+        seen.add(link)
+        time=to24(*m.group(4).split(':'),m.group(5)) if m.group(4) else (next(iter(page_times)) if len(page_times)==1 else '')
+        start=parse_dt(f'{m.group(1)} {m.group(2)} {m.group(3)}')
+        if not start:continue
+        e=normalise({'name':title,'startDate':start.date().isoformat()+(f'T{time}' if time else ''),'url':link},'Glyndebourne',page_url)
+        if not e:continue
+        if re.search(r'\bsold\s*out\b',text,re.I):e['status']='SOLD OUT'
+        out.append(e)
+    if kind and out:add_labels('Glyndebourne',[{'key':'','title':title,'label':kind}])
+    return out
+async def glyndebourne_events(browser,pages):
+    urls={}
+    for page,page_url in pages:
+        for a in BeautifulSoup(page,'html.parser').find_all('a',href=True):
+            u=urljoin(page_url,a['href']).split('#')[0].split('?')[0];p=urlparse(u)
+            if p.netloc.endswith('glyndebourne.com') and re.fullmatch(r'/events/[^/]+/?',p.path) and not urls.get(u):
+                name=clean(a.get_text(' ',strip=True));urls[u]=name if valid_title(name) else ''
+    sem=asyncio.Semaphore(4)
+    async def one(url,name):
+        async with sem:h,final,err=await get_html(browser,url)
+        if err:print(f'Glyndebourne: {url} failed: {err[:120]}');return []
+        return glyndebourne_production(h,final,name)
+    found=await asyncio.gather(*(one(u,n) for u,n in urls.items()))
+    events=[e for evs in found for e in evs]
+    print(f'Glyndebourne: {len(urls)} productions, {len(events)} performances')
+    return events
+
 async def scrape_source(browser,source):
     html,final,err=await get_html(browser,source['url'])
     venue=source['venue'];is_dome_search='brightondome.org' in source['url']
@@ -481,6 +532,15 @@ async def scrape_source(browser,source):
         except Exception as exc:
             err=err or str(exc)
     if err:return [],err
+    if source.get('glyndebourne'):
+        # More season pages (the summer Festival as well as the autumn season):
+        # productions linked from any of them are read; one that fails is skipped.
+        pages=[(html,final)]
+        for su in source.get('season_pages',[]):
+            sh,sf,serr=await get_html(browser,su)
+            if serr:print(f"{venue}: season page failed {su}: {serr[:120]}")
+            else:pages.append((sh,sf))
+        return await glyndebourne_events(browser,pages),None
     collect_labels(venue,html,final)
     # "label_pages": more of the venue's pages that only lend their labels
     # (Theatre Royal's genre lists on ATG, which cover its whole programme).

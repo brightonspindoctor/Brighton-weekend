@@ -209,7 +209,11 @@
   },
   {
     "venue": "Glyndebourne",
-    "url": "https://www.glyndebourne.com/whats-on/",
-    "note": "Opera house near Lewes, outside Brighton & Hove; added 18 October 2026 at Jonny's request. Opera is filed as Theatre."
+    "url": "https://www.glyndebourne.com/autumn/",
+    "glyndebourne": true,
+    "season_pages": [
+      "https://www.glyndebourne.com/festival/"
+    ],
+    "note": "Opera house near Lewes, outside Brighton & Hove; added 18 October 2026. Productions linked from the season pages (autumn season, summer Festival) are read one by one for their performances (glyndebourne_events). Not /whats-on/, which may include touring dates at other venues."
   }
 ]
