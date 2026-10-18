@@ -1307,9 +1307,11 @@ async function createGroup(){
  try{
   const data=await rpc('bw_create_group',{p_user_id:uid(),p_user_name:name(),p_name:n,p_is_private:true});
   const g=Array.isArray(data)?data[0]:data;
-  $('newGroupName').value='';
-  if(g?.join_pin) dialog({title:`${n} is ready`,message:`Its PIN is ${g.join_pin}. Tap Invite next to it to send friends a link with the PIN built in.`,ok:'Got it'});
+  $('newGroupName').value='';hide('createGroupPanel');
   await loadGroups();renderOnboardingGroups();renderGroupManager();
+  // Offer the invite link straight away, while they're thinking about who to ask (v91).
+  if(g?.id&&await confirmDialog({title:`${g.name||n} is ready`,message:`Send your friends an invite link. The PIN${g.join_pin?` (${g.join_pin})`:''} is built in, so they join in one tap.`,ok:'Invite friends',cancel:'Later'}))
+   createGroupInviteLink(g.id,g.name||n,true,g.join_pin||null);
  }catch(e){toast('Could not create group. '+e.message,'error')}
 }
 async function joinGroup(groupId,pin=null,privateName=null){
@@ -2261,6 +2263,31 @@ function showHome(){
  saveSeen();
  render(); // draw the 'New since your last visit' panel into Discover
 }
+// The third time a signed-in person opens the app and they're still not in a
+// group, suggest starting one and inviting friends. An "open" is a new tab or a
+// fresh start of the installed app, not a reload. Shown once per person on each
+// device; if something else is on screen that time, it waits for a later open (v91).
+const opensKey=()=>'bw_opens_'+uid(), groupNudgeKey=()=>'bw_group_nudge_'+uid();
+function countOpen(){
+ try{
+  const counted='bw_open_counted_'+uid();
+  let n=Number(localStorage.getItem(opensKey()))||0;
+  if(!sessionStorage.getItem(counted)){sessionStorage.setItem(counted,'1');n+=1;localStorage.setItem(opensKey(),String(n))}
+  return n;
+ }catch(e){return 0}
+}
+async function maybeGroupNudge(){
+ if(!authUser||!name())return;
+ const opens=countOpen();
+ if(groups.length||opens<3)return;
+ try{if(localStorage.getItem(groupNudgeKey()))return}catch(e){return}
+ // Never talk over setup, the welcome-back card, another pop-up or a shared link.
+ if(!$('welcome').classList.contains('hidden')||!$('home').classList.contains('hidden')||document.querySelector('dialog[open]')||readPendingLink())return;
+ try{localStorage.setItem(groupNudgeKey(),'1')}catch(e){}
+ const go=await confirmDialog({title:'Plans are better with friends',message:'Start a group and invite your friends. You\'ll see what they\'re going to, and they\'ll see your plans.',ok:'Create a group',cancel:'Not now'});
+ if(!go)return;
+ showWelcome('groups');show('createGroupPanel');setTimeout(()=>$('newGroupName').focus(),50);
+}
 function openTab(tab){hide('home');const b=document.querySelector(`.nav button[data-tab="${tab}"]`);if(b)b.click()}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-home-go]');if(b)openTab(b.dataset.homeGo)});
 $('homeContinue').onclick=()=>openTab('discover');
@@ -2284,6 +2311,7 @@ async function loadUserData(){
  renderProfileIconSettings(); renderAll(); renderGroupManager();
  showHome(); showSharedEvent();
  await resumeGuestAction();
+ await maybeGroupNudge();
 }
 (async()=>{
  renderVenues(); renderAll();
@@ -2297,7 +2325,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=90', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=91', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
