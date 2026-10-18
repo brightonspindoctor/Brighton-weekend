@@ -87,12 +87,25 @@ def event_url(e: dict) -> str:
     return f'{SITE}/e/{e["id"]}/'
 
 
+# Venues outside Brighton & Hove: how pages name the place, and the town for
+# schema.org. Everything else is "Brighton" / Brighton and Hove.
+VENUE_PLACE = {'Glyndebourne': ('near Lewes', 'Lewes')}
+
+
+def place(venue: str) -> str:
+    return VENUE_PLACE.get(venue, ('Brighton',))[0]
+
+
+def locality(venue: str) -> str:
+    return VENUE_PLACE[venue][1] if venue in VENUE_PLACE else 'Brighton and Hove'
+
+
 def summary(e: dict, d: date) -> str:
     """One line for the preview card and meta description."""
     bits = [short_date(d)]
     if TIME_OK.match(e.get('time') or ''):
         bits.append(e['time'])
-    bits.append(f'{e["venue"]}, Brighton')
+    bits.append(f'{e["venue"]}, {place(e["venue"])}')
     line = ' · '.join(bits)
     if (e.get('status') or '').upper() == 'SOLD OUT':
         line += ' · Sold out'
@@ -109,7 +122,7 @@ def kind_text(e: dict) -> str:
 def event_description(e: dict, d: date) -> str:
     when = long_date(d) + (f' at {e["time"]}' if TIME_OK.match(e.get('time') or '') else '')
     sold = ' Sold out.' if (e.get('status') or '').upper() == 'SOLD OUT' else ''
-    return f'{kind_text(e)} at {e["venue"]}, Brighton, on {when}.{sold}'
+    return f'{kind_text(e)} at {e["venue"]}, {place(e["venue"])}, on {when}.{sold}'
 
 
 def event_json_ld(e: dict, d: date) -> str:
@@ -125,7 +138,7 @@ def event_json_ld(e: dict, d: date) -> str:
             '@type': 'Place',
             'name': e['venue'],
             # Town only: street addresses aren't in the data, and we don't guess.
-            'address': {'@type': 'PostalAddress', 'addressLocality': 'Brighton and Hove',
+            'address': {'@type': 'PostalAddress', 'addressLocality': locality(e['venue']),
                         'addressRegion': 'East Sussex', 'addressCountry': 'GB'},
         },
         'image': [OG_IMAGE],
@@ -195,7 +208,7 @@ def event_ics(e: dict, d: date) -> str:
     lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN',
              'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', 'BEGIN:VEVENT',
              f'UID:{e["id"]}@brightonweekend.co.uk', f'DTSTAMP:{d:%Y%m%d}T000000Z', *when,
-             f'SUMMARY:{ics_escape(e["title"])}', f'LOCATION:{ics_escape(e["venue"] + ", Brighton")}',
+             f'SUMMARY:{ics_escape(e["title"])}', f'LOCATION:{ics_escape(e["venue"] + ", " + place(e["venue"]))}',
              f'DESCRIPTION:{ics_escape(details)}', f'URL:{event_url(e)}', 'END:VEVENT', 'END:VCALENDAR']
     return '\r\n'.join(ics_fold(x) for x in lines) + '\r\n'
 
@@ -370,7 +383,7 @@ def event_page(e: dict, d: date, same_day: list[tuple[dict, date]]) -> str:
     if time_text(e):
         facts.append(f'<li>{esc(time_text(e))}</li>')
     vslug = venue_slug(e['venue'])
-    facts.append(f'<li><a href="/venues/{vslug}/">{esc(e["venue"])}</a>, Brighton</li>' if vslug else f'<li>{esc(e["venue"])}, Brighton</li>')
+    facts.append(f'<li><a href="/venues/{vslug}/">{esc(e["venue"])}</a>, {esc(place(e["venue"]))}</li>' if vslug else f'<li>{esc(e["venue"])}, {esc(place(e["venue"]))}</li>')
     if e.get('price'):
         facts.append(f'<li>{esc(e["price"])}</li>')
     if e.get('promoter'):
@@ -394,7 +407,7 @@ def event_page(e: dict, d: date, same_day: list[tuple[dict, date]]) -> str:
     script = f"""<script>(function(){{var q=new URLSearchParams(location.search);if(!q.has('share'))return;q.delete('share');q.set('event',{json.dumps(e['id'])});location.replace('/?'+q.toString());}})();</script>
 <script>(function(){{function t(ev){{var a=ev.target.closest&&ev.target.closest('a[data-ticket-event]');if(!a)return;var g=null;try{{g=localStorage.getItem('bw_guest_id')}}catch(x){{}}try{{fetch({json.dumps(SUPABASE_URL + '/rest/v1/rpc/bw_track_ticket_click')},{{method:'POST',keepalive:true,headers:{{apikey:{json.dumps(SUPABASE_KEY)},Authorization:'Bearer '+{json.dumps(SUPABASE_KEY)},'Content-Type':'application/json'}},body:JSON.stringify({{p_event_id:a.getAttribute('data-ticket-event'),p_source:'event_page',p_guest_id:g||null}})}}).catch(function(){{}})}}catch(x){{}}}}document.addEventListener('click',t);document.addEventListener('auxclick',t);}})();</script>
 """
-    title = f'{e["title"]} – {e["venue"]}, Brighton, {short_date(d)} | Brighton Weekend'
+    title = f'{e["title"]} – {e["venue"]}, {place(e["venue"])}, {short_date(d)} | Brighton Weekend'
     return page(title=title, description=summary(e, d), url=event_url(e), og_title=e['title'], body=body,
                 head_extra=event_json_ld(e, d) + breadcrumbs(trail), script=script)
 
@@ -526,19 +539,19 @@ def venue_page(venue: str, slug: str, items: list[tuple[dict, date]]) -> str:
     trail = [('Brighton Weekend', f'{SITE}/'), ('Venues', f'{SITE}/venues/'), (venue, url)]
     counts = count_phrase(items)
     nxt = ', '.join(e['title'] for e, _ in items[:3])
-    desc = (f'What’s on at {venue}, Brighton: {counts or str(len(items)) + " upcoming events"}'
+    desc = (f'What’s on at {venue}, {place(venue)}: {counts or str(len(items)) + " upcoming events"}'
             + (f', including {nxt}' if nxt else '') + '. Dates, times and tickets, updated every morning.')
     shown = items[:150]
     more = f'<p class="note">Showing the next {len(shown)} of {len(items)}. The app has the rest.</p>' if len(items) > len(shown) else ''
     body = f"""<article class="card">
 {crumb_nav(trail)}
 <h1>What’s on at {esc(venue)}</h1>
-<p class="lede">Upcoming events at {esc(venue)}, Brighton</p>
+<p class="lede">Upcoming events at {esc(venue)}, {esc(place(venue))}</p>
 <div class="actions first"><a class="btn go" href="/">Plan it with friends</a></div>
 {listing(shown, show_day=True) if shown else '<p class="lede">Nothing listed here at the moment.</p>'}{more}
 {hubs_nav()}
 </article>"""
-    return page(title=f'What’s on at {venue}, Brighton: upcoming events | Brighton Weekend', description=desc, url=url,
+    return page(title=f'What’s on at {venue}, {place(venue)}: upcoming events | Brighton Weekend', description=desc, url=url,
                 og_title=f'What’s on at {venue}', body=body, head_extra=breadcrumbs(trail))
 
 

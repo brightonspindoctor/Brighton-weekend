@@ -206,5 +206,10 @@
     "url": "https://www.rivalcults.com/gigs",
     "disabled": true,
     "note": "Listed via Rival Cults (scrape-discovery.py); no own listings page read yet"
+  },
+  {
+    "venue": "Glyndebourne",
+    "url": "https://www.glyndebourne.com/whats-on/",
+    "note": "Opera house near Lewes, outside Brighton & Hove; added 18 October 2026 at Jonny's request. Opera is filed as Theatre."
   }
 ]

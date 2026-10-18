@@ -200,4 +200,5 @@ listing supplies the time when there is one.
 | The Hope & Ruin | Moved to hope.pub |
 | A L P H A B E T | Own listings switched off: its JOY. Concerts gigs come via joyconcerts.com |
 | Babble, Old Albion | Switched off: no listings found anywhere |
+| Glyndebourne | Added 18 October 2026: its own what's-on page. Outside Brighton & Hove, so its event pages say "near Lewes" (`VENUE_PLACE` in `build-event-pages.py`) |
 | The Brunswick, Caroline of Brunswick, The Cowley Club, Daltons, The Folklore Rooms, Fortune of War, Resident, The Rose Hill, Rossi Bar, The Bee's Mouth, The Waterbear | Added 7 October 2026: listings via Rival Cults only |
