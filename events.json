@@ -227,28 +227,9 @@
     {
       "venue": "Patterns",
       "url": "https://patternsbrighton.com/club/",
-      "events": 120,
+      "events": 0,
       "error": "",
-      "sample": [
-        {
-          "title": "1BTN X Vicious Charm. Presents JIM live!",
-          "date": "2026-10-18",
-          "time": "15:00",
-          "link": "https://dice.fm/event/1btn-x-vicious-charm-presents-jim-live-18th-oct-patterns-brighton-tickets"
-        },
-        {
-          "title": "Hyperreal presents: The Carnival of Light",
-          "date": "2026-10-18",
-          "time": "19:00",
-          "link": "https://dice.fm/event/hyperreal-presents-the-carnival-of-light-18th-oct-patterns-brighton-tickets"
-        },
-        {
-          "title": "Nectar Woode",
-          "date": "2026-10-20",
-          "time": "19:00",
-          "link": "https://dice.fm/event/nectar-woode-20th-oct-patterns-brighton-tickets"
-        }
-      ]
+      "sample": []
     },
     {
       "venue": "Patterns",
@@ -331,54 +312,16 @@
     {
       "venue": "The Forge Comedy Club",
       "url": "https://forgecomedyclub.com/",
-      "events": 183,
+      "events": 0,
       "error": "",
-      "sample": [
-        {
-          "title": "The Noise Next Door: Furnace With… Deborah Frances White!",
-          "date": "2026-10-18",
-          "time": "19:00",
-          "link": "https://www.eventbrite.co.uk/e/the-noise-next-door-furnace-with-deborah-frances-white-tickets-1952116054669"
-        },
-        {
-          "title": "The Noise Next Door: Furnace With… Deborah Frances White!",
-          "date": "2026-10-18",
-          "time": "19:00",
-          "link": "https://www.eventbrite.co.uk/e/the-noise-next-door-furnace-with-deborah-frances-white-tickets-1952116054669"
-        },
-        {
-          "title": "The Noise Next Door: Furnace With… Deborah Frances White!",
-          "date": "2026-10-18",
-          "time": "",
-          "link": "https://www.eventbrite.co.uk/e/the-noise-next-door-furnace-with-deborah-frances-white-tickets-1952116054669"
-        }
-      ]
+      "sample": []
     },
     {
       "venue": "The Forge Comedy Club",
       "url": "https://forgecomedyclub.co.uk/",
-      "events": 183,
+      "events": 0,
       "error": "",
-      "sample": [
-        {
-          "title": "The Noise Next Door: Furnace With… Deborah Frances White!",
-          "date": "2026-10-18",
-          "time": "19:00",
-          "link": "https://www.eventbrite.co.uk/e/the-noise-next-door-furnace-with-deborah-frances-white-tickets-1952116054669"
-        },
-        {
-          "title": "The Noise Next Door: Furnace With… Deborah Frances White!",
-          "date": "2026-10-18",
-          "time": "19:00",
-          "link": "https://www.eventbrite.co.uk/e/the-noise-next-door-furnace-with-deborah-frances-white-tickets-1952116054669"
-        },
-        {
-          "title": "The Noise Next Door: Furnace With… Deborah Frances White!",
-          "date": "2026-10-18",
-          "time": "",
-          "link": "https://www.eventbrite.co.uk/e/the-noise-next-door-furnace-with-deborah-frances-white-tickets-1952116054669"
-        }
-      ]
+      "sample": []
     },
     {
       "venue": "Theatre Royal Brighton",
@@ -435,28 +378,9 @@
     {
       "venue": "The Prince Albert",
       "url": "https://princealbertbrighton.co.uk/",
-      "events": 5,
+      "events": 0,
       "error": "",
-      "sample": [
-        {
-          "title": "Superbloom Tickets",
-          "date": "2026-10-21",
-          "time": "19:30",
-          "link": "https://cutflowers.band/pages/superbloom-tickets"
-        },
-        {
-          "title": "Superbloom Tickets",
-          "date": "2026-10-21",
-          "time": "19:30",
-          "link": "https://cutflowers.band/pages/superbloom-tickets"
-        },
-        {
-          "title": "Superbloom Tickets",
-          "date": "2026-10-21",
-          "time": "19:30",
-          "link": "https://cutflowers.band/pages/superbloom-tickets"
-        }
-      ]
+      "sample": []
     },
     {
       "venue": "The Pipeline",
@@ -2047,7 +1971,7 @@
     },
     {
       "id": "2026-10-23-glyndebourne-the-barber-of-seville",
-      "title": "The barber of Seville",
+      "title": "The Barber of Seville",
       "date": "2026-10-23",
       "venue": "Glyndebourne",
       "source": "venue",
@@ -2679,7 +2603,7 @@
       "time": "23:00",
       "finish_time": "04:00",
       "category": "Music",
-      "ticket_url": "https://dice.fm/event/p-rallel-nevermind-uk-tour-24th-oct-patterns-brighton-tickets",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/P-rallel-Nevermind-UK-Tour/42669942/",
       "last_seen": "2026-10-18",
       "also_ids": [
         "2026-10-24-patterns-p-rallel-nevermind-uk-tour-2"
@@ -2979,7 +2903,7 @@
     },
     {
       "id": "2026-10-25-glyndebourne-the-barber-of-seville",
-      "title": "The barber of Seville",
+      "title": "The Barber of Seville",
       "date": "2026-10-25",
       "venue": "Glyndebourne",
       "source": "venue",
@@ -3727,7 +3651,7 @@
     },
     {
       "id": "2026-10-28-glyndebourne-the-barber-of-seville",
-      "title": "The barber of Seville",
+      "title": "The Barber of Seville",
       "date": "2026-10-28",
       "venue": "Glyndebourne",
       "source": "venue",
@@ -4409,14 +4333,14 @@
     },
     {
       "id": "2026-10-30-patterns-brighton-dansu-discs-lucas-alexander-rtk-tarantino-more",
-      "title": "Dansu Discs with Lucas Alexander & RTK Tarantino",
+      "title": "Dansu Discs: Lucas Alexander & RTK Tarantino",
       "date": "2026-10-30",
       "venue": "Patterns",
       "source": "venue",
       "time": "23:00",
       "finish_time": "04:00",
       "category": "Music",
-      "ticket_url": "https://dice.fm/event/dansu-discs-with-lucas-alexander-rtk-tarantino-30th-oct-patterns-brighton-tickets",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Dansu-Discs-Lucas-Alexander--RTK-Tarantino---Brighton/42737316/",
       "last_seen": "2026-10-18",
       "also_ids": [
         "2026-10-30-patterns-dansu-discs-lucas-alexander-rtk-tarantino-brighton",
@@ -4711,7 +4635,7 @@
     },
     {
       "id": "2026-10-31-glyndebourne-the-barber-of-seville",
-      "title": "The barber of Seville",
+      "title": "The Barber of Seville",
       "date": "2026-10-31",
       "venue": "Glyndebourne",
       "source": "venue",
@@ -4743,7 +4667,7 @@
       "time": "17:00",
       "finish_time": "22:00",
       "category": "Club",
-      "ticket_url": "https://dice.fm/event/dusky-all-day-long-signals-tour-31st-oct-patterns-brighton-tickets",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Dusky---All-Day-Long---Signals-Tour/42542341/",
       "last_seen": "2026-10-18"
     },
     {
@@ -5252,8 +5176,8 @@
       "source": "venue",
       "time": "13:30",
       "finish_time": "20:00",
-      "category": "Club",
-      "ticket_url": "https://dice.fm/event/brighton-sundae-w-marcia-carr-1st-nov-patterns-brighton-tickets",
+      "category": "Dance",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Brighton-Sundae-w-Marcia-Carr/42597331/",
       "last_seen": "2026-10-18",
       "also_ids": [
         "2026-11-01-patterns-brighton-sundae-w-marcia-carr-2"
@@ -5467,7 +5391,7 @@
     },
     {
       "id": "2026-11-02-glyndebourne-the-barber-of-seville",
-      "title": "The barber of Seville",
+      "title": "The Barber of Seville",
       "date": "2026-11-02",
       "venue": "Glyndebourne",
       "source": "venue",
@@ -6494,7 +6418,7 @@
     },
     {
       "id": "2026-11-07-glyndebourne-the-barber-of-seville",
-      "title": "The barber of Seville",
+      "title": "The Barber of Seville",
       "date": "2026-11-07",
       "venue": "Glyndebourne",
       "source": "venue",
@@ -8312,7 +8236,7 @@
       "time": "23:00",
       "finish_time": "04:00",
       "category": "Music",
-      "ticket_url": "https://dice.fm/event/frostbite-audio-14th-nov-patterns-brighton-tickets",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Frostbite-Audio/43017946/",
       "last_seen": "2026-10-18",
       "also_ids": [
         "2026-11-14-patterns-return-to-brighton"
