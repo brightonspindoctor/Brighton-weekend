@@ -2449,6 +2449,131 @@
   "sold": null,
   "checked": "2026-10-18"
  },
+ "https://tickets.glyndebourne.com/syos/performance/28431|2026-11-14|spark": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28432|2026-10-30|beethoven 9": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28433|2026-12-05|christmas concerts": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28435|2026-10-19|the marriage of figaro": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28437|2026-10-22|the marriage of figaro": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28438|2026-10-24|the marriage of figaro": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28439|2026-10-27|the marriage of figaro": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28440|2026-10-29|the marriage of figaro": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28441|2026-11-01|the marriage of figaro": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28442|2026-11-03|the marriage of figaro": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28443|2026-11-06|the marriage of figaro": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28444|2026-11-08|the marriage of figaro": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28446|2026-10-23|the barber of seville": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28447|2026-10-25|the barber of seville": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28448|2026-10-28|the barber of seville": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28449|2026-10-31|the barber of seville": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28450|2026-11-02|the barber of seville": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28451|2026-11-07|the barber of seville": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28452|2026-11-15|spark": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28453|2026-11-04|beethoven 9": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28454|2026-12-06|christmas concerts": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28455|2026-12-11|christmas concerts": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28456|2026-12-12|christmas concerts": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28457|2026-12-12|christmas concerts": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
+ "https://tickets.glyndebourne.com/syos/performance/28458|2026-12-13|christmas concerts": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-18"
+ },
  "https://tickets.openstage.live/boxOffice/TomHighTour/TomHighBrightonHeadlineShow160127|2027-01-16|tom high brighton headline show support": {
   "url": null,
   "sold": null,
@@ -2681,6 +2806,11 @@
   "checked": "2026-10-15"
  },
  "https://www.atgtickets.com/shows/stories-with-skip-autumn-leaves/theatre-royal-brighton/calendar/|2026-11-07|stories with skip autumn leaves": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-10-18"
+ },
+ "https://www.atgtickets.com/shows/stories-with-skip-moon-and-stars/theatre-royal-brighton/calendar/|2026-12-05|stories with skip moon and stars": {
   "url": null,
   "sold": false,
   "checked": "2026-10-18"

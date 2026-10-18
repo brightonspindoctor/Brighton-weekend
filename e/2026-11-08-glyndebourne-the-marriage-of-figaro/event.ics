@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-08-glyndebourne-the-marriage-of-figaro@brightonweekend.co.uk
+DTSTAMP:20261108T000000Z
+DTSTART:20261108T160000Z
+DTEND:20261108T190000Z
+SUMMARY:The Marriage of Figaro
+LOCATION:Glyndebourne\, near Lewes
+DESCRIPTION:Tickets: https://tickets.glyndebourne.com/syos/performance/2844
+ 4\nMore: https://brightonweekend.co.uk/e/2026-11-08-glyndebourne-the-marri
+ age-of-figaro/
+URL:https://brightonweekend.co.uk/e/2026-11-08-glyndebourne-the-marriage-of
+ -figaro/
+END:VEVENT
+END:VCALENDAR

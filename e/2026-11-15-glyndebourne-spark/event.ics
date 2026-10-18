@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-glyndebourne-spark@brightonweekend.co.uk
+DTSTAMP:20261115T000000Z
+DTSTART:20261115T140000Z
+DTEND:20261115T170000Z
+SUMMARY:Spark
+LOCATION:Glyndebourne\, near Lewes
+DESCRIPTION:Tickets: https://tickets.glyndebourne.com/syos/performance/2845
+ 2\nMore: https://brightonweekend.co.uk/e/2026-11-15-glyndebourne-spark/
+URL:https://brightonweekend.co.uk/e/2026-11-15-glyndebourne-spark/
+END:VEVENT
+END:VCALENDAR

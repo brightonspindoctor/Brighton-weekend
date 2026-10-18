@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-30-glyndebourne-beethoven-9@brightonweekend.co.uk
+DTSTAMP:20261030T000000Z
+DTSTART:20261030T190000Z
+DTEND:20261030T220000Z
+SUMMARY:Beethoven 9
+LOCATION:Glyndebourne\, near Lewes
+DESCRIPTION:Tickets: https://tickets.glyndebourne.com/syos/performance/2843
+ 2\nMore: https://brightonweekend.co.uk/e/2026-10-30-glyndebourne-beethoven
+ -9/
+URL:https://brightonweekend.co.uk/e/2026-10-30-glyndebourne-beethoven-9/
+END:VEVENT
+END:VCALENDAR

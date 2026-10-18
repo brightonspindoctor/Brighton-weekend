@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-06-glyndebourne-christmas-concerts@brightonweekend.co.uk
+DTSTAMP:20261206T000000Z
+DTSTART:20261206T150000Z
+DTEND:20261206T180000Z
+SUMMARY:Christmas Concerts
+LOCATION:Glyndebourne\, near Lewes
+DESCRIPTION:Tickets: https://tickets.glyndebourne.com/syos/performance/2845
+ 4\nMore: https://brightonweekend.co.uk/e/2026-12-06-glyndebourne-christmas
+ -concerts/
+URL:https://brightonweekend.co.uk/e/2026-12-06-glyndebourne-christmas-conce
+ rts/
+END:VEVENT
+END:VCALENDAR

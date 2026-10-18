@@ -860,6 +860,13 @@
   "act": "Beefmince",
   "checked": "2026-10-06"
  },
+ "beethoven 9": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Beethoven 9",
+  "checked": "2026-10-18",
+  "v": 3
+ },
  "bel cobain": {
   "mbid": "633ffe0d-e749-4810-a35c-475b21348711",
   "name": "Bel Cobain",
@@ -1859,6 +1866,13 @@
   "reason": "not in MusicBrainz",
   "act": "Christian Jegard’s Christmas Bedsit Party",
   "checked": "2026-10-06"
+ },
+ "christmas concerts": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Christmas Concerts",
+  "checked": "2026-10-18",
+  "v": 3
  },
  "chuck ragan": {
   "mbid": "97417292-3fb0-40ea-8837-5540cfb4de71",

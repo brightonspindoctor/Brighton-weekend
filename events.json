@@ -18,6 +18,7 @@
     "DUST",
     "Daltons",
     "Dice Saloon",
+    "Glyndebourne",
     "Green Door Store",
     "Komedia",
     "Patterns",
@@ -386,22 +387,22 @@
       "error": "",
       "sample": [
         {
-          "title": "Kiell Smith-Bynoe's - Kool Story Bro",
-          "date": "2026-10-18",
+          "title": "The Haunting of Hill House",
+          "date": "2026-10-20",
           "time": "",
-          "link": "https://www.atgtickets.com/shows/kiell-smith-bynoes-kool-story-bro/theatre-royal-brighton/calendar/"
+          "link": "https://www.atgtickets.com/shows/the-haunting-of-hill-house/theatre-royal-brighton/calendar/"
         },
         {
-          "title": "Kiell Smith-Bynoe's - Kool Story Bro",
-          "date": "2026-10-18",
+          "title": "The Haunting of Hill House",
+          "date": "2026-10-20",
           "time": "",
-          "link": "https://www.atgtickets.com/shows/kiell-smith-bynoes-kool-story-bro/theatre-royal-brighton/calendar/"
+          "link": "https://www.atgtickets.com/shows/the-haunting-of-hill-house/theatre-royal-brighton/calendar/"
         },
         {
-          "title": "Kiell Smith-Bynoe's - Kool Story Bro",
-          "date": "2026-10-18",
+          "title": "The Haunting of Hill House",
+          "date": "2026-10-20",
           "time": "",
-          "link": "https://www.atgtickets.com/shows/kiell-smith-bynoes-kool-story-bro/theatre-royal-brighton/calendar/"
+          "link": "https://www.atgtickets.com/shows/the-haunting-of-hill-house/theatre-royal-brighton/calendar/"
         }
       ]
     },
@@ -648,10 +649,29 @@
     },
     {
       "venue": "Glyndebourne",
-      "url": "https://www.glyndebourne.com/whats-on/",
-      "events": 0,
+      "url": "https://www.glyndebourne.com/autumn/",
+      "events": 25,
       "error": "",
-      "sample": []
+      "sample": [
+        {
+          "title": "The Marriage of Figaro",
+          "date": "2026-10-19",
+          "time": "16:00",
+          "link": "https://tickets.glyndebourne.com/syos/performance/28435"
+        },
+        {
+          "title": "The Marriage of Figaro",
+          "date": "2026-10-22",
+          "time": "16:00",
+          "link": "https://tickets.glyndebourne.com/syos/performance/28437"
+        },
+        {
+          "title": "The Marriage of Figaro",
+          "date": "2026-10-24",
+          "time": "16:00",
+          "link": "https://tickets.glyndebourne.com/syos/performance/28438"
+        }
+      ]
     }
   ],
   "events": [
@@ -676,7 +696,7 @@
       "time": "14:00",
       "finish_time": "19:00",
       "category": "Other",
-      "ticket_url": "https://dicesaloon.co.uk/products/board-gamers-casual-sundays-hosted-by-brighton-pub-board-gamers-october-18-2026",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/316748476/",
       "promoter": "Brighton Pub Boardgamers",
       "last_seen": "2026-10-18"
     },
@@ -981,6 +1001,19 @@
       "ticket_url": "https://www.atgtickets.com/shows/kiell-smith-bynoes-kool-story-bro/theatre-royal-brighton/calendar/",
       "last_seen": "2026-10-18",
       "venue_label": "Comedy"
+    },
+    {
+      "id": "2026-10-19-glyndebourne-the-marriage-of-figaro",
+      "title": "The Marriage of Figaro",
+      "date": "2026-10-19",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28435",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
     },
     {
       "id": "2026-10-19-caxton-arms-beginner-advanced-werewolf",
@@ -1590,6 +1623,19 @@
       "venue_label": "Plays"
     },
     {
+      "id": "2026-10-22-glyndebourne-the-marriage-of-figaro",
+      "title": "The Marriage of Figaro",
+      "date": "2026-10-22",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28437",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
+    },
+    {
       "id": "2026-10-22-alcampo-lounge-thursday-night-pub-boardgames",
       "title": "Thursday Night Pub Boardgames",
       "date": "2026-10-22",
@@ -1998,6 +2044,19 @@
       "ticket_url": "https://dicesaloon.co.uk/products/kids-club-adventures-ages-8-15-october-23-2026",
       "promoter": "Dice Saloon",
       "last_seen": "2026-10-18"
+    },
+    {
+      "id": "2026-10-23-glyndebourne-the-barber-of-seville",
+      "title": "The barber of Seville",
+      "date": "2026-10-23",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28446",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
     },
     {
       "id": "2026-10-23-volks-devilman-early-show",
@@ -2431,6 +2490,19 @@
         "2026-10-24-brighton-dome-shelf-the-kids-show-2"
       ],
       "venue_label": "Comedy"
+    },
+    {
+      "id": "2026-10-24-glyndebourne-the-marriage-of-figaro",
+      "title": "The Marriage of Figaro",
+      "date": "2026-10-24",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28438",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
     },
     {
       "id": "2026-10-24-volks-hardcore-unlocked-hixxy-maddy-v-hang-the-djs",
@@ -2906,6 +2978,19 @@
       ]
     },
     {
+      "id": "2026-10-25-glyndebourne-the-barber-of-seville",
+      "title": "The barber of Seville",
+      "date": "2026-10-25",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28447",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
+    },
+    {
       "id": "2026-10-25-brighton-dome-the-young-comedians-comedy-show-2",
       "title": "The Young Comedians Comedy Show",
       "date": "2026-10-25",
@@ -3354,6 +3439,19 @@
       "venue_label": "Talk, Comedy"
     },
     {
+      "id": "2026-10-27-glyndebourne-the-marriage-of-figaro",
+      "title": "The Marriage of Figaro",
+      "date": "2026-10-27",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28439",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
+    },
+    {
       "id": "2026-10-27-the-railway-inn-tuesday-west-hove-portslade-boardgames-meet",
       "title": "Tuesday West Hove/Portslade Boardgames Meet",
       "date": "2026-10-27",
@@ -3628,6 +3726,19 @@
       "venue_label": "Talk"
     },
     {
+      "id": "2026-10-28-glyndebourne-the-barber-of-seville",
+      "title": "The barber of Seville",
+      "date": "2026-10-28",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28448",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
+    },
+    {
       "id": "2026-10-28-the-walrus-wednesday-night-pub-board-games",
       "title": "Wednesday Night Pub Board Games",
       "date": "2026-10-28",
@@ -3861,6 +3972,19 @@
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/zt4cjyxj/hitman-sheela-live-at-prince-albert?utm_campaign=prom_ss&utm_medium=social&utm_source=dynamic",
       "last_seen": "2026-10-18"
+    },
+    {
+      "id": "2026-10-29-glyndebourne-the-marriage-of-figaro",
+      "title": "The Marriage of Figaro",
+      "date": "2026-10-29",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28440",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
     },
     {
       "id": "2026-10-29-alcampo-lounge-thursday-night-pub-boardgames",
@@ -4165,6 +4289,19 @@
       "category": "Music",
       "ticket_url": "https://www.axs.com/uk/events/1600668/halloween-with-simon-pegg-tickets",
       "last_seen": "2026-10-18"
+    },
+    {
+      "id": "2026-10-30-glyndebourne-beethoven-9",
+      "title": "Beethoven 9",
+      "date": "2026-10-30",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28432",
+      "last_seen": "2026-10-18",
+      "venue_label": "Concert"
     },
     {
       "id": "2026-10-30-patterns-lady-leshurr-10-years-of-the-queen-s-speech-tour",
@@ -4571,6 +4708,19 @@
       "category": "Music",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/RNLI---Shoreham-Fundraiser---Live-show---Halloween-Special/42668410/",
       "last_seen": "2026-10-18"
+    },
+    {
+      "id": "2026-10-31-glyndebourne-the-barber-of-seville",
+      "title": "The barber of Seville",
+      "date": "2026-10-31",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28449",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
     },
     {
       "id": "2026-10-31-quarters-club-events-black-octopus-8th-birthday-part-2-kenny-larkin-rolando",
@@ -5123,6 +5273,19 @@
       "last_seen": "2026-10-18"
     },
     {
+      "id": "2026-11-01-glyndebourne-the-marriage-of-figaro",
+      "title": "The Marriage of Figaro",
+      "date": "2026-11-01",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28441",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
+    },
+    {
       "id": "2026-11-01-komedia-down-the-hatch-comedy-club",
       "title": "Down the Hatch Comedy Club",
       "date": "2026-11-01",
@@ -5303,6 +5466,19 @@
       "last_seen": "2026-10-18"
     },
     {
+      "id": "2026-11-02-glyndebourne-the-barber-of-seville",
+      "title": "The barber of Seville",
+      "date": "2026-11-02",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28450",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
+    },
+    {
       "id": "2026-11-02-caxton-arms-beginner-advanced-werewolf",
       "title": "Beginner + Advanced Werewolf",
       "date": "2026-11-02",
@@ -5399,6 +5575,19 @@
       "category": "Comedy",
       "ticket_url": "http://www.byobcomedy.com/brighton",
       "last_seen": "2026-10-18"
+    },
+    {
+      "id": "2026-11-03-glyndebourne-the-marriage-of-figaro",
+      "title": "The Marriage of Figaro",
+      "date": "2026-11-03",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28442",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
     },
     {
       "id": "2026-11-03-the-railway-inn-tuesday-west-hove-portslade-boardgames-meet",
@@ -5555,6 +5744,19 @@
       "ticket_url": "https://www.atgtickets.com/shows/the-brown-suite/theatre-royal-brighton/calendar/",
       "last_seen": "2026-10-18",
       "venue_label": "Dance"
+    },
+    {
+      "id": "2026-11-04-glyndebourne-beethoven-9",
+      "title": "Beethoven 9",
+      "date": "2026-11-04",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28453",
+      "last_seen": "2026-10-18",
+      "venue_label": "Concert"
     },
     {
       "id": "2026-11-04-the-walrus-wednesday-night-pub-board-games",
@@ -5930,6 +6132,19 @@
       "last_seen": "2026-10-18"
     },
     {
+      "id": "2026-11-06-glyndebourne-the-marriage-of-figaro",
+      "title": "The Marriage of Figaro",
+      "date": "2026-11-06",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28443",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
+    },
+    {
       "id": "2026-11-06-concorde-2-dj-yoda",
       "title": "DJ Yoda",
       "date": "2026-11-06",
@@ -6276,6 +6491,19 @@
       "category": "Club",
       "ticket_url": "https://quarters.seetickets.com/event/andy-c-day-party-/quarters/3706966",
       "last_seen": "2026-10-18"
+    },
+    {
+      "id": "2026-11-07-glyndebourne-the-barber-of-seville",
+      "title": "The barber of Seville",
+      "date": "2026-11-07",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28451",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
     },
     {
       "id": "2026-11-07-concorde-2-slipmatt-ellis-dee-2-bad-mice-dj-ratty",
@@ -6690,6 +6918,19 @@
       "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/nmmpvtyjcpblb/",
       "promoter": "Brighton Pub Boardgamers",
       "last_seen": "2026-10-18"
+    },
+    {
+      "id": "2026-11-08-glyndebourne-the-marriage-of-figaro",
+      "title": "The Marriage of Figaro",
+      "date": "2026-11-08",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28444",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
     },
     {
       "id": "2026-11-08-the-old-market-come-alive-echo-performing-arts-cic",
@@ -7949,6 +8190,19 @@
       "last_seen": "2026-10-18"
     },
     {
+      "id": "2026-11-14-glyndebourne-spark",
+      "title": "Spark",
+      "date": "2026-11-14",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "14:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28431",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
+    },
+    {
       "id": "2026-11-14-quarters-club-events-emo-day-party",
       "title": "Emo Day Party",
       "date": "2026-11-14",
@@ -8392,6 +8646,19 @@
       "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/nmmpvtyjcpbtb/",
       "promoter": "Brighton Pub Boardgamers",
       "last_seen": "2026-10-18"
+    },
+    {
+      "id": "2026-11-15-glyndebourne-spark",
+      "title": "Spark",
+      "date": "2026-11-15",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "14:00",
+      "finish_time": "",
+      "category": "Theatre",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28452",
+      "last_seen": "2026-10-18",
+      "venue_label": "Opera"
     },
     {
       "id": "2026-11-15-patterns-aaron-rowe",
@@ -12318,6 +12585,19 @@
       "last_seen": "2026-10-18"
     },
     {
+      "id": "2026-12-05-glyndebourne-christmas-concerts",
+      "title": "Christmas Concerts",
+      "date": "2026-12-05",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "15:00",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28433",
+      "last_seen": "2026-10-18",
+      "venue_label": "Concert"
+    },
+    {
       "id": "2026-12-05-patterns-george-fitzgerald-all-day-long",
       "title": "George Fitzgerald (All Day Long)",
       "date": "2026-12-05",
@@ -12610,10 +12890,11 @@
       "title": "Stories with Skip - Moon and Stars",
       "date": "2026-12-05",
       "venue": "Theatre Royal Brighton",
-      "category": "Other",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
+      "source": "venue",
       "time": "",
       "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://www.atgtickets.com/shows/stories-with-skip-moon-and-stars/theatre-royal-brighton/calendar/",
       "last_seen": "2026-10-18",
       "venue_label": "Events"
     },
@@ -12640,6 +12921,19 @@
       "category": "Music",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873664466/events/128650742",
       "last_seen": "2026-10-18"
+    },
+    {
+      "id": "2026-12-06-glyndebourne-christmas-concerts",
+      "title": "Christmas Concerts",
+      "date": "2026-12-06",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "15:00",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28454",
+      "last_seen": "2026-10-18",
+      "venue_label": "Concert"
     },
     {
       "id": "2026-12-06-komedia-will-wilde",
@@ -13122,6 +13416,19 @@
       "venue_label": "Comedy"
     },
     {
+      "id": "2026-12-11-glyndebourne-christmas-concerts",
+      "title": "Christmas Concerts",
+      "date": "2026-12-11",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "15:00",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28455",
+      "last_seen": "2026-10-18",
+      "venue_label": "Concert"
+    },
+    {
       "id": "2026-12-11-quarters-live-events-daddy-g-massive-attack",
       "title": "DADDY G (Massive Attack)",
       "date": "2026-12-11",
@@ -13339,6 +13646,19 @@
       "last_seen": "2026-10-18"
     },
     {
+      "id": "2026-12-12-glyndebourne-christmas-concerts",
+      "title": "Christmas Concerts",
+      "date": "2026-12-12",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "14:00",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28456",
+      "last_seen": "2026-10-18",
+      "venue_label": "Concert"
+    },
+    {
       "id": "2026-12-12-quarters-club-events-trancecoda-presents-j00f-editions",
       "title": "Trancecoda Presents J00F Editions",
       "date": "2026-12-12",
@@ -13393,6 +13713,19 @@
         "2026-12-12-brighton-dome-paddy-young-will-sir-be-laughing-alone-2"
       ],
       "venue_label": "Comedy"
+    },
+    {
+      "id": "2026-12-12-glyndebourne-christmas-concerts-2",
+      "title": "Christmas Concerts",
+      "date": "2026-12-12",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28457",
+      "last_seen": "2026-10-18",
+      "venue_label": "Concert"
     },
     {
       "id": "2026-12-12-the-forge-comedy-club-festive-forge-comedy-club",
@@ -13579,6 +13912,19 @@
       "also_ids": [
         "2026-12-13-brightoncentre-the-muppet-christmas-carol-in-concert"
       ]
+    },
+    {
+      "id": "2026-12-13-glyndebourne-christmas-concerts",
+      "title": "Christmas Concerts",
+      "date": "2026-12-13",
+      "venue": "Glyndebourne",
+      "source": "venue",
+      "time": "15:00",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://tickets.glyndebourne.com/syos/performance/28458",
+      "last_seen": "2026-10-18",
+      "venue_label": "Concert"
     },
     {
       "id": "2026-12-13-komedia-komedia-christmas-party-sun-13-dec-2026-doors-6-30-pm",
@@ -19113,7 +19459,7 @@
   "discovery_report": {
     "calendars_loaded": 10,
     "calendars": 10,
-    "events_found": 927,
+    "events_found": 923,
     "rivalcults_unknown_venues": [
       "Brighton Playhouse",
       "The Yellow Book"

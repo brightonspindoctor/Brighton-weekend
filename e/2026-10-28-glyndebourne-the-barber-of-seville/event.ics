@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-28-glyndebourne-the-barber-of-seville@brightonweekend.co.uk
+DTSTAMP:20261028T000000Z
+DTSTART:20261028T160000Z
+DTEND:20261028T190000Z
+SUMMARY:The barber of Seville
+LOCATION:Glyndebourne\, near Lewes
+DESCRIPTION:Tickets: https://tickets.glyndebourne.com/syos/performance/2844
+ 8\nMore: https://brightonweekend.co.uk/e/2026-10-28-glyndebourne-the-barbe
+ r-of-seville/
+URL:https://brightonweekend.co.uk/e/2026-10-28-glyndebourne-the-barber-of-s
+ eville/
+END:VEVENT
+END:VCALENDAR
