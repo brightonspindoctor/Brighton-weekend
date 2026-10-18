@@ -483,7 +483,9 @@ def to24(h,m,ap):return f'{int(h)%12+(12 if ap.lower()=="pm" else 0):02d}:{m}'
 def glyndebourne_production(page,page_url,fallback_title=''):
     soup=BeautifulSoup(page,'html.parser')
     h1=soup.find('h1')
-    title=strip_listing_date(clean(h1.get_text(' ',strip=True)) if h1 else '') or fallback_title or slug_title(page_url)
+    # The season page's card title first: production pages' headings aren't always
+    # in title case ("The barber of Seville").
+    title=fallback_title or strip_listing_date(clean(h1.get_text(' ',strip=True)) if h1 else '') or slug_title(page_url)
     starts=GLYNDE_STARTS.findall(clean(soup.get_text(' ',strip=True)))
     kind=starts[0][0].title() if starts else ''
     page_times={to24(h,m,ap) for _,h,m,ap in starts}
