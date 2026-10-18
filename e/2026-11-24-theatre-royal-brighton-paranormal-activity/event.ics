@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-24-theatre-royal-brighton-paranormal-activity@brightonweekend.c
+ o.uk
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Paranormal Activity
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/paranormal-activity/t
+ heatre-royal-brighton/calendar/\nMore: https://brightonweekend.co.uk/e/202
+ 6-11-24-theatre-royal-brighton-paranormal-activity/
+URL:https://brightonweekend.co.uk/e/2026-11-24-theatre-royal-brighton-paran
+ ormal-activity/
+END:VEVENT
+END:VCALENDAR

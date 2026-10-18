@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-dice-saloon-necromunda-intro-campaign-session-3@brightonweek
+ end.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Necromunda Intro Campaign! Session 3
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/necromunda-intro-cam
+ paign-session-3-14-november-2026\nMore: https://brightonweekend.co.uk/e/20
+ 26-11-14-dice-saloon-necromunda-intro-campaign-session-3/
+URL:https://brightonweekend.co.uk/e/2026-11-14-dice-saloon-necromunda-intro
+ -campaign-session-3/
+END:VEVENT
+END:VCALENDAR

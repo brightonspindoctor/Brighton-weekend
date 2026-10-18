@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-30-the-hope-ruin-pop-tarts@brightonweekend.co.uk
+DTSTAMP:20261030T000000Z
+DTSTART:20261030T210000Z
+DTEND:20261031T020000Z
+SUMMARY:Pop Tarts
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/pop-tarts-6/\nMore: https:/
+ /brightonweekend.co.uk/e/2026-10-30-the-hope-ruin-pop-tarts/
+URL:https://brightonweekend.co.uk/e/2026-10-30-the-hope-ruin-pop-tarts/
+END:VEVENT
+END:VCALENDAR

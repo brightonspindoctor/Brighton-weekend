@@ -6,12 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-20-patterns-lukas-frank@brightonweekend.co.uk
 DTSTAMP:20261120T000000Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
+DTSTART:20261120T230000Z
+DTEND:20261121T040000Z
 SUMMARY:Lukas & Frank
 LOCATION:Patterns\, Brighton
-DESCRIPTION:Tickets: https://dice.fm/event/6a5a42b8eb720b0001794bec\nMore: 
- https://brightonweekend.co.uk/e/2026-11-20-patterns-lukas-frank/
+DESCRIPTION:Tickets: https://dice.fm/event/lukas-frank-20th-nov-patterns-br
+ ighton-tickets\nMore: https://brightonweekend.co.uk/e/2026-11-20-patterns-
+ lukas-frank/
 URL:https://brightonweekend.co.uk/e/2026-11-20-patterns-lukas-frank/
 END:VEVENT
 END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-16-dice-saloon-dnd-season-of-champions-weekly-play-session-1@br
+ ightonweekend.co.uk
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:DnD Season of Champions\, Weekly Play Session 1
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/dnd-season-of-champi
+ ons-weekly-play-session-1-16-november-2026\nMore: https://brightonweekend.
+ co.uk/e/2026-11-16-dice-saloon-dnd-season-of-champions-weekly-play-session
+ -1/
+URL:https://brightonweekend.co.uk/e/2026-11-16-dice-saloon-dnd-season-of-ch
+ ampions-weekly-play-session-1/
+END:VEVENT
+END:VCALENDAR

@@ -6,12 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-10-25-greendoorstore-formal-sppeedwear@brightonweekend.co.uk
 DTSTAMP:20261025T000000Z
-DTSTART;VALUE=DATE:20261025
-DTEND;VALUE=DATE:20261026
+DTSTART:20261025T190000Z
+DTEND:20261025T220000Z
 SUMMARY:Formal Sppeedwear
 LOCATION:Green Door Store\, Brighton
-DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/\nMore: https:/
- /brightonweekend.co.uk/e/2026-10-25-greendoorstore-formal-sppeedwear/
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1463140/formal-sppeedwea
+ r-tickets\nMore: https://brightonweekend.co.uk/e/2026-10-25-greendoorstore
+ -formal-sppeedwear/
 URL:https://brightonweekend.co.uk/e/2026-10-25-greendoorstore-formal-sppeed
  wear/
 END:VEVENT

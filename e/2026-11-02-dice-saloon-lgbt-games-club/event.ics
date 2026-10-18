@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-02-dice-saloon-lgbt-games-club@brightonweekend.co.uk
+DTSTAMP:20261102T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:LGBT+ Games Club
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/lgbt-games-club-02-n
+ ovember-2026\nMore: https://brightonweekend.co.uk/e/2026-11-02-dice-saloon
+ -lgbt-games-club/
+URL:https://brightonweekend.co.uk/e/2026-11-02-dice-saloon-lgbt-games-club/
+END:VEVENT
+END:VCALENDAR

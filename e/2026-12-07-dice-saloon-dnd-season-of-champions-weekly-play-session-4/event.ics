@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-07-dice-saloon-dnd-season-of-champions-weekly-play-session-4@br
+ ightonweekend.co.uk
+DTSTAMP:20261207T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:DnD Season of Champions\, Weekly Play Session 4
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/dnd-season-of-champi
+ ons-weekly-play-session-4-07-december-2026\nMore: https://brightonweekend.
+ co.uk/e/2026-12-07-dice-saloon-dnd-season-of-champions-weekly-play-session
+ -4/
+URL:https://brightonweekend.co.uk/e/2026-12-07-dice-saloon-dnd-season-of-ch
+ ampions-weekly-play-session-4/
+END:VEVENT
+END:VCALENDAR
