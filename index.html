@@ -561,7 +561,7 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
       <div id="createGroupPanel" class="group-panel hidden">
         <div class="group-form">
           <label>Group name<input id="newGroupName" maxlength="50" placeholder="e.g. Brighton Crew"></label>
-          <div class="group-meta">Every group gets a 3 digit PIN. Send friends an invite link and they join in one tap, no PIN to type. Groups hold up to 25 people.</div>
+          <div class="group-meta">Every group gets a PIN. Send friends an invite link and they join in one tap, no PIN to type. Groups hold up to 25 people.</div>
           <button type="button" id="createGroupBtn" class="btn btn-primary">Create group</button>
         </div>
       </div>
@@ -569,7 +569,7 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
         <div class="group-form">
           <div class="group-meta">Ask someone in the group for its name and PIN, or for an invite link.</div>
           <label>Group name<input id="privateGroupName" maxlength="50" placeholder="Exact group name" autocomplete="off"></label>
-          <label>3 digit PIN<input id="privateGroupPin" inputmode="numeric" pattern="[0-9]{3}" maxlength="3" placeholder="123"></label>
+          <label>PIN<input id="privateGroupPin" inputmode="numeric" pattern="[0-9]{3}([0-9]{3})?" maxlength="6" placeholder="123456" autocomplete="off"></label>
           <button type="button" id="joinPrivateBtn" class="btn btn-primary">Join group</button>
         </div>
       </div>
@@ -2161,7 +2161,7 @@ $('partyOnBtn').onclick=finishWelcome;
 $('showCreateGroup').onclick=()=>{hide('joinGroupPanel');$('createGroupPanel').classList.toggle('hidden')};
 $('showJoinGroup').onclick=()=>{hide('createGroupPanel');$('joinGroupPanel').classList.toggle('hidden')};
 $('createGroupBtn').onclick=createGroup;
-$('joinPrivateBtn').onclick=()=>{const n=$('privateGroupName').value.trim(),p=$('privateGroupPin').value.trim();if(!n||!/^\d{3}$/.test(p))return toast('Enter the exact group name and a 3 digit PIN.','error');joinGroup(null,p,n)};
+$('joinPrivateBtn').onclick=()=>{const n=$('privateGroupName').value.trim(),p=$('privateGroupPin').value.trim();if(!n||!/^(\d{3}|\d{6})$/.test(p))return toast('Enter the exact group name and its PIN (3 or 6 digits).','error');joinGroup(null,p,n)};
 // The arrows and This week go back to the week view (from a quick-time chip).
 $('prev').onclick=()=>{if(discoverRange!=='week'){discoverRange='week';weekStart=getMonday();renderAll();return}if(weekStart<=getMonday())return;weekStart.setDate(weekStart.getDate()-7);renderAll()};
 $('next').onclick=()=>{if(discoverRange!=='week'){discoverRange='week';weekStart=getMonday()}weekStart.setDate(weekStart.getDate()+7);renderAll()};
@@ -2325,7 +2325,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=92', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=93', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
