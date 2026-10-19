@@ -36,8 +36,9 @@ phone's home screen.
 - **Guests:** anyone can browse without a login. Marking events, Happenings and
   adding events ask for a free login, and the app carries out what they tried
   once they've signed up.
-- **Groups and Happenings:** every group has a 3-digit PIN; invite links carry
-  it. Happenings shows what people in your groups are interested in or going to,
+- **Groups and Happenings:** every group has a PIN (6 digits for groups made
+  from v80 on, 3 for older ones); invite links carry it. Each group accepts at
+  most 10 wrong PINs a day. Happenings shows what people in your groups are interested in or going to,
   with the list of people in your groups at the bottom.
 - **You might like:** the top of Happenings suggests up to three events in the
   next six months by the same bands, or in the same genres, as things you've
