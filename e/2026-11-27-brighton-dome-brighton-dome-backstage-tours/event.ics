@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-11-27-brighton-dome-brighton-dome-backstage-tours@brightonweekend.
  co.uk
 DTSTAMP:20261127T000000Z
-DTSTART:20261127T110000Z
-DTEND:20261127T140000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
 SUMMARY:Brighton Dome Backstage Tours
 LOCATION:Brighton Dome\, Brighton
 DESCRIPTION:Tickets: https://brightondome.org/whats-on/L17-brighton-dome-ba

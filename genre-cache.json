@@ -261,6 +261,23 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "adult dvd": {
+  "mbid": "3daddca6-34a3-47b1-91a5-a1bff99c98dc",
+  "name": "Adult DVD",
+  "genres": [
+   {
+    "name": "dance-rock",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q138529481",
+  "wd_genres": [],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Adult Dvd",
+  "checked": "2026-10-19",
+  "v": 3
+ },
  "adult dvd lttl mort": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -9596,6 +9613,13 @@
   "reason": "tagged",
   "act": "St. Paul & The Broken Bones",
   "checked": "2026-10-06"
+ },
+ "st paul the broken bones": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "St Paul The Broken Bones",
+  "checked": "2026-10-19",
+  "v": 3
  },
  "stardust": {
   "bucket": null,

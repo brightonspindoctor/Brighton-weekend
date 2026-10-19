@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-10-24-the-hope-ruin-mutations-festival-2026-saturday@brightonweeke
  nd.co.uk
 DTSTAMP:20261024T000000Z
-DTSTART;VALUE=DATE:20261024
-DTEND;VALUE=DATE:20261025
+DTSTART:20261024T110000Z
+DTEND:20261025T020000Z
 SUMMARY:Mutations Festival 2026 – Saturday
 LOCATION:The Hope & Ruin\, Brighton
 DESCRIPTION:Tickets: https://www.hope.pub/event/mutations-festival-2026-sat

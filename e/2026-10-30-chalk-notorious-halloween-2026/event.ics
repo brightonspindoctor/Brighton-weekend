@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-30-chalk-notorious-halloween-2026@brightonweekend.co.uk
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Notorious Halloween 2026
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/event/notorious-halloween-2026\
+ nMore: https://brightonweekend.co.uk/e/2026-10-30-chalk-notorious-hallowee
+ n-2026/
+URL:https://brightonweekend.co.uk/e/2026-10-30-chalk-notorious-halloween-20
+ 26/
+END:VEVENT
+END:VCALENDAR

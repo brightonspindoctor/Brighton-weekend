@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-chalk-halloween-day-party-free-entry@brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Halloween Day Party Free Entry
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/event/halloween-day-party-free-
+ entry-2026-10-31\nMore: https://brightonweekend.co.uk/e/2026-10-31-chalk-h
+ alloween-day-party-free-entry/
+URL:https://brightonweekend.co.uk/e/2026-10-31-chalk-halloween-day-party-fr
+ ee-entry/
+END:VEVENT
+END:VCALENDAR
