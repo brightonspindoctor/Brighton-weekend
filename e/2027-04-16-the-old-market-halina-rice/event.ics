@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-16-the-old-market-halina-rice@brightonweekend.co.uk
+DTSTAMP:20270416T000000Z
+DTSTART:20270416T180000Z
+DTEND:20270416T213000Z
+SUMMARY:Halina Rice
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/halina-rice\nMore: 
+ https://brightonweekend.co.uk/e/2027-04-16-the-old-market-halina-rice/
+URL:https://brightonweekend.co.uk/e/2027-04-16-the-old-market-halina-rice/
+END:VEVENT
+END:VCALENDAR

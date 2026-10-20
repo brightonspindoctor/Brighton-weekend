@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-07-concorde-2-she-wants-revenge@brightonweekend.co.uk
+DTSTAMP:20270207T000000Z
+DTSTART:20270207T193000Z
+DTEND:20270207T223000Z
+SUMMARY:She Wants Revenge
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1666572/she-wants-reveng
+ e-tickets\nMore: https://brightonweekend.co.uk/e/2027-02-07-concorde-2-she
+ -wants-revenge/
+URL:https://brightonweekend.co.uk/e/2027-02-07-concorde-2-she-wants-revenge
+ /
+END:VEVENT
+END:VCALENDAR

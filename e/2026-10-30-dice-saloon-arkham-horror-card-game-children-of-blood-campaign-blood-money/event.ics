@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-30-dice-saloon-arkham-horror-card-game-children-of-blood-campai
+ gn-blood-money@brightonweekend.co.uk
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Arkham Horror Card Game Children of Blood Campaign - Blood Money
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/arkham-horror-card-g
+ ame-children-of-blood-campaign-blood-money-31-10\nMore: https://brightonwe
+ ekend.co.uk/e/2026-10-30-dice-saloon-arkham-horror-card-game-children-of-b
+ lood-campaign-blood-money/
+URL:https://brightonweekend.co.uk/e/2026-10-30-dice-saloon-arkham-horror-ca
+ rd-game-children-of-blood-campaign-blood-money/
+END:VEVENT
+END:VCALENDAR

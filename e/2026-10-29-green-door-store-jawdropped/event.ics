@@ -6,8 +6,8 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-10-29-green-door-store-jawdropped@brightonweekend.co.uk
 DTSTAMP:20261029T000000Z
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261030
+DTSTART:20261029T190000Z
+DTEND:20261029T220000Z
 SUMMARY:Jawdropped
 LOCATION:Green Door Store\, Brighton
 DESCRIPTION:Tickets: https://lovethyneighbour.seetickets.com/event/jawdropp

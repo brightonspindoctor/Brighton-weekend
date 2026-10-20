@@ -4659,6 +4659,16 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "halina rice": {
+  "mbid": "65f5c2cf-2e36-4371-9906-d16ab3bd60f3",
+  "name": "Halina Rice",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Halina Rice",
+  "checked": "2026-10-20",
+  "v": 3
+ },
  "halloween": {
   "bucket": null,
   "reason": "9 artists share this name",
@@ -4679,6 +4689,13 @@
   "act": "Halloween Special",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "halloween w soul mass transit system captain wallop": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Halloween W Soul Mass Transit System Captain Wallop",
+  "checked": "2026-10-20",
+  "v": 3
  },
  "halloweiner": {
   "bucket": null,
@@ -7492,6 +7509,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "new on sale heritage and tours": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "New on Sale Heritage & Tours",
+  "checked": "2026-10-20",
+  "v": 3
+ },
  "new on sale music david bowie": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -9052,6 +9076,26 @@
   "reason": "tagged",
   "act": "Shaun Kirk",
   "checked": "2026-10-07"
+ },
+ "she wants revenge": {
+  "mbid": "f434ae2b-b203-490d-a8ac-aa9cd51c0e73",
+  "name": "She Wants Revenge",
+  "genres": [
+   {
+    "name": "indie rock",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q782916",
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "She Wants Revenge",
+  "checked": "2026-10-20",
+  "v": 3
  },
  "shed seven": {
   "mbid": "4d8650ba-b4ed-4307-a6c8-368eb646210b",
@@ -11136,6 +11180,20 @@
   "act": "The Wow! Scenario",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "the wurzels": {
+  "mbid": "8580ec50-775a-4486-8240-49115cf0114b",
+  "name": "The Wurzels",
+  "genres": [],
+  "wikidata": "Q335723",
+  "wd_genres": [
+   "Scrumpy and Western"
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "The Wurzels",
+  "checked": "2026-10-20",
+  "v": 3
  },
  "the xcerts": {
   "mbid": "f0468734-9ae8-4701-bb18-42c4a162115a",

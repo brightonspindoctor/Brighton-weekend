@@ -11,10 +11,9 @@ DTSTART:20261024T170000Z
 DTEND:20261024T190000Z
 SUMMARY:Live at Brighton Dome BLEEPED
 LOCATION:Brighton Dome\, Brighton
-DESCRIPTION:Tickets: https://tickets.brightondome.org/online/mapSelect.asp?
- doWork::WSmap::loadMap=Load&createBO::WSmap=1&BOparam::WSmap::loadMap::per
- formance_ids=7CC71A59-D923-4CFE-BFD7-A0115286CCA6\nMore: https://brightonw
- eekend.co.uk/e/2026-10-24-brighton-dome-live-at-brighton-dome-bleeped-2/
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LGp-live-at-brighton
+ -dome-bleeped/\nMore: https://brightonweekend.co.uk/e/2026-10-24-brighton-
+ dome-live-at-brighton-dome-bleeped-2/
 URL:https://brightonweekend.co.uk/e/2026-10-24-brighton-dome-live-at-bright
  on-dome-bleeped-2/
 END:VEVENT
