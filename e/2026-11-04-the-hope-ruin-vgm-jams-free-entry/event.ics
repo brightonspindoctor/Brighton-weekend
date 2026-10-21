@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-04-the-hope-ruin-vgm-jams-free-entry@brightonweekend.co.uk
+DTSTAMP:20261104T000000Z
+DTSTART:20261104T193000Z
+DTEND:20261104T230000Z
+SUMMARY:VGM Jams
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/vgm-jams-free-entry/\nMore:
+  https://brightonweekend.co.uk/e/2026-11-04-the-hope-ruin-vgm-jams-free-en
+ try/
+URL:https://brightonweekend.co.uk/e/2026-11-04-the-hope-ruin-vgm-jams-free-
+ entry/
+END:VEVENT
+END:VCALENDAR

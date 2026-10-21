@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-01-the-railway-inn-tuesday-west-hove-portslade-boardgames-meet@
+ brightonweekend.co.uk
+DTSTAMP:20261201T000000Z
+DTSTART:20261201T183000Z
+DTEND:20261201T230000Z
+SUMMARY:Tuesday West Hove/Portslade Boardgames Meet
+LOCATION:The Railway Inn\, Brighton
+DESCRIPTION:Tickets: https://www.meetup.com/brighton-pub-boardgamers/events
+ /hffgztyjcqbcb/\nMore: https://brightonweekend.co.uk/e/2026-12-01-the-rail
+ way-inn-tuesday-west-hove-portslade-boardgames-meet/
+URL:https://brightonweekend.co.uk/e/2026-12-01-the-railway-inn-tuesday-west
+ -hove-portslade-boardgames-meet/
+END:VEVENT
+END:VCALENDAR

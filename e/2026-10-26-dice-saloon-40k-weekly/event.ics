@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-26-dice-saloon-40k-weekly@brightonweekend.co.uk
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:40K Weekly
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/40k-weekly-october-2
+ 6-2026\nMore: https://brightonweekend.co.uk/e/2026-10-26-dice-saloon-40k-w
+ eekly/
+URL:https://brightonweekend.co.uk/e/2026-10-26-dice-saloon-40k-weekly/
+END:VEVENT
+END:VCALENDAR
