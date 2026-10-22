@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-17-daltons-christmas-karaoke-in-aid-of-ymca-brighton@brightonwe
+ ekend.co.uk
+DTSTAMP:20261217T000000Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Christmas Karaoke in Aid of YMCA Brighton
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/christma
+ s-karaoke-in-aid-of-ymca-brighton\nMore: https://brightonweekend.co.uk/e/2
+ 026-12-17-daltons-christmas-karaoke-in-aid-of-ymca-brighton/
+URL:https://brightonweekend.co.uk/e/2026-12-17-daltons-christmas-karaoke-in
+ -aid-of-ymca-brighton/
+END:VEVENT
+END:VCALENDAR

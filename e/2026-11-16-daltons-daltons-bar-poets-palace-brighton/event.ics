@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-16-daltons-daltons-bar-poets-palace-brighton@brightonweekend.co
+ .uk
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Daltons Bar: Poets Palace Brighton
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/poets-palace-brighton-t
+ ickets-2003453551504\nMore: https://brightonweekend.co.uk/e/2026-11-16-dal
+ tons-daltons-bar-poets-palace-brighton/
+URL:https://brightonweekend.co.uk/e/2026-11-16-daltons-daltons-bar-poets-pa
+ lace-brighton/
+END:VEVENT
+END:VCALENDAR

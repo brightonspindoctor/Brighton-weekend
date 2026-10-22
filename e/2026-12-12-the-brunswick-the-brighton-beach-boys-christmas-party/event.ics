@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-the-brunswick-the-brighton-beach-boys-christmas-party@bright
+ onweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:The Brighton Beach Boys Christmas Party
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/the-brigh
+ ton-beach-boys-christmas-party\nMore: https://brightonweekend.co.uk/e/2026
+ -12-12-the-brunswick-the-brighton-beach-boys-christmas-party/
+URL:https://brightonweekend.co.uk/e/2026-12-12-the-brunswick-the-brighton-b
+ each-boys-christmas-party/
+END:VEVENT
+END:VCALENDAR

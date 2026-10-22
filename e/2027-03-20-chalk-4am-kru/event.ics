@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-20-chalk-4am-kru@brightonweekend.co.uk
+DTSTAMP:20270320T000000Z
+DTSTART;VALUE=DATE:20270320
+DTEND;VALUE=DATE:20270321
+SUMMARY:4am Kru
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/u8bdddb44392\nMore: https://brigh
+ tonweekend.co.uk/e/2027-03-20-chalk-4am-kru/
+URL:https://brightonweekend.co.uk/e/2027-03-20-chalk-4am-kru/
+END:VEVENT
+END:VCALENDAR

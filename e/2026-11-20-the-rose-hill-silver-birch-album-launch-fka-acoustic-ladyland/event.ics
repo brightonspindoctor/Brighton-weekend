@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-20-the-rose-hill-silver-birch-album-launch-fka-acoustic-ladylan
+ d@brightonweekend.co.uk
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Silver Birch Album launch (FKA Acoustic Ladyland)
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/silver-birch-album-lau
+ nch-fka-acoustic-ladyland/\nMore: https://brightonweekend.co.uk/e/2026-11-
+ 20-the-rose-hill-silver-birch-album-launch-fka-acoustic-ladyland/
+URL:https://brightonweekend.co.uk/e/2026-11-20-the-rose-hill-silver-birch-a
+ lbum-launch-fka-acoustic-ladyland/
+END:VEVENT
+END:VCALENDAR

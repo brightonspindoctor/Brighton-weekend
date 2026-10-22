@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-26-chalk-stornoway@brightonweekend.co.uk
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Stornoway
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/event/stornoway\nMore: https://
+ brightonweekend.co.uk/e/2026-10-26-chalk-stornoway/
+URL:https://brightonweekend.co.uk/e/2026-10-26-chalk-stornoway/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-19-green-door-store-another-country@brightonweekend.co.uk
+DTSTAMP:20270219T000000Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:Another Country $$$$
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/tbfd7256540e\nMore: https://brigh
+ tonweekend.co.uk/e/2027-02-19-green-door-store-another-country/
+URL:https://brightonweekend.co.uk/e/2027-02-19-green-door-store-another-cou
+ ntry/
+END:VEVENT
+END:VCALENDAR

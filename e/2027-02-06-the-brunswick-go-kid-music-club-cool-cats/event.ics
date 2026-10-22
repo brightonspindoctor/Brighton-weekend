@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-06-the-brunswick-go-kid-music-club-cool-cats@brightonweekend.co
+ .uk
+DTSTAMP:20270206T000000Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Go Kid Music Club - Cool Cats!
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/go-kid-mu
+ sic-club-cool-cats\nMore: https://brightonweekend.co.uk/e/2027-02-06-the-b
+ runswick-go-kid-music-club-cool-cats/
+URL:https://brightonweekend.co.uk/e/2027-02-06-the-brunswick-go-kid-music-c
+ lub-cool-cats/
+END:VEVENT
+END:VCALENDAR

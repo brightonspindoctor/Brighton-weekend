@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-green-door-store-new-age-collective@brightonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:New Age Collective
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://fienta.com/new-age-collective-brighton-crusty-
+ raver-tour\nMore: https://brightonweekend.co.uk/e/2026-12-12-green-door-st
+ ore-new-age-collective/
+URL:https://brightonweekend.co.uk/e/2026-12-12-green-door-store-new-age-col
+ lective/
+END:VEVENT
+END:VCALENDAR

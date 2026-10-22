@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-19-the-brunswick-banda-tamandu@brightonweekend.co.uk
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Banda Tamanduá
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/banda-tam
+ andua-2\nMore: https://brightonweekend.co.uk/e/2026-11-19-the-brunswick-ba
+ nda-tamandu/
+URL:https://brightonweekend.co.uk/e/2026-11-19-the-brunswick-banda-tamandu/
+END:VEVENT
+END:VCALENDAR

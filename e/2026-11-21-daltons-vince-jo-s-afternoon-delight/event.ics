@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-daltons-vince-jo-s-afternoon-delight@brightonweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Vince & Jo's Afternoon Delight
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/vince-jo
+ s-afternoon-delight\nMore: https://brightonweekend.co.uk/e/2026-11-21-dalt
+ ons-vince-jo-s-afternoon-delight/
+URL:https://brightonweekend.co.uk/e/2026-11-21-daltons-vince-jo-s-afternoon
+ -delight/
+END:VEVENT
+END:VCALENDAR

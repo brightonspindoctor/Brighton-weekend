@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-19-brighton-dome-sounds-from-the-city-underground@brightonweeke
+ nd.co.uk
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Sounds from the City: Underground
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
+ alse\,false&top_filter=all&page=2&view=list\nMore: https://brightonweekend
+ .co.uk/e/2026-11-19-brighton-dome-sounds-from-the-city-underground/
+URL:https://brightonweekend.co.uk/e/2026-11-19-brighton-dome-sounds-from-th
+ e-city-underground/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-01-chalk-madra-salach@brightonweekend.co.uk
+DTSTAMP:20270401T000000Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:Madra Salach
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/F75a93695130\nMore: https://brigh
+ tonweekend.co.uk/e/2027-04-01-chalk-madra-salach/
+URL:https://brightonweekend.co.uk/e/2027-04-01-chalk-madra-salach/
+END:VEVENT
+END:VCALENDAR

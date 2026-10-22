@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-17-the-hope-ruin-collect-paul-collect-call-perform-the-songs-of
+ -paul-mccartney@brightonweekend.co.uk
+DTSTAMP:20261217T000000Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Collect Paul – Collect Call perform the songs of Paul McCartney
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/zwladcp0/collect-paul-collec
+ t-call-perform-the-songs-of-paul-mccartney\nMore: https://brightonweekend.
+ co.uk/e/2026-12-17-the-hope-ruin-collect-paul-collect-call-perform-the-son
+ gs-of-paul-mccartney/
+URL:https://brightonweekend.co.uk/e/2026-12-17-the-hope-ruin-collect-paul-c
+ ollect-call-perform-the-songs-of-paul-mccartney/
+END:VEVENT
+END:VCALENDAR

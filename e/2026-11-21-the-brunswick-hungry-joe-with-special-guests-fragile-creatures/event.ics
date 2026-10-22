@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-the-brunswick-hungry-joe-with-special-guests-fragile-creatur
+ es@brightonweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Hungry Joe with special guests Fragile Creatures
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/hungry-jo
+ e-with-special-guests-fragile-creatures\nMore: https://brightonweekend.co.
+ uk/e/2026-11-21-the-brunswick-hungry-joe-with-special-guests-fragile-creat
+ ures/
+URL:https://brightonweekend.co.uk/e/2026-11-21-the-brunswick-hungry-joe-wit
+ h-special-guests-fragile-creatures/
+END:VEVENT
+END:VCALENDAR

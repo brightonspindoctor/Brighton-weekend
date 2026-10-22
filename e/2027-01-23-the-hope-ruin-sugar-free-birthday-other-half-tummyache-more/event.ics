@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-23-the-hope-ruin-sugar-free-birthday-other-half-tummyache-more@
+ brightonweekend.co.uk
+DTSTAMP:20270123T000000Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:Sugar-Free Birthday: Other Half + Tummyache + more
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/8rgwpod4/sugar-free-birthday
+ -other-half-tummyache-more\nMore: https://brightonweekend.co.uk/e/2027-01-
+ 23-the-hope-ruin-sugar-free-birthday-other-half-tummyache-more/
+URL:https://brightonweekend.co.uk/e/2027-01-23-the-hope-ruin-sugar-free-bir
+ thday-other-half-tummyache-more/
+END:VEVENT
+END:VCALENDAR

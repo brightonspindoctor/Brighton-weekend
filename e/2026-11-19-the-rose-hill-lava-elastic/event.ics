@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-19-the-rose-hill-lava-elastic@brightonweekend.co.uk
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Lava Elastic
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/lava-elastic-november-
+ 2026/\nMore: https://brightonweekend.co.uk/e/2026-11-19-the-rose-hill-lava
+ -elastic/
+URL:https://brightonweekend.co.uk/e/2026-11-19-the-rose-hill-lava-elastic/
+END:VEVENT
+END:VCALENDAR

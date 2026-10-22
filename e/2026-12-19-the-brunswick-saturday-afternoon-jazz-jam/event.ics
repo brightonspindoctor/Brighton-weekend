@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-19-the-brunswick-saturday-afternoon-jazz-jam@brightonweekend.co
+ .uk
+DTSTAMP:20261219T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Saturday Afternoon Jazz Jam
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/saturday-
+ afternoon-jazz-jam-22\nMore: https://brightonweekend.co.uk/e/2026-12-19-th
+ e-brunswick-saturday-afternoon-jazz-jam/
+URL:https://brightonweekend.co.uk/e/2026-12-19-the-brunswick-saturday-after
+ noon-jazz-jam/
+END:VEVENT
+END:VCALENDAR

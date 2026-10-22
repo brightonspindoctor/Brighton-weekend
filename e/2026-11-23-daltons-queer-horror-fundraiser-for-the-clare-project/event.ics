@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-23-daltons-queer-horror-fundraiser-for-the-clare-project@bright
+ onweekend.co.uk
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:Queer Horror Fundraiser for the Clare Project
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/queer-ho
+ rror-fundraiser-for-the-clare-project\nMore: https://brightonweekend.co.uk
+ /e/2026-11-23-daltons-queer-horror-fundraiser-for-the-clare-project/
+URL:https://brightonweekend.co.uk/e/2026-11-23-daltons-queer-horror-fundrai
+ ser-for-the-clare-project/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-10-the-brunswick-ironclad-christmas-social@brightonweekend.co.u
+ k
+DTSTAMP:20261210T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Ironclad Christmas Social
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/ironclad-
+ christmas-social\nMore: https://brightonweekend.co.uk/e/2026-12-10-the-bru
+ nswick-ironclad-christmas-social/
+URL:https://brightonweekend.co.uk/e/2026-12-10-the-brunswick-ironclad-chris
+ tmas-social/
+END:VEVENT
+END:VCALENDAR

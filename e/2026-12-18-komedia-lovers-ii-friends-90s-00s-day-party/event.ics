@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-18-komedia-lovers-ii-friends-90s-00s-day-party@brightonweekend.
+ co.uk
+DTSTAMP:20261218T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Lovers II Friends – 90s/00s Day Party
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://www.komedia.co.uk/shows/lovers-ii-friends-90s-
+ 00s-day-party/?eid=21525\nMore: https://brightonweekend.co.uk/e/2026-12-18
+ -komedia-lovers-ii-friends-90s-00s-day-party/
+URL:https://brightonweekend.co.uk/e/2026-12-18-komedia-lovers-ii-friends-90
+ s-00s-day-party/
+END:VEVENT
+END:VCALENDAR

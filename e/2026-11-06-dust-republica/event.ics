@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-dust-republica@brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Republica
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/69c97138da61120001f85e2a\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-06-dust-republica/
+URL:https://brightonweekend.co.uk/e/2026-11-06-dust-republica/
+END:VEVENT
+END:VCALENDAR

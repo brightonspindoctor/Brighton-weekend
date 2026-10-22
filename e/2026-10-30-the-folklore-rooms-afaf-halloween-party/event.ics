@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-30-the-folklore-rooms-afaf-halloween-party@brightonweekend.co.u
+ k
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Afaf: Halloween Party!
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/afaf-halloween-party-
+ w-room-service/the-folklore-rooms/3743175\nMore: https://brightonweekend.c
+ o.uk/e/2026-10-30-the-folklore-rooms-afaf-halloween-party/
+URL:https://brightonweekend.co.uk/e/2026-10-30-the-folklore-rooms-afaf-hall
+ oween-party/
+END:VEVENT
+END:VCALENDAR

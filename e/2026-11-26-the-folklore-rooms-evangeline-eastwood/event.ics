@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-26-the-folklore-rooms-evangeline-eastwood@brightonweekend.co.uk
+DTSTAMP:20261126T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Evangeline Eastwood
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/dmeq3mlk/eastwood-events-eva
+ ngeline-eastwood-single-release-party?utm_campaign=prom_ss&utm_medium=soci
+ al&utm_source=dynamic\nMore: https://brightonweekend.co.uk/e/2026-11-26-th
+ e-folklore-rooms-evangeline-eastwood/
+URL:https://brightonweekend.co.uk/e/2026-11-26-the-folklore-rooms-evangelin
+ e-eastwood/
+END:VEVENT
+END:VCALENDAR

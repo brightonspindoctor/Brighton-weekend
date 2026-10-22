@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-19-chalk-hang-massive@brightonweekend.co.uk
+DTSTAMP:20270519T000000Z
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270520
+SUMMARY:Hang Massive
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/Qdfc90a33503\nMore: https://brigh
+ tonweekend.co.uk/e/2027-05-19-chalk-hang-massive/
+URL:https://brightonweekend.co.uk/e/2027-05-19-chalk-hang-massive/
+END:VEVENT
+END:VCALENDAR

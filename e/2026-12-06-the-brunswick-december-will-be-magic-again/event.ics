@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-06-the-brunswick-december-will-be-magic-again@brightonweekend.c
+ o.uk
+DTSTAMP:20261206T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:December Will Be Magic Again
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/december-
+ will-be-magic-again-2\nMore: https://brightonweekend.co.uk/e/2026-12-06-th
+ e-brunswick-december-will-be-magic-again/
+URL:https://brightonweekend.co.uk/e/2026-12-06-the-brunswick-december-will-
+ be-magic-again/
+END:VEVENT
+END:VCALENDAR

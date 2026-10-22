@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-16-the-brunswick-phil-jones-not-just-another-christmas-matinee@
+ brightonweekend.co.uk
+DTSTAMP:20261216T000000Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Phil Jones - "Not Just Another Christmas" (Matinee)
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/phil-jone
+ s-not-just-another-christmas-matinee\nMore: https://brightonweekend.co.uk/
+ e/2026-12-16-the-brunswick-phil-jones-not-just-another-christmas-matinee/
+URL:https://brightonweekend.co.uk/e/2026-12-16-the-brunswick-phil-jones-not
+ -just-another-christmas-matinee/
+END:VEVENT
+END:VCALENDAR

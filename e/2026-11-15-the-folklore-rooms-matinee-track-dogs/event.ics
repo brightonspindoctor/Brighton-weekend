@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-the-folklore-rooms-matinee-track-dogs@brightonweekend.co.uk
+DTSTAMP:20261115T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Matinee: Track Dogs
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/track-dogs-matinee-sh
+ ow/the-folklore-rooms/3743164\nMore: https://brightonweekend.co.uk/e/2026-
+ 11-15-the-folklore-rooms-matinee-track-dogs/
+URL:https://brightonweekend.co.uk/e/2026-11-15-the-folklore-rooms-matinee-t
+ rack-dogs/
+END:VEVENT
+END:VCALENDAR

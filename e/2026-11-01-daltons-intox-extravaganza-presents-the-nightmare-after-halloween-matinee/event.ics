@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-01-daltons-intox-extravaganza-presents-the-nightmare-after-hall
+ oween-matinee@brightonweekend.co.uk
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Intox Extravaganza Presents the Nightmare After Halloween Matinee
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/intox-ex
+ travaganza-presents-the-nightmare-after-halloween-matinee\nMore: https://b
+ rightonweekend.co.uk/e/2026-11-01-daltons-intox-extravaganza-presents-the-
+ nightmare-after-halloween-matinee/
+URL:https://brightonweekend.co.uk/e/2026-11-01-daltons-intox-extravaganza-p
+ resents-the-nightmare-after-halloween-matinee/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-26-daltons-pryma-soul-nest-rvins-norfolk-island@brightonweekend
+ .co.uk
+DTSTAMP:20270326T000000Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:Pryma + Soul Nest + Rvins + Norfolk Island
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/R985e21c785b\nMore: https://brigh
+ tonweekend.co.uk/e/2027-03-26-daltons-pryma-soul-nest-rvins-norfolk-island
+ /
+URL:https://brightonweekend.co.uk/e/2027-03-26-daltons-pryma-soul-nest-rvin
+ s-norfolk-island/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-the-brunswick-monster-mash-family-bash@brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Monster Mash Family Bash
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/monster-m
+ ash-family-bash\nMore: https://brightonweekend.co.uk/e/2026-10-31-the-brun
+ swick-monster-mash-family-bash/
+URL:https://brightonweekend.co.uk/e/2026-10-31-the-brunswick-monster-mash-f
+ amily-bash/
+END:VEVENT
+END:VCALENDAR

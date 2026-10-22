@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-19-the-brunswick-pete-williams-dexys-midnight-runners-founder-b
+ righton-hove@brightonweekend.co.uk
+DTSTAMP:20270319T000000Z
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+SUMMARY:Pete Williams (Dexys Midnight Runners Founder) - Brighton/Hove
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/pete-will
+ iams-dexys-midnight-runners-founder-brighton-hove\nMore: https://brightonw
+ eekend.co.uk/e/2027-03-19-the-brunswick-pete-williams-dexys-midnight-runne
+ rs-founder-brighton-hove/
+URL:https://brightonweekend.co.uk/e/2027-03-19-the-brunswick-pete-williams-
+ dexys-midnight-runners-founder-brighton-hove/
+END:VEVENT
+END:VCALENDAR

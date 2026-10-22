@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-the-rose-hill-she-is-risen@brightonweekend.co.uk
+DTSTAMP:20261115T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:She Is Risen
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/she-is-risen-november-
+ 2026/\nMore: https://brightonweekend.co.uk/e/2026-11-15-the-rose-hill-she-
+ is-risen/
+URL:https://brightonweekend.co.uk/e/2026-11-15-the-rose-hill-she-is-risen/
+END:VEVENT
+END:VCALENDAR

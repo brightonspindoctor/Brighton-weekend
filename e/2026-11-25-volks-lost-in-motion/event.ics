@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-25-volks-lost-in-motion@brightonweekend.co.uk
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Lost in Motion
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1541653/lost-in-motion-t
+ ickets?skin=volks\nMore: https://brightonweekend.co.uk/e/2026-11-25-volks-
+ lost-in-motion/
+URL:https://brightonweekend.co.uk/e/2026-11-25-volks-lost-in-motion/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-02-the-brunswick-night-teacher-us-the-brunswick@brightonweekend
+ .co.uk
+DTSTAMP:20270302T000000Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:Night Teacher (US)
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/night-tea
+ cher-us-the-brunswick\nMore: https://brightonweekend.co.uk/e/2027-03-02-th
+ e-brunswick-night-teacher-us-the-brunswick/
+URL:https://brightonweekend.co.uk/e/2027-03-02-the-brunswick-night-teacher-
+ us-the-brunswick/
+END:VEVENT
+END:VCALENDAR

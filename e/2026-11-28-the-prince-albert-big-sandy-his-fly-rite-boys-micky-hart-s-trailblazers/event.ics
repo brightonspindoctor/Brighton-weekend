@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-the-prince-albert-big-sandy-his-fly-rite-boys-micky-hart-s-t
+ railblazers@brightonweekend.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Big Sandy + His Fly-rite Boys + Micky Hart's TrailBlazers
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/big-sandy-his-fly-rite
+ -boys-micky-harts-trailblazers-tickets-G9JDLS\nMore: https://brightonweeke
+ nd.co.uk/e/2026-11-28-the-prince-albert-big-sandy-his-fly-rite-boys-micky-
+ hart-s-trailblazers/
+URL:https://brightonweekend.co.uk/e/2026-11-28-the-prince-albert-big-sandy-
+ his-fly-rite-boys-micky-hart-s-trailblazers/
+END:VEVENT
+END:VCALENDAR

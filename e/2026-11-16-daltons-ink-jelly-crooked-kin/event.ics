@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-16-daltons-ink-jelly-crooked-kin@brightonweekend.co.uk
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:INK! - Jelly - Crooked Kin
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.com/e/ink-jelly-crooked-kin-dal
+ tons-16th-november-tickets-2003407438579?aff=oddtdtcreator&utm_source=ig&u
+ tm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAVBxr1leHRuA2FlbQIx
+ MQBwZG9mAmZkaWQWUQiQdRlKkPXvTFXZn3J8uYICJgcJxXNydGMGYXBwX2lkDzEyNDAyNDU3ND
+ I4NzQxNAABp3qrCfOBkbP9yxIXTlU8yZVsmFBuEBmig-gODxul5_25PIjT_tcZc30bgibx_aem
+ _LlTfwmnplZQ728R97GFZCg\nMore: https://brightonweekend.co.uk/e/2026-11-16-
+ daltons-ink-jelly-crooked-kin/
+URL:https://brightonweekend.co.uk/e/2026-11-16-daltons-ink-jelly-crooked-ki
+ n/
+END:VEVENT
+END:VCALENDAR

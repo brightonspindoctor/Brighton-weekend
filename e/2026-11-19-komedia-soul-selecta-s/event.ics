@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-19-komedia-soul-selecta-s@brightonweekend.co.uk
+DTSTAMP:20261119T000000Z
+DTSTART:20261119T190000Z
+DTEND:20261119T220000Z
+SUMMARY:Soul-Selecta’s
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366849
+ 8/events/128667937\nMore: https://brightonweekend.co.uk/e/2026-11-19-komed
+ ia-soul-selecta-s/
+URL:https://brightonweekend.co.uk/e/2026-11-19-komedia-soul-selecta-s/
+END:VEVENT
+END:VCALENDAR

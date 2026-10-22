@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-24-daltons-bndm-s-doctor-who-drag-night@brightonweekend.co.uk
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:BNDM'S Doctor Who Drag Night
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.outsavvy.com/event/39598/doctor-who-drag-n
+ ight-63rd-anniversary-celebration\nMore: https://brightonweekend.co.uk/e/2
+ 026-11-24-daltons-bndm-s-doctor-who-drag-night/
+URL:https://brightonweekend.co.uk/e/2026-11-24-daltons-bndm-s-doctor-who-dr
+ ag-night/
+END:VEVENT
+END:VCALENDAR

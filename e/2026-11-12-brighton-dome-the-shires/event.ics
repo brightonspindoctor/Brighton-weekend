@@ -10,9 +10,8 @@ DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:The Shires
 LOCATION:Brighton Dome\, Brighton
-DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
- alse\,false&top_filter=all&page=2&view=list\nMore: https://brightonweekend
- .co.uk/e/2026-11-12-brighton-dome-the-shires/
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/L2H-the-shires/\nMor
+ e: https://brightonweekend.co.uk/e/2026-11-12-brighton-dome-the-shires/
 URL:https://brightonweekend.co.uk/e/2026-11-12-brighton-dome-the-shires/
 END:VEVENT
 END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-29-dust-upe-presents-halloween-in-brighton-29-10-26@brightonwee
+ kend.co.uk
+DTSTAMP:20261029T000000Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Upe Presents: Halloween in Brighton 29.10.26
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Dust-Brighto
+ n/UPE-PRESENTS-Halloween-in-Brighton-291026/42803964/\nMore: https://brigh
+ tonweekend.co.uk/e/2026-10-29-dust-upe-presents-halloween-in-brighton-29-1
+ 0-26/
+URL:https://brightonweekend.co.uk/e/2026-10-29-dust-upe-presents-halloween-
+ in-brighton-29-10-26/
+END:VEVENT
+END:VCALENDAR

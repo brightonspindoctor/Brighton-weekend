@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-28-green-door-store-tv-priest@brightonweekend.co.uk
+DTSTAMP:20270128T000000Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:TV Priest
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/tv-priest/\nMor
+ e: https://brightonweekend.co.uk/e/2027-01-28-green-door-store-tv-priest/
+URL:https://brightonweekend.co.uk/e/2027-01-28-green-door-store-tv-priest/
+END:VEVENT
+END:VCALENDAR

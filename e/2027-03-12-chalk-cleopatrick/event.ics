@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-12-chalk-cleopatrick@brightonweekend.co.uk
+DTSTAMP:20270312T000000Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:cleopatrick
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/kbf36d70d07f\nMore: https://brigh
+ tonweekend.co.uk/e/2027-03-12-chalk-cleopatrick/
+URL:https://brightonweekend.co.uk/e/2027-03-12-chalk-cleopatrick/
+END:VEVENT
+END:VCALENDAR

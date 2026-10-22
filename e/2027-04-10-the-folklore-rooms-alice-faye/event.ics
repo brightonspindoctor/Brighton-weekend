@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-10-the-folklore-rooms-alice-faye@brightonweekend.co.uk
+DTSTAMP:20270410T000000Z
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270411
+SUMMARY:Alice Faye
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvYWxpY2UtZmF5ZS90aGUtZm9sa2xvcmUtcm9vbXMvMzczNj
+ A2Mg/supplier/SeeTickets/suppliedid/MzczNjA2Mg/ticketid/8177567/checksum/b
+ f8c65b734429ea452ee1020b2b2cb28/track/true?title=Alice+Faye&badge=&venueId
+ =109746\nMore: https://brightonweekend.co.uk/e/2027-04-10-the-folklore-roo
+ ms-alice-faye/
+URL:https://brightonweekend.co.uk/e/2027-04-10-the-folklore-rooms-alice-fay
+ e/
+END:VEVENT
+END:VCALENDAR

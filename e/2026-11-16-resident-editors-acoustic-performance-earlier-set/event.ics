@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-16-resident-editors-acoustic-performance-earlier-set@brightonwe
+ ekend.co.uk
+DTSTAMP:20261116T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Editors: Acoustic Performance (Earlier set)
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ad61ee317744e000194a355\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-16-resident-editors-acoustic-perfo
+ rmance-earlier-set/
+URL:https://brightonweekend.co.uk/e/2026-11-16-resident-editors-acoustic-pe
+ rformance-earlier-set/
+END:VEVENT
+END:VCALENDAR
