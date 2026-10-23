@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-23-the-forge-comedy-club-josh-jones-confessions-of-a-leggy-blon
+ de@brightonweekend.co.uk
+DTSTAMP:20270323T000000Z
+DTSTART:20270323T200000Z
+DTEND:20270323T220000Z
+SUMMARY:Josh Jones: Confessions of a Leggy Blonde
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/josh-jones-confessions-
+ of-a-leggy-blonde-tickets-2003749345231\nMore: https://brightonweekend.co.
+ uk/e/2027-03-23-the-forge-comedy-club-josh-jones-confessions-of-a-leggy-bl
+ onde/
+URL:https://brightonweekend.co.uk/e/2027-03-23-the-forge-comedy-club-josh-j
+ ones-confessions-of-a-leggy-blonde/
+END:VEVENT
+END:VCALENDAR

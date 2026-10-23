@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-06-concorde-2-arctic-numpties@brightonweekend.co.uk
+DTSTAMP:20270306T000000Z
+DTSTART:20270306T190000Z
+DTEND:20270306T220000Z
+SUMMARY:Arctic Numpties
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1673173/arctic-numpties-
+ tickets\nMore: https://brightonweekend.co.uk/e/2027-03-06-concorde-2-arcti
+ c-numpties/
+URL:https://brightonweekend.co.uk/e/2027-03-06-concorde-2-arctic-numpties/
+END:VEVENT
+END:VCALENDAR

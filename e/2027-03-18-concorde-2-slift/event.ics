@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-18-concorde-2-slift@brightonweekend.co.uk
+DTSTAMP:20270318T000000Z
+DTSTART:20270318T193000Z
+DTEND:20270318T223000Z
+SUMMARY:Slift
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1669600/slift-tickets\nM
+ ore: https://brightonweekend.co.uk/e/2027-03-18-concorde-2-slift/
+URL:https://brightonweekend.co.uk/e/2027-03-18-concorde-2-slift/
+END:VEVENT
+END:VCALENDAR

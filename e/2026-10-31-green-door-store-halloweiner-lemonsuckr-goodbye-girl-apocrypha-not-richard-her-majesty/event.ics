@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-10-31-green-door-store-halloweiner-lemonsuckr-goodbye-girl-apocryp
  ha-not-richard-her-majesty@brightonweekend.co.uk
 DTSTAMP:20261031T000000Z
-DTSTART;VALUE=DATE:20261031
-DTEND;VALUE=DATE:20261101
+DTSTART:20261031T183000Z
+DTEND:20261031T213000Z
 SUMMARY:Halloweiner – Lemonsuckr / Goodbye / Girl Apocrypha / Not Richard
   & Her Majesty
 LOCATION:Green Door Store\, Brighton

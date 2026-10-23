@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-30-brighton-centre-bonobo@brightonweekend.co.uk
+DTSTAMP:20261030T000000Z
+DTSTART:20261030T100000Z
+DTEND:20261030T130000Z
+SUMMARY:Bonobo
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://www.ticketmaster.co.uk/event/3E006521F0426993\
+ nMore: https://brightonweekend.co.uk/e/2026-10-30-brighton-centre-bonobo/
+URL:https://brightonweekend.co.uk/e/2026-10-30-brighton-centre-bonobo/
+END:VEVENT
+END:VCALENDAR

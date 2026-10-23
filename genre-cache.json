@@ -689,6 +689,16 @@
   "checked": "2026-10-16",
   "v": 3
  },
+ "arctic numpties": {
+  "mbid": "85955587-1238-42eb-b02d-fea7e562971c",
+  "name": "Arctic Numpties",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Arctic Numpties",
+  "checked": "2026-10-23",
+  "v": 3
+ },
  "arkayla raynor": {
   "bucket": null,
   "reason": "not in MusicBrainz",
