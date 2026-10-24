@@ -2094,6 +2094,31 @@
   "act": "Cody Dahler",
   "checked": "2026-10-06"
  },
+ "coilguns": {
+  "mbid": "fb8365df-88ac-4715-bf2f-8757a6c847b3",
+  "name": "Coilguns",
+  "genres": [
+   {
+    "name": "mathcore",
+    "count": 1
+   },
+   {
+    "name": "post-hardcore",
+    "count": 1
+   },
+   {
+    "name": "sludge metal",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q65038029",
+  "wd_genres": [],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Coilguns",
+  "checked": "2026-10-24",
+  "v": 3
+ },
  "colin miller and told slant": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -2176,6 +2201,13 @@
   "act": "Cootie Catcher",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "corselette": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Corselette",
+  "checked": "2026-10-24",
+  "v": 3
  },
  "cosmic joke": {
   "mbid": "10ad2ae2-1845-463d-a185-61eb0ba6f9c0",
@@ -3620,6 +3652,16 @@
   "checked": "2026-10-22",
   "v": 3
  },
+ "exploring birdsong": {
+  "mbid": "99814acd-6014-47bd-a47d-64651a8dd2f1",
+  "name": "Exploring Birdsong",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Exploring Birdsong",
+  "checked": "2026-10-24",
+  "v": 3
+ },
  "eyes": {
   "mbid": "90e129cb-8613-4d37-a692-993fd27cbbc9",
   "name": "Eyes",
@@ -3645,6 +3687,16 @@
   "act": "Fabergé Falls",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "family stereo": {
+  "mbid": "2e941954-f60a-4726-a4d8-4f5b899adc25",
+  "name": "Family Stereo",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Family Stereo",
+  "checked": "2026-10-24",
+  "v": 3
  },
  "family ties": {
   "bucket": null,
@@ -5138,6 +5190,16 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "housekeeping": {
+  "mbid": "8f31b852-4771-464d-89fb-38061bc0ad8d",
+  "name": "Housekeeping",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Housekeeping",
+  "checked": "2026-10-24",
+  "v": 3
+ },
  "hove record fair": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -5324,6 +5386,13 @@
   "reason": "tagged",
   "act": "Iceage",
   "checked": "2026-10-06"
+ },
+ "in other words poetry night": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "In Other Words Poetry Night",
+  "checked": "2026-10-24",
+  "v": 3
  },
  "indie rock night": {
   "bucket": null,
@@ -5740,6 +5809,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "jaylor": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Jaylor",
+  "checked": "2026-10-24",
+  "v": 3
+ },
  "jesca hoop": {
   "mbid": "b5330942-ffdf-49cb-8a13-b5d7b5d67bff",
   "name": "Jesca Hoop",
@@ -6139,6 +6215,16 @@
   "reason": "3 artists share this name",
   "act": "Kanine",
   "checked": "2026-10-06"
+ },
+ "karate boogaloo": {
+  "mbid": "8eda37f5-bafc-4d6a-8452-4051fbd8ba3e",
+  "name": "Karate Boogaloo",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Karate Boogaloo",
+  "checked": "2026-10-24",
+  "v": 3
  },
  "keeno": {
   "bucket": null,
@@ -8111,6 +8197,33 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "other lives": {
+  "mbid": "69ce32a2-dbb1-42c2-98fc-2fbf896ef861",
+  "name": "Other Lives",
+  "genres": [
+   {
+    "name": "folk",
+    "count": 2
+   },
+   {
+    "name": "indie rock",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q3357598",
+  "wd_genres": [
+   "indie rock"
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Other Lives",
+  "checked": "2026-10-24",
+  "v": 3
+ },
  "our man in the field": {
   "mbid": "15f51d9c-093d-4b49-9c8f-5e8f37f7dc30",
   "name": "Our Man in the Field",
@@ -8553,6 +8666,16 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "quaking aspens": {
+  "mbid": "13795d18-2830-4309-a8e9-5c95d1a54337",
+  "name": "Quaking Aspens",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Quaking Aspens",
+  "checked": "2026-10-24",
+  "v": 3
+ },
  "quantic": {
   "bucket": null,
   "reason": "2 artists share this name",
@@ -8622,6 +8745,16 @@
   "act": "Radiator",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "radie peat": {
+  "mbid": "6962228f-b6b4-4635-a3b2-d6df75c5e490",
+  "name": "Radie Peat",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Radie Peat",
+  "checked": "2026-10-24",
+  "v": 3
  },
  "rapscallion and chums": {
   "bucket": null,
@@ -9644,6 +9777,42 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "slift": {
+  "mbid": "3d303095-020a-4b65-9419-b91a574c8c9b",
+  "name": "SLIFT",
+  "genres": [
+   {
+    "name": "heavy psych",
+    "count": 3
+   },
+   {
+    "name": "progressive rock",
+    "count": 1
+   },
+   {
+    "name": "psychedelic rock",
+    "count": 7
+   },
+   {
+    "name": "rock",
+    "count": 1
+   },
+   {
+    "name": "space rock",
+    "count": 8
+   },
+   {
+    "name": "stoner metal",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q110975109",
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Slift",
+  "checked": "2026-10-24",
+  "v": 3
+ },
  "slipmatt ellis dee 2 bad mice and dj ratty": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -10365,6 +10534,42 @@
   "act": "Teenage Fanclub",
   "checked": "2026-10-06"
  },
+ "texas": {
+  "mbid": "7289d10d-d8d2-41ff-8308-c56ec9346e07",
+  "name": "Texas",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 4
+   },
+   {
+    "name": "blue-eyed soul",
+    "count": 2
+   },
+   {
+    "name": "indie rock",
+    "count": 1
+   },
+   {
+    "name": "pop rock",
+    "count": 2
+   },
+   {
+    "name": "rock",
+    "count": 3
+   },
+   {
+    "name": "soft rock",
+    "count": 2
+   }
+  ],
+  "wikidata": "Q916484",
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Texas",
+  "checked": "2026-10-24",
+  "v": 3
+ },
  "the 32nd air guitar championship final": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -10714,6 +10919,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "the godfathers": {
+  "bucket": null,
+  "reason": "3 artists share this name",
+  "act": "The Godfathers",
+  "checked": "2026-10-24",
+  "v": 3
+ },
  "the gulls": {
   "mbid": "fd6677e9-609b-43d7-a02d-66fa00fc03dc",
   "name": "The Gulls",
@@ -10847,6 +11059,62 @@
   "reason": "not in MusicBrainz",
   "act": "The Jack Cades live at The Prince Albert",
   "checked": "2026-10-07"
+ },
+ "the jacksons": {
+  "mbid": "e5257dc5-1edd-4fca-b7e6-1158e00522c8",
+  "name": "The Jacksons",
+  "genres": [
+   {
+    "name": "bubblegum pop",
+    "count": 1
+   },
+   {
+    "name": "contemporary r&b",
+    "count": 1
+   },
+   {
+    "name": "disco",
+    "count": 1
+   },
+   {
+    "name": "funk",
+    "count": 3
+   },
+   {
+    "name": "motown",
+    "count": 1
+   },
+   {
+    "name": "philly soul",
+    "count": 1
+   },
+   {
+    "name": "pop",
+    "count": 3
+   },
+   {
+    "name": "pop soul",
+    "count": 3
+   },
+   {
+    "name": "quiet storm",
+    "count": 1
+   },
+   {
+    "name": "r&b",
+    "count": 1
+   },
+   {
+    "name": "soul",
+    "count": 5
+   }
+  ],
+  "wikidata": "Q43267",
+  "bucket": "Jazz, Soul & Funk",
+  "reason": "tagged",
+  "act": "The Jacksons",
+  "checked": "2026-10-24",
+  "v": 3
  },
  "the jam uk": {
   "bucket": null,
@@ -12007,6 +12275,42 @@
   "act": "Tropical F*ck Storm",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "tropical fuck storm": {
+  "mbid": "a7a3399e-2d9a-4c3b-9ada-7e861aed1cb3",
+  "name": "Tropical Fuck Storm",
+  "genres": [
+   {
+    "name": "art punk",
+    "count": 3
+   },
+   {
+    "name": "experimental rock",
+    "count": 2
+   },
+   {
+    "name": "heavy psych",
+    "count": 1
+   },
+   {
+    "name": "post-punk",
+    "count": 1
+   },
+   {
+    "name": "psychedelic rock",
+    "count": 3
+   },
+   {
+    "name": "punk blues",
+    "count": 2
+   }
+  ],
+  "wikidata": "Q56064390",
+  "bucket": "Punk & Metal",
+  "reason": "tagged",
+  "act": "Tropical Fuck Storm",
+  "checked": "2026-10-24",
+  "v": 3
  },
  "turbobier": {
   "mbid": "250ace3f-af5a-4d1c-b161-79ccd0a78d8a",

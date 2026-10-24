@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-03-resident-radie-peat-lankum-xn-live-signing@brightonweekend.c
+ o.uk
+DTSTAMP:20261203T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Radie Peat (Lankum & ØXN): Live + Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ad8a8043a5e000001ca23ee\nMore: 
+ https://brightonweekend.co.uk/e/2026-12-03-resident-radie-peat-lankum-xn-l
+ ive-signing/
+URL:https://brightonweekend.co.uk/e/2026-12-03-resident-radie-peat-lankum-x
+ n-live-signing/
+END:VEVENT
+END:VCALENDAR

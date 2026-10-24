@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-green-door-store-it-is-still-1985-halloween-special@brighton
+ weekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART:20261031T230000Z
+DTEND:20261101T020000Z
+SUMMARY:It Is Still 1985 – Halloween special
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/it-is-still-198
+ 5-5/\nMore: https://brightonweekend.co.uk/e/2026-10-31-green-door-store-it
+ -is-still-1985-halloween-special/
+URL:https://brightonweekend.co.uk/e/2026-10-31-green-door-store-it-is-still
+ -1985-halloween-special/
+END:VEVENT
+END:VCALENDAR

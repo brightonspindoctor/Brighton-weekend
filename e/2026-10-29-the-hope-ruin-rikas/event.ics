@@ -6,18 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-10-29-the-hope-ruin-rikas@brightonweekend.co.uk
 DTSTAMP:20261029T000000Z
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261030
-SUMMARY:Rikas
+DTSTART:20261029T193000Z
+DTEND:20261029T230000Z
+SUMMARY:Rikas + Jordan Joy
 LOCATION:The Hope & Ruin\, Brighton
-DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
- ZXRtYXN0ZXIuZXZ5eS5uZXQvYy8xMzAwOTY4LzIwMzg3NTgvMjQwMjM_dT1odHRwcyUzQSUyRi
- UyRnd3dy50aWNrZXRtYXN0ZXIuY28udWslMkZyaWthcy1icmlnaHRvbi0yOS0xMC0yMDI2JTJG
- ZXZlbnQlMkYxRjAwNjRDMTFEQTFENTU3JTNGYnJhbmQlM0R1a19lbnRzMjQmdXRtX21lZGl1bT
- 1hZmZpbGlhdGU/supplier/Ticketmaster/suppliedid/RzV2SFpfRzdxSXE0OQ/ticketid
- /8071537/checksum/3f91566fe659dbf2bd13514767e564f1/track/true?title=Rikas&
- badge=&venueId=34826\nMore: https://brightonweekend.co.uk/e/2026-10-29-the
- -hope-ruin-rikas/
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/bcbayv48/rikas-jordan-joy-so
+ ld-out\nMore: https://brightonweekend.co.uk/e/2026-10-29-the-hope-ruin-rik
+ as/
 URL:https://brightonweekend.co.uk/e/2026-10-29-the-hope-ruin-rikas/
 END:VEVENT
 END:VCALENDAR

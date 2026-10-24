@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-25-komedia-the-magic-mod@brightonweekend.co.uk
+DTSTAMP:20270425T000000Z
+DTSTART:20270425T183000Z
+DTEND:20270425T213000Z
+SUMMARY:The Magic Mod
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87364968
+ 1/events/128661874\nMore: https://brightonweekend.co.uk/e/2027-04-25-komed
+ ia-the-magic-mod/
+URL:https://brightonweekend.co.uk/e/2027-04-25-komedia-the-magic-mod/
+END:VEVENT
+END:VCALENDAR

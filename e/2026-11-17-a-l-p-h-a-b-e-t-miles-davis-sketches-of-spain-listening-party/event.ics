@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-17-a-l-p-h-a-b-e-t-miles-davis-sketches-of-spain-listening-part
+ y@brightonweekend.co.uk
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Miles Davis - Sketches of Spain Listening Party
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.alphabetbrighton.com/listings/nov-17-miles
+ -davis-sketches-of-spain-listening-party\nMore: https://brightonweekend.co
+ .uk/e/2026-11-17-a-l-p-h-a-b-e-t-miles-davis-sketches-of-spain-listening-p
+ arty/
+URL:https://brightonweekend.co.uk/e/2026-11-17-a-l-p-h-a-b-e-t-miles-davis-
+ sketches-of-spain-listening-party/
+END:VEVENT
+END:VCALENDAR

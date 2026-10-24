@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-the-brunswick-flamenco-express-30th-anniversary-tour-novembe
+ r-2026@brightonweekend.co.uk
+DTSTAMP:20261115T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Flamenco Express 30th Anniversary Tour. November 2026
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/flamenco-
+ express-30th-anniversary-tour-november-2026\nMore: https://brightonweekend
+ .co.uk/e/2026-11-15-the-brunswick-flamenco-express-30th-anniversary-tour-n
+ ovember-2026/
+URL:https://brightonweekend.co.uk/e/2026-11-15-the-brunswick-flamenco-expre
+ ss-30th-anniversary-tour-november-2026/
+END:VEVENT
+END:VCALENDAR

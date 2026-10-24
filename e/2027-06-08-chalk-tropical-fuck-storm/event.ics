@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-08-chalk-tropical-fuck-storm@brightonweekend.co.uk
+DTSTAMP:20270608T000000Z
+DTSTART;VALUE=DATE:20270608
+DTEND;VALUE=DATE:20270609
+SUMMARY:Tropical Fuck Storm
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/O43e1278e8c7\nMore: https://brigh
+ tonweekend.co.uk/e/2027-06-08-chalk-tropical-fuck-storm/
+URL:https://brightonweekend.co.uk/e/2027-06-08-chalk-tropical-fuck-storm/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-resident-halloqueen-queens-of-the-stone-age-celebrations@bri
+ ghtonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:HalloQueen (Queens of The Stone Age Celebrations)
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ad9e99abbb2450001e68bad\nMore: 
+ https://brightonweekend.co.uk/e/2026-10-31-resident-halloqueen-queens-of-t
+ he-stone-age-celebrations/
+URL:https://brightonweekend.co.uk/e/2026-10-31-resident-halloqueen-queens-o
+ f-the-stone-age-celebrations/
+END:VEVENT
+END:VCALENDAR

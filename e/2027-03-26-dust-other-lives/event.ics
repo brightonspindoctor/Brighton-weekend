@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-26-dust-other-lives@brightonweekend.co.uk
+DTSTAMP:20270326T000000Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:Other Lives
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ad72c5b43b00d0001b30a2c\nMore: 
+ https://brightonweekend.co.uk/e/2027-03-26-dust-other-lives/
+URL:https://brightonweekend.co.uk/e/2027-03-26-dust-other-lives/
+END:VEVENT
+END:VCALENDAR

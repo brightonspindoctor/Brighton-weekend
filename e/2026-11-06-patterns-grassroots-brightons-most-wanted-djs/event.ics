@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-patterns-grassroots-brightons-most-wanted-djs@brightonweeken
+ d.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Grassroots: Brightons Most Wanted DJs
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ada1e65922d780001d541ac\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-06-patterns-grassroots-brightons-m
+ ost-wanted-djs/
+URL:https://brightonweekend.co.uk/e/2026-11-06-patterns-grassroots-brighton
+ s-most-wanted-djs/
+END:VEVENT
+END:VCALENDAR

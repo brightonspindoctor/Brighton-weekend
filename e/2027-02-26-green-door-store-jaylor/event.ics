@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-26-green-door-store-jaylor@brightonweekend.co.uk
+DTSTAMP:20270226T000000Z
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270227
+SUMMARY:Jaylor
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/jayler/the-green-door
+ -store/3733545\nMore: https://brightonweekend.co.uk/e/2027-02-26-green-doo
+ r-store-jaylor/
+URL:https://brightonweekend.co.uk/e/2027-02-26-green-door-store-jaylor/
+END:VEVENT
+END:VCALENDAR

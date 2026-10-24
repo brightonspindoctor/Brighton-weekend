@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-17-the-prince-albert-corselette-support@brightonweekend.co.uk
+DTSTAMP:20270217T000000Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:Corselette + support
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/corselette-support-tic
+ kets-3B8MS1?unii-trigger-open=3B8MS1&unii-access-key=CORSLPRE\nMore: https
+ ://brightonweekend.co.uk/e/2027-02-17-the-prince-albert-corselette-support
+ /
+URL:https://brightonweekend.co.uk/e/2027-02-17-the-prince-albert-corselette
+ -support/
+END:VEVENT
+END:VCALENDAR
