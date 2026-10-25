@@ -1669,6 +1669,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "burner": {
+  "bucket": null,
+  "reason": "7 artists share this name",
+  "act": "Burner",
+  "checked": "2026-10-25",
+  "v": 3
+ },
  "burner beyond extinction": {
   "bucket": null,
   "reason": "not in MusicBrainz",

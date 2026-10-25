@@ -7,13 +7,13 @@ BEGIN:VEVENT
 UID:2026-11-01-greendoorstore-burner-beyond-extinction@brightonweekend.co.u
  k
 DTSTAMP:20261101T000000Z
-DTSTART;VALUE=DATE:20261101
-DTEND;VALUE=DATE:20261102
-SUMMARY:Burner Beyond Extinction
+DTSTART:20261101T190000Z
+DTEND:20261101T220000Z
+SUMMARY:Burner
 LOCATION:Green Door Store\, Brighton
-DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/\nMore: https:/
- /brightonweekend.co.uk/e/2026-11-01-greendoorstore-burner-beyond-extinctio
- n/
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1442823/burner-beyond-ex
+ tinction-tickets\nMore: https://brightonweekend.co.uk/e/2026-11-01-greendo
+ orstore-burner-beyond-extinction/
 URL:https://brightonweekend.co.uk/e/2026-11-01-greendoorstore-burner-beyond
  -extinction/
 END:VEVENT

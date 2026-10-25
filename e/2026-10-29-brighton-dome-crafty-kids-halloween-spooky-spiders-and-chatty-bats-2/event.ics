@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-29-brighton-dome-crafty-kids-halloween-spooky-spiders-and-chatt
+ y-bats-2@brightonweekend.co.uk
+DTSTAMP:20261029T000000Z
+DTSTART:20261029T111500Z
+DTEND:20261029T150000Z
+SUMMARY:Crafty Kids: Halloween Spooky Spiders and Chatty Bats
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LMN-crafty-kids-hall
+ oween-spooky-spiders-and-chatty-bats/\nMore: https://brightonweekend.co.uk
+ /e/2026-10-29-brighton-dome-crafty-kids-halloween-spooky-spiders-and-chatt
+ y-bats-2/
+URL:https://brightonweekend.co.uk/e/2026-10-29-brighton-dome-crafty-kids-ha
+ lloween-spooky-spiders-and-chatty-bats-2/
+END:VEVENT
+END:VCALENDAR
