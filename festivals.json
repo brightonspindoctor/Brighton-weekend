@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-25",
-  "range_start": "2026-10-25",
+  "updated": "2026-10-26",
+  "range_start": "2026-10-26",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -9,18 +9,6 @@
     "eFestivals"
   ],
   "festivals": [
-    {
-      "title": "Wilde Realms Event 4: The Sacrifices We Make",
-      "date": "2026-10-23",
-      "date_end": "2026-10-25",
-      "location": "Herne Bay",
-      "category": "Other",
-      "ticket_url": "https://fezzy.uk/festival/wilde-realms-event-4-the-sacrifices-we-make/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/wilde-realms-event-4-the-sacrifices-we-make/",
-      "id": "festival:wilde-realms-event-4-the-sacrifices-we-make:2026-10-23",
-      "location_display": "Herne Bay"
-    },
     {
       "title": "Damnation Festival",
       "date": "2026-11-07",
@@ -328,7 +316,7 @@
       "location": "Liverpool",
       "category": "Music",
       "ticket_url": "https://fezzy.uk/festival/liverpool-sound-city/",
-      "source": "https://fezzy.uk/collections/pop-festivals-uk-2026/",
+      "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/liverpool-sound-city/",
       "id": "festival:liverpool-sound-city:2027-05-01",
       "location_display": "Liverpool"
@@ -944,6 +932,18 @@
       "ticket_url": "https://gloriousdayfestival.co.uk/",
       "detail_url": "https://gloriousdayfestival.co.uk/",
       "source": "https://gloriousdayfestival.co.uk/"
+    },
+    {
+      "title": "Live on the Wye",
+      "date": "2027-06-05",
+      "date_end": "2027-06-05",
+      "location": "Wales",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/live-on-the-wye/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/live-on-the-wye/",
+      "id": "festival:live-on-the-wye:2027-06-05",
+      "location_display": "Wales"
     },
     {
       "title": "Mighty Hoopla",
