@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-22-caroline-of-brunswick-the-roast-of-morgue@brightonweekend.co
+ .uk
+DTSTAMP:20261122T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:The Roast of Morgue
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Caroline
+ -Of-Brunswick-/The-Roast-of-Morgue/42737506/\nMore: https://brightonweeken
+ d.co.uk/e/2026-11-22-caroline-of-brunswick-the-roast-of-morgue/
+URL:https://brightonweekend.co.uk/e/2026-11-22-caroline-of-brunswick-the-ro
+ ast-of-morgue/
+END:VEVENT
+END:VCALENDAR

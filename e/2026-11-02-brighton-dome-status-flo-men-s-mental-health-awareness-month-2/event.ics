@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-02-brighton-dome-status-flo-men-s-mental-health-awareness-month
+ -2@brightonweekend.co.uk
+DTSTAMP:20261102T000000Z
+DTSTART:20261102T200000Z
+DTEND:20261102T230000Z
+SUMMARY:Status Flo: Men’s Mental Health Awareness Month
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LGE-status-flo-mens-
+ mental-health-awareness-month/\nMore: https://brightonweekend.co.uk/e/2026
+ -11-02-brighton-dome-status-flo-men-s-mental-health-awareness-month-2/
+URL:https://brightonweekend.co.uk/e/2026-11-02-brighton-dome-status-flo-men
+ -s-mental-health-awareness-month-2/
+END:VEVENT
+END:VCALENDAR

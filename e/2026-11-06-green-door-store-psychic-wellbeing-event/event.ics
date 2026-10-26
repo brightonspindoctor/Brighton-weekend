@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-11-06-green-door-store-psychic-wellbeing-event@brightonweekend.co.
  uk
 DTSTAMP:20261106T000000Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261107
+DTSTART:20261106T190000Z
+DTEND:20261106T220000Z
 SUMMARY:Psychic & Wellbeing Event
 LOCATION:Green Door Store\, Brighton
 DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/psychic-wellbei

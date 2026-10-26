@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-21-brighton-dome-komedia-comedy-club@brightonweekend.co.uk
+DTSTAMP:20270221T000000Z
+DTSTART:20270221T200000Z
+DTEND:20270221T230000Z
+SUMMARY:Komedia Comedy Club
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/Lpx-elouise-eftos-au
+ stralias-first-attractive-comedian/\nMore: https://brightonweekend.co.uk/e
+ /2027-02-21-brighton-dome-komedia-comedy-club/
+URL:https://brightonweekend.co.uk/e/2027-02-21-brighton-dome-komedia-comedy
+ -club/
+END:VEVENT
+END:VCALENDAR

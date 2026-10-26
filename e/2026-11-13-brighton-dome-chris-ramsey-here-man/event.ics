@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-13-brighton-dome-chris-ramsey-here-man@brightonweekend.co.uk
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Chris Ramsey: Here\, Man!
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LzJ-chris-ramsey-her
+ e-man/\nMore: https://brightonweekend.co.uk/e/2026-11-13-brighton-dome-chr
+ is-ramsey-here-man/
+URL:https://brightonweekend.co.uk/e/2026-11-13-brighton-dome-chris-ramsey-h
+ ere-man/
+END:VEVENT
+END:VCALENDAR

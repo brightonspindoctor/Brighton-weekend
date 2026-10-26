@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-13-brighton-dome-lewes-whisky-festival@brightonweekend.co.uk
+DTSTAMP:20270213T000000Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:Lewes Whisky Festival
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://www.visitbrighton.com/whats-on/lewes-whisky-fe
+ stival-p2972841\nMore: https://brightonweekend.co.uk/e/2027-02-13-brighton
+ -dome-lewes-whisky-festival/
+URL:https://brightonweekend.co.uk/e/2027-02-13-brighton-dome-lewes-whisky-f
+ estival/
+END:VEVENT
+END:VCALENDAR

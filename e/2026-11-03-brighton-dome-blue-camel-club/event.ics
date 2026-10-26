@@ -6,13 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-03-brighton-dome-blue-camel-club@brightonweekend.co.uk
 DTSTAMP:20261103T000000Z
-DTSTART;VALUE=DATE:20261103
-DTEND;VALUE=DATE:20261104
+DTSTART:20261103T180000Z
+DTEND:20261103T230000Z
 SUMMARY:Blue Camel Club
 LOCATION:Brighton Dome\, Brighton
-DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
- alse\,false&top_filter=all&page=1&view=list\nMore: https://brightonweekend
- .co.uk/e/2026-11-03-brighton-dome-blue-camel-club/
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LBj-blue-camel-club/
+ \nMore: https://brightonweekend.co.uk/e/2026-11-03-brighton-dome-blue-came
+ l-club/
 URL:https://brightonweekend.co.uk/e/2026-11-03-brighton-dome-blue-camel-clu
  b/
 END:VEVENT

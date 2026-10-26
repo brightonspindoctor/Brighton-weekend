@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-21-brighton-dome-see-more-events@brightonweekend.co.uk
+DTSTAMP:20270221T000000Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:See More Events
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/#series=275\nMore: h
+ ttps://brightonweekend.co.uk/e/2027-02-21-brighton-dome-see-more-events/
+URL:https://brightonweekend.co.uk/e/2027-02-21-brighton-dome-see-more-event
+ s/
+END:VEVENT
+END:VCALENDAR
