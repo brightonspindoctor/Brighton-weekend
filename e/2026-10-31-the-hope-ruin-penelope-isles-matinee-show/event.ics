@@ -7,16 +7,13 @@ BEGIN:VEVENT
 UID:2026-10-31-the-hope-ruin-penelope-isles-matinee-show@brightonweekend.co
  .uk
 DTSTAMP:20261031T000000Z
-DTSTART;VALUE=DATE:20261031
-DTEND;VALUE=DATE:20261101
-SUMMARY:Penelope Isles - Matinee Show
+DTSTART:20261031T163000Z
+DTEND:20261031T193000Z
+SUMMARY:Penelope Isles – Matinee
 LOCATION:The Hope & Ruin\, Brighton
-DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
- ZXRzLmVudHMyNC5jb20vZXZlbnQvcGVuZWxvcGUtaXNsZXMtbWF0aW5lZS1zaG93L3RoZS1ob3
- BlLXJ1aW4vMzY0MTc0NQ/supplier/SeeTickets/suppliedid/MzY0MTc0NQ/ticketid/80
- 58346/checksum/62d129ecab2c492340edebbb864da4da/track/true?title=PENELOPE+
- ISLES+-+Matinee+Show&badge=&venueId=34826\nMore: https://brightonweekend.c
- o.uk/e/2026-10-31-the-hope-ruin-penelope-isles-matinee-show/
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/abijftre/penelope-isles-mati
+ nee\nMore: https://brightonweekend.co.uk/e/2026-10-31-the-hope-ruin-penelo
+ pe-isles-matinee-show/
 URL:https://brightonweekend.co.uk/e/2026-10-31-the-hope-ruin-penelope-isles
  -matinee-show/
 END:VEVENT

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-the-hope-ruin-for-the-plot-free-entry-dj-night@brightonweeke
+ nd.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART:20261106T210000Z
+DTEND:20261107T020000Z
+SUMMARY:For the Plot *Free Entry DJ Night*
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/for-the-plot-free-entry-dj-
+ night-7/\nMore: https://brightonweekend.co.uk/e/2026-11-06-the-hope-ruin-f
+ or-the-plot-free-entry-dj-night/
+URL:https://brightonweekend.co.uk/e/2026-11-06-the-hope-ruin-for-the-plot-f
+ ree-entry-dj-night/
+END:VEVENT
+END:VCALENDAR

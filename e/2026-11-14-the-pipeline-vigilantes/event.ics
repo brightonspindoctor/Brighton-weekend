@@ -6,18 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-14-the-pipeline-vigilantes@brightonweekend.co.uk
 DTSTAMP:20261114T000000Z
-DTSTART;VALUE=DATE:20261114
-DTEND;VALUE=DATE:20261115
+DTSTART:20261114T190000Z
+DTEND:20261115T000000Z
 SUMMARY:Vigilantes
 LOCATION:The Pipeline\, Brighton
-DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
- ZXRtYXN0ZXIuZXZ5eS5uZXQvYy8xMzAwOTY4LzIwMzg3NTgvMjQwMjM_dT1odHRwcyUzQSUyRi
- UyRnd3dy51bml2ZXJzZS5jb20lMkZldmVudHMlMkZ2aWdpbGFudGVzLWJyaWdodG9uLTE0LTEx
- LTI2LXRpY2tldHMtOUZKOEJQJTNGcmVmJTNEdGlja2V0bWFzdGVyJnV0bV9tZWRpdW09YWZmaW
- xpYXRl/supplier/Universe/suppliedid/THZaMThRMG5zZURKMWVzekdSMjlT/ticketid/
- 8098467/checksum/7b17ff6d5fe437f0ae3dbfec477dc855/track/true?title=Vigilan
- tes+-+Brighton+-+14%2F11%2F26&badge=&venueId=57176\nMore: https://brighton
- weekend.co.uk/e/2026-11-14-the-pipeline-vigilantes/
+DESCRIPTION:Tickets: https://www.songkick.com/concerts/43308859-vigilantes-
+ at-pipeline?utm_medium=organic&utm_source=microformat\nMore: https://brigh
+ tonweekend.co.uk/e/2026-11-14-the-pipeline-vigilantes/
 URL:https://brightonweekend.co.uk/e/2026-11-14-the-pipeline-vigilantes/
 END:VEVENT
 END:VCALENDAR

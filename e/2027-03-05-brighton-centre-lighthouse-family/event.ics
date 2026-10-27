@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-05-brighton-centre-lighthouse-family@brightonweekend.co.uk
+DTSTAMP:20270305T000000Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:Lighthouse Family
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/whats-on/2027/lighthouse-
+ family/\nMore: https://brightonweekend.co.uk/e/2027-03-05-brighton-centre-
+ lighthouse-family/
+URL:https://brightonweekend.co.uk/e/2027-03-05-brighton-centre-lighthouse-f
+ amily/
+END:VEVENT
+END:VCALENDAR

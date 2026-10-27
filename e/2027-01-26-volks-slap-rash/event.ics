@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-26-volks-slap-rash@brightonweekend.co.uk
+DTSTAMP:20270126T000000Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:Slap Rash
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/Neb4834e5f2a\nMore: https://brigh
+ tonweekend.co.uk/e/2027-01-26-volks-slap-rash/
+URL:https://brightonweekend.co.uk/e/2027-01-26-volks-slap-rash/
+END:VEVENT
+END:VCALENDAR

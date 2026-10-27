@@ -9763,6 +9763,16 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "slap rash": {
+  "mbid": "0d34bd73-8273-4b05-b806-5f0073e7e103",
+  "name": "Slap Rash",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Slap Rash",
+  "checked": "2026-10-27",
+  "v": 3
+ },
  "slayyyter": {
   "mbid": "9058d01e-8afc-47a4-8664-621fb5f159c0",
   "name": "Slayyyter",
@@ -11204,6 +11214,13 @@
   "reason": "tagged",
   "act": "The Love Buzz",
   "checked": "2026-10-07"
+ },
+ "the magpies": {
+  "bucket": null,
+  "reason": "3 artists share this name",
+  "act": "The Magpies",
+  "checked": "2026-10-27",
+  "v": 3
  },
  "the march violets": {
   "mbid": "0d217f85-f007-4643-a543-047949661d10",

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-31-quarters-quarters-nye@brightonweekend.co.uk
+DTSTAMP:20261231T000000Z
+DTSTART:20261231T210000Z
+DTEND:20270101T000000Z
+SUMMARY:Quarters NYE
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/quarters-nye/qua
+ rters/3744247\nMore: https://brightonweekend.co.uk/e/2026-12-31-quarters-q
+ uarters-nye/
+URL:https://brightonweekend.co.uk/e/2026-12-31-quarters-quarters-nye/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-17-volks-sabotage-thursdays@brightonweekend.co.uk
+DTSTAMP:20261217T000000Z
+DTSTART:20261217T230000Z
+DTEND:20261218T030000Z
+SUMMARY:Sabotage Thursdays
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Sabotage-Thursdays/43122931/\nMore: https://brightonweekend.co.uk/
+ e/2026-12-17-volks-sabotage-thursdays/
+URL:https://brightonweekend.co.uk/e/2026-12-17-volks-sabotage-thursdays/
+END:VEVENT
+END:VCALENDAR

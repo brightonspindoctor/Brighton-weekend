@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-12-brighton-dome-juliet-romeo@brightonweekend.co.uk
+DTSTAMP:20261112T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Juliet & Romeo
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Brighton-Dom
+ e-Corn-Exchange/Juliet--Romeo/42643561/\nMore: https://brightonweekend.co.
+ uk/e/2026-11-12-brighton-dome-juliet-romeo/
+URL:https://brightonweekend.co.uk/e/2026-11-12-brighton-dome-juliet-romeo/
+END:VEVENT
+END:VCALENDAR
