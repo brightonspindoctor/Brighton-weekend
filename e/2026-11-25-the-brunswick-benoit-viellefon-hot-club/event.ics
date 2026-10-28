@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-25-the-brunswick-benoit-viellefon-hot-club@brightonweekend.co.u
+ k
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Benoit Viellefon Hot Club
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/benoit-vi
+ ellefon-hot-club-6\nMore: https://brightonweekend.co.uk/e/2026-11-25-the-b
+ runswick-benoit-viellefon-hot-club/
+URL:https://brightonweekend.co.uk/e/2026-11-25-the-brunswick-benoit-viellef
+ on-hot-club/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-12-daltons-haywire-support-tba@brightonweekend.co.uk
+DTSTAMP:20270112T000000Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Haywire + Support TBA
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/haywire-
+ support-tba\nMore: https://brightonweekend.co.uk/e/2027-01-12-daltons-hayw
+ ire-support-tba/
+URL:https://brightonweekend.co.uk/e/2027-01-12-daltons-haywire-support-tba/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-16-the-hope-ruin-cowboy-hunters@brightonweekend.co.uk
+DTSTAMP:20270116T000000Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:Cowboy Hunters
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/1yz6adts/cowboy-hunters\nMor
+ e: https://brightonweekend.co.uk/e/2027-01-16-the-hope-ruin-cowboy-hunters
+ /
+URL:https://brightonweekend.co.uk/e/2027-01-16-the-hope-ruin-cowboy-hunters
+ /
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-26-the-rose-hill-scratch-meet-18@brightonweekend.co.uk
+DTSTAMP:20261126T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:scratch|meet #18
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/scratchmeet-18/\nMore:
+  https://brightonweekend.co.uk/e/2026-11-26-the-rose-hill-scratch-meet-18/
+URL:https://brightonweekend.co.uk/e/2026-11-26-the-rose-hill-scratch-meet-1
+ 8/
+END:VEVENT
+END:VCALENDAR

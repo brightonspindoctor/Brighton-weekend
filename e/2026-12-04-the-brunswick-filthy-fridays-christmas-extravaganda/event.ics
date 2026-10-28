@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-the-brunswick-filthy-fridays-christmas-extravaganda@brighton
+ weekend.co.uk
+DTSTAMP:20261204T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Filthy Fridays Christmas Extravaganda!
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/filthy-fr
+ idays-christmas-extravaganda\nMore: https://brightonweekend.co.uk/e/2026-1
+ 2-04-the-brunswick-filthy-fridays-christmas-extravaganda/
+URL:https://brightonweekend.co.uk/e/2026-12-04-the-brunswick-filthy-fridays
+ -christmas-extravaganda/
+END:VEVENT
+END:VCALENDAR

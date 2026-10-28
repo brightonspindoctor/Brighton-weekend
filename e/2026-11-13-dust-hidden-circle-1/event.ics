@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-13-dust-hidden-circle-1@brightonweekend.co.uk
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Hidden Circle #1
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6adb94b8e8b6fe0001527ab9\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-13-dust-hidden-circle-1/
+URL:https://brightonweekend.co.uk/e/2026-11-13-dust-hidden-circle-1/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-14-the-hope-ruin-ovven@brightonweekend.co.uk
+DTSTAMP:20270114T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:Ovven
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/44nbzx1k/ovven\nMore: https:
+ //brightonweekend.co.uk/e/2027-01-14-the-hope-ruin-ovven/
+URL:https://brightonweekend.co.uk/e/2027-01-14-the-hope-ruin-ovven/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-07-daltons-youth-wound@brightonweekend.co.uk
+DTSTAMP:20270207T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Youth Wound
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/youth-wo
+ und\nMore: https://brightonweekend.co.uk/e/2027-02-07-daltons-youth-wound/
+URL:https://brightonweekend.co.uk/e/2027-02-07-daltons-youth-wound/
+END:VEVENT
+END:VCALENDAR

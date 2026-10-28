@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-the-rose-hill-double-bill-harry-christelis-pillow-joint-uk-a
+ lbum-tour@brightonweekend.co.uk
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Double Bill : Harry Christelis & Pillow (Joint UK Album Tour)
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/double-bill-harry-chri
+ stelis-pillow-joint-uk-album-tour/\nMore: https://brightonweekend.co.uk/e/
+ 2026-11-27-the-rose-hill-double-bill-harry-christelis-pillow-joint-uk-albu
+ m-tour/
+URL:https://brightonweekend.co.uk/e/2026-11-27-the-rose-hill-double-bill-ha
+ rry-christelis-pillow-joint-uk-album-tour/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-09-the-hope-ruin-13-years-of-acidbox@brightonweekend.co.uk
+DTSTAMP:20261209T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:13 Years of AcidBox
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/dzplbrki/13-years-of-acidbox
+ \nMore: https://brightonweekend.co.uk/e/2026-12-09-the-hope-ruin-13-years-
+ of-acidbox/
+URL:https://brightonweekend.co.uk/e/2026-12-09-the-hope-ruin-13-years-of-ac
+ idbox/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-27-dust-tramhaus@brightonweekend.co.uk
+DTSTAMP:20270227T000000Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:Tramhaus
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ada1371b9b30100016316ff\nMore: 
+ https://brightonweekend.co.uk/e/2027-02-27-dust-tramhaus/
+URL:https://brightonweekend.co.uk/e/2027-02-27-dust-tramhaus/
+END:VEVENT
+END:VCALENDAR

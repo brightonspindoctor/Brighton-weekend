@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-25-the-rose-hill-synch-pulse-no-29-art-of-sculpture@brightonwee
+ kend.co.uk
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Synch Pulse – No. 29: Art of Sculpture
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/synch-pulse-no-29-art-
+ of-sculpture/\nMore: https://brightonweekend.co.uk/e/2026-11-25-the-rose-h
+ ill-synch-pulse-no-29-art-of-sculpture/
+URL:https://brightonweekend.co.uk/e/2026-11-25-the-rose-hill-synch-pulse-no
+ -29-art-of-sculpture/
+END:VEVENT
+END:VCALENDAR

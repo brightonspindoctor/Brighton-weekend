@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-11-the-brunswick-kashaka@brightonweekend.co.uk
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Kashaka
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/kashaka\n
+ More: https://brightonweekend.co.uk/e/2026-11-11-the-brunswick-kashaka/
+URL:https://brightonweekend.co.uk/e/2026-11-11-the-brunswick-kashaka/
+END:VEVENT
+END:VCALENDAR

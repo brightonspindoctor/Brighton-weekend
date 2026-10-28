@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-13-brighton-dome-christmas-with-the-royal-philharmonic-orchestr
+ a@brightonweekend.co.uk
+DTSTAMP:20261213T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Christmas with the Royal Philharmonic Orchestra
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
+ alse\,false&top_filter=all&page=3&view=list\nMore: https://brightonweekend
+ .co.uk/e/2026-12-13-brighton-dome-christmas-with-the-royal-philharmonic-or
+ chestra/
+URL:https://brightonweekend.co.uk/e/2026-12-13-brighton-dome-christmas-with
+ -the-royal-philharmonic-orchestra/
+END:VEVENT
+END:VCALENDAR

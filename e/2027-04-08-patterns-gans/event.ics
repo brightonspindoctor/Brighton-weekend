@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-08-patterns-gans@brightonweekend.co.uk
+DTSTAMP:20270408T000000Z
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+SUMMARY:GANS
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ab63b10bf2e4e0001379e32\nMore: 
+ https://brightonweekend.co.uk/e/2027-04-08-patterns-gans/
+URL:https://brightonweekend.co.uk/e/2027-04-08-patterns-gans/
+END:VEVENT
+END:VCALENDAR

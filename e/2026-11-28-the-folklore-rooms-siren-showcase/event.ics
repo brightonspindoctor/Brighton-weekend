@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-the-folklore-rooms-siren-showcase@brightonweekend.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Siren Showcase
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/siren-showcase/the-fo
+ lklore-rooms/3745104\nMore: https://brightonweekend.co.uk/e/2026-11-28-the
+ -folklore-rooms-siren-showcase/
+URL:https://brightonweekend.co.uk/e/2026-11-28-the-folklore-rooms-siren-sho
+ wcase/
+END:VEVENT
+END:VCALENDAR

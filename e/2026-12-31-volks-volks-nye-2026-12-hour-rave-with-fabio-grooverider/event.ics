@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-31-volks-volks-nye-2026-12-hour-rave-with-fabio-grooverider@bri
+ ghtonweekend.co.uk
+DTSTAMP:20261231T000000Z
+DTSTART:20261231T220000Z
+DTEND:20270101T010000Z
+SUMMARY:Volks NYE 2026: 12-Hour Rave with Fabio & Grooverider
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Volks-NYE-2026-12-Hour-Rave-with-Fabio--Grooverider/43124924/\nMor
+ e: https://brightonweekend.co.uk/e/2026-12-31-volks-volks-nye-2026-12-hour
+ -rave-with-fabio-grooverider/
+URL:https://brightonweekend.co.uk/e/2026-12-31-volks-volks-nye-2026-12-hour
+ -rave-with-fabio-grooverider/
+END:VEVENT
+END:VCALENDAR

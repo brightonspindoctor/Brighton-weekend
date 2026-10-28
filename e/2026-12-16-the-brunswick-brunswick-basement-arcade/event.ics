@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-16-the-brunswick-brunswick-basement-arcade@brightonweekend.co.u
+ k
+DTSTAMP:20261216T000000Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Brunswick Basement Arcade
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/brunswick
+ -basement-arcade-2\nMore: https://brightonweekend.co.uk/e/2026-12-16-the-b
+ runswick-brunswick-basement-arcade/
+URL:https://brightonweekend.co.uk/e/2026-12-16-the-brunswick-brunswick-base
+ ment-arcade/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-20-a-l-p-h-a-b-e-t-max-white@brightonweekend.co.uk
+DTSTAMP:20261220T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Max White
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Alphabet-Bri
+ ghton/Casio-Music-Presents-Max-White---In-Support-of-Tonic-Music/43121776/
+ \nMore: https://brightonweekend.co.uk/e/2026-12-20-a-l-p-h-a-b-e-t-max-whi
+ te/
+URL:https://brightonweekend.co.uk/e/2026-12-20-a-l-p-h-a-b-e-t-max-white/
+END:VEVENT
+END:VCALENDAR

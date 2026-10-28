@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-a-l-p-h-a-b-e-t-victus-ex-umbra@brightonweekend.co.uk
+DTSTAMP:20261115T000000Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Victus - Ex Umbra
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.com/e/viktus-ex-umbra-tickets-2
+ 003372955439?utm-campaign=social&utm-content=attendeeshare&utm-medium=disc
+ overy&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile&fbclid=PAVERFWAV
+ MXxtleHRuA2FlbQIxMABwZG9mAmZkaWQWURCYyWSgLPgv2tluJzt5hF03ikOWSnNydGMGYXBwX
+ 2lkDzEyNDAyNDU3NDI4NzQxNAABp883_ADpslodgjV3GBpMWGGd7yVRnm9nSCCmqfTA3E_r-l-
+ q1Nnb16khR6OC_aem_4kaX0I6H8CDenHxKQ4Hdiw\nMore: https://brightonweekend.co
+ .uk/e/2026-11-15-a-l-p-h-a-b-e-t-victus-ex-umbra/
+URL:https://brightonweekend.co.uk/e/2026-11-15-a-l-p-h-a-b-e-t-victus-ex-um
+ bra/
+END:VEVENT
+END:VCALENDAR

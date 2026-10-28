@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-03-green-door-store-the-getaway@brightonweekend.co.uk
+DTSTAMP:20261103T000000Z
+DTSTART:20261103T190000Z
+DTEND:20261103T220000Z
+SUMMARY:The Getaway
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/the-getaway/\nM
+ ore: https://brightonweekend.co.uk/e/2026-11-03-green-door-store-the-getaw
+ ay/
+URL:https://brightonweekend.co.uk/e/2026-11-03-green-door-store-the-getaway
+ /
+END:VEVENT
+END:VCALENDAR

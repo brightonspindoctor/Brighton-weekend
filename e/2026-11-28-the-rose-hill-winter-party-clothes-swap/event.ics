@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-the-rose-hill-winter-party-clothes-swap@brightonweekend.co.u
+ k
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Winter Party – Clothes Swap
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/winter-party-clothes-s
+ wap-2026/\nMore: https://brightonweekend.co.uk/e/2026-11-28-the-rose-hill-
+ winter-party-clothes-swap/
+URL:https://brightonweekend.co.uk/e/2026-11-28-the-rose-hill-winter-party-c
+ lothes-swap/
+END:VEVENT
+END:VCALENDAR

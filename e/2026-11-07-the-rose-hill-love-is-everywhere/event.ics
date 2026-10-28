@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-the-rose-hill-love-is-everywhere@brightonweekend.co.uk
+DTSTAMP:20261107T000000Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Love is Everywhere
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/love-is-everywhere/\nM
+ ore: https://brightonweekend.co.uk/e/2026-11-07-the-rose-hill-love-is-ever
+ ywhere/
+URL:https://brightonweekend.co.uk/e/2026-11-07-the-rose-hill-love-is-everyw
+ here/
+END:VEVENT
+END:VCALENDAR

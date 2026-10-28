@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-12-green-door-store-funke-the-two-tone-baby@brightonweekend.co.
+ uk
+DTSTAMP:20270312T000000Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:Funke & The Two Tone Baby
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://lovethyneighbour.seetickets.com/event/funke-an
+ d-the-two-tone-baby/the-green-door-store/3726955\nMore: https://brightonwe
+ ekend.co.uk/e/2027-03-12-green-door-store-funke-the-two-tone-baby/
+URL:https://brightonweekend.co.uk/e/2027-03-12-green-door-store-funke-the-t
+ wo-tone-baby/
+END:VEVENT
+END:VCALENDAR

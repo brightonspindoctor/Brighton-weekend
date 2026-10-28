@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-07-the-hope-ruin-prince-daddy-the-hyenna-gaffa-tape-sandy-jetsk
+ i@brightonweekend.co.uk
+DTSTAMP:20270207T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Prince Daddy & The Hyenna + Gaffa Tape Sandy + Jetski
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/2p3g6d1b/prince-daddy-the-hy
+ enna-gaffa-tape-sandy-jetski\nMore: https://brightonweekend.co.uk/e/2027-0
+ 2-07-the-hope-ruin-prince-daddy-the-hyenna-gaffa-tape-sandy-jetski/
+URL:https://brightonweekend.co.uk/e/2027-02-07-the-hope-ruin-prince-daddy-t
+ he-hyenna-gaffa-tape-sandy-jetski/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-16-the-hope-ruin-holy-motors@brightonweekend.co.uk
+DTSTAMP:20270216T000000Z
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270217
+SUMMARY:Holy Motors
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/ocvxeczi/holy-motors\nMore: 
+ https://brightonweekend.co.uk/e/2027-02-16-the-hope-ruin-holy-motors/
+URL:https://brightonweekend.co.uk/e/2027-02-16-the-hope-ruin-holy-motors/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-18-komedia-bogan-bingo@brightonweekend.co.uk
+DTSTAMP:20270318T000000Z
+DTSTART:20270318T200000Z
+DTEND:20270318T230000Z
+SUMMARY:Bogan Bingo
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87352193
+ 7/events/128668226\nMore: https://brightonweekend.co.uk/e/2027-03-18-komed
+ ia-bogan-bingo/
+URL:https://brightonweekend.co.uk/e/2027-03-18-komedia-bogan-bingo/
+END:VEVENT
+END:VCALENDAR

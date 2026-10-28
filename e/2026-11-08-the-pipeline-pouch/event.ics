@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-08-the-pipeline-pouch@brightonweekend.co.uk
+DTSTAMP:20261108T000000Z
+DTSTART:20261108T193000Z
+DTEND:20261109T000000Z
+SUMMARY:Pouch
+LOCATION:The Pipeline\, Brighton
+DESCRIPTION:Tickets: https://www.songkick.com/concerts/43485796-pouch-at-pi
+ peline?utm_medium=organic&utm_source=microformat\nMore: https://brightonwe
+ ekend.co.uk/e/2026-11-08-the-pipeline-pouch/
+URL:https://brightonweekend.co.uk/e/2026-11-08-the-pipeline-pouch/
+END:VEVENT
+END:VCALENDAR

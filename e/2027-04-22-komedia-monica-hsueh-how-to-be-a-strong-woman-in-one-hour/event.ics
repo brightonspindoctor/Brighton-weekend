@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-22-komedia-monica-hsueh-how-to-be-a-strong-woman-in-one-hour@br
+ ightonweekend.co.uk
+DTSTAMP:20270422T000000Z
+DTSTART:20270422T190000Z
+DTEND:20270422T220000Z
+SUMMARY:Monica Hsueh: How To Be A Strong Woman In One Hour
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366837
+ 5/events/128667703\nMore: https://brightonweekend.co.uk/e/2027-04-22-komed
+ ia-monica-hsueh-how-to-be-a-strong-woman-in-one-hour/
+URL:https://brightonweekend.co.uk/e/2027-04-22-komedia-monica-hsueh-how-to-
+ be-a-strong-woman-in-one-hour/
+END:VEVENT
+END:VCALENDAR

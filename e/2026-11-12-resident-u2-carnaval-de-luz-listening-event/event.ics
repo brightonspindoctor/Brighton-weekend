@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-12-resident-u2-carnaval-de-luz-listening-event@brightonweekend.
+ co.uk
+DTSTAMP:20261112T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:U2: 'Carnaval De Luz' Listening Event
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6adb543be08a040001b3704b\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-12-resident-u2-carnaval-de-luz-lis
+ tening-event/
+URL:https://brightonweekend.co.uk/e/2026-11-12-resident-u2-carnaval-de-luz-
+ listening-event/
+END:VEVENT
+END:VCALENDAR

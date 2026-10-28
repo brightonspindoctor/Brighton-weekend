@@ -10,8 +10,11 @@ DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 SUMMARY:Ethan Regan
 LOCATION:Patterns\, Brighton
-DESCRIPTION:Tickets: https://www.ents24.com/brighton-events/patterns\nMore:
-  https://brightonweekend.co.uk/e/2026-12-08-patterns-ethan-regan/
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvZXRoYW4tcmVnYW4vcGF0dGVybnMvMzY1MjI0Nw/supplie
+ r/SeeTickets/suppliedid/MzY1MjI0Nw/ticketid/8072697/checksum/0e0ee397ef772
+ 9ea304518d292e83b87/track/true?title=Ethan+Regan&badge=&venueId=15791\nMor
+ e: https://brightonweekend.co.uk/e/2026-12-08-patterns-ethan-regan/
 URL:https://brightonweekend.co.uk/e/2026-12-08-patterns-ethan-regan/
 END:VEVENT
 END:VCALENDAR
