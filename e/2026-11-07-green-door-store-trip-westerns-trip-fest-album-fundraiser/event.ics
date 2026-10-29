@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-11-07-green-door-store-trip-westerns-trip-fest-album-fundraiser@br
  ightonweekend.co.uk
 DTSTAMP:20261107T000000Z
-DTSTART;VALUE=DATE:20261107
-DTEND;VALUE=DATE:20261108
+DTSTART:20261107T160000Z
+DTEND:20261107T190000Z
 SUMMARY:Trip Westerns – Trip Fest Album Fundraiser
 LOCATION:Green Door Store\, Brighton
 DESCRIPTION:Tickets: https://wegottickets.com/f/29712\nMore: https://bright

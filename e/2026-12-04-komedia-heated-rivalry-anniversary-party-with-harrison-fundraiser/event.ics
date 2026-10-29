@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-komedia-heated-rivalry-anniversary-party-with-harrison-fundr
+ aiser@brightonweekend.co.uk
+DTSTAMP:20261204T000000Z
+DTSTART:20261204T230000Z
+DTEND:20261205T020000Z
+SUMMARY:Heated Rivalry Anniversary Party with Harrison (fundraiser)
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366889
+ 3/events/128668260\nMore: https://brightonweekend.co.uk/e/2026-12-04-komed
+ ia-heated-rivalry-anniversary-party-with-harrison-fundraiser/
+URL:https://brightonweekend.co.uk/e/2026-12-04-komedia-heated-rivalry-anniv
+ ersary-party-with-harrison-fundraiser/
+END:VEVENT
+END:VCALENDAR

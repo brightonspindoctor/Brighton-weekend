@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-11-05-brighton-dome-joe-marler-will-see-you-live@brightonweekend.c
  o.uk
 DTSTAMP:20261105T000000Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
+DTSTART:20261105T200000Z
+DTEND:20261105T230000Z
 SUMMARY:Joe Marler Will See You Live
 LOCATION:Brighton Dome\, Brighton
 DESCRIPTION:Tickets: https://brightondome.org/whats-on/LZS-joe-marler-will-

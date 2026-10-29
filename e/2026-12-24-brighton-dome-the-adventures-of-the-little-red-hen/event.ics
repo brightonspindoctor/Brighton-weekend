@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-24-brighton-dome-the-adventures-of-the-little-red-hen@brightonw
+ eekend.co.uk
+DTSTAMP:20261224T000000Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:The Adventures of the Little Red Hen
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LXQ-the-adventures-o
+ f-the-little-red-hen/\nMore: https://brightonweekend.co.uk/e/2026-12-24-br
+ ighton-dome-the-adventures-of-the-little-red-hen/
+URL:https://brightonweekend.co.uk/e/2026-12-24-brighton-dome-the-adventures
+ -of-the-little-red-hen/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-01-brighton-dome-accessible-events-children-family@brightonweek
+ end.co.uk
+DTSTAMP:20261101T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Accessible Events Children & Family
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/L05-your-toys/\nMore
+ : https://brightonweekend.co.uk/e/2026-11-01-brighton-dome-accessible-even
+ ts-children-family/
+URL:https://brightonweekend.co.uk/e/2026-11-01-brighton-dome-accessible-eve
+ nts-children-family/
+END:VEVENT
+END:VCALENDAR

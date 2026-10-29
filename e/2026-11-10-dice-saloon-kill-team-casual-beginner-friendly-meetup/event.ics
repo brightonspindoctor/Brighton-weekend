@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-10-dice-saloon-kill-team-casual-beginner-friendly-meetup@bright
+ onweekend.co.uk
+DTSTAMP:20261110T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Kill Team - Casual & Beginner Friendly Meetup
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/kill-team-casual-beg
+ inner-friendly-meetup-november-10-2026\nMore: https://brightonweekend.co.u
+ k/e/2026-11-10-dice-saloon-kill-team-casual-beginner-friendly-meetup/
+URL:https://brightonweekend.co.uk/e/2026-11-10-dice-saloon-kill-team-casual
+ -beginner-friendly-meetup/
+END:VEVENT
+END:VCALENDAR

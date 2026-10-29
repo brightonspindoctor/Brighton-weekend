@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-the-hope-ruin-spooky-house-free-entry@brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART:20261031T210000Z
+DTEND:20261101T020000Z
+SUMMARY:Spooky House
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/spooky-house-free-entry/\nM
+ ore: https://brightonweekend.co.uk/e/2026-10-31-the-hope-ruin-spooky-house
+ -free-entry/
+URL:https://brightonweekend.co.uk/e/2026-10-31-the-hope-ruin-spooky-house-f
+ ree-entry/
+END:VEVENT
+END:VCALENDAR

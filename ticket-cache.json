@@ -12,7 +12,7 @@
  "https://brightoncentre.co.uk/whats-on/2027/bat-out-of-hell/|2026-11-13|steve steinman in concert 50 years of bat out of hell": {
   "url": "https://www.ticketmaster.co.uk/event/3E0064DAB1475A3C",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightoncentre.co.uk/whats-on/2027/bonobo/|2026-10-30|bonobo": {
   "url": "https://www.ticketmaster.co.uk/event/3E006521F0426993",
@@ -42,7 +42,7 @@
  "https://brightoncentre.co.uk/whats-on/2027/texas/|2026-10-30|texas": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightoncentre.co.uk/whats-on/2027/the-jacksons/|2027-03-24|the jacksons": {
   "url": null,
@@ -54,50 +54,45 @@
   "sold": null,
   "checked": "2026-10-13"
  },
- "https://brightoncentre.co.uk/|2026-10-28|soul ii soul": {
-  "url": null,
-  "sold": null,
-  "checked": "2026-10-28"
- },
  "https://brightoncentre.co.uk/|2026-10-29|steve backshall s deadly live": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightoncentre.co.uk/|2026-10-30|the rock orchestra": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightoncentre.co.uk/|2026-10-31|ministry of sound classical": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightoncentre.co.uk/|2026-11-13|peter kay better late than never": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightoncentre.co.uk/|2026-11-14|peter kay better late than never": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightoncentre.co.uk/|2026-11-16|ricky gervais": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightoncentre.co.uk/|2026-11-17|ricky gervais": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightoncentre.co.uk/|2026-11-18|skye newman": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightoncentre.co.uk/|2026-11-21|the australian pink floyd show": {
   "url": null,
@@ -249,6 +244,11 @@
   "sold": null,
   "checked": "2026-10-28"
  },
+ "https://brightondome.org/plan-your-visit/getting-to-brighton-dome/|2026-11-01|getting to brighton dome": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-29"
+ },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=1&view=list|2026-11-01|dexys midnight runners": {
   "url": "https://brightondome.org/whats-on/LEw-dexys-midnight-runners/",
   "sold": null,
@@ -267,17 +267,17 @@
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=1&view=list|2026-11-07|my homeland": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=1&view=list|2026-11-11|the proclaimers": {
   "url": "https://brightondome.org/whats-on/Li5-the-proclaimers/",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=1&view=list|2026-11-12|the shires": {
   "url": "https://brightondome.org/whats-on/L2H-the-shires/",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list|2026-11-01|dexys midnight runners": {
   "url": null,
@@ -307,17 +307,17 @@
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list|2026-11-16|bellowhead": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list|2026-11-17|embrace celebrating 30 years": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list|2026-11-19|sounds from the city underground": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-26"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list|2026-11-20|dutty moonshine big band": {
   "url": null,
@@ -330,14 +330,14 @@
   "checked": "2026-10-28"
  },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list|2026-11-23|hothouse flowers": {
-  "url": "https://brightondome.org/whats-on/L29-hothouse-flowers/",
+  "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list|2026-11-23|midge ure a man of two worlds": {
   "url": "https://brightondome.org/whats-on/L2h-midge-ure-a-man-of-two-worlds/",
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list|2026-11-24|shed seven": {
   "url": "https://brightondome.org/whats-on/LgP-shed-seven/",
@@ -412,12 +412,12 @@
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=3&view=list|2026-12-13|christmas with the royal philharmonic orchestra": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=3&view=list|2026-12-15|the big christmas singalong 2026 choir with no name": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=3&view=list|2026-12-18|organoke": {
   "url": null,
@@ -482,7 +482,7 @@
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=4&view=list|2027-02-17|rick wakeman the wizard of prog": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=4&view=list|2027-02-20|delta goodrem": {
   "url": null,
@@ -542,7 +542,7 @@
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=5&view=list|2027-03-13|kula shaker": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=5&view=list|2027-03-14|big red bath": {
   "url": null,
@@ -562,7 +562,7 @@
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=5&view=list|2027-03-22|the best of mike oldfield s tubular bells i ii iii": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=5&view=list|2027-03-23|kim wilde the singles tour": {
   "url": null,
@@ -594,15 +594,20 @@
   "sold": null,
   "checked": "2026-10-26"
  },
- "https://brightondome.org/whats-on/L05-your-toys/|2026-10-28|your toys": {
+ "https://brightondome.org/whats-on/L05-your-toys/|2026-11-01|accessible events children family": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/L0h-congregational/|2026-10-30|congregational": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
+ },
+ "https://brightondome.org/whats-on/L0r-rabbit-rey-and-the-lost-things/|2026-11-22|rabbit rey and the lost things": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/L17-brighton-dome-backstage-tours/|2026-11-27|brighton dome backstage tours": {
   "url": null,
@@ -622,22 +627,22 @@
  "https://brightondome.org/whats-on/L2O-joshua-idehen/|2026-11-05|joshua idehen": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/L8e-juliet-romeo/|2026-11-14|juliet romeo": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/LBj-blue-camel-club/|2026-11-03|blue camel club": {
-  "url": null,
+  "url": "https://carousel.org.uk/whats-on/blue-camel-club-november-2026",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/LEw-dexys-midnight-runners/|2026-11-01|dexys midnight runners": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/LGD-organoke/|2026-12-18|organoke": {
   "url": null,
@@ -647,38 +652,38 @@
  "https://brightondome.org/whats-on/LGE-status-flo-mens-mental-health-awareness-month/|2026-11-02|status flo men s mental health awareness month": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/LMN-crafty-kids-halloween-spooky-spiders-and-chatty-bats/|2026-10-29|crafty kids halloween spooky spiders and chatty bats": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/LMf-crafty-kids-halloween-shadow-puppets/|2026-10-30|crafty kids halloween shadow puppets": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/LSQ-jim-al-khalili-how-physics-make-the-universe-tick/|2026-11-01|jim al khalili how physics make the universe tick": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "label next to this date: Fully Booked (brightondome.org)"
+ },
+ "https://brightondome.org/whats-on/LXQ-the-adventures-of-the-little-red-hen/|2026-12-24|the adventures of the little red hen": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/LXZ-van-morrison/|2026-10-30|van morrison": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/LZS-joe-marler-will-see-you-live/|2026-11-05|joe marler will see you live": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
- },
- "https://brightondome.org/whats-on/LZf-ms-ezra-furman-doing-what-she-wants/|2026-10-28|ms ezra furman doing what she wants": {
-  "url": null,
-  "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/LgN-paddy-young-will-sir-be-laughing-alone/|2026-12-12|paddy young will sir be laughing alone": {
   "url": null,
@@ -688,17 +693,12 @@
  "https://brightondome.org/whats-on/Lgc-simon-brodkin-unleashed/|2026-11-08|simon brodkin unleashed": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
- },
- "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/|2026-10-28|ms ezra furman doing what she wants": {
-  "url": "https://brightondome.org/whats-on/LZf-ms-ezra-furman-doing-what-she-wants/",
-  "sold": null,
-  "checked": "2026-10-24"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/|2026-10-31|van morrison": {
   "url": "https://brightondome.org/whats-on/LXZ-van-morrison/",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/LiM-ben-folds-the-paper-airplane-request-tour/|2026-11-26|ben folds the paper airplane request tour": {
   "url": null,
@@ -720,15 +720,20 @@
   "sold": null,
   "checked": "2026-10-26"
  },
+ "https://brightondome.org/whats-on/LxN-the-snowman/|2026-12-19|the snowman": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-29"
+ },
  "https://brightondome.org/whats-on/Lz1-kian-soltani-plays-dvok/|2026-11-15|dido and aeneazz purcell pachelbel and jazz": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://brightondome.org/whats-on/LzJ-chris-ramsey-here-man/|2026-11-13|chris ramsey here man": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://carolineofbrunswick.co.uk/events/humbuckers-881/|2027-01-23|the humbuckers": {
   "url": null,
@@ -738,7 +743,7 @@
  "https://carolineofbrunswick.co.uk/events/indieacoustic-888-295-552-975-568/|2026-11-07|men don t get lost at sea like they used to": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://carolineofbrunswick.co.uk/events/indieacoustic-888-295-552-975-568/|2026-12-05|men don t get lost at sea like they used to": {
   "url": null,
@@ -758,7 +763,7 @@
  "https://carolineofbrunswick.co.uk/events/release-the-bats-free-790/|2026-10-31|release the bats": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://carolineofbrunswick.co.uk/events/release-the-bats-free-790/|2026-11-28|release the bats": {
   "url": null,
@@ -778,7 +783,7 @@
  "https://carolineofbrunswick.co.uk/events/sunsetsounds-532-553-175-162-464-133-388-776-792-371/|2026-11-01|sunset sounds": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://carolineofbrunswick.co.uk/events/sunsetsounds-532-553-175-162-464-133-388-776-792-371/|2026-12-06|sunset sounds": {
   "url": null,
@@ -793,7 +798,7 @@
  "https://carolineofbrunswick.co.uk/events/tbc-844-841-538-700-183-304-927-129-549-387-697-221-273-424/|2026-11-13|creatures": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://carolineofbrunswick.co.uk/events/tbc-844-841-538-700-183-304-927-129-549-387-697-221-273-424/|2026-12-11|creatures": {
   "url": null,
@@ -808,7 +813,7 @@
  "https://carolineofbrunswick.co.uk/events/tbc-844-841-538-700-183-855-162-597-544-714-358-851-566-501-558-929-885-776-492-891-793/|2026-11-14|battle hymns": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://carolineofbrunswick.co.uk/events/tbc-844-841-538-700-183-855-162-597-544-714-358-851-566-501-558-929-885-776-492-891-793/|2026-12-12|battle hymns": {
   "url": null,
@@ -818,7 +823,7 @@
  "https://carolineofbrunswick.co.uk/events/terrorvision2-313/|2026-10-31|the terrorvision song contest 3 demons of d sney": {
   "url": "https://www.outsavvy.com/event/38405/the-terrorvision-song-contest-3-demons-of-dsney",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/event/4am-kru-2027-03-20|2027-03-20|4am kru": {
   "url": "https://link.dice.fm/u8bdddb44392",
@@ -838,7 +843,7 @@
  "https://chalkvenue.com/event/brainrot-22|2026-11-07|brainrot": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/event/brass-against-2027-04-17|2027-04-17|brass against": {
   "url": "https://link.dice.fm/r2368871b75f",
@@ -858,7 +863,7 @@
  "https://chalkvenue.com/event/cassia-1|2026-11-11|cassia": {
   "url": "https://link.dice.fm/ydfbabe100bd",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/event/cleopatrick-2027-03-12|2027-03-12|cleopatrick": {
   "url": "https://link.dice.fm/kbf36d70d07f",
@@ -893,12 +898,12 @@
  "https://chalkvenue.com/event/dutch-graft-of-the-manor|2026-11-07|dutch graft of the manor": {
   "url": "https://link.dice.fm/scd55315ee4b",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/event/elder-island|2026-11-04|elder island": {
   "url": "https://link.dice.fm/I2ce1743999b",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/event/friendly-fires-2027-01-31|2027-01-31|friendly fires": {
   "url": "https://dice.fm/event/6ab520de3cd691000195961e",
@@ -913,12 +918,12 @@
  "https://chalkvenue.com/event/goldie-2026-11-12|2026-11-12|goldie live with full band": {
   "url": "https://link.dice.fm/J6c5f26b814c",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/event/halloween-day-party-free-entry-2026-10-31|2026-10-31|halloween day party free entry": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/event/hang-massive-2027-05-19|2027-05-19|hang massive": {
   "url": "https://link.dice.fm/Qdfc90a33503",
@@ -939,7 +944,7 @@
  "https://chalkvenue.com/event/notorious-halloween-2026|2026-10-30|notorious halloween 2026": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/event/paul-heaton-album-launch-show-5pm|2026-12-03|paul heaton album launch show 5pm": {
   "url": null,
@@ -973,22 +978,22 @@
  "https://chalkvenue.com/event/royal-blood-early-2026-11-06|2026-11-06|royal blood early": {
   "url": "https://link.dice.fm/f809693d4f91",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/event/royal-blood-late-2026-11-06|2026-11-06|royal blood late": {
   "url": "https://link.dice.fm/L2313d3a5679",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/event/secret-discotheque-fireworks-night|2026-11-05|secret discotheque fireworks night": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/event/secret-discotheque-halloween-prom-night|2026-10-29|secret discotheque halloween prom night": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/event/soil-finger-eleven-adema|2026-10-30|soil finger eleven adema": {
   "url": "https://link.dice.fm/tef334271c07",
@@ -1025,20 +1030,10 @@
   "sold": false,
   "checked": "2026-10-26"
  },
- "https://chalkvenue.com/event/transvision-vamp|2026-10-28|transvision vamp": {
-  "url": "https://link.dice.fm/fbc436b4e395",
-  "sold": false,
-  "checked": "2026-10-25"
- },
  "https://chalkvenue.com/event/tropical-fuck-storm|2027-06-08|tropical fuck storm": {
   "url": "https://link.dice.fm/O43e1278e8c7",
   "sold": false,
   "checked": "2026-10-28"
- },
- "https://chalkvenue.com/|2026-10-28|transvision vamp with wendy james": {
-  "url": null,
-  "sold": null,
-  "checked": "2026-10-18"
  },
  "https://chalkvenue.com/|2026-10-29|st paul the broken bones": {
   "url": null,
@@ -1064,7 +1059,7 @@
  "https://chalkvenue.com/|2026-11-06|republica trampolene": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/|2026-11-07|dutch graft": {
   "url": null,
@@ -1079,22 +1074,22 @@
  "https://chalkvenue.com/|2026-11-12|goldie mbe": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/|2026-11-13|tigercub": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/|2026-11-14|tropical f ck storm": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/|2026-11-18|seb lowe": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://chalkvenue.com/|2026-11-20|reverend and the makers": {
   "url": null,
@@ -1224,22 +1219,22 @@
  "https://cutflowers.band/pages/superbloom-tickets|2026-11-17|cutflowers in superbloom plus special guests night 3": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/2wqvk7-sean-solomon-6th-nov-the-folklore-rooms-brighton-tickets|2026-11-06|sean solomon": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6984dcc84b5e6a00011d0ae5|2026-10-30|the mouse outfit": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/69c97138da61120001f85e2a|2026-11-06|republica": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/69fa1b55d9d315000186a7b6|2027-02-05|admt": {
   "url": null,
@@ -1254,7 +1249,7 @@
  "https://dice.fm/event/6a2945e9b6a1ec00014e7fa4|2026-11-03|colin miller": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6a2945e9b6a1ec00014e7fa4|2026-11-03|colin miller told slant": {
   "url": null,
@@ -1280,7 +1275,7 @@
  "https://dice.fm/event/6a678be9a3bb5200011a5614|2026-11-09|jamie webster live signing": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6a69f1da5850a800015d860d|2027-03-19|ajj": {
   "url": null,
@@ -1289,18 +1284,18 @@
  },
  "https://dice.fm/event/6a6b6eb84fa3ff000121ea8e|2026-11-15|portrayal of guilt": {
   "url": null,
-  "sold": null,
-  "checked": "2026-10-28"
+  "sold": false,
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6a74d60427195800013339d2|2026-11-07|twenty one pilots appreciation party": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6a7b04fdb257eb0001d27c3f|2026-11-03|matt king aka super hans meet greet signing": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6a7b48ce667686000126bf68|2026-11-20|sametime": {
   "url": null,
@@ -1345,7 +1340,7 @@
  "https://dice.fm/event/6aa7b47a12c0b80001050cd0|2026-10-31|ex re live signing": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "seller data says sold out (dice.fm)"
  },
  "https://dice.fm/event/6aaaa6814ecd190001a2e4f8|2027-04-28|first time flyers": {
@@ -1366,18 +1361,18 @@
  "https://dice.fm/event/6aad8f183ea59f00014b05f7|2026-10-31|indie rock night indieween halloween special": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "seller data says sold out (dice.fm)"
  },
  "https://dice.fm/event/6aad8fba444a3800013c419c|2026-11-07|indie rock night club fender sam fender spesh": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6aad91253ea59f000108a731|2026-11-14|indie rock night footy shirts": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6aad91d9113b770001637970|2026-11-21|indie rock night": {
   "url": null,
@@ -1392,12 +1387,12 @@
  "https://dice.fm/event/6ab0f1484c55e1000197b86f|2026-11-17|charlie noordewier": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6ab13b82cf79330001150b9c|2026-11-17|jake bugg solo acoustic performance": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "seller data says sold out (dice.fm)"
  },
  "https://dice.fm/event/6ab14ef353141a00019171eb|2026-12-01|thistle": {
@@ -1434,7 +1429,7 @@
  "https://dice.fm/event/6ab67c42cd3c2b000152ae91|2026-11-17|jake bugg solo acoustic performance later set": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6ab6a1ee48c0e100016eebc1|2027-04-03|hamish hawk live signing": {
   "url": null,
@@ -1454,7 +1449,7 @@
  "https://dice.fm/event/6abbbbd60265e60001174a6a|2026-10-30|the big moon album launch show acoustic": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6abbcf3477c8940001e7c88f|2026-11-21|stewart lee meet greet signing": {
   "url": null,
@@ -1479,7 +1474,7 @@
  "https://dice.fm/event/6ac766afc6e54500011e87df|2026-11-06|knats live signing": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6ac780709c872000011fd87c|2026-12-05|indie rock night oasis vs arctic monkeys": {
   "url": null,
@@ -1494,33 +1489,33 @@
  "https://dice.fm/event/6ac8cd729c184b0001fa9a4f|2026-11-19|carolina cury": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6ac8cd89c2c59500011e278f|2026-11-06|freaks off a leash": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6ac8cdb8c2c59500018c20a2|2026-12-04|freaks off a leash": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6ace317869cfd50001def485|2026-11-29|take this album get off my property launch party": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6ad0f0f93621320001744f6a|2026-11-16|editors acoustic performance signing": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "seller data says sold out (dice.fm)"
  },
  "https://dice.fm/event/6ad61ee317744e000194a355|2026-11-16|editors acoustic performance earlier set": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "seller data says sold out (dice.fm)"
  },
  "https://dice.fm/event/6ad72c5b43b00d0001b30a2c|2027-03-26|other lives": {
@@ -1536,7 +1531,7 @@
  "https://dice.fm/event/6ad9e99abbb2450001e68bad|2026-10-31|halloqueen queens of the stone age celebrations": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6ada1371b9b30100016316ff|2027-02-27|tramhaus": {
   "url": null,
@@ -1551,12 +1546,12 @@
  "https://dice.fm/event/6adb543be08a040001b3704b|2026-11-12|u2 carnaval de luz listening event": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6adb94b8e8b6fe0001527ab9|2026-11-13|hidden circle 1": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/6adf1c81ff12e40001cb96b1|2027-01-30|hutch": {
   "url": null,
@@ -1566,7 +1561,7 @@
  "https://dice.fm/event/aaron-rowe-15th-nov-patterns-brighton-tickets|2026-11-15|aaron rowe": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/brighton-sundae-w-marcia-carr-1st-nov-patterns-brighton-tickets|2026-11-01|brighton sundae w marcia carr": {
   "url": null,
@@ -1575,13 +1570,14 @@
  },
  "https://dice.fm/event/carnevil-presents-rtrn-ii-ukgrave-31st-oct-patterns-brighton-tickets|2026-10-31|carnevil presents rtrn ii ukgrave": {
   "url": null,
-  "sold": false,
-  "checked": "2026-10-28"
+  "sold": true,
+  "checked": "2026-10-29",
+  "why": "seller data says sold out (dice.fm)"
  },
  "https://dice.fm/event/chasing-abbey-8th-nov-patterns-brighton-tickets|2026-11-08|chasing abbey": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/dansu-discs-with-lucas-alexander-rtk-tarantino-30th-oct-patterns-brighton-tickets|2026-10-30|dansu discs with lucas alexander rtk tarantino": {
   "url": null,
@@ -1596,12 +1592,12 @@
  "https://dice.fm/event/employed-to-serve-6th-nov-patterns-brighton-tickets|2026-11-06|employed to serve": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/eonpm6-charleen-no-empire-seadog-10th-nov-the-prince-albert-brighton-brighton-tickets?dice_id=Le76c40cc59c&_branch_match_id=1602684765670371472&utm_source=dice.fm&utm_campaign=event_share&utm_medium=event_share&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1fdJNTdLNjFITja1TLYHCcZnptgiC6rVFaWmpRYVZealxycV5ZcXpxbZBiemJRZlAgAqpRxzUAAAAA%3D%3D|2026-11-10|charleen no empire seadog": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/frontline-x-monophonic-efan-extended-27th-nov-patterns-brighton-tickets|2026-11-27|frontline x monophonic efan extended": {
   "url": null,
@@ -1621,7 +1617,7 @@
  "https://dice.fm/event/grassroots-brightons-most-wanted-djs-6th-nov-patterns-brighton-tickets|2026-11-06|grassroots brightons most wanted djs": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/housekeeping-w-wilba-13th-nov-patterns-brighton-tickets|2026-11-13|housekeeping w wilba": {
   "url": null,
@@ -1631,7 +1627,7 @@
  "https://dice.fm/event/lady-leshurr-10-years-of-the-queens-speech-tour-30th-oct-patterns-brighton-tickets|2026-10-30|lady leshurr 10 years of the queen s speech tour": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/legowelt-live-memory-box-21st-nov-patterns-brighton-tickets|2026-11-21|legowelt live": {
   "url": null,
@@ -1646,7 +1642,7 @@
  "https://dice.fm/event/nick-hakim-7th-nov-patterns-brighton-tickets|2026-11-07|nick hakim": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/reggaeton-rave-coffee-tequila-edition-brighton-15th-nov-patterns-upstairs-brighton-tickets|2026-11-15|reggaeton rave coffee tequila edition": {
   "url": null,
@@ -1656,32 +1652,32 @@
  "https://dice.fm/event/sametime-20th-nov-patterns-brighton-tickets|2026-11-20|sametime": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/the-entitled-sons-13th-nov-patterns-brighton-tickets|2026-11-13|the entitled sons": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/event/tom-a-smith-11th-nov-patterns-brighton-tickets|2026-11-11|tom a smith": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/partner/tickets/event/8edw97-creature-machine-biscuit-club-special-guests-9th-nov-the-folklore-rooms-brighton-tickets?dice_id=10672731&dice_channel=web&dice_tags=organic&dice_campaign=Larkspur+Records&dice_feature=mio_marketing&_branch_match_id=1245521259485845231&utm_source=web&utm_campaign=Larkspur+Records&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1S8zSTQ2tzS3tEgxT7avK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQAyAiuWOwAAAA%3D%3D|2026-11-09|creature machine": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/partner/tickets/event/92356d-poison-ruin-18th-nov-volks-brighton-tickets|2026-11-18|poison ru n": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/partner/tickets/event/k67k2q-solo-project-and-the-layabouts-8th-nov-the-folklore-rooms-brighton-tickets?dice_id=10766956&dice_channel=web&dice_tags=organic&dice_campaign=Magical+Majesty&dice_feature=mio_marketing&_branch_match_id=1245521259485845231&utm_source=web&utm_campaign=Magical+Majesty&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1S80T040SzRITDQwTrWvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQDIaqHbOwAAAA%3D%3D|2026-11-08|matinee solo project": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dice.fm/partner/tickets/event/mxdvar-the-rabbitts-album-release-tour-23rd-nov-the-folklore-rooms-brighton-tickets?dice_id=8982575&dice_channel=web&dice_tags=organic&dice_campaign=DICE&dice_feature=mio_marketing&_branch_match_id=1245521259485845231&utm_source=web&utm_campaign=DICE&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1Q83SUtOtkg1MksyMrCvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQDhw2oXOwAAAA%3D%3D|2026-11-23|the rabbitts": {
   "url": null,
@@ -1691,27 +1687,32 @@
  "https://dice.fm/partner/tickets/event/mxwagw-roxanne-de-bastion-15th-mar-the-folklore-rooms-brighton-tickets?dice_id=10713702&dice_channel=web&dice_tags=organic&dice_campaign=FORM&dice_feature=mio_marketing&_branch_match_id=1245521259485845231&utm_source=web&utm_campaign=FORM&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1a8wTzFPNbcwSUtNMrCvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQDi%2BDh4OwAAAA%3D%3D|2027-03-15|roxanne de bastion": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/30k-horus-heresy-heresy-at-the-saloon-november-05-2026|2026-11-05|30k horus heresy heresy at the saloon": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/40k-crusade-beginner-friendly-november-02-2026|2026-11-02|40k crusade beginner friendly": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
+ },
+ "https://dicesaloon.co.uk/products/40k-weekly-november-02-2026|2026-11-02|40k weekly": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/aos-age-of-sigmar-weekly-october-30-2026|2026-10-30|aos age of sigmar weekly": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/arkham-horror-card-game-children-of-blood-campaign-blood-money-31-10|2026-10-30|arkham horror card game children of blood campaign blood money": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/arkham-horror-card-game-children-of-blood-campaign-blood-money-31-10|2026-10-31|arkham horror card game children of blood campaign blood money": {
   "url": null,
@@ -1721,32 +1722,32 @@
  "https://dicesaloon.co.uk/products/blood-bowl-all-hallows-eve-cup-31-october-2026|2026-10-31|blood bowl all hallow s eve cup": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/blood-bowl-night-sevens-to-elevens-november-06-2026|2026-11-06|blood bowl night sevens to elevens": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/blood-bowl-spring-break-13-march-2027|2027-03-13|blood bowl spring break": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/board-gamers-casual-sundays-hosted-by-brighton-pub-board-gamers-november-01-2026|2026-11-01|sunday board games dice saloon": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/dnd-season-of-champions-celebration-event-one-shot-09-november-2026|2026-11-09|dnd season of champions celebration event one shot": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/dnd-season-of-champions-weekly-play-session-1-16-november-2026|2026-11-16|dnd season of champions weekly play session 1": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/dnd-season-of-champions-weekly-play-session-2-23-november-2026|2026-11-23|dnd season of champions weekly play session 2": {
   "url": null,
@@ -1766,47 +1767,52 @@
  "https://dicesaloon.co.uk/products/dungeons-dragons-beginner-session-the-house-that-ate-halloween-31st-october-2026|2026-10-31|dungeons dragons beginner session the house that ate halloween": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/dungeons-dragons-experienced-session-the-house-that-ate-halloween-31st-october-2026|2026-10-31|dungeons dragons experienced session the house that ate halloween": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/hobby-hang-12th-november-2026|2026-11-12|hobby hang": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/kids-club-adventures-ages-8-15-november-06-2026|2026-11-06|kids club adventures ages 8 15": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/kids-club-adventures-ages-8-15-november-13-2026|2026-11-13|kids club adventures ages 8 15": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/kids-club-adventures-ages-8-15-november-20-2026|2026-11-20|kids club adventures ages 8 15": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/kids-club-adventures-ages-8-15-october-30-2026|2026-10-30|kids club adventures ages 8 15": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
+ },
+ "https://dicesaloon.co.uk/products/kill-team-casual-beginner-friendly-meetup-november-10-2026|2026-11-10|kill team casual beginner friendly meetup": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/lgbt-games-club-02-november-2026|2026-11-02|lgbt games club": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/midweek-middle-earth-04-november-2026|2026-11-04|midweek middle earth": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/necromunda-intro-campaign-session-1-17-november-2026|2026-11-17|necromunda intro campaign session 1": {
   "url": null,
@@ -1816,37 +1822,42 @@
  "https://dicesaloon.co.uk/products/necromunda-intro-campaign-session-2-31-october-2026|2026-10-31|necromunda intro campaign session 2": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/necromunda-intro-campaign-session-3-14-november-2026|2026-11-14|necromunda intro campaign session 3": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/purge-of-the-sector-tenebris-legions-imperialis-narrative-event-06-december-2026|2026-12-05|purge of the sector tenebris legions imperialis narrative event": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/spearhead-sunday-01-november-2026|2026-11-01|spearhead sunday": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/star-wars-legion-casual-gaming-day-21-november-2026|2026-11-21|star wars legion casual gaming day": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
+ },
+ "https://dicesaloon.co.uk/products/tow-the-old-world-casual-play-night-november-09-2026|2026-11-09|tow the old world casual play night": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-29"
  },
  "https://dicesaloon.co.uk/products/warmachine-jack-smash-brawl-october-29-2026|2026-10-29|warmachine jack smash brawl": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://fienta.com/rebecka-edlund-trio-ft-laura-jurd-ruth-goller|2026-11-03|rebecka edlund trio": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://formpresents.seetickets.com/event/jose-gonzalez/brighton-dome-concert-hall/3631553|2027-01-30|jos gonzales": {
   "url": null,
@@ -1861,7 +1872,7 @@
  "https://link.dice.fm/B99d8631f5ed|2026-11-03|slayyyter": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "seller data says sold out (dice.fm)"
  },
  "https://link.dice.fm/Bd19813fb1cf|2026-11-28|dreamcastmoe offie mag djs": {
@@ -1873,17 +1884,18 @@
  "https://link.dice.fm/Be526648a48e|2026-11-17|folklore monthly showcase": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://link.dice.fm/D1f35cca2d4e|2026-10-29|st paul the broken bones": {
   "url": null,
-  "sold": false,
-  "checked": "2026-10-28"
+  "sold": true,
+  "checked": "2026-10-29",
+  "why": "seller data says sold out (dice.fm)"
  },
  "https://link.dice.fm/E0ef04bab7ea|2026-11-08|culture feat kenyatta hill congo s cedric myton": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://link.dice.fm/Hbcff1b4793c|2027-02-14|giant rooks": {
   "url": null,
@@ -1938,12 +1950,7 @@
  "https://link.dice.fm/a453e0649efc|2026-11-11|gone fishin dumbhead": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
- },
- "https://link.dice.fm/fbc436b4e395|2026-10-28|transvision vamp": {
-  "url": null,
-  "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://link.dice.fm/fdccf67434ef|2026-12-16|phoebe bridgers matinee": {
   "url": null,
@@ -1959,7 +1966,7 @@
  "https://link.dice.fm/na16a23c3b4d|2026-10-29|chem sex party ruckus the clubheads": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://link.dice.fm/s20ab78b67cc|2027-04-16|dinosaur pile up": {
   "url": null,
@@ -1969,7 +1976,7 @@
  "https://link.dice.fm/tef334271c07|2026-10-30|soil finger eleven adema": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://link.dice.fm/ud2cd39e5592|2027-03-11|anna erhard": {
   "url": null,
@@ -1979,7 +1986,7 @@
  "https://lovethyneighbour.seetickets.com/event/mynolia/the-folklore-rooms/3735638|2027-01-23|mynolia": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://meltingvinyl.seetickets.com/event/sound-of-sirens-special-guests/the-folklore-rooms/3705498|2027-01-29|sound of the sirens": {
   "url": null,
@@ -1989,17 +1996,17 @@
  "https://pinkdot.seetickets.com/event/the-antarctic-monkeys/quarters/3614681|2027-01-29|the antarctic monkeys": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://quarters.seetickets.com/event/ben-hemsley/quarters/3731925|2026-11-14|ben hemsley": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://quarters.seetickets.com/event/black-octopus-8th-birthday/quarters/3724738|2026-10-31|black octopus 8th birthday part 2 kenny larkin rolando": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://quarters.seetickets.com/event/carl-cox/quarters/3741398|2027-04-17|carl cox": {
   "url": null,
@@ -2020,12 +2027,12 @@
  "https://quarters.seetickets.com/event/degs-friends/quarters/3732774|2026-11-20|free the drums w degs friends": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://quarters.seetickets.com/event/elder-emo-day-party/quarters/3704425|2026-11-14|emo day party": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://quarters.seetickets.com/event/free-the-rave-w-anais/quarters/3734970|2026-12-04|free the rave w particle ana s": {
   "url": null,
@@ -2035,17 +2042,17 @@
  "https://quarters.seetickets.com/event/groove-cartel-w-archie-hamilton-boss-priester/quarters/3731800|2026-11-07|groove cartel presents archie hamilton boss priester": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://quarters.seetickets.com/event/halloween-w-soul-mass-transit-system-captain-wallop/quarters/3643030|2026-10-31|groundwork 002 halloween w soul mass transit system captain wallop": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://quarters.seetickets.com/event/k-motionz/quarters/3676957|2026-11-06|k motionz": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://quarters.seetickets.com/event/kings-of-the-rollers-the-holy-grail-uk-tour/quarters/3727410|2026-11-27|kings of the rollers": {
   "url": null,
@@ -2085,12 +2092,12 @@
  "https://quarters.seetickets.com/event/yung-sing-riria/quarters/3676117|2026-11-13|yung singh riria": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://shelterhall.co.uk/christmas/festive-igloos/|2026-11-11|igloo dining now open for booking 11th nov 10th jan": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://shelterhall.co.uk/whats-on/bright-soul-gospel-choir-live-performance/|2026-12-14|bright soul gospel choir live performance": {
   "url": "https://bookings.designmynight.com/book?venue_id=695bdbaf9586224e31671d00&source=partner&type=6ace66292b925c45bc311054",
@@ -2105,7 +2112,7 @@
  "https://shelterhall.co.uk/whats-on/christmas-light-switch-on/|2026-11-19|christmas light switch on": {
   "url": "https://bookings.designmynight.com/book?venue_id=695bdbaf9586224e31671d00&source=partner&type=6ace59b02345708ad84b3f00&time=18:00&duration=120&date=2026-11-19",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://shelterhall.co.uk/whats-on/city-of-stars-choir-live-performance/|2026-12-07|city of stars choir live performance": {
   "url": "https://bookings.designmynight.com/book?venue_id=695bdbaf9586224e31671d00&source=partner&type=6ace66292b925c45bc311053",
@@ -2115,7 +2122,7 @@
  "https://shelterhall.co.uk/whats-on/day-of-the-dead-brighton/|2026-11-06|day of the dead celebrations": {
   "url": "https://bookings.designmynight.com/book?venue_id=695bdbaf9586224e31671d00&source=partner&type=6ac77a6138cf7c46ec57dc53&date=2026-11-06",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://shelterhall.co.uk/whats-on/dj-live-sax-at-shelter-hall/|2026-12-19|dj live sax": {
   "url": "https://bookings.designmynight.com/book?venue_id=695bdbaf9586224e31671d00&source=partner",
@@ -2125,7 +2132,7 @@
  "https://shelterhall.co.uk/whats-on/drag-music-bingo-halloween-edition/|2026-10-29|drag music bingo halloween edition": {
   "url": "https://www.eventbrite.co.uk/e/drag-music-bingo-halloween-edition-tickets-1995441918494?aff=oddtdtcreator&_gl=1*1yrebfi*_up*MQ..*_ga*NTIxMzE3OTg0LjE3ODUxNDY2Mjg.*_ga_TQVES5V6SH*czE3ODUxNDY2MjgkbzEkZzEkdDE3ODUxNDY5NDkkajYwJGwwJGgw",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://shelterhall.co.uk/whats-on/santas-grotto/|2026-12-20|santa s grotto": {
   "url": "https://bookings.designmynight.com/book?venue_id=695bdbaf9586224e31671d00&source=partner&type=6ac8c873d1a27c4ad858f571&date=2026-12-13",
@@ -2135,7 +2142,7 @@
  "https://thegreendoorstore.co.uk/events/90s-vs-00s-2/|2026-11-06|90s vs 00s": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/another-country/|2027-02-19|another country": {
   "url": "https://link.dice.fm/tbfd7256540e",
@@ -2150,7 +2157,7 @@
  "https://thegreendoorstore.co.uk/events/burner/|2026-11-01|burner": {
   "url": "https://www.axs.com/uk/events/1442823/burner-beyond-extinction-tickets",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/coilguns/|2027-02-28|coilguns": {
   "url": "https://formpresents.seetickets.com/event/coilguns/the-green-door-store/3735378",
@@ -2160,17 +2167,12 @@
  "https://thegreendoorstore.co.uk/events/dessie-magee/|2026-11-17|dessie magee": {
   "url": "https://dessiemageestore.myshopify.com/products/dessie-magee-green-door-store-brighton-17th-november-2026-doors-7-30pm",
   "sold": null,
-  "checked": "2026-10-28"
- },
- "https://thegreendoorstore.co.uk/events/fat-lloyd-halloween-special/|2026-10-28|fat lloyd halloween special": {
-  "url": "https://www.eventbrite.co.uk/e/fat-lloyd-headline-green-door-store-halloween-special-tickets-2002468555354?aff=oddtdtcreator&_gl=1*pd2n7x*_up*MQ..*_ga*OTYzNDkzODE3LjE3OTA2MjU4OTY.*_ga_TQVES5V6SH*czE3OTA2MjU4OTUkbzEkZzAkdDE3OTA2MjU4OTUkajYwJGwwJGgw&utm_id=97760_v0_s00_e0_tv4&fbclid=PAVERFWAUnqK1leHRuA2FlbQIxMABwZG9mAmZkaWQWUPQRldzicLWuEbgLlzINRq851_HwhHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp9RKPdIvC27b6Tv_iT5xl9NYiyYR4zr0s3UEQr4FaEYZCM4UkGyiekvAogx4_aem_NjWzdAQAvqh3p3DKpSXpqg",
-  "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/flat-moon/|2026-11-13|flat moon": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/funke-the-two-tone-baby/|2027-03-12|funke the two tone baby": {
   "url": "https://lovethyneighbour.seetickets.com/event/funke-and-the-two-tone-baby/the-green-door-store/3726955",
@@ -2190,22 +2192,22 @@
  "https://thegreendoorstore.co.uk/events/halloweiner/|2026-10-31|halloweiner lemonsuckr goodbye girl apocrypha not richard her majesty": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/i-fing-h8-halloween/|2026-10-30|i f ing h8 halloween": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/it-is-still-1985-5/|2026-10-31|it is still 1985 halloween special": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/jawdropped/|2026-10-29|jawdropped": {
   "url": "https://lovethyneighbour.seetickets.com/event/jawdropped/the-green-door-store/3724737",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/jaylor/|2027-02-26|jaylor": {
   "url": "https://www.seetickets.com/event/jayler/the-green-door-store/3733545",
@@ -2230,17 +2232,17 @@
  "https://thegreendoorstore.co.uk/events/psychic-wellbeing-event/|2026-11-06|psychic wellbeing event": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/shaking-hand/|2026-10-30|shaking hand": {
   "url": "https://dice.fm/event/oed5lg-shaking-hand-30th-oct-green-door-store-brighton-tickets",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/the-getaway/|2026-11-03|the getaway": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/the-gulls/|2026-11-27|the gulls": {
   "url": "https://www.skiddle.com/whats-on/Brighton/The-Green-Door-Store/The-Gulls--The-Green-Door-Store/42813479/",
@@ -2255,12 +2257,12 @@
  "https://thegreendoorstore.co.uk/events/trip-westerns-trip-fest-album-fundraiser/|2026-11-07|trip westerns trip fest album fundraiser": {
   "url": "https://wegottickets.com/f/29712",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/triple-drain-otherside-release-party/|2026-11-05|triple drain otherside release party": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/tv-priest/|2027-01-28|tv priest": {
   "url": null,
@@ -2275,7 +2277,7 @@
  "https://thegreendoorstore.co.uk/events/zzzahara/|2026-11-04|zzzahara": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/|2026-11-01|burner beyond extinction": {
   "url": null,
@@ -2295,22 +2297,22 @@
  "https://thegreendoorstore.co.uk/events/|2026-11-10|bloodsports": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/|2026-11-11|storefront church": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/|2026-11-18|lavender": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/|2026-11-19|genn": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://thegreendoorstore.co.uk/events/|2026-11-20|barbican estate": {
   "url": null,
@@ -2345,7 +2347,7 @@
  "https://therosehill.co.uk/event/alexander-painter-feat-jui-ying-huang-william-doyle/|2026-11-13|alexander painter feat jui ying huang william doyle": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therosehill.co.uk/event/double-bill-harry-christelis-pillow-joint-uk-album-tour/|2026-11-27|double bill harry christelis pillow joint uk album tour": {
   "url": null,
@@ -2355,27 +2357,27 @@
  "https://therosehill.co.uk/event/electronic-music-sound-arts-showcase/|2026-10-30|electronic music sound arts showcase": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therosehill.co.uk/event/jose-almarcha-trio-11-nov-2026/|2026-11-11|jos almarcha trio night 1 2": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therosehill.co.uk/event/jose-almarcha-trio-12-nov-2026/|2026-11-12|jos almarcha trio night 2 2": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therosehill.co.uk/event/lava-elastic-november-2026/|2026-11-19|lava elastic": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-26"
+  "checked": "2026-10-29"
  },
  "https://therosehill.co.uk/event/love-is-everywhere/|2026-11-07|love is everywhere": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therosehill.co.uk/event/mehfil-e-rose-hill-rising-stars/|2026-12-03|mehfil e rose hill rising stars": {
   "url": null,
@@ -2385,7 +2387,7 @@
  "https://therosehill.co.uk/event/monster-mash-100/|2026-10-31|monster mash 100": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therosehill.co.uk/event/safehouse-open-session-december-2026/|2026-12-02|safehouse open session": {
   "url": null,
@@ -2395,7 +2397,7 @@
  "https://therosehill.co.uk/event/safehouse-open-session-november-2026/|2026-11-04|safehouse open session": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therosehill.co.uk/event/scratchmeet-18/|2026-11-26|scratch meet 18": {
   "url": null,
@@ -2405,12 +2407,12 @@
  "https://therosehill.co.uk/event/seb-truscott-cooper-anonnymouse/|2026-10-29|seb truscott cooper anonnymouse": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therosehill.co.uk/event/she-is-risen-november-2026/|2026-11-15|she is risen": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therosehill.co.uk/event/silver-birch-album-launch-fka-acoustic-ladyland/|2026-11-20|silver birch album launch fka acoustic ladyland": {
   "url": null,
@@ -2425,7 +2427,7 @@
  "https://therosehill.co.uk/event/threshold-doorways-into-nature-and-psyche/|2026-10-31|at ecomusicology plot in stanmer threshold doorways into nature and psyche": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therosehill.co.uk/event/winter-party-clothes-swap-2026/|2026-11-28|winter party clothes swap": {
   "url": null,
@@ -2435,42 +2437,37 @@
  "https://therossibar.co.uk/events/aqualine/|2026-11-12|aqualine": {
   "url": "https://dice.fm/event/dk7bv6-aqualine-12th-nov-the-rossi-bar-brighton-tickets",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therossibar.co.uk/events/big-red/|2026-11-18|big red": {
   "url": "https://dice.fm/event/3orrwv-big-red-18th-nov-the-rossi-bar-brighton-tickets",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therossibar.co.uk/events/committee-of-sleep/|2026-11-04|committee of sleep": {
   "url": "https://wegottickets.com/f/25381",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therossibar.co.uk/events/creeping-embers/|2026-11-24|creeping embers": {
   "url": "https://www.eventbrite.com/e/creeping-embers-damsel-in-disgrace-sombre-chairs-neepo-babies-tickets-1995480194980",
   "sold": false,
   "checked": "2026-10-28"
  },
- "https://therossibar.co.uk/events/halloween-special-allodynia-more/|2026-10-28|halloween special allodynia more": {
-  "url": "https://www.seetickets.com/event/knick-knack-presents-allodynia-marla-gardenhead/the-rossi-bar/3734746",
-  "sold": null,
-  "checked": "2026-10-28"
- },
  "https://therossibar.co.uk/events/just-lust/|2026-11-07|just lust": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therossibar.co.uk/events/midnight-salad-halloween-special-free-live-electronic-party/|2026-10-30|midnight salad halloween special free live electronic party": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therossibar.co.uk/events/natalie-shay/|2026-11-10|natalie shay": {
   "url": "https://www.universe.com/events/natalie-shay-tickets-0G4KV1",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therossibar.co.uk/events/radiator/|2026-11-06|radiator": {
   "url": null,
@@ -2480,7 +2477,7 @@
  "https://therossibar.co.uk/events/real-sounds-harvey-rushmore-the-octopus/|2026-11-03|real sounds harvey rushmore the octopus": {
   "url": "https://realsounds.com/e0308",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therossibar.co.uk/events/scared-little-toaster/|2026-12-17|scared little toaster": {
   "url": "https://wegottickets.com/f/27697",
@@ -2490,12 +2487,12 @@
  "https://therossibar.co.uk/events/sowt/|2026-11-11|s wt": {
   "url": "https://dice.fm/event/k62dr9-swt-11th-nov-the-rossi-bar-brighton-tickets",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therossibar.co.uk/events/spirit-of-gravity/|2026-11-05|spirit of gravity": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therossibar.co.uk/events/stonks/|2026-11-20|stonks": {
   "url": "https://dice.fm/partner/tickets/event/yodq3a-stonks-20th-nov-the-rossi-bar-brighton-tickets?dice_id=10243984&dice_channel=web&dice_tags=organic&dice_campaign=The+Green+Door+Store&dice_feature=mio_marketing&_branch_match_id=1179729593120726408&utm_source=web&utm_campaign=The+Green+Door+Store&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1Q8wNTdNMU4ySgXS9nVFqWmpRUWZeenxSUX55cWpRbbOGUX5uakANop19zsAAAA%3D",
@@ -2505,22 +2502,22 @@
  "https://therossibar.co.uk/events/teeth-o-ween-ebm-industrial-darkwave-techno-club-night/|2026-10-31|teeth o ween ebm industrial darkwave techno club night": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://therossibar.co.uk/events/the-wameki/|2026-11-06|the wameki": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://tickets.glyndebourne.com/syos/performance/28431|2026-11-14|spark": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://tickets.glyndebourne.com/syos/performance/28432|2026-10-30|beethoven 9": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://tickets.glyndebourne.com/syos/performance/28433|2026-12-05|christmas concerts": {
   "url": null,
@@ -2530,57 +2527,52 @@
  "https://tickets.glyndebourne.com/syos/performance/28440|2026-10-29|the marriage of figaro": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://tickets.glyndebourne.com/syos/performance/28441|2026-11-01|the marriage of figaro": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://tickets.glyndebourne.com/syos/performance/28442|2026-11-03|the marriage of figaro": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://tickets.glyndebourne.com/syos/performance/28443|2026-11-06|the marriage of figaro": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://tickets.glyndebourne.com/syos/performance/28444|2026-11-08|the marriage of figaro": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
- },
- "https://tickets.glyndebourne.com/syos/performance/28448|2026-10-28|the barber of seville": {
-  "url": null,
-  "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://tickets.glyndebourne.com/syos/performance/28449|2026-10-31|the barber of seville": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://tickets.glyndebourne.com/syos/performance/28450|2026-11-02|the barber of seville": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://tickets.glyndebourne.com/syos/performance/28451|2026-11-07|the barber of seville": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://tickets.glyndebourne.com/syos/performance/28452|2026-11-15|spark": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://tickets.glyndebourne.com/syos/performance/28453|2026-11-04|beethoven 9": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://tickets.glyndebourne.com/syos/performance/28454|2026-12-06|christmas concerts": {
   "url": null,
@@ -2615,7 +2607,7 @@
  "https://wegottickets.com/f/16522|2026-11-14|city baby attacked by rats with wings festival 2": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://wegottickets.com/f/24440#tickets|2026-11-29|the amber squad the sleepers the xlnts": {
   "url": null,
@@ -2630,7 +2622,7 @@
  "https://wegottickets.com/f/26267|2026-10-31|moonpunx 19 albertween halloween at the prince albert bullitz 23 family of strangers gripper lee amongst strangers dj chelsea jeff": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://wegottickets.com/f/26549?fbclid=IwY2xjawUOOopwZG9mAWV4dG4DYWVtAjEwAGJyaWQRMGFJcUZFSlJoVE9XSmtmdzNzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEenhA3eHx521vKQ76cD9RneLfdHztfdVkpTB0Br0CczDx1WKlmpMSinXQp6F0_aem_nJYfpM1azhRdJUWOY7Vypw|2026-11-21|the jack cades live at the prince albert the last of the lovely days bity booker": {
   "url": null,
@@ -2665,38 +2657,38 @@
  "https://www.alphabetbrighton.com/listings/new-portfolio-item-1|2026-11-07|the spirit of acid jazz": {
   "url": "https://www.eventbrite.co.uk/e/the-spirit-of-acid-jazz-tickets-1999016970571?aff=ebdssbdestsearch",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.alphabetbrighton.com/listings/new-portfolio-item|2026-10-31|offie mag social halloween": {
   "url": "https://dice.fm/event/6ac3f8837577c3000148270a",
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "seller data says sold out (dice.fm)"
  },
  "https://www.alphabetbrighton.com/listings/nov-1-patchworks-eoy-party|2026-11-01|patchworks eoy party": {
   "url": "https://www.tickettailor.com/events/patchworks/2458000",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.alphabetbrighton.com/listings/nov-13-novo-speed-florence-vergano|2026-11-13|novo speed": {
   "url": "https://ra.co/events/2553671",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.alphabetbrighton.com/listings/nov-14-alex-downey|2026-11-14|alex downey": {
   "url": "https://www.skiddle.com/whats-on/Brighton/Alphabet-Brighton/Headroom-presents-Alex-Downey/42673728/?fbclid=PAdGRleAUjhYdleHRuA2FlbQIxMQBwZG9mAmZkaWQWUPEBq-sfQ9Jv7FrYDC6gZjUlyrFz0HNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp2ujEF0TkFRH6WZAS7QttuM5LGlHynOLulbpy2bJ5D9YN2QnKA03geg8F4FT_aem_FdPpuqjrnG3P1HZszTTTfA&utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.alphabetbrighton.com/listings/nov-15-victus-ex-umbra|2026-11-15|victus ex umbra": {
   "url": "https://www.eventbrite.com/e/viktus-ex-umbra-tickets-2003372955439?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile&fbclid=PAVERFWAVMXxtleHRuA2FlbQIxMABwZG9mAmZkaWQWURCYyWSgLPgv2tluJzt5hF03ikOWSnNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp883_ADpslodgjV3GBpMWGGd7yVRnm9nSCCmqfTA3E_r-l-q1Nnb16khR6OC_aem_4kaX0I6H8CDenHxKQ4Hdiw",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.alphabetbrighton.com/listings/nov-17-miles-davis-sketches-of-spain-listening-party|2026-11-17|miles davis sketches of spain listening party": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.alphabetbrighton.com/listings/nov-20-romes|2026-11-20|romes": {
   "url": "https://my.weezevent.com/romes-brighton",
@@ -2731,17 +2723,17 @@
  "https://www.alphabetbrighton.com/listings/nov-3-blind-yeo|2026-11-03|blind yeo": {
   "url": "https://link.dice.fm/Obd25e9dc315?dice_id=Obd25e9dc315",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.alphabetbrighton.com/listings/nov-5-somewhere-soul-vol-2-listening-party|2026-11-05|somewhere soul rituals vol 2 listening party": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.alphabetbrighton.com/listings/nov-6-reek0|2026-11-06|reek0": {
   "url": "https://dice.fm/event/6a988a1d73d6c90001a458a2",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.alphabetbrighton.com/listings/nov-7-werkha|2026-11-07|werkha": {
   "url": null,
@@ -2751,33 +2743,28 @@
  "https://www.alphabetbrighton.com/listings/oct-29-bats-bats-bats|2026-10-29|bats bats bats": {
   "url": "https://www.eventbrite.com/e/bats-bats-bats-single-release-halloween-show-a-l-p-h-a-b-e-t-brighton-tickets-1996329705890?aff=oddtdtcreator&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleATgau9wZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp_tmOjwgzHp_VsI20-KynlkSfMIrWoSnor7IpRKlCKeNjIDEDBGHSImuT0We_aem_MgnzeSj5kJUDDKN1kabNCA",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.alphabetbrighton.com/listings/oct-30-y-ye-fever|2026-10-30|ye ye fever": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/age-is-a-stage/theatre-royal-brighton/calendar/|2026-11-06|age is a stage": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/an-evening-with-david-byrne-sleeping-beauties/theatre-royal-brighton/|2026-11-09|an evening with david byrne sleeping beauties": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "seller data says sold out (www.atgtickets.com)"
- },
- "https://www.atgtickets.com/shows/autumn-spells/theatre-royal-brighton/calendar/|2026-10-28|autumn spells": {
-  "url": null,
-  "sold": false,
-  "checked": "2026-10-28"
  },
  "https://www.atgtickets.com/shows/backstage-tours/theatre-royal-brighton/calendar/|2026-11-07|backstage tours": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/ballet-nights/theatre-royal-brighton/calendar/|2026-12-09|ballet nights": {
   "url": null,
@@ -2787,12 +2774,17 @@
  "https://www.atgtickets.com/shows/cody-dahler-the-state-of-this/theatre-royal-brighton/calendar/|2026-11-11|cody dahler the state of this": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
+ },
+ "https://www.atgtickets.com/shows/comedy-crackers/theatre-royal-brighton/calendar/|2026-12-11|comedy crackers": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/gareth-malone/theatre-royal-brighton/calendar/|2026-11-13|gareth malone": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/grace-campbell-the-lady-is-a-tramp/theatre-royal-brighton/calendar/|2026-12-10|grace campbell the lady is a tramp": {
   "url": null,
@@ -2802,27 +2794,27 @@
  "https://www.atgtickets.com/shows/horrible-histories-brighton/|2026-10-29|horrible histories brighton": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/horrible-histories-brighton/|2026-10-31|horrible histories awful egyptians": {
-  "url": null,
-  "sold": null,
-  "checked": "2026-10-28"
+  "url": "https://www.atgtickets.com/shows/horrible-histories-terrible-tudors/theatre-royal-brighton/",
+  "sold": false,
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/james-b-partridge-the-big-christmas-assembly-2026/theatre-royal-brighton/calendar/|2026-12-06|james b partridge the big christmas assembly 2026": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/man-in-the-mirror-a-tribute-to-michael-jackson/theatre-royal-brighton/calendar/|2026-11-18|man in the mirror a tribute to michael jackson": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/meat-loaf-by-candlelight/theatre-royal-brighton/calendar/|2026-11-05|meat loaf by candlelight": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/paranormal-activity/theatre-royal-brighton/calendar/|2026-11-24|paranormal activity": {
   "url": null,
@@ -2832,7 +2824,7 @@
  "https://www.atgtickets.com/shows/school-of-clowns-course/theatre-royal-brighton/calendar/|2026-11-04|school of clowns course": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/six/theatre-royal-brighton/calendar/|2026-12-01|six": {
   "url": null,
@@ -2842,12 +2834,12 @@
  "https://www.atgtickets.com/shows/spice-girls-the-theatre-show/theatre-royal-brighton/calendar/|2026-11-14|spice girls the theatre show": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/stories-with-skip-autumn-leaves/theatre-royal-brighton/calendar/|2026-11-07|stories with skip autumn leaves": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/stories-with-skip-moon-and-stars/theatre-royal-brighton/calendar/|2026-12-05|stories with skip moon and stars": {
   "url": null,
@@ -2856,49 +2848,49 @@
  },
  "https://www.atgtickets.com/shows/the-brown-suite/theatre-royal-brighton/calendar/|2026-11-03|the brown suite": {
   "url": null,
-  "sold": null,
-  "checked": "2026-10-28"
+  "sold": false,
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/the-brown-suite/theatre-royal-brighton/calendar/|2026-11-04|the brown suite": {
   "url": null,
-  "sold": null,
-  "checked": "2026-10-28"
+  "sold": false,
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/the-chicago-blues-brothers-live-at-the-country-bunker/theatre-royal-brighton/calendar/|2026-11-12|the chicago blues brothers live at the country bunker": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/the-gruffalo/theatre-royal-brighton/calendar/|2026-11-16|the gruffalo": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/the-gruffalo/theatre-royal-brighton/calendar/|2026-11-17|the gruffalo": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/the-yacht-rock-experience/theatre-royal-brighton/calendar/|2026-11-19|the yacht rock experience": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/whats-love-got-to-do-with-it-a-tribute-to-tina-turner/theatre-royal-brighton/calendar/|2026-11-06|what s love got to do with it a tribute to tina turner": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/shows/women-in-tech-course/theatre-royal-brighton/|2026-11-07|women in tech course": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "seller data says sold out (www.atgtickets.com)"
  },
  "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/|2026-10-30|horrible histories awful egyptians": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/|2026-10-31|horrible histories awful egyptians": {
   "url": "https://www.atgtickets.com/shows/horrible-histories-brighton/",
@@ -2918,7 +2910,7 @@
  "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/|2026-11-14|spice girls experience": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/|2026-11-14|the spice girls the theatre show": {
   "url": null,
@@ -3153,7 +3145,7 @@
  "https://www.axs.com/uk/events/1371182?skin=volks|2026-11-05|moon walker": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.axs.com/uk/events/1371182|2026-11-05|moon walker": {
   "url": null,
@@ -3178,7 +3170,7 @@
  "https://www.axs.com/uk/events/1566208/aba-shanti-ras-kayleb-easy-skankin-djs-tickets?skin=volks|2026-11-14|aba shanti ras kayleb easy skankin djs": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.axs.com/uk/events/1566208/aba-shanti-ras-kayleb-easy-skankin-djs-tickets|2026-11-14|aba shanti ras kayleb easy skankin djs": {
   "url": null,
@@ -3215,6 +3207,11 @@
   "sold": null,
   "checked": "2026-10-24"
  },
+ "https://www.axs.com/uk/events/1678774/jgrrey-tickets|2027-01-13|jgrrey": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-29"
+ },
  "https://www.brighton-racecourse.co.uk/whats-on/antiques-vintage-fair-by-love-fairs-sunday-29th-november-2026|2026-11-29|antiques vintage fair by love fairs": {
   "url": "https://lovefairs.com/brighton-racecourse/",
   "sold": null,
@@ -3238,12 +3235,12 @@
  "https://www.brightonandhovealbion.com/tickets|2026-11-07|brighton v brentford": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brightonandhovealbion.com/tickets|2026-11-15|brighton women v liverpool": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brightonandhovealbion.com/tickets|2026-11-28|brighton v newcastle united": {
   "url": null,
@@ -3263,22 +3260,17 @@
  "https://www.brunswickpub.co.uk/event-details/3-daft-monkeys-25th-anniversary-double-set-show|2026-11-07|3 daft monkeys 25th anniversary double set show": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/90s-grunge-tribute-ghosts-of-seattle|2026-12-05|90s grunge tribute ghosts of seattle": {
   "url": null,
   "sold": null,
   "checked": "2026-10-26"
  },
- "https://www.brunswickpub.co.uk/event-details/a-gathering-of-witches-an-evening-of-music-poetry-1|2026-10-28|a gathering of witches an evening of music poetry": {
-  "url": null,
-  "sold": null,
-  "checked": "2026-10-28"
- },
  "https://www.brunswickpub.co.uk/event-details/abba-the-greatest-hits|2026-11-13|abba the greatest hits": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/adam-otmar-yellow-bellied-sapsucker-tour|2027-04-08|adam otmar yellow bellied sapsucker tour": {
   "url": null,
@@ -3298,7 +3290,7 @@
  "https://www.brunswickpub.co.uk/event-details/and-now-were-all-doomed-luzz-pocket-lint-sunday-sesh|2026-11-01|and now we re all doomed luzz pocket lint sunday sesh": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/anna-katarina|2026-12-07|anna katarina": {
   "url": null,
@@ -3313,12 +3305,12 @@
  "https://www.brunswickpub.co.uk/event-details/balls-deep-with-laughter-4|2026-11-03|balls deep with laughter": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/banda-tamandua-2|2026-11-19|banda tamandu": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-26"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/benoit-viellefon-hot-club-6|2026-11-25|benoit viellefon hot club": {
   "url": null,
@@ -3338,7 +3330,7 @@
  "https://www.brunswickpub.co.uk/event-details/brighton-beach-boys-bob-dylan-w-pete-howells|2026-11-06|brighton beach boys bob dylan w pete howells": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/brighton-jazz-co-ops-40th-anniversary-celebration|2026-11-22|brighton jazz co op s 40th anniversary celebration": {
   "url": null,
@@ -3355,11 +3347,6 @@
   "sold": null,
   "checked": "2026-10-26"
  },
- "https://www.brunswickpub.co.uk/event-details/catbandcat-support-2|2026-10-28|catbandcat support": {
-  "url": null,
-  "sold": null,
-  "checked": "2026-10-28"
- },
  "https://www.brunswickpub.co.uk/event-details/clash-n-sleazy-2|2026-11-20|clash n sleazy": {
   "url": null,
   "sold": null,
@@ -3368,7 +3355,7 @@
  "https://www.brunswickpub.co.uk/event-details/clover-stieve-live|2026-11-10|clover stieve live": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/connor-kelly-the-time-warp-the-brunswick|2026-12-02|connor kelly the time warp": {
   "url": null,
@@ -3404,7 +3391,7 @@
  "https://www.brunswickpub.co.uk/event-details/double-bill-hotrox-and-the-black-heart-outlaws|2026-11-12|double bill hotrox and the black heart outlaws": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/experimental|2026-11-28|experimental": {
   "url": null,
@@ -3419,7 +3406,7 @@
  "https://www.brunswickpub.co.uk/event-details/faberge-falls-lizzie-hill-blush-live-at-the-brunswicks-cellar|2026-10-30|faberg falls lizzie hill blush live at the brunswick s cellar": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/filthy-fridays-christmas-extravaganda|2026-12-04|filthy fridays christmas extravaganda": {
   "url": null,
@@ -3429,7 +3416,7 @@
  "https://www.brunswickpub.co.uk/event-details/flamenco-express-30th-anniversary-tour-november-2026|2026-11-15|flamenco express 30th anniversary tour november 2026": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/fleetwood-mac-the-greatest-hits-1|2026-11-29|fleetwood mac the greatest hits": {
   "url": null,
@@ -3444,7 +3431,7 @@
  "https://www.brunswickpub.co.uk/event-details/gaz-brookfield-autumn-2026-tour|2026-11-05|gaz brookfield autumn 2026 tour": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/girl-with-the-dead-fingers-an-ep-summoning-by-yagmanx|2026-11-27|girl with the dead fingers an ep summoning by yagmanx": {
   "url": null,
@@ -3469,7 +3456,7 @@
  "https://www.brunswickpub.co.uk/event-details/go-kid-music-club-spooky-party-1|2026-11-07|go kid music club spooky party": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/go-kid-music-club-time-machine|2026-12-05|go kid music club time machine": {
   "url": null,
@@ -3479,7 +3466,7 @@
  "https://www.brunswickpub.co.uk/event-details/hiraeth-presents-samhain|2026-10-30|hiraeth presents samhain": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/hungry-joe-with-special-guests-fragile-creatures|2026-11-21|hungry joe with special guests fragile creatures": {
   "url": null,
@@ -3489,12 +3476,12 @@
  "https://www.brunswickpub.co.uk/event-details/ila-more-tba|2026-11-04|ila more tba": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/in-other-words-poetry-night-2|2026-10-29|in other words poetry night": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/ironclad-christmas-social|2026-12-10|ironclad christmas social": {
   "url": null,
@@ -3509,17 +3496,17 @@
  "https://www.brunswickpub.co.uk/event-details/jazz-jam-215|2026-11-03|jazz jam": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/jazz-jam-216|2026-11-10|jazz jam": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/jazz-jam-217|2026-11-17|jazz jam": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/jazz-jam-218|2026-11-24|jazz jam": {
   "url": null,
@@ -3559,7 +3546,7 @@
  "https://www.brunswickpub.co.uk/event-details/kashaka|2026-11-11|kashaka": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/kendall-lujan-the-brunswick|2027-03-30|kendall lujan": {
   "url": null,
@@ -3569,12 +3556,12 @@
  "https://www.brunswickpub.co.uk/event-details/lets-meet-tommy-romero-tour-gentleman-of-rocknroll|2026-11-18|let s meet tommy romero tour gentleman of rock n roll": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/monster-mash-family-bash|2026-10-31|monster mash family bash": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/night-teacher-us-the-brunswick|2027-03-02|night teacher us": {
   "url": null,
@@ -3584,12 +3571,12 @@
  "https://www.brunswickpub.co.uk/event-details/noah-derksen-live-in-hove|2026-11-18|noah derksen live in hove": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/not-coping-halloween-club-la-luna|2026-11-13|not coping halloween club la luna": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/nye-family-daytime-disco-4|2026-12-31|nye family daytime disco": {
   "url": null,
@@ -3599,17 +3586,17 @@
  "https://www.brunswickpub.co.uk/event-details/open-mic-night-208|2026-11-02|open mic night": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/open-mic-night-209|2026-11-09|open mic night": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/open-mic-night-210|2026-11-16|open mic night": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/open-mic-night-211|2026-11-23|open mic night": {
   "url": null,
@@ -3669,7 +3656,7 @@
  "https://www.brunswickpub.co.uk/event-details/seany-clarke-live-at-the-cellar-bar|2026-10-29|seany clarke live at the cellar bar": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/shaun-kirk-aus-live-at-the-brunswick-hove|2027-03-28|shaun kirk aus": {
   "url": null,
@@ -3679,7 +3666,7 @@
  "https://www.brunswickpub.co.uk/event-details/simply-weller|2026-11-14|simply weller": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/soma-dolls-higher-state-radio-2|2027-04-17|soma dolls higher state radio": {
   "url": null,
@@ -3724,12 +3711,12 @@
  "https://www.brunswickpub.co.uk/event-details/the-shoreham-allstars-6|2026-11-14|the shoreham allstars": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/the-station-live-at-the-brunswick|2026-11-02|the station": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.brunswickpub.co.uk/event-details/uncle-josefs-holiday-camp|2027-02-26|uncle josef s holiday camp": {
   "url": null,
@@ -3794,7 +3781,7 @@
  "https://www.concorde2.co.uk/event/born-on-road|2026-10-30|born on road": {
   "url": "https://www.axs.com/uk/events/1515532/born-on-road-tickets",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/buzzcocks|2026-12-10|buzzcocks": {
   "url": "https://www.axs.com/uk/events/1554543/buzzcocks-tickets/promos/1182780",
@@ -3804,12 +3791,12 @@
  "https://www.concorde2.co.uk/event/cardinals|2026-11-09|cardinals": {
   "url": "https://www.axs.com/uk/events/1377082/cardinals-tickets",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/chop-suey-slip-not|2026-11-19|forever nu 25th anniversary of toxicity iowa": {
   "url": "https://www.axs.com/uk/events/1366145/chop-suey-slip-not-toxicity-iowa-25th-anniversary-tour-tickets",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/craig-charles-funk-soul-house-party|2027-03-05|craig charles funk soul house party": {
   "url": "https://www.axs.com/uk/events/1644634/craig-charles-funk-soul-house-party-tickets",
@@ -3839,12 +3826,12 @@
  "https://www.concorde2.co.uk/event/dj-yoda|2026-11-06|dj yoda": {
   "url": "https://www.axs.com/uk/events/1352891/dj-yoda-80s-mixtape-live-tickets",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/drum-bass-classics-halloween-all-dayer|2026-10-31|drum bass classics halloween all dayer": {
   "url": "https://www.axs.com/uk/events/1438365/drum-bass-classics-brighton-halloween-all-dayer-tickets",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/electric-six|2026-12-06|electric six": {
   "url": "https://www.axs.com/uk/events/1343927/electric-six-tickets",
@@ -3855,6 +3842,16 @@
   "url": "https://www.axs.com/uk/events/1396894/elvana-elvis-fronted-nirvana-tickets",
   "sold": null,
   "checked": "2026-10-28"
+ },
+ "https://www.concorde2.co.uk/event/fatboy-slim-2|2026-12-05|fatboy slim": {
+  "url": "https://www.axs.com/uk/events/1676793/fatboy-slim-martlets-fundraiser-tickets",
+  "sold": false,
+  "checked": "2026-10-29"
+ },
+ "https://www.concorde2.co.uk/event/fatboy-slim|2026-12-04|fatboy slim": {
+  "url": "https://www.axs.com/uk/events/1676792/fatboy-slim-martlets-fundraiser-tickets",
+  "sold": false,
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/frankie-stew-harvey-gunn|2027-03-11|frankie stew harvey gunn": {
   "url": "https://www.axs.com/uk/events/1626526/frankie-stew-harvey-gunn-tickets",
@@ -3894,7 +3891,7 @@
  "https://www.concorde2.co.uk/event/halloween-with-simon-pegg|2026-10-30|halloween with simon pegg": {
   "url": "https://www.axs.com/uk/events/1600668/halloween-with-simon-pegg-tickets",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/hoa-hoa-hoa-rave|2026-11-27|hoa hoa hoa rave": {
   "url": "https://www.fatsoma.com/e/9lybswge/hoa-hoa-hoa-rave-brighton",
@@ -3904,7 +3901,7 @@
  "https://www.concorde2.co.uk/event/holy-fawn|2026-11-08|holy fawn m l": {
   "url": "https://www.axs.com/uk/events/1464747/holy-fawn-mol-tickets",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/hybrid-minds|2026-12-12|hybrid minds": {
   "url": "https://www.axs.com/uk/events/1644637/hybrid-minds-tickets",
@@ -3914,7 +3911,7 @@
  "https://www.concorde2.co.uk/event/its-a-jungle-out-there-coco-bryce-jkenzo|2026-11-06|it s a jungle out there coco bryce j kenzo": {
   "url": "https://www.skiddle.com/whats-on/Brighton/The-Concorde-2/Its-A-Jungle-Out-There---Coco-Bryce--JKenzo/42604156/",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/jo-whileys-90s-anthems|2027-01-29|jo whiley s 90s anthems": {
   "url": "https://www.axs.com/uk/events/1505956/jo-whiley-tickets",
@@ -3924,12 +3921,12 @@
  "https://www.concorde2.co.uk/event/john-digweed|2026-11-13|john digweed": {
   "url": "https://www.axs.com/uk/events/1447718/john-digweed-tickets",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/junebabies-john-digweed-afterparty|2026-11-14|junebabies john digweed afterparty": {
   "url": "https://www.skiddle.com/whats-on/Brighton/The-Concorde-2/Junebabies---John-Digweed-Afterparty/42801811/",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/kenno-live|2027-04-10|keeno live ft vibre strings": {
   "url": "https://www.axs.com/uk/events/1588135/keeno-live-ft-vibre-strings-tickets",
@@ -3939,7 +3936,7 @@
  "https://www.concorde2.co.uk/event/kerrbang|2026-10-29|kerrbang": {
   "url": "https://www.skiddle.com/e/42502172",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/lebanon-hanover|2027-03-20|lebanon hanover": {
   "url": "https://www.axs.com/uk/events/1492398/lebanon-hanover-tickets/promos/1161630",
@@ -3949,7 +3946,7 @@
  "https://www.concorde2.co.uk/event/logic1000|2026-11-14|gal pals presents logic1000": {
   "url": "https://www.axs.com/uk/events/1646449/logic1000-tickets",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/love-forever-changes-60th-anniversary-tour|2027-05-28|love forever changes 60th anniversary tour": {
   "url": "https://www.axs.com/uk/events/1626529/love-forever-changes-60th-anniversary-tour-tickets",
@@ -3964,12 +3961,12 @@
  "https://www.concorde2.co.uk/event/master-peace|2027-03-04|master peace": {
   "url": "https://www.axs.com/uk/events/1637019/master-peace-tickets/promos/1212128",
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/metallica-reloaded|2026-11-14|metallica reloaded": {
   "url": "https://www.axs.com/uk/events/1240904/metallica-reloaded-tickets",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/mnek|2026-11-15|mnek": {
   "url": "https://www.axs.com/uk/events/1510024/mnek-tickets",
@@ -3984,7 +3981,7 @@
  "https://www.concorde2.co.uk/event/moody-disco-obskur|2026-10-31|moody disco obskur": {
   "url": "https://www.skiddle.com/whats-on/Brighton/Concorde-2/Moody-Disco-Halloween-Rave-w-Obskr/42622726/",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/moses-boyd|2027-03-31|moses boyd": {
   "url": "https://www.axs.com/uk/events/1596390/moses-boyd-tickets/promos/1195792",
@@ -3996,20 +3993,15 @@
   "sold": false,
   "checked": "2026-10-28"
  },
- "https://www.concorde2.co.uk/event/my-new-bad-believe|2026-10-28|my new band believe": {
-  "url": "https://www.axs.com/uk/events/1406212/my-new-band-believe-tickets/promos/1119484",
-  "sold": null,
-  "checked": "2026-10-28"
- },
  "https://www.concorde2.co.uk/event/mykki-blanco|2026-11-10|mykki blanco": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/nafe-smallz-x-rift|2026-11-07|nafe smallz x rift": {
   "url": "https://www.skiddle.com/whats-on/Brighton/Concorde-2/Nafe-Smallz-x-Rift/42718894/",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/noasis|2027-04-16|noasis": {
   "url": "https://www.axs.com/uk/events/1608480/noasis-tickets",
@@ -4019,7 +4011,7 @@
  "https://www.concorde2.co.uk/event/oh-my-god-its-the-church|2026-11-18|oh my god it s the church": {
   "url": "https://www.axs.com/uk/events/1078920/oh-my-god-it-s-the-church-tickets",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/pigeon|2027-01-08|pigeon": {
   "url": "https://www.axs.com/uk/events/1559577/pigeon-tickets",
@@ -4049,7 +4041,7 @@
  "https://www.concorde2.co.uk/event/sasha|2027-02-05|sasha": {
   "url": "https://www.axs.com/uk/events/1655868/sasha-tickets",
   "sold": false,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/she-wants-revenge|2027-02-07|she wants revenge": {
   "url": "https://www.axs.com/uk/events/1666572/she-wants-revenge-tickets",
@@ -4064,7 +4056,7 @@
  "https://www.concorde2.co.uk/event/slipmatt-ellis-dee-2-bad-mice-dj-ratty|2026-11-07|slipmatt ellis dee 2 bad mice dj ratty": {
   "url": "https://www.axs.com/uk/events/1640709/slipmatt-ellis-dee-2-bad-mice-dj-ratty-tickets",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/snayx|2027-03-27|snayx": {
   "url": "https://www.axs.com/uk/events/1655876/snayx-tickets",
@@ -4084,12 +4076,12 @@
  "https://www.concorde2.co.uk/event/teenage-fanclub|2026-11-05|teenage fanclub": {
   "url": "https://www.axs.com/uk/events/1377077/teenage-fanclub-tickets",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/the-allergies-live|2026-11-12|the allergies live": {
   "url": "https://www.axs.com/uk/events/1374241/the-allergies-tickets",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/the-big-indie-fest-2|2027-04-02|the big indie fest": {
   "url": "https://www.axs.com/uk/events/1317814/the-big-indie-festival-tickets",
@@ -4104,7 +4096,7 @@
  "https://www.concorde2.co.uk/event/the-bluetones|2026-11-01|the bluetones": {
   "url": "https://www.axs.com/uk/events/1085854/the-bluetones-30-years-of-expecting-to-fly-tickets",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.concorde2.co.uk/event/the-cureheads|2027-02-19|the cureheads": {
   "url": "https://www.axs.com/uk/events/1445998/the-cureheads-siouxsie-the-budgiees-tickets",
@@ -4169,7 +4161,7 @@
  "https://www.daltonsbrighton.com/event-details/acid-box-presents-delivery|2026-11-06|acid box presents delivery": {
   "url": "https://dice.fm/event/3o7wxg-delivery-support-6th-nov-daltons-brighton-brighton-tickets",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/alt-anthems-2|2026-11-21|alt anthems": {
   "url": "https://www.fatsoma.com/e/m2fh21fr/alt-anthems-daltons-saturday-21st-november?utm_campaign=prom_ss&utm_medium=social&utm_source=dynamic",
@@ -4187,9 +4179,9 @@
   "checked": "2026-10-28"
  },
  "https://www.daltonsbrighton.com/event-details/bats-womb-halloween-special|2026-10-31|bats womb halloween special": {
-  "url": null,
-  "sold": null,
-  "checked": "2026-10-28"
+  "url": "https://www.eventbrite.co.uk/e/bats-womb-the-lost-boys-themed-halloween-party-at-the-daltons-brighton-tickets-1996122900329",
+  "sold": false,
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/beyond-extinction-salem-trials-devilhusk|2027-03-28|beyond extinction salem trials devilhusk": {
   "url": null,
@@ -4204,7 +4196,7 @@
  "https://www.daltonsbrighton.com/event-details/boy-fear-presents-mart-0-mortis|2026-10-31|boy fear presents mart 0 mortis": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/brighton-day-of-death-3|2027-03-13|brighton day of death 3": {
   "url": "https://www.eventbrite.com/e/brighton-day-of-death-tickets-2000411184703?aff=oddtdtcreator",
@@ -4214,7 +4206,7 @@
  "https://www.daltonsbrighton.com/event-details/chailey-rocks|2026-11-09|chailey rocks": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/christmas-karaoke-in-aid-of-ymca-brighton|2026-12-17|christmas karaoke in aid of ymca brighton": {
   "url": null,
@@ -4224,12 +4216,12 @@
  "https://www.daltonsbrighton.com/event-details/club-bndm-queer-pop-halloween-party|2026-10-30|club bndm queer pop halloween party": {
   "url": "https://www.outsavvy.com/event/38501/club-bndm-queer-pop-halloween-party",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/cosmic-joke-bad-beat-backhand-animal-house-dambuster|2026-11-15|cosmic joke bad beat backhand animal house dambuster": {
   "url": "https://dice.fm/partner/tickets/event/dkdwno",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/cosmic-joke-bad-beat|2026-11-15|cosmic joke bad beat": {
   "url": "https://dice.fm/partner/tickets/event/dkdwno",
@@ -4239,17 +4231,17 @@
  "https://www.daltonsbrighton.com/event-details/daltons-bar-guitar-hero|2026-11-14|daltons bar guitar hero": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/daltons-bar-join-the-queue|2026-11-07|daltons bar join the queue": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/daltons-bar-poets-palace-brighton|2026-11-16|daltons bar poets palace brighton": {
   "url": "https://www.eventbrite.co.uk/e/poets-palace-brighton-tickets-2003453551504",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/david-j-bauhaus-love-rockets|2026-12-13|david j bauhaus love rockets": {
   "url": null,
@@ -4259,12 +4251,12 @@
  "https://www.daltonsbrighton.com/event-details/death-goals-sunday-best-clouded-blood-hex|2026-11-13|death goals sunday best clouded blood hex": {
   "url": "https://deathbeforedetransition.bigcartel.com/product/131126-death-goals",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/doom-by-the-sea-vol-6|2026-11-14|doom by the sea vol 6": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/dr-razzu-margauxs-star-chart|2026-12-02|dr razzu margaux s star chart": {
   "url": null,
@@ -4279,7 +4271,7 @@
  "https://www.daltonsbrighton.com/event-details/fighting-for-unity-2026-11-05-18-00|2026-11-05|fighting for unity": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/gen-the-degenerates|2027-04-18|gen the degenerates": {
   "url": "https://crosstownconcerts.seetickets.com/event/gen-the-degenerates/daltons/3711622",
@@ -4289,12 +4281,12 @@
  "https://www.daltonsbrighton.com/event-details/ghouls-club|2026-11-07|ghouls club": {
   "url": "https://ra.co/events/2540347",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/grace-hayhurst-evi-vine-dea-velata|2026-11-12|grace hayhurst evi vine dea velata": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/grief-ritual-dead-flesh-blood-hex-final-notice|2026-12-01|grief ritual dead flesh blood hex final notice": {
   "url": null,
@@ -4304,12 +4296,7 @@
  "https://www.daltonsbrighton.com/event-details/guerilla-rocks|2026-11-14|guerilla rocks": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
- },
- "https://www.daltonsbrighton.com/event-details/haunted-harmonies|2026-10-28|haunted harmonies": {
-  "url": null,
-  "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/haywire-support-tba|2027-01-12|haywire support tba": {
   "url": null,
@@ -4319,17 +4306,17 @@
  "https://www.daltonsbrighton.com/event-details/hijinx-promotions-present-gloomy-sunday-6-1|2026-11-15|hijinx promotions present gloomy sunday 6": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/ink-jelly-crooked-kin|2026-11-16|ink jelly crooked kin": {
   "url": "https://www.eventbrite.com/e/ink-jelly-crooked-kin-daltons-16th-november-tickets-2003407438579?aff=oddtdtcreator&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAVBxr1leHRuA2FlbQIxMQBwZG9mAmZkaWQWUQiQdRlKkPXvTFXZn3J8uYICJgcJxXNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp3qrCfOBkbP9yxIXTlU8yZVsmFBuEBmig-gODxul5_25PIjT_tcZc30bgibx_aem_LlTfwmnplZQ728R97GFZCg",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/intox-extravaganza-presents-the-nightmare-after-halloween-matinee|2026-11-01|intox extravaganza presents the nightmare after halloween matinee": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/karma-police-radiohead-tribute-1|2027-01-23|karma police radiohead tribute": {
   "url": null,
@@ -4349,7 +4336,7 @@
  "https://www.daltonsbrighton.com/event-details/lagrimas-splitting-gums-hempitera-clouded|2026-11-10|lagrimas splitting gums hempitera clouded": {
   "url": "https://dyafpromotions.bigcartel.com/product/lagrimas-daltons-10th-november-2026",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/lamiia-album-release-show|2026-11-21|lamiia album release show": {
   "url": null,
@@ -4359,17 +4346,17 @@
  "https://www.daltonsbrighton.com/event-details/machukha-healing-wound|2026-11-07|machukha healing wound": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/martin-chambers-mike-christie-interview-q-a|2026-11-19|martin chambers mike christie interview q a": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/menstrual-cramps-french-toast-hissy-fist-phat-problem-brick|2026-11-01|menstrual cramps french toast hissy fist phat problem brick": {
   "url": "https://dice.fm/partner/tickets/event/l8mxvr-garageland-and-daltons-present-the-menstrual-cramps-french-toast-hissy-fist-phat-problem-brick-1st-nov-daltons-brighton-brighton-tickets?dice_id=10515240&dice_channel=web&dice_tags=organic&dice_campaign=Garageland+Brighton&dice_feature=mio_marketing&_branch_match_id=1618195161676191414&utm_source=web&utm_campaign=Garageland+Brighton&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1c9OMU0xNTJKTUtLMrKvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQA4186eOwAAAA%3D%3D",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/nerd-ball-transport|2026-11-26|nerd ball transport": {
   "url": "https://www.outsavvy.com/event/39487/nerd-ball-transport",
@@ -4379,7 +4366,7 @@
  "https://www.daltonsbrighton.com/event-details/no-tits-just-hits|2026-11-04|no tits just hits": {
   "url": "https://www.outsavvy.com/event/38827/no-tits-just-hits",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/paul-mcgann-ben-wheatley-interview-q-a|2026-12-09|paul mcgann ben wheatley interview q a": {
   "url": null,
@@ -4399,12 +4386,12 @@
  "https://www.daltonsbrighton.com/event-details/rapscallion-chums|2026-11-18|rapscallion chums": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/resurrection-club-night-2026-11-06-23-00|2026-11-06|resurrection club night": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/rock-n-pole-1|2026-11-29|rock n pole": {
   "url": "https://www.seetickets.com/event/rock-n-pole/daltons/3668529?aff=id1bandsintown",
@@ -4419,12 +4406,12 @@
  "https://www.daltonsbrighton.com/event-details/stormo-believe-in-nothing-uk-co-headline-tour|2026-10-29|stormo believe in nothing uk co headline tour": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/t4t-halloween-1|2026-10-30|t4t halloween": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/the-big-gay-market-12|2026-11-28|the big gay market": {
   "url": null,
@@ -4439,7 +4426,7 @@
  "https://www.daltonsbrighton.com/event-details/the-darts|2026-11-08|the darts": {
   "url": "https://www.eventbrite.co.uk/e/the-darts-at-daltons-brighton-81126-tickets-1997796389781?fbclid=IwY2xjawTqnWFwZG9mAWV4dG4DYWVtAjEwAGJyaWQRMVF2NDc4eENjNHRma2tOdXFzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEewnu-11itQ4CmCvqRN0F6Dg1OGZH-02J6rmxosyvqK0yV1yYbvzECclqkcB8_aem_R_TfpX0gfE42WzzfI6Ek7Q",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/turbobier-chub|2026-11-25|turbobier chub": {
   "url": null,
@@ -4459,12 +4446,12 @@
  "https://www.daltonsbrighton.com/event-details/witchrot-support|2026-11-03|witchrot support": {
   "url": "https://dice.fm/event/2waxwa-witchrot-3rd-nov-daltons-brighton-brighton-tickets?click_id=psTZ0UurR6erDohvhYiTww&pid=530cb286&_branch_match_id=1618195161676191414&utm_medium=partners_api&_branch_referrer=H4sIAAAAAAAAAwXBSw6DIBQF0N04FLRKTBPSQV2BsYM6MREe5cUP5GLLzLX3HH%2BeMd2F2PhYS8uGSrcL1G3VVMrKTrmH2disM1sd0zjJ1xeDIvTB%2F%2Fybx5yLyFa3N2mWulPFBXIE8PGZF4ScCPrpEXb6A3ZVOBRoAAAA",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/wpc-his-house-2020|2026-11-02|wpc his house 2020": {
   "url": "https://www.outsavvy.com/event/40477/wpc-his-house-2020-fundraiser-for-thousand-for-1000",
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.daltonsbrighton.com/event-details/xmas-melt-your-brains-party-1|2026-12-05|xmas melt your brains party": {
   "url": "https://wegottickets.com/f/27044",
@@ -4561,11 +4548,6 @@
   "sold": null,
   "checked": "2026-10-26"
  },
- "https://www.ents24.com/brighton-events/the-hope-and-ruin|2026-10-28|deradoorian": {
-  "url": "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvZGVyYWRvb3JpYW4vdGhlLWhvcGUtcnVpbi8zNjYzMTgx/supplier/SeeTickets/suppliedid/MzY2MzE4MQ/ticketid/8082812/checksum/73b71f61011b7b9d2b293809fa02f10e/track/true?title=Deradoorian&badge=&venueId=34826",
-  "sold": null,
-  "checked": "2026-10-12"
- },
  "https://www.ents24.com/brighton-events/the-hope-and-ruin|2026-10-29|rikas": {
   "url": "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRtYXN0ZXIuZXZ5eS5uZXQvYy8xMzAwOTY4LzIwMzg3NTgvMjQwMjM_dT1odHRwcyUzQSUyRiUyRnd3dy50aWNrZXRtYXN0ZXIuY28udWslMkZyaWthcy1icmlnaHRvbi0yOS0xMC0yMDI2JTJGZXZlbnQlMkYxRjAwNjRDMTFEQTFENTU3JTNGYnJhbmQlM0R1a19lbnRzMjQmdXRtX21lZGl1bT1hZmZpbGlhdGU/supplier/Ticketmaster/suppliedid/RzV2SFpfRzdxSXE0OQ/ticketid/8071537/checksum/3f91566fe659dbf2bd13514767e564f1/track/true?title=Rikas&badge=&venueId=34826",
   "sold": null,
@@ -4587,29 +4569,29 @@
   "checked": "2026-10-16"
  },
  "https://www.ents24.com/brighton-events/the-hope-and-ruin|2026-11-08|kiwi jr": {
-  "url": null,
+  "url": "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQva2l3aS1qci0vdGhlLWhvcGUtcnVpbi8zNjMxNDU5/supplier/SeeTickets/suppliedid/MzYzMTQ1OQ/ticketid/8047668/checksum/2bf3bc57d0782592d204f37905209d5a/track/true?title=Kiwi+jr.&badge=&venueId=34826",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/brighton-events/the-hope-and-ruin|2026-11-09|bby": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/brighton-events/the-hope-and-ruin|2026-11-11|an dannsa dub": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/brighton-events/the-hope-and-ruin|2026-11-12|michael mcgovern": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/brighton-events/the-hope-and-ruin|2026-11-16|60juno": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/brighton-events/the-hope-and-ruin|2026-11-20|grandmas house": {
   "url": null,
@@ -4704,12 +4686,12 @@
  "https://www.ents24.com/brighton-events/the-prince-albert|2026-11-18|outpost drive": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/brighton-events/the-prince-albert|2026-11-19|niall mcnamee": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/brighton-events/the-prince-albert|2026-11-20|the spitfires": {
   "url": null,
@@ -4794,7 +4776,7 @@
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRtYXN0ZXIuZXZ5eS5uZXQvYy8xMzAwOTY4LzIwMzg3NTgvMjQwMjM_dT1odHRwcyUzQSUyRiUyRnd3dy50aWNrZXRtYXN0ZXIuY28udWslMkZkZXJtb3QtaGVucnktYnJpZ2h0b24tMTYtMTEtMjAyNiUyRmV2ZW50JTJGMUYwMDY1MTE5RDQ4MkQ4MSUzRmJyYW5kJTNEdWtfZW50czI0JnV0bV9tZWRpdW09YWZmaWxpYXRl/supplier/Ticketmaster/suppliedid/RzV2SFpfb2txM2VVdg/ticketid/8141156/checksum/433dc6d034b1177c41eab68482cdb931/track/true?title=Dermot+Henry&badge=&venueId=24967|2026-11-16|dermot henry": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRtYXN0ZXIuZXZ5eS5uZXQvYy8xMzAwOTY4LzIwMzg3NTgvMjQwMjM_dT1odHRwcyUzQSUyRiUyRnd3dy50aWNrZXRtYXN0ZXIuY28udWslMkZyaWthcy1icmlnaHRvbi0yOS0xMC0yMDI2JTJGZXZlbnQlMkYxRjAwNjRDMTFEQTFENTU3JTNGYnJhbmQlM0R1a19lbnRzMjQmdXRtX21lZGl1bT1hZmZpbGlhdGU/supplier/Ticketmaster/suppliedid/RzV2SFpfRzdxSXE0OQ/ticketid/8071537/checksum/3f91566fe659dbf2bd13514767e564f1/track/true?title=Rikas&badge=&venueId=34826|2026-10-29|rikas": {
   "url": null,
@@ -4809,7 +4791,7 @@
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRtYXN0ZXIuZXZ5eS5uZXQvYy8xMzAwOTY4LzIwMzg3NTgvMjQwMjM_dT1odHRwcyUzQSUyRiUyRnd3dy51bml2ZXJzZS5jb20lMkZldmVudHMlMkZsZW5uYS10aGUtc25ha2VtZW4tdGlja2V0cy1DTjdYU0clM0ZyZWYlM0R0aWNrZXRtYXN0ZXImdXRtX21lZGl1bT1hZmZpbGlhdGU/supplier/Universe/suppliedid/THZaMThRbkE5TG5yTEVjc3ZqbUdo/ticketid/8146289/checksum/6f26ca2ff9f5a3ed66d7a7dd7a147c4c/track/true?title=LENNA+%26+THE+SNAKEMEN&badge=&venueId=24967|2026-11-13|lenna and the snakemen": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvY29vdGllLWNhdGNoZXIvdGhlLWhvcGUtcnVpbi8zNjMzMDQ5/supplier/SeeTickets/suppliedid/MzYzMzA0OQ/ticketid/8037174/checksum/a051abd8ae2c7e8741bb6c75c90bb8f2/track/true?title=Cootie+Catcher&badge=&venueId=34826|2026-11-01|cootie catcher": {
   "url": null,
@@ -4824,47 +4806,52 @@
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvYWxpZW4tYm95L3RoZS1wcmluY2UtYWxiZXJ0LzM2NjExMDU/supplier/SeeTickets/suppliedid/MzY2MTEwNQ/ticketid/8079085/checksum/7b4e7d20d6af0ac8e9778014c94126a1/track/true?title=ALIEN+BOY&badge=&venueId=24967|2026-11-08|alien boy": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvYmlnLWJyYXZlL3RoZS1wcmluY2UtYWxiZXJ0LzM2OTgxMDU/supplier/SeeTickets/suppliedid/MzY5ODEwNQ/ticketid/8116410/checksum/1bf3adb6a3358c81937856c704e2d136/track/true?title=Big+Brave&badge=&venueId=24967|2026-11-11|big brave": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvYmxvb2QtcmVkLXNob2VzL2EtbC1wLWgtYS1iLWUtdC8zNzA1Mjc3/supplier/SeeTickets/suppliedid/MzcwNTI3Nw/ticketid/8138230/checksum/7e9ae526939dfdd538e654711e55cb3f/track/true?title=Blood+Red+Shoes&badge=&venueId=50186|2026-10-31|blood red shoes": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvYnV0Y2gta2Fzc2lkeS9hLWwtcC1oLWEtYi1lLXQvMzYxNTE4NQ/supplier/SeeTickets/suppliedid/MzYxNTE4NQ/ticketid/8094842/checksum/5241c2f1975754abc605010fecf59143/track/true?title=Butch+Kassidy&badge=&venueId=50186|2026-11-14|butch kassidy": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvZ29sZC1wYW5kYS9hbHBoYWJldC8zNjY3NjM1/supplier/SeeTickets/suppliedid/MzY2NzYzNQ/ticketid/8085229/checksum/d264f30efa5cf70a07e5dbd3249b57fd/track/true?title=Gold+Panda&badge=&venueId=50186|2026-11-19|gold panda": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvZ29vZC1oZWFsdGgtZ29vZC13ZWFsdGgvcGF0dGVybnMvMzY0MjM4Mg/supplier/SeeTickets/suppliedid/MzY0MjM4Mg/ticketid/8061910/checksum/7c7e595962053a3263d976ab91ecc010/track/true?title=Good+Health+Good+Wealth&badge=&venueId=15791|2026-12-04|good health good wealth": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvZGF0ZWxlc3Mtd29uZGVyLWNsdWItbGl0dGxlLWRlYXRoLWVwLWxhdW5jaC1wYXJ0eS90aGUtcHJpbmNlLWFsYmVydC8zNzA4Mzky/supplier/SeeTickets/suppliedid/MzcwODM5Mg/ticketid/8131536/checksum/f2ff9b9cea6aa20c91a7b28ff046225e/track/true?title=Dateless+Wonder+Club+Little+Death+EP+Launch+Party&badge=&venueId=24967|2026-11-04|dateless wonder club little death ep launch party": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
- },
- "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvZGVyYWRvb3JpYW4vdGhlLWhvcGUtcnVpbi8zNjYzMTgx/supplier/SeeTickets/suppliedid/MzY2MzE4MQ/ticketid/8082812/checksum/73b71f61011b7b9d2b293809fa02f10e/track/true?title=Deradoorian&badge=&venueId=34826|2026-10-28|deradoorian": {
-  "url": null,
-  "sold": null,
-  "checked": "2026-10-21"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvZHlsYW4tbGVibGFuYy9hbHBoYWJldC8zNjM2NjIx/supplier/SeeTickets/suppliedid/MzYzNjYyMQ/ticketid/8054699/checksum/4eccfda99afcc8a7346f54961f75deea/track/true?title=Dylan+LeBlanc&badge=&venueId=50186|2026-11-29|dylan leblanc": {
   "url": null,
   "sold": null,
   "checked": "2026-10-28"
  },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvZXRoYW4tcmVnYW4vcGF0dGVybnMvMzY1MjI0Nw/supplier/SeeTickets/suppliedid/MzY1MjI0Nw/ticketid/8072697/checksum/0e0ee397ef7729ea304518d292e83b87/track/true?title=Ethan+Regan&badge=&venueId=15791|2026-12-08|ethan regan": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-29"
+ },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvaG9sbG93LWhhbmQvYWxwaGFiZXQvMzYzNzgyOA/supplier/SeeTickets/suppliedid/MzYzNzgyOA/ticketid/8046869/checksum/d0c21f68184601ac8b84611ea2f86cc8/track/true?title=Hollow+Hand&badge=&venueId=50186|2026-10-30|hollow hand": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvamV0c3RyZWFtLXBvbnktZmlyZXN0YXRpb25zL2EtbC1wLWgtYS1iLWUtdC8zNjYxMDA2/supplier/SeeTickets/suppliedid/MzY2MTAwNg/ticketid/8078024/checksum/f7b04fc15fbe15aa4ddb1256034824c1/track/true?title=Jetstream+Pony+%26+Firestations&badge=&venueId=50186|2026-11-27|jetstream pony firestations": {
   "url": null,
@@ -4874,7 +4861,7 @@
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvc3R1LWxhcnNlbi90aGUtcHJpbmNlLWFsYmVydC8zNjA5NzI5/supplier/SeeTickets/suppliedid/MzYwOTcyOQ/ticketid/7986662/checksum/563eefd6336d8711ec54b8dd23096cda/track/true?title=Stu+Larsen&badge=&venueId=24967|2026-11-01|stu larsen": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvcGVhcmwtdGhlLW95c3RlcnMvYS1sLXAtaC1hLWItZS10LzM2NjQwODI/supplier/SeeTickets/suppliedid/MzY2NDA4Mg/ticketid/8084617/checksum/bacf7c9eeb10239a79f8d765a2dc4337/track/true?title=Pearl+%26+The+Oysters&badge=&venueId=50186|2026-11-21|pearl the oysters": {
   "url": null,
@@ -4884,7 +4871,7 @@
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvcGVuZWxvcGUtaXNsZXMtZXZlbmluZy1zaG93L3RoZS1ob3BlLXJ1aW4vMzY0MTc0OQ/supplier/SeeTickets/suppliedid/MzY0MTc0OQ/ticketid/8058347/checksum/a4efdaf934503e5bac48664ee5eb3631/track/true?title=PENELOPE+ISLES+-+EVENING+SHOW&badge=&venueId=34826|2026-10-31|penelope isles evening show": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "card label: Penelope Isles – Evening *SOLD OUT* on the venue listing (www.hope.pub)"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvcGVuZWxvcGUtaXNsZXMtbWF0aW5lZS1zaG93L3RoZS1ob3BlLXJ1aW4vMzY0MTc0NQ/supplier/SeeTickets/suppliedid/MzY0MTc0NQ/ticketid/8058346/checksum/62d129ecab2c492340edebbb864da4da/track/true?title=PENELOPE+ISLES+-+Matinee+Show&badge=&venueId=34826|2026-10-31|penelope isles matinee show": {
@@ -4905,27 +4892,27 @@
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvdXRhaC1zYWludHMvcGF0dGVybnMvMzYwOTk4Nw/supplier/SeeTickets/suppliedid/MzYwOTk4Nw/ticketid/7981073/checksum/9b8df69512022536106e3db1ba1200e2/track/true?title=Utah+Saints&badge=&venueId=15791|2026-11-28|utah saints": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93ZWdvdHRpY2tldHMuY29tL2FmLzY3L2YvMTY1MjI/supplier/WeGotTickets/suppliedid/MTU4MjAwNjY/ticketid/7979487/checksum/3330f6a1c5c246f72afa64f7ac580868/track/true?title=CITY+BABY+ATTACKED+BY+RATS+Festival+2&badge=&venueId=24967|2026-11-14|city baby attacked by rats festival": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93ZWdvdHRpY2tldHMuY29tL2FmLzY3L2YvMTY1MjI/supplier/WeGotTickets/suppliedid/MTU4MjAwNjY/ticketid/7979487/checksum/3330f6a1c5c246f72afa64f7ac580868/track/true?title=CITY+BABY+ATTACKED+BY+RATS+Festival+2&badge=&venueId=24967|2026-11-15|city baby attacked by rats festival 2": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93ZWdvdHRpY2tldHMuY29tL2FmLzY3L2YvMjEzMDI/supplier/WeGotTickets/suppliedid/MTU4NjQ1Nzg/ticketid/8059237/checksum/ea11c2d30783d17122b579b61d4c0c61/track/true?title=Killer+Tone+Jones&badge=&venueId=57176|2026-10-30|killer tone jones the noir mates the bad breed": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93ZWdvdHRpY2tldHMuY29tL2FmLzY3L2YvMjIwNjQ/supplier/WeGotTickets/suppliedid/MTU4NjgwMDQ/ticketid/8085119/checksum/43d7f7352c810c7a06e138b6544103d3/track/true?title=Captain+Accident+%26+the+Disasters&badge=&venueId=24967|2026-10-30|captain accident the disasters": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93ZWdvdHRpY2tldHMuY29tL2FmLzY3L2YvMjYzMDY/supplier/WeGotTickets/suppliedid/MTU4ODUwNjI/ticketid/8127835/checksum/afb69cf583fc98a502edf5be718e7eb5/track/true?title=IO+-+Girl+Band&badge=&venueId=57176|2026-11-21|io playing alice spooky huge dateless wonder club": {
   "url": null,
@@ -4935,17 +4922,17 @@
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93ZWdvdHRpY2tldHMuY29tL2FmLzY3L2YvMjc5MDM/supplier/WeGotTickets/suppliedid/MTU4OTA2OTE/ticketid/8146656/checksum/39ea1913c6473b5af6f25d81abf5c719/track/true?title=The+Battle+of+Cable+Street+90th+Anniversary+Celebration+Gig+%28A+Real+Music+Club+Event%29&badge=&venueId=24967|2026-11-07|the battle of cable street 90th anniversary celebration gig": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly9heHMtdWsuc2p2LmlvL2MvMTMwMDk2OC8xODcyMzA4LzIyNDM5P3U9aHR0cHMlM0ElMkYlMkZ3d3cuYXhzLmNvbSUyRnVrJTJGZXZlbnRzJTJGMTQ3OTUwOCUyRmJhYmUtaGF2ZW4tdGlja2V0cw/supplier/AXS/suppliedid/MTQ3OTUwOA/ticketid/8076266/checksum/93462e5e0dba8784801822530dd336e5/track/true?title=Babe+Haven&badge=&venueId=19360|2026-11-10|babe haven latter": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly9heHMtdWsuc2p2LmlvL2MvMTMwMDk2OC8xODcyMzA4LzIyNDM5P3U9aHR0cHMlM0ElMkYlMkZ3d3cuYXhzLmNvbSUyRnVrJTJGZXZlbnRzJTJGMTQ5MzgxMiUyRmR1dGNoLWNyaW1pbmFsLXJlY29yZC10aWNrZXRz/supplier/AXS/suppliedid/MTQ5MzgxMg/ticketid/8095886/checksum/255648222caffbbceb16541fa3c2b2ae/track/true?title=Dutch+Criminal+Record&badge=&venueId=50186|2026-11-12|dutch criminal record": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly9nb29kLXNob3cuY28udWsvZXZlbnRzLzQxOTg/supplier/Miscellaneous/suppliedid/NUJCQTVBQjg3Njk1MkRGQTI5OUU2MDRENDYwQzFCRDA/ticketid/8120347/checksum/e920d8fa7b8bffdaa1b8f4661838e7ea/track/true?title=Hurly+Burly&badge=&venueId=57176|2026-12-04|hurly burly": {
   "url": null,
@@ -4980,7 +4967,7 @@
  "https://www.eventbrite.co.uk/e/comedy-for-the-clock-tower-tickets-1994137231139|2026-11-12|comedy for the clock tower": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.eventbrite.co.uk/e/connor-burns-flow-tickets-2003210257806|2027-03-04|connor burns flow": {
   "url": null,
@@ -5020,7 +5007,7 @@
  "https://www.eventbrite.co.uk/e/finlay-christie-champagne-casanova-tickets-1978398612507|2026-11-19|finlay christie champagne casanova": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.eventbrite.co.uk/e/forge-comedy-club-new-years-eve-special-tickets-1998456550339|2026-12-31|forge comedy club new years eve special": {
   "url": null,
@@ -5030,7 +5017,7 @@
  "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541047696|2026-10-30|the forge comedy club": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541373671|2026-11-27|the forge comedy club": {
   "url": null,
@@ -5046,28 +5033,28 @@
  "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541599346|2026-11-13|the forge comedy club": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1984541745784|2026-11-06|the forge comedy club": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "seller data says sold out (www.eventbrite.co.uk)"
  },
  "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094572303|2026-10-31|the forge comedy club": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094670597|2026-11-07|the forge comedy club": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094786945|2026-11-14|the forge comedy club": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.eventbrite.co.uk/e/forge-comedy-club-tickets-1985094887245|2026-11-21|the forge comedy club": {
   "url": null,
@@ -5107,7 +5094,7 @@
  "https://www.eventbrite.co.uk/e/jacob-hawley-fighting-age-man-tickets-1982785697396|2026-11-10|jacob hawley fighting age man": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.eventbrite.co.uk/e/james-barr-sorry-i-hurt-your-son-said-my-ex-to-my-mum-tickets-1982735129145|2026-11-26|james barr sorry i hurt your son said my ex to my mum": {
   "url": null,
@@ -5133,19 +5120,14 @@
  "https://www.eventbrite.co.uk/e/lo-fidelity-allstars-dj-set-tickets-1989385749329|2026-11-07|lo fidelity allstars dj set": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.eventbrite.co.uk/e/marcel-luconts-whine-list-tickets-1986318611437|2026-11-08|marcel lucont s whine list": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.eventbrite.co.uk/e/matt-bragg-stand-up-comic-tickets-1986058834437|2027-04-18|matt bragg stand up comic": {
-  "url": null,
-  "sold": false,
-  "checked": "2026-10-28"
- },
- "https://www.eventbrite.co.uk/e/paul-sinha-2-sinha-lifetime-tickets-1985441864062|2026-10-28|paul sinha 2 sinha lifetime": {
   "url": null,
   "sold": false,
   "checked": "2026-10-28"
@@ -5181,7 +5163,7 @@
  "https://www.eventbrite.co.uk/e/tez-ilyas-tez-things-i-hate-about-you-tickets-1972463816372|2026-11-18|tez ilyas tez things i hate about you": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.eventbrite.co.uk/e/the-noise-next-door-furnace-christmas-special-tickets-1952130828859|2026-12-20|the noise next door furnace christmas special": {
   "url": null,
@@ -5196,17 +5178,17 @@
  "https://www.eventbrite.com/e/isla-collective-leo-nathan-tickets-2002876922792|2026-11-08|isla collective leo nathan": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.eventbrite.com/e/quiet-hours-tickets-2003086803551?aff=oddtdtcreator|2026-11-05|quiet hours": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.fatsoma.com/e/bcbayv48/rikas-jordan-joy-sold-out|2026-10-29|rikas jordan joy": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "in the title: Rikas *SOLD OUT* (www.fatsoma.com)"
  },
  "https://www.fatsoma.com/e/dmeq3mlk/eastwood-events-evangeline-eastwood-single-release-party?utm_campaign=prom_ss&utm_medium=social&utm_source=dynamic|2026-11-26|evangeline eastwood": {
@@ -5217,7 +5199,7 @@
  "https://www.fatsoma.com/e/inezz7ef/playroom-presents?utm_campaign=prom_ss&utm_medium=social&utm_source=dynamic|2026-10-29|joe little matisse elisha edwards": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.fatsoma.com/e/mgsuzguv/jimmy-herrity-thomas-willow-triami-folklore-rooms-brighton|2026-12-06|jimmy herrity": {
   "url": null,
@@ -5230,11 +5212,6 @@
   "checked": "2026-10-28"
  },
  "https://www.fatsoma.com/e/ui12ybdj/hit-like-a-girl-guests?utm_source=social_share&utm_medium=social&utm_campaign=social_share|2027-01-13|hit like a girl guests": {
-  "url": null,
-  "sold": false,
-  "checked": "2026-10-28"
- },
- "https://www.fatsoma.com/e/zt4cjyxj/hitman-sheela-live-at-prince-albert?utm_campaign=prom_ss&utm_medium=social&utm_source=dynamic|2026-10-28|hitman sheela supports": {
   "url": null,
   "sold": false,
   "checked": "2026-10-28"
@@ -5252,12 +5229,12 @@
  "https://www.gigantic.com/grace-cummings-tickets/brighton-dust/2026-11-13-19-00|2026-11-13|grace cummings special guests": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.gigantic.com/lots-of-hands-sundots-tickets/brighton-dust/2026-11-06-19-00|2026-11-06|lots of hands sundots special guests": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.gigantic.com/the-black-queen-tickets/brighton-dust/2026-12-10-19-00|2026-12-10|the black queen": {
   "url": null,
@@ -5267,12 +5244,12 @@
  "https://www.gigantic.com/tokyo-tea-room-tickets/brighton-dust/2026-11-19-19-00|2026-11-19|tokyo tea room special guests": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.gigantic.com/tooth-tickets/brighton-dust/2026-10-31-17-00|2026-10-31|tooth special guests": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.gigantic.com/venue/brighton/dust|2026-10-31|tooth special guests": {
   "url": "https://www.gigantic.com/tooth-tickets/brighton-dust/2026-10-31-17-00",
@@ -5292,7 +5269,7 @@
  "https://www.gigantic.com/venue/brighton/dust|2026-11-14|electric eel shock": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.gigantic.com/venue/brighton/dust|2026-11-19|tokyo tea room special guests": {
   "url": "https://www.gigantic.com/tokyo-tea-room-tickets/brighton-dust/2026-11-19-19-00",
@@ -5322,22 +5299,22 @@
  "https://www.hope.pub/event/60-juno/|2026-11-16|60 juno": {
   "url": "https://www.fatsoma.com/e/ild5onwo/60-juno",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/ahsoka-farewell-show-chasm-is-this-ok/|2026-11-19|ahsoka farewell show chasm is this ok": {
   "url": "https://www.fatsoma.com/e/5xr66au4/ahsoka-farewell-show-chasm-is-this-ok",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/asher-white/|2026-11-04|asher white": {
   "url": "https://www.fatsoma.com/e/rur4nvzy/asher-white",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/ashley-singh/|2026-11-17|ashley singh": {
   "url": "https://www.fatsoma.com/e/d7f7nxe3/ashley-singh",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/burglar-2/|2027-03-22|burglar": {
   "url": "https://www.fatsoma.com/e/31mf2594/burglar",
@@ -5354,6 +5331,11 @@
   "sold": null,
   "checked": "2026-10-26"
  },
+ "https://www.hope.pub/event/cootie-catcher/|2026-11-01|cootie catcher of iyrn": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-29"
+ },
  "https://www.hope.pub/event/cowboy-hunters/|2027-01-16|cowboy hunters": {
   "url": "https://www.fatsoma.com/e/1yz6adts/cowboy-hunters",
   "sold": null,
@@ -5362,7 +5344,7 @@
  "https://www.hope.pub/event/cult-milk-collage-club-89/|2026-11-03|cult milk collage club": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/david-devant-and-his-spirit-wife-would-be-goods/|2027-03-20|david devant and his spirit wife would be goods": {
   "url": null,
@@ -5374,20 +5356,15 @@
   "sold": null,
   "checked": "2026-10-28"
  },
- "https://www.hope.pub/event/deradoorian-mason-lindahl/|2026-10-28|deradoorian mason lindahl": {
-  "url": "https://www.fatsoma.com/e/tfvuy1kv/deradoorian-mason-lindahl",
-  "sold": null,
-  "checked": "2026-10-28"
- },
  "https://www.hope.pub/event/despair-ruin/|2026-10-30|despair ruin": {
   "url": "https://www.fatsoma.com/e/41ec4qfv/despair-ruin",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/desperate-journalist/|2026-11-07|desperate journalist": {
   "url": "https://www.fatsoma.com/e/r63araae/desperate-journalist",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/family-stereo/|2027-03-06|family stereo": {
   "url": "https://www.fatsoma.com/e/bufmuea6/family-stereo",
@@ -5402,17 +5379,17 @@
  "https://www.hope.pub/event/for-the-plot-free-entry-dj-night-7/|2026-11-06|for the plot free entry dj night": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/hh-presents-kamran-khan-finnian-james-jonique-freya-eastcott/|2026-11-05|hh presents kamran khan finnian james jonique freya eastcott": {
   "url": "https://www.fatsoma.com/e/vr1qdvcf/hh-presents-kamran-khan-finnian-james-jonique-freya-eastcott",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/hh-presents-mouth-ulcers-alligatr-ophantom-grimrite/|2026-11-18|hh presents mouth ulcers alligatr o phantom grimrite": {
   "url": "https://www.fatsoma.com/e/ung9j1wo/hh-presents-mouth-ulcers-alligatr-o-phantom-grimrite",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/hh-presents-uncle-junior-lindow-man-dura-mater-home-audio/|2026-11-21|hh presents uncle junior lindow man dura mater home audio": {
   "url": "https://www.fatsoma.com/e/zhntgdmk/hh-presents-uncle-junior-lindow-man-dura-mater-home-audio",
@@ -5422,7 +5399,7 @@
  "https://www.hope.pub/event/hh-the-dsm-iv-not-richard-her-madjesty-sounds-mint-blitzer/|2027-01-27|hh the dsm iv not richard her madjesty sounds mint blitzer": {
   "url": "https://www.fatsoma.com/e/e7q92w4r/hh-the-dsm-iv-not-richard-her-madjesty-sounds-mint-blitzer",
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/holy-motors/|2027-02-16|holy motors": {
   "url": "https://www.fatsoma.com/e/ocvxeczi/holy-motors",
@@ -5432,7 +5409,7 @@
  "https://www.hope.pub/event/hot-heels-with-carne-super-secret-set/|2026-10-29|hallo heels with carne super secret set": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/jarrod-dickenson-2/|2026-12-01|jarrod dickenson": {
   "url": "https://www.fatsoma.com/e/b17v27gw/jarrod-dickenson",
@@ -5452,12 +5429,12 @@
  "https://www.hope.pub/event/mx-lonely/|2026-11-15|mx lonely": {
   "url": "https://www.fatsoma.com/e/tqz5wa4q/mx-lonely",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/not-a-prom-dj-night-free-entry/|2026-11-05|not a prom dj night": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/our-man-in-the-field/|2027-02-12|our man in the field": {
   "url": "https://www.fatsoma.com/e/gwe42orm/our-man-in-the-field",
@@ -5472,23 +5449,23 @@
  "https://www.hope.pub/event/penelope-isles-evening/|2026-10-31|penelope isles evening": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "in the title: Penelope Isles – Evening *SOLD OUT* (www.hope.pub)"
  },
  "https://www.hope.pub/event/penelope-isles-matinee/|2026-10-31|penelope isles matinee": {
   "url": "https://www.fatsoma.com/e/abijftre/penelope-isles-matinee",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/placeholder-poetry-night-30/|2026-11-03|placeholder poetry night": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/pop-tarts-6/|2026-10-30|ghoul ranch": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/pop-tarts-6/|2026-10-30|pop tarts": {
   "url": null,
@@ -5503,7 +5480,7 @@
  "https://www.hope.pub/event/quaking-aspens/|2026-11-13|quaking aspens": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/restraining-order/|2026-12-05|restraining order": {
   "url": "https://www.fatsoma.com/e/5m4lwqxa/restraining-order",
@@ -5523,7 +5500,7 @@
  "https://www.hope.pub/event/rikas-support/|2026-10-29|rikas": {
   "url": "https://www.fatsoma.com/e/bcbayv48/rikas-sold-out",
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "in the title: Rikas *SOLD OUT* (www.hope.pub)"
  },
  "https://www.hope.pub/event/rikas-support/|2026-10-29|rikas jordan joy": {
@@ -5552,6 +5529,11 @@
   "sold": null,
   "checked": "2026-10-28"
  },
+ "https://www.hope.pub/event/spooky-house-free-entry/|2026-10-31|spooky house": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-29"
+ },
  "https://www.hope.pub/event/steve-white-trio/|2026-11-28|steve white trio": {
   "url": "https://www.fatsoma.com/e/aqhvee0j/steve-white-trio",
   "sold": null,
@@ -5565,7 +5547,7 @@
  "https://www.hope.pub/event/swapmeet-special-guests/|2026-11-06|swapmeet special guests": {
   "url": "https://www.fatsoma.com/e/f8tkxhcy/swapmeet-special-guests",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/the-buoys/|2027-02-17|the buoys": {
   "url": "https://www.fatsoma.com/e/kiaa84hi/the-buoys",
@@ -5590,12 +5572,12 @@
  "https://www.hope.pub/event/the-zac-schulze-gang-matinee/|2026-11-14|the zac schulze gang matinee": {
   "url": "https://www.fatsoma.com/e/iiki2wy7/the-zac-schulze-gang-matinee",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/the-zac-schulze-gang/|2026-11-14|the zac schulze gang": {
   "url": "https://www.fatsoma.com/e/o130bgtj/the-zac-schulze-gang-sold-out",
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "in the title: The Zac Schulze Gang *SOLD OUT* (www.hope.pub)"
  },
  "https://www.hope.pub/event/thimble-horsefair-patrick-circus/|2026-11-29|thimble horsefair patrick circus": {
@@ -5606,12 +5588,12 @@
  "https://www.hope.pub/event/vgm-jams-free-entry/|2026-11-04|vgm jams": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/event/villagerrr/|2026-11-02|villagerrr": {
   "url": "https://www.fatsoma.com/e/85g49qo6/villagerrr",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.hope.pub/|2027-01-28|keywest": {
   "url": "https://www.fatsoma.com/e/ueuk05py/keywest",
@@ -5627,7 +5609,7 @@
  "https://www.keyringrecords.co.uk/hove|2026-11-08|hove record fair": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/a-dinner-with-the-slts/?eid=20526|2026-12-06|a dinner with the sl ts": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873666083/events/128660001",
@@ -5673,17 +5655,17 @@
  "https://www.komedia.co.uk/shows/ben-poole-2/?eid=20156|2026-11-08|ben poole": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873664909/events/128652436",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/black-parade-halloween-party/?eid=20864|2026-10-30|black parade 00s emo anthems halloween party": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873640774/events/128663630",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/blow-up/?eid=19605|2026-11-07|blow up": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873648341/events/128647688",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/boast-in-show/?eid=18695|2026-12-02|boast in show": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873661332/events/128638182",
@@ -5699,6 +5681,11 @@
   "url": "https://komediabrighton.ticketsolve.com/shows/873624817/events/128668229",
   "sold": null,
   "checked": "2026-10-28"
+ },
+ "https://www.komedia.co.uk/shows/bogan-bingo-bottomless-brunch/?eid=21586|2027-02-27|bogan bingo bottomless brunch": {
+  "url": "https://komediabrighton.ticketsolve.com/shows/873624817/events/128668318",
+  "sold": null,
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/bogan-bingo/?eid=19276|2026-12-02|bogan bingo": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873521937/events/128644685",
@@ -5728,7 +5715,7 @@
  "https://www.komedia.co.uk/shows/bring-your-own-baby-comedy-brighton/?eid=17759|2026-11-03|bring your own baby comedy brighton": {
   "url": "http://www.byobcomedy.com/brighton",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/bring-your-own-baby-comedy-brighton/?eid=17760|2026-12-01|bring your own baby comedy brighton": {
   "url": null,
@@ -5748,7 +5735,7 @@
  "https://www.komedia.co.uk/shows/cardiac-comedy-13/?eid=20700|2026-11-04|cardiac comedy 13": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873666660/events/128661524",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/carsie-blanton-special-guests/?eid=21489|2027-04-07|carsie blanton special guests": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873668134/events/128666350",
@@ -5757,11 +5744,6 @@
  },
  "https://www.komedia.co.uk/shows/christian-jegards-christmas-bedsit-party/?eid=20788|2026-12-10|christian jegard s christmas bedsit party": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873666963/events/128662125",
-  "sold": null,
-  "checked": "2026-10-28"
- },
- "https://www.komedia.co.uk/shows/christopher-hall-pizazz/?eid=18407|2026-10-28|christopher hall pizazz": {
-  "url": "https://komediabrighton.ticketsolve.com/shows/873660348/events/128630516",
   "sold": null,
   "checked": "2026-10-28"
  },
@@ -5839,7 +5821,7 @@
  "https://www.komedia.co.uk/shows/disco-kidz-halloween-special/?eid=21362|2026-11-01|disco kidz halloween special": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873667835/events/128665728",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/disco-kidz-new-years-eve-special/?eid=21381|2026-12-31|disco kidz new year s eve special": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873667842/events/128665787",
@@ -5864,7 +5846,7 @@
  "https://www.komedia.co.uk/shows/down-the-hatch/?eid=18212|2026-11-01|down the hatch comedy club": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873624586/events/128627249",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/down-the-hatch/?eid=21348|2027-02-07|down the hatch comedy club": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873624586/events/128665659",
@@ -5929,12 +5911,17 @@
  "https://www.komedia.co.uk/shows/funny-women-live-in-brighton/?eid=21463|2027-07-24|funny women live in brighton": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873492111/events/128666085",
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/gooseberry-special-guests/?eid=20906|2026-11-06|gooseberry special guests": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873667372/events/128664469",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
+ },
+ "https://www.komedia.co.uk/shows/heated-rivalry-anniversary-party/?eid=21577|2026-12-04|heated rivalry anniversary party with harrison fundraiser": {
+  "url": "https://komediabrighton.ticketsolve.com/shows/873668893/events/128668260",
+  "sold": null,
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/hudson-freeman-support/?eid=21206|2027-02-24|hudson freeman support": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873667763/events/128665492",
@@ -6055,7 +6042,7 @@
  "https://www.komedia.co.uk/shows/joe-blacks-kleines-kabarett/?eid=20655|2026-10-29|joe black s kleines kabarett": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873631604/events/128661039",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/joe-blacks-kleines-kabarett/?eid=21572|2027-02-03|joe black s kleines kabarett": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873631604/events/128668240",
@@ -6065,7 +6052,7 @@
  "https://www.komedia.co.uk/shows/joel-paterson/?eid=21507|2027-02-11|joel paterson": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873668239/events/128667288",
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/john-luke-roberts-what-i-talk-about-when-i-run-about-talking/?eid=21484|2027-02-09|john luke roberts what i talk about when i run about talking": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873668105/events/128666233",
@@ -6092,15 +6079,10 @@
   "sold": null,
   "checked": "2026-10-28"
  },
- "https://www.komedia.co.uk/shows/killers-cults-queens/?eid=20639|2026-10-28|killers cults queens": {
-  "url": "https://komediabrighton.ticketsolve.com/shows/873666330/events/128660767",
-  "sold": null,
-  "checked": "2026-10-28"
- },
  "https://www.komedia.co.uk/shows/killian-sundermann-killian-dollar-baby/?eid=20459|2026-11-18|killian sundermann killian dollar baby": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873665803/events/128655213",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/king-awesome/?eid=20350|2027-06-12|king awesome": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873665411/events/128654235",
@@ -6160,27 +6142,27 @@
  "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=18931|2026-10-30|komedia comedy club": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873622740/events/128642384",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=18932|2026-10-31|komedia comedy club": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873622740/events/128642404",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=18933|2026-11-07|komedia comedy club": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873622740/events/128642405",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=18934|2026-11-13|komedia comedy club": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873622740/events/128642385",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=18935|2026-11-14|komedia comedy club": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873622740/events/128642406",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=18936|2026-11-20|komedia comedy club": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873622740/events/128642386",
@@ -6205,7 +6187,7 @@
  "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=19898|2026-11-06|komedia comedy club": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873622740/events/128649689",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=20945|2027-01-09|komedia comedy club": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873622740/events/128664708",
@@ -6495,12 +6477,12 @@
  "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21135|2027-07-24|komedia comedy club": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873622740/events/128665322",
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/komedia-comedy-club/?eid=21558|2026-12-12|komedia comedy club": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873622740/events/128667879",
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/komedia-new-comedy-award-in-association-with-comic-boom-and-victoria-nangle/?eid=20794|2027-02-10|komedia new comedy award": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873641234/events/128662177",
@@ -6525,7 +6507,7 @@
  "https://www.komedia.co.uk/shows/late-night-with-terry-wogan/?eid=20365|2026-11-05|late night with terry wogan": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873665457/events/128654324",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/laura-newman-ark-at-she/?eid=20885|2027-02-28|laura newman ark at she": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873667268/events/128663901",
@@ -6642,7 +6624,7 @@
  "https://www.komedia.co.uk/shows/maureen-younger-be-more-maureen/?eid=20048|2026-11-15|maureen younger be more maureen": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873655987/events/128598679",
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "label next to this date: SOLD OUT Join the waiting list? (komediabrighton.ticketsolve.com)"
  },
  "https://www.komedia.co.uk/shows/michael-akadiri-dont-call-me-uncle/?eid=20514|2027-03-06|michael akadiri don t call me uncle": {
@@ -6658,7 +6640,7 @@
  "https://www.komedia.co.uk/shows/moving-pictures-rush-tribute/?eid=18411|2026-11-19|moving pictures rush tribute": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873660358/events/128630550",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/myndstate-deep-breath/?eid=20235|2027-01-15|myndstate deep breath": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873665152/events/128653707",
@@ -6668,7 +6650,7 @@
  "https://www.komedia.co.uk/shows/mystery-musicals-day-party/?eid=20725|2026-11-14|mystery musicals day party": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873661624/events/128661827",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/new-act-night/?eid=18107|2026-12-01|new act night": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873584119/events/128625070",
@@ -6678,7 +6660,7 @@
  "https://www.komedia.co.uk/shows/olga-koch-fat-tom-cruise/?eid=18386|2026-11-05|olga koch fat tom cruise": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873660228/events/128629657",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/patrick-monahan-im-not-a-terrorist-im-freddie-mercury-to-you/?eid=20477|2027-02-25|patrick monahan i m not a terrorist i m freddie mercury": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873665965/events/128655590",
@@ -6718,7 +6700,7 @@
  "https://www.komedia.co.uk/shows/reece-kidd-1-irishman-in-brighton/?eid=20205|2026-11-12|reece kidd 1 irishman in brighton": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873665062/events/128652826",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/rhiannon-the-fleetwood-mac-show/?eid=20637|2026-12-27|rhiannon the fleetwood mac show": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873638592/events/128660765",
@@ -6733,7 +6715,7 @@
  "https://www.komedia.co.uk/shows/robert-white-that-gay-autistic-keyboard-tanktop-comedy-guy/?eid=18974|2026-11-18|robert white that gay autistic keyboard tanktop comedy guy": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873632704/events/128642547",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/sam-browne-youll-miss-the-sunset/?eid=20329|2026-11-22|sam browne you ll miss the sunset": {
   "url": null,
@@ -6763,7 +6745,7 @@
  "https://www.komedia.co.uk/shows/sergi-polo-live-in-brighton-in-spanish/?eid=18807|2026-11-01|sergi polo live in brighton in spanish": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873651121/events/128640162",
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "label, no live booking button: SOLD OUT Join the waiting list? (komediabrighton.ticketsolve.com)"
  },
  "https://www.komedia.co.uk/shows/shane-daniel-byrne-baby-this-time/?eid=21404|2027-05-19|shane daniel byrne baby this time": {
@@ -6784,12 +6766,12 @@
  "https://www.komedia.co.uk/shows/soul-selectas/?eid=21560|2026-11-19|soul selecta s": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873668498/events/128667937",
   "sold": null,
-  "checked": "2026-10-26"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/spellbound/?eid=19568|2026-10-31|spellbound": {
   "url": "https://komediabrighton.ticketsolve.com/shows/702647/events/128647483",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/spellbound/?eid=19569|2026-11-21|spellbound": {
   "url": "https://komediabrighton.ticketsolve.com/shows/702647/events/128647484",
@@ -6809,7 +6791,7 @@
  "https://www.komedia.co.uk/shows/stand-up-for-animals/?eid=20822|2026-11-10|stand up for animals": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873667033/events/128663305",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/stand-up-for-gaza/?eid=20800|2026-12-03|stand up for gaza": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873666987/events/128662184",
@@ -6820,7 +6802,7 @@
  "https://www.komedia.co.uk/shows/steve-knightley-the-winter-yards-band/?eid=19828|2026-11-11|steve knightley the winter yards band megan henwood": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873663619/events/128648965",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/sundae-club/?eid=20581|2026-11-22|sundae club": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873558931/events/128660327",
@@ -6870,7 +6852,7 @@
  "https://www.komedia.co.uk/shows/the-album-era-performs-black-sabbaths-paranoid/?eid=18075|2026-10-30|the album era performs black sabbath s paranoid": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873659031/events/128624316",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/the-brighton-moon-hop/?eid=19318|2026-11-28|the brighton moon hop": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873658979/events/128646253",
@@ -6890,7 +6872,7 @@
  "https://www.komedia.co.uk/shows/the-march-violets/?eid=20872|2026-11-11|the march violets": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873667224/events/128663783",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/the-maydays-confessions/?eid=18572|2026-12-04|the maydays confessions": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873485762/events/128632336",
@@ -6900,7 +6882,7 @@
  "https://www.komedia.co.uk/shows/the-men-they-couldnt-hang/?eid=19442|2026-11-08|the men they couldn t hang": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873662877/events/128646997",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/the-puppet-folk-experience-christmas-show/?eid=21474|2026-12-20|the puppet folk experience christmas show": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873668062/events/128666129",
@@ -6911,12 +6893,12 @@
  "https://www.komedia.co.uk/shows/the-puppet-folk-experience-christmas-show/?eid=21505|2026-12-20|the puppet folk experience christmas show": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873668062/events/128667275",
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/the-reinettes-the-return/?eid=21021|2026-10-29|the reinettes the return": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873667500/events/128664829",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/the-sassy-cabaret-club-presents-a-christmas-cracker/?eid=20378|2026-12-05|the sassy cabaret club presents a christmas cracker": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873665570/events/128654595",
@@ -6931,7 +6913,7 @@
  "https://www.komedia.co.uk/shows/the-witchcraft-and-vagrancy-act-halloween-party/?eid=20382|2026-10-31|the witchcraft and vagrancy act halloween party": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873665582/events/128654606",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/the-zangwills-plus-cinnabar/?eid=20356|2026-11-20|the zangwills cinnabar": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873665440/events/128654298",
@@ -6941,7 +6923,7 @@
  "https://www.komedia.co.uk/shows/thome/?eid=20731|2026-11-13|thom": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873666872/events/128661868",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/tinky-winky-my-story/?eid=21397|2027-02-07|tinky winky my story": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873667917/events/128665858",
@@ -6966,7 +6948,7 @@
  "https://www.komedia.co.uk/shows/von-hertzen-brothers/?eid=20107|2026-11-03|von hertzen brothers": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873664676/events/128652048",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.komedia.co.uk/shows/wes-banderson/?eid=20629|2027-02-19|the music of wes anderson performed by wes banderson": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873666249/events/128660529",
@@ -6986,7 +6968,7 @@
  "https://www.komedia.co.uk/shows/zelt-and-tashkezar-support/?eid=20479|2026-11-14|zelt and tashkezar support": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873665966/events/128655592",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.metropolismusic.com/all-events/bleech-9-3-tickets-ae1647841|2027-04-21|bleech 9 3": {
   "url": null,
@@ -6996,7 +6978,7 @@
  "https://www.quartersbrighton.co.uk/whatson/andy-c-zc45v|2026-11-07|andy c zc45v": {
   "url": "https://quarters.seetickets.com/event/andy-c-day-party-/quarters/3706966",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.quartersbrighton.co.uk/whatson/degs-friends|2026-11-20|degs friends": {
   "url": "https://quarters.seetickets.com/event/degs-friends/quarters/3732774",
@@ -7006,7 +6988,7 @@
  "https://www.quartersbrighton.co.uk/whatson/halloween-w-soul-mass-transit-system-captain-wallop|2026-10-31|halloween w soul mass transit system captain wallop": {
   "url": "https://quarters.seetickets.com/event/halloween-w-soul-mass-transit-system-captain-wallop/quarters/3643030",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.quartersbrighton.co.uk/whatson/the-antarctic-monkeys|2027-01-29|the antarctic monkeys": {
   "url": "https://pinkdot.seetickets.com/event/the-antarctic-monkeys/quarters/3614681",
@@ -7016,7 +6998,7 @@
  "https://www.realsounds.uk/event-details/353|2026-11-10|calvin love": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/abigail-lapell-show-2/the-folklore-rooms/3661400|2026-11-21|abigail lapell show 2": {
   "url": null,
@@ -7026,7 +7008,7 @@
  "https://www.seetickets.com/event/abigail-lapell/the-folklore-rooms/3626188|2026-11-16|abigail lapell": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/abigail-rose/the-folklore-rooms/3724865|2026-12-08|abigail rose": {
   "url": null,
@@ -7036,7 +7018,7 @@
  "https://www.seetickets.com/event/afaf-halloween-party-w-room-service/the-folklore-rooms/3743175|2026-10-30|afaf halloween party": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/astrid-williamson-and-jules-maxwell/the-folklore-rooms/3746116|2027-02-17|astrid williamson": {
   "url": null,
@@ -7081,7 +7063,7 @@
  "https://www.seetickets.com/event/ian-roland/the-folklore-rooms/3699827|2026-11-12|ian roland": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/jambon-xmas-party/the-folklore-rooms/3715369|2026-12-12|jambon xmas party": {
   "url": null,
@@ -7098,11 +7080,6 @@
   "sold": null,
   "checked": "2026-10-28"
  },
- "https://www.seetickets.com/event/lol-tolhurst/quarters/3632200|2026-10-28|lol tolhurst": {
-  "url": null,
-  "sold": null,
-  "checked": "2026-10-28"
- },
  "https://www.seetickets.com/event/lucy-kitchen-e-r-thorpe/the-folklore-rooms/3714999|2026-11-25|e r thorpe lucy kitchen": {
   "url": null,
   "sold": null,
@@ -7111,17 +7088,17 @@
  "https://www.seetickets.com/event/murphy-campbell/the-folklore-rooms/3733554|2027-05-31|murphy campbell": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/next-wave-singer-songwriter-sessions/the-folklore-rooms/3709366|2026-11-04|next wave singer songwriter": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/noah-guthrie/the-folklore-rooms/3635528|2026-11-07|noah guthrie": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/pink-moon-rising/the-folklore-rooms/3698565|2026-11-29|matinee pink moon rising": {
   "url": null,
@@ -7131,7 +7108,7 @@
  "https://www.seetickets.com/event/possessed-by-paul-james/the-folklore-rooms/3709606|2026-11-11|possessed by paul james": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/quantic-dj-set-/quarters/3709389|2026-12-04|quantic dj set": {
   "url": null,
@@ -7141,7 +7118,7 @@
  "https://www.seetickets.com/event/rachel-croft/the-folklore-rooms/3737775|2027-04-11|matinee rachel croft": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/richard-walters/the-folklore-rooms/3713718|2026-12-16|richard walters": {
   "url": null,
@@ -7156,7 +7133,7 @@
  "https://www.seetickets.com/event/samuel-nicholson/the-folklore-rooms/3729687|2026-11-13|samuel nicholson": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/saul-williams/quarters/3743115|2027-03-13|saul williams": {
   "url": null,
@@ -7181,17 +7158,17 @@
  "https://www.seetickets.com/event/slow-leaves-matinee/the-folklore-rooms/3744172|2026-11-14|matinee slow leaves": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/slow-leaves/the-folklore-rooms/3673311|2026-11-14|slow leaves": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/songs-of-love-hate-a-leonard-cohen-celebration/the-folklore-rooms/3737760|2026-11-01|songs of love hate": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/songs-of-love-loss-and-light/the-folklore-rooms/3743944|2027-01-20|songs of love loss and light": {
   "url": null,
@@ -7211,7 +7188,7 @@
  "https://www.seetickets.com/event/the-woodgies/the-folklore-rooms/3737772|2027-02-02|the woodgies": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/tommy-ashby/the-folklore-rooms/3735536|2027-03-04|tommy ashby": {
   "url": null,
@@ -7226,17 +7203,12 @@
  "https://www.seetickets.com/event/track-dogs-matinee-show/the-folklore-rooms/3743164|2026-11-15|matinee track dogs": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.seetickets.com/event/track-dogs/the-folklore-rooms/3638356|2026-11-15|track dogs": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
- },
- "https://www.seetickets.com/event/wednesday-s-child/the-folklore-rooms/3739403|2026-10-28|wednesday s child": {
-  "url": null,
-  "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/BRIGHTON%2C-CHALK/Ghostface-Killah-Wu-Tang-Clan--Sat-5th-Dec--Chalk--Brighton/42829245/|2026-12-05|ghostface killah wu tang clan sat 5th dec chalk brighton": {
   "url": null,
@@ -7246,7 +7218,7 @@
  "https://www.skiddle.com/whats-on/Brighton/Brighton-Dome-Corn-Exchange/Juliet--Romeo/42643561/|2026-11-12|juliet romeo": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/Brighton-Dome-Corn-Exchange/Juliet--Romeo/42643563/|2026-11-14|juliet romeo": {
   "url": null,
@@ -7311,7 +7283,7 @@
  "https://www.skiddle.com/whats-on/Brighton/Dust/Reggaeton-Halloween-Party-Brighton-2026/42647844/|2026-10-30|reggaeton halloween party brighton 2026": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/Dust/WORT-GIRLS-IN-THE-WORLD-RAVE-Brighton/42778264/|2026-11-20|wor t girls in the world rave": {
   "url": null,
@@ -7331,17 +7303,17 @@
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Brighton-Sundae-w-Marcia-Carr/42597331/|2026-11-01|brighton sundae w marcia carr": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Dansu-Discs-Lucas-Alexander--RTK-Tarantino---Brighton/42737316/|2026-10-30|dansu discs lucas alexander rtk tarantino": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Dusky---All-Day-Long---Signals-Tour/42542341/|2026-10-31|dusky all day long signals tour": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/EFANExtended-Brighton/42832560/|2026-11-27|efan extended": {
   "url": null,
@@ -7356,12 +7328,12 @@
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Frostbite-Audio/43017946/|2026-11-14|frostbite audio": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/GRASSROOTS---FREE-entry---Brightons-Most-Wanted-DJs---0611/43015879/|2026-11-06|grassroots free entry brightons most wanted djs 06 11": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/GRASSROOTS---FREE-entry---Brightons-Most-Wanted-DJs---0611/43015886/|2026-11-06|grassroots free entry brightons most wanted djs 06 11": {
   "url": null,
@@ -7386,7 +7358,7 @@
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Housekeeping-w-Wilba/43047400/|2026-11-13|housekeeping w wilba": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Legowelt-Live--Memory-Box/42734065/|2026-11-21|legowelt live": {
   "url": null,
@@ -7410,8 +7382,9 @@
  },
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Return-To-UKGrave-Halloween-Special/42826271/|2026-10-31|return to ukgrave halloween special": {
   "url": null,
-  "sold": false,
-  "checked": "2026-10-28"
+  "sold": true,
+  "checked": "2026-10-29",
+  "why": "seller data says sold out (www.skiddle.com)"
  },
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Return-to-Brighton/43017518/|2026-11-14|return to brighton": {
   "url": null,
@@ -7426,7 +7399,7 @@
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Underground-audio---patterns-Brighton/42516765/|2026-11-07|underground audio patterns brighton": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Caroline-Of-Brunswick-/The-Roast-of-Morgue/42737506/|2026-11-22|the roast of morgue": {
   "url": null,
@@ -7436,23 +7409,17 @@
  "https://www.skiddle.com/whats-on/Brighton/The-Prince-Albert/NeverUnder-Brighton-with-support-from-Underpass-and-5DN/42680122/|2026-11-06|neverunder support from underpass and 5dn": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/30-Years-of-Volks-Presents---AFU-RA---Body-of-the-life-force/42833379/|2026-11-13|30 years of volks presents afu ra body of the life force": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/30-Years-of-Volks-presents-Todd-Edwards/42723175/|2026-11-13|30 years of volks presents todd edwards": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
- },
- "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/30-Years-of-Volks-x-Secret-Headliner/42702534/|2026-10-28|30 years of volks x secret headliner": {
-  "url": null,
-  "sold": true,
-  "checked": "2026-10-27",
-  "why": "seller data says sold out (www.skiddle.com)"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/A-Skillz---Free-Entry---Early-show/43028530/|2026-12-05|a skillz free entry early show": {
   "url": null,
@@ -7462,7 +7429,7 @@
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Cabarave-Scary-Tales--Eva-lazarus-Dj-cant-Say-no-Pete-Bennett/42749494/|2026-10-30|cabarave scary tales eva lazarus dj cant say no pete bennett": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Cost-of-Raving--Altern-8-Dom-and-Roland-Free-tickets-available/43019227/|2026-11-06|cost of raving altern 8 dom and roland free tickets available": {
   "url": null,
@@ -7497,12 +7464,12 @@
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Jungle-Cakes---12-hour-Rave---360/42840358/|2026-11-14|jungle cakes 12 hour rave 360": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/LSB--DRS-present-Space-Age-Halloween-Special/42709727/|2026-10-31|lsb drs present space age halloween special": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "seller data says sold out (www.skiddle.com)"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Metalheadz---Brighton-w-Benny-L-Doc-Scott-Cleveland-Watkiss/42833381/|2026-12-05|metalheadz brighton w benny l doc scott cleveland watkiss": {
@@ -7513,33 +7480,27 @@
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/RNLI---Shoreham-Fundraiser---Live-show---Halloween-Special/42668410/|2026-10-31|rnli shoreham fundraiser live show halloween special": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Rough-times-Party---CALYX---Free-Entry-tickets-available/42839766/|2026-11-07|rough times party calyx": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
- },
- "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/SOLD-OUT---NO-TICKET-NO-ENTRY---Volks-x-Secret-Headliner/42702534/|2026-10-28|no ticket no entry volks x secret headliner": {
-  "url": null,
-  "sold": true,
-  "checked": "2026-10-28",
-  "why": "seller data says sold out (www.skiddle.com)"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Sabotage-Thursdays/42805733/|2026-10-29|sabotage thursdays": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Sabotage-Thursdays/43122924/|2026-11-05|sabotage thursdays": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Sabotage-Thursdays/43122927/|2026-11-19|sabotage thursdays": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-27"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Sabotage-Thursdays/43122930/|2026-12-03|sabotage thursdays": {
   "url": null,
@@ -7564,12 +7525,12 @@
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/The-Cost-of-Raving-presents-Altern-8--Dom-and-Roland/43019227/|2026-11-06|the cost of raving presents altern 8 dom and roland": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/The-Dolly-Parton-Experience/42726144/|2026-11-06|the dolly parton experience": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Volks-NYE-2026-12-Hour-Rave-with-Fabio--Grooverider/43124924/|2026-12-31|volks nye 2026 12 hour rave with fabio grooverider": {
   "url": null,
@@ -7579,37 +7540,37 @@
  "https://www.skiddle.com/whats-on/Brighton/The-WaterBear-Venue/Elements-of-Groove/42715243/|2026-10-30|elements of groove": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.songkick.com/concerts/43076697-king-effers-at-pipeline?utm_medium=organic&utm_source=microformat|2026-11-06|king effers": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.songkick.com/concerts/43308859-vigilantes-at-pipeline?utm_medium=organic&utm_source=microformat|2026-11-14|vigilantes": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.songkick.com/concerts/43376266-fern-veh-at-pipeline?utm_medium=organic&utm_source=microformat|2026-11-05|fern veh": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.songkick.com/concerts/43408859-spiral-skies-at-pipeline?utm_medium=organic&utm_source=microformat|2026-11-13|spiral skies": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.songkick.com/concerts/43467318-yasha-at-pipeline?utm_medium=organic&utm_source=microformat|2026-11-11|yasha": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.songkick.com/concerts/43485796-pouch-at-pipeline?utm_medium=organic&utm_source=microformat|2026-11-08|pouch": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.thefolklorerooms.co.uk/listings|2026-11-17|folklore monthly showcase": {
   "url": "https://link.dice.fm/Be526648a48e",
@@ -7629,13 +7590,13 @@
  "https://www.theoldmarket.com/max-cooper|2026-10-29|max cooper 3d av live": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "label, no live booking button: SOLD OUT (www.theoldmarket.com)"
  },
  "https://www.theoldmarket.com/notes|2026-11-17|notes a wine and music pairing night": {
   "url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173666173",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.theoldmarket.com/notes|2026-12-15|notes a wine and music pairing night": {
   "url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173666173",
@@ -7645,7 +7606,7 @@
  "https://www.theoldmarket.com/rival-consoles|2026-11-06|rival consoles": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-28",
+  "checked": "2026-10-29",
   "why": "label next to this date: SOLD OUT (www.theoldmarket.com)"
  },
  "https://www.theoldmarket.com/shows/a-night-for-the-mandem|2026-11-26|a night for the mandem": {
@@ -7656,12 +7617,12 @@
  "https://www.theoldmarket.com/shows/alfie-moore-acopalypse-now|2026-11-14|alfie moore acopalypse now": {
   "url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173664713",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.theoldmarket.com/shows/angela-barnes|2026-11-13|angela barnes with anthony ayton joe foster": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.theoldmarket.com/shows/ballet-brighton-claras-dream|2026-11-21|ballet brighton clara s dream": {
   "url": null,
@@ -7672,7 +7633,7 @@
  "https://www.theoldmarket.com/shows/come-alive-echo-performing-arts-cic|2026-11-08|come alive echo performing arts cic": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.theoldmarket.com/shows/coram-shakespeare-schools-festival|2026-11-24|coram shakespeare schools festival": {
   "url": null,
@@ -7687,7 +7648,7 @@
  "https://www.theoldmarket.com/shows/derek-vs-derek|2026-11-04|derek vs derek 15": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.theoldmarket.com/shows/emma-doran-emmaculate|2027-03-13|emma doran emmaculate": {
   "url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173665912",
@@ -7717,7 +7678,7 @@
  "https://www.theoldmarket.com/shows/mark-thomas-40-in-stand-up-years|2026-11-07|mark thomas 40 in stand up years": {
   "url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173666375",
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.theoldmarket.com/shows/mark-watson|2027-01-30|mark watson with elaine fellows graeme collard": {
   "url": null,
@@ -7742,7 +7703,7 @@
  "https://www.theoldmarket.com/shows/on-your-bike-baffo|2026-11-15|on your bike baffo": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.theoldmarket.com/shows/paul-foot-the-future|2027-02-27|paul foot the future": {
   "url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173668259",
@@ -7752,7 +7713,7 @@
  "https://www.theoldmarket.com/shows/philosophy-of-the-world|2026-11-12|philosophy of the world": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.theoldmarket.com/shows/pierre-novellie|2027-02-05|pierre novellie okay one more then bedtime": {
   "url": null,
@@ -7778,7 +7739,7 @@
  "https://www.theoldmarket.com/shows/spit-nights-halloween|2026-10-31|spit nights": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.theoldmarket.com/shows/teach-rex|2027-01-02|teach rex": {
   "url": null,
@@ -7804,7 +7765,7 @@
  "https://www.ticketmaster.co.uk/dust-tickets-brighton/venue/415678|2026-11-16|grommet": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ticketmaster.co.uk/dust-tickets-brighton/venue/415678|2027-02-14|hayden thorpe performing the songs of wild beasts": {
   "url": null,
@@ -7819,7 +7780,7 @@
  "https://www.ticketmaster.co.uk/event/3E00645AB2BF3C22|2026-11-12|ub40 ft ali campbell": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ticketmaster.co.uk/event/3E00645AB2BF3C22|2026-12-11|ub40 ft ali campbell": {
   "url": null,
@@ -7844,7 +7805,7 @@
  "https://www.ticketmaster.co.uk/event/3E006521F0426993|2026-10-30|bonobo": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ticketmaster.co.uk/event/3E006537D56D4238|2027-03-06|will young": {
   "url": null,
@@ -7874,12 +7835,12 @@
  "https://www.ticketmaster.co.uk/event/3E00654FAF7A4758|2027-04-01|betmgm premier league darts": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.ticketmaster.co.uk/tommy-wa-brighton-29-10-2026/event/370064F7ED366C6E|2026-10-29|tommy w": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.ticketmaster.co.uk/venue/507978?attractionId=1021758|2026-12-09|bill bailey": {
   "url": "https://brightoncentre.co.uk/whats-on/2026/bill-bailey/",
@@ -7899,7 +7860,7 @@
  "https://www.ticketsource.com/murdock-and-the-mortals/t-njdemya|2026-10-31|murdock themortals halloween": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.tickettailor.com/events/beatdown/2452268|2026-12-05|ghostface killah": {
   "url": null,
@@ -7909,24 +7870,19 @@
  "https://www.tickettailor.com/events/goodhabits/2273391?trackingConsent=1|2026-11-18|good habits": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.tickettailor.com/events/hulamusicmedia/2407552|2026-10-31|matinee charlie hula": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.tickettailor.com/events/isq/2342373|2026-11-07|matinee isq": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.tickettailor.com/events/nextlevelsketch/2392450|2026-12-03|this machine kills wasps": {
-  "url": null,
-  "sold": false,
-  "checked": "2026-10-28"
- },
- "https://www.tickettailor.com/events/thedicemeeple/2449782|2026-10-28|td m meet play laugh beerbelly": {
   "url": null,
   "sold": false,
   "checked": "2026-10-28"
@@ -7934,17 +7890,17 @@
  "https://www.tickettailor.com/events/thedicemeeple/2449783|2026-11-04|td m meet play laugh beerbelly": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.tickettailor.com/events/thedicemeeple/2449784|2026-11-11|td m meet play laugh beerbelly": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.tickettailor.com/events/thedicemeeple/2449785|2026-11-18|td m meet play laugh beerbelly": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.tickettailor.com/events/thedicemeeple/2449786|2026-11-25|td m meet play laugh beerbelly": {
   "url": null,
@@ -7954,17 +7910,17 @@
  "https://www.tickettailor.com/events/thedicemeeple/2449801|2026-11-05|td m meet play laugh palmeira": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.tickettailor.com/events/thedicemeeple/2449807|2026-11-12|td m meet play laugh palmeira": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.tickettailor.com/events/thedicemeeple/2449808|2026-11-19|td m meet play laugh palmeira": {
   "url": null,
   "sold": false,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.tickettailor.com/events/theqworkzltd|2027-02-12|sonny tennet": {
   "url": null,
@@ -7975,7 +7931,7 @@
  "https://www.tickettailor.com/events/theqworkzltd|2027-02-13|sonny tennet show 2": {
   "url": null,
   "sold": true,
-  "checked": "2026-10-25",
+  "checked": "2026-10-29",
   "why": "label next to this date: Sold out (www.tickettailor.com)"
  },
  "https://www.universe.com/events/big-sandy-his-fly-rite-boys-micky-harts-trailblazers-tickets-G9JDLS|2026-11-28|big sandy his fly rite boys micky hart s trailblazers": {
@@ -7991,7 +7947,7 @@
  "https://www.universe.com/events/the-popguns-asbo-derek-tickets-R2JB8D|2026-12-19|the popguns asbo derek": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-25"
+  "checked": "2026-10-29"
  },
  "https://www.visitbrighton.com/whats-on/80s-charity-night-in-aid-of-macmillan-cancer-support-p2965361|2026-11-14|80 s charity night in aid of macmillan cancer support": {
   "url": null,
@@ -8011,12 +7967,12 @@
  "https://www.visitbrighton.com/whats-on/big-band-night-p2971391|2026-11-08|big band night": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.visitbrighton.com/whats-on/ktam-unleashed-p2950571|2026-11-19|ktam unleashed": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.visitbrighton.com/whats-on/lewes-whisky-festival-p2972841|2027-02-13|lewes whisky festival": {
   "url": null,
@@ -8026,7 +7982,7 @@
  "https://www.visitbrighton.com/whats-on/oh-my-god-its-the-church-p2656111|2026-11-18|oh my god it s the church": {
   "url": null,
   "sold": null,
-  "checked": "2026-10-28"
+  "checked": "2026-10-29"
  },
  "https://www.visitbrighton.com/whats-on/playroom-presents-p2969071|2026-10-29|playroom presents": {
   "url": null,

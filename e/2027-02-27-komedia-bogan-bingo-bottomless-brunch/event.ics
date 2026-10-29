@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-27-komedia-bogan-bingo-bottomless-brunch@brightonweekend.co.uk
+DTSTAMP:20270227T000000Z
+DTSTART:20270227T131500Z
+DTEND:20270227T161500Z
+SUMMARY:Bogan Bingo Bottomless Brunch
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87362481
+ 7/events/128668318\nMore: https://brightonweekend.co.uk/e/2027-02-27-komed
+ ia-bogan-bingo-bottomless-brunch/
+URL:https://brightonweekend.co.uk/e/2027-02-27-komedia-bogan-bingo-bottomle
+ ss-brunch/
+END:VEVENT
+END:VCALENDAR
