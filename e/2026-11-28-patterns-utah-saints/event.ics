@@ -6,15 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-28-patterns-utah-saints@brightonweekend.co.uk
 DTSTAMP:20261128T000000Z
-DTSTART;VALUE=DATE:20261128
-DTEND;VALUE=DATE:20261129
+DTSTART:20261128T190000Z
+DTEND:20261128T220000Z
 SUMMARY:Utah Saints
 LOCATION:Patterns\, Brighton
-DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
- ZXRzLmVudHMyNC5jb20vZXZlbnQvdXRhaC1zYWludHMvcGF0dGVybnMvMzYwOTk4Nw/supplie
- r/SeeTickets/suppliedid/MzYwOTk4Nw/ticketid/7981073/checksum/9b8df69512022
- 536106e3db1ba1200e2/track/true?title=Utah+Saints&badge=&venueId=15791\nMor
- e: https://brightonweekend.co.uk/e/2026-11-28-patterns-utah-saints/
+DESCRIPTION:Tickets: https://dice.fm/event/utah-saints-28th-nov-patterns-br
+ ighton-tickets\nMore: https://brightonweekend.co.uk/e/2026-11-28-patterns-
+ utah-saints/
 URL:https://brightonweekend.co.uk/e/2026-11-28-patterns-utah-saints/
 END:VEVENT
 END:VCALENDAR

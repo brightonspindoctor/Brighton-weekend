@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-11-concorde-2-latino-fest@brightonweekend.co.uk
+DTSTAMP:20261211T000000Z
+DTSTART:20261211T230000Z
+DTEND:20261212T020000Z
+SUMMARY:Latino Fest
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/npurq1t1/latino-fest-brighto
+ n-december-2026\nMore: https://brightonweekend.co.uk/e/2026-12-11-concorde
+ -2-latino-fest/
+URL:https://brightonweekend.co.uk/e/2026-12-11-concorde-2-latino-fest/
+END:VEVENT
+END:VCALENDAR

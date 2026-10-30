@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-09-concorde-2-kosheen@brightonweekend.co.uk
+DTSTAMP:20270409T000000Z
+DTSTART:20270409T180000Z
+DTEND:20270409T210000Z
+SUMMARY:Kosheen
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.concorde2.co.uk/event/kosheen\nMore: https
+ ://brightonweekend.co.uk/e/2027-04-09-concorde-2-kosheen/
+URL:https://brightonweekend.co.uk/e/2027-04-09-concorde-2-kosheen/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-06-brighton-dome-ux-brighton-conference-2026-emerging-methods-2
+ @brightonweekend.co.uk
+DTSTAMP:20261106T000000Z
+DTSTART:20261106T100000Z
+DTEND:20261106T170000Z
+SUMMARY:UX Brighton Conference 2026: Emerging Methods
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LSN-ux-brighton-conf
+ erence-2026-emerging-methods/\nMore: https://brightonweekend.co.uk/e/2026-
+ 11-06-brighton-dome-ux-brighton-conference-2026-emerging-methods-2/
+URL:https://brightonweekend.co.uk/e/2026-11-06-brighton-dome-ux-brighton-co
+ nference-2026-emerging-methods-2/
+END:VEVENT
+END:VCALENDAR

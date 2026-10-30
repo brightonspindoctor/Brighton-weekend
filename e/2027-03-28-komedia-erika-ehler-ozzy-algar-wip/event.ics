@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-28-komedia-erika-ehler-ozzy-algar-wip@brightonweekend.co.uk
+DTSTAMP:20270328T000000Z
+DTSTART:20270328T183000Z
+DTEND:20270328T213000Z
+SUMMARY:Erika Ehler & Ozzy Algar WIP
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366898
+ 1/events/128668397\nMore: https://brightonweekend.co.uk/e/2027-03-28-komed
+ ia-erika-ehler-ozzy-algar-wip/
+URL:https://brightonweekend.co.uk/e/2027-03-28-komedia-erika-ehler-ozzy-alg
+ ar-wip/
+END:VEVENT
+END:VCALENDAR

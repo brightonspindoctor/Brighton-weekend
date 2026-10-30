@@ -12990,10 +12990,15 @@
     "count": 1
    }
   ],
-  "bucket": null,
-  "reason": "genres unclear",
+  "wikidata": "Q2036827",
+  "wd_genres": [
+   "electronica"
+  ],
+  "bucket": "Electronic",
+  "reason": "tagged",
   "act": "Utah Saints",
-  "checked": "2026-10-06"
+  "checked": "2026-10-30",
+  "v": 3
  },
  "van morrison": {
   "mbid": "a41ac10f-0a56-4672-9161-b83f9b223559",
