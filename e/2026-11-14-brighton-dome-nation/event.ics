@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-brighton-dome-nation@brightonweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Nation
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LXh-nation/\nMore: h
+ ttps://brightonweekend.co.uk/e/2026-11-14-brighton-dome-nation/
+URL:https://brightonweekend.co.uk/e/2026-11-14-brighton-dome-nation/
+END:VEVENT
+END:VCALENDAR

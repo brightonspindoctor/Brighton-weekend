@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-21-komedia-backstage-comedy-confidential-industry-q-a-with-the-
+ lca-2@brightonweekend.co.uk
+DTSTAMP:20270321T000000Z
+DTSTART:20270321T173000Z
+DTEND:20270321T203000Z
+SUMMARY:Backstage Comedy Confidential: Industry Q & A with the LCA #2
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87365684
+ 4/events/128668432\nMore: https://brightonweekend.co.uk/e/2027-03-21-komed
+ ia-backstage-comedy-confidential-industry-q-a-with-the-lca-2/
+URL:https://brightonweekend.co.uk/e/2027-03-21-komedia-backstage-comedy-con
+ fidential-industry-q-a-with-the-lca-2/
+END:VEVENT
+END:VCALENDAR

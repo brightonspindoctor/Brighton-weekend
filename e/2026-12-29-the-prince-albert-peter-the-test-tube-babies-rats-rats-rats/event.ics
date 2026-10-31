@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-29-the-prince-albert-peter-the-test-tube-babies-rats-rats-rats@
+ brightonweekend.co.uk
+DTSTAMP:20261229T000000Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:Peter & the Test Tube Babies + Rats!Rats!Rats!
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/peter-and-the-test-tub
+ e-babies-rats-rats-rats-tickets-J2V6DC\nMore: https://brightonweekend.co.u
+ k/e/2026-12-29-the-prince-albert-peter-the-test-tube-babies-rats-rats-rats
+ /
+URL:https://brightonweekend.co.uk/e/2026-12-29-the-prince-albert-peter-the-
+ test-tube-babies-rats-rats-rats/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-brighton-dome-family-day-take-part-2026-2@brightonweekend.co
+ .uk
+DTSTAMP:20261107T000000Z
+DTSTART:20261107T110000Z
+DTEND:20261107T180000Z
+SUMMARY:Family Day Take Part 2026
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/Lnj-family-day-take-
+ part-2026/\nMore: https://brightonweekend.co.uk/e/2026-11-07-brighton-dome
+ -family-day-take-part-2026-2/
+URL:https://brightonweekend.co.uk/e/2026-11-07-brighton-dome-family-day-tak
+ e-part-2026-2/
+END:VEVENT
+END:VCALENDAR

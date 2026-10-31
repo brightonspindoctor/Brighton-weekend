@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-30-caroline-of-brunswick-80s-re-mix@brightonweekend.co.uk
+DTSTAMP:20270430T000000Z
+DTSTART;VALUE=DATE:20270430
+DTEND;VALUE=DATE:20270501
+SUMMARY:80s RE-MIX
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://carolineofbrunswick.co.uk/events/joshiwoshi/\n
+ More: https://brightonweekend.co.uk/e/2027-04-30-caroline-of-brunswick-80s
+ -re-mix/
+URL:https://brightonweekend.co.uk/e/2027-04-30-caroline-of-brunswick-80s-re
+ -mix/
+END:VEVENT
+END:VCALENDAR

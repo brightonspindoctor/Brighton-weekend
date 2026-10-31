@@ -10,9 +10,8 @@ DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:Bellowhead
 LOCATION:Brighton Dome\, Brighton
-DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
- alse\,false&top_filter=all&page=2&view=list\nMore: https://brightonweekend
- .co.uk/e/2026-11-16-brighton-dome-bellowhead/
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LDJ-bellowhead/\nMor
+ e: https://brightonweekend.co.uk/e/2026-11-16-brighton-dome-bellowhead/
 URL:https://brightonweekend.co.uk/e/2026-11-16-brighton-dome-bellowhead/
 END:VEVENT
 END:VCALENDAR

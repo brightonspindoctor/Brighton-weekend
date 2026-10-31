@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-15-resident-this-is-the-kit-live-signing@brightonweekend.co.uk
+DTSTAMP:20270115T000000Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:This Is The Kit: Live + Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6adf600c02182200016fc752\nMore: 
+ https://brightonweekend.co.uk/e/2027-01-15-resident-this-is-the-kit-live-s
+ igning/
+URL:https://brightonweekend.co.uk/e/2027-01-15-resident-this-is-the-kit-liv
+ e-signing/
+END:VEVENT
+END:VCALENDAR

@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-10-31-brighton-dome-concert-hall-van-morrison@brightonweekend.co.u
  k
 DTSTAMP:20261031T000000Z
-DTSTART;VALUE=DATE:20261031
-DTEND;VALUE=DATE:20261101
+DTSTART:20261031T193000Z
+DTEND:20261031T223000Z
 SUMMARY:Van Morrison
 LOCATION:Brighton Dome\, Brighton
 DESCRIPTION:Tickets: https://brightondome.org/whats-on/LXZ-van-morrison/\nM

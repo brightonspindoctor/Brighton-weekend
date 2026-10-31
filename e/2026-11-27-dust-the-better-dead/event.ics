@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-dust-the-better-dead@brightonweekend.co.uk
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:The Better Dead
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ae20add1975e10001c13d36\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-27-dust-the-better-dead/
+URL:https://brightonweekend.co.uk/e/2026-11-27-dust-the-better-dead/
+END:VEVENT
+END:VCALENDAR

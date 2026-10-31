@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-16-resident-the-twang-live-signing@brightonweekend.co.uk
+DTSTAMP:20270116T000000Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:The Twang: Live + Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ae09c8dd7d4c100014f2d1f\nMore: 
+ https://brightonweekend.co.uk/e/2027-01-16-resident-the-twang-live-signing
+ /
+URL:https://brightonweekend.co.uk/e/2027-01-16-resident-the-twang-live-sign
+ ing/
+END:VEVENT
+END:VCALENDAR

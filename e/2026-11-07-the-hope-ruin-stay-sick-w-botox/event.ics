@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-07-the-hope-ruin-stay-sick-w-botox@brightonweekend.co.uk
+DTSTAMP:20261107T000000Z
+DTSTART:20261107T210000Z
+DTEND:20261108T020000Z
+SUMMARY:Stay Sick w/ Botox
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/stay-sick-w-botox/\nMore: h
+ ttps://brightonweekend.co.uk/e/2026-11-07-the-hope-ruin-stay-sick-w-botox/
+URL:https://brightonweekend.co.uk/e/2026-11-07-the-hope-ruin-stay-sick-w-bo
+ tox/
+END:VEVENT
+END:VCALENDAR

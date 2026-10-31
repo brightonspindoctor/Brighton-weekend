@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-29-the-rose-hill-appalachian-dance-workshop-session@brightonwee
+ kend.co.uk
+DTSTAMP:20261129T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Appalachian Dance workshop + Session
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/appalachian-dance-work
+ shop-session/\nMore: https://brightonweekend.co.uk/e/2026-11-29-the-rose-h
+ ill-appalachian-dance-workshop-session/
+URL:https://brightonweekend.co.uk/e/2026-11-29-the-rose-hill-appalachian-da
+ nce-workshop-session/
+END:VEVENT
+END:VCALENDAR

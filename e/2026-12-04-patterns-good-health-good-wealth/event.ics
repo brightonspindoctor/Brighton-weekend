@@ -6,16 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-12-04-patterns-good-health-good-wealth@brightonweekend.co.uk
 DTSTAMP:20261204T000000Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
+DTSTART:20261204T190000Z
+DTEND:20261204T220000Z
 SUMMARY:Good Health Good Wealth
 LOCATION:Patterns\, Brighton
-DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
- ZXRzLmVudHMyNC5jb20vZXZlbnQvZ29vZC1oZWFsdGgtZ29vZC13ZWFsdGgvcGF0dGVybnMvMz
- Y0MjM4Mg/supplier/SeeTickets/suppliedid/MzY0MjM4Mg/ticketid/8061910/checks
- um/7c7e595962053a3263d976ab91ecc010/track/true?title=Good+Health+Good+Weal
- th&badge=&venueId=15791\nMore: https://brightonweekend.co.uk/e/2026-12-04-
- patterns-good-health-good-wealth/
+DESCRIPTION:Tickets: https://dice.fm/event/good-health-good-wealth-4th-dec-
+ patterns-brighton-tickets\nMore: https://brightonweekend.co.uk/e/2026-12-0
+ 4-patterns-good-health-good-wealth/
 URL:https://brightonweekend.co.uk/e/2026-12-04-patterns-good-health-good-we
  alth/
 END:VEVENT

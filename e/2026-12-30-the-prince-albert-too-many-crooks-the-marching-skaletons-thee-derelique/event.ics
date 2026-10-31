@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-30-the-prince-albert-too-many-crooks-the-marching-skaletons-the
+ e-derelique@brightonweekend.co.uk
+DTSTAMP:20261230T000000Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:Too many Crooks + The Marching SKAletons + Thee Derelique
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/too-many-crooks-the-ma
+ rching-skaletons-thee-derelique-tickets-W7K2Y9\nMore: https://brightonweek
+ end.co.uk/e/2026-12-30-the-prince-albert-too-many-crooks-the-marching-skal
+ etons-thee-derelique/
+URL:https://brightonweekend.co.uk/e/2026-12-30-the-prince-albert-too-many-c
+ rooks-the-marching-skaletons-thee-derelique/
+END:VEVENT
+END:VCALENDAR

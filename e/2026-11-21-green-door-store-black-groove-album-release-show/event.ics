@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-green-door-store-black-groove-album-release-show@brightonwee
+ kend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Black Groove Album Release Show
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://wegottickets.com/Tinnitus\nMore: https://brigh
+ tonweekend.co.uk/e/2026-11-21-green-door-store-black-groove-album-release-
+ show/
+URL:https://brightonweekend.co.uk/e/2026-11-21-green-door-store-black-groov
+ e-album-release-show/
+END:VEVENT
+END:VCALENDAR

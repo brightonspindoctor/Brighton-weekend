@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-20-a-l-p-h-a-b-e-t-forest-garden-collective@brightonweekend.co.
+ uk
+DTSTAMP:20261120T000000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Forest Garden Collective
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.alphabetbrighton.com/listings/nov-20-fores
+ t-garden-collective\nMore: https://brightonweekend.co.uk/e/2026-11-20-a-l-
+ p-h-a-b-e-t-forest-garden-collective/
+URL:https://brightonweekend.co.uk/e/2026-11-20-a-l-p-h-a-b-e-t-forest-garde
+ n-collective/
+END:VEVENT
+END:VCALENDAR

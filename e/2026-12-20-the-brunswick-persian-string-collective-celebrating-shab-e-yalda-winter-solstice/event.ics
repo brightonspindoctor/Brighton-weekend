@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-20-the-brunswick-persian-string-collective-celebrating-shab-e-y
+ alda-winter-solstice@brightonweekend.co.uk
+DTSTAMP:20261220T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Persian String Collective - Celebrating Shab e Yalda - Winter Solst
+ ice
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/persian-s
+ tring-collective-celebrating-shab-e-yalda-winter-solstice\nMore: https://b
+ rightonweekend.co.uk/e/2026-12-20-the-brunswick-persian-string-collective-
+ celebrating-shab-e-yalda-winter-solstice/
+URL:https://brightonweekend.co.uk/e/2026-12-20-the-brunswick-persian-string
+ -collective-celebrating-shab-e-yalda-winter-solstice/
+END:VEVENT
+END:VCALENDAR

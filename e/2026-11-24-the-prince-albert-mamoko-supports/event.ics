@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-24-the-prince-albert-mamoko-supports@brightonweekend.co.uk
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Mamoko + Supports
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.facebook.com/pg/ThePrinceAlbert/events/?re
+ f=page_internal\nMore: https://brightonweekend.co.uk/e/2026-11-24-the-prin
+ ce-albert-mamoko-supports/
+URL:https://brightonweekend.co.uk/e/2026-11-24-the-prince-albert-mamoko-sup
+ ports/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-29-the-prince-albert-the-serfers-regal-cheer-pocket-self-torque
+ @brightonweekend.co.uk
+DTSTAMP:20261129T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:The Serfers + Regal Cheer + Pocket + Self Torque
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/og5g4hd0/the-serfers-regal-c
+ heer-pocket-self-torque?utm_source=social_share&utm_medium=social&utm_camp
+ aign=social_share\nMore: https://brightonweekend.co.uk/e/2026-11-29-the-pr
+ ince-albert-the-serfers-regal-cheer-pocket-self-torque/
+URL:https://brightonweekend.co.uk/e/2026-11-29-the-prince-albert-the-serfer
+ s-regal-cheer-pocket-self-torque/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-12-a-l-p-h-a-b-e-t-dargz-w-mc-nory-nyc@brightonweekend.co.uk
+DTSTAMP:20270212T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:Dargz W/ MC Nory (NYC)
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.alphabetbrighton.com/listings/feb-12-dargz
+ -w-mc-nory-nyc\nMore: https://brightonweekend.co.uk/e/2027-02-12-a-l-p-h-a
+ -b-e-t-dargz-w-mc-nory-nyc/
+URL:https://brightonweekend.co.uk/e/2027-02-12-a-l-p-h-a-b-e-t-dargz-w-mc-n
+ ory-nyc/
+END:VEVENT
+END:VCALENDAR

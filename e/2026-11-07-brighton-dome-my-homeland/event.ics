@@ -6,13 +6,12 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-07-brighton-dome-my-homeland@brightonweekend.co.uk
 DTSTAMP:20261107T000000Z
-DTSTART;VALUE=DATE:20261107
-DTEND;VALUE=DATE:20261108
+DTSTART:20261107T193000Z
+DTEND:20261107T230000Z
 SUMMARY:My Homeland
 LOCATION:Brighton Dome\, Brighton
-DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
- alse\,false&top_filter=all&page=1&view=list\nMore: https://brightonweekend
- .co.uk/e/2026-11-07-brighton-dome-my-homeland/
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/Lz0-my-homeland/\nMo
+ re: https://brightonweekend.co.uk/e/2026-11-07-brighton-dome-my-homeland/
 URL:https://brightonweekend.co.uk/e/2026-11-07-brighton-dome-my-homeland/
 END:VEVENT
 END:VCALENDAR

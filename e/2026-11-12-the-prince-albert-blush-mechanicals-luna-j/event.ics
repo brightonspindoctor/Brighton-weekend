@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-12-the-prince-albert-blush-mechanicals-luna-j@brightonweekend.c
+ o.uk
+DTSTAMP:20261112T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Blush + Mechanicals + Luna J
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/blush-mechanicals-luna
+ -j-tickets-M7RZY9\nMore: https://brightonweekend.co.uk/e/2026-11-12-the-pr
+ ince-albert-blush-mechanicals-luna-j/
+URL:https://brightonweekend.co.uk/e/2026-11-12-the-prince-albert-blush-mech
+ anicals-luna-j/
+END:VEVENT
+END:VCALENDAR

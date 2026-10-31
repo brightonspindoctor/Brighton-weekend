@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-20-caroline-of-brunswick-sunset-sounds-christmas-special-free@b
+ rightonweekend.co.uk
+DTSTAMP:20261220T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Sunset Sounds Christmas Special
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://carolineofbrunswick.co.uk/events/sunsetsounds-
+ 532-553-175-162-464-133-388-776-792-371-673/\nMore: https://brightonweeken
+ d.co.uk/e/2026-12-20-caroline-of-brunswick-sunset-sounds-christmas-special
+ -free/
+URL:https://brightonweekend.co.uk/e/2026-12-20-caroline-of-brunswick-sunset
+ -sounds-christmas-special-free/
+END:VEVENT
+END:VCALENDAR

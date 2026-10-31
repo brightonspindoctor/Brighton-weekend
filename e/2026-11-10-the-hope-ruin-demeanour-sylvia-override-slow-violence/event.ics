@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-10-the-hope-ruin-demeanour-sylvia-override-slow-violence@bright
+ onweekend.co.uk
+DTSTAMP:20261110T000000Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Demeanour + Sylvia + Override + Slow Violence
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/demeanour-sylvia-override-s
+ low-violence/\nMore: https://brightonweekend.co.uk/e/2026-11-10-the-hope-r
+ uin-demeanour-sylvia-override-slow-violence/
+URL:https://brightonweekend.co.uk/e/2026-11-10-the-hope-ruin-demeanour-sylv
+ ia-override-slow-violence/
+END:VEVENT
+END:VCALENDAR

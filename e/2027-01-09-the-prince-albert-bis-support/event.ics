@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-09-the-prince-albert-bis-support@brightonweekend.co.uk
+DTSTAMP:20270109T000000Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+SUMMARY:bis + support
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/bis-support-tickets-96
+ QL5G?fbclid=IwY2xjawVRhydleHRuA2FlbQIxMABwZG9mAWJyaWQRMDNkSnFWNmVFanVTQkhZ
+ QlBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEfMP6-fpgyzrseHCp5f1St3wpJCHD6Z0
+ FdWqHeAFf2USIUXqKfTz9JiGB8wCc_aem_QURfQJ6YtBU2v_K6ndQPOg\nMore: https://br
+ ightonweekend.co.uk/e/2027-01-09-the-prince-albert-bis-support/
+URL:https://brightonweekend.co.uk/e/2027-01-09-the-prince-albert-bis-suppor
+ t/
+END:VEVENT
+END:VCALENDAR

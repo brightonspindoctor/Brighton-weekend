@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-10-chalk-horace-andy@brightonweekend.co.uk
+DTSTAMP:20261210T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Horace Andy
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/A444722102d5\nMore: https://brigh
+ tonweekend.co.uk/e/2026-12-10-chalk-horace-andy/
+URL:https://brightonweekend.co.uk/e/2026-12-10-chalk-horace-andy/
+END:VEVENT
+END:VCALENDAR

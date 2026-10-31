@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-28-the-prince-albert-peter-the-test-tube-babies-typical-girls@b
+ rightonweekend.co.uk
+DTSTAMP:20261228T000000Z
+DTSTART;VALUE=DATE:20261228
+DTEND;VALUE=DATE:20261229
+SUMMARY:Peter & the Test Tube Babies + Typical Girls
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/peter-the-test-tube-ba
+ bies-typical-girls-tickets-W7Z31V\nMore: https://brightonweekend.co.uk/e/2
+ 026-12-28-the-prince-albert-peter-the-test-tube-babies-typical-girls/
+URL:https://brightonweekend.co.uk/e/2026-12-28-the-prince-albert-peter-the-
+ test-tube-babies-typical-girls/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-30-caroline-of-brunswick-release-the-bats-free@brightonweekend.
+ co.uk
+DTSTAMP:20270130T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:Release the Bats
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://carolineofbrunswick.co.uk/events/release-the-b
+ ats-free-790/\nMore: https://brightonweekend.co.uk/e/2027-01-30-caroline-o
+ f-brunswick-release-the-bats-free/
+URL:https://brightonweekend.co.uk/e/2027-01-30-caroline-of-brunswick-releas
+ e-the-bats-free/
+END:VEVENT
+END:VCALENDAR

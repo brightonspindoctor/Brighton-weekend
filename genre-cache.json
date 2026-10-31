@@ -673,6 +673,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "appalachian dance workshop": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Appalachian Dance workshop",
+  "checked": "2026-10-31",
+  "v": 3
+ },
  "aqualine": {
   "mbid": "e2e5b0d0-f92d-4187-b3e9-24d5da1816e8",
   "name": "Aqualine",
@@ -748,6 +755,20 @@
   "checked": "2026-10-28",
   "v": 3
  },
+ "astridwilliamson": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "AstridWilliamson",
+  "checked": "2026-10-31",
+  "v": 3
+ },
+ "astridwilliamson julesmaxwell": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "AstridWilliamson/JulesMaxwell",
+  "checked": "2026-10-31",
+  "v": 3
+ },
  "ax presents": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -799,6 +820,13 @@
   "act": "Bad Girls and Heartbreakers",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "badmouth": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "Badmouth",
+  "checked": "2026-10-31",
+  "v": 3
  },
  "balls deep": {
   "bucket": null,
@@ -1234,6 +1262,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "bis": {
+  "bucket": null,
+  "reason": "9 artists share this name",
+  "act": "bis",
+  "checked": "2026-10-31",
+  "v": 3
+ },
  "bishopskin": {
   "mbid": "1927d60c-ba5b-4f84-bd71-734bfa4fef66",
   "name": "Bishopskin",
@@ -1293,6 +1328,13 @@
   "act": "Björn Again",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "black groove": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Black Groove",
+  "checked": "2026-10-31",
+  "v": 3
  },
  "black octopus 8th birthday part 2": {
   "bucket": null,
@@ -1438,6 +1480,13 @@
   "act": "Blue Lion Band",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "blush": {
+  "bucket": null,
+  "reason": "23 artists share this name",
+  "act": "Blush",
+  "checked": "2026-10-31",
+  "v": 3
  },
  "bodega": {
   "bucket": null,
@@ -2658,6 +2707,26 @@
   "checked": "2026-10-13",
   "v": 3
  },
+ "dara dubh": {
+  "mbid": "eed1ba08-a9b3-4d3b-9235-2271a5795ab5",
+  "name": "Dara Dubh",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Dara Dubh",
+  "checked": "2026-10-31",
+  "v": 3
+ },
+ "dargz": {
+  "mbid": "061c1b13-8503-44b3-9763-ec3a8520cd56",
+  "name": "DARGZ",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Dargz",
+  "checked": "2026-10-31",
+  "v": 3
+ },
  "dateless wonder club little death ep launch party": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -3025,6 +3094,13 @@
   "act": "Delta Goodrem",
   "checked": "2026-10-09"
  },
+ "demeanour": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Demeanour",
+  "checked": "2026-10-31",
+  "v": 3
+ },
  "demonstrations of power": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -3186,6 +3262,50 @@
   "act": "Digitalis / Palindrones",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "diiv": {
+  "mbid": "b5ff61dd-0154-4e80-b46b-c733f87db602",
+  "name": "DIIV",
+  "genres": [
+   {
+    "name": "dream pop",
+    "count": 4
+   },
+   {
+    "name": "indie rock",
+    "count": 3
+   },
+   {
+    "name": "jangle pop",
+    "count": 1
+   },
+   {
+    "name": "krautrock",
+    "count": 1
+   },
+   {
+    "name": "neo-psychedelia",
+    "count": 1
+   },
+   {
+    "name": "post-punk",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   },
+   {
+    "name": "shoegaze",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q3560061",
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "DIIV",
+  "checked": "2026-10-31",
+  "v": 3
  },
  "dinosaur pile up": {
   "mbid": "b7023072-3a8c-4efc-bfd3-c117185f3b66",
@@ -3876,6 +3996,46 @@
   "act": "Fat Poppadaddys Societies",
   "checked": "2026-10-06"
  },
+ "fatboy slim": {
+  "mbid": "34c63966-445c-4613-afe1-4f0e1e53ae9a",
+  "name": "Fatboy Slim",
+  "genres": [
+   {
+    "name": "big beat",
+    "count": 13
+   },
+   {
+    "name": "breakbeat",
+    "count": 1
+   },
+   {
+    "name": "dance",
+    "count": 1
+   },
+   {
+    "name": "electronic",
+    "count": 12
+   },
+   {
+    "name": "electronica",
+    "count": 1
+   },
+   {
+    "name": "house",
+    "count": 1
+   },
+   {
+    "name": "techno",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q272619",
+  "bucket": "Electronic",
+  "reason": "tagged",
+  "act": "Fatboy Slim",
+  "checked": "2026-10-31",
+  "v": 3
+ },
  "feel": {
   "bucket": null,
   "reason": "19 artists share this name",
@@ -4126,6 +4286,13 @@
   "reason": "genres unclear",
   "act": "Fontaines D.C.",
   "checked": "2026-10-07"
+ },
+ "forest garden collective": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Forest Garden Collective",
+  "checked": "2026-10-31",
+  "v": 3
  },
  "forever nu": {
   "bucket": null,
@@ -4479,6 +4646,13 @@
   "reason": "tagged",
   "act": "Getdown Services",
   "checked": "2026-10-06"
+ },
+ "getting to brighton dome": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Getting to Brighton Dome",
+  "checked": "2026-10-31",
+  "v": 3
  },
  "ghostface killah": {
   "mbid": "3b39abeb-0064-4eed-9ddd-ee47a45c54cb",
@@ -5343,6 +5517,38 @@
   "checked": "2026-10-28",
   "v": 3
  },
+ "horace andy": {
+  "mbid": "2027b08d-45b1-4fb5-aa6d-f6ccc4db78e5",
+  "name": "Horace Andy",
+  "genres": [
+   {
+    "name": "dub",
+    "count": 3
+   },
+   {
+    "name": "electronica",
+    "count": 2
+   },
+   {
+    "name": "reggae",
+    "count": 3
+   },
+   {
+    "name": "roots reggae",
+    "count": 2
+   },
+   {
+    "name": "trip hop",
+    "count": 2
+   }
+  ],
+  "wikidata": "Q353454",
+  "bucket": "Reggae & Ska",
+  "reason": "tagged",
+  "act": "Horace Andy",
+  "checked": "2026-10-31",
+  "v": 3
+ },
  "hospital30": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -5571,6 +5777,13 @@
   "reason": "tagged",
   "act": "Iceage",
   "checked": "2026-10-06"
+ },
+ "ila": {
+  "bucket": null,
+  "reason": "7 artists share this name",
+  "act": "ILA",
+  "checked": "2026-10-31",
+  "v": 3
  },
  "ila more tba": {
   "bucket": null,
@@ -5980,6 +6193,13 @@
   "act": "Jamie Webster",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "janies 22nd birthday bash": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Janie's 22nd Birthday Bash",
+  "checked": "2026-10-31",
+  "v": 3
  },
  "jarrod dickenson": {
   "mbid": "0ce7a4b7-25d8-4b76-9b19-51cb45434ab0",
@@ -6664,11 +6884,70 @@
   "act": "Komedia Christmas Party",
   "checked": "2026-10-06"
  },
+ "kosheen": {
+  "mbid": "4f4bda3c-d636-4135-b65a-6cc26bc75788",
+  "name": "Kosheen",
+  "genres": [
+   {
+    "name": "club",
+    "count": 2
+   },
+   {
+    "name": "dance",
+    "count": 2
+   },
+   {
+    "name": "downtempo",
+    "count": 2
+   },
+   {
+    "name": "drum and bass",
+    "count": 4
+   },
+   {
+    "name": "dubstep",
+    "count": 2
+   },
+   {
+    "name": "edm",
+    "count": 1
+   },
+   {
+    "name": "electronic",
+    "count": 3
+   },
+   {
+    "name": "electronica",
+    "count": 2
+   },
+   {
+    "name": "rock",
+    "count": 1
+   },
+   {
+    "name": "trip hop",
+    "count": 2
+   }
+  ],
+  "wikidata": "Q285472",
+  "bucket": "Electronic",
+  "reason": "tagged",
+  "act": "Kosheen",
+  "checked": "2026-10-31",
+  "v": 3
+ },
  "kotoa": {
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "KOTOA",
   "checked": "2026-10-07"
+ },
+ "krapeoke": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Krapeoke",
+  "checked": "2026-10-31",
+  "v": 3
  },
  "krapeoke halloween special": {
   "bucket": null,
@@ -7232,6 +7511,13 @@
   "checked": "2026-10-28",
   "v": 3
  },
+ "mamoko": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Mamoko",
+  "checked": "2026-10-31",
+  "v": 3
+ },
  "mari merenda": {
   "mbid": "fa350370-fe4e-47c0-9df9-c95801e259de",
   "name": "Mari Merenda",
@@ -7376,6 +7662,13 @@
   "act": "Mekons",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "memorial": {
+  "bucket": null,
+  "reason": "10 artists share this name",
+  "act": "Memorial",
+  "checked": "2026-10-31",
+  "v": 3
  },
  "memory box": {
   "bucket": null,
@@ -8408,6 +8701,16 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "oral habit": {
+  "mbid": "e4516eb3-9f29-476f-bb62-4f8d981e6f65",
+  "name": "Oral Habit",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Oral Habit",
+  "checked": "2026-10-31",
+  "v": 3
+ },
  "organoke": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -8534,6 +8837,13 @@
   "act": "P-rallel",
   "checked": "2026-10-06"
  },
+ "parade": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Parade",
+  "checked": "2026-10-31",
+  "v": 3
+ },
  "party 4 u": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -8654,6 +8964,30 @@
   "reason": "5 artists share this name",
   "act": "Pete Williams",
   "checked": "2026-10-22",
+  "v": 3
+ },
+ "peter and the test tube babies": {
+  "mbid": "84ddbf0a-5cfb-4920-9875-ba7500352af3",
+  "name": "Peter and the Test Tube Babies",
+  "genres": [
+   {
+    "name": "oi",
+    "count": 1
+   },
+   {
+    "name": "punk",
+    "count": 2
+   },
+   {
+    "name": "punk rock",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q2000167",
+  "bucket": "Punk & Metal",
+  "reason": "tagged",
+  "act": "Peter & the Test Tube Babies",
+  "checked": "2026-10-31",
   "v": 3
  },
  "peter kay": {
@@ -9055,6 +9389,30 @@
   "act": "Red Richardson Premium Economy",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "red snapper": {
+  "mbid": "89abed31-3a93-407e-a4a3-a94e193488cd",
+  "name": "Red Snapper",
+  "genres": [
+   {
+    "name": "acid jazz",
+    "count": 2
+   },
+   {
+    "name": "drum and bass",
+    "count": 2
+   },
+   {
+    "name": "nu jazz",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q1807608",
+  "bucket": "Jazz, Soul & Funk",
+  "reason": "tagged",
+  "act": "Red Snapper",
+  "checked": "2026-10-31",
+  "v": 3
  },
  "reef": {
   "bucket": null,
@@ -10817,6 +11175,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "tchaikovskys fifth": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Tchaikovsky’s Fifth",
+  "checked": "2026-10-31",
+  "v": 3
+ },
  "tchotchke": {
   "bucket": null,
   "reason": "2 artists share this name",
@@ -10987,6 +11352,13 @@
   "reason": "not in MusicBrainz",
   "act": "The Best of Mike Oldfield's Tubular Bells I, II & III",
   "checked": "2026-10-13",
+  "v": 3
+ },
+ "the better dead": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Better Dead",
+  "checked": "2026-10-31",
   "v": 3
  },
  "the big christmas singalong": {
@@ -11898,6 +12270,13 @@
   "act": "THE SCRIPT",
   "checked": "2026-10-06"
  },
+ "the serfers": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "The Serfers",
+  "checked": "2026-10-31",
+  "v": 3
+ },
  "the shires": {
   "mbid": "7a98818a-28d2-4856-a183-1df6f0984c21",
   "name": "The Shires",
@@ -12077,6 +12456,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "the twang": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "The Twang",
+  "checked": "2026-10-31",
+  "v": 3
+ },
  "the undertones": {
   "bucket": null,
   "reason": "2 artists share this name",
@@ -12246,6 +12632,30 @@
   "act": "This Is Lorelei",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "this is the kit": {
+  "mbid": "c7a4dcf7-61f8-4126-bec8-3bfa3b18284a",
+  "name": "This Is the Kit",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "indie folk",
+    "count": 1
+   },
+   {
+    "name": "indie rock",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q15044932",
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "This Is The Kit",
+  "checked": "2026-10-31",
+  "v": 3
  },
  "this machine kills wasps": {
   "bucket": null,
@@ -12491,6 +12901,16 @@
   "act": "Tommy WÁ",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "too many crooks": {
+  "mbid": "fbf2a8e1-191c-4b80-8030-26039c43dd32",
+  "name": "Too Many Crooks",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Too many Crooks",
+  "checked": "2026-10-31",
+  "v": 3
  },
  "too many zooz": {
   "mbid": "e44ef539-1ec9-4cb2-bee7-852e84618308",

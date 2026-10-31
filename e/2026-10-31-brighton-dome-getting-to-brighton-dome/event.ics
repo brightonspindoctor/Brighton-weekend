@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-10-31-brighton-dome-getting-to-brighton-dome@brightonweekend.co.uk
+DTSTAMP:20261031T000000Z
+DTSTART:20261031T200000Z
+DTEND:20261031T230000Z
+SUMMARY:Getting to Brighton Dome
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/plan-your-visit/getting-to-br
+ ighton-dome/\nMore: https://brightonweekend.co.uk/e/2026-10-31-brighton-do
+ me-getting-to-brighton-dome/
+URL:https://brightonweekend.co.uk/e/2026-10-31-brighton-dome-getting-to-bri
+ ghton-dome/
+END:VEVENT
+END:VCALENDAR

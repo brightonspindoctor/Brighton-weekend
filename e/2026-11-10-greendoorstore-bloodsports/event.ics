@@ -6,12 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-10-greendoorstore-bloodsports@brightonweekend.co.uk
 DTSTAMP:20261110T000000Z
-DTSTART;VALUE=DATE:20261110
-DTEND;VALUE=DATE:20261111
+DTSTART:20261110T190000Z
+DTEND:20261110T220000Z
 SUMMARY:Bloodsports
 LOCATION:Green Door Store\, Brighton
-DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/\nMore: https:/
- /brightonweekend.co.uk/e/2026-11-10-greendoorstore-bloodsports/
+DESCRIPTION:Tickets: https://dice.fm/event/dkp7kq-bloodsports-10th-nov-gree
+ n-door-store-brighton-tickets?lng=en\nMore: https://brightonweekend.co.uk/
+ e/2026-11-10-greendoorstore-bloodsports/
 URL:https://brightonweekend.co.uk/e/2026-11-10-greendoorstore-bloodsports/
 END:VEVENT
 END:VCALENDAR

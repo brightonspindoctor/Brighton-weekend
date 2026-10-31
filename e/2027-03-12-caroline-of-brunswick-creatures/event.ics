@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-12-caroline-of-brunswick-creatures@brightonweekend.co.uk
+DTSTAMP:20270312T000000Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:Creatures
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://carolineofbrunswick.co.uk/events/tbc-844-841-5
+ 38-700-183-304-927-129-549-387-697-221-273-424/\nMore: https://brightonwee
+ kend.co.uk/e/2027-03-12-caroline-of-brunswick-creatures/
+URL:https://brightonweekend.co.uk/e/2027-03-12-caroline-of-brunswick-creatu
+ res/
+END:VEVENT
+END:VCALENDAR

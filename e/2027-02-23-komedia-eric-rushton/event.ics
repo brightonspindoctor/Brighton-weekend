@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-23-komedia-eric-rushton@brightonweekend.co.uk
+DTSTAMP:20270223T000000Z
+DTSTART:20270223T200000Z
+DTEND:20270223T230000Z
+SUMMARY:Eric Rushton
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366891
+ 5/events/128668293\nMore: https://brightonweekend.co.uk/e/2027-02-23-komed
+ ia-eric-rushton/
+URL:https://brightonweekend.co.uk/e/2027-02-23-komedia-eric-rushton/
+END:VEVENT
+END:VCALENDAR

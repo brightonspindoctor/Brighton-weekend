@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-30-a-l-p-h-a-b-e-t-memorial@brightonweekend.co.uk
+DTSTAMP:20270130T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:Memorial
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ae08dd9670dc20001458288\nMore: 
+ https://brightonweekend.co.uk/e/2027-01-30-a-l-p-h-a-b-e-t-memorial/
+URL:https://brightonweekend.co.uk/e/2027-01-30-a-l-p-h-a-b-e-t-memorial/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-theatre-royal-brighton-victorian-christmas-family-workshop@b
+ rightonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Victorian Christmas Family Workshop
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/victorian-christmas-f
+ amily-workshop/theatre-royal-brighton/calendar/\nMore: https://brightonwee
+ kend.co.uk/e/2026-12-12-theatre-royal-brighton-victorian-christmas-family-
+ workshop/
+URL:https://brightonweekend.co.uk/e/2026-12-12-theatre-royal-brighton-victo
+ rian-christmas-family-workshop/
+END:VEVENT
+END:VCALENDAR
