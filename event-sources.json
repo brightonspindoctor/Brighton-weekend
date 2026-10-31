@@ -221,6 +221,7 @@
     "url": "https://www.skiddle.com/whats-on/Brighton/The-British-Engineerium/",
     "jsonld_only": true,
     "match_location": "engineerium",
-    "note": "Victorian pumping station in Hove (The Droveway, BN3 7QA) used for day parties and events; added 31 October 2026. Its own site sells museum tours through Eventbrite; its club nights are on Skiddle. Visit Brighton and Skiddle's city listing also find it by name (scrape-discovery.py)."
+    "note": "Victorian pumping station in Hove (The Droveway, BN3 7QA) used for day parties and events; added 31 October 2026. Its own site sells museum tours through Eventbrite; its club nights are on Skiddle. Visit Brighton and Skiddle's city listing also find it by name (scrape-discovery.py). Its Skiddle events with named performers are its day parties (DJs), filed as Club when their wording gives no category; the makers' fairs list none and stay Other.",
+    "performer_category": "Club"
   }
 ]

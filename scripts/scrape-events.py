@@ -275,10 +275,11 @@ def location_text(obj):
         elif isinstance(x,str):parts.append(x)
     return clean(' '.join(parts)).lower()
 
-def jsonld_events(html,venue,page_url,match_location=None):
+def jsonld_events(html,venue,page_url,match_location=None,performer_category=None):
     """Events from schema.org data. With match_location (used for ticketing-site
     pages that can also show other venues' events), only events whose location
-    mentions it are kept."""
+    mentions it are kept. With performer_category, an event that names its
+    performers but nothing in its wording sets a category takes that one."""
     soup=BeautifulSoup(html,'html.parser');out=[]
     for tag in soup.find_all('script',attrs={'type':re.compile(r'ld\+json',re.I)}):
         try:data=json.loads(tag.string or tag.get_text())
@@ -297,6 +298,7 @@ def jsonld_events(html,venue,page_url,match_location=None):
             if any(str(t).lower()=='event' or str(t).lower().endswith('event') for t in types):
                 if match_location and match_location.lower() not in location_text(obj):continue
                 e=normalise(obj,venue,page_url)
+                if e and performer_category and e.get('category')=='Other' and obj.get('performer'):e['category']=performer_category
                 if e:out.append(e)
     return out
 
@@ -525,12 +527,12 @@ async def glyndebourne_events(browser,pages):
 async def scrape_source(browser,source):
     html,final,err=await get_html(browser,source['url'])
     venue=source['venue'];is_dome_search='brightondome.org' in source['url']
-    events=[] if err else jsonld_events(html,venue,final,source.get('match_location'))
+    events=[] if err else jsonld_events(html,venue,final,source.get('match_location'),source.get('performer_category'))
     if source.get('jsonld_only') and not events:
         # Skiddle/Songkick blocked the browser, or it rendered no event data: try a plain request.
         try:
             html,final=await asyncio.to_thread(fetch_plain,source['url']);err=None
-            events=jsonld_events(html,venue,final,source.get('match_location'))
+            events=jsonld_events(html,venue,final,source.get('match_location'),source.get('performer_category'))
         except Exception as exc:
             err=err or str(exc)
     if err:return [],err
