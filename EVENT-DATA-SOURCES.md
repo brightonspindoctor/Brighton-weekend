@@ -21,7 +21,8 @@ if the day's refresh has already happened.
    |---|---|
    | `"jsonld_only": true` | Read only the page's structured event data (schema.org), never its layout. Used for ticketing-site pages (Skiddle, Songkick) that also show other venues' events. |
    | `"match_location": "pipeline"` | Keep only events whose stated location contains this text. Use with `jsonld_only`. |
-   | `"ticketsolve": "<feed>"` | The venue's Ticketsolve feed (`<venue>.ticketsolve.com/shows.xml`). Each listing is matched to its show (by the ticket link, or by name and date) and filed under the venue's own category (comedy, music, club, kids' show, spoken word); a start time the listing leaves out is filled in. Used for Komedia. |
+   | `"performer_category": "Club"` | An event that names its performers but whose wording sets no category is filed under this one instead of Other. Use with `jsonld_only`. Used for The British Engineerium's day parties, whose DJs are listed on Skiddle. |
+| `"ticketsolve": "<feed>"` | The venue's Ticketsolve feed (`<venue>.ticketsolve.com/shows.xml`). Each listing is matched to its show (by the ticket link, or by name and date) and filed under the venue's own category (comedy, music, club, kids' show, spoken word); a start time the listing leaves out is filled in. Used for Komedia. |
    | `"label_pages": [...]` | More of the venue's pages that only lend their labels (see "The venue's own labels"). Used for Theatre Royal's eight genre lists on ATG, which cover its whole programme. |
    | `"disabled": true` | Don't fetch this page. The venue stays known to the discovery scraper. |
    | `"note"` | Why the entry is set up this way. |
