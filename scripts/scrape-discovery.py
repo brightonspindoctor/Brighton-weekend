@@ -29,6 +29,7 @@ VENUE_ALIASES={
  "prince albert":"The Prince Albert","folklore rooms":"The Folklore Rooms","cowley club":"The Cowley Club","rose hill brighton":"The Rose Hill",
  "bees mouth":"The Bee's Mouth","bee's mouth":"The Bee's Mouth","waterbear venue":"The Waterbear","the waterbear":"The Waterbear","daltons bar":"Daltons",
  "caroline of brunswick":"Caroline of Brunswick","resident music":"Resident",
+ "british engineerium":"The British Engineerium","the engineerium":"The British Engineerium","hove engineerium":"The British Engineerium",
 }
 # Names too ordinary to find inside other text ('resident DJs'): matched only
 # when a source gives the venue on its own, as Rival Cults does.
@@ -297,6 +298,7 @@ RIVALCULTS_VENUES={
  "fortune of war":"Fortune of War","resident":"Resident","rose hill":"The Rose Hill","the rose hill":"The Rose Hill",
  "rossi bar":"Rossi Bar","the bee's mouth":"The Bee's Mouth","bee's mouth":"The Bee's Mouth",
  "waterbear venue":"The Waterbear","waterbear":"The Waterbear","the waterbear":"The Waterbear",
+ "british engineerium":"The British Engineerium","the british engineerium":"The British Engineerium","engineerium":"The British Engineerium",
 }
 RIVALCULTS_UNKNOWN=set()  # venue names it lists that we don't map yet (printed, and kept in discovery_report)
 def rivalcults_venue(name):

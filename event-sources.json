@@ -215,5 +215,12 @@
       "https://www.glyndebourne.com/festival/"
     ],
     "note": "Opera house near Lewes, outside Brighton & Hove; added 18 October 2026. Productions linked from the season pages (autumn season, summer Festival) are read one by one for their performances (glyndebourne_events). Not /whats-on/, which may include touring dates at other venues."
+  },
+  {
+    "venue": "The British Engineerium",
+    "url": "https://www.skiddle.com/whats-on/Brighton/The-British-Engineerium/",
+    "jsonld_only": true,
+    "match_location": "engineerium",
+    "note": "Victorian pumping station in Hove (The Droveway, BN3 7QA) used for day parties and events; added 31 October 2026. Its own site sells museum tours through Eventbrite; its club nights are on Skiddle. Visit Brighton and Skiddle's city listing also find it by name (scrape-discovery.py)."
   }
 ]
