@@ -87,9 +87,10 @@ def event_url(e: dict) -> str:
     return f'{SITE}/e/{e["id"]}/'
 
 
-# Venues outside Brighton & Hove: how pages name the place, and the town for
-# schema.org. Everything else is "Brighton" / Brighton and Hove.
-VENUE_PLACE = {'Glyndebourne': ('near Lewes', 'Lewes')}
+# Venues outside Brighton, or in Hove: how pages name the place, and the town
+# for schema.org. Everything else is "Brighton" / Brighton and Hove.
+VENUE_PLACE = {'Glyndebourne': ('near Lewes', 'Lewes'),
+               'The British Engineerium': ('Hove', 'Brighton and Hove')}
 
 
 def place(venue: str) -> str:
