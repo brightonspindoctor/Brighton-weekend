@@ -1814,6 +1814,11 @@
   "sold": null,
   "checked": "2026-10-31"
  },
+ "https://dicesaloon.co.uk/products/aos-age-of-sigmar-weekly-november-06-2026|2026-11-06|aos age of sigmar weekly": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-31"
+ },
  "https://dicesaloon.co.uk/products/arkham-horror-card-game-children-of-blood-campaign-blood-money-31-10|2026-10-31|arkham horror card game children of blood campaign blood money": {
   "url": null,
   "sold": null,
@@ -1890,6 +1895,11 @@
   "checked": "2026-10-31"
  },
  "https://dicesaloon.co.uk/products/kids-club-adventures-ages-8-15-november-20-2026|2026-11-20|kids club adventures ages 8 15": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-31"
+ },
+ "https://dicesaloon.co.uk/products/kids-club-adventures-ages-8-15-november-27-2026|2026-11-27|kids club adventures ages 8 15": {
   "url": null,
   "sold": null,
   "checked": "2026-10-31"
@@ -2971,6 +2981,11 @@
   "sold": true,
   "checked": "2026-10-31",
   "why": "seller data says sold out (www.atgtickets.com)"
+ },
+ "https://www.atgtickets.com/shows/xmas-on-the-dancefloor-starring-strictlys-gorka-marquez/theatre-royal-brighton/calendar/|2026-12-12|xmas on the dancefloor starring strictly s gorka m rquez": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-31"
  },
  "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/|2026-10-31|horrible histories awful egyptians": {
   "url": "https://www.atgtickets.com/shows/horrible-histories-brighton/",
@@ -4696,6 +4711,11 @@
   "url": "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly9nb29kLXNob3cuY28udWsvZXZlbnRzLzQxOTg/supplier/Miscellaneous/suppliedid/NUJCQTVBQjg3Njk1MkRGQTI5OUU2MDRENDYwQzFCRDA/ticketid/8120347/checksum/e920d8fa7b8bffdaa1b8f4661838e7ea/track/true?title=Hurly+Burly&badge=&venueId=57176",
   "sold": false,
   "checked": "2026-10-12"
+ },
+ "https://www.ents24.com/brighton-events/the-prince-albert/outpost-drive/7497763|2026-11-18|outpost drive": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-31"
  },
  "https://www.ents24.com/brighton-events/the-prince-albert|2026-11-01|stu larsen": {
   "url": "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvc3R1LWxhcnNlbi90aGUtcHJpbmNlLWFsYmVydC8zNjA5NzI5/supplier/SeeTickets/suppliedid/MzYwOTcyOQ/ticketid/7986662/checksum/563eefd6336d8711ec54b8dd23096cda/track/true?title=Stu+Larsen&badge=&venueId=24967",
@@ -7437,6 +7457,16 @@
   "checked": "2026-10-31"
  },
  "https://www.skiddle.com/whats-on/Brighton/Patterns-Brighton/Underground-audio---patterns-Brighton/42516765/|2026-11-07|underground audio patterns brighton": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-31"
+ },
+ "https://www.skiddle.com/whats-on/Brighton/The-British-Engineerium/ALFOS-at-the-Enginerium/42832547/|2026-11-28|alfos at the enginerium": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-10-31"
+ },
+ "https://www.skiddle.com/whats-on/Brighton/The-British-Engineerium/Grand-Winters-Makers-Fair-at-The-British-Engineerium/42678611/|2026-11-21|grand winters makers fair": {
   "url": null,
   "sold": null,
   "checked": "2026-10-31"

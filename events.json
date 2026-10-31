@@ -26,6 +26,7 @@
     "Resident",
     "Rossi Bar",
     "Shelter Hall",
+    "The British Engineerium",
     "The Brunswick",
     "The Folklore Rooms",
     "The Forge Comedy Club",
@@ -386,22 +387,22 @@
       "error": "",
       "sample": [
         {
-          "title": "Horrible Histories Brighton",
-          "date": "2026-10-31",
+          "title": "The Brown Suite",
+          "date": "2026-11-03",
           "time": "",
-          "link": "https://www.atgtickets.com/shows/horrible-histories-brighton/"
+          "link": "https://www.atgtickets.com/shows/the-brown-suite/theatre-royal-brighton/calendar/"
         },
         {
-          "title": "Horrible Histories Brighton",
-          "date": "2026-10-31",
+          "title": "The Brown Suite",
+          "date": "2026-11-03",
           "time": "",
-          "link": "https://www.atgtickets.com/shows/horrible-histories-brighton/"
+          "link": "https://www.atgtickets.com/shows/the-brown-suite/theatre-royal-brighton/calendar/"
         },
         {
-          "title": "Horrible Histories Brighton",
-          "date": "2026-10-31",
+          "title": "The Brown Suite",
+          "date": "2026-11-03",
           "time": "",
-          "link": "https://www.atgtickets.com/shows/horrible-histories-brighton/"
+          "link": "https://www.atgtickets.com/shows/the-brown-suite/theatre-royal-brighton/calendar/"
         }
       ]
     },
@@ -556,22 +557,22 @@
       "error": "",
       "sample": [
         {
-          "title": "Accessible Events Children & Family",
-          "date": "2026-11-01",
+          "title": "Van Morrison",
+          "date": "2026-10-31",
           "time": "",
-          "link": "https://brightondome.org/whats-on/L05-your-toys/"
+          "link": "https://brightondome.org/whats-on/LXZ-van-morrison/"
         },
         {
-          "title": "Accessible Events Children & Family",
-          "date": "2026-11-01",
+          "title": "Van Morrison",
+          "date": "2026-10-31",
           "time": "",
-          "link": "https://brightondome.org/whats-on/L05-your-toys/"
+          "link": "https://brightondome.org/whats-on/LXZ-van-morrison/"
         },
         {
-          "title": "Your Toys",
-          "date": "2026-11-01",
+          "title": "Van Morrison",
+          "date": "2026-10-31",
           "time": "",
-          "link": "https://brightondome.org/whats-on/L05-your-toys/"
+          "link": "https://brightondome.org/whats-on/LXZ-van-morrison/"
         }
       ]
     },
@@ -582,22 +583,22 @@
       "error": "",
       "sample": [
         {
-          "title": "Accessible Events Children & Family",
-          "date": "2026-11-01",
+          "title": "Van Morrison",
+          "date": "2026-10-31",
           "time": "",
-          "link": "https://brightondome.org/whats-on/L05-your-toys/"
+          "link": "https://brightondome.org/whats-on/LXZ-van-morrison/"
         },
         {
-          "title": "Accessible Events Children & Family",
-          "date": "2026-11-01",
+          "title": "Van Morrison",
+          "date": "2026-10-31",
           "time": "",
-          "link": "https://brightondome.org/whats-on/L05-your-toys/"
+          "link": "https://brightondome.org/whats-on/LXZ-van-morrison/"
         },
         {
-          "title": "Your Toys",
-          "date": "2026-11-01",
+          "title": "Van Morrison",
+          "date": "2026-10-31",
           "time": "",
-          "link": "https://brightondome.org/whats-on/L05-your-toys/"
+          "link": "https://brightondome.org/whats-on/LXZ-van-morrison/"
         }
       ]
     },
@@ -630,26 +631,46 @@
     {
       "venue": "Glyndebourne",
       "url": "https://www.glyndebourne.com/autumn/",
-      "events": 16,
+      "events": 15,
       "error": "",
       "sample": [
         {
-          "title": "View",
-          "date": "2026-10-31",
+          "title": "The Marriage of Figaro",
+          "date": "2026-11-01",
           "time": "16:00",
-          "link": "https://tickets.glyndebourne.com/syos/performance/28449"
+          "link": "https://tickets.glyndebourne.com/syos/performance/28441"
         },
         {
-          "title": "View",
-          "date": "2026-11-02",
+          "title": "The Marriage of Figaro",
+          "date": "2026-11-03",
           "time": "16:00",
-          "link": "https://tickets.glyndebourne.com/syos/performance/28450"
+          "link": "https://tickets.glyndebourne.com/syos/performance/28442"
         },
         {
-          "title": "View",
-          "date": "2026-11-07",
+          "title": "The Marriage of Figaro",
+          "date": "2026-11-06",
           "time": "16:00",
-          "link": "https://tickets.glyndebourne.com/syos/performance/28451"
+          "link": "https://tickets.glyndebourne.com/syos/performance/28443"
+        }
+      ]
+    },
+    {
+      "venue": "The British Engineerium",
+      "url": "https://www.skiddle.com/whats-on/Brighton/The-British-Engineerium/",
+      "events": 2,
+      "error": "",
+      "sample": [
+        {
+          "title": "ALFOS at the Enginerium",
+          "date": "2026-11-28",
+          "time": "16:30",
+          "link": "https://www.skiddle.com/whats-on/Brighton/The-British-Engineerium/ALFOS-at-the-Enginerium/42832547/"
+        },
+        {
+          "title": "Grand Winters Makers Fair at The British Engineerium",
+          "date": "2026-11-21",
+          "time": "10:30",
+          "link": "https://www.skiddle.com/whats-on/Brighton/The-British-Engineerium/Grand-Winters-Makers-Fair-at-The-British-Engineerium/42678611/"
         }
       ]
     }
@@ -760,6 +781,7 @@
       "ticket_url": "https://brightondome.org/whats-on/LXZ-van-morrison/",
       "last_seen": "2026-10-31",
       "also_ids": [
+        "2026-10-31-brighton-dome-concert-hall-van-morrison-2",
         "2026-10-31-brighton-dome-van-morrison"
       ],
       "venue_label": "Music",
@@ -2244,6 +2266,7 @@
       "last_seen": "2026-10-31",
       "also_ids": [
         "2026-11-05-brighton-dome-joshua-idehen-2",
+        "2026-11-05-brighton-dome-music-joshua-idehen-special-guests-murkage-dave-shanaz-thu-5-nov-brighton-dome-corn-exchange-from-27-25-fully-booked-find-tickets",
         "2026-11-05-brighton-dome-music-joshua-idehen-special-guests-murkage-dave-shanaz-thu-5-nov-brighton-dome-corn-exchange-from-27-25-limited-availability-find-tickets"
       ],
       "venue_label": "Music"
@@ -2827,6 +2850,19 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.daltonsbrighton.com/event-details/resurrection-club-night-2026-11-06-23-00",
+      "last_seen": "2026-10-31"
+    },
+    {
+      "id": "2026-11-06-dice-saloon-aos-age-of-sigmar-weekly",
+      "title": "AOS - Age Of Sigmar Weekly",
+      "date": "2026-11-06",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "",
+      "finish_time": "",
+      "category": "Other",
+      "ticket_url": "https://dicesaloon.co.uk/products/aos-age-of-sigmar-weekly-november-06-2026",
+      "promoter": "Dice Saloon",
       "last_seen": "2026-10-31"
     },
     {
@@ -6871,6 +6907,18 @@
       "last_seen": "2026-10-31"
     },
     {
+      "id": "2026-11-21-the-british-engineerium-grand-winters-makers-fair-at-the-british-engineerium",
+      "title": "Grand Winters Makers Fair",
+      "date": "2026-11-21",
+      "venue": "The British Engineerium",
+      "source": "venue",
+      "time": "10:30",
+      "finish_time": "17:00",
+      "category": "Other",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-British-Engineerium/Grand-Winters-Makers-Fair-at-The-British-Engineerium/42678611/",
+      "last_seen": "2026-10-31"
+    },
+    {
       "id": "2026-11-21-komedia-bogan-bingo-bottomless-brunch-sat-21-nov-2026-12-30-pm-doors-12-00-pm",
       "title": "Bogan Bingo Bottomless Brunch",
       "date": "2026-11-21",
@@ -8368,6 +8416,19 @@
       "last_seen": "2026-10-31"
     },
     {
+      "id": "2026-11-27-dice-saloon-kids-club-adventures-ages-8-15",
+      "title": "Kids Club Adventures ages 8-15",
+      "date": "2026-11-27",
+      "venue": "Dice Saloon",
+      "source": "discovery",
+      "time": "15:30",
+      "finish_time": "",
+      "category": "Family",
+      "ticket_url": "https://dicesaloon.co.uk/products/kids-club-adventures-ages-8-15-november-27-2026",
+      "promoter": "Dice Saloon",
+      "last_seen": "2026-10-31"
+    },
+    {
       "id": "2026-11-27-quarters-carnival-collective",
       "title": "Carnival Collective",
       "date": "2026-11-27",
@@ -8664,6 +8725,18 @@
       "finish_time": "",
       "category": "Club",
       "ticket_url": "https://www.axs.com/uk/events/1608481/day-fever-tickets",
+      "last_seen": "2026-10-31"
+    },
+    {
+      "id": "2026-11-28-the-british-engineerium-alfos-at-the-enginerium",
+      "title": "ALFOS at the Enginerium",
+      "date": "2026-11-28",
+      "venue": "The British Engineerium",
+      "source": "venue",
+      "time": "16:30",
+      "finish_time": "22:30",
+      "category": "Other",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-British-Engineerium/ALFOS-at-the-Enginerium/42832547/",
       "last_seen": "2026-10-31"
     },
     {
@@ -11597,15 +11670,16 @@
     },
     {
       "id": "2026-12-12-theatreroyalbrighton-xmas-on-the-dancefloor-with-gorka-marquez",
-      "title": "Xmas On The Dancefloor with Gorka Marquez",
+      "title": "Xmas on the Dancefloor - Starring Strictly's Gorka Márquez",
       "date": "2026-12-12",
       "venue": "Theatre Royal Brighton",
-      "category": "Theatre",
+      "source": "venue",
       "time": "",
-      "ticket_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
-      "source_url": "https://www.atgtickets.com/venues/theatre-royal-brighton/whats-on/",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "category": "Dance",
+      "ticket_url": "https://www.atgtickets.com/shows/xmas-on-the-dancefloor-starring-strictlys-gorka-marquez/theatre-royal-brighton/calendar/",
+      "last_seen": "2026-10-31",
+      "venue_label": "Dance"
     },
     {
       "id": "2026-12-13-brighton-centre-disney-s-the-muppet-christmas-carol-in-concert-live-to-film",
@@ -14798,6 +14872,18 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.alphabetbrighton.com/listings/feb-12-dargz-w-mc-nory-nyc",
+      "last_seen": "2026-10-31"
+    },
+    {
+      "id": "2027-02-12-brighton-dome-brighton-dome-backstage-tours",
+      "title": "Brighton Dome Backstage Tours",
+      "date": "2027-02-12",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "",
+      "finish_time": "",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/L17-brighton-dome-backstage-tours/",
       "last_seen": "2026-10-31"
     },
     {
@@ -18854,7 +18940,7 @@
   "discovery_report": {
     "calendars_loaded": 10,
     "calendars": 10,
-    "events_found": 986,
+    "events_found": 988,
     "rivalcults_unknown_venues": [
       "Brighton Playhouse",
       "East Street Tap",

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-the-british-engineerium-alfos-at-the-enginerium@brightonweek
+ end.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART:20261128T163000Z
+DTEND:20261128T223000Z
+SUMMARY:ALFOS at the Enginerium
+LOCATION:The British Engineerium\, Hove
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-British-
+ Engineerium/ALFOS-at-the-Enginerium/42832547/\nMore: https://brightonweeke
+ nd.co.uk/e/2026-11-28-the-british-engineerium-alfos-at-the-enginerium/
+URL:https://brightonweekend.co.uk/e/2026-11-28-the-british-engineerium-alfo
+ s-at-the-enginerium/
+END:VEVENT
+END:VCALENDAR

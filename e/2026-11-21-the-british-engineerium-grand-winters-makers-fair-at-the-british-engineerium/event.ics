@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-the-british-engineerium-grand-winters-makers-fair-at-the-bri
+ tish-engineerium@brightonweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART:20261121T103000Z
+DTEND:20261121T170000Z
+SUMMARY:Grand Winters Makers Fair
+LOCATION:The British Engineerium\, Hove
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-British-
+ Engineerium/Grand-Winters-Makers-Fair-at-The-British-Engineerium/42678611/
+ \nMore: https://brightonweekend.co.uk/e/2026-11-21-the-british-engineerium
+ -grand-winters-makers-fair-at-the-british-engineerium/
+URL:https://brightonweekend.co.uk/e/2026-11-21-the-british-engineerium-gran
+ d-winters-makers-fair-at-the-british-engineerium/
+END:VEVENT
+END:VCALENDAR
