@@ -6,12 +6,12 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-12-11-patterns-slag@brightonweekend.co.uk
 DTSTAMP:20261211T000000Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261212
+DTSTART:20261211T190000Z
+DTEND:20261211T220000Z
 SUMMARY:Slag
 LOCATION:Patterns\, Brighton
-DESCRIPTION:Tickets: https://dice.fm/event/6a9edd12b4211f0001e83894\nMore: 
- https://brightonweekend.co.uk/e/2026-12-11-patterns-slag/
+DESCRIPTION:Tickets: https://dice.fm/event/slag-11th-dec-patterns-brighton-
+ tickets\nMore: https://brightonweekend.co.uk/e/2026-12-11-patterns-slag/
 URL:https://brightonweekend.co.uk/e/2026-12-11-patterns-slag/
 END:VEVENT
 END:VCALENDAR
