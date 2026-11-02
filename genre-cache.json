@@ -9492,6 +9492,13 @@
   "act": "Reverend And The Makers",
   "checked": "2026-10-06"
  },
+ "reverend the makers": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Reverend The Makers",
+  "checked": "2026-11-02",
+  "v": 3
+ },
  "revolt": {
   "bucket": null,
   "reason": "16 artists share this name",

@@ -6,8 +6,8 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-17-green-door-store-dessie-magee@brightonweekend.co.uk
 DTSTAMP:20261117T000000Z
-DTSTART;VALUE=DATE:20261117
-DTEND;VALUE=DATE:20261118
+DTSTART:20261117T190000Z
+DTEND:20261117T220000Z
 SUMMARY:Dessie Magee
 LOCATION:Green Door Store\, Brighton
 DESCRIPTION:Tickets: https://dessiemageestore.myshopify.com/products/dessie

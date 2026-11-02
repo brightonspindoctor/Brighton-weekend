@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-19-chalk-secret-discotheque-wig-night@brightonweekend.co.uk
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Secret Discotheque Wig Night
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/event/secret-discotheque-wig-ni
+ ght\nMore: https://brightonweekend.co.uk/e/2026-11-19-chalk-secret-discoth
+ eque-wig-night/
+URL:https://brightonweekend.co.uk/e/2026-11-19-chalk-secret-discotheque-wig
+ -night/
+END:VEVENT
+END:VCALENDAR
