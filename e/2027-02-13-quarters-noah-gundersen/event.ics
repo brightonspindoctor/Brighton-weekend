@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-13-quarters-noah-gundersen@brightonweekend.co.uk
+DTSTAMP:20270213T000000Z
+DTSTART:20270213T183000Z
+DTEND:20270213T220000Z
+SUMMARY:Noah Gundersen
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/noah-gundersen/quarte
+ rs/3747908\nMore: https://brightonweekend.co.uk/e/2027-02-13-quarters-noah
+ -gundersen/
+URL:https://brightonweekend.co.uk/e/2027-02-13-quarters-noah-gundersen/
+END:VEVENT
+END:VCALENDAR

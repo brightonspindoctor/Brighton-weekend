@@ -223,6 +223,13 @@
   "act": "Abigail Lapell Show #2",
   "checked": "2026-10-07"
  },
+ "abigail lappell": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Abigail Lappell",
+  "checked": "2026-11-03",
+  "v": 3
+ },
  "abigail rose": {
   "bucket": null,
   "reason": "2 artists share this name",
@@ -8554,6 +8561,20 @@
   "act": "Noah Derksen live in Hove",
   "checked": "2026-10-07"
  },
+ "noah gundersen": {
+  "mbid": "c7162e23-1c2b-488b-b77a-f65824bfb24f",
+  "name": "Noah Gundersen",
+  "genres": [],
+  "wikidata": "Q16232610",
+  "wd_genres": [
+   "acoustic music"
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Noah Gundersen",
+  "checked": "2026-11-03",
+  "v": 3
+ },
  "noah guthrie": {
   "mbid": "af368247-36b7-48d7-9e47-2c996ff84147",
   "name": "Noah Guthrie",
@@ -9073,6 +9094,16 @@
   "act": "Pigeon",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "pillow fort": {
+  "mbid": "d762ef21-94bb-4b56-96d8-3f1a4bf97648",
+  "name": "Pillow Fort",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Pillow Fort",
+  "checked": "2026-11-03",
+  "v": 3
  },
  "pina palau": {
   "mbid": "b835cf9b-5605-406e-aade-d94cec2a1a2d",
@@ -10531,6 +10562,13 @@
   "reason": "no genre tags",
   "act": "Snayx",
   "checked": "2026-10-15",
+  "v": 3
+ },
+ "so good": {
+  "bucket": null,
+  "reason": "3 artists share this name",
+  "act": "So Good",
+  "checked": "2026-11-03",
   "v": 3
  },
  "sodomise pauline parker": {

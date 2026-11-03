@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-05-the-hope-ruin-pillow-fort-loose-leaf-free-entry@brightonweek
+ end.co.uk
+DTSTAMP:20261105T000000Z
+DTSTART:20261105T193000Z
+DTEND:20261105T220000Z
+SUMMARY:Pillow Fort + Loose Leaf
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/94hqa56f/pillow-fort-loose-l
+ eaf-free-entry\nMore: https://brightonweekend.co.uk/e/2026-11-05-the-hope-
+ ruin-pillow-fort-loose-leaf-free-entry/
+URL:https://brightonweekend.co.uk/e/2026-11-05-the-hope-ruin-pillow-fort-lo
+ ose-leaf-free-entry/
+END:VEVENT
+END:VCALENDAR

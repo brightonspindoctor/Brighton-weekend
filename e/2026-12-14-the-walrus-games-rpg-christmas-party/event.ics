@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-14-the-walrus-games-rpg-christmas-party@brightonweekend.co.uk
+DTSTAMP:20261214T000000Z
+DTSTART:20261214T180000Z
+DTEND:20261214T230000Z
+SUMMARY:Games & RPG Christmas Party
+LOCATION:The Walrus\, Brighton
+DESCRIPTION:Tickets: https://www.meetup.com/brighton-pub-boardgamers/events
+ /316992283/\nMore: https://brightonweekend.co.uk/e/2026-12-14-the-walrus-g
+ ames-rpg-christmas-party/
+URL:https://brightonweekend.co.uk/e/2026-12-14-the-walrus-games-rpg-christm
+ as-party/
+END:VEVENT
+END:VCALENDAR

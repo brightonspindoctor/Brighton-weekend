@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-11-the-folklore-rooms-samuel-nicholson@brightonweekend.co.uk
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Samuel Nicholson
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.visitbrighton.com/whats-on/samuel-nicholso
+ n-p2964351\nMore: https://brightonweekend.co.uk/e/2026-11-11-the-folklore-
+ rooms-samuel-nicholson/
+URL:https://brightonweekend.co.uk/e/2026-11-11-the-folklore-rooms-samuel-ni
+ cholson/
+END:VEVENT
+END:VCALENDAR

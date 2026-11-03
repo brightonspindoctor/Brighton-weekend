@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-24-the-hope-ruin-so-good@brightonweekend.co.uk
+DTSTAMP:20270324T000000Z
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+SUMMARY:So Good
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1669607/so-good-tickets\
+ nMore: https://brightonweekend.co.uk/e/2027-03-24-the-hope-ruin-so-good/
+URL:https://brightonweekend.co.uk/e/2027-03-24-the-hope-ruin-so-good/
+END:VEVENT
+END:VCALENDAR

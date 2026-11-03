@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-07-komedia-andrew-o-neill-s-history-of-punk@brightonweekend.co.
+ uk
+DTSTAMP:20270307T000000Z
+DTSTART:20270307T200000Z
+DTEND:20270307T230000Z
+SUMMARY:Andrew O’Neill’s History of Punk
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366902
+ 0/events/128675628\nMore: https://brightonweekend.co.uk/e/2027-03-07-komed
+ ia-andrew-o-neill-s-history-of-punk/
+URL:https://brightonweekend.co.uk/e/2027-03-07-komedia-andrew-o-neill-s-his
+ tory-of-punk/
+END:VEVENT
+END:VCALENDAR

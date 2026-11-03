@@ -6,15 +6,12 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-08-the-hope-ruin-kiwi-jr@brightonweekend.co.uk
 DTSTAMP:20261108T000000Z
-DTSTART;VALUE=DATE:20261108
-DTEND;VALUE=DATE:20261109
+DTSTART:20261108T190000Z
+DTEND:20261108T220000Z
 SUMMARY:Kiwi Jr.
 LOCATION:The Hope & Ruin\, Brighton
-DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
- ZXRzLmVudHMyNC5jb20vZXZlbnQva2l3aS1qci0vdGhlLWhvcGUtcnVpbi8zNjMxNDU5/suppl
- ier/SeeTickets/suppliedid/MzYzMTQ1OQ/ticketid/8047668/checksum/2bf3bc57d07
- 82592d204f37905209d5a/track/true?title=Kiwi+jr.&badge=&venueId=34826\nMore
- : https://brightonweekend.co.uk/e/2026-11-08-the-hope-ruin-kiwi-jr/
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/2xzlgxm2/kiwi-jr\nMore: http
+ s://brightonweekend.co.uk/e/2026-11-08-the-hope-ruin-kiwi-jr/
 URL:https://brightonweekend.co.uk/e/2026-11-08-the-hope-ruin-kiwi-jr/
 END:VEVENT
 END:VCALENDAR
