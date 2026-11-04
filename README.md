@@ -166,6 +166,9 @@ festivals into `events.json`.
   hourly pg_cron clean-up) is new: run it in the SQL Editor if it isn't live.
 - `v82` (Crew) replaces groups. `v83` drops the group tables and functions;
   run it 30 days after v82, once Crew has been checked.
+- `v84` adds read-only `*_named` views (e.g. `crew_named`, `usage_events_named`)
+  that show display names next to user IDs in the Table Editor. The app can't
+  read them.
 - Backups: an encrypted copy every night once two secrets are set; see
   `BACKUPS.md`.
 - When you change the database, add a new numbered file, run it in the
