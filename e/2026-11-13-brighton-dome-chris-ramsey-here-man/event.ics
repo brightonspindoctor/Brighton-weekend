@@ -6,8 +6,8 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-13-brighton-dome-chris-ramsey-here-man@brightonweekend.co.uk
 DTSTAMP:20261113T000000Z
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261114
+DTSTART:20261113T193000Z
+DTEND:20261113T230000Z
 SUMMARY:Chris Ramsey: Here\, Man!
 LOCATION:Brighton Dome\, Brighton
 DESCRIPTION:Tickets: https://brightondome.org/whats-on/LzJ-chris-ramsey-her

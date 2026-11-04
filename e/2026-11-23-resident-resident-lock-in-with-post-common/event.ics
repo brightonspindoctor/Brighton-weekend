@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-23-resident-resident-lock-in-with-post-common@brightonweekend.c
+ o.uk
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:Resident Lock In: with Post Common
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6adf79923e3624000176decc\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-23-resident-resident-lock-in-with-
+ post-common/
+URL:https://brightonweekend.co.uk/e/2026-11-23-resident-resident-lock-in-wi
+ th-post-common/
+END:VEVENT
+END:VCALENDAR

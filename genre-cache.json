@@ -748,6 +748,16 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "astra quartet": {
+  "mbid": "00cecf76-3480-440a-bfb8-975661c72701",
+  "name": "ASTRA Quartet",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Astra Quartet",
+  "checked": "2026-11-04",
+  "v": 3
+ },
  "astrid williamson": {
   "mbid": "238aa16e-fda5-47b6-b776-9d462ddfdc9d",
   "name": "Astrid Williamson",
@@ -1141,6 +1151,13 @@
   "act": "“Betrayer of Secrets”",
   "checked": "2026-10-07"
  },
+ "bex": {
+  "bucket": null,
+  "reason": "14 artists share this name",
+  "act": "Bex",
+  "checked": "2026-11-04",
+  "v": 3
+ },
  "bexblu and paul stephan": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -1251,6 +1268,13 @@
   "act": "Big Special The Joy Hotel, Bradley Taylor",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "big trio": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "BIG TRIO",
+  "checked": "2026-11-04",
+  "v": 3
  },
  "big trousers": {
   "mbid": "84ee2056-4d02-4689-aa7f-777b61b18ba0",
@@ -2154,6 +2178,16 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "church andrews and matt davies": {
+  "mbid": "fa01153f-3136-46f3-925d-3516e69a39c8",
+  "name": "Church Andrews & Matt Davies",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Church Andrews & Matt Davies",
+  "checked": "2026-11-04",
+  "v": 3
+ },
  "city baby attacked by rats": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -2266,6 +2300,13 @@
   "act": "Committee of Sleep",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "connolley hayes": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Connolley Hayes",
+  "checked": "2026-11-04",
+  "v": 3
  },
  "connor kelly and the time warp": {
   "mbid": "255297e4-5773-4766-ab68-87a899beb28d",
@@ -3250,6 +3291,13 @@
   "act": "Dexys Midnight Runners",
   "checked": "2026-10-07"
  },
+ "dianne and vito back in business": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Dianne and Vito Back in Business",
+  "checked": "2026-11-04",
+  "v": 3
+ },
  "dick valentine acoustic": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -3392,6 +3440,13 @@
   "checked": "2026-10-16",
   "v": 3
  },
+ "dj diffrent": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Dj Diffrent",
+  "checked": "2026-11-04",
+  "v": 3
+ },
  "dj freaking out the neighbourhood": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -3475,6 +3530,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "dutch and graft of the manor": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Dutch & Graft of The Manor",
+  "checked": "2026-11-04",
+  "v": 3
+ },
  "dutch criminal record": {
   "mbid": "8e4005d3-f5ab-4c63-8e21-2a47246862d6",
   "name": "Dutch Criminal Record",
@@ -3552,6 +3614,13 @@
   "act": "Ed Blunt",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "edie bens and friends": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Edie Bens & Friends",
+  "checked": "2026-11-04",
+  "v": 3
  },
  "editors": {
   "mbid": "0efe858c-89e5-4e47-906a-356fa953fd6e",
@@ -3846,6 +3915,13 @@
   "reason": "not in MusicBrainz",
   "act": "Evangeline Eastwood",
   "checked": "2026-10-22",
+  "v": 3
+ },
+ "evenings sons": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Evenings Sons",
+  "checked": "2026-11-04",
   "v": 3
  },
  "every hell": {
@@ -5161,8 +5237,9 @@
  "h and r ones 2 watch": {
   "bucket": null,
   "reason": "not in MusicBrainz",
-  "act": "H&R ONE’S 2 WATCH",
-  "checked": "2026-10-06"
+  "act": "H&R One’s 2 Watch",
+  "checked": "2026-11-04",
+  "v": 3
  },
  "h ngm n pen name sarah tonin sunbound": {
   "bucket": null,
@@ -7127,6 +7204,13 @@
   "checked": "2026-10-22",
   "v": 3
  },
+ "lavander": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Lavander",
+  "checked": "2026-11-04",
+  "v": 3
+ },
  "lavender": {
   "bucket": null,
   "reason": "8 artists share this name",
@@ -7850,6 +7934,13 @@
   "reason": "tagged",
   "act": "Midge Ure",
   "checked": "2026-10-07"
+ },
+ "mike the mic returns": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Mike the Mic returns!",
+  "checked": "2026-11-04",
+  "v": 3
  },
  "mildred": {
   "bucket": null,
@@ -8708,6 +8799,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "one world orchestra": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "One World Orchestra",
+  "checked": "2026-11-04",
+  "v": 3
+ },
  "open mic": {
   "bucket": null,
   "reason": "4 artists share this name",
@@ -9009,6 +9107,13 @@
   "reason": "tagged",
   "act": "Peter & the Test Tube Babies",
   "checked": "2026-10-31",
+  "v": 3
+ },
+ "peter doherty": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Peter Doherty",
+  "checked": "2026-11-04",
   "v": 3
  },
  "peter kay": {
@@ -9732,6 +9837,16 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "roots and soul": {
+  "mbid": "22bc6141-1835-4132-af87-d963dbf5abe0",
+  "name": "Roots and Soul",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Roots & Soul",
+  "checked": "2026-11-04",
+  "v": 3
+ },
  "rootweave": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -10170,6 +10285,16 @@
   "act": "Shaking Hand",
   "checked": "2026-10-07"
  },
+ "shallow honey": {
+  "mbid": "b9fcf205-0f57-48db-accb-ca945058349c",
+  "name": "Shallow Honey",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Shallow Honey",
+  "checked": "2026-11-04",
+  "v": 3
+ },
  "shanti celeste midland": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -10374,6 +10499,38 @@
   "reason": "no genre tags",
   "act": "SJ Mortimer",
   "checked": "2026-10-07"
+ },
+ "skepta": {
+  "mbid": "38474d18-9204-4f60-a137-1fcc6750b869",
+  "name": "Skepta",
+  "genres": [
+   {
+    "name": "dubstep",
+    "count": 1
+   },
+   {
+    "name": "grime",
+    "count": 3
+   },
+   {
+    "name": "hip hop",
+    "count": 2
+   },
+   {
+    "name": "house",
+    "count": 1
+   },
+   {
+    "name": "uk garage",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q164446",
+  "bucket": "Garage & Bass",
+  "reason": "tagged",
+  "act": "Skepta",
+  "checked": "2026-11-04",
+  "v": 3
  },
  "sky valley mistress": {
   "mbid": "8cb04822-147e-430b-83ad-321766fce295",
@@ -10811,6 +10968,58 @@
   "checked": "2026-10-13",
   "v": 3
  },
+ "spiritualized": {
+  "mbid": "65041e06-83d2-4987-ae52-c17a915fc82a",
+  "name": "Spiritualized",
+  "genres": [
+   {
+    "name": "art rock",
+    "count": 1
+   },
+   {
+    "name": "chamber pop",
+    "count": 3
+   },
+   {
+    "name": "dream pop",
+    "count": 3
+   },
+   {
+    "name": "neo-psychedelia",
+    "count": 7
+   },
+   {
+    "name": "noise pop",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   },
+   {
+    "name": "shoegaze",
+    "count": 2
+   },
+   {
+    "name": "space rock",
+    "count": 1
+   },
+   {
+    "name": "space rock revival",
+    "count": 3
+   },
+   {
+    "name": "symphonic rock",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q1144015",
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Spiritualized",
+  "checked": "2026-11-04",
+  "v": 3
+ },
  "spit nights": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -10859,6 +11068,23 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "st": {
+  "mbid": "553bc3a5-6f3c-403d-acff-9244eb7dde25",
+  "name": "ST",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "ST",
+  "checked": "2026-11-04",
+  "v": 3
+ },
+ "st ll": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "ST///LL",
+  "checked": "2026-11-04",
+  "v": 3
+ },
  "st paul and the broken bones": {
   "mbid": "4486702e-7b26-43fd-babc-c0df7be0e1d9",
   "name": "St. Paul & The Broken Bones",
@@ -10882,6 +11108,13 @@
   "reason": "not in MusicBrainz",
   "act": "St Paul The Broken Bones",
   "checked": "2026-10-19",
+  "v": 3
+ },
+ "star wars": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Star Wars",
+  "checked": "2026-11-04",
   "v": 3
  },
  "stardust": {
@@ -11069,6 +11302,13 @@
   "reason": "not in MusicBrainz",
   "act": "Sub-liminal Recordings",
   "checked": "2026-10-13",
+  "v": 3
+ },
+ "subject to availability": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Subject To Availability",
+  "checked": "2026-11-04",
   "v": 3
  },
  "sugar free birthday": {
@@ -13730,6 +13970,13 @@
   "checked": "2026-10-13",
   "v": 3
  },
+ "william d drake and his so called friends": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "William D Drake & His So-Called Friends",
+  "checked": "2026-11-04",
+  "v": 3
+ },
  "william jack": {
   "mbid": "c389fa4b-11e5-4cb6-b0b0-a887cc2308fe",
   "name": "William Jack",
@@ -13752,6 +13999,13 @@
   "act": "Wilswood Buoys Poisoning Your Mind",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "wilting flower": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Wilting Flower",
+  "checked": "2026-11-04",
+  "v": 3
  },
  "winter assault": {
   "bucket": null,
@@ -13792,6 +14046,13 @@
   "reason": "not in MusicBrainz",
   "act": "WPC",
   "checked": "2026-10-13",
+  "v": 3
+ },
+ "wyld rose showcase": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Wyld Rose Showcase",
+  "checked": "2026-11-04",
   "v": 3
  },
  "xlnt bhvr": {
@@ -13927,6 +14188,13 @@
   "reason": "not in MusicBrainz",
   "act": "Zac Schulze Gang",
   "checked": "2026-10-06"
+ },
+ "zeke": {
+  "bucket": null,
+  "reason": "9 artists share this name",
+  "act": "Zeke",
+  "checked": "2026-11-04",
+  "v": 3
  },
  "zelt and tashkezar": {
   "bucket": null,

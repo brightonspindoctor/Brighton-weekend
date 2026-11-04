@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-05-the-rose-hill-church-andrews-aka-kirk-barley-matt-davies-sup
+ port-from-lee-westwood@brightonweekend.co.uk
+DTSTAMP:20261205T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Church Andrews (aka Kirk Barley) & Matt Davies + support from Lee W
+ estwood
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/church-andrews-aka-kir
+ k-barley-matt-davies/\nMore: https://brightonweekend.co.uk/e/2026-12-05-th
+ e-rose-hill-church-andrews-aka-kirk-barley-matt-davies-support-from-lee-we
+ stwood/
+URL:https://brightonweekend.co.uk/e/2026-12-05-the-rose-hill-church-andrews
+ -aka-kirk-barley-matt-davies-support-from-lee-westwood/
+END:VEVENT
+END:VCALENDAR

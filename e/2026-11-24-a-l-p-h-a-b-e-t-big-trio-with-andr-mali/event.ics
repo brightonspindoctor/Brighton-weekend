@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-24-a-l-p-h-a-b-e-t-big-trio-with-andr-mali@brightonweekend.co.u
+ k
+DTSTAMP:20261124T000000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:BIG TRIO with AnDré Mali
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/Q29fe5eb351f\nMore: https://brigh
+ tonweekend.co.uk/e/2026-11-24-a-l-p-h-a-b-e-t-big-trio-with-andr-mali/
+URL:https://brightonweekend.co.uk/e/2026-11-24-a-l-p-h-a-b-e-t-big-trio-wit
+ h-andr-mali/
+END:VEVENT
+END:VCALENDAR

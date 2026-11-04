@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-05-chalk-royal-blood-early@brightonweekend.co.uk
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Royal Blood (Early)
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/event/royal-blood-early-2026-11
+ -06\nMore: https://brightonweekend.co.uk/e/2026-11-05-chalk-royal-blood-ea
+ rly/
+URL:https://brightonweekend.co.uk/e/2026-11-05-chalk-royal-blood-early/
+END:VEVENT
+END:VCALENDAR

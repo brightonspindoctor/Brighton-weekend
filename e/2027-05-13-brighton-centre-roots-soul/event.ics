@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-13-brighton-centre-roots-soul@brightonweekend.co.uk
+DTSTAMP:20270513T000000Z
+DTSTART;VALUE=DATE:20270513
+DTEND;VALUE=DATE:20270514
+SUMMARY:Roots & Soul
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/whats-on/2027/roots-soul/
+ \nMore: https://brightonweekend.co.uk/e/2027-05-13-brighton-centre-roots-s
+ oul/
+URL:https://brightonweekend.co.uk/e/2027-05-13-brighton-centre-roots-soul/
+END:VEVENT
+END:VCALENDAR

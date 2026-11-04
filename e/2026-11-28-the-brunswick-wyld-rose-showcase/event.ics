@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-the-brunswick-wyld-rose-showcase@brightonweekend.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Wyld Rose Showcase
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/wyld-rose
+ -showcase-1\nMore: https://brightonweekend.co.uk/e/2026-11-28-the-brunswic
+ k-wyld-rose-showcase/
+URL:https://brightonweekend.co.uk/e/2026-11-28-the-brunswick-wyld-rose-show
+ case/
+END:VEVENT
+END:VCALENDAR

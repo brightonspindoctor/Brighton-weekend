@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-03-the-hope-ruin-zeke-us-stay-sick-19th-anniversary-show@bright
+ onweekend.co.uk
+DTSTAMP:20270403T000000Z
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270404
+SUMMARY:Zeke (US) – STAY SICK 19th Anniversary Show
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/4nujavyq/zeke-us-stay-sick-1
+ 9th-anniversary-show\nMore: https://brightonweekend.co.uk/e/2027-04-03-the
+ -hope-ruin-zeke-us-stay-sick-19th-anniversary-show/
+URL:https://brightonweekend.co.uk/e/2027-04-03-the-hope-ruin-zeke-us-stay-s
+ ick-19th-anniversary-show/
+END:VEVENT
+END:VCALENDAR

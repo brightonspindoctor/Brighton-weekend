@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-04-brighton-centre-benidorm-the-reunion@brightonweekend.co.uk
+DTSTAMP:20270304T000000Z
+DTSTART;VALUE=DATE:20270304
+DTEND;VALUE=DATE:20270305
+SUMMARY:Benidorm The Reunion
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/whats-on/2027/benidorm-th
+ e-reunion/\nMore: https://brightonweekend.co.uk/e/2027-03-04-brighton-cent
+ re-benidorm-the-reunion/
+URL:https://brightonweekend.co.uk/e/2027-03-04-brighton-centre-benidorm-the
+ -reunion/
+END:VEVENT
+END:VCALENDAR

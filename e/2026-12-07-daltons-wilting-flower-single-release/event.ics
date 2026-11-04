@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-07-daltons-wilting-flower-single-release@brightonweekend.co.uk
+DTSTAMP:20261207T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Wilting Flower: Single Release
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Daltons-Brig
+ hton/Wiltingflower-Live-at-Daltons/43133280/?utm_source=ig&utm_medium=soci
+ al&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA
+ 85MzY2MTk3NDMzOTI0NTkAAafJKpTH20mfgr3gk1Jl09psfg99jcCJEq4xJ326bN89X1S9Vyhb
+ i0V_5lhCJQ_aem_KY4b-twCEvQBijf6KHPCxw&utm_id=97760_v0_s00_e0_tv3_a1denngt6
+ e3me4\nMore: https://brightonweekend.co.uk/e/2026-12-07-daltons-wilting-fl
+ ower-single-release/
+URL:https://brightonweekend.co.uk/e/2026-12-07-daltons-wilting-flower-singl
+ e-release/
+END:VEVENT
+END:VCALENDAR

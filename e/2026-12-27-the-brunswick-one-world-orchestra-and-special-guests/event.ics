@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-27-the-brunswick-one-world-orchestra-and-special-guests@brighto
+ nweekend.co.uk
+DTSTAMP:20261227T000000Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261228
+SUMMARY:One World Orchestra and special guests
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/one-world
+ -orchestra-and-special-guests\nMore: https://brightonweekend.co.uk/e/2026-
+ 12-27-the-brunswick-one-world-orchestra-and-special-guests/
+URL:https://brightonweekend.co.uk/e/2026-12-27-the-brunswick-one-world-orch
+ estra-and-special-guests/
+END:VEVENT
+END:VCALENDAR

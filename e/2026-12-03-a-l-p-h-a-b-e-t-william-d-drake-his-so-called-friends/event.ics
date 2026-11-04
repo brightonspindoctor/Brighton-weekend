@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-03-a-l-p-h-a-b-e-t-william-d-drake-his-so-called-friends@bright
+ onweekend.co.uk
+DTSTAMP:20261203T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:William D Drake & His So-Called Friends
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/H98f4e975cb3\nMore: https://brigh
+ tonweekend.co.uk/e/2026-12-03-a-l-p-h-a-b-e-t-william-d-drake-his-so-calle
+ d-friends/
+URL:https://brightonweekend.co.uk/e/2026-12-03-a-l-p-h-a-b-e-t-william-d-dr
+ ake-his-so-called-friends/
+END:VEVENT
+END:VCALENDAR

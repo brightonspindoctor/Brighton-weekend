@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-30-chalk-skepta@brightonweekend.co.uk
+DTSTAMP:20261130T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Skepta
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/partner/tickets/event/ok22ly-skepta-al
+ bum-release-show-qa-30th-nov-chalk-brighton-tickets?dice_id=10920833&dice_
+ channel=web&dice_tags=organic&dice_campaign=CHALK+&dice_feature=mio_market
+ ing&_branch_match_id=1645847611121825539&utm_source=w\nMore: https://brigh
+ tonweekend.co.uk/e/2026-11-30-chalk-skepta/
+URL:https://brightonweekend.co.uk/e/2026-11-30-chalk-skepta/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-the-rose-hill-mike-the-mic-returns@brightonweekend.co.uk
+DTSTAMP:20261204T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Mike the Mic returns!
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/mike-the-mic-returns/\
+ nMore: https://brightonweekend.co.uk/e/2026-12-04-the-rose-hill-mike-the-m
+ ic-returns/
+URL:https://brightonweekend.co.uk/e/2026-12-04-the-rose-hill-mike-the-mic-r
+ eturns/
+END:VEVENT
+END:VCALENDAR

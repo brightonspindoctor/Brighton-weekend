@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-20-concorde-2-todd-terry@brightonweekend.co.uk
+DTSTAMP:20270220T000000Z
+DTSTART:20270220T190000Z
+DTEND:20270220T220000Z
+SUMMARY:Todd Terry
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1684118/todd-terry-ticke
+ ts\nMore: https://brightonweekend.co.uk/e/2027-02-20-concorde-2-todd-terry
+ /
+URL:https://brightonweekend.co.uk/e/2027-02-20-concorde-2-todd-terry/
+END:VEVENT
+END:VCALENDAR

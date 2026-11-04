@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-17-the-hope-ruin-h-r-one-s-2-watch-patrick-circus-krumpets-rhia
+ nnon-ruthven@brightonweekend.co.uk
+DTSTAMP:20261117T000000Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:H&R One’s 2 Watch: Patrick Circus + Krumpets + Rhiannon Ruthven
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/hr-ones-2-watch-patrick-cir
+ cus-krumpets-rhiannon-ruthven/\nMore: https://brightonweekend.co.uk/e/2026
+ -11-17-the-hope-ruin-h-r-one-s-2-watch-patrick-circus-krumpets-rhiannon-ru
+ thven/
+URL:https://brightonweekend.co.uk/e/2026-11-17-the-hope-ruin-h-r-one-s-2-wa
+ tch-patrick-circus-krumpets-rhiannon-ruthven/
+END:VEVENT
+END:VCALENDAR

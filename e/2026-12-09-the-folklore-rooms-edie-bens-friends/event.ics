@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-09-the-folklore-rooms-edie-bens-friends@brightonweekend.co.uk
+DTSTAMP:20261209T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Edie Bens & Friends
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/yy22g2-edie-bens-friends-christm
+ as-party-9th-dec-the-folklore-rooms-brighton-tickets\nMore: https://bright
+ onweekend.co.uk/e/2026-12-09-the-folklore-rooms-edie-bens-friends/
+URL:https://brightonweekend.co.uk/e/2026-12-09-the-folklore-rooms-edie-bens
+ -friends/
+END:VEVENT
+END:VCALENDAR

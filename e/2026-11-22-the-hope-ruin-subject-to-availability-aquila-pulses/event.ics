@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-22-the-hope-ruin-subject-to-availability-aquila-pulses@brighton
+ weekend.co.uk
+DTSTAMP:20261122T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Subject To Availability + Aquila + Pulses
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/mvlvr8uu/subject-to-availabi
+ lity-aquila-pulses\nMore: https://brightonweekend.co.uk/e/2026-11-22-the-h
+ ope-ruin-subject-to-availability-aquila-pulses/
+URL:https://brightonweekend.co.uk/e/2026-11-22-the-hope-ruin-subject-to-ava
+ ilability-aquila-pulses/
+END:VEVENT
+END:VCALENDAR

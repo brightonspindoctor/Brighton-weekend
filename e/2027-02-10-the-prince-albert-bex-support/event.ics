@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-10-the-prince-albert-bex-support@brightonweekend.co.uk
+DTSTAMP:20270210T000000Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:Bex + support
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.loutpromotions.co.uk/events/0805c7be-8653-
+ 4d74-8f17-e509e210878f?fbclid=IwY2xjawVVcBhleHRuA2FlbQIxMABwZG9mAWJyaWQRMD
+ NkSnFWNmVFanVTQkhZQlBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEfkuzqbEaYVOaq
+ 6mp1SM6D3WfHopqI00KkX_Pdg0ZsdnoeThw9NmqBq6rtg0w_aem_RbCW0N5D0OHYF54Xfyac2Q
+ \nMore: https://brightonweekend.co.uk/e/2027-02-10-the-prince-albert-bex-s
+ upport/
+URL:https://brightonweekend.co.uk/e/2027-02-10-the-prince-albert-bex-suppor
+ t/
+END:VEVENT
+END:VCALENDAR

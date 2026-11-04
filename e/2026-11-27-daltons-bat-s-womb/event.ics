@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-daltons-bat-s-womb@brightonweekend.co.uk
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Bat's Womb
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/bats-wom
+ b-5\nMore: https://brightonweekend.co.uk/e/2026-11-27-daltons-bat-s-womb/
+URL:https://brightonweekend.co.uk/e/2026-11-27-daltons-bat-s-womb/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-16-concorde-2-dance-for-peace@brightonweekend.co.uk
+DTSTAMP:20270116T000000Z
+DTSTART:20270116T170000Z
+DTEND:20270116T200000Z
+SUMMARY:Dance For Peace
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1684105/dance-for-peace-
+ rave-resist-for-palestine-tickets\nMore: https://brightonweekend.co.uk/e/2
+ 027-01-16-concorde-2-dance-for-peace/
+URL:https://brightonweekend.co.uk/e/2027-01-16-concorde-2-dance-for-peace/
+END:VEVENT
+END:VCALENDAR
