@@ -36,16 +36,22 @@ phone's home screen.
 - **Guests:** anyone can browse without a login. Marking events, Happenings and
   adding events ask for a free login, and the app carries out what they tried
   once they've signed up.
-- **Groups and Happenings:** every group has a PIN (6 digits for groups made
-  from v80 on, 3 for older ones); invite links carry it. Each group accepts at
-  most 10 wrong PINs a day. Happenings shows what people in your groups are interested in or going to,
-  with the list of people in your groups at the bottom.
+- **Crew and Happenings (v82):** everyone has a unique @handle (made from
+  their name, e.g. `jonny-4821`, and changeable in Settings). You add someone
+  by typing their exact handle, or by opening their crew link (`?crew=handle`),
+  and they accept or decline in Settings → Your crew. Looking someone up shows
+  only their name, handle and icon; lookups and requests are limited to 30 an
+  hour. A declined request still shows as sent to the sender. Happenings shows
+  what your crew are interested in or going to, with your crew at the bottom.
+  Groups were retired in v82: everyone who shared a group was put in each
+  other's crew, and old `?group_invite=` links now just say so.
 - **You might like:** the top of Happenings suggests up to three events in the
   next six months by the same bands, or in the same genres, as things you've
   marked Interested or Going. Bands are matched on the title; genres only when
   both events have a known genre. *Not for me* on a suggestion stops that act
   being suggested again. Shuffled each time the app is opened; hidden when
-  nothing matches. Shown even if you're not in a group.
+  nothing matches. Shown even if your crew is empty. Settings → Suggestions
+  switches them off on that device (`bw_recs_off` in localStorage).
 - **Community genres:** a music or club night with no genre has *Add a genre*
   in its ⋯ menu. Signed-in users pick from the fixed genre list
   (`GENRE_ORDER`); the most-picked genre shows for everyone. Genres from the
@@ -55,12 +61,14 @@ phone's home screen.
   the event can be removed (Online Safety Act; records and review dates are in
   the online safety records doc in the project).
 - **Settings:** venues and days, colour scheme (*Seafront after dark* or
-  *Seafront by day*), profile icon, groups, privacy (*Count my visits*: off
+  *Seafront by day*), profile icon, your crew (handle, add someone, requests, crew list),
+  suggestions on or off, privacy (*Count my visits*: off
   means no guest ID and no visit or ticket-tap counting from that device),
   account, install the app.
 - **Messages:** confirmations and errors use in-app toasts and dialogs, not the
   browser's pop-ups. The Welcome back screen only appears when friends have new
-  plans or someone joined a group; the groups step is shown once at sign-up.
+  plans, someone joined your crew or someone has asked to join it. Settings
+  shows a dot while a crew request is waiting.
 
 ## How it's built
 
@@ -156,6 +164,8 @@ festivals into `events.json`.
   (guest visits), `v73` (venue list) and `v76` (usage counts) are live but not
   yet folded into `schema.sql`. `v77` (reports of community events and an
   hourly pg_cron clean-up) is new: run it in the SQL Editor if it isn't live.
+- `v82` (Crew) replaces groups. `v83` drops the group tables and functions;
+  run it 30 days after v82, once Crew has been checked.
 - Backups: an encrypted copy every night once two secrets are set; see
   `BACKUPS.md`.
 - When you change the database, add a new numbered file, run it in the

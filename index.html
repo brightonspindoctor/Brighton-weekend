@@ -12,7 +12,7 @@
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://brightonweekend.co.uk/">
 <meta property="og:title" content="Brighton Weekend: make the most of yours">
-<meta property="og:description" content="Gigs, comedy, clubs and theatre in Brighton &amp; Hove, planned with your groups.">
+<meta property="og:description" content="Gigs, comedy, clubs and theatre in Brighton &amp; Hove, planned with your crew.">
 <meta property="og:image" content="https://brightonweekend.co.uk/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -279,7 +279,7 @@ input:not([type=checkbox]):not([type=radio]),select,textarea{width:100%;padding:
 input:focus,select:focus,textarea:focus{border-color:var(--bw-teal);box-shadow:var(--bw-focus)}
 textarea{min-height:70px;resize:vertical}
 input[type=checkbox]{accent-color:var(--bw-teal);width:20px;height:20px;margin:0}
-.form-stack,.group-form,.custom-event-form{display:grid;gap:12px}
+.form-stack,.custom-event-form{display:grid;gap:12px}
 .form-row,.custom-event-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px}
 .form-row>label,.custom-event-row>label{min-width:0}
 input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance:none;min-height:46px}
@@ -311,8 +311,6 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .install-btn{width:100%}
 #installHint{margin-top:var(--bw-space-2)}
 .install-area h3{margin-bottom:var(--bw-space-3)}
-.settings-groups #manageGroups{margin-top:var(--bw-space-4)}
-.settings-groups .group-manager-row:last-child{border-bottom:0}
 .support-btn{display:inline-flex;align-items:center;gap:6px;padding:11px 15px;border-radius:var(--bw-radius-md);background:var(--bw-coral);color:var(--bw-coral-ink);font-weight:800;text-decoration:none}
 .settings-links{display:flex;gap:var(--bw-space-4);flex-wrap:wrap;padding:var(--bw-space-1) 2px var(--bw-space-4)}
 .settings-links a{color:var(--bw-muted)}
@@ -329,16 +327,26 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .profile-icon-option.selected img{box-shadow:0 0 0 2px var(--bw-teal)}
 .profile-icon-option.selected::after{content:"✓";position:absolute;right:-2px;bottom:-2px;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;background:var(--bw-teal);color:var(--bw-abyss);font-size:11px;font-weight:800;box-shadow:0 0 0 2px var(--bw-card)}
 
-/* Groups */
-.group-panel{margin-top:10px;padding-top:12px;border-top:1px solid var(--bw-line)}
-.group-panel h3{margin-bottom:4px}
-.group-list{display:grid;gap:8px;max-height:230px;overflow:auto;text-align:left}
-.group-choice{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid var(--bw-line);border-radius:var(--bw-radius-lg);background:var(--bw-navy)}.group-choice>div{flex:1;min-width:0;overflow-wrap:anywhere}.group-choice>span{flex:none}
-.group-choice .btn-chip{margin-left:auto;flex:none}
-.group-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0 14px}
-.group-manager-row{display:flex;align-items:center;justify-content:space-between;gap:var(--bw-space-3);padding:var(--bw-space-3) 0;border-bottom:1px solid var(--bw-line)}
-.row-actions{display:flex;gap:var(--bw-space-2);flex-shrink:0}.group-manager-row{flex-wrap:wrap}.group-manager-row>div:first-child{flex:1 1 150px;min-width:0;overflow-wrap:anywhere}.group-manager-row .row-actions{margin-left:auto}
-.nowrap{white-space:nowrap}.pin-display{font-weight:800;letter-spacing:.15em;color:var(--bw-going-fg)}
+/* Crew */
+.crew-handle{display:flex;align-items:center;flex-wrap:wrap;gap:var(--bw-space-2);padding:var(--bw-space-2) 0 var(--bw-space-3)}
+.crew-handle strong{color:var(--bw-cream);overflow-wrap:anywhere}
+.crew-handle .row-actions{margin-left:auto}
+.crew-form{display:flex;gap:var(--bw-space-2);align-items:center;margin:var(--bw-space-2) 0}
+.crew-form input:not([type=checkbox]){flex:1;min-width:0;width:auto}
+.crew-form .btn{flex:none}
+.settings-card .crew-form .btn+.btn{margin-left:0}
+.crew-section h4{display:flex;align-items:center;gap:var(--bw-space-2);margin:var(--bw-space-5) 0 var(--bw-space-1)}
+.crew-row{display:flex;align-items:center;flex-wrap:wrap;gap:var(--bw-space-3);padding:var(--bw-space-3) 0;border-bottom:1px solid var(--bw-line)}
+.crew-row:last-child{border-bottom:0}
+.crew-row img{width:36px;height:36px;flex:none}
+.crew-row>div:not(.row-actions){flex:1 1 120px;min-width:0;overflow-wrap:anywhere}
+.crew-row .row-actions{margin-left:auto;align-items:center}
+.crew-handle-text{display:block;font-size:var(--bw-text-xs);font-weight:500;color:var(--bw-muted)}
+#crewFound:empty{display:none}
+#crewFound .crew-row{border-bottom:0}
+.row-actions{display:flex;gap:var(--bw-space-2);flex-shrink:0}
+.crew-roster .people{margin-top:var(--bw-space-2)}
+.nowrap{white-space:nowrap}
 .group-heading{display:flex;align-items:center;gap:var(--bw-space-2);margin:var(--bw-space-4) 0 var(--bw-space-2);font-size:var(--bw-text-sm);font-weight:700;color:var(--bw-muted)}
 .member-count{font-size:var(--bw-text-xs);border:1px solid var(--bw-line);border-radius:var(--bw-radius-pill);padding:2px 7px}
 
@@ -421,8 +429,6 @@ button.genre-tag::after,button.promoter-sticker::after{content:'';position:absol
 /* Guest mode: browsing without a login. */
 body.guest .member-only,body:not(.guest) .guest-only{display:none}
 .welcome-info a:hover{text-decoration:underline}
-#groupStep .group-panel{text-align:left}
-#partyOnBtn{margin-top:6px;width:100%}
 
 /* ---------- 13. Landing page ---------- */
 #home{position:fixed;inset:0;z-index:15;overflow:auto;display:grid;place-items:center;padding:20px;padding-top:max(20px,env(safe-area-inset-top));background:var(--bw-abyss)}
@@ -549,32 +555,6 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
         <button type="submit" class="btn btn-primary">Continue</button>
       </form>
     </div>
-    <div id="groupStep" class="hidden">
-      <h2>Your groups</h2>
-      <p>Choose your circles. Happenings only shows activity from people who share a group with you.</p>
-      <div id="onboardingGroups" class="group-list"></div>
-      <div id="groupEmpty" class="group-meta">You can join more than one group.</div>
-      <div class="group-actions">
-        <button type="button" class="btn btn-secondary" id="showCreateGroup">+ Create</button>
-        <button type="button" class="btn btn-secondary" id="showJoinGroup">Join</button>
-      </div>
-      <div id="createGroupPanel" class="group-panel hidden">
-        <div class="group-form">
-          <label>Group name<input id="newGroupName" maxlength="50" placeholder="e.g. Brighton Crew"></label>
-          <div class="group-meta">Every group gets a PIN. Send friends an invite link and they join in one tap, no PIN to type. Groups hold up to 25 people.</div>
-          <button type="button" id="createGroupBtn" class="btn btn-primary">Create group</button>
-        </div>
-      </div>
-      <div id="joinGroupPanel" class="group-panel hidden">
-        <div class="group-form">
-          <div class="group-meta">Ask someone in the group for its name and PIN, or for an invite link.</div>
-          <label>Group name<input id="privateGroupName" maxlength="50" placeholder="Exact group name" autocomplete="off"></label>
-          <label>PIN<input id="privateGroupPin" inputmode="numeric" pattern="[0-9]{3}([0-9]{3})?" maxlength="6" placeholder="123456" autocomplete="off"></label>
-          <button type="button" id="joinPrivateBtn" class="btn btn-primary">Join group</button>
-        </div>
-      </div>
-      <button type="button" id="partyOnBtn" class="btn btn-primary">Party on</button>
-    </div>
   </div>
 </section>
 
@@ -674,12 +654,20 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
 <main id="venuesTab" class="wrap app-main hidden">
 <h2>Settings</h2>
 <div class="settings-section"><div class="section-head venue-settings-head"><div><h3>Venues</h3></div><div class="venue-actions"><button type="button" class="btn btn-chip" id="selectComedyVenues">Comedy venues</button><button type="button" class="btn btn-chip" id="selectPubVenues">Pubs</button><button type="button" class="btn btn-chip" id="selectAllVenues">Select all</button><button type="button" class="btn btn-chip" id="unselectAllVenues">Unselect all</button></div></div><div id="venueList"></div><div class="day-preferences"><h4>Days</h4><div id="dayGrid" class="day-grid"></div></div></div>
-<div class="settings-card member-only"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" class="avatar" src="profile-icons/standardized/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div><div class="settings-card settings-groups member-only"><h3>Groups</h3><div id="groupManager"></div><button id="manageGroups" class="btn btn-secondary">Manage groups</button></div>
-<div class="settings-card guest-only"><h3>Account</h3><p class="note">Create a free login to mark events, join groups and see what your friends are planning.</p><button id="guestSignIn" type="button" class="btn btn-primary">Create a free login</button></div>
+<div class="settings-card member-only"><h3>Your icon</h3><div class="profile-current"><img id="currentProfileIcon" class="avatar" src="profile-icons/standardized/fox.png" alt="Your profile icon"><div><strong id="currentProfileIconName">Fox</strong></div></div><div id="profileIconGrid" class="profile-icon-grid"></div></div>
+<div class="settings-card member-only" id="crewSettings"><h3>Your crew</h3><p class="note">You and your crew see what each other are interested in and going to. Someone looking up your handle sees only your name and icon.</p>
+<div class="crew-handle"><span class="note">Your handle</span><strong id="myHandle"></strong><div class="row-actions"><button type="button" class="btn btn-chip" id="editHandle">Change</button><button type="button" class="btn btn-chip" id="shareHandle">Share</button></div></div>
+<form id="handleForm" class="crew-form hidden"><input id="handleInput" maxlength="21" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="Your new handle" placeholder="your-handle"><button type="submit" class="btn btn-primary">Save</button><button type="button" class="btn btn-ghost" id="cancelHandle">Cancel</button></form>
+<div class="crew-section"><h4>Add someone</h4><p class="note">Ask them for their handle, or send them yours.</p><form id="crewAddForm" class="crew-form"><input id="crewAddInput" maxlength="21" autocomplete="off" autocapitalize="none" spellcheck="false" aria-label="Their handle" placeholder="@their-handle"><button type="submit" class="btn btn-primary" id="crewFind">Find</button></form><div id="crewFound"></div></div>
+<div class="crew-section"><h4>Crew requests <span class="member-count" id="crewRequestCount">0</span></h4><div id="crewRequestList"></div></div>
+<div class="crew-section"><h4>In your crew <span class="member-count" id="crewCount">0</span></h4><div id="crewList"></div></div>
+</div>
+<div class="settings-card guest-only"><h3>Account</h3><p class="note">Create a free login to mark events, build your crew and see what your friends are planning.</p><button id="guestSignIn" type="button" class="btn btn-primary">Create a free login</button></div>
 <div class="settings-card"><h3>Colour scheme</h3><div class="theme-choices" role="radiogroup" aria-label="Colour scheme"><button type="button" class="theme-choice" role="radio" data-theme-choice="dark"><span class="theme-dots" aria-hidden="true"><i></i><i></i><i></i></span>Seafront after dark</button><button type="button" class="theme-choice" role="radio" data-theme-choice="light"><span class="theme-dots" aria-hidden="true"><i></i><i></i><i></i></span>Seafront by day</button></div></div>
+<div class="settings-card member-only"><h3>Suggestions</h3><label class="venue-row count-visits"><span>Show “You might like”</span><input type="checkbox" id="showRecs" checked></label><p class="note">Up to three events on Happenings picked from what you've marked Interested or Going. This setting is for this device.</p></div>
 <div class="settings-card"><h3>Privacy</h3><label class="venue-row count-visits"><span>Count my visits</span><input type="checkbox" id="countVisits" checked></label><p class="note">Counts visits, Get tickets taps and app installs from this device, so we can see how the app is used. Switch it off and this device stops being counted. <a href="privacy.html" target="_blank" rel="noopener">Privacy policy</a></p></div>
 <div class="settings-card"><h3>Support Brighton Weekend</h3><p class="note">If you enjoy using the app, you can buy me a coffee to help keep it running and improving.</p><a class="support-btn" href="https://www.buymeacoffee.com/jonnysadler" target="_blank" rel="noopener">☕ Buy me a coffee ↗</a></div>
-<div class="settings-card member-only"><h3>Account</h3><button id="changeName" class="btn btn-secondary">Change my name</button> <button id="signOut" class="btn btn-ghost">Sign out</button><div id="accountEmail" class="group-meta"></div><div class="danger-zone"><h4>Delete my account</h4><p class="note">Permanently deletes your profile, your Interested and Going choices, your group memberships and any events you added. This can't be undone.</p><button id="deleteAccount" type="button" class="btn btn-danger">Delete my account</button></div></div>
+<div class="settings-card member-only"><h3>Account</h3><button id="changeName" class="btn btn-secondary">Change my name</button> <button id="signOut" class="btn btn-ghost">Sign out</button><div id="accountEmail" class="group-meta"></div><div class="danger-zone"><h4>Delete my account</h4><p class="note">Permanently deletes your profile, your Interested and Going choices, your crew and crew requests, and any events you added. This can't be undone.</p><button id="deleteAccount" type="button" class="btn btn-danger">Delete my account</button></div></div>
 <div class="settings-card install-area"><h3>Install the app</h3><button id="installApp" class="btn btn-primary install-btn">↓ Add to Home Screen</button><div id="installHint" class="group-meta">Install Brighton Weekend for quick app-style access.</div></div>
 <div class="settings-links"><a href="/tonight/">Tonight</a><a href="/this-weekend/">This weekend</a><a href="/gigs/">Gigs</a><a href="/comedy/">Comedy</a><a href="/club-nights/">Club nights</a><a href="/theatre/">Theatre</a><a href="/venues/">Venues</a></div>
 <div class="settings-links"><a href="about.html" target="_blank" rel="noopener">About</a><a href="privacy.html" target="_blank" rel="noopener">Privacy</a><a href="terms.html" target="_blank" rel="noopener">Terms</a></div>
@@ -692,8 +680,8 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
 /* Brighton Weekend app logic. Loaded by index.html after supabase-js. */
 (() => {
 'use strict';
-// ---- Invite and shared-event links ----
-// Remember ?group_invite= / ?event= links before anything else runs, so they
+// ---- Crew and shared-event links ----
+// Remember ?crew= / ?event= links before anything else runs, so they
 // survive Google or email-link sign-in (which return to the plain app address).
 // Only our own parameters are removed from the address bar; sign-in ones stay.
 const PENDING_LINK_KEY='bw_pending_link';
@@ -702,17 +690,17 @@ let staticEventIds=new Set();
 (function capturePendingLink(){
  try{
   const q=new URLSearchParams(location.search);
-  const invite=q.get('group_invite'),event=q.get('event');
-  if(!invite&&!event)return;
+  // ?group_invite= links are from before Crew (v82); they now only say so.
+  const invite=q.get('group_invite'),event=q.get('event'),crewAdd=(q.get('crew')||'').replace(/^@+/,'').toLowerCase().slice(0,21);
+  if(!invite&&!event&&!crewAdd)return;
   const prev=JSON.parse(localStorage.getItem(PENDING_LINK_KEY)||'null')||{};
   localStorage.setItem(PENDING_LINK_KEY,JSON.stringify({
    group_invite:invite||prev.group_invite||null,
-   group_name:invite?(q.get('group_name')||null):(prev.group_name||null),
-   group_pin:invite?(q.get('group_pin')||null):(prev.group_pin||null),
+   crew_add:crewAdd||prev.crew_add||null,
    event:event||prev.event||null,
    at:Date.now()
   }));
-  ['group_invite','group_name','group_pin','event'].forEach(k=>q.delete(k));
+  ['group_invite','group_name','group_pin','crew','event'].forEach(k=>q.delete(k));
   const rest=q.toString();
   history.replaceState(history.state,document.title,location.pathname+(rest?'?'+rest:'')+location.hash);
  }catch(e){console.warn('Could not remember the shared link',e)}
@@ -726,8 +714,8 @@ function readPendingLink(){
 }
 function clearPendingLink(field){
  const x=readPendingLink();if(!x)return;
- if(field==='group_invite'){x.group_invite=null;x.group_name=null;x.group_pin=null}else x[field]=null;
- try{if(!x.group_invite&&!x.event)localStorage.removeItem(PENDING_LINK_KEY);else localStorage.setItem(PENDING_LINK_KEY,JSON.stringify(x))}catch(e){}
+ x[field]=null;
+ try{if(!x.group_invite&&!x.crew_add&&!x.event)localStorage.removeItem(PENDING_LINK_KEY);else localStorage.setItem(PENDING_LINK_KEY,JSON.stringify(x))}catch(e){}
 }
 const SUPABASE_URL='https://zqvccsnfrkrtcsitfwcd.supabase.co';
 const SUPABASE_KEY='sb_publishable_IyzJ6iCrIIkCtYBhNkQUog_GelEFKo1';
@@ -775,7 +763,8 @@ function dialog({title='',message='',ok='OK',cancel='',danger=false,typeToConfir
 }
 const confirmDialog=o=>dialog({cancel:'Cancel',...o});
 const copyLinkDialog=(title,url)=>dialog({title,message:'Copy this link and send it on.',copy:url,ok:'Done'});
-let events=[], festivals=[], attendance=[], groupHappenings=[], groups=[], groupMembers=[], customEvents=[];
+// groupHappenings: what your crew (and you) are interested in or going to (bw_shared_happenings).
+let events=[], festivals=[], attendance=[], groupHappenings=[], crew=[], crewRequests=[], customEvents=[], myHandle='';
 let savedVenues=null;
 try{savedVenues=JSON.parse(localStorage.getItem('bw_venues')||'null')}catch(e){localStorage.removeItem('bw_venues')}
 // Persist venue preferences exactly as the user selected them. Do not merge newly added venues into an existing saved list.
@@ -790,9 +779,9 @@ function name(){return profileName||localStorage.getItem('bw_name')||''}
 async function loadProfile(){
  if(!authUser){profileName='';profileIcon='';return false}
  try{
-  const rows=await api('GET','bw_profiles?select=display_name,email,profile_icon&user_id=eq.'+encodeURIComponent(authUser.id));
+  const rows=await api('GET','bw_profiles?select=display_name,email,profile_icon,handle&user_id=eq.'+encodeURIComponent(authUser.id));
   if(Array.isArray(rows)&&rows[0]){
-   profileName=rows[0].display_name||'';
+   profileName=rows[0].display_name||'';myHandle=rows[0].handle||'';
    profileIcon=PROFILE_ICONS.includes(rows[0].profile_icon)?rows[0].profile_icon:'';
    localStorage.setItem('bw_name',profileName);
    if(profileIcon)localStorage.setItem('bw_profile_icon_'+authUser.id,profileIcon);
@@ -836,11 +825,11 @@ async function loadProfileIcons(){
 async function saveProfile(displayName){
  const clean=displayName.trim(); if(!clean||!authUser) return;
  if(!PROFILE_ICONS.includes(profileIcon))profileIcon=randomProfileIcon();
- await api('POST','bw_profiles',{user_id:authUser.id,email:authUser.email,display_name:clean,profile_icon:profileIcon},{'Prefer':'resolution=merge-duplicates,return=representation'});
+ const saved=await api('POST','bw_profiles',{user_id:authUser.id,email:authUser.email,display_name:clean,profile_icon:profileIcon},{'Prefer':'resolution=merge-duplicates,return=representation'});
+ if(Array.isArray(saved)&&saved[0]?.handle)myHandle=saved[0].handle; // made by the database (v82)
  profileName=clean;localStorage.setItem('bw_profile_icon_'+authUser.id,profileIcon);profileIconsByUser[authUser.id]=profileIcon;localStorage.setItem('bw_name',clean);$('accountEmail').textContent=authUser.email||'';
 }
 const APP_URL=new URL('./',location.href).href; // follows the current domain
-const GROUP_LIMIT=25;
 async function signInWithGoogle(){
  const {error}=await supabase.auth.signInWithOAuth({
    provider:'google',
@@ -880,12 +869,11 @@ async function bootstrapAuthed(){
  if(!$('otpCodeForm').classList.contains('hidden'))resetCodeStep(); // signed in (by code or link): reset the email step
  const hasProfile=await loadProfile();
  if(!hasProfile){showWelcome('name');return;}
- await loadGroups();
- // An invite link is handled here, whether or not they're already in a group.
- if(readPendingLink()?.group_invite&&(groups.length||groupStepSeen()))await handleGroupInvite();
+ await loadCrew();
  await loadProfileIcons();
- if(groups.length||groupStepSeen()) hide('welcome'); else showWelcome('groups');
+ hide('welcome');
  trackVisitor();
+ handleCrewLink(); // a ?crew= link, whether they were signed in already or have just signed in
 }
 function dateKey(d){const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`}
 function parseEventDate(value){if(!/^\d{4}-\d{2}-\d{2}$/.test(value||''))return null;const d=new Date(value+'T12:00:00');return Number.isNaN(d.getTime())?null:d}
@@ -1078,20 +1066,21 @@ async function loadAttendance(){
   attendance=canonicalRows(rows);
  }catch(e){console.warn('Social layer unavailable',e)}
 }
-async function loadGroups(){
- if(!name()) return;
+// Your crew, and crew requests you've sent or received (v82).
+async function loadCrew(){
+ if(!authUser||!name()){crew=[];crewRequests=[];updateCrewBadge();return}
  try{
-  groups=await rpc('bw_my_groups',{p_user_id:uid()});
-  groups=Array.isArray(groups)?groups:[];
- }catch(e){console.warn('Groups unavailable',e);groups=[]}
- await loadGroupMembers();
+  const rows=await rpc('bw_my_crew',{});
+  const all=Array.isArray(rows)?rows:[];
+  crew=all.filter(x=>x.relation==='crew');
+  crewRequests=all.filter(x=>x.relation==='received'||x.relation==='sent');
+ }catch(e){console.warn('Crew unavailable',e);crew=[];crewRequests=[]}
+ updateCrewBadge();
 }
-async function loadGroupMembers(){
- if(!groups.length){groupMembers=[];return}
- try{
-  groupMembers=await rpc('bw_group_members_for_user',{p_user_id:uid()});
-  groupMembers=Array.isArray(groupMembers)?groupMembers:[];
- }catch(e){console.warn('Group member list unavailable',e);groupMembers=[]}
+// Settings gets a dot while someone is waiting for you to accept.
+function updateCrewBadge(){
+ const tab=document.querySelector('.nav button[data-tab="venuesTab"]');
+ if(tab)tab.classList.toggle('has-new',crewRequests.some(x=>x.relation==='received'));
 }
 function happeningsSignature(rows){
  return rows.filter(x=>x.user_id!==uid()&&(x.status==='interested'||x.status==='ticket_bought')).map(x=>[x.group_id,x.event_id,x.user_id,x.status].join(':')).sort().join('|');
@@ -1115,7 +1104,7 @@ function updateHappeningsBadge(){
  tab.classList.toggle('has-new',hasNew);
 }
 async function loadGroupHappenings(){
- if(!groups.length){groupHappenings=[];return}
+ if(!crew.length){groupHappenings=[];updateHappeningsBadge();return}
  try{
   groupHappenings=await rpc('bw_shared_happenings',{p_user_id:uid()});
   groupHappenings=Array.isArray(groupHappenings)?canonicalRows(groupHappenings):[];
@@ -1132,42 +1121,102 @@ function trackVisitor(){
  trackInstalledUse();
 }
 
-function renderOnboardingGroups(){
- const list=$('onboardingGroups');
- list.innerHTML=groups.length?groups.map(g=>`<div class="group-choice"><span>🔒</span><div><strong>${esc(g.name)}</strong><div class="group-meta">${memberCount(g)}${g.join_pin?` · <span class="nowrap">PIN <span class="pin-display">${esc(g.join_pin)}</span></span>`:''}</div></div><button type="button" class="btn btn-chip" data-invite-group="${esc(g.id)}" data-invite-name="${esc(g.name)}" data-invite-private="${g.is_private?'1':'0'}" data-invite-pin="${esc(g.join_pin||'')}">Invite</button></div>`).join(''):'';
- $('groupEmpty').textContent=groups.length?'You can belong to as many groups as you like.':'You are not in any groups yet. Create one or join one.';
+// ---- Crew (v82) ----
+// People add each other by handle; the other person accepts. Looking someone
+// up shows only their name, handle and icon.
+const HANDLE_RE=/^[a-z0-9][a-z0-9._-]{1,18}[a-z0-9]$/;
+const cleanHandle=h=>String(h||'').trim().replace(/^@+/,'').toLowerCase();
+function crewIcon(x){return iconSrc(PROFILE_ICONS.includes(x.profile_icon)?x.profile_icon:'fox')}
+function crewRow(x,actions){return `<div class="crew-row"><img class="avatar" src="${crewIcon(x)}" alt="" loading="lazy" decoding="async"><div><strong>${esc(x.display_name)}</strong><span class="crew-handle-text">@${esc(x.handle)}</span></div>${actions?`<div class="row-actions">${actions}</div>`:''}</div>`}
+function renderCrewSettings(){
+ if(!$('crewSettings'))return;
+ $('myHandle').textContent=myHandle?'@'+myHandle:'';
+ const received=crewRequests.filter(x=>x.relation==='received'),sent=crewRequests.filter(x=>x.relation==='sent');
+ $('crewRequestCount').textContent=received.length;
+ $('crewRequestList').innerHTML=(received.length||sent.length)
+  ?received.map(x=>crewRow(x,`<button type="button" class="btn btn-chip" data-crew-accept="${esc(x.user_id)}">Accept</button><button type="button" class="btn btn-chip" data-crew-decline="${esc(x.user_id)}" data-crew-name="${esc(x.display_name)}">Decline</button>`)).join('')
+   +sent.map(x=>crewRow(x,`<span class="crew-handle-text">Waiting</span><button type="button" class="btn btn-chip" data-crew-cancel="${esc(x.user_id)}">Cancel</button>`)).join('')
+  :'<p class="note">No requests waiting.</p>';
+ $('crewCount').textContent=crew.length;
+ $('crewList').innerHTML=crew.length
+  ?crew.map(x=>crewRow(x,`<button type="button" class="btn btn-chip" data-crew-remove="${esc(x.user_id)}" data-crew-name="${esc(x.display_name)}">Remove</button>`)).join('')
+  :'<p class="note">No one yet. Add someone by their handle, or share yours.</p>';
 }
-function memberCount(g){const n=Number(g.member_count)||1;return `${n}/${GROUP_LIMIT} members${n>=GROUP_LIMIT?' · full':''}`}
-// Joins the group from a remembered invite link (see capturePendingLink).
-// Works whether the person was already signed in, has just signed in, or is
-// already in other groups.
-async function handleGroupInvite(){
- const link=readPendingLink(),groupId=link?.group_invite;
- if(!groupId||!authUser||!name())return false;
- clearPendingLink('group_invite'); // cleared first, so the prompt is only shown once
- const known=groups.find(g=>String(g.id)===String(groupId));
- if(known){if(!link.event)toast(`You're already in ${known.name}.`);return false}
- // Use the group's real name from the database, never the one written in the link.
- let real=null;
- try{const r=await rpc('bw_invite_preview',{p_group_id:groupId,p_pin:link.group_pin||null});real=Array.isArray(r)?r[0]:r}catch(e){console.warn('Invite check failed',e)}
- if(!real?.name){toast('This invite link isn\'t valid. Ask your friend to send a new one.','error');return false}
- if(!await confirmDialog({title:`Join ${real.name}?`,message:`${real.member_count} of ${GROUP_LIMIT} places taken.`,ok:'Join'}))return false;
- await joinGroup(groupId,link.group_pin||null,null);
- return true;
+// Runs a crew function that answers {ok, message}, then reloads the crew.
+async function crewAction(fn,args,btn){
+ if(btn)btn.disabled=true;
+ try{
+  const rows=await rpc(fn,args),r=Array.isArray(rows)?rows[0]:rows;
+  if(!r?.ok)throw new Error(r?.message||'Something went wrong. Please try again.');
+  if(r.message)toast(r.message,'success');
+  await refreshCrew();
+  return true;
+ }catch(e){if(btn)btn.disabled=false;toast(e.message||String(e),'error');return false}
+}
+async function refreshCrew(){
+ await loadCrew();await loadProfileIcons();await loadGroupHappenings();
+ renderCrewSettings();renderAll();
+}
+async function findCrew(){
+ const h=cleanHandle($('crewAddInput').value),out=$('crewFound');
+ if(!HANDLE_RE.test(h)){out.innerHTML='<p class="note">Type their exact handle, like @sam-1234.</p>';return}
+ const btn=$('crewFind');btn.disabled=true;
+ try{
+  const rows=await rpc('bw_find_crew',{p_handle:h}),r=Array.isArray(rows)?rows[0]:rows;
+  if(!r?.user_id){out.innerHTML=`<p class="note">${esc(r?.message||'No one has that handle.')}</p>`;return}
+  const action={
+   self:'<span class="crew-handle-text">That\'s you</span>',
+   crew:'<span class="crew-handle-text">In your crew</span>',
+   sent:'<span class="crew-handle-text">Request sent</span>',
+   received:`<button type="button" class="btn btn-chip" data-crew-accept="${esc(r.user_id)}">Accept their request</button>`,
+   none:`<button type="button" class="btn btn-chip" data-crew-request="${esc(r.handle)}">Add to crew</button>`
+  }[r.relation]||'';
+  out.innerHTML=crewRow(r,action);
+ }catch(e){toast('Could not look that up. '+(e.message||e),'error')}
+ finally{btn.disabled=false}
+}
+async function saveHandle(){
+ const h=cleanHandle($('handleInput').value);
+ if(!HANDLE_RE.test(h)){toast('Handles are 3 to 20 letters or numbers, and can use . - or _ in the middle.','error');return}
+ if(h===myHandle){hide('handleForm');return}
+ try{
+  const rows=await rpc('bw_set_handle',{p_handle:h}),r=Array.isArray(rows)?rows[0]:rows;
+  if(!r?.ok)throw new Error(r?.message||'Could not change your handle.');
+  myHandle=r.handle||h;hide('handleForm');renderCrewSettings();toast(r.message,'success');
+ }catch(e){toast(e.message||String(e),'error')}
+}
+async function shareHandle(){
+ if(!myHandle)return;
+ const url=APP_URL+'?crew='+encodeURIComponent(myHandle);
+ try{
+  if(navigator.share){await navigator.share({title:'Add me to your crew',text:`Add me to your crew on Brighton Weekend: @${myHandle}`,url});return}
+  if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);toast('Link copied. Anyone who opens it can ask to join your crew.','success');return}
+  copyLinkDialog('Your crew link',url);
+ }catch(e){if(e?.name!=='AbortError')copyLinkDialog('Your crew link',url)}
+}
+// Opens a ?crew= link (remembered across sign-in by capturePendingLink).
+async function handleCrewLink(){
+ const link=readPendingLink();
+ if(!link||!authUser||!name()||!$('welcome').classList.contains('hidden'))return;
+ if(link.group_invite){clearPendingLink('group_invite');toast('Groups have been replaced by Crew. Ask your friend for their handle, or for their crew link.')}
+ const h=cleanHandle(link.crew_add);if(!h)return;
+ clearPendingLink('crew_add'); // cleared first, so the question is only asked once
+ if(h===myHandle||!HANDLE_RE.test(h))return;
+ let r=null;
+ try{const rows=await rpc('bw_find_crew',{p_handle:h});r=Array.isArray(rows)?rows[0]:rows}catch(e){console.warn('Crew link check failed',e)}
+ if(!r?.user_id){toast(r?.message||'That crew link isn\'t valid.','error');return}
+ if(r.relation==='self')return;
+ if(r.relation==='crew'){toast(`${r.display_name} is already in your crew.`);return}
+ if(r.relation==='sent'){toast(`You've already asked ${r.display_name}. They need to accept.`);return}
+ const theirs=r.relation==='received';
+ if(!await confirmDialog({title:`Add ${r.display_name} (@${r.handle}) to your crew?`,
+  message:theirs?'They\'ve already asked to join yours.':'They\'ll be asked to accept. Then you\'ll each see what the other is interested in and going to.',
+  ok:theirs?'Accept':'Send request'}))return;
+ await crewAction('bw_crew_request',{p_handle:r.handle});
 }
 function showPendingInviteHint(){
  const link=readPendingLink(),msg=$('authMessage');
- if(link?.group_invite&&msg&&!msg.textContent)msg.textContent=`Sign in to join ${link.group_name||'your friend\'s group'}.`;
-}
-// The groups step is part of first-time setup. After that, someone not in a
-// group goes straight into the app; Happenings nudges them to join one.
-const groupStepKey=()=>'bw_group_step_seen_'+uid();
-function groupStepSeen(){try{return localStorage.getItem(groupStepKey())==='1'}catch(e){return false}}
-async function openGroupStep(){
- try{localStorage.setItem(groupStepKey(),'1')}catch(e){}
- hide('nameStep'); show('groupStep');
- await loadGroups(); renderOnboardingGroups();
- await handleGroupInvite();
+ if(link?.crew_add&&msg&&!msg.textContent)msg.textContent=`Sign in to add @${cleanHandle(link.crew_add)} to your crew.`;
 }
 // ---- Guest mode ----
 // Without a login people can browse events, comedy, festivals and search.
@@ -1178,10 +1227,10 @@ async function openGroupStep(){
 const GUEST_ACTION_KEY='bw_guest_action';
 const GATE_COPY={
  act:'It\'s free, and lets you mark events Interested or Going and see who else is going.',
- happenings:'It\'s free, and lets you see what your groups are planning.',
+ happenings:'It\'s free, and lets you see what your crew are planning.',
  addEvent:'It\'s free, and lets you add events for everyone to see.',
  genre:'It\'s free, and lets you add a genre to events that don\'t have one.',
- account:'It\'s free, and lets you mark events, join groups and see what your friends are planning.'
+ account:'It\'s free, and lets you mark events, build your crew and see what your friends are planning.'
 };
 // Guests get a random ID on this device (no personal details) so the admin
 // page can count guest visits and how many guests go on to sign up (v72).
@@ -1251,8 +1300,8 @@ function enterGuestMode(){
  if(!$('peopleTab').classList.contains('hidden'))openTab('discover');
  hide('welcome');$('welcome').classList.remove('checking');
  renderAll();
- // An invite link needs an account, so ask straight away (they can still say Not now).
- if(readPendingLink()?.group_invite)showWelcome('auth');
+ // A crew link needs an account, so ask straight away (they can still say Not now).
+ if(readPendingLink()?.crew_add)showWelcome('auth');
 }
 function promptSignIn(reason,action){
  try{if(action)localStorage.setItem(GUEST_ACTION_KEY,JSON.stringify({...action,at:Date.now()}));else localStorage.removeItem(GUEST_ACTION_KEY)}catch(e){}
@@ -1271,7 +1320,7 @@ function readGuestAction(){
  return null;
 }
 // Carries out what a guest tried just before signing up. Waits while the
-// welcome screens (name, groups) are still open; finishWelcome calls it again.
+// welcome screen (name) is still open; finishWelcome calls it again.
 async function resumeGuestAction(){
  if(!authUser||!name()||!$('welcome').classList.contains('hidden'))return;
  const x=readGuestAction();if(!x)return;
@@ -1279,7 +1328,7 @@ async function resumeGuestAction(){
  if(x.type==='act'&&x.eventId&&STATUS_LABEL[x.status]){
   const mine=attendance.find(a=>a.event_id===x.eventId&&a.user_id===uid());
   if(mine?.status!==x.status)await act(x.eventId,x.status); // act() toggles, so skip if it is already set
-  openTab(groups.length?'peopleTab':'discover');
+  openTab(crew.length?'peopleTab':'discover');
  }else if(x.type==='tab'){
   openTab(x.tab);
  }else if(x.type==='addEvent'){
@@ -1291,73 +1340,15 @@ function showWelcome(mode='auth'){
  show('welcome');$('welcome').classList.remove('checking');
  $('authTitle').textContent='Sign in to Brighton Weekend';hide('authPrompt');$('authClose').classList.toggle('hidden',!!authUser);
  $('nameInput').value=name();
- hide('authStep');hide('nameStep');hide('groupStep');hide('createGroupPanel');hide('joinGroupPanel');
+ hide('authStep');hide('nameStep');
  if(mode==='auth' || !authUser){show('authStep');showPendingInviteHint();return}
- if(mode==='name' || !name()){show('nameStep');setTimeout(()=>$('nameInput').focus(),50);return}
- openGroupStep();
+ show('nameStep');setTimeout(()=>$('nameInput').focus(),50);
 }
 function finishWelcome(){
- hide('welcome'); homeShown=true; saveSeen(); trackVisitor(); renderAll(); renderGroupManager();
+ hide('welcome'); homeShown=true; saveSeen(); trackVisitor(); renderAll(); renderCrewSettings();
  showSharedEvent(); // an event link opened before sign-up shows now, after Discover is redrawn
  resumeGuestAction();
-}
-async function createGroup(){
- const n=$('newGroupName').value.trim();
- if(!n){toast('Please give your group a name.','error');return}
- try{
-  const data=await rpc('bw_create_group',{p_user_id:uid(),p_user_name:name(),p_name:n,p_is_private:true});
-  const g=Array.isArray(data)?data[0]:data;
-  $('newGroupName').value='';hide('createGroupPanel');
-  await loadGroups();renderOnboardingGroups();renderGroupManager();
-  // Offer the invite link straight away, while they're thinking about who to ask (v91).
-  if(g?.id&&await confirmDialog({title:`${g.name||n} is ready`,message:`Send your friends an invite link. The PIN${g.join_pin?` (${g.join_pin})`:''} is built in, so they join in one tap.`,ok:'Invite friends',cancel:'Later'}))
-   createGroupInviteLink(g.id,g.name||n,true,g.join_pin||null);
- }catch(e){toast('Could not create group. '+e.message,'error')}
-}
-async function joinGroup(groupId,pin=null,privateName=null){
- try{
-  const data=await rpc('bw_join_group',{p_user_id:uid(),p_user_name:name(),p_group_id:groupId||null,p_pin:pin,p_group_name:privateName||null});
-  const r=Array.isArray(data)?data[0]:data;
-  if(!r?.ok) throw new Error(r?.message||'Could not join group');
-  await loadGroups();renderOnboardingGroups();renderGroupManager();
-  hide('joinGroupPanel');
- }catch(e){toast('Could not join group. '+e.message,'error')}
-}
-async function leaveGroup(groupId,groupName,btn){
- if(!groupId)return;
- if(!await confirmDialog({title:`Leave ${groupName}?`,message:'You can join it again later.',ok:'Leave',danger:true}))return;
- btn.disabled=true;
- try{
-  const result=await rpc('bw_leave_group',{p_user_id:uid(),p_group_id:groupId});
-  const r=Array.isArray(result)?result[0]:result;
-  if(!r?.ok)throw new Error(r?.message||'Could not leave group');
-  await loadGroups();
-  await loadGroupHappenings();
-  renderGroupManager();
-  renderOnboardingGroups();
-  renderPeople();
- }catch(e){btn.disabled=false;toast('Could not leave the group. '+(e.message||e),'error')}
-}
-async function createGroupInviteLink(groupId,groupName,isPrivate,pin,btn){
- if(!groupId)return;
- const base=window.location.href.split('#')[0].split('?')[0];
- const params=new URLSearchParams();
- params.set('group_invite',groupId);
- if(groupName)params.set('group_name',groupName);
- if(pin)params.set('group_pin',pin);
- const url=base+'?'+params.toString();
- try{
-  if(navigator.share){await navigator.share({title:`Join ${groupName}`,text:`Join my Brighton Weekend group, ${groupName}.`,url});return;}
-  if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);toast('Invite link copied.','success');return;}
-  copyLinkDialog('Group invite link',url);
- }catch(e){
-  if(e?.name==='AbortError')return;
-  copyLinkDialog('Group invite link',url);
- }
-}
-function renderGroupManager(){
- const el=$('groupManager'); if(!el)return;
- el.innerHTML=groups.length?groups.map(g=>`<div class="group-manager-row" data-group-id="${esc(g.id)}"><div><strong>🔒 ${esc(g.name)}</strong><div class="group-meta">${memberCount(g)}${g.join_pin?` · <span class="nowrap">PIN <span class="pin-display">${esc(g.join_pin)}</span></span>`:''}</div></div><div class="row-actions"><button type="button" class="btn btn-chip" data-invite-group="${esc(g.id)}" data-invite-name="${esc(g.name)}" data-invite-private="${g.is_private?'1':'0'}" data-invite-pin="${esc(g.join_pin||'')}">Invite link</button><button type="button" class="btn btn-chip" data-leave-group="${esc(g.id)}" data-leave-name="${esc(g.name)}">Leave</button></div></div>`).join(''):'<div class="group-meta">No groups yet.</div>';
+ handleCrewLink();
 }
 
 // The title and genre are kept with each choice, so recommendations still know
@@ -1497,7 +1488,7 @@ function downloadIcs(e){
 // download attribute) so iPhones offer "Add to Calendar" instead of saving it.
 function staticIcsUrl(e){return staticEventIds.has(String(e.id))&&/^[a-z0-9-]+$/.test(String(e.id))?'e/'+e.id+'/event.ics':''}
 document.addEventListener('click',ev=>{const b=ev.target.closest('[data-ics-event]');if(!b)return;const id=b.dataset.icsEvent,e=[...events,...festivals].find(x=>String(x.id)===String(id));if(e)downloadIcs(e)});
-// A shared event link shares only the event: it never carries a group invite.
+// A shared event link shares only the event: it never carries a crew link.
 // Listed events have their own page (e/<id>/, built by scripts/build-event-pages.py)
 // so WhatsApp, Instagram and Facebook show the event's title and date in the preview.
 // That page sends people straight on into the app. Community events and
@@ -1659,6 +1650,8 @@ function applyTheme(t){
 }
 document.addEventListener('click',e=>{const b=e.target.closest('[data-theme-choice]');if(!b)return;const t=b.dataset.themeChoice;try{t==='light'?localStorage.setItem('bw_theme','light'):localStorage.removeItem('bw_theme')}catch(_){}applyTheme(t)});
 applyTheme(currentTheme());
+(()=>{const box=$('showRecs');if(!box)return;box.checked=recsOn();
+ box.addEventListener('change',()=>{try{box.checked?localStorage.removeItem('bw_recs_off'):localStorage.setItem('bw_recs_off','1')}catch(_){}renderAll();toast(box.checked?'Suggestions are on.':'Suggestions are off.','success')})})();
 (()=>{const box=$('countVisits');if(!box)return;box.checked=countingOn();
  box.addEventListener('change',()=>{setCounting(box.checked);toast(box.checked?'Visits from this device will be counted.':'Visits from this device won\'t be counted.','success')})})();
 function venueNudgeHtml(text){
@@ -1874,24 +1867,22 @@ function recommendations(){
  for(const p of picks){if(used.has(p.from)||used.has('act:'+p.k))continue;used.add(p.from);used.add('act:'+p.k);out.push(p);if(out.length===REC_LIMIT)break}
  return out;
 }
+// Settings → Suggestions can switch these off (per device).
+function recsOn(){try{return localStorage.getItem('bw_recs_off')!=='1'}catch(_){return true}}
 function recommendationsHtml(){
+ if(!recsOn())return '';
  const recs=recommendations();
  if(!recs.length)return '';
  return `<section class="recs"><div class="section-head"><h3>You might like</h3></div>${recs.map(p=>eventCard(p.e,{showDate:true,reason:p.reason})).join('')}</section>`;
 }
 function renderPeople(){
  const recs=recommendationsHtml();
- // Not in a group yet: their own plans still show here, with a nudge to join one.
- const inGroups=groups.length>0;
- const joinPrompt='<div class="empty">Join or create a group to see what your people are planning.</div>';
+ // No crew yet: their own plans still show here, with a nudge to add people.
+ const inCrew=crew.length>0;
+ const joinPrompt='<div class="empty">Add people to your crew in Settings to see what they\'re planning. <button type="button" class="btn btn-chip" data-home-go="venuesTab">Go to Settings</button></div>';
  const me=uid(), today=todayKey();
- const memberGroups=new Map();
- groupMembers.forEach(m=>{if(!memberGroups.has(m.group_id))memberGroups.set(m.group_id,{name:m.group_name,members:[]});memberGroups.get(m.group_id).members.push(m)});
- const roster=[...memberGroups.values()].map(g=>{
-   const members=[...new Map(g.members.map(m=>[m.user_id,m])).values()].sort((a,b)=>(a.user_name||'').localeCompare(b.user_name||''));
-   return `<div><div class="group-heading">${esc(g.name)} <span class="member-count">${members.length}</span></div><div class="people">${members.map(m=>`<span class="social-chip"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(m.user_id))}" alt="" loading="lazy" decoding="async"></i>${esc(m.user_name)}</span>`).join('')}</div></div>`;
- }).join('');
- const rosterHtml=inGroups?`<section class="group-roster group-roster-bottom"><div class="section-head"><h3>People in your groups</h3></div>${roster}</section>`:joinPrompt;
+ const members=[...crew].sort((a,b)=>(a.display_name||'').localeCompare(b.display_name||''));
+ const rosterHtml=inCrew?`<section class="group-roster group-roster-bottom crew-roster"><div class="section-head"><h3>Your crew <span class="member-count">${members.length}</span></h3></div><div class="people">${members.map(m=>`<span class="social-chip"><i class="social-icon profile"><img class="avatar" src="${crewIcon(m)}" alt="" loading="lazy" decoding="async"></i>${esc(m.display_name)}</span>`).join('')}</div></section>`:joinPrompt;
  let html=recs;
 
  // Other people's responses, grouped by event. My own rows are left out here:
@@ -1899,13 +1890,13 @@ function renderPeople(){
  const others=new Map();
  groupHappenings.forEach(x=>{if(!x.user_id||x.user_id===me||!STATUS_LABEL[x.status])return;if(!others.has(x.event_id))others.set(x.event_id,[]);others.get(x.event_id).push(x)});
  const myStatus=id=>attendance.find(x=>x.event_id===id&&x.user_id===me)?.status||null;
- // An event is listed when I, or someone in my groups, is Interested or Going.
+ // An event is listed when I, or someone in my crew, is Interested or Going.
  const keen=s=>s==='interested'||s==='ticket_bought';
  const active=[...events,...festivals].filter(e=>(e.date_end||e.date)>=today&&(keen(myStatus(e.id))||(others.get(e.id)||[]).some(x=>keen(x.status))))
   .sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
- if(!active.length){$('peopleList').innerHTML=html+(inGroups?'<div class="empty">No plans yet. Mark an event Interested or Going and it will show here for your groups.</div>':'')+rosterHtml;return}
+ if(!active.length){$('peopleList').innerHTML=html+(inCrew?'<div class="empty">No plans yet. Mark an event Interested or Going and it will show here for your crew.</div>':'')+rosterHtml;return}
 
- html+=`<div class="section-head happenings-events-head"><h3>${inGroups?'What\'s happening':'Your plans'}</h3></div>`;
+ html+=`<div class="section-head happenings-events-head"><h3>${inCrew?'What\'s happening':'Your plans'}</h3></div>`;
  html+=active.map(e=>{
   const rows=others.get(e.id)||[], mine=myStatus(e.id);
   // Friend totals count each person once, using their strongest response.
@@ -1915,15 +1906,11 @@ function renderPeople(){
   const summary=[];
   if(going)summary.push(`<span class="happening-summary-pill going">${TICKET_ICON} ${going} friend${going===1?'':'s'} going</span>`);
   if(keenCount)summary.push(`<span class="happening-summary-pill interested">♡ ${keenCount} interested</span>`);
-  // Only groups where someone other than me has responded.
-  const byGroup=new Map();
-  rows.forEach(x=>{if(!byGroup.has(x.group_id))byGroup.set(x.group_id,{name:x.group_name,people:new Map()});const g=byGroup.get(x.group_id),o=g.people.get(x.user_id);if(!o||STATUS_RANK[x.status]<STATUS_RANK[o.status])g.people.set(x.user_id,x)});
-  const sections=[...byGroup.values()].sort((a,b)=>(a.name||'').localeCompare(b.name||'')).map(g=>{
-   const people=[...g.people.values()].sort((a,b)=>STATUS_RANK[a.status]-STATUS_RANK[b.status]||(a.user_name||'').localeCompare(b.user_name||''));
-   return `<div class="happening-group"><div class="group-heading">${esc(g.name)}</div><div class="happening-people">${people.map(x=>`<div class="happening-person"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(x.user_id))}" alt="" loading="lazy" decoding="async"></i><span class="happening-person-name">${esc(x.user_name)}</span>${statusPill(x.status)}</div>`).join('')}</div></div>`;
-  }).join('');
+  // Everyone in my crew who has responded, strongest response first.
+  const people=[...best.values()].sort((a,b)=>STATUS_RANK[a.status]-STATUS_RANK[b.status]||(a.user_name||'').localeCompare(b.user_name||''));
+  const sections=people.length?`<div class="happening-group"><div class="happening-people">${people.map(x=>`<div class="happening-person"><i class="social-icon profile"><img class="avatar" src="${iconSrc(userIcon(x.user_id))}" alt="" loading="lazy" decoding="async"></i><span class="happening-person-name">${esc(x.user_name)}</span>${statusPill(x.status)}</div>`).join('')}</div></div>`:'';
   const you=mine?`<div class="happening-you"><span class="happening-person-name">You</span>${statusPill(mine)}</div>`:'';
-  const quiet=!sections&&inGroups?'<div class="note happening-quiet">No one in your groups has responded yet.</div>':'';
+  const quiet=!sections&&inCrew?'<div class="note happening-quiet">No one in your crew has responded yet.</div>':'';
   return `<div class="people-card card"><div class="top"><div><h3>${esc(e.title)}${e.is_custom?` <span class="added-by">community added</span>`:''}</h3><div class="meta">${String(e.id||'').startsWith('festival:')?esc((e.location_display||e.location||'UK')+' · '+festivalDateLabel(e)):[esc(e.venue_display||e.venue),esc((parseEventDate(e.date)||new Date()).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})),timeRange(e)].filter(Boolean).join(' · ')}</div></div>${cardFlags(e)}</div>${you}${summary.length?`<div class="happening-summary">${summary.join('')}</div>`:''}${sections}${quiet}${commitmentButtons(e,mine?{status:mine}:null)}<div class="actions">${ticketLink(e)}${moreMenu(e,{genre:false})}</div></div>`;
  }).join('');
  $('peopleList').innerHTML=html+rosterHtml;
@@ -2131,9 +2118,9 @@ $('otpCodeForm').addEventListener('submit',async e=>{
 $('otpRestart').onclick=resetCodeStep;
 $('authClose').onclick=closeSignIn;
 $('guestSignIn').onclick=()=>promptSignIn('account',null);
-$('nameForm').addEventListener('submit',async e=>{e.preventDefault();const n=$('nameInput').value.trim();if(!n)return;try{await saveProfile(n);await openGroupStep()}catch(err){toast('Could not save your profile. '+(err.message||err),'error')}});
+$('nameForm').addEventListener('submit',async e=>{e.preventDefault();const n=$('nameInput').value.trim();if(!n)return;try{await saveProfile(n);await loadCrew();finishWelcome()}catch(err){toast('Could not save your profile. '+(err.message||err),'error')}});
 $('deleteAccount').onclick=async()=>{
- const sure=await dialog({title:'Delete your account?',message:'This permanently deletes your Brighton Weekend account, your plans, your group memberships and any events you added. It can\'t be undone.',ok:'Delete account',cancel:'Cancel',danger:true,typeToConfirm:'DELETE'});
+ const sure=await dialog({title:'Delete your account?',message:'This permanently deletes your Brighton Weekend account, your plans, your crew and any events you added. It can\'t be undone.',ok:'Delete account',cancel:'Cancel',danger:true,typeToConfirm:'DELETE'});
  if(!sure)return;
  const btn=$('deleteAccount');btn.disabled=true;btn.textContent='Deleting…';
  try{
@@ -2146,7 +2133,7 @@ $('deleteAccount').onclick=async()=>{
   const keep=new Set([NO_COUNT_KEY,'bw_theme']);
   Object.keys(localStorage).filter(k=>(k.startsWith('bw_')||k.startsWith('sb-'))&&!keep.has(k)).forEach(k=>localStorage.removeItem(k));
   try{await supabase.auth.signOut()}catch(e){}
-  authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';customEvents=[];homeShown=false;
+  authUser=null;authSession=null;profileName='';myHandle='';crew=[];crewRequests=[];updateCrewBadge();attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';customEvents=[];homeShown=false;
   myGenres={};genrePickerFor=null;
   $('accountEmail').textContent='';enterGuestMode();loadUserData().catch(console.warn); // reload what guests see (their events are gone)
   toast('Your account and data have been deleted.','success');
@@ -2156,24 +2143,31 @@ $('deleteAccount').onclick=async()=>{
 // Sign-out works offline too: the local session is cleared even if the server
 // can't be told. Community events are reloaded as a guest sees them, so the
 // names of the people who added them don't linger on screen.
-$('signOut').onclick=async()=>{try{await supabase.auth.signOut()}catch(e){try{await supabase.auth.signOut({scope:'local'})}catch(_){}}myGenres={};genrePickerFor=null;authUser=null;authSession=null;profileName='';groups=[];groupMembers=[];attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';homeShown=false;localStorage.removeItem('bw_name');$('accountEmail').textContent='';enterGuestMode();loadUserData().catch(console.warn)};
-$('partyOnBtn').onclick=finishWelcome;
-$('showCreateGroup').onclick=()=>{hide('joinGroupPanel');$('createGroupPanel').classList.toggle('hidden')};
-$('showJoinGroup').onclick=()=>{hide('createGroupPanel');$('joinGroupPanel').classList.toggle('hidden')};
-$('createGroupBtn').onclick=createGroup;
-$('joinPrivateBtn').onclick=()=>{const n=$('privateGroupName').value.trim(),p=$('privateGroupPin').value.trim();if(!n||!/^(\d{3}|\d{6})$/.test(p))return toast('Enter the exact group name and its PIN (3 or 6 digits).','error');joinGroup(null,p,n)};
+$('signOut').onclick=async()=>{try{await supabase.auth.signOut()}catch(e){try{await supabase.auth.signOut({scope:'local'})}catch(_){}}myGenres={};genrePickerFor=null;authUser=null;authSession=null;profileName='';myHandle='';crew=[];crewRequests=[];updateCrewBadge();attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';homeShown=false;localStorage.removeItem('bw_name');$('accountEmail').textContent='';enterGuestMode();loadUserData().catch(console.warn)};
 // The arrows and This week go back to the week view (from a quick-time chip).
 $('prev').onclick=()=>{if(discoverRange!=='week'){discoverRange='week';weekStart=getMonday();renderAll();return}if(weekStart<=getMonday())return;weekStart.setDate(weekStart.getDate()-7);renderAll()};
 $('next').onclick=()=>{if(discoverRange!=='week'){discoverRange='week';weekStart=getMonday()}weekStart.setDate(weekStart.getDate()+7);renderAll()};
 $('today').onclick=()=>{discoverRange='week';weekStart=getMonday();renderAll()};
 $('refresh').onclick=async()=>{
  const btn=$('refresh');btn.disabled=true;
- try{await Promise.all([loadCustomEvents(),loadCommunityGenres()]);await refresh();await loadFestivals();await loadAttendance();await loadGroups();await loadGroupHappenings();renderAll();}
+ try{await Promise.all([loadCustomEvents(),loadCommunityGenres()]);await refresh();await loadFestivals();await loadAttendance();await loadCrew();await loadGroupHappenings();renderAll();renderCrewSettings();}
  finally{btn.disabled=false;}
 };
 $('changeName').onclick=()=>showWelcome('name');
-$('manageGroups').onclick=()=>showWelcome('groups');
-document.addEventListener('click',e=>{const b=e.target.closest('[data-leave-group]');if(!b)return;leaveGroup(b.dataset.leaveGroup,b.dataset.leaveName,b)});document.addEventListener('click',e=>{const b=e.target.closest('[data-invite-group]');if(!b)return;createGroupInviteLink(b.dataset.inviteGroup,b.dataset.inviteName,b.dataset.invitePrivate==='1',b.dataset.invitePin,b)});
+$('editHandle').onclick=()=>{$('handleInput').value=myHandle;show('handleForm');setTimeout(()=>$('handleInput').focus(),50)};
+$('cancelHandle').onclick=()=>hide('handleForm');
+$('handleForm').addEventListener('submit',e=>{e.preventDefault();saveHandle()});
+$('shareHandle').onclick=shareHandle;
+$('crewAddForm').addEventListener('submit',e=>{e.preventDefault();findCrew()});
+document.addEventListener('click',async e=>{
+ const b=e.target.closest('[data-crew-request],[data-crew-accept],[data-crew-decline],[data-crew-cancel],[data-crew-remove]');if(!b)return;
+ const d=b.dataset;
+ if(d.crewRequest!==undefined){if(await crewAction('bw_crew_request',{p_handle:d.crewRequest},b)){$('crewFound').innerHTML='';$('crewAddInput').value=''}}
+ else if(d.crewAccept!==undefined){if(await crewAction('bw_crew_respond',{p_from:d.crewAccept,p_accept:true},b))$('crewFound').innerHTML=''}
+ else if(d.crewDecline!==undefined){if(await confirmDialog({title:`Decline ${d.crewName}?`,message:'They won\'t be told.',ok:'Decline'}))crewAction('bw_crew_respond',{p_from:d.crewDecline,p_accept:false},b)}
+ else if(d.crewCancel!==undefined)crewAction('bw_crew_cancel',{p_to:d.crewCancel},b);
+ else if(d.crewRemove!==undefined){if(await confirmDialog({title:`Remove ${d.crewName}?`,message:'You\'ll stop seeing each other\'s plans. You can ask again later.',ok:'Remove',danger:true}))crewAction('bw_crew_remove',{p_other:d.crewRemove},b)}
+});
 $('customVenue').innerHTML='<option value="">Choose a venue…</option>'+VENUES.map(v=>`<option>${esc(v)}</option>`).join('');
 $('customVenue').onchange=toggleOtherVenue;
 function setCustomDateLimits(){const d=$('customDate');if(!d)return;const t=new Date();d.min=dateKey(t);t.setDate(t.getDate()+730);d.max=dateKey(t)}
@@ -2191,7 +2185,7 @@ document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{
  if(b.dataset.tab==='festivalsTab')renderFestivals();
  if(b.dataset.tab==='searchTab'){if(!$('searchFrom').value&&!$('searchTo').value)setSearchDefaults();populateSearchVenues();populateSearchFilters();renderSearch()}
  if(b.dataset.tab==='peopleTab'){renderPeople();markHappeningsSeen();updateHappeningsBadge()}
- if(b.dataset.tab==='venuesTab'){renderVenues();renderGroupManager()}
+ if(b.dataset.tab==='venuesTab'){renderVenues();renderCrewSettings()}
 });
 document.querySelectorAll('[data-festival-filter]').forEach(b=>b.onclick=()=>{festivalFilter=b.dataset.festivalFilter;renderFestivals()});
 // Commitment buttons are rendered in several lists; one delegated handler serves them all.
@@ -2212,9 +2206,9 @@ const seenKey=()=>'bw_seen_'+uid();
 let newSinceVisit=[], showNewPanel=false, homeShown=false;
 function readSeen(){try{return JSON.parse(localStorage.getItem(seenKey())||'null')}catch(e){return null}}
 function friendPlanKeys(){const me=uid(),today=todayKey(),ids=new Set([...events,...festivals].filter(e=>(e.date_end||e.date)>=today).map(e=>e.id));return [...new Set(groupHappenings.filter(x=>x.user_id&&x.user_id!==me&&(x.status==='interested'||x.status==='ticket_bought')&&ids.has(x.event_id)).map(x=>x.user_id+':'+x.event_id+':'+x.status))]}
-function memberMap(){const m={};groupMembers.forEach(x=>{(m[x.group_id]=m[x.group_id]||[]).push(x.user_id)});return m}
+function crewIds(){return crew.map(x=>x.user_id)}
 function saveSeen(){
- try{const today=todayKey();localStorage.setItem(seenKey(),JSON.stringify({at:new Date().toISOString(),events:events.filter(e=>e.date>=today).map(e=>e.id),plans:friendPlanKeys(),members:memberMap()}))}
+ try{const today=todayKey();localStorage.setItem(seenKey(),JSON.stringify({at:new Date().toISOString(),events:events.filter(e=>e.date>=today).map(e=>e.id),plans:friendPlanKeys(),crew:crewIds()}))}
  catch(e){console.warn('Could not remember this visit',e)}
 }
 function homeRow({tab,tone,icon,title,detail}){return `<button type="button" class="home-row" data-home-go="${tab}"><span class="home-icon ${tone}" aria-hidden="true">${icon}</span><span class="home-text"><strong>${title}</strong><span>${detail}</span></span><span class="home-chevron" aria-hidden="true">›</span></button>`}
@@ -2228,27 +2222,33 @@ function showHome(){
  newSinceVisit=first?[]:upcoming.filter(e=>!seenIds.has(e.id)).sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
  showNewPanel=newSinceVisit.length>0;
  const n=newSinceVisit.length;
- let friendNews=0; // new plans from friends + people who joined your groups
+ let friendNews=0; // new plans from your crew, new crew members and crew requests
  const rows=[homeRow({tab:'discover',tone:'events',icon:'♬',
   title:first?`${upcoming.length} upcoming events`:n?`${n} new event${n===1?'':'s'}`:'No new events',
   detail:first?'Gigs, comedy, clubs and theatre across Brighton':n?'Added since your last visit':'Nothing added since your last visit'})];
- if(groups.length){
-  // New plans from friends
+ const asking=crewRequests.filter(x=>x.relation==='received');
+ if(asking.length){
+  friendNews+=asking.length;
+  rows.push(homeRow({tab:'venuesTab',tone:'people',icon:'☺',
+   title:asking.length===1?`${esc(asking[0].display_name)} wants to join your crew`:`${asking.length} crew requests`,
+   detail:'Accept or decline in Settings'}));
+ }
+ if(crew.length){
+  // New plans from your crew
   const seenPlans=new Set(seen?.plans||[]),plans=friendPlanKeys(),newPlans=first?plans:plans.filter(k=>!seenPlans.has(k));
   const p=newPlans.length;friendNews+=p;
   rows.push(homeRow({tab:'peopleTab',tone:'plans',icon:TICKET_ICON,
-   title:p?`${p} ${first?'':'new '}plan${p===1?'':'s'} from your groups`:(first?'No plans from your groups yet':'No new plans'),
-   detail:p?'Friends who are interested or going':'Mark something Interested or Going to get things started'}));
-  // New group members (only in groups you were already in last time)
-  let joined=[];
-  if(!first){const before=seen.members||{};groupMembers.forEach(x=>{if(x.user_id!==me&&before[x.group_id]&&!before[x.group_id].includes(x.user_id))joined.push(x)})}
-  const names=[...new Map(joined.map(x=>[x.user_id,x.user_name])).values()];
-  const groupsJoined=[...new Set(joined.map(x=>x.group_name))];friendNews+=names.length;
-  rows.push(homeRow({tab:'peopleTab',tone:'people',icon:'☺',
-   title:!names.length?'No one new in your groups':names.length===1?`${esc(names[0])} joined ${esc(groupsJoined.length===1?groupsJoined[0]:'your groups')}`:`${esc(names[0])} and ${names.length-1} other${names.length===2?'':'s'} joined ${esc(groupsJoined.length===1?groupsJoined[0]:'your groups')}`,
-   detail:names.length?'See who is in your groups':(first?`${new Set(groupMembers.map(x=>x.user_id).filter(u=>u!==me)).size} other people share a group with you`:'Invite friends from Settings')}));
- }else{
-  rows.push(homeRow({tab:'venuesTab',tone:'people',icon:'☺',title:'Join a group',detail:'See what your friends are planning'}));
+   title:p?`${p} ${first?'':'new '}plan${p===1?'':'s'} from your crew`:(first?'No plans from your crew yet':'No new plans'),
+   detail:p?'Your crew\'s Interested and Going':'Mark something Interested or Going to get things started'}));
+  // New crew members since last time (visits from before Crew don't count them)
+  const before=Array.isArray(seen?.crew)?new Set(seen.crew):null;
+  const joined=before?crew.filter(x=>!before.has(x.user_id)):[];
+  friendNews+=joined.length;
+  if(joined.length)rows.push(homeRow({tab:'peopleTab',tone:'people',icon:'☺',
+   title:joined.length===1?`${esc(joined[0].display_name)} joined your crew`:`${esc(joined[0].display_name)} and ${joined.length-1} other${joined.length===2?'':'s'} joined your crew`,
+   detail:'See your crew on Happenings'}));
+ }else if(!asking.length){
+  rows.push(homeRow({tab:'venuesTab',tone:'people',icon:'☺',title:'Build your crew',detail:'Add friends in Settings to see what they\'re planning'}));
  }
  // The welcome screen only stops people when friends have news; new events
  // show as a one-line summary on Discover instead.
@@ -2262,31 +2262,6 @@ function showHome(){
  show('home');
  saveSeen();
  render(); // draw the 'New since your last visit' panel into Discover
-}
-// The third time a signed-in person opens the app and they're still not in a
-// group, suggest starting one and inviting friends. An "open" is a new tab or a
-// fresh start of the installed app, not a reload. Shown once per person on each
-// device; if something else is on screen that time, it waits for a later open (v91).
-const opensKey=()=>'bw_opens_'+uid(), groupNudgeKey=()=>'bw_group_nudge_'+uid();
-function countOpen(){
- try{
-  const counted='bw_open_counted_'+uid();
-  let n=Number(localStorage.getItem(opensKey()))||0;
-  if(!sessionStorage.getItem(counted)){sessionStorage.setItem(counted,'1');n+=1;localStorage.setItem(opensKey(),String(n))}
-  return n;
- }catch(e){return 0}
-}
-async function maybeGroupNudge(){
- if(!authUser||!name())return;
- const opens=countOpen();
- if(groups.length||opens<3)return;
- try{if(localStorage.getItem(groupNudgeKey()))return}catch(e){return}
- // Never talk over setup, the welcome-back card, another pop-up or a shared link.
- if(!$('welcome').classList.contains('hidden')||!$('home').classList.contains('hidden')||document.querySelector('dialog[open]')||readPendingLink())return;
- try{localStorage.setItem(groupNudgeKey(),'1')}catch(e){}
- const go=await confirmDialog({title:'Plans are better with friends',message:'Start a group and invite your friends. You\'ll see what they\'re going to, and they\'ll see your plans.',ok:'Create a group',cancel:'Not now'});
- if(!go)return;
- showWelcome('groups');show('createGroupPanel');setTimeout(()=>$('newGroupName').focus(),50);
 }
 function openTab(tab){hide('home');const b=document.querySelector(`.nav button[data-tab="${tab}"]`);if(b)b.click()}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-home-go]');if(b)openTab(b.dataset.homeGo)});
@@ -2308,10 +2283,9 @@ async function loadUserData(){
  await Promise.all([loadAttendance(),loadCustomEvents(),loadCommunityGenres()]);
  events=mergeEvents(events.filter(e=>!e.is_custom));
  await loadGroupHappenings(); await loadProfileIcons();
- renderProfileIconSettings(); renderAll(); renderGroupManager();
+ renderProfileIconSettings(); renderAll(); renderCrewSettings();
  showHome(); showSharedEvent();
  await resumeGuestAction();
- await maybeGroupNudge();
 }
 (async()=>{
  renderVenues(); renderAll();
@@ -2325,7 +2299,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=93', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=94', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
