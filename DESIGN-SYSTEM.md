@@ -192,7 +192,7 @@ Inputs are always at least 16px so iPhones don't zoom on focus.
 | Venue nudge | `.venue-nudge` | Shown instead of listings when no venues are chosen. |
 | Empty state | `.empty` | Short and specific: what's missing, and what to try. |
 | Happenings card | `.people-card.card` › `.happening-you`, `.happening-summary` › `.happening-summary-pill`, `.happening-group` › `.happening-person` › `.happening-status` | Your own status appears once per event, then friends by group, strongest response first. |
-| Group roster | `.group-roster.group-roster-bottom` | People in your groups, at the bottom of Happenings. |
+| Crew roster | `.group-roster.group-roster-bottom.crew-roster` | Your crew, at the bottom of Happenings. |
 | Add an event | `.custom-event-launch`, `.custom-event-panel` (`.collapsed`) | The teal-tinted panel at the top of Happenings. |
 | Festival card | `.card.festival-card` › `.festival-date`, `.festival-location`, `.festival-type` | Built by `festivalCard()`; same commitment buttons and Tickets link as events. |
 | Panel | `.panel`, `.settings-card`, `.settings-section` | Card-coloured containers for forms and settings. |
@@ -200,11 +200,11 @@ Inputs are always at least 16px so iPhones don't zoom on focus.
 | Checkbox tiles | `.choice` in `.choice-grid`, `.day-choice` in `.day-grid`, `.venue-row` | Multi-select lists: Search venues, days, Settings venues. |
 | Colour scheme choice | `.theme-choices` › `.theme-choice` (`aria-checked`) › `.theme-dots` | Two rows with a three-dot preview each. |
 | Avatar | `img.avatar` | The artwork is already a circle (`profile-icons/standardized/`); CSS adds exactly one 1px outline, 2px teal when selected. No boxes, rings or per-avatar variants. `.profile-icon-grid` › `.profile-icon-option` in Settings. |
-| Group rows | `.group-manager-row`, `.group-choice`, `.pin-display`, `.member-count` | Settings and the sign-up groups step. |
+| Crew rows | `#crewSettings` › `.crew-handle`, `.crew-form`, `.crew-section`, `.crew-row` › `.crew-handle-text`, `.row-actions`; `.member-count` | Settings → Your crew: your handle, add someone, requests, the crew list. |
 | Toast | `.bw-toasts` › `.bw-toast` (`.success` / `.error`) | `toast(message, tone)`. Above the bottom nav, gone after a few seconds. Never `alert()`. |
 | Dialog | `dialog.bw-dialog` › `.bw-dialog-card` | `dialog({...})` / `confirmDialog({...})`, for questions and copy-a-link; `typeToConfirm` for account deletion. OK comes first in the markup (so Enter means OK) and shows last. Never `confirm()` or `prompt()`. |
-| Sign-in and setup | `#welcome` › `.welcome-card` (`#authStep`, `#nameStep`, `#groupStep`) | Full screen over the app. `.checking` hides the card while a saved session is checked, so signed-in people never see it flash. |
-| Welcome back | `#home` › `.home-card` › `.home-row` › `.home-icon.events/.plans/.people` | Only when friends have new plans or someone joined a group. |
+| Sign-in and setup | `#welcome` › `.welcome-card` (`#authStep`, `#nameStep`) | Full screen over the app. `.checking` hides the card while a saved session is checked, so signed-in people never see it flash. |
+| Welcome back | `#home` › `.home-card` › `.home-row` › `.home-icon.events/.plans/.people` | Only when your crew have new plans, someone joined your crew or a crew request is waiting. |
 | Header | `.app-brand`, `.controls` (`#prev`, `#week`, `#next`, `#today`, `#refresh`) | Logo, wordmark and slogan; the week controls below. |
 | Bottom nav | `.nav` › `button` (`.active`, `.has-new`) | Six tabs: Happenings, Discover, Not music, Festivals, Search, Settings. `.has-new` adds a coral dot to Happenings. Text glyphs for icons, except the festival tent (`.nav-svg`). |
 | Utilities | `.hidden`, `.note`, `.group-meta`, `.nowrap`; `body.guest` with `.member-only` / `.guest-only` | What guests and members see is switched by the class on `body`. |
