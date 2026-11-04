@@ -664,6 +664,7 @@ body.guest .member-only,body:not(.guest) .guest-only{display:none}
 </div>
 <div class="settings-card guest-only"><h3>Account</h3><p class="note">Create a free login to mark events, build your crew and see what your friends are planning.</p><button id="guestSignIn" type="button" class="btn btn-primary">Create a free login</button></div>
 <div class="settings-card"><h3>Colour scheme</h3><div class="theme-choices" role="radiogroup" aria-label="Colour scheme"><button type="button" class="theme-choice" role="radio" data-theme-choice="dark"><span class="theme-dots" aria-hidden="true"><i></i><i></i><i></i></span>Seafront after dark</button><button type="button" class="theme-choice" role="radio" data-theme-choice="light"><span class="theme-dots" aria-hidden="true"><i></i><i></i><i></i></span>Seafront by day</button></div></div>
+<div class="settings-card member-only"><h3>Suggestions</h3><label class="venue-row count-visits"><span>Show “You might like”</span><input type="checkbox" id="showRecs" checked></label><p class="note">Up to three events on Happenings picked from what you've marked Interested or Going. This setting is for this device.</p></div>
 <div class="settings-card"><h3>Privacy</h3><label class="venue-row count-visits"><span>Count my visits</span><input type="checkbox" id="countVisits" checked></label><p class="note">Counts visits, Get tickets taps and app installs from this device, so we can see how the app is used. Switch it off and this device stops being counted. <a href="privacy.html" target="_blank" rel="noopener">Privacy policy</a></p></div>
 <div class="settings-card"><h3>Support Brighton Weekend</h3><p class="note">If you enjoy using the app, you can buy me a coffee to help keep it running and improving.</p><a class="support-btn" href="https://www.buymeacoffee.com/jonnysadler" target="_blank" rel="noopener">☕ Buy me a coffee ↗</a></div>
 <div class="settings-card member-only"><h3>Account</h3><button id="changeName" class="btn btn-secondary">Change my name</button> <button id="signOut" class="btn btn-ghost">Sign out</button><div id="accountEmail" class="group-meta"></div><div class="danger-zone"><h4>Delete my account</h4><p class="note">Permanently deletes your profile, your Interested and Going choices, your crew and crew requests, and any events you added. This can't be undone.</p><button id="deleteAccount" type="button" class="btn btn-danger">Delete my account</button></div></div>
@@ -1649,6 +1650,8 @@ function applyTheme(t){
 }
 document.addEventListener('click',e=>{const b=e.target.closest('[data-theme-choice]');if(!b)return;const t=b.dataset.themeChoice;try{t==='light'?localStorage.setItem('bw_theme','light'):localStorage.removeItem('bw_theme')}catch(_){}applyTheme(t)});
 applyTheme(currentTheme());
+(()=>{const box=$('showRecs');if(!box)return;box.checked=recsOn();
+ box.addEventListener('change',()=>{try{box.checked?localStorage.removeItem('bw_recs_off'):localStorage.setItem('bw_recs_off','1')}catch(_){}renderAll();toast(box.checked?'Suggestions are on.':'Suggestions are off.','success')})})();
 (()=>{const box=$('countVisits');if(!box)return;box.checked=countingOn();
  box.addEventListener('change',()=>{setCounting(box.checked);toast(box.checked?'Visits from this device will be counted.':'Visits from this device won\'t be counted.','success')})})();
 function venueNudgeHtml(text){
@@ -1864,7 +1867,10 @@ function recommendations(){
  for(const p of picks){if(used.has(p.from)||used.has('act:'+p.k))continue;used.add(p.from);used.add('act:'+p.k);out.push(p);if(out.length===REC_LIMIT)break}
  return out;
 }
+// Settings → Suggestions can switch these off (per device).
+function recsOn(){try{return localStorage.getItem('bw_recs_off')!=='1'}catch(_){return true}}
 function recommendationsHtml(){
+ if(!recsOn())return '';
  const recs=recommendations();
  if(!recs.length)return '';
  return `<section class="recs"><div class="section-head"><h3>You might like</h3></div>${recs.map(p=>eventCard(p.e,{showDate:true,reason:p.reason})).join('')}</section>`;

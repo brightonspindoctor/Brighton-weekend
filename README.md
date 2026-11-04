@@ -50,7 +50,8 @@ phone's home screen.
   marked Interested or Going. Bands are matched on the title; genres only when
   both events have a known genre. *Not for me* on a suggestion stops that act
   being suggested again. Shuffled each time the app is opened; hidden when
-  nothing matches. Shown even if your crew is empty.
+  nothing matches. Shown even if your crew is empty. Settings → Suggestions
+  switches them off on that device (`bw_recs_off` in localStorage).
 - **Community genres:** a music or club night with no genre has *Add a genre*
   in its ⋯ menu. Signed-in users pick from the fixed genre list
   (`GENRE_ORDER`); the most-picked genre shows for everyone. Genres from the
@@ -60,7 +61,8 @@ phone's home screen.
   the event can be removed (Online Safety Act; records and review dates are in
   the online safety records doc in the project).
 - **Settings:** venues and days, colour scheme (*Seafront after dark* or
-  *Seafront by day*), profile icon, your crew (handle, add someone, requests, crew list), privacy (*Count my visits*: off
+  *Seafront by day*), profile icon, your crew (handle, add someone, requests, crew list),
+  suggestions on or off, privacy (*Count my visits*: off
   means no guest ID and no visit or ticket-tap counting from that device),
   account, install the app.
 - **Messages:** confirmations and errors use in-app toasts and dialogs, not the
