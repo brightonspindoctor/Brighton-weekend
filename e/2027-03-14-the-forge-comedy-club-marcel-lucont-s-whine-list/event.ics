@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-14-the-forge-comedy-club-marcel-lucont-s-whine-list@brightonwee
+ kend.co.uk
+DTSTAMP:20270314T000000Z
+DTSTART:20270314T190000Z
+DTEND:20270314T210000Z
+SUMMARY:Marcel Lucont’s Whine List
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/marcel-luconts-whine-li
+ st-tickets-2004381607344\nMore: https://brightonweekend.co.uk/e/2027-03-14
+ -the-forge-comedy-club-marcel-lucont-s-whine-list/
+URL:https://brightonweekend.co.uk/e/2027-03-14-the-forge-comedy-club-marcel
+ -lucont-s-whine-list/
+END:VEVENT
+END:VCALENDAR

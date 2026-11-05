@@ -6,12 +6,12 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-19-greendoorstore-genn@brightonweekend.co.uk
 DTSTAMP:20261119T000000Z
-DTSTART;VALUE=DATE:20261119
-DTEND;VALUE=DATE:20261120
-SUMMARY:GENN
+DTSTART:20261119T190000Z
+DTEND:20261119T220000Z
+SUMMARY:ĠENN
 LOCATION:Green Door Store\, Brighton
-DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/\nMore: https:/
- /brightonweekend.co.uk/e/2026-11-19-greendoorstore-genn/
+DESCRIPTION:Tickets: https://link.dice.fm/bf515306f270\nMore: https://brigh
+ tonweekend.co.uk/e/2026-11-19-greendoorstore-genn/
 URL:https://brightonweekend.co.uk/e/2026-11-19-greendoorstore-genn/
 END:VEVENT
 END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-18-the-forge-comedy-club-tom-houghton-how-the-mighty-2@brighton
+ weekend.co.uk
+DTSTAMP:20261118T000000Z
+DTSTART:20261118T193000Z
+DTEND:20261118T213000Z
+SUMMARY:Tom Houghton: How The Mighty
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/tom-houghton-how-the-mi
+ ghty-tickets-2004286396566\nMore: https://brightonweekend.co.uk/e/2026-11-
+ 18-the-forge-comedy-club-tom-houghton-how-the-mighty-2/
+URL:https://brightonweekend.co.uk/e/2026-11-18-the-forge-comedy-club-tom-ho
+ ughton-how-the-mighty-2/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-03-volks-meryl-streek@brightonweekend.co.uk
+DTSTAMP:20270403T000000Z
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270404
+SUMMARY:Meryl Streek
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1674964/meryl-streek-tic
+ kets\nMore: https://brightonweekend.co.uk/e/2027-04-03-volks-meryl-streek/
+URL:https://brightonweekend.co.uk/e/2027-04-03-volks-meryl-streek/
+END:VEVENT
+END:VCALENDAR

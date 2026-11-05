@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-29-volks-supersonic-x-basskonnection-presents-7celsius@brighton
+ weekend.co.uk
+DTSTAMP:20261129T000000Z
+DTSTART:20261129T180000Z
+DTEND:20261129T220000Z
+SUMMARY:Supersonic X Basskonnection presents - 7Celsius
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Supersonic-X-Basskonnection-presents---7Celsius/43157843/\nMore: h
+ ttps://brightonweekend.co.uk/e/2026-11-29-volks-supersonic-x-basskonnectio
+ n-presents-7celsius/
+URL:https://brightonweekend.co.uk/e/2026-11-29-volks-supersonic-x-basskonne
+ ction-presents-7celsius/
+END:VEVENT
+END:VCALENDAR

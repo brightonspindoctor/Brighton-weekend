@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-15-theatre-royal-brighton-legally-blonde@brightonweekend.co.uk
+DTSTAMP:20261215T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Legally Blonde
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/legally-blonde/theatr
+ e-royal-brighton/calendar/\nMore: https://brightonweekend.co.uk/e/2026-12-
+ 15-theatre-royal-brighton-legally-blonde/
+URL:https://brightonweekend.co.uk/e/2026-12-15-theatre-royal-brighton-legal
+ ly-blonde/
+END:VEVENT
+END:VCALENDAR

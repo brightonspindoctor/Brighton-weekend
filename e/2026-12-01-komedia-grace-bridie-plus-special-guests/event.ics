@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-01-komedia-grace-bridie-plus-special-guests@brightonweekend.co.
+ uk
+DTSTAMP:20261201T000000Z
+DTSTART:20261201T190000Z
+DTEND:20261201T220000Z
+SUMMARY:GRACE BRIDIE Plus Special Guests
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366906
+ 8/events/128675710\nMore: https://brightonweekend.co.uk/e/2026-12-01-komed
+ ia-grace-bridie-plus-special-guests/
+URL:https://brightonweekend.co.uk/e/2026-12-01-komedia-grace-bridie-plus-sp
+ ecial-guests/
+END:VEVENT
+END:VCALENDAR

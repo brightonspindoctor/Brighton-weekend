@@ -91,6 +91,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "7celsius": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "7Celsius",
+  "checked": "2026-11-05",
+  "v": 3
+ },
  "80s hifi christmas party": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -5051,6 +5058,16 @@
   "act": "Gotts Street Park",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "grace bridie": {
+  "mbid": "264839a9-2268-41fb-ab39-4598b7be8513",
+  "name": "Grace Bridie",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "GRACE BRIDIE",
+  "checked": "2026-11-05",
+  "v": 3
  },
  "grace cummings": {
   "bucket": null,

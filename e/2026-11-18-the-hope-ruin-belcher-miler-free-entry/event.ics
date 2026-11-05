@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-18-the-hope-ruin-belcher-miler-free-entry@brightonweekend.co.uk
+DTSTAMP:20261118T000000Z
+DTSTART:20261118T193000Z
+DTEND:20261118T230000Z
+SUMMARY:Belcher + Miler
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/d43etdwg/belcher-miler-free-
+ entry\nMore: https://brightonweekend.co.uk/e/2026-11-18-the-hope-ruin-belc
+ her-miler-free-entry/
+URL:https://brightonweekend.co.uk/e/2026-11-18-the-hope-ruin-belcher-miler-
+ free-entry/
+END:VEVENT
+END:VCALENDAR
