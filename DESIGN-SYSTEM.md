@@ -184,7 +184,7 @@ Inputs are always at least 16px so iPhones don't zoom on focus.
 | Sparkle card | `.card.sparkle` › `.sparkles` (three star SVGs) | Cards of a promoter in `SPARKLE_PROMOTERS` (The Dice & Meeple): a ticket-gold edge and glow, and three small stars on the edge that twinkle in turn, one every 1.4s. With reduced motion the stars stay still. |
 | Promoter sticker | `.card-flags` › `.promoter-sticker.joy` / `.beatdown` / `.dicemeeple` (with their logo, `.sticker-logo`, from `icons/promoters/the-dice-and-meeple.png`, used with their agreement) | Top right of a card for a promoter we read (`e.promoter`, mapped in `PROMOTER_STICKERS`). Tilted 6°, its own colour, navy text. Tapping it shows only that promoter's gigs on Discover; in Search, or for a promoter whose events are all on Not music (The Dice & Meeple), it opens the Promoter search. |
 | Promoter filter bar | `.promoter-filter` › `.promoter-filter-label`, `.btn-chip` | Teal bar on Discover with the count for the chosen days; Show all clears it. |
-| Friends line | `.people` › `.social-chip` › `.social-icon.going/.heart/.profile` | Only when friends are interested or going. Also the group roster's name chips. |
+| Friends line | `.people` › `.social-chip` › `.social-icon.going/.heart/.profile` | Only when friends are interested or going. Also the crew roster's name chips. |
 | Day heading | `h3.day` with a `<span>` for the date | "Friday 16 October". |
 | Quick-time chips | `.range-chips` › `.festival-filter` (`.active`) | Tonight / This weekend / Next 7 days on Discover, where tapping the chosen chip goes back to the week; This weekend / Next 7 days / Next 30 days in Search. |
 | Filter chips | `.festival-filters` › `.festival-filter` (`.active`) | Festival types and Not music's event types (Comedy, Theatre & musicals, Board games, Pub quizzes, Pub events, Other), sticky under the header. A long Not music list ends with a `.show-more` button that adds the next page. |
@@ -207,7 +207,7 @@ Inputs are always at least 16px so iPhones don't zoom on focus.
 | Welcome back | `#home` › `.home-card` › `.home-row` › `.home-icon.events/.plans/.people` | Only when your crew have new plans, someone joined your crew or a crew request is waiting. |
 | Header | `.app-brand`, `.controls` (`#prev`, `#week`, `#next`, `#today`, `#refresh`) | Logo, wordmark and slogan; the week controls below. |
 | Bottom nav | `.nav` › `button` (`.active`, `.has-new`) | Six tabs: Happenings, Discover, Not music, Festivals, Search, Settings. `.has-new` adds a coral dot to Happenings. Text glyphs for icons, except the festival tent (`.nav-svg`). |
-| Utilities | `.hidden`, `.note`, `.group-meta`, `.nowrap`; `body.guest` with `.member-only` / `.guest-only` | What guests and members see is switched by the class on `body`. |
+| Utilities | `.hidden`, `.note`, `.group-meta`; `body.guest` with `.member-only` / `.guest-only` | What guests and members see is switched by the class on `body`. |
 
 ## Pages outside the app
 

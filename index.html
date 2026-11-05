@@ -346,7 +346,6 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 #crewFound .crew-row{border-bottom:0}
 .row-actions{display:flex;gap:var(--bw-space-2);flex-shrink:0}
 .crew-roster .people{margin-top:var(--bw-space-2)}
-.nowrap{white-space:nowrap}
 .group-heading{display:flex;align-items:center;gap:var(--bw-space-2);margin:var(--bw-space-4) 0 var(--bw-space-2);font-size:var(--bw-text-sm);font-weight:700;color:var(--bw-muted)}
 .member-count{font-size:var(--bw-text-xs);border:1px solid var(--bw-line);border-radius:var(--bw-radius-pill);padding:2px 7px}
 
@@ -726,7 +725,7 @@ let profileName='';
 let profileIcon='';
 let profileIconsByUser={};
 const PROFILE_ICONS=['fox','badger','otter','hedgehog','squirrel','rabbit','deer','seagull','pigeon','kingfisher','owl','raven','cat','dog','dolphin','shark','whale','octopus','crab','starfish','butterfly','dragonfly','ladybird','moth','beetle','spider','praying-mantis','grasshopper','firefly','snail','ant','wasp','fly','cicada','caterpillar','stick-insect','shield-bug','moth-pink','mushroom','clover','fern','sunflower','lavender','oak-leaf','cherry-blossom','holly','pine-tree','bonsai','starling','peregrine-falcon','seahorse','jellyfish','hare','puffin','fairy','dragon','unicorn','phoenix','water-dragon','griffin'];
-const PROFILE_LABELS={'fox':'Fox','badger':'Badger','otter':'Otter','hedgehog':'Hedgehog','squirrel':'Squirrel','rabbit':'Rabbit','deer':'Deer','seagull':'Seagull','pigeon':'Pigeon','kingfisher':'Kingfisher','owl':'Owl','raven':'Raven','cat':'Cat','dog':'Dog','dolphin':'Dolphin','shark':'Shark','whale':'Whale','octopus':'Octopus','crab':'Crab','starfish':'Starfish','butterfly':'Butterfly','dragonfly':'Dragonfly','ladybird':'Ladybird','moth':'Moth','beetle':'Beetle','spider':'Spider','praying-mantis':'Praying Mantis','grasshopper':'Grasshopper','firefly':'Firefly','snail':'Snail','ant':'Ant','wasp':'Wasp','fly':'Fly','cicada':'Cicada','caterpillar':'Caterpillar','stick-insect':'Stick Insect','shield-bug':'Shield Bug','moth-pink':'Moth','mushroom':'Mushroom','clover':'Clover','fern':'Fern','sunflower':'Sunflower','lavender':'Lavender','oak-leaf':'Oak Leaf','cherry-blossom':'Cherry Blossom','holly':'Holly','pine-tree':'Pine Tree','bonsai':'Bonsai','starling':'Starling','peregrine-falcon':'Peregrine Falcon','seahorse':'Seahorse','jellyfish':'Jellyfish','hare':'Hare','puffin':'Puffin','fairy':'Fairy','dragon':'Dragon','unicorn':'Unicorn','phoenix':'Phoenix','water-dragon':'Water Dragon','griffin':'Griffin'};
+const PROFILE_LABELS={'fox':'Fox','badger':'Badger','otter':'Otter','hedgehog':'Hedgehog','squirrel':'Squirrel','rabbit':'Rabbit','deer':'Deer','seagull':'Seagull','pigeon':'Pigeon','kingfisher':'Kingfisher','owl':'Owl','raven':'Raven','cat':'Cat','dog':'Dog','dolphin':'Dolphin','shark':'Shark','whale':'Whale','octopus':'Octopus','crab':'Crab','starfish':'Starfish','butterfly':'Butterfly','dragonfly':'Dragonfly','ladybird':'Ladybird','moth':'Moth','beetle':'Beetle','spider':'Spider','praying-mantis':'Praying Mantis','grasshopper':'Grasshopper','firefly':'Firefly','snail':'Snail','ant':'Ant','wasp':'Wasp','fly':'Fly','cicada':'Cicada','caterpillar':'Caterpillar','stick-insect':'Stick Insect','shield-bug':'Shield Bug','moth-pink':'Pink moth','mushroom':'Mushroom','clover':'Clover','fern':'Fern','sunflower':'Sunflower','lavender':'Lavender','oak-leaf':'Oak Leaf','cherry-blossom':'Cherry Blossom','holly':'Holly','pine-tree':'Pine Tree','bonsai':'Bonsai','starling':'Starling','peregrine-falcon':'Peregrine Falcon','seahorse':'Seahorse','jellyfish':'Jellyfish','hare':'Hare','puffin':'Puffin','fairy':'Fairy','dragon':'Dragon','unicorn':'Unicorn','phoenix':'Phoenix','water-dragon':'Water Dragon','griffin':'Griffin'};
 const VENUES=["Brighton Centre","Brighton Dome","CHALK","Concorde 2","The Old Market","Green Door Store","Volks","Quarters","Patterns","DUST","Komedia","The Forge Comedy Club","Theatre Royal Brighton","The Hope & Ruin","The Prince Albert","A L P H A B E T","The Pipeline","Brighton Racecourse","The Gladstone","Babble","Old Albion","Amex Stadium","Shelter Hall","The Brunswick","Caroline of Brunswick","The Cowley Club","Daltons","The Folklore Rooms","Fortune of War","Resident","The Rose Hill","Rossi Bar","The Bee's Mouth","The Waterbear","Glyndebourne","The British Engineerium","Other"];const COMEDY_VENUES=["Brighton Centre","Brighton Dome","The Old Market","Komedia","The Forge Comedy Club","Theatre Royal Brighton"];const PUB_VENUES=["The Hope & Ruin","The Prince Albert","The Pipeline","The Gladstone","Old Albion","The Brunswick","Caroline of Brunswick","Fortune of War","The Bee's Mouth"];
 const $=id=>document.getElementById(id);
 // ---- In-app messages ----
@@ -1729,7 +1728,6 @@ function isTalk(e){return e.category==='Talk'}
 // theatres' own programmes, or a clear sign in its title that it isn't a gig.
 // Theatre & musicals takes plays, musicals and dance; workshops, courses and
 // kids' shows go under Other.
-const NOT_MUSIC_TYPES=['Comedy','Theatre & musicals','Board games','Pub quizzes','Pub events','Other'];
 const NOT_MUSIC_EMPTY={'Comedy':'No comedy listed yet.','Theatre & musicals':'No theatre or musicals listed yet.','Board games':'No board game nights listed yet.','Pub quizzes':'No pub quizzes listed yet.','Pub events':'No other pub events listed yet.','Other':'Nothing else listed yet.'};
 const NOT_MUSIC_PAGE=60;
 let notMusicChoice='Comedy', notMusicShown=NOT_MUSIC_PAGE;
@@ -2299,7 +2297,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=94', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=95', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>

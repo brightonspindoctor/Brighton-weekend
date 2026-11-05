@@ -79,7 +79,7 @@ phone's home screen.
 | Event and other pages | `e/<id>/` (with `event.ics`), `this-weekend/`, `tonight/`, `gigs/`, `comedy/`, `club-nights/`, `theatre/`, `venues/` and `sitemap.xml`, built daily by `scripts/build-event-pages.py`, which also writes `pages.css`. `about.html`, `privacy.html`, `terms.html` and `404.html` use the same stylesheet |
 | Avatars | `profile-icons/` (the chosen artwork) → `profile-icons/standardized/` (what the app shows), built by `scripts/standardize-avatars.mjs`. See `AVATAR_CREATION.md` |
 | Offline caching | `sw.js` (caching only; it doesn't change the page) |
-| Sign-in, groups, commitments | Supabase (Google, or an email link and code). Setup: `GOOGLE-SIGN-IN.md` |
+| Sign-in, crew, commitments | Supabase (Google, or an email link and code). Setup: `GOOGLE-SIGN-IN.md` |
 | Database definition | `supabase/` (see below) |
 | Supabase client library | `vendor/supabase-js-2.117.2.js`, a pinned copy served from this site (no CDN). To upgrade, replace the file and update the filename in `index.html`, `admin.html` and `sw.js` |
 | Font | `fonts/plus-jakarta-sans-latin.woff2`, served from this site |
@@ -169,6 +169,11 @@ festivals into `events.json`.
 - `v84` adds read-only `*_named` views (e.g. `crew_named`, `usage_events_named`)
   that show display names next to user IDs in the Table Editor. The app can't
   read them.
+- `v85` (tidy-up, 5 November 2026): the hourly clean-up also clears crew
+  lookups after a day and declined crew requests after 6 months; handles
+  change only through `bw_set_handle`; drops the unused `bw_set_profile_icon`
+  and `bw_custom_events_venue_idx`; and makes the policies call `auth.uid()`
+  once per query.
 - Backups: an encrypted copy every night once two secrets are set; see
   `BACKUPS.md`.
 - When you change the database, add a new numbered file, run it in the
