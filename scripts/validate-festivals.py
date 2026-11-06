@@ -8,8 +8,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "festivals.json"
 MIN_FESTIVALS = 20
-# More than this many festivals on the same date at the same place means the
-# scraper has copied one listing's date and address onto its neighbours.
+# More than this many festivals with the same start and end dates at the same
+# place means the scraper has copied one listing's dates and address onto its
+# neighbours. Some sources give only a region ("East of England"), so a few
+# real festivals can share a start date there; copies share the end date too.
 MAX_SAME_DATE_AND_PLACE = 3
 CATEGORIES = {"Music", "Arts & Culture", "Food & Drink", "Family", "Wellness", "Comedy", "Film", "Other"}
 BAD_TITLES = {
@@ -49,8 +51,9 @@ for i, f in enumerate(festivals):
     key = (norm(f["title"]), d.isoformat(), norm(f["location"]))
     if key in keys: errors.append(f"duplicate title/date/location {f['title']} {d}")
     keys.add(key)
-    places[(d.isoformat(), norm(f["location"]))] += 1
-    at_place.setdefault((d.isoformat(), norm(f["location"])), []).append(f)
+    place = (f"{d.isoformat()} to {de.isoformat()}", norm(f["location"]))
+    places[place] += 1
+    at_place.setdefault(place, []).append(f)
     if f["category"] not in CATEGORIES: errors.append(f"{label}: invalid category {f['category']!r}")
     title = str(f["title"]).strip()
     if title.lower() in BAD_TITLES or title.startswith("#"): errors.append(f"{label}: navigation title {title!r}")
@@ -61,7 +64,7 @@ for i, f in enumerate(festivals):
 
 for (d, loc), n in places.items():
     if n > MAX_SAME_DATE_AND_PLACE and loc != "uk":
-        errors.append(f"{n} festivals share {d} at {loc!r}; the scraper has probably copied one listing's details onto others:")
+        errors.append(f"{n} festivals run {d} at {loc!r}; the scraper has probably copied one listing's details onto others:")
         errors.extend(f"  - {f['title']} ({f['date']} to {f['date_end']}, {f['location']}) {f['detail_url']}" for f in at_place[(d, loc)])
 
 if errors:
