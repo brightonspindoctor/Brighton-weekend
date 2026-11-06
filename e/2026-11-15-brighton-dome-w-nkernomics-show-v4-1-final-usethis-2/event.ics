@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-15-brighton-dome-w-nkernomics-show-v4-1-final-usethis-2@brighto
+ nweekend.co.uk
+DTSTAMP:20261115T000000Z
+DTSTART:20261115T193000Z
+DTEND:20261115T230000Z
+SUMMARY:W*nkernomics SHOW_V4.1_FINAL_USETHIS
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/L60-wnkernomics-show
+ _v41_final_usethis/\nMore: https://brightonweekend.co.uk/e/2026-11-15-brig
+ hton-dome-w-nkernomics-show-v4-1-final-usethis-2/
+URL:https://brightonweekend.co.uk/e/2026-11-15-brighton-dome-w-nkernomics-s
+ how-v4-1-final-usethis-2/
+END:VEVENT
+END:VCALENDAR

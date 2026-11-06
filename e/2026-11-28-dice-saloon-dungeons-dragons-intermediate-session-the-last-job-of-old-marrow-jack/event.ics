@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-dice-saloon-dungeons-dragons-intermediate-session-the-last-j
+ ob-of-old-marrow-jack@brightonweekend.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Dungeons & Dragons Intermediate Session - The Last Job of Old Marro
+ w Jack
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/dungeons-dragons-exp
+ erienced-session-the-last-job-of-old-marrow-jack-28-november-2026\nMore: h
+ ttps://brightonweekend.co.uk/e/2026-11-28-dice-saloon-dungeons-dragons-int
+ ermediate-session-the-last-job-of-old-marrow-jack/
+URL:https://brightonweekend.co.uk/e/2026-11-28-dice-saloon-dungeons-dragons
+ -intermediate-session-the-last-job-of-old-marrow-jack/
+END:VEVENT
+END:VCALENDAR

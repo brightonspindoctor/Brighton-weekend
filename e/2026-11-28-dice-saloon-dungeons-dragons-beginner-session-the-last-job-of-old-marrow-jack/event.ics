@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-dice-saloon-dungeons-dragons-beginner-session-the-last-job-o
+ f-old-marrow-jack@brightonweekend.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Dungeons & Dragons Beginner Session - The Last Job of Old Marrow Ja
+ ck
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/dungeons-dragons-beg
+ inner-session-the-last-job-of-old-marrow-jack-28-november-2026\nMore: http
+ s://brightonweekend.co.uk/e/2026-11-28-dice-saloon-dungeons-dragons-beginn
+ er-session-the-last-job-of-old-marrow-jack/
+URL:https://brightonweekend.co.uk/e/2026-11-28-dice-saloon-dungeons-dragons
+ -beginner-session-the-last-job-of-old-marrow-jack/
+END:VEVENT
+END:VCALENDAR

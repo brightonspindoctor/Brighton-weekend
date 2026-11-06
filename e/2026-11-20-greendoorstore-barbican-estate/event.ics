@@ -6,12 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-20-greendoorstore-barbican-estate@brightonweekend.co.uk
 DTSTAMP:20261120T000000Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
+DTSTART:20261120T190000Z
+DTEND:20261120T220000Z
 SUMMARY:Barbican Estate
 LOCATION:Green Door Store\, Brighton
-DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/\nMore: https:/
- /brightonweekend.co.uk/e/2026-11-20-greendoorstore-barbican-estate/
+DESCRIPTION:Tickets: https://www.seetickets.com/event/barbican-estate/the-g
+ reen-door-store/3712447\nMore: https://brightonweekend.co.uk/e/2026-11-20-
+ greendoorstore-barbican-estate/
 URL:https://brightonweekend.co.uk/e/2026-11-20-greendoorstore-barbican-esta
  te/
 END:VEVENT

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-03-komedia-rochester-knockers@brightonweekend.co.uk
+DTSTAMP:20270303T000000Z
+DTSTART:20270303T200000Z
+DTEND:20270303T230000Z
+SUMMARY:Rochester Knockers
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366909
+ 3/events/128675765\nMore: https://brightonweekend.co.uk/e/2027-03-03-komed
+ ia-rochester-knockers/
+URL:https://brightonweekend.co.uk/e/2027-03-03-komedia-rochester-knockers/
+END:VEVENT
+END:VCALENDAR
