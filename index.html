@@ -2264,6 +2264,22 @@ function showHome(){
 function openTab(tab){hide('home');const b=document.querySelector(`.nav button[data-tab="${tab}"]`);if(b)b.click()}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-home-go]');if(b)openTab(b.dataset.homeGo)});
 $('homeContinue').onclick=()=>openTab('discover');
+// Coming back after half an hour counts as opening the app again (phones keep
+// an installed app in memory, so it isn't reloaded): fresh listings and crew,
+// then the welcome screen if there's a crew request or other crew news.
+const RESUME_MS=30*60*1000;let appHiddenAt=0,resuming=false;
+document.addEventListener('visibilitychange',async()=>{
+ if(document.hidden){appHiddenAt=Date.now();return}
+ if(!appHiddenAt||Date.now()-appHiddenAt<RESUME_MS||resuming)return;
+ appHiddenAt=0;resuming=true;
+ try{
+  await Promise.all([refresh(),loadFestivals()]);
+  if(authUser&&name())await loadCrew();
+  homeShown=false;
+  await loadUserData();
+ }catch(e){console.warn('Could not refresh on return',e)}
+ finally{resuming=false}
+});
 let newPanelOpen=false;
 function newPanelHtml(){
  if(!showNewPanel||!newSinceVisit.length)return '';
@@ -2297,7 +2313,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=95', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=96', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
