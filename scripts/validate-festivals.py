@@ -34,7 +34,7 @@ try: start = date.fromisoformat(data["range_start"]); end = date.fromisoformat(d
 except Exception: raise SystemExit("invalid festival date range")
 if end != date(start.year + 1, 12, 31): raise SystemExit("festival range must end on 31 December of the following calendar year")
 
-ids, keys, errors, places = set(), set(), [], Counter()
+ids, keys, errors, places, at_place = set(), set(), [], Counter(), {}
 for i, f in enumerate(festivals):
     label = f.get("id") or i
     missing = [k for k in ("id", "title", "date", "date_end", "location", "category", "ticket_url", "detail_url") if not f.get(k)]
@@ -50,6 +50,7 @@ for i, f in enumerate(festivals):
     if key in keys: errors.append(f"duplicate title/date/location {f['title']} {d}")
     keys.add(key)
     places[(d.isoformat(), norm(f["location"]))] += 1
+    at_place.setdefault((d.isoformat(), norm(f["location"])), []).append(f)
     if f["category"] not in CATEGORIES: errors.append(f"{label}: invalid category {f['category']!r}")
     title = str(f["title"]).strip()
     if title.lower() in BAD_TITLES or title.startswith("#"): errors.append(f"{label}: navigation title {title!r}")
@@ -60,7 +61,8 @@ for i, f in enumerate(festivals):
 
 for (d, loc), n in places.items():
     if n > MAX_SAME_DATE_AND_PLACE and loc != "uk":
-        errors.append(f"{n} festivals share {d} at {loc!r}; the scraper has probably copied one listing's details onto others")
+        errors.append(f"{n} festivals share {d} at {loc!r}; the scraper has probably copied one listing's details onto others:")
+        errors.extend(f"  - {f['title']} ({f['date']} to {f['date_end']}, {f['location']}) {f['detail_url']}" for f in at_place[(d, loc)])
 
 if errors:
     print("\n".join(errors[:50]), file=sys.stderr)
