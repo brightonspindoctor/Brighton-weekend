@@ -2069,14 +2069,19 @@ function setupInstallButton(){
  if(!isPhoneOrTablet()){document.querySelector('.install-area')?.classList.add('hidden');return}
  if(window.matchMedia('(display-mode: standalone)').matches||navigator.standalone){btn.classList.add('hidden');hint.textContent='Brighton Weekend is already installed.';return}
  window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstallPrompt=e});
- window.addEventListener('appinstalled',()=>{deferredInstallPrompt=null;btn.classList.add('hidden');hint.textContent='Brighton Weekend is installed on your home screen.'});
- // iPads report themselves as Macs; a touch screen gives them away.
- const isiOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(/Macintosh/.test(navigator.userAgent)&&navigator.maxTouchPoints>1);
- btn.onclick=async()=>{
-  if(deferredInstallPrompt){deferredInstallPrompt.prompt();await deferredInstallPrompt.userChoice;deferredInstallPrompt=null;return}
-  dialog({title:'Add to your Home Screen',message:isiOS?'In Safari, tap Share, choose “Add to Home Screen”, then tap Add.':'In Chrome, tap the three-dot menu, then choose “Install app” or “Add to Home screen”.',ok:'Got it'});
- };
+ window.addEventListener('appinstalled',()=>{deferredInstallPrompt=null;document.querySelectorAll('[data-home-install]').forEach(r=>r.remove());btn.classList.add('hidden');hint.textContent='Brighton Weekend is installed on your home screen.'});
+ btn.onclick=promptInstall;
 }
+// Android/Chrome shows its own install prompt; elsewhere (iPhone and iPad
+// Safari) we explain the steps. Used by Settings and the welcome screen.
+async function promptInstall(){
+ if(deferredInstallPrompt){deferredInstallPrompt.prompt();await deferredInstallPrompt.userChoice;deferredInstallPrompt=null;return}
+ const isiOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(/Macintosh/.test(navigator.userAgent)&&navigator.maxTouchPoints>1);
+ dialog({title:'Add to your Home Screen',message:isiOS?'In Safari, tap Share, choose “Add to Home Screen”, then tap Add.':'In Chrome, tap the three-dot menu, then choose “Install app” or “Add to Home screen”.',ok:'Got it'});
+}
+// The welcome screen suggests installing to people using the website on a
+// phone or tablet.
+function canSuggestInstall(){return isPhoneOrTablet()&&!runningInstalled()}
 setupInstallButton();
 
 $('googleSignInBtn').addEventListener('click',async()=>{const btn=$('googleSignInBtn'),msg=$('authMessage');try{btn.disabled=true;msg.textContent='Opening Google…';await signInWithGoogle();}catch(err){msg.textContent='Could not start Google sign-in. '+(err.message||err);btn.disabled=false}});
@@ -2213,7 +2218,7 @@ function saveSeen(){
  try{const today=todayKey();localStorage.setItem(seenKey(),JSON.stringify({at:new Date().toISOString(),events:events.filter(e=>e.date>=today).map(e=>e.id),plans:friendPlanKeys(),crew:crewIds()}))}
  catch(e){console.warn('Could not remember this visit',e)}
 }
-function homeRow({tab,tone,icon,title,detail}){return `<button type="button" class="home-row" data-home-go="${tab}"><span class="home-icon ${tone}" aria-hidden="true">${icon}</span><span class="home-text"><strong>${title}</strong><span>${detail}</span></span><span class="home-chevron" aria-hidden="true">›</span></button>`}
+function homeRow({tab,tone,icon,title,detail}){return `<button type="button" class="home-row" ${tab==='install'?'data-home-install':`data-home-go="${tab}"`}><span class="home-icon ${tone}" aria-hidden="true">${icon}</span><span class="home-text"><strong>${title}</strong><span>${detail}</span></span><span class="home-chevron" aria-hidden="true">›</span></button>`}
 function showHome(){
  if(homeShown||!authUser||!name()||!$('welcome').classList.contains('hidden'))return;
  homeShown=true;
@@ -2252,6 +2257,9 @@ function showHome(){
  }else if(!asking.length){
   rows.push(homeRow({tab:'venuesTab',tone:'people',icon:'☺',title:'Build your crew',detail:'Add friends in Settings to see what they\'re planning'}));
  }
+ // Using the website on a phone or tablet: suggest installing the app.
+ if(canSuggestInstall())rows.push(homeRow({tab:'install',tone:'events',icon:'↓',
+  title:'Get the app',detail:'Add Brighton Weekend to your home screen so it opens like any other app'}));
  // The welcome screen only stops people when friends have news; new events
  // show as a one-line summary on Discover instead.
  if(!friendNews){saveSeen();render();return}
@@ -2267,6 +2275,7 @@ function showHome(){
 }
 function openTab(tab){hide('home');const b=document.querySelector(`.nav button[data-tab="${tab}"]`);if(b)b.click()}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-home-go]');if(b)openTab(b.dataset.homeGo)});
+document.addEventListener('click',e=>{if(e.target.closest('[data-home-install]'))promptInstall()});
 $('homeContinue').onclick=()=>openTab('discover');
 // Coming back after half an hour counts as opening the app again (phones keep
 // an installed app in memory, so it isn't reloaded): fresh listings and crew,
