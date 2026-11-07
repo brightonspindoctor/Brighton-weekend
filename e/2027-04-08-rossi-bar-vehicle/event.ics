@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-08-rossi-bar-vehicle@brightonweekend.co.uk
+DTSTAMP:20270408T000000Z
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+SUMMARY:Vehicle
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1691082/vehicle-tickets\
+ nMore: https://brightonweekend.co.uk/e/2027-04-08-rossi-bar-vehicle/
+URL:https://brightonweekend.co.uk/e/2027-04-08-rossi-bar-vehicle/
+END:VEVENT
+END:VCALENDAR

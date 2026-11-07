@@ -7,9 +7,9 @@ BEGIN:VEVENT
 UID:2026-11-17-the-prince-albert-cutflowers-in-superbloom-plus-special-gues
  ts-night-3@brightonweekend.co.uk
 DTSTAMP:20261117T000000Z
-DTSTART;VALUE=DATE:20261117
-DTEND;VALUE=DATE:20261118
-SUMMARY:CUTFLOWERS IN SUPERBLOOM! PLUS SPECIAL GUESTS Night 3
+DTSTART:20261117T210000Z
+DTEND:20261117T230000Z
+SUMMARY:Superbloom Tickets
 LOCATION:The Prince Albert\, Brighton
 DESCRIPTION:Tickets: https://cutflowers.band/pages/superbloom-tickets\nMore
  : https://brightonweekend.co.uk/e/2026-11-17-the-prince-albert-cutflowers-

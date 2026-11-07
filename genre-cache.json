@@ -11375,11 +11375,37 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "superbloom tickets": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Superbloom Tickets",
+  "checked": "2026-11-07",
+  "v": 3
+ },
  "suspiciously elvis": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Suspiciously Elvis",
   "checked": "2026-10-13",
+  "v": 3
+ },
+ "sutej singh": {
+  "mbid": "a726995a-c5b8-4102-9244-f49dec58f205",
+  "name": "Sutej Singh",
+  "genres": [
+   {
+    "name": "instrumental rock",
+    "count": 2
+   },
+   {
+    "name": "progressive rock",
+    "count": 2
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Sutej Singh",
+  "checked": "2026-11-07",
   "v": 3
  },
  "swapmeet": {
@@ -13776,6 +13802,13 @@
   "reason": "tagged",
   "act": "Van Morrison",
   "checked": "2026-10-16",
+  "v": 3
+ },
+ "vehicle": {
+  "bucket": null,
+  "reason": "6 artists share this name",
+  "act": "Vehicle",
+  "checked": "2026-11-07",
   "v": 3
  },
  "victus": {

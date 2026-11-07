@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-18-komedia-joe-black-friends-a-not-completely-christmas-kabaret
+ t-2@brightonweekend.co.uk
+DTSTAMP:20261218T000000Z
+DTSTART:20261218T170000Z
+DTEND:20261218T200000Z
+SUMMARY:Joe Black & Friends: A Not Completely Christmas* Kabarett
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366019
+ 9/events/128675853\nMore: https://brightonweekend.co.uk/e/2026-12-18-komed
+ ia-joe-black-friends-a-not-completely-christmas-kabarett-2/
+URL:https://brightonweekend.co.uk/e/2026-12-18-komedia-joe-black-friends-a-
+ not-completely-christmas-kabarett-2/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-the-pipeline-playing-alice@brightonweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Playing Alice
+LOCATION:The Pipeline\, Brighton
+DESCRIPTION:Tickets: https://www.songkick.com/concerts/43369927-playing-ali
+ ce-at-pipeline?utm_medium=organic&utm_source=microformat\nMore: https://br
+ ightonweekend.co.uk/e/2026-11-21-the-pipeline-playing-alice/
+URL:https://brightonweekend.co.uk/e/2026-11-21-the-pipeline-playing-alice/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-the-hope-ruin-that-s-hot@brightonweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART:20261114T210000Z
+DTEND:20261115T020000Z
+SUMMARY:That’s Hot
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/thats-hot-6/\nMore: https:/
+ /brightonweekend.co.uk/e/2026-11-14-the-hope-ruin-that-s-hot/
+URL:https://brightonweekend.co.uk/e/2026-11-14-the-hope-ruin-that-s-hot/
+END:VEVENT
+END:VCALENDAR
