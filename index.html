@@ -1285,11 +1285,15 @@ function trackApp(kind){
 }
 function trackInstall(){if(!readMark(INSTALL_COUNTED_KEY))trackApp('app_install').then(ok=>{if(ok)setMark(INSTALL_COUNTED_KEY,'1')})}
 // Called once the app knows whether someone is signed in (signed in, or a guest).
+// The installed app counts an app_open, the website in a browser a web_open
+// (v86), each at most once a day per device, so the admin page can show how
+// many people use each.
+const WEB_OPEN_DAY_KEY='bw_web_open_day';
 function trackInstalledUse(){
- if(!runningInstalled()||!countingOn())return;
- trackInstall();
- const today=todayKey();
- if(readMark(APP_OPEN_DAY_KEY)!==today)trackApp('app_open').then(ok=>{if(ok)setMark(APP_OPEN_DAY_KEY,today)});
+ if(!countingOn())return;
+ const installed=runningInstalled(), key=installed?APP_OPEN_DAY_KEY:WEB_OPEN_DAY_KEY, today=todayKey();
+ if(installed)trackInstall();
+ if(readMark(key)!==today)trackApp(installed?'app_open':'web_open').then(ok=>{if(ok)setMark(key,today)});
 }
 window.addEventListener('appinstalled',trackInstall);
 function enterGuestMode(){
@@ -2313,7 +2317,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=96', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=97', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
