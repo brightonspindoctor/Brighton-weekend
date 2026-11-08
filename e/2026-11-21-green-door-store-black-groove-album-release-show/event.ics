@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-11-21-green-door-store-black-groove-album-release-show@brightonwee
  kend.co.uk
 DTSTAMP:20261121T000000Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
+DTSTART:20261121T153000Z
+DTEND:20261121T183000Z
 SUMMARY:Black Groove Album Release Show
 LOCATION:Green Door Store\, Brighton
 DESCRIPTION:Tickets: https://wegottickets.com/Tinnitus\nMore: https://brigh

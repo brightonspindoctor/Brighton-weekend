@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-09-theatre-royal-brighton-the-night-sky-show-a-sky-full-of-hope
+ @brightonweekend.co.uk
+DTSTAMP:20270109T000000Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+SUMMARY:The Night Sky Show\, A Sky Full of Hope
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/the-night-sky-show-a-
+ sky-full-of-hope/theatre-royal-brighton/calendar/\nMore: https://brightonw
+ eekend.co.uk/e/2027-01-09-theatre-royal-brighton-the-night-sky-show-a-sky-
+ full-of-hope/
+URL:https://brightonweekend.co.uk/e/2027-01-09-theatre-royal-brighton-the-n
+ ight-sky-show-a-sky-full-of-hope/
+END:VEVENT
+END:VCALENDAR

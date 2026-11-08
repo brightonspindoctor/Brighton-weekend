@@ -6,18 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-12-the-hope-ruin-michael-mcgovern@brightonweekend.co.uk
 DTSTAMP:20261112T000000Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
-SUMMARY:Michael McGovern
+DTSTART:20261112T190000Z
+DTEND:20261112T230000Z
+SUMMARY:Michael McGovern *RESCHEDULED*
 LOCATION:The Hope & Ruin\, Brighton
-DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93d3cu
- Z2lnYW50aWMuY29tL21pY2hhZWwtbWNnb3Zlcm4tdGlja2V0cy9icmlnaHRvbi10aGUtaG9wZS
- 1hbmQtcnVpbi8yMDI2LTExLTEyLTE5LTAwP2FmZmlsaWF0ZT1lbnRzMjQmdXRtX3NvdXJjZT1l
- bnRzMjQmdXRtX21lZGl1bT1hZmZpbGlhdGUmdXRtX2NhbXBhaWduPWVudHMyNA/supplier/Gi
- gantic/suppliedid/Nzc4ODQ3NjQ1NDYyMDZhMDcwZjlkNzBjYjMyNzM0OTAwMzI/ticketid
- /8058563/checksum/849a65206ab60530863808f3a8224406/track/true?title=Michae
- l+McGovern&badge=&venueId=34826\nMore: https://brightonweekend.co.uk/e/202
- 6-11-12-the-hope-ruin-michael-mcgovern/
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/skr51h39/michael-mcgovern-re
+ scheduled\nMore: https://brightonweekend.co.uk/e/2026-11-12-the-hope-ruin-
+ michael-mcgovern/
 URL:https://brightonweekend.co.uk/e/2026-11-12-the-hope-ruin-michael-mcgove
  rn/
 END:VEVENT

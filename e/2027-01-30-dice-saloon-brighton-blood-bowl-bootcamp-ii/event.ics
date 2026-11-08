@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-30-dice-saloon-brighton-blood-bowl-bootcamp-ii@brightonweekend.
+ co.uk
+DTSTAMP:20270130T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:Brighton Blood Bowl Bootcamp II
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/brighton-blood-bowl-
+ bootcamp-ii-30-january-2027\nMore: https://brightonweekend.co.uk/e/2027-01
+ -30-dice-saloon-brighton-blood-bowl-bootcamp-ii/
+URL:https://brightonweekend.co.uk/e/2027-01-30-dice-saloon-brighton-blood-b
+ owl-bootcamp-ii/
+END:VEVENT
+END:VCALENDAR

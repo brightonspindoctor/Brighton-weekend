@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-patterns-x-tapes-x-molasses-slinky-kinky-b2b-wvrm-pool@brigh
+ tonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART:20261212T230000Z
+DTEND:20261213T040000Z
+SUMMARY:X-Tapes x Molasses: Slinky Kinky b2b WVRM POOL
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/x-tapes-x-molasses-slinky-kinky-
+ b2b-wvrm-pool-12th-dec-patterns-brighton-tickets\nMore: https://brightonwe
+ ekend.co.uk/e/2026-12-12-patterns-x-tapes-x-molasses-slinky-kinky-b2b-wvrm
+ -pool/
+URL:https://brightonweekend.co.uk/e/2026-12-12-patterns-x-tapes-x-molasses-
+ slinky-kinky-b2b-wvrm-pool/
+END:VEVENT
+END:VCALENDAR

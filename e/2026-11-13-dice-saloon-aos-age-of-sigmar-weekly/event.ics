@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-13-dice-saloon-aos-age-of-sigmar-weekly@brightonweekend.co.uk
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:AOS - Age Of Sigmar Weekly
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/aos-age-of-sigmar-we
+ ekly-november-13-2026\nMore: https://brightonweekend.co.uk/e/2026-11-13-di
+ ce-saloon-aos-age-of-sigmar-weekly/
+URL:https://brightonweekend.co.uk/e/2026-11-13-dice-saloon-aos-age-of-sigma
+ r-weekly/
+END:VEVENT
+END:VCALENDAR
