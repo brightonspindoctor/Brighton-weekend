@@ -6,12 +6,12 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2027-02-05-patterns-admt@brightonweekend.co.uk
 DTSTAMP:20270205T000000Z
-DTSTART;VALUE=DATE:20270205
-DTEND;VALUE=DATE:20270206
+DTSTART:20270205T190000Z
+DTEND:20270205T220000Z
 SUMMARY:ADMT
 LOCATION:Patterns\, Brighton
-DESCRIPTION:Tickets: https://dice.fm/event/69fa1b55d9d315000186a7b6\nMore: 
- https://brightonweekend.co.uk/e/2027-02-05-patterns-admt/
+DESCRIPTION:Tickets: https://dice.fm/event/admt-5th-feb-patterns-brighton-t
+ ickets\nMore: https://brightonweekend.co.uk/e/2027-02-05-patterns-admt/
 URL:https://brightonweekend.co.uk/e/2027-02-05-patterns-admt/
 END:VEVENT
 END:VCALENDAR

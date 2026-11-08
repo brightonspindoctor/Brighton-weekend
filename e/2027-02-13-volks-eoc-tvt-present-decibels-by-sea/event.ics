@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-13-volks-eoc-tvt-present-decibels-by-sea@brightonweekend.co.uk
+DTSTAMP:20270213T000000Z
+DTSTART:20270213T160000Z
+DTEND:20270213T220000Z
+SUMMARY:EOC & TVT present Decibels by Sea
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/EOC--TVT-present-Decibels-by-Sea/43163495/\nMore: https://brighton
+ weekend.co.uk/e/2027-02-13-volks-eoc-tvt-present-decibels-by-sea/
+URL:https://brightonweekend.co.uk/e/2027-02-13-volks-eoc-tvt-present-decibe
+ ls-by-sea/
+END:VEVENT
+END:VCALENDAR

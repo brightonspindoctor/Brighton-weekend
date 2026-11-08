@@ -7,7 +7,8 @@
   "reason": "no genre tags",
   "act": "1000 Rabbits",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "6KouMFgMa5zEeyXaeg6fvA"
  },
  "13 years of acidbox": {
   "bucket": null,
@@ -82,7 +83,8 @@
   "reason": "no genre tags",
   "act": "60 Juno",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "6BMp2cQhN9C3Vl8PLzLvw9"
  },
  "60juno": {
   "bucket": null,
@@ -180,7 +182,9 @@
   "bucket": "Folk & Country",
   "reason": "tagged",
   "act": "Aaron Rowe",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "6lM3Lss7HI9Zpq4d4GqjIG",
+  "v": 4
  },
  "aba shanti i ras kayleb easy skankin djs": {
   "bucket": null,
@@ -222,7 +226,8 @@
   "reason": "genres unclear",
   "act": "Abigail Lapell",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "6HyT9nfsNKEtu76UKQBD5g"
  },
  "abigail lapell show 2": {
   "bucket": null,
@@ -252,7 +257,7 @@
   "reason": "no genre tags",
   "act": "Absolute Bowie",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "absolute bowie christmas special": {
   "bucket": null,
@@ -281,7 +286,7 @@
   "reason": "no genre tags",
   "act": "ADMT",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "adult dvd": {
   "mbid": "3daddca6-34a3-47b1-91a5-a1bff99c98dc",
@@ -331,7 +336,7 @@
   "reason": "no genre tags",
   "act": "Age Against The Machine",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "age against the machine christmas special": {
   "bucket": null,
@@ -347,7 +352,8 @@
   "reason": "no genre tags",
   "act": "Ahsoka",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "2Z5cQBn8c3t1tK9qPiYqzE"
  },
  "ajj": {
   "bucket": null,
@@ -376,7 +382,9 @@
   "bucket": "Reggae & Ska",
   "reason": "tagged",
   "act": "Alborosie",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "78u1jLVBjPSXQVmHBV43yG",
+  "v": 4
  },
  "alex downey": {
   "bucket": null,
@@ -393,7 +401,7 @@
   "reason": "no genre tags",
   "act": "Alexander Painter",
   "checked": "2026-10-16",
-  "v": 3
+  "v": 4
  },
  "alice faye": {
   "bucket": null,
@@ -410,7 +418,8 @@
   "reason": "no genre tags",
   "act": "Alien Boy",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "65vqyT3OjG2zvb3cO1s44j"
  },
  "alison moyet": {
   "mbid": "79feb79b-8f0d-4306-b30a-e28bd88c9323",
@@ -501,7 +510,7 @@
   "reason": "no genre tags",
   "act": "Amelia Coburn",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4
  },
  "amplify and basstripper": {
   "bucket": null,
@@ -606,7 +615,8 @@
   "reason": "no genre tags",
   "act": "Andrew Cushin",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "0mUufv9jrIi9BPpN9VHduc"
  },
  "andy c zc45v": {
   "bucket": null,
@@ -636,7 +646,8 @@
   "reason": "no genre tags",
   "act": "Anna Katarina",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "3wUofml5k6dhBcD5OKPLup"
  },
  "annie claude deschenes": {
   "mbid": "3366a266-b3ba-43ab-84bf-75f45417627d",
@@ -661,7 +672,8 @@
   "reason": "no genre tags",
   "act": "Another Country $$$$",
   "checked": "2026-10-22",
-  "v": 3
+  "v": 4,
+  "spotify": "3At9kBvFhiXo8y64fyHdwo"
  },
  "antarctica": {
   "bucket": null,
@@ -715,7 +727,7 @@
   "reason": "tagged",
   "act": "Aqualine",
   "checked": "2026-10-16",
-  "v": 3
+  "v": 4
  },
  "arctic numpties": {
   "mbid": "85955587-1238-42eb-b02d-fea7e562971c",
@@ -725,7 +737,7 @@
   "reason": "no genre tags",
   "act": "Arctic Numpties",
   "checked": "2026-10-23",
-  "v": 3
+  "v": 4
  },
  "arkayla raynor": {
   "bucket": null,
@@ -753,7 +765,8 @@
   "reason": "no genre tags",
   "act": "Ashley Singh",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "0W5v1wZ9vqtoIgklZa1wcH"
  },
  "astra quartet": {
   "mbid": "00cecf76-3480-440a-bfb8-975661c72701",
@@ -763,7 +776,8 @@
   "reason": "no genre tags",
   "act": "Astra Quartet",
   "checked": "2026-11-04",
-  "v": 3
+  "v": 4,
+  "spotify": "1PrYHMDkwm6uq44DsLllzc"
  },
  "astrid williamson": {
   "mbid": "238aa16e-fda5-47b6-b776-9d462ddfdc9d",
@@ -819,7 +833,8 @@
   "reason": "no genre tags",
   "act": "Babe Haven",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "0b0NRq58okVkvcHSGOzM4x"
  },
  "babe haven latter": {
   "bucket": null,
@@ -885,7 +900,8 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Barbican Estate",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "v": 4
  },
  "basht": {
   "mbid": "eefe0ce9-822e-4814-be32-d5fc0f83db2e",
@@ -936,7 +952,7 @@
   "reason": "no genre tags",
   "act": "BATTLE HYMNS",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "bby": {
   "mbid": "dfdb3f72-d28f-4eab-b3dd-644872d73245",
@@ -965,7 +981,7 @@
   "reason": "no genre tags",
   "act": "Beatles Complete",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "bec o malley": {
   "mbid": "6a5f79b9-f86f-40f6-9df5-e585cea4604b",
@@ -984,7 +1000,7 @@
   "reason": "no genre tags",
   "act": "Bec O'Malley",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "beefmince": {
   "bucket": null,
@@ -1043,7 +1059,9 @@
   "bucket": "Folk & Country",
   "reason": "tagged",
   "act": "Bellowhead",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "79fyBJJSUvWw4263rXYDM0",
+  "v": 4
  },
  "ben hemsley": {
   "mbid": "8f5c77ee-dfb8-4f53-a08c-8e32dcca1545",
@@ -1062,7 +1080,7 @@
   "reason": "no genre tags",
   "act": "Ben Poole",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4
  },
  "ben quad": {
   "mbid": "219f330f-4b12-418a-a69b-451c3c2a7383",
@@ -1180,7 +1198,8 @@
   "reason": "no genre tags",
   "act": "BEYOND EXTINCTION",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "38vt0CiehYk43Nu6xcfKXk"
  },
  "bhafc foundation benefit": {
   "bucket": null,
@@ -1236,7 +1255,8 @@
   "reason": "genres unclear",
   "act": "Big|Brave",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "5nlpqhz47LYv7KvarJdh44"
  },
  "big red": {
   "bucket": null,
@@ -1260,7 +1280,7 @@
   "reason": "no genre tags",
   "act": "Big Sandy",
   "checked": "2026-10-22",
-  "v": 3
+  "v": 4
  },
  "big special the joy hotel": {
   "bucket": null,
@@ -1365,7 +1385,7 @@
   "reason": "no genre tags",
   "act": "Björn Again",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "black groove": {
   "bucket": null,
@@ -1400,7 +1420,8 @@
   "reason": "no genre tags",
   "act": "BLEECH 9:3",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "2S6eJYUlnmZL5XOaC3nvRL"
  },
  "bleed from within": {
   "mbid": "385d80ab-cf87-46ed-b4c9-3ea8942993ef",
@@ -1428,7 +1449,8 @@
   "reason": "tagged",
   "act": "Bleed From Within",
   "checked": "2026-10-22",
-  "v": 3
+  "v": 4,
+  "spotify": "5ZvwJikDgdP1PFU4PkAPVG"
  },
  "blind yeo": {
   "mbid": "cf4a2a97-b932-41cf-af5a-e8640185c4f8",
@@ -1839,7 +1861,8 @@
   "reason": "no genre tags",
   "act": "Butch Kassidy",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "0mDTM9lWOAmhmR40Df5Fsr"
  },
  "buzzcocks": {
   "bucket": null,
@@ -1916,7 +1939,8 @@
   "reason": "no genre tags",
   "act": "Caleb Caudle",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "2FZLOlw11Ta6hcSK6a7FPU"
  },
  "calvin love": {
   "mbid": "8df5d398-6812-4590-ad7b-97074fd58d61",
@@ -1926,7 +1950,8 @@
   "reason": "no genre tags",
   "act": "Calvin Love",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "4BGm5j3zsc5NU2BM1ihlA4"
  },
  "cancer bats": {
   "mbid": "00b952be-6c97-4880-84f9-06de584b491b",
@@ -1971,7 +1996,7 @@
   "reason": "no genre tags",
   "act": "Carnival Collective",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "carole kings tapestry": {
   "bucket": null,
@@ -1988,7 +2013,8 @@
   "reason": "no genre tags",
   "act": "Carolina Cury",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "6DN3lUELm1rtxgNobBIuCk"
  },
  "carsie blanton": {
   "mbid": "be2a77db-adf9-48f6-b084-88d52cda6482",
@@ -2022,7 +2048,8 @@
   "reason": "genres unclear",
   "act": "Carsie Blanton",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "1NkiZTHV6voDpcA7eEQQMb"
  },
  "cassia": {
   "bucket": null,
@@ -2056,7 +2083,7 @@
   "reason": "no genre tags",
   "act": "Champion Trees",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "channel one sound system": {
   "mbid": "e136692a-4f00-46cc-9f01-cf51a0b154b1",
@@ -2075,7 +2102,7 @@
   "reason": "no genre tags",
   "act": "Charleen",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "charlie noordewier": {
   "mbid": "93783633-f3e1-4808-a612-6a09661fdb98",
@@ -2085,7 +2112,8 @@
   "reason": "no genre tags",
   "act": "Charlie Noordewier",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "0SDfEluak7Z8ML7o1K2Ljk"
  },
  "chasing abbey": {
   "mbid": "00c37ba2-20e6-41d6-9432-441bf5ecea74",
@@ -2095,7 +2123,8 @@
   "reason": "no genre tags",
   "act": "Chasing Abbey",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "6toMXnM9tcozz7OmgxWtZg"
  },
  "cheekface emperor x": {
   "bucket": null,
@@ -2183,7 +2212,8 @@
   "reason": "tagged",
   "act": "Chuck Ragan",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "6iU0naWn1UgiTReoiXqPXI"
  },
  "church andrews and matt davies": {
   "mbid": "fa01153f-3136-46f3-925d-3516e69a39c8",
@@ -2193,7 +2223,7 @@
   "reason": "no genre tags",
   "act": "Church Andrews & Matt Davies",
   "checked": "2026-11-04",
-  "v": 3
+  "v": 4
  },
  "city baby attacked by rats": {
   "bucket": null,
@@ -2251,7 +2281,7 @@
   "reason": "no genre tags",
   "act": "Clover Stieve",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "cody dahler": {
   "bucket": null,
@@ -2282,7 +2312,8 @@
   "reason": "genres unclear",
   "act": "Coilguns",
   "checked": "2026-10-24",
-  "v": 3
+  "v": 4,
+  "spotify": "02NSYcRNKSTchMm72ZigOH"
  },
  "colin miller": {
   "bucket": null,
@@ -2323,7 +2354,7 @@
   "reason": "no genre tags",
   "act": "CONNOR KELLY & THE TIME WARP",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "conway the machine": {
   "mbid": "a633ebb5-b81a-400f-b5df-0e625ea81fe9",
@@ -2412,7 +2443,9 @@
   "bucket": "Punk & Metal",
   "reason": "tagged",
   "act": "COSMIC JOKE",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "3w7uVOPfs4czpqSWFgCPDX",
+  "v": 4
  },
  "cosmic kitten": {
   "mbid": "c239b0ec-bed7-40b4-a06c-27a1dbe68df0",
@@ -2461,7 +2494,8 @@
   "reason": "tagged",
   "act": "Cowboy Hunters",
   "checked": "2026-10-28",
-  "v": 3
+  "v": 4,
+  "spotify": "5GSSYBJxAbpSyj2w2vr5Cp"
  },
  "cowboyy": {
   "mbid": "ec19bb9a-2231-4da3-8a2d-c726d319747a",
@@ -2471,7 +2505,8 @@
   "reason": "no genre tags",
   "act": "COWBOYY",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "65TVwNWUoKyfvlaxLLJQGh"
  },
  "cq wrestling": {
   "mbid": "9065c2ee-0e4a-4f36-8e9e-92a572e1fa8e",
@@ -2481,7 +2516,8 @@
   "reason": "no genre tags",
   "act": "CQ Wrestling",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "5S4qUw22ZF7gTPUEx61SyC"
  },
  "craig david": {
   "mbid": "89e39f67-65cc-4f90-b145-b1b56c209f8a",
@@ -2522,7 +2558,8 @@
   "reason": "genres unclear",
   "act": "Craig David",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "2JyWXPbkqI5ZJa3gwqVa0c"
  },
  "craven faults": {
   "mbid": "f738f258-8ec2-444e-8dfa-0e27766274eb",
@@ -2537,7 +2574,8 @@
   "reason": "genres unclear",
   "act": "Craven Faults",
   "checked": "2026-10-17",
-  "v": 3
+  "v": 4,
+  "spotify": "3pAxHOmaTLiUnC9WoXdsyN"
  },
  "creature and machine": {
   "bucket": null,
@@ -2617,7 +2655,8 @@
   "reason": "tagged",
   "act": "Crosby, Stills, Nash & Young",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "1CYsQCypByMVgnv17qsSbQ"
  },
  "cryer mya": {
   "bucket": null,
@@ -2691,7 +2730,9 @@
   "bucket": "Folk & Country",
   "reason": "tagged",
   "act": "DakhaBrakha",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "5hQYZqZaPcRceL82mFZTO5",
+  "v": 4
  },
  "daltons bar": {
   "bucket": null,
@@ -2736,7 +2777,7 @@
   "reason": "no genre tags",
   "act": "Daniel Isaiah",
   "checked": "2026-10-28",
-  "v": 3
+  "v": 4
  },
  "daniel kimbro": {
   "mbid": "fea4c956-4543-4d1f-b270-1f7f127f8c0e",
@@ -2746,7 +2787,7 @@
   "reason": "no genre tags",
   "act": "Daniel Kimbro",
   "checked": "2026-10-16",
-  "v": 3
+  "v": 4
  },
  "daniel martinez flamenco company": {
   "bucket": null,
@@ -2770,7 +2811,7 @@
   "reason": "no genre tags",
   "act": "Dara Dubh",
   "checked": "2026-10-31",
-  "v": 3
+  "v": 4
  },
  "dargz": {
   "mbid": "061c1b13-8503-44b3-9763-ec3a8520cd56",
@@ -2780,7 +2821,8 @@
   "reason": "no genre tags",
   "act": "Dargz",
   "checked": "2026-10-31",
-  "v": 3
+  "v": 4,
+  "spotify": "0AggcZhPMyJglaaruoxJpN"
  },
  "dateless wonder club little death ep launch party": {
   "bucket": null,
@@ -2864,7 +2906,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "David Bowie",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "0oSGxfWSnnOXhD2fKuz2Gy",
+  "v": 4
  },
  "david byrne s night": {
   "bucket": null,
@@ -2891,7 +2935,8 @@
   "reason": "tagged",
   "act": "David Devant and His Spirit Wife",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "0yqz4riftDWnVL6BFHBj94"
  },
  "david j": {
   "bucket": null,
@@ -2978,7 +3023,8 @@
   "reason": "genres unclear",
   "act": "DEATH GOALS",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "00I2SJI3kqtdl3IWdAPTk5"
  },
  "death in vegas": {
   "mbid": "5b32946a-4c08-4a75-b1b1-60700470671f",
@@ -3072,7 +3118,9 @@
   "bucket": "Electronic",
   "reason": "tagged",
   "act": "Death In Vegas",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "5aj3LEYRbuaabjjHkj5oE1",
+  "v": 4
  },
  "decadance": {
   "bucket": null,
@@ -3103,7 +3151,8 @@
   "reason": "no genre tags",
   "act": "Dekker",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "2Udd2jgFaz8tXG1w3PyMtN"
  },
  "delirium x": {
   "bucket": null,
@@ -3147,7 +3196,9 @@
   "bucket": "Pop",
   "reason": "tagged",
   "act": "Delta Goodrem",
-  "checked": "2026-10-09"
+  "checked": "2026-10-09",
+  "spotify": "2g6fa86fL6oLcoDqanBbuR",
+  "v": 4
  },
  "demeanour": {
   "bucket": null,
@@ -3241,7 +3292,8 @@
   "reason": "no genre tags",
   "act": "Dessie Magee",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "1NtRrH5c8GMEcD62fUD8Fm"
  },
  "devilman": {
   "bucket": null,
@@ -3401,7 +3453,7 @@
   "reason": "no genre tags",
   "act": "Dirty DC",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "disco in the round": {
   "bucket": null,
@@ -3418,7 +3470,8 @@
   "reason": "no genre tags",
   "act": "DISGUSTING SISTERS",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "5Lh2DW6C4L5p23wvyAheDe"
  },
  "disney princess": {
   "bucket": null,
@@ -3515,7 +3568,7 @@
   "reason": "no genre tags",
   "act": "DR RAZZU",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "dr xand van tulleken": {
   "bucket": null,
@@ -3552,7 +3605,8 @@
   "reason": "no genre tags",
   "act": "Dutch Criminal Record",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "5h6KJPKB8cSVJTWZhKAZoT"
  },
  "dutch graft of the manor": {
   "bucket": null,
@@ -3571,7 +3625,8 @@
   "reason": "no genre tags",
   "act": "Dutty Moonshine Big Band",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "2aRD3jAqJXXE6luSkvLp3W"
  },
  "dylan flynn and the dead poets": {
   "mbid": "9c9419df-1b5c-4911-940e-4685808d3fcd",
@@ -3598,7 +3653,7 @@
   "reason": "no genre tags",
   "act": "E.R Thorpe",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "ebony osailah": {
   "bucket": null,
@@ -3663,7 +3718,8 @@
   "reason": "tagged",
   "act": "Editors",
   "checked": "2026-10-16",
-  "v": 3
+  "v": 4,
+  "spotify": "6e9wIFWhBPHLE9bXK8gtBI"
  },
  "elanor moss": {
   "mbid": "35f96e44-0f8c-495b-979a-55de67ff3b4f",
@@ -3713,7 +3769,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Electric Eel Shock",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "1lLY6EogC1Ph2Y6ZRjnkCY",
+  "v": 4
  },
  "electric six": {
   "bucket": null,
@@ -3751,7 +3809,7 @@
   "reason": "no genre tags",
   "act": "Elvana",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "embodiment infected dead": {
   "bucket": null,
@@ -3780,7 +3838,9 @@
   "bucket": "Hip-hop & R&B",
   "reason": "tagged",
   "act": "Emeli Sandé",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "7sfgqEdoeBTjd8lQsPT3Cy",
+  "v": 4
  },
  "emma ruth rundle": {
   "mbid": "7ba593b9-79d4-4860-92c8-ade2a1ef4551",
@@ -3822,7 +3882,9 @@
   "bucket": "Folk & Country",
   "reason": "tagged",
   "act": "Emma Ruth Rundle",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "34gLicNdz493863yZTanvC",
+  "v": 4
  },
  "emo day party": {
   "bucket": null,
@@ -3905,7 +3967,8 @@
   "reason": "tagged",
   "act": "Erasure",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "0z5DFXmhT4ZNzWElsM7V89"
  },
  "ethan regan": {
   "mbid": "04b685be-a7a7-4d54-8ea5-2b30a95fc0e1",
@@ -3915,7 +3978,8 @@
   "reason": "no genre tags",
   "act": "Ethan Regan",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "3UNkRVGHGCrGCE0930Bt9e"
  },
  "evangeline eastwood": {
   "bucket": null,
@@ -3989,7 +4053,8 @@
   "reason": "no genre tags",
   "act": "Exploring Birdsong",
   "checked": "2026-10-24",
-  "v": 3
+  "v": 4,
+  "spotify": "7HPwQcRoOq1Mlqw5WBtNQc"
  },
  "eyes": {
   "mbid": "90e129cb-8613-4d37-a692-993fd27cbbc9",
@@ -4025,7 +4090,7 @@
   "reason": "no genre tags",
   "act": "Family Stereo",
   "checked": "2026-10-24",
-  "v": 3
+  "v": 4
  },
  "family ties": {
   "bucket": null,
@@ -4042,7 +4107,8 @@
   "reason": "no genre tags",
   "act": "FARMA G",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "5Qy7OcsjsfkGo5Bm1dsbcb"
  },
  "fascinating aida": {
   "mbid": "96fd736f-dfab-4d95-89ef-9214aa902775",
@@ -4065,7 +4131,8 @@
   "reason": "genres unclear",
   "act": "Fascinating Aïda",
   "checked": "2026-10-16",
-  "v": 3
+  "v": 4,
+  "spotify": "1cmQg4CJAmMgUgRZuBHoOA"
  },
  "fat lloyd": {
   "bucket": null,
@@ -4124,7 +4191,8 @@
   "reason": "tagged",
   "act": "Fatboy Slim",
   "checked": "2026-10-31",
-  "v": 3
+  "v": 4,
+  "spotify": "4Y7tXHSEejGu1vQ9bwDdXW"
  },
  "feel": {
   "bucket": null,
@@ -4167,7 +4235,7 @@
   "reason": "no genre tags",
   "act": "Finnian James",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "firefriend": {
   "mbid": "bdde0863-e23c-48ad-b7e8-f36601531f14",
@@ -4222,7 +4290,7 @@
   "reason": "no genre tags",
   "act": "First Time Flyers",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "flamenco express": {
   "bucket": null,
@@ -4285,7 +4353,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Flat Moon",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "5dri381YbDhSj6uDiGDsTL",
+  "v": 4
  },
  "fleetwood mac": {
   "mbid": "bd13909f-1c29-4c27-a874-d4aaf27c5b1a",
@@ -4342,7 +4412,8 @@
   "reason": "tagged",
   "act": "Fleetwood Mac",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "08GQAI4eElDnROBrJRGE0X"
  },
  "folklore monthly showcase": {
   "bucket": null,
@@ -4417,7 +4488,8 @@
   "reason": "no genre tags",
   "act": "Frankie Stew & Harvey Gunn",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "1jVvXqdwDHekLwFBamrcUx"
  },
  "frazey ford": {
   "mbid": "c455e254-994c-40d3-a953-4ff6954c3557",
@@ -4495,7 +4567,8 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "From The Jam",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "v": 4
  },
  "frostbite audio": {
   "bucket": null,
@@ -4524,7 +4597,8 @@
   "bucket": "Electronic",
   "reason": "tagged",
   "act": "Fujiya & Miyagi",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "v": 4
  },
  "fukushima dolphin": {
   "mbid": "861611ed-dcda-41e6-a46d-8ef2052058d6",
@@ -4534,7 +4608,7 @@
   "reason": "no genre tags",
   "act": "Fukushima Dolphin",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "fully local": {
   "bucket": null,
@@ -4550,7 +4624,8 @@
   "reason": "no genre tags",
   "act": "Funke & The Two Tone Baby",
   "checked": "2026-10-28",
-  "v": 3
+  "v": 4,
+  "spotify": "2MffbeP9zTw8cxdjpIu3oP"
  },
  "funny girls": {
   "bucket": null,
@@ -4603,7 +4678,7 @@
   "reason": "no genre tags",
   "act": "Gareth Malone",
   "checked": "2026-10-17",
-  "v": 3
+  "v": 4
  },
  "gaudete": {
   "bucket": null,
@@ -4653,7 +4728,9 @@
   "bucket": "Punk & Metal",
   "reason": "tagged",
   "act": "GEN & THE DEGENERATES",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "7oEVPoHXaj73ddUCTNlO9E",
+  "v": 4
  },
  "genn": {
   "mbid": "ce4d52e4-2383-4086-ac93-890ebe0b9d81",
@@ -4663,7 +4740,8 @@
   "reason": "no genre tags",
   "act": "GENN",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "5mZ836Fy59tOJEcqWfN771"
  },
  "gentleman s dub club": {
   "bucket": null,
@@ -4679,7 +4757,7 @@
   "reason": "no genre tags",
   "act": "George Boomsma",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "george fitzgerald": {
   "mbid": "ffa167fb-530d-4a46-8874-8511e39a9f57",
@@ -4735,7 +4813,9 @@
   "bucket": "Punk & Metal",
   "reason": "tagged",
   "act": "Getdown Services",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "4OTD2AbOu5iBqSWk3NfwG5",
+  "v": 4
  },
  "getting to brighton dome": {
   "bucket": null,
@@ -4776,7 +4856,9 @@
   "bucket": "Hip-hop & R&B",
   "reason": "tagged",
   "act": "GHOSTFACE KILLAH",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "6FD0unjzGQhX3b6eMccMJe",
+  "v": 4
  },
  "ghoul bus presents": {
   "bucket": null,
@@ -4816,7 +4898,7 @@
   "reason": "no genre tags",
   "act": "Girl Apocrypha",
   "checked": "2026-10-16",
-  "v": 3
+  "v": 4
  },
  "girl in the year above": {
   "mbid": "e115f2cd-e4d3-465d-bcca-5d4f568e654f",
@@ -4886,7 +4968,9 @@
   "bucket": "House & Disco",
   "reason": "tagged",
   "act": "Girls of the Internet",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "5tGmvKTFVL9bGZTxtvopHE",
+  "v": 4
  },
  "glenn richards and the venus lakes": {
   "bucket": null,
@@ -4910,7 +4994,7 @@
   "reason": "no genre tags",
   "act": "Go Your Own Way",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "gold panda": {
   "mbid": "bfbccd40-1a06-4ee7-b24d-b2f8cc714fa9",
@@ -4924,7 +5008,9 @@
   "bucket": "Electronic",
   "reason": "tagged",
   "act": "Gold Panda",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "6xS3zemJD9h94iueQvGqVk",
+  "v": 4
  },
  "goldie": {
   "bucket": null,
@@ -4961,7 +5047,7 @@
   "reason": "no genre tags",
   "act": "Good Habits",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "good health good wealth": {
   "mbid": "492b0368-e6c6-4578-bf37-3b01a59cfd97",
@@ -4983,7 +5069,9 @@
   "bucket": "Pop",
   "reason": "tagged",
   "act": "Good Health Good Wealth",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "6oaEXmqVM7eQnzva7kHudo",
+  "v": 4
  },
  "goodnight texas": {
   "mbid": "5def8c5b-3a30-43b8-95ee-5c830d717694",
@@ -5009,7 +5097,9 @@
   "bucket": "Folk & Country",
   "reason": "tagged",
   "act": "GOODNIGHT, TEXAS",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "5ammRFhN6wQXM30xlhndC5",
+  "v": 4
  },
  "gooseberry": {
   "mbid": "059041a5-450a-49f5-a087-e2521c2b7a9a",
@@ -5057,7 +5147,8 @@
   "reason": "no genre tags",
   "act": "Gotts Street Park",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "2hwy5DELim1AxB1sHPqn4y"
  },
  "grace bridie": {
   "mbid": "264839a9-2268-41fb-ab39-4598b7be8513",
@@ -5067,7 +5158,8 @@
   "reason": "no genre tags",
   "act": "GRACE BRIDIE",
   "checked": "2026-11-05",
-  "v": 3
+  "v": 4,
+  "spotify": "3u3NAucJOMpUFLwUS8QHFJ"
  },
  "grace cummings": {
   "bucket": null,
@@ -5084,7 +5176,8 @@
   "reason": "no genre tags",
   "act": "GRACE HAYHURST",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "3PDo9wWpc0jP2WeFQRYqUA"
  },
  "graham coxon": {
   "mbid": "fb56cc34-2ab1-4621-ac18-9bf2895e5f4f",
@@ -5118,7 +5211,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Graham Coxon",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "7ueZp29tCNwjIj4yAMTEaC",
+  "v": 4
  },
  "grandmas house": {
   "mbid": "96c2b1c6-bb57-4677-ba8e-6fe810d3aafe",
@@ -5128,7 +5223,8 @@
   "reason": "no genre tags",
   "act": "Grandmas House",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "6BFppN7DZ1DR7zFyNTj7Nv"
  },
  "grandmaster flash": {
   "mbid": "7db590cd-d7e6-4b36-b4e7-e8209426b02d",
@@ -5166,7 +5262,7 @@
   "reason": "no genre tags",
   "act": "GRIEF RITUAL",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "grommet": {
   "bucket": null,
@@ -5202,7 +5298,8 @@
   "reason": "genres unclear",
   "act": "Guana Batz",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "1KMuPtuTktoPaGn44iTNB5"
  },
  "guerilla rocks": {
   "bucket": null,
@@ -5283,7 +5380,7 @@
   "reason": "no genre tags",
   "act": "Halina Rice",
   "checked": "2026-10-20",
-  "v": 3
+  "v": 4
  },
  "halloween": {
   "bucket": null,
@@ -5328,7 +5425,8 @@
   "reason": "no genre tags",
   "act": "Hamish Hawk",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "3t3q007skKvwNaodwZx8W8"
  },
  "hang massive": {
   "mbid": "2fe1afcb-1325-41ff-8f94-55696ca6955d",
@@ -5421,7 +5519,7 @@
   "reason": "no genre tags",
   "act": "Helen McCookerybook",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "helen mccookerybook asbo derek": {
   "bucket": null,
@@ -5498,7 +5596,8 @@
   "reason": "genres unclear",
   "act": "Hermanos Gutiérrez",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "73mSg0dykFyhvU96tb5xQV"
  },
  "hh": {
   "bucket": null,
@@ -5564,7 +5663,8 @@
   "reason": "genres unclear",
   "act": "Hit Like A Girl",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "0saOG9dPAQ3PCwLLVNlgvQ"
  },
  "hitman sheela": {
   "bucket": null,
@@ -5609,7 +5709,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Holy Fawn",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "13rS3lCWshTVt6HsCNjvBI",
+  "v": 4
  },
  "holy motors": {
   "bucket": null,
@@ -5648,7 +5750,8 @@
   "reason": "tagged",
   "act": "Horace Andy",
   "checked": "2026-10-31",
-  "v": 3
+  "v": 4,
+  "spotify": "2ieAXAuLe6qQ3RJsqCxpoC"
  },
  "hospital30": {
   "bucket": null,
@@ -5673,7 +5776,8 @@
   "reason": "tagged",
   "act": "Hothouse Flowers",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "2szQRWh2F0RUs9bkbepwok"
  },
  "housekeeping": {
   "mbid": "8f31b852-4771-464d-89fb-38061bc0ad8d",
@@ -5700,7 +5804,8 @@
   "reason": "no genre tags",
   "act": "Hudson Freeman",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "6k3W2iGuRZrhUnfVZOMQo8"
  },
  "huey morgan": {
   "mbid": "2625c075-08de-4428-9f23-bb9d4f4dcf42",
@@ -5731,7 +5836,7 @@
   "reason": "no genre tags",
   "act": "Hurly Burly",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "hutch": {
   "bucket": null,
@@ -5756,7 +5861,9 @@
   "bucket": "Drum & Bass",
   "reason": "tagged",
   "act": "Hybrid Minds",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "05lF0DUkLJqiW5o70SScyR",
+  "v": 4
  },
  "i f ing h8 clubbing": {
   "bucket": null,
@@ -5813,7 +5920,7 @@
   "reason": "no genre tags",
   "act": "Ian Roland",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "ibibio sound machine": {
   "mbid": "0ece139d-19a4-44c6-85e6-0406e8055a21",
@@ -5877,7 +5984,9 @@
   "bucket": "Punk & Metal",
   "reason": "tagged",
   "act": "Iceage",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "03hlOXqRyyXO3ectp3eEbU",
+  "v": 4
  },
  "ila": {
   "bucket": null,
@@ -5949,7 +6058,8 @@
   "bucket": "Punk & Metal",
   "reason": "tagged",
   "act": "Inner Terrestrials",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "v": 4
  },
  "intercourse": {
   "bucket": null,
@@ -6089,7 +6199,8 @@
   "reason": "genres unclear",
   "act": "Ivy Lab",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "3VXCvo9Sr0hbZ4mk6VOKBs"
  },
  "jack barry": {
   "bucket": null,
@@ -6108,7 +6219,7 @@
   "reason": "no genre tags",
   "act": "Jack Whitehall",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "jake bugg": {
   "mbid": "0d9905e6-add6-4713-94ca-9f686f9b5e9b",
@@ -6155,7 +6266,8 @@
   "reason": "tagged",
   "act": "Jake Bugg",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "4hf3caW9H8uFwwbv5pFjcg"
  },
  "jake vaadeland": {
   "mbid": "d3ab05f3-493f-4466-8c8e-8c44f6fe980d",
@@ -6233,7 +6345,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "James Blunt",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "7KMqksf0UMdyA0UCf4R3ux",
+  "v": 4
  },
  "james lavelle": {
   "mbid": "3947b8f1-33ad-49c1-8c77-ec5e226b7dbc",
@@ -6253,7 +6367,8 @@
   "reason": "tagged",
   "act": "James Lavelle",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "3QvyLNQBqeJXW4ujagJVjZ"
  },
  "jamie mcintyre": {
   "bucket": null,
@@ -6286,7 +6401,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Jamie T",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "3Rsr4Z96O6U3lToOiV3zBh",
+  "v": 4
  },
  "jamie webster": {
   "bucket": null,
@@ -6310,7 +6427,8 @@
   "reason": "no genre tags",
   "act": "Jarrod Dickenson",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "2L2KxF5X311lXiN06X9Gv1"
  },
  "jawdropped": {
   "mbid": "6c6f75db-49b3-4454-b808-936de5057d1d",
@@ -6357,7 +6475,9 @@
   "bucket": "Folk & Country",
   "reason": "tagged",
   "act": "Jesca Hoop",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "0fqE57gXXTTqxXlFYVNG2u",
+  "v": 4
  },
  "jetstream pony": {
   "mbid": "121049c4-063b-40dc-93ac-20ec465d9aa6",
@@ -6367,7 +6487,8 @@
   "reason": "no genre tags",
   "act": "Jetstream Pony",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "6yOJiA8ct3DCwL0tAt2xr1"
  },
  "jetstream pony firestations": {
   "bucket": null,
@@ -6384,7 +6505,8 @@
   "reason": "no genre tags",
   "act": "Jgrrey",
   "checked": "2026-10-29",
-  "v": 3
+  "v": 4,
+  "spotify": "66rDbD3tWR3M1uNuIaDAGx"
  },
  "jim": {
   "mbid": "da9dd83b-bb87-41ef-abe8-1509538e6767",
@@ -6409,7 +6531,8 @@
   "reason": "genres unclear",
   "act": "Jim E. Brown",
   "checked": "2026-10-16",
-  "v": 3
+  "v": 4,
+  "spotify": "6DeLyy3rTPFUgp2jDnKBKR"
  },
  "jim jones all stars": {
   "mbid": "bcde87fa-6e35-4132-8e8c-83f8f9b9743e",
@@ -6439,7 +6562,8 @@
   "reason": "tagged",
   "act": "Jim Moray",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "00baC9BEnC6lhOdSF6dYC8"
  },
  "jim white": {
   "bucket": null,
@@ -6491,7 +6615,8 @@
   "reason": "tagged",
   "act": "Joan as Police Woman",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "6PBv8t9YTLggA9ZMwpeoqj"
  },
  "joe little": {
   "mbid": "46868da2-4a6f-4cc3-8404-8303a9c1035d",
@@ -6501,7 +6626,7 @@
   "reason": "no genre tags",
   "act": "Joe Little",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4
  },
  "joe little matisse": {
   "bucket": null,
@@ -6518,7 +6643,8 @@
   "reason": "no genre tags",
   "act": "Joel Paterson",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "5vyzlyJ61djmU8hpGlQHUE"
  },
  "john adams": {
   "bucket": null,
@@ -6654,7 +6780,8 @@
   "reason": "no genre tags",
   "act": "Joshua Burnside",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "244AFgFclA9c1IcjWOAqoV"
  },
  "joshua idehen": {
   "mbid": "3fc0070f-6b5b-4fc3-b5d3-afc87c80354a",
@@ -6747,7 +6874,8 @@
   "reason": "no genre tags",
   "act": "Karate Boogaloo",
   "checked": "2026-10-24",
-  "v": 3
+  "v": 4,
+  "spotify": "6D1VqVFh9yM5oARLleWNpQ"
  },
  "kashaka": {
   "mbid": "4d33d64f-3fd1-4b29-8676-b8f078039a1f",
@@ -6757,7 +6885,7 @@
   "reason": "no genre tags",
   "act": "Kashaka",
   "checked": "2026-10-28",
-  "v": 3
+  "v": 4
  },
  "keeno": {
   "bucket": null,
@@ -6784,7 +6912,8 @@
   "reason": "no genre tags",
   "act": "KEG",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "5CiQ9m8dPZ3eEV8c2DdHuq"
  },
  "ken yates": {
   "mbid": "38c89e76-7be7-4863-9610-2a96a90b0910",
@@ -6796,7 +6925,8 @@
   "reason": "no genre tags",
   "act": "Ken Yates",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "3DjvcvDRZn3IbA68kD5Gvi"
  },
  "kendall lujan": {
   "mbid": "98662bd0-def6-4470-a28c-af7b635e90f5",
@@ -6806,7 +6936,8 @@
   "reason": "no genre tags",
   "act": "Kendall Lujan",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "5JvY8N4icJjp1ND34IJAqQ"
  },
  "kepler": {
   "bucket": null,
@@ -6829,7 +6960,8 @@
   "reason": "no genre tags",
   "act": "Keywest",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "5n9E5vGRtLsPzqk39eA29T"
  },
  "kid bookie": {
   "mbid": "ca8d545a-4eb7-478a-86ce-af6d08e17c4e",
@@ -6848,7 +6980,8 @@
   "reason": "genres unclear",
   "act": "KID BOOKIE",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "7DiLiJ8nji6DslsFSzx0IV"
  },
  "killer queen": {
   "bucket": null,
@@ -6908,7 +7041,8 @@
   "reason": "tagged",
   "act": "Kim Wilde",
   "checked": "2026-10-16",
-  "v": 3
+  "v": 4,
+  "spotify": "73a6pNH4YtLNgDbPQwXveo"
  },
  "king awesome": {
   "bucket": null,
@@ -6955,7 +7089,8 @@
   "reason": "no genre tags",
   "act": "Kirsteen Harvey",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "5ZKZqBvEXRhwDwLFnb5rlT"
  },
  "kiwi jr": {
   "mbid": "64598fd8-5d7c-441d-a936-e1fc13d5a4f6",
@@ -7035,7 +7170,8 @@
   "reason": "tagged",
   "act": "Kosheen",
   "checked": "2026-10-31",
-  "v": 3
+  "v": 4,
+  "spotify": "5squ8uM6fhMQY71t9xobJC"
  },
  "kotoa": {
   "bucket": null,
@@ -7119,7 +7255,8 @@
   "reason": "tagged",
   "act": "Kula Shaker",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "6bGcpvHbRHg8s0wiNyIZK1"
  },
  "kurupt fm": {
   "mbid": "1705842f-8c02-4335-a6be-a9353c64e6ce",
@@ -7129,7 +7266,7 @@
   "reason": "no genre tags",
   "act": "Kurupt FM",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "kytes": {
   "bucket": null,
@@ -7175,7 +7312,8 @@
   "reason": "tagged",
   "act": "Lael Neale",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "7mi56yFiPlaLW2PtsZnoWF"
  },
  "lael neale and special guests": {
   "bucket": null,
@@ -7212,7 +7350,7 @@
   "reason": "no genre tags",
   "act": "LANGUAGE OF SHAPES",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "lava elastic": {
   "bucket": null,
@@ -7283,7 +7421,9 @@
   "bucket": "Punk & Metal",
   "reason": "tagged",
   "act": "Lebanon Hanover",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "6w8h2uD28BEdg7bX4k3Lh7",
+  "v": 4
  },
  "legacy": {
   "bucket": null,
@@ -7317,7 +7457,7 @@
   "reason": "no genre tags",
   "act": "Lenna and the Snakemen",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "lenna bahule": {
   "mbid": "f633e88a-e23f-487c-aeb1-e3876fb4c210",
@@ -7366,7 +7506,8 @@
   "reason": "no genre tags",
   "act": "Liam C",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "5MPz6I6u7lDh2Cy1vPWfkd"
  },
  "liam cromby": {
   "mbid": "a6f90ffa-8099-490b-b526-6cff76f5dd10",
@@ -7610,7 +7751,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Makthaverskan",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "57MIstrTi3Sw9J9yJybN0E",
+  "v": 4
  },
  "malevolence": {
   "bucket": null,
@@ -7650,7 +7793,7 @@
   "reason": "no genre tags",
   "act": "Marky Ramone's Blitzkrieg",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "mart": {
   "bucket": null,
@@ -7691,7 +7834,7 @@
   "reason": "tagged",
   "act": "Martin Stephenson & The Daintees",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4
  },
  "master peace": {
   "bucket": null,
@@ -7727,7 +7870,7 @@
   "reason": "genres unclear",
   "act": "MAUVEY",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "max cooper": {
   "bucket": null,
@@ -7838,7 +7981,8 @@
   "reason": "tagged",
   "act": "Mercy Girl",
   "checked": "2026-10-22",
-  "v": 3
+  "v": 4,
+  "spotify": "1lwbviKaSPeuUgIqAgNpdn"
  },
  "meryl streek": {
   "mbid": "8e9e00bf-6028-47c3-af6e-da68d857feb0",
@@ -7868,7 +8012,9 @@
   "bucket": "Punk & Metal",
   "reason": "tagged",
   "act": "Meryl Streek",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "5oQoqOBnUfgaBNlkoYwBmd",
+  "v": 4
  },
  "metallica reloaded": {
   "mbid": "9e8e7fd5-9d42-4474-bc39-bb4a3811e278",
@@ -7878,7 +8024,7 @@
   "reason": "no genre tags",
   "act": "Metallica Reloaded",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "michael kiwanuka": {
   "mbid": "11f570ff-44d9-4e9c-8812-e6d56103c5c1",
@@ -7912,7 +8058,7 @@
   "reason": "no genre tags",
   "act": "Michael Starring Ben",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4
  },
  "midge ure": {
   "mbid": "24cac374-29bd-499f-a0f8-72165d2f2f43",
@@ -7950,7 +8096,9 @@
   "bucket": "Pop",
   "reason": "tagged",
   "act": "Midge Ure",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "2N4isf5pypyuDVpBofqEN8",
+  "v": 4
  },
  "mike the mic returns": {
   "bucket": null,
@@ -7998,7 +8146,7 @@
   "reason": "no genre tags",
   "act": "Minor Dents",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "mnek": {
   "mbid": "27e7c2e8-badc-4a97-8b93-24b6c530b038",
@@ -8031,7 +8179,8 @@
   "reason": "no genre tags",
   "act": "Modern Woman",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "4OW8KZOncmml2hRSXdhfO9"
  },
  "monster mash 100": {
   "bucket": null,
@@ -8119,7 +8268,9 @@
   "bucket": "Hip-hop & R&B",
   "reason": "tagged",
   "act": "Moscow Death Brigade",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "68kRG1Z7B5IXKaxne5Yto4",
+  "v": 4
  },
  "moses boyd": {
   "mbid": "90c07789-6d90-4b86-9780-0a954cc4469c",
@@ -8149,7 +8300,9 @@
   "bucket": "Electronic",
   "reason": "tagged",
   "act": "Moses Boyd",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "1otDUlTEBjcyDQg6CkHRaV",
+  "v": 4
  },
  "motorheadache": {
   "mbid": "476ea393-c183-4604-8d70-54e39a57ca5e",
@@ -8159,7 +8312,7 @@
   "reason": "no genre tags",
   "act": "Motorheadache",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4
  },
  "mould": {
   "bucket": null,
@@ -8197,7 +8350,8 @@
   "reason": "genres unclear",
   "act": "Mouth Ulcers",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "7ohGcioscyT39FJjvkivt5"
  },
  "mr cutts": {
   "mbid": "dacec29f-4200-430b-a0d1-bc7046af092c",
@@ -8279,7 +8433,8 @@
   "reason": "tagged",
   "act": "Murphy Campbell",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "7sK7X2m4Y2K0PGGr6pvGIa"
  },
  "mustbejohn": {
   "mbid": "f10032b6-d8e4-4d3d-90a5-79569b0af7de",
@@ -8289,7 +8444,8 @@
   "reason": "no genre tags",
   "act": "mustbejohn",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "5hgZ7PGI0EM2UfiWAIKdFc"
  },
  "mutations 26": {
   "bucket": null,
@@ -8394,7 +8550,8 @@
   "reason": "tagged",
   "act": "Mykki Blanco",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "2tSv9mEQSuNVMGr9qjYfkr"
  },
  "mynolia": {
   "mbid": "850b3847-db11-4f65-a3a3-15cb7ec05ed9",
@@ -8404,7 +8561,7 @@
   "reason": "no genre tags",
   "act": "Mynolia",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4
  },
  "mystery musicals day party": {
   "bucket": null,
@@ -8442,7 +8599,8 @@
   "reason": "no genre tags",
   "act": "Natalie Shay",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "6pDapjUwN36LXMdYk0WKuQ"
  },
  "nectar woode": {
   "mbid": "e65c1d4e-0866-4db3-94a6-05e4e15649cb",
@@ -8478,7 +8636,7 @@
   "reason": "no genre tags",
   "act": "New Age Collective",
   "checked": "2026-10-22",
-  "v": 3
+  "v": 4
  },
  "new on sale heritage and tours": {
   "bucket": null,
@@ -8518,7 +8676,8 @@
   "reason": "no genre tags",
   "act": "Niall McNamee",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "12ECCS26QfiL4LVEarRWGf"
  },
  "nic cage against the machine": {
   "mbid": "83f5bda6-5f67-41ae-988d-b9050d58a25c",
@@ -8528,7 +8687,7 @@
   "reason": "no genre tags",
   "act": "Nic Cage Against The Machine",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4
  },
  "nick hakim": {
   "mbid": "21e8f8ef-00d2-4748-be00-451f1f5dfcaa",
@@ -8616,7 +8775,7 @@
   "reason": "no genre tags",
   "act": "Night Teacher",
   "checked": "2026-10-22",
-  "v": 3
+  "v": 4
  },
  "nina maia": {
   "mbid": "af26487a-20e0-4a9f-8389-1de45e898508",
@@ -8661,7 +8820,8 @@
   "reason": "no genre tags",
   "act": "Noah Derksen",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "31wEHfLGUKIlJAayR6K936"
  },
  "noah derksen live in hove": {
   "bucket": null,
@@ -8681,7 +8841,8 @@
   "reason": "genres unclear",
   "act": "Noah Gundersen",
   "checked": "2026-11-03",
-  "v": 3
+  "v": 4,
+  "spotify": "34482S5nfxR441wcnVfrHi"
  },
  "noah guthrie": {
   "mbid": "af368247-36b7-48d7-9e47-2c996ff84147",
@@ -8701,7 +8862,7 @@
   "reason": "no genre tags",
   "act": "Noasis",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "northcote": {
   "mbid": "a7fc0b6e-82af-466d-b703-ef6b60703473",
@@ -8793,7 +8954,8 @@
   "reason": "no genre tags",
   "act": "Oh My God! It's The Church",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "1hv3TErshfpU4SpYxRPkZn"
  },
  "omega nebula": {
   "mbid": "bbec7683-65e4-485d-bbd7-604f96190e4a",
@@ -8845,7 +9007,7 @@
   "reason": "no genre tags",
   "act": "Oral Habit",
   "checked": "2026-10-31",
-  "v": 3
+  "v": 4
  },
  "organoke": {
   "bucket": null,
@@ -8888,7 +9050,8 @@
   "reason": "genres unclear",
   "act": "Oscar Jerome",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "39cDMNnxwjrKJE1dyt47jh"
  },
  "other lives": {
   "mbid": "69ce32a2-dbb1-42c2-98fc-2fbf896ef861",
@@ -8915,7 +9078,7 @@
   "reason": "tagged",
   "act": "Other Lives",
   "checked": "2026-10-24",
-  "v": 3
+  "v": 4
  },
  "our man in the field": {
   "mbid": "15f51d9c-093d-4b49-9c8f-5e8f37f7dc30",
@@ -8925,7 +9088,8 @@
   "reason": "no genre tags",
   "act": "Our Man in the Field",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "20iCBa8pr4rfazbp0cHQO4"
  },
  "outpost drive": {
   "mbid": "5403e1bd-32a3-455a-89ef-1cee9498e865",
@@ -8943,7 +9107,8 @@
   "bucket": "Folk & Country",
   "reason": "tagged",
   "act": "Outpost Drive",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "v": 4
  },
  "ovven": {
   "mbid": "2a3214c0-9f70-4ccf-8b3a-8b1b7b2f83be",
@@ -8953,7 +9118,8 @@
   "reason": "no genre tags",
   "act": "Ovven",
   "checked": "2026-10-28",
-  "v": 3
+  "v": 4,
+  "spotify": "5ngTSqP6WSRmxbKLSAzra8"
  },
  "p rallel": {
   "mbid": "3209eb28-ef65-4920-9f23-4000451994a4",
@@ -9006,7 +9172,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Paul Heaton",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "1aIozCeQrpKipbEdkGtr0j",
+  "v": 4
  },
  "paul mcgann and ben wheatley": {
   "bucket": null,
@@ -9039,7 +9207,8 @@
   "reason": "genres unclear",
   "act": "Pearl & The Oysters",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "7ovvjgqrTeuMxbzIykUqDs"
  },
  "pebbledash": {
   "mbid": "32c8bef8-d707-4f3e-ac56-e601fdb96f2c",
@@ -9124,7 +9293,8 @@
   "reason": "tagged",
   "act": "Peter & the Test Tube Babies",
   "checked": "2026-10-31",
-  "v": 3
+  "v": 4,
+  "spotify": "2mHQfi32bOrYcD42cazcmh"
  },
  "peter doherty": {
   "bucket": null,
@@ -9143,7 +9313,8 @@
   "reason": "no genre tags",
   "act": "Peter Kay",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "7xG38CLXdxEmMbtz9r3g1g"
  },
  "peter kyle mp and dr fola yahaya": {
   "bucket": null,
@@ -9289,7 +9460,9 @@
   "bucket": "Punk & Metal",
   "reason": "tagged",
   "act": "POISON RUÏN",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "0WHVA5E3ZEY5mxGkMYqPuB",
+  "v": 4
  },
  "popstars the originals": {
   "bucket": null,
@@ -9318,7 +9491,9 @@
   "bucket": "Punk & Metal",
   "reason": "tagged",
   "act": "PORTRAYAL OF GUILT",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "1Uwe1MbiKnPHAFh3qMWuNp",
+  "v": 4
  },
  "possessed by paul james": {
   "mbid": "0a31b2d4-eba4-458b-8e0a-5b637e6cf0f9",
@@ -9356,7 +9531,9 @@
   "bucket": "Folk & Country",
   "reason": "tagged",
   "act": "Possessed by Paul James",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "3OKWUEJ7JsoqJdsgtviUvk",
+  "v": 4
  },
  "post locale records launch": {
   "bucket": null,
@@ -9387,7 +9564,8 @@
   "reason": "no genre tags",
   "act": "Pryma",
   "checked": "2026-10-22",
-  "v": 3
+  "v": 4,
+  "spotify": "5W3CpTEfxHnas9n4k1lvit"
  },
  "psychedelic autumn sundae": {
   "bucket": null,
@@ -9423,7 +9601,8 @@
   "reason": "no genre tags",
   "act": "Pyncher",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "66NBYDmR4OTIL8AuMvKTK7"
  },
  "quaking aspens": {
   "mbid": "13795d18-2830-4309-a8e9-5c95d1a54337",
@@ -9433,7 +9612,8 @@
   "reason": "no genre tags",
   "act": "Quaking Aspens",
   "checked": "2026-10-24",
-  "v": 3
+  "v": 4,
+  "spotify": "0eVCmlLTmqU6PTSJ8fuEu4"
  },
  "quantic": {
   "bucket": null,
@@ -9496,7 +9676,8 @@
   "reason": "tagged",
   "act": "Quinn Oulton",
   "checked": "2026-10-12",
-  "v": 3
+  "v": 4,
+  "spotify": "2lqAPLmP9BsHPymfa6UFO7"
  },
  "radiator": {
   "bucket": null,
@@ -9513,7 +9694,8 @@
   "reason": "no genre tags",
   "act": "Radie Peat",
   "checked": "2026-10-24",
-  "v": 3
+  "v": 4,
+  "spotify": "2HzXwEzn6g3waLTIufC1Ji"
  },
  "rapscallion and chums": {
   "bucket": null,
@@ -9565,7 +9747,8 @@
   "reason": "tagged",
   "act": "Red Snapper",
   "checked": "2026-10-31",
-  "v": 3
+  "v": 4,
+  "spotify": "1BQtFnxZvAvTCZgTMlED0Q"
  },
  "reef": {
   "bucket": null,
@@ -9592,7 +9775,7 @@
   "reason": "no genre tags",
   "act": "RELEASE THE BATS",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "republica": {
   "bucket": null,
@@ -9629,7 +9812,8 @@
   "reason": "no genre tags",
   "act": "Restraining Order",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "4HXv1CWVOyIO8ZNvGOSyEy"
  },
  "reverend and the makers": {
   "mbid": "e472c434-9eb9-41d3-b493-0d2f115faed2",
@@ -9680,7 +9864,7 @@
   "reason": "no genre tags",
   "act": "Rhythm Of The 90s",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "rich wilson": {
   "bucket": null,
@@ -9731,7 +9915,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Rick Wakeman",
-  "checked": "2026-10-09"
+  "checked": "2026-10-09",
+  "spotify": "0mkcYaXUbJUs5mJointuzB",
+  "v": 4
  },
  "ricky gervais": {
   "mbid": "99970f34-8786-49b4-bc65-d3056872df1c",
@@ -9745,7 +9931,7 @@
   "reason": "genres unclear",
   "act": "Ricky Gervais",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "rikas": {
   "mbid": "59c85e04-a68a-4784-a7a0-d362085704ed",
@@ -9775,7 +9961,7 @@
   "reason": "no genre tags",
   "act": "Ríoghnach Connolly",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "rioghnach connolly honeyfeet": {
   "bucket": null,
@@ -9862,7 +10048,7 @@
   "reason": "no genre tags",
   "act": "Roots & Soul",
   "checked": "2026-11-04",
-  "v": 3
+  "v": 4
  },
  "rootweave": {
   "bucket": null,
@@ -9887,7 +10073,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Rosalie Cunningham",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "2DvBNcZ05NC2AOuQa7oyqH",
+  "v": 4
  },
  "rose divine and the d villes": {
   "bucket": null,
@@ -9914,7 +10102,7 @@
   "reason": "genres unclear",
   "act": "Roving Crows",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "rowena wise": {
   "mbid": "41a318d7-294a-4aa0-8b8c-5007d10628c3",
@@ -9943,7 +10131,8 @@
   "reason": "no genre tags",
   "act": "Roxanne de Bastion",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "4v5zVxcZ4cjrcHDPbzaUG6"
  },
  "royal blood": {
   "bucket": null,
@@ -10060,7 +10249,8 @@
   "reason": "tagged",
   "act": "Salvador Sobral",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "0GfYO21pue5u0sVEYk9HZO"
  },
  "sametime": {
   "mbid": "250216f9-42e9-407f-acff-eff4f48d88d6",
@@ -10070,7 +10260,8 @@
   "reason": "no genre tags",
   "act": "Sametime",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "42rWfryHDfUU1jBggl9yja"
  },
  "samhain": {
   "bucket": null,
@@ -10094,7 +10285,7 @@
   "reason": "no genre tags",
   "act": "Samuel Nicholson",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "sasha": {
   "bucket": null,
@@ -10123,7 +10314,9 @@
   "bucket": "Hip-hop & R&B",
   "reason": "tagged",
   "act": "Saul Williams",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "11K0HIZKfdB6ez0VhIgxPm",
+  "v": 4
  },
  "scared little toaster": {
   "mbid": "034009c7-19a1-419c-8547-a93c2d581bad",
@@ -10133,7 +10326,7 @@
   "reason": "no genre tags",
   "act": "Scared Little Toaster",
   "checked": "2026-10-16",
-  "v": 3
+  "v": 4
  },
  "scarlet reading": {
   "bucket": null,
@@ -10226,7 +10419,8 @@
   "reason": "tagged",
   "act": "Seasick Steve",
   "checked": "2026-10-22",
-  "v": 3
+  "v": 4,
+  "spotify": "6OVkHZQP8QoBYqr1ejCGDv"
  },
  "seb lowe": {
   "bucket": null,
@@ -10256,7 +10450,8 @@
   "reason": "no genre tags",
   "act": "Sennen Timcke",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "4u5hhrqJj7PS7a6rTcNw7C"
  },
  "sergi polo": {
   "bucket": null,
@@ -10310,7 +10505,7 @@
   "reason": "no genre tags",
   "act": "Shallow Honey",
   "checked": "2026-11-04",
-  "v": 3
+  "v": 4
  },
  "shanti celeste midland": {
   "bucket": null,
@@ -10338,7 +10533,9 @@
   "bucket": "Jazz, Soul & Funk",
   "reason": "tagged",
   "act": "Shaun Kirk",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "4o6Yrqwb3YSVGmvHmN5oL2",
+  "v": 4
  },
  "she is risen": {
   "bucket": null,
@@ -10365,7 +10562,8 @@
   "reason": "tagged",
   "act": "She Wants Revenge",
   "checked": "2026-10-20",
-  "v": 3
+  "v": 4,
+  "spotify": "2zRt0sfxNnqI8gLR7d8gWt"
  },
  "shed seven": {
   "mbid": "4d8650ba-b4ed-4307-a6c8-368eb646210b",
@@ -10391,7 +10589,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Shed Seven",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "3iejrAcqxYoVgyxp6zkWgs",
+  "v": 4
  },
  "shen yun": {
   "mbid": "69fc8c8e-552c-4fac-b91b-e220fd0650fe",
@@ -10403,7 +10603,7 @@
   "reason": "no genre tags",
   "act": "Shen Yun",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "shovel dance collective": {
   "mbid": "5123289f-26d3-456c-b5ce-505bd7b427bb",
@@ -10418,7 +10618,8 @@
   "reason": "genres unclear",
   "act": "Shovel Dance Collective",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "1xyaWjnqi42AlEzaXcr7IY"
  },
  "si connolly": {
   "bucket": null,
@@ -10435,7 +10636,7 @@
   "reason": "no genre tags",
   "act": "Silver Birch",
   "checked": "2026-10-22",
-  "v": 3
+  "v": 4
  },
  "simply weller": {
   "bucket": null,
@@ -10454,7 +10655,7 @@
   "reason": "no genre tags",
   "act": "Sindhu Vee",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "sing a long a wicker man": {
   "bucket": null,
@@ -10500,7 +10701,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Six By Seven",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "4TXdHyuAOl3rAOFmZ6MeKz",
+  "v": 4
  },
  "six of one and half a dozen of the other": {
   "bucket": null,
@@ -10547,7 +10750,7 @@
   "reason": "tagged",
   "act": "Skepta",
   "checked": "2026-11-04",
-  "v": 3
+  "v": 4
  },
  "sky valley mistress": {
   "mbid": "8cb04822-147e-430b-83ad-321766fce295",
@@ -10577,7 +10780,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "SKY VALLEY MISTRESS",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "4rCErKnA6EsbE92KyKFnP8",
+  "v": 4
  },
  "skye newman": {
   "mbid": "41641281-e1aa-4bbe-ba19-5fb436996e86",
@@ -10589,7 +10794,8 @@
   "reason": "no genre tags",
   "act": "Skye Newman",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "4UoEzpWZrFWvlGYOzTEn1M"
  },
  "slag": {
   "bucket": null,
@@ -10606,7 +10812,7 @@
   "reason": "no genre tags",
   "act": "Slap Rash",
   "checked": "2026-10-27",
-  "v": 3
+  "v": 4
  },
  "slayyyter": {
   "mbid": "9058d01e-8afc-47a4-8664-621fb5f159c0",
@@ -10698,7 +10904,8 @@
   "reason": "tagged",
   "act": "Slift",
   "checked": "2026-10-24",
-  "v": 3
+  "v": 4,
+  "spotify": "0x9HCT7ZZlOEfLSVCDi5SO"
  },
  "slipmatt ellis dee 2 bad mice and dj ratty": {
   "bucket": null,
@@ -10719,7 +10926,8 @@
   "reason": "genres unclear",
   "act": "Slow Leaves",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "1CNY3GA9jHEuZeQEOHx0r8"
  },
  "slumber": {
   "bucket": null,
@@ -10736,7 +10944,8 @@
   "reason": "no genre tags",
   "act": "Snayx",
   "checked": "2026-10-15",
-  "v": 3
+  "v": 4,
+  "spotify": "4kQgsrHUSc9IjuwWP30gf0"
  },
  "so good": {
   "bucket": null,
@@ -10781,7 +10990,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Softcult",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "13pYXGtaLO9d06VrXX4Aw0",
+  "v": 4
  },
  "soil finger eleven": {
   "bucket": null,
@@ -10812,7 +11023,8 @@
   "reason": "no genre tags",
   "act": "Sonny Tennet",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "2hPtxFv2Ftb7xGRdU76bOd"
  },
  "soot sprite": {
   "mbid": "be32c0ee-e3c9-46fa-beff-707750e92b84",
@@ -10834,7 +11046,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Soot Sprite",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "4CoB9YE7rYnbmr9zlwv0af",
+  "v": 4
  },
  "sorrel nation": {
   "mbid": "a07fc3bb-08d4-434d-abfc-451927313899",
@@ -10852,7 +11066,8 @@
   "bucket": "Folk & Country",
   "reason": "tagged",
   "act": "Sorrel Nation",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "v": 4
  },
  "sota": {
   "bucket": null,
@@ -10911,7 +11126,7 @@
   "reason": "no genre tags",
   "act": "Sound of The Sirens",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "sounds from the city": {
   "bucket": null,
@@ -10935,7 +11150,8 @@
   "reason": "no genre tags",
   "act": "SØWT",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "03pMYqc3CmNCN1XsN1dWPN"
  },
  "sparta": {
   "bucket": null,
@@ -10976,7 +11192,8 @@
   "reason": "tagged",
   "act": "Spice Girls",
   "checked": "2026-10-17",
-  "v": 3
+  "v": 4,
+  "spotify": "0uq5PttqEjj3IH1bzwcrXF"
  },
  "spirit of gravity": {
   "bucket": null,
@@ -11035,7 +11252,8 @@
   "reason": "tagged",
   "act": "Spiritualized",
   "checked": "2026-11-04",
-  "v": 3
+  "v": 4,
+  "spotify": "6DKmuXxXASTF6xaJwcTfjv"
  },
  "spit nights": {
   "bucket": null,
@@ -11057,7 +11275,8 @@
   "reason": "genres unclear",
   "act": "Split Dogs",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "2knguAkuatcKmqXZkBxaLs"
  },
  "sports": {
   "bucket": null,
@@ -11093,7 +11312,7 @@
   "reason": "no genre tags",
   "act": "ST",
   "checked": "2026-11-04",
-  "v": 3
+  "v": 4
  },
  "st ll": {
   "bucket": null,
@@ -11188,7 +11407,7 @@
   "reason": "no genre tags",
   "act": "Steve White Trio",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "stewart lee": {
   "bucket": null,
@@ -11218,7 +11437,8 @@
   "reason": "no genre tags",
   "act": "Stonks",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "0iwWvPe7sbKfFHkuFnXzgt"
  },
  "stop making sense": {
   "mbid": "2dbbfa57-5206-4d7b-a1a8-2049841a0a19",
@@ -11228,7 +11448,7 @@
   "reason": "no genre tags",
   "act": "Stop Making Sense",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "storefront church": {
   "mbid": "cc8c9181-d852-49cb-b041-5f419776b570",
@@ -11406,7 +11626,8 @@
   "reason": "tagged",
   "act": "Sutej Singh",
   "checked": "2026-11-07",
-  "v": 3
+  "v": 4,
+  "spotify": "1LQ87p0qt3OEhSGbjMVuVe"
  },
  "swapmeet": {
   "mbid": "4fd7cdc6-d339-48d0-b8be-cf4f4f0a8020",
@@ -11613,7 +11834,9 @@
   "bucket": "Electronic",
   "reason": "tagged",
   "act": "The Allergies",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "2v2cdjqYIpT8ZBpflNTttY",
+  "v": 4
  },
  "the almost elvis band": {
   "bucket": null,
@@ -11641,7 +11864,7 @@
   "reason": "genres unclear",
   "act": "The Amber Squad",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "the amber squad the sleepers sweet jonny": {
   "bucket": null,
@@ -11666,7 +11889,8 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "The Australian Pink Floyd Show",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "v": 4
  },
  "the best of mike oldfields tubular bells i": {
   "bucket": null,
@@ -11730,7 +11954,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "The Big Moon",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "0KU55rzxAihPhi27MAuz9O",
+  "v": 4
  },
  "the black queen": {
   "mbid": "e89e325e-ae11-4c2a-86a8-3e9a967ffda3",
@@ -11760,7 +11986,9 @@
   "bucket": "Electronic",
   "reason": "tagged",
   "act": "The Black Queen",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "3j2DZTwQle72CWyB19B5Mq",
+  "v": 4
  },
  "the blindboy podcast": {
   "bucket": null,
@@ -11818,7 +12046,8 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "The Bootleg Beatles",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "v": 4
  },
  "the brunswick open mic night": {
   "bucket": null,
@@ -11842,7 +12071,7 @@
   "reason": "no genre tags",
   "act": "The Chicago Blues Brothers",
   "checked": "2026-10-17",
-  "v": 3
+  "v": 4
  },
  "the cureheads": {
   "mbid": "c4af4e26-03bd-4672-bc51-224aae94605a",
@@ -11856,7 +12085,7 @@
   "reason": "genres unclear",
   "act": "The Cureheads",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "the damned": {
   "bucket": null,
@@ -11913,7 +12142,8 @@
   "reason": "no genre tags",
   "act": "The Entitled Sons",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "1WPIlJ21qCAHZFRavJhxfa"
  },
  "the evening sons": {
   "bucket": null,
@@ -11977,7 +12207,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "The Gulls",
-  "checked": "2026-10-09"
+  "checked": "2026-10-09",
+  "spotify": "2n0FlGHc3OxI0x2WI39BEc",
+  "v": 4
  },
  "the hanging stars": {
   "mbid": "58448cfe-1b07-4516-883a-a664326110e7",
@@ -12034,7 +12266,7 @@
   "reason": "genres unclear",
   "act": "The House & Garage Orchestra",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "the house of love": {
   "mbid": "cbaf677b-4f80-4663-8c2c-9197ec9d214a",
@@ -12066,7 +12298,7 @@
   "reason": "tagged",
   "act": "The House of Love",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "the humbuckers": {
   "bucket": null,
@@ -12083,7 +12315,7 @@
   "reason": "no genre tags",
   "act": "The Jack Cades",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "the jack cades live at the prince albert": {
   "bucket": null,
@@ -12145,7 +12377,7 @@
   "reason": "tagged",
   "act": "The Jacksons",
   "checked": "2026-10-24",
-  "v": 3
+  "v": 4
  },
  "the jam uk": {
   "bucket": null,
@@ -12162,7 +12394,7 @@
   "reason": "no genre tags",
   "act": "The Len Price 3",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "the lilacs": {
   "bucket": null,
@@ -12199,7 +12431,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "The Love Buzz",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "103TWTu6vxVZ9g6eqA1ntP",
+  "v": 4
  },
  "the magpies": {
   "bucket": null,
@@ -12222,7 +12456,8 @@
   "reason": "tagged",
   "act": "The March Violets",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "03FKngvcynr4H8PuTP8n19"
  },
  "the mary wallopers": {
   "mbid": "d9b2b9f5-9deb-46f0-a023-a5a6e2a294d8",
@@ -12283,7 +12518,7 @@
   "reason": "tagged",
   "act": "The Men They Couldn’t Hang",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4
  },
  "the menstrual cramps": {
   "mbid": "1f5205ff-6256-4fce-8271-58187b1395e7",
@@ -12364,7 +12599,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "The Ordinary Boys",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "2xPxXPgmZFs7x6xRFpHwkq",
+  "v": 4
  },
  "the pink pound": {
   "bucket": null,
@@ -12403,7 +12640,7 @@
   "reason": "tagged",
   "act": "The Popguns",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4
  },
  "the proclaimers": {
   "bucket": null,
@@ -12448,7 +12685,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "The Psychedelic Furs",
-  "checked": "2026-10-09"
+  "checked": "2026-10-09",
+  "spotify": "0O0lrN34wrcuBenkqlEDZe",
+  "v": 4
  },
  "the purcell singers": {
   "mbid": "c76368d4-12f5-4f84-99b3-fa6dccc81a63",
@@ -12458,7 +12697,8 @@
   "reason": "no genre tags",
   "act": "The Purcell Singers",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "6y9qaUdXNIsgwe6LEyeOf9"
  },
  "the rabbitts": {
   "mbid": "8bd7406b-e2d1-41e9-b702-48c3e49a9378",
@@ -12468,7 +12708,8 @@
   "reason": "no genre tags",
   "act": "The Rabbitts",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "20fBRSsvDK3GmHQKcpZ3DH"
  },
  "the rachel parris songbook": {
   "bucket": null,
@@ -12499,7 +12740,8 @@
   "reason": "no genre tags",
   "act": "The Roebucks",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "3YFDjidB7g9mLCpPfiInBQ"
  },
  "the rose hill is ten festival": {
   "bucket": null,
@@ -12516,7 +12758,8 @@
   "reason": "no genre tags",
   "act": "The Rumpled",
   "checked": "2026-10-17",
-  "v": 3
+  "v": 4,
+  "spotify": "1KBTFIV3DLMDZlnQzoQUw6"
  },
  "the running joke": {
   "bucket": null,
@@ -12596,7 +12839,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "THE SCRIPT",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "3AQRLZ9PuTAozP28Skbq8V",
+  "v": 4
  },
  "the serfers": {
   "bucket": null,
@@ -12651,7 +12896,8 @@
   "reason": "genres unclear",
   "act": "The Sick Man Of Europe",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "4MfLAsjMG5jsbPxD4r5DuD"
  },
  "the simpsons ultimate quiz": {
   "bucket": null,
@@ -12694,7 +12940,7 @@
   "reason": "no genre tags",
   "act": "The Smyths",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "the snowman": {
   "bucket": null,
@@ -12717,7 +12963,7 @@
   "reason": "no genre tags",
   "act": "The Specials Ltd",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "the spice girls": {
   "mbid": "bf0caafc-2b20-4e07-ab85-87e14ff430ce",
@@ -12855,7 +13101,7 @@
   "reason": "no genre tags",
   "act": "The Woodgies",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4
  },
  "the worst kept secret": {
   "bucket": null,
@@ -12882,7 +13128,8 @@
   "reason": "genres unclear",
   "act": "The Wurzels",
   "checked": "2026-10-20",
-  "v": 3
+  "v": 4,
+  "spotify": "3MOw1ev3YQ8liIGmHT3eH6"
  },
  "the xcerts": {
   "mbid": "f0468734-9ae8-4701-bb18-42c4a162115a",
@@ -12896,7 +13143,8 @@
   "reason": "tagged",
   "act": "The Xcerts",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "7sKlSlGo7d1D3dhFYKO0Y5"
  },
  "the yummy fur": {
   "mbid": "a7bdaa59-18fb-4ad4-9fca-bb710544b365",
@@ -12920,7 +13168,8 @@
   "reason": "no genre tags",
   "act": "The Zac Schulze Gang",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "3qvVjXmsWmDBEomXDVMOtS"
  },
  "the zangwills": {
   "mbid": "39ee28e9-30cd-4c1d-87aa-e1d0dc8853dc",
@@ -12932,7 +13181,8 @@
   "reason": "no genre tags",
   "act": "The Zangwills",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "5Qj5Wwn5TrlAC3Tdr0AVMT"
  },
  "these new south whales": {
   "mbid": "2cce5e90-577c-4a12-a903-cc5c2bc301c4",
@@ -12942,7 +13192,8 @@
   "reason": "no genre tags",
   "act": "These New South Whales",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "0srVTNI2U8J7vytCTprEk4"
  },
  "thimble": {
   "bucket": null,
@@ -12959,7 +13210,8 @@
   "reason": "no genre tags",
   "act": "This Is Lorelei",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "0GmYGGZZIU8vHbI0bAXZun"
  },
  "this is the kit": {
   "mbid": "c7a4dcf7-61f8-4126-bec8-3bfa3b18284a",
@@ -12983,7 +13235,8 @@
   "reason": "tagged",
   "act": "This Is The Kit",
   "checked": "2026-10-31",
-  "v": 3
+  "v": 4,
+  "spotify": "0ZUyFEafMwocvApBjTXvdo"
  },
  "this machine kills wasps": {
   "bucket": null,
@@ -13027,7 +13280,8 @@
   "reason": "no genre tags",
   "act": "Tigercub",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "6ekYAO2D1JkI58CF4uRRqw"
  },
  "tim reaper b2b fracture": {
   "bucket": null,
@@ -13159,7 +13413,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "TOKYO TEA ROOM",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "3lzTKwFsOqxtp5cLJ2qbSD",
+  "v": 4
  },
  "tom a smith": {
   "mbid": "741984e7-c1e3-4df7-b792-96194633235c",
@@ -13169,7 +13425,7 @@
   "reason": "no genre tags",
   "act": "Tom A Smith",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "tom high": {
   "bucket": null,
@@ -13218,7 +13474,8 @@
   "reason": "no genre tags",
   "act": "Tommy Ashby",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "7y1RS42LqlRYnpONXTjN3t"
  },
  "tommy wa": {
   "mbid": "deaed6d9-3d9e-41e0-8369-a1cee3674030",
@@ -13238,7 +13495,8 @@
   "reason": "no genre tags",
   "act": "Too many Crooks",
   "checked": "2026-10-31",
-  "v": 3
+  "v": 4,
+  "spotify": "1LxN3FiVqUmWC8zd42YFMp"
  },
  "too many zooz": {
   "mbid": "e44ef539-1ec9-4cb2-bee7-852e84618308",
@@ -13307,7 +13565,7 @@
   "reason": "no genre tags",
   "act": "Toria Wooff",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "tra phaidin": {
   "mbid": "4a8850c3-0e9d-4c17-8d50-5b6589d72360",
@@ -13317,7 +13575,8 @@
   "reason": "no genre tags",
   "act": "Trá Pháidín",
   "checked": "2026-10-28",
-  "v": 3
+  "v": 4,
+  "spotify": "7mDp671lD3JSf1g4IRBVQz"
  },
  "track dogs": {
   "mbid": "f90064fc-ead2-493d-aa83-4ba2d59d5c64",
@@ -13343,7 +13602,9 @@
   "bucket": "Folk & Country",
   "reason": "tagged",
   "act": "Track Dogs",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "5mEAkhc0sVGvWBXhzIJTDB",
+  "v": 4
  },
  "tramhaus": {
   "mbid": "dace0d40-f90f-4b3b-99da-aa99be756920",
@@ -13353,7 +13614,8 @@
   "reason": "no genre tags",
   "act": "Tramhaus",
   "checked": "2026-10-28",
-  "v": 3
+  "v": 4,
+  "spotify": "5HXrUfoDwofY8lehLNIykB"
  },
  "trancecoda presents j00f editions": {
   "bucket": null,
@@ -13445,7 +13707,8 @@
   "reason": "no genre tags",
   "act": "TURBOBIER",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "0dvqsPZ5Dss68MvOry9BPt"
  },
  "turin brakes": {
   "mbid": "2ecbd923-9daf-4f18-9250-e482ccec4c28",
@@ -13480,7 +13743,8 @@
   "reason": "tagged",
   "act": "Turin Brakes",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "1zrBQvkTNhFFby4V5UiK2L"
  },
  "tv priest": {
   "mbid": "cfcfb26e-91c2-4404-b01f-ae3daa01cc20",
@@ -13494,7 +13758,9 @@
   "bucket": "Punk & Metal",
   "reason": "tagged",
   "act": "TV Priest",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "61ujMGJVHgF9LPrIZw4MaI",
+  "v": 4
  },
  "u2": {
   "mbid": "a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432",
@@ -13550,7 +13816,8 @@
   "reason": "tagged",
   "act": "U2",
   "checked": "2026-10-28",
-  "v": 3
+  "v": 4,
+  "spotify": "51Blml2LZPmy7TTiAg47vQ"
  },
  "ub40": {
   "mbid": "7113aab7-628f-4050-ae49-dbecac110ca8",
@@ -13580,7 +13847,9 @@
   "bucket": "Reggae & Ska",
   "reason": "tagged",
   "act": "UB40",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "69MEO1AADKg1IZrq2XLzo5",
+  "v": 4
  },
  "ugly": {
   "bucket": null,
@@ -13597,7 +13866,7 @@
   "reason": "no genre tags",
   "act": "UK Foo Fighters",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4
  },
  "uk queen": {
   "mbid": "634e0bb6-121d-409f-a52d-dd10e36c850a",
@@ -13607,7 +13876,7 @@
   "reason": "no genre tags",
   "act": "UK Queen",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4
  },
  "uk subs knock off": {
   "bucket": null,
@@ -13661,7 +13930,8 @@
   "reason": "tagged",
   "act": "Unbelievable Truth",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "62HTqokx4ZPp8kCN5Bq49D"
  },
  "uncle acid and the deadbeats": {
   "mbid": "e5edd3b8-2a81-42c4-93a4-c19a10713295",
@@ -13695,7 +13965,9 @@
   "bucket": "Punk & Metal",
   "reason": "tagged",
   "act": "Uncle Acid And The Deadbeats",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "16PcI6JjJuUfPlsX8Ffvfl",
+  "v": 4
  },
  "uncle josefs holiday camp": {
   "bucket": null,
@@ -13712,7 +13984,8 @@
   "reason": "no genre tags",
   "act": "Uncle Junior",
   "checked": "2026-10-22",
-  "v": 3
+  "v": 4,
+  "spotify": "5X13o9WLdbg7D39RUr6YEF"
  },
  "underground audio": {
   "bucket": null,
@@ -13746,7 +14019,8 @@
   "reason": "tagged",
   "act": "Utah Saints",
   "checked": "2026-10-30",
-  "v": 3
+  "v": 4,
+  "spotify": "2KB6LGMBaOYYYdvvgyptFH"
  },
  "van morrison": {
   "mbid": "a41ac10f-0a56-4672-9161-b83f9b223559",
@@ -13981,7 +14255,8 @@
   "reason": "genres unclear",
   "act": "Westside Cowboy",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "5LfO4rbJarBvHjB34mU9m2"
  },
  "will samson": {
   "mbid": "192ada29-19c9-45dc-8d85-36434a80068c",
@@ -14011,7 +14286,7 @@
   "reason": "genres unclear",
   "act": "Will Wilde",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4
  },
  "will young": {
   "bucket": null,
@@ -14165,7 +14440,8 @@
   "reason": "no genre tags",
   "act": "Yoshizawa",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "6f8zoTQbivpjTMvL2sbeRN"
  },
  "young knives": {
   "mbid": "b26b4b58-10b6-42e9-ba80-b1addd4b0adf",
@@ -14215,7 +14491,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Young Knives",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "4kYNTq3njMHBcnv8Di0v0Y",
+  "v": 4
  },
  "youth wound": {
   "bucket": null,

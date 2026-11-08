@@ -699,6 +699,11 @@
   "sold": null,
   "checked": "2026-10-25"
  },
+ "https://brightondome.org/whats-on/LKN-embrace-celebrating-30-years/|2026-11-17|embrace celebrating 30 years": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-11-08"
+ },
  "https://brightondome.org/whats-on/LXQ-the-adventures-of-the-little-red-hen/|2026-12-24|the adventures of the little red hen": {
   "url": null,
   "sold": null,
@@ -1619,6 +1624,11 @@
   "checked": "2026-11-08"
  },
  "https://dice.fm/event/aaron-rowe-15th-nov-patterns-brighton-tickets|2026-11-15|aaron rowe": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-11-08"
+ },
+ "https://dice.fm/event/admt-5th-feb-patterns-brighton-tickets|2027-02-05|admt": {
   "url": null,
   "sold": false,
   "checked": "2026-11-08"
@@ -4893,6 +4903,11 @@
   "sold": null,
   "checked": "2026-11-08"
  },
+ "https://www.fatsoma.com/e/2xzlgxm2/kiwi-jr|2026-11-08|kiwi jr": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-11-08"
+ },
  "https://www.fatsoma.com/e/dmeq3mlk/eastwood-events-evangeline-eastwood-single-release-party?utm_campaign=prom_ss&utm_medium=social&utm_source=dynamic|2026-11-26|evangeline eastwood": {
   "url": null,
   "sold": false,
@@ -5094,6 +5109,11 @@
   "checked": "2026-11-05"
  },
  "https://www.hope.pub/event/hr-ones-2-watch-patrick-circus-krumpets-rhiannon-ruthven/|2026-11-17|h r one s 2 watch patrick circus krumpets rhiannon ruthven": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-11-08"
+ },
+ "https://www.hope.pub/event/hr-ones-2-watch-sunlifter-pointless-waste-of-dopamine-marla-francis-murray/|2026-11-12|h r one s 2 watch sunlifter pointless waste of dopamine marla francis murray": {
   "url": null,
   "sold": false,
   "checked": "2026-11-08"
@@ -7061,6 +7081,11 @@
   "checked": "2026-11-08"
  },
  "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Dusk-before-Dark/42631044/|2026-11-28|dusk before dark": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-11-08"
+ },
+ "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/EOC--TVT-present-Decibels-by-Sea/43163495/|2027-02-13|eoc tvt present decibels by sea": {
   "url": null,
   "sold": null,
   "checked": "2026-11-08"

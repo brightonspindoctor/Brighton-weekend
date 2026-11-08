@@ -127,22 +127,22 @@
       "error": "",
       "sample": [
         {
-          "title": "Come Alive: Echo Performing Arts CIC",
-          "date": "2026-11-08",
-          "time": "16:00",
-          "link": "https://www.theoldmarket.com/shows/come-alive-echo-performing-arts-cic"
-        },
-        {
-          "title": "Come Alive: Echo Performing Arts CIC",
-          "date": "2026-11-08",
-          "time": "16:00",
-          "link": "https://www.theoldmarket.com/shows/come-alive-echo-performing-arts-cic"
+          "title": "Angela Barnes with Anthony Ayton + Joe Foster",
+          "date": "2026-11-13",
+          "time": "20:00",
+          "link": "https://www.theoldmarket.com/shows/angela-barnes"
         },
         {
           "title": "Angela Barnes with Anthony Ayton + Joe Foster",
           "date": "2026-11-13",
           "time": "20:00",
           "link": "https://www.theoldmarket.com/shows/angela-barnes"
+        },
+        {
+          "title": "Alfie Moore: Acopalypse Now",
+          "date": "2026-11-14",
+          "time": "20:00",
+          "link": "https://www.theoldmarket.com/shows/alfie-moore-acopalypse-now"
         }
       ]
     },
@@ -175,9 +175,15 @@
     {
       "venue": "Volks",
       "url": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/",
-      "events": 24,
+      "events": 25,
       "error": "",
       "sample": [
+        {
+          "title": "EOC & TVT present Decibels by Sea",
+          "date": "2027-02-13",
+          "time": "16:00",
+          "link": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/EOC--TVT-present-Decibels-by-Sea/43163495/"
+        },
         {
           "title": "Volks NYE 2026: 12-Hour Rave with Fabio & Grooverider",
           "date": "2026-12-31",
@@ -189,12 +195,6 @@
           "date": "2026-12-17",
           "time": "23:00",
           "link": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Sabotage-Thursdays/43122931/"
-        },
-        {
-          "title": "Brighton Ska Train's Xmas bash with Jerry Dammers (The Specials)",
-          "date": "2026-12-12",
-          "time": "19:00",
-          "link": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Brighton-Ska-Trains-Xmas-bash-with-Jerry-Dammers-The-Specials/43145976/"
         }
       ]
     },
@@ -231,12 +231,6 @@
       "error": "",
       "sample": [
         {
-          "title": "Chasing Abbey",
-          "date": "2026-11-08",
-          "time": "19:00",
-          "link": "https://dice.fm/event/chasing-abbey-8th-nov-patterns-brighton-tickets"
-        },
-        {
           "title": "Tom A Smith",
           "date": "2026-11-11",
           "time": "19:00",
@@ -247,6 +241,12 @@
           "date": "2026-11-13",
           "time": "19:00",
           "link": "https://dice.fm/event/the-entitled-sons-13th-nov-patterns-brighton-tickets"
+        },
+        {
+          "title": "Housekeeping w/ Wilba",
+          "date": "2026-11-13",
+          "time": "23:00",
+          "link": "https://dice.fm/event/housekeeping-w-wilba-13th-nov-patterns-brighton-tickets"
         }
       ]
     },
@@ -409,14 +409,14 @@
     {
       "venue": "The Hope & Ruin",
       "url": "https://www.hope.pub/",
-      "events": 72,
+      "events": 60,
       "error": "",
       "sample": [
         {
-          "title": "Kiwi Jr.",
-          "date": "2026-11-08",
-          "time": "19:00",
-          "link": "https://www.hope.pub/event/kiwi-jjr/"
+          "title": "H&R ONE’S 2 WATCH: Sunlifter + Pointless Waste of Dopamine + Marla + Francis Murray",
+          "date": "2026-11-12",
+          "time": "19:30",
+          "link": "https://www.hope.pub/event/hr-ones-2-watch-sunlifter-pointless-waste-of-dopamine-marla-francis-murray/"
         },
         {
           "title": "Michael McGovern *RESCHEDULED*",
@@ -572,7 +572,7 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/whats-on/",
-      "events": 95,
+      "events": 84,
       "error": "",
       "sample": [
         {
@@ -598,7 +598,7 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/comedyfestival/",
-      "events": 78,
+      "events": 81,
       "error": "",
       "sample": [
         {
@@ -624,7 +624,7 @@
     {
       "venue": "Brighton Dome",
       "url": "https://brightondome.org/whats-on/LgN-paddy-young-will-sir-be-laughing-alone/",
-      "events": 40,
+      "events": 43,
       "error": "",
       "sample": [
         {
@@ -759,7 +759,8 @@
       "finish_time": "22:00",
       "category": "Music",
       "ticket_url": "https://dice.fm/event/chasing-abbey-8th-nov-patterns-brighton-tickets",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "6toMXnM9tcozz7OmgxWtZg"
     },
     {
       "id": "2026-11-08-the-hope-ruin-kiwi-jr",
@@ -805,6 +806,7 @@
         "2026-11-08-concorde-2-holy-fawn-m-l-2"
       ],
       "promoter": "JOY. Concerts",
+      "spotify": "13rS3lCWshTVt6HsCNjvBI",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:42489dbe-d79d-45a4-aee7-4666aba8180a"
     },
@@ -927,7 +929,8 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvYWxpZW4tYm95L3RoZS1wcmluY2UtYWxiZXJ0LzM2NjExMDU/supplier/SeeTickets/suppliedid/MzY2MTEwNQ/ticketid/8079085/checksum/7b4e7d20d6af0ac8e9778014c94126a1/track/true?title=ALIEN+BOY&badge=&venueId=24967",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "65vqyT3OjG2zvb3cO1s44j"
     },
     {
       "id": "2026-11-09-caxton-arms-beginner-advanced-werewolf",
@@ -1095,6 +1098,7 @@
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/mykki-blanco",
       "last_seen": "2026-11-08",
+      "spotify": "2tSv9mEQSuNVMGr9qjYfkr",
       "genre": "Hip-hop & R&B",
       "genre_source": "wikidata:Q16201334"
     },
@@ -1186,7 +1190,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.universe.com/events/natalie-shay-tickets-0G4KV1",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "6pDapjUwN36LXMdYk0WKuQ"
     },
     {
       "id": "2026-11-10-the-brunswick-clover-stieve-live",
@@ -1224,7 +1229,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.realsounds.uk/event-details/353",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "4BGm5j3zsc5NU2BM1ihlA4"
     },
     {
       "id": "2026-11-10-the-prince-albert-charleen-no-empire-seadog",
@@ -1249,7 +1255,8 @@
       "source_url": "https://www.ents24.com/brighton-events/the-volks",
       "finish_time": "",
       "last_seen": "2026-11-08",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "0b0NRq58okVkvcHSGOzM4x"
     },
     {
       "id": "2026-11-11-the-walrus-wednesday-night-pub-board-games",
@@ -1333,6 +1340,7 @@
       "category": "Music",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873667224/events/128663783",
       "last_seen": "2026-11-08",
+      "spotify": "03FKngvcynr4H8PuTP8n19",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:0d217f85-f007-4643-a543-047949661d10"
     },
@@ -1382,7 +1390,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/event/k62dr9-swt-11th-nov-the-rossi-bar-brighton-tickets",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "03pMYqc3CmNCN1XsN1dWPN"
     },
     {
       "id": "2026-11-11-shelter-hall-igloo-dining-now-open-for-booking-11th-nov-10th-jan",
@@ -1419,6 +1428,7 @@
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/possessed-by-paul-james/the-folklore-rooms/3709606",
       "last_seen": "2026-11-08",
+      "spotify": "3OKWUEJ7JsoqJdsgtviUvk",
       "genre": "Folk & Country",
       "genre_source": "musicbrainz:0a31b2d4-eba4-458b-8e0a-5b637e6cf0f9"
     },
@@ -1433,7 +1443,8 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvYmlnLWJyYXZlL3RoZS1wcmluY2UtYWxiZXJ0LzM2OTgxMDU/supplier/SeeTickets/suppliedid/MzY5ODEwNQ/ticketid/8116410/checksum/1bf3adb6a3358c81937856c704e2d136/track/true?title=Big+Brave&badge=&venueId=24967",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5nlpqhz47LYv7KvarJdh44"
     },
     {
       "id": "2026-11-11-the-rose-hill-jos-almarcha-trio-night-1-2",
@@ -1550,7 +1561,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.axs.com/uk/events/1374241/the-allergies-tickets",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "2v2cdjqYIpT8ZBpflNTttY"
     },
     {
       "id": "2026-12-11-the-forge-comedy-club-comedy-for-the-clock-tower",
@@ -1567,6 +1579,18 @@
         "2026-11-12-the-forge-comedy-club-comedy-for-the-clock-tower",
         "2026-11-12-the-forge-comedy-club-the-forge-comedy-club"
       ]
+    },
+    {
+      "id": "2026-11-12-the-hope-ruin-h-r-one-s-2-watch-sunlifter-pointless-waste-of-dopamine-marla-francis-murray",
+      "title": "H&R One’s 2 Watch: Sunlifter + Pointless Waste of Dopamine + Marla + Francis Murray",
+      "date": "2026-11-12",
+      "venue": "The Hope & Ruin",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Music",
+      "ticket_url": "https://www.hope.pub/event/hr-ones-2-watch-sunlifter-pointless-waste-of-dopamine-marla-francis-murray/",
+      "last_seen": "2026-11-08"
     },
     {
       "id": "2026-12-11-the-old-market-philosophy-of-the-world",
@@ -1645,7 +1669,8 @@
       "promoter": "JOY. Concerts",
       "also_ids": [
         "2026-11-12-a-l-p-h-a-b-e-t-dutch-crimnal-record"
-      ]
+      ],
+      "spotify": "5h6KJPKB8cSVJTWZhKAZoT"
     },
     {
       "id": "2026-11-12-brighton-centre-ub40-ft-ali-campbell",
@@ -1706,7 +1731,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.daltonsbrighton.com/event-details/grace-hayhurst-evi-vine-dea-velata",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "3PDo9wWpc0jP2WeFQRYqUA"
     },
     {
       "id": "2026-11-12-dice-saloon-hobby-hang",
@@ -1871,6 +1897,7 @@
       "category": "Music",
       "ticket_url": "https://thegreendoorstore.co.uk/events/flat-moon/",
       "last_seen": "2026-11-08",
+      "spotify": "5dri381YbDhSj6uDiGDsTL",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:c0215e54-f26f-46a5-be23-eba22b0d9e73"
     },
@@ -1888,7 +1915,8 @@
       "also_ids": [
         "2026-11-13-patterns-the-entitled-sons-2"
       ],
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "1WPIlJ21qCAHZFRavJhxfa"
     },
     {
       "id": "2026-11-13-brighton-dome-chris-ramsey-here-man",
@@ -2090,7 +2118,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://link.dice.fm/W9edf191ca92",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "6ekYAO2D1JkI58CF4uRRqw"
     },
     {
       "id": "2026-11-13-caroline-of-brunswick-creatures",
@@ -2137,7 +2166,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://deathbeforedetransition.bigcartel.com/product/131126-death-goals",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "00I2SJI3kqtdl3IWdAPTk5"
     },
     {
       "id": "2026-11-13-daltons-gouge-away-90-s-00-s-alt-rock-club-night",
@@ -2213,7 +2243,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.hope.pub/event/quaking-aspens/",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "0eVCmlLTmqU6PTSJ8fuEu4"
     },
     {
       "id": "2026-11-13-theprincealbert-lenna-and-the-snakemen",
@@ -2501,7 +2532,8 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvYnV0Y2gta2Fzc2lkeS9hLWwtcC1oLWEtYi1lLXQvMzYxNTE4NQ/supplier/SeeTickets/suppliedid/MzYxNTE4NQ/ticketid/8094842/checksum/5241c2f1975754abc605010fecf59143/track/true?title=Butch+Kassidy&badge=&venueId=50186",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "0mDTM9lWOAmhmR40Df5Fsr"
     },
     {
       "id": "2026-11-14-brightoncentre-peter-kay-better-late-than-never",
@@ -2596,6 +2628,7 @@
       "ticket_url": "https://www.gigantic.com/venue/brighton/dust",
       "finish_time": "",
       "last_seen": "2026-11-08",
+      "spotify": "1lLY6EogC1Ph2Y6ZRjnkCY",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:9068fa4c-73db-4ac5-91fd-62c47b504f56"
     },
@@ -2708,7 +2741,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/slow-leaves/the-folklore-rooms/3673311",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "1CNY3GA9jHEuZeQEOHx0r8"
     },
     {
       "id": "2026-11-14-the-hope-ruin-the-zac-schulze-gang-matinee",
@@ -2721,7 +2755,8 @@
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/iiki2wy7/the-zac-schulze-gang-matinee-sold-out",
       "last_seen": "2026-11-08",
-      "status": "SOLD OUT"
+      "status": "SOLD OUT",
+      "spotify": "3qvVjXmsWmDBEomXDVMOtS"
     },
     {
       "id": "2026-11-14-the-hope-ruin-the-zac-schulze-gang-sold-out",
@@ -2734,7 +2769,8 @@
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/o130bgtj/the-zac-schulze-gang-sold-out",
       "last_seen": "2026-11-08",
-      "status": "SOLD OUT"
+      "status": "SOLD OUT",
+      "spotify": "3qvVjXmsWmDBEomXDVMOtS"
     },
     {
       "id": "2026-11-14-the-prince-albert-city-baby-attacked-by-rats-with-wings-festival-2",
@@ -2876,6 +2912,7 @@
       "category": "Music",
       "ticket_url": "https://dice.fm/event/aaron-rowe-15th-nov-patterns-brighton-tickets",
       "last_seen": "2026-11-08",
+      "spotify": "6lM3Lss7HI9Zpq4d4GqjIG",
       "genre": "Folk & Country",
       "genre_source": "musicbrainz:eee8e86c-04d5-464b-addc-939eb6d2f54a"
     },
@@ -2949,6 +2986,7 @@
       "ticket_url": "https://dice.fm/event/6a6b6eb84fa3ff000121ea8e",
       "last_seen": "2026-11-08",
       "promoter": "JOY. Concerts",
+      "spotify": "1Uwe1MbiKnPHAFh3qMWuNp",
       "genre": "Punk & Metal",
       "genre_source": "musicbrainz:0f3f7357-73d3-42a3-81a5-b359bc4e8a56"
     },
@@ -2963,6 +3001,7 @@
       "category": "Music",
       "ticket_url": "https://dice.fm/partner/tickets/event/dkdwno",
       "last_seen": "2026-11-08",
+      "spotify": "3w7uVOPfs4czpqSWFgCPDX",
       "genre": "Punk & Metal",
       "genre_source": "musicbrainz:10ad2ae2-1845-463d-a185-61eb0ba6f9c0"
     },
@@ -3013,6 +3052,7 @@
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/track-dogs/the-folklore-rooms/3638356",
       "last_seen": "2026-11-08",
+      "spotify": "5mEAkhc0sVGvWBXhzIJTDB",
       "genre": "Folk & Country",
       "genre_source": "musicbrainz:f90064fc-ead2-493d-aa83-4ba2d59d5c64"
     },
@@ -3081,6 +3121,7 @@
         "2026-11-16-brighton-dome-bellowhead-2"
       ],
       "venue_label": "Music",
+      "spotify": "79fyBJJSUvWw4263rXYDM0",
       "genre": "Folk & Country",
       "genre_source": "musicbrainz:9b1e9c88-16e5-4a84-81ab-b7543149c8d2"
     },
@@ -3170,6 +3211,7 @@
       "ticket_url": "https://dice.fm/event/6ad61ee317744e000194a355",
       "last_seen": "2026-11-08",
       "status": "SOLD OUT",
+      "spotify": "6e9wIFWhBPHLE9bXK8gtBI",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:0efe858c-89e5-4e47-906a-356fa953fd6e"
     },
@@ -3185,6 +3227,7 @@
       "ticket_url": "https://dice.fm/event/6ad0f0f93621320001744f6a",
       "last_seen": "2026-11-08",
       "status": "SOLD OUT",
+      "spotify": "6e9wIFWhBPHLE9bXK8gtBI",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:0efe858c-89e5-4e47-906a-356fa953fd6e"
     },
@@ -3210,7 +3253,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/abigail-lapell/the-folklore-rooms/3626188",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "6HyT9nfsNKEtu76UKQBD5g"
     },
     {
       "id": "2026-11-16-the-hope-ruin-60-juno",
@@ -3222,7 +3266,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/ild5onwo/60-juno",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "6BMp2cQhN9C3Vl8PLzLvw9"
     },
     {
       "id": "2026-11-16-the-hope-ruin-60juno",
@@ -3312,7 +3357,24 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dessiemageestore.myshopify.com/products/dessie-magee-green-door-store-brighton-17th-november-2026-doors-7-30pm",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "1NtRrH5c8GMEcD62fUD8Fm"
+    },
+    {
+      "id": "2026-11-17-brighton-dome-embrace-celebrating-30-years",
+      "title": "Embrace: Celebrating 30 Years",
+      "date": "2026-11-17",
+      "venue": "Brighton Dome",
+      "source": "venue",
+      "time": "19:30",
+      "finish_time": "23:00",
+      "category": "Music",
+      "ticket_url": "https://brightondome.org/whats-on/LKN-embrace-celebrating-30-years/",
+      "last_seen": "2026-11-08",
+      "also_ids": [
+        "2026-11-17-brighton-dome-embrace-celebrating-30-years-2"
+      ],
+      "venue_label": "Music"
     },
     {
       "id": "2026-11-17-the-old-market-notes-a-wine-and-music-pairing-night",
@@ -3368,18 +3430,6 @@
       "last_seen": "2026-10-06"
     },
     {
-      "id": "2026-11-17-brighton-dome-embrace-celebrating-30-years",
-      "title": "Embrace: Celebrating 30 Years",
-      "date": "2026-11-17",
-      "venue": "Brighton Dome",
-      "source": "discovery",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://brightondome.org/whats-on/LKN-embrace-celebrating-30-years/",
-      "last_seen": "2026-11-08"
-    },
-    {
       "id": "2026-11-17-dust-charlie-noordewier",
       "title": "Charlie Noordewier",
       "date": "2026-11-17",
@@ -3390,7 +3440,8 @@
       "category": "Music",
       "ticket_url": "https://dice.fm/event/6ab0f1484c55e1000197b86f",
       "last_seen": "2026-11-08",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "0SDfEluak7Z8ML7o1K2Ljk"
     },
     {
       "id": "2026-11-17-resident-jake-bugg-solo-acoustic-performance",
@@ -3404,6 +3455,7 @@
       "ticket_url": "https://dice.fm/event/6ab13b82cf79330001150b9c",
       "last_seen": "2026-11-08",
       "status": "SOLD OUT",
+      "spotify": "4hf3caW9H8uFwwbv5pFjcg",
       "genre": "Folk & Country",
       "genre_source": "wikidata:Q1320912"
     },
@@ -3419,6 +3471,7 @@
       "ticket_url": "https://dice.fm/event/6ab67c42cd3c2b000152ae91",
       "last_seen": "2026-11-08",
       "status": "SOLD OUT",
+      "spotify": "4hf3caW9H8uFwwbv5pFjcg",
       "genre": "Folk & Country",
       "genre_source": "wikidata:Q1320912"
     },
@@ -3458,7 +3511,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/d7f7nxe3/ashley-singh",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "0W5v1wZ9vqtoIgklZa1wcH"
     },
     {
       "id": "2026-11-17-the-hope-ruin-h-r-one-s-2-watch-patrick-circus-krumpets-rhiannon-ruthven",
@@ -3541,7 +3595,8 @@
       "also_ids": [
         "2026-11-18-concorde-2-oh-my-god-it-s-the-church-2"
       ],
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "1hv3TErshfpU4SpYxRPkZn"
     },
     {
       "id": "2026-11-18-komedia-killian-sundermann-killian-dollar-baby-wed-18-nov-2026-7-30-pm-doors-7-00-pm",
@@ -3620,7 +3675,8 @@
       "ticket_url": "https://brightoncentre.co.uk/",
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "4UoEzpWZrFWvlGYOzTEn1M"
     },
     {
       "id": "2026-11-18-brighton-dome-sounds-from-the-city",
@@ -3704,7 +3760,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.brunswickpub.co.uk/event-details/noah-derksen-live-in-hove",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "31wEHfLGUKIlJAayR6K936"
     },
     {
       "id": "2026-11-18-the-folklore-rooms-good-habits",
@@ -3728,7 +3785,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/ung9j1wo/hh-presents-mouth-ulcers-alligatr-o-phantom-grimrite",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "7ohGcioscyT39FJjvkivt5"
     },
     {
       "id": "2026-11-18-the-prince-albert-outpost-drive",
@@ -3781,7 +3839,8 @@
       "category": "Music",
       "ticket_url": "https://dice.fm/partner/tickets/event/92356d-poison-ruin-18th-nov-volks-brighton-tickets",
       "promoter": "JOY. Concerts",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "0WHVA5E3ZEY5mxGkMYqPuB"
     },
     {
       "id": "2026-11-19-alcampo-lounge-thursday-night-pub-boardgames",
@@ -3806,7 +3865,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://link.dice.fm/bf515306f270",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5mZ836Fy59tOJEcqWfN771"
     },
     {
       "id": "2026-11-19-komedia-soul-selecta-s",
@@ -3908,7 +3968,8 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvZ29sZC1wYW5kYS9hbHBoYWJldC8zNjY3NjM1/supplier/SeeTickets/suppliedid/MzY2NzYzNQ/ticketid/8085229/checksum/d264f30efa5cf70a07e5dbd3249b57fd/track/true?title=Gold+Panda&badge=&venueId=50186",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "6xS3zemJD9h94iueQvGqVk"
     },
     {
       "id": "2026-11-19-brighton-dome-sounds-from-the-city-underground",
@@ -3957,6 +4018,7 @@
       "ticket_url": "https://www.gigantic.com/tokyo-tea-room-tickets/brighton-dust/2026-11-19-19-00",
       "finish_time": "",
       "last_seen": "2026-11-08",
+      "spotify": "3lzTKwFsOqxtp5cLJ2qbSD",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:f836a8dd-6b20-4d95-9e0f-5b758ff3eeb3"
     },
@@ -4007,7 +4069,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/event/6ac8cd729c184b0001fa9a4f",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "6DN3lUELm1rtxgNobBIuCk"
     },
     {
       "id": "2026-11-19-the-hope-ruin-ahsoka-farewell-show-chasm-is-this-ok",
@@ -4019,7 +4082,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/5xr66au4/ahsoka-farewell-show-chasm-is-this-ok",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "2Z5cQBn8c3t1tK9qPiYqzE"
     },
     {
       "id": "2026-11-19-the-prince-albert-niall-mcnamee",
@@ -4032,7 +4096,8 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvbmlhbGwtbWNuYW1lZS90aGUtcHJpbmNlLWFsYmVydC8zNjUzOTAz/supplier/SeeTickets/suppliedid/MzY1MzkwMw/ticketid/8075115/checksum/2ed95cbfd04af26b63441f13917676f5/track/true?title=Niall+McNamee&badge=&venueId=24967",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "12ECCS26QfiL4LVEarRWGf"
     },
     {
       "id": "2026-11-19-the-rose-hill-lava-elastic",
@@ -4106,7 +4171,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873665440/events/128654298",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5Qj5Wwn5TrlAC3Tdr0AVMT"
     },
     {
       "id": "2026-11-20-patterns-sametime",
@@ -4118,7 +4184,8 @@
       "finish_time": "22:00",
       "category": "Music",
       "ticket_url": "https://dice.fm/event/sametime-20th-nov-patterns-brighton-tickets",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "42rWfryHDfUU1jBggl9yja"
     },
     {
       "id": "2026-11-20-the-old-market-sh-t-faced-shakespeare-romeo-and-juliet",
@@ -4307,7 +4374,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/LSY-dutty-moonshine-big-band/",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "2aRD3jAqJXXE6luSkvLp3W"
     },
     {
       "id": "2026-11-20-chalk-reverend-and-the-makers",
@@ -4392,7 +4460,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/partner/tickets/event/yodq3a-stonks-20th-nov-the-rossi-bar-brighton-tickets?dice_id=10243984&dice_channel=web&dice_tags=organic&dice_campaign=The+Green+Door+Store&dice_feature=mio_marketing&_branch_match_id=1179729593120726408&utm_source=web&utm_campaign=The+Green+Door+Store&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1Q8wNTdNMU4ySgXS9nVFqWmpRUWZeenxSUX55cWpRbbOGUX5uakANop19zsAAAA%3D",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "0iwWvPe7sbKfFHkuFnXzgt"
     },
     {
       "id": "2026-11-20-the-brunswick-clash-n-sleazy",
@@ -4442,7 +4511,8 @@
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/the-hope-and-ruin",
       "last_seen": "2026-11-08",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "6BFppN7DZ1DR7zFyNTj7Nv"
     },
     {
       "id": "2026-11-20-the-prince-albert-the-spitfires",
@@ -4560,7 +4630,8 @@
       "also_ids": [
         "2026-11-21-concorde-2-getdown-services-2"
       ],
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "4OTD2AbOu5iBqSWk3NfwG5"
     },
     {
       "id": "2026-11-21-komedia-dan-schreiber-this-changes-everything-sat-21-nov-2026-6-30-pm-doors-6-00-pm",
@@ -4703,7 +4774,8 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvcGVhcmwtdGhlLW95c3RlcnMvYS1sLXAtaC1hLWItZS10LzM2NjQwODI/supplier/SeeTickets/suppliedid/MzY2NDA4Mg/ticketid/8084617/checksum/bacf7c9eeb10239a79f8d765a2dc4337/track/true?title=Pearl+%26+The+Oysters&badge=&venueId=50186",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "7ovvjgqrTeuMxbzIykUqDs"
     },
     {
       "id": "2026-11-21-brightoncentre-the-australian-pink-floyd-show",
@@ -4908,7 +4980,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/abigail-lapell-show-2/the-folklore-rooms/3661400",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "6HyT9nfsNKEtu76UKQBD5g"
     },
     {
       "id": "2026-11-21-the-hope-ruin-hh-presents-uncle-junior-lindow-man-dura-mater-home-audio",
@@ -4920,7 +4993,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/zhntgdmk/hh-presents-uncle-junior-lindow-man-dura-mater-home-audio",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5X13o9WLdbg7D39RUr6YEF"
     },
     {
       "id": "2026-11-21-the-pipeline-io-playing-alice-spooky-huge-dateless-wonder-club",
@@ -4998,7 +5072,8 @@
       "also_ids": [
         "2026-11-22-concorde-2-getdown-services"
       ],
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "4OTD2AbOu5iBqSWk3NfwG5"
     },
     {
       "id": "2026-11-22-komedia-carole-king-s-tapestry-an-evening-in-laurel-canyon-sun-22-nov-2026-7-00-pm-doors-6-00-pm",
@@ -5051,7 +5126,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.tickettailor.com/events/hivemindrecords/2478785",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "7mDp671lD3JSf1g4IRBVQz"
     },
     {
       "id": "2026-11-22-brighton-dome-omne-trium-perfectum",
@@ -5076,6 +5152,7 @@
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
       "last_seen": "2026-11-08",
+      "spotify": "0fqE57gXXTTqxXlFYVNG2u",
       "genre": "Folk & Country",
       "genre_source": "musicbrainz:b5330942-ffdf-49cb-8a13-b5d7b5d67bff"
     },
@@ -5187,6 +5264,7 @@
         "2026-11-23-concorde-2-the-big-moon-2"
       ],
       "promoter": "JOY. Concerts",
+      "spotify": "0KU55rzxAihPhi27MAuz9O",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:9bb06c9f-31d7-4809-9e95-2e647a23a735"
     },
@@ -5214,6 +5292,7 @@
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list",
       "last_seen": "2026-11-08",
+      "spotify": "2szQRWh2F0RUs9bkbepwok",
       "genre": "Indie & Rock",
       "genre_source": "wikidata:Q1631187"
     },
@@ -5290,7 +5369,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/partner/tickets/event/mxdvar-the-rabbitts-album-release-tour-23rd-nov-the-folklore-rooms-brighton-tickets?dice_id=8982575&dice_channel=web&dice_tags=organic&dice_campaign=DICE&dice_feature=mio_marketing&_branch_match_id=1245521259485845231&utm_source=web&utm_campaign=DICE&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1Q83SUtOtkg1MksyMrCvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQDhw2oXOwAAAA%3D%3D",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "20fBRSsvDK3GmHQKcpZ3DH"
     },
     {
       "id": "2026-11-23-the-hope-ruin-revolt-big-fear-tungz-sock-drawer-snowy-mountain",
@@ -5353,6 +5433,7 @@
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list",
       "last_seen": "2026-11-08",
+      "spotify": "3iejrAcqxYoVgyxp6zkWgs",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:4d8650ba-b4ed-4307-a6c8-368eb646210b"
     },
@@ -5391,6 +5472,7 @@
       "category": "Music",
       "ticket_url": "https://dice.fm/event/mxnqov-the-love-buzz-carne-kanukai-24th-nov-green-door-store-brighton-tickets?dice_id=k16ff14cc582&utm_source=web&utm_campaign=google_youtube&utm_medium=google_youtube&source=ea&_branch_match_id=1503109823552414038&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1c82NEtLMzRJTja1MLIvzi8tSk61TU1UA0nHZ6bYIkur1RWlpqUWFWXmpccnFeWXF6cW2TpnFOXnpgIAYk94VVoAAAA%3D",
       "last_seen": "2026-11-08",
+      "spotify": "103TWTu6vxVZ9g6eqA1ntP",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:8f1ff72b-9ec3-419c-8334-f6cf6dece5ae"
     },
@@ -5442,7 +5524,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/sennen-timcke-album-launch/the-folklore-rooms/3712454",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "4u5hhrqJj7PS7a6rTcNw7C"
     },
     {
       "id": "2026-11-24-the-hope-ruin-demonstrations-of-power-imposter-exit-life-violaine",
@@ -5550,6 +5633,7 @@
       "category": "Music",
       "ticket_url": "https://www.axs.com/uk/events/1583732/dakhabrakha-tickets",
       "last_seen": "2026-11-08",
+      "spotify": "5hQYZqZaPcRceL82mFZTO5",
       "genre": "Folk & Country",
       "genre_source": "musicbrainz:208334a1-abf0-4791-9705-b45838244b29"
     },
@@ -5670,7 +5754,8 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "0GmYGGZZIU8vHbI0bAXZun"
     },
     {
       "id": "2026-11-25-daltons-turbobier-chub",
@@ -5682,7 +5767,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.daltonsbrighton.com/event-details/turbobier-chub",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "0dvqsPZ5Dss68MvOry9BPt"
     },
     {
       "id": "2026-11-25-green-door-store-goo-records-showcase-the-mink-more",
@@ -5742,7 +5828,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/6lrzk61a/the-sick-man-of-europe",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "4MfLAsjMG5jsbPxD4r5DuD"
     },
     {
       "id": "2026-11-25-the-rose-hill-synch-pulse-no-29-art-of-sculpture",
@@ -5812,6 +5899,7 @@
         "2026-11-26-concorde-2-graham-coxon-2"
       ],
       "promoter": "JOY. Concerts",
+      "spotify": "7ueZp29tCNwjIj4yAMTEaC",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:fb56cc34-2ab1-4621-ac18-9bf2895e5f4f"
     },
@@ -5837,7 +5925,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873668155/events/128667120",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "6f8zoTQbivpjTMvL2sbeRN"
     },
     {
       "id": "2026-11-26-the-forge-comedy-club-james-barr-sorry-i-hurt-your-son-said-my-ex-to-my-mum",
@@ -5958,7 +6047,8 @@
       "source_url": "https://thegreendoorstore.co.uk/events/",
       "finish_time": "",
       "last_seen": "2026-11-08",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "66NBYDmR4OTIL8AuMvKTK7"
     },
     {
       "id": "2026-11-26-the-brunswick-wilswood-buoys-poisoning-your-mind-tour-support-from-henshaw",
@@ -5995,7 +6085,8 @@
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/cwfnb9ih/keg",
       "last_seen": "2026-11-08",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "5CiQ9m8dPZ3eEV8c2DdHuq"
     },
     {
       "id": "2026-11-26-the-prince-albert-guana-batz",
@@ -6008,7 +6099,8 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "1KMuPtuTktoPaGn44iTNB5"
     },
     {
       "id": "2026-11-26-the-rose-hill-scratch-meet-18",
@@ -6095,6 +6187,7 @@
       "category": "Music",
       "ticket_url": "https://dice.fm/event/girls-of-the-internet-live-27th-nov-patterns-brighton-tickets",
       "last_seen": "2026-11-08",
+      "spotify": "5tGmvKTFVL9bGZTxtvopHE",
       "genre": "House & Disco",
       "genre_source": "musicbrainz:11c3823e-91d0-4c68-8051-9cd55728ad8b"
     },
@@ -6112,6 +6205,7 @@
       "also_ids": [
         "2026-11-27-concorde2-uncle-acid-the-deadbeats"
       ],
+      "spotify": "16PcI6JjJuUfPlsX8Ffvfl",
       "genre": "Punk & Metal",
       "genre_source": "musicbrainz:e5edd3b8-2a81-42c4-93a4-c19a10713295"
     },
@@ -6205,7 +6299,8 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvamV0c3RyZWFtLXBvbnktZmlyZXN0YXRpb25zL2EtbC1wLWgtYS1iLWUtdC8zNjYxMDA2/supplier/SeeTickets/suppliedid/MzY2MTAwNg/ticketid/8078024/checksum/f7b04fc15fbe15aa4ddb1256034824c1/track/true?title=Jetstream+Pony+%26+Firestations&badge=&venueId=50186",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "6yOJiA8ct3DCwL0tAt2xr1"
     },
     {
       "id": "2026-11-27-brightoncentre-interpol-bloc-party",
@@ -6282,6 +6377,7 @@
       "category": "Music",
       "ticket_url": "https://www.daltonsbrighton.com/event-details/sky-valley-mistress",
       "last_seen": "2026-11-08",
+      "spotify": "4rCErKnA6EsbE92KyKFnP8",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:8cb04822-147e-430b-83ad-321766fce295"
     },
@@ -6296,6 +6392,7 @@
       "category": "Music",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-Green-Door-Store/The-Gulls--The-Green-Door-Store/42813479/",
       "last_seen": "2026-11-08",
+      "spotify": "2n0FlGHc3OxI0x2WI39BEc",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:fd6677e9-609b-43d7-a02d-66fa00fc03dc"
     },
@@ -6334,6 +6431,7 @@
       "category": "Music",
       "ticket_url": "https://www.hope.pub/event/soot-sprite/",
       "last_seen": "2026-11-08",
+      "spotify": "4CoB9YE7rYnbmr9zlwv0af",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:be32c0ee-e3c9-46fa-beff-707750e92b84"
     },
@@ -6372,7 +6470,8 @@
       "category": "Music",
       "ticket_url": "https://link.dice.fm/J580a98a7728",
       "promoter": "JOY. Concerts",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "65TVwNWUoKyfvlaxLLJQGh"
     },
     {
       "id": "2026-11-28-volks-dusk-before-dark",
@@ -6421,6 +6520,7 @@
       "category": "Music",
       "ticket_url": "https://dice.fm/event/utah-saints-28th-nov-patterns-brighton-tickets",
       "last_seen": "2026-11-08",
+      "spotify": "2KB6LGMBaOYYYdvvgyptFH",
       "genre": "Electronic",
       "genre_source": "wikidata:Q2036827"
     },
@@ -6525,7 +6625,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/Ivy-Lab-Farewell-Tour/42682082/",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "3VXCvo9Sr0hbZ4mk6VOKBs"
     },
     {
       "id": "2026-11-28-a-l-p-h-a-b-e-t-excellent-behaviour-with-djs-kelvin-andrews-joey-t",
@@ -6576,6 +6677,7 @@
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
       "last_seen": "2026-11-08",
+      "spotify": "5aj3LEYRbuaabjjHkj5oE1",
       "genre": "Electronic",
       "genre_source": "musicbrainz:5b32946a-4c08-4a75-b1b1-60700470671f"
     },
@@ -6615,7 +6717,8 @@
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/disgusting-sisters-tickets/brighton-dust/2026-11-28-19-00",
       "finish_time": "",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5Lh2DW6C4L5p23wvyAheDe"
     },
     {
       "id": "2026-11-28-dust-indie-rock-night-big-wig-energy",
@@ -6891,7 +6994,8 @@
       "also_ids": [
         "2026-11-29-concorde-2-gotts-street-park-2"
       ],
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "2hwy5DELim1AxB1sHPqn4y"
     },
     {
       "id": "2026-11-29-komedia-ciao-italy-stand-up-in-italian-sun-29-nov-2026-7-30-pm-doors-7-00-pm",
@@ -6928,7 +7032,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=2&view=list",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "6y9qaUdXNIsgwe6LEyeOf9"
     },
     {
       "id": "2026-11-29-brighton-racecourse-antiques-vintage-fair-by-love-fairs",
@@ -7115,7 +7220,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.daltonsbrighton.com/event-details/kid-bookie",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "7DiLiJ8nji6DslsFSzx0IV"
     },
     {
       "id": "2026-11-30-dice-saloon-dnd-season-of-champions-weekly-play-session-3",
@@ -7152,7 +7258,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/kirsteen-harvey/the-folklore-rooms/3727563",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5ZKZqBvEXRhwDwLFnb5rlT"
     },
     {
       "id": "2026-12-01-komedia-bring-your-own-baby-comedy-brighton",
@@ -7189,7 +7296,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873669068/events/128675710",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "3u3NAucJOMpUFLwUS8QHFJ"
     },
     {
       "id": "2026-12-01-concorde-2-andrew-cushin",
@@ -7205,7 +7313,8 @@
       "also_ids": [
         "2026-12-01-concorde-2-andrew-cushin-2"
       ],
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "0mUufv9jrIi9BPpN9VHduc"
     },
     {
       "id": "2026-12-01-komedia-new-act-night",
@@ -7241,7 +7350,8 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5LfO4rbJarBvHjB34mU9m2"
     },
     {
       "id": "2026-12-01-dust-thistle",
@@ -7278,7 +7388,8 @@
       "ticket_url": "https://thegreendoorstore.co.uk/events/",
       "source_url": "https://thegreendoorstore.co.uk/events/",
       "finish_time": "",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5hgZ7PGI0EM2UfiWAIKdFc"
     },
     {
       "id": "2026-12-01-the-brunswick-jazz-jam",
@@ -7316,7 +7427,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/b17v27gw/jarrod-dickenson",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "2L2KxF5X311lXiN06X9Gv1"
     },
     {
       "id": "2026-12-01-theatreroyalbrighton-six-the-musical",
@@ -7358,7 +7470,8 @@
       "also_ids": [
         "2026-12-02-concorde-2-the-ordinary-boys-2"
       ],
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "2xPxXPgmZFs7x6xRFpHwkq"
     },
     {
       "id": "2026-12-02-theoldmarket-the-gift",
@@ -7577,6 +7690,7 @@
       "ticket_url": "https://chalkvenue.com/event/paul-heaton-album-launch-show-5pm",
       "last_seen": "2026-11-08",
       "status": "SOLD OUT",
+      "spotify": "1aIozCeQrpKipbEdkGtr0j",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:ed652e25-7d55-42b3-a81c-cf31c6138d88"
     },
@@ -7592,6 +7706,7 @@
       "ticket_url": "https://chalkvenue.com/event/paul-heaton-album-launch-show",
       "last_seen": "2026-11-08",
       "status": "SOLD OUT",
+      "spotify": "1aIozCeQrpKipbEdkGtr0j",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:ed652e25-7d55-42b3-a81c-cf31c6138d88"
     },
@@ -7605,7 +7720,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/event/6ab633798bc23f0001098c28",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5MPz6I6u7lDh2Cy1vPWfkd"
     },
     {
       "id": "2026-12-03-resident-radie-peat-lankum-xn-live-signing",
@@ -7617,7 +7733,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/event/6ad8a8043a5e000001ca23ee",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "2HzXwEzn6g3waLTIufC1Ji"
     },
     {
       "id": "2026-12-03-the-folklore-rooms-this-machine-kills-wasps",
@@ -7643,6 +7760,7 @@
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/the-hope-and-ruin",
       "last_seen": "2026-11-08",
+      "spotify": "57MIstrTi3Sw9J9yJybN0E",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:735f0aca-dd56-4247-8d11-1d7260c25436"
     },
@@ -7730,6 +7848,7 @@
       "category": "Music",
       "ticket_url": "https://dice.fm/event/good-health-good-wealth-4th-dec-patterns-brighton-tickets",
       "last_seen": "2026-11-08",
+      "spotify": "6oaEXmqVM7eQnzva7kHudo",
       "genre": "Pop",
       "genre_source": "musicbrainz:492b0368-e6c6-4578-bf37-3b01a59cfd97"
     },
@@ -7784,6 +7903,7 @@
       "category": "Music",
       "ticket_url": "https://www.axs.com/uk/events/1676792/fatboy-slim-martlets-fundraiser-tickets",
       "last_seen": "2026-11-08",
+      "spotify": "4Y7tXHSEejGu1vQ9bwDdXW",
       "genre": "Electronic",
       "genre_source": "musicbrainz:34c63966-445c-4613-afe1-4f0e1e53ae9a"
     },
@@ -7850,6 +7970,7 @@
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
       "last_seen": "2026-10-06",
+      "spotify": "78u1jLVBjPSXQVmHBV43yG",
       "genre": "Reggae & Ska",
       "genre_source": "musicbrainz:dad904da-8bd7-46b2-b202-f9a9ecd6bbab"
     },
@@ -8004,6 +8125,7 @@
         "2026-12-05-chalk-ghostface-killah-2",
         "2026-12-05-chalk-ghostface-killah-wu-tang-clan-sat-5th-dec-chalk-brighton"
       ],
+      "spotify": "6FD0unjzGQhX3b6eMccMJe",
       "genre": "Hip-hop & R&B",
       "genre_source": "musicbrainz:3b39abeb-0064-4eed-9ddd-ee47a45c54cb"
     },
@@ -8030,6 +8152,7 @@
       "category": "Music",
       "ticket_url": "https://www.axs.com/uk/events/1676793/fatboy-slim-martlets-fundraiser-tickets",
       "last_seen": "2026-11-08",
+      "spotify": "4Y7tXHSEejGu1vQ9bwDdXW",
       "genre": "Electronic",
       "genre_source": "musicbrainz:34c63966-445c-4613-afe1-4f0e1e53ae9a"
     },
@@ -8095,7 +8218,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/event/6aabbcf72b4a180001aee674",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5Qy7OcsjsfkGo5Bm1dsbcb"
     },
     {
       "id": "2026-12-05-brightoncentre-squeeze-billy-bragg",
@@ -8249,6 +8373,7 @@
       "category": "Music",
       "ticket_url": "https://link.dice.fm/h48c43a5532a",
       "last_seen": "2026-11-08",
+      "spotify": "62HTqokx4ZPp8kCN5Bq49D",
       "genre": "Indie & Rock",
       "genre_source": "wikidata:Q369409"
     },
@@ -8262,7 +8387,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/5m4lwqxa/restraining-order",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "4HXv1CWVOyIO8ZNvGOSyEy"
     },
     {
       "id": "2026-12-05-the-rose-hill-church-andrews-aka-kirk-barley-matt-davies-support-from-lee-westwood",
@@ -8599,7 +8725,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.brunswickpub.co.uk/event-details/anna-katarina",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "3wUofml5k6dhBcD5OKPLup"
     },
     {
       "id": "2026-12-07-the-brunswick-open-mic-night",
@@ -8648,7 +8775,8 @@
       "finish_time": "22:00",
       "category": "Music",
       "ticket_url": "https://dice.fm/event/ethan-regan-8th-dec-patterns-brighton-tickets",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "3UNkRVGHGCrGCE0930Bt9e"
     },
     {
       "id": "2026-12-08-komedia-scummy-mummies-christmas-show-2",
@@ -8686,6 +8814,7 @@
       "ticket_url": "https://link.dice.fm/N0cca79179e9",
       "promoter": "JOY. Concerts",
       "last_seen": "2026-11-08",
+      "spotify": "3AQRLZ9PuTAozP28Skbq8V",
       "genre": "Pop",
       "genre_source": "musicbrainz:4c98aa1b-34eb-4336-987f-5e50aa059c00"
     },
@@ -8739,6 +8868,7 @@
       "category": "Music",
       "ticket_url": "https://www.axs.com/uk/events/1346958/young-knives-tickets",
       "last_seen": "2026-11-08",
+      "spotify": "4kYNTq3njMHBcnv8Di0v0Y",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:b26b4b58-10b6-42e9-ba80-b1addd4b0adf"
     },
@@ -8902,6 +9032,7 @@
       "category": "Music",
       "ticket_url": "https://www.gigantic.com/the-black-queen-tickets/brighton-dust/2026-12-10-19-00",
       "last_seen": "2026-11-08",
+      "spotify": "3j2DZTwQle72CWyB19B5Mq",
       "genre": "Electronic",
       "genre_source": "musicbrainz:e89e325e-ae11-4c2a-86a8-3e9a967ffda3"
     },
@@ -8929,7 +9060,8 @@
       "status": "",
       "ticket_url": "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvY3Etd3Jlc3RsaW5nL2EtbC1wLWgtYS1iLWUtdC8zNzI2MDcz/supplier/SeeTickets/suppliedid/MzcyNjA3Mw/ticketid/8151332/checksum/412b2b7d99955a1676faadec5fad8da3/track/true?title=CQ+Wrestling&badge=&venueId=50186",
       "last_seen": "2026-11-08",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "5S4qUw22ZF7gTPUEx61SyC"
     },
     {
       "id": "2026-12-10-brighton-centre-bill-bailey",
@@ -8953,6 +9085,7 @@
       "category": "Music",
       "ticket_url": "https://link.dice.fm/A444722102d5",
       "last_seen": "2026-11-08",
+      "spotify": "2ieAXAuLe6qQ3RJsqCxpoC",
       "genre": "Reggae & Ska",
       "genre_source": "musicbrainz:2027b08d-45b1-4fb5-aa6d-f6ccc4db78e5"
     },
@@ -9133,6 +9266,7 @@
       "also_ids": [
         "2026-12-11-brighton-centre-ub40-ft-ali-campbell"
       ],
+      "spotify": "69MEO1AADKg1IZrq2XLzo5",
       "genre": "Reggae & Ska",
       "genre_source": "musicbrainz:7113aab7-628f-4050-ae49-dbecac110ca8"
     },
@@ -9196,6 +9330,7 @@
       "ticket_url": "https://dice.fm/event/6a0b495eaaa6530001399993",
       "last_seen": "2026-11-08",
       "promoter": "JOY. Concerts",
+      "spotify": "5ammRFhN6wQXM30xlhndC5",
       "genre": "Folk & Country",
       "genre_source": "musicbrainz:5def8c5b-3a30-43b8-95ee-5c830d717694"
     },
@@ -9385,6 +9520,7 @@
         "2026-12-12-concorde-2-hybrid-minds",
         "2026-12-12-concorde-2-hybrid-minds-brighton-2"
       ],
+      "spotify": "05lF0DUkLJqiW5o70SScyR",
       "genre": "Drum & Bass",
       "genre_source": "musicbrainz:ceb88a0c-81ca-461a-82d2-ad7769447e15"
     },
@@ -9411,7 +9547,8 @@
       "price": null,
       "status": "",
       "ticket_url": "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNrZXRzLmVudHMyNC5jb20vZXZlbnQvdGhlLXJvZWJ1Y2tzL2EtbC1wLWgtYS1iLWUtdC8zNzA3OTc4/supplier/SeeTickets/suppliedid/MzcwNzk3OA/ticketid/8133726/checksum/a2ba28a0870c94563969c0e042aaf47a/track/true?title=The+Roebucks&badge=&venueId=50186",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "3YFDjidB7g9mLCpPfiInBQ"
     },
     {
       "id": "2026-12-12-amex-stadium-brighton-v-everton",
@@ -9716,6 +9853,7 @@
       "category": "Music",
       "ticket_url": "https://dice.fm/event/6aa03d1c243edc000142334f",
       "last_seen": "2026-11-08",
+      "spotify": "13pYXGtaLO9d06VrXX4Aw0",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:321eaf5a-be21-4faf-a7a0-0a4e59e5ee29"
     },
@@ -10016,6 +10154,19 @@
       "last_seen": "2026-11-08"
     },
     {
+      "id": "2026-12-17-alcampo-lounge-thursday-night-pub-boardgames",
+      "title": "Thursday Night Pub Boardgames",
+      "date": "2026-12-17",
+      "venue": "Alcampo Lounge",
+      "source": "discovery",
+      "time": "18:30",
+      "finish_time": "22:00",
+      "category": "Other",
+      "ticket_url": "https://www.meetup.com/brighton-pub-boardgamers/events/ktgnbvyjcqbwb/",
+      "promoter": "Brighton Pub Boardgamers",
+      "last_seen": "2026-11-08"
+    },
+    {
       "id": "2026-12-17-komedia-komedia-christmas-party-thu-17-dec-2026-doors-6-30-pm",
       "title": "Komedia Christmas Party",
       "date": "2026-12-17",
@@ -10066,7 +10217,8 @@
       "status": "",
       "ticket_url": "https://www.ents24.com/brighton-events/a-l-p-h-a-b-e-t",
       "last_seen": "2026-11-08",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "6KouMFgMa5zEeyXaeg6fvA"
     },
     {
       "id": "2026-12-17-daltons-christmas-karaoke-in-aid-of-ymca-brighton",
@@ -10538,6 +10690,7 @@
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
       "last_seen": "2026-11-08",
+      "spotify": "3Rsr4Z96O6U3lToOiV3zBh",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:bc883961-64d4-46b3-8b1c-64009854291c"
     },
@@ -10778,6 +10931,7 @@
       "category": "Music",
       "ticket_url": "https://link.dice.fm/a81c41010a22",
       "last_seen": "2026-11-08",
+      "spotify": "3AQRLZ9PuTAozP28Skbq8V",
       "genre": "Pop",
       "genre_source": "musicbrainz:4c98aa1b-34eb-4336-987f-5e50aa059c00"
     },
@@ -10804,6 +10958,7 @@
       "category": "Music",
       "ticket_url": "https://link.dice.fm/Qcebb09202fc",
       "last_seen": "2026-11-08",
+      "spotify": "3AQRLZ9PuTAozP28Skbq8V",
       "genre": "Pop",
       "genre_source": "musicbrainz:4c98aa1b-34eb-4336-987f-5e50aa059c00"
     },
@@ -10943,6 +11098,7 @@
       "category": "Music",
       "ticket_url": "https://www.universe.com/events/peter-the-test-tube-babies-typical-girls-tickets-W7Z31V",
       "last_seen": "2026-11-08",
+      "spotify": "2mHQfi32bOrYcD42cazcmh",
       "genre": "Punk & Metal",
       "genre_source": "musicbrainz:84ddbf0a-5cfb-4920-9875-ba7500352af3"
     },
@@ -10957,6 +11113,7 @@
       "category": "Music",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873667297/events/128663998",
       "last_seen": "2026-11-08",
+      "spotify": "3QvyLNQBqeJXW4ujagJVjZ",
       "genre": "Electronic",
       "genre_source": "musicbrainz:3947b8f1-33ad-49c1-8c77-ec5e226b7dbc"
     },
@@ -10985,6 +11142,7 @@
       "category": "Music",
       "ticket_url": "https://www.universe.com/events/peter-and-the-test-tube-babies-rats-rats-rats-tickets-J2V6DC",
       "last_seen": "2026-11-08",
+      "spotify": "2mHQfi32bOrYcD42cazcmh",
       "genre": "Punk & Metal",
       "genre_source": "musicbrainz:84ddbf0a-5cfb-4920-9875-ba7500352af3"
     },
@@ -11010,7 +11168,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.universe.com/events/too-many-crooks-the-marching-skaletons-thee-derelique-tickets-W7K2Y9",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "1LxN3FiVqUmWC8zd42YFMp"
     },
     {
       "id": "2026-12-31-komedia-disco-kidz-new-year-s-eve-special",
@@ -11363,6 +11522,7 @@
       "ticket_url": "https://dice.fm/event/6ab289f517b1b100012a1a42",
       "last_seen": "2026-11-08",
       "status": "SOLD OUT",
+      "spotify": "3iejrAcqxYoVgyxp6zkWgs",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:4d8650ba-b4ed-4307-a6c8-368eb646210b"
     },
@@ -11451,7 +11611,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/caleb-caudle/the-folklore-rooms/3731725",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "2FZLOlw11Ta6hcSK6a7FPU"
     },
     {
       "id": "2027-01-13-the-hope-ruin-jgrrey",
@@ -11464,7 +11625,8 @@
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/s6in1cu6/jgrrey",
       "last_seen": "2026-11-08",
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "66rDbD3tWR3M1uNuIaDAGx"
     },
     {
       "id": "2027-01-13-the-prince-albert-hit-like-a-girl-guests",
@@ -11476,7 +11638,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/ui12ybdj/hit-like-a-girl-guests?utm_source=social_share&utm_medium=social&utm_campaign=social_share",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "0saOG9dPAQ3PCwLLVNlgvQ"
     },
     {
       "id": "2027-01-13-theatreroyalbrighton-it-s-a-beautiful-noise-the-definitive-tribute-to-neil-diamond",
@@ -11500,7 +11663,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/44nbzx1k/ovven",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5ngTSqP6WSRmxbKLSAzra8"
     },
     {
       "id": "2027-01-15-komedia-myndstate-deep-breath-fri-15-jan-2027-7-30-pm-doors-7-00-pm",
@@ -11550,6 +11714,7 @@
       "ticket_url": "https://dice.fm/event/6adf600c02182200016fc752",
       "last_seen": "2026-11-08",
       "status": "SOLD OUT",
+      "spotify": "0ZUyFEafMwocvApBjTXvdo",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:c7a4dcf7-61f8-4126-bec8-3bfa3b18284a"
     },
@@ -11627,6 +11792,7 @@
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/1yz6adts/cowboy-hunters",
       "last_seen": "2026-11-08",
+      "spotify": "5GSSYBJxAbpSyj2w2vr5Cp",
       "genre": "Punk & Metal",
       "genre_source": "musicbrainz:67f4da94-37f3-4355-8b4e-f84d7d596857"
     },
@@ -11789,6 +11955,7 @@
       "source_url": "https://www.ents24.com/brighton-events/the-prince-albert",
       "finish_time": "",
       "last_seen": "2026-10-06",
+      "spotify": "6iU0naWn1UgiTReoiXqPXI",
       "genre": "Folk & Country",
       "genre_source": "wikidata:Q441459"
     },
@@ -11816,6 +11983,7 @@
       "ticket_url": "https://dice.fm/event/the-xcerts-23rd-jan-patterns-brighton-tickets",
       "last_seen": "2026-11-08",
       "promoter": "JOY. Concerts",
+      "spotify": "7sKlSlGo7d1D3dhFYKO0Y5",
       "genre": "Indie & Rock",
       "genre_source": "wikidata:Q1733453"
     },
@@ -11978,6 +12146,7 @@
       "ticket_url": "https://www.axs.com/uk/events/1666576/bleed-from-within-tickets/promos/1225361",
       "last_seen": "2026-11-08",
       "promoter": "JOY. Concerts",
+      "spotify": "5ZvwJikDgdP1PFU4PkAPVG",
       "genre": "Punk & Metal",
       "genre_source": "musicbrainz:385d80ab-cf87-46ed-b4c9-3ea8942993ef"
     },
@@ -12004,6 +12173,7 @@
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=3&view=list",
       "last_seen": "2026-11-08",
+      "spotify": "7sfgqEdoeBTjd8lQsPT3Cy",
       "genre": "Hip-hop & R&B",
       "genre_source": "musicbrainz:7cfaac66-62e5-4fcd-af1b-9d3aa8f68e8b"
     },
@@ -12167,6 +12337,7 @@
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=3&view=list",
       "last_seen": "2026-11-08",
+      "spotify": "0O0lrN34wrcuBenkqlEDZe",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:9f930ddf-be2f-4de5-a39f-7ae47305752e"
     },
@@ -12180,7 +12351,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://thegreendoorstore.co.uk/events/tv-priest/",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "61ujMGJVHgF9LPrIZw4MaI"
     },
     {
       "id": "2027-01-28-thehoperuin-keywest",
@@ -12192,7 +12364,8 @@
       "ticket_url": "https://www.fatsoma.com/e/ueuk05py/keywest",
       "source_url": "https://www.hope.pub/",
       "finish_time": "",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5n9E5vGRtLsPzqk39eA29T"
     },
     {
       "id": "2027-01-29-concorde-2-jo-whiley-s-90s-anthems",
@@ -12467,7 +12640,8 @@
       "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert",
       "source_url": "https://www.ents24.com/brighton-events/the-prince-albert",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "spotify": "4OW8KZOncmml2hRSXdhfO9"
     },
     {
       "id": "2027-04-02-komedia-lost-voice-guy-the-cerebral-palsy-puppet",
@@ -12491,7 +12665,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://link.dice.fm/n93913c2f8b9",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "6D1VqVFh9yM5oARLleWNpQ"
     },
     {
       "id": "2027-02-04-chalk-the-scratch",
@@ -12518,6 +12693,18 @@
       "last_seen": "2026-11-08"
     },
     {
+      "id": "2027-02-05-patterns-admt",
+      "title": "ADMT",
+      "date": "2027-02-05",
+      "venue": "Patterns",
+      "source": "venue",
+      "time": "19:00",
+      "finish_time": "22:00",
+      "category": "Music",
+      "ticket_url": "https://dice.fm/event/admt-5th-feb-patterns-brighton-tickets",
+      "last_seen": "2026-11-08"
+    },
+    {
       "id": "2027-05-02-the-old-market-pierre-novellie-okay-one-more-then-bedtime",
       "title": "Pierre Novellie: Okay, One More Then Bedtime",
       "date": "2027-02-05",
@@ -12540,18 +12727,6 @@
       "finish_time": "",
       "category": "Comedy",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873622740/events/128665266",
-      "last_seen": "2026-11-08"
-    },
-    {
-      "id": "2027-02-05-patterns-admt",
-      "title": "ADMT",
-      "date": "2027-02-05",
-      "venue": "Patterns",
-      "source": "discovery",
-      "time": "",
-      "finish_time": "",
-      "category": "Music",
-      "ticket_url": "https://dice.fm/event/69fa1b55d9d315000186a7b6",
       "last_seen": "2026-11-08"
     },
     {
@@ -12589,6 +12764,7 @@
       "category": "Music",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873662800/events/128646893",
       "last_seen": "2026-11-08",
+      "spotify": "00baC9BEnC6lhOdSF6dYC8",
       "genre": "Folk & Country",
       "genre_source": "musicbrainz:aef5b6f3-bcdc-4409-ad3c-e80f9d2eeb16"
     },
@@ -12615,6 +12791,7 @@
       "category": "Music",
       "ticket_url": "https://dice.fm/event/6aba8f415371c20001d9ca53",
       "last_seen": "2026-11-08",
+      "spotify": "68kRG1Z7B5IXKaxne5Yto4",
       "genre": "Hip-hop & R&B",
       "genre_source": "musicbrainz:82b913a5-b278-4c97-9da5-1d17cf73afc8"
     },
@@ -12689,6 +12866,7 @@
       "category": "Music",
       "ticket_url": "https://www.axs.com/uk/events/1666572/she-wants-revenge-tickets",
       "last_seen": "2026-11-08",
+      "spotify": "2zRt0sfxNnqI8gLR7d8gWt",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:f434ae2b-b203-490d-a8ac-aa9cd51c0e73"
     },
@@ -12840,7 +13018,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873668239/events/128667288",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5vyzlyJ61djmU8hpGlQHUE"
     },
     {
       "id": "2027-02-11-the-hope-ruin-the-godfathers",
@@ -12864,7 +13043,8 @@
       "ticket_url": "https://www.ents24.com/brighton-events/the-prince-albert",
       "source_url": "https://www.ents24.com/brighton-events/the-prince-albert",
       "finish_time": "",
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-06",
+      "spotify": "0srVTNI2U8J7vytCTprEk4"
     },
     {
       "id": "2027-02-12-concorde-2-motorheadache",
@@ -12900,7 +13080,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.alphabetbrighton.com/listings/feb-12-dargz-w-mc-nory-nyc",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "0AggcZhPMyJglaaruoxJpN"
     },
     {
       "id": "2027-02-12-caroline-of-brunswick-creatures",
@@ -12924,7 +13105,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/event/6ac4e55dd406700001e9234f",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "39cDMNnxwjrKJE1dyt47jh"
     },
     {
       "id": "2027-02-12-the-folklore-rooms-sonny-tennet",
@@ -12937,7 +13119,8 @@
       "category": "Music",
       "ticket_url": "https://www.tickettailor.com/events/theqworkzltd",
       "last_seen": "2026-11-08",
-      "status": "SOLD OUT"
+      "status": "SOLD OUT",
+      "spotify": "2hPtxFv2Ftb7xGRdU76bOd"
     },
     {
       "id": "2027-02-12-the-hope-ruin-our-man-in-the-field",
@@ -12949,7 +13132,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/gwe42orm/our-man-in-the-field",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "20iCBa8pr4rfazbp0cHQO4"
     },
     {
       "id": "2027-02-12-theprincealbert-the-len-price-3",
@@ -12964,6 +13148,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "id": "2027-02-13-volks-eoc-tvt-present-decibels-by-sea",
+      "title": "EOC & TVT present Decibels by Sea",
+      "date": "2027-02-13",
+      "venue": "Volks",
+      "source": "venue",
+      "time": "16:00",
+      "finish_time": "22:00",
+      "category": "Club",
+      "ticket_url": "https://www.skiddle.com/whats-on/Brighton/The-Volks-Nightclub/EOC--TVT-present-Decibels-by-Sea/43163495/",
+      "last_seen": "2026-11-08"
+    },
+    {
       "id": "2027-02-13-quarters-noah-gundersen",
       "title": "Noah Gundersen",
       "date": "2027-02-13",
@@ -12973,7 +13169,8 @@
       "finish_time": "22:00",
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/noah-gundersen/quarters/3747908",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "34482S5nfxR441wcnVfrHi"
     },
     {
       "id": "2027-02-13-concorde-2-reggae-orchestra",
@@ -13065,7 +13262,8 @@
       "category": "Music",
       "ticket_url": "https://www.tickettailor.com/events/theqworkzltd",
       "last_seen": "2026-11-08",
-      "status": "SOLD OUT"
+      "status": "SOLD OUT",
+      "spotify": "2hPtxFv2Ftb7xGRdU76bOd"
     },
     {
       "id": "2027-02-14-komedia-deviants-market-sun-14-feb-2027-doors-10-00-am",
@@ -13275,7 +13473,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/event/6acdf2c5258ade00017428a4",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "7HPwQcRoOq1Mlqw5WBtNQc"
     },
     {
       "id": "2027-02-19-green-door-store-another-country",
@@ -13287,7 +13486,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://link.dice.fm/tbfd7256540e",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "3At9kBvFhiXo8y64fyHdwo"
     },
     {
       "id": "2027-02-19-the-hope-ruin-the-velveteers",
@@ -13348,6 +13548,7 @@
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=4&view=list",
       "last_seen": "2026-11-08",
+      "spotify": "2g6fa86fL6oLcoDqanBbuR",
       "genre": "Pop",
       "genre_source": "musicbrainz:8c5755b4-2de6-4158-bca9-e354cbf07437"
     },
@@ -13388,7 +13589,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/dekker/the-folklore-rooms/3722681",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "2Udd2jgFaz8tXG1w3PyMtN"
     },
     {
       "id": "2027-02-20-the-prince-albert-quinn-oulton",
@@ -13402,6 +13604,7 @@
       "ticket_url": "https://www.axs.com/uk/events/1645153/quinn-oulton-tickets",
       "promoter": "JOY. Concerts",
       "last_seen": "2026-11-08",
+      "spotify": "2lqAPLmP9BsHPymfa6UFO7",
       "genre": "Hip-hop & R&B",
       "genre_source": "musicbrainz:38c5ab7c-12b2-4f37-8f59-a042baf61a27"
     },
@@ -13429,6 +13632,7 @@
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873663339/events/128647960",
       "last_seen": "2026-11-08",
       "status": "SOLD OUT",
+      "spotify": "6PBv8t9YTLggA9ZMwpeoqj",
       "genre": "Folk & Country",
       "genre_source": "musicbrainz:62773859-b9b9-4108-b814-cfd91459d716"
     },
@@ -13504,6 +13708,7 @@
       "category": "Music",
       "ticket_url": "https://lovethyneighbour.seetickets.com/event/mercy-girl/the-green-door-store/3726754",
       "last_seen": "2026-11-08",
+      "spotify": "1lwbviKaSPeuUgIqAgNpdn",
       "genre": "Electronic",
       "genre_source": "musicbrainz:37e33566-9253-4be9-af04-07dfb64c43a9"
     },
@@ -13537,7 +13742,8 @@
       "also_ids": [
         "2027-02-24-komedia-hudson-freeman-support-2"
       ],
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "6k3W2iGuRZrhUnfVZOMQo8"
     },
     {
       "id": "2027-02-24-brighton-centre-the-original-harlem-globetrotters",
@@ -13614,6 +13820,7 @@
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
       "last_seen": "2026-11-03",
+      "spotify": "03hlOXqRyyXO3ectp3eEbU",
       "genre": "Punk & Metal",
       "genre_source": "musicbrainz:7e01053e-e701-4e55-8a29-b8cfdcdee205"
     },
@@ -13627,7 +13834,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/event/6aba3526eb4d82000170087d",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "2knguAkuatcKmqXZkBxaLs"
     },
     {
       "id": "2027-02-26-komedia-komedia-comedy-club-fri-26-feb-2027-8-00-pm-doors-7-00-pm",
@@ -13775,7 +13983,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/event/6ada1371b9b30100016316ff",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5HXrUfoDwofY8lehLNIykB"
     },
     {
       "id": "2027-02-27-the-pipeline-bela-fool-the-decadent-dayze-neepo-babies-psycho-jenny",
@@ -13853,7 +14062,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://formpresents.seetickets.com/event/coilguns/the-green-door-store/3735378",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "02NSYcRNKSTchMm72ZigOH"
     },
     {
       "id": "2027-03-01-theatreroyalbrighton-the-silence-of-the-lambs",
@@ -13955,7 +14165,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/tommy-ashby/the-folklore-rooms/3735536",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "7y1RS42LqlRYnpONXTjN3t"
     },
     {
       "id": "2027-03-05-concorde-2-craig-charles-funk-soul-house-party",
@@ -14164,7 +14375,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=4&view=list",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "73mSg0dykFyhvU96tb5xQV"
     },
     {
       "id": "2027-03-08-theatreroyalbrighton-the-full-monty",
@@ -14189,7 +14401,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873668159/events/128667123",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "6DeLyy3rTPFUgp2jDnKBKR"
     },
     {
       "id": "2027-03-10-the-old-market-nouvelle-vague-a-date-with-depeche-mode-tour",
@@ -14227,6 +14440,7 @@
       "category": "Music",
       "ticket_url": "https://www.hope.pub/event/lael-neale-special-guests/",
       "last_seen": "2026-11-08",
+      "spotify": "7mi56yFiPlaLW2PtsZnoWF",
       "genre": "Folk & Country",
       "genre_source": "musicbrainz:8319a659-b885-4b48-927b-3ce8580fb32b"
     },
@@ -14240,7 +14454,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.axs.com/uk/events/1626526/frankie-stew-harvey-gunn-tickets",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "1jVvXqdwDHekLwFBamrcUx"
     },
     {
       "id": "2027-03-11-the-forge-comedy-club-sean-mcloughlin-halfway",
@@ -14292,7 +14507,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/event/6ab159b2da43eb000161f005",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "3DjvcvDRZn3IbA68kD5Gvi"
     },
     {
       "id": "2027-03-12-patterns-nic-cage-against-the-machine",
@@ -14352,7 +14568,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://lovethyneighbour.seetickets.com/event/funke-and-the-two-tone-baby/the-green-door-store/3726955",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "2MffbeP9zTw8cxdjpIu3oP"
     },
     {
       "id": "2027-03-13-komedia-luke-kidgell-live-in-the-uk-and-ireland-sat-13-mar-2027-5-00-pm-doors-4-30-pm",
@@ -14441,6 +14658,7 @@
       "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=4&view=list",
       "last_seen": "2026-11-08",
       "promoter": "JOY. Concerts",
+      "spotify": "6bGcpvHbRHg8s0wiNyIZK1",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:9403a688-503e-464e-bb37-84626c57bb42"
     },
@@ -14454,7 +14672,8 @@
       "ticket_url": "https://chalkvenue.com/",
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
-      "last_seen": "2026-10-13"
+      "last_seen": "2026-10-13",
+      "spotify": "11K0HIZKfdB6ez0VhIgxPm"
     },
     {
       "id": "2027-03-13-caroline-of-brunswick-battle-hymns-free",
@@ -14518,7 +14737,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/the-wurzles",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "3MOw1ev3YQ8liIGmHT3eH6"
     },
     {
       "id": "2027-03-14-komedia-shovel-dance-collective-plus-support-sun-14-mar-2027-doors-7-00-pm",
@@ -14530,7 +14750,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873666793/events/128661767",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "1xyaWjnqi42AlEzaXcr7IY"
     },
     {
       "id": "2027-03-14-the-forge-comedy-club-marcel-lucont-s-whine-list",
@@ -14571,6 +14792,7 @@
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/18kro412/rosalie-cunningham",
       "last_seen": "2026-11-08",
+      "spotify": "2DvBNcZ05NC2AOuQa7oyqH",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:c339108e-8eeb-4392-9933-9a72bd50e9b6"
     },
@@ -14597,7 +14819,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/partner/tickets/event/mxwagw-roxanne-de-bastion-15th-mar-the-folklore-rooms-brighton-tickets?dice_id=10713702&dice_channel=web&dice_tags=organic&dice_campaign=FORM&dice_feature=mio_marketing&_branch_match_id=1245521259485845231&utm_source=web&utm_campaign=FORM&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1a8wTzFPNbcwSUtNMrCvK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQDi%2BDh4OwAAAA%3D%3D",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "4v5zVxcZ4cjrcHDPbzaUG6"
     },
     {
       "id": "2027-03-17-the-old-market-kendal-mountain-festival-live-tour-2027",
@@ -14623,6 +14846,7 @@
       "category": "Music",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873669097/events/128675774",
       "last_seen": "2026-11-08",
+      "spotify": "1LQ87p0qt3OEhSGbjMVuVe",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:a726995a-c5b8-4102-9244-f49dec58f205"
     },
@@ -14637,6 +14861,7 @@
       "category": "Music",
       "ticket_url": "https://www.axs.com/uk/events/1669600/slift-tickets",
       "last_seen": "2026-11-08",
+      "spotify": "0x9HCT7ZZlOEfLSVCDi5SO",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:3d303095-020a-4b65-9419-b91a574c8c9b"
     },
@@ -14751,6 +14976,7 @@
         "2027-03-20-concorde-2-lebanon-hanover-2"
       ],
       "promoter": "JOY. Concerts",
+      "spotify": "6w8h2uD28BEdg7bX4k3Lh7",
       "genre": "Electronic",
       "genre_source": "musicbrainz:7de3b7b4-8288-4baf-929b-98af9224c0cb"
     },
@@ -14804,6 +15030,7 @@
       "category": "Music",
       "ticket_url": "https://www.hope.pub/event/david-devant-and-his-spirit-wife-would-be-goods/",
       "last_seen": "2026-11-08",
+      "spotify": "0yqz4riftDWnVL6BFHBj94",
       "genre": "Indie & Rock",
       "genre_source": "wikidata:Q5232940"
     },
@@ -14931,6 +15158,7 @@
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=5&view=list",
       "last_seen": "2026-11-08",
+      "spotify": "73a6pNH4YtLNgDbPQwXveo",
       "genre": "Pop",
       "genre_source": "musicbrainz:4b462375-c508-432a-8c88-ceeec38b16ae"
     },
@@ -15025,7 +15253,8 @@
       "category": "Music",
       "ticket_url": "https://theoldmarket.ticketsolve.com/ticketbooth/shows/1173669345",
       "last_seen": "2026-11-08",
-      "venue_label": "Music"
+      "venue_label": "Music",
+      "spotify": "3pAxHOmaTLiUnC9WoXdsyN"
     },
     {
       "id": "2027-03-25-brighton-dome-seasick-steve",
@@ -15038,6 +15267,7 @@
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=5&view=list",
       "last_seen": "2026-11-08",
+      "spotify": "6OVkHZQP8QoBYqr1ejCGDv",
       "genre": "Jazz, Soul & Funk",
       "genre_source": "musicbrainz:231ff972-4e8e-4157-95e2-12f963cb478c"
     },
@@ -15113,7 +15343,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://link.dice.fm/R985e21c785b",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5W3CpTEfxHnas9n4k1lvit"
     },
     {
       "id": "2027-03-26-the-hope-ruin-six-by-seven",
@@ -15126,6 +15357,7 @@
       "category": "Music",
       "ticket_url": "https://www.fatsoma.com/e/f63fefl9/six-by-seven",
       "last_seen": "2026-11-08",
+      "spotify": "4TXdHyuAOl3rAOFmZ6MeKz",
       "genre": "Indie & Rock",
       "genre_source": "musicbrainz:5e2e050f-7280-464e-b251-0a1272c43300"
     },
@@ -15139,7 +15371,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.axs.com/uk/events/1655876/snayx-tickets",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "4kQgsrHUSc9IjuwWP30gf0"
     },
     {
       "id": "2027-03-27-komedia-funny-women-live-in-brighton",
@@ -15214,7 +15447,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.daltonsbrighton.com/event-details/beyond-extinction-salem-trials-devilhusk",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "38vt0CiehYk43Nu6xcfKXk"
     },
     {
       "id": "2027-03-28-the-brunswick-shaun-kirk-aus-live-at-the-brunswick-hove",
@@ -15227,6 +15461,7 @@
       "category": "Music",
       "ticket_url": "https://www.brunswickpub.co.uk/event-details/shaun-kirk-aus-live-at-the-brunswick-hove",
       "last_seen": "2026-11-08",
+      "spotify": "4o6Yrqwb3YSVGmvHmN5oL2",
       "genre": "Jazz, Soul & Funk",
       "genre_source": "musicbrainz:266f8f91-d618-46ef-8067-61b31b05a049"
     },
@@ -15253,7 +15488,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.brunswickpub.co.uk/event-details/kendall-lujan-the-brunswick",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "5JvY8N4icJjp1ND34IJAqQ"
     },
     {
       "id": "2027-03-31-concorde-2-moses-boyd",
@@ -15269,7 +15505,8 @@
       "also_ids": [
         "2027-03-31-concorde-2-moses-boyd-2"
       ],
-      "promoter": "JOY. Concerts"
+      "promoter": "JOY. Concerts",
+      "spotify": "1otDUlTEBjcyDQg6CkHRaV"
     },
     {
       "id": "2027-03-31-komedia-freddie-meredith-need-a-light",
@@ -15416,7 +15653,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://dice.fm/event/6ab6a1ee48c0e100016eebc1",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "3t3q007skKvwNaodwZx8W8"
     },
     {
       "id": "2027-04-03-the-hope-ruin-zeke-us-stay-sick-19th-anniversary-show",
@@ -15442,6 +15680,7 @@
       "ticket_url": "https://www.axs.com/uk/events/1674964/meryl-streek-tickets",
       "promoter": "JOY. Concerts",
       "last_seen": "2026-11-08",
+      "spotify": "5oQoqOBnUfgaBNlkoYwBmd",
       "genre": "Punk & Metal",
       "genre_source": "musicbrainz:8e9e00bf-6028-47c3-af6e-da68d857feb0"
     },
@@ -15521,7 +15760,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873668134/events/128666350",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "1NkiZTHV6voDpcA7eEQQMb"
     },
     {
       "id": "2027-04-08-brightoncentre-james-blunt",
@@ -15534,6 +15774,7 @@
       "source_url": "https://brightoncentre.co.uk/",
       "finish_time": "",
       "last_seen": "2026-11-08",
+      "spotify": "7KMqksf0UMdyA0UCf4R3ux",
       "genre": "Pop",
       "genre_source": "musicbrainz:ebee61b4-bbdd-4087-9bcb-d5aa099088ec"
     },
@@ -15622,6 +15863,7 @@
       "category": "Music",
       "ticket_url": "https://www.concorde2.co.uk/event/kosheen",
       "last_seen": "2026-11-08",
+      "spotify": "5squ8uM6fhMQY71t9xobJC",
       "genre": "Electronic",
       "genre_source": "musicbrainz:4f4bda3c-d636-4135-b65a-6cc26bc75788"
     },
@@ -15636,7 +15878,8 @@
       "category": "Music",
       "ticket_url": "https://www.theoldmarket.com/shows/the-rumpled",
       "last_seen": "2026-11-08",
-      "venue_label": "Music"
+      "venue_label": "Music",
+      "spotify": "1KBTFIV3DLMDZlnQzoQUw6"
     },
     {
       "id": "2027-04-09-komedia-komedia-comedy-club",
@@ -15747,7 +15990,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/#genre=85&calendar=false,false&top_filter=all&page=5&view=list",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "1PrYHMDkwm6uq44DsLllzc"
     },
     {
       "id": "2027-04-11-chalk-emma-ruth-rundle",
@@ -15760,6 +16004,7 @@
       "source_url": "https://chalkvenue.com/",
       "finish_time": "",
       "last_seen": "2026-11-03",
+      "spotify": "34gLicNdz493863yZTanvC",
       "genre": "Folk & Country",
       "genre_source": "musicbrainz:7ba593b9-79d4-4860-92c8-ade2a1ef4551"
     },
@@ -15956,6 +16201,7 @@
       "category": "Music",
       "ticket_url": "https://crosstownconcerts.seetickets.com/event/gen-the-degenerates/daltons/3711622",
       "last_seen": "2026-11-08",
+      "spotify": "7oEVPoHXaj73ddUCTNlO9E",
       "genre": "Punk & Metal",
       "genre_source": "musicbrainz:c5981482-72cb-4760-9744-b64d9653d01b"
     },
@@ -15999,7 +16245,8 @@
       "category": "Music",
       "ticket_url": "https://www.metropolismusic.com/all-events/bleech-9-3-tickets-ae1647841",
       "promoter": "JOY. Concerts",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "2S6eJYUlnmZL5XOaC3nvRL"
     },
     {
       "id": "2027-04-22-the-old-market-kane-brown-crowd-work-king",
@@ -16125,6 +16372,7 @@
       "ticket_url": "https://www.theoldmarket.com/shows/salvador-sobral",
       "last_seen": "2026-11-08",
       "venue_label": "Music",
+      "spotify": "0GfYO21pue5u0sVEYk9HZO",
       "genre": "Jazz, Soul & Funk",
       "genre_source": "musicbrainz:ad226273-7870-47d6-a8d0-903ddba3853d"
     },
@@ -16322,6 +16570,7 @@
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/red-snapper/quarters/3729327",
       "last_seen": "2026-11-08",
+      "spotify": "1BQtFnxZvAvTCZgTMlED0Q",
       "genre": "Jazz, Soul & Funk",
       "genre_source": "musicbrainz:89abed31-3a93-407e-a4a3-a94e193488cd"
     },
@@ -16335,7 +16584,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://komediabrighton.ticketsolve.com/shows/873667359/events/128664446",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "244AFgFclA9c1IcjWOAqoV"
     },
     {
       "id": "2027-07-05-komedia-komedia-comedy-club",
@@ -16395,7 +16645,8 @@
       "finish_time": "",
       "category": "Music",
       "ticket_url": "https://www.ticketmaster.co.uk/event/3E00653C93683154",
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-08",
+      "spotify": "2JyWXPbkqI5ZJa3gwqVa0c"
     },
     {
       "id": "2027-05-11-brighton-centre-erasure",
@@ -16408,6 +16659,7 @@
       "category": "Music",
       "ticket_url": "https://www.ticketmaster.co.uk/event/3E00653C94F332DE",
       "last_seen": "2026-11-08",
+      "spotify": "0z5DFXmhT4ZNzWElsM7V89",
       "genre": "Pop",
       "genre_source": "musicbrainz:43b58c98-3779-4b04-9a23-1c95cca3a145"
     },
@@ -16629,6 +16881,7 @@
       "category": "Music",
       "ticket_url": "https://www.seetickets.com/event/murphy-campbell/the-folklore-rooms/3733554",
       "last_seen": "2026-11-08",
+      "spotify": "7sK7X2m4Y2K0PGGr6pvGIa",
       "genre": "Folk & Country",
       "genre_source": "musicbrainz:d5dc0b83-1c4a-4909-9613-810686794df6"
     },
@@ -16919,7 +17172,7 @@
       "source": "venue",
       "time": "",
       "finish_time": "",
-      "category": "Theatre",
+      "category": "Music",
       "ticket_url": "https://brightondome.org/whats-on/LIb-david-bowie-youre-not-alone/",
       "last_seen": "2026-11-08",
       "also_ids": [
@@ -16928,7 +17181,8 @@
         "2027-07-16-brighton-dome-concert-hall-new-on-sale-music-david-bowie-you-re-not-alone-a-lightroom-production-fri-16-jul-mon-30-aug-brighton-dome-corn-exchange-from-26-find-tickets",
         "2027-07-16-brighton-dome-new-on-sale-music-david-bowie-you-re-not-alone-a-lightroom-production-fri-16-jul-mon-30-aug-brighton-dome-corn-exchange-from-26-find-out-more"
       ],
-      "venue_label": "Theatre"
+      "genre": "Indie & Rock",
+      "genre_source": "musicbrainz:5441c29d-3602-4898-b1a1-b77fa23b8e50"
     },
     {
       "id": "2027-07-17-komedia-komedia-comedy-club",
@@ -17066,7 +17320,7 @@
   "discovery_report": {
     "calendars_loaded": 10,
     "calendars": 10,
-    "events_found": 848,
+    "events_found": 859,
     "rivalcults_unknown_venues": [
       "The Yellow Book"
     ]
