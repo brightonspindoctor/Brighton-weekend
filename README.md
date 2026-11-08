@@ -124,6 +124,10 @@ manual dispatch and whenever a scraper file changes on `main`. It runs:
    fails, the day's listings are still published.
 5. `scripts/tag-genres.py`: a genre only when the listing names it or
    MusicBrainz or Wikidata confidently knows the act (cached in `genre-cache.json`).
+   The same lookup gives music events a Listen link (`spotify`, the artist's
+   Spotify id) when MusicBrainz knows the act for certain, links it to exactly
+   one Spotify artist, and the title is just that act (plus support acts,
+   "Live + Signing" and the like). Otherwise there's no link, never a search.
 6. `scripts/validate-events.py` and `scripts/validate-required-events.py`:
    refuse to publish a small or malformed file, or one missing the events in
    `required-events.json`.
@@ -151,7 +155,10 @@ Source notes: `EVENT-DATA-SOURCES.md`.
 uses Fezzy as the primary discovery source and eFestivals as a music-festival
 cross-check, deduplicating by festival name, date and location; sport and
 outdoor events are left out by their title. Hand-confirmed Brighton festivals
-are in `brighton-festivals.json`. The published window runs from today to 31
+are in `brighton-festivals.json`. Announced headliners are kept by hand in
+`festival-headliners.json`, keyed by festival id (so they only show for that
+edition), each with its source; the app reads the file directly, so a change
+shows as soon as it's merged. The published window runs from today to 31
 December of the following year. Festival ids start with `festival:`, so their
 Interested/Going choices use the same `event_interest` table without mixing
 festivals into `events.json`.

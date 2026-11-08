@@ -46,6 +46,8 @@ for i, event in enumerate(events):
     if is_generic_title(title): errors.append(f"generic title still present: {event_id}")
     if re.search(r"(?:\bfind\s+out\s+more|\bfind\s+tickets|\bfrom\s+£\s?\d)", title, re.I): errors.append(f"listing card text as a title: {event_id}")
     if re.match(r"^\*+\s*sold\s+out", title, re.I): errors.append(f"'SOLD OUT' label in title: {event_id}")
+    if event.get("spotify") is not None and not (event.get("category") == "Music" and re.fullmatch(r"[A-Za-z0-9]{22}", str(event["spotify"]))):
+        errors.append(f"{event_id}: spotify {event['spotify']!r} is not a Spotify artist id on a Music event")
     for field in ("time", "finish_time"):
         value = str(event.get(field) or "")
         if value and not re.fullmatch(r"\d{2}:\d{2}", value): errors.append(f"{event_id}: {field} {value!r} is not HH:MM")
