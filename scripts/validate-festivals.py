@@ -67,6 +67,23 @@ for (d, loc), n in places.items():
         errors.append(f"{n} festivals run {d} at {loc!r}; the scraper has probably copied one listing's details onto others:")
         errors.extend(f"  - {f['title']} ({f['date']} to {f['date_end']}, {f['location']}) {f['detail_url']}" for f in at_place[(d, loc)])
 
+# Hand-kept headliners (festival-headliners.json): the shape must be right. An
+# id that isn't listed today is only noted, as a festival can drop out of a run.
+HEADLINERS = ROOT / "festival-headliners.json"
+if HEADLINERS.exists():
+    try: heads = json.loads(HEADLINERS.read_text()).get("festivals")
+    except Exception as exc: heads = None; errors.append(f"festival-headliners.json is not valid JSON: {exc}")
+    if not isinstance(heads, dict): errors.append("festival-headliners.json.festivals must be an object")
+    else:
+        for fid, h in heads.items():
+            if not str(fid).startswith("festival:"): errors.append(f"festival-headliners.json: {fid!r} is not a festival id")
+            names = h.get("headliners") if isinstance(h, dict) else None
+            if not isinstance(names, list) or not names or not all(isinstance(n, str) and n.strip() for n in names):
+                errors.append(f"festival-headliners.json: {fid} needs a list of headliner names")
+            if not (isinstance(h, dict) and re.match(r"^https?://", str(h.get("source") or ""), re.I)):
+                errors.append(f"festival-headliners.json: {fid} needs a source link")
+            if fid not in ids: print(f"Note: festival-headliners.json has {fid}, which isn't listed today")
+
 if errors:
     print("\n".join(errors[:50]), file=sys.stderr)
     if len(errors) > 50: print(f"... and {len(errors) - 50} more errors", file=sys.stderr)

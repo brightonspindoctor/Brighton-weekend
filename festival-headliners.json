@@ -1,0 +1,50 @@
+{
+  "about": "Announced headliners for festivals on the Festivals tab, kept by hand. Keys are festival ids from festivals.json (they include the start date, so an entry only shows for that edition). Only add names the festival has announced as headliners, with a source. The app reads this file directly, so a change shows as soon as it is merged.",
+  "festivals": {
+    "festival:shiiine-on-weekender:2026-11-13": {
+      "headliners": ["The Wonder Stuff", "Happy Mondays", "Feeder", "Hard-Fi"],
+      "source": "https://www.northernchorus.co.uk/2026/04/01/shiiine-on-weekender-returns-in-november-happy-mondays-feeder-hard-fi-more/",
+      "checked": "2026-11-08"
+    },
+    "festival:c2c-country-to-country:2027-03-12": {
+      "headliners": ["Jelly Roll", "Ashley McBryde", "Riley Green"],
+      "source": "https://www.officialcharts.com/chart-news/country-to-country-2027-line-up-dates-tickets/",
+      "checked": "2026-11-08"
+    },
+    "festival:slam-dunk-festival-north:2027-05-29": {
+      "headliners": ["Bowling For Soup", "Simple Plan"],
+      "source": "https://www.nme.com/?p=3971588",
+      "checked": "2026-11-08"
+    },
+    "festival:slam-dunk-festival-south:2027-05-30": {
+      "headliners": ["Bowling For Soup", "Simple Plan"],
+      "source": "https://www.nme.com/?p=3971588",
+      "checked": "2026-11-08"
+    },
+    "festival:mighty-hoopla:2027-06-05": {
+      "headliners": ["Robyn", "The Pussycat Dolls"],
+      "source": "https://www.officialcharts.com/chart-news/mighty-hoopla-2027-line-up-tickets/",
+      "checked": "2026-11-08"
+    },
+    "festival:british-summer-time:2027-06-27": {
+      "headliners": ["Bon Jovi", "RAYE"],
+      "source": "https://www.officialcharts.com/chart-news/raye-sienna-spiro-bst-hyde-park-london-2027-tickets-date-lineup/",
+      "checked": "2026-11-08"
+    },
+    "festival:bloodstock:2027-08-05": {
+      "headliners": ["Mercyful Fate", "Electric Callboy", "Motionless In White"],
+      "source": "https://www.kerrang.com/mercyful-fate-electric-callboy-and-motionless-in-white-lead-bloodstock-2027s-first-line-up-announcement",
+      "checked": "2026-11-08"
+    },
+    "festival:all-points-east:2027-08-22": {
+      "headliners": ["Phoebe Bridgers"],
+      "source": "https://www.officialcharts.com/chart-news/all-points-east-2027-phoebe-bridgers-lineup-tickets-date-victoria-park/",
+      "checked": "2026-11-08"
+    },
+    "festival:creamfields:2027-08-26": {
+      "headliners": ["Josh Baker b2b KETTAMA b2b Prospa"],
+      "source": "https://djmag.com/news/josh-baker-kettama-and-prospa-headline-creamfields-2027-arc-stage",
+      "checked": "2026-11-08"
+    }
+  }
+}

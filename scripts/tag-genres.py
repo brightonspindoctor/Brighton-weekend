@@ -24,7 +24,17 @@ isn't in MusicBrainz, the first name of a list ("A / B", "A, B") is tried.
 
 Each tagged event gets "genre" (one of BUCKETS) and "genre_source"
 ("title", "musicbrainz:<artist id>" or "wikidata:<item id>") so any tag can be
-checked. Lookups are cached in genre-cache.json so each act is looked up once
+checked.
+
+Spotify: a Music event whose act MusicBrainz knows (exactly one artist with that
+name, as above) gets "spotify", the artist's Spotify id, when the artist's
+MusicBrainz page links to exactly one Spotify artist, and the rest of the title
+is only other acts on the bill ("+ Support", "/ B", "feat. C") or plain words
+such as "Live + Signing" or a tour name (listen_ok). A title that is about
+something else ("Spice Girls - The Theatre Show", "Fleetwood Mac: The Greatest
+Hits") gets no link, even though its first words are a known artist. The app
+shows it as a Listen link. No match, several artists with the name, or no
+Spotify link (or more than one) means no link: never a search, never a guess. Lookups are cached in genre-cache.json so each act is looked up once
 (re-checked after a while, as MusicBrainz and Wikidata grow).
 
 Usage: python scripts/tag-genres.py [--report genre-report.json] [--offline]
@@ -40,9 +50,10 @@ DATA = ROOT / "events.json"
 CACHE = ROOT / "genre-cache.json"
 USER_AGENT = "BrightonWeekend/1.0 ( https://brightonweekend.co.uk )"  # MusicBrainz and Wikidata ask for a contact
 RECHECK_FOUND, RECHECK_MISS = 120, 30  # days before looking an act up again
-RULES_VERSION = 3  # stored with each lookup; see stale() for what each version changed
+RULES_VERSION = 4  # stored with each lookup; see stale() and main() for what each version changed
 MAX_LOOKUPS = 1500  # per run; anything left is looked up on the next run
 TAGGABLE = {"Music", "Club", "Music/Club"}
+SPOTIFY_ARTIST = re.compile(r"^https?://open\.spotify\.com/(?:intl-[a-z-]+/)?artist/([A-Za-z0-9]{22})(?:[/?#]|$)")
 
 BUCKETS = [
     "Indie & Rock", "Pop", "Electronic", "House & Disco", "Techno & Trance",
@@ -288,6 +299,47 @@ def wikidata_genres(qid):
     return sorted({b["label"]["value"] for b in data.get("results", {}).get("bindings", []) if b.get("label")})
 
 
+# Words that may follow the act's name in a title that is still just the act.
+LISTEN_WORDS = {"live", "signing", "support", "supports", "special", "guest", "guests", "plus", "and", "acoustic",
+                "solo", "performance", "set", "earlier", "later", "show", "launch", "album", "ep", "release",
+                "headline", "matinee", "christmas", "xmas", "halloween", "dj", "in", "store", "instore", "hove", "brighton"}
+LINEUP_NEXT = re.compile(r"^(?:\s+(?:\+|/|&\s*special\b|w/|with\b|ft\b\.?|feat\b\.?|featuring\b|plus\b|support\b)|\s*,\s)", re.I)
+
+
+def listen_ok(title, act):
+    """True when the title is the act, with nothing after it but other acts on
+    the bill or LISTEN_WORDS (or a tour name), so a link to the act can't be
+    mistaken for a link to a show about someone else."""
+    t = re.sub(r"\s*\*+[^*]*\*+\s*", " ", str(title or ""))
+    t = re.sub(r"\s*[(\[][^)\]]*[)\]]\s*", " ", t)
+    presents = re.match(r"^.*?\bpresents?\b\s*:?\s*(.*)$", t, re.I)
+    if presents:
+        t = presents.group(1)
+    t = t.rstrip()
+    ends = [m.start() for m in re.finditer(r"(?=\s|[,:;/+\-–—]|$)", t)]
+    rest = next((t[i:] for i in ends if i and same_name(t[:i], act)), None)
+    if rest is None:
+        return False
+    if not rest.strip() or LINEUP_NEXT.match(rest):
+        return True
+    words = norm(rest).split()
+    if not words:  # only punctuation after the name
+        return True
+    if words[-1] == "tour" or (len(words) > 1 and words[-2] == "tour" and re.fullmatch(r"20\d\d", words[-1])):
+        return True
+    return all(w in LISTEN_WORDS or re.fullmatch(r"\d+(?:am|pm)?", w) for w in words)
+
+
+def spotify_of(detail):
+    """The artist's Spotify id from its MusicBrainz links, if it has exactly one."""
+    ids = set()
+    for rel in (detail or {}).get("relations", []) or []:
+        m = SPOTIFY_ARTIST.match(str((rel.get("url") or {}).get("resource", "")))
+        if m:
+            ids.add(m.group(1))
+    return ids.pop() if len(ids) == 1 else None
+
+
 def lookup(name):
     """{"mbid","name","genres","wikidata","wd_genres","bucket","reason"} for an act name."""
     q = name.replace("\\", " ").replace('"', " ")
@@ -308,6 +360,8 @@ def lookup(name):
     detail = mb_get(f"artist/{artist['id']}?fmt=json&inc=genres+url-rels")
     genres = [{"name": g.get("name"), "count": g.get("count")} for g in detail.get("genres", [])]
     hit = {"mbid": artist["id"], "name": artist.get("name"), "genres": genres}
+    if spotify_of(detail):
+        hit["spotify"] = spotify_of(detail)
     for rel in detail.get("relations", []) or []:
         m = re.search(r"/(Q\d+)$", str((rel.get("url") or {}).get("resource", ""))) if rel.get("type") == "wikidata" else None
         if m:
@@ -346,7 +400,7 @@ def main(argv):
     looked_up = errors = 0
     rows = []
     for e in data.get("events", []):
-        e.pop("genre", None); e.pop("genre_source", None)
+        e.pop("genre", None); e.pop("genre_source", None); e.pop("spotify", None)
         if e.get("category") not in TAGGABLE:
             continue
         row = {"date": e.get("date"), "venue": e.get("venue"), "title": e.get("title"), "category": e.get("category")}
@@ -368,12 +422,24 @@ def main(argv):
                         h = dict(lookup(name), act=name, checked=today.isoformat(), v=RULES_VERSION); cache[key] = h; looked_up += 1
                     except Exception as exc:
                         errors += 1; print(f"MusicBrainz lookup failed for {name!r}: {exc}")
+                elif h and h.get("mbid") and h.get("v", 1) < 4 and not offline and looked_up < MAX_LOOKUPS:
+                    # v4: Spotify links. A found act only needs its links read again.
+                    try:
+                        sp = spotify_of(mb_get(f"artist/{h['mbid']}?fmt=json&inc=url-rels"))
+                        h = {k: v for k, v in h.items() if k != "spotify"}
+                        if sp:
+                            h["spotify"] = sp
+                        h["v"] = 4; cache[key] = h; looked_up += 1
+                    except Exception as exc:
+                        errors += 1; print(f"MusicBrainz links lookup failed for {name!r}: {exc}")
                 hit, act = h, name
                 # Found (with or without a genre) or shared by several artists:
                 # the headliner is settled, so the list's first name isn't tried.
                 if not h or h.get("reason") != "not in MusicBrainz":
                     break
             bucket, source = decide(hit)
+            if e.get("category") == "Music" and hit and hit.get("mbid") and hit.get("spotify") and listen_ok(e.get("title"), act):
+                e["spotify"] = hit["spotify"]
         except Exception as exc:  # one odd listing must not stop the daily refresh
             errors += 1; print(f"Genre tagging failed for {e.get('title')!r}: {exc}")
             bucket = source = None
@@ -390,10 +456,11 @@ def main(argv):
     DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
     CACHE.write_text(json.dumps(dict(sorted(cache.items())), ensure_ascii=False, indent=1) + "\n")
     tagged = [r for r in rows if r["genre"]]
+    listen = sum(1 for e in data.get("events", []) if e.get("spotify"))
     by_source = {s: sum(1 for r in tagged if r["source"] == s) for s in ("title", "musicbrainz", "wikidata")}
     print(f"Genres: {len(tagged)}/{len(rows)} music and club events tagged "
           f"(from title {by_source['title']}, MusicBrainz {by_source['musicbrainz']}, Wikidata {by_source['wikidata']}); "
-          f"lookups this run {looked_up}, failed {errors}; cached acts {len(cache)}")
+          f"lookups this run {looked_up}, failed {errors}; cached acts {len(cache)}; Spotify links {listen}")
     if report_path:
         Path(report_path).write_text(json.dumps({"summary": {"events": len(rows), "tagged": len(tagged), **by_source}, "rows": rows},
                                                 ensure_ascii=False, indent=1) + "\n")
@@ -468,6 +535,29 @@ def _self_test():
     assert decide({"mbid": "m", "genres": [{"name": "folk", "count": 1}], "wikidata": "Q1", "wd_genres": ["folk music"]}) == ("Folk & Country", "wikidata:Q1")
     assert decide({"mbid": "m", "genres": [{"name": "folk", "count": 2}]}) == ("Folk & Country", "musicbrainz:m")
     assert decide({"bucket": None, "reason": "not in MusicBrainz"}) == (None, None)
+    for title, act in (("Holy Fawn + MØL", "Holy Fawn"), ("Shed Seven: Live + Signing", "Shed Seven"),
+                       ("Resident Presents The Script", "The Script"), ("Ivy Lab: Farewell Tour", "Ivy Lab"),
+                       ("Kim Wilde: The Singles Tour", "Kim Wilde"), ("Dargz W/ MC Nory (NYC)", "Dargz"),
+                       ("UB40 ft. Ali Campbell", "UB40"), ("Babe Haven, Latter", "Babe Haven"),
+                       ("Paul Heaton: Album Launch Show (8pm show)", "Paul Heaton"), ("Erasure", "Erasure"),
+                       ("Noah Derksen live in Hove", "Noah Derksen"), ("Sonny Tennet Show #2", "Sonny Tennet"),
+                       ("Peter & the Test Tube Babies + Typical Girls", "Peter and the Test Tube Babies"),
+                       ("Jetstream Pony / Firestations", "Jetstream Pony"), ("The Zac Schulze Gang *Matinee*", "The Zac Schulze Gang")):
+        assert listen_ok(title, act), title
+    for title, act in (("Spice Girls - The Theatre Show", "Spice Girls"), ("Fleetwood Mac: The Greatest Hits", "Fleetwood Mac"),
+                       ("Crosby, Stills, Nash & Young: An Evening in Laurel Canyon", "Crosby, Stills, Nash & Young"),
+                       ("Shen Yun - China Before Communism", "Shen Yun"), ("ST///LL + Big Lemon + Bats Feet", "ST"),
+                       ("U2: 'Carnaval De Luz' Listening Event", "U2"), ("Sindhu Vee: Swanky", "Sindhu Vee"),
+                       ("Erasure Tribute Night", "Erasure"), ("Midge Ure: A Man Of Two Worlds", "Midge Ure")):
+        assert not listen_ok(title, act), title
+    sp = lambda *urls: {"relations": [{"type": "free streaming", "url": {"resource": u}} for u in urls]}
+    assert spotify_of(sp("https://open.spotify.com/artist/0OdUWJ0sBjDrqHygGUXeCF")) == "0OdUWJ0sBjDrqHygGUXeCF"
+    assert spotify_of(sp("https://open.spotify.com/artist/0OdUWJ0sBjDrqHygGUXeCF",
+                         "https://open.spotify.com/artist/0OdUWJ0sBjDrqHygGUXeCF?si=x")) == "0OdUWJ0sBjDrqHygGUXeCF"
+    assert spotify_of(sp("https://open.spotify.com/artist/0OdUWJ0sBjDrqHygGUXeCF",
+                         "https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6")) is None  # two: not sure which
+    assert spotify_of(sp("https://open.spotify.com/album/0OdUWJ0sBjDrqHygGUXeCF")) is None
+    assert spotify_of(sp("https://www.wikidata.org/wiki/Q1")) is None and spotify_of({}) is None
     # Wikidata can't overrule MusicBrainz (Tom McRae: rock/folk votes, Wikidata says pop)
     assert decide({"mbid": "m", "wikidata": "Q1", "wd_genres": ["pop music", "pop rock"],
                    "genres": [{"name": "alternative rock", "count": 1}, {"name": "indie folk", "count": 1}]}) == (None, None)
