@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-08",
-  "range_start": "2026-11-08",
+  "updated": "2026-11-09",
+  "range_start": "2026-11-09",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -9,18 +9,6 @@
     "eFestivals"
   ],
   "festivals": [
-    {
-      "title": "Damnation Festival",
-      "date": "2026-11-07",
-      "date_end": "2026-11-08",
-      "location": "Manchester",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/damnation-festival/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/damnation-festival/",
-      "id": "festival:damnation-festival:2026-11-07",
-      "location_display": "Manchester"
-    },
     {
       "title": "Bangface Weekender",
       "date": "2026-11-13",
@@ -3836,6 +3824,18 @@
       "detail_url": "https://fezzy.uk/festival/woofstock-uk/",
       "id": "festival:woofstock-uk:2027-09-24",
       "location_display": "South West"
+    },
+    {
+      "title": "Damnation Festival",
+      "date": "2027-11-06",
+      "date_end": "2027-11-07",
+      "location": "Manchester",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/damnation-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/damnation-festival/",
+      "id": "festival:damnation-festival:2027-11-06",
+      "location_display": "Manchester"
     }
   ]
 }
