@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-06-the-pipeline-fuet@brightonweekend.co.uk
+DTSTAMP:20261206T000000Z
+DTSTART:20261206T200000Z
+DTEND:20261207T000000Z
+SUMMARY:FUET!
+LOCATION:The Pipeline\, Brighton
+DESCRIPTION:Tickets: https://www.songkick.com/concerts/43468420-fuet-at-pip
+ eline?utm_medium=organic&utm_source=microformat\nMore: https://brightonwee
+ kend.co.uk/e/2026-12-06-the-pipeline-fuet/
+URL:https://brightonweekend.co.uk/e/2026-12-06-the-pipeline-fuet/
+END:VEVENT
+END:VCALENDAR

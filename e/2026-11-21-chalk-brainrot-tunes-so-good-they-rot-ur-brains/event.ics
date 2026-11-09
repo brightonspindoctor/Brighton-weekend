@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-chalk-brainrot-tunes-so-good-they-rot-ur-brains@brightonweek
+ end.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Brainrot Tunes So Good They Rot Ur Brains
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/event/brainrot-tunes-so-good-th
+ ey-rot-ur-brains-2026-11-21\nMore: https://brightonweekend.co.uk/e/2026-11
+ -21-chalk-brainrot-tunes-so-good-they-rot-ur-brains/
+URL:https://brightonweekend.co.uk/e/2026-11-21-chalk-brainrot-tunes-so-good
+ -they-rot-ur-brains/
+END:VEVENT
+END:VCALENDAR

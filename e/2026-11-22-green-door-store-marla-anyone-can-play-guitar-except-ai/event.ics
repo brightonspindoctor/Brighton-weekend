@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-22-green-door-store-marla-anyone-can-play-guitar-except-ai@brig
+ htonweekend.co.uk
+DTSTAMP:20261122T000000Z
+DTSTART:20261122T190000Z
+DTEND:20261122T220000Z
+SUMMARY:Marla – Anyone can play guitar (Except AI)
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://www.ticketsource.com/big-spec/t-zoxxjgd\nMore:
+  https://brightonweekend.co.uk/e/2026-11-22-green-door-store-marla-anyone-
+ can-play-guitar-except-ai/
+URL:https://brightonweekend.co.uk/e/2026-11-22-green-door-store-marla-anyon
+ e-can-play-guitar-except-ai/
+END:VEVENT
+END:VCALENDAR
