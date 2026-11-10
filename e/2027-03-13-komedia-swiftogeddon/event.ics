@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-13-komedia-swiftogeddon@brightonweekend.co.uk
+DTSTAMP:20270313T000000Z
+DTSTART:20270313T230000Z
+DTEND:20270314T020000Z
+SUMMARY:Swiftogeddon
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87361074
+ 5/events/128675891\nMore: https://brightonweekend.co.uk/e/2027-03-13-komed
+ ia-swiftogeddon/
+URL:https://brightonweekend.co.uk/e/2027-03-13-komedia-swiftogeddon/
+END:VEVENT
+END:VCALENDAR

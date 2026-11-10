@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-20-quarters-gok-wan-presents-isolation-nation@brightonweekend.c
+ o.uk
+DTSTAMP:20270320T000000Z
+DTSTART:20270320T160000Z
+DTEND:20270320T210000Z
+SUMMARY:Gok Wan Presents Isolation Nation
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/gok-wan-presents
+ -isolation-nation/quarters/3744197\nMore: https://brightonweekend.co.uk/e/
+ 2027-03-20-quarters-gok-wan-presents-isolation-nation/
+URL:https://brightonweekend.co.uk/e/2027-03-20-quarters-gok-wan-presents-is
+ olation-nation/
+END:VEVENT
+END:VCALENDAR
