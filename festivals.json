@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-10",
-  "range_start": "2026-11-10",
+  "updated": "2026-11-11",
+  "range_start": "2026-11-11",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -274,6 +274,18 @@
       "location_display": "Kirriemuir"
     },
     {
+      "title": "Crossover Festival",
+      "date": "2027-04-30",
+      "date_end": "2027-05-02",
+      "location": "Calverton, Nottinghamshire",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/crossover-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/crossover-festival/",
+      "id": "festival:crossover-festival:2027-04-30",
+      "location_display": "Calverton, Nottinghamshire"
+    },
+    {
       "title": "Into the Valley",
       "date": "2027-04-30",
       "date_end": "2027-05-02",
@@ -404,6 +416,18 @@
       "detail_url": "https://fezzy.uk/festival/herofest/",
       "id": "festival:herofest:2027-05-08",
       "location_display": "Cheadle"
+    },
+    {
+      "title": "Incineration Festival",
+      "date": "2027-05-08",
+      "date_end": "2027-05-08",
+      "location": "Camden, London",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/incineration-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/incineration-festival/",
+      "id": "festival:incineration-festival:2027-05-08",
+      "location_display": "Camden, London"
     },
     {
       "title": "North West 200",
@@ -862,6 +886,18 @@
       "location_display": "Edinburgh"
     },
     {
+      "title": "An Experience Festival",
+      "date": "2027-06-04",
+      "date_end": "2027-06-06",
+      "location": "Abbots Ripton",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/an-experience-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/an-experience-festival/",
+      "id": "festival:an-experience-festival:2027-06-04",
+      "location_display": "Abbots Ripton"
+    },
+    {
       "title": "Midlands Air Festival",
       "date": "2027-06-04",
       "date_end": "2027-06-06",
@@ -934,18 +970,6 @@
       "location_display": "Cheltenham"
     },
     {
-      "title": "An Experience Festival",
-      "date": "2027-06-05",
-      "date_end": "2027-06-09",
-      "location": "Abbots Ripton · Electronic",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/an-experience-festival/",
-      "source": "https://fezzy.uk/collections/electronic-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/an-experience-festival/",
-      "id": "festival:an-experience-festival:2027-06-05",
-      "location_display": "Abbots Ripton · Electronic"
-    },
-    {
       "id": "festival:glorious-day-festival:2027-06-05",
       "title": "Glorious Day Festival",
       "date": "2027-06-05",
@@ -1006,6 +1030,18 @@
       "location_display": "Castle Donington"
     },
     {
+      "title": "Gottwood",
+      "date": "2027-06-10",
+      "date_end": "2027-06-13",
+      "location": "Wales",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/gottwood/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/gottwood/",
+      "id": "festival:gottwood:2027-06-10",
+      "location_display": "Wales"
+    },
+    {
       "title": "Hampton Court Palace Festival",
       "date": "2027-06-10",
       "date_end": "2027-06-20",
@@ -1028,18 +1064,6 @@
       "detail_url": "https://fezzy.uk/festival/belsonic/",
       "id": "festival:belsonic:2027-06-11",
       "location_display": "Belfast"
-    },
-    {
-      "title": "Gottwood",
-      "date": "2027-06-11",
-      "date_end": "2027-06-11",
-      "location": "Wales",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/gottwood/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/gottwood/",
-      "id": "festival:gottwood:2027-06-11",
-      "location_display": "Wales"
     },
     {
       "title": "Gower Folk Festival",
@@ -1184,6 +1208,18 @@
       "detail_url": "https://fezzy.uk/festival/isle-of-wight-festival/",
       "id": "festival:isle-of-wight-festival:2027-06-17",
       "location_display": "Newport"
+    },
+    {
+      "title": "On the Waterfront",
+      "date": "2027-06-17",
+      "date_end": "2027-06-20",
+      "location": "Liverpool",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/on-the-waterfront/",
+      "source": "https://fezzy.uk/collections/pop-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/on-the-waterfront/",
+      "id": "festival:on-the-waterfront:2027-06-17",
+      "location_display": "Liverpool"
     },
     {
       "title": "Tower Festival (Towerfest)",
@@ -1342,6 +1378,30 @@
       "location_display": "Hickstead"
     },
     {
+      "title": "BST Hyde Park",
+      "date": "2027-06-24",
+      "date_end": "2027-07-10",
+      "location": "London",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/bst-hyde-park/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/bst-hyde-park/",
+      "id": "festival:bst-hyde-park:2027-06-24",
+      "location_display": "London"
+    },
+    {
+      "title": "British Summer Time",
+      "date": "2027-06-24",
+      "date_end": "2027-07-10",
+      "location": "London",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/british-summer-time/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/british-summer-time/",
+      "id": "festival:british-summer-time:2027-06-24",
+      "location_display": "London"
+    },
+    {
       "title": "Adventure Bike Rider Festival",
       "date": "2027-06-25",
       "date_end": "2027-06-27",
@@ -1472,18 +1532,6 @@
       "detail_url": "https://fezzy.uk/festival/restricted-forest/",
       "id": "festival:restricted-forest:2027-06-26",
       "location_display": "North West"
-    },
-    {
-      "title": "British Summer Time",
-      "date": "2027-06-27",
-      "date_end": "2027-06-27",
-      "location": "London",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/british-summer-time/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/british-summer-time/",
-      "id": "festival:british-summer-time:2027-06-27",
-      "location_display": "London"
     },
     {
       "title": "Lytham Festival",
@@ -2806,6 +2854,18 @@
       "location_display": "Saltburn-by-the-Sea"
     },
     {
+      "title": "Spirit of Awen",
+      "date": "2027-08-06",
+      "date_end": "2027-08-15",
+      "location": "North Nibley",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/spirit-of-awen/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/spirit-of-awen/",
+      "id": "festival:spirit-of-awen:2027-08-06",
+      "location_display": "North Nibley"
+    },
+    {
       "title": "Thump Festival",
       "date": "2027-08-06",
       "date_end": "2027-08-09",
@@ -3022,6 +3082,18 @@
       "location_display": "Compton Martin"
     },
     {
+      "title": "110 Above Festival",
+      "date": "2027-08-19",
+      "date_end": "2027-08-21",
+      "location": "Twycross",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/110-above-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/110-above-festival/",
+      "id": "festival:110-above-festival:2027-08-19",
+      "location_display": "Twycross"
+    },
+    {
       "title": "Green Man",
       "date": "2027-08-19",
       "date_end": "2027-08-22",
@@ -3032,18 +3104,6 @@
       "detail_url": "https://fezzy.uk/festival/green-man/",
       "id": "festival:green-man:2027-08-19",
       "location_display": "Wales"
-    },
-    {
-      "title": "110 Above Festival",
-      "date": "2027-08-20",
-      "date_end": "2027-08-20",
-      "location": "Twycross",
-      "category": "Arts & Culture",
-      "ticket_url": "https://fezzy.uk/festival/110-above-festival/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/110-above-festival/",
-      "id": "festival:110-above-festival:2027-08-20",
-      "location_display": "Twycross"
     },
     {
       "title": "A New Day",
@@ -3262,6 +3322,18 @@
       "location_display": "Sevenoaks"
     },
     {
+      "title": "Campsoul Music Festival",
+      "date": "2027-08-27",
+      "date_end": "2027-08-30",
+      "location": "Wantage",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/campsoul-music-festival/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/campsoul-music-festival/",
+      "id": "festival:campsoul-music-festival:2027-08-27",
+      "location_display": "Wantage"
+    },
+    {
       "title": "CarFest (North & South)",
       "date": "2027-08-27",
       "date_end": "2027-08-29",
@@ -3404,18 +3476,6 @@
       "detail_url": "https://fezzy.uk/festival/victorious-festival/",
       "id": "festival:victorious-festival:2027-08-27",
       "location_display": "South East"
-    },
-    {
-      "title": "Campsoul Music Festival",
-      "date": "2027-08-28",
-      "date_end": "2027-08-31",
-      "location": "Wantage",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/campsoul-music-festival/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/campsoul-music-festival/",
-      "id": "festival:campsoul-music-festival:2027-08-28",
-      "location_display": "Wantage"
     },
     {
       "title": "Curious Pastimes Renewal",
