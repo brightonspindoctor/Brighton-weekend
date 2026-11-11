@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-05-patterns-cabana-us-two@brightonweekend.co.uk
+DTSTAMP:20261205T000000Z
+DTSTART:20261205T230000Z
+DTEND:20261206T040000Z
+SUMMARY:Cabana: Us Two
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Patterns-Bri
+ ghton/Cabana-Us-Two/43175181/\nMore: https://brightonweekend.co.uk/e/2026-
+ 12-05-patterns-cabana-us-two/
+URL:https://brightonweekend.co.uk/e/2026-12-05-patterns-cabana-us-two/
+END:VEVENT
+END:VCALENDAR

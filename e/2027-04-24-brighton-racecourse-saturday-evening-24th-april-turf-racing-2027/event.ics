@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-24-brighton-racecourse-saturday-evening-24th-april-turf-racing-
+ 2027@brightonweekend.co.uk
+DTSTAMP:20270424T000000Z
+DTSTART;VALUE=DATE:20270424
+DTEND;VALUE=DATE:20270425
+SUMMARY:Saturday Evening - 24th April Turf Racing 2027
+LOCATION:Brighton Racecourse\, Brighton
+DESCRIPTION:Tickets: https://www.brighton-racecourse.co.uk/whats-on/saturda
+ y-evening-24th-april-turf-racing-2027\nMore: https://brightonweekend.co.uk
+ /e/2027-04-24-brighton-racecourse-saturday-evening-24th-april-turf-racing-
+ 2027/
+URL:https://brightonweekend.co.uk/e/2027-04-24-brighton-racecourse-saturday
+ -evening-24th-april-turf-racing-2027/
+END:VEVENT
+END:VCALENDAR

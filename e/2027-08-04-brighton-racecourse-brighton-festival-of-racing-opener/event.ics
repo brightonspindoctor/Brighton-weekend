@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-08-04-brighton-racecourse-brighton-festival-of-racing-opener@brigh
+ tonweekend.co.uk
+DTSTAMP:20270804T000000Z
+DTSTART;VALUE=DATE:20270804
+DTEND;VALUE=DATE:20270805
+SUMMARY:Brighton Festival of Racing Opener
+LOCATION:Brighton Racecourse\, Brighton
+DESCRIPTION:Tickets: https://www.brighton-racecourse.co.uk/whats-on/brighto
+ n-festival-of-racing-opener\nMore: https://brightonweekend.co.uk/e/2027-08
+ -04-brighton-racecourse-brighton-festival-of-racing-opener/
+URL:https://brightonweekend.co.uk/e/2027-08-04-brighton-racecourse-brighton
+ -festival-of-racing-opener/
+END:VEVENT
+END:VCALENDAR

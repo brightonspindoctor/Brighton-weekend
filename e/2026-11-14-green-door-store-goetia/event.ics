@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-green-door-store-goetia@brightonweekend.co.uk
+DTSTAMP:20261114T000000Z
+DTSTART:20261114T190000Z
+DTEND:20261114T220000Z
+SUMMARY:Goetia
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/goetia/\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-14-green-door-store-goetia/
+URL:https://brightonweekend.co.uk/e/2026-11-14-green-door-store-goetia/
+END:VEVENT
+END:VCALENDAR

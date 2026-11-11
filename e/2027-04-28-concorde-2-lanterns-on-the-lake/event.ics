@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-28-concorde-2-lanterns-on-the-lake@brightonweekend.co.uk
+DTSTAMP:20270428T000000Z
+DTSTART:20270428T183000Z
+DTEND:20270428T213000Z
+SUMMARY:Lanterns On The Lake
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1674960/lanterns-on-the-
+ lake-tickets/promos/1228493\nMore: https://brightonweekend.co.uk/e/2027-04
+ -28-concorde-2-lanterns-on-the-lake/
+URL:https://brightonweekend.co.uk/e/2027-04-28-concorde-2-lanterns-on-the-l
+ ake/
+END:VEVENT
+END:VCALENDAR

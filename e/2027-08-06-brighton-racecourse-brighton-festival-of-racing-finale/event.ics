@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-08-06-brighton-racecourse-brighton-festival-of-racing-finale@brigh
+ tonweekend.co.uk
+DTSTAMP:20270806T000000Z
+DTSTART;VALUE=DATE:20270806
+DTEND;VALUE=DATE:20270807
+SUMMARY:Brighton Festival of Racing Finale
+LOCATION:Brighton Racecourse\, Brighton
+DESCRIPTION:Tickets: https://www.brighton-racecourse.co.uk/whats-on/brighto
+ n-festival-of-racing-finale\nMore: https://brightonweekend.co.uk/e/2027-08
+ -06-brighton-racecourse-brighton-festival-of-racing-finale/
+URL:https://brightonweekend.co.uk/e/2027-08-06-brighton-racecourse-brighton
+ -festival-of-racing-finale/
+END:VEVENT
+END:VCALENDAR

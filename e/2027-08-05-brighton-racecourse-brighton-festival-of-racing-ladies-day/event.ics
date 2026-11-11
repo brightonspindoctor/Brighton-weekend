@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-08-05-brighton-racecourse-brighton-festival-of-racing-ladies-day@b
+ rightonweekend.co.uk
+DTSTAMP:20270805T000000Z
+DTSTART;VALUE=DATE:20270805
+DTEND;VALUE=DATE:20270806
+SUMMARY:Brighton Festival of Racing | Ladies Day
+LOCATION:Brighton Racecourse\, Brighton
+DESCRIPTION:Tickets: https://www.brighton-racecourse.co.uk/whats-on/brighto
+ n-festival-of-racing-ladies-day\nMore: https://brightonweekend.co.uk/e/202
+ 7-08-05-brighton-racecourse-brighton-festival-of-racing-ladies-day/
+URL:https://brightonweekend.co.uk/e/2027-08-05-brighton-racecourse-brighton
+ -festival-of-racing-ladies-day/
+END:VEVENT
+END:VCALENDAR
