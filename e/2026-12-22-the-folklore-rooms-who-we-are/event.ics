@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-22-the-folklore-rooms-who-we-are@brightonweekend.co.uk
+DTSTAMP:20261222T000000Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:Who We Are
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://who-we-are.sumupstore.com/product/who-we-are-l
+ ive-at-folklore-rooms-brighton-7-30pm-evening-show-december-22nd-2026\nMor
+ e: https://brightonweekend.co.uk/e/2026-12-22-the-folklore-rooms-who-we-ar
+ e/
+URL:https://brightonweekend.co.uk/e/2026-12-22-the-folklore-rooms-who-we-ar
+ e/
+END:VEVENT
+END:VCALENDAR

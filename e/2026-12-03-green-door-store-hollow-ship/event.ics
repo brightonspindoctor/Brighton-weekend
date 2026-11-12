@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-03-green-door-store-hollow-ship@brightonweekend.co.uk
+DTSTAMP:20261203T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Hollow Ship
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/g58mn6-hollow-ship-3rd-dec-green
+ -door-store-brighton-tickets\nMore: https://brightonweekend.co.uk/e/2026-1
+ 2-03-green-door-store-hollow-ship/
+URL:https://brightonweekend.co.uk/e/2026-12-03-green-door-store-hollow-ship
+ /
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-14-chalk-giant-rooks@brightonweekend.co.uk
+DTSTAMP:20270214T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Giant Rooks
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/Hbcff1b4793c\nMore: https://brigh
+ tonweekend.co.uk/e/2027-02-14-chalk-giant-rooks/
+URL:https://brightonweekend.co.uk/e/2027-02-14-chalk-giant-rooks/
+END:VEVENT
+END:VCALENDAR

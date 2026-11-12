@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-11-the-hope-ruin-michael-mcgovern@brightonweekend.co.uk
+DTSTAMP:20270411T000000Z
+DTSTART;VALUE=DATE:20270411
+DTEND;VALUE=DATE:20270412
+SUMMARY:Michael McGovern
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/michael-mcgovern-2/\nMore: 
+ https://brightonweekend.co.uk/e/2027-04-11-the-hope-ruin-michael-mcgovern/
+URL:https://brightonweekend.co.uk/e/2027-04-11-the-hope-ruin-michael-mcgove
+ rn/
+END:VEVENT
+END:VCALENDAR

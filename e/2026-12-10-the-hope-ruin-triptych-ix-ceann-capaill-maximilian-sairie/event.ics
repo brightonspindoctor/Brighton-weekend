@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-10-the-hope-ruin-triptych-ix-ceann-capaill-maximilian-sairie@br
+ ightonweekend.co.uk
+DTSTAMP:20261210T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Triptych IX: Ceann Capaill\, Maximilian & Sairie
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/l4dc94bb/triptych-ix-ceann-c
+ apaill-maximilian-sairie\nMore: https://brightonweekend.co.uk/e/2026-12-10
+ -the-hope-ruin-triptych-ix-ceann-capaill-maximilian-sairie/
+URL:https://brightonweekend.co.uk/e/2026-12-10-the-hope-ruin-triptych-ix-ce
+ ann-capaill-maximilian-sairie/
+END:VEVENT
+END:VCALENDAR

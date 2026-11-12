@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-12-chalk-the-dualers@brightonweekend.co.uk
+DTSTAMP:20270612T000000Z
+DTSTART;VALUE=DATE:20270612
+DTEND;VALUE=DATE:20270613
+SUMMARY:The Dualers
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/I40e5cccca97\nMore: https://brigh
+ tonweekend.co.uk/e/2027-06-12-chalk-the-dualers/
+URL:https://brightonweekend.co.uk/e/2027-06-12-chalk-the-dualers/
+END:VEVENT
+END:VCALENDAR

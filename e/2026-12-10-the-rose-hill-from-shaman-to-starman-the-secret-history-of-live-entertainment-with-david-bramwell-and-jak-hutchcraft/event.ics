@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-10-the-rose-hill-from-shaman-to-starman-the-secret-history-of-l
+ ive-entertainment-with-david-bramwell-and-jak-hutchcraft@brightonweekend.c
+ o.uk
+DTSTAMP:20261210T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:From Shaman to Starman: The Secret History of Live Entertainment wi
+ th David Bramwell and Jak Hutchcraft
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/from-shaman-to-starman
+ -the-secret-history-of-live-entertainment-with-david-bramwell-and-jak-hutc
+ hcraft/\nMore: https://brightonweekend.co.uk/e/2026-12-10-the-rose-hill-fr
+ om-shaman-to-starman-the-secret-history-of-live-entertainment-with-david-b
+ ramwell-and-jak-hutchcraft/
+URL:https://brightonweekend.co.uk/e/2026-12-10-the-rose-hill-from-shaman-to
+ -starman-the-secret-history-of-live-entertainment-with-david-bramwell-and-
+ jak-hutchcraft/
+END:VEVENT
+END:VCALENDAR

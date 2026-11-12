@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-26-brighton-centre-sophie-ellis-bextor-s-christmas-kitchen-disc
+ o-tour@brightonweekend.co.uk
+DTSTAMP:20261126T000000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Sophie Ellis Bextor's Christmas Kitchen Disco Tour
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/whats-on/2027/sophie-elli
+ s-bextor/\nMore: https://brightonweekend.co.uk/e/2026-11-26-brighton-centr
+ e-sophie-ellis-bextor-s-christmas-kitchen-disco-tour/
+URL:https://brightonweekend.co.uk/e/2026-11-26-brighton-centre-sophie-ellis
+ -bextor-s-christmas-kitchen-disco-tour/
+END:VEVENT
+END:VCALENDAR

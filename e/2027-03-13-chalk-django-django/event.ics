@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-13-chalk-django-django@brightonweekend.co.uk
+DTSTAMP:20270313T000000Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Django Django
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/Ebaafd9b7d36\nMore: https://brigh
+ tonweekend.co.uk/e/2027-03-13-chalk-django-django/
+URL:https://brightonweekend.co.uk/e/2027-03-13-chalk-django-django/
+END:VEVENT
+END:VCALENDAR

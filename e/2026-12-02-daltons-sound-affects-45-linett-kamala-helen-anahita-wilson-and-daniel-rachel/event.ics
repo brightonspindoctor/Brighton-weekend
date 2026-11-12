@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-02-daltons-sound-affects-45-linett-kamala-helen-anahita-wilson-
+ and-daniel-rachel@brightonweekend.co.uk
+DTSTAMP:20261202T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Sound Affects #45: Linett Kamala\, Helen Anahita Wilson\, and Danie
+ l Rachel
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/sound-af
+ fects-45-linett-kamala-helen-anahita-wilson-and-daniel-rachel\nMore: https
+ ://brightonweekend.co.uk/e/2026-12-02-daltons-sound-affects-45-linett-kama
+ la-helen-anahita-wilson-and-daniel-rachel/
+URL:https://brightonweekend.co.uk/e/2026-12-02-daltons-sound-affects-45-lin
+ ett-kamala-helen-anahita-wilson-and-daniel-rachel/
+END:VEVENT
+END:VCALENDAR

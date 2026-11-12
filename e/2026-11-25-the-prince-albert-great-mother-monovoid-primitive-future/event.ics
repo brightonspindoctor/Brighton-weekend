@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-25-the-prince-albert-great-mother-monovoid-primitive-future@bri
+ ghtonweekend.co.uk
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Great Mother + Monovoid + Primitive Future
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Prince-A
+ lbert/Great-Mother-Monovoid-and-Primitive-Future-The-Prince-Albert/4314371
+ 2/\nMore: https://brightonweekend.co.uk/e/2026-11-25-the-prince-albert-gre
+ at-mother-monovoid-primitive-future/
+URL:https://brightonweekend.co.uk/e/2026-11-25-the-prince-albert-great-moth
+ er-monovoid-primitive-future/
+END:VEVENT
+END:VCALENDAR

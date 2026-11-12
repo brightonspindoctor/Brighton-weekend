@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-19-the-brunswick-midwinter-psych-surgery@brightonweekend.co.uk
+DTSTAMP:20261219T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Midwinter Psych Surgery
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/midwinter
+ -psych-surgery\nMore: https://brightonweekend.co.uk/e/2026-12-19-the-bruns
+ wick-midwinter-psych-surgery/
+URL:https://brightonweekend.co.uk/e/2026-12-19-the-brunswick-midwinter-psyc
+ h-surgery/
+END:VEVENT
+END:VCALENDAR

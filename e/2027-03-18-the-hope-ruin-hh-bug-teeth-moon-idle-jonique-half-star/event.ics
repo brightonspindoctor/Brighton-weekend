@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-18-the-hope-ruin-hh-bug-teeth-moon-idle-jonique-half-star@brigh
+ tonweekend.co.uk
+DTSTAMP:20270318T000000Z
+DTSTART;VALUE=DATE:20270318
+DTEND;VALUE=DATE:20270319
+SUMMARY:HH: Bug Teeth + Moon Idle + Jonique + Half Star
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/c16yfdmj/hh-bug-teeth-moon-i
+ dle-jonique-half-star\nMore: https://brightonweekend.co.uk/e/2027-03-18-th
+ e-hope-ruin-hh-bug-teeth-moon-idle-jonique-half-star/
+URL:https://brightonweekend.co.uk/e/2027-03-18-the-hope-ruin-hh-bug-teeth-m
+ oon-idle-jonique-half-star/
+END:VEVENT
+END:VCALENDAR

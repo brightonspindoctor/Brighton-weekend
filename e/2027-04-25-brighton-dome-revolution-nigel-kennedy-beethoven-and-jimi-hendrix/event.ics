@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-25-brighton-dome-revolution-nigel-kennedy-beethoven-and-jimi-he
+ ndrix@brightonweekend.co.uk
+DTSTAMP:20270425T000000Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:Revolution: Nigel Kennedy\, Beethoven and Jimi Hendrix
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
+ alse\,false&top_filter=all&page=5&view=list\nMore: https://brightonweekend
+ .co.uk/e/2027-04-25-brighton-dome-revolution-nigel-kennedy-beethoven-and-j
+ imi-hendrix/
+URL:https://brightonweekend.co.uk/e/2027-04-25-brighton-dome-revolution-nig
+ el-kennedy-beethoven-and-jimi-hendrix/
+END:VEVENT
+END:VCALENDAR

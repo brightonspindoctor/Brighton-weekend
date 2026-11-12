@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-19-rossi-bar-agenda-collective-presents-a-night-of-indie-pop@br
+ ightonweekend.co.uk
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Agenda Collective presents a night of indie pop
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/9xumr13f/agenda-collective-p
+ resents-a-night-of-indie-pop?utm_campaign=prom_ss&utm_medium=social&utm_so
+ urce=dynamic\nMore: https://brightonweekend.co.uk/e/2026-11-19-rossi-bar-a
+ genda-collective-presents-a-night-of-indie-pop/
+URL:https://brightonweekend.co.uk/e/2026-11-19-rossi-bar-agenda-collective-
+ presents-a-night-of-indie-pop/
+END:VEVENT
+END:VCALENDAR

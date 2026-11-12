@@ -1,4 +1,11 @@
 {
+ "10 years of missing people": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "10 years of Missing People",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "1000 rabbits": {
   "mbid": "925c910a-122b-4c6a-8128-84862fd04f8c",
   "name": "1000 Rabbits",
@@ -73,7 +80,8 @@
   "reason": "genres unclear",
   "act": "4am Kru",
   "checked": "2026-10-22",
-  "v": 3
+  "v": 4,
+  "spotify": "7nrVhzPUJsigF7rt9BL9jQ"
  },
  "60 juno": {
   "mbid": "2554d38a-50e8-4cbe-83c3-6e94d613bef6",
@@ -264,6 +272,16 @@
   "reason": "not in MusicBrainz",
   "act": "Absolute Bowie Christmas Special",
   "checked": "2026-10-06"
+ },
+ "absuma": {
+  "mbid": "9d0fb3a5-3e64-4674-9285-010901ac9837",
+  "name": "Absuma",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Absuma",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "acid box presents delivery": {
   "bucket": null,
@@ -641,7 +659,8 @@
   "reason": "tagged",
   "act": "Anna Erhard",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "11OTiI6xYGpLxS3aoVkI9e"
  },
  "anna katarina": {
   "mbid": "1ffcf475-6140-404f-b005-a44267e06cc1",
@@ -1066,6 +1085,47 @@
   "act": "Bellowhead",
   "checked": "2026-10-07",
   "spotify": "79fyBJJSUvWw4263rXYDM0",
+  "v": 4
+ },
+ "ben folds": {
+  "mbid": "51b7f46f-6c0f-46f2-9496-08c9ec2624d4",
+  "name": "Ben Folds",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 2
+   },
+   {
+    "name": "indie pop",
+    "count": 1
+   },
+   {
+    "name": "indie rock",
+    "count": 2
+   },
+   {
+    "name": "piano rock",
+    "count": 3
+   },
+   {
+    "name": "pop",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   },
+   {
+    "name": "singer-songwriter",
+    "count": 1
+   }
+  ],
+  "spotify": "55tif8708yyDQlSjh3Trdu",
+  "wikidata": "Q435681",
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Ben Folds",
+  "checked": "2026-11-12",
   "v": 4
  },
  "ben hemsley": {
@@ -1711,7 +1771,8 @@
   "reason": "genres unclear",
   "act": "Brass Against",
   "checked": "2026-10-28",
-  "v": 3
+  "v": 4,
+  "spotify": "25uPlxGvXMDy9eUX7oeDei"
  },
  "brazilian night live musica": {
   "bucket": null,
@@ -1738,8 +1799,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Brighton Beach Boys",
-  "checked": "2026-10-11",
-  "v": 2
+  "checked": "2026-11-12",
+  "v": 4
  },
  "brighton big band": {
   "bucket": null,
@@ -1807,6 +1868,16 @@
   "reason": "not in MusicBrainz",
   "act": "Brighton Gay Men’s Chorus Presents A Merry Murder Mystery",
   "checked": "2026-10-07"
+ },
+ "brooke law": {
+  "mbid": "2af5a41e-9bae-4b5c-9e24-dcfc9db8c336",
+  "name": "Brooke Law",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Brooke Law",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "brothers in the blues": {
   "bucket": null,
@@ -1957,6 +2028,17 @@
   "act": "Cabaret Voltaire",
   "checked": "2026-10-06"
  },
+ "cactus lee": {
+  "mbid": "681ee879-fcd4-4f61-b533-3ac73fc4ab96",
+  "name": "Cactus Lee",
+  "genres": [],
+  "spotify": "6eAIPGye8l6QohTSNNVUD4",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Cactus Lee",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "caleb caudle": {
   "mbid": "b550c259-b545-43f1-b1a0-f2f8d121332a",
   "name": "Caleb Caudle",
@@ -2006,6 +2088,13 @@
   "act": "Captain Accident & The Disasters",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "captain dann and the idle hands": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Captain Dann & The Idle Hands",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "cardinals": {
   "bucket": null,
@@ -2347,6 +2436,17 @@
   "act": "Cody Dahler",
   "checked": "2026-10-06"
  },
+ "cody pennington": {
+  "mbid": "66474cb7-8580-4823-add9-23d2049299c4",
+  "name": "Cody Pennington",
+  "genres": [],
+  "spotify": "63PWiIneR6CoBaiH7gdaqw",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Cody Pennington",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "coilguns": {
   "mbid": "fb8365df-88ac-4715-bf2f-8757a6c847b3",
   "name": "Coilguns",
@@ -2396,6 +2496,20 @@
   "act": "Committee of Sleep",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "community base fundraiser": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Community Base Fundraiser",
+  "checked": "2026-11-12",
+  "v": 4
+ },
+ "congratulations": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "Congratulations",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "connolley hayes": {
   "bucket": null,
@@ -2732,8 +2846,8 @@
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "Culture",
-  "checked": "2026-10-11",
-  "v": 2
+  "checked": "2026-11-12",
+  "v": 4
  },
  "culture shock": {
   "bucket": null,
@@ -3056,6 +3170,13 @@
   "act": "Deacon Blue",
   "checked": "2026-10-07"
  },
+ "dead flesh": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Dead Flesh",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "death goals": {
   "mbid": "4e40d2f0-c594-4f25-9063-66aef97c4c99",
   "name": "Death Goals",
@@ -3191,6 +3312,16 @@
   "reason": "not in MusicBrainz",
   "act": "December Will Be Magic Again",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "definitely oasis": {
+  "mbid": "51ff8d0a-b6c0-427a-97e4-4d59fe8e9415",
+  "name": "Definitely Oasis",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Definitely Oasis",
+  "checked": "2026-11-12",
   "v": 4
  },
  "degs friends": {
@@ -3477,7 +3608,7 @@
   "reason": "tagged",
   "act": "DIIV",
   "checked": "2026-10-31",
-  "v": 3
+  "v": 4
  },
  "dinosaur pile up": {
   "mbid": "b7023072-3a8c-4efc-bfd3-c117185f3b66",
@@ -3501,7 +3632,8 @@
   "reason": "tagged",
   "act": "Dinosaur Pile-Up",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "4MQsNhP9u10g1xuxaJBF0S"
  },
  "dirty dc": {
   "mbid": "a5ddb0f1-272d-4d17-9914-ebe8fe257943",
@@ -3601,8 +3733,15 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "DMAs",
-  "checked": "2026-10-11",
-  "v": 2
+  "checked": "2026-11-12",
+  "v": 4
+ },
+ "dont tell": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Don’t tell",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "doom by the sea vol 6": {
   "bucket": null,
@@ -3979,6 +4118,13 @@
   "act": "Employed To Serve, CABAL",
   "checked": "2026-10-06"
  },
+ "endless christmas 8": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Endless Christmas 8",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "erasure": {
   "mbid": "43b58c98-3779-4b04-9a23-1c95cca3a145",
   "name": "Erasure",
@@ -4028,6 +4174,17 @@
   "v": 4,
   "spotify": "0z5DFXmhT4ZNzWElsM7V89"
  },
+ "eschalon": {
+  "mbid": "fbc0aefc-bb8a-49be-8b55-49e684d2aae9",
+  "name": "Eschalon",
+  "genres": [],
+  "spotify": "1jl0oWAKZ8BNB7Z8bnG7aZ",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Eschalon",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "ethan regan": {
   "mbid": "04b685be-a7a7-4d54-8ea5-2b30a95fc0e1",
   "name": "Ethan Regan",
@@ -4045,6 +4202,17 @@
   "act": "Evangeline Eastwood",
   "checked": "2026-10-22",
   "v": 3
+ },
+ "eve appleton band": {
+  "mbid": "0b16a5f9-5907-4f2e-905e-24d30f903319",
+  "name": "Eve Appleton Band",
+  "genres": [],
+  "spotify": "3G39UOl3YtATyywWqQTGU9",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Eve Appleton Band",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "evenings sons": {
   "bucket": null,
@@ -4252,6 +4420,17 @@
   "v": 4,
   "spotify": "4Y7tXHSEejGu1vQ9bwDdXW"
  },
+ "fatecrimes": {
+  "mbid": "239fc79a-1932-4fbc-99a6-9845be41aad7",
+  "name": "FATECRIMES",
+  "genres": [],
+  "spotify": "7eDt0Al79jubHyYCXU3en7",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Fatecrimes",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "feel": {
   "bucket": null,
   "reason": "19 artists share this name",
@@ -4268,9 +4447,9 @@
  "fighting for unity": {
   "bucket": null,
   "reason": "not in MusicBrainz",
-  "act": "FIGHTING FOR UNITY",
-  "checked": "2026-10-11",
-  "v": 2
+  "act": "Fighting for Unity",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "film and visual arts ocean film festival world tour banff wed 7 oct concert hall from 19 50 find out more": {
   "bucket": null,
@@ -4603,7 +4782,15 @@
   "reason": "tagged",
   "act": "Friendly Fires",
   "checked": "2026-10-11",
-  "v": 2
+  "v": 4,
+  "spotify": "3mZqziCJj4pq3P2VBpmK6p"
+ },
+ "from shaman to starman": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "From Shaman to Starman",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "from the jam": {
   "mbid": "b38041f2-24e7-4733-97cd-0bf51fa1439d",
@@ -4671,6 +4858,13 @@
   "reason": "genres unclear",
   "act": "Fukushima Dolphin",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "fully femme fronted": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Fully Femme Fronted",
+  "checked": "2026-11-12",
   "v": 4
  },
  "fully local": {
@@ -4847,7 +5041,8 @@
   "reason": "tagged",
   "act": "George Fitzgerald",
   "checked": "2026-10-13",
-  "v": 3
+  "v": 4,
+  "spotify": "3KOHpygRuo1ruQAbEneR3t"
  },
  "get your rocks off karaoke": {
   "bucket": null,
@@ -4886,6 +5081,29 @@
   "act": "Getting to Brighton Dome",
   "checked": "2026-10-31",
   "v": 3
+ },
+ "ghost patterns": {
+  "mbid": "fde7067d-aabd-44c9-a703-a36d70662603",
+  "name": "Ghost Patterns",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "dream pop",
+    "count": 1
+   },
+   {
+    "name": "shoegaze",
+    "count": 1
+   }
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Ghost Patterns",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "ghostface killah": {
   "mbid": "3b39abeb-0064-4eed-9ddd-ee47a45c54cb",
@@ -4945,7 +5163,9 @@
   "bucket": "Indie & Rock",
   "reason": "tagged",
   "act": "Giant Rooks",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "5wD0owYApRtYmjPWavWKvb",
+  "v": 4
  },
  "girl": {
   "bucket": null,
@@ -5035,6 +5255,13 @@
   "spotify": "5tGmvKTFVL9bGZTxtvopHE",
   "v": 4
  },
+ "girls on top": {
+  "bucket": null,
+  "reason": "6 artists share this name",
+  "act": "Girls on Top",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "glenn richards and the venus lakes": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -5057,6 +5284,20 @@
   "reason": "no genre tags",
   "act": "Go Your Own Way",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "goetia": {
+  "bucket": null,
+  "reason": "6 artists share this name",
+  "act": "Goetia",
+  "checked": "2026-11-12",
+  "v": 4
+ },
+ "going under cover": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Going Under Cover",
+  "checked": "2026-11-12",
   "v": 4
  },
  "gold panda": {
@@ -5313,6 +5554,13 @@
   "act": "Grandmaster Flash",
   "checked": "2026-10-06"
  },
+ "great mother": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Great Mother",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "greg freeman": {
   "bucket": null,
   "reason": "6 artists share this name",
@@ -5513,7 +5761,15 @@
   "reason": "genres unclear",
   "act": "Hang Massive",
   "checked": "2026-10-22",
-  "v": 3
+  "v": 4,
+  "spotify": "6bkF6GDcyXZn2T0D5Fwldl"
+ },
+ "hans moretti": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Hans Moretti",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "hard hush": {
   "bucket": null,
@@ -5676,7 +5932,8 @@
   "bucket": null,
   "reason": "4 artists share this name",
   "act": "HH",
-  "checked": "2026-10-06"
+  "checked": "2026-11-12",
+  "v": 4
  },
  "hh presents": {
   "bucket": null,
@@ -5761,6 +6018,38 @@
   "act": "Hollow Hand",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "hollow ship": {
+  "mbid": "b5180f44-f761-4fff-9696-e7917e7b2961",
+  "name": "Hollow Ship",
+  "genres": [
+   {
+    "name": "funk",
+    "count": 1
+   },
+   {
+    "name": "instrumental",
+    "count": 1
+   },
+   {
+    "name": "psychedelic",
+    "count": 1
+   },
+   {
+    "name": "psychedelic rock",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   }
+  ],
+  "spotify": "3bPcnmJ1Lk6fQlhxGV3Apx",
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Hollow Ship",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "holy fawn": {
   "mbid": "42489dbe-d79d-45a4-aee7-4666aba8180a",
@@ -5860,7 +6149,8 @@
   "reason": "no genre tags",
   "act": "Housekeeping",
   "checked": "2026-10-24",
-  "v": 3
+  "v": 4,
+  "spotify": "77fvSG7fOWNTtkR7qpXHYY"
  },
  "hove record fair": {
   "bucket": null,
@@ -6374,6 +6664,24 @@
   "act": "Jake Xerxes Fussell",
   "checked": "2026-10-06"
  },
+ "jam baxter": {
+  "mbid": "fd9ee6de-76b5-43b0-8a1b-a998ad95e386",
+  "name": "Jam Baxter",
+  "genres": [
+   {
+    "name": "hip hop",
+    "count": 1
+   }
+  ],
+  "spotify": "6ST2sHlQoWYjxkIVnuW2mr",
+  "wikidata": "Q111335550",
+  "wd_genres": [],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Jam Baxter",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "james blunt": {
   "mbid": "ebee61b4-bbdd-4087-9bcb-d5aa099088ec",
   "name": "James Blunt",
@@ -6870,6 +7178,13 @@
   "act": "Joshua Idehen",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "jumpers for goalposts": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Jumpers For Goalposts",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "junebabies": {
   "bucket": null,
@@ -7627,6 +7942,17 @@
   "act": "Liege and Lief",
   "checked": "2026-10-07"
  },
+ "little grandad": {
+  "mbid": "4d60a679-0156-43c2-8bcd-fc19fb99060c",
+  "name": "Little Grandad",
+  "genres": [],
+  "spotify": "1Mgr4JJnFwPk3FHbu09wAl",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Little Grandad",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "little miss nasty": {
   "mbid": "6f30279b-11aa-4982-9002-0e371054951a",
   "name": "Little Miss Nasty",
@@ -7812,7 +8138,8 @@
   "reason": "no genre tags",
   "act": "Madra Salach",
   "checked": "2026-10-22",
-  "v": 3
+  "v": 4,
+  "spotify": "4ndHOxgaVPMt9xqdNzldgp"
  },
  "magda": {
   "bucket": null,
@@ -7901,9 +8228,9 @@
  "mart": {
   "bucket": null,
   "reason": "7 artists share this name",
-  "act": "MART",
-  "checked": "2026-10-11",
-  "v": 2
+  "act": "Mart",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "martin chambers and mike christie": {
   "bucket": null,
@@ -8150,8 +8477,8 @@
   "bucket": null,
   "reason": "no genre tags",
   "act": "Michael McGovern",
-  "checked": "2026-10-11",
-  "v": 2
+  "checked": "2026-11-12",
+  "v": 4
  },
  "michael starring ben": {
   "mbid": "78411cc5-b3e4-41fd-a5c2-96587f01a858",
@@ -8201,6 +8528,20 @@
   "act": "Midge Ure",
   "checked": "2026-10-07",
   "spotify": "2N4isf5pypyuDVpBofqEN8",
+  "v": 4
+ },
+ "midwinter psych surgery": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Midwinter Psych Surgery",
+  "checked": "2026-11-12",
+  "v": 4
+ },
+ "mike and the mechanics": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Mike and The Mechanics",
+  "checked": "2026-11-12",
   "v": 4
  },
  "mike the mic returns": {
@@ -8454,6 +8795,31 @@
   "reason": "genres unclear",
   "act": "Mouth Ulcers",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "mr b the gentleman rhymer": {
+  "mbid": "2ddb9772-e7e8-447f-8a79-506af75cb46f",
+  "name": "Mr.B The Gentleman Rhymer",
+  "genres": [
+   {
+    "name": "chap hop",
+    "count": 3
+   },
+   {
+    "name": "hip hop",
+    "count": 1
+   }
+  ],
+  "spotify": "0ilsDGmlSM7nHPJgbOX0A9",
+  "wikidata": "Q6928394",
+  "wd_genres": [
+   "chap hop",
+   "steampunk"
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Mr.B The Gentleman Rhymer",
+  "checked": "2026-11-12",
   "v": 4
  },
  "mr cutts": {
@@ -9033,6 +9399,13 @@
   "act": "Ocean Film Festival World",
   "checked": "2026-10-06"
  },
+ "ochre": {
+  "bucket": null,
+  "reason": "7 artists share this name",
+  "act": "Ochre",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "offie mag social halloween": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -9092,8 +9465,8 @@
   "bucket": null,
   "reason": "4 artists share this name",
   "act": "Open Mic",
-  "checked": "2026-10-11",
-  "v": 2
+  "checked": "2026-11-12",
+  "v": 4
  },
  "open mic night": {
   "bucket": null,
@@ -9432,6 +9805,17 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "petrol bastard": {
+  "mbid": "ccc8bba0-d875-4eda-969d-0af17c241fe3",
+  "name": "Petrol Bastard",
+  "genres": [],
+  "spotify": "4uJpajUI5SdIihnfQhYxk1",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Petrol Bastard",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "phantoms of the popera": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -9482,7 +9866,9 @@
   "bucket": "Folk & Country",
   "reason": "tagged",
   "act": "Phoebe Bridgers",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "1r1uxoy19fzMxunt3ONAkG",
+  "v": 4
  },
  "pigeon": {
   "bucket": null,
@@ -9567,6 +9953,16 @@
   "spotify": "0WHVA5E3ZEY5mxGkMYqPuB",
   "v": 4
  },
+ "polite bureaux": {
+  "mbid": "d4b44b5d-b6d2-4ba5-8859-e2ec4b159139",
+  "name": "Polite Bureaux",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Polite Bureaux",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "popstars the originals": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -9644,6 +10040,17 @@
   "act": "Post Locale Records Launch",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "prima queen": {
+  "mbid": "2e1c52f0-71c4-47fe-a1a4-fc025b083672",
+  "name": "Prima Queen",
+  "genres": [],
+  "spotify": "52fhNGn51RhUvjlapHT5T2",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Prima Queen",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "prince daddy and the hyenna": {
   "bucket": null,
@@ -9811,8 +10218,8 @@
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "Real sounds",
-  "checked": "2026-10-11",
-  "v": 2
+  "checked": "2026-11-12",
+  "v": 4
  },
  "rebecka edlund trio": {
   "bucket": null,
@@ -9878,6 +10285,13 @@
   "reason": "no genre tags",
   "act": "Release the Bats",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "renegade soundwave rewired": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Renegade Soundwave Rewired",
+  "checked": "2026-11-12",
   "v": 4
  },
  "republica": {
@@ -9951,6 +10365,13 @@
   "reason": "not in MusicBrainz",
   "act": "REVOLT BRIGHTON PRESENTS",
   "checked": "2026-10-07"
+ },
+ "revolution": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "Revolution",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "rhiannon": {
   "bucket": null,
@@ -10071,6 +10492,28 @@
   "reason": "not in MusicBrainz",
   "act": "Ríoghnach Connolly / Honeyfeet",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "rip magic": {
+  "mbid": "9109582c-cc24-49ae-bc03-ccb9c7c30966",
+  "name": "RIP Magic",
+  "genres": [
+   {
+    "name": "dance-punk",
+    "count": 1
+   },
+   {
+    "name": "electronic",
+    "count": 1
+   }
+  ],
+  "spotify": "34VnmMzwkbqk09L8Gk1LyM",
+  "wikidata": "Q139892712",
+  "wd_genres": [],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "RIP magic",
+  "checked": "2026-11-12",
   "v": 4
  },
  "rival consoles": {
@@ -10258,6 +10701,13 @@
   "checked": "2026-10-26",
   "v": 3
  },
+ "ruckus": {
+  "bucket": null,
+  "reason": "15 artists share this name",
+  "act": "Ruckus",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "ruel": {
   "bucket": null,
   "reason": "2 artists share this name",
@@ -10305,6 +10755,13 @@
   "act": "Safehouse Open Session",
   "checked": "2026-10-13",
   "v": 3
+ },
+ "safenath": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Safenath",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "salvador sobral": {
   "mbid": "ad226273-7870-47d6-a8d0-903ddba3853d",
@@ -10576,6 +11033,17 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "shaina hayes": {
+  "mbid": "31b3fe61-d81f-4325-ba38-06c436d5756e",
+  "name": "Shaina Hayes",
+  "genres": [],
+  "spotify": "07BSJfATf49EmPNOzM01cZ",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Shaina Hayes",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "shake some acton 177": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -10723,6 +11191,39 @@
   "checked": "2026-10-13",
   "v": 4,
   "spotify": "1xyaWjnqi42AlEzaXcr7IY"
+ },
+ "show me the body": {
+  "mbid": "bcc715bb-47a4-46c0-a62e-6467feec6091",
+  "name": "Show Me the Body",
+  "genres": [
+   {
+    "name": "art punk",
+    "count": 1
+   },
+   {
+    "name": "hardcore punk",
+    "count": 2
+   },
+   {
+    "name": "noise rock",
+    "count": 1
+   },
+   {
+    "name": "post-hardcore",
+    "count": 1
+   },
+   {
+    "name": "punk rap",
+    "count": 1
+   }
+  ],
+  "spotify": "5jh7sgXW2njALiIh0aPXjB",
+  "wikidata": "Q48698556",
+  "bucket": "Punk & Metal",
+  "reason": "tagged",
+  "act": "Show Me The Body",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "si connolly": {
   "bucket": null,
@@ -11118,6 +11619,13 @@
   "checked": "2026-11-11",
   "v": 4
  },
+ "something very odd is going on the fifty one": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Something Very Odd is Going On! The FIFTY ONE",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "sonny tennet": {
   "mbid": "929261e7-e9b1-49e6-aa90-95e389daaf4e",
   "name": "Sonny Tennet",
@@ -11151,6 +11659,13 @@
   "act": "Soot Sprite",
   "checked": "2026-10-07",
   "spotify": "4CoB9YE7rYnbmr9zlwv0af",
+  "v": 4
+ },
+ "sophie ellis bextors christmas kitchen disco": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Sophie Ellis Bextor's Christmas Kitchen Disco",
+  "checked": "2026-11-12",
   "v": 4
  },
  "sorrel nation": {
@@ -11221,6 +11736,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "sound affects 45": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Sound Affects #45",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "sound of the sirens": {
   "mbid": "b5935b3a-8c61-4144-9c3b-3b14301a37aa",
   "name": "Sound of the Sirens",
@@ -11256,6 +11778,13 @@
   "v": 4,
   "spotify": "03pMYqc3CmNCN1XsN1dWPN"
  },
+ "sparks fan convention": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Sparks Fan Convention",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "sparta": {
   "bucket": null,
   "reason": "6 artists share this name",
@@ -11268,6 +11797,24 @@
   "reason": "not in MusicBrainz",
   "act": "SPARTA Hammok",
   "checked": "2026-10-06"
+ },
+ "spencer cullum": {
+  "mbid": "d9d85607-d32b-4b80-8bb2-c0a087173b03",
+  "name": "Spencer Cullum",
+  "genres": [],
+  "spotify": "1u2RgFiCSd9phVG5OB51jr",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Spencer Cullum",
+  "checked": "2026-11-12",
+  "v": 4
+ },
+ "spencer cullum erin rae and hollow hand": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Spencer Cullum, Erin Rae & Hollow Hand",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "spice girls": {
   "mbid": "bf0caafc-2b20-4e07-ab85-87e14ff430ce",
@@ -11297,6 +11844,16 @@
   "checked": "2026-10-17",
   "v": 4,
   "spotify": "0uq5PttqEjj3IH1bzwcrXF"
+ },
+ "spinnaker": {
+  "mbid": "94078e00-122e-42c3-a5f8-ec080e22ae2d",
+  "name": "Spinnaker",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Spinnaker",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "spirit of gravity": {
   "bucket": null,
@@ -11379,6 +11936,20 @@
   "reason": "genres unclear",
   "act": "Split Dogs",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "splitting the atom lxxxii experimental": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Splitting The Atom LXXXII Experimental",
+  "checked": "2026-11-12",
+  "v": 4
+ },
+ "splitting the atom lxxxii experimental free noise all dayer": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Splitting The Atom LXXXII Experimental/Free/Noise All-Dayer",
+  "checked": "2026-11-12",
   "v": 4
  },
  "sports": {
@@ -11479,8 +12050,8 @@
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "Steve Ashley",
-  "checked": "2026-10-12",
-  "v": 3
+  "checked": "2026-11-12",
+  "v": 4
  },
  "steve backshall s deadly live": {
   "bucket": null,
@@ -11875,6 +12446,13 @@
   "act": "Teenage Fanclub",
   "checked": "2026-10-06"
  },
+ "teleology": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Teleology",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "texas": {
   "mbid": "7289d10d-d8d2-41ff-8308-c56ec9346e07",
   "name": "Texas",
@@ -12226,7 +12804,7 @@
   "reason": "no genre tags",
   "act": "The Dualers",
   "checked": "2026-10-22",
-  "v": 3
+  "v": 4
  },
  "the dunwells": {
   "mbid": "ef5d6144-cdda-40e2-b70a-ca39015121ab",
@@ -12236,6 +12814,13 @@
   "reason": "no genre tags",
   "act": "The Dunwells",
   "checked": "2026-10-07"
+ },
+ "the eastfield quintet": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Eastfield Quintet",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "the entitled sons": {
   "mbid": "05b922bf-cfe1-43b4-8cde-43bf3e4af15d",
@@ -12261,6 +12846,13 @@
   "act": "The Flex",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "the fortunate few": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "The Fortunate Few",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "the gate": {
   "bucket": null,
@@ -12837,6 +13429,13 @@
   "checked": "2026-11-11",
   "v": 4
  },
+ "the rock house": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Rock House",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "the rock orchestra": {
   "bucket": null,
   "reason": "2 artists share this name",
@@ -13042,7 +13641,9 @@
   "bucket": "Reggae & Ska",
   "reason": "tagged",
   "act": "The Skints",
-  "checked": "2026-10-06"
+  "checked": "2026-10-06",
+  "spotify": "39k4UDTgsWe6NCi6hgnfc1",
+  "v": 4
  },
  "the smyths": {
   "mbid": "ee0c62e4-7f4b-4507-ad42-453d44937551",
@@ -13638,7 +14239,9 @@
   "bucket": "Jazz, Soul & Funk",
   "reason": "tagged",
   "act": "Too Many Zooz",
-  "checked": "2026-10-07"
+  "checked": "2026-10-07",
+  "spotify": "72rZmJbRFSY6IFJAysfOdr",
+  "v": 4
  },
  "tooth": {
   "bucket": null,
@@ -13646,6 +14249,46 @@
   "act": "Tooth",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "toots and the maytals": {
+  "mbid": "29730ee3-e1c7-4e28-9ccd-3a0e6b0e8103",
+  "name": "Toots & The Maytals",
+  "genres": [
+   {
+    "name": "jamaican ska",
+    "count": 1
+   },
+   {
+    "name": "reggae",
+    "count": 5
+   },
+   {
+    "name": "reggae-pop",
+    "count": 1
+   },
+   {
+    "name": "rocksteady",
+    "count": 3
+   },
+   {
+    "name": "roots reggae",
+    "count": 1
+   },
+   {
+    "name": "ska",
+    "count": 4
+   },
+   {
+    "name": "soul",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q845465",
+  "bucket": "Reggae & Ska",
+  "reason": "tagged",
+  "act": "Toots & The Maytals",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "toploader": {
   "mbid": "3bdf9667-3205-4c5b-865b-ca3bb33fc5ac",
@@ -13735,6 +14378,13 @@
   "act": "Trancecoda Presents J00F Editions",
   "checked": "2026-10-06"
  },
+ "transmisogyny awareness training": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Transmisogyny Awareness Training",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "transvision vamp": {
   "mbid": "968f61f8-c6e1-400a-95cb-114c9d67dd8e",
   "name": "Transvision Vamp",
@@ -13749,6 +14399,16 @@
   "act": "Transvision Vamp",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "trevor moss and hannah lou": {
+  "mbid": "5bacfb7c-1254-43c5-b1cd-eb79c9af65e7",
+  "name": "Trevor Moss & Hannah-Lou",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Trevor Moss & Hannah-Lou",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "trip westerns": {
   "mbid": "2b5ef702-cf56-4d91-bf55-d882b90b0b03",
@@ -13765,6 +14425,13 @@
   "reason": "4 artists share this name",
   "act": "TRIPLE A",
   "checked": "2026-10-07"
+ },
+ "triptych ix": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Triptych IX",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "tropical f ck storm": {
   "bucket": null,
@@ -13807,7 +14474,8 @@
   "reason": "tagged",
   "act": "Tropical Fuck Storm",
   "checked": "2026-10-24",
-  "v": 3
+  "v": 4,
+  "spotify": "0mL6LBSQ4bHe6hWq90KzHL"
  },
  "turbobier": {
   "mbid": "250ace3f-af5a-4d1c-b161-79ccd0a78d8a",
@@ -13872,6 +14540,38 @@
   "act": "TV Priest",
   "checked": "2026-10-06",
   "spotify": "61ujMGJVHgF9LPrIZw4MaI",
+  "v": 4
+ },
+ "tydl": {
+  "mbid": "7aa6bfd5-44a1-4878-b5aa-83a62d6b5fdd",
+  "name": "TYDL",
+  "genres": [
+   {
+    "name": "art pop",
+    "count": 1
+   },
+   {
+    "name": "dance-pop",
+    "count": 1
+   },
+   {
+    "name": "dream pop",
+    "count": 1
+   },
+   {
+    "name": "indie pop",
+    "count": 1
+   },
+   {
+    "name": "pop",
+    "count": 1
+   }
+  ],
+  "spotify": "6jTw0ZerxIvuZHmV2lNsbB",
+  "bucket": "Pop",
+  "reason": "tagged",
+  "act": "TYDL",
+  "checked": "2026-11-12",
   "v": 4
  },
  "u2": {
@@ -13969,6 +14669,13 @@
   "act": "Ugly",
   "checked": "2026-10-13",
   "v": 3
+ },
+ "ugly mutt": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Ugly Mutt",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "uk foo fighters": {
   "mbid": "627b5464-88f5-474c-ad31-aad4b973fd9a",
@@ -14190,12 +14897,30 @@
   "checked": "2026-10-16",
   "v": 3
  },
+ "vegan meat raffle": {
+  "mbid": "6583e1cf-fde2-4dd3-aa09-8212d6ea2e92",
+  "name": "Vegan Meat Raffle",
+  "genres": [],
+  "spotify": "3ntyXGKujG3V7frayHfFij",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Vegan Meat Raffle",
+  "checked": "2026-11-12",
+  "v": 4
+ },
  "vehicle": {
   "bucket": null,
   "reason": "6 artists share this name",
   "act": "Vehicle",
   "checked": "2026-11-07",
   "v": 3
+ },
+ "victor jones": {
+  "bucket": null,
+  "reason": "3 artists share this name",
+  "act": "Victor Jones",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "victus": {
   "bucket": null,
@@ -14278,6 +15003,13 @@
   "act": "WE ARE YOUR FRIENDS",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "we will choir you": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "We Will CHOIR! You",
+  "checked": "2026-11-12",
+  "v": 4
  },
  "wednesdays child": {
   "mbid": "8937dfcc-0d72-4530-a944-323fe85d14c2",
@@ -14368,6 +15100,13 @@
   "reason": "genres unclear",
   "act": "Westside Cowboy",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "who we are": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Who We Are",
+  "checked": "2026-11-12",
   "v": 4
  },
  "will samson": {

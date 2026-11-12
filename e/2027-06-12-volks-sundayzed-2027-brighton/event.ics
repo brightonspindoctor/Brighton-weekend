@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-12-volks-sundayzed-2027-brighton@brightonweekend.co.uk
+DTSTAMP:20270612T000000Z
+DTSTART:20270612T130000Z
+DTEND:20270612T160000Z
+SUMMARY:SunDayzed 2027 Brighton
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/SunDayzed-2027-Brighton/43180638/\nMore: https://brightonweekend.c
+ o.uk/e/2027-06-12-volks-sundayzed-2027-brighton/
+URL:https://brightonweekend.co.uk/e/2027-06-12-volks-sundayzed-2027-brighto
+ n/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-17-daltons-interviews-with-christopher-eccleston-zoe-wanamaker-
+ audience-q-a@brightonweekend.co.uk
+DTSTAMP:20270217T000000Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:Interviews with Christopher Eccleston & Zoe Wanamaker (& Audience Q
+ &A)
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/intervie
+ ws-with-christopher-eccleston-zoe-wanamaker-audience-q-a\nMore: https://br
+ ightonweekend.co.uk/e/2027-02-17-daltons-interviews-with-christopher-eccle
+ ston-zoe-wanamaker-audience-q-a/
+URL:https://brightonweekend.co.uk/e/2027-02-17-daltons-interviews-with-chri
+ stopher-eccleston-zoe-wanamaker-audience-q-a/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-07-daltons-dead-flesh-kill-all-the-gentlemen-great-mother@brigh
+ tonweekend.co.uk
+DTSTAMP:20270207T000000Z
+DTSTART;VALUE=DATE:20270207
+DTEND;VALUE=DATE:20270208
+SUMMARY:Dead Flesh + Kill All the Gentlemen + Great Mother
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/ok2lnm-dead-flesh-11th-feb-dalto
+ ns-brighton-brighton-tickets?dice_source=ee15ecdb&eventref=fb_oea&fbclid=I
+ wY2xjawVggF1leHRuA2FlbQIxMABwZG9mAWJyaWQRMEtGOE96ZG5STTV6U0trNzRzcnRjBmFwc
+ F9pZBAyMjIwMzkxNzg4MjAwODkyAAEfAzjNUweyjCukHlg3dpoIerSkfKaFQCrGSSD-oMohdZT
+ hugmQKBCtP8P4s_M_aem_zstg3CM1upEDYOwuN_phhg\nMore: https://brightonweekend
+ .co.uk/e/2027-02-07-daltons-dead-flesh-kill-all-the-gentlemen-great-mother
+ /
+URL:https://brightonweekend.co.uk/e/2027-02-07-daltons-dead-flesh-kill-all-
+ the-gentlemen-great-mother/
+END:VEVENT
+END:VCALENDAR

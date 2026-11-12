@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-09-daltons-eschalon@brightonweekend.co.uk
+DTSTAMP:20270109T000000Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270110
+SUMMARY:Eschalon
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Daltons-Brig
+ hton/Eschalon-ft-Glass-Grave-Ael-Fierlan-Gutlocker-Onryo/42734911/\nMore: 
+ https://brightonweekend.co.uk/e/2027-01-09-daltons-eschalon/
+URL:https://brightonweekend.co.uk/e/2027-01-09-daltons-eschalon/
+END:VEVENT
+END:VCALENDAR

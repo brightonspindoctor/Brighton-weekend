@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-17-chalk-brass-against@brightonweekend.co.uk
+DTSTAMP:20270417T000000Z
+DTSTART;VALUE=DATE:20270417
+DTEND;VALUE=DATE:20270418
+SUMMARY:Brass Against
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/r2368871b75f\nMore: https://brigh
+ tonweekend.co.uk/e/2027-04-17-chalk-brass-against/
+URL:https://brightonweekend.co.uk/e/2027-04-17-chalk-brass-against/
+END:VEVENT
+END:VCALENDAR

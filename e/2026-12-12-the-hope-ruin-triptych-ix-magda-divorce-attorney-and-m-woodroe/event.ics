@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-the-hope-ruin-triptych-ix-magda-divorce-attorney-and-m-woodr
+ oe@brightonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Triptych IX: Magda\, Divorce Attorney and M. Woodroe
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/d4mv52ao/triptych-ix-magda-d
+ ivorce-attorney-and-m-woodroe\nMore: https://brightonweekend.co.uk/e/2026-
+ 12-12-the-hope-ruin-triptych-ix-magda-divorce-attorney-and-m-woodroe/
+URL:https://brightonweekend.co.uk/e/2026-12-12-the-hope-ruin-triptych-ix-ma
+ gda-divorce-attorney-and-m-woodroe/
+END:VEVENT
+END:VCALENDAR

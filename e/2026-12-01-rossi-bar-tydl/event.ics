@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-01-rossi-bar-tydl@brightonweekend.co.uk
+DTSTAMP:20261201T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:TYDL
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/tydl-what-you-think-r
+ elease-party/the-rossi-bar/3744282\nMore: https://brightonweekend.co.uk/e/
+ 2026-12-01-rossi-bar-tydl/
+URL:https://brightonweekend.co.uk/e/2026-12-01-rossi-bar-tydl/
+END:VEVENT
+END:VCALENDAR

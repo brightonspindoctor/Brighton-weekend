@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-10-chalk-show-me-the-body@brightonweekend.co.uk
+DTSTAMP:20270210T000000Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:Show Me The Body
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/Vecbde599438\nMore: https://brigh
+ tonweekend.co.uk/e/2027-02-10-chalk-show-me-the-body/
+URL:https://brightonweekend.co.uk/e/2027-02-10-chalk-show-me-the-body/
+END:VEVENT
+END:VCALENDAR

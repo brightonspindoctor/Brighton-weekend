@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-17-brighton-dome-mike-and-the-mechanics@brightonweekend.co.uk
+DTSTAMP:20270617T000000Z
+DTSTART;VALUE=DATE:20270617
+DTEND;VALUE=DATE:20270618
+SUMMARY:Mike and The Mechanics
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
+ alse\,false&top_filter=all&page=5&view=list\nMore: https://brightonweekend
+ .co.uk/e/2027-06-17-brighton-dome-mike-and-the-mechanics/
+URL:https://brightonweekend.co.uk/e/2027-06-17-brighton-dome-mike-and-the-m
+ echanics/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-19-daltons-garageland-presents-free-entry@brightonweekend.co.uk
+DTSTAMP:20261219T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Garageland Presents
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/garagela
+ nd-presents-free-entry-16\nMore: https://brightonweekend.co.uk/e/2026-12-1
+ 9-daltons-garageland-presents-free-entry/
+URL:https://brightonweekend.co.uk/e/2026-12-19-daltons-garageland-presents-
+ free-entry/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-29-the-folklore-rooms-safenath-album-launch-show@brightonweeken
+ d.co.uk
+DTSTAMP:20261129T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Safenath Album Launch Show
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/safespace-album-launch-
+ tickets-2004543547712?_gl=1*1s7brhr*_up*MQ..*_ga*NzU0NzA4NTI2LjE3OTQxNDMwN
+ TA.*_ga_TQVES5V6SH*czE3OTQxNDMwNDkkbzEkZzAkdDE3OTQxNDMwNDkkajYwJGwwJGgw&af
+ f=oddtdtcreator&keep_tld=true\nMore: https://brightonweekend.co.uk/e/2026-
+ 11-29-the-folklore-rooms-safenath-album-launch-show/
+URL:https://brightonweekend.co.uk/e/2026-11-29-the-folklore-rooms-safenath-
+ album-launch-show/
+END:VEVENT
+END:VCALENDAR

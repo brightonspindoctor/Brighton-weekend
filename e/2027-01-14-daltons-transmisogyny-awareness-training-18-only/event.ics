@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-14-daltons-transmisogyny-awareness-training-18-only@brightonwee
+ kend.co.uk
+DTSTAMP:20270114T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:Transmisogyny Awareness Training (18+ only)
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/transmis
+ ogyny-awareness-training-18-only\nMore: https://brightonweekend.co.uk/e/20
+ 27-01-14-daltons-transmisogyny-awareness-training-18-only/
+URL:https://brightonweekend.co.uk/e/2027-01-14-daltons-transmisogyny-awaren
+ ess-training-18-only/
+END:VEVENT
+END:VCALENDAR

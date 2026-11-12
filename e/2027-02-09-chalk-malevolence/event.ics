@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-09-chalk-malevolence@brightonweekend.co.uk
+DTSTAMP:20270209T000000Z
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270210
+SUMMARY:Malevolence
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/adcfc0ff9aa0\nMore: https://brigh
+ tonweekend.co.uk/e/2027-02-09-chalk-malevolence/
+URL:https://brightonweekend.co.uk/e/2027-02-09-chalk-malevolence/
+END:VEVENT
+END:VCALENDAR

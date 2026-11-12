@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-30-the-hope-ruin-congratulations@brightonweekend.co.uk
+DTSTAMP:20261130T000000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Congratulations
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/congratulations-2/\nMore: h
+ ttps://brightonweekend.co.uk/e/2026-11-30-the-hope-ruin-congratulations/
+URL:https://brightonweekend.co.uk/e/2026-11-30-the-hope-ruin-congratulation
+ s/
+END:VEVENT
+END:VCALENDAR

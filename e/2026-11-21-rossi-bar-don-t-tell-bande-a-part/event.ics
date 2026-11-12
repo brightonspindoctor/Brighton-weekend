@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-rossi-bar-don-t-tell-bande-a-part@brightonweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Don’t tell: Bande a Part
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/partner/tickets/event/eo9pd2--bande-pa
+ rt-21st-nov-the-rossi-bar-brighton-tickets?dice_id=10731014&dice_channel=w
+ eb&dice_tags=organic&dice_campaign=Don%27t+Tell+Events+&dice_feature=mio_m
+ arketing&_branch_match_id=1640760587762579972&utm_source=web&utm_campaign=
+ Don%27t+Tell+Events&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAA
+ A8soKSkottLXz8nMy9ZLyUxO1UvL1XdNS0k0TDYyTbIwNrCvK0pNSy0qysxLj08qyi8vTi2yDU
+ 5MSyzKBACPSrUeOwAAAA%3D%3D\nMore: https://brightonweekend.co.uk/e/2026-11-
+ 21-rossi-bar-don-t-tell-bande-a-part/
+URL:https://brightonweekend.co.uk/e/2026-11-21-rossi-bar-don-t-tell-bande-a
+ -part/
+END:VEVENT
+END:VCALENDAR

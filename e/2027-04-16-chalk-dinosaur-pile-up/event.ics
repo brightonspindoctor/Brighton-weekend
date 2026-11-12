@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-16-chalk-dinosaur-pile-up@brightonweekend.co.uk
+DTSTAMP:20270416T000000Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+SUMMARY:Dinosaur Pile-Up
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/s20ab78b67cc\nMore: https://brigh
+ tonweekend.co.uk/e/2027-04-16-chalk-dinosaur-pile-up/
+URL:https://brightonweekend.co.uk/e/2027-04-16-chalk-dinosaur-pile-up/
+END:VEVENT
+END:VCALENDAR

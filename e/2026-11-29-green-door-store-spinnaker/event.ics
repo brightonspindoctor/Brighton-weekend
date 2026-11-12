@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-29-green-door-store-spinnaker@brightonweekend.co.uk
+DTSTAMP:20261129T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Spinnaker
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.com/e/spinnaker-for-calm-the-gr
+ een-door-store-tickets-2004067713479?utm_term=Variant%201_EventPublishedSu
+ bPaid_HeroSummary_other%20feature%20usage&utm_content=d83bc845-0544-4274-a
+ 9dd-e152eac1a1f7__6ae3517783779a39f3f2153defe29087__d9331cef-7c6c-4b09-a2d
+ c-9bbb8baf82e5&utm_medium=ebml&utm_campaign=clpo_ceex_lcm_fad_mec_mc_mum_0
+ _0_eventpublished&utm_source=braze&lid=9bm1123ptcvy\nMore: https://brighto
+ nweekend.co.uk/e/2026-11-29-green-door-store-spinnaker/
+URL:https://brightonweekend.co.uk/e/2026-11-29-green-door-store-spinnaker/
+END:VEVENT
+END:VCALENDAR

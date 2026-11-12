@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-31-chalk-friendly-fires@brightonweekend.co.uk
+DTSTAMP:20270131T000000Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Friendly Fires
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ab520de3cd691000195961e\nMore: 
+ https://brightonweekend.co.uk/e/2027-01-31-chalk-friendly-fires/
+URL:https://brightonweekend.co.uk/e/2027-01-31-chalk-friendly-fires/
+END:VEVENT
+END:VCALENDAR

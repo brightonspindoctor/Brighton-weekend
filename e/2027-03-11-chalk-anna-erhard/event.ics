@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-11-chalk-anna-erhard@brightonweekend.co.uk
+DTSTAMP:20270311T000000Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270312
+SUMMARY:Anna Erhard
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/ud2cd39e5592\nMore: https://brigh
+ tonweekend.co.uk/e/2027-03-11-chalk-anna-erhard/
+URL:https://brightonweekend.co.uk/e/2027-03-11-chalk-anna-erhard/
+END:VEVENT
+END:VCALENDAR

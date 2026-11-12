@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-17-the-prince-albert-mr-b-the-gentleman-rhymer-support@brighton
+ weekend.co.uk
+DTSTAMP:20261217T000000Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Mr.B The Gentleman Rhymer + support
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/mr-b-the-gentleman-rhy
+ mer-support-tickets-KVL0MS\nMore: https://brightonweekend.co.uk/e/2026-12-
+ 17-the-prince-albert-mr-b-the-gentleman-rhymer-support/
+URL:https://brightonweekend.co.uk/e/2026-12-17-the-prince-albert-mr-b-the-g
+ entleman-rhymer-support/
+END:VEVENT
+END:VCALENDAR

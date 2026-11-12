@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-17-the-folklore-rooms-fatecrimes@brightonweekend.co.uk
+DTSTAMP:20261217T000000Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Fatecrimes
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/fatecrimes-debut-album-
+ release-show-tickets-2004381095814\nMore: https://brightonweekend.co.uk/e/
+ 2026-12-17-the-folklore-rooms-fatecrimes/
+URL:https://brightonweekend.co.uk/e/2026-12-17-the-folklore-rooms-fatecrime
+ s/
+END:VEVENT
+END:VCALENDAR

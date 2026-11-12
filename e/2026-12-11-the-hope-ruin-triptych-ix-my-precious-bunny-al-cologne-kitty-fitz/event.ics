@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-11-the-hope-ruin-triptych-ix-my-precious-bunny-al-cologne-kitty
+ -fitz@brightonweekend.co.uk
+DTSTAMP:20261211T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Triptych IX: My Precious Bunny\, Al Cologne & Kitty Fitz
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/hktllhq8/triptych-ix-my-prec
+ ious-bunny-al-cologne-kitty-fitz\nMore: https://brightonweekend.co.uk/e/20
+ 26-12-11-the-hope-ruin-triptych-ix-my-precious-bunny-al-cologne-kitty-fitz
+ /
+URL:https://brightonweekend.co.uk/e/2026-12-11-the-hope-ruin-triptych-ix-my
+ -precious-bunny-al-cologne-kitty-fitz/
+END:VEVENT
+END:VCALENDAR

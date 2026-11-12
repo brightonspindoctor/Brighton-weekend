@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-03-komedia-the-brighton-moon-hop@brightonweekend.co.uk
+DTSTAMP:20270703T000000Z
+DTSTART:20270703T200000Z
+DTEND:20270703T230000Z
+SUMMARY:The Brighton Moon-Hop
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87365897
+ 9/events/128676079\nMore: https://brightonweekend.co.uk/e/2027-07-03-komed
+ ia-the-brighton-moon-hop/
+URL:https://brightonweekend.co.uk/e/2027-07-03-komedia-the-brighton-moon-ho
+ p/
+END:VEVENT
+END:VCALENDAR

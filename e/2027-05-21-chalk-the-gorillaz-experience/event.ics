@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-21-chalk-the-gorillaz-experience@brightonweekend.co.uk
+DTSTAMP:20270521T000000Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:The Gorillaz Experience
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/V62b7a00e31a\nMore: https://brigh
+ tonweekend.co.uk/e/2027-05-21-chalk-the-gorillaz-experience/
+URL:https://brightonweekend.co.uk/e/2027-05-21-chalk-the-gorillaz-experienc
+ e/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-02-the-folklore-rooms-shaina-hayes@brightonweekend.co.uk
+DTSTAMP:20270302T000000Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:Shaina Hayes
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/x65eb0714cb9\nMore: https://brigh
+ tonweekend.co.uk/e/2027-03-02-the-folklore-rooms-shaina-hayes/
+URL:https://brightonweekend.co.uk/e/2027-03-02-the-folklore-rooms-shaina-ha
+ yes/
+END:VEVENT
+END:VCALENDAR

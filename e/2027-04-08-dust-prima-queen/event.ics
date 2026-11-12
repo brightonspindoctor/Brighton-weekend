@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-08-dust-prima-queen@brightonweekend.co.uk
+DTSTAMP:20270408T000000Z
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+SUMMARY:Prima Queen
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6af359faf16e8f00018bcfc7\nMore: 
+ https://brightonweekend.co.uk/e/2027-04-08-dust-prima-queen/
+URL:https://brightonweekend.co.uk/e/2027-04-08-dust-prima-queen/
+END:VEVENT
+END:VCALENDAR

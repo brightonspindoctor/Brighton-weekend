@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-06-green-door-store-splitting-the-atom-lxxxii-experimental-free
+ -noise-all-dayer@brightonweekend.co.uk
+DTSTAMP:20261206T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Splitting The Atom LXXXII Experimental/Free/Noise All-Dayer
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/splitting-the-a
+ tom-lxxxii-experimental-free-noise-all-dayer/\nMore: https://brightonweeke
+ nd.co.uk/e/2026-12-06-green-door-store-splitting-the-atom-lxxxii-experimen
+ tal-free-noise-all-dayer/
+URL:https://brightonweekend.co.uk/e/2026-12-06-green-door-store-splitting-t
+ he-atom-lxxxii-experimental-free-noise-all-dayer/
+END:VEVENT
+END:VCALENDAR

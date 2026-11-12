@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-09-dust-rip-magic@brightonweekend.co.uk
+DTSTAMP:20270409T000000Z
+DTSTART;VALUE=DATE:20270409
+DTEND;VALUE=DATE:20270410
+SUMMARY:RIP magic
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6af2f1deffcdef00014b4971\nMore: 
+ https://brightonweekend.co.uk/e/2027-04-09-dust-rip-magic/
+URL:https://brightonweekend.co.uk/e/2027-04-09-dust-rip-magic/
+END:VEVENT
+END:VCALENDAR

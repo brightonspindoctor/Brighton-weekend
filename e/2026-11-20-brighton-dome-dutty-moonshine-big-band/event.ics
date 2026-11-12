@@ -6,8 +6,8 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-20-brighton-dome-dutty-moonshine-big-band@brightonweekend.co.uk
 DTSTAMP:20261120T000000Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
+DTSTART:20261120T190000Z
+DTEND:20261120T230000Z
 SUMMARY:Dutty Moonshine Big Band
 LOCATION:Brighton Dome\, Brighton
 DESCRIPTION:Tickets: https://brightondome.org/whats-on/LSY-dutty-moonshine-

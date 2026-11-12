@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-23-chalk-alborosie@brightonweekend.co.uk
+DTSTAMP:20270523T000000Z
+DTSTART;VALUE=DATE:20270523
+DTEND;VALUE=DATE:20270524
+SUMMARY:Alborosie
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/Sb15b26b1a47\nMore: https://brigh
+ tonweekend.co.uk/e/2027-05-23-chalk-alborosie/
+URL:https://brightonweekend.co.uk/e/2027-05-23-chalk-alborosie/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-11-the-rose-hill-portmeirion-with-special-guest-dj-format@brigh
+ tonweekend.co.uk
+DTSTAMP:20261211T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:PORTMEIRION with special guest DJ FORMAT
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/portmeirion-with-speci
+ al-guest-dj-format-december-2026/\nMore: https://brightonweekend.co.uk/e/2
+ 026-12-11-the-rose-hill-portmeirion-with-special-guest-dj-format/
+URL:https://brightonweekend.co.uk/e/2026-12-11-the-rose-hill-portmeirion-wi
+ th-special-guest-dj-format/
+END:VEVENT
+END:VCALENDAR

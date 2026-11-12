@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-17-chalk-the-skints@brightonweekend.co.uk
+DTSTAMP:20270217T000000Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:The Skints
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/I1a996227e54\nMore: https://brigh
+ tonweekend.co.uk/e/2027-02-17-chalk-the-skints/
+URL:https://brightonweekend.co.uk/e/2027-02-17-chalk-the-skints/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-10-shelter-hall-igloo-dining-now-open-for-booking-11th-nov-10th
+ -jan@brightonweekend.co.uk
+DTSTAMP:20270110T000000Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+SUMMARY:Igloo Dining Now Open for Booking | 11th Nov - 10th Jan
+LOCATION:Shelter Hall\, Brighton
+DESCRIPTION:Tickets: https://shelterhall.co.uk/christmas/festive-igloos/\nM
+ ore: https://brightonweekend.co.uk/e/2027-01-10-shelter-hall-igloo-dining-
+ now-open-for-booking-11th-nov-10th-jan/
+URL:https://brightonweekend.co.uk/e/2027-01-10-shelter-hall-igloo-dining-no
+ w-open-for-booking-11th-nov-10th-jan/
+END:VEVENT
+END:VCALENDAR

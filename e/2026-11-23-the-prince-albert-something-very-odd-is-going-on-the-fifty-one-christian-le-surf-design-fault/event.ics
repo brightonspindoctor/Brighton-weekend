@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-23-the-prince-albert-something-very-odd-is-going-on-the-fifty-o
+ ne-christian-le-surf-design-fault@brightonweekend.co.uk
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:Something Very Odd is Going On! The FIFTY ONE + Christian Le Surf +
+  Design Fault
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.ticketsource.com/andrew-rae/something-very
+ -odd-is-going-on/2026-11-23/20:00/t-qmykakl\nMore: https://brightonweekend
+ .co.uk/e/2026-11-23-the-prince-albert-something-very-odd-is-going-on-the-f
+ ifty-one-christian-le-surf-design-fault/
+URL:https://brightonweekend.co.uk/e/2026-11-23-the-prince-albert-something-
+ very-odd-is-going-on-the-fifty-one-christian-le-surf-design-fault/
+END:VEVENT
+END:VCALENDAR

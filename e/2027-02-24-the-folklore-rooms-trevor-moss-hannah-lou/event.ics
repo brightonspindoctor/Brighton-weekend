@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-24-the-folklore-rooms-trevor-moss-hannah-lou@brightonweekend.co
+ .uk
+DTSTAMP:20270224T000000Z
+DTSTART;VALUE=DATE:20270224
+DTEND;VALUE=DATE:20270225
+SUMMARY:Trevor Moss & Hannah-Lou
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/trevor-moss-hannah-lo
+ u/the-folklore-rooms/3755086\nMore: https://brightonweekend.co.uk/e/2027-0
+ 2-24-the-folklore-rooms-trevor-moss-hannah-lou/
+URL:https://brightonweekend.co.uk/e/2027-02-24-the-folklore-rooms-trevor-mo
+ ss-hannah-lou/
+END:VEVENT
+END:VCALENDAR

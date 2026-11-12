@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-caroline-of-brunswick-petrol-bastard-support@brightonweekend
+ .co.uk
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Petrol Bastard + Support
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://shop.ticketmonkey.co.uk/events/94ef4eac-4534-4
+ c78-ba81-0d12a3ccb1a3\nMore: https://brightonweekend.co.uk/e/2026-12-12-ca
+ roline-of-brunswick-petrol-bastard-support/
+URL:https://brightonweekend.co.uk/e/2026-12-12-caroline-of-brunswick-petrol
+ -bastard-support/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-24-chalk-diiv@brightonweekend.co.uk
+DTSTAMP:20270624T000000Z
+DTSTART;VALUE=DATE:20270624
+DTEND;VALUE=DATE:20270625
+SUMMARY:DIIV
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/Bbc6c9578bb5\nMore: https://brigh
+ tonweekend.co.uk/e/2027-06-24-chalk-diiv/
+URL:https://brightonweekend.co.uk/e/2027-06-24-chalk-diiv/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-19-the-pipeline-jumpers-for-goalposts@brightonweekend.co.uk
+DTSTAMP:20261219T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Jumpers For Goalposts
+LOCATION:The Pipeline\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly90aWNr
+ ZXRzLmVudHMyNC5jb20vZXZlbnQvanVtcGVycy1mb3ItZ29hbHBvc3RzLXRoZS1waXBlbGluZS
+ 90aGUtcGlwZWxpbmUvMzc1NDU4Nw/supplier/SeeTickets/suppliedid/Mzc1NDU4Nw/tic
+ ketid/8195362/checksum/1aa2c983aeff67687bad11daa9a7950e/track/true?title=J
+ UMPERS+FOR+GOALPOSTS+%40+THE+PIPELINE&badge=&venueId=57176\nMore: https://
+ brightonweekend.co.uk/e/2026-12-19-the-pipeline-jumpers-for-goalposts/
+URL:https://brightonweekend.co.uk/e/2026-12-19-the-pipeline-jumpers-for-goa
+ lposts/
+END:VEVENT
+END:VCALENDAR

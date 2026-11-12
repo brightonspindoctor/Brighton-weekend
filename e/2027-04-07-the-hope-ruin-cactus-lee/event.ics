@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-07-the-hope-ruin-cactus-lee@brightonweekend.co.uk
+DTSTAMP:20270407T000000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270408
+SUMMARY:Cactus Lee
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/zocbzygi/cactus-lee\nMore: h
+ ttps://brightonweekend.co.uk/e/2027-04-07-the-hope-ruin-cactus-lee/
+URL:https://brightonweekend.co.uk/e/2027-04-07-the-hope-ruin-cactus-lee/
+END:VEVENT
+END:VCALENDAR

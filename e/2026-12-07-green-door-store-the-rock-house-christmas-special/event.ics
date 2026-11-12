@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-07-green-door-store-the-rock-house-christmas-special@brightonwe
+ ekend.co.uk
+DTSTAMP:20261207T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:The Rock House – Christmas Special
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://carousel.org.uk/whats-on/therockhouse-december
+ \nMore: https://brightonweekend.co.uk/e/2026-12-07-green-door-store-the-ro
+ ck-house-christmas-special/
+URL:https://brightonweekend.co.uk/e/2026-12-07-green-door-store-the-rock-ho
+ use-christmas-special/
+END:VEVENT
+END:VCALENDAR

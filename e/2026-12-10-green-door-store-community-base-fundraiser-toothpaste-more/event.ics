@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-10-green-door-store-community-base-fundraiser-toothpaste-more@b
+ rightonweekend.co.uk
+DTSTAMP:20261210T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Community Base Fundraiser: Toothpaste + more
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.com/e/community-base-mixtape-ti
+ ckets-2004426772434\nMore: https://brightonweekend.co.uk/e/2026-12-10-gree
+ n-door-store-community-base-fundraiser-toothpaste-more/
+URL:https://brightonweekend.co.uk/e/2026-12-10-green-door-store-community-b
+ ase-fundraiser-toothpaste-more/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-21-resident-little-grandad-live-signing@brightonweekend.co.uk
+DTSTAMP:20270121T000000Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:Little Grandad: Live + Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6aec5cb3b3eae5000141694a\nMore: 
+ https://brightonweekend.co.uk/e/2027-01-21-resident-little-grandad-live-si
+ gning/
+URL:https://brightonweekend.co.uk/e/2027-01-21-resident-little-grandad-live
+ -signing/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-31-the-brunswick-new-years-eve-at-the-brunswick@brightonweekend
+ .co.uk
+DTSTAMP:20261231T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:New Years Eve
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/new-years
+ -eve-at-the-brunswick\nMore: https://brightonweekend.co.uk/e/2026-12-31-th
+ e-brunswick-new-years-eve-at-the-brunswick/
+URL:https://brightonweekend.co.uk/e/2026-12-31-the-brunswick-new-years-eve-
+ at-the-brunswick/
+END:VEVENT
+END:VCALENDAR

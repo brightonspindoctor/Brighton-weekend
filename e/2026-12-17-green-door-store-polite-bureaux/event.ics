@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-17-green-door-store-polite-bureaux@brightonweekend.co.uk
+DTSTAMP:20261217T000000Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Polite Bureaux
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/polite-bureax-brighto
+ n-headline/the-green-door-store/3698221?utm_source=ig&utm_medium=social&ut
+ m_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY
+ 2MTk3NDMzOTI0NTkAAaczbIBvkSGYsaDxmZWGXmxY7WZciZeHjRxjNPdodMBLlhR2vgwDkMAbX
+ KkLUQ_aem_jTFtn-sN1Z69d7eN8Y-M7A\nMore: https://brightonweekend.co.uk/e/20
+ 26-12-17-green-door-store-polite-bureaux/
+URL:https://brightonweekend.co.uk/e/2026-12-17-green-door-store-polite-bure
+ aux/
+END:VEVENT
+END:VCALENDAR

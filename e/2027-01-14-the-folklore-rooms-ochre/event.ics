@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-14-the-folklore-rooms-ochre@brightonweekend.co.uk
+DTSTAMP:20270114T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:Ochre
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/z86084952ba2\nMore: https://brigh
+ tonweekend.co.uk/e/2027-01-14-the-folklore-rooms-ochre/
+URL:https://brightonweekend.co.uk/e/2027-01-14-the-folklore-rooms-ochre/
+END:VEVENT
+END:VCALENDAR

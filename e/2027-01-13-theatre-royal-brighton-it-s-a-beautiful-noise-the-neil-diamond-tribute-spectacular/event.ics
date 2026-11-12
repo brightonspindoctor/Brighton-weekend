@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-13-theatre-royal-brighton-it-s-a-beautiful-noise-the-neil-diamo
+ nd-tribute-spectacular@brightonweekend.co.uk
+DTSTAMP:20270113T000000Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+SUMMARY:It's A Beautiful Noise: The Neil Diamond Tribute Spectacular
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/its-a-beautiful-noise
+ -the-neil-diamond-tribute-spectacular/theatre-royal-brighton/calendar/\nMo
+ re: https://brightonweekend.co.uk/e/2027-01-13-theatre-royal-brighton-it-s
+ -a-beautiful-noise-the-neil-diamond-tribute-spectacular/
+URL:https://brightonweekend.co.uk/e/2027-01-13-theatre-royal-brighton-it-s-
+ a-beautiful-noise-the-neil-diamond-tribute-spectacular/
+END:VEVENT
+END:VCALENDAR

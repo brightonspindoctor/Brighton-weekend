@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-rossi-bar-10-years-of-missing-people@brightonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:10 years of Missing People
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://therossibar.co.uk/events/10-years-of-missing-p
+ eople/\nMore: https://brightonweekend.co.uk/e/2026-12-12-rossi-bar-10-year
+ s-of-missing-people/
+URL:https://brightonweekend.co.uk/e/2026-12-12-rossi-bar-10-years-of-missin
+ g-people/
+END:VEVENT
+END:VCALENDAR

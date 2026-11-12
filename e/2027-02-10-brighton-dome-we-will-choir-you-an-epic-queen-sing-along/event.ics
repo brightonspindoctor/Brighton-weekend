@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-10-brighton-dome-we-will-choir-you-an-epic-queen-sing-along@bri
+ ghtonweekend.co.uk
+DTSTAMP:20270210T000000Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:We Will CHOIR! You: An EPIC Queen Sing-Along!
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
+ alse\,false&top_filter=all&page=3&view=list\nMore: https://brightonweekend
+ .co.uk/e/2027-02-10-brighton-dome-we-will-choir-you-an-epic-queen-sing-alo
+ ng/
+URL:https://brightonweekend.co.uk/e/2027-02-10-brighton-dome-we-will-choir-
+ you-an-epic-queen-sing-along/
+END:VEVENT
+END:VCALENDAR

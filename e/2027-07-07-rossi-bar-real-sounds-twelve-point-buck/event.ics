@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-07-rossi-bar-real-sounds-twelve-point-buck@brightonweekend.co.u
+ k
+DTSTAMP:20270707T000000Z
+DTSTART;VALUE=DATE:20270707
+DTEND;VALUE=DATE:20270708
+SUMMARY:Real sounds: Twelve Point Buck
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://therossibar.co.uk/events/real-sounds-twelve-po
+ int-buck/\nMore: https://brightonweekend.co.uk/e/2027-07-07-rossi-bar-real
+ -sounds-twelve-point-buck/
+URL:https://brightonweekend.co.uk/e/2027-07-07-rossi-bar-real-sounds-twelve
+ -point-buck/
+END:VEVENT
+END:VCALENDAR

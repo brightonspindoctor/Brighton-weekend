@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-the-prince-albert-endless-christmas-8-with-the-surfin-lungs-
+ the-mandelbrot-shakes-the-tridents@brightonweekend.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Endless Christmas 8\, with The Surfin' Lungs The Mandelbrot Shakes 
+ & The Tridents
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://wegottickets.com/f/31465?fbclid=IwY2xjawVWrGtl
+ eHRuA2FlbQIxMABwZG9mBWJyaWQRMDNkSnFWNmVFanVTQkhZQlBzcnRjBmFwcF9pZBAyMjIwMz
+ kxNzg4MjAwODkyAAEfV8X1flQO9Z-_5yCjYaA4jsvg2N-ceXbrEbWd733KqEthrqzGGk8rwhlB
+ h8o_aem_J8NNsbAJrX1vJYXJqx6e3g\nMore: https://brightonweekend.co.uk/e/2026
+ -12-12-the-prince-albert-endless-christmas-8-with-the-surfin-lungs-the-man
+ delbrot-shakes-the-tridents/
+URL:https://brightonweekend.co.uk/e/2026-12-12-the-prince-albert-endless-ch
+ ristmas-8-with-the-surfin-lungs-the-mandelbrot-shakes-the-tridents/
+END:VEVENT
+END:VCALENDAR
