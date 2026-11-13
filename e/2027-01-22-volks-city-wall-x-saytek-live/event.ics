@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-22-volks-city-wall-x-saytek-live@brightonweekend.co.uk
+DTSTAMP:20270122T000000Z
+DTSTART:20270122T230000Z
+DTEND:20270123T020000Z
+SUMMARY:City Wall x Saytek Live
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/City-Wall-x-Saytek-Live/43184413/\nMore: https://brightonweekend.c
+ o.uk/e/2027-01-22-volks-city-wall-x-saytek-live/
+URL:https://brightonweekend.co.uk/e/2027-01-22-volks-city-wall-x-saytek-liv
+ e/
+END:VEVENT
+END:VCALENDAR

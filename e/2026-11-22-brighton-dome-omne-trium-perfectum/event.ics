@@ -6,13 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-22-brighton-dome-omne-trium-perfectum@brightonweekend.co.uk
 DTSTAMP:20261122T000000Z
-DTSTART;VALUE=DATE:20261122
-DTEND;VALUE=DATE:20261123
+DTSTART:20261122T110000Z
+DTEND:20261122T130000Z
 SUMMARY:Omne trium perfectum
 LOCATION:Brighton Dome\, Brighton
-DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
- alse\,false&top_filter=all&page=1&view=list\nMore: https://brightonweekend
- .co.uk/e/2026-11-22-brighton-dome-omne-trium-perfectum/
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LSI-omne-trium-perfe
+ ctum/\nMore: https://brightonweekend.co.uk/e/2026-11-22-brighton-dome-omne
+ -trium-perfectum/
 URL:https://brightonweekend.co.uk/e/2026-11-22-brighton-dome-omne-trium-per
  fectum/
 END:VEVENT

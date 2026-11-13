@@ -6,8 +6,8 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-14-brighton-dome-juliet-romeo@brightonweekend.co.uk
 DTSTAMP:20261114T000000Z
-DTSTART;VALUE=DATE:20261114
-DTEND;VALUE=DATE:20261115
+DTSTART:20261114T193000Z
+DTEND:20261114T223000Z
 SUMMARY:Juliet & Romeo
 LOCATION:Brighton Dome\, Brighton
 DESCRIPTION:Tickets: https://brightondome.org/whats-on/L8e-juliet-romeo/\nM

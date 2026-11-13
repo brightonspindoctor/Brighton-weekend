@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-14-theatre-royal-brighton-stephen-lynch-the-me-tour@brightonwee
+ kend.co.uk
+DTSTAMP:20270114T000000Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:Stephen Lynch: The Me Tour
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/stephen-lynch-the-me-
+ tour/theatre-royal-brighton/calendar/\nMore: https://brightonweekend.co.uk
+ /e/2027-01-14-theatre-royal-brighton-stephen-lynch-the-me-tour/
+URL:https://brightonweekend.co.uk/e/2027-01-14-theatre-royal-brighton-steph
+ en-lynch-the-me-tour/
+END:VEVENT
+END:VCALENDAR

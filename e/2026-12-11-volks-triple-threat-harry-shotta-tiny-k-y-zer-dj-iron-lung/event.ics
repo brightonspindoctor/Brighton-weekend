@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-11-volks-triple-threat-harry-shotta-tiny-k-y-zer-dj-iron-lung@b
+ rightonweekend.co.uk
+DTSTAMP:20261211T000000Z
+DTSTART:20261211T180000Z
+DTEND:20261211T220000Z
+SUMMARY:Triple Threat - Harry Shotta\, Tiny-K\, Y-zer & Dj Iron Lung
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Triple-Threat---Harry-Shotta-Tiny-K-Y-zer--Dj-Iron-Lung/43184377/\
+ nMore: https://brightonweekend.co.uk/e/2026-12-11-volks-triple-threat-harr
+ y-shotta-tiny-k-y-zer-dj-iron-lung/
+URL:https://brightonweekend.co.uk/e/2026-12-11-volks-triple-threat-harry-sh
+ otta-tiny-k-y-zer-dj-iron-lung/
+END:VEVENT
+END:VCALENDAR

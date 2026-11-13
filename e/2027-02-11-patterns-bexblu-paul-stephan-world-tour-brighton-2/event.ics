@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-11-patterns-bexblu-paul-stephan-world-tour-brighton-2@brightonw
+ eekend.co.uk
+DTSTAMP:20270211T000000Z
+DTSTART:20270211T190000Z
+DTEND:20270211T220000Z
+SUMMARY:BexBlu & Paul Stephan World Tour
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/bexblu-paul-stephan-world-tour-b
+ righton-11th-feb-patterns-brighton-tickets\nMore: https://brightonweekend.
+ co.uk/e/2027-02-11-patterns-bexblu-paul-stephan-world-tour-brighton-2/
+URL:https://brightonweekend.co.uk/e/2027-02-11-patterns-bexblu-paul-stephan
+ -world-tour-brighton-2/
+END:VEVENT
+END:VCALENDAR

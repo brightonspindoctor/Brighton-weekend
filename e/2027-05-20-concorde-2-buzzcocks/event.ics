@@ -6,12 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2027-05-20-concorde-2-buzzcocks@brightonweekend.co.uk
 DTSTAMP:20270520T000000Z
-DTSTART;VALUE=DATE:20270520
-DTEND;VALUE=DATE:20270521
+DTSTART:20270520T183000Z
+DTEND:20270520T213000Z
 SUMMARY:Buzzcocks
 LOCATION:Concorde 2\, Brighton
 DESCRIPTION:Tickets: https://www.axs.com/uk/events/1554543/buzzcocks-ticket
- s\nMore: https://brightonweekend.co.uk/e/2027-05-20-concorde-2-buzzcocks/
+ s/promos/1182780\nMore: https://brightonweekend.co.uk/e/2027-05-20-concord
+ e-2-buzzcocks/
 URL:https://brightonweekend.co.uk/e/2027-05-20-concorde-2-buzzcocks/
 END:VEVENT
 END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-08-komedia-gear-id-farrelly-no-pressure@brightonweekend.co.uk
+DTSTAMP:20270408T000000Z
+DTSTART:20270408T180000Z
+DTEND:20270408T210000Z
+SUMMARY:Gearóid Farrelly: No Pressure
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366926
+ 9/events/128676958\nMore: https://brightonweekend.co.uk/e/2027-04-08-komed
+ ia-gear-id-farrelly-no-pressure/
+URL:https://brightonweekend.co.uk/e/2027-04-08-komedia-gear-id-farrelly-no-
+ pressure/
+END:VEVENT
+END:VCALENDAR

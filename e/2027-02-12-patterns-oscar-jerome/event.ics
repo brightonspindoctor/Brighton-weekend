@@ -6,12 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2027-02-12-patterns-oscar-jerome@brightonweekend.co.uk
 DTSTAMP:20270212T000000Z
-DTSTART;VALUE=DATE:20270212
-DTEND;VALUE=DATE:20270213
+DTSTART:20270212T190000Z
+DTEND:20270212T220000Z
 SUMMARY:Oscar Jerome
 LOCATION:Patterns\, Brighton
-DESCRIPTION:Tickets: https://dice.fm/event/6ac4e55dd406700001e9234f\nMore: 
- https://brightonweekend.co.uk/e/2027-02-12-patterns-oscar-jerome/
+DESCRIPTION:Tickets: https://dice.fm/event/oscar-jerome-12th-feb-patterns-b
+ righton-tickets\nMore: https://brightonweekend.co.uk/e/2027-02-12-patterns
+ -oscar-jerome/
 URL:https://brightonweekend.co.uk/e/2027-02-12-patterns-oscar-jerome/
 END:VEVENT
 END:VCALENDAR

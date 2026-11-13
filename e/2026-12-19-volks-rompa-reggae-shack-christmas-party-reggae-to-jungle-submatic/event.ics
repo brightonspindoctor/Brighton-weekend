@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-19-volks-rompa-reggae-shack-christmas-party-reggae-to-jungle-su
+ bmatic@brightonweekend.co.uk
+DTSTAMP:20261219T000000Z
+DTSTART:20261219T160000Z
+DTEND:20261219T220000Z
+SUMMARY:Rompa Reggae Shack Christmas Party - Reggae to Jungle - Submatic
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Rompa-Reggae-Shack-Christmas-Party---Reggae-to-Jungle---Submatic/4
+ 3184392/\nMore: https://brightonweekend.co.uk/e/2026-12-19-volks-rompa-reg
+ gae-shack-christmas-party-reggae-to-jungle-submatic/
+URL:https://brightonweekend.co.uk/e/2026-12-19-volks-rompa-reggae-shack-chr
+ istmas-party-reggae-to-jungle-submatic/
+END:VEVENT
+END:VCALENDAR
