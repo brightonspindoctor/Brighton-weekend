@@ -159,8 +159,12 @@ are in `brighton-festivals.json`. Announced headliners are kept by hand in
 `festival-headliners.json`, keyed by festival id (so they only show for that
 edition), each with its source. The same file can list the other announced
 acts (`acts`, with `acts_source`): headliners show on the card, and tapping the
-card opens the rest A to Z (a leading "The" is ignored). The app reads the file
-directly, so a change shows as soon as it's merged. The published window runs from today to 31
+card opens the rest A to Z (a leading "The" is ignored). For a multi-day
+festival, `days` (with `days_source`) maps each date to the acts announced for
+it, headliners included; the opened card groups acts by day, with undated acts
+under "Day not announced". Once a festival has started, signed-in users can tick
+the acts they saw (`bw_acts_seen`, v86; only the person who ticked sees them).
+The app reads the file directly, so a change shows as soon as it's merged. The published window runs from today to 31
 December of the following year. Festival ids start with `festival:`, so their
 Interested/Going choices use the same `event_interest` table without mixing
 festivals into `events.json`.
@@ -183,6 +187,10 @@ festivals into `events.json`.
   change only through `bw_set_handle`; drops the unused `bw_set_profile_icon`
   and `bw_custom_events_venue_idx`; and makes the policies call `auth.uid()`
   once per query.
+- `v86` (acts seen, 14 November 2026): `bw_acts_seen` holds the festival acts
+  each person ticked as seen, read and written only through
+  `bw_my_acts_seen` and `bw_set_act_seen` (at most 3,000 ticks each); rows go
+  with the account.
 - Backups: an encrypted copy every night once two secrets are set; see
   `BACKUPS.md`.
 - When you change the database, add a new numbered file, run it in the

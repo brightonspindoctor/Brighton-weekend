@@ -70,6 +70,7 @@ for (d, loc), n in places.items():
 # Hand-kept headliners (festival-headliners.json): the shape must be right. An
 # id that isn't listed today is only noted, as a festival can drop out of a run.
 HEADLINERS = ROOT / "festival-headliners.json"
+when = {f["id"]: (f["date"], f.get("date_end") or f["date"]) for f in festivals if isinstance(f, dict) and f.get("id") and f.get("date")}
 if HEADLINERS.exists():
     try: heads = json.loads(HEADLINERS.read_text()).get("festivals")
     except Exception as exc: heads = None; errors.append(f"festival-headliners.json is not valid JSON: {exc}")
@@ -88,6 +89,26 @@ if HEADLINERS.exists():
                     errors.append(f"festival-headliners.json: {fid} acts must be a list of names")
                 elif not re.match(r"^https?://", str(h.get("acts_source") or ""), re.I):
                     errors.append(f"festival-headliners.json: {fid} needs an acts_source link for its acts")
+            days = h.get("days") if isinstance(h, dict) else None
+            if days is not None:
+                listed = set(names or []) | set(acts or [])
+                if not isinstance(days, dict) or not days:
+                    errors.append(f"festival-headliners.json: {fid} days must map dates to lists of names")
+                else:
+                    if not re.match(r"^https?://", str(h.get("days_source") or ""), re.I):
+                        errors.append(f"festival-headliners.json: {fid} needs a days_source link for its days")
+                    placed = []
+                    for day, who in days.items():
+                        span = when.get(fid)
+                        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(day)):
+                            errors.append(f"festival-headliners.json: {fid} has a day {day!r} that isn't a date")
+                        elif span and not span[0] <= day <= span[1]:
+                            errors.append(f"festival-headliners.json: {fid} day {day} is outside the festival ({span[0]} to {span[1]})")
+                        if not isinstance(who, list) or not who:
+                            errors.append(f"festival-headliners.json: {fid} {day} needs a list of names"); continue
+                        errors.extend(f"festival-headliners.json: {fid} {day}: {n!r} isn't in its headliners or acts" for n in who if n not in listed)
+                        placed.extend(who)
+                    errors.extend(f"festival-headliners.json: {fid}: {n!r} is on more than one day" for n in {n for n in placed if placed.count(n) > 1})
             if fid not in ids: print(f"Note: festival-headliners.json has {fid}, which isn't listed today")
 
 if errors:
