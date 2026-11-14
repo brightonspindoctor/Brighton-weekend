@@ -38,8 +38,11 @@ jobs:
           PASSPHRASE: ${{ secrets.BACKUP_PASSPHRASE }}
         run: |
           if [ -z "$DB_URL" ] || [ -z "$PASSPHRASE" ]; then
-            echo "::warning::Backups aren't set up yet: add the SUPABASE_DB_URL and BACKUP_PASSPHRASE secrets (see BACKUPS.md)."
+            # Fail rather than pass quietly: a green run with no backup looks
+            # like a backup. GitHub emails the owner about a failed run.
+            echo "::error::No backup was made: add the SUPABASE_DB_URL and BACKUP_PASSPHRASE secrets (see BACKUPS.md)."
             echo "ready=false" >> "$GITHUB_OUTPUT"
+            exit 1
           else
             echo "ready=true" >> "$GITHUB_OUTPUT"
           fi

@@ -24,7 +24,7 @@ artifacts.
 4. Under **Actions → Nightly database backup**, click **Run workflow** and
    check the run finishes with a "database-backup" artifact.
 
-Until both secrets are set, each run stops with a warning and saves nothing.
+Until both secrets are set, each run fails (so GitHub emails you) and saves nothing. As of 14 November 2026 no backup has ever been made.
 
 ## Open a backup
 

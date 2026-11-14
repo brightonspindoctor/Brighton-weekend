@@ -425,6 +425,33 @@ def merge(items):
         e["location_display"]=display_location(e["location"])
         result.append(e)
     return result
+# A festival's id ends with its start date, and people's Interested/Going
+# choices, ticked acts and festival-headliners.json are keyed by that id. When a
+# source corrects a festival's date (BST and All Points East did in November
+# 2026), the new id would orphan all of them. So if this run's id is new, and the
+# last published list had the same festival (same id up to the date) starting
+# within MOVE_DAYS that this run no longer lists, keep the old id.
+MOVE_DAYS=45
+def keep_stable_ids(festivals,previous):
+    new_ids={f["id"] for f in festivals}
+    by_stem={}
+    for pid,pdate in previous.items():
+        if pid in new_ids: continue
+        by_stem.setdefault(pid.rsplit(":",1)[0],[]).append((pid,pdate))
+    taken=set()
+    for f in festivals:
+        if f["id"] in previous: continue
+        try: d=date.fromisoformat(f["date"])
+        except ValueError: continue
+        near=[pid for pid,pdate in by_stem.get(f["id"].rsplit(":",1)[0],[])
+              if pid not in taken and abs((date.fromisoformat(pdate)-d).days)<=MOVE_DAYS]
+        if len(near)==1:
+            print(f"Keeping id {near[0]} for {f['title']} (date moved to {f['date']})")
+            taken.add(near[0]); f["id"]=near[0]
+    return festivals
+def previous_festival_dates():
+    try: return {f["id"]:f["date"] for f in json.loads(OUT.read_text()).get("festivals",[]) if f.get("id") and f.get("date")}
+    except Exception: return {}
 async def fetch_page(browser,url):
     page=await browser.new_page(); page.set_default_timeout(25000)
     try:
@@ -485,6 +512,7 @@ async def main():
             print(f"Validated {len(validated)} of {len(items)} scraped candidates.")
             validated=[e for e in validated if not is_sport_event(e.get("title"))]
             festivals=add_curated(merge(validated))
+            festivals=keep_stable_ids(festivals,previous_festival_dates())
             existing=0
             try: existing=len(json.loads(OUT.read_text()).get("festivals",[]))
             except Exception: pass
