@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-18-the-hope-ruin-call-me-franco-album-launch@brightonweekend.co
+ .uk
+DTSTAMP:20261218T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Call Me Franco Album Launch
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/call-me-franco-album-launch
+ /\nMore: https://brightonweekend.co.uk/e/2026-12-18-the-hope-ruin-call-me-
+ franco-album-launch/
+URL:https://brightonweekend.co.uk/e/2026-12-18-the-hope-ruin-call-me-franco
+ -album-launch/
+END:VEVENT
+END:VCALENDAR

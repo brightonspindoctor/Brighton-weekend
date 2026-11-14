@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-20-the-hope-ruin-hh-youth-sector-arcadia-residential-lifeloose-
+ two-man-lift@brightonweekend.co.uk
+DTSTAMP:20270220T000000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:HH: Youth Sector + Arcadia Residential + Lifeloose + Two Man Lift
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/be3y2mau/hh-youth-sector-arc
+ adia-residential-lifeloose-two-man-lift\nMore: https://brightonweekend.co.
+ uk/e/2027-02-20-the-hope-ruin-hh-youth-sector-arcadia-residential-lifeloos
+ e-two-man-lift/
+URL:https://brightonweekend.co.uk/e/2027-02-20-the-hope-ruin-hh-youth-secto
+ r-arcadia-residential-lifeloose-two-man-lift/
+END:VEVENT
+END:VCALENDAR

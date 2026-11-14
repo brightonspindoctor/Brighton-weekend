@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-15-patterns-kojaque@brightonweekend.co.uk
+DTSTAMP:20270315T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:Kojaque
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6af42887f6c58100018b2c7d\nMore: 
+ https://brightonweekend.co.uk/e/2027-03-15-patterns-kojaque/
+URL:https://brightonweekend.co.uk/e/2027-03-15-patterns-kojaque/
+END:VEVENT
+END:VCALENDAR

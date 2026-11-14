@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-30-resident-jordan-rakei-album-launch-show@brightonweekend.co.u
+ k
+DTSTAMP:20270130T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:Jordan Rakei: Album Launch Show
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6adb5c9d38df6e0001619ed9\nMore: 
+ https://brightonweekend.co.uk/e/2027-01-30-resident-jordan-rakei-album-lau
+ nch-show/
+URL:https://brightonweekend.co.uk/e/2027-01-30-resident-jordan-rakei-album-
+ launch-show/
+END:VEVENT
+END:VCALENDAR

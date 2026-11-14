@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-17-patterns-the-total-stone-roses-oaysis@brightonweekend.co.uk
+DTSTAMP:20270417T000000Z
+DTSTART;VALUE=DATE:20270417
+DTEND;VALUE=DATE:20270418
+SUMMARY:The Total Stone Roses & Oaysis
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6af44efad91d9200017b1b72\nMore: 
+ https://brightonweekend.co.uk/e/2027-04-17-patterns-the-total-stone-roses-
+ oaysis/
+URL:https://brightonweekend.co.uk/e/2027-04-17-patterns-the-total-stone-ros
+ es-oaysis/
+END:VEVENT
+END:VCALENDAR

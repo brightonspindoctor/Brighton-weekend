@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-15-quarters-free-the-rave-w-benny-page-doktor@brightonweekend.c
+ o.uk
+DTSTAMP:20270115T000000Z
+DTSTART:20270115T230000Z
+DTEND:20270116T040000Z
+SUMMARY:Free The Rave W Benny Page Doktor
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://www.quartersbrighton.co.uk/whatson/free-the-ra
+ ve-w-benny-page-doktor\nMore: https://brightonweekend.co.uk/e/2027-01-15-q
+ uarters-free-the-rave-w-benny-page-doktor/
+URL:https://brightonweekend.co.uk/e/2027-01-15-quarters-free-the-rave-w-ben
+ ny-page-doktor/
+END:VEVENT
+END:VCALENDAR

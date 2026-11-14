@@ -6,8 +6,8 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-24-green-door-store-the-love-buzz@brightonweekend.co.uk
 DTSTAMP:20261124T000000Z
-DTSTART;VALUE=DATE:20261124
-DTEND;VALUE=DATE:20261125
+DTSTART:20261124T190000Z
+DTEND:20261124T220000Z
 SUMMARY:The Love Buzz
 LOCATION:Green Door Store\, Brighton
 DESCRIPTION:Tickets: https://dice.fm/event/mxnqov-the-love-buzz-carne-kanuk

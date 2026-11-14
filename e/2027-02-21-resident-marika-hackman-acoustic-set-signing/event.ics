@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-21-resident-marika-hackman-acoustic-set-signing@brightonweekend
+ .co.uk
+DTSTAMP:20270221T000000Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Marika Hackman: Acoustic Set + Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6af1c9530c187600013c1095\nMore: 
+ https://brightonweekend.co.uk/e/2027-02-21-resident-marika-hackman-acousti
+ c-set-signing/
+URL:https://brightonweekend.co.uk/e/2027-02-21-resident-marika-hackman-acou
+ stic-set-signing/
+END:VEVENT
+END:VCALENDAR

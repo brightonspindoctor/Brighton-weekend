@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-13-chalk-ladytron@brightonweekend.co.uk
+DTSTAMP:20261213T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Ladytron
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/f04e0f8f0959\nMore: https://brigh
+ tonweekend.co.uk/e/2026-12-13-chalk-ladytron/
+URL:https://brightonweekend.co.uk/e/2026-12-13-chalk-ladytron/
+END:VEVENT
+END:VCALENDAR

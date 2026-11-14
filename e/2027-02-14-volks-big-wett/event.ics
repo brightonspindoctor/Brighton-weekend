@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-14-volks-big-wett@brightonweekend.co.uk
+DTSTAMP:20270214T000000Z
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+SUMMARY:Big Wett
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1698525/big-wett-tickets
+ \nMore: https://brightonweekend.co.uk/e/2027-02-14-volks-big-wett/
+URL:https://brightonweekend.co.uk/e/2027-02-14-volks-big-wett/
+END:VEVENT
+END:VCALENDAR

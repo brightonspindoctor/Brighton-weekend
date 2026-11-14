@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-24-the-folklore-rooms-gabriel-moreno@brightonweekend.co.uk
+DTSTAMP:20270124T000000Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Gabriel Moreno
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://wegottickets.com/f/31918\nMore: https://bright
+ onweekend.co.uk/e/2027-01-24-the-folklore-rooms-gabriel-moreno/
+URL:https://brightonweekend.co.uk/e/2027-01-24-the-folklore-rooms-gabriel-m
+ oreno/
+END:VEVENT
+END:VCALENDAR

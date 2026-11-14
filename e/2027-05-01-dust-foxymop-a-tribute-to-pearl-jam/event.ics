@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-01-dust-foxymop-a-tribute-to-pearl-jam@brightonweekend.co.uk
+DTSTAMP:20270501T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Foxymop (A Tribute to Pearl Jam)
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6af45809f0000f00010f78e8\nMore: 
+ https://brightonweekend.co.uk/e/2027-05-01-dust-foxymop-a-tribute-to-pearl
+ -jam/
+URL:https://brightonweekend.co.uk/e/2027-05-01-dust-foxymop-a-tribute-to-pe
+ arl-jam/
+END:VEVENT
+END:VCALENDAR

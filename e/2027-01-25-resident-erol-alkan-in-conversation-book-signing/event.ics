@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-25-resident-erol-alkan-in-conversation-book-signing@brightonwee
+ kend.co.uk
+DTSTAMP:20270125T000000Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:Erol Alkan: In Conversation + Book Signing
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6af2e6b2959ae800016ca9ef\nMore: 
+ https://brightonweekend.co.uk/e/2027-01-25-resident-erol-alkan-in-conversa
+ tion-book-signing/
+URL:https://brightonweekend.co.uk/e/2027-01-25-resident-erol-alkan-in-conve
+ rsation-book-signing/
+END:VEVENT
+END:VCALENDAR

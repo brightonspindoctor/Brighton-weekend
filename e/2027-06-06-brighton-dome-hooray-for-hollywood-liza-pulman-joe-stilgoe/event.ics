@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-06-brighton-dome-hooray-for-hollywood-liza-pulman-joe-stilgoe@b
+ rightonweekend.co.uk
+DTSTAMP:20270606T000000Z
+DTSTART;VALUE=DATE:20270606
+DTEND;VALUE=DATE:20270607
+SUMMARY:Hooray For Hollywood: Liza Pulman & Joe Stilgoe
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
+ alse\,false&top_filter=all&page=5&view=list\nMore: https://brightonweekend
+ .co.uk/e/2027-06-06-brighton-dome-hooray-for-hollywood-liza-pulman-joe-sti
+ lgoe/
+URL:https://brightonweekend.co.uk/e/2027-06-06-brighton-dome-hooray-for-hol
+ lywood-liza-pulman-joe-stilgoe/
+END:VEVENT
+END:VCALENDAR

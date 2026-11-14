@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-18-the-brunswick-hiraeth-presents-irish-welsh-and-english-folk-
+ night@brightonweekend.co.uk
+DTSTAMP:20261218T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Hiraeth Presents: Irish\, Welsh and English Folk Night
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/hiraeth-p
+ resents-irish-welsh-and-english-folk-night\nMore: https://brightonweekend.
+ co.uk/e/2026-12-18-the-brunswick-hiraeth-presents-irish-welsh-and-english-
+ folk-night/
+URL:https://brightonweekend.co.uk/e/2026-12-18-the-brunswick-hiraeth-presen
+ ts-irish-welsh-and-english-folk-night/
+END:VEVENT
+END:VCALENDAR

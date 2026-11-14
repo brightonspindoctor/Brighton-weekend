@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-08-rossi-bar-max-gomart@brightonweekend.co.uk
+DTSTAMP:20261208T000000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Max Gomart
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://therossibar.co.uk/events/max-gomart/\nMore: ht
+ tps://brightonweekend.co.uk/e/2026-12-08-rossi-bar-max-gomart/
+URL:https://brightonweekend.co.uk/e/2026-12-08-rossi-bar-max-gomart/
+END:VEVENT
+END:VCALENDAR

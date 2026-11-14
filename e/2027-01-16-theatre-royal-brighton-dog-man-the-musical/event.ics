@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-16-theatre-royal-brighton-dog-man-the-musical@brightonweekend.c
+ o.uk
+DTSTAMP:20270116T000000Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:Dog Man The Musical
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/dog-man-the-musical/t
+ heatre-royal-brighton/calendar/\nMore: https://brightonweekend.co.uk/e/202
+ 7-01-16-theatre-royal-brighton-dog-man-the-musical/
+URL:https://brightonweekend.co.uk/e/2027-01-16-theatre-royal-brighton-dog-m
+ an-the-musical/
+END:VEVENT
+END:VCALENDAR

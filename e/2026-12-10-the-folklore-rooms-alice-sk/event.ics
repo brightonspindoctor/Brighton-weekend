@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-10-the-folklore-rooms-alice-sk@brightonweekend.co.uk
+DTSTAMP:20261210T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Alice SK
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/alice-sk-special-gues
+ t/the-folklore-rooms/3755863\nMore: https://brightonweekend.co.uk/e/2026-1
+ 2-10-the-folklore-rooms-alice-sk/
+URL:https://brightonweekend.co.uk/e/2026-12-10-the-folklore-rooms-alice-sk/
+END:VEVENT
+END:VCALENDAR

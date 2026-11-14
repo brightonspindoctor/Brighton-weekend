@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-22-brighton-dome-crafty-kids-make-a-keepsake-box-2@brightonweek
+ end.co.uk
+DTSTAMP:20261122T000000Z
+DTSTART:20261122T111500Z
+DTEND:20261122T150000Z
+SUMMARY:Crafty Kids: Make A Keepsake Box!
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LMY-crafty-kids-make
+ -a-keepsake-box/\nMore: https://brightonweekend.co.uk/e/2026-11-22-brighto
+ n-dome-crafty-kids-make-a-keepsake-box-2/
+URL:https://brightonweekend.co.uk/e/2026-11-22-brighton-dome-crafty-kids-ma
+ ke-a-keepsake-box-2/
+END:VEVENT
+END:VCALENDAR

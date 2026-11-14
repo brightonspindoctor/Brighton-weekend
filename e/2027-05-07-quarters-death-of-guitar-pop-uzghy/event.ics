@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-07-quarters-death-of-guitar-pop-uzghy@brightonweekend.co.uk
+DTSTAMP:20270507T000000Z
+DTSTART:20270507T170000Z
+DTEND:20270507T210000Z
+SUMMARY:Death Of Guitar Pop Uzghy
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/death-of-guitar-pop/q
+ uarters/3755347\nMore: https://brightonweekend.co.uk/e/2027-05-07-quarters
+ -death-of-guitar-pop-uzghy/
+URL:https://brightonweekend.co.uk/e/2027-05-07-quarters-death-of-guitar-pop
+ -uzghy/
+END:VEVENT
+END:VCALENDAR

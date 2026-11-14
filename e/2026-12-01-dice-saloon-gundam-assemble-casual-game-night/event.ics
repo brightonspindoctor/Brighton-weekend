@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-01-dice-saloon-gundam-assemble-casual-game-night@brightonweeken
+ d.co.uk
+DTSTAMP:20261201T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Gundam Assemble Casual Game Night
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/gundam-assemble-casu
+ al-game-night-01-december-2026\nMore: https://brightonweekend.co.uk/e/2026
+ -12-01-dice-saloon-gundam-assemble-casual-game-night/
+URL:https://brightonweekend.co.uk/e/2026-12-01-dice-saloon-gundam-assemble-
+ casual-game-night/
+END:VEVENT
+END:VCALENDAR

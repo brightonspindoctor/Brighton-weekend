@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-13-concorde-2-nightmare-before-christmas-screening@brightonweek
+ end.co.uk
+DTSTAMP:20261213T000000Z
+DTSTART:20261213T190000Z
+DTEND:20261213T220000Z
+SUMMARY:Nightmare Before Christmas Screening
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/e/43184896\nMore: https://brig
+ htonweekend.co.uk/e/2026-12-13-concorde-2-nightmare-before-christmas-scree
+ ning/
+URL:https://brightonweekend.co.uk/e/2026-12-13-concorde-2-nightmare-before-
+ christmas-screening/
+END:VEVENT
+END:VCALENDAR

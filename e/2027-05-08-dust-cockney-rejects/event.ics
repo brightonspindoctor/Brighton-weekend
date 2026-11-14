@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-08-dust-cockney-rejects@brightonweekend.co.uk
+DTSTAMP:20270508T000000Z
+DTSTART;VALUE=DATE:20270508
+DTEND;VALUE=DATE:20270509
+SUMMARY:Cockney Rejects
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6af4608ce45696000112cb7e\nMore: 
+ https://brightonweekend.co.uk/e/2027-05-08-dust-cockney-rejects/
+URL:https://brightonweekend.co.uk/e/2027-05-08-dust-cockney-rejects/
+END:VEVENT
+END:VCALENDAR

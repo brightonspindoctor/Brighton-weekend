@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-13-the-folklore-rooms-an-intimate-folk-night@brightonweekend.co
+ .uk
+DTSTAMP:20261213T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:An Intimate Folk Night
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/an-intimate-folk-nigh
+ t-w-mianicholls-chloeharman/the-folklore-rooms/3755852\nMore: https://brig
+ htonweekend.co.uk/e/2026-12-13-the-folklore-rooms-an-intimate-folk-night/
+URL:https://brightonweekend.co.uk/e/2026-12-13-the-folklore-rooms-an-intima
+ te-folk-night/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-16-concorde-2-chinchilla@brightonweekend.co.uk
+DTSTAMP:20270316T000000Z
+DTSTART:20270316T193000Z
+DTEND:20270316T223000Z
+SUMMARY:Chinchilla
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1697384/chinchilla-ticke
+ ts\nMore: https://brightonweekend.co.uk/e/2027-03-16-concorde-2-chinchilla
+ /
+URL:https://brightonweekend.co.uk/e/2027-03-16-concorde-2-chinchilla/
+END:VEVENT
+END:VCALENDAR

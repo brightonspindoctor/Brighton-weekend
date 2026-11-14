@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-16-a-l-p-h-a-b-e-t-quatermass-3@brightonweekend.co.uk
+DTSTAMP:20261216T000000Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Quatermass 3
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/h42qtljc/quatermass-3-a-l-p-
+ h-a-b-e-t-brighton-16th-dec-2026\nMore: https://brightonweekend.co.uk/e/20
+ 26-12-16-a-l-p-h-a-b-e-t-quatermass-3/
+URL:https://brightonweekend.co.uk/e/2026-12-16-a-l-p-h-a-b-e-t-quatermass-3
+ /
+END:VEVENT
+END:VCALENDAR

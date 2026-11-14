@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-11-daltons-bndm-x-the-fools-x-dyke-night-xmas-party@brightonwee
+ kend.co.uk
+DTSTAMP:20261211T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:BNDM X the Fools X Dyke Night Xmas Party!
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.outsavvy.com/event/41136/bndm-x-the-fools-
+ x-dyke-night-xmas-party?utm_source=ig&utm_medium=social&utm_content=link_i
+ n_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTk
+ AAadvRNt0JeDHVSJmVgYa2WCXLBJ1QsZZClTcNNP_WC94HrR8XExiigGURiwgCA_aem_Dt1wYs
+ _LtGPCFXqoX8HBGQ\nMore: https://brightonweekend.co.uk/e/2026-12-11-daltons
+ -bndm-x-the-fools-x-dyke-night-xmas-party/
+URL:https://brightonweekend.co.uk/e/2026-12-11-daltons-bndm-x-the-fools-x-d
+ yke-night-xmas-party/
+END:VEVENT
+END:VCALENDAR

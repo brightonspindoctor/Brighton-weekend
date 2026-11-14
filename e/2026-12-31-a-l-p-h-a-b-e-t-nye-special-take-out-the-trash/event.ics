@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-31-a-l-p-h-a-b-e-t-nye-special-take-out-the-trash@brightonweeke
+ nd.co.uk
+DTSTAMP:20261231T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:NYE Special! Take Out the Trash
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/J85d39aff5e6\nMore: https://brigh
+ tonweekend.co.uk/e/2026-12-31-a-l-p-h-a-b-e-t-nye-special-take-out-the-tra
+ sh/
+URL:https://brightonweekend.co.uk/e/2026-12-31-a-l-p-h-a-b-e-t-nye-special-
+ take-out-the-trash/
+END:VEVENT
+END:VCALENDAR

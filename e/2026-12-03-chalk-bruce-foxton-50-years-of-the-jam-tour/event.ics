@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-03-chalk-bruce-foxton-50-years-of-the-jam-tour@brightonweekend.
+ co.uk
+DTSTAMP:20261203T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:BRUCE FOXTON '50 years of The Jam' Tour
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://chalkvenue.com/event/bruce-foxton-50-years-of-
+ the-jam-tour-2027-12-03\nMore: https://brightonweekend.co.uk/e/2026-12-03-
+ chalk-bruce-foxton-50-years-of-the-jam-tour/
+URL:https://brightonweekend.co.uk/e/2026-12-03-chalk-bruce-foxton-50-years-
+ of-the-jam-tour/
+END:VEVENT
+END:VCALENDAR

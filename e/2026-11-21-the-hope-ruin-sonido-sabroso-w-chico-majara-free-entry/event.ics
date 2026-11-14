@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-21-the-hope-ruin-sonido-sabroso-w-chico-majara-free-entry@brigh
+ tonweekend.co.uk
+DTSTAMP:20261121T000000Z
+DTSTART:20261121T210000Z
+DTEND:20261122T020000Z
+SUMMARY:¡SONIDO SABROSO! w/ Chico Majara
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/sonido-sabroso-w-chico-maja
+ ra-free-entry/\nMore: https://brightonweekend.co.uk/e/2026-11-21-the-hope-
+ ruin-sonido-sabroso-w-chico-majara-free-entry/
+URL:https://brightonweekend.co.uk/e/2026-11-21-the-hope-ruin-sonido-sabroso
+ -w-chico-majara-free-entry/
+END:VEVENT
+END:VCALENDAR

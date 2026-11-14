@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-27-chalk-orchards@brightonweekend.co.uk
+DTSTAMP:20270227T000000Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:Orchards
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/I9b5e2b633a1\nMore: https://brigh
+ tonweekend.co.uk/e/2027-02-27-chalk-orchards/
+URL:https://brightonweekend.co.uk/e/2027-02-27-chalk-orchards/
+END:VEVENT
+END:VCALENDAR

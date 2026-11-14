@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-13-the-rose-hill-safehouse-matinee-roger-turner-chris-biscoe-n-
+ o-moore-dragonmelt@brightonweekend.co.uk
+DTSTAMP:20261213T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Safehouse matinee: Roger Turner / Chris Biscoe / N.O.Moore + Dragon
+ melt
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/safehouse-matinee-roge
+ r-turner-chris-biscoe-n-o-moore-dragonmelt/\nMore: https://brightonweekend
+ .co.uk/e/2026-12-13-the-rose-hill-safehouse-matinee-roger-turner-chris-bis
+ coe-n-o-moore-dragonmelt/
+URL:https://brightonweekend.co.uk/e/2026-12-13-the-rose-hill-safehouse-mati
+ nee-roger-turner-chris-biscoe-n-o-moore-dragonmelt/
+END:VEVENT
+END:VCALENDAR

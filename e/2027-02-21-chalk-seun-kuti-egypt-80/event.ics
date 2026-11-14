@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-21-chalk-seun-kuti-egypt-80@brightonweekend.co.uk
+DTSTAMP:20270221T000000Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Seun Kuti & Egypt 80
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/Ac1d4aa77240\nMore: https://brigh
+ tonweekend.co.uk/e/2027-02-21-chalk-seun-kuti-egypt-80/
+URL:https://brightonweekend.co.uk/e/2027-02-21-chalk-seun-kuti-egypt-80/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-17-volks-marta@brightonweekend.co.uk
+DTSTAMP:20270217T000000Z
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+SUMMARY:Marta
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1698548/marta-tickets\nM
+ ore: https://brightonweekend.co.uk/e/2027-02-17-volks-marta/
+URL:https://brightonweekend.co.uk/e/2027-02-17-volks-marta/
+END:VEVENT
+END:VCALENDAR

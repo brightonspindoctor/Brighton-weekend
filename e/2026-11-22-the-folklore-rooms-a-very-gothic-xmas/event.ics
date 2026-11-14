@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-22-the-folklore-rooms-a-very-gothic-xmas@brightonweekend.co.uk
+DTSTAMP:20261122T000000Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:A Very Gothic Xmas
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/a-very-gothic-christm
+ as/the-folklore-rooms/3755276\nMore: https://brightonweekend.co.uk/e/2026-
+ 11-22-the-folklore-rooms-a-very-gothic-xmas/
+URL:https://brightonweekend.co.uk/e/2026-11-22-the-folklore-rooms-a-very-go
+ thic-xmas/
+END:VEVENT
+END:VCALENDAR

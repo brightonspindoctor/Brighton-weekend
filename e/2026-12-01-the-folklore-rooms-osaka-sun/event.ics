@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-01-the-folklore-rooms-osaka-sun@brightonweekend.co.uk
+DTSTAMP:20261201T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Osaka Sun
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/three-bands-live-at-the
+ -folklore-rooms-december-1st-2026-tickets-2004373077832\nMore: https://bri
+ ghtonweekend.co.uk/e/2026-12-01-the-folklore-rooms-osaka-sun/
+URL:https://brightonweekend.co.uk/e/2026-12-01-the-folklore-rooms-osaka-sun
+ /
+END:VEVENT
+END:VCALENDAR

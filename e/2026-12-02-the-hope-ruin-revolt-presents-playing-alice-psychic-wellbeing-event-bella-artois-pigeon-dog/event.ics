@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-02-the-hope-ruin-revolt-presents-playing-alice-psychic-wellbein
+ g-event-bella-artois-pigeon-dog@brightonweekend.co.uk
+DTSTAMP:20261202T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:REVOLT Presents: Playing Alice + Psychic & Wellbeing Event + Bella 
+ Artois + Pigeon Dog
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/revolt-presents-playing-ali
+ ce-psychic-wellbeing-event-bella-artois-pigeon-dog/\nMore: https://brighto
+ nweekend.co.uk/e/2026-12-02-the-hope-ruin-revolt-presents-playing-alice-ps
+ ychic-wellbeing-event-bella-artois-pigeon-dog/
+URL:https://brightonweekend.co.uk/e/2026-12-02-the-hope-ruin-revolt-present
+ s-playing-alice-psychic-wellbeing-event-bella-artois-pigeon-dog/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-07-resident-johnny-lillie-flynn-album-launch-show@brightonweeke
+ nd.co.uk
+DTSTAMP:20261207T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Johnny & Lillie Flynn: Album Launch Show
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6af467303d88910001d1d031\nMore: 
+ https://brightonweekend.co.uk/e/2026-12-07-resident-johnny-lillie-flynn-al
+ bum-launch-show/
+URL:https://brightonweekend.co.uk/e/2026-12-07-resident-johnny-lillie-flynn
+ -album-launch-show/
+END:VEVENT
+END:VCALENDAR
