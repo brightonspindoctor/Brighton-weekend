@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-13",
-  "range_start": "2026-11-13",
+  "updated": "2026-11-14",
+  "range_start": "2026-11-14",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -1520,6 +1520,18 @@
       "detail_url": "https://fezzy.uk/festival/headcorn-international-airshow/",
       "id": "festival:headcorn-international-airshow:2027-06-26",
       "location_display": "South East"
+    },
+    {
+      "title": "Let's Forge It - Battle of the Bands",
+      "date": "2027-06-26",
+      "date_end": "2027-06-26",
+      "location": "Rotherham",
+      "category": "Other",
+      "ticket_url": "https://fezzy.uk/festival/lets-forge-it-battle-of-the-bands/",
+      "source": "https://fezzy.uk/collections/rock-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/lets-forge-it-battle-of-the-bands/",
+      "id": "festival:let-s-forge-it-battle-of-the-bands:2027-06-26",
+      "location_display": "Rotherham"
     },
     {
       "title": "Restricted Forest",
@@ -3214,18 +3226,6 @@
       "location_display": "Yorkshire"
     },
     {
-      "title": "All Points East",
-      "date": "2027-08-22",
-      "date_end": "2027-08-30",
-      "location": "London · Multi-genre",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/all-points-east/",
-      "source": "https://fezzy.uk/collections/pop-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/all-points-east/",
-      "id": "festival:all-points-east:2027-08-22",
-      "location_display": "London · Multi-genre"
-    },
-    {
       "title": "Beermageddon",
       "date": "2027-08-26",
       "date_end": "2027-08-29",
@@ -3272,6 +3272,18 @@
       "detail_url": "https://fezzy.uk/festival/shambala/",
       "id": "festival:shambala:2027-08-26",
       "location_display": "Market Harborough"
+    },
+    {
+      "title": "All Points East",
+      "date": "2027-08-27",
+      "date_end": "2027-08-27",
+      "location": "London",
+      "category": "Music",
+      "ticket_url": "https://fezzy.uk/festival/all-points-east/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/all-points-east/",
+      "id": "festival:all-points-east:2027-08-27",
+      "location_display": "London"
     },
     {
       "title": "Awaken",
