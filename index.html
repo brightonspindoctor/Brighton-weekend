@@ -1984,9 +1984,13 @@ function festivalHeadlinersHtml(f){const h=festivalNames(festivalHeadliners[f.id
 // grouped by day, each day's headliners first; acts with no day come last.
 const lineupKey=n=>n.replace(/^the\s+/i,'');
 const byLineupName=(a,b)=>lineupKey(a).localeCompare(lineupKey(b),'en-GB',{sensitivity:'base',numeric:true});
-function festivalOtherActs(f){const e=festivalHeadliners[f.id]||{};return festivalNames(e.acts,festivalNames(e.headliners)).sort(byLineupName)}
+// A festival's line-up: the hand-kept entry in festival-headliners.json, or,
+// when that has no acts, the performers the festival's official site lists
+// (lineup in festivals.json, read by the daily refresh).
+function lineupEntry(f){const e=festivalHeadliners[f.id]||{};if(Array.isArray(e.acts)&&e.acts.length)return e;const l=Array.isArray(f.lineup)?f.lineup:[];return l.length?{...e,acts:l}:e}
+function festivalOtherActs(f){const e=lineupEntry(f);return festivalNames(e.acts,festivalNames(e.headliners)).sort(byLineupName)}
 function festivalLineupGroups(f){
- const e=festivalHeadliners[f.id]||{},H=festivalNames(e.headliners),A=festivalOtherActs(f),known=new Set([...H,...A]);
+ const e=lineupEntry(f),H=festivalNames(e.headliners),A=festivalOtherActs(f),known=new Set([...H,...A]);
  const end=f.date_end||f.date,days=e.days&&typeof e.days==='object'?Object.keys(e.days).filter(d=>/^\d{4}-\d{2}-\d{2}$/.test(d)&&d>=f.date&&d<=end).sort():[];
  if(end===f.date||!days.length)return [{label:'',heads:H,acts:A,single:true}];
  const placed=new Set(),groups=[];
@@ -2003,7 +2007,7 @@ function festivalLineupGroups(f){
 // "I saw them" ticks (v86): only once the festival has started, only your own.
 let actsSeen=new Map(),actsSeenReady=false;
 const festivalStarted=f=>!!f.date&&todayKey()>=f.date;
-const canTickActs=f=>festivalStarted(f)&&(!authUser||actsSeenReady);
+const canTickActs=f=>festivalStarted(f)&&!!authUser&&actsSeenReady; // signed-in users only
 const seenSet=id=>actsSeen.get(id)||new Set();
 async function loadActsSeen(){
  actsSeen=new Map();actsSeenReady=false;if(!authUser)return;
@@ -2046,8 +2050,7 @@ async function setActSeen(festivalId,act,seen){
 document.addEventListener('click',e=>{
  const b=e.target.closest('[data-seen-act]');if(!b)return;
  const id=b.dataset.festivalId,act=b.dataset.seenAct;
- if(!authUser){promptSignIn('seen',{type:'seen',festivalId:id,act});return}
- if(!actsSeenReady)return;
+ if(!authUser||!actsSeenReady)return;
  setActSeen(id,act,!seenSet(id).has(act));
 });
 async function loadFestivalHeadliners(){
@@ -2429,7 +2432,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=100', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=101', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>

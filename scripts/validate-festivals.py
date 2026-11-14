@@ -62,6 +62,7 @@ for i, f in enumerate(festivals):
     for k in ("ticket_url", "detail_url"):
         if not re.match(r"^https?://", str(f[k]), re.I): errors.append(f"{label}: {k} is not a web link")
     if f.get("official_url") and not re.match(r"^https?://", str(f["official_url"]), re.I): errors.append(f"{label}: official_url is not a web link")
+    if "lineup" in f and not (isinstance(f["lineup"], list) and all(isinstance(n, str) and n.strip() for n in f["lineup"])): errors.append(f"{label}: lineup must be a list of names")
 
 for (d, loc), n in places.items():
     if n > MAX_SAME_DATE_AND_PLACE and loc != "uk":
