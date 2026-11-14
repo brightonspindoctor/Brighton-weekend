@@ -158,7 +158,9 @@ page's "Official site" and this year's "tickets" links are followed: the
 ticket button goes to the festival's own ticket page (or its official site,
 kept as `official_url`), and when the official site's schema.org data gives
 this edition's dates for a festival of the same name, they replace Fezzy's
-(`dates_from: "official site"`). Ids stay the same when a date moves by up to
+(`dates_from: "official site"`), and any performers it lists become the
+festival's `lineup` (used when festival-headliners.json has no acts for it).
+Ticking acts you saw is for signed-in users only. Ids stay the same when a date moves by up to
 45 days. Sport and
 outdoor events are left out by their title. Hand-confirmed Brighton festivals
 are in `brighton-festivals.json`. Announced headliners are kept by hand in

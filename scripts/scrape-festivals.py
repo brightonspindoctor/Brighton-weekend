@@ -384,6 +384,17 @@ def official_dates(e,events):
         if b<a or (b-a).days>31 or abs((a-d).days)>60 or not (TODAY<=b and a<=END): continue
         found.add((a,b))
     return found.pop() if len(found)==1 else None
+def official_performers(e,events):
+    """Performer names the official site's JSON-LD gives for this festival
+    (deduplicated, in its order). Only from events named like the festival."""
+    names=[]
+    for ev in events:
+        if not same_festival_name(str(ev.get("name") or ""),e["title"]): continue
+        p=ev.get("performer") or []
+        for x in (p if isinstance(p,list) else [p]):
+            n=clean(x.get("name","") if isinstance(x,dict) else str(x or ""))
+            if 1<len(n)<=80 and not same_festival_name(n,e["title"]) and n not in names: names.append(n)
+    return names[:300]
 async def check_official_site(browser,e):
     url=e.get("official_url")
     if not url: return
@@ -398,6 +409,8 @@ async def check_official_site(browser,e):
             print(f"Official dates for {e['title']}: {got[0]} to {got[1]} (Fezzy said {e['date']} to {e.get('date_end')})")
             e["date"],e["date_end"]=got[0].isoformat(),got[1].isoformat()
         if got: e["dates_from"]="official site"
+        acts=official_performers(e,jsonld_events(blocks))
+        if acts: e["lineup"]=acts; e["lineup_from"]=url
     except Exception as exc:
         print(f"Official site check failed for {e['title']}: {exc}")
     finally:
@@ -494,6 +507,7 @@ def merge(items):
                 if "efestivals" in old["ticket_url"] and "efestivals" not in e["ticket_url"]:
                     old.update({"ticket_url":e["ticket_url"],"source":e["source"]})
                 if e.get("official_url") and not old.get("official_url"): old["official_url"]=e["official_url"]
+                if e.get("lineup") and not old.get("lineup"): old["lineup"]=e["lineup"]; old["lineup_from"]=e.get("lineup_from")
                 if "fezzy.uk" in old["ticket_url"] and not re.search(r"fezzy\.uk|efestivals",e["ticket_url"]):
                     old["ticket_url"]=e["ticket_url"]
                 break
@@ -602,7 +616,7 @@ async def main():
             async def official(e):
                 async with sem: await check_official_site(browser,e)
             await asyncio.gather(*(official(e) for e in validated))
-            print(f"Official sites: {sum(1 for e in validated if e.get('official_url'))} found, dates from {sum(1 for e in validated if e.get('dates_from'))}.")
+            print(f"Official sites: {sum(1 for e in validated if e.get('official_url'))} found, dates from {sum(1 for e in validated if e.get('dates_from'))}, line-ups from {sum(1 for e in validated if e.get('lineup'))}.")
             festivals=add_curated(merge(validated))
             festivals=keep_stable_ids(festivals,previous_festival_dates())
             existing=0
