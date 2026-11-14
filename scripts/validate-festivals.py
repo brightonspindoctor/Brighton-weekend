@@ -61,6 +61,7 @@ for i, f in enumerate(festivals):
     if "@" in title: errors.append(f"{label}: email-like title")
     for k in ("ticket_url", "detail_url"):
         if not re.match(r"^https?://", str(f[k]), re.I): errors.append(f"{label}: {k} is not a web link")
+    if f.get("official_url") and not re.match(r"^https?://", str(f["official_url"]), re.I): errors.append(f"{label}: official_url is not a web link")
 
 for (d, loc), n in places.items():
     if n > MAX_SAME_DATE_AND_PLACE and loc != "uk":

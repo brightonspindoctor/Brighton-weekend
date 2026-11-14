@@ -153,7 +153,13 @@ Source notes: `EVENT-DATA-SOURCES.md`.
 `.github/workflows/festivals.yml` refreshes `festivals.json` daily (soon after
 02:37, with a backup at 10:37). The scraper
 uses Fezzy as the primary discovery source and eFestivals as a music-festival
-cross-check, deduplicating by festival name, date and location; sport and
+cross-check, deduplicating by festival name, date and location. Each Fezzy
+page's "Official site" and this year's "tickets" links are followed: the
+ticket button goes to the festival's own ticket page (or its official site,
+kept as `official_url`), and when the official site's schema.org data gives
+this edition's dates for a festival of the same name, they replace Fezzy's
+(`dates_from: "official site"`). Ids stay the same when a date moves by up to
+45 days. Sport and
 outdoor events are left out by their title. Hand-confirmed Brighton festivals
 are in `brighton-festivals.json`. Announced headliners are kept by hand in
 `festival-headliners.json`, keyed by festival id (so they only show for that
