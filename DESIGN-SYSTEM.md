@@ -194,7 +194,7 @@ Inputs are always at least 16px so iPhones don't zoom on focus.
 | Happenings card | `.people-card.card` › `.happening-you`, `.happening-summary` › `.happening-summary-pill`, `.happening-group` › `.happening-person` › `.happening-status` | Your own status appears once per event, then friends by group, strongest response first. |
 | Crew roster | `.group-roster.group-roster-bottom.crew-roster` | Your crew, at the bottom of Happenings. |
 | Add an event | `.custom-event-launch`, `.custom-event-panel` (`.collapsed`) | The teal-tinted panel at the top of Happenings. |
-| Festival card | `.card.festival-card` › `.festival-date`, `.festival-location`, `.festival-type` | Built by `festivalCard()`; same commitment buttons and Tickets link as events. |
+| Festival card | `.card.festival-card` › `.festival-date`, `.festival-location`, `.festival-headliners`, `.festival-type` | Built by `festivalCard()`; same commitment buttons and Tickets link as events. With other acts listed it gets `.has-lineup`: tapping the card (or the `.lineup-toggle` "+N more acts" button) adds `.open` and shows `.festival-lineup`, the other acts A to Z in two columns. |
 | Panel | `.panel`, `.settings-card`, `.settings-section` | Card-coloured containers for forms and settings. |
 | Segmented control | `.segmented` (`.search-segmented` for four) | The Search modes. |
 | Checkbox tiles | `.choice` in `.choice-grid`, `.day-choice` in `.day-grid`, `.venue-row` | Multi-select lists: Search venues, days, Settings venues. |
