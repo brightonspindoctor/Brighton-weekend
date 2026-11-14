@@ -1,50 +1,333 @@
 {
-  "about": "Announced headliners for festivals on the Festivals tab, kept by hand. Keys are festival ids from festivals.json (they include the start date, so an entry only shows for that edition). Only add names the festival has announced as headliners, with a source. The app reads this file directly, so a change shows as soon as it is merged.",
+  "about": "Announced line-ups for festivals on the Festivals tab, kept by hand. Keys are festival ids from festivals.json (they include the start date, so an entry only shows for that edition). 'headliners' are names the festival has announced as headliners and show on the card; 'acts' are the other announced acts and show, A to Z, when the card is opened. Each list needs a source ('source' for headliners, 'acts_source' for acts). The app reads this file directly, so a change shows as soon as it is merged.",
   "festivals": {
     "festival:shiiine-on-weekender:2026-11-13": {
-      "headliners": ["The Wonder Stuff", "Happy Mondays", "Feeder", "Hard-Fi"],
+      "headliners": [
+        "The Wonder Stuff",
+        "Happy Mondays",
+        "Feeder",
+        "Hard-Fi"
+      ],
       "source": "https://www.northernchorus.co.uk/2026/04/01/shiiine-on-weekender-returns-in-november-happy-mondays-feeder-hard-fi-more/",
-      "checked": "2026-11-08"
+      "checked": "2026-11-14",
+      "acts": [
+        "Inspiral Carpets",
+        "The Farm",
+        "The Soup Dragons",
+        "The Twang",
+        "Ned's Atomic Dustbin",
+        "Pop Will Eat Itself",
+        "The Wannadies",
+        "Chapterhouse",
+        "Dubstar",
+        "The Ordinary Boys",
+        "The Bluetones",
+        "The Wedding Present",
+        "Dub Pistols",
+        "The Boo Radleys",
+        "The Clone Roses",
+        "K-Klass",
+        "Utah Saints",
+        "808 State",
+        "Dreadzone (DJ set)",
+        "Jim Bob",
+        "Interrobang",
+        "Wreckless Eric",
+        "Badly Drawn Boy",
+        "Ben Ottewell",
+        "Ian Prowse",
+        "The Real People",
+        "The Everly Pregnant Brothers",
+        "Dave Rowntree",
+        "Steve Lamacq",
+        "Andy Bush",
+        "Alan Leach",
+        "Dom Joly"
+      ],
+      "acts_source": "https://sonicpr.co.uk/artists/shiiine-on-weekender/"
     },
     "festival:c2c-country-to-country:2027-03-12": {
-      "headliners": ["Jelly Roll", "Ashley McBryde", "Riley Green"],
+      "headliners": [
+        "Jelly Roll",
+        "Ashley McBryde",
+        "Riley Green"
+      ],
       "source": "https://www.officialcharts.com/chart-news/country-to-country-2027-line-up-dates-tickets/",
-      "checked": "2026-11-08"
+      "checked": "2026-11-14",
+      "acts": [
+        "Cooper Alan",
+        "Jackson Dean",
+        "Carter Faith",
+        "Blake Whiten",
+        "Midland",
+        "Dasha",
+        "Emily Ann Roberts",
+        "Mack Geiger",
+        "Cole Swindell",
+        "Chase Matthew",
+        "Kashus Culpepper",
+        "Laci Kaye Booth",
+        "Late Night Thoughts",
+        "Colin Lynch",
+        "Chandler Walters",
+        "Benny G",
+        "Owen Riegling",
+        "Jason Scott & The High Heat",
+        "Greylan James",
+        "Lanie Gardner",
+        "Belles"
+      ],
+      "acts_source": "https://www.scotsman.com/news/uk-news/country-to-country-2027-line-up-glasgow-london-manchester-9204063"
     },
     "festival:slam-dunk-festival-north:2027-05-29": {
-      "headliners": ["Bowling For Soup", "Simple Plan"],
+      "headliners": [
+        "Bowling For Soup",
+        "Simple Plan"
+      ],
       "source": "https://www.nme.com/?p=3971588",
-      "checked": "2026-11-08"
+      "checked": "2026-11-14",
+      "acts": [
+        "Killswitch Engage",
+        "Reel Big Fish",
+        "Less Than Jake",
+        "The Interrupters",
+        "Grade 2",
+        "Beartooth",
+        "Wage War",
+        "The Amity Affliction",
+        "ERRA",
+        "Melrose Avenue",
+        "From Ashes To New",
+        "Sleeping With Sirens",
+        "The Used",
+        "The Maine",
+        "The Front Bottoms",
+        "Four Year Strong",
+        "We The Kings",
+        "The Academy Is…",
+        "Cute Is What We Aim For",
+        "Trophy Eyes",
+        "Knuckle Puck",
+        "Hot Milk",
+        "Mouth Culture",
+        "Love Rarely",
+        "As December Falls",
+        "RedHook",
+        "Overgrown",
+        "Billy Talent",
+        "Cobra Starship",
+        "Superheaven",
+        "Joyce Manor",
+        "The Paradox",
+        "Amira Elfeky",
+        "Forever The Sickest Kids",
+        "The Family Business Ltd",
+        "Ben Quad",
+        "Games We Play",
+        "Super Sometimes",
+        "Shoreline",
+        "Car Underwater",
+        "The Pretty Wild",
+        "Novelists",
+        "BLACKGOLD",
+        "Future Palace",
+        "The Haunt"
+      ],
+      "acts_source": "https://www.kerrang.com/slam-dunk-adds-more-bands-to-2027-line-up-cobra-starship-billy-talent-and-superheaven-leeds-temple-newsam-hatfield-park"
     },
     "festival:slam-dunk-festival-south:2027-05-30": {
-      "headliners": ["Bowling For Soup", "Simple Plan"],
+      "headliners": [
+        "Bowling For Soup",
+        "Simple Plan"
+      ],
       "source": "https://www.nme.com/?p=3971588",
-      "checked": "2026-11-08"
+      "checked": "2026-11-14",
+      "acts": [
+        "Killswitch Engage",
+        "Reel Big Fish",
+        "Less Than Jake",
+        "The Interrupters",
+        "Grade 2",
+        "Beartooth",
+        "Wage War",
+        "The Amity Affliction",
+        "ERRA",
+        "Melrose Avenue",
+        "From Ashes To New",
+        "Sleeping With Sirens",
+        "The Used",
+        "The Maine",
+        "The Front Bottoms",
+        "Four Year Strong",
+        "We The Kings",
+        "The Academy Is…",
+        "Cute Is What We Aim For",
+        "Trophy Eyes",
+        "Knuckle Puck",
+        "Hot Milk",
+        "Mouth Culture",
+        "Love Rarely",
+        "As December Falls",
+        "RedHook",
+        "Overgrown",
+        "Billy Talent",
+        "Cobra Starship",
+        "Superheaven",
+        "Joyce Manor",
+        "The Paradox",
+        "Amira Elfeky",
+        "Forever The Sickest Kids",
+        "The Family Business Ltd",
+        "Ben Quad",
+        "Games We Play",
+        "Super Sometimes",
+        "Shoreline",
+        "Car Underwater",
+        "The Pretty Wild",
+        "Novelists",
+        "BLACKGOLD",
+        "Future Palace",
+        "The Haunt"
+      ],
+      "acts_source": "https://www.kerrang.com/slam-dunk-adds-more-bands-to-2027-line-up-cobra-starship-billy-talent-and-superheaven-leeds-temple-newsam-hatfield-park"
     },
     "festival:mighty-hoopla:2027-06-05": {
-      "headliners": ["Robyn", "The Pussycat Dolls"],
+      "headliners": [
+        "Robyn",
+        "The Pussycat Dolls"
+      ],
       "source": "https://www.officialcharts.com/chart-news/mighty-hoopla-2027-line-up-tickets/",
-      "checked": "2026-11-08"
+      "checked": "2026-11-14",
+      "acts": [
+        "Kelis",
+        "Eve",
+        "Nicola Roberts",
+        "Alcazar",
+        "Artwork",
+        "Another Level",
+        "Armana Khan",
+        "Booty Luv",
+        "Gok Wan",
+        "Dagny",
+        "Countess Luann",
+        "Empress Of",
+        "Girls Don't Sync",
+        "Jordin Sparks",
+        "Louisa Johnson",
+        "Lisa Maffia & Romeo",
+        "Nina Sky",
+        "Tom Rasmussen",
+        "The Artful Dodger",
+        "Whigfield",
+        "Bebe Rexha",
+        "FLO",
+        "Sophie Ellis-Bextor",
+        "2 Unlimited",
+        "Ana Matronic",
+        "B*Witched",
+        "Bridge",
+        "Erol Alkan Disco 3000",
+        "Icona Pop",
+        "Jayda G",
+        "Kerry Katona's Kerry-oke",
+        "Rogue Traders",
+        "Sasha Coldy",
+        "Stooshe",
+        "Tony & the Kiki",
+        "Tsatsamis",
+        "Ultra Naté",
+        "Vengaboys"
+      ],
+      "acts_source": "https://timeout.com/london/news/mighty-hoopla-festival-2027-robyn-the-pussycat-dolls-tickets-prices-110226"
     },
-    "festival:british-summer-time:2027-06-27": {
-      "headliners": ["Bon Jovi", "RAYE"],
+    "festival:british-summer-time:2027-06-24": {
+      "headliners": [
+        "Bon Jovi",
+        "RAYE"
+      ],
       "source": "https://www.officialcharts.com/chart-news/raye-sienna-spiro-bst-hyde-park-london-2027-tickets-date-lineup/",
-      "checked": "2026-11-08"
+      "checked": "2026-11-14",
+      "acts": [
+        "Sienna Spiro"
+      ],
+      "acts_source": "https://www.officialcharts.com/chart-news/raye-sienna-spiro-bst-hyde-park-london-2027-tickets-date-lineup/"
+    },
+    "festival:bst-hyde-park:2027-06-24": {
+      "headliners": [
+        "Bon Jovi",
+        "RAYE"
+      ],
+      "source": "https://www.officialcharts.com/chart-news/raye-sienna-spiro-bst-hyde-park-london-2027-tickets-date-lineup/",
+      "checked": "2026-11-14",
+      "acts": [
+        "Sienna Spiro"
+      ],
+      "acts_source": "https://www.officialcharts.com/chart-news/raye-sienna-spiro-bst-hyde-park-london-2027-tickets-date-lineup/"
     },
     "festival:bloodstock:2027-08-05": {
-      "headliners": ["Mercyful Fate", "Electric Callboy", "Motionless In White"],
+      "headliners": [
+        "Mercyful Fate",
+        "Electric Callboy",
+        "Motionless In White"
+      ],
       "source": "https://www.kerrang.com/mercyful-fate-electric-callboy-and-motionless-in-white-lead-bloodstock-2027s-first-line-up-announcement",
-      "checked": "2026-11-08"
+      "checked": "2026-11-14",
+      "acts": [
+        "Madball",
+        "Gaerea",
+        "Kanonenfieber",
+        "Dethklok",
+        "Acid Bath",
+        "Green Lung",
+        "Children of Bodom",
+        "DevilDriver",
+        "Corrosion of Conformity",
+        "Imminence",
+        "Wind Rose",
+        "Sylosis",
+        "Decapitated",
+        "Witch Club Satan",
+        "HammerFall",
+        "Hypocrisy",
+        "The Halo Effect",
+        "Tortured Demon",
+        "Gutalax",
+        "Humanity's Last Breath",
+        "Conan",
+        "Dool",
+        "Pig Destroyer",
+        "Fulci"
+      ],
+      "acts_source": "https://www.kerrang.com/mercyful-fate-electric-callboy-and-motionless-in-white-lead-bloodstock-2027s-first-line-up-announcement"
     },
-    "festival:all-points-east:2027-08-22": {
-      "headliners": ["Phoebe Bridgers"],
+    "festival:all-points-east:2027-08-27": {
+      "headliners": [
+        "Phoebe Bridgers"
+      ],
       "source": "https://www.officialcharts.com/chart-news/all-points-east-2027-phoebe-bridgers-lineup-tickets-date-victoria-park/",
-      "checked": "2026-11-08"
+      "checked": "2026-11-14",
+      "acts": [
+        "Caroline Polachek",
+        "Kelsey Lu",
+        "Danielle Ponder",
+        "jasmine.4.t"
+      ],
+      "acts_source": "https://www.officialcharts.com/chart-news/all-points-east-2027-phoebe-bridgers-lineup-tickets-date-victoria-park/"
     },
     "festival:creamfields:2027-08-26": {
-      "headliners": ["Josh Baker b2b KETTAMA b2b Prospa"],
-      "source": "https://djmag.com/news/josh-baker-kettama-and-prospa-headline-creamfields-2027-arc-stage",
-      "checked": "2026-11-08"
+      "headliners": [
+        "Josh Baker b2b KETTAMA b2b Prospa",
+        "Martin Garrix b2b Alesso"
+      ],
+      "source": "https://djmag.com/news/martin-garrix-and-alesso-play-debut-uk-b2b-set-creamfields-2027",
+      "checked": "2026-11-14",
+      "acts": [
+        "The Prodigy",
+        "Hannah Laing",
+        "Jamie Jones",
+        "Marco Carola"
+      ],
+      "acts_source": "https://djmag.com/news/martin-garrix-and-alesso-play-debut-uk-b2b-set-creamfields-2027"
     }
   }
 }

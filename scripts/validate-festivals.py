@@ -82,6 +82,12 @@ if HEADLINERS.exists():
                 errors.append(f"festival-headliners.json: {fid} needs a list of headliner names")
             if not (isinstance(h, dict) and re.match(r"^https?://", str(h.get("source") or ""), re.I)):
                 errors.append(f"festival-headliners.json: {fid} needs a source link")
+            acts = h.get("acts") if isinstance(h, dict) else None
+            if acts is not None:
+                if not isinstance(acts, list) or not all(isinstance(n, str) and n.strip() for n in acts):
+                    errors.append(f"festival-headliners.json: {fid} acts must be a list of names")
+                elif not re.match(r"^https?://", str(h.get("acts_source") or ""), re.I):
+                    errors.append(f"festival-headliners.json: {fid} needs an acts_source link for its acts")
             if fid not in ids: print(f"Note: festival-headliners.json has {fid}, which isn't listed today")
 
 if errors:

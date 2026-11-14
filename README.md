@@ -157,8 +157,10 @@ cross-check, deduplicating by festival name, date and location; sport and
 outdoor events are left out by their title. Hand-confirmed Brighton festivals
 are in `brighton-festivals.json`. Announced headliners are kept by hand in
 `festival-headliners.json`, keyed by festival id (so they only show for that
-edition), each with its source; the app reads the file directly, so a change
-shows as soon as it's merged. The published window runs from today to 31
+edition), each with its source. The same file can list the other announced
+acts (`acts`, with `acts_source`): headliners show on the card, and tapping the
+card opens the rest A to Z (a leading "The" is ignored). The app reads the file
+directly, so a change shows as soon as it's merged. The published window runs from today to 31
 December of the following year. Festival ids start with `festival:`, so their
 Interested/Going choices use the same `event_interest` table without mixing
 festivals into `events.json`.
