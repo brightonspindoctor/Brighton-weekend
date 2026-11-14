@@ -323,6 +323,86 @@ def extract_efestivals(html,url):
         if not ticket or not re.search(r"/festivals/[^/]+/|tickets|ticket", a.get("href",""), re.I): continue
         out.append({"title":title,"date":d.isoformat(),"date_end":(date_end or d).isoformat(),"location":location,"category":"Music","ticket_url":ticket,"source":url,"detail_url":ticket})
     return out
+# Fezzy is where festivals are found, but each Fezzy page links to the
+# festival's own site ("Official site") and ticket page ("2027 tickets"). Those
+# are where people should land, and the official site is the better source for
+# dates. Social, share and recruitment links are never taken as either.
+NOT_OFFICIAL=("fezzy.uk","instagram.com","facebook.com","x.com","twitter.com","tiktok.com","youtube.com",
+              "youtu.be","wa.me","whatsapp.com","joincrewpool.com","spotify.com","linktr.ee","threads.net")
+def offsite(href):
+    host=urlparse(href).netloc.lower().split(":")[0]
+    return bool(re.match(r"^https?://",href,re.I)) and bool(host) and not any(host==h or host.endswith("."+h) for h in NOT_OFFICIAL)
+def tidy_link(href):
+    u=urlparse(href)
+    q="&".join(x for x in u.query.split("&") if x and not re.match(r"(utm_[a-z]+|fbclid|gclid|src|ref)=",x,re.I))
+    return u._replace(query=q,fragment="").geturl()
+def pick_official_links(links,year):
+    """(official site, ticket page) from a Fezzy page's links, as [text, href]."""
+    official=tickets=None
+    for text,href in links:
+        t=clean(text or "").lower()
+        if not href or not offsite(href): continue
+        if official is None and re.search(r"\bofficial (site|website)\b",t): official=tidy_link(href)
+        if tickets is None and "ticket" in t:
+            years=re.findall(r"\b20\d\d\b",t)
+            if years and str(year) not in years: continue  # last year's tickets
+            tickets=tidy_link(href)
+    return official,tickets
+def same_festival_name(a,b):
+    a,b=norm(a),norm(b)
+    a=re.sub(r"\b20\d\d\b","",a).strip(); b=re.sub(r"\b20\d\d\b","",b).strip()
+    if not a or not b: return False
+    short,long_=sorted((a,b),key=len)
+    return short==long_ or f" {short} " in f" {long_} " or SequenceMatcher(None,a,b).ratio()>=0.8
+def jsonld_events(blocks):
+    """Every schema.org Event-like object (with a startDate) in JSON-LD blocks."""
+    out=[]
+    def walk(x):
+        if isinstance(x,list):
+            for y in x: walk(y)
+        elif isinstance(x,dict):
+            t=x.get("@type"); t=" ".join(t) if isinstance(t,list) else str(t or "")
+            if "Event" in t or "Festival" in t:
+                if x.get("startDate"): out.append(x)
+            for k in ("@graph","subEvent","itemListElement","item"):
+                if k in x: walk(x[k])
+    for raw in blocks:
+        try: walk(json.loads(raw))
+        except Exception: pass
+    return out
+def official_dates(e,events):
+    """The festival's dates from its official site's JSON-LD, if exactly one
+    event there is this festival in this edition (start within 60 days)."""
+    try: d=date.fromisoformat(e["date"])
+    except Exception: return None
+    found=set()
+    for ev in events:
+        if not same_festival_name(str(ev.get("name") or ""),e["title"]): continue
+        try:
+            a=date.fromisoformat(str(ev["startDate"])[:10]); b=date.fromisoformat(str(ev.get("endDate") or ev["startDate"])[:10])
+        except Exception: continue
+        if b<a or (b-a).days>31 or abs((a-d).days)>60 or not (TODAY<=b and a<=END): continue
+        found.add((a,b))
+    return found.pop() if len(found)==1 else None
+async def check_official_site(browser,e):
+    url=e.get("official_url")
+    if not url: return
+    page=await browser.new_page(); page.set_default_timeout(15000)
+    try:
+        response=await page.goto(url,wait_until="domcontentloaded",timeout=20000)
+        if not response or response.status>=400:
+            print(f"Official site unreachable for {e['title']}: {url}"); return
+        blocks=await page.eval_on_selector_all('script[type="application/ld+json"]',"els=>els.map(s=>s.textContent)")
+        got=official_dates(e,jsonld_events(blocks))
+        if got and (got[0].isoformat(),got[1].isoformat())!=(e["date"],e.get("date_end",e["date"])):
+            print(f"Official dates for {e['title']}: {got[0]} to {got[1]} (Fezzy said {e['date']} to {e.get('date_end')})")
+            e["date"],e["date_end"]=got[0].isoformat(),got[1].isoformat()
+        if got: e["dates_from"]="official site"
+    except Exception as exc:
+        print(f"Official site check failed for {e['title']}: {exc}")
+    finally:
+        await page.close()
+
 async def validate_candidate(browser,e):
     url=e.get("detail_url") or e.get("ticket_url")
     if not url or not re.match(r"^https?://",url,re.I): return False
@@ -352,6 +432,11 @@ async def validate_candidate(browser,e):
             if not any(start==d for start,_ in iter_date_ranges(body,default_year)): return False
         if is_brighton_location(e["location"]) and not is_brighton_location(body):
             return False
+        if "fezzy.uk" in urlparse(url).netloc:
+            links=await page.eval_on_selector_all("a[href]","els=>els.map(a=>[a.innerText||a.textContent||'',a.href])")
+            official,tickets=pick_official_links(links,d.year)
+            if official: e["official_url"]=official
+            if tickets or official: e["ticket_url"]=tickets or official
         return True
     except Exception:
         return False
@@ -408,6 +493,9 @@ def merge(items):
                     old["date_end"]=e["date_end"]
                 if "efestivals" in old["ticket_url"] and "efestivals" not in e["ticket_url"]:
                     old.update({"ticket_url":e["ticket_url"],"source":e["source"]})
+                if e.get("official_url") and not old.get("official_url"): old["official_url"]=e["official_url"]
+                if "fezzy.uk" in old["ticket_url"] and not re.search(r"fezzy\.uk|efestivals",e["ticket_url"]):
+                    old["ticket_url"]=e["ticket_url"]
                 break
         if not duplicate: chosen.append(e)
     result=[]; used=set()
@@ -511,6 +599,10 @@ async def main():
             validated=[e for e in checked_items if e]
             print(f"Validated {len(validated)} of {len(items)} scraped candidates.")
             validated=[e for e in validated if not is_sport_event(e.get("title"))]
+            async def official(e):
+                async with sem: await check_official_site(browser,e)
+            await asyncio.gather(*(official(e) for e in validated))
+            print(f"Official sites: {sum(1 for e in validated if e.get('official_url'))} found, dates from {sum(1 for e in validated if e.get('dates_from'))}.")
             festivals=add_curated(merge(validated))
             festivals=keep_stable_ids(festivals,previous_festival_dates())
             existing=0
