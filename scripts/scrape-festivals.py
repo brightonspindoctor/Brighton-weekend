@@ -384,17 +384,23 @@ def official_dates(e,events):
         if b<a or (b-a).days>31 or abs((a-d).days)>60 or not (TODAY<=b and a<=END): continue
         found.add((a,b))
     return found.pop() if len(found)==1 else None
+PLACEHOLDER_ACT=re.compile(r"\b(tba|tbc|to be (announced|confirmed)|various artists|organi[sz]ation|line-?up|artists?|performers?|headliners?|special guests?)\b",re.I)
 def official_performers(e,events):
     """Performer names the official site's JSON-LD gives for this festival
     (deduplicated, in its order). Only from events named like the festival."""
     names=[]
+    try: d=date.fromisoformat(e["date"])
+    except Exception: return []
     for ev in events:
         if not same_festival_name(str(ev.get("name") or ""),e["title"]): continue
+        try: start=date.fromisoformat(str(ev["startDate"])[:10])
+        except Exception: continue
+        if abs((start-d).days)>60: continue  # another edition's line-up
         p=ev.get("performer") or []
         for x in (p if isinstance(p,list) else [p]):
             n=clean(x.get("name","") if isinstance(x,dict) else str(x or ""))
-            if 1<len(n)<=80 and not same_festival_name(n,e["title"]) and n not in names: names.append(n)
-    return names[:300]
+            if 1<len(n)<=80 and not PLACEHOLDER_ACT.search(n) and not same_festival_name(n,e["title"]) and n not in names: names.append(n)
+    return names[:300] if len(names)>=3 else []  # one or two names is a stub, not a line-up
 async def check_official_site(browser,e):
     url=e.get("official_url")
     if not url: return
