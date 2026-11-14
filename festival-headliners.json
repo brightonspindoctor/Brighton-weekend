@@ -1,5 +1,5 @@
 {
-  "about": "Announced line-ups for festivals on the Festivals tab, kept by hand. Keys are festival ids from festivals.json (they include the start date, so an entry only shows for that edition). 'headliners' are names the festival has announced as headliners and show on the card; 'acts' are the other announced acts and show, A to Z, when the card is opened. Each list needs a source ('source' for headliners, 'acts_source' for acts). The app reads this file directly, so a change shows as soon as it is merged.",
+  "about": "Announced line-ups for festivals on the Festivals tab, kept by hand. Keys are festival ids from festivals.json (they include the start date, so an entry only shows for that edition). 'headliners' are names the festival has announced as headliners and show on the card; 'acts' are the other announced acts and show, A to Z, when the card is opened. Each list needs a source ('source' for headliners, 'acts_source' for acts). The app reads this file directly, so a change shows as soon as it is merged. 'days' (optional, multi-day festivals only) maps a date (YYYY-MM-DD) to everyone announced for that day, headliners included; an opened card groups acts by day, and acts with no day go under 'Day not announced'. 'days_source' gives where the days came from.",
   "festivals": {
     "festival:shiiine-on-weekender:2026-11-13": {
       "headliners": [
@@ -44,7 +44,16 @@
         "Alan Leach",
         "Dom Joly"
       ],
-      "acts_source": "https://sonicpr.co.uk/artists/shiiine-on-weekender/"
+      "acts_source": "https://sonicpr.co.uk/artists/shiiine-on-weekender/",
+      "days": {
+        "2026-11-13": [
+          "Dreadzone (DJ set)"
+        ],
+        "2026-11-14": [
+          "Feeder"
+        ]
+      },
+      "days_source": "https://sonicpr.co.uk/?p=19486"
     },
     "festival:c2c-country-to-country:2027-03-12": {
       "headliners": [
@@ -238,7 +247,54 @@
         "Ultra Naté",
         "Vengaboys"
       ],
-      "acts_source": "https://timeout.com/london/news/mighty-hoopla-festival-2027-robyn-the-pussycat-dolls-tickets-prices-110226"
+      "acts_source": "https://timeout.com/london/news/mighty-hoopla-festival-2027-robyn-the-pussycat-dolls-tickets-prices-110226",
+      "days": {
+        "2027-06-05": [
+          "Robyn",
+          "Kelis",
+          "Eve",
+          "Nicola Roberts",
+          "Alcazar",
+          "Artwork",
+          "Another Level",
+          "Armana Khan",
+          "Booty Luv",
+          "Gok Wan",
+          "Dagny",
+          "Countess Luann",
+          "Empress Of",
+          "Girls Don't Sync",
+          "Jordin Sparks",
+          "Louisa Johnson",
+          "Lisa Maffia & Romeo",
+          "Nina Sky",
+          "Tom Rasmussen",
+          "The Artful Dodger",
+          "Whigfield"
+        ],
+        "2027-06-06": [
+          "The Pussycat Dolls",
+          "Bebe Rexha",
+          "FLO",
+          "Sophie Ellis-Bextor",
+          "2 Unlimited",
+          "Ana Matronic",
+          "B*Witched",
+          "Bridge",
+          "Erol Alkan Disco 3000",
+          "Icona Pop",
+          "Jayda G",
+          "Kerry Katona's Kerry-oke",
+          "Rogue Traders",
+          "Sasha Coldy",
+          "Stooshe",
+          "Tony & the Kiki",
+          "Tsatsamis",
+          "Ultra Naté",
+          "Vengaboys"
+        ]
+      },
+      "days_source": "https://timeout.com/london/news/mighty-hoopla-festival-2027-robyn-the-pussycat-dolls-tickets-prices-110226"
     },
     "festival:british-summer-time:2027-06-24": {
       "headliners": [
@@ -250,7 +306,17 @@
       "acts": [
         "Sienna Spiro"
       ],
-      "acts_source": "https://www.officialcharts.com/chart-news/raye-sienna-spiro-bst-hyde-park-london-2027-tickets-date-lineup/"
+      "acts_source": "https://www.officialcharts.com/chart-news/raye-sienna-spiro-bst-hyde-park-london-2027-tickets-date-lineup/",
+      "days": {
+        "2027-06-24": [
+          "Bon Jovi"
+        ],
+        "2027-07-10": [
+          "RAYE",
+          "Sienna Spiro"
+        ]
+      },
+      "days_source": "https://www.musicweek.com/live/read/raye-to-headline-bst-hyde-park-2027/095381"
     },
     "festival:bst-hyde-park:2027-06-24": {
       "headliners": [
@@ -262,7 +328,17 @@
       "acts": [
         "Sienna Spiro"
       ],
-      "acts_source": "https://www.officialcharts.com/chart-news/raye-sienna-spiro-bst-hyde-park-london-2027-tickets-date-lineup/"
+      "acts_source": "https://www.officialcharts.com/chart-news/raye-sienna-spiro-bst-hyde-park-london-2027-tickets-date-lineup/",
+      "days": {
+        "2027-06-24": [
+          "Bon Jovi"
+        ],
+        "2027-07-10": [
+          "RAYE",
+          "Sienna Spiro"
+        ]
+      },
+      "days_source": "https://www.musicweek.com/live/read/raye-to-headline-bst-hyde-park-2027/095381"
     },
     "festival:bloodstock:2027-08-05": {
       "headliners": [
@@ -298,7 +374,25 @@
         "Pig Destroyer",
         "Fulci"
       ],
-      "acts_source": "https://www.kerrang.com/mercyful-fate-electric-callboy-and-motionless-in-white-lead-bloodstock-2027s-first-line-up-announcement"
+      "acts_source": "https://www.kerrang.com/mercyful-fate-electric-callboy-and-motionless-in-white-lead-bloodstock-2027s-first-line-up-announcement",
+      "days": {
+        "2027-08-05": [
+          "Madball"
+        ],
+        "2027-08-06": [
+          "Mercyful Fate",
+          "Gaerea"
+        ],
+        "2027-08-07": [
+          "Electric Callboy",
+          "Kanonenfieber"
+        ],
+        "2027-08-08": [
+          "Motionless In White",
+          "Dethklok"
+        ]
+      },
+      "days_source": "https://www.kerrang.com/mercyful-fate-electric-callboy-and-motionless-in-white-lead-bloodstock-2027s-first-line-up-announcement"
     },
     "festival:all-points-east:2027-08-27": {
       "headliners": [
@@ -327,7 +421,17 @@
         "Jamie Jones",
         "Marco Carola"
       ],
-      "acts_source": "https://djmag.com/news/martin-garrix-and-alesso-play-debut-uk-b2b-set-creamfields-2027"
+      "acts_source": "https://djmag.com/news/martin-garrix-and-alesso-play-debut-uk-b2b-set-creamfields-2027",
+      "days": {
+        "2027-08-27": [
+          "Josh Baker b2b KETTAMA b2b Prospa"
+        ],
+        "2027-08-28": [
+          "Martin Garrix b2b Alesso",
+          "The Prodigy"
+        ]
+      },
+      "days_source": "https://djmag.com/news/martin-garrix-and-alesso-play-debut-uk-b2b-set-creamfields-2027"
     }
   }
 }

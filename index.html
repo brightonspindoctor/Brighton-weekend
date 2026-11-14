@@ -360,6 +360,19 @@ input[type=date],input[type=time]{min-width:0;-webkit-appearance:none;appearance
 .festival-card .festival-headliners{font-size:var(--bw-text-sm);color:var(--bw-cream);margin-top:var(--bw-space-1);font-weight:700}
 .festival-card .festival-headliners span{color:var(--bw-muted);font-weight:600}
 .festival-card.has-lineup{cursor:pointer}
+.festival-card .lineup-bar{display:flex;align-items:center;gap:var(--bw-space-3);flex-wrap:wrap;margin-top:var(--bw-space-2)}
+.festival-card .lineup-bar .lineup-toggle{margin-top:0}
+.festival-card .seen-count{font-size:var(--bw-text-sm);font-weight:700;color:var(--bw-going-fg,var(--bw-interested-fg))}
+.festival-card .lineup-hint{margin:0 0 var(--bw-space-2);font-size:var(--bw-text-xs);color:var(--bw-muted)}
+.festival-card .lineup-day{margin:var(--bw-space-3) 0 var(--bw-space-1);font-size:var(--bw-text-sm);font-weight:800;color:var(--bw-interested-fg)}
+.festival-card .lineup-day:first-of-type{margin-top:0}
+.festival-card .festival-lineup ul+ul{margin-top:var(--bw-space-2)}
+.festival-card .lineup-head{font-weight:800}
+.festival-card .act-seen{display:flex;align-items:flex-start;gap:6px;width:100%;padding:3px 0;border:0;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.festival-card .act-seen .tick{flex:none;display:inline-flex;align-items:center;justify-content:center;width:17px;height:17px;margin-top:1px;border:1.5px solid var(--bw-line-strong,var(--bw-line));border-radius:5px;font-size:12px;font-weight:900;line-height:1}
+.festival-card .act-seen[aria-pressed=true] .tick{background:var(--bw-teal);border-color:var(--bw-teal);color:var(--bw-card)}
+.festival-card .act-seen[aria-pressed=true] .tick::after{content:'✓'}
+.festival-card .act-seen[aria-pressed=true]{color:var(--bw-interested-fg)}
 .festival-card .lineup-toggle{display:inline-flex;align-items:center;gap:4px;margin-top:var(--bw-space-2);padding:0;border:0;background:none;color:var(--bw-interested-fg);font:inherit;font-size:var(--bw-text-sm);font-weight:700;cursor:pointer}
 .festival-card .lineup-toggle .chev{display:inline-block;transition:transform .15s}
 .festival-card.open .lineup-toggle .chev{transform:rotate(180deg)}
@@ -1069,6 +1082,7 @@ function toggleOtherVenue(){
  $('customVenueDetailWrap')?.classList.toggle('hidden',!other);
 }
 async function loadAttendance(){
+ loadActsSeen().then(()=>{if(typeof renderFestivals==='function')renderFestivals()});
  if(!uid()){attendance=[];return}
  try{
   const rows=await api('GET','event_interest?select=event_id,user_name,status,user_id,event_title,event_genre&user_id=eq.'+encodeURIComponent(uid()));
@@ -1239,6 +1253,7 @@ const GATE_COPY={
  happenings:'It\'s free, and lets you see what your crew are planning.',
  addEvent:'It\'s free, and lets you add events for everyone to see.',
  genre:'It\'s free, and lets you add a genre to events that don\'t have one.',
+ seen:'It\'s free, and lets you tick off the acts you saw at festivals.',
  account:'It\'s free, and lets you mark events, build your crew and see what your friends are planning.'
 };
 // Guests get a random ID on this device (no personal details) so the admin
@@ -1338,7 +1353,11 @@ async function resumeGuestAction(){
   const mine=attendance.find(a=>a.event_id===x.eventId&&a.user_id===uid());
   if(mine?.status!==x.status)await act(x.eventId,x.status); // act() toggles, so skip if it is already set
   openTab(crew.length?'peopleTab':'discover');
- }else if(x.type==='tab'){
+ }else if(x.type==='seen'&&typeof x.festivalId==='string'&&typeof x.act==='string'){
+  openTab('festivalsTab');openFestivals.add(x.festivalId);
+  if(actsSeenReady)await setActSeen(x.festivalId,x.act,true);
+  renderFestivals();
+}else if(x.type==='tab'){
   openTab(x.tab);
  }else if(x.type==='addEvent'){
   openTab('peopleTab');
@@ -1960,21 +1979,85 @@ function festivalTicketLink(f){const u=safeUrl(f.ticket_url);return u?'<a class=
 let festivalHeadliners={};
 function festivalNames(list,skip){const seen=new Set(skip||[]);return (Array.isArray(list)?list:[]).filter(x=>typeof x==='string'&&x.trim()&&!seen.has(x)&&seen.add(x))}
 function festivalHeadlinersHtml(f){const h=festivalNames(festivalHeadliners[f.id]?.headliners);return h.length?'<div class="festival-headliners"><span>Headliners</span> '+h.map(esc).join(', ')+'</div>':''}
-// Everyone else announced, A to Z (a leading "The" is ignored), shown when the card is opened.
+// The opened card: everyone announced beyond the card's headliners, A to Z (a
+// leading "The" is ignored). A multi-day festival whose entry has 'days' is
+// grouped by day, each day's headliners first; acts with no day come last.
 const lineupKey=n=>n.replace(/^the\s+/i,'');
-function festivalOtherActs(f){const e=festivalHeadliners[f.id]||{};return festivalNames(e.acts,festivalNames(e.headliners)).sort((a,b)=>lineupKey(a).localeCompare(lineupKey(b),'en-GB',{sensitivity:'base',numeric:true}))}
+const byLineupName=(a,b)=>lineupKey(a).localeCompare(lineupKey(b),'en-GB',{sensitivity:'base',numeric:true});
+function festivalOtherActs(f){const e=festivalHeadliners[f.id]||{};return festivalNames(e.acts,festivalNames(e.headliners)).sort(byLineupName)}
+function festivalLineupGroups(f){
+ const e=festivalHeadliners[f.id]||{},H=festivalNames(e.headliners),A=festivalOtherActs(f),known=new Set([...H,...A]);
+ const end=f.date_end||f.date,days=e.days&&typeof e.days==='object'?Object.keys(e.days).filter(d=>/^\d{4}-\d{2}-\d{2}$/.test(d)&&d>=f.date&&d<=end).sort():[];
+ if(end===f.date||!days.length)return [{label:'',heads:H,acts:A,single:true}];
+ const placed=new Set(),groups=[];
+ for(const d of days){
+  const names=festivalNames(e.days[d]).filter(n=>known.has(n)&&!placed.has(n));if(!names.length)continue;
+  names.forEach(n=>placed.add(n));
+  const dt=parseEventDate(d);
+  groups.push({label:dt?dt.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'}):d,heads:H.filter(n=>names.includes(n)),acts:names.filter(n=>!H.includes(n)).sort(byLineupName)});
+ }
+ const rest={label:'Day not announced',heads:H.filter(n=>!placed.has(n)),acts:A.filter(n=>!placed.has(n))};
+ if(rest.heads.length||rest.acts.length)groups.push(rest);
+ return groups;
+}
+// "I saw them" ticks (v86): only once the festival has started, only your own.
+let actsSeen=new Map(),actsSeenReady=false;
+const festivalStarted=f=>!!f.date&&todayKey()>=f.date;
+const canTickActs=f=>festivalStarted(f)&&(!authUser||actsSeenReady);
+const seenSet=id=>actsSeen.get(id)||new Set();
+async function loadActsSeen(){
+ actsSeen=new Map();actsSeenReady=false;if(!authUser)return;
+ try{const rows=await rpc('bw_my_acts_seen',{});(Array.isArray(rows)?rows:[]).forEach(r=>{if(!r?.festival_id||!r.act)return;if(!actsSeen.has(r.festival_id))actsSeen.set(r.festival_id,new Set());actsSeen.get(r.festival_id).add(r.act)});actsSeenReady=true}
+ catch(e){console.warn('Acts seen unavailable',e)}
+}
+function seenCountHtml(f){const n=festivalStarted(f)?seenSet(f.id).size:0;return '<span class="seen-count"'+(n?'':' hidden')+'>✓ You saw '+n+'</span>'}
+function lineupItemHtml(f,n,head,tick){
+ if(!tick)return '<li'+(head?' class="lineup-head"':'')+'>'+esc(n)+'</li>';
+ const on=seenSet(f.id).has(n);
+ return '<li'+(head?' class="lineup-head"':'')+'><button type="button" class="act-seen" data-seen-act="'+esc(n)+'" data-festival-id="'+esc(f.id)+'" aria-pressed="'+on+'"><span class="tick" aria-hidden="true"></span><span>'+esc(n)+'</span></button></li>';
+}
 const openFestivals=new Set();
-function festivalLineupHtml(f,acts){if(!acts.length)return '';const lid='lineup-'+String(f.id).replace(/[^a-z0-9]+/gi,'-');return '<button type="button" class="lineup-toggle" data-lineup-toggle aria-expanded="'+openFestivals.has(f.id)+'" aria-controls="'+esc(lid)+'">+'+acts.length+' more act'+(acts.length===1?'':'s')+' <span class="chev" aria-hidden="true">▾</span></button><div class="festival-lineup" id="'+esc(lid)+'"><ul>'+acts.map(a=>'<li>'+esc(a)+'</li>').join('')+'</ul></div>'}
+function festivalLineupHtml(f,acts){
+ const groups=festivalLineupGroups(f),split=!groups[0].single;
+ if(!acts.length&&!split)return '';
+ const tick=canTickActs(f),lid='lineup-'+String(f.id).replace(/[^a-z0-9]+/gi,'-');
+ const body=groups.map(g=>{
+  const heads=(split||tick)?g.heads:[]; // a single list repeats the card's headliners only when they can be ticked
+  const items=heads.map(n=>lineupItemHtml(f,n,true,tick)).concat(g.acts.map(n=>lineupItemHtml(f,n,false,tick)));
+  return items.length?(g.label?'<h4 class="lineup-day">'+esc(g.label)+'</h4>':'')+'<ul>'+items.join('')+'</ul>':'';
+ }).join('');
+ const label=acts.length?'+'+acts.length+' more act'+(acts.length===1?'':'s'):'Full line-up';
+ return '<div class="lineup-bar"><button type="button" class="lineup-toggle" data-lineup-toggle aria-expanded="'+openFestivals.has(f.id)+'" aria-controls="'+esc(lid)+'">'+label+' <span class="chev" aria-hidden="true">▾</span></button>'+seenCountHtml(f)+'</div><div class="festival-lineup" id="'+esc(lid)+'">'+(tick?'<p class="lineup-hint">Tick the acts you saw.</p>':'')+body+'</div>';
+}
 function toggleFestivalLineup(card){const id=card.dataset.eventId,open=!card.classList.contains('open');card.classList.toggle('open',open);open?openFestivals.add(id):openFestivals.delete(id);const t=card.querySelector('[data-lineup-toggle]');if(t)t.setAttribute('aria-expanded',open)}
 document.addEventListener('click',e=>{const card=e.target.closest('.festival-card.has-lineup');if(!card)return;if(!e.target.closest('[data-lineup-toggle]')&&e.target.closest('a,button,input,select,textarea,label,summary,details'))return;if(!e.target.closest('[data-lineup-toggle]')&&String(window.getSelection?.()||''))return;toggleFestivalLineup(card)});
+function paintActSeen(festivalId,act){
+ const on=seenSet(festivalId).has(act),n=seenSet(festivalId).size;
+ document.querySelectorAll('[data-seen-act]').forEach(b=>{if(b.dataset.festivalId===festivalId&&b.dataset.seenAct===act)b.setAttribute('aria-pressed',on)});
+ document.querySelectorAll('.festival-card').forEach(c=>{if(c.dataset.eventId!==festivalId)return;const s=c.querySelector('.seen-count');if(s){s.textContent='✓ You saw '+n;s.hidden=!n}});
+}
+async function setActSeen(festivalId,act,seen){
+ const set=seenSet(festivalId);if(set.has(act)===seen)return;
+ if(!actsSeen.has(festivalId))actsSeen.set(festivalId,set);
+ seen?set.add(act):set.delete(act);paintActSeen(festivalId,act);
+ try{await rpc('bw_set_act_seen',{p_festival_id:festivalId,p_act:act,p_seen:seen})}
+ catch(e){console.warn('Saving act seen failed',e);seen?set.delete(act):set.add(act);paintActSeen(festivalId,act);toast('Could not save that. Please try again.','error')}
+}
+document.addEventListener('click',e=>{
+ const b=e.target.closest('[data-seen-act]');if(!b)return;
+ const id=b.dataset.festivalId,act=b.dataset.seenAct;
+ if(!authUser){promptSignIn('seen',{type:'seen',festivalId:id,act});return}
+ if(!actsSeenReady)return;
+ setActSeen(id,act,!seenSet(id).has(act));
+});
 async function loadFestivalHeadliners(){
  try{const r=await fetch('festival-headliners.json?refresh='+Date.now(),{cache:'no-store'});if(!r.ok)return;const j=await r.json();festivalHeadliners=j&&typeof j.festivals==='object'&&j.festivals?j.festivals:{}}
  catch(e){console.warn('Festival headliners unavailable',e)}
 }
 function festivalCard(f){
  const mine=attendance.find(x=>x.event_id===f.id&&x.user_id===uid());
- const acts=festivalOtherActs(f),cls=acts.length?' has-lineup'+(openFestivals.has(f.id)?' open':''):'';
- return '<article class="card festival-card'+cls+'" data-event-id="'+esc(f.id)+'"><div class="festival-date">'+esc(festivalDateLabel(f))+'</div><div class="top"><div><div class="title">'+esc(f.title)+'</div><div class="festival-location">📍 '+esc(f.location_display||f.location||'UK')+'</div>'+festivalHeadlinersHtml(f)+festivalLineupHtml(f,acts)+'</div></div><span class="festival-type">'+esc(f.category||'Other')+'</span>'+friendsHtml(f.id)+commitmentButtons(f,mine)+'<div class="actions">'+festivalTicketLink(f)+'</div></article>';
+ const acts=festivalOtherActs(f),lineup=festivalLineupHtml(f,acts),cls=lineup?' has-lineup'+(openFestivals.has(f.id)?' open':''):'';
+ return '<article class="card festival-card'+cls+'" data-event-id="'+esc(f.id)+'"><div class="festival-date">'+esc(festivalDateLabel(f))+'</div><div class="top"><div><div class="title">'+esc(f.title)+'</div><div class="festival-location">📍 '+esc(f.location_display||f.location||'UK')+'</div>'+festivalHeadlinersHtml(f)+lineup+'</div></div><span class="festival-type">'+esc(f.category||'Other')+'</span>'+friendsHtml(f.id)+commitmentButtons(f,mine)+'<div class="actions">'+festivalTicketLink(f)+'</div></article>';
 }
 function renderFestivals(){
  const box=$('festivalList');if(!box)return;
@@ -2164,7 +2247,7 @@ $('deleteAccount').onclick=async()=>{
   const keep=new Set([NO_COUNT_KEY,'bw_theme']);
   Object.keys(localStorage).filter(k=>(k.startsWith('bw_')||k.startsWith('sb-'))&&!keep.has(k)).forEach(k=>localStorage.removeItem(k));
   try{await supabase.auth.signOut()}catch(e){}
-  authUser=null;authSession=null;profileName='';myHandle='';crew=[];crewRequests=[];updateCrewBadge();attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';customEvents=[];homeShown=false;
+  actsSeen=new Map();actsSeenReady=false;authUser=null;authSession=null;profileName='';myHandle='';crew=[];crewRequests=[];updateCrewBadge();attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';customEvents=[];homeShown=false;
   myGenres={};genrePickerFor=null;
   $('accountEmail').textContent='';enterGuestMode();loadUserData().catch(console.warn); // reload what guests see (their events are gone)
   toast('Your account and data have been deleted.','success');
@@ -2174,7 +2257,7 @@ $('deleteAccount').onclick=async()=>{
 // Sign-out works offline too: the local session is cleared even if the server
 // can't be told. Community events are reloaded as a guest sees them, so the
 // names of the people who added them don't linger on screen.
-$('signOut').onclick=async()=>{try{await supabase.auth.signOut()}catch(e){try{await supabase.auth.signOut({scope:'local'})}catch(_){}}myGenres={};genrePickerFor=null;authUser=null;authSession=null;profileName='';myHandle='';crew=[];crewRequests=[];updateCrewBadge();attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';homeShown=false;localStorage.removeItem('bw_name');$('accountEmail').textContent='';enterGuestMode();loadUserData().catch(console.warn)};
+$('signOut').onclick=async()=>{try{await supabase.auth.signOut()}catch(e){try{await supabase.auth.signOut({scope:'local'})}catch(_){}}myGenres={};genrePickerFor=null;actsSeen=new Map();actsSeenReady=false;authUser=null;authSession=null;profileName='';myHandle='';crew=[];crewRequests=[];updateCrewBadge();attendance=[];groupHappenings=[];profileIconsByUser={};profileIcon='';homeShown=false;localStorage.removeItem('bw_name');$('accountEmail').textContent='';enterGuestMode();loadUserData().catch(console.warn)};
 // The arrows and This week go back to the week view (from a quick-time chip).
 $('prev').onclick=()=>{if(discoverRange!=='week'){discoverRange='week';weekStart=getMonday();renderAll();return}if(weekStart<=getMonday())return;weekStart.setDate(weekStart.getDate()-7);renderAll()};
 $('next').onclick=()=>{if(discoverRange!=='week'){discoverRange='week';weekStart=getMonday()}weekStart.setDate(weekStart.getDate()+7);renderAll()};
@@ -2346,7 +2429,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=98', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=99', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
