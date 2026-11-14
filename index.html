@@ -1082,7 +1082,6 @@ function toggleOtherVenue(){
  $('customVenueDetailWrap')?.classList.toggle('hidden',!other);
 }
 async function loadAttendance(){
- loadActsSeen().then(()=>{if(typeof renderFestivals==='function')renderFestivals()});
  if(!uid()){attendance=[];return}
  try{
   const rows=await api('GET','event_interest?select=event_id,user_name,status,user_id,event_title,event_genre&user_id=eq.'+encodeURIComponent(uid()));
@@ -1355,6 +1354,7 @@ async function resumeGuestAction(){
   openTab(crew.length?'peopleTab':'discover');
  }else if(x.type==='seen'&&typeof x.festivalId==='string'&&typeof x.act==='string'){
   openTab('festivalsTab');openFestivals.add(x.festivalId);
+  if(!actsSeenReady)await loadActsSeen();
   if(actsSeenReady)await setActSeen(x.festivalId,x.act,true);
   renderFestivals();
 }else if(x.type==='tab'){
@@ -2030,7 +2030,7 @@ function festivalLineupHtml(f,acts){
  return '<div class="lineup-bar"><button type="button" class="lineup-toggle" data-lineup-toggle aria-expanded="'+openFestivals.has(f.id)+'" aria-controls="'+esc(lid)+'">'+label+' <span class="chev" aria-hidden="true">▾</span></button>'+seenCountHtml(f)+'</div><div class="festival-lineup" id="'+esc(lid)+'">'+(tick?'<p class="lineup-hint">Tick the acts you saw.</p>':'')+body+'</div>';
 }
 function toggleFestivalLineup(card){const id=card.dataset.eventId,open=!card.classList.contains('open');card.classList.toggle('open',open);open?openFestivals.add(id):openFestivals.delete(id);const t=card.querySelector('[data-lineup-toggle]');if(t)t.setAttribute('aria-expanded',open)}
-document.addEventListener('click',e=>{const card=e.target.closest('.festival-card.has-lineup');if(!card)return;if(!e.target.closest('[data-lineup-toggle]')&&e.target.closest('a,button,input,select,textarea,label,summary,details'))return;if(!e.target.closest('[data-lineup-toggle]')&&String(window.getSelection?.()||''))return;toggleFestivalLineup(card)});
+document.addEventListener('click',e=>{const card=e.target.closest('.festival-card.has-lineup');if(!card)return;if(!e.target.closest('[data-lineup-toggle]')&&e.target.closest('a,button,input,select,textarea,label,summary,details'))return;const sel=window.getSelection?.();if(!e.target.closest('[data-lineup-toggle]')&&sel&&!sel.isCollapsed&&card.contains(sel.anchorNode))return;toggleFestivalLineup(card)});
 function paintActSeen(festivalId,act){
  const on=seenSet(festivalId).has(act),n=seenSet(festivalId).size;
  document.querySelectorAll('[data-seen-act]').forEach(b=>{if(b.dataset.festivalId===festivalId&&b.dataset.seenAct===act)b.setAttribute('aria-pressed',on)});
@@ -2264,7 +2264,7 @@ $('next').onclick=()=>{if(discoverRange!=='week'){discoverRange='week';weekStart
 $('today').onclick=()=>{discoverRange='week';weekStart=getMonday();renderAll()};
 $('refresh').onclick=async()=>{
  const btn=$('refresh');btn.disabled=true;
- try{await Promise.all([loadCustomEvents(),loadCommunityGenres()]);await refresh();await loadFestivals();await loadAttendance();await loadCrew();await loadGroupHappenings();renderAll();renderCrewSettings();}
+ try{await Promise.all([loadCustomEvents(),loadCommunityGenres()]);await refresh();await loadFestivals();await loadAttendance();await loadActsSeen();await loadCrew();await loadGroupHappenings();renderAll();renderCrewSettings();}
  finally{btn.disabled=false;}
 };
 $('changeName').onclick=()=>showWelcome('name');
@@ -2410,7 +2410,7 @@ document.addEventListener('click',e=>{if(e.target.closest('#closeNewPanel')){sho
 
 async function loadUserData(){
  if(!authUser){await Promise.all([loadCustomEvents(),loadCommunityGenres()]);events=mergeEvents(events.filter(e=>!e.is_custom));renderAll();showSharedEvent();return}
- await Promise.all([loadAttendance(),loadCustomEvents(),loadCommunityGenres()]);
+ await Promise.all([loadAttendance(),loadActsSeen(),loadCustomEvents(),loadCommunityGenres()]);
  events=mergeEvents(events.filter(e=>!e.is_custom));
  await loadGroupHappenings(); await loadProfileIcons();
  renderProfileIconSettings(); renderAll(); renderCrewSettings();
@@ -2429,7 +2429,7 @@ async function loadUserData(){
 </script>
 <script>
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=99', {updateViaCache: 'none'}).catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js?v=100', {updateViaCache: 'none'}).catch(console.warn));
 }
 </script>
 </body>
