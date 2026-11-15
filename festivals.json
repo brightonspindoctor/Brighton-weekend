@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-14",
-  "range_start": "2026-11-14",
+  "updated": "2026-11-15",
+  "range_start": "2026-11-15",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -2409,6 +2409,19 @@
       "location_display": "South West"
     },
     {
+      "title": "ArdRock Enduro",
+      "date": "2027-07-23",
+      "date_end": "2027-07-25",
+      "location": "Yorkshire",
+      "category": "Music",
+      "ticket_url": "https://www.ardrock.co.uk/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/ardrock-enduro/",
+      "official_url": "https://www.ardrock.co.uk/",
+      "id": "festival:ardrock-enduro:2027-07-23",
+      "location_display": "Yorkshire"
+    },
+    {
       "title": "Bug Jam",
       "date": "2027-07-23",
       "date_end": "2027-07-25",
@@ -3529,6 +3542,19 @@
       "dates_from": "official site",
       "id": "festival:creamfields:2027-08-26",
       "location_display": "Daresbury"
+    },
+    {
+      "title": "Lost Village",
+      "date": "2027-08-26",
+      "date_end": "2027-08-29",
+      "location": "East Midlands",
+      "category": "Arts & Culture",
+      "ticket_url": "https://lostvillagefestival.com/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/lost-village/",
+      "official_url": "https://lostvillagefestival.com/",
+      "id": "festival:lost-village:2027-08-26",
+      "location_display": "East Midlands"
     },
     {
       "title": "Reading & Leeds",
