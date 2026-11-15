@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-18-theatre-royal-brighton-macbeth@brightonweekend.co.uk
+DTSTAMP:20270118T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:Macbeth
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/macbeth/theatre-royal
+ -brighton/calendar/\nMore: https://brightonweekend.co.uk/e/2027-01-18-thea
+ tre-royal-brighton-macbeth/
+URL:https://brightonweekend.co.uk/e/2027-01-18-theatre-royal-brighton-macbe
+ th/
+END:VEVENT
+END:VCALENDAR

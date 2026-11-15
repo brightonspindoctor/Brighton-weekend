@@ -6,13 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2027-02-13-patterns-marky-ramone-s-blitzkrieg@brightonweekend.co.uk
 DTSTAMP:20270213T000000Z
-DTSTART;VALUE=DATE:20270213
-DTEND;VALUE=DATE:20270214
+DTSTART:20270213T190000Z
+DTEND:20270213T220000Z
 SUMMARY:Marky Ramone's Blitzkrieg
 LOCATION:Patterns\, Brighton
-DESCRIPTION:Tickets: https://dice.fm/event/6aa3dfe0b590d90001af3f5e\nMore: 
- https://brightonweekend.co.uk/e/2027-02-13-patterns-marky-ramone-s-blitzkr
- ieg/
+DESCRIPTION:Tickets: https://dice.fm/event/marky-ramones-blitzkrieg-13th-fe
+ b-patterns-brighton-tickets\nMore: https://brightonweekend.co.uk/e/2027-02
+ -13-patterns-marky-ramone-s-blitzkrieg/
 URL:https://brightonweekend.co.uk/e/2027-02-13-patterns-marky-ramone-s-blit
  zkrieg/
 END:VEVENT

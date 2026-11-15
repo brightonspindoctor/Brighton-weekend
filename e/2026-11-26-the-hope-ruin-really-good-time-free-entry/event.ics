@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-26-the-hope-ruin-really-good-time-free-entry@brightonweekend.co
+ .uk
+DTSTAMP:20261126T000000Z
+DTSTART:20261126T193000Z
+DTEND:20261126T220000Z
+SUMMARY:Really Good Time
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/1wbwyb9o/really-good-time-fr
+ ee-entry\nMore: https://brightonweekend.co.uk/e/2026-11-26-the-hope-ruin-r
+ eally-good-time-free-entry/
+URL:https://brightonweekend.co.uk/e/2026-11-26-the-hope-ruin-really-good-ti
+ me-free-entry/
+END:VEVENT
+END:VCALENDAR

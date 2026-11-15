@@ -6,12 +6,12 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-26-greendoorstore-pyncher@brightonweekend.co.uk
 DTSTAMP:20261126T000000Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
+DTSTART:20261126T190000Z
+DTEND:20261126T220000Z
 SUMMARY:Pyncher
 LOCATION:Green Door Store\, Brighton
-DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/\nMore: https:/
- /brightonweekend.co.uk/e/2026-11-26-greendoorstore-pyncher/
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1493813/pyncher-tickets\
+ nMore: https://brightonweekend.co.uk/e/2026-11-26-greendoorstore-pyncher/
 URL:https://brightonweekend.co.uk/e/2026-11-26-greendoorstore-pyncher/
 END:VEVENT
 END:VCALENDAR

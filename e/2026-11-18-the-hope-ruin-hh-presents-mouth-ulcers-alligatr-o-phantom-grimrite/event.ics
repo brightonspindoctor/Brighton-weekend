@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-11-18-the-hope-ruin-hh-presents-mouth-ulcers-alligatr-o-phantom-gr
  imrite@brightonweekend.co.uk
 DTSTAMP:20261118T000000Z
-DTSTART;VALUE=DATE:20261118
-DTEND;VALUE=DATE:20261119
+DTSTART:20261118T193000Z
+DTEND:20261118T230000Z
 SUMMARY:HH Presents: Mouth Ulcers + alligatr + O’Phantom + Grimrite
 LOCATION:The Hope & Ruin\, Brighton
 DESCRIPTION:Tickets: https://www.fatsoma.com/e/ung9j1wo/hh-presents-mouth-u

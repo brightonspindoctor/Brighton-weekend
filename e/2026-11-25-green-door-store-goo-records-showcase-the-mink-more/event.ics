@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-11-25-green-door-store-goo-records-showcase-the-mink-more@brighton
  weekend.co.uk
 DTSTAMP:20261125T000000Z
-DTSTART;VALUE=DATE:20261125
-DTEND;VALUE=DATE:20261126
+DTSTART:20261125T190000Z
+DTEND:20261125T220000Z
 SUMMARY:Goo Records Showcase: The Mink + More
 LOCATION:Green Door Store\, Brighton
 DESCRIPTION:Tickets: https://www.seetickets.com/event/goo-records-showcase-

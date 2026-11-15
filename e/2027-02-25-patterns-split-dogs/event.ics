@@ -6,12 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2027-02-25-patterns-split-dogs@brightonweekend.co.uk
 DTSTAMP:20270225T000000Z
-DTSTART;VALUE=DATE:20270225
-DTEND;VALUE=DATE:20270226
+DTSTART:20270225T190000Z
+DTEND:20270225T220000Z
 SUMMARY:Split Dogs
 LOCATION:Patterns\, Brighton
-DESCRIPTION:Tickets: https://dice.fm/event/6aba3526eb4d82000170087d\nMore: 
- https://brightonweekend.co.uk/e/2027-02-25-patterns-split-dogs/
+DESCRIPTION:Tickets: https://dice.fm/event/split-dogs-25th-feb-patterns-bri
+ ghton-tickets\nMore: https://brightonweekend.co.uk/e/2027-02-25-patterns-s
+ plit-dogs/
 URL:https://brightonweekend.co.uk/e/2027-02-25-patterns-split-dogs/
 END:VEVENT
 END:VCALENDAR

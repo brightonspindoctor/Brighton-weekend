@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-11-19-the-hope-ruin-ahsoka-farewell-show-chasm-is-this-ok@brighton
  weekend.co.uk
 DTSTAMP:20261119T000000Z
-DTSTART;VALUE=DATE:20261119
-DTEND;VALUE=DATE:20261120
+DTSTART:20261119T193000Z
+DTEND:20261119T230000Z
 SUMMARY:Ahsoka (Farewell Show) + Chasm + is this ok
 LOCATION:The Hope & Ruin\, Brighton
 DESCRIPTION:Tickets: https://www.fatsoma.com/e/5xr66au4/ahsoka-farewell-sho

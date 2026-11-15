@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-22-brighton-dome-chris-packham-s-world-of-wonder-a-planet-on-th
+ e-edge-2@brightonweekend.co.uk
+DTSTAMP:20261122T000000Z
+DTSTART:20261122T193000Z
+DTEND:20261122T230000Z
+SUMMARY:Chris Packham's World of Wonder: A Planet on the Edge
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LDN-chris-packhams-w
+ orld-of-wonder-a-planet-on-the-edge/\nMore: https://brightonweekend.co.uk/
+ e/2026-11-22-brighton-dome-chris-packham-s-world-of-wonder-a-planet-on-the
+ -edge-2/
+URL:https://brightonweekend.co.uk/e/2026-11-22-brighton-dome-chris-packham-
+ s-world-of-wonder-a-planet-on-the-edge-2/
+END:VEVENT
+END:VCALENDAR
