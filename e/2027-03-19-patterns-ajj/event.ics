@@ -6,12 +6,12 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2027-03-19-patterns-ajj@brightonweekend.co.uk
 DTSTAMP:20270319T000000Z
-DTSTART;VALUE=DATE:20270319
-DTEND;VALUE=DATE:20270320
+DTSTART:20270319T190000Z
+DTEND:20270319T220000Z
 SUMMARY:AJJ
 LOCATION:Patterns\, Brighton
-DESCRIPTION:Tickets: https://dice.fm/event/6a69f1da5850a800015d860d\nMore: 
- https://brightonweekend.co.uk/e/2027-03-19-patterns-ajj/
+DESCRIPTION:Tickets: https://dice.fm/event/ajj-19th-mar-patterns-brighton-t
+ ickets\nMore: https://brightonweekend.co.uk/e/2027-03-19-patterns-ajj/
 URL:https://brightonweekend.co.uk/e/2027-03-19-patterns-ajj/
 END:VEVENT
 END:VCALENDAR

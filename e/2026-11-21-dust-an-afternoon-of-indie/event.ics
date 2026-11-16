@@ -6,12 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-21-dust-an-afternoon-of-indie@brightonweekend.co.uk
 DTSTAMP:20261121T000000Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:An Afternoon of Indie
+DTSTART:20261121T190000Z
+DTEND:20261121T220000Z
+SUMMARY:An Afternoon of Indie: Brighton (Over 30s Only)\, 3-7pm 90% Sold
 LOCATION:DUST\, Brighton
-DESCRIPTION:Tickets: https://dice.fm/event/6aad770dbf5d010001ca8129\nMore: 
- https://brightonweekend.co.uk/e/2026-11-21-dust-an-afternoon-of-indie/
+DESCRIPTION:Tickets: https://www.visitbrighton.com/whats-on/an-afternoon-of
+ -indie-brighton-over-30s-only-3-7pm-90-sold-p2997601\nMore: https://bright
+ onweekend.co.uk/e/2026-11-21-dust-an-afternoon-of-indie/
 URL:https://brightonweekend.co.uk/e/2026-11-21-dust-an-afternoon-of-indie/
 END:VEVENT
 END:VCALENDAR

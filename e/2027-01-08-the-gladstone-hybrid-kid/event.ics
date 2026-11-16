@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-08-the-gladstone-hybrid-kid@brightonweekend.co.uk
+DTSTAMP:20270108T000000Z
+DTSTART:20270108T190000Z
+DTEND:20270109T000000Z
+SUMMARY:Hybrid Kid
+LOCATION:The Gladstone\, Brighton
+DESCRIPTION:Tickets: https://www.songkick.com/concerts/43518356-hybrid-kid-
+ at-gladstone?utm_medium=organic&utm_source=microformat\nMore: https://brig
+ htonweekend.co.uk/e/2027-01-08-the-gladstone-hybrid-kid/
+URL:https://brightonweekend.co.uk/e/2027-01-08-the-gladstone-hybrid-kid/
+END:VEVENT
+END:VCALENDAR
