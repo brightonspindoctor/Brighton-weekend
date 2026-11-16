@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-15",
-  "range_start": "2026-11-15",
+  "updated": "2026-11-16",
+  "range_start": "2026-11-16",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -34,19 +34,6 @@
       "official_url": "https://efglondonjazzfestival.org.uk/",
       "id": "festival:efg-london-jazz-festival:2026-11-13",
       "location_display": "London"
-    },
-    {
-      "title": "Shiiine On Weekender",
-      "date": "2026-11-13",
-      "date_end": "2026-11-15",
-      "location": "Minehead",
-      "category": "Music",
-      "ticket_url": "https://www.shiiineon.com/minehead/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/shiiine-on-weekender/",
-      "official_url": "https://www.shiiineon.com/",
-      "id": "festival:shiiine-on-weekender:2026-11-13",
-      "location_display": "Minehead"
     },
     {
       "title": "Huddersfield Contemporary Music Festival",
@@ -163,6 +150,19 @@
       "official_url": "https://thescottishmotorcycleshow.com/",
       "id": "festival:the-scottish-motorcycle-show:2027-03-13",
       "location_display": "Edinburgh"
+    },
+    {
+      "title": "Shiiine On Weekender",
+      "date": "2027-03-19",
+      "date_end": "2027-03-21",
+      "location": "Minehead",
+      "category": "Music",
+      "ticket_url": "https://www.butlins.com/bigweekenders/weekends/shiiine-on-weekender/skegness-190327",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/shiiine-on-weekender/",
+      "official_url": "https://www.shiiineon.com/",
+      "id": "festival:shiiine-on-weekender:2027-03-19",
+      "location_display": "Minehead"
     },
     {
       "title": "Manchester Punk Festival",
@@ -1703,6 +1703,19 @@
       "location_display": "Swaffham"
     },
     {
+      "title": "Gate to Southwell Festival",
+      "date": "2027-07-01",
+      "date_end": "2027-07-04",
+      "location": "East Midlands",
+      "category": "Other",
+      "ticket_url": "https://www.gtsf.uk/tickets",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/gate-to-southwell-festival/",
+      "official_url": "https://southwellfolkfestival.org.uk/",
+      "id": "festival:gate-to-southwell-festival:2027-07-02",
+      "location_display": "East Midlands"
+    },
+    {
       "title": "Kelburn Garden Party",
       "date": "2027-07-01",
       "date_end": "2027-07-05",
@@ -1781,19 +1794,6 @@
       "location_display": "Tring"
     },
     {
-      "title": "Gate To Southwell Festival",
-      "date": "2027-07-02",
-      "date_end": "2027-07-02",
-      "location": "East Midlands",
-      "category": "Music",
-      "ticket_url": "https://southwellfolkfestival.org.uk/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/gate-to-southwell-festival/",
-      "official_url": "https://southwellfolkfestival.org.uk/",
-      "id": "festival:gate-to-southwell-festival:2027-07-02",
-      "location_display": "East Midlands"
-    },
-    {
       "title": "Goren Festival",
       "date": "2027-07-02",
       "date_end": "2027-07-04",
@@ -1825,7 +1825,7 @@
       "date_end": "2027-07-04",
       "location": "Wales",
       "category": "Family",
-      "ticket_url": "https://spreewales.com/",
+      "ticket_url": "https://spreewales.com/tickets",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/spree-wales/",
       "official_url": "https://spreewales.com/",
@@ -2290,6 +2290,19 @@
       "official_url": "https://military.world/events/hia/",
       "id": "festival:history-in-action:2027-07-17",
       "location_display": "South East"
+    },
+    {
+      "title": "Keswick Convention (Keswick Ministries)",
+      "date": "2027-07-17",
+      "date_end": "2027-08-06",
+      "location": "North West",
+      "category": "Other",
+      "ticket_url": "https://keswickministries.org/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/keswick-convention-keswick-ministries/",
+      "official_url": "https://keswickministries.org/",
+      "id": "festival:keswick-convention-keswick-ministries:2027-07-17",
+      "location_display": "North West"
     },
     {
       "title": "UK Transformational Connection Festival",
