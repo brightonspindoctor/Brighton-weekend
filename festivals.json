@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-16",
-  "range_start": "2026-11-16",
+  "updated": "2026-11-17",
+  "range_start": "2026-11-17",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -9,19 +9,6 @@
     "eFestivals"
   ],
   "festivals": [
-    {
-      "title": "Bangface Weekender",
-      "date": "2026-11-13",
-      "date_end": "2026-11-16",
-      "location": "Skegness",
-      "category": "Music",
-      "ticket_url": "https://tickets.bangface.com/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/bangface-weekender/",
-      "official_url": "https://bangface.com/",
-      "id": "festival:bangface-weekender:2026-11-13",
-      "location_display": "Skegness"
-    },
     {
       "title": "EFG London Jazz Festival",
       "date": "2026-11-13",
@@ -257,7 +244,7 @@
     },
     {
       "title": "Offset Show",
-      "date": "2027-04-24",
+      "date": "2027-04-25",
       "date_end": "2027-04-25",
       "location": "South West",
       "category": "Other",
@@ -1112,6 +1099,19 @@
       "dates_from": "official site",
       "id": "festival:download-festival:2027-06-09",
       "location_display": "Castle Donington"
+    },
+    {
+      "title": "Eden Festival",
+      "date": "2027-06-10",
+      "date_end": "2027-06-14",
+      "location": "Moffat",
+      "category": "Music",
+      "ticket_url": "https://edenfestival.citizenticket.co.uk/event/eden-festival-2027/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/eden-festival/",
+      "official_url": "https://edenfestival.co.uk/",
+      "id": "festival:eden-festival:2027-06-10",
+      "location_display": "Moffat"
     },
     {
       "title": "Gottwood",
@@ -3159,7 +3159,6 @@
       "source": "https://fezzy.uk/collections/electronic-festivals-uk-2026/",
       "detail_url": "https://fezzy.uk/festival/thump-festival/",
       "official_url": "https://ehtickets.com/organiser/thump-festival/",
-      "dates_from": "official site",
       "id": "festival:thump-festival:2027-08-06",
       "location_display": "Warminster"
     },
@@ -3461,6 +3460,50 @@
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/one-love-festival/",
       "official_url": "https://www.onelovefestival.co.uk/",
+      "dates_from": "official site",
+      "lineup": [
+        "The Sabres of Paradise",
+        "Sanchia Izbak",
+        "The Cimarons",
+        "Aba Shanti-I",
+        "Ross Harper",
+        "Jumpin Jack Frost",
+        "GOSIA",
+        "Saxon Sound System",
+        "Ray Keith",
+        "Qualitex Sound System",
+        "SuperCLAUD",
+        "Coxsone Sound System",
+        "Don Campbell",
+        "Future Sounds Radio Showcase",
+        "Luv Injection Music",
+        "Chris Coco",
+        "Nick Manasseh",
+        "Kezza Inna Jungle",
+        "V Rocket International Sound System",
+        "Love Express Sound Presents…",
+        "Drum Club Sound System",
+        "Mixmaster Morris",
+        "Earl Gateshead",
+        "Peter D Rose",
+        "PETRU…",
+        "Dan Wiltshire",
+        "Stika",
+        "Scratchalus & Empress Reggae",
+        "ALL TONE ROCKERS SOUND SYSTEM",
+        "Tape Twelve",
+        "Au",
+        "Supercharge Sound System",
+        "Princess Nadine",
+        "FURU",
+        "CITY WALL RECORDS – presents",
+        "ACROS & Rory Moran",
+        "DJ FATALITY",
+        "DJ Kooki",
+        "DJ Dan Watts",
+        "K-CO + Finesse Empress"
+      ],
+      "lineup_from": "https://www.onelovefestival.co.uk/",
       "id": "festival:one-love-festival:2027-08-20",
       "location_display": "South East"
     },
@@ -3765,6 +3808,19 @@
       "location_display": "East of England"
     },
     {
+      "title": "New World Festival",
+      "date": "2027-08-27",
+      "date_end": "2027-08-29",
+      "location": "Chelmsford",
+      "category": "Music",
+      "ticket_url": "https://newworldfest.com/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/new-world-festival/",
+      "official_url": "https://newworldfest.com/",
+      "id": "festival:new-world-festival:2027-08-27",
+      "location_display": "Chelmsford"
+    },
+    {
       "title": "Shrewsbury Folk Festival",
       "date": "2027-08-27",
       "date_end": "2027-08-30",
@@ -3919,6 +3975,19 @@
       "official_url": "https://emergebelfast.com/",
       "id": "festival:emerge-belfast:2027-08-29",
       "location_display": "Belfast"
+    },
+    {
+      "title": "Proper Fest",
+      "date": "2027-08-29",
+      "date_end": "2027-08-29",
+      "location": "Clacton-on-Sea",
+      "category": "Music",
+      "ticket_url": "https://fixr.co/event/proper-fest-2027-tickets-562291070",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/proper-fest/",
+      "official_url": "https://theproperfest.co.uk/",
+      "id": "festival:proper-fest:2027-08-29",
+      "location_display": "Clacton-on-Sea"
     },
     {
       "title": "Forum",
@@ -4284,6 +4353,19 @@
       "official_url": "https://damnationfestival.co.uk/",
       "id": "festival:damnation-festival:2027-11-06",
       "location_display": "Manchester"
+    },
+    {
+      "title": "Bangface Weekender",
+      "date": "2027-11-13",
+      "date_end": "2027-11-16",
+      "location": "Skegness",
+      "category": "Music",
+      "ticket_url": "https://bangface.com/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/bangface-weekender/",
+      "official_url": "https://bangface.com/",
+      "id": "festival:bangface-weekender:2027-11-13",
+      "location_display": "Skegness"
     }
   ]
 }
