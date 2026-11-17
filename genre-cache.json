@@ -2832,12 +2832,12 @@
     "count": 1
    }
   ],
+  "spotify": "3pAxHOmaTLiUnC9WoXdsyN",
   "bucket": null,
   "reason": "genres unclear",
   "act": "Craven Faults",
-  "checked": "2026-10-17",
-  "v": 4,
-  "spotify": "3pAxHOmaTLiUnC9WoXdsyN"
+  "checked": "2026-11-17",
+  "v": 4
  },
  "creature and machine": {
   "bucket": null,
@@ -5058,6 +5058,13 @@
   "checked": "2026-10-17",
   "v": 4
  },
+ "gas bags networking": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Gas Bags Networking",
+  "checked": "2026-11-17",
+  "v": 4
+ },
  "gaudete": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -6325,6 +6332,13 @@
   "act": "Huey Morgan",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "huh milkshake boys": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "HUH?! Milkshake Boy’s",
+  "checked": "2026-11-17",
+  "v": 4
  },
  "hungry joe": {
   "bucket": null,
@@ -8150,6 +8164,13 @@
   "reason": "not in MusicBrainz",
   "act": "Liege and Lief",
   "checked": "2026-10-07"
+ },
+ "line up": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Line Up",
+  "checked": "2026-11-17",
+  "v": 4
  },
  "little grandad": {
   "mbid": "4d60a679-0156-43c2-8bcd-fc19fb99060c",
@@ -10113,8 +10134,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Phantoms Of The Popera",
-  "checked": "2026-10-17",
-  "v": 3
+  "checked": "2026-11-17",
+  "v": 4
  },
  "phil jones": {
   "bucket": null,
@@ -13784,12 +13805,12 @@
   "mbid": "ea3187c9-b239-4efd-b1b9-b95adfb477ee",
   "name": "The Rumpled",
   "genres": [],
+  "spotify": "1KBTFIV3DLMDZlnQzoQUw6",
   "bucket": null,
   "reason": "no genre tags",
   "act": "The Rumpled",
-  "checked": "2026-10-17",
-  "v": 4,
-  "spotify": "1KBTFIV3DLMDZlnQzoQUw6"
+  "checked": "2026-11-17",
+  "v": 4
  },
  "the running joke": {
   "bucket": null,

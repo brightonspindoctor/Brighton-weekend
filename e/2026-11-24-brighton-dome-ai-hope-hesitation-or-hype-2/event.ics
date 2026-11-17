@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-24-brighton-dome-ai-hope-hesitation-or-hype-2@brightonweekend.c
+ o.uk
+DTSTAMP:20261124T000000Z
+DTSTART:20261124T183000Z
+DTEND:20261124T220000Z
+SUMMARY:AI: Hope\, Hesitation or Hype?
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LXH-ai-hope-hesitati
+ on-or-hype/\nMore: https://brightonweekend.co.uk/e/2026-11-24-brighton-dom
+ e-ai-hope-hesitation-or-hype-2/
+URL:https://brightonweekend.co.uk/e/2026-11-24-brighton-dome-ai-hope-hesita
+ tion-or-hype-2/
+END:VEVENT
+END:VCALENDAR

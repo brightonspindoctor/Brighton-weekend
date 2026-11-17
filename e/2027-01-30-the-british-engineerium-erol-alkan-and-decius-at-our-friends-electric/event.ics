@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-30-the-british-engineerium-erol-alkan-and-decius-at-our-friends
+ -electric@brightonweekend.co.uk
+DTSTAMP:20270130T000000Z
+DTSTART:20270130T163000Z
+DTEND:20270130T233000Z
+SUMMARY:Erol Alkan and Decius at Our friends electric
+LOCATION:The British Engineerium\, Hove
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-British-
+ Engineerium/Erol-Alkan-and-Decius-at-Our-friends-electric/43191692/\nMore:
+  https://brightonweekend.co.uk/e/2027-01-30-the-british-engineerium-erol-a
+ lkan-and-decius-at-our-friends-electric/
+URL:https://brightonweekend.co.uk/e/2027-01-30-the-british-engineerium-erol
+ -alkan-and-decius-at-our-friends-electric/
+END:VEVENT
+END:VCALENDAR

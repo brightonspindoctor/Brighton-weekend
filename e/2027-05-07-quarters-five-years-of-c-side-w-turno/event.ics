@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-07-quarters-five-years-of-c-side-w-turno@brightonweekend.co.uk
+DTSTAMP:20270507T000000Z
+DTSTART:20270507T220000Z
+DTEND:20270508T030000Z
+SUMMARY:Five Years Of C-Side w/ Turno
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/5-years-of-c-sid
+ e/quarters/3753570\nMore: https://brightonweekend.co.uk/e/2027-05-07-quart
+ ers-five-years-of-c-side-w-turno/
+URL:https://brightonweekend.co.uk/e/2027-05-07-quarters-five-years-of-c-sid
+ e-w-turno/
+END:VEVENT
+END:VCALENDAR

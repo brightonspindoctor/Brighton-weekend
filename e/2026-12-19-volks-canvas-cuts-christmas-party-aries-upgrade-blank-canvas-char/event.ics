@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-19-volks-canvas-cuts-christmas-party-aries-upgrade-blank-canvas
+ -char@brightonweekend.co.uk
+DTSTAMP:20261219T000000Z
+DTSTART:20261219T220000Z
+DTEND:20261220T010000Z
+SUMMARY:Canvas Cuts Christmas Party: Aries\, Upgrade\, Blank Canvas & Char
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Canvas-Cuts-Christmas-Party-Aries-Upgrade-Blank-Canvas--Char/43191
+ 366/\nMore: https://brightonweekend.co.uk/e/2026-12-19-volks-canvas-cuts-c
+ hristmas-party-aries-upgrade-blank-canvas-char/
+URL:https://brightonweekend.co.uk/e/2026-12-19-volks-canvas-cuts-christmas-
+ party-aries-upgrade-blank-canvas-char/
+END:VEVENT
+END:VCALENDAR
