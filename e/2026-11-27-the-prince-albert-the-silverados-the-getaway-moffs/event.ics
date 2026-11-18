@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-the-prince-albert-the-silverados-the-getaway-moffs@brightonw
+ eekend.co.uk
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:The Silverados + The Getaway + Moffs
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/the-silverados-the-get
+ away-the-moffs-tickets-0W3VGF\nMore: https://brightonweekend.co.uk/e/2026-
+ 11-27-the-prince-albert-the-silverados-the-getaway-moffs/
+URL:https://brightonweekend.co.uk/e/2026-11-27-the-prince-albert-the-silver
+ ados-the-getaway-moffs/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-11-chalk-hot-chip@brightonweekend.co.uk
+DTSTAMP:20270111T000000Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:Hot Chip
+LOCATION:CHALK\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/Mf32a9a1b633\nMore: https://brigh
+ tonweekend.co.uk/e/2027-01-11-chalk-hot-chip/
+URL:https://brightonweekend.co.uk/e/2027-01-11-chalk-hot-chip/
+END:VEVENT
+END:VCALENDAR

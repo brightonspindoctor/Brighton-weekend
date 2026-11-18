@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-16-patterns-cammy-barnes@brightonweekend.co.uk
+DTSTAMP:20270416T000000Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+SUMMARY:Cammy Barnes
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6aecbd0122839d00014e90eb\nMore: 
+ https://brightonweekend.co.uk/e/2027-04-16-patterns-cammy-barnes/
+URL:https://brightonweekend.co.uk/e/2027-04-16-patterns-cammy-barnes/
+END:VEVENT
+END:VCALENDAR

@@ -337,6 +337,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "aeternum": {
+  "bucket": null,
+  "reason": "7 artists share this name",
+  "act": "Aeternum",
+  "checked": "2026-11-18",
+  "v": 4
+ },
  "afu ra": {
   "mbid": "04c464f3-cdae-4b43-9d0e-e972316f6b1e",
   "name": "Afu‐Ra",
@@ -598,6 +605,13 @@
   "reason": "not in MusicBrainz",
   "act": "An EP Summoning by YagmanX",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "an evening": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "An Evening",
+  "checked": "2026-11-18",
   "v": 4
  },
  "an interview": {
@@ -1493,6 +1507,13 @@
   "checked": "2026-10-31",
   "v": 3
  },
+ "black octopus": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Black Octopus",
+  "checked": "2026-11-18",
+  "v": 4
+ },
  "black octopus 8th birthday part 2": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -1668,7 +1689,8 @@
   "bucket": null,
   "reason": "no genre tags",
   "act": "Boogie Wonderland",
-  "checked": "2026-10-06"
+  "checked": "2026-11-18",
+  "v": 4
  },
  "bootgaze": {
   "bucket": null,
@@ -1761,6 +1783,13 @@
   "act": "BOVRIL LATRINE",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "bowiesque": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Bowiesque",
+  "checked": "2026-11-18",
+  "v": 4
  },
  "boy fear presents mart": {
   "bucket": null,
@@ -2105,6 +2134,17 @@
   "v": 4,
   "spotify": "4BGm5j3zsc5NU2BM1ihlA4"
  },
+ "cammy barnes": {
+  "mbid": "87bd13e9-6c77-4a3b-91d2-540f672f36b0",
+  "name": "Cammy Barnes",
+  "genres": [],
+  "spotify": "28J1DHByWcyaurTUQ8Rzs9",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Cammy Barnes",
+  "checked": "2026-11-18",
+  "v": 4
+ },
  "cancer bats": {
   "mbid": "00b952be-6c97-4880-84f9-06de584b491b",
   "name": "Cancer Bats",
@@ -2146,6 +2186,17 @@
   "act": "Cardinals",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "carl finlow": {
+  "mbid": "632db550-a8eb-4680-b93f-d6fa3aa2a4d9",
+  "name": "Carl Finlow",
+  "genres": [],
+  "spotify": "6g7KhV5p6W6oK0gZJkZXZW",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Carl Finlow",
+  "checked": "2026-11-18",
+  "v": 4
  },
  "carnival collective": {
   "mbid": "7c1e2786-757f-41e8-8a68-f82ea0ad680d",
@@ -2367,8 +2418,22 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Christmas Concerts",
-  "checked": "2026-10-18",
-  "v": 3
+  "checked": "2026-11-18",
+  "v": 4
+ },
+ "christmas day": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Christmas Day",
+  "checked": "2026-11-18",
+  "v": 4
+ },
+ "christmas eve": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Christmas Eve",
+  "checked": "2026-11-18",
+  "v": 4
  },
  "christmas karaoke in aid of ymca brighton": {
   "bucket": null,
@@ -2484,6 +2549,13 @@
   "act": "cleopatrick",
   "checked": "2026-10-22",
   "v": 3
+ },
+ "closed for boxing day": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Closed for Boxing Day",
+  "checked": "2026-11-18",
+  "v": 4
  },
  "clover stieve": {
   "mbid": "fe65f28b-b1c3-4293-b668-d4475cd99e80",
@@ -3714,6 +3786,13 @@
   "checked": "2026-10-31",
   "v": 4
  },
+ "dilated inc": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "DILATED.INC",
+  "checked": "2026-11-18",
+  "v": 4
+ },
  "dinosaur pile up": {
   "mbid": "b7023072-3a8c-4efc-bfd3-c117185f3b66",
   "name": "Dinosaur Pile‐Up",
@@ -3852,6 +3931,13 @@
   "reason": "not in MusicBrainz",
   "act": "Doom by the Sea VOL:6",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "doom by the sea vol 7": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Doom by the Sea Vol. 7",
+  "checked": "2026-11-18",
   "v": 4
  },
  "double bill": {
@@ -4192,6 +4278,13 @@
   "reason": "not in MusicBrainz",
   "act": "Emo Day Party",
   "checked": "2026-10-06"
+ },
+ "emo fest": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Emo Fest",
+  "checked": "2026-11-18",
+  "v": 4
  },
  "employed to serve": {
   "mbid": "29aaf014-dd11-4c84-9edf-0361693a2b84",
@@ -4755,6 +4848,13 @@
   "checked": "2026-10-11",
   "v": 4,
   "spotify": "08GQAI4eElDnROBrJRGE0X"
+ },
+ "flesh prison": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "Flesh Prison",
+  "checked": "2026-11-18",
+  "v": 4
  },
  "folklore monthly showcase": {
   "bucket": null,
@@ -5757,6 +5857,16 @@
   "checked": "2026-10-28",
   "v": 3
  },
+ "guitar hero": {
+  "mbid": "8c1bed8f-b444-4035-aede-8b9d77724afd",
+  "name": "Guitar Hero",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Guitar Hero",
+  "checked": "2026-11-18",
+  "v": 4
+ },
  "gumdrop": {
   "bucket": null,
   "reason": "2 artists share this name",
@@ -6269,6 +6379,70 @@
   "reason": "not in MusicBrainz",
   "act": "Hospital30",
   "checked": "2026-10-06"
+ },
+ "hot chip": {
+  "mbid": "d8915e13-d67a-4aa0-9c0b-1f126af951af",
+  "name": "Hot Chip",
+  "genres": [
+   {
+    "name": "alternative dance",
+    "count": 6
+   },
+   {
+    "name": "deep house",
+    "count": 3
+   },
+   {
+    "name": "electronic",
+    "count": 2
+   },
+   {
+    "name": "electronica",
+    "count": 1
+   },
+   {
+    "name": "electropop",
+    "count": 5
+   },
+   {
+    "name": "house",
+    "count": 1
+   },
+   {
+    "name": "indie pop",
+    "count": 1
+   },
+   {
+    "name": "indie rock",
+    "count": 3
+   },
+   {
+    "name": "indietronica",
+    "count": 6
+   },
+   {
+    "name": "new rave",
+    "count": 1
+   },
+   {
+    "name": "pop",
+    "count": 1
+   },
+   {
+    "name": "synth-pop",
+    "count": 3
+   }
+  ],
+  "spotify": "37uLId6Z5ZXCx19vuruvv5",
+  "wikidata": "Q877512",
+  "wd_genres": [
+   "synth-pop"
+  ],
+  "bucket": "Pop",
+  "reason": "tagged",
+  "act": "Hot Chip",
+  "checked": "2026-11-18",
+  "v": 4
  },
  "hothouse flowers": {
   "mbid": "9ddb555e-4cf2-4d76-a9d5-7627988cf6ab",
@@ -6990,6 +7164,16 @@
   "act": "Jaylor",
   "checked": "2026-10-24",
   "v": 3
+ },
+ "jeanie and the white boys": {
+  "mbid": "f250ed2e-6f38-459a-88b8-f9730d245f6e",
+  "name": "Jeanie And The White Boys",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Jeanie & The White Boys",
+  "checked": "2026-11-18",
+  "v": 4
  },
  "jesca hoop": {
   "mbid": "b5330942-ffdf-49cb-8a13-b5d7b5d67bff",
@@ -8222,6 +8406,13 @@
   "act": "Locklead",
   "checked": "2026-10-06"
  },
+ "london": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "London",
+  "checked": "2026-11-18",
+  "v": 4
+ },
  "look what happened presents": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -8240,6 +8431,13 @@
   "reason": "not in MusicBrainz",
   "act": "Lost by Monday",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "lost communications": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Lost Communications",
+  "checked": "2026-11-18",
   "v": 4
  },
  "lost in motion": {
@@ -8325,6 +8523,16 @@
   "reason": "7 artists share this name",
   "act": "Lulu",
   "checked": "2026-10-06"
+ },
+ "luna marble": {
+  "mbid": "0f6ae6c5-b5aa-49f7-ae9b-a9f29cb68bce",
+  "name": "Luna Marble",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Luna Marble",
+  "checked": "2026-11-18",
+  "v": 4
  },
  "m woodroe": {
   "mbid": "084a11f3-7d25-41f0-99a5-f110109ed52b",
@@ -9395,6 +9603,56 @@
   "act": "New on Sale Music David Bowie",
   "checked": "2026-10-06"
  },
+ "new years day": {
+  "mbid": "e5648c4a-f07c-48a8-9b58-32ac5ff092e5",
+  "name": "New Years Day",
+  "genres": [
+   {
+    "name": "alternative metal",
+    "count": 5
+   },
+   {
+    "name": "alternative rock",
+    "count": 6
+   },
+   {
+    "name": "gothic metal",
+    "count": 4
+   },
+   {
+    "name": "gothic rock",
+    "count": 4
+   },
+   {
+    "name": "hard rock",
+    "count": 5
+   },
+   {
+    "name": "pop punk",
+    "count": 3
+   },
+   {
+    "name": "pop rock",
+    "count": 3
+   },
+   {
+    "name": "post-hardcore",
+    "count": 2
+   }
+  ],
+  "spotify": "7IEyUxk8jyEVz9Zm9H8bfg",
+  "wikidata": "Q584523",
+  "wd_genres": [
+   "alternative metal",
+   "alternative rock",
+   "pop-punk"
+  ],
+  "bucket": "Punk & Metal",
+  "reason": "tagged",
+  "act": "New Years Day",
+  "checked": "2026-11-18",
+  "v": 4
+ },
  "new years eve": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -9679,6 +9937,13 @@
   "checked": "2026-11-11",
   "v": 4
  },
+ "nye hours": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "NYE hours",
+  "checked": "2026-11-18",
+  "v": 4
+ },
  "nye special take out the trash": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -9704,6 +9969,13 @@
   "reason": "7 artists share this name",
   "act": "Ochre",
   "checked": "2026-11-12",
+  "v": 4
+ },
+ "offie mag social": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Offie Mag Social",
+  "checked": "2026-11-18",
   "v": 4
  },
  "offie mag social halloween": {
@@ -10598,6 +10870,20 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "rein in the reindeers dustbin kids": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Rein in the Reindeers ! Dustbin Kids",
+  "checked": "2026-11-18",
+  "v": 4
+ },
+ "rein in the reindeers dustbin kids hybrid kid downs hotel hot juice": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Rein in the Reindeers ! Dustbin Kids, Hybrid Kid, Downs Hotel, Hot Juice",
+  "checked": "2026-11-18",
+  "v": 4
+ },
  "release the bats": {
   "mbid": "abcc24ce-7d3e-443e-a0a7-b8da12bd7578",
   "name": "Release The Bats",
@@ -11082,6 +11368,13 @@
   "reason": "not in MusicBrainz",
   "act": "Safenath",
   "checked": "2026-11-12",
+  "v": 4
+ },
+ "sailing moon and fred hills quartet": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "… Sailing Moon & Fred Hills Quartet",
+  "checked": "2026-11-18",
   "v": 4
  },
  "salvador sobral": {
@@ -13278,6 +13571,20 @@
   "act": "The Hoosiers",
   "checked": "2026-10-06"
  },
+ "the hotknives": {
+  "mbid": "0eac236c-3432-4c76-b688-7ce15900aa98",
+  "name": "The Hotknives",
+  "genres": [],
+  "wikidata": "Q1416723",
+  "wd_genres": [
+   "new wave"
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "The Hotknives",
+  "checked": "2026-11-18",
+  "v": 4
+ },
  "the house and garage orchestra": {
   "mbid": "1ad80af1-d8d8-4dfb-877d-6df7eef602d0",
   "name": "The House & Garage Orchestra",
@@ -13333,6 +13640,43 @@
   "reason": "tagged",
   "act": "The House of Love",
   "checked": "2026-10-11",
+  "v": 4
+ },
+ "the human league": {
+  "mbid": "7adaabfb-acfb-47bc-8c7c-59471c2f0db8",
+  "name": "The Human League",
+  "genres": [
+   {
+    "name": "electronic",
+    "count": 4
+   },
+   {
+    "name": "minimal synth",
+    "count": 3
+   },
+   {
+    "name": "new romantic",
+    "count": 2
+   },
+   {
+    "name": "new wave",
+    "count": 7
+   },
+   {
+    "name": "pop",
+    "count": 1
+   },
+   {
+    "name": "synth-pop",
+    "count": 8
+   }
+  ],
+  "spotify": "1aX2dmV8XoHYCOQRxjPESG",
+  "wikidata": "Q730158",
+  "bucket": "Pop",
+  "reason": "tagged",
+  "act": "The Human League",
+  "checked": "2026-11-18",
   "v": 4
  },
  "the humbuckers": {
@@ -13436,6 +13780,25 @@
   "reason": "3 artists share this name",
   "act": "The Lilacs",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "the long tall texans": {
+  "mbid": "334488da-704e-4c88-9137-d8bffc77e3d6",
+  "name": "The Long Tall Texans",
+  "genres": [
+   {
+    "name": "psychobilly",
+    "count": 1
+   },
+   {
+    "name": "punk",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "The Long Tall texans",
+  "checked": "2026-11-18",
   "v": 4
  },
  "the love buzz": {
@@ -13950,6 +14313,13 @@
   "checked": "2026-11-11",
   "v": 4
  },
+ "the silverados": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Silverados",
+  "checked": "2026-11-18",
+  "v": 4
+ },
  "the simpsons ultimate quiz": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -13983,6 +14353,24 @@
   "act": "The Skints",
   "checked": "2026-10-06",
   "spotify": "39k4UDTgsWe6NCi6hgnfc1",
+  "v": 4
+ },
+ "the slide show must go on": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Slide Show Must Go On",
+  "checked": "2026-11-18",
+  "v": 4
+ },
+ "the slow country": {
+  "mbid": "06e3c8d2-23c8-4253-a95d-0af8901888cd",
+  "name": "The Slow Country",
+  "genres": [],
+  "spotify": "5kD1IXOvV30AavIW5so1tA",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "The Slow Country",
+  "checked": "2026-11-18",
   "v": 4
  },
  "the smyths": {
@@ -14175,6 +14563,16 @@
   "act": "The Wow! Scenario",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "the wran": {
+  "mbid": "b0577390-9d35-4a9c-b959-1dbafd3b1067",
+  "name": "The Wran",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "The Wran",
+  "checked": "2026-11-18",
+  "v": 4
  },
  "the wurzels": {
   "mbid": "8580ec50-775a-4486-8240-49115cf0114b",
@@ -14889,6 +15287,13 @@
   "spotify": "61ujMGJVHgF9LPrIZw4MaI",
   "v": 4
  },
+ "twerk temple": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Twerk Temple",
+  "checked": "2026-11-18",
+  "v": 4
+ },
  "tydl": {
   "mbid": "7aa6bfd5-44a1-4878-b5aa-83a62d6b5fdd",
   "name": "TYDL",
@@ -15591,6 +15996,13 @@
   "act": "Wyld Rose Showcase",
   "checked": "2026-11-04",
   "v": 3
+ },
+ "xana": {
+  "bucket": null,
+  "reason": "9 artists share this name",
+  "act": "Xana",
+  "checked": "2026-11-18",
+  "v": 4
  },
  "xlnt bhvr": {
   "bucket": null,

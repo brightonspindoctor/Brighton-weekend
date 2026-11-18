@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-08-a-l-p-h-a-b-e-t-dilated-inc@brightonweekend.co.uk
+DTSTAMP:20270108T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:DILATED.INC
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Alphabet-Bri
+ ghton/dilatedinc-live-at-ALPHABET-Brighton/43116582/\nMore: https://bright
+ onweekend.co.uk/e/2027-01-08-a-l-p-h-a-b-e-t-dilated-inc/
+URL:https://brightonweekend.co.uk/e/2027-01-08-a-l-p-h-a-b-e-t-dilated-inc/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-25-the-brunswick-easter-bunny-girl-bring-baby-drag-bingo@bright
+ onweekend.co.uk
+DTSTAMP:20270325T000000Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270326
+SUMMARY:🐰🏳️‍🌈👼Easter: Bunny Girl Bring Baby Drag Bingo 🏳
+ ️‍🌈👼🐰
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/easter-bu
+ nny-girl-bring-baby-drag-bingo\nMore: https://brightonweekend.co.uk/e/2027
+ -03-25-the-brunswick-easter-bunny-girl-bring-baby-drag-bingo/
+URL:https://brightonweekend.co.uk/e/2027-03-25-the-brunswick-easter-bunny-g
+ irl-bring-baby-drag-bingo/
+END:VEVENT
+END:VCALENDAR

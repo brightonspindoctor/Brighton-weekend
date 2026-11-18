@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-25-green-door-store-the-slow-country@brightonweekend.co.uk
+DTSTAMP:20270225T000000Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:The Slow Country
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1697368/the-slow-country
+ -tickets\nMore: https://brightonweekend.co.uk/e/2027-02-25-green-door-stor
+ e-the-slow-country/
+URL:https://brightonweekend.co.uk/e/2027-02-25-green-door-store-the-slow-co
+ untry/
+END:VEVENT
+END:VCALENDAR

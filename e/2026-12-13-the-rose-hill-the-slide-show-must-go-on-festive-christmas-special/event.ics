@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-13-the-rose-hill-the-slide-show-must-go-on-festive-christmas-sp
+ ecial@brightonweekend.co.uk
+DTSTAMP:20261213T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:The Slide Show Must Go On: Festive Christmas Special!
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/the-slide-show-must-go
+ -on-office-christmas-party/\nMore: https://brightonweekend.co.uk/e/2026-12
+ -13-the-rose-hill-the-slide-show-must-go-on-festive-christmas-special/
+URL:https://brightonweekend.co.uk/e/2026-12-13-the-rose-hill-the-slide-show
+ -must-go-on-festive-christmas-special/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-11-the-brunswick-as-camp-as-cupid-bring-baby-drag-bingo@brighto
+ nweekend.co.uk
+DTSTAMP:20270211T000000Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:❤️ As Camp As Cupid Bring Baby Drag Bingo ❤️ 🏳️‍🌈
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/as-camp-a
+ s-cupid-bring-baby-drag-bingo-2\nMore: https://brightonweekend.co.uk/e/202
+ 7-02-11-the-brunswick-as-camp-as-cupid-bring-baby-drag-bingo/
+URL:https://brightonweekend.co.uk/e/2027-02-11-the-brunswick-as-camp-as-cup
+ id-bring-baby-drag-bingo/
+END:VEVENT
+END:VCALENDAR

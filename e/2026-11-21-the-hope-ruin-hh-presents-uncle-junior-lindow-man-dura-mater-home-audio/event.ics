@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-11-21-the-hope-ruin-hh-presents-uncle-junior-lindow-man-dura-mater
  -home-audio@brightonweekend.co.uk
 DTSTAMP:20261121T000000Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
+DTSTART:20261121T193000Z
+DTEND:20261121T230000Z
 SUMMARY:HH Presents: Uncle Junior + Lindow Man + Dura Mater + Home Audio
 LOCATION:The Hope & Ruin\, Brighton
 DESCRIPTION:Tickets: https://www.fatsoma.com/e/zhntgdmk/hh-presents-uncle-j

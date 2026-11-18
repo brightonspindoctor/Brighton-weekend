@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-17-the-brunswick-as-camp-as-christmas-bring-baby-drag-bingo@bri
+ ghtonweekend.co.uk
+DTSTAMP:20261217T000000Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:🎄As Camp As Christmas 🎄 🏳️‍🌈👼 Bring Baby Drag Bi
+ ngo 🏳️‍🌈👼
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/as-camp-a
+ s-christmas-bring-baby-drag-bingo-2\nMore: https://brightonweekend.co.uk/e
+ /2026-12-17-the-brunswick-as-camp-as-christmas-bring-baby-drag-bingo/
+URL:https://brightonweekend.co.uk/e/2026-12-17-the-brunswick-as-camp-as-chr
+ istmas-bring-baby-drag-bingo/
+END:VEVENT
+END:VCALENDAR

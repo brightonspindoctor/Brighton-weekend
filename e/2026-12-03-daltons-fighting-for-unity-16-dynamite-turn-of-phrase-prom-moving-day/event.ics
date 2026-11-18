@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-03-daltons-fighting-for-unity-16-dynamite-turn-of-phrase-prom-m
+ oving-day@brightonweekend.co.uk
+DTSTAMP:20261203T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Fighting for Unity 16: Dynamite\, Turn of Phrase\, Prom\, Moving Da
+ y
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.visitbrighton.com/whats-on/fighting-for-un
+ ity-16-dynamite-turn-of-phrase-prom-moving-day-p2991801\nMore: https://bri
+ ghtonweekend.co.uk/e/2026-12-03-daltons-fighting-for-unity-16-dynamite-tur
+ n-of-phrase-prom-moving-day/
+URL:https://brightonweekend.co.uk/e/2026-12-03-daltons-fighting-for-unity-1
+ 6-dynamite-turn-of-phrase-prom-moving-day/
+END:VEVENT
+END:VCALENDAR

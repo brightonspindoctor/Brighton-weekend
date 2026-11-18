@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-18-the-rose-hill-treehouse-presents-sailing-moon-fred-hills-qua
+ rtet@brightonweekend.co.uk
+DTSTAMP:20261218T000000Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Treehouse presents… Sailing Moon & Fred Hills Quartet
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/treehouse-presents-sai
+ ling-moon-fred-hills-quartet/\nMore: https://brightonweekend.co.uk/e/2026-
+ 12-18-the-rose-hill-treehouse-presents-sailing-moon-fred-hills-quartet/
+URL:https://brightonweekend.co.uk/e/2026-12-18-the-rose-hill-treehouse-pres
+ ents-sailing-moon-fred-hills-quartet/
+END:VEVENT
+END:VCALENDAR

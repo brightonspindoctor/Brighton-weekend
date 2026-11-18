@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-27-a-l-p-h-a-b-e-t-offie-mag-social@brightonweekend.co.uk
+DTSTAMP:20261127T000000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Offie Mag Social
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6af35a1e3d4b160001d5a981\nMore: 
+ https://brightonweekend.co.uk/e/2026-11-27-a-l-p-h-a-b-e-t-offie-mag-socia
+ l/
+URL:https://brightonweekend.co.uk/e/2026-11-27-a-l-p-h-a-b-e-t-offie-mag-so
+ cial/
+END:VEVENT
+END:VCALENDAR

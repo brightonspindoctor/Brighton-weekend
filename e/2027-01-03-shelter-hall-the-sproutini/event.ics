@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-03-shelter-hall-the-sproutini@brightonweekend.co.uk
+DTSTAMP:20270103T000000Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:The Sproutini
+LOCATION:Shelter Hall\, Brighton
+DESCRIPTION:Tickets: https://shelterhall.co.uk/whats-on/sproutini-brighton/
+ \nMore: https://brightonweekend.co.uk/e/2027-01-03-shelter-hall-the-sprout
+ ini/
+URL:https://brightonweekend.co.uk/e/2027-01-03-shelter-hall-the-sproutini/
+END:VEVENT
+END:VCALENDAR

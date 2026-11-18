@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-13-dust-an-afternoon-of-indie@brightonweekend.co.uk
+DTSTAMP:20270213T000000Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:An Afternoon of Indie
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6afc429bc69ffe0001a9cee4\nMore: 
+ https://brightonweekend.co.uk/e/2027-02-13-dust-an-afternoon-of-indie/
+URL:https://brightonweekend.co.uk/e/2027-02-13-dust-an-afternoon-of-indie/
+END:VEVENT
+END:VCALENDAR

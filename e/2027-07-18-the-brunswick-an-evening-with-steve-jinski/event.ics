@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-18-the-brunswick-an-evening-with-steve-jinski@brightonweekend.c
+ o.uk
+DTSTAMP:20270718T000000Z
+DTSTART;VALUE=DATE:20270718
+DTEND;VALUE=DATE:20270719
+SUMMARY:An Evening with Steve Jinski
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/an-evenin
+ g-with-steve-jinski\nMore: https://brightonweekend.co.uk/e/2027-07-18-the-
+ brunswick-an-evening-with-steve-jinski/
+URL:https://brightonweekend.co.uk/e/2027-07-18-the-brunswick-an-evening-wit
+ h-steve-jinski/
+END:VEVENT
+END:VCALENDAR

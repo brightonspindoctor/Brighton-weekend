@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-08-the-brunswick-bowiesque-live-the-brunswick-8th-9th-jan-2026@
+ brightonweekend.co.uk
+DTSTAMP:20270108T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:Bowiesque Live
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/bowiesque
+ -live-the-brunswick-8th-9th-jan-2026\nMore: https://brightonweekend.co.uk/
+ e/2027-01-08-the-brunswick-bowiesque-live-the-brunswick-8th-9th-jan-2026/
+URL:https://brightonweekend.co.uk/e/2027-01-08-the-brunswick-bowiesque-live
+ -the-brunswick-8th-9th-jan-2026/
+END:VEVENT
+END:VCALENDAR

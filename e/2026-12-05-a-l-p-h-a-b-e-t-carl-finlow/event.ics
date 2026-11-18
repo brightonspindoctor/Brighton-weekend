@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-05-a-l-p-h-a-b-e-t-carl-finlow@brightonweekend.co.uk
+DTSTAMP:20261205T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Carl Finlow
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://ra.co/events/2560572\nMore: https://brightonwe
+ ekend.co.uk/e/2026-12-05-a-l-p-h-a-b-e-t-carl-finlow/
+URL:https://brightonweekend.co.uk/e/2026-12-05-a-l-p-h-a-b-e-t-carl-finlow/
+END:VEVENT
+END:VCALENDAR

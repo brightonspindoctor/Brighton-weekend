@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-22-the-prince-albert-rein-in-the-reindeers-dustbin-kids-hybrid-
+ kid-downs-hotel-hot-juice@brightonweekend.co.uk
+DTSTAMP:20261222T000000Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:Rein in the Reindeers ! Dustbin Kids\, Hybrid Kid\, Downs Hotel\, H
+ ot Juice
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://wegottickets.com/f/32139\nMore: https://bright
+ onweekend.co.uk/e/2026-12-22-the-prince-albert-rein-in-the-reindeers-dustb
+ in-kids-hybrid-kid-downs-hotel-hot-juice/
+URL:https://brightonweekend.co.uk/e/2026-12-22-the-prince-albert-rein-in-th
+ e-reindeers-dustbin-kids-hybrid-kid-downs-hotel-hot-juice/
+END:VEVENT
+END:VCALENDAR

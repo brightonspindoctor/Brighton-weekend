@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-01-daltons-london-original-76-punks@brightonweekend.co.uk
+DTSTAMP:20270501T000000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:London (Original '76 Punks)
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://good-show.co.uk/events/london-original-76-punk
+ s-at-daltons-brighton-fktvjh\nMore: https://brightonweekend.co.uk/e/2027-0
+ 5-01-daltons-london-original-76-punks/
+URL:https://brightonweekend.co.uk/e/2027-05-01-daltons-london-original-76-p
+ unks/
+END:VEVENT
+END:VCALENDAR

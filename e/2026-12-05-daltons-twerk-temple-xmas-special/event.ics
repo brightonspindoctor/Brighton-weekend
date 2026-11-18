@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-05-daltons-twerk-temple-xmas-special@brightonweekend.co.uk
+DTSTAMP:20261205T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Twerk Temple Xmas Special
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Daltons-Brig
+ hton/Twerk-Temple-Xmas-Special---Brighton/43137764/?fbclid=PAZXh0bgNhZW0CM
+ TEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafc9eDSW7wM7qA-_yeULXpzRnO
+ czcXCWWp3nwhXTdWMAM6kM3KjzQ1WcxB58Q_aem_F4o6d6MNIjPDSUTaFjudIw\nMore: http
+ s://brightonweekend.co.uk/e/2026-12-05-daltons-twerk-temple-xmas-special/
+URL:https://brightonweekend.co.uk/e/2026-12-05-daltons-twerk-temple-xmas-sp
+ ecial/
+END:VEVENT
+END:VCALENDAR

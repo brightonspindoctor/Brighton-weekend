@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-26-the-brunswick-closed-for-boxing-day@brightonweekend.co.uk
+DTSTAMP:20261226T000000Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
+SUMMARY:Closed for Boxing Day
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/closed-fo
+ r-boxing-day\nMore: https://brightonweekend.co.uk/e/2026-12-26-the-brunswi
+ ck-closed-for-boxing-day/
+URL:https://brightonweekend.co.uk/e/2026-12-26-the-brunswick-closed-for-box
+ ing-day/
+END:VEVENT
+END:VCALENDAR

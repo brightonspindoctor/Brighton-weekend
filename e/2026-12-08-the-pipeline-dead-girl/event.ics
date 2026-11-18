@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-08-the-pipeline-dead-girl@brightonweekend.co.uk
+DTSTAMP:20261208T000000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Dead Girl
+LOCATION:The Pipeline\, Brighton
+DESCRIPTION:Tickets: https://www.songkick.com/concerts/43519470-dead-girl-a
+ t-pipeline?utm_medium=organic&utm_source=microformat\nMore: https://bright
+ onweekend.co.uk/e/2026-12-08-the-pipeline-dead-girl/
+URL:https://brightonweekend.co.uk/e/2026-12-08-the-pipeline-dead-girl/
+END:VEVENT
+END:VCALENDAR

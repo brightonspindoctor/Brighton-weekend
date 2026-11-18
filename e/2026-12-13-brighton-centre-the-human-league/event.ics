@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-13-brighton-centre-the-human-league@brightonweekend.co.uk
+DTSTAMP:20261213T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:The Human League
+LOCATION:Brighton Centre\, Brighton
+DESCRIPTION:Tickets: https://brightoncentre.co.uk/whats-on/2027/the-human-l
+ eague/\nMore: https://brightonweekend.co.uk/e/2026-12-13-brighton-centre-t
+ he-human-league/
+URL:https://brightonweekend.co.uk/e/2026-12-13-brighton-centre-the-human-le
+ ague/
+END:VEVENT
+END:VCALENDAR

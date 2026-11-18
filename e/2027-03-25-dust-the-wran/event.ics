@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-25-dust-the-wran@brightonweekend.co.uk
+DTSTAMP:20270325T000000Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270326
+SUMMARY:The Wran
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6afb1bcfb8fc750001c3d7ce\nMore: 
+ https://brightonweekend.co.uk/e/2027-03-25-dust-the-wran/
+URL:https://brightonweekend.co.uk/e/2027-03-25-dust-the-wran/
+END:VEVENT
+END:VCALENDAR

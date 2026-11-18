@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-15-the-brunswick-the-island-giants-celebrate-international-tea-
+ day@brightonweekend.co.uk
+DTSTAMP:20261215T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:The Island Giants celebrate International Tea day
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/the-islan
+ d-giants-celebrate-international-tea-day\nMore: https://brightonweekend.co
+ .uk/e/2026-12-15-the-brunswick-the-island-giants-celebrate-international-t
+ ea-day/
+URL:https://brightonweekend.co.uk/e/2026-12-15-the-brunswick-the-island-gia
+ nts-celebrate-international-tea-day/
+END:VEVENT
+END:VCALENDAR
