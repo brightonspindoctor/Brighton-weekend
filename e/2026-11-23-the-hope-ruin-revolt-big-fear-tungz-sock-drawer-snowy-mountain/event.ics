@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-11-23-the-hope-ruin-revolt-big-fear-tungz-sock-drawer-snowy-mounta
  in@brightonweekend.co.uk
 DTSTAMP:20261123T000000Z
-DTSTART;VALUE=DATE:20261123
-DTEND;VALUE=DATE:20261124
+DTSTART:20261123T193000Z
+DTEND:20261123T230000Z
 SUMMARY:Revolt: Big Fear + Tungz + Sock Drawer + Snowy Mountain
 LOCATION:The Hope & Ruin\, Brighton
 DESCRIPTION:Tickets: https://www.hope.pub/event/revolt-big-fear-tungz-sock-

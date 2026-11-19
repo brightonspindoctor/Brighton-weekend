@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-06-komedia-nathan-cassidy-the-unbearable-tragedy-of-being-happy
+ @brightonweekend.co.uk
+DTSTAMP:20270606T000000Z
+DTSTART:20270606T203000Z
+DTEND:20270606T233000Z
+SUMMARY:Nathan Cassidy: The Unbearable Tragedy of Being Happy
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366940
+ 0/events/128677576\nMore: https://brightonweekend.co.uk/e/2027-06-06-komed
+ ia-nathan-cassidy-the-unbearable-tragedy-of-being-happy/
+URL:https://brightonweekend.co.uk/e/2027-06-06-komedia-nathan-cassidy-the-u
+ nbearable-tragedy-of-being-happy/
+END:VEVENT
+END:VCALENDAR

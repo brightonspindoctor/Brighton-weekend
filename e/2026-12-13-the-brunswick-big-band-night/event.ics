@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-13-the-brunswick-big-band-night@brightonweekend.co.uk
+DTSTAMP:20261213T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Big Band Night
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.visitbrighton.com/whats-on/big-band-night-
+ p2971391\nMore: https://brightonweekend.co.uk/e/2026-12-13-the-brunswick-b
+ ig-band-night/
+URL:https://brightonweekend.co.uk/e/2026-12-13-the-brunswick-big-band-night
+ /
+END:VEVENT
+END:VCALENDAR

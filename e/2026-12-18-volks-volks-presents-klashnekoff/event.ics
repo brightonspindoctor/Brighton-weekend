@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-18-volks-volks-presents-klashnekoff@brightonweekend.co.uk
+DTSTAMP:20261218T000000Z
+DTSTART:20261218T190000Z
+DTEND:20261218T220000Z
+SUMMARY:Volks Presents - Klashnekoff
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Volks-Presents---Klashnekoff/43193531/\nMore: https://brightonweek
+ end.co.uk/e/2026-12-18-volks-volks-presents-klashnekoff/
+URL:https://brightonweekend.co.uk/e/2026-12-18-volks-volks-presents-klashne
+ koff/
+END:VEVENT
+END:VCALENDAR

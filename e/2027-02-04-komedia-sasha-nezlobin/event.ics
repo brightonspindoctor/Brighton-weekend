@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-04-komedia-sasha-nezlobin@brightonweekend.co.uk
+DTSTAMP:20270204T000000Z
+DTSTART:20270204T200000Z
+DTEND:20270204T230000Z
+SUMMARY:Sasha Nezlobin
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366939
+ 3/events/128677554\nMore: https://brightonweekend.co.uk/e/2027-02-04-komed
+ ia-sasha-nezlobin/
+URL:https://brightonweekend.co.uk/e/2027-02-04-komedia-sasha-nezlobin/
+END:VEVENT
+END:VCALENDAR

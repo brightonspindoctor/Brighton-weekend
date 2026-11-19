@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-12-komedia-grace-mulvey-gigantica@brightonweekend.co.uk
+DTSTAMP:20270312T000000Z
+DTSTART:20270312T193000Z
+DTEND:20270312T223000Z
+SUMMARY:Grace Mulvey: Gigantica
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366915
+ 1/events/128675890\nMore: https://brightonweekend.co.uk/e/2027-03-12-komed
+ ia-grace-mulvey-gigantica/
+URL:https://brightonweekend.co.uk/e/2027-03-12-komedia-grace-mulvey-giganti
+ ca/
+END:VEVENT
+END:VCALENDAR

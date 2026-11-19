@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-patterns-grassroots-free-entry-nukg-electronic-04-12@brighto
+ nweekend.co.uk
+DTSTAMP:20261204T000000Z
+DTSTART:20261204T230000Z
+DTEND:20261205T040000Z
+SUMMARY:Grassroots - FREE entry - Nukg\, Electronic - 04/12
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Patterns-Bri
+ ghton/GRASSROOTS---FREE-entry---NUKG-Electronic---0412/43195361/\nMore: ht
+ tps://brightonweekend.co.uk/e/2026-12-04-patterns-grassroots-free-entry-nu
+ kg-electronic-04-12/
+URL:https://brightonweekend.co.uk/e/2026-12-04-patterns-grassroots-free-ent
+ ry-nukg-electronic-04-12/
+END:VEVENT
+END:VCALENDAR

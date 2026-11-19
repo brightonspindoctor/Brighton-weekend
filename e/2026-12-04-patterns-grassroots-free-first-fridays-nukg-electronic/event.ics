@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-patterns-grassroots-free-first-fridays-nukg-electronic@brigh
+ tonweekend.co.uk
+DTSTAMP:20261204T000000Z
+DTSTART:20261204T230000Z
+DTEND:20261205T040000Z
+SUMMARY:Grassroots: Free First Fridays - Nukg\, Electronic
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/grassroots-free-first-fridays-nu
+ kg-electronic-4th-dec-patterns-brighton-tickets\nMore: https://brightonwee
+ kend.co.uk/e/2026-12-04-patterns-grassroots-free-first-fridays-nukg-electr
+ onic/
+URL:https://brightonweekend.co.uk/e/2026-12-04-patterns-grassroots-free-fir
+ st-fridays-nukg-electronic/
+END:VEVENT
+END:VCALENDAR

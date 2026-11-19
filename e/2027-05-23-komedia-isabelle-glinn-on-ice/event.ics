@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-23-komedia-isabelle-glinn-on-ice@brightonweekend.co.uk
+DTSTAMP:20270523T000000Z
+DTSTART:20270523T163000Z
+DTEND:20270523T193000Z
+SUMMARY:Isabelle Glinn On Ice
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366940
+ 9/events/128677684\nMore: https://brightonweekend.co.uk/e/2027-05-23-komed
+ ia-isabelle-glinn-on-ice/
+URL:https://brightonweekend.co.uk/e/2027-05-23-komedia-isabelle-glinn-on-ic
+ e/
+END:VEVENT
+END:VCALENDAR

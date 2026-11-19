@@ -3919,6 +3919,13 @@
   "checked": "2026-11-12",
   "v": 4
  },
+ "dominik diamond sings the video games": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Dominik Diamond Sings The Video Games",
+  "checked": "2026-11-19",
+  "v": 4
+ },
  "dont tell": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -7881,6 +7888,26 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "klashnekoff": {
+  "mbid": "6c3d622d-4807-4a71-8ffd-1f4b8b876da0",
+  "name": "Klashnekoff",
+  "genres": [
+   {
+    "name": "hip hop",
+    "count": 1
+   }
+  ],
+  "spotify": "3eOeJWNle9qh1SH3fCg59O",
+  "wikidata": "Q353125",
+  "wd_genres": [
+   "hip-hop"
+  ],
+  "bucket": "Hip-hop & R&B",
+  "reason": "tagged",
+  "act": "Klashnekoff",
+  "checked": "2026-11-19",
+  "v": 4
+ },
  "knats": {
   "mbid": "aad6524c-2922-4d4a-82fd-7693d8f96653",
   "name": "Knats",
@@ -7890,6 +7917,13 @@
   "act": "Knats",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "knives": {
+  "bucket": null,
+  "reason": "13 artists share this name",
+  "act": "Knives",
+  "checked": "2026-11-19",
+  "v": 4
  },
  "kojaque": {
   "mbid": "f1b7101e-c968-4843-ad08-9ef5b846c915",
@@ -8500,6 +8534,17 @@
   "reason": "not in MusicBrainz",
   "act": "Lovers II Friends",
   "checked": "2026-10-06"
+ },
+ "low steppa": {
+  "mbid": "dcb645bd-ec79-4673-b2ab-d3b9b454dd61",
+  "name": "Low Steppa",
+  "genres": [],
+  "spotify": "5OImcY3khBn9UFjzgaapob",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Low Steppa",
+  "checked": "2026-11-19",
+  "v": 4
  },
  "lukas and frank": {
   "mbid": "99f845b6-e37a-4d30-803d-98c39f1019d1",

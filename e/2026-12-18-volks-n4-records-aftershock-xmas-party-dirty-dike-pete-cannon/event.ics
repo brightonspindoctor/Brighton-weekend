@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-18-volks-n4-records-aftershock-xmas-party-dirty-dike-pete-canno
+ n@brightonweekend.co.uk
+DTSTAMP:20261218T000000Z
+DTSTART:20261218T230000Z
+DTEND:20261219T020000Z
+SUMMARY:N4 Records & Aftershock Xmas Party: Dirty Dike\, Pete Cannon
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/N4-Records--Aftershock-Xmas-Party-Dirty-Dike-Pete-Cannon/43197227/
+ \nMore: https://brightonweekend.co.uk/e/2026-12-18-volks-n4-records-afters
+ hock-xmas-party-dirty-dike-pete-cannon/
+URL:https://brightonweekend.co.uk/e/2026-12-18-volks-n4-records-aftershock-
+ xmas-party-dirty-dike-pete-cannon/
+END:VEVENT
+END:VCALENDAR
