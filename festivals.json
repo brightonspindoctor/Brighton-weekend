@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-19",
-  "range_start": "2026-11-19",
+  "updated": "2026-11-20",
+  "range_start": "2026-11-20",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -49,6 +49,18 @@
       "location_display": "West Midlands"
     },
     {
+      "title": "Artist Open Houses Winter",
+      "date": "2026-11-28",
+      "date_end": "2026-11-28",
+      "location": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton",
+      "category": "Arts & Culture",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
+      "detail_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
+      "id": "festival:artist-open-houses-winter:2026-11-28",
+      "location_display": "Various venues, Brighton"
+    },
+    {
       "title": "Celtic Connections",
       "date": "2027-01-14",
       "date_end": "2027-01-31",
@@ -67,7 +79,7 @@
       "date_end": "2027-03-07",
       "location": "Dolgellau",
       "category": "Music",
-      "ticket_url": "https://booking.bookinghound.cloud/fe/booking?og=fe4ef999-bc98-47a3-b613-5034599bcb5b&mode=fc&fcg=2&fca=60",
+      "ticket_url": "https://www.motojunkies.co.uk/burningbikefest",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/burning-bike-fest/",
       "official_url": "https://www.motojunkies.co.uk/burningbikefest",
@@ -119,7 +131,7 @@
       "date_end": "2027-03-14",
       "location": "Edinburgh",
       "category": "Other",
-      "ticket_url": "https://thescottishmotorcycleshow.com/tickets/",
+      "ticket_url": "https://thescottishmotorcycleshow.com/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/the-scottish-motorcycle-show/",
       "official_url": "https://thescottishmotorcycleshow.com/",
@@ -289,7 +301,7 @@
       "date_end": "2027-05-02",
       "location": "Driffield",
       "category": "Comedy",
-      "ticket_url": "https://mapevents.co.uk/product-category/into-the-valley/",
+      "ticket_url": "https://mapevents.co.uk/into-the-valley-motorcycle-rally-yorkshire/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/into-the-valley/",
       "official_url": "https://mapevents.co.uk/into-the-valley-motorcycle-rally-yorkshire/",
@@ -301,7 +313,7 @@
       "date": "2027-04-30",
       "date_end": "2027-05-02",
       "location": "Blandford",
-      "category": "Family",
+      "category": "Music",
       "ticket_url": "https://teddyrocks.co.uk/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/teddy-rocks-festival/",
@@ -335,19 +347,6 @@
       "location_display": "North West"
     },
     {
-      "title": "Girvan Traditional Folk Festival",
-      "date": "2027-05-01",
-      "date_end": "2027-05-01",
-      "location": "Girvan",
-      "category": "Family",
-      "ticket_url": "https://girvanfolkfestival.org.uk/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/girvan-traditional-folk-festival/",
-      "official_url": "https://girvanfolkfestival.org.uk/",
-      "id": "festival:girvan-traditional-folk-festival:2027-05-01",
-      "location_display": "Girvan"
-    },
-    {
       "title": "Liverpool Sound City",
       "date": "2027-05-01",
       "date_end": "2027-05-02",
@@ -365,7 +364,7 @@
       "date": "2027-05-06",
       "date_end": "2027-05-08",
       "location": "Wales",
-      "category": "Arts & Culture",
+      "category": "Music",
       "ticket_url": "https://focuswales.com/tickets/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/focus-wales/",
@@ -412,19 +411,6 @@
       "location_display": "Oldham"
     },
     {
-      "title": "Herofest",
-      "date": "2027-05-08",
-      "date_end": "2027-05-08",
-      "location": "Cheadle",
-      "category": "Arts & Culture",
-      "ticket_url": "https://www.live-roleplaying.co.uk/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/herofest/",
-      "official_url": "https://www.live-roleplaying.co.uk/",
-      "id": "festival:herofest:2027-05-08",
-      "location_display": "Cheadle"
-    },
-    {
       "title": "Incineration Festival",
       "date": "2027-05-08",
       "date_end": "2027-05-08",
@@ -434,6 +420,17 @@
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/incineration-festival/",
       "official_url": "https://incinerationfest.com/",
+      "dates_from": "official site",
+      "lineup": [
+        "Mayhem",
+        "Left to Die",
+        "Akercocke",
+        "Messa",
+        "Annotations of an Autopsy",
+        "Profanatica",
+        "BAEST"
+      ],
+      "lineup_from": "https://incinerationfest.com/",
       "id": "festival:incineration-festival:2027-05-08",
       "location_display": "Camden, London"
     },
@@ -920,19 +917,6 @@
       "location_display": "Aberystwyth"
     },
     {
-      "title": "Hidden Door Festival",
-      "date": "2027-06-03",
-      "date_end": "2027-06-07",
-      "location": "Edinburgh",
-      "category": "Arts & Culture",
-      "ticket_url": "https://hiddendoorarts.org/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/hidden-door-festival/",
-      "official_url": "https://hiddendoorarts.org/",
-      "id": "festival:hidden-door-festival:2027-06-03",
-      "location_display": "Edinburgh"
-    },
-    {
       "title": "An Experience Festival",
       "date": "2027-06-04",
       "date_end": "2027-06-06",
@@ -1063,6 +1047,18 @@
       "location_display": "Glasgow"
     },
     {
+      "title": "Rotary Family Festival & Big Help Out",
+      "date": "2027-06-06",
+      "date_end": "2027-06-06",
+      "location": "Hove Park, Goldstone Crescent, Hove, BN3 6PJ Hove",
+      "category": "Family",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
+      "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
+      "detail_url": "https://www.visitbrighton.com/whats-on/rotary-family-festival-and-big-help-out-p2805161",
+      "id": "festival:rotary-family-festival-big-help-out:2027-06-06",
+      "location_display": "Hove Park, Hove"
+    },
+    {
       "title": "Download Festival",
       "date": "2027-06-09",
       "date_end": "2027-06-13",
@@ -1101,19 +1097,6 @@
       "official_url": "https://gottwood.co.uk/",
       "id": "festival:gottwood:2027-06-10",
       "location_display": "Wales"
-    },
-    {
-      "title": "Hampton Court Palace Festival",
-      "date": "2027-06-10",
-      "date_end": "2027-06-20",
-      "location": "East Molesey · Mixed",
-      "category": "Music",
-      "ticket_url": "https://hamptoncourtpalacefestival.com/",
-      "source": "https://fezzy.uk/collections/pop-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/hampton-court-palace-festival/",
-      "official_url": "https://hamptoncourtpalacefestival.com/",
-      "id": "festival:hampton-court-palace-festival:2027-06-10",
-      "location_display": "East Molesey · Mixed"
     },
     {
       "title": "Belsonic",
@@ -1330,7 +1313,7 @@
       "date": "2027-06-18",
       "date_end": "2027-06-19",
       "location": "Blandford Forum",
-      "category": "Music",
+      "category": "Family",
       "ticket_url": "https://www.dorsetfest.org/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/dorsetfest/",
@@ -1339,25 +1322,12 @@
       "location_display": "Blandford Forum"
     },
     {
-      "title": "Elemental Temple Festival",
-      "date": "2027-06-18",
-      "date_end": "2027-06-21",
-      "location": "Thetford",
-      "category": "Wellness",
-      "ticket_url": "https://elementaltemplefestival.com/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/elemental-temple-festival/",
-      "official_url": "https://elementaltemplefestival.com/",
-      "id": "festival:elemental-temple-festival:2027-06-18",
-      "location_display": "Thetford"
-    },
-    {
       "title": "Farmyard Party",
       "date": "2027-06-18",
       "date_end": "2027-06-20",
       "location": "Helmsley",
       "category": "Arts & Culture",
-      "ticket_url": "https://mapevents.co.uk/product-category/farmyard-party/",
+      "ticket_url": "https://www.farmyardparty.com/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/farmyard-party/",
       "official_url": "https://www.farmyardparty.com/",
@@ -1447,7 +1417,7 @@
       "date": "2027-06-23",
       "date_end": "2027-06-27",
       "location": "South West",
-      "category": "Arts & Culture",
+      "category": "Other",
       "ticket_url": "https://www.glastonburyfestivals.co.uk/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/glastonbury-festival/",
@@ -1657,7 +1627,7 @@
       "date": "2027-06-30",
       "date_end": "2027-07-04",
       "location": "Lytham",
-      "category": "Arts & Culture",
+      "category": "Other",
       "ticket_url": "https://lythamfestival.com/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/lytham-festival/",
@@ -1801,7 +1771,7 @@
       "date_end": "2027-07-04",
       "location": "Wales",
       "category": "Family",
-      "ticket_url": "https://spreewales.com/tickets",
+      "ticket_url": "https://spreewales.com/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/spree-wales/",
       "official_url": "https://spreewales.com/",
@@ -2030,19 +2000,6 @@
       "location_display": "South East"
     },
     {
-      "title": "Iron Maiden Knebworth 2026",
-      "date": "2027-07-10",
-      "date_end": "2027-07-10",
-      "location": "Knebworth",
-      "category": "Music",
-      "ticket_url": "https://www.ironmaiden.knebworth.com/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/iron-maiden-knebworth-2026/",
-      "official_url": "https://www.ironmaiden.knebworth.com/",
-      "id": "festival:iron-maiden-knebworth:2027-07-10",
-      "location_display": "Knebworth"
-    },
-    {
       "title": "Parklife",
       "date": "2027-07-10",
       "date_end": "2027-07-11",
@@ -2068,6 +2025,19 @@
       "dates_from": "official site",
       "id": "festival:samadhi-fest:2027-07-10",
       "location_display": "West Midlands"
+    },
+    {
+      "title": "Tiree Music Festival",
+      "date": "2027-07-10",
+      "date_end": "2027-07-12",
+      "location": "Scotland",
+      "category": "Arts & Culture",
+      "ticket_url": "https://tireemusicfestival.co.uk/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/tiree-music-festival/",
+      "official_url": "https://tireemusicfestival.co.uk/",
+      "id": "festival:tiree-music-festival:2027-07-10",
+      "location_display": "Scotland"
     },
     {
       "title": "The Open",
@@ -2237,21 +2207,9 @@
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/wytwoods-festival/",
       "official_url": "https://www.wytwoodsfestival.uk/event/wytwoods-festival-2027/",
+      "dates_from": "official site",
       "id": "festival:wytwoods-festival:2027-07-16",
       "location_display": "South East"
-    },
-    {
-      "title": "Curious Pastimes Event 3",
-      "date": "2027-07-17",
-      "date_end": "2027-07-19",
-      "location": "Chalfont St Peter",
-      "category": "Arts & Culture",
-      "ticket_url": "https://www.curiouspastimes.co.uk/events/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/curious-pastimes-event-3/",
-      "official_url": "https://www.curiouspastimes.co.uk/events/",
-      "id": "festival:curious-pastimes-event-3:2027-07-17",
-      "location_display": "Chalfont St Peter"
     },
     {
       "title": "History in Action",
@@ -2346,18 +2304,6 @@
       "location_display": "Southwold"
     },
     {
-      "title": "Peep Festival",
-      "date": "2027-07-22",
-      "date_end": "2027-07-25",
-      "location": "Exeter",
-      "category": "Music",
-      "ticket_url": "https://fezzy.uk/festival/peep-festival/",
-      "source": "https://fezzy.uk/collections/electronic-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/peep-festival/",
-      "id": "festival:peep-festival:2027-07-22",
-      "location_display": "Exeter"
-    },
-    {
       "title": "The Wandering Wood",
       "date": "2027-07-22",
       "date_end": "2027-07-25",
@@ -2440,7 +2386,7 @@
       "date": "2027-07-23",
       "date_end": "2027-07-25",
       "location": "Workington, Cumbria",
-      "category": "Music",
+      "category": "Arts & Culture",
       "ticket_url": "https://www.cumberlandia.co.uk/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/cumberlandia/",
@@ -2606,19 +2552,6 @@
       "location_display": "South East"
     },
     {
-      "title": "Hide Seek Festival",
-      "date": "2027-07-24",
-      "date_end": "2027-07-26",
-      "location": "Shifnal",
-      "category": "Music",
-      "ticket_url": "https://hideandseekfestival.co.uk/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/hide-seek-festival/",
-      "official_url": "https://hideandseekfestival.co.uk/",
-      "id": "festival:hide-seek-festival:2027-07-24",
-      "location_display": "Shifnal"
-    },
-    {
       "title": "Magnitude",
       "date": "2027-07-24",
       "date_end": "2027-07-28",
@@ -2701,7 +2634,7 @@
       "date": "2027-07-29",
       "date_end": "2027-08-01",
       "location": "Kendal",
-      "category": "Music",
+      "category": "Other",
       "ticket_url": "https://kendalcalling.seetickets.com/event/kendal-calling-2027/lowther-deer-park/3699840",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/kendal-calling/",
@@ -2748,19 +2681,6 @@
       "official_url": "https://www.yogafestival.world/",
       "id": "festival:world-yoga-festival:2027-07-29",
       "location_display": "South East"
-    },
-    {
-      "title": "Camp Bestival Dorset",
-      "date": "2027-07-30",
-      "date_end": "2027-08-02",
-      "location": "Lulworth",
-      "category": "Family",
-      "ticket_url": "https://campbestival.net/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/camp-bestival-dorset/",
-      "official_url": "https://campbestival.net/",
-      "id": "festival:camp-bestival-dorset:2027-07-30",
-      "location_display": "Lulworth"
     },
     {
       "title": "Dreaming the Impossible",
@@ -2819,7 +2739,7 @@
       "date": "2027-07-30",
       "date_end": "2027-08-01",
       "location": "East of England",
-      "category": "Family",
+      "category": "Other",
       "ticket_url": "https://harlequinfayre.co.uk/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/harlequin-fayre/",
@@ -2921,7 +2841,7 @@
     {
       "title": "Gloucestershire Vintage Country Extravaganza",
       "date": "2027-07-31",
-      "date_end": "2027-08-02",
+      "date_end": "2027-07-31",
       "location": "Cirencester",
       "category": "Other",
       "ticket_url": "https://www.glosvintageextravaganza.co.uk/",
@@ -2943,19 +2863,6 @@
       "official_url": "https://reggaeland.co.uk/",
       "id": "festival:reggae-land:2027-07-31",
       "location_display": "South East"
-    },
-    {
-      "title": "Whirl Y Fayre",
-      "date": "2027-07-31",
-      "date_end": "2027-08-02",
-      "location": "Corfe Castle",
-      "category": "Music",
-      "ticket_url": "https://www.whirl-y-fayre.co.uk/",
-      "source": "https://fezzy.uk/collections/electronic-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/whirl-y-fayre/",
-      "official_url": "https://www.whirl-y-fayre.co.uk/",
-      "id": "festival:whirl-y-fayre:2027-07-31",
-      "location_display": "Corfe Castle"
     },
     {
       "title": "Cambridge Folk Festival",
@@ -3078,7 +2985,7 @@
       "date": "2027-08-06",
       "date_end": "2027-08-13",
       "location": "Broadstairs",
-      "category": "Arts & Culture",
+      "category": "Music",
       "ticket_url": "https://broadstairsfolkweek.org.uk/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/broadstairs-folk-week/",
@@ -3138,19 +3045,6 @@
       "dates_from": "official site",
       "id": "festival:thump-festival:2027-08-06",
       "location_display": "Warminster"
-    },
-    {
-      "title": "Edinburgh International Festival",
-      "date": "2027-08-07",
-      "date_end": "2027-08-30",
-      "location": "Edinburgh",
-      "category": "Arts & Culture",
-      "ticket_url": "https://www.eif.co.uk/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/edinburgh-international-festival/",
-      "official_url": "https://www.eif.co.uk/",
-      "id": "festival:edinburgh-international-festival:2027-08-07",
-      "location_display": "Edinburgh"
     },
     {
       "title": "Let’s Rock – Party at the Palace",
@@ -3229,19 +3123,6 @@
       "official_url": "https://www.motoguzziclub.co.uk/events/guzzi-fest",
       "id": "festival:guzzifest:2027-08-12",
       "location_display": "Bridgnorth"
-    },
-    {
-      "title": "Medicine Festival",
-      "date": "2027-08-12",
-      "date_end": "2027-08-17",
-      "location": "South East",
-      "category": "Wellness",
-      "ticket_url": "https://medicinefestival.com/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/medicine-festival/",
-      "official_url": "https://medicinefestival.com/",
-      "id": "festival:medicine-festival:2027-08-12",
-      "location_display": "South East"
     },
     {
       "title": "Camp Kindling",
@@ -3436,50 +3317,6 @@
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/one-love-festival/",
       "official_url": "https://www.onelovefestival.co.uk/",
-      "dates_from": "official site",
-      "lineup": [
-        "The Sabres of Paradise",
-        "Sanchia Izbak",
-        "The Cimarons",
-        "Aba Shanti-I",
-        "Ross Harper",
-        "Jumpin Jack Frost",
-        "GOSIA",
-        "Saxon Sound System",
-        "Ray Keith",
-        "Qualitex Sound System",
-        "SuperCLAUD",
-        "Coxsone Sound System",
-        "Don Campbell",
-        "Future Sounds Radio Showcase",
-        "Luv Injection Music",
-        "Chris Coco",
-        "Nick Manasseh",
-        "Kezza Inna Jungle",
-        "V Rocket International Sound System",
-        "Love Express Sound Presents…",
-        "Drum Club Sound System",
-        "Mixmaster Morris",
-        "Earl Gateshead",
-        "Peter D Rose",
-        "PETRU…",
-        "Dan Wiltshire",
-        "Stika",
-        "Scratchalus & Empress Reggae",
-        "ALL TONE ROCKERS SOUND SYSTEM",
-        "Tape Twelve",
-        "Au",
-        "Supercharge Sound System",
-        "Princess Nadine",
-        "FURU",
-        "CITY WALL RECORDS – presents",
-        "ACROS & Rory Moran",
-        "DJ FATALITY",
-        "DJ Kooki",
-        "DJ Dan Watts",
-        "K-CO + Finesse Empress"
-      ],
-      "lineup_from": "https://www.onelovefestival.co.uk/",
       "id": "festival:one-love-festival:2027-08-20",
       "location_display": "South East"
     },
@@ -3510,25 +3347,12 @@
       "location_display": "Wales"
     },
     {
-      "title": "3 Wishes Fairy Festival",
-      "date": "2027-08-21",
-      "date_end": "2027-08-21",
-      "location": "South West",
-      "category": "Family",
-      "ticket_url": "https://www.fairyfestival.co.uk/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/3-wishes-fairy-festival/",
-      "official_url": "https://www.fairyfestival.co.uk/",
-      "id": "festival:3-wishes-fairy-festival:2027-08-21",
-      "location_display": "South West"
-    },
-    {
       "title": "Love On the Showground Festival",
       "date": "2027-08-21",
       "date_end": "2027-08-22",
       "location": "Detling",
       "category": "Other",
-      "ticket_url": "https://buytickets.at/loveonevents",
+      "ticket_url": "https://www.loveonevents.co.uk/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/love-on-the-showground-festival/",
       "official_url": "https://www.loveonevents.co.uk/",
@@ -3641,19 +3465,6 @@
       "location_display": "East Midlands"
     },
     {
-      "title": "Between the Trees",
-      "date": "2027-08-27",
-      "date_end": "2027-08-30",
-      "location": "Merthyr Mawr",
-      "category": "Music",
-      "ticket_url": "https://betweenthetrees.co.uk/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/between-the-trees/",
-      "official_url": "https://betweenthetrees.co.uk/",
-      "id": "festival:between-the-trees:2027-08-27",
-      "location_display": "Merthyr Mawr"
-    },
-    {
       "id": "festival:brighton-mod-weekender:2027-08-27",
       "title": "Brighton Mod Weekender",
       "date": "2027-08-27",
@@ -3670,7 +3481,7 @@
       "date": "2027-08-27",
       "date_end": "2027-08-31",
       "location": "Sevenoaks",
-      "category": "Arts & Culture",
+      "category": "Comedy",
       "ticket_url": "https://campwildfire.co.uk/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/camp-wildfire/",
@@ -3810,19 +3621,6 @@
       "location_display": "Shrewsbury"
     },
     {
-      "title": "Solfest",
-      "date": "2027-08-27",
-      "date_end": "2027-08-30",
-      "location": "Silloth",
-      "category": "Family",
-      "ticket_url": "https://solfest.co.uk/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/solfest/",
-      "official_url": "https://solfest.co.uk/",
-      "id": "festival:solfest:2027-08-27",
-      "location_display": "Silloth"
-    },
-    {
       "title": "The Big Feastival",
       "date": "2027-08-27",
       "date_end": "2027-08-29",
@@ -3860,19 +3658,6 @@
       "official_url": "https://victoriousfestival.co.uk/",
       "id": "festival:victorious-festival:2027-08-27",
       "location_display": "South East"
-    },
-    {
-      "title": "Curious Pastimes Renewal",
-      "date": "2027-08-28",
-      "date_end": "2027-08-31",
-      "location": "Shifnal",
-      "category": "Arts & Culture",
-      "ticket_url": "https://www.curiouspastimes.co.uk/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/curious-pastimes-renewal/",
-      "official_url": "https://www.curiouspastimes.co.uk/",
-      "id": "festival:curious-pastimes-renewal:2027-08-28",
-      "location_display": "Shifnal"
     },
     {
       "title": "England’s Medieval Festival / King’s Grove",
@@ -4095,6 +3880,19 @@
       "location_display": "Wallingford · Rock"
     },
     {
+      "title": "Edgefest",
+      "date": "2027-09-04",
+      "date_end": "2027-09-06",
+      "location": "Scotland · Pop",
+      "category": "Music",
+      "ticket_url": "https://edge-fest.co.uk/",
+      "source": "https://fezzy.uk/collections/pop-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/edgefest/",
+      "official_url": "https://edge-fest.co.uk/",
+      "id": "festival:edgefest:2027-09-04",
+      "location_display": "Scotland · Pop"
+    },
+    {
       "title": "Existance Festival",
       "date": "2027-09-04",
       "date_end": "2027-09-06",
@@ -4214,7 +4012,7 @@
       "location_display": "Cheam"
     },
     {
-      "title": "Microburn",
+      "title": "MicroBurn",
       "date": "2027-09-11",
       "date_end": "2027-09-11",
       "location": "Wales",
@@ -4227,30 +4025,30 @@
       "location_display": "Wales"
     },
     {
-      "title": "Radio 2 in the Park",
-      "date": "2027-09-11",
-      "date_end": "2027-09-13",
-      "location": "Scotland",
-      "category": "Arts & Culture",
-      "ticket_url": "https://www.bbc.co.uk/events/radio2inthepark",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/radio-2-in-the-park/",
-      "official_url": "https://www.bbc.co.uk/events/radio2inthepark",
-      "id": "festival:radio-2-in-the-park:2027-09-11",
-      "location_display": "Scotland"
-    },
-    {
-      "title": "Origin Festival at Pealies Barn",
+      "title": "ALB Fest",
       "date": "2027-09-12",
       "date_end": "2027-09-13",
-      "location": "East Cowton · Pop",
-      "category": "Music",
-      "ticket_url": "https://www.pealiesbarn.co.uk/",
-      "source": "https://fezzy.uk/collections/pop-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/origin-festival-at-pealies-barn/",
-      "official_url": "https://www.pealiesbarn.co.uk/",
-      "id": "festival:origin-festival-at-pealies-barn:2027-09-12",
-      "location_display": "East Cowton · Pop"
+      "location": "Colchester",
+      "category": "Family",
+      "ticket_url": "https://albfestival.com/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/alb-fest/",
+      "official_url": "https://albfestival.com/",
+      "id": "festival:alb-fest:2027-09-12",
+      "location_display": "Colchester"
+    },
+    {
+      "title": "FifeFest",
+      "date": "2027-09-12",
+      "date_end": "2027-09-12",
+      "location": "Leven",
+      "category": "Family",
+      "ticket_url": "https://fifefest.co.uk/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/fifefest/",
+      "official_url": "https://fifefest.co.uk/",
+      "id": "festival:fifefest:2027-09-12",
+      "location_display": "Leven"
     },
     {
       "title": "One Out Festival",
@@ -4277,19 +4075,6 @@
       "dates_from": "official site",
       "id": "festival:wonderment-in-the-woods:2027-09-16",
       "location_display": "South East"
-    },
-    {
-      "title": "Archaeus Larp Midsomer Knights Scream",
-      "date": "2027-09-18",
-      "date_end": "2027-09-20",
-      "location": "Cleeve, Bristol",
-      "category": "Arts & Culture",
-      "ticket_url": "https://www.archaeuslarp.com/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/archaeus-larp-midsomer-knights-scream/",
-      "official_url": "https://www.archaeuslarp.com/",
-      "id": "festival:archaeus-larp-midsomer-knights-scream:2027-09-18",
-      "location_display": "Cleeve, Bristol"
     },
     {
       "title": "Country Boots Festival",
@@ -4335,7 +4120,7 @@
       "date": "2027-11-13",
       "date_end": "2027-11-16",
       "location": "Skegness",
-      "category": "Music",
+      "category": "Other",
       "ticket_url": "https://bangface.com/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/bangface-weekender/",
