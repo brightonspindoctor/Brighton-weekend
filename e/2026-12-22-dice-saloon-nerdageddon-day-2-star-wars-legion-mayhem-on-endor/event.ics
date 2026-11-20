@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-22-dice-saloon-nerdageddon-day-2-star-wars-legion-mayhem-on-end
+ or@brightonweekend.co.uk
+DTSTAMP:20261222T000000Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:Nerdageddon Day 2\, Star Wars Legion: Mayhem on Endor!
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/nerdageddon-day-2-st
+ ar-wars-legion-mayhem-on-endor-22-december-2026\nMore: https://brightonwee
+ kend.co.uk/e/2026-12-22-dice-saloon-nerdageddon-day-2-star-wars-legion-may
+ hem-on-endor/
+URL:https://brightonweekend.co.uk/e/2026-12-22-dice-saloon-nerdageddon-day-
+ 2-star-wars-legion-mayhem-on-endor/
+END:VEVENT
+END:VCALENDAR

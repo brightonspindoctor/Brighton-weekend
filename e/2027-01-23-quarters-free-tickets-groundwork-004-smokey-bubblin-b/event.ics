@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-23-quarters-free-tickets-groundwork-004-smokey-bubblin-b@bright
+ onweekend.co.uk
+DTSTAMP:20270123T000000Z
+DTSTART:20270123T230000Z
+DTEND:20270124T040000Z
+SUMMARY:Groundwork 004: Smokey Bubblin B
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/groundwork-004-s
+ mokey-bubblin-b/quarters/3759846\nMore: https://brightonweekend.co.uk/e/20
+ 27-01-23-quarters-free-tickets-groundwork-004-smokey-bubblin-b/
+URL:https://brightonweekend.co.uk/e/2027-01-23-quarters-free-tickets-ground
+ work-004-smokey-bubblin-b/
+END:VEVENT
+END:VCALENDAR

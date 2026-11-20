@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-29-theatre-royal-brighton-blackout@brightonweekend.co.uk
+DTSTAMP:20270129T000000Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+SUMMARY:Blackout
+LOCATION:Theatre Royal Brighton\, Brighton
+DESCRIPTION:Tickets: https://www.atgtickets.com/shows/blackout/theatre-roya
+ l-brighton/calendar/\nMore: https://brightonweekend.co.uk/e/2027-01-29-the
+ atre-royal-brighton-blackout/
+URL:https://brightonweekend.co.uk/e/2027-01-29-theatre-royal-brighton-black
+ out/
+END:VEVENT
+END:VCALENDAR

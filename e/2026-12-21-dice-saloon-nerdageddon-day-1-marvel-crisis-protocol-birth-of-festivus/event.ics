@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-21-dice-saloon-nerdageddon-day-1-marvel-crisis-protocol-birth-o
+ f-festivus@brightonweekend.co.uk
+DTSTAMP:20261221T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:Nerdageddon Day 1\, Marvel Crisis Protocol: Birth of Festivus!
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/nerdageddon-day-1-21
+ st-december-2026\nMore: https://brightonweekend.co.uk/e/2026-12-21-dice-sa
+ loon-nerdageddon-day-1-marvel-crisis-protocol-birth-of-festivus/
+URL:https://brightonweekend.co.uk/e/2026-12-21-dice-saloon-nerdageddon-day-
+ 1-marvel-crisis-protocol-birth-of-festivus/
+END:VEVENT
+END:VCALENDAR

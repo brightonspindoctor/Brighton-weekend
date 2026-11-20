@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-29-dice-saloon-nintendo-brighton-athletic-plants-of-time@bright
+ onweekend.co.uk
+DTSTAMP:20261129T000000Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Nintendo Brighton: Athletic Plants of Time
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/nintendo-brighton-at
+ hletic-plants-of-time-29-november-2026\nMore: https://brightonweekend.co.u
+ k/e/2026-11-29-dice-saloon-nintendo-brighton-athletic-plants-of-time/
+URL:https://brightonweekend.co.uk/e/2026-11-29-dice-saloon-nintendo-brighto
+ n-athletic-plants-of-time/
+END:VEVENT
+END:VCALENDAR

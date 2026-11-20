@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-23-dice-saloon-kids-club-adventures-the-countdown-to-christmas-
+ dnd-one-shot@brightonweekend.co.uk
+DTSTAMP:20261223T000000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:Kids Club Adventures: The Countdown to Christmas DND One Shot!
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/kids-club-adventures
+ -the-countdown-to-christmas-dnd-one-shot-23-december-2026\nMore: https://b
+ rightonweekend.co.uk/e/2026-12-23-dice-saloon-kids-club-adventures-the-cou
+ ntdown-to-christmas-dnd-one-shot/
+URL:https://brightonweekend.co.uk/e/2026-12-23-dice-saloon-kids-club-advent
+ ures-the-countdown-to-christmas-dnd-one-shot/
+END:VEVENT
+END:VCALENDAR

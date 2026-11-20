@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-23-dice-saloon-nerdageddon-day-3-lord-of-the-rings-the-streets-
+ of-minas-tirith@brightonweekend.co.uk
+DTSTAMP:20261223T000000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:Nerdageddon Day 3 - Lord of the Rings: The Streets of Minas Tirith!
+LOCATION:Dice Saloon\, Brighton
+DESCRIPTION:Tickets: https://dicesaloon.co.uk/products/nerdageddon-day-3-lo
+ rd-of-the-rings-the-streets-of-minas-tirith-23-december-2026\nMore: https:
+ //brightonweekend.co.uk/e/2026-12-23-dice-saloon-nerdageddon-day-3-lord-of
+ -the-rings-the-streets-of-minas-tirith/
+URL:https://brightonweekend.co.uk/e/2026-12-23-dice-saloon-nerdageddon-day-
+ 3-lord-of-the-rings-the-streets-of-minas-tirith/
+END:VEVENT
+END:VCALENDAR
