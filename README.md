@@ -118,7 +118,14 @@ manual dispatch and whenever a scraper file changes on `main`. It runs:
    out (on DICE, every type on the waiting list), or the event's page or its
    card on the venue's listings has a "Sold out" / "Fully booked" label and no
    live booking button. Seller data saying tickets are on sale wins over a
-   label. Results are kept in `ticket-cache.json`: events in the next three
+   label. It also records a **price** from the seller's structured data
+   (schema.org offers): "£15", "From £12.50" when ticket types differ (the
+   cheapest still on sale), or "Free" when the event says it's free to attend,
+   or every price is £0 and the listing says "free". With no price data, an
+   event shows "Free" only when its title says so ("(Free)", "- FREE entry",
+   not "Free Entry*") or its own page has a "Free entry" label and no £ price
+   anywhere. Never guessed from page text otherwise.
+   Results are kept in `ticket-cache.json`: events in the next three
    weeks are rechecked daily, later ones every four days, within a 20-minute
    limit. Pages that can't be read leave the event as it was. If this step
    fails, the day's listings are still published.

@@ -179,20 +179,50 @@ def ld_events(soup):
     return out
 
 
-def ld_verdict(soup, event, url):
-    """True (sold out), False (on sale) or None (the page doesn't say) from schema.org offers."""
+def ld_this_show(soup, event):
+    """The page's schema.org records for this performance, or [] when it can't be told apart."""
     evs = ld_events(soup)
     if not evs:
-        return None
+        return []
     dated = [o for o in evs if str(o.get('startDate', ''))[:10] == event['date']]
     if dated:
         evs = dated
     elif len(evs) > 1 or any(re.match(r'\d{4}-\d{2}-\d{2}', str(o.get('startDate', ''))) for o in evs):
-        return None  # other dates only: not this performance
+        return []  # other dates only: not this performance
     titled = [o for o in evs if se.same_show(str(o.get('name', '')), event['title'], event.get('venue', ''))]
     if titled:
         evs = titled
     elif len(evs) > 1:
+        return []
+    return evs
+
+
+def ld_price(soup, event):
+    """'£15', 'From £12.50', 'Free' or '' from this performance's schema.org offers."""
+    prices = {se.offer_price(o) for o in ld_this_show(soup, event)} - {''}
+    return prices.pop() if len(prices) == 1 else ''
+
+
+# A label of the page's own saying entry is free: the whole text of a short
+# element ("Free", "FREE ENTRY", "Entry: Free", "Price: Free"). Trusted only on
+# the show's own page, when nothing on it gives a price in pounds.
+FREE_LABEL = re.compile(r'^\W*(?:free(?:\s+(?:entry|admission|event|gig|show|to\s+attend))?|(?:entry|admission|price|tickets?|cost)\s*[:\-]?\s*free(?:\s+entry)?|no\s+entry\s+fee)[^\w*]*$', re.I)
+
+
+def free_label(root):
+    if re.search(r'£\s?\d', root.get_text(' ', strip=True)):
+        return False
+    for el in root.find_all(['span', 'p', 'div', 'li', 'strong', 'b', 'dd', 'td', 'h2', 'h3', 'h4', 'h5']):
+        t = own_text(el)
+        if t and len(t) <= 30 and FREE_LABEL.match(t) and not hidden(el) and not el.find_parent('a'):
+            return True
+    return False
+
+
+def ld_verdict(soup, event, url):
+    """True (sold out), False (on sale) or None (the page doesn't say) from schema.org offers."""
+    evs = ld_this_show(soup, event)
+    if not evs:
         return None
     avails = []
     for o in evs:
@@ -656,16 +686,20 @@ def page_label(root, final, event, ld_dates):
 
 
 def analyse_page(html, final, event):
-    """(schema.org verdict, why the page labels the show sold out, the next link towards the seller)."""
+    """(schema.org verdict, why the page labels the show sold out, the next link
+    towards the seller, the price)."""
     raw = soup_of(html)
     verdict = ld_verdict(raw, event, final)
+    price = ld_price(raw, event)
     ld_dates = {str(o.get('startDate', ''))[:10] for o in ld_events(raw)} - {''}
     root = strip_chrome(raw)
     label = '' if verdict is not None else page_label(root, final, event, ld_dates)
+    if not price and not generic_url(final) and free_label(root):
+        price = 'Free'
     nxt = None
     if not (is_ticket_site(final) and verdict is not None):
         nxt = booking_link(root, final, event)
-    return verdict, label, nxt
+    return verdict, label, nxt, price
 
 
 EVIDENCE = Path(os.environ['TICKET_EVIDENCE']) if os.environ.get('TICKET_EVIDENCE') else None
@@ -683,21 +717,23 @@ def keep_evidence(event, final, html, why):
 
 
 async def follow(fx, event, url, steps):
-    """Follow the booking button towards the seller: (steps taken, verdict, why).
+    """Follow the booking button towards the seller: (steps taken, verdict, why, price).
     The verdict is True/False when the seller's data says, else None; why
-    explains a sold-out verdict or label."""
-    start = url; sold = None; why = ''
+    explains a sold-out verdict or label; price is '' when no page gave one."""
+    start = url; sold = None; why = ''; price = ''
     for _ in range(MAX_HOPS):
         html, final, via = await fx.get(url)
         if not html:
             break
-        verdict, label, nxt = await asyncio.to_thread(analyse_page, html, final, event)
+        verdict, label, nxt, p = await asyncio.to_thread(analyse_page, html, final, event)
         if verdict is None and not via and is_ticket_site(final) and not any(h in host_of(final) for h in PLAIN_OK):
             # A ticketing site's plain page said nothing: its browser page may.
             h2, f2, _ = await fx.get(url, browser=True)
             if h2:
                 html, final = h2, f2
-                verdict, label, nxt = await asyncio.to_thread(analyse_page, html, final, event)
+                verdict, label, nxt, p = await asyncio.to_thread(analyse_page, html, final, event)
+        if p:
+            price = p  # the page nearest the seller wins
         if verdict is not None:
             sold = verdict
             if verdict:
@@ -710,7 +746,13 @@ async def follow(fx, event, url, steps):
         if not nxt or nxt in steps or nxt == start:
             break
         url = nxt; steps.append(nxt)
-    return steps, sold, why
+    return steps, sold, why, price
+
+
+# A title that says the event is free: "Jazz Jam (Free)", "Quiz Night - FREE",
+# "Free entry: DJ Night". Not "Free" on its own, which is often a name, and
+# not "Free Entry*", where the asterisk means a condition (before 11pm...).
+FREE_TITLE = re.compile(r'\bfree\s+(?:entry|admission|event|gig|to\s+attend)\b(?!\s*\*)|\(\s*free(?:\s+entry)?\s*\)|[-–|:]\s*free(?:\s+entry)?\s*!?$|\bno\s+entry\s+fee\b|\bentry\s*[:\-]?\s*free\b', re.I)
 
 
 def cache_key(e, url):
@@ -824,16 +866,16 @@ async def main():
                 async def one(e):
                     nonlocal done
                     async with lanes:
-                        steps = []; why = ''; sold = None
+                        steps = []; why = ''; sold = None; price = ''
                         try:
                             if is_generic(e):
                                 link, why = card.get(e['id'], (None, ''))
                                 if link:
                                     steps.append(link)
-                                    steps, sold, why2 = await follow(fx, e, link, steps)
+                                    steps, sold, why2, price = await follow(fx, e, link, steps)
                                     why = why2 if sold is not None else (why or why2)
                             else:
-                                steps, sold, why = await follow(fx, e, e['ticket_url'], steps)
+                                steps, sold, why, price = await follow(fx, e, e['ticket_url'], steps)
                         except Exception as exc:
                             print(f'  ! {e["id"]}: {exc}', file=sys.stderr); return
                         if sold is None:
@@ -843,7 +885,7 @@ async def main():
                             why = ''  # the seller says tickets are on sale: that wins over any label
                         closest = steps[-1] if steps else None
                         if not (fx.out_of_time() and closest is None and sold is None):
-                            results[e['id']] = (closest, sold, why)
+                            results[e['id']] = (closest, sold, why, price)
                         done += 1
                         if done % 200 == 0:
                             print(f'  {done}/{len(todo)} checked, {fx.count} pages, {int(time.monotonic() - fx.started)}s', flush=True)
@@ -868,10 +910,12 @@ async def main():
 
     for e in todo:
         if e['id'] in results:
-            closest, sold, why = results[e['id']]
+            closest, sold, why, price = results[e['id']]
             entry = {'url': closest, 'sold': sold, 'checked': TODAY.isoformat()}
             if sold:
                 entry['why'] = why
+            if price:
+                entry['price'] = price
             cache[cache_key(e, e['ticket_url'])] = entry
 
     # A link that several different shows would now share is a venue-wide page
@@ -884,16 +928,23 @@ async def main():
     venue_wide = {u for u, ts in shared.items()
                   if any(not se.same_show(a, b) for a in ts for b in ts if a != b)}
     moved = sold_n = 0
+    for e in events:
+        if not e.get('price') and FREE_TITLE.search(e.get('title', '')):
+            e['price'] = 'Free'
     for e in upcoming:
         c = cache.get(cache_key(e, e['ticket_url']))
         if not c:
             continue
+        if c.get('price'):
+            e['price'] = c['price']
         if c.get('url') and c['url'] != e['ticket_url'] and c['url'] not in venue_wide:
             e['ticket_url'] = c['url']; moved += 1
         if c.get('sold') is True and (e.get('status') or '').upper() != 'SOLD OUT':
             e['status'] = 'SOLD OUT'; sold_n += 1
     sold_total = sum(1 for e in upcoming if (e.get('status') or '').upper() == 'SOLD OUT')
     print(f'Ticket links moved closer to the seller: {moved}; newly marked sold out: {sold_n}; sold out in total: {sold_total}')
+    priced = [e['price'] for e in events if e.get('price')]
+    print(f"Prices shown: {len(priced)} ({priced.count('Free')} free)")
     CACHE.write_text(json.dumps(dict(sorted(cache.items())), ensure_ascii=False, indent=1) + '\n')
     EVENTS.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
 

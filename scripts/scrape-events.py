@@ -207,6 +207,54 @@ def offer_url(raw):
         if isinstance(o,dict) and re.match(r'https?://',str(o.get('url',''))):return o['url']
     return None
 
+# ---- Prices -----------------------------------------------------------------
+# Only from a seller's structured data (schema.org offers), never guessed from
+# page text: "£15", "From £12.50" when ticket types differ, "Free" when the
+# event says it is free to attend or every ticket type costs nothing.
+def _amount(v):
+    if isinstance(v,bool):return None
+    if isinstance(v,(int,float)):return float(v)
+    m=re.search(r'\d+(?:\.\d{1,2})?',str(v or '').replace(',',''))
+    return float(m.group(0)) if m else None
+def _money(x):
+    return f'£{x:.0f}' if abs(x-round(x))<0.005 else f'£{x:.2f}'
+def offer_price(obj,sold_out=frozenset({'soldout','outofstock','discontinued'})):
+    """A price label from a schema.org event's offers, or '' when it doesn't say.
+    Prices in another currency, or implausible ones, are ignored. Ticket types
+    still on sale set the "From" price when some have sold out."""
+    if not isinstance(obj,dict):return ''
+    free_flag=str(obj.get('isAccessibleForFree','')).strip().lower() in ('true','1','yes')
+    found=[]  # (amount, still on sale)
+    stack=[obj.get('offers')]
+    while stack:
+        o=stack.pop()
+        if isinstance(o,list):stack.extend(o);continue
+        if not isinstance(o,dict):continue
+        if isinstance(o.get('offers'),(list,dict)):stack.append(o['offers'])
+        cur=str(o.get('priceCurrency') or '').upper()
+        if cur and cur!='GBP':continue
+        avail=re.sub(r'[^a-z]','',str(o.get('availability','')).rsplit('/',1)[-1].lower())
+        for k in ('price','lowPrice','highPrice'):
+            if k in o and o[k] not in (None,''):
+                raw=o[k]
+                if isinstance(raw,str) and not cur and re.search(r'[$€]',raw):continue
+                a=_amount(raw)
+                if a is not None and 0<=a<=1000:found.append((a,avail not in sold_out))
+    paid=[a for a,_ in found if a>0]
+    if not paid:
+        said_not_free=str(obj.get('isAccessibleForFree','')).strip().lower() in ('false','0','no')
+        if free_flag or (found and not said_not_free and _zero_is_free(obj)):return 'Free'
+        return ''
+    live=[a for a,ok in found if ok and a>0] or paid
+    lo,hi=min(live),max(paid)
+    return _money(lo) if abs(hi-lo)<0.005 else f'From {_money(lo)}'
+def _zero_is_free(obj):
+    """Every price is 0: trusted as free only when the event or its offers also
+    say so in words ('Free', 'Free entry'), since some sites put 0 for "price
+    not set"."""
+    words=' '.join(str(x) for x in [obj.get('name'),obj.get('description')]+[o.get('name') for o in (obj.get('offers') if isinstance(obj.get('offers'),list) else [obj.get('offers')]) if isinstance(o,dict)])
+    return bool(re.search(r'\bfree\b',words,re.I))
+
 def slug_title(url):
     slug=urlparse(url).path.rstrip('/').split('/')[-1]
     # Brighton Dome prefixes its addresses with a short mixed-case id ('LiM-ben-folds').
@@ -263,7 +311,10 @@ def normalise(raw,venue,page_url):
     url=next((urljoin(page_url,c) for c in candidates if c and not is_listing_or_home(urljoin(page_url,c),page_url)),None) or urljoin(page_url,raw.get('url') or page_url)
     if re.match(r'http://(?:www\.)?(?:songkick|skiddle|seetickets|eventbrite|ticketmaster|dice)\.',url):url='https://'+url[len('http://'):]
     ident=re.sub(r'[^a-z0-9]+','-',f'{start.date()}-{venue}-{title}'.lower()).strip('-')[:180]
-    return {'id':ident,'title':title,'date':start.date().isoformat(),'venue':venue,'source':'venue','time':start.strftime('%H:%M') if start_raw and re.search(r'T|\d{1,2}:\d{2}|am|pm',str(start_raw),re.I) else '','finish_time':end.strftime('%H:%M') if end else '','category':category(title,raw.get('description','')),'ticket_url':url}
+    ev={'id':ident,'title':title,'date':start.date().isoformat(),'venue':venue,'source':'venue','time':start.strftime('%H:%M') if start_raw and re.search(r'T|\d{1,2}:\d{2}|am|pm',str(start_raw),re.I) else '','finish_time':end.strftime('%H:%M') if end else '','category':category(title,raw.get('description','')),'ticket_url':url}
+    price=offer_price(raw)
+    if price:ev['price']=price
+    return ev
 
 def location_text(obj):
     """All the names and address text in a schema.org event's location, lower case."""
@@ -370,6 +421,42 @@ def atg_labels(page,page_url):
         title=clean(a.get('aria-label') or a.get_text(' ',strip=True))
         if title.lower()=='sold out':title=''  # a sold-out show's badge link: the address still names the show
         if lines:out.append({'key':page_key(urljoin(page_url,a['href'])),'title':title,'label':lines[0]})
+    return out
+# ATG's date line is a run: 'Tue 1 Dec - Sat 5 Dec 2026', 'Tue 15 Dec 2026 -
+# Sat 2 Jan 2027', or one day: 'Sat 5 Dec 2026'. Only the end carries the year
+# when both ends are in the same year, so the start's year comes from the end
+# (a year earlier when the start's month is later than the end's: Dec - Jan).
+MONTH_NO={m:i for i,m in enumerate(('jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'),1)}
+ATG_RUN=re.compile(rf'(?:{WEEKDAY}\s*)?(\d{{1,2}})\s+({MONTHS})\.?(?:\s+(\d{{4}}))?(?:\s*[-–]\s*(?:{WEEKDAY}\s*)?(\d{{1,2}})\s+({MONTHS})\.?\s+(\d{{4}}))?',re.I)
+def atg_run_start(text):
+    """The first day of an ATG run, or None when the line has no year at all."""
+    m=ATG_RUN.search(clean(text))
+    if not m:return None
+    day,mon,year,_,end_mon,end_year=m.groups()
+    month=MONTH_NO[mon[:3].lower()]
+    if year:y=int(year)
+    elif end_year:y=int(end_year)-(1 if month>MONTH_NO[end_mon[:3].lower()] else 0)
+    else:return None
+    try:return datetime(y,month,int(day)).date()
+    except ValueError:return None
+def atg_events(page,page_url,venue):
+    """Shows on an ATG venue list (Theatre Royal's whats-on page and its genre
+    lists, which between them cover the whole programme): each card's title
+    and the first day of its run, linked to the show's own page. A run is
+    listed once, on its first day, as the venue's main page does."""
+    soup=BeautifulSoup(page,'html.parser');out=[]
+    for a in soup.select('a[href*="/shows/"][aria-hidden="true"]'):
+        box=a.find_parent('div');card=box.parent if box else None
+        if card is None:continue
+        url=urljoin(page_url,a['href']).split('#')[0]
+        title=strip_listing_date(a.get('aria-label') or a.get_text(' ',strip=True))
+        if title.lower()=='sold out' or not valid_title(title):  # a sold-out badge link: the address names the show
+            m=re.search(r'/shows/([^/]+)',urlparse(url).path);title=slug_title('/'+m.group(1)) if m else ''
+        start=next((d for d in (atg_run_start(p.get_text(' ',strip=True)) for p in card.find_all('p')) if d),None)
+        if not start or not valid_title(title) or not (RANGE_START<=start<=RANGE_END):continue
+        ident=re.sub(r'[^a-z0-9]+','-',f'{start}-{venue}-{title}'.lower()).strip('-')[:180]
+        out.append({'id':ident,'title':title,'date':start.isoformat(),'venue':venue,'source':'venue','time':'','finish_time':'',
+                    'category':category(title),'ticket_url':url})
     return out
 def eventlist_labels(page,page_url):
     """A Squarespace events list (The Old Market): each listing's categories
@@ -551,7 +638,12 @@ async def scrape_source(browser,source):
     for lu in source.get('label_pages',[]):
         lh,lf,lerr=await get_html(browser,lu)
         if lerr:print(f"{venue}: label page failed {lu}: {lerr[:120]}")
-        else:collect_labels(venue,lh,lf)
+        else:
+            collect_labels(venue,lh,lf)
+            # ATG's genre lists also give every show's run, beyond the first
+            # month the main page shows (Operation Mincemeat, Chicago...).
+            if 'atgtickets.com' in lf:events.extend(atg_events(lh,lf,venue))
+    if 'atgtickets.com' in final:events.extend(atg_events(html,final,venue))
     # "jsonld_only" sources are ticketing-site pages (Skiddle, Songkick): only
     # their structured event data is trusted, never the page layout.
     if not source.get('jsonld_only'):
@@ -587,8 +679,8 @@ async def main():
     # least half as many upcoming events as last time. Only for healthy venues are
     # missing events counted towards removal, so a site outage can't empty the app.
     # Records from an earlier import (no "source") count towards "last time" too,
-    # so a venue whose page shows only part of its programme (Theatre Royal's
-    # first page, Brighton Centre's highlights) stays "unhealthy" and keeps them
+    # so a venue whose page shows only part of its programme (Brighton
+    # Centre's highlights) stays "unhealthy" and keeps them
     # until their date: a show missing from a partial page may still be on.
     def future(evs):return [e for e in evs if RANGE_START.isoformat()<=str(e.get('date',''))<=RANGE_END.isoformat()]
     before={};now_count={}

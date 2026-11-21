@@ -91,8 +91,7 @@ if the day's refresh has already happened.
 - Some events come from an earlier import and have no `source`. A discovery
   calendar that lists them keeps them up to date; otherwise they stay until
   their date. Several venues' own pages show only part of their programme
-  (Theatre Royal's first page of shows, Brighton Centre's highlights, CHALK's
-  homepage), so a show missing from them may still be on: those venues count
+  (Brighton Centre's highlights, CHALK's homepage), so a show missing from them may still be on: those venues count
   as not healthy, and nothing of theirs is removed for being missing.
 - A time on a listing card is read from "7:30pm" or "19:30" (two-digit hours),
   never from a doors, running or last-entry time, and a time in the act's name
@@ -110,7 +109,11 @@ tell a concert from a play when every card says "Theatre Royal".
 - **Theatre Royal** (ATG): each card's label line ("Concert", "Plays",
   "Musicals, Family", "Events"), read from its what's-on page and its eight
   genre lists (`label_pages`: plays, musicals, dance, concert, comedy, family,
-  talk, events).
+  talk, events). The genre lists also supply the shows themselves (since
+  21 November 2026): the what's-on page shows only about a month, the lists
+  the whole programme. Each card's run ("Tue 1 Dec - Sat 5 Dec 2026", "Tue 15
+  Dec 2026 - Sat 2 Jan 2027") is listed once, on its first day; the first
+  day's year comes from the end of the run when only the end has one.
 - **The Old Market**: each listing's categories (`.eventlist-cats`: "Music",
   "Theatre", "Dance, Theatre").
 - **Brighton Dome**: the genre in each event page's title ("Congregational /
