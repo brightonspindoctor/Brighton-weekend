@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-20",
-  "range_start": "2026-11-20",
+  "updated": "2026-11-21",
+  "range_start": "2026-11-21",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -428,7 +428,9 @@
         "Messa",
         "Annotations of an Autopsy",
         "Profanatica",
-        "BAEST"
+        "BAEST",
+        "Underdark",
+        "Tithe"
       ],
       "lineup_from": "https://incinerationfest.com/",
       "id": "festival:incineration-festival:2027-05-08",
@@ -3082,6 +3084,7 @@
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/lakefest/",
       "official_url": "https://lakefest.co.uk/",
+      "dates_from": "official site",
       "id": "festival:lakefest:2027-08-11",
       "location_display": "Eastnor"
     },
