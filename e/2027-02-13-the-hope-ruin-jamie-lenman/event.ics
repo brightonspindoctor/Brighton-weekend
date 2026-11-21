@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-13-the-hope-ruin-jamie-lenman@brightonweekend.co.uk
+DTSTAMP:20270213T000000Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:Jamie Lenman
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/lxf5vfj9/jamie-lenman\nMore:
+  https://brightonweekend.co.uk/e/2027-02-13-the-hope-ruin-jamie-lenman/
+URL:https://brightonweekend.co.uk/e/2027-02-13-the-hope-ruin-jamie-lenman/
+END:VEVENT
+END:VCALENDAR

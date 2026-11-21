@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-19-the-rose-hill-a-s-ance-for-the-solstice-with-burd-ellen-jodi
+ e-lowther-more-tba@brightonweekend.co.uk
+DTSTAMP:20261219T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:A SÉANCE FOR THE SOLSTICE with Burd Ellen\, Jodie Lowther & more t
+ ba
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/a-seance-for-the-solst
+ ice-with-burd-ellen-jodie-lowther-winter-2026/\nMore: https://brightonweek
+ end.co.uk/e/2026-12-19-the-rose-hill-a-s-ance-for-the-solstice-with-burd-e
+ llen-jodie-lowther-more-tba/
+URL:https://brightonweekend.co.uk/e/2026-12-19-the-rose-hill-a-s-ance-for-t
+ he-solstice-with-burd-ellen-jodie-lowther-more-tba/
+END:VEVENT
+END:VCALENDAR

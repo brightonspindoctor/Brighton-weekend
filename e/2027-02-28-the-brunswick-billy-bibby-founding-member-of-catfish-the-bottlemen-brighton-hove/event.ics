@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-28-the-brunswick-billy-bibby-founding-member-of-catfish-the-bot
+ tlemen-brighton-hove@brightonweekend.co.uk
+DTSTAMP:20270228T000000Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:Billy Bibby (Founding Member of Catfish & the Bottlemen) | Brighton
+ /Hove
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/billy-bib
+ by-founding-member-of-catfish-the-bottlemen-brighton-hove\nMore: https://b
+ rightonweekend.co.uk/e/2027-02-28-the-brunswick-billy-bibby-founding-membe
+ r-of-catfish-the-bottlemen-brighton-hove/
+URL:https://brightonweekend.co.uk/e/2027-02-28-the-brunswick-billy-bibby-fo
+ unding-member-of-catfish-the-bottlemen-brighton-hove/
+END:VEVENT
+END:VCALENDAR

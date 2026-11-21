@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-03-komedia-selina-mosinski-puss-in-boots-a-working-class-fairyt
+ ale@brightonweekend.co.uk
+DTSTAMP:20270303T000000Z
+DTSTART:20270303T200000Z
+DTEND:20270303T230000Z
+SUMMARY:Selina Mosinski: Puss In Boots – A Working Class Fairytale
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366942
+ 8/events/128677735\nMore: https://brightonweekend.co.uk/e/2027-03-03-komed
+ ia-selina-mosinski-puss-in-boots-a-working-class-fairytale/
+URL:https://brightonweekend.co.uk/e/2027-03-03-komedia-selina-mosinski-puss
+ -in-boots-a-working-class-fairytale/
+END:VEVENT
+END:VCALENDAR

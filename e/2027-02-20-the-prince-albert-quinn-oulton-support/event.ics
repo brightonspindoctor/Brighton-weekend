@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-20-the-prince-albert-quinn-oulton-support@brightonweekend.co.uk
+DTSTAMP:20270220T000000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Quinn Oulton + support
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/oemx95-quinn-oulton-20th-feb-the
+ -prince-albert-brighton-brighton-tickets?lng=en-US\nMore: https://brighton
+ weekend.co.uk/e/2027-02-20-the-prince-albert-quinn-oulton-support/
+URL:https://brightonweekend.co.uk/e/2027-02-20-the-prince-albert-quinn-oult
+ on-support/
+END:VEVENT
+END:VCALENDAR

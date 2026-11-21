@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-01-patterns-horse-meat-disco-new-year-s-daytime-disco@brightonw
+ eekend.co.uk
+DTSTAMP:20270101T000000Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:Horse Meat Disco: New Year's Daytime Disco
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6afc6819179bee0001dcceaf\nMore: 
+ https://brightonweekend.co.uk/e/2027-01-01-patterns-horse-meat-disco-new-y
+ ear-s-daytime-disco/
+URL:https://brightonweekend.co.uk/e/2027-01-01-patterns-horse-meat-disco-ne
+ w-year-s-daytime-disco/
+END:VEVENT
+END:VCALENDAR

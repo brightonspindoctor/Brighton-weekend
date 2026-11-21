@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-02-the-hope-ruin-the-miki-berenyi-trio@brightonweekend.co.uk
+DTSTAMP:20270502T000000Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:The Miki Berenyi Trio
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/wjdeby49/the-miki-berenyi-tr
+ io\nMore: https://brightonweekend.co.uk/e/2027-05-02-the-hope-ruin-the-mik
+ i-berenyi-trio/
+URL:https://brightonweekend.co.uk/e/2027-05-02-the-hope-ruin-the-miki-beren
+ yi-trio/
+END:VEVENT
+END:VCALENDAR

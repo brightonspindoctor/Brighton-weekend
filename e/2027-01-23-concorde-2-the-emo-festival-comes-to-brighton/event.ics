@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-23-concorde-2-the-emo-festival-comes-to-brighton@brightonweeken
+ d.co.uk
+DTSTAMP:20270123T000000Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+SUMMARY:The Emo Festival Comes to Brighton!
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/the-emo-festival-comes-
+ to-brighton-tickets-1997141805903?aff=ebdssbcitybrowse\nMore: https://brig
+ htonweekend.co.uk/e/2027-01-23-concorde-2-the-emo-festival-comes-to-bright
+ on/
+URL:https://brightonweekend.co.uk/e/2027-01-23-concorde-2-the-emo-festival-
+ comes-to-brighton/
+END:VEVENT
+END:VCALENDAR

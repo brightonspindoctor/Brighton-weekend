@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-08-the-pipeline-the-haunted-masquerade-symptoms-of-balf-dead-gi
+ rl-marla@brightonweekend.co.uk
+DTSTAMP:20261208T000000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:The Haunted Masquerade Symptoms of Balf\, Dead Girl\, Marla
+LOCATION:The Pipeline\, Brighton
+DESCRIPTION:Tickets: https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93ZWdv
+ dHRpY2tldHMuY29tL2FmLzY3L2YvMzI1MDQ/supplier/WeGotTickets/suppliedid/MTU5M
+ zQ3MjQ/ticketid/8201637/checksum/d0299f983a7e42d6214cd8761533788f/track/tr
+ ue?title=Symptoms+of+Balf+-+Dead+Girl+-+Marla&badge=&venueId=57176\nMore: 
+ https://brightonweekend.co.uk/e/2026-12-08-the-pipeline-the-haunted-masque
+ rade-symptoms-of-balf-dead-girl-marla/
+URL:https://brightonweekend.co.uk/e/2026-12-08-the-pipeline-the-haunted-mas
+ querade-symptoms-of-balf-dead-girl-marla/
+END:VEVENT
+END:VCALENDAR

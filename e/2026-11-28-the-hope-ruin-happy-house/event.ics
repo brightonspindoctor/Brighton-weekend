@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-28-the-hope-ruin-happy-house@brightonweekend.co.uk
+DTSTAMP:20261128T000000Z
+DTSTART:20261128T210000Z
+DTEND:20261129T020000Z
+SUMMARY:Happy House
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/happy-house-10/\nMore: http
+ s://brightonweekend.co.uk/e/2026-11-28-the-hope-ruin-happy-house/
+URL:https://brightonweekend.co.uk/e/2026-11-28-the-hope-ruin-happy-house/
+END:VEVENT
+END:VCALENDAR

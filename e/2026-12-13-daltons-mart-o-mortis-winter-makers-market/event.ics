@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-13-daltons-mart-o-mortis-winter-makers-market@brightonweekend.c
+ o.uk
+DTSTAMP:20261213T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Mart O Mortis Winter Makers Market
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/mart-o-m
+ ortis-winter-makers-market\nMore: https://brightonweekend.co.uk/e/2026-12-
+ 13-daltons-mart-o-mortis-winter-makers-market/
+URL:https://brightonweekend.co.uk/e/2026-12-13-daltons-mart-o-mortis-winter
+ -makers-market/
+END:VEVENT
+END:VCALENDAR

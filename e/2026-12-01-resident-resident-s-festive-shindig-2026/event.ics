@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-01-resident-resident-s-festive-shindig-2026@brightonweekend.co.
+ uk
+DTSTAMP:20261201T000000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Resident's Festive Shindig 2026
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6aff211dda72d4000180d8f6\nMore: 
+ https://brightonweekend.co.uk/e/2026-12-01-resident-resident-s-festive-shi
+ ndig-2026/
+URL:https://brightonweekend.co.uk/e/2026-12-01-resident-resident-s-festive-
+ shindig-2026/
+END:VEVENT
+END:VCALENDAR

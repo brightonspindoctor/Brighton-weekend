@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-28-komedia-evim-my-home-2@brightonweekend.co.uk
+DTSTAMP:20270228T000000Z
+DTSTART:20270228T130000Z
+DTEND:20270228T160000Z
+SUMMARY:evim (my home)
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366952
+ 0/events/128677884\nMore: https://brightonweekend.co.uk/e/2027-02-28-komed
+ ia-evim-my-home-2/
+URL:https://brightonweekend.co.uk/e/2027-02-28-komedia-evim-my-home-2/
+END:VEVENT
+END:VCALENDAR

@@ -6,8 +6,8 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-25-the-hope-ruin-the-sick-man-of-europe@brightonweekend.co.uk
 DTSTAMP:20261125T000000Z
-DTSTART;VALUE=DATE:20261125
-DTEND;VALUE=DATE:20261126
+DTSTART:20261125T200000Z
+DTEND:20261125T230000Z
 SUMMARY:The Sick Man Of Europe
 LOCATION:The Hope & Ruin\, Brighton
 DESCRIPTION:Tickets: https://www.fatsoma.com/e/6lrzk61a/the-sick-man-of-eur

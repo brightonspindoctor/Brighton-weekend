@@ -174,6 +174,13 @@
   "checked": "2026-10-17",
   "v": 3
  },
+ "a seance for the solstice": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "A SÉANCE FOR THE SOLSTICE",
+  "checked": "2026-11-21",
+  "v": 4
+ },
  "a very gothic xmas": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -336,6 +343,17 @@
   "act": "Adult DVD lttl mort",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "aerial salad": {
+  "mbid": "30be4dae-121e-4219-b366-cec72eae4724",
+  "name": "Aerial Salad",
+  "genres": [],
+  "spotify": "7eq7Gy7wawqSKSYMiN4m3e",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Aerial Salad",
+  "checked": "2026-11-21",
+  "v": 4
  },
  "aeternum": {
   "bucket": null,
@@ -1273,6 +1291,13 @@
   "act": "“Betrayer of Secrets”",
   "checked": "2026-10-07"
  },
+ "better spaces charity concert": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Better Spaces Charity Concert",
+  "checked": "2026-11-21",
+  "v": 4
+ },
  "bex": {
   "bucket": null,
   "reason": "14 artists share this name",
@@ -1431,6 +1456,18 @@
   "reason": "3 artists share this name",
   "act": "Bill Bailey",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "billy bibby": {
+  "mbid": "c956c286-3163-4d33-8717-237ceed82db5",
+  "name": "Billy Bibby",
+  "genres": [],
+  "wikidata": "Q109317307",
+  "wd_genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Billy Bibby",
+  "checked": "2026-11-21",
   "v": 4
  },
  "bis": {
@@ -1932,6 +1969,19 @@
   "act": "Brighton Gay Men’s Chorus Presents A Merry Murder Mystery",
   "checked": "2026-10-07"
  },
+ "brooke combe": {
+  "mbid": "7621d315-cc2e-40c5-ac86-9a62fa8accb0",
+  "name": "Brooke Combe",
+  "genres": [],
+  "spotify": "0JXwYf8x27ZfMO2gGuh6HO",
+  "wikidata": "Q133185729",
+  "wd_genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Brooke Combe",
+  "checked": "2026-11-21",
+  "v": 4
+ },
  "brooke law": {
   "mbid": "2af5a41e-9bae-4b5c-9e24-dcfc9db8c336",
   "name": "Brooke Law",
@@ -2040,6 +2090,13 @@
   "act": "Byrne’s Night",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "cabana": {
+  "bucket": null,
+  "reason": "3 artists share this name",
+  "act": "Cabana",
+  "checked": "2026-11-21",
+  "v": 4
  },
  "cabaret voltaire": {
   "mbid": "439a29ad-f4ef-4857-a7cd-3d4a551056c8",
@@ -2323,6 +2380,17 @@
   "reason": "no genre tags",
   "act": "Charlie Noordewier",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "charm of finches": {
+  "mbid": "0b024652-8c1f-42a5-ae9c-27bce305c215",
+  "name": "Charm of Finches",
+  "genres": [],
+  "spotify": "2vfDwM6xqZbOjg5h6VLoke",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Charm of Finches",
+  "checked": "2026-11-21",
   "v": 4
  },
  "chasing abbey": {
@@ -2679,6 +2747,16 @@
   "act": "Connolley Hayes",
   "checked": "2026-11-04",
   "v": 3
+ },
+ "connolly hayes": {
+  "mbid": "e8d611e7-c7d6-4d23-a534-fb291757cf51",
+  "name": "Connolly Hayes",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Connolly Hayes",
+  "checked": "2026-11-21",
+  "v": 4
  },
  "connor kelly and the time warp": {
   "mbid": "255297e4-5773-4766-ab68-87a899beb28d",
@@ -3195,6 +3273,16 @@
   "reason": "tagged",
   "act": "DAUDI MATSIKO",
   "checked": "2026-10-07"
+ },
+ "dave formula and noko": {
+  "mbid": "c6adfc58-3aa1-4224-b4e3-7e670620ecf9",
+  "name": "Dave Formula & Noko",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Dave Formula & Noko",
+  "checked": "2026-11-21",
+  "v": 4
  },
  "david bowie": {
   "mbid": "5441c29d-3602-4898-b1a1-b77fa23b8e50",
@@ -4896,6 +4984,13 @@
   "act": "Fontaines D.C.",
   "checked": "2026-10-07"
  },
+ "foot foot": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Foot Foot",
+  "checked": "2026-11-21",
+  "v": 4
+ },
  "forest garden collective": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -6381,6 +6476,17 @@
   "v": 4,
   "spotify": "2ieAXAuLe6qQ3RJsqCxpoC"
  },
+ "horse meat disco": {
+  "mbid": "b3bfd3b4-2215-4e45-af59-b6f353bb2476",
+  "name": "Horse Meat Disco",
+  "genres": [],
+  "spotify": "5MnToV7aAt2Zy9ag3DAsna",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Horse Meat Disco",
+  "checked": "2026-11-21",
+  "v": 4
+ },
  "hospital30": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -6761,6 +6867,46 @@
   "checked": "2026-10-06",
   "v": 4
  },
+ "inspiral carpets": {
+  "mbid": "03c2e506-e8bb-4bd6-9693-5aa97c8eea1c",
+  "name": "Inspiral Carpets",
+  "genres": [
+   {
+    "name": "britpop",
+    "count": 2
+   },
+   {
+    "name": "indie pop",
+    "count": 1
+   },
+   {
+    "name": "indie rock",
+    "count": 2
+   },
+   {
+    "name": "madchester",
+    "count": 2
+   },
+   {
+    "name": "neo-psychedelia",
+    "count": 3
+   },
+   {
+    "name": "post-punk",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   }
+  ],
+  "wikidata": "Q500492",
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Inspiral Carpets",
+  "checked": "2026-11-21",
+  "v": 4
+ },
  "intercourse": {
   "bucket": null,
   "reason": "2 artists share this name",
@@ -7094,6 +7240,21 @@
   "checked": "2026-10-13",
   "v": 4,
   "spotify": "3QvyLNQBqeJXW4ujagJVjZ"
+ },
+ "jamie lenman": {
+  "mbid": "eeba16fb-beaa-4eef-a039-b54b7c7f9c92",
+  "name": "Jamie Lenman",
+  "genres": [],
+  "spotify": "3kAJUCn4swbWxCZXW7cZ6K",
+  "wikidata": "Q6147110",
+  "wd_genres": [
+   "alternative rock"
+  ],
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Jamie Lenman",
+  "checked": "2026-11-21",
+  "v": 4
  },
  "jamie mcintyre": {
   "bucket": null,
@@ -7570,6 +7731,27 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "josienne clarke": {
+  "mbid": "a8b33689-0be2-4553-a134-4f887fd4cc41",
+  "name": "Josienne Clarke",
+  "genres": [
+   {
+    "name": "folk",
+    "count": 1
+   },
+   {
+    "name": "singer-songwriter",
+    "count": 1
+   }
+  ],
+  "spotify": "3ygFnvt1R5sH1eu3eC9hxe",
+  "wikidata": "Q55860350",
+  "bucket": "Folk & Country",
+  "reason": "tagged",
+  "act": "Josienne Clarke",
+  "checked": "2026-11-21",
+  "v": 4
+ },
  "jumpers for goalposts": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -7664,6 +7846,42 @@
   "reason": "no genre tags",
   "act": "Kashaka",
   "checked": "2026-10-28",
+  "v": 4
+ },
+ "kate nash": {
+  "mbid": "49018fd2-95ef-4f7e-92bb-813159909314",
+  "name": "Kate Nash",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "garage punk",
+    "count": 1
+   },
+   {
+    "name": "indie rock",
+    "count": 1
+   },
+   {
+    "name": "pop",
+    "count": 3
+   },
+   {
+    "name": "singer-songwriter",
+    "count": 2
+   }
+  ],
+  "spotify": "5vBKu1igxFo6g1sHADkIdg",
+  "wikidata": "Q237548",
+  "wd_genres": [
+   "pop music"
+  ],
+  "bucket": "Pop",
+  "reason": "tagged",
+  "act": "Kate Nash",
+  "checked": "2026-11-21",
   "v": 4
  },
  "keeno": {
@@ -8211,6 +8429,13 @@
   "checked": "2026-11-11",
   "v": 4
  },
+ "laurence levy band": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Laurence Levy Band",
+  "checked": "2026-11-21",
+  "v": 4
+ },
  "lava elastic": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -8231,6 +8456,13 @@
   "act": "lavender",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "leadbettr": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Leadbettr",
+  "checked": "2026-11-21",
+  "v": 4
  },
  "lebanon hanover": {
   "mbid": "7de3b7b4-8288-4baf-929b-98af9224c0cb",
@@ -8289,6 +8521,13 @@
   "reason": "8 artists share this name",
   "act": "Legacy",
   "checked": "2026-11-13",
+  "v": 4
+ },
+ "legends": {
+  "bucket": null,
+  "reason": "8 artists share this name",
+  "act": "Legends",
+  "checked": "2026-11-21",
   "v": 4
  },
  "lemoncello": {
@@ -8757,6 +8996,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "martin harley": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Martin Harley",
+  "checked": "2026-11-21",
+  "v": 4
+ },
  "martin kemp": {
   "bucket": null,
   "reason": "2 artists share this name",
@@ -8871,6 +9117,17 @@
   "act": "Mekons",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "melissa james": {
+  "mbid": "00d1b5db-5d0c-4527-a3a3-b68d48a35ee0",
+  "name": "Melissa James",
+  "genres": [],
+  "spotify": "6ijAYTplmGTSNSQe24tf5y",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Melissa James",
+  "checked": "2026-11-21",
+  "v": 4
  },
  "memorial": {
   "bucket": null,
@@ -9092,6 +9349,13 @@
   "act": "Mind Frog",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "mind over slammer": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Mind Over Slammer",
+  "checked": "2026-11-21",
+  "v": 4
  },
  "mindfall": {
   "bucket": null,
@@ -9726,6 +9990,17 @@
   "checked": "2026-11-11",
   "v": 4
  },
+ "niamh bury": {
+  "mbid": "a99cac37-74a2-4686-8cbd-4cfaeef464a0",
+  "name": "Niamh Bury",
+  "genres": [],
+  "spotify": "44VP4ZxUIYVngSNENOGRme",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Niamh Bury",
+  "checked": "2026-11-21",
+  "v": 4
+ },
  "nic cage against the machine": {
   "mbid": "83f5bda6-5f67-41ae-988d-b9050d58a25c",
   "name": "Nic-Cage Against The Machine",
@@ -10246,6 +10521,13 @@
   "act": "P-rallel",
   "checked": "2026-10-06"
  },
+ "panda and the moniums": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Panda and the Moniums",
+  "checked": "2026-11-21",
+  "v": 4
+ },
  "parade": {
   "bucket": null,
   "reason": "2 artists share this name",
@@ -10665,6 +10947,16 @@
   "spotify": "3OKWUEJ7JsoqJdsgtviUvk",
   "v": 4
  },
+ "post common": {
+  "mbid": "d9168120-86fd-447d-b4f5-493e37c7d8df",
+  "name": "Post Common",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Post Common",
+  "checked": "2026-11-21",
+  "v": 4
+ },
  "post locale records launch": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -10972,6 +11264,13 @@
   "reason": "not in MusicBrainz",
   "act": "Resident Presents The Script",
   "checked": "2026-10-06"
+ },
+ "residents festive shindig": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Resident's Festive Shindig",
+  "checked": "2026-11-21",
+  "v": 4
  },
  "restraining order": {
   "mbid": "dc2f7dfe-04fe-4f76-b0df-e8951ee8d5cf",
@@ -13500,6 +13799,13 @@
   "checked": "2026-11-12",
   "v": 4
  },
+ "the emo festival comes to brighton": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Emo Festival Comes to Brighton!",
+  "checked": "2026-11-21",
+  "v": 4
+ },
  "the entitled sons": {
   "mbid": "05b922bf-cfe1-43b4-8cde-43bf3e4af15d",
   "name": "The Entitled Sons",
@@ -13593,6 +13899,20 @@
   "act": "The Hanging Stars",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "the haunted masquerade symptoms of balf": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Haunted Masquerade Symptoms of Balf",
+  "checked": "2026-11-21",
+  "v": 4
+ },
+ "the haunted masquerade symptoms of balf dead girl marla": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Haunted Masquerade Symptoms of Balf, Dead Girl, Marla",
+  "checked": "2026-11-21",
+  "v": 4
  },
  "the hoosiers": {
   "mbid": "52fe888b-112f-4023-adc9-f8287f177f7a",
@@ -13979,6 +14299,13 @@
   "act": "the Menstrual Cramps, French Toast, Hissy Fist, Phat Problem",
   "checked": "2026-10-26",
   "v": 3
+ },
+ "the miki berenyi trio": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Miki Berenyi Trio",
+  "checked": "2026-11-21",
+  "v": 4
  },
  "the miramars and the space agency": {
   "bucket": null,
@@ -14623,6 +14950,7 @@
   "mbid": "8580ec50-775a-4486-8240-49115cf0114b",
   "name": "The Wurzels",
   "genres": [],
+  "spotify": "3MOw1ev3YQ8liIGmHT3eH6",
   "wikidata": "Q335723",
   "wd_genres": [
    "Scrumpy and Western"
@@ -14630,9 +14958,8 @@
   "bucket": null,
   "reason": "genres unclear",
   "act": "The Wurzels",
-  "checked": "2026-10-20",
-  "v": 4,
-  "spotify": "3MOw1ev3YQ8liIGmHT3eH6"
+  "checked": "2026-11-21",
+  "v": 4
  },
  "the xcerts": {
   "mbid": "f0468734-9ae8-4701-bb18-42c4a162115a",
@@ -15766,6 +16093,13 @@
   "act": "Violet Grohl",
   "checked": "2026-10-06"
  },
+ "viscera": {
+  "bucket": null,
+  "reason": "13 artists share this name",
+  "act": "Viscera",
+  "checked": "2026-11-21",
+  "v": 4
+ },
  "vive le xmess": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -15824,6 +16158,13 @@
   "act": "Wednesday's Child",
   "checked": "2026-10-13",
   "v": 3
+ },
+ "weekend project brewing co tap takeover weekend": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Weekend Project Brewing Co. Tap Takeover Weekend",
+  "checked": "2026-11-21",
+  "v": 4
  },
  "welly": {
   "mbid": "b2f5b24f-4146-417f-b6e0-e8e9cc4a495a",

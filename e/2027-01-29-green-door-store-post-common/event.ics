@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-29-green-door-store-post-common@brightonweekend.co.uk
+DTSTAMP:20270129T000000Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+SUMMARY:Post Common
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1705423/post-common-tick
+ ets\nMore: https://brightonweekend.co.uk/e/2027-01-29-green-door-store-pos
+ t-common/
+URL:https://brightonweekend.co.uk/e/2027-01-29-green-door-store-post-common
+ /
+END:VEVENT
+END:VCALENDAR

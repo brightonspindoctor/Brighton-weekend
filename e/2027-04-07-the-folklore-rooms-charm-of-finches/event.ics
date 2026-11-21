@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-07-the-folklore-rooms-charm-of-finches@brightonweekend.co.uk
+DTSTAMP:20270407T000000Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270408
+SUMMARY:Charm of Finches
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/charm-of-finches/the-
+ folklore-rooms/3760394\nMore: https://brightonweekend.co.uk/e/2027-04-07-t
+ he-folklore-rooms-charm-of-finches/
+URL:https://brightonweekend.co.uk/e/2027-04-07-the-folklore-rooms-charm-of-
+ finches/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-07-the-folklore-rooms-josienne-clarke@brightonweekend.co.uk
+DTSTAMP:20270307T000000Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Josienne Clarke
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/josienne-clarke/the-f
+ olklore-rooms/3759902\nMore: https://brightonweekend.co.uk/e/2027-03-07-th
+ e-folklore-rooms-josienne-clarke/
+URL:https://brightonweekend.co.uk/e/2027-03-07-the-folklore-rooms-josienne-
+ clarke/
+END:VEVENT
+END:VCALENDAR

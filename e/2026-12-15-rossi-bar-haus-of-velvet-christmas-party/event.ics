@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-15-rossi-bar-haus-of-velvet-christmas-party@brightonweekend.co.
+ uk
+DTSTAMP:20261215T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Haus of velvet christmas party!
+LOCATION:Rossi Bar\, Brighton
+DESCRIPTION:Tickets: https://therossibar.co.uk/events/haus-of-velvet-christ
+ mas-party/\nMore: https://brightonweekend.co.uk/e/2026-12-15-rossi-bar-hau
+ s-of-velvet-christmas-party/
+URL:https://brightonweekend.co.uk/e/2026-12-15-rossi-bar-haus-of-velvet-chr
+ istmas-party/
+END:VEVENT
+END:VCALENDAR

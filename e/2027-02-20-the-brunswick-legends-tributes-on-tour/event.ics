@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-20-the-brunswick-legends-tributes-on-tour@brightonweekend.co.uk
+DTSTAMP:20270220T000000Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Legends – Tributes on Tour
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/legends-t
+ ributes-on-tour\nMore: https://brightonweekend.co.uk/e/2027-02-20-the-brun
+ swick-legends-tributes-on-tour/
+URL:https://brightonweekend.co.uk/e/2027-02-20-the-brunswick-legends-tribut
+ es-on-tour/
+END:VEVENT
+END:VCALENDAR

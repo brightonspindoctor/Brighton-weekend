@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-20-the-brunswick-better-spaces-charity-concert@brightonweekend.
+ co.uk
+DTSTAMP:20261220T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Better Spaces Charity Concert
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/better-sp
+ aces-charity-concert\nMore: https://brightonweekend.co.uk/e/2026-12-20-the
+ -brunswick-better-spaces-charity-concert/
+URL:https://brightonweekend.co.uk/e/2026-12-20-the-brunswick-better-spaces-
+ charity-concert/
+END:VEVENT
+END:VCALENDAR

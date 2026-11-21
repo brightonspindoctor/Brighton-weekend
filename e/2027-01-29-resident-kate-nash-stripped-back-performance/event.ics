@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-29-resident-kate-nash-stripped-back-performance@brightonweekend
+ .co.uk
+DTSTAMP:20270129T000000Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+SUMMARY:Kate Nash: Stripped-Back Performance
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6afdbb7e4e4fc9000111fa4e\nMore: 
+ https://brightonweekend.co.uk/e/2027-01-29-resident-kate-nash-stripped-bac
+ k-performance/
+URL:https://brightonweekend.co.uk/e/2027-01-29-resident-kate-nash-stripped-
+ back-performance/
+END:VEVENT
+END:VCALENDAR

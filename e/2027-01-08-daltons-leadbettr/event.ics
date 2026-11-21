@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-08-daltons-leadbettr@brightonweekend.co.uk
+DTSTAMP:20270108T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:Leadbettr
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://fixr.co/event/leadbettr-tickets-119147481\nMor
+ e: https://brightonweekend.co.uk/e/2027-01-08-daltons-leadbettr/
+URL:https://brightonweekend.co.uk/e/2027-01-08-daltons-leadbettr/
+END:VEVENT
+END:VCALENDAR

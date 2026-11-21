@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-12-the-hope-ruin-foot-foot@brightonweekend.co.uk
+DTSTAMP:20270312T000000Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:Foot Foot
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/ez0wqy8m/foot-foot\nMore: ht
+ tps://brightonweekend.co.uk/e/2027-03-12-the-hope-ruin-foot-foot/
+URL:https://brightonweekend.co.uk/e/2027-03-12-the-hope-ruin-foot-foot/
+END:VEVENT
+END:VCALENDAR

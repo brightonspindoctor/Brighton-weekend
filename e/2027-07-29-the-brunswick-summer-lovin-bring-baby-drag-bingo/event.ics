@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-29-the-brunswick-summer-lovin-bring-baby-drag-bingo@brightonwee
+ kend.co.uk
+DTSTAMP:20270729T000000Z
+DTSTART;VALUE=DATE:20270729
+DTEND;VALUE=DATE:20270730
+SUMMARY:Summer Lovin 🥂🏳️‍🌈👼 Bring Baby Drag Bingo 🏳️
+ ‍🌈👼
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/summer-lo
+ vin-bring-baby-drag-bingo-1\nMore: https://brightonweekend.co.uk/e/2027-07
+ -29-the-brunswick-summer-lovin-bring-baby-drag-bingo/
+URL:https://brightonweekend.co.uk/e/2027-07-29-the-brunswick-summer-lovin-b
+ ring-baby-drag-bingo/
+END:VEVENT
+END:VCALENDAR

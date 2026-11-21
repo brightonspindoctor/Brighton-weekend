@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-30-the-folklore-rooms-niamh-bury@brightonweekend.co.uk
+DTSTAMP:20270330T000000Z
+DTSTART;VALUE=DATE:20270330
+DTEND;VALUE=DATE:20270331
+SUMMARY:Niamh Bury
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/niamh-bury/the-folklo
+ re-rooms/3759756\nMore: https://brightonweekend.co.uk/e/2027-03-30-the-fol
+ klore-rooms-niamh-bury/
+URL:https://brightonweekend.co.uk/e/2027-03-30-the-folklore-rooms-niamh-bur
+ y/
+END:VEVENT
+END:VCALENDAR

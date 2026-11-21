@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-07-dust-viscera@brightonweekend.co.uk
+DTSTAMP:20270307T000000Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Viscera
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6afc9622d9362500010c6275\nMore: 
+ https://brightonweekend.co.uk/e/2027-03-07-dust-viscera/
+URL:https://brightonweekend.co.uk/e/2027-03-07-dust-viscera/
+END:VEVENT
+END:VCALENDAR

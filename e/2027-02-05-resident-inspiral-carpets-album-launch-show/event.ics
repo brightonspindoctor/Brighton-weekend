@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-05-resident-inspiral-carpets-album-launch-show@brightonweekend.
+ co.uk
+DTSTAMP:20270205T000000Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270206
+SUMMARY:Inspiral Carpets: Album Launch Show
+LOCATION:Resident\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6afc73993eb4c00001a38ff6\nMore: 
+ https://brightonweekend.co.uk/e/2027-02-05-resident-inspiral-carpets-album
+ -launch-show/
+URL:https://brightonweekend.co.uk/e/2027-02-05-resident-inspiral-carpets-al
+ bum-launch-show/
+END:VEVENT
+END:VCALENDAR
