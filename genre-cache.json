@@ -76,12 +76,12 @@
     "count": 1
    }
   ],
+  "spotify": "7nrVhzPUJsigF7rt9BL9jQ",
   "bucket": null,
   "reason": "genres unclear",
   "act": "4am Kru",
-  "checked": "2026-10-22",
-  "v": 4,
-  "spotify": "7nrVhzPUJsigF7rt9BL9jQ"
+  "checked": "2026-11-22",
+  "v": 4
  },
  "60 juno": {
   "mbid": "2554d38a-50e8-4cbe-83c3-6e94d613bef6",
@@ -457,8 +457,8 @@
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "Alice Faye",
-  "checked": "2026-10-22",
-  "v": 3
+  "checked": "2026-11-22",
+  "v": 4
  },
  "alice sk": {
   "mbid": "ef2770f4-b600-45b9-957c-227cf2e1c410",
@@ -590,8 +590,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "An Afternoon Of Annie Lennox",
-  "checked": "2026-10-22",
-  "v": 3
+  "checked": "2026-11-22",
+  "v": 4
  },
  "an afternoon of indie": {
   "bucket": null,
@@ -742,12 +742,12 @@
   "mbid": "49fbf6f9-4aff-42d7-9fc1-8c6ca785c0fb",
   "name": "Another Country $$$$",
   "genres": [],
+  "spotify": "3At9kBvFhiXo8y64fyHdwo",
   "bucket": null,
   "reason": "no genre tags",
   "act": "Another Country $$$$",
-  "checked": "2026-10-22",
-  "v": 4,
-  "spotify": "3At9kBvFhiXo8y64fyHdwo"
+  "checked": "2026-11-22",
+  "v": 4
  },
  "antarctica": {
   "bucket": null,
@@ -1401,7 +1401,7 @@
   "bucket": null,
   "reason": "no genre tags",
   "act": "Big Sandy",
-  "checked": "2026-10-22",
+  "checked": "2026-11-22",
   "v": 4
  },
  "big special the joy hotel": {
@@ -1926,8 +1926,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Brighton Dome Backstage Tours",
-  "checked": "2026-10-11",
-  "v": 2
+  "checked": "2026-11-22",
+  "v": 4
  },
  "brighton early music festival": {
   "bucket": null,
@@ -2012,7 +2012,7 @@
   "bucket": null,
   "reason": "genres unclear",
   "act": "BRUCE FOXTON",
-  "checked": "2026-10-22",
+  "checked": "2026-11-22",
   "v": 4
  },
  "bruce foxton 50 years of the jam": {
@@ -2507,8 +2507,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Christmas Karaoke in Aid of YMCA Brighton",
-  "checked": "2026-10-22",
-  "v": 3
+  "checked": "2026-11-22",
+  "v": 4
  },
  "chuck ragan": {
   "mbid": "97417292-3fb0-40ea-8837-5540cfb4de71",
@@ -2615,8 +2615,8 @@
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "cleopatrick",
-  "checked": "2026-10-22",
-  "v": 3
+  "checked": "2026-11-22",
+  "v": 4
  },
  "closed for boxing day": {
   "bucket": null,
@@ -4492,8 +4492,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Evangeline Eastwood",
-  "checked": "2026-10-22",
-  "v": 3
+  "checked": "2026-11-22",
+  "v": 4
  },
  "eve appleton band": {
   "mbid": "0b16a5f9-5907-4f2e-905e-24d30f903319",
@@ -4560,8 +4560,8 @@
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "ExperiMental",
-  "checked": "2026-10-22",
-  "v": 3
+  "checked": "2026-11-22",
+  "v": 4
  },
  "exploring birdsong": {
   "mbid": "99814acd-6014-47bd-a47d-64651a8dd2f1",
@@ -6099,7 +6099,13 @@
  "hang massive": {
   "mbid": "2fe1afcb-1325-41ff-8f94-55696ca6955d",
   "name": "Hang Massive",
-  "genres": [],
+  "genres": [
+   {
+    "name": "ambient",
+    "count": 1
+   }
+  ],
+  "spotify": "6bkF6GDcyXZn2T0D5Fwldl",
   "wikidata": "Q21722983",
   "wd_genres": [
    "ambient music"
@@ -6107,9 +6113,8 @@
   "bucket": null,
   "reason": "genres unclear",
   "act": "Hang Massive",
-  "checked": "2026-10-22",
-  "v": 4,
-  "spotify": "6bkF6GDcyXZn2T0D5Fwldl"
+  "checked": "2026-11-22",
+  "v": 4
  },
  "hans moretti": {
   "bucket": null,
@@ -7809,10 +7814,10 @@
  },
  "kaleidoscope": {
   "bucket": null,
-  "reason": "22 artists share this name",
-  "act": "KALEIDOSCOPE",
-  "checked": "2026-10-11",
-  "v": 2
+  "reason": "23 artists share this name",
+  "act": "Kaleidoscope",
+  "checked": "2026-11-22",
+  "v": 4
  },
  "kamran khan": {
   "bucket": null,
@@ -8839,8 +8844,8 @@
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "Machine Learning",
-  "checked": "2026-10-22",
-  "v": 3
+  "checked": "2026-11-22",
+  "v": 4
  },
  "machukha": {
   "mbid": "2e47782c-8b9d-4ca4-ba59-af4625400cc1",
@@ -8855,13 +8860,27 @@
  "madra salach": {
   "mbid": "83d40c8f-6940-4510-864e-6126644a44f3",
   "name": "Madra Salach",
-  "genres": [],
-  "bucket": null,
-  "reason": "no genre tags",
+  "genres": [
+   {
+    "name": "folk",
+    "count": 1
+   },
+   {
+    "name": "indie folk",
+    "count": 1
+   },
+   {
+    "name": "pop",
+    "count": 1
+   }
+  ],
+  "spotify": "4ndHOxgaVPMt9xqdNzldgp",
+  "wikidata": "Q138542395",
+  "bucket": "Folk & Country",
+  "reason": "tagged",
   "act": "Madra Salach",
-  "checked": "2026-10-22",
-  "v": 4,
-  "spotify": "4ndHOxgaVPMt9xqdNzldgp"
+  "checked": "2026-11-22",
+  "v": 4
  },
  "magda": {
   "bucket": null,
@@ -9896,7 +9915,7 @@
   "bucket": null,
   "reason": "no genre tags",
   "act": "New Age Collective",
-  "checked": "2026-10-22",
+  "checked": "2026-11-22",
   "v": 4
  },
  "new on sale heritage and tours": {
@@ -10096,7 +10115,7 @@
   "bucket": null,
   "reason": "no genre tags",
   "act": "Night Teacher",
-  "checked": "2026-10-22",
+  "checked": "2026-11-22",
   "v": 4
  },
  "nightmare before christmas screening": {
@@ -10657,8 +10676,8 @@
   "bucket": null,
   "reason": "5 artists share this name",
   "act": "Pete Williams",
-  "checked": "2026-10-22",
-  "v": 3
+  "checked": "2026-11-22",
+  "v": 4
  },
  "peter and the test tube babies": {
   "mbid": "84ddbf0a-5cfb-4920-9875-ba7500352af3",
@@ -10993,12 +11012,12 @@
   "mbid": "4a20b579-ade9-4aa4-b654-9c80dfa7cfc7",
   "name": "Pryma",
   "genres": [],
+  "spotify": "5W3CpTEfxHnas9n4k1lvit",
   "bucket": null,
   "reason": "no genre tags",
   "act": "Pryma",
-  "checked": "2026-10-22",
-  "v": 4,
-  "spotify": "5W3CpTEfxHnas9n4k1lvit"
+  "checked": "2026-11-22",
+  "v": 4
  },
  "psychedelic autumn sundae": {
   "bucket": null,
@@ -11066,8 +11085,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Queer Horror Fundraiser for the Clare Project",
-  "checked": "2026-10-22",
-  "v": 3
+  "checked": "2026-11-22",
+  "v": 4
  },
  "quiet hours": {
   "mbid": "20589bf9-34eb-4abc-a95a-5b3cc6311c3a",
@@ -13203,8 +13222,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Sugar-Free Birthday",
-  "checked": "2026-10-22",
-  "v": 3
+  "checked": "2026-11-22",
+  "v": 4
  },
  "sunami european takeover": {
   "bucket": null,
@@ -13770,8 +13789,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "The Deep Listen",
-  "checked": "2026-10-22",
-  "v": 3
+  "checked": "2026-11-22",
+  "v": 4
  },
  "the dualers": {
   "mbid": "1d8d6669-a832-4a0e-9d56-a9df212babb2",
@@ -13780,7 +13799,7 @@
   "bucket": null,
   "reason": "no genre tags",
   "act": "The Dualers",
-  "checked": "2026-10-22",
+  "checked": "2026-11-22",
   "v": 4
  },
  "the dunwells": {
@@ -14975,6 +14994,20 @@
   "checked": "2026-10-11",
   "v": 4,
   "spotify": "7sKlSlGo7d1D3dhFYKO0Y5"
+ },
+ "the young idea": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "The Young Idea",
+  "checked": "2026-11-22",
+  "v": 4
+ },
+ "the young idea the new mod scene": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The Young Idea, The New Mod Scene",
+  "checked": "2026-11-22",
+  "v": 4
  },
  "the yummy fur": {
   "mbid": "a7bdaa59-18fb-4ad4-9fca-bb710544b365",

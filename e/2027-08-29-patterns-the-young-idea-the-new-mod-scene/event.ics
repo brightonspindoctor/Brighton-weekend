@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-08-29-patterns-the-young-idea-the-new-mod-scene@brightonweekend.co
+ .uk
+DTSTAMP:20270829T000000Z
+DTSTART;VALUE=DATE:20270829
+DTEND;VALUE=DATE:20270830
+SUMMARY:The Young Idea\, The New Mod Scene
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6ae37798007bd0000101666e\nMore: 
+ https://brightonweekend.co.uk/e/2027-08-29-patterns-the-young-idea-the-new
+ -mod-scene/
+URL:https://brightonweekend.co.uk/e/2027-08-29-patterns-the-young-idea-the-
+ new-mod-scene/
+END:VEVENT
+END:VCALENDAR

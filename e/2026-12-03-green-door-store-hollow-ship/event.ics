@@ -6,8 +6,8 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-12-03-green-door-store-hollow-ship@brightonweekend.co.uk
 DTSTAMP:20261203T000000Z
-DTSTART;VALUE=DATE:20261203
-DTEND;VALUE=DATE:20261204
+DTSTART:20261203T193000Z
+DTEND:20261203T223000Z
 SUMMARY:Hollow Ship
 LOCATION:Green Door Store\, Brighton
 DESCRIPTION:Tickets: https://dice.fm/event/g58mn6-hollow-ship-3rd-dec-green
