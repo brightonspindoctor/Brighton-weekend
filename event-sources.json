@@ -224,4 +224,29 @@
     "note": "Victorian pumping station in Hove (The Droveway, BN3 7QA) used for day parties and events; added 31 October 2026. Its own site sells museum tours through Eventbrite; its club nights are on Skiddle. Visit Brighton and Skiddle's city listing also find it by name (scrape-discovery.py). Its Skiddle events with named performers are its day parties (DJs), filed as Club when their wording gives no category; the makers' fairs list none and stay Other.",
     "performer_category": "Club"
   }
+,
+  {
+    "venue": "Brighton Beach",
+    "url": "https://onthebeachbrighton.com/petetongibizaclassics/",
+    "category": "Music",
+    "note": "Official On The Beach Brighton 2027 event page; checked daily so the listing and ticket status stay current."
+  },
+  {
+    "venue": "Brighton Beach",
+    "url": "https://onthebeachbrighton.com/tomjonescomegatherround/",
+    "category": "Music",
+    "note": "Official On The Beach Brighton 2027 event page; checked daily so the listing and ticket status stay current."
+  },
+  {
+    "venue": "Brighton Beach",
+    "url": "https://onthebeachbrighton.com/twodoor/",
+    "category": "Music",
+    "note": "Official On The Beach Brighton 2027 event page; checked daily so the listing and ticket status stay current."
+  },
+  {
+    "venue": "Brighton Beach",
+    "url": "https://onthebeachbrighton.com/sonnyfodera/",
+    "category": "Music",
+    "note": "Official On The Beach Brighton 2027 event page; one page covers both the 23 and 24 July shows."
+  }
 ]
