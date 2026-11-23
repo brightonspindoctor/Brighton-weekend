@@ -1,7 +1,40 @@
 {
   "description": "Upcoming events that must be discoverable while they remain in the publication window.",
   "events": [
-    {"title_contains": "stevie martin", "date": "2026-10-17", "venue": "Brighton Dome"},
-    {"title_contains": "paddy young", "date": "2026-12-12", "venue": "Brighton Dome"}
+    {
+      "title_contains": "stevie martin",
+      "date": "2026-10-17",
+      "venue": "Brighton Dome"
+    },
+    {
+      "title_contains": "paddy young",
+      "date": "2026-12-12",
+      "venue": "Brighton Dome"
+    },
+    {
+      "title_contains": "Pete Tong",
+      "date": "2027-07-09",
+      "venue": "Brighton Beach"
+    },
+    {
+      "title_contains": "Tom Jones",
+      "date": "2027-07-18",
+      "venue": "Brighton Beach"
+    },
+    {
+      "title_contains": "Two Door Cinema Club",
+      "date": "2027-07-22",
+      "venue": "Brighton Beach"
+    },
+    {
+      "title_contains": "Sonny Fodera",
+      "date": "2027-07-23",
+      "venue": "Brighton Beach"
+    },
+    {
+      "title_contains": "Sonny Fodera",
+      "date": "2027-07-24",
+      "venue": "Brighton Beach"
+    }
   ]
 }
