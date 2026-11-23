@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-green-door-store-90s-vs-00s@brightonweekend.co.uk
+DTSTAMP:20261204T000000Z
+DTSTART:20261204T230000Z
+DTEND:20261205T020000Z
+SUMMARY:90s vs 00s
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/90s-vs-00s-3/\n
+ More: https://brightonweekend.co.uk/e/2026-12-04-green-door-store-90s-vs-0
+ 0s/
+URL:https://brightonweekend.co.uk/e/2026-12-04-green-door-store-90s-vs-00s/
+END:VEVENT
+END:VCALENDAR

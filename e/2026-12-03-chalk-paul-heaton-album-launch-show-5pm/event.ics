@@ -7,9 +7,9 @@ BEGIN:VEVENT
 UID:2026-12-03-chalk-paul-heaton-album-launch-show-5pm@brightonweekend.co.u
  k
 DTSTAMP:20261203T000000Z
-DTSTART;VALUE=DATE:20261203
-DTEND;VALUE=DATE:20261204
-SUMMARY:Paul Heaton: Album Launch Show (5pm)
+DTSTART:20261203T170000Z
+DTEND:20261203T200000Z
+SUMMARY:Paul Heaton Album Launch Show 5pm
 LOCATION:CHALK\, Brighton
 DESCRIPTION:Tickets: https://chalkvenue.com/event/paul-heaton-album-launch-
  show-5pm\nMore: https://brightonweekend.co.uk/e/2026-12-03-chalk-paul-heat
