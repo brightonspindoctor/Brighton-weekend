@@ -564,6 +564,10 @@ async def scrape_source(browser,source):
         detail,failed=await scrape_detail_urls(browser,venue,sorted(urls));events.extend(detail)
         print(f'Brighton Dome detail crawl: {len(urls)} pages, {len(detail)} events, {failed} failures')
     if source.get('ticketsolve'):await asyncio.to_thread(apply_ticketsolve,events,source)  # a plain request: off the event loop
+    # A source can state its authoritative event category when the act's name
+    # would otherwise be misclassified (e.g. Two Door Cinema Club).
+    if source.get('category'):
+        for event in events:event['category']=source['category']
     return events,None
 
 async def main():
