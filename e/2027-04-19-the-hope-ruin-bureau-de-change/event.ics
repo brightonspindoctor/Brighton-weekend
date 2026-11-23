@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-19-the-hope-ruin-bureau-de-change@brightonweekend.co.uk
+DTSTAMP:20270419T000000Z
+DTSTART;VALUE=DATE:20270419
+DTEND;VALUE=DATE:20270420
+SUMMARY:Bureau De Change
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1716705/bureau-de-change
+ -tickets\nMore: https://brightonweekend.co.uk/e/2027-04-19-the-hope-ruin-b
+ ureau-de-change/
+URL:https://brightonweekend.co.uk/e/2027-04-19-the-hope-ruin-bureau-de-chan
+ ge/
+END:VEVENT
+END:VCALENDAR

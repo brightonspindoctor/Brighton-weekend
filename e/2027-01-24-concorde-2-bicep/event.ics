@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-24-concorde-2-bicep@brightonweekend.co.uk
+DTSTAMP:20270124T000000Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Bicep
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/ma9c5b827b2a\nMore: https://brigh
+ tonweekend.co.uk/e/2027-01-24-concorde-2-bicep/
+URL:https://brightonweekend.co.uk/e/2027-01-24-concorde-2-bicep/
+END:VEVENT
+END:VCALENDAR

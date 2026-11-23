@@ -1961,6 +1961,11 @@
   "sold": null,
   "checked": "2026-11-22"
  },
+ "https://dicesaloon.co.uk/products/board-gamers-casual-sundays-hosted-by-brighton-pub-board-gamers-november-29-2026|2026-11-29|sunday board games dice saloon": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-11-23"
+ },
  "https://dicesaloon.co.uk/products/brighton-blood-bowl-bootcamp-ii-30-january-2027|2027-01-30|brighton blood bowl bootcamp ii": {
   "url": null,
   "sold": null,
@@ -2229,6 +2234,11 @@
   "sold": false,
   "checked": "2026-11-04"
  },
+ "https://link.dice.fm/ma9c5b827b2a|2027-01-24|bicep": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-11-23"
+ },
  "https://link.dice.fm/r2368871b75f|2027-04-17|brass against": {
   "url": null,
   "sold": false,
@@ -2273,6 +2283,27 @@
   "url": null,
   "sold": null,
   "checked": "2026-11-21"
+ },
+ "https://onthebeachbrighton.com/petetongibizaclassics/|2027-07-09|pete tong ibiza classics with tom richards essential orchestra": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-11-23"
+ },
+ "https://onthebeachbrighton.com/sonnyfodera/?v=20261023e|2027-07-09|about pete tong": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-11-23"
+ },
+ "https://onthebeachbrighton.com/sonnyfodera/|2027-07-24|about sonny fodera": {
+  "url": null,
+  "sold": true,
+  "checked": "2026-11-23",
+  "why": "seller data says sold out (onthebeachbrighton.com)"
+ },
+ "https://onthebeachbrighton.com/twodoor/|2027-07-22|two door cinema club on the beach brighton": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-11-23"
  },
  "https://pinkdot.seetickets.com/event/the-antarctic-monkeys/quarters/3614681|2027-01-29|the antarctic monkeys": {
   "url": null,
@@ -3336,6 +3367,11 @@
   "sold": null,
   "checked": "2026-11-21"
  },
+ "https://www.axs.com/uk/events/1716705/bureau-de-change-tickets|2027-04-19|bureau de change": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-11-23"
+ },
  "https://www.bandsintown.com/e/109113143?&came_from=210&_ga=2.158806202.1230062945.1793705939-1372865415.1791882672|2026-11-28|henry": {
   "url": null,
   "sold": null,
@@ -4027,9 +4063,9 @@
   "checked": "2026-11-21"
  },
  "https://www.concorde2.co.uk/event/kosheen|2027-04-09|kosheen": {
-  "url": null,
+  "url": "https://www.axs.com/uk/events/1691085/kosheen-tickets",
   "sold": null,
-  "checked": "2026-11-11"
+  "checked": "2026-11-23"
  },
  "https://www.concorde2.co.uk/event/lanterns-on-the-lake|2027-04-28|lanterns on the lake": {
   "url": "https://www.axs.com/uk/events/1674960/lanterns-on-the-lake-tickets/promos/1228493",
@@ -4110,6 +4146,11 @@
   "url": "https://www.axs.com/uk/events/1541710/the-reggae-orchestra-comes-to-brighton-tickets",
   "sold": null,
   "checked": "2026-11-21"
+ },
+ "https://www.concorde2.co.uk/event/resident-presents-bicep-dj-set|2027-01-26|resident presents bicep dj set": {
+  "url": "https://link.dice.fm/m05af2803da7",
+  "sold": false,
+  "checked": "2026-11-23"
  },
  "https://www.concorde2.co.uk/event/resident-presents-the-script|2026-12-22|resident presents the script": {
   "url": "https://link.dice.fm/a81c41010a22",
@@ -4723,6 +4764,11 @@
   "sold": true,
   "checked": "2026-11-23",
   "why": "seller data says sold out (wegottickets.com)"
+ },
+ "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly93ZWdvdHRpY2tldHMuY29tL2FmLzY3L2YvMjY0Njg/supplier/WeGotTickets/suppliedid/MTU4ODU0MTY/ticketid/8130241/checksum/4639a010a8ef49071ec56ad045781baf/track/true?title=Vive+Le+XMESS&badge=&venueId=24967|2026-12-06|vive le xmess": {
+  "url": null,
+  "sold": false,
+  "checked": "2026-11-23"
  },
  "https://www.ents24.com/ticket/buy/url/aHR0cHM6Ly9nb29kLXNob3cuY28udWsvZXZlbnRzLzQxOTg/supplier/Miscellaneous/suppliedid/NUJCQTVBQjg3Njk1MkRGQTI5OUU2MDRENDYwQzFCRDA/ticketid/8120347/checksum/e920d8fa7b8bffdaa1b8f4661838e7ea/track/true?title=Hurly+Burly&badge=&venueId=57176|2026-12-04|hurly burly": {
   "url": null,
@@ -5526,6 +5572,11 @@
   "url": "https://komediabrighton.ticketsolve.com/shows/873665673/events/128654845",
   "sold": null,
   "checked": "2026-11-21"
+ },
+ "https://www.komedia.co.uk/shows/dom-mcgovern-prize-hog/?eid=21706|2027-02-24|dom mcgovern prize hog": {
+  "url": "https://komediabrighton.ticketsolve.com/shows/873669494/events/128677843",
+  "sold": null,
+  "checked": "2026-11-23"
  },
  "https://www.komedia.co.uk/shows/dominik-diamond-sings-the-video-games/?eid=21696|2027-03-17|dominik diamond sings the video games": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873669401/events/128677590",
@@ -6356,6 +6407,11 @@
   "sold": null,
   "checked": "2026-11-21"
  },
+ "https://www.komedia.co.uk/shows/michael-akadiri-dont-call-me-uncle/?eid=21718|2027-06-24|michael akadiri don t call me uncle": {
+  "url": "https://komediabrighton.ticketsolve.com/shows/873658439/events/128677915",
+  "sold": null,
+  "checked": "2026-11-23"
+ },
  "https://www.komedia.co.uk/shows/monica-hsueh-how-to-be-a-strong-woman-in-one-hour/?eid=21521|2027-04-22|monica hsueh how to be a strong woman in one hour": {
   "url": "https://komediabrighton.ticketsolve.com/shows/873668375/events/128667703",
   "sold": null,
@@ -6870,10 +6926,30 @@
   "sold": null,
   "checked": "2026-11-20"
  },
+ "https://www.skiddle.com/e/43021229?skcampaign=otbweb|2027-07-24|sonny fodera on the beach brighton saturday": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-11-23"
+ },
+ "https://www.skiddle.com/e/43028597?skcampaign=otbweb|2027-07-09|the opening party": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-11-23"
+ },
+ "https://www.skiddle.com/e/43047248?skcampaign=otbweb|2027-07-23|sonny fodera on the beach brighton friday": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-11-23"
+ },
  "https://www.skiddle.com/whats-on/Brighton/BRIGHTON%2C-CHALK/Ghostface-Killah-Wu-Tang-Clan--Sat-5th-Dec--Chalk--Brighton/42829245/|2026-12-05|ghostface killah wu tang clan sat 5th dec chalk brighton": {
   "url": null,
   "sold": false,
   "checked": "2026-10-12"
+ },
+ "https://www.skiddle.com/whats-on/Brighton/Brighton-On-The-Beach/On-The-Beach-27-Tom-Jones---Come-Gather-Around/43188504/?skcampaign=otbweb|2027-07-18|tom jones come gather round": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-11-23"
  },
  "https://www.skiddle.com/whats-on/Brighton/Chalk-Brighton/The-Gorillaz-Experience-in-Brighton/43019922/|2027-05-21|the gorillaz experience in brighton": {
   "url": null,
@@ -7382,6 +7458,11 @@
   "checked": "2026-11-23"
  },
  "https://www.ticketmaster.co.uk/event/3E00656ACE6A5FC5|2026-11-26|sophie ellis bextor s christmas kitchen disco tour": {
+  "url": null,
+  "sold": null,
+  "checked": "2026-11-23"
+ },
+ "https://www.ticketmaster.co.uk/event/3E006571CF9F65BD|2027-02-05|harlem eubank vs greg outlaw": {
   "url": null,
   "sold": null,
   "checked": "2026-11-23"

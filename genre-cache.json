@@ -1330,6 +1330,51 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "bicep": {
+  "mbid": "10e8f0df-90f9-4957-aedd-c4e0d187e3a8",
+  "name": "Bicep",
+  "genres": [
+   {
+    "name": "club",
+    "count": 1
+   },
+   {
+    "name": "edm",
+    "count": 1
+   },
+   {
+    "name": "electronic",
+    "count": 2
+   },
+   {
+    "name": "house",
+    "count": 2
+   },
+   {
+    "name": "leftfield",
+    "count": 1
+   },
+   {
+    "name": "melodic house",
+    "count": 1
+   },
+   {
+    "name": "stutter house",
+    "count": 2
+   },
+   {
+    "name": "techno",
+    "count": 2
+   }
+  ],
+  "spotify": "73A3bLnfnz5BoQjb4gNCga",
+  "wikidata": "Q28855240",
+  "bucket": "House & Disco",
+  "reason": "tagged",
+  "act": "Bicep",
+  "checked": "2026-11-23",
+  "v": 4
+ },
  "big band": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -2034,6 +2079,13 @@
   "act": "BudPod",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "bureau de change": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Bureau De Change",
+  "checked": "2026-11-23",
+  "v": 4
  },
  "burglar": {
   "bucket": null,

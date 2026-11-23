@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-09-brighton-beach-about-pete-tong@brightonweekend.co.uk
+DTSTAMP:20270709T000000Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:About Pete Tong
+LOCATION:Brighton Beach\, Brighton
+DESCRIPTION:Tickets: https://onthebeachbrighton.com/sonnyfodera/?v=20261023
+ e\nMore: https://brightonweekend.co.uk/e/2027-07-09-brighton-beach-about-p
+ ete-tong/
+URL:https://brightonweekend.co.uk/e/2027-07-09-brighton-beach-about-pete-to
+ ng/
+END:VEVENT
+END:VCALENDAR

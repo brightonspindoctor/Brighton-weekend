@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-23-brighton-beach-sonny-fodera-on-the-beach-brighton-friday@bri
+ ghtonweekend.co.uk
+DTSTAMP:20270723T000000Z
+DTSTART;VALUE=DATE:20270723
+DTEND;VALUE=DATE:20270724
+SUMMARY:Sonny Fodera\, On The Beach Brighton (Friday)
+LOCATION:Brighton Beach\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/e/43047248?skcampaign=otbweb\n
+ More: https://brightonweekend.co.uk/e/2027-07-23-brighton-beach-sonny-fode
+ ra-on-the-beach-brighton-friday/
+URL:https://brightonweekend.co.uk/e/2027-07-23-brighton-beach-sonny-fodera-
+ on-the-beach-brighton-friday/
+END:VEVENT
+END:VCALENDAR

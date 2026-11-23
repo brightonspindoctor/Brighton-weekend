@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-24-brighton-beach-about-sonny-fodera@brightonweekend.co.uk
+DTSTAMP:20270724T000000Z
+DTSTART;VALUE=DATE:20270724
+DTEND;VALUE=DATE:20270725
+SUMMARY:About Sonny Fodera
+LOCATION:Brighton Beach\, Brighton
+DESCRIPTION:Tickets: https://onthebeachbrighton.com/sonnyfodera/\nMore: htt
+ ps://brightonweekend.co.uk/e/2027-07-24-brighton-beach-about-sonny-fodera/
+URL:https://brightonweekend.co.uk/e/2027-07-24-brighton-beach-about-sonny-f
+ odera/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-09-brighton-beach-the-opening-party@brightonweekend.co.uk
+DTSTAMP:20270709T000000Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:The opening party
+LOCATION:Brighton Beach\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/e/43028597?skcampaign=otbweb\n
+ More: https://brightonweekend.co.uk/e/2027-07-09-brighton-beach-the-openin
+ g-party/
+URL:https://brightonweekend.co.uk/e/2027-07-09-brighton-beach-the-opening-p
+ arty/
+END:VEVENT
+END:VCALENDAR

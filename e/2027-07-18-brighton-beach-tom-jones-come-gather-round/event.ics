@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-18-brighton-beach-tom-jones-come-gather-round@brightonweekend.c
+ o.uk
+DTSTAMP:20270718T000000Z
+DTSTART;VALUE=DATE:20270718
+DTEND;VALUE=DATE:20270719
+SUMMARY:Tom Jones: Come Gather Round
+LOCATION:Brighton Beach\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Brighton-On-
+ The-Beach/On-The-Beach-27-Tom-Jones---Come-Gather-Around/43188504/?skcampa
+ ign=otbweb\nMore: https://brightonweekend.co.uk/e/2027-07-18-brighton-beac
+ h-tom-jones-come-gather-round/
+URL:https://brightonweekend.co.uk/e/2027-07-18-brighton-beach-tom-jones-com
+ e-gather-round/
+END:VEVENT
+END:VCALENDAR
