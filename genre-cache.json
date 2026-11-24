@@ -271,6 +271,20 @@
   "checked": "2026-11-11",
   "v": 4
  },
+ "about pete tong": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "About Pete Tong",
+  "checked": "2026-11-24",
+  "v": 4
+ },
+ "about sonny fodera": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "About Sonny Fodera",
+  "checked": "2026-11-24",
+  "v": 4
+ },
  "absolute bowie": {
   "mbid": "f2664ccb-038b-4e3f-8b01-eb0f772a92d3",
   "name": "Absolute Bowie",
@@ -2746,14 +2760,14 @@
     "count": 1
    }
   ],
+  "spotify": "02NSYcRNKSTchMm72ZigOH",
   "wikidata": "Q65038029",
   "wd_genres": [],
   "bucket": null,
   "reason": "genres unclear",
   "act": "Coilguns",
-  "checked": "2026-10-24",
-  "v": 4,
-  "spotify": "02NSYcRNKSTchMm72ZigOH"
+  "checked": "2026-11-24",
+  "v": 4
  },
  "colin miller": {
   "bucket": null,
@@ -2880,8 +2894,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Corselette",
-  "checked": "2026-10-24",
-  "v": 3
+  "checked": "2026-11-24",
+  "v": 4
  },
  "cosmic joke": {
   "mbid": "10ad2ae2-1845-463d-a185-61eb0ba6f9c0",
@@ -4619,12 +4633,12 @@
   "mbid": "99814acd-6014-47bd-a47d-64651a8dd2f1",
   "name": "Exploring Birdsong",
   "genres": [],
+  "spotify": "7HPwQcRoOq1Mlqw5WBtNQc",
   "bucket": null,
   "reason": "no genre tags",
   "act": "Exploring Birdsong",
-  "checked": "2026-10-24",
-  "v": 4,
-  "spotify": "7HPwQcRoOq1Mlqw5WBtNQc"
+  "checked": "2026-11-24",
+  "v": 4
  },
  "eyes": {
   "mbid": "90e129cb-8613-4d37-a692-993fd27cbbc9",
@@ -4659,7 +4673,7 @@
   "bucket": null,
   "reason": "no genre tags",
   "act": "Family Stereo",
-  "checked": "2026-10-24",
+  "checked": "2026-11-24",
   "v": 4
  },
  "family ties": {
@@ -7387,8 +7401,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Jaylor",
-  "checked": "2026-10-24",
-  "v": 3
+  "checked": "2026-11-24",
+  "v": 4
  },
  "jeanie and the white boys": {
   "mbid": "f250ed2e-6f38-459a-88b8-f9730d245f6e",
@@ -7888,12 +7902,12 @@
   "mbid": "8eda37f5-bafc-4d6a-8452-4051fbd8ba3e",
   "name": "Karate Boogaloo",
   "genres": [],
+  "spotify": "6D1VqVFh9yM5oARLleWNpQ",
   "bucket": null,
   "reason": "no genre tags",
   "act": "Karate Boogaloo",
-  "checked": "2026-10-24",
-  "v": 4,
-  "spotify": "6D1VqVFh9yM5oARLleWNpQ"
+  "checked": "2026-11-24",
+  "v": 4
  },
  "kashaka": {
   "mbid": "4d33d64f-3fd1-4b29-8676-b8f078039a1f",
@@ -10724,6 +10738,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "pete tong ibiza classics": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Pete Tong Ibiza Classics",
+  "checked": "2026-11-24",
+  "v": 4
+ },
  "pete williams": {
   "bucket": null,
   "reason": "5 artists share this name",
@@ -11201,12 +11222,12 @@
   "mbid": "6962228f-b6b4-4635-a3b2-d6df75c5e490",
   "name": "Radie Peat",
   "genres": [],
+  "spotify": "2HzXwEzn6g3waLTIufC1Ji",
   "bucket": null,
   "reason": "no genre tags",
   "act": "Radie Peat",
-  "checked": "2026-10-24",
-  "v": 4,
-  "spotify": "2HzXwEzn6g3waLTIufC1Ji"
+  "checked": "2026-11-24",
+  "v": 4
  },
  "rapscallion and chums": {
   "bucket": null,
@@ -12674,6 +12695,42 @@
   "checked": "2026-11-12",
   "v": 4
  },
+ "sonny fodera": {
+  "mbid": "bd804804-588f-423f-9f62-66ba93b4a5a4",
+  "name": "Sonny Fodera",
+  "genres": [
+   {
+    "name": "dance",
+    "count": 1
+   },
+   {
+    "name": "edm",
+    "count": 1
+   },
+   {
+    "name": "electronica",
+    "count": 1
+   },
+   {
+    "name": "house",
+    "count": 1
+   }
+  ],
+  "spotify": "39B7ChWwrWDs7zXlsu3MoP",
+  "wikidata": "Q113291055",
+  "bucket": "Electronic",
+  "reason": "tagged",
+  "act": "Sonny Fodera",
+  "checked": "2026-11-24",
+  "v": 4
+ },
+ "sonny fodera on the beach brighton": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Sonny Fodera, On The Beach Brighton",
+  "checked": "2026-11-24",
+  "v": 4
+ },
  "sonny tennet": {
   "mbid": "929261e7-e9b1-49e6-aa90-95e389daaf4e",
   "name": "Sonny Tennet",
@@ -13934,8 +13991,8 @@
   "bucket": null,
   "reason": "3 artists share this name",
   "act": "The Godfathers",
-  "checked": "2026-10-24",
-  "v": 3
+  "checked": "2026-11-24",
+  "v": 4
  },
  "the gulls": {
   "mbid": "fd6677e9-609b-43d7-a02d-66fa00fc03dc",
@@ -14427,6 +14484,13 @@
   "reason": "not in MusicBrainz",
   "act": "The Noisy Women Present",
   "checked": "2026-10-07"
+ },
+ "the opening party": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "The opening party",
+  "checked": "2026-11-24",
+  "v": 4
  },
  "the ordinary boys": {
   "mbid": "69b50aed-f122-4c45-aba9-863043f5b513",
@@ -15349,6 +15413,13 @@
   "checked": "2026-11-11",
   "v": 4
  },
+ "tom jones": {
+  "bucket": null,
+  "reason": "9 artists share this name",
+  "act": "Tom Jones",
+  "checked": "2026-11-24",
+  "v": 4
+ },
  "tom mcrae": {
   "mbid": "9f5a87ec-0201-45ba-8b03-3b9e0b50a112",
   "name": "Tom McRae",
@@ -15749,6 +15820,55 @@
   "reason": "not in MusicBrainz",
   "act": "Twerk Temple",
   "checked": "2026-11-18",
+  "v": 4
+ },
+ "two door cinema club": {
+  "mbid": "6f1de078-6684-4792-820d-2ffad64c15ed",
+  "name": "Two Door Cinema Club",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "indie pop",
+    "count": 1
+   },
+   {
+    "name": "indie rock",
+    "count": 4
+   },
+   {
+    "name": "indietronica",
+    "count": 1
+   },
+   {
+    "name": "new rave",
+    "count": 1
+   },
+   {
+    "name": "new wave",
+    "count": 1
+   },
+   {
+    "name": "post-punk revival",
+    "count": 2
+   },
+   {
+    "name": "rock",
+    "count": 1
+   },
+   {
+    "name": "synth-pop",
+    "count": 1
+   }
+  ],
+  "spotify": "536BYVgOnRky0xjsPT96zl",
+  "wikidata": "Q777302",
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "Two Door Cinema Club",
+  "checked": "2026-11-24",
   "v": 4
  },
  "tydl": {

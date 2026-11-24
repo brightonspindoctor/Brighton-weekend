@@ -6,13 +6,13 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-11-29-brighton-dome-the-purcell-singers@brightonweekend.co.uk
 DTSTAMP:20261129T000000Z
-DTSTART;VALUE=DATE:20261129
-DTEND;VALUE=DATE:20261130
+DTSTART:20261129T193000Z
+DTEND:20261129T230000Z
 SUMMARY:The Purcell Singers
 LOCATION:Brighton Dome\, Brighton
-DESCRIPTION:Tickets: https://brightondome.org/whats-on/#genre=85&calendar=f
- alse\,false&top_filter=all&page=1&view=list\nMore: https://brightonweekend
- .co.uk/e/2026-11-29-brighton-dome-the-purcell-singers/
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/L0f-the-purcell-sing
+ ers/\nMore: https://brightonweekend.co.uk/e/2026-11-29-brighton-dome-the-p
+ urcell-singers/
 URL:https://brightonweekend.co.uk/e/2026-11-29-brighton-dome-the-purcell-si
  ngers/
 END:VEVENT
