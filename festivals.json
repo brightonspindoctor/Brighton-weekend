@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-23",
-  "range_start": "2026-11-23",
+  "updated": "2026-11-24",
+  "range_start": "2026-11-24",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -23,15 +23,15 @@
       "location_display": "Huddersfield"
     },
     {
-      "title": "Artist Open Houses Winter",
+      "title": "Artists Open Houses Winter",
       "date": "2026-11-28",
       "date_end": "2026-11-28",
       "location": "Various venues across the city, Brighton, East Sussex, BN1 1EE info@aoh.org.uk Brighton",
       "category": "Arts & Culture",
-      "ticket_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
+      "ticket_url": "https://www.visitbrighton.com/whats-on/artists-open-houses-winter-p1348941",
       "source": "https://www.visitbrighton.com/whats-on/festivals?p=1",
-      "detail_url": "https://www.visitbrighton.com/whats-on/artist-open-houses-winter-p1348941",
-      "id": "festival:artist-open-houses-winter:2026-11-28",
+      "detail_url": "https://www.visitbrighton.com/whats-on/artists-open-houses-winter-p1348941",
+      "id": "festival:artists-open-houses-winter:2026-11-28",
       "location_display": "Various venues, Brighton"
     },
     {
@@ -46,6 +46,19 @@
       "official_url": "https://www.celticconnections.com/",
       "id": "festival:celtic-connections:2027-01-14",
       "location_display": "Glasgow"
+    },
+    {
+      "title": "Hastings Fat Tuesday",
+      "date": "2027-02-05",
+      "date_end": "2027-02-09",
+      "location": "Hastings",
+      "category": "Music",
+      "ticket_url": "https://hastingsfattuesday.co.uk/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/hastings-fat-tuesday/",
+      "official_url": "https://hastingsfattuesday.co.uk/",
+      "id": "festival:hastings-fat-tuesday:2027-02-05",
+      "location_display": "Hastings"
     },
     {
       "title": "Burning Bike Fest",
@@ -1188,6 +1201,19 @@
       "location_display": "Errol"
     },
     {
+      "title": "Hampton Court Palace Festival",
+      "date": "2027-06-15",
+      "date_end": "2027-06-27",
+      "location": "East Molesey",
+      "category": "Other",
+      "ticket_url": "https://hamptoncourtpalacefestival.com/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/hampton-court-palace-festival/",
+      "official_url": "https://hamptoncourtpalacefestival.com/",
+      "id": "festival:hampton-court-palace-festival:2027-06-15",
+      "location_display": "East Molesey"
+    },
+    {
       "title": "Beardy Folk Festival",
       "date": "2027-06-17",
       "date_end": "2027-06-20",
@@ -1814,6 +1840,19 @@
       "location_display": "Henley-on-Thames"
     },
     {
+      "title": "Mouth of the Tyne Festival",
+      "date": "2027-07-08",
+      "date_end": "2027-07-11",
+      "location": "Tynemouth",
+      "category": "Other",
+      "ticket_url": "https://mouthofthetynefestival.com/",
+      "source": "https://fezzy.uk/collections/pop-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/mouth-of-the-tyne-festival/",
+      "official_url": "https://mouthofthetynefestival.com/",
+      "id": "festival:mouth-of-the-tyne-festival:2027-07-08",
+      "location_display": "Tynemouth"
+    },
+    {
       "title": "Cedarwood Festival",
       "date": "2027-07-09",
       "date_end": "2027-07-11",
@@ -2100,6 +2139,19 @@
       "official_url": "https://beatherder.co.uk/",
       "id": "festival:beat-herder:2027-07-16",
       "location_display": "Clitheroe"
+    },
+    {
+      "title": "Doune The Rabbit Hole",
+      "date": "2027-07-16",
+      "date_end": "2027-07-18",
+      "location": "Stirling",
+      "category": "Family",
+      "ticket_url": "https://dounetherabbithole.co.uk/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/doune-the-rabbit-hole/",
+      "official_url": "https://dounetherabbithole.co.uk/",
+      "id": "festival:doune-the-rabbit-hole:2027-07-16",
+      "location_display": "Stirling"
     },
     {
       "title": "Fantasy Forest Sudeley",
@@ -2587,6 +2639,19 @@
       "location_display": "South West"
     },
     {
+      "title": "All Together Now",
+      "date": "2027-07-29",
+      "date_end": "2027-08-01",
+      "location": "Waterford",
+      "category": "Family",
+      "ticket_url": "https://alltogethernow.ie/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/all-together-now/",
+      "official_url": "https://alltogethernow.ie/",
+      "id": "festival:all-together-now:2027-07-29",
+      "location_display": "Waterford"
+    },
+    {
       "title": "Belladrum Tartan Heart Festival",
       "date": "2027-07-29",
       "date_end": "2027-07-31",
@@ -2598,6 +2663,19 @@
       "official_url": "https://tartanheartfestival.com/",
       "id": "festival:belladrum-tartan-heart-festival:2027-07-29",
       "location_display": "Beauly"
+    },
+    {
+      "title": "Camp Bestival Dorset",
+      "date": "2027-07-29",
+      "date_end": "2027-08-01",
+      "location": "Lulworth",
+      "category": "Other",
+      "ticket_url": "https://dorset.campbestival.net/weekend-tickets/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/camp-bestival-dorset/",
+      "official_url": "https://campbestival.net/",
+      "id": "festival:camp-bestival-dorset:2027-07-29",
+      "location_display": "Lulworth"
     },
     {
       "title": "Chesterfield Pagans Lammas Camp",
@@ -2624,6 +2702,19 @@
       "official_url": "https://kendalcalling.co.uk/",
       "id": "festival:kendal-calling:2027-07-29",
       "location_display": "Kendal"
+    },
+    {
+      "title": "Rock Oyster Festival",
+      "date": "2027-07-29",
+      "date_end": "2027-08-01",
+      "location": "Wadebridge",
+      "category": "Music",
+      "ticket_url": "https://rockoysterfestival.co.uk/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/rock-oyster-festival/",
+      "official_url": "https://rockoysterfestival.co.uk/",
+      "id": "festival:rock-oyster-festival:2027-07-29",
+      "location_display": "Wadebridge"
     },
     {
       "title": "The Green Gathering",
@@ -3577,6 +3668,19 @@
       "official_url": "https://www.goatfestuk.com/",
       "id": "festival:goatfest:2027-08-27",
       "location_display": "East of England"
+    },
+    {
+      "title": "Infest UK",
+      "date": "2027-08-27",
+      "date_end": "2027-08-29",
+      "location": "Manchester",
+      "category": "Music",
+      "ticket_url": "https://infestuk.com/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/infest-uk/",
+      "official_url": "https://infestuk.com/",
+      "id": "festival:infest-uk:2027-08-27",
+      "location_display": "Manchester"
     },
     {
       "title": "New World Festival",
