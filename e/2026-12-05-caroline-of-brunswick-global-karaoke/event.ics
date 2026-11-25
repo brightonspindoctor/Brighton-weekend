@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-05-caroline-of-brunswick-global-karaoke@brightonweekend.co.uk
+DTSTAMP:20261205T000000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Global Karaoke
+LOCATION:Caroline of Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/7wjz43k2/end-of-year-party-k
+ araoke-dj\nMore: https://brightonweekend.co.uk/e/2026-12-05-caroline-of-br
+ unswick-global-karaoke/
+URL:https://brightonweekend.co.uk/e/2026-12-05-caroline-of-brunswick-global
+ -karaoke/
+END:VEVENT
+END:VCALENDAR

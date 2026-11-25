@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-31-concorde-2-moody-disco-new-years-eve@brightonweekend.co.uk
+DTSTAMP:20261231T000000Z
+DTSTART:20261231T210000Z
+DTEND:20270101T000000Z
+SUMMARY:Moody Disco - New Years Eve
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Concorde-2/M
+ oody-Disco-NYE-Brighton-4-Headliners-TBA/43221498/\nMore: https://brighton
+ weekend.co.uk/e/2026-12-31-concorde-2-moody-disco-new-years-eve/
+URL:https://brightonweekend.co.uk/e/2026-12-31-concorde-2-moody-disco-new-y
+ ears-eve/
+END:VEVENT
+END:VCALENDAR

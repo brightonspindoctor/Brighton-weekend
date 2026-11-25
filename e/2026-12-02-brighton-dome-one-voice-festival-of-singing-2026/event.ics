@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-02-brighton-dome-one-voice-festival-of-singing-2026@brightonwee
+ kend.co.uk
+DTSTAMP:20261202T000000Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:One Voice Festival of Singing 2026
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LJG-one-voice-festiv
+ al-of-singing-2026/\nMore: https://brightonweekend.co.uk/e/2026-12-02-brig
+ hton-dome-one-voice-festival-of-singing-2026/
+URL:https://brightonweekend.co.uk/e/2026-12-02-brighton-dome-one-voice-fest
+ ival-of-singing-2026/
+END:VEVENT
+END:VCALENDAR

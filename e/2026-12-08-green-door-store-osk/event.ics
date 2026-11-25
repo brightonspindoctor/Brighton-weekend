@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-08-green-door-store-osk@brightonweekend.co.uk
+DTSTAMP:20261208T000000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Osk
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.com/e/osk-presents-the-revoluti
+ on-headline-show-tickets-2005389752734?aff=oddtdtcreator\nMore: https://br
+ ightonweekend.co.uk/e/2026-12-08-green-door-store-osk/
+URL:https://brightonweekend.co.uk/e/2026-12-08-green-door-store-osk/
+END:VEVENT
+END:VCALENDAR

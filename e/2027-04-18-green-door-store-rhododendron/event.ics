@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-18-green-door-store-rhododendron@brightonweekend.co.uk
+DTSTAMP:20270418T000000Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:Rhododendron
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://thegreendoorstore.co.uk/events/rhododendron/\n
+ More: https://brightonweekend.co.uk/e/2027-04-18-green-door-store-rhododen
+ dron/
+URL:https://brightonweekend.co.uk/e/2027-04-18-green-door-store-rhododendro
+ n/
+END:VEVENT
+END:VCALENDAR

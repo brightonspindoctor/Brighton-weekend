@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-12-03-brighton-dome-lucy-beaumont-bad-at-quiz-shows-good-with-weir
  dos@brightonweekend.co.uk
 DTSTAMP:20261203T000000Z
-DTSTART;VALUE=DATE:20261203
-DTEND;VALUE=DATE:20261204
+DTSTART:20261203T200000Z
+DTEND:20261203T230000Z
 SUMMARY:Lucy Beaumont: Bad at Quiz Shows\, Good with Weirdos
 LOCATION:Brighton Dome\, Brighton
 DESCRIPTION:Tickets: https://brightondome.org/whats-on/LKT-lucy-beaumont-ba

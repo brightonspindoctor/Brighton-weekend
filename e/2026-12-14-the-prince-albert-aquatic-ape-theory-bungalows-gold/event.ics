@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-14-the-prince-albert-aquatic-ape-theory-bungalows-gold@brighton
+ weekend.co.uk
+DTSTAMP:20261214T000000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Aquatic Ape Theory + Bungalows + Gold
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/aquatic-ape-theory-bun
+ galows-gold-tickets-HJS2MK\nMore: https://brightonweekend.co.uk/e/2026-12-
+ 14-the-prince-albert-aquatic-ape-theory-bungalows-gold/
+URL:https://brightonweekend.co.uk/e/2026-12-14-the-prince-albert-aquatic-ap
+ e-theory-bungalows-gold/
+END:VEVENT
+END:VCALENDAR

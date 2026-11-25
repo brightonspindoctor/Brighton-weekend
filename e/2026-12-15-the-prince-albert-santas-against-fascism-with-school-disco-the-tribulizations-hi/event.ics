@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-15-the-prince-albert-santas-against-fascism-with-school-disco-t
+ he-tribulizations-hi@brightonweekend.co.uk
+DTSTAMP:20261215T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Santas against Fascism with School Disco + The Tribulizations + Hi
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/santas-against-fascism
+ -with-school-disco-the-tribulizations-hi-tickets-RNLPB3\nMore: https://bri
+ ghtonweekend.co.uk/e/2026-12-15-the-prince-albert-santas-against-fascism-w
+ ith-school-disco-the-tribulizations-hi/
+URL:https://brightonweekend.co.uk/e/2026-12-15-the-prince-albert-santas-aga
+ inst-fascism-with-school-disco-the-tribulizations-hi/
+END:VEVENT
+END:VCALENDAR

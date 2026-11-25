@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-13-the-rose-hill-synch-pulse-no-30-bodies-and-people-watching@b
+ rightonweekend.co.uk
+DTSTAMP:20270113T000000Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+SUMMARY:Synch Pulse – No. 30: Bodies and People Watching
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/synch-pulse-no-30-bodi
+ es-and-people-watching/\nMore: https://brightonweekend.co.uk/e/2027-01-13-
+ the-rose-hill-synch-pulse-no-30-bodies-and-people-watching/
+URL:https://brightonweekend.co.uk/e/2027-01-13-the-rose-hill-synch-pulse-no
+ -30-bodies-and-people-watching/
+END:VEVENT
+END:VCALENDAR

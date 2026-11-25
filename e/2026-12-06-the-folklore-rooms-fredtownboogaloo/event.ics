@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-06-the-folklore-rooms-fredtownboogaloo@brightonweekend.co.uk
+DTSTAMP:20261206T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Fredtownboogaloo
+LOCATION:The Folklore Rooms\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Folklore
+ -Rooms-/Fredtownboogaloo-an-Afternoon-for-War-Child/43217538/\nMore: https
+ ://brightonweekend.co.uk/e/2026-12-06-the-folklore-rooms-fredtownboogaloo/
+URL:https://brightonweekend.co.uk/e/2026-12-06-the-folklore-rooms-fredtownb
+ oogaloo/
+END:VEVENT
+END:VCALENDAR

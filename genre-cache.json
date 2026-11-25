@@ -705,6 +705,16 @@
   "checked": "2026-11-11",
   "v": 4
  },
+ "andy and the odd socks": {
+  "mbid": "b84e6afa-8dc4-4354-8eb4-0860d19b3ba8",
+  "name": "Andy and the Odd Socks",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Andy And The Odd Socks",
+  "checked": "2026-11-25",
+  "v": 4
+ },
  "andy c zc45v": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -815,6 +825,17 @@
   "reason": "tagged",
   "act": "Aqualine",
   "checked": "2026-10-16",
+  "v": 4
+ },
+ "aquatic ape theory": {
+  "mbid": "26e3ae3c-1a8a-47af-be1c-c059b5c2c24e",
+  "name": "Aquatic Ape Theory",
+  "genres": [],
+  "spotify": "5jv7f6dhSDy1bKoMvUU8xf",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Aquatic Ape Theory",
+  "checked": "2026-11-25",
   "v": 4
  },
  "arctic numpties": {
@@ -1757,6 +1778,13 @@
   "checked": "2026-11-11",
   "v": 4
  },
+ "blues corporation new years charity gig": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Blues Corporation New Years Charity Gig",
+  "checked": "2026-11-25",
+  "v": 4
+ },
  "blush": {
   "bucket": null,
   "reason": "23 artists share this name",
@@ -2027,6 +2055,13 @@
   "reason": "not in MusicBrainz",
   "act": "Brighton Gay Men’s Chorus Presents A Merry Murder Mystery",
   "checked": "2026-10-07"
+ },
+ "brighton wine festival": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Brighton Wine Festival",
+  "checked": "2026-11-25",
+  "v": 4
  },
  "brooke combe": {
   "mbid": "7621d315-cc2e-40c5-ac86-9a62fa8accb0",
@@ -2516,6 +2551,17 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "cherryholt": {
+  "mbid": "8db2d79b-ed36-4298-a31e-3103d7cecb10",
+  "name": "Cherryholt",
+  "genres": [],
+  "spotify": "1WBHF5t4j9ytpgcNhFWGwW",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Cherryholt",
+  "checked": "2026-11-25",
+  "v": 4
+ },
  "chinchilla": {
   "bucket": null,
   "reason": "4 artists share this name",
@@ -2782,6 +2828,13 @@
   "act": "Colin Miller & Told Slant",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "comic sans": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "Comic Sans",
+  "checked": "2026-11-25",
+  "v": 4
  },
  "committee of sleep": {
   "mbid": "29695a0f-187e-4a5f-a315-492e4510df51",
@@ -3409,6 +3462,13 @@
   "reason": "not in MusicBrainz",
   "act": "David Byrne's Night",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "david cross": {
+  "bucket": null,
+  "reason": "3 artists share this name",
+  "act": "David Cross",
+  "checked": "2026-11-25",
   "v": 4
  },
  "david devant and his spirit wife": {
@@ -4123,6 +4183,20 @@
   "reason": "not in MusicBrainz",
   "act": "Dr. Xand van Tulleken",
   "checked": "2026-10-06"
+ },
+ "duel family of strangers": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "DUel FAMILY OF STRANGERS",
+  "checked": "2026-11-25",
+  "v": 4
+ },
+ "duel family of strangers noir mates": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "DUel FAMILY OF STRANGERS, NOIR MATES.",
+  "checked": "2026-11-25",
+  "v": 4
  },
  "dusk before dark": {
   "bucket": null,
@@ -5133,6 +5207,13 @@
   "checked": "2026-11-13",
   "v": 4
  },
+ "fredtownboogaloo": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Fredtownboogaloo",
+  "checked": "2026-11-25",
+  "v": 4
+ },
  "friendly fires": {
   "mbid": "ef656595-bbe8-4386-8953-be8df9f54472",
   "name": "Friendly Fires",
@@ -5230,6 +5311,13 @@
   "reason": "genres unclear",
   "act": "Fukushima Dolphin",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "full moon": {
+  "bucket": null,
+  "reason": "5 artists share this name",
+  "act": "Full Moon",
+  "checked": "2026-11-25",
   "v": 4
  },
  "fully femme fronted": {
@@ -5664,6 +5752,13 @@
   "act": "Glenn Richards & The Venus Lakes",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "global karaoke": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Global Karaoke",
+  "checked": "2026-11-25",
+  "v": 4
  },
  "gloomy sunday 6": {
   "bucket": null,
@@ -8638,6 +8733,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "less is more": {
+  "bucket": null,
+  "reason": "9 artists share this name",
+  "act": "Less. Is. More.",
+  "checked": "2026-11-25",
+  "v": 4
+ },
  "let s meet tommy romero": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -10431,6 +10533,13 @@
   "checked": "2026-11-11",
   "v": 4
  },
+ "one voice festival of singing": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "One Voice Festival of Singing",
+  "checked": "2026-11-25",
+  "v": 4
+ },
  "one world orchestra": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -10518,6 +10627,13 @@
   "reason": "genres unclear",
   "act": "Oscar Jerome",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "osk": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "Osk",
+  "checked": "2026-11-25",
   "v": 4
  },
  "other lives": {
@@ -10833,6 +10949,18 @@
   "reason": "14 artists share this name",
   "act": "Phil Jones",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "phinius gage": {
+  "mbid": "51337507-41ac-43f7-8308-003cabbb6326",
+  "name": "Phinius Gage",
+  "genres": [],
+  "wikidata": "Q7186387",
+  "wd_genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Phinius Gage",
+  "checked": "2026-11-25",
   "v": 4
  },
  "phoebe bridgers": {
@@ -11423,6 +11551,13 @@
   "checked": "2026-11-13",
   "v": 4
  },
+ "rhododendron": {
+  "bucket": null,
+  "reason": "4 artists share this name",
+  "act": "Rhododendron",
+  "checked": "2026-11-25",
+  "v": 4
+ },
  "rhythm of the 90s": {
   "mbid": "a2b745c6-9c80-4e3b-9771-e017da5ce168",
   "name": "Rhythm of the 90s",
@@ -11588,6 +11723,13 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "robb johnson and irregulars": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Robb Johnson & Irregulars",
+  "checked": "2026-11-25",
+  "v": 4
+ },
  "rock day party": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -11621,6 +11763,13 @@
   "act": "ROLL FOR PERFORMANCE",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "rolling bones": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Rolling Bones",
+  "checked": "2026-11-25",
+  "v": 4
  },
  "romes": {
   "bucket": null,
@@ -11895,6 +12044,13 @@
   "reason": "no genre tags",
   "act": "Samuel Nicholson",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "santas against fascism": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Santas against Fascism",
+  "checked": "2026-11-25",
   "v": 4
  },
  "sasha": {
@@ -12487,6 +12643,13 @@
   "checked": "2026-10-27",
   "v": 4
  },
+ "slate": {
+  "bucket": null,
+  "reason": "6 artists share this name",
+  "act": "Slate",
+  "checked": "2026-11-25",
+  "v": 4
+ },
  "slayyyter": {
   "mbid": "9058d01e-8afc-47a4-8664-621fb5f159c0",
   "name": "Slayyyter",
@@ -12680,6 +12843,13 @@
   "act": "Soil Finger Eleven, Adema",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "solebound": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Solebound",
+  "checked": "2026-11-25",
+  "v": 4
  },
  "soma dolls": {
   "bucket": null,
@@ -13943,6 +14113,17 @@
   "reason": "no genre tags",
   "act": "The Entitled Sons",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "the equatorial group": {
+  "mbid": "f2832c23-c47f-4305-ade1-4b0b677df3a9",
+  "name": "The Equatorial Group",
+  "genres": [],
+  "spotify": "2CLDgR9tagh8Qf7wjMcsBc",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "The Equatorial Group",
+  "checked": "2026-11-25",
   "v": 4
  },
  "the evening sons": {
@@ -16400,9 +16581,9 @@
   ],
   "bucket": null,
   "reason": "genres unclear",
-  "act": "WERKHA",
-  "checked": "2026-10-11",
-  "v": 2
+  "act": "Werkha",
+  "checked": "2026-11-25",
+  "v": 4
  },
  "westlife": {
   "mbid": "5f000e69-3cfd-4871-8f1b-faa7f0d4bcbc",
@@ -16580,6 +16761,13 @@
   "act": "WPC",
   "checked": "2026-10-13",
   "v": 3
+ },
+ "wrexmas": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Wrexmas",
+  "checked": "2026-11-25",
+  "v": 4
  },
  "wyld rose showcase": {
   "bucket": null,

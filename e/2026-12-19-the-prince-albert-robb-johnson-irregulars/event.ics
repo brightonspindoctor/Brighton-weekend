@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-19-the-prince-albert-robb-johnson-irregulars@brightonweekend.co
+ .uk
+DTSTAMP:20261219T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Robb Johnson & Irregulars
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/robb-johnson-irregular
+ s-tickets-VD7L84\nMore: https://brightonweekend.co.uk/e/2026-12-19-the-pri
+ nce-albert-robb-johnson-irregulars/
+URL:https://brightonweekend.co.uk/e/2026-12-19-the-prince-albert-robb-johns
+ on-irregulars/
+END:VEVENT
+END:VCALENDAR

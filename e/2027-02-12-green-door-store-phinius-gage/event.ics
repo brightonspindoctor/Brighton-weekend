@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-12-green-door-store-phinius-gage@brightonweekend.co.uk
+DTSTAMP:20270212T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:Phinius Gage
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/qnx99y-phinius-gage-knofx-raptur
+ es-12th-feb-green-door-store-brighton-tickets\nMore: https://brightonweeke
+ nd.co.uk/e/2027-02-12-green-door-store-phinius-gage/
+URL:https://brightonweekend.co.uk/e/2027-02-12-green-door-store-phinius-gag
+ e/
+END:VEVENT
+END:VCALENDAR

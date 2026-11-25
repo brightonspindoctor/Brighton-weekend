@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-10-the-prince-albert-solebound-lucid-fox-lou-noble-joema@bright
+ onweekend.co.uk
+DTSTAMP:20261210T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Solebound + Lucid Fox + Lou Noble + JoEma
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/solebound-lucid-fox-lo
+ u-noble-joema-tickets-P04LZS\nMore: https://brightonweekend.co.uk/e/2026-1
+ 2-10-the-prince-albert-solebound-lucid-fox-lou-noble-joema/
+URL:https://brightonweekend.co.uk/e/2026-12-10-the-prince-albert-solebound-
+ lucid-fox-lou-noble-joema/
+END:VEVENT
+END:VCALENDAR

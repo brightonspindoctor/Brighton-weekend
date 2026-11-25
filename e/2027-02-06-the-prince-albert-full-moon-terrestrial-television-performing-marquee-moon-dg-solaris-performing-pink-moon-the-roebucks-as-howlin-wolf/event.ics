@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-06-the-prince-albert-full-moon-terrestrial-television-performin
+ g-marquee-moon-dg-solaris-performing-pink-moon-the-roebucks-as-howlin-wolf
+ @brightonweekend.co.uk
+DTSTAMP:20270206T000000Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:Full Moon: Terrestrial Television (performing Marquee Moon) + DG So
+ laris (performing Pink Moon) + The Roebucks (as Howlin' Wolf)
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/full-moon-marquee-moo
+ n-and-pink-moon-live-in-full/the-prince-albert/3761136\nMore: https://brig
+ htonweekend.co.uk/e/2027-02-06-the-prince-albert-full-moon-terrestrial-tel
+ evision-performing-marquee-moon-dg-solaris-performing-pink-moon-the-roebuc
+ ks-as-howlin-wolf/
+URL:https://brightonweekend.co.uk/e/2027-02-06-the-prince-albert-full-moon-
+ terrestrial-television-performing-marquee-moon-dg-solaris-performing-pink-
+ moon-the-roebucks-as-howlin-wolf/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-quarters-b2b-the-movement-christmas-special@brightonweekend.
+ co.uk
+DTSTAMP:20261204T000000Z
+DTSTART:20261204T230000Z
+DTEND:20261205T040000Z
+SUMMARY:B2B The Movement: Christmas Special
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/christmas-specia
+ l-joey-london-and-residents/quarters/3761170\nMore: https://brightonweeken
+ d.co.uk/e/2026-12-04-quarters-b2b-the-movement-christmas-special/
+URL:https://brightonweekend.co.uk/e/2026-12-04-quarters-b2b-the-movement-ch
+ ristmas-special/
+END:VEVENT
+END:VCALENDAR

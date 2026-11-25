@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-15-daltons-an-interview-with-the-damned-s-rat-scabies-audience-
+ q-a@brightonweekend.co.uk
+DTSTAMP:20270315T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270316
+SUMMARY:An Interview with the Damned's Rat Scabies (& Audience Q&A)
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/an-inter
+ view-with-the-damneds-rat-scabies-audience-q-a\nMore: https://brightonweek
+ end.co.uk/e/2027-03-15-daltons-an-interview-with-the-damned-s-rat-scabies-
+ audience-q-a/
+URL:https://brightonweekend.co.uk/e/2027-03-15-daltons-an-interview-with-th
+ e-damned-s-rat-scabies-audience-q-a/
+END:VEVENT
+END:VCALENDAR

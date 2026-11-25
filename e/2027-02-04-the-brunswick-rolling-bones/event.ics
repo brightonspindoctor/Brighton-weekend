@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-04-the-brunswick-rolling-bones@brightonweekend.co.uk
+DTSTAMP:20270204T000000Z
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270205
+SUMMARY:Rolling Bones
+LOCATION:The Brunswick\, Brighton
+DESCRIPTION:Tickets: https://www.brunswickpub.co.uk/event-details/rolling-b
+ ones\nMore: https://brightonweekend.co.uk/e/2027-02-04-the-brunswick-rolli
+ ng-bones/
+URL:https://brightonweekend.co.uk/e/2027-02-04-the-brunswick-rolling-bones/
+END:VEVENT
+END:VCALENDAR

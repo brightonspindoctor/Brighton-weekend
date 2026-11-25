@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-09-the-prince-albert-the-equatorial-group-the-puffins-rob-cast@
+ brightonweekend.co.uk
+DTSTAMP:20261209T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:The Equatorial Group + The Puffins + Rob cast
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/the-equatorial-group-t
+ he-puffins-rob-cast-tickets-KD9G3Z\nMore: https://brightonweekend.co.uk/e/
+ 2026-12-09-the-prince-albert-the-equatorial-group-the-puffins-rob-cast/
+URL:https://brightonweekend.co.uk/e/2026-12-09-the-prince-albert-the-equato
+ rial-group-the-puffins-rob-cast/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-02-a-l-p-h-a-b-e-t-werkha@brightonweekend.co.uk
+DTSTAMP:20270402T000000Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270403
+SUMMARY:Werkha
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://link.dice.fm/Z106d3723fcb\nMore: https://brigh
+ tonweekend.co.uk/e/2027-04-02-a-l-p-h-a-b-e-t-werkha/
+URL:https://brightonweekend.co.uk/e/2027-04-02-a-l-p-h-a-b-e-t-werkha/
+END:VEVENT
+END:VCALENDAR

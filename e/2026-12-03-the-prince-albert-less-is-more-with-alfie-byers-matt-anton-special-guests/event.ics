@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-03-the-prince-albert-less-is-more-with-alfie-byers-matt-anton-s
+ pecial-guests@brightonweekend.co.uk
+DTSTAMP:20261203T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Less. Is. More. with Alfie Byers + Matt Anton + special guests
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/less-is-more-tickets-Y
+ LN65F?ref=share-widget-buffer\nMore: https://brightonweekend.co.uk/e/2026-
+ 12-03-the-prince-albert-less-is-more-with-alfie-byers-matt-anton-special-g
+ uests/
+URL:https://brightonweekend.co.uk/e/2026-12-03-the-prince-albert-less-is-mo
+ re-with-alfie-byers-matt-anton-special-guests/
+END:VEVENT
+END:VCALENDAR

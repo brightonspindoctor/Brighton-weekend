@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-09-the-hope-ruin-cherryholt@brightonweekend.co.uk
+DTSTAMP:20270509T000000Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:Cherryholt
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/ogle0bjs/cherryholt\nMore: h
+ ttps://brightonweekend.co.uk/e/2027-05-09-the-hope-ruin-cherryholt/
+URL:https://brightonweekend.co.uk/e/2027-05-09-the-hope-ruin-cherryholt/
+END:VEVENT
+END:VCALENDAR

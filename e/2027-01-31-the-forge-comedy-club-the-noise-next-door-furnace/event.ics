@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-31-the-forge-comedy-club-the-noise-next-door-furnace@brightonwe
+ ekend.co.uk
+DTSTAMP:20270131T000000Z
+DTSTART:20270131T180000Z
+DTEND:20270131T200000Z
+SUMMARY:The Noise Next Door: Furnace
+LOCATION:The Forge Comedy Club\, Brighton
+DESCRIPTION:Tickets: https://www.eventbrite.co.uk/e/the-noise-next-door-fur
+ nace-tickets-2005318561800\nMore: https://brightonweekend.co.uk/e/2027-01-
+ 31-the-forge-comedy-club-the-noise-next-door-furnace/
+URL:https://brightonweekend.co.uk/e/2027-01-31-the-forge-comedy-club-the-no
+ ise-next-door-furnace/
+END:VEVENT
+END:VCALENDAR

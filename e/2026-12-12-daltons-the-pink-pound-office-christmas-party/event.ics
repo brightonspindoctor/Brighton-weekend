@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-12-daltons-the-pink-pound-office-christmas-party@brightonweeken
+ d.co.uk
+DTSTAMP:20261212T000000Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:The Pink Pound: Office Christmas Party
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.outsavvy.com/event/41652/the-pink-pound-of
+ fice-christmas-party\nMore: https://brightonweekend.co.uk/e/2026-12-12-dal
+ tons-the-pink-pound-office-christmas-party/
+URL:https://brightonweekend.co.uk/e/2026-12-12-daltons-the-pink-pound-offic
+ e-christmas-party/
+END:VEVENT
+END:VCALENDAR

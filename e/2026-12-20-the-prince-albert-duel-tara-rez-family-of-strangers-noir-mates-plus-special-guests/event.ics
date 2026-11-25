@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-20-the-prince-albert-duel-tara-rez-family-of-strangers-noir-mat
+ es-plus-special-guests@brightonweekend.co.uk
+DTSTAMP:20261220T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:DUel (Tara Rez) FAMILY OF STRANGERS\, NOIR MATES. Plus special gues
+ ts
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://wegottickets.com/f/31809/\nMore: https://brigh
+ tonweekend.co.uk/e/2026-12-20-the-prince-albert-duel-tara-rez-family-of-st
+ rangers-noir-mates-plus-special-guests/
+URL:https://brightonweekend.co.uk/e/2026-12-20-the-prince-albert-duel-tara-
+ rez-family-of-strangers-noir-mates-plus-special-guests/
+END:VEVENT
+END:VCALENDAR

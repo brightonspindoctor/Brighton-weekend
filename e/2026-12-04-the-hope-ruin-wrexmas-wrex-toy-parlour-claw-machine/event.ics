@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-the-hope-ruin-wrexmas-wrex-toy-parlour-claw-machine@brighton
+ weekend.co.uk
+DTSTAMP:20261204T000000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Wrexmas: Wrex + Toy Parlour + Claw Machine
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.fatsoma.com/e/owd84gga/wrexmas-wrex-toy-pa
+ rlour-claw-machine\nMore: https://brightonweekend.co.uk/e/2026-12-04-the-h
+ ope-ruin-wrexmas-wrex-toy-parlour-claw-machine/
+URL:https://brightonweekend.co.uk/e/2026-12-04-the-hope-ruin-wrexmas-wrex-t
+ oy-parlour-claw-machine/
+END:VEVENT
+END:VCALENDAR
