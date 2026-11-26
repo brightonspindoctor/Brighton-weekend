@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-12-komedia-boss-drag-brunch@brightonweekend.co.uk
+DTSTAMP:20270612T000000Z
+DTSTART:20270612T110000Z
+DTEND:20270612T140000Z
+SUMMARY:Boss’ Drag Brunch
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87362745
+ 4/events/128678294\nMore: https://brightonweekend.co.uk/e/2027-06-12-komed
+ ia-boss-drag-brunch/
+URL:https://brightonweekend.co.uk/e/2027-06-12-komedia-boss-drag-brunch/
+END:VEVENT
+END:VCALENDAR

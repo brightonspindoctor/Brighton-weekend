@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-05-brighton-dome-etsy-christmas-fair-2@brightonweekend.co.uk
+DTSTAMP:20261205T000000Z
+DTSTART:20261205T100000Z
+DTEND:20261205T163000Z
+SUMMARY:Etsy Christmas Fair
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/L1c-etsy-christmas-f
+ air/\nMore: https://brightonweekend.co.uk/e/2026-12-05-brighton-dome-etsy-
+ christmas-fair-2/
+URL:https://brightonweekend.co.uk/e/2026-12-05-brighton-dome-etsy-christmas
+ -fair-2/
+END:VEVENT
+END:VCALENDAR

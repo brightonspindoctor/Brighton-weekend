@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-18-green-door-store-knives@brightonweekend.co.uk
+DTSTAMP:20270318T000000Z
+DTSTART;VALUE=DATE:20270318
+DTEND;VALUE=DATE:20270319
+SUMMARY:Knives
+LOCATION:Green Door Store\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1691076/knives-tickets\n
+ More: https://brightonweekend.co.uk/e/2027-03-18-green-door-store-knives/
+URL:https://brightonweekend.co.uk/e/2027-03-18-green-door-store-knives/
+END:VEVENT
+END:VCALENDAR

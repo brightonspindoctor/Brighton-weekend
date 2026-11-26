@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-brighton-dome-kevin-bridges-here-if-you-need-me@brightonweek
+ end.co.uk
+DTSTAMP:20261204T000000Z
+DTSTART:20261204T200000Z
+DTEND:20261204T230000Z
+SUMMARY:Kevin Bridges: Here If You Need Me
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/Li2-kevin-bridges-he
+ re-if-you-need-me/\nMore: https://brightonweekend.co.uk/e/2026-12-04-brigh
+ ton-dome-kevin-bridges-here-if-you-need-me/
+URL:https://brightonweekend.co.uk/e/2026-12-04-brighton-dome-kevin-bridges-
+ here-if-you-need-me/
+END:VEVENT
+END:VCALENDAR

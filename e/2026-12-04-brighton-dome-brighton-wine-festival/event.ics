@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-brighton-dome-brighton-wine-festival@brightonweekend.co.uk
+DTSTAMP:20261204T000000Z
+DTSTART:20261204T114500Z
+DTEND:20261204T210000Z
+SUMMARY:Brighton Wine Festival
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LSb-brighton-wine-fe
+ stival/\nMore: https://brightonweekend.co.uk/e/2026-12-04-brighton-dome-br
+ ighton-wine-festival/
+URL:https://brightonweekend.co.uk/e/2026-12-04-brighton-dome-brighton-wine-
+ festival/
+END:VEVENT
+END:VCALENDAR

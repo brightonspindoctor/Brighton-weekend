@@ -932,6 +932,16 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "aynsley lister band": {
+  "mbid": "ed4701e2-330c-4725-970b-99d8750ab1b7",
+  "name": "The Aynsley Lister Band",
+  "genres": [],
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Aynsley Lister Band",
+  "checked": "2026-11-26",
+  "v": 4
+ },
  "babe haven": {
   "mbid": "526c63a9-842c-4d6c-9aad-e9830fe521e0",
   "name": "Babe Haven",
@@ -4626,6 +4636,13 @@
   "reason": "no genre tags",
   "act": "Ethan Regan",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "etsy christmas fair": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Etsy Christmas Fair",
+  "checked": "2026-11-26",
   "v": 4
  },
  "evangeline eastwood": {
@@ -8842,6 +8859,13 @@
   "reason": "not in MusicBrainz",
   "act": "Lo Fidelity Allstars DJ Set",
   "checked": "2026-10-06"
+ },
+ "local spotlight": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Local Spotlight",
+  "checked": "2026-11-26",
+  "v": 4
  },
  "locklead": {
   "mbid": "6a0c4fba-1ab7-41b5-a088-0160d5a652b5",

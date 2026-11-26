@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-13-komedia-comedy-club-4-kids@brightonweekend.co.uk
+DTSTAMP:20270213T000000Z
+DTSTART:20270213T140000Z
+DTEND:20270213T170000Z
+SUMMARY:Comedy Club 4 Kids
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/12651362
+ 4/events/128678171\nMore: https://brightonweekend.co.uk/e/2027-02-13-komed
+ ia-comedy-club-4-kids/
+URL:https://brightonweekend.co.uk/e/2027-02-13-komedia-comedy-club-4-kids/
+END:VEVENT
+END:VCALENDAR

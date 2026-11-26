@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-10-komedia-aynsley-lister-band@brightonweekend.co.uk
+DTSTAMP:20270610T000000Z
+DTSTART:20270610T183000Z
+DTEND:20270610T213000Z
+SUMMARY:Aynsley Lister Band
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366964
+ 9/events/128678163\nMore: https://brightonweekend.co.uk/e/2027-06-10-komed
+ ia-aynsley-lister-band/
+URL:https://brightonweekend.co.uk/e/2027-06-10-komedia-aynsley-lister-band/
+END:VEVENT
+END:VCALENDAR

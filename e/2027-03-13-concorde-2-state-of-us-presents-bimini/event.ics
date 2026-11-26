@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-13-concorde-2-state-of-us-presents-bimini@brightonweekend.co.uk
+DTSTAMP:20270313T000000Z
+DTSTART:20270313T230000Z
+DTEND:20270314T020000Z
+SUMMARY:State of Us Presents Bimini
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/e/43222971\nMore: https://brig
+ htonweekend.co.uk/e/2027-03-13-concorde-2-state-of-us-presents-bimini/
+URL:https://brightonweekend.co.uk/e/2027-03-13-concorde-2-state-of-us-prese
+ nts-bimini/
+END:VEVENT
+END:VCALENDAR
