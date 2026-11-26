@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-25",
-  "range_start": "2026-11-25",
+  "updated": "2026-11-26",
+  "range_start": "2026-11-26",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -810,6 +810,19 @@
       "location_display": "Bristol and Nottingham"
     },
     {
+      "title": "Farmfestival",
+      "date": "2027-05-29",
+      "date_end": "2027-05-31",
+      "location": "Coventry",
+      "category": "Arts & Culture",
+      "ticket_url": "https://farm-fest.org/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/farmfestival/",
+      "official_url": "https://farm-fest.org/",
+      "id": "festival:farmfestival:2027-05-29",
+      "location_display": "Coventry"
+    },
+    {
       "title": "Field Day",
       "date": "2027-05-29",
       "date_end": "2027-05-29",
@@ -1201,6 +1214,19 @@
       "location_display": "Errol"
     },
     {
+      "title": "Forest Live - High Lodge Thetford Forest",
+      "date": "2027-06-15",
+      "date_end": "2027-06-20",
+      "location": "Brandon",
+      "category": "Other",
+      "ticket_url": "https://www.forestlive.com/highlodgethetfordforest",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/forest-live-high-lodge-thetford-forest/",
+      "official_url": "https://www.forestlive.com/highlodgethetfordforest",
+      "id": "festival:forest-live-high-lodge-thetford-forest:2027-06-15",
+      "location_display": "Brandon"
+    },
+    {
       "title": "Hampton Court Palace Festival",
       "date": "2027-06-15",
       "date_end": "2027-06-27",
@@ -1214,6 +1240,19 @@
       "location_display": "East Molesey"
     },
     {
+      "title": "Forest Live - Delamere Forest",
+      "date": "2027-06-16",
+      "date_end": "2027-06-20",
+      "location": "Northwich",
+      "category": "Other",
+      "ticket_url": "https://www.forestlive.com/delamereforest",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/forest-live-delamere-forest/",
+      "official_url": "https://www.forestlive.com/delamereforest",
+      "id": "festival:forest-live-delamere-forest:2027-06-17",
+      "location_display": "Northwich"
+    },
+    {
       "title": "Beardy Folk Festival",
       "date": "2027-06-17",
       "date_end": "2027-06-20",
@@ -1225,19 +1264,6 @@
       "official_url": "https://beardyfolkfestival.co.uk/",
       "id": "festival:beardy-folk-festival:2027-06-17",
       "location_display": "Cleobury Mortimer"
-    },
-    {
-      "title": "Forest Live Delamere Forest",
-      "date": "2027-06-17",
-      "date_end": "2027-06-21",
-      "location": "Northwich · Mixed",
-      "category": "Music",
-      "ticket_url": "https://www.forestlive.com/delamereforest",
-      "source": "https://fezzy.uk/collections/indie-festivals-uk-2026/",
-      "detail_url": "https://fezzy.uk/festival/forest-live-delamere-forest/",
-      "official_url": "https://www.forestlive.com/delamereforest",
-      "id": "festival:forest-live-delamere-forest:2027-06-17",
-      "location_display": "Northwich · Mixed"
     },
     {
       "title": "GemFest",
@@ -1420,6 +1446,19 @@
       "official_url": "https://www.chalkefestival.com/",
       "id": "festival:chalke-history-festival:2027-06-21",
       "location_display": "South West"
+    },
+    {
+      "title": "Forest Live - Westonbirt Arboretum",
+      "date": "2027-06-23",
+      "date_end": "2027-06-27",
+      "location": "Tetbury",
+      "category": "Other",
+      "ticket_url": "https://www.forestlive.com/Westonbirtarboretum",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/forest-live-westonbirt-arboretum/",
+      "official_url": "https://www.forestlive.com/Westonbirtarboretum",
+      "id": "festival:forest-live-westonbirt-arboretum:2027-06-23",
+      "location_display": "Tetbury"
     },
     {
       "title": "Glastonbury Festival",
@@ -1986,14 +2025,14 @@
       "title": "Boogietown",
       "date": "2027-07-10",
       "date_end": "2027-07-10",
-      "location": "South East",
+      "location": "Walton-on-Thames",
       "category": "Other",
-      "ticket_url": "https://boogietown.co.uk/",
+      "ticket_url": "https://www.skiddle.com/festivals/boogietown/?sktag=15441&skcampaign=fezzy",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/boogietown/",
       "official_url": "https://boogietown.co.uk/",
       "id": "festival:boogietown:2027-07-10",
-      "location_display": "South East"
+      "location_display": "Walton-on-Thames"
     },
     {
       "title": "Burton Agnes Jazz Festival",
@@ -2044,7 +2083,6 @@
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/samadhi-fest/",
       "official_url": "https://www.samadhi.org.uk/event/samadhi-fest-2027/",
-      "dates_from": "official site",
       "id": "festival:samadhi-fest:2027-07-10",
       "location_display": "West Midlands"
     },
@@ -2128,6 +2166,19 @@
       "location_display": "North West"
     },
     {
+      "title": "Also Festival",
+      "date": "2027-07-16",
+      "date_end": "2027-07-18",
+      "location": "Compton Verney",
+      "category": "Comedy",
+      "ticket_url": "https://www.also-festival.com/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/also-festival/",
+      "official_url": "https://www.also-festival.com/",
+      "id": "festival:also-festival:2027-07-16",
+      "location_display": "Compton Verney"
+    },
+    {
       "title": "Beat-Herder",
       "date": "2027-07-16",
       "date_end": "2027-07-18",
@@ -2146,10 +2197,10 @@
       "date_end": "2027-07-18",
       "location": "Stirling",
       "category": "Family",
-      "ticket_url": "https://dounetherabbithole.co.uk/",
+      "ticket_url": "https://www.backdounetherabbithole.co.uk/tickets/",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/doune-the-rabbit-hole/",
-      "official_url": "https://dounetherabbithole.co.uk/",
+      "official_url": "https://www.backdounetherabbithole.co.uk/",
       "id": "festival:doune-the-rabbit-hole:2027-07-16",
       "location_display": "Stirling"
     },
@@ -2913,19 +2964,6 @@
       "location_display": "South West"
     },
     {
-      "title": "Gloucestershire Vintage Country Extravaganza",
-      "date": "2027-07-31",
-      "date_end": "2027-07-31",
-      "location": "Cirencester",
-      "category": "Other",
-      "ticket_url": "https://www.glosvintageextravaganza.co.uk/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/gloucestershire-vintage-country-extravaganza/",
-      "official_url": "https://www.glosvintageextravaganza.co.uk/",
-      "id": "festival:gloucestershire-vintage-country-extravaganza:2027-07-31",
-      "location_display": "Cirencester"
-    },
-    {
       "title": "Reggae Land",
       "date": "2027-07-31",
       "date_end": "2027-08-01",
@@ -3066,6 +3104,19 @@
       "official_url": "https://broadstairsfolkweek.org.uk/",
       "id": "festival:broadstairs-folk-week:2027-08-06",
       "location_display": "Broadstairs"
+    },
+    {
+      "title": "Gloucestershire Vintage & Country Extravaganza",
+      "date": "2027-08-06",
+      "date_end": "2027-08-08",
+      "location": "Cirencester",
+      "category": "Other",
+      "ticket_url": "https://www.glosvintageextravaganza.co.uk/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/gloucestershire-vintage-country-extravaganza/",
+      "official_url": "https://www.glosvintageextravaganza.co.uk/",
+      "id": "festival:gloucestershire-vintage-country-extravaganza:2027-07-31",
+      "location_display": "Cirencester"
     },
     {
       "title": "Good Vibrations Society",
@@ -4189,6 +4240,20 @@
       "official_url": "https://www.woofstockuk.co.uk/",
       "id": "festival:woofstock-uk:2027-09-24",
       "location_display": "South West"
+    },
+    {
+      "title": "Dirt Fest Off Road Festival",
+      "date": "2027-10-16",
+      "date_end": "2027-10-16",
+      "location": "Wetherby",
+      "category": "Other",
+      "ticket_url": "https://www.tbfevents.co.uk/e/dirt-fest-15665",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/dirt-fest-off-road-festival/",
+      "official_url": "https://www.tbfevents.co.uk/e/dirt-fest-15665",
+      "dates_from": "official site",
+      "id": "festival:dirt-fest-off-road-festival:2027-10-16",
+      "location_display": "Wetherby"
     },
     {
       "title": "Damnation Festival",
