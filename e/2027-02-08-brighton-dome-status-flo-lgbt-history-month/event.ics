@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-08-brighton-dome-status-flo-lgbt-history-month@brightonweekend.
+ co.uk
+DTSTAMP:20270208T000000Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+SUMMARY:Status Flo: LGBT+ History Month
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LGz-status-flo-lgbt-
+ history-month/\nMore: https://brightonweekend.co.uk/e/2027-02-08-brighton-
+ dome-status-flo-lgbt-history-month/
+URL:https://brightonweekend.co.uk/e/2027-02-08-brighton-dome-status-flo-lgb
+ t-history-month/
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-20-komedia-leslie-bloom-s-1988-christmas-variety-tv-special-liv
+ e@brightonweekend.co.uk
+DTSTAMP:20261220T000000Z
+DTSTART:20261220T200000Z
+DTEND:20261220T230000Z
+SUMMARY:Leslie Bloom’s 1988 Christmas Variety TV Special\, Live!
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366969
+ 9/events/128678369\nMore: https://brightonweekend.co.uk/e/2026-12-20-komed
+ ia-leslie-bloom-s-1988-christmas-variety-tv-special-live/
+URL:https://brightonweekend.co.uk/e/2026-12-20-komedia-leslie-bloom-s-1988-
+ christmas-variety-tv-special-live/
+END:VEVENT
+END:VCALENDAR

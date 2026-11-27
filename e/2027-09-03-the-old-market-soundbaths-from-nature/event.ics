@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-09-03-the-old-market-soundbaths-from-nature@brightonweekend.co.uk
+DTSTAMP:20270903T000000Z
+DTSTART:20270903T090000Z
+DTEND:20270903T103000Z
+SUMMARY:Soundbaths from Nature
+LOCATION:The Old Market\, Brighton
+DESCRIPTION:Tickets: https://www.theoldmarket.com/shows/soundbaths-from-nat
+ ure\nMore: https://brightonweekend.co.uk/e/2027-09-03-the-old-market-sound
+ baths-from-nature/
+URL:https://brightonweekend.co.uk/e/2027-09-03-the-old-market-soundbaths-fr
+ om-nature/
+END:VEVENT
+END:VCALENDAR

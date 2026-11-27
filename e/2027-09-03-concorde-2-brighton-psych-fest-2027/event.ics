@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-09-03-concorde-2-brighton-psych-fest-2027@brightonweekend.co.uk
+DTSTAMP:20270903T000000Z
+DTSTART:20270903T130000Z
+DTEND:20270903T160000Z
+SUMMARY:Brighton Psych Fest 2027
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/brighton-psych-fest-2
+ 027/various-brighton-venues/3704840\nMore: https://brightonweekend.co.uk/e
+ /2027-09-03-concorde-2-brighton-psych-fest-2027/
+URL:https://brightonweekend.co.uk/e/2027-09-03-concorde-2-brighton-psych-fe
+ st-2027/
+END:VEVENT
+END:VCALENDAR

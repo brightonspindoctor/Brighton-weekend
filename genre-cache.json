@@ -2066,6 +2066,13 @@
   "act": "Brighton Gay Men’s Chorus Presents A Merry Murder Mystery",
   "checked": "2026-10-07"
  },
+ "brighton psych fest": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Brighton Psych Fest",
+  "checked": "2026-11-27",
+  "v": 4
+ },
  "brighton wine festival": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -8750,6 +8757,20 @@
   "checked": "2026-10-11",
   "v": 2
  },
+ "leo middea and full band": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Leo Middea & Full Band",
+  "checked": "2026-11-27",
+  "v": 4
+ },
+ "leslie blooms 1988 christmas variety tv special": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Leslie Bloom’s 1988 Christmas Variety TV Special",
+  "checked": "2026-11-27",
+  "v": 4
+ },
  "less is more": {
   "bucket": null,
   "reason": "9 artists share this name",
@@ -12605,6 +12626,13 @@
   "checked": "2026-11-04",
   "v": 4
  },
+ "skiddle": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Skiddle",
+  "checked": "2026-11-27",
+  "v": 4
+ },
  "sky valley mistress": {
   "mbid": "8cb04822-147e-430b-83ad-321766fce295",
   "name": "Sky Valley Mistress",
@@ -12664,7 +12692,7 @@
   "bucket": null,
   "reason": "no genre tags",
   "act": "Slap Rash",
-  "checked": "2026-10-27",
+  "checked": "2026-11-27",
   "v": 4
  },
  "slate": {
@@ -14535,8 +14563,8 @@
   "bucket": null,
   "reason": "3 artists share this name",
   "act": "The Magpies",
-  "checked": "2026-10-27",
-  "v": 3
+  "checked": "2026-11-27",
+  "v": 4
  },
  "the march violets": {
   "mbid": "0d217f85-f007-4643-a543-047949661d10",

@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-31-brighton-dome-hamza-yassin-my-life-behind-the-lens@brightonw
+ eekend.co.uk
+DTSTAMP:20270131T000000Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:Hamza Yassin: My Life Behind the Lens
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LZr-hamza-yassin-my-
+ life-behind-the-lens/\nMore: https://brightonweekend.co.uk/e/2027-01-31-br
+ ighton-dome-hamza-yassin-my-life-behind-the-lens/
+URL:https://brightonweekend.co.uk/e/2027-01-31-brighton-dome-hamza-yassin-m
+ y-life-behind-the-lens/
+END:VEVENT
+END:VCALENDAR

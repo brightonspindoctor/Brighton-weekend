@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-06-brighton-dome-susie-dent-word-perfect@brightonweekend.co.uk
+DTSTAMP:20261206T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Susie Dent: Word Perfect
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/LzT-susie-dent-word-
+ perfect/\nMore: https://brightonweekend.co.uk/e/2026-12-06-brighton-dome-s
+ usie-dent-word-perfect/
+URL:https://brightonweekend.co.uk/e/2026-12-06-brighton-dome-susie-dent-wor
+ d-perfect/
+END:VEVENT
+END:VCALENDAR

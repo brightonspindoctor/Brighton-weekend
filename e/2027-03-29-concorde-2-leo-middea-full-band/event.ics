@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-29-concorde-2-leo-middea-full-band@brightonweekend.co.uk
+DTSTAMP:20270329T000000Z
+DTSTART:20270329T180000Z
+DTEND:20270329T210000Z
+SUMMARY:Leo Middea & Full Band
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://shotgun.live/events/leo-middea-concord-2-brigh
+ ton\nMore: https://brightonweekend.co.uk/e/2027-03-29-concorde-2-leo-midde
+ a-full-band/
+URL:https://brightonweekend.co.uk/e/2027-03-29-concorde-2-leo-middea-full-b
+ and/
+END:VEVENT
+END:VCALENDAR

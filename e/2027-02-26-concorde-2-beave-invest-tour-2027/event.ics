@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-26-concorde-2-beave-invest-tour-2027@brightonweekend.co.uk
+DTSTAMP:20270226T000000Z
+DTSTART:20270226T230000Z
+DTEND:20270227T020000Z
+SUMMARY:Beave Invest Tour 2027
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1721216/capitalis-beave-
+ tickets\nMore: https://brightonweekend.co.uk/e/2027-02-26-concorde-2-beave
+ -invest-tour-2027/
+URL:https://brightonweekend.co.uk/e/2027-02-26-concorde-2-beave-invest-tour
+ -2027/
+END:VEVENT
+END:VCALENDAR

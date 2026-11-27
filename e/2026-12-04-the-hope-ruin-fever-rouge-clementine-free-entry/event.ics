@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-04-the-hope-ruin-fever-rouge-clementine-free-entry@brightonweek
+ end.co.uk
+DTSTAMP:20261204T000000Z
+DTSTART:20261204T193000Z
+DTEND:20261204T230000Z
+SUMMARY:Fever Rouge + Clementine
+LOCATION:The Hope & Ruin\, Brighton
+DESCRIPTION:Tickets: https://www.hope.pub/event/fever-rouge-clementine-free
+ -entry/\nMore: https://brightonweekend.co.uk/e/2026-12-04-the-hope-ruin-fe
+ ver-rouge-clementine-free-entry/
+URL:https://brightonweekend.co.uk/e/2026-12-04-the-hope-ruin-fever-rouge-cl
+ ementine-free-entry/
+END:VEVENT
+END:VCALENDAR

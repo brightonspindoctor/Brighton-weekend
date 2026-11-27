@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-20-volks-overview-brighton-w-latte-klinical-koherent-wingz@brig
+ htonweekend.co.uk
+DTSTAMP:20270220T000000Z
+DTSTART:20270220T223000Z
+DTEND:20270221T013000Z
+SUMMARY:Overview Brighton w/ Latte\, Klinical\, Koherent\, Wingz
+LOCATION:Volks\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/The-Volks-Ni
+ ghtclub/Overview-Brighton-w-Latte-Klinical-Koherent-Wingz--200227/43232455
+ /\nMore: https://brightonweekend.co.uk/e/2027-02-20-volks-overview-brighto
+ n-w-latte-klinical-koherent-wingz/
+URL:https://brightonweekend.co.uk/e/2027-02-20-volks-overview-brighton-w-la
+ tte-klinical-koherent-wingz/
+END:VEVENT
+END:VCALENDAR
