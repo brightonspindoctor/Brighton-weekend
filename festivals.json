@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-26",
-  "range_start": "2026-11-26",
+  "updated": "2026-11-27",
+  "range_start": "2026-11-27",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -59,6 +59,19 @@
       "official_url": "https://hastingsfattuesday.co.uk/",
       "id": "festival:hastings-fat-tuesday:2027-02-05",
       "location_display": "Hastings"
+    },
+    {
+      "title": "JORVIK Viking Festival",
+      "date": "2027-02-08",
+      "date_end": "2027-02-14",
+      "location": "York",
+      "category": "Arts & Culture",
+      "ticket_url": "https://jorvikvikingfestival.co.uk/tickets/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/jorvik-viking-festival/",
+      "official_url": "https://jorvikvikingfestival.co.uk/",
+      "id": "festival:jorvik-viking-festival:2027-02-08",
+      "location_display": "York"
     },
     {
       "title": "Burning Bike Fest",
@@ -179,11 +192,11 @@
     },
     {
       "title": "Brick Lane Jazz Festival",
-      "date": "2027-04-23",
+      "date": "2027-04-22",
       "date_end": "2027-04-25",
       "location": "London",
       "category": "Music",
-      "ticket_url": "https://dice.fm/event/6dkke3-brick-lane-jazz-festival-2027-23rd-apr-the-truman-brewery-london-tickets",
+      "ticket_url": "https://www.bricklanejazzfestival.com/tickets",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/brick-lane-jazz-festival/",
       "official_url": "https://www.bricklanejazzfestival.com/",
@@ -281,6 +294,19 @@
       "dates_from": "official site",
       "id": "festival:crossover-festival:2027-04-30",
       "location_display": "Calverton, Nottinghamshire"
+    },
+    {
+      "title": "Curious Pastimes Event 1",
+      "date": "2027-04-30",
+      "date_end": "2027-05-03",
+      "location": "Chalfont St Peter",
+      "category": "Other",
+      "ticket_url": "https://www.curiouspastimes.co.uk/site/public/events/single/fe4501f8-fb09-4457-bc92-3a32d4ae7956",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/curious-pastimes-event-1/",
+      "official_url": "https://www.curiouspastimes.co.uk/",
+      "id": "festival:curious-pastimes-event-1:2027-04-30",
+      "location_display": "Chalfont St Peter"
     },
     {
       "title": "Into the Valley",
@@ -431,6 +457,32 @@
       "location_display": "Camden, London"
     },
     {
+      "title": "Tough Mudder (UK)",
+      "date": "2027-05-08",
+      "date_end": "2027-09-19",
+      "location": "Multiple cities",
+      "category": "Other",
+      "ticket_url": "https://uk.toughmudder.com/events/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/tough-mudder-uk/",
+      "official_url": "https://uk.toughmudder.com/",
+      "id": "festival:tough-mudder-uk:2027-05-08",
+      "location_display": "Multiple cities"
+    },
+    {
+      "title": "Hickstead International Dressage Festival",
+      "date": "2027-05-10",
+      "date_end": "2027-05-16",
+      "location": "Hickstead, West Sussex",
+      "category": "Other",
+      "ticket_url": "https://www.asterevents.co.uk/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/hickstead-international-dressage-festival/",
+      "official_url": "https://www.asterevents.co.uk/",
+      "id": "festival:hickstead-international-dressage-festival:2027-05-10",
+      "location_display": "Hickstead"
+    },
+    {
       "title": "North West 200",
       "date": "2027-05-10",
       "date_end": "2027-05-15",
@@ -455,6 +507,19 @@
       "official_url": "https://greatescapefestival.com/",
       "id": "festival:the-great-escape:2027-05-12",
       "location_display": "Brighton"
+    },
+    {
+      "title": "Faerie Festival",
+      "date": "2027-05-14",
+      "date_end": "2027-05-16",
+      "location": "South East",
+      "category": "Arts & Culture",
+      "ticket_url": "https://www.sussexfaeriefestival.co.uk/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/faerie-festival/",
+      "official_url": "https://www.sussexfaeriefestival.co.uk/",
+      "id": "festival:faerie-festival:2027-05-14",
+      "location_display": "South East"
     },
     {
       "title": "Jungle Syndicate Weekender",
@@ -624,6 +689,32 @@
       "official_url": "https://soulrevolutionfestival.com/",
       "id": "festival:soul-revolution-festival:2027-05-27",
       "location_display": "West Midlands"
+    },
+    {
+      "title": "BBC Radio 1's Big Weekend",
+      "date": "2027-05-28",
+      "date_end": "2027-05-30",
+      "location": "Brighton",
+      "category": "Music",
+      "ticket_url": "https://www.bbc.co.uk/bigweekend",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/bbc-radio-1s-big-weekend/",
+      "official_url": "https://www.bbc.co.uk/bigweekend",
+      "id": "festival:bbc-radio-1-s-big-weekend:2027-05-28",
+      "location_display": "Brighton"
+    },
+    {
+      "title": "Bournemouth 7s",
+      "date": "2027-05-28",
+      "date_end": "2027-05-30",
+      "location": "South West",
+      "category": "Arts & Culture",
+      "ticket_url": "https://www.bournemouth7s.com/tickets",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/bournemouth-7s/",
+      "official_url": "https://bournemouth7s.com/",
+      "id": "festival:bournemouth-7s:2027-05-28",
+      "location_display": "South West"
     },
     {
       "title": "Cliff Festival",
@@ -940,6 +1031,19 @@
       "location_display": "Abbots Ripton"
     },
     {
+      "title": "Curious Pastimes Event 2",
+      "date": "2027-06-04",
+      "date_end": "2027-06-06",
+      "location": "Shifnal",
+      "category": "Arts & Culture",
+      "ticket_url": "https://www.curiouspastimes.co.uk/site/public/events/single/cbc26330-d9fd-4be2-8ed8-cdf3376e91cc",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/curious-pastimes-event-2/",
+      "official_url": "https://www.curiouspastimes.co.uk/",
+      "id": "festival:curious-pastimes-event-2:2027-06-04",
+      "location_display": "Shifnal"
+    },
+    {
       "title": "Midlands Air Festival",
       "date": "2027-06-04",
       "date_end": "2027-06-06",
@@ -1106,6 +1210,19 @@
       "official_url": "https://gottwood.co.uk/",
       "id": "festival:gottwood:2027-06-10",
       "location_display": "Wales"
+    },
+    {
+      "title": "Meltdown",
+      "date": "2027-06-10",
+      "date_end": "2027-06-20",
+      "location": "London",
+      "category": "Music",
+      "ticket_url": "https://www.southbankcentre.co.uk/events/meltdown/",
+      "source": "https://fezzy.uk/collections/pop-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/meltdown/",
+      "official_url": "https://www.southbankcentre.co.uk/events/meltdown/",
+      "id": "festival:meltdown:2027-06-10",
+      "location_display": "London"
     },
     {
       "title": "Belsonic",
@@ -1827,6 +1944,19 @@
       "location_display": "Wales"
     },
     {
+      "title": "Happy Place Festival",
+      "date": "2027-07-03",
+      "date_end": "2027-07-04",
+      "location": "Richmond / Knutsford",
+      "category": "Other",
+      "ticket_url": "https://happyplacefestival.seetickets.com/tour/fearne-cotton-s-happy-place-festival",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/happy-place-festival/",
+      "official_url": "https://www.happyplaceofficial.co.uk/pages/festival-landing",
+      "id": "festival:happy-place-festival:2027-07-03",
+      "location_display": "Richmond / Knutsford"
+    },
+    {
       "title": "Nudefest",
       "date": "2027-07-06",
       "date_end": "2027-07-11",
@@ -2061,6 +2191,19 @@
       "location_display": "South East"
     },
     {
+      "title": "Cheshire Steam Fair",
+      "date": "2027-07-10",
+      "date_end": "2027-07-11",
+      "location": "Warrington",
+      "category": "Other",
+      "ticket_url": "https://www.eventbrite.co.uk/e/cheshire-steam-fair-2027-admission-tickets-tickets-2004485244325",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/cheshire-steam-fair/",
+      "official_url": "https://outdoorshows.co.uk/cheshire-steam-fair/",
+      "id": "festival:cheshire-steam-fair:2027-07-10",
+      "location_display": "Warrington"
+    },
+    {
       "title": "Parklife",
       "date": "2027-07-10",
       "date_end": "2027-07-11",
@@ -2083,6 +2226,7 @@
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/samadhi-fest/",
       "official_url": "https://www.samadhi.org.uk/event/samadhi-fest-2027/",
+      "dates_from": "official site",
       "id": "festival:samadhi-fest:2027-07-10",
       "location_display": "West Midlands"
     },
@@ -2111,6 +2255,19 @@
       "official_url": "https://www.theopen.com/st-andrews-2027",
       "id": "festival:the-open:2027-07-11",
       "location_display": "Scotland"
+    },
+    {
+      "title": "Buddhafield",
+      "date": "2027-07-14",
+      "date_end": "2027-07-18",
+      "location": "Wellington",
+      "category": "Wellness",
+      "ticket_url": "https://www.citizenticket.com/events/buddhafield/buddhafield-festival-2027/",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/buddhafield/",
+      "official_url": "https://buddhafield.com/",
+      "id": "festival:buddhafield:2027-07-14",
+      "location_display": "Wellington"
     },
     {
       "title": "HebCelt Festival",
@@ -2190,6 +2347,19 @@
       "official_url": "https://beatherder.co.uk/",
       "id": "festival:beat-herder:2027-07-16",
       "location_display": "Clitheroe"
+    },
+    {
+      "title": "Curious Pastimes Event 3",
+      "date": "2027-07-16",
+      "date_end": "2027-07-18",
+      "location": "Chalfont St Peter",
+      "category": "Other",
+      "ticket_url": "https://www.curiouspastimes.co.uk/site/public/events/single/79f3150b-e069-47c5-9391-e26860ca2cbd",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/curious-pastimes-event-3/",
+      "official_url": "https://www.curiouspastimes.co.uk/events/",
+      "id": "festival:curious-pastimes-event-3:2027-07-16",
+      "location_display": "Chalfont St Peter"
     },
     {
       "title": "Doune The Rabbit Hole",
@@ -2388,6 +2558,18 @@
       "dates_from": "official site",
       "id": "festival:latitude-festival:2027-07-22",
       "location_display": "Southwold"
+    },
+    {
+      "title": "Peep Festival",
+      "date": "2027-07-22",
+      "date_end": "2027-07-25",
+      "location": "Exeter",
+      "category": "Music",
+      "ticket_url": "https://ra.co/events/2501789",
+      "source": "https://fezzy.uk/collections/electronic-festivals-uk-2026/",
+      "detail_url": "https://fezzy.uk/festival/peep-festival/",
+      "id": "festival:peep-festival:2027-07-22",
+      "location_display": "Exeter"
     },
     {
       "title": "The Wandering Wood",
@@ -3098,7 +3280,7 @@
       "date_end": "2027-08-13",
       "location": "Broadstairs",
       "category": "Music",
-      "ticket_url": "https://broadstairsfolkweek.org.uk/",
+      "ticket_url": "https://buytickets.at/broadstairsfolkweek2027/store",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/broadstairs-folk-week/",
       "official_url": "https://broadstairsfolkweek.org.uk/",
@@ -3504,7 +3686,7 @@
       "date_end": "2027-08-29",
       "location": "Bromsgrove",
       "category": "Music",
-      "ticket_url": "https://www.beermageddon.co.uk/",
+      "ticket_url": "https://www.beermageddon.co.uk/lineup-tickets",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/beermageddon/",
       "official_url": "https://www.beermageddon.co.uk/",
@@ -3653,6 +3835,32 @@
       "official_url": "https://carfest.org/",
       "id": "festival:carfest-silverstone:2027-08-27",
       "location_display": "Towcester"
+    },
+    {
+      "title": "Curious Pastimes",
+      "date": "2027-08-27",
+      "date_end": "2027-08-30",
+      "location": "Weston-under-Lizard",
+      "category": "Other",
+      "ticket_url": "https://www.curiouspastimes.co.uk/site/public/events/single/1306f840-c4ef-4adb-9dc3-c13d702c6a82",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/curious-pastimes/",
+      "official_url": "https://www.curiouspastimes.co.uk/",
+      "id": "festival:curious-pastimes:2027-08-27",
+      "location_display": "Weston-under-Lizard"
+    },
+    {
+      "title": "Curious Pastimes Renewal",
+      "date": "2027-08-27",
+      "date_end": "2027-08-30",
+      "location": "Shifnal",
+      "category": "Arts & Culture",
+      "ticket_url": "https://www.curiouspastimes.co.uk/site/public/events/single/1306f840-c4ef-4adb-9dc3-c13d702c6a82",
+      "source": "https://fezzy.uk/search/",
+      "detail_url": "https://fezzy.uk/festival/curious-pastimes-renewal/",
+      "official_url": "https://www.curiouspastimes.co.uk/",
+      "id": "festival:curious-pastimes-renewal:2027-08-27",
+      "location_display": "Shifnal"
     },
     {
       "title": "Electric Picnic",
