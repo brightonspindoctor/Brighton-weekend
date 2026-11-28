@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-29-daltons-take-breath-alchemize@brightonweekend.co.uk
+DTSTAMP:20270329T000000Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270330
+SUMMARY:Take Breath+ Alchemize
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://www.daltonsbrighton.com/event-details/take-bre
+ ath-alchemize\nMore: https://brightonweekend.co.uk/e/2027-03-29-daltons-ta
+ ke-breath-alchemize/
+URL:https://brightonweekend.co.uk/e/2027-03-29-daltons-take-breath-alchemiz
+ e/
+END:VEVENT
+END:VCALENDAR

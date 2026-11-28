@@ -7,8 +7,8 @@ BEGIN:VEVENT
 UID:2026-12-06-brighton-dome-josh-thomas-jiggle-jiggle@brightonweekend.co.u
  k
 DTSTAMP:20261206T000000Z
-DTSTART;VALUE=DATE:20261206
-DTEND;VALUE=DATE:20261207
+DTSTART:20261206T193000Z
+DTEND:20261206T230000Z
 SUMMARY:Josh Thomas: Jiggle Jiggle
 LOCATION:Brighton Dome\, Brighton
 DESCRIPTION:Tickets: https://brightondome.org/whats-on/L2n-josh-thomas-jigg

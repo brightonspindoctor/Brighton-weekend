@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-05-quarters-gilles-peterson@brightonweekend.co.uk
+DTSTAMP:20270205T000000Z
+DTSTART:20270205T180000Z
+DTEND:20270205T200000Z
+SUMMARY:Gilles Peterson
+LOCATION:Quarters\, Brighton
+DESCRIPTION:Tickets: https://quarters.seetickets.com/event/giles-peterson/q
+ uarters/3763327\nMore: https://brightonweekend.co.uk/e/2027-02-05-quarters
+ -gilles-peterson/
+URL:https://brightonweekend.co.uk/e/2027-02-05-quarters-gilles-peterson/
+END:VEVENT
+END:VCALENDAR

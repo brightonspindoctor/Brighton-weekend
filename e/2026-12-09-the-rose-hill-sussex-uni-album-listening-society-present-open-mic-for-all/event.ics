@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-09-the-rose-hill-sussex-uni-album-listening-society-present-ope
+ n-mic-for-all@brightonweekend.co.uk
+DTSTAMP:20261209T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Sussex Uni Album Listening Society Present: Open Mic for all!
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/sussex-uni-album-liste
+ ning-society-present-open-mic-for-all/\nMore: https://brightonweekend.co.u
+ k/e/2026-12-09-the-rose-hill-sussex-uni-album-listening-society-present-op
+ en-mic-for-all/
+URL:https://brightonweekend.co.uk/e/2026-12-09-the-rose-hill-sussex-uni-alb
+ um-listening-society-present-open-mic-for-all/
+END:VEVENT
+END:VCALENDAR

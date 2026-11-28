@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-10-patterns-club-2010-xmas-2016@brightonweekend.co.uk
+DTSTAMP:20261210T000000Z
+DTSTART:20261210T230000Z
+DTEND:20261211T040000Z
+SUMMARY:Club 2010 - xmas 2016
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Patterns-Bri
+ ghton/CLUB-2010---xmas-2016-101226/43238540/\nMore: https://brightonweeken
+ d.co.uk/e/2026-12-10-patterns-club-2010-xmas-2016/
+URL:https://brightonweekend.co.uk/e/2026-12-10-patterns-club-2010-xmas-2016
+ /
+END:VEVENT
+END:VCALENDAR

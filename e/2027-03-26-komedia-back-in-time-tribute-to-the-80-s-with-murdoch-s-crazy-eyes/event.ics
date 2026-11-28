@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-03-26-komedia-back-in-time-tribute-to-the-80-s-with-murdoch-s-craz
+ y-eyes@brightonweekend.co.uk
+DTSTAMP:20270326T000000Z
+DTSTART:20270326T190000Z
+DTEND:20270326T220000Z
+SUMMARY:‘Back In Time’ Tribute To The 80’s with Murdoch’s Crazy Eye
+ s
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87364040
+ 3/events/128678388\nMore: https://brightonweekend.co.uk/e/2027-03-26-komed
+ ia-back-in-time-tribute-to-the-80-s-with-murdoch-s-crazy-eyes/
+URL:https://brightonweekend.co.uk/e/2027-03-26-komedia-back-in-time-tribute
+ -to-the-80-s-with-murdoch-s-crazy-eyes/
+END:VEVENT
+END:VCALENDAR

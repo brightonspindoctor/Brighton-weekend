@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-06-06-patterns-brighton-sundae-w-tina-edwards@brightonweekend.co.u
+ k
+DTSTAMP:20270606T000000Z
+DTSTART:20270606T130000Z
+DTEND:20270606T190000Z
+SUMMARY:Brighton Sundae w/ Tina Edwards
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Patterns-Bri
+ ghton/Brighton-Sundae-w-Tina-Edwards/43238107/\nMore: https://brightonweek
+ end.co.uk/e/2027-06-06-patterns-brighton-sundae-w-tina-edwards/
+URL:https://brightonweekend.co.uk/e/2027-06-06-patterns-brighton-sundae-w-t
+ ina-edwards/
+END:VEVENT
+END:VCALENDAR

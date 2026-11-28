@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-07-the-prince-albert-donkee-torrid-a-love-affair-dateless-wonde
+ r-club@brightonweekend.co.uk
+DTSTAMP:20261207T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Donkee + Torrid (A Love Affair) + Dateless Wonder Club
+LOCATION:The Prince Albert\, Brighton
+DESCRIPTION:Tickets: https://www.universe.com/events/done-torrid-a-love-aff
+ air-dateless-wonder-club-tickets-D9PCM2\nMore: https://brightonweekend.co.
+ uk/e/2026-12-07-the-prince-albert-donkee-torrid-a-love-affair-dateless-won
+ der-club/
+URL:https://brightonweekend.co.uk/e/2026-12-07-the-prince-albert-donkee-tor
+ rid-a-love-affair-dateless-wonder-club/
+END:VEVENT
+END:VCALENDAR

@@ -6,8 +6,8 @@ METHOD:PUBLISH
 BEGIN:VEVENT
 UID:2026-12-06-brighton-dome-susie-dent-word-perfect@brightonweekend.co.uk
 DTSTAMP:20261206T000000Z
-DTSTART;VALUE=DATE:20261206
-DTEND;VALUE=DATE:20261207
+DTSTART:20261206T140000Z
+DTEND:20261206T230000Z
 SUMMARY:Susie Dent: Word Perfect
 LOCATION:Brighton Dome\, Brighton
 DESCRIPTION:Tickets: https://brightondome.org/whats-on/LzT-susie-dent-word-

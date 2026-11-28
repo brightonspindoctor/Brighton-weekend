@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-05-05-daltons-savanah-sleeping-mountain-matador@brightonweekend.co
+ .uk
+DTSTAMP:20270505T000000Z
+DTSTART;VALUE=DATE:20270505
+DTEND;VALUE=DATE:20270506
+SUMMARY:Savanah + Sleeping Mountain + Matador
+LOCATION:Daltons\, Brighton
+DESCRIPTION:Tickets: https://tickets.stoomfest.com/events/teideeventslimite
+ d/2539862?trackingConsent=1\nMore: https://brightonweekend.co.uk/e/2027-05
+ -05-daltons-savanah-sleeping-mountain-matador/
+URL:https://brightonweekend.co.uk/e/2027-05-05-daltons-savanah-sleeping-mou
+ ntain-matador/
+END:VEVENT
+END:VCALENDAR

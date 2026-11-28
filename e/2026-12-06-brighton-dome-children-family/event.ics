@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-06-brighton-dome-children-family@brightonweekend.co.uk
+DTSTAMP:20261206T000000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Children & Family
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/Ln9-crafty-christmas
+ -splendid-seasonal-spoon-puppets/\nMore: https://brightonweekend.co.uk/e/2
+ 026-12-06-brighton-dome-children-family/
+URL:https://brightonweekend.co.uk/e/2026-12-06-brighton-dome-children-famil
+ y/
+END:VEVENT
+END:VCALENDAR

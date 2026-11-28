@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-19-dust-divine-chaos@brightonweekend.co.uk
+DTSTAMP:20261219T000000Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Divine Chaos
+LOCATION:DUST\, Brighton
+DESCRIPTION:Tickets: https://dice.fm/event/6b05db3871f07000014b2c52\nMore: 
+ https://brightonweekend.co.uk/e/2026-12-19-dust-divine-chaos/
+URL:https://brightonweekend.co.uk/e/2026-12-19-dust-divine-chaos/
+END:VEVENT
+END:VCALENDAR

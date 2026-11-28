@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-05-brighton-dome-crafty-christmas-splendid-seasonal-spoon-puppe
+ ts@brightonweekend.co.uk
+DTSTAMP:20261205T000000Z
+DTSTART:20261205T110000Z
+DTEND:20261205T170000Z
+SUMMARY:Crafty Christmas: Splendid Seasonal Spoon Puppets
+LOCATION:Brighton Dome\, Brighton
+DESCRIPTION:Tickets: https://brightondome.org/whats-on/Ln9-crafty-christmas
+ -splendid-seasonal-spoon-puppets/\nMore: https://brightonweekend.co.uk/e/2
+ 026-12-05-brighton-dome-crafty-christmas-splendid-seasonal-spoon-puppets/
+URL:https://brightonweekend.co.uk/e/2026-12-05-brighton-dome-crafty-christm
+ as-splendid-seasonal-spoon-puppets/
+END:VEVENT
+END:VCALENDAR

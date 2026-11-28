@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-01-20-the-rose-hill-listen-club-39-isobel-anderson-dissolving-into
+ -dungeness-listening-to-the-horizon@brightonweekend.co.uk
+DTSTAMP:20270120T000000Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+SUMMARY:Listen Club #39: Isobel Anderson – ‘Dissolving Into Dungeness\,
+  Listening To The Horizon’
+LOCATION:The Rose Hill\, Brighton
+DESCRIPTION:Tickets: https://therosehill.co.uk/event/listen-club-39-isobel-
+ anderson-dissolving-into-dungeness-listening-to-the-horizon/\nMore: https:
+ //brightonweekend.co.uk/e/2027-01-20-the-rose-hill-listen-club-39-isobel-a
+ nderson-dissolving-into-dungeness-listening-to-the-horizon/
+URL:https://brightonweekend.co.uk/e/2027-01-20-the-rose-hill-listen-club-39
+ -isobel-anderson-dissolving-into-dungeness-listening-to-the-horizon/
+END:VEVENT
+END:VCALENDAR

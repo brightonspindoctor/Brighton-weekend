@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-02-07-patterns-brighton-sundae-w-lady-jane-bongo@brightonweekend.c
+ o.uk
+DTSTAMP:20270207T000000Z
+DTSTART:20270207T140000Z
+DTEND:20270207T200000Z
+SUMMARY:Brighton Sundae w/ Lady Jane Bongo
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Patterns-Bri
+ ghton/Brighton-Sundae-w-Lady-Jane-Bongo/43238021/\nMore: https://brightonw
+ eekend.co.uk/e/2027-02-07-patterns-brighton-sundae-w-lady-jane-bongo/
+URL:https://brightonweekend.co.uk/e/2027-02-07-patterns-brighton-sundae-w-l
+ ady-jane-bongo/
+END:VEVENT
+END:VCALENDAR

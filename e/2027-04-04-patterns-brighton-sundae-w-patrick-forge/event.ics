@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-04-patterns-brighton-sundae-w-patrick-forge@brightonweekend.co.
+ uk
+DTSTAMP:20270404T000000Z
+DTSTART:20270404T130000Z
+DTEND:20270404T190000Z
+SUMMARY:Brighton Sundae w/ Patrick Forge
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Patterns-Bri
+ ghton/Brighton-Sundae-w-Patrick-Forge/43238105/\nMore: https://brightonwee
+ kend.co.uk/e/2027-04-04-patterns-brighton-sundae-w-patrick-forge/
+URL:https://brightonweekend.co.uk/e/2027-04-04-patterns-brighton-sundae-w-p
+ atrick-forge/
+END:VEVENT
+END:VCALENDAR

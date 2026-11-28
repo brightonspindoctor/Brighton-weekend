@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-07-04-patterns-brighton-sundae-3rd-birthday-party-w-d-novo-mr-dan-
+ jazsta@brightonweekend.co.uk
+DTSTAMP:20270704T000000Z
+DTSTART:20270704T130000Z
+DTEND:20270704T190000Z
+SUMMARY:Brighton Sundae 3rd Birthday Party w/ D-Novo\, Mr Dan & Jazsta
+LOCATION:Patterns\, Brighton
+DESCRIPTION:Tickets: https://www.skiddle.com/whats-on/Brighton/Patterns-Bri
+ ghton/Brighton-Sundae-3rd-Birthday-Party-w-D-Novo-Mr-Dan--Jazsta/43238111/
+ \nMore: https://brightonweekend.co.uk/e/2027-07-04-patterns-brighton-sunda
+ e-3rd-birthday-party-w-d-novo-mr-dan-jazsta/
+URL:https://brightonweekend.co.uk/e/2027-07-04-patterns-brighton-sundae-3rd
+ -birthday-party-w-d-novo-mr-dan-jazsta/
+END:VEVENT
+END:VCALENDAR

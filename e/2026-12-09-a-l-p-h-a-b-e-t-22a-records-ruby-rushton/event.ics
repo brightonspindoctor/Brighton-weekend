@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-09-a-l-p-h-a-b-e-t-22a-records-ruby-rushton@brightonweekend.co.
+ uk
+DTSTAMP:20261209T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:22a Records & Ruby Rushton
+LOCATION:A L P H A B E T\, Brighton
+DESCRIPTION:Tickets: https://www.seetickets.com/event/22a-with-tenderloniou
+ s-and-ruby-rushton/a-l-p-h-a-b-e-t/3747374\nMore: https://brightonweekend.
+ co.uk/e/2026-12-09-a-l-p-h-a-b-e-t-22a-records-ruby-rushton/
+URL:https://brightonweekend.co.uk/e/2026-12-09-a-l-p-h-a-b-e-t-22a-records-
+ ruby-rushton/
+END:VEVENT
+END:VCALENDAR

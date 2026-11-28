@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-12-09-komedia-liberation-live-x-grassroots-suicide-prevention@brig
+ htonweekend.co.uk
+DTSTAMP:20261209T000000Z
+DTSTART:20261209T193000Z
+DTEND:20261209T223000Z
+SUMMARY:Liberation Live X Grassroots Suicide Prevention
+LOCATION:Komedia\, Brighton
+DESCRIPTION:Tickets: https://komediabrighton.ticketsolve.com/shows/87366964
+ 3/events/128678383\nMore: https://brightonweekend.co.uk/e/2026-12-09-komed
+ ia-liberation-live-x-grassroots-suicide-prevention/
+URL:https://brightonweekend.co.uk/e/2026-12-09-komedia-liberation-live-x-gr
+ assroots-suicide-prevention/
+END:VEVENT
+END:VCALENDAR

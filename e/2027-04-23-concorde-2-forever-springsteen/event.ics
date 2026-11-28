@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brighton Weekend//brightonweekend.co.uk//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2027-04-23-concorde-2-forever-springsteen@brightonweekend.co.uk
+DTSTAMP:20270423T000000Z
+DTSTART:20270423T180000Z
+DTEND:20270423T210000Z
+SUMMARY:Forever Springsteen
+LOCATION:Concorde 2\, Brighton
+DESCRIPTION:Tickets: https://www.axs.com/uk/events/1721219/forever-springst
+ een-tickets\nMore: https://brightonweekend.co.uk/e/2027-04-23-concorde-2-f
+ orever-springsteen/
+URL:https://brightonweekend.co.uk/e/2027-04-23-concorde-2-forever-springste
+ en/
+END:VEVENT
+END:VCALENDAR

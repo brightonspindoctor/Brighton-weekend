@@ -21,14 +21,21 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "13 Years of AcidBox",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "1btn x vicious charm presents jim live": {
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "1BTN X Vicious Charm. Presents JIM live!",
   "checked": "2026-10-06"
+ },
+ "22a records and ruby rushton": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "22a Records & Ruby Rushton",
+  "checked": "2026-11-28",
+  "v": 4
  },
  "3 daft monkeys": {
   "mbid": "a8a31525-6e79-4e5d-9498-49a5b6412502",
@@ -854,6 +861,30 @@
   "act": "ARKAYLA Raynor",
   "checked": "2026-10-06"
  },
+ "arxx": {
+  "mbid": "f9846e76-7562-4252-b718-b37a27dca7b0",
+  "name": "ARXX",
+  "genres": [
+   {
+    "name": "alternative rock",
+    "count": 1
+   },
+   {
+    "name": "indie rock",
+    "count": 1
+   },
+   {
+    "name": "rock",
+    "count": 1
+   }
+  ],
+  "spotify": "1pQ8qfxpuRJKEUFPGrf6Uc",
+  "bucket": "Indie & Rock",
+  "reason": "tagged",
+  "act": "ARXX",
+  "checked": "2026-11-28",
+  "v": 4
+ },
  "asher white": {
   "mbid": "27ffe090-ab8e-40dc-b4d4-64de34df38e6",
   "name": "Asher White",
@@ -1353,9 +1384,9 @@
  "bexblu and paul stephan": {
   "bucket": null,
   "reason": "not in MusicBrainz",
-  "act": "Bexblu & Paul Stephan",
-  "checked": "2026-10-28",
-  "v": 3
+  "act": "BexBlu & Paul Stephan",
+  "checked": "2026-11-28",
+  "v": 4
  },
  "beyond extinction": {
   "mbid": "e10c22a0-f6bb-49d7-a12d-31b5be078ee2",
@@ -1962,14 +1993,14 @@
     "count": 1
    }
   ],
+  "spotify": "25uPlxGvXMDy9eUX7oeDei",
   "wikidata": "Q110997081",
   "wd_genres": [],
   "bucket": null,
   "reason": "genres unclear",
   "act": "Brass Against",
-  "checked": "2026-10-28",
-  "v": 4,
-  "spotify": "25uPlxGvXMDy9eUX7oeDei"
+  "checked": "2026-11-28",
+  "v": 4
  },
  "brazilian night live musica": {
   "bucket": null,
@@ -2611,6 +2642,13 @@
   "act": "Christian Jegard’s Christmas Bedsit Party",
   "checked": "2026-10-06"
  },
+ "christmas blues matinee": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Christmas Blues Matinee",
+  "checked": "2026-11-28",
+  "v": 4
+ },
  "christmas concerts": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -3065,6 +3103,13 @@
   "reason": "no genre tags",
   "act": "CQ Wrestling",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "crab": {
+  "bucket": null,
+  "reason": "3 artists share this name",
+  "act": "CRAB",
+  "checked": "2026-11-28",
   "v": 4
  },
  "craig david": {
@@ -4097,6 +4142,13 @@
   "act": "Ditch Hustle Culture To Build Career Longevity",
   "checked": "2026-10-06"
  },
+ "divine chaos": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Divine Chaos",
+  "checked": "2026-11-28",
+  "v": 4
+ },
  "dj and live sax": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -4917,8 +4969,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Filthy Fridays Christmas Extravaganda!",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "finnian james": {
   "mbid": "86a7a571-985a-46cb-a1af-1b71b0dd17c2",
@@ -5361,12 +5413,12 @@
   "mbid": "5e7c3e00-3d35-47c1-99ee-b3cf442b961c",
   "name": "Funke and The Two Tone Baby",
   "genres": [],
+  "spotify": "2MffbeP9zTw8cxdjpIu3oP",
   "bucket": null,
   "reason": "no genre tags",
   "act": "Funke & The Two Tone Baby",
-  "checked": "2026-10-28",
-  "v": 4,
-  "spotify": "2MffbeP9zTw8cxdjpIu3oP"
+  "checked": "2026-11-28",
+  "v": 4
  },
  "funny girls": {
   "bucket": null,
@@ -5409,8 +5461,8 @@
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "Gabrielle",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "gallus": {
   "bucket": null,
@@ -5423,8 +5475,8 @@
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "GANS",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "gareth malone": {
   "mbid": "0c2ffd64-7437-48ad-9bc4-a5aad0ed60d3",
@@ -6141,8 +6193,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Guerilla Rocks",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "guitar hero": {
   "mbid": "8c1bed8f-b444-4035-aede-8b9d77724afd",
@@ -6358,8 +6410,8 @@
   "bucket": null,
   "reason": "13 artists share this name",
   "act": "Haywire",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "hed p e": {
   "bucket": null,
@@ -6623,8 +6675,8 @@
   "bucket": null,
   "reason": "3 artists share this name",
   "act": "Holy Motors",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "hooray for hollywood": {
   "bucket": null,
@@ -6838,8 +6890,8 @@
   "bucket": null,
   "reason": "10 artists share this name",
   "act": "Hutch",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "hybrid minds": {
   "mbid": "ceb88a0c-81ca-461a-82d2-ad7769447e15",
@@ -7116,6 +7168,17 @@
   "reason": "not in MusicBrainz",
   "act": "Interpol, Bloc Party",
   "checked": "2026-11-11",
+  "v": 4
+ },
+ "interviews": {
+  "mbid": "2986a110-4ffa-4d3b-835f-b138c3790352",
+  "name": "Interviews",
+  "genres": [],
+  "spotify": "77vqL0PwIalahzKN2bb0tC",
+  "bucket": null,
+  "reason": "no genre tags",
+  "act": "Interviews",
+  "checked": "2026-11-28",
   "v": 4
  },
  "intox extravaganza xxiv": {
@@ -8827,6 +8890,20 @@
   "act": "Liam Cromby",
   "checked": "2026-10-07"
  },
+ "liberation": {
+  "bucket": null,
+  "reason": "14 artists share this name",
+  "act": "Liberation",
+  "checked": "2026-11-28",
+  "v": 4
+ },
+ "liberation live x grassroots suicide prevention": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Liberation Live X Grassroots Suicide Prevention",
+  "checked": "2026-11-28",
+  "v": 4
+ },
  "liege and lief": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -9036,6 +9113,25 @@
   "checked": "2026-11-18",
   "v": 4
  },
+ "lynks": {
+  "mbid": "d51a314e-e09e-45a7-a1fe-b45fabf78804",
+  "name": "Lynks",
+  "genres": [
+   {
+    "name": "electropunk",
+    "count": 1
+   },
+   {
+    "name": "pop",
+    "count": 1
+   }
+  ],
+  "bucket": null,
+  "reason": "genres unclear",
+  "act": "Lynks",
+  "checked": "2026-11-28",
+  "v": 4
+ },
  "m woodroe": {
   "mbid": "084a11f3-7d25-41f0-99a5-f110109ed52b",
   "name": "M. Woodroe",
@@ -9143,8 +9239,8 @@
   "bucket": null,
   "reason": "4 artists share this name",
   "act": "Malevolence",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "mamoko": {
   "bucket": null,
@@ -9319,8 +9415,8 @@
   "bucket": null,
   "reason": "2 artists share this name",
   "act": "Max White",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "meat loaf by candlelight": {
   "bucket": null,
@@ -9333,8 +9429,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Mehfil-e-Rose Hill",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "mekons": {
   "mbid": "66d2169c-dea5-46d3-b4cb-52ed87b24ab0",
@@ -10599,6 +10695,13 @@
   "checked": "2026-11-12",
   "v": 4
  },
+ "open mic for all": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Open Mic for all!",
+  "checked": "2026-11-28",
+  "v": 4
+ },
  "open mic night": {
   "bucket": null,
   "reason": "not in MusicBrainz",
@@ -10742,12 +10845,12 @@
   "mbid": "2a3214c0-9f70-4ccf-8b3a-8b1b7b2f83be",
   "name": "Ovven",
   "genres": [],
+  "spotify": "5ngTSqP6WSRmxbKLSAzra8",
   "bucket": null,
   "reason": "no genre tags",
   "act": "Ovven",
-  "checked": "2026-10-28",
-  "v": 4,
-  "spotify": "5ngTSqP6WSRmxbKLSAzra8"
+  "checked": "2026-11-28",
+  "v": 4
  },
  "p rallel": {
   "mbid": "3209eb28-ef65-4920-9f23-4000451994a4",
@@ -11244,8 +11347,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Prince Daddy & The Hyenna",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "professor brian cox": {
   "bucket": null,
@@ -11253,6 +11356,13 @@
   "act": "Professor Brian Cox",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "projector": {
+  "bucket": null,
+  "reason": "5 artists share this name",
+  "act": "Projector",
+  "checked": "2026-11-28",
+  "v": 4
  },
  "pryma": {
   "mbid": "4a20b579-ade9-4aa4-b654-9c80dfa7cfc7",
@@ -11516,6 +11626,13 @@
   "act": "Republica Trampolene",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "rescheduled mehfil e rose hill": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Rescheduled! Mehfil-e-Rose Hill",
+  "checked": "2026-11-28",
+  "v": 4
  },
  "resident lock in": {
   "bucket": null,
@@ -12129,6 +12246,13 @@
   "spotify": "11K0HIZKfdB6ez0VhIgxPm",
   "v": 4
  },
+ "savanah": {
+  "bucket": null,
+  "reason": "2 artists share this name",
+  "act": "Savanah",
+  "checked": "2026-11-28",
+  "v": 4
+ },
  "scared little toaster": {
   "mbid": "034009c7-19a1-419c-8547-a93c2d581bad",
   "name": "Scared Little Toaster",
@@ -12548,8 +12672,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Siren Showcase",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "six by seven": {
   "mbid": "5e2e050f-7280-464e-b251-0a1272c43300",
@@ -12748,8 +12872,8 @@
   "bucket": null,
   "reason": "10 artists share this name",
   "act": "Sleeper",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "sleeping giant": {
   "bucket": null,
@@ -13679,8 +13803,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Synch Pulse",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "t4t": {
   "bucket": null,
@@ -13688,6 +13812,13 @@
   "act": "T4T",
   "checked": "2026-10-11",
   "v": 2
+ },
+ "take breath alchemize": {
+  "bucket": null,
+  "reason": "not in MusicBrainz",
+  "act": "Take Breath+ Alchemize",
+  "checked": "2026-11-28",
+  "v": 4
  },
  "talk": {
   "mbid": "b8b3d675-a685-4709-8219-4052435f770b",
@@ -15871,12 +16002,12 @@
   "mbid": "dace0d40-f90f-4b3b-99da-aa99be756920",
   "name": "Tramhaus",
   "genres": [],
+  "spotify": "5HXrUfoDwofY8lehLNIykB",
   "bucket": null,
   "reason": "no genre tags",
   "act": "Tramhaus",
-  "checked": "2026-10-28",
-  "v": 4,
-  "spotify": "5HXrUfoDwofY8lehLNIykB"
+  "checked": "2026-11-28",
+  "v": 4
  },
  "trancecoda presents j00f editions": {
   "bucket": null,
@@ -16361,8 +16492,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Uncle Josef's Holiday Camp",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "uncle junior": {
   "mbid": "cbebf983-4050-4623-9ea7-870fe8d4954b",
@@ -16954,8 +17085,8 @@
   "bucket": null,
   "reason": "not in MusicBrainz",
   "act": "Youth Wound",
-  "checked": "2026-10-28",
-  "v": 3
+  "checked": "2026-11-28",
+  "v": 4
  },
  "yung singh": {
   "mbid": "c43c638f-5a88-4e5e-8038-73e634a2ba1e",
