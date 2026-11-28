@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-27",
-  "range_start": "2026-11-27",
+  "updated": "2026-11-28",
+  "range_start": "2026-11-28",
   "range_end": "2027-12-31",
   "sources": [
     "VisitBrighton",
@@ -826,7 +826,7 @@
       "date": "2027-05-28",
       "date_end": "2027-05-31",
       "location": "Hay-on-Wye",
-      "category": "Comedy",
+      "category": "Arts & Culture",
       "ticket_url": "https://howthelightgetsin.org/festivals/hay/festival-passes",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/howthelightgetsin/",
@@ -1822,7 +1822,7 @@
       "ticket_url": "https://www.gtsf.uk/tickets",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/gate-to-southwell-festival/",
-      "official_url": "https://southwellfolkfestival.org.uk/",
+      "official_url": "https://www.gtsf.uk/",
       "id": "festival:gate-to-southwell-festival:2027-07-02",
       "location_display": "East Midlands"
     },
@@ -2811,7 +2811,7 @@
       "date": "2027-07-23",
       "date_end": "2027-07-25",
       "location": "South East",
-      "category": "Music",
+      "category": "Family",
       "ticket_url": "https://tickets.truckfestival.com/event/truck-festival-2027/hill-farm/3691891",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/truck-festival/",
@@ -3451,7 +3451,7 @@
       "date_end": "2027-08-15",
       "location": "Compstall",
       "category": "Other",
-      "ticket_url": "https://firevoltfestival.co.uk/",
+      "ticket_url": "https://www.gigantic.com/firevolt-mcr-festival-tickets",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/firevolt-festival/",
       "official_url": "https://firevoltfestival.co.uk/",
@@ -3632,14 +3632,14 @@
       "title": "Rewind Festival",
       "date": "2027-08-20",
       "date_end": "2027-08-22",
-      "location": "Cheshire / Henley-on-Thames / Perth",
+      "location": "Henley-on-Thames",
       "category": "Other",
       "ticket_url": "https://south.rewindfestival.com/tickets",
       "source": "https://fezzy.uk/search/",
       "detail_url": "https://fezzy.uk/festival/rewind-festival/",
       "official_url": "https://rewindfestival.com/",
       "id": "festival:rewind-festival:2027-08-20",
-      "location_display": "Cheshire / Henley-on-Thames / Perth"
+      "location_display": "Henley-on-Thames"
     },
     {
       "title": "Volksfest Wales",
@@ -3940,19 +3940,6 @@
       "official_url": "https://infestuk.com/",
       "id": "festival:infest-uk:2027-08-27",
       "location_display": "Manchester"
-    },
-    {
-      "title": "New World Festival",
-      "date": "2027-08-27",
-      "date_end": "2027-08-29",
-      "location": "Chelmsford",
-      "category": "Music",
-      "ticket_url": "https://newworldfest.com/",
-      "source": "https://fezzy.uk/search/",
-      "detail_url": "https://fezzy.uk/festival/new-world-festival/",
-      "official_url": "https://newworldfest.com/",
-      "id": "festival:new-world-festival:2027-08-27",
-      "location_display": "Chelmsford"
     },
     {
       "title": "Shrewsbury Folk Festival",
